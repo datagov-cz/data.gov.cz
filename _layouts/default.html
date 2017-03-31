@@ -42,16 +42,34 @@
       </nav>
       <section>
         {{ content }}
-
       </section>
-      <!--<footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>-->
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+	<footer>
+		<div class="footerwrapper">
+			<div class="fl">
+				<img id="eulogo" src="{{ '/assets/images/ozp_logo_cz.jpg' | relative_url }}"></img>
+			</div>
+			<div class="fl">
+				<strong>Odkazy</strong>
+				<ul>
+					<li><a href="https://nkod.opendata.cz">NKOD</a></li>
+					<li><a href="https://opendata.gov.cz">Aktuality</a></li>
+					<li><a href="https://nkod.opendata.cz/dataset">Seznam datových sad</a></li>
+					<li><a href="https://nkod.opendata.cz/organization">Seznam organizací</a></li>
+					<li><a href="">Prohlášení o přístupnosti</a></li>
+				</ul>
+			</div>
+			<div class="fl">
+				<strong>Kontakty</strong>
+				<ul>
+				  <li>Kontaktní osoba: <a href="mailto:michal.kuban@mvcr.cz">Michal Kubáň</a></li>
+				  <li>Email: <a href="mailto:michal.kuban@mvcr.cz">michal.kuban@mvcr.cz</a></li>
+				  <li>Telefon: +420 974 816 395</li>
+				  <li><a href="http://www.mvcr.cz/">Ministerstvo vnitra České republiky</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 
     {% if site.google_analytics %}
       <script type="text/javascript">

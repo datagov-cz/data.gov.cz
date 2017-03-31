@@ -15,7 +15,6 @@ by Matt Graham
 
 body {
   font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#666;
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
@@ -24,7 +23,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#333;
   margin:0 0 10px;
 }
 
@@ -62,7 +60,6 @@ a {
 
 a small {
   font-size:11px;
-  color:#666;
   margin-top:-0.6em;
   display:block;
 }
@@ -73,7 +70,6 @@ ul{
 
 strong {
   font-weight: bold;
-  color: #333;
 }
 
 .wrapper {
@@ -150,7 +146,6 @@ hr {
 }
 
 dt {
-  color:#444;
   font-weight:700;
 }
 
@@ -170,7 +165,6 @@ header {
 
   h1 {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #f3f3f3;
     text-shadow: 0px 2px 0px #235796;
     margin: 0px;
     white-space: nowrap;
@@ -181,7 +175,6 @@ header {
   }
 
   p {
-    color: #d8d8d8;
     text-shadow:rgba(#000, 0.2) 0 1px 0;
     font-size: 18px;
     margin: 0px;
@@ -190,18 +183,12 @@ header {
 
 #banner {
   z-index: 100;
-  #left:0;
-  #right:50%;
   height: 50px;
-  #margin-right:-382px;
-  #position: fixed;
   top: 115px;
   background: #ffcc00;
   border: 1px solid #f0b500;
   box-shadow: 0px 1px 3px rgba(0,0,0,.25);
   border-radius: 0px 2px 2px 0px;
-  #padding-right: 10px;
-  #text-align: center;
 
   .button {
     border: 1px solid #dba500;

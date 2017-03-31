@@ -18,7 +18,11 @@
   </head>
   <body>
     <header>
-    <h1>{{ site.title | default: site.github.repository_name }}</h1>
+    {% if this_page.homepage %}
+	<h1><img id="logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}"></img></h1>
+	{% else %}
+	<h1><a href="/"><img id="logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.title }}"></img></a></h1>
+	{% endif %}
     <p>{{ site.description | default: site.github.project_tagline }}</p>
     </header>
     {% if this_page.homepage %}

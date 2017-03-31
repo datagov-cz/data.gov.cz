@@ -7,13 +7,20 @@ by Matt Graham
 @import "fonts";
 @import "rouge-base16-dark";
 
+#logo {
+  margin-top: 5px;
+  width: 90%;
+  max-width: 320px;
+}
+
 body {
   font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#666;
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url(../images/body-background.png) #eae6d1;
+  background: url(../images/background.gif) #eae6d1;
+  background-position: 0px 95px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -149,7 +156,7 @@ dt {
 
 header {
   #padding: 25px 20px 40px 20px;
-  margin: 0;
+  padding-bottom: 5px;
   top: 0;
   left:0;
   right:0;
@@ -418,7 +425,7 @@ footer {
   }
 
   header {
-    padding:20px 20px;
+    padding:0;
     margin: 0;
 
     h1 {
@@ -461,9 +468,6 @@ footer {
       -o-text-overflow: ellipsis;
       -ms-text-overflow: ellipsis;
     }
-  }
-  section {
-    margin-top: 5px;
   }
 
   #banner { display: none;}

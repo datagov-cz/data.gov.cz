@@ -336,17 +336,16 @@ nav {
 }
 
 footer {
-  box-shadow: 1px 0px 2px rgba(0,0,0,.75);
   text-align: left;
-  margin: 0;
   width:100%;
   background: #057fa5;
+  margin-top: 10px;
   padding-top: 10px;
-  padding-left: 50px;
   
   div.footerwrapper {
+    padding-left: 150px;
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 850px;
   }
   
   div.fl {
@@ -498,26 +497,10 @@ footer {
   }
 }
 
-@media print, screen and (max-height: 680px) {
-
-  footer {
-    text-align: center;
-    position: relative;
-    left:auto;
-    width:auto;
-  }
-}
 
 @media print, screen and (max-height: 480px) {
   nav {
     display: none;
   }
 
-  footer {
-    text-align: center;
-    position: relative;
-    left:auto;
-    bottom:auto;
-    width:auto;
-  }
 }

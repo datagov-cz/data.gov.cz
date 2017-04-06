@@ -7,8 +7,19 @@ title: Uživatelé
 
 Co se tu dozvím?
 
-*   Otevřené formáty: CSV, XML, JSON a další
-*   Propojená data: RDF, SPARQL, dump
+## Co dělá data otevřenými?
 
-Více najdete na [stránkách pro uživatele a programátory](/uživatelé/)   
+### Otevřené podmínky užití
+
+Dávají vám jistotu, že s daty můžete libovolně pracovat, upravovat je a dále je sdílet. 
+
+### Otevřené formáty
+Dávají vám možnost s daty pracovat v široké škále nástrojů, jazyků a knihoven, nebo pro data nástroje vyvíjet na základě specifikace, kterou si můžete volně přečíst a implementovat.
+
+*   Tabulková data: [CSV](csv/)
+*   Stromová data: [XML](https://www.w3.org/TR/xml/), [JSON](https://tools.ietf.org/html/rfc7159)
+*   Texty: [HTML](https://www.w3.org/TR/html5/), 
+*   Obrázky: [PNG](https://www.w3.org/TR/PNG/), [SVG](https://www.w3.org/TR/SVG/)
+*   Geodata: 
+*   Propojená data: [RDF](https://www.w3.org/TR/rdf11-concepts/), [SPARQL](https://www.w3.org/TR/sparql11-query/), dump
 

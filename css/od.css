@@ -1,0 +1,35 @@
+a {
+    color: #057fa5;
+}
+
+.btn-primary {
+    background-color: #057fa5;
+    border-color: white;
+}
+
+.jumbotron .btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: #057fa5;
+}
+
+.jumbotron {
+    background-color: #057fa5;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
+    .jumbotron .container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-image: url(../images/cr.svg);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 400px 230px ;
+    }
+}

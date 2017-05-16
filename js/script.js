@@ -1,6 +1,6 @@
 (function initialize() {
 
-    // Must NOT end with.
+    // Must NOT end with '/'.
     const CATALOG_URL = "https://novy.nkod.opendata.cz";
 
     function initializeFormAction() {

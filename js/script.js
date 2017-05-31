@@ -4,7 +4,7 @@
     const CATALOG_URL = "https://data.gov.cz.opendata.cz";
 
     function initializeFormAction() {
-        document.getElementById("searchForm").action = CATALOG_URL;
+        document.getElementById("searchForm").action = CATALOG_URL + "/datové-sady";
     }
 
     function readNumberOfDatasets() {

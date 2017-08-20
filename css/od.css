@@ -7,6 +7,18 @@ a {
     border-color: white;
 }
 
+.btn-secondary {
+    background-color: white;
+    border-color: #057fa5;
+	color: #057fa5;
+}
+
+.btn-secondary:hover {
+    background-color: #057fa5;
+    border-color: white;
+	color: white;
+}
+
 .jumbotron .btn-primary:hover {
     background-color: white;
     border-color: white;

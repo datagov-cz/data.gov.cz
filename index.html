@@ -43,7 +43,7 @@
           <div class="collapse navbar-collapse" id="collapsingNavbar">
             <ul class="navbar-nav ml-auto w-100 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link" href="datové-sady">Datové sady <span class="sr-only">(aktivní)</span></a>
+                <a class="nav-link" href="datové-sady">Datové sady</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="poskytovatelé">Poskytovatelé</a>
@@ -71,7 +71,7 @@
            <div class="col-md-6">
                 <h1 class="display-3">Otevřená data</h1>
                 <p>Vše co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
-                <p><a class="btn btn-primary btn-lg" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
+                <!--<p><a class="btn btn-primary btn-lg" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>-->
            </div>
            <div class="col-md-6 text-right d-none d-md-block">
                 <div id="datasetCount" style="visibility:hidden">
@@ -79,8 +79,8 @@
                     <p>datových sad</p>
                 </div>
                 <form id="searchForm" class="form-inline float-right">
-                    <label style="visibility: hidden;" for="dotaz">Dotaz</label>
-		    <input class="form-control mr-sm-2" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Hledaný text">
+                    <label class="sr-only" for="dotaz">Název hledané datové sady</label>
+		    <input class="form-control mr-sm-2" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Název hledané datové sady">
                     <button class="btn btn-primary my-2 my-sm-0" type="submit">Hledat</button>
                 </form>
            </div>

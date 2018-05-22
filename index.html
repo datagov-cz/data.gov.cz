@@ -79,7 +79,8 @@
                     <p>datových sad</p>
                 </div>
                 <form id="searchForm" class="form-inline float-right">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Hledat" name="dotaz">
+                    <label style="visibility: hidden;" for="dotaz">Dotaz</label>
+		    <input class="form-control mr-sm-2" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Hledaný text">
                     <button class="btn btn-primary my-2 my-sm-0" type="submit">Hledat</button>
                 </form>
            </div>
@@ -115,7 +116,7 @@
         <div class="container">
            <div class="row">
 		<div class="col-md-4">
-			<img class="d-inline-block align-top" id="eulogo" src="images/ozp_logo_cz.jpg" width="300">
+			<img alt="Evropská unie - Evropský sociální fond - Operační program Zaměstnanost" class="d-inline-block align-top" id="eulogo" src="images/ozp_logo_cz.jpg" width="300">
 		</div>
 		<div class="col-md-4">
 			<strong>Odkazy</strong>

@@ -1,7 +1,7 @@
 (function initialize() {
 
     // Must NOT end with '/'.
-    const CATALOG_URL = "https://data.gov.cz.opendata.cz";
+    const CATALOG_URL = "https://data.gov.cz";
 
     function initializeFormAction() {
         document.getElementById("searchForm").action = CATALOG_URL + "/datové-sady";

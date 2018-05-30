@@ -13,8 +13,19 @@
             return response.json();
         }).then((body) => {
             const datasetCount = numberToStringAddSpaces(body.data.numberOfDatasets);
-            document.getElementById("datasetCountLabel").textContent = datasetCount;
-            document.getElementById("datasetCount").style.visibility = "visible";
+            document.getElementById("countLabel").textContent = datasetCount;
+            document.getElementById("count").style.visibility = "visible";
+        });
+    }
+    
+    function readNumberOfPublishers() {
+        const url = CATALOG_URL + "/api/v1/solr/info";
+        fetch(url).then((response) => {
+            return response.json();
+        }).then((body) => {
+            const publishersCount = numberToStringAddSpaces(body.data.numberOfPublishers);
+            document.getElementById("countLabel").textContent = publishersCount;
+            document.getElementById("count").style.visibility = "visible";
         });
     }
 
@@ -32,7 +43,7 @@
     }
 
     initializeFormAction();
-    readNumberOfDatasets();
+    readNumberOfPublishers();
 
 })();
 

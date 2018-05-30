@@ -43,7 +43,7 @@
     }
 
     initializeFormAction();
-    readNumberOfPublishers();
+    readNumberOfDatasets();
 
 })();
 

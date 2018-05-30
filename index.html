@@ -74,14 +74,22 @@
                 <!--<p><a class="btn btn-primary btn-lg" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>-->
            </div>
            <div class="col-md-6 text-right d-none d-md-block">
-<!--                <div id="count" style="visibility:hidden">
-                    <h2 class="display-3" id="countLabel">?</h2>
-                    <p>poskytovatelů dat</p>
-                </div>-->
-                <div id="count" style="visibility:hidden">
-                    <h2 class="display-3" id="countLabel">?</h2>
-                    <p>datových sad</p>
-                </div>
+		<div id="carousel" class="carousel slide" data-ride="carousel">
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <h2 class="display-3" id="datasetCountLabel"> ?</h2>
+			  <p><a href="">datových sad</a></p>
+			</div>
+			<div class="carousel-item">
+			  <h2 class="display-3" id="publisherCountLabel"> ?</h2>
+			  <p>poskytovatelů</p>
+			</div>
+			<div class="carousel-item">
+			  <h2 class="display-3" id="keywordCountLabel"> ?</h2>
+			  <p>klíčových slov</p>
+			</div>
+		  </div>
+		</div>
                 <form id="searchForm" class="form-inline float-right">
                     <label class="sr-only" for="dotaz">Název hledané datové sady</label>
 		    <input class="form-control mr-sm-2" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Název hledané datové sady">

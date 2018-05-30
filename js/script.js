@@ -16,8 +16,8 @@
             const publisherCount = numberToStringAddSpaces(body.data.numberOfPublishers);
             const keywordCount = numberToStringAddSpaces(body.data.numberOfKeywords);
             document.getElementById("datasetCountLabel").textContent = datasetCount;
-            document.getElementById("publisherCountLabel").textContent = datasetCount;
-            document.getElementById("keywordCountLabel").textContent = datasetCount;
+            document.getElementById("publisherCountLabel").textContent = publisherCount;
+            document.getElementById("keywordCountLabel").textContent = keywordCount;
             document.getElementById("count").style.visibility = "visible";
         });
     }

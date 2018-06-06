@@ -1,0 +1,48 @@
+---
+layout: default
+title: News
+ref: Posts
+lang: en
+postindex: true
+---
+
+  <div class="container">
+	<h1 class="header center orange-text">What's new in open data in Czechia</h1>
+	<hr/>
+    <div class="row">
+        {% assign posts=site.posts | where:"lang", page.lang %}
+        {% for post in posts limit:3 %}
+        <div class="col-12 col-md-6 col-lg-4">
+			<div class="section">
+			  <div>
+                <h5>{{ post.title }}</h5>
+                <h6>{{ post.date | date: "%Y-%m-%d" }}</h6>
+                <div>
+					{{ post.excerpt }}
+				</div>
+                {% if post.detail %}
+                <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
+                {% endif %}
+			  </div>
+			</div>
+		</div>
+        {% endfor %}
+     </div>
+    <!--<hr/>
+    <h2 class="orange-text center">Older posts</h2>
+    <div class="row">
+        {% for post in posts offset:3 %}
+        <div class="col-12">
+			<div class="section">
+                <h6 class="">{{ post.date | date: "%Y-%m-%d" }}</h6>
+                <p class="flow-text">
+                    {{ post.excerpt | remove: '<p>' | remove: '<p class="flow-text">' | remove: '</p>' }}
+                </p>
+                {% if post.detail %}
+                <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
+                {% endif %}
+			</div>
+		</div>
+        {% endfor %}       
+	</div>-->
+  </div>

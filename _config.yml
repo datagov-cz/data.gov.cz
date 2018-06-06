@@ -1,0 +1,26 @@
+# Site settings
+title: Otevřená data České republiky
+email: klimek@opendata.cz
+author: 
+    name: "Jakub Klímek"
+    twitter: jakub_klimek
+
+description: Portál otevřených dat České republiky
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://data.gov.cz" # the base hostname & protocol for your site
+
+# Build settings
+excerpt_separator: <!--more-->
+
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+
+langs:
+  en:
+    cs: česky
+    flag: /images/flag-en.png
+  cs:
+    en: English
+    flag: /images/flag-cs.png

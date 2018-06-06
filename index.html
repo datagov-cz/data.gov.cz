@@ -1,79 +1,18 @@
-<!DOCTYPE html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Portál otevřených dat České republiky">
-    <meta name="theme-color" content="#057fa5">
-    <meta name="msapplication-TileColor" content="#057fa5">
-    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="images/favicons/manifest.json">
-
-    <title>Otevřená data České republiky</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="css/od.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container">
-        <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img width="174" height="30" class="d-inline-block align-top" src="images/logo.png" alt="Otevřená data"></img></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Zobrazení navigace">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-          <div class="collapse navbar-collapse" id="collapsingNavbar">
-            <ul class="navbar-nav ml-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link" href="datové-sady">Datové sady</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="poskytovatelé">Poskytovatelé</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="klíčová-slova">Klíčová slova</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://opendata.gov.cz" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Další</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                  <a class="dropdown-item" href="https://opendata.gov.cz/development:zajemci">Pro zájemce o otevírání dat</a>
-                  <a class="dropdown-item" href="https://opendata.gov.cz/development:programatori">Pro uživatele a programátory</a>
-                  <a class="dropdown-item" href="https://opendata.gov.cz">Pro poskytovatele dat</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-       </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container text-white">
-        <div class="row">
-           <div class="col-md-6">
-                <h1 class="display-3">Otevřená data</h1>
-                <p>Vše co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
-           </div>
-           <div class="col-md-6 text-right d-none d-md-block">
-		<div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+---
+layout: default
+ref: Home
+lang: cs
+homepage: true
+---
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-white">
+	<div class="row">
+	  <div class="col-md-6">
+		<h1 class="display-3">Otevřená data</h1>
+		<p>Vše co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
+	  </div>
+	  <div class="col-md-6 text-right d-none d-md-block">
+	    <div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
 		  <div class="carousel-inner">
 			<div class="carousel-item active">
 			  <h2 class="display-3" id="datasetCountLabel"> ?</h2>
@@ -89,81 +28,32 @@
 			</div>
 		  </div>
 		</div>
-                <form id="searchForm" class="form-inline float-right">
-                    <label class="sr-only" for="dotaz">Název hledané datové sady</label>
-		    <input class="form-control mr-sm-2" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Název hledané datové sady">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Hledat</button>
-                </form>
-           </div>
-         </div>
-       </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Zájemci o otevírání dat</h2>
-          <p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
-          <p><a class="btn btn-secondary" href="https://opendata.gov.cz/development:zajemci" role="button">Více informací &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Poskytovatelé dat</h2>
-          <p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
-          <p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Programátoři</h2>
-          <p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
-          <p><a class="btn btn-secondary" href="https://opendata.gov.cz/development:programatori" role="button">Více informací &raquo;</a></p>
-        </div>
-      </div>
-
-      <hr>
-
-    </div> <!-- /container -->
-
-    <footer class="bd-footer text-muted">
-        <div class="container">
-           <div class="row">
-		<div class="col-md-4">
-			<strong>Kontakty</strong>
-			<ul>
-			  <li>Kontaktní osoba: <a href="mailto:michal.kuban@mvcr.cz">Michal Kubáň</a></li>
-			  <li>Email: <a href="mailto:michal.kuban@mvcr.cz">michal.kuban@mvcr.cz</a></li>
-			  <li>Telefon: +420 974 816 395</li>
-			  <li><a href="http://www.mvcr.cz/">Ministerstvo vnitra České republiky</a></li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<strong>Odkazy</strong>
-			<ul>
-				<li><a href="datové-sady">NKOD</a></li>
-				<li><a href="https://opendata.gov.cz">Aktuality</a></li>
-				<li><a href="datové-sady">Seznam datových sad</a></li>
-				<li><a href="poskytovatelé">Seznam poskytovatelů</a></li>
-				<li><a href="https://github.com/opendata-mvcr/opendata-mvcr.github.io">Web na GitHubu</a></li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<img alt="Evropská unie - Evropský sociální fond - Operační program Zaměstnanost" class="d-inline-block align-top" id="eulogo" src="images/ozp_logo_cz.jpg" width="300">
-		</div>
-          </div>
-	  <hr>
-	  <div class="row">
-		<div class="col-md-12">
-			Forma uveřejňovaných informací je v souladu s <a href="https://www.zakonyprolidi.cz/cs/2008-64" title="Vyhláška o přístupnosti">vyhláškou č. 64/2008 Sb., o formě uveřejňování informací souvisejících s výkonem veřejné správy prostřednictvím webových stránek pro osoby se zdravotním postižením (vyhláška o přístupnosti)</a>, a splňuje všechna pravidla uveřejněná v příloze této vyhlášky.
-		</div>
-	  </div>	
+		<form id="searchForm" class="form-inline float-right" action="https://data.gov.cz/datové-sady">
+			<label class="sr-only" for="dotaz">Název hledané datové sady</label>
+			<input class="form-control mr-sm-2" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Název hledané datové sady">
+			<button class="btn btn-primary my-2 my-sm-0" type="submit">Hledat</button>
+		</form>
+	  </div>
 	</div>
-    </footer>
+  </div>
+</div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-  </body>
-</html>
+<div class="container">
+  <div class="row">
+	<div class="col-md-4">
+	  <h2>Zájemci o otevírání dat</h2>
+	  <p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
+	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/development:zajemci" role="button">Více informací &raquo;</a></p>
+	</div>
+	<div class="col-md-4">
+	  <h2>Poskytovatelé dat</h2>
+	  <p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
+	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
+   </div>
+	<div class="col-md-4">
+	  <h2>Programátoři</h2>
+	  <p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
+	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/development:programatori" role="button">Více informací &raquo;</a></p>
+	</div>
+  </div>
+</div>

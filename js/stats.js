@@ -3,10 +3,6 @@
     // Must NOT end with '/'.
     const CATALOG_URL = "https://data.gov.cz";
 
-    function initializeFormAction() {
-        document.getElementById("searchForm").action = CATALOG_URL + "/datové-sady";
-    }
-
     function readNumbers() {
         const url = CATALOG_URL + "/api/v1/solr/info";
         fetch(url).then((response) => {
@@ -35,7 +31,6 @@
         return value;
     }
 
-    initializeFormAction();
     readNumbers();
 
 })();

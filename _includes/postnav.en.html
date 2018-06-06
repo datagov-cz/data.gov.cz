@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-light">
+	<div class="container">
+	  <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img width="174" height="30" class="d-inline-block align-top" src="{{ "/images/logo.png" | relative_url }}" alt="Open data in Czechia"></img></a>
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Show navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  
+	  <div class="collapse navbar-collapse" id="collapsingNavbar">
+		<ul class="navbar-nav ml-auto w-100 justify-content-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="{{ "/news" | relative_url}}">News</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://data.gov.cz/datasets">Datasets</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://data.gov.cz/publishers">Publishers</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="https://data.gov.cz/keywords">Keywords</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="https://opendata.gov.cz" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+			<div class="dropdown-menu" aria-labelledby="dropdown01">
+			  <a class="dropdown-item" href="https://opendata.gov.cz/development:zajemci">Interested in opening data (in Czech)</a>
+			  <a class="dropdown-item" href="https://opendata.gov.cz/development:programatori">Users and programmers (in Czech)</a>
+			  <a class="dropdown-item" href="https://opendata.gov.cz">Data publishers (in Czech)</a>
+			</div>
+		  </li>
+		  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+		  {% for p in posts %}
+			{% if p.lang != page.lang %}
+		  <li class="nav-item dropdown">
+			  <a data-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-en.png" | relative_url}}" alt="English" style="width: 1.2rem;"></a>
+			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu">
+				<button type="button" tabindex="0" class="dropdown-item">
+					<a href="{{ p.url }}" class="{{ p.lang }}" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}"></a>
+				</button>
+			</div>
+		  </li>	  
+			{% endif %}
+		  {% endfor %}
+		</ul>
+	  </div>
+	</div>
+</nav>

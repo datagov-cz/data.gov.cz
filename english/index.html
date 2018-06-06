@@ -1,0 +1,59 @@
+---
+layout: default
+ref: Home
+lang: en
+homepage: true
+---
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-white">
+	<div class="row">
+	  <div class="col-md-6">
+		<h1 class="display-3">Open data</h1>
+		<p>All you need to know about open data in Czechia</p>
+	  </div>
+	  <div class="col-md-6 text-right d-none d-md-block">
+	    <div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <h2 class="display-3" id="datasetCountLabel"> ?</h2>
+			  <p>datasets</p>
+			</div>
+			<div class="carousel-item">
+			  <h2 class="display-3" id="publisherCountLabel"> ?</h2>
+			  <p>publishers</p>
+			</div>
+			<div class="carousel-item">
+			  <h2 class="display-3" id="keywordCountLabel"> ?</h2>
+			  <p>keywords</p>
+			</div>
+		  </div>
+		</div>
+		<form id="searchForm" class="form-inline float-right" action="https://data.gov.cz/datasets">
+			<label class="sr-only" for="dotaz">Dataset name</label>
+			<input class="form-control mr-sm-2" type="text" placeholder="Dataset name" name="dotaz" id="dotaz" title="Dataset name">
+			<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+	<div class="col-md-4">
+	  <h2>Interested in opening data</h2>
+	  <p>How do I benefit from open data and why should I want it? How do they benefit my town or office of government?</p>
+	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/development:zajemci" role="button">More info (in Czech) &raquo;</a></p>
+	</div>
+	<div class="col-md-4">
+	  <h2>Data publishers</h2>
+	  <p>How to proceed with publishing open data? What are the examples of good and bad practice? And what are the legal aspects of opening data?</p>
+	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">More info (in Czech) &raquo;</a></p>
+   </div>
+	<div class="col-md-4">
+	  <h2>Programmers</h2>
+	  <p>Where do I find open data? What are the XML, CSV or RDF formats? Where can I ask for more open data or report a bug?</p>
+	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/development:programatori" role="button">More info (in Czech) &raquo;</a></p>
+	</div>
+  </div>
+</div>

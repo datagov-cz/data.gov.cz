@@ -12,7 +12,7 @@ url: "https://data.gov.cz" # the base hostname & protocol for your site
 # Build settings
 excerpt_separator: <!--more-->
 
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap

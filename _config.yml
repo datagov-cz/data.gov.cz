@@ -1,9 +1,5 @@
 # Site settings
 title: Otevřená data České republiky
-email: klimek@opendata.cz
-author: 
-    name: "Jakub Klímek"
-    twitter: jakub_klimek
 
 description: Portál otevřených dat České republiky
 baseurl: "" # the subpath of your site, e.g. /blog

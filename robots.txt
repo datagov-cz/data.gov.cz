@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /sparql/
+Disallow: /sparql*
 Disallow: /fct/
 Disallow: /describe/
 Disallow: /zdroj/

@@ -5,7 +5,8 @@ layout: default
 <article class="container">
     <header>
         <h1>{{ page.title }}</h1>
-        <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%Y-%m-%d"}}</time>
+        <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%Y-%m-%d"}}</time>,
+		{{site.data.authors[page.author].name}}
     </header>
 	<hr/>
     <div class="entry container">

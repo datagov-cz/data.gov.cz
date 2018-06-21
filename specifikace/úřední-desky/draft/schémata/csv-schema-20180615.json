@@ -1,0 +1,628 @@
+{
+    "fields": [
+        {
+            "type": "integer",
+            "description": "Identifikátor oznámení na úřední desce, např. pořadové číslo.",
+            "name": "id",
+            "title": "id"
+        },
+        {
+            "type": "P18D00000072",
+            "description": "Jednoznačný identifikátor dokumentu tvořícího oznámení",
+            "name": "identifikator",
+            "title": "identifikator"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. IČO.",
+            "name": "organizace_ico",
+            "title": "organizace_ico"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název.",
+            "name": "organizace_nazev",
+            "title": "organizace_nazev"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název.",
+            "name": "autor_nazev",
+            "title": "autor_nazev"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. IČO.",
+            "name": "autor_ico",
+            "title": "autor_ico"
+        },
+        {
+            "type": "string",
+            "description": "URL oznámení (s lidsky čitelnou zprávou)",
+            "name": "url",
+            "title": "url"
+        },
+        {
+            "type": "string",
+            "description": "Název oznámení",
+            "name": "nazev",
+            "title": "nazev"
+        },
+        {
+            "type": "string",
+            "description": "Krátké shrnutí oznámení, anotace, abstrakt.",
+            "name": "anotace",
+            "title": "anotace"
+        },
+        {
+            "type": "string",
+            "description": "Datum, příp. i čas, zveřejnění oznámení na úřední desce.",
+            "name": "zverejneno",
+            "title": "zverejneno"
+        },
+        {
+            "type": "string",
+            "description": "Datum, příp. i čas, sejmutí oznámení, tj. do kdy je oznámení zveřejněno na úřední desce.",
+            "name": "sejmuto",
+            "title": "sejmuto"
+        },
+        {
+            "type": "string",
+            "description": "Datum vydání/schválení oznámení.",
+            "name": "schvaleno",
+            "title": "schvaleno"
+        },
+        {
+            "type": "string",
+            "description": "Spisová značka oznámení.",
+            "name": "znacka",
+            "title": "znacka"
+        },
+        {
+            "type": "string",
+            "description": "Číslo jednací oznámení.",
+            "name": "cislo_jednaci",
+            "title": "cislo_jednaci"
+        },
+        {
+            "type": "string",
+            "description": "Označení revize/verze oznámení.",
+            "name": "revize",
+            "title": "revize"
+        },
+        {
+            "type": "string",
+            "description": "Agendy, kategorie, správní činnosti, pod které spadá oznámení.",
+            "name": "agenda",
+            "title": "agenda"
+        },
+        {
+            "type": "string",
+            "description": "Další dokument/y. Název dokumentu.",
+            "name": "dokument_nazev",
+            "title": "dokument_nazev"
+        },
+        {
+            "type": "string",
+            "description": "Další dokument/y. URL dokumentu.",
+            "name": "dokument_url",
+            "title": "dokument_url"
+        },
+        {
+            "type": "string",
+            "description": "Název subjektu, kterého se oznámení týká.",
+            "name": "subjekt_nazev",
+            "title": "subjekt_nazev"
+        },
+        {
+            "type": "string",
+            "description": "IČO subjektu, kterého se oznámení týká.",
+            "name": "subjekt_ico",
+            "title": "subjekt_ico"
+        },
+        {
+            "type": "integer",
+            "description": "Provozovatel úřední desky. ID v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "organizace_adresa_kod_ruian",
+            "title": "organizace_adresa_kod_ruian"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "organizace_adresa_typ_ruian",
+            "title": "organizace_adresa_typ_ruian"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "organizace_adresa_kod_adm",
+            "title": "organizace_adresa_kod_adm"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Obec - LAU 2 kód.",
+            "name": "organizace_adresa_kod_obce",
+            "title": "organizace_adresa_kod_obce"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název obce.",
+            "name": "organizace_adresa_nazev_obce",
+            "title": "organizace_adresa_nazev_obce"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",
+            "name": "organizace_adresa_nazev_momc",
+            "title": "organizace_adresa_nazev_momc"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",
+            "name": "organizace_adresa_nazev_mop",
+            "title": "organizace_adresa_nazev_mop"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Kód části obce vedené v RÚIAN.",
+            "name": "organizace_adresa_kod_casti_obce",
+            "title": "organizace_adresa_kod_casti_obce"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",
+            "name": "organizace_adresa_nazev_casti_obce",
+            "title": "organizace_adresa_nazev_casti_obce"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",
+            "name": "organizace_adresa_nazev_ulice",
+            "title": "organizace_adresa_nazev_ulice"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",
+            "name": "organizace_adresa_typ_so",
+            "title": "organizace_adresa_typ_so"
+        },
+        {
+            "type": "integer",
+            "description": "Provozovatel úřední desky. Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",
+            "name": "organizace_adresa_cislo_domovni",
+            "title": "organizace_adresa_cislo_domovni"
+        },
+        {
+            "type": "integer",
+            "description": "Provozovatel úřední desky. Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",
+            "name": "organizace_adresa_cislo_orientacni",
+            "title": "organizace_adresa_cislo_orientacni"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",
+            "name": "organizace_adresa_znak_cisla_orientacniho",
+            "title": "organizace_adresa_znak_cisla_orientacniho"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Poštovní směrovací číslo.",
+            "name": "organizace_adresa_psc",
+            "title": "organizace_adresa_psc"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Okres - LAU 1 kód.",
+            "name": "organizace_adresa_kod_okresu",
+            "title": "organizace_adresa_kod_okresu"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název okresu.",
+            "name": "organizace_adresa_nazev_okresu",
+            "title": "organizace_adresa_nazev_okresu"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Kraj - NUTS 3 kód.",
+            "name": "organizace_adresa_kod_kraje",
+            "title": "organizace_adresa_kod_kraje"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Název kraje.",
+            "name": "organizace_adresa_nazev_kraje",
+            "title": "organizace_adresa_nazev_kraje"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Označení budovy jejím názvem, číslem apod.",
+            "name": "organizace_adresa_budova",
+            "title": "organizace_adresa_budova"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Číslo patra nebo jiné označení patra.",
+            "name": "organizace_adresa_patro",
+            "title": "organizace_adresa_patro"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Číslo místnosti nebo jiné označení místnosti.",
+            "name": "organizace_adresa_mistnost",
+            "title": "organizace_adresa_mistnost"
+        },
+        {
+            "type": "string",
+            "description": "Provozovatel úřední desky. Celá adresa jako jeden řetězec.",
+            "name": "organizace_adresa_text",
+            "title": "organizace_adresa_text"
+        },
+        {
+            "type": "string",
+            "description": " Provozoval úřední desky. URL webové stránky.",
+            "name": "organizace_adresa_url",
+            "title": "organizace_adresa_url"
+        },
+        {
+            "type": "string",
+            "description": "Provozoval úřední desky. Kontaktní email.",
+            "name": "organizace_adresa_email",
+            "title": "organizace_adresa_email"
+        },
+        {
+            "type": "double",
+            "description": "Provozovatel úřední desky. Zeměpisná šířka.",
+            "name": "organizace_zemepisna_sirka",
+            "title": "organizace_zemepisna_sirka"
+        },
+        {
+            "type": "double",
+            "description": "Provozovatel úřední desky. Zeměpisná délka.",
+            "name": "organizace_zemepisna_delka",
+            "title": "organizace_zemepisna_delka"
+        },
+        {
+            "type": "string",
+            "description": "Provozoval úřední desky. Souřadnicový systém.",
+            "name": "organizace_souradnicovy_system",
+            "title": "organizace_souradnicovy_system"
+        },
+        {
+            "type": "integer",
+            "description": "Původní autor oznámení. ID v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "autor_adresa_kod_ruian",
+            "title": "autor_adresa_kod_ruian"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "autor_adresa_typ_ruian",
+            "title": "autor_adresa_typ_ruian"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "autor_adresa_kod_adm",
+            "title": "autor_adresa_kod_adm"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Obec - LAU 2 kód.",
+            "name": "autor_adresa_kod_obce",
+            "title": "autor_adresa_kod_obce"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název obce.",
+            "name": "autor_adresa_nazev_obce",
+            "title": "autor_adresa_nazev_obce"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",
+            "name": "autor_adresa_nazev_momc",
+            "title": "autor_adresa_nazev_momc"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",
+            "name": "autor_adresa_nazev_mop",
+            "title": "autor_adresa_nazev_mop"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Kód části obce vedené v RÚIAN.",
+            "name": "autor_adresa_kod_casti_obce",
+            "title": "autor_adresa_kod_casti_obce"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",
+            "name": "autor_adresa_nazev_casti_obce",
+            "title": "autor_adresa_nazev_casti_obce"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",
+            "name": "autor_adresa_nazev_ulice",
+            "title": "autor_adresa_nazev_ulice"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",
+            "name": "autor_adresa_typ_so",
+            "title": "autor_adresa_typ_so"
+        },
+        {
+            "type": "integer",
+            "description": "Původní autor oznámení. Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",
+            "name": "autor_adresa_cislo_domovni",
+            "title": "autor_adresa_cislo_domovni"
+        },
+        {
+            "type": "integer",
+            "description": "Původní autor oznámení. Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",
+            "name": "autor_adresa_cislo_orientacni",
+            "title": "autor_adresa_cislo_orientacni"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",
+            "name": "autor_adresa_znak_cisla_orientacniho",
+            "title": "autor_adresa_znak_cisla_orientacniho"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Poštovní směrovací číslo.",
+            "name": "autor_adresa_psc",
+            "title": "autor_adresa_psc"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Okres - LAU 1 kód.",
+            "name": "autor_adresa_kod_okresu",
+            "title": "autor_adresa_kod_okresu"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název okresu.",
+            "name": "autor_adresa_nazev_okresu",
+            "title": "autor_adresa_nazev_okresu"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Kraj - NUTS 3 kód.",
+            "name": "autor_adresa_kod_kraje",
+            "title": "autor_adresa_kod_kraje"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Název kraje.",
+            "name": "autor_adresa_nazev_kraje",
+            "title": "autor_adresa_nazev_kraje"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Označení budovy jejím názvem, číslem apod.",
+            "name": "autor_adresa_budova",
+            "title": "autor_adresa_budova"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Číslo patra nebo jiné označení patra.",
+            "name": "autor_adresa_patro",
+            "title": "autor_adresa_patro"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Číslo místnosti nebo jiné označení místnosti.",
+            "name": "autor_adresa_mistnost",
+            "title": "autor_adresa_mistnost"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Celá adresa jako jeden řetězec.",
+            "name": "autor_adresa_text",
+            "title": "autor_adresa_text"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. URL webové stránky.",
+            "name": "autor_adresa_url",
+            "title": "autor_adresa_url"
+        },
+        {
+            "type": "string",
+            "description": "Původní autor oznámení. Kontaktní email.",
+            "name": "autor_adresa_email",
+            "title": "autor_adresa_email"
+        },
+        {
+            "type": "double",
+            "description": "Původní autor oznámení. Zeměpisná šířka.",
+            "name": "autor_zemepisna_sirka",
+            "title": "autor_zemepisna_sirka"
+        },
+        {
+            "type": "double",
+            "description": "Původní autor oznámení. Zeměpisná délka.",
+            "name": "autor_zemepisna_delka",
+            "title": "autor_zemepisna_delka"
+        },
+        {
+            "type": "string",
+            "description": "Provozoval úřední desky. Souřadnicový systém.",
+            "name": "autor_souradnicovy_system",
+            "title": "autor_souradnicovy_system"
+        },
+        {
+            "type": "integer",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. ID v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "subjekt_adresa_kod_ruian",
+            "title": "subjekt_adresa_kod_ruian"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "subjekt_adresa_typ_ruian",
+            "title": "subjekt_adresa_typ_ruian"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",
+            "name": "subjekt_adresa_kod_adm",
+            "title": "subjekt_adresa_kod_adm"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Obec - LAU 2 kód.",
+            "name": "subjekt_adresa_kod_obce",
+            "title": "subjekt_adresa_kod_obce"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název obce.",
+            "name": "subjekt_adresa_nazev_obce",
+            "title": "subjekt_adresa_nazev_obce"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",
+            "name": "subjekt_adresa_nazev_momc",
+            "title": "subjekt_adresa_nazev_momc"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",
+            "name": "subjekt_adresa_nazev_mop",
+            "title": "subjekt_adresa_nazev_mop"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Kód části obce vedené v RÚIAN.",
+            "name": "subjekt_adresa_kod_casti_obce",
+            "title": "subjekt_adresa_kod_casti_obce"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",
+            "name": "subjekt_adresa_nazev_casti_obce",
+            "title": "subjekt_adresa_nazev_casti_obce"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",
+            "name": "subjekt_adresa_nazev_ulice",
+            "title": "subjekt_adresa_nazev_ulice"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",
+            "name": "subjekt_adresa_typ_so",
+            "title": "subjekt_adresa_typ_so"
+        },
+        {
+            "type": "integer",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",
+            "name": "subjekt_adresa_cislo_domovni",
+            "title": "subjekt_adresa_cislo_domovni"
+        },
+        {
+            "type": "integer",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",
+            "name": "subjekt_adresa_cislo_orientacni",
+            "title": "subjekt_adresa_cislo_orientacni"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",
+            "name": "subjekt_adresa_znak_cisla_orientacniho",
+            "title": "subjekt_adresa_znak_cisla_orientacniho"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Poštovní směrovací číslo.",
+            "name": "subjekt_adresa_psc",
+            "title": "subjekt_adresa_psc"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Okres - LAU 1 kód.",
+            "name": "subjekt_adresa_kod_okresu",
+            "title": "subjekt_adresa_kod_okresu"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název okresu.",
+            "name": "subjekt_adresa_nazev_okresu",
+            "title": "subjekt_adresa_nazev_okresu"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Kraj - NUTS 3 kód.",
+            "name": "subjekt_adresa_kod_kraje",
+            "title": "subjekt_adresa_kod_kraje"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Název kraje.",
+            "name": "subjekt_adresa_nazev_kraje",
+            "title": "subjekt_adresa_nazev_kraje"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Označení budovy jejím názvem, číslem apod.",
+            "name": "subjekt_adresa_budova",
+            "title": "subjekt_adresa_budova"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Číslo patra nebo jiné označení patra.",
+            "name": "subjekt_adresa_patro",
+            "title": "subjekt_adresa_patro"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Číslo místnosti nebo jiné označení místnosti.",
+            "name": "subjekt_adresa_mistnost",
+            "title": "subjekt_adresa_mistnost"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Celá adresa jako jeden řetězec.",
+            "name": "subjekt_adresa_text",
+            "title": "subjekt_adresa_text"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. URL webové stránky.",
+            "name": "subjekt_adresa_url",
+            "title": "subjekt_adresa_url"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Kontaktní email.",
+            "name": "subjekt_adresa_email",
+            "title": "subjekt_adresa_email"
+        },
+        {
+            "type": "double",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná šířka.",
+            "name": "subjekt_zemepisna_sirka",
+            "title": "subjekt_zemepisna_sirka"
+        },
+        {
+            "type": "double",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná délka.",
+            "name": "subjekt_zemepisna_delka",
+            "title": "subjekt_zemepisna_delka"
+        },
+        {
+            "type": "string",
+            "description": "Osoby, organizace a místa, kterých se oznámení týká. Souřadnicový systém.",
+            "name": "subjekt_souradnicovy_system",
+            "title": "subjekt_souradnicovy_system"
+        }
+    ]
+}

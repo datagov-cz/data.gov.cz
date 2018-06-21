@@ -1,0 +1,15 @@
+Povinný atribut, Název atributu, Hodnota atributu
+"Ano","Název datové sady","Úřední deska"
+"Ano","Popis datové sady","Seznam všech oznámení na úřední desce (informace o platnosti, obsahu a odkazy na konkrétní dokumenty)."
+"Ano","Poskytovatel dat","NA"
+"Ano","Periodicita aktualizace","denně"
+"Ano","Související geografické území - Typ dle RÚIAN","NA"
+"Ano","Související geografické území - Kód dle RÚIAN","NA"
+"Ne","Klíčová slova","úřední deska; dokument;oznámení;informace"
+"Ne","Jméno kurátora","NA"
+"Ne","Email kurátora","NA"
+"Ne","Odkaz na dokumentaci datové sady","NA"
+"Ne","Klasifikace dle EUROVOC","492;6110"
+"Ne","Dotčené časové období od","NA"
+"Ne","Dotčené časové období do","NA"
+

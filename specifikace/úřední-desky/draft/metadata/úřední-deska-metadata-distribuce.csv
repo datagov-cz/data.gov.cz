@@ -1,0 +1,10 @@
+Povinný atribut, Název atributu, Hodnota atributu
+"Ano","Odkaz na datový zdroj","NA"
+"Ano","Formát dat (MIME type)","text/csv"
+"Ano","Odkaz na podmínky použití","NA"
+"Ne","Odkaz na strojem čitelné schéma","NA"
+"Ne","Typ souboru (MIME typ) souboru obsahujícího schéma","text/csv"
+"Ne","Název datového zdroje","NA"
+"Ne","Platnost od","NA"
+"Ne","Platnost do","NA"
+

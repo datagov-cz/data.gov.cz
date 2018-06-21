@@ -1,0 +1,458 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "name": "Úřední deska",
+    "description": "Seznam všech oznámení na úřední desce (informace o platnosti, obsahu a odkazy na konkrétní dokumenty).",
+    "definitions": {
+        "adresa": {
+            "type": "object",
+            "title": "Adresa",
+            "description": "Adresa organizace, osoby, místa",
+            "properties": {
+                "typ_ruian": {
+                    "type": "string",
+                    "title": "Typ prvku",
+                    "description": "Typ prvku v Registru územních identifikátorů, adres a nemovitostí.",
+                    "examples": [
+                        696285
+                    ]
+                },
+                "kod_ruian": {
+                    "type": "integer",
+                    "title": "Kód prvku",
+                    "description": "ID v Registru územních identifikátorů, adres a nemovitostí.",
+                    "examples": [
+                        696285
+                    ]
+                },
+                "kod_adm": {
+                    "type": "integer",
+                    "title": "Kód adresního místa",
+                    "description": "ID adresního místa v Registru územních identifikátorů, adres a nemovitostí.",
+                    "examples": [
+                        696285
+                    ]
+                },
+                "kod_obce": {
+                    "type": "string",
+                    "title": "Kód obce",
+                    "description": "Obec - LAU 2 kód.",
+                    "examples": [
+                        " CZ0325 559351"
+                    ]
+                },
+                "nazev_obce": {
+                    "type": "string",
+                    "title": "Název obce",
+                    "description": "Název obce.",
+                    "examples": [
+                        "Horní Datová"
+                    ]
+                },
+                "momc": {
+                    "type": "string",
+                    "title": "název městského obvodu",
+                    "description": "Název městského obvodu/městské části, který je vyplněn pouze v případě členěných statutárních měst.",
+                    "examples": [
+                        "Horní Datová 1 - Drahotín"
+                    ]
+                },
+                "mop": {
+                    "type": "string",
+                    "title": "název městského obvodu Prahy",
+                    "description": "Název městského obvodu Prahy, který je vyplněn pouze v případě Hlavního města Prahy.",
+                    "examples": [
+                        "Praha 8"
+                    ]
+                },
+                "kod_casti_obce": {
+                    "type": "string",
+                    "title": "Kód části obce",
+                    "description": "Kód části obce vedené v RÚIAN.",
+                    "examples": [
+                        "121533"
+                    ]
+                },
+                "nazev_casti_obce": {
+                    "type": "string",
+                    "title": "Název části obce",
+                    "description": "Název části obce, v rámci nadřazené obce, ve které je číslován stavební objekt.",
+                    "examples": [
+                        "Žižkov"
+                    ]
+                },
+                "nazev_ulice": {
+                    "type": "string",
+                    "title": "Název ulice",
+                    "description": "Název ulice, která je navázána na adresní místo. Může být vyplněn pouze u obcí, které mají zavedenu uliční síť.",
+                    "examples": [
+                        "Hlavní"
+                    ]
+                },
+                "typ_so": {
+                    "type": "string",
+                    "title": "Typ stavebního objektu",
+                    "description": "Typ stavebního objektu, může nabývat hodnot: č.p.- číslo popisné stavebního objektu č.ev.- číslo evidenční stavebního objektu.",
+                    "enum": [
+                        "č.p.",
+                        "č.ev."
+                    ],
+                    "examples": [
+                        "č.ev."
+                    ]
+                },
+                "cislo_domovni": {
+                    "type": "integer",
+                    "title": "Číslo domovní",
+                    "description": "Číslo popisné nebo číslo evidenční, podle rozlišeného typu stavebního objektu.",
+                    "examples": [
+                        12
+                    ]
+                },
+                "cislo_orientacni": {
+                    "type": "integer",
+                    "title": "Číslo orientační",
+                    "description": "Číslo orientační, slouží k orientaci v rámci nadřazené ulice.",
+                    "examples": [
+                        1
+                    ]
+                },
+                "znak_cisla_orientacniho": {
+                    "type": "string",
+                    "title": "Znak čísla orientačního",
+                    "description": "Znak čísla orientačního, uveden v případě, že je znak k orientačnímu číslu přidělen.",
+                    "examples": [
+                        "a"
+                    ]
+                },
+                "psc": {
+                    "type": "string",
+                    "title": "PSČ",
+                    "description": "Poštovní směrovací číslo.",
+                    "examples": [
+                        "33101"
+                    ]
+                },
+                "kod_okresu": {
+                    "type": "string",
+                    "title": "Kód okresu",
+                    "description": "Okres - LAU 1 kód.",
+                    "examples": [
+                        "CZ032"
+                    ]
+                },
+                "nazev_okresu": {
+                    "type": "string",
+                    "title": "Název okresu",
+                    "description": "Název okresu.",
+                    "examples": [
+                        "Plzeň-sever"
+                    ]
+                },
+                "kod_kraje": {
+                    "type": "string",
+                    "title": "Kód kraje",
+                    "description": "Kraj - NUTS 3 kód.",
+                    "examples": [
+                        "CZ032"
+                    ]
+                },
+                "nazev_kraje": {
+                    "type": "string",
+                    "title": "Název kraje",
+                    "description": "Název kraje.",
+                    "examples": [
+                        "Plzeňský kraj"
+                    ]
+                },
+                "budova": {
+                    "type": "string",
+                    "title": "Budova",
+                    "description": "Označení budovy jejím názvem, číslem apod.",
+                    "examples": [
+                        "HD Gate"
+                    ]
+                },
+                "patro": {
+                    "type": "string",
+                    "title": "Patro",
+                    "description": "Číslo patra nebo jiné označení patra.",
+                    "examples": [
+                        "4.patro"
+                    ]
+                },
+                "mistnost": {
+                    "type": "string",
+                    "title": "Místnost",
+                    "description": "Číslo místnosti nebo jiné označení místnosti.",
+                    "examples": [
+                        "Místnost 4001"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "title": "Text adresy",
+                    "description": "Celá adresa jako jeden řetězec.",
+                    "examples": [
+                        "Plzeňská 285, 33101, Plasy"
+                    ]
+                },
+                "url": {
+                    "type": "string",
+                    "title": "URL webové stránky",
+                    "description": "URL webové stránky",
+                    "examples": [
+                        "www.example.com",
+                        "https://example.org"
+                    ]
+                },
+                "email": {
+                    "type": "string",
+                    "title": "Email",
+                    "description": "Kontaktní email",
+                    "examples": [
+                        "info@example.com"
+                    ]
+                }
+            }
+        }
+    },
+    "items": {
+        "type": "object",
+        "name": "Oznámení",
+        "description": "Oznámení na úřední desce",
+        "description": "Jedno Oznámení na úřední desce",
+        "properties": {
+            "id": {
+                "type": "integer",
+                "title": "ID",
+                "description": "Identifikátor oznámení na úřední desce, např. pořadové číslo.",
+                "examples": [
+                    13
+                ]
+            },
+            "identifikator": {
+                "type": "string",
+                "title": "Identifikátor",
+                "description": "Jednoznačný identifikátor dokumentu tvořícího oznámení, např. vlastní číselná řada.",
+                "examples": [
+                    "P2018-13"
+                ]
+            },
+            "organizace": {
+                "type": "object",
+                "title": "Provozovatel",
+                "description": "Provozovatel úřední desky.",
+                "properties": {
+                    "nazev": {
+                        "type": "string",
+                        "title": "Název",
+                        "description": "Provozovatel úřední desky. Název.",
+                        "examples": [
+                            "Město Horní Datová"
+                        ]
+                    },
+                    "ico": {
+                        "type": "string",
+                        "title": "IČO",
+                        "description": "Provozovatel úřední desky. IČO.",
+                        "examples": [
+                            "00258245"
+                        ]
+                    },
+                    "adresa":  { "$ref": "#/definitions/adresa" }
+                }
+            },
+            "autor": {
+                "type": "object",
+                "title": "Autor oznámení",
+                "description": "Původní autor oznámení.",
+                "properties": {
+                    "nazev": {
+                        "type": "string",
+                        "title": "Název",
+                        "description": "Původní autor oznámení. Název.",
+                        "examples": [
+                            "Obec Dolní Datová"
+                        ]
+                    },
+                    "ico": {
+                        "type": "string",
+                        "title": "IČO",
+                        "description": "Původní autor oznámení. IČO.",
+                        "examples": [
+                            "00258245"
+                        ]
+                    },
+                    "adresa":  { "$ref": "#/definitions/adresa" }
+                }
+            },
+            "url": {
+                "type": "string",
+                "format": "uri",
+                "title": "URL oznámení",
+                "description": "URL oznámení (s lidsky čitelnou zprávou)",
+                "examples": [
+                    "https://example.com/uredni_deska/2018-1"
+                ]
+            },
+            "nazev": {
+                "type": "string",
+                "title": "Název",
+                "description": "Název oznámení",
+                "examples": [
+                    "Dotační program Hasiči 2018"
+                ]
+            },
+            "anotace": {
+                "type": "string",
+                "title": "Anotace",
+                "description": "Krátké shrnutí oznámení, anotace, abstrakt.",
+                "examples": [
+                    "Program na podporu dobrovolných hasičů v roce 2018"
+                ]
+            },
+            "zverejneno": {
+                "type": "string",
+                "title": "Zveřejněno od",
+                "description": "Datum, příp. i čas, zveřejnění oznámení na úřední desce.",
+                "examples": [
+                    "2018-01-03T11:12:13+01:00", "2018-02-03"
+                ]
+            },
+            "sejmuto": {
+                "type": "string",
+                "title": "Sejmuto, zveřejněno do",
+                "description": "Datum, příp. i čas, do kdy je oznámení zveřejněno na úřední desce.",
+                "examples": [
+                    "2018-01-03T11:12:13+01:00", "2018-02-03"
+                ]
+            },
+            "schvaleno": {
+                "type": "string",
+                "title": "Schváleno",
+                "description": "Datum vydání/schválení oznámení.",
+                "examples": [
+                    "2017-12-31"
+                ]
+            },
+            "znacka": {
+                "type": "string",
+                "title": "Spisová značka",
+                "description": "Spisová značka oznámení.",
+                "examples": [
+                    "OV/13/2018-Tisj"
+                ]
+            },
+            "cislo_jednaci": {
+                "type": "string",
+                "title": "Číslo jednací",
+                "description": "Číslo jednací oznámení.",
+                "examples": [
+                    "OV/666/18 Tisj"
+                ]
+            },
+            "revize": {
+                "type": "string",
+                "title": "Revize",
+                "description": "Označení revize/verze oznámení.",
+                "examples": [
+                    "20180101"
+                ]
+            },
+            "agenda": {
+                "type": "array",
+                "title": "Agenda",
+                "description": "Agendy, kategorie, správní činnosti, pod které spadá oznámení.",
+                "items": {
+                    "type": "string",
+                    "title": "Agenda",
+                    "description": "Agenda, kategorie, správní činnost, pod které spadá oznámení.",
+                    "examples": [
+                        "dotace",
+                        "přenesená působnost"
+                    ]
+                }
+            },
+            "dokument": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "title": "Další dokumenty",
+                    "description": "Další dokumenty k oznámení. Přílohy.",
+                    "properties": {
+                        "nazev": {
+                            "type": "string",
+                            "title": "Název",
+                            "description": "Další dokument/y. Název dokumentu.",
+                            "examples": [
+                                "Příloha 1", "Příloha 2"
+                            ]
+                        },
+                        "url": {
+                            "type": "string",
+                            "format": "uri",
+                            "title": "URL",
+                            "description": "Další dokument/y. URL dokumentu.",
+                            "examples": [
+                                "https://example.com/uredni_deska/2018-1/priloha1.odt", "https://example.com/uredni_deska/2018-1/priloha2.jpg"
+                            ]
+                        }
+                    }
+                }
+            },
+            "subjekt": {
+                "type": "array",
+                "title": "Subjekty oznámení",
+                "description": "Osoby, organizace a místa, kterých se oznámení týká.",
+                "items": {
+                    "type": "object",
+                    "title": "Subjekt oznámení",
+                    "description": "Osoby, organizace nebo místa, kterého se oznámení týká.",
+                    "properties": {
+                        "nazev": {
+                            "type": "string",
+                            "title": "Název",
+                            "description": "Název subjektu, kterého se oznámení týká.",
+                            "examples": [
+                                "Sbor dobrovolných hasičů Dolní Datová"
+                            ]
+                        },
+                        "ico": {
+                            "type": "string",
+                            "title": "IČO",
+                            "description": "IČO subjektu, kterého se oznámení týká.",
+                            "examples": [
+                                "00258267"
+                            ]
+                        },
+                        "adresa":  { "$ref": "#/definitions/adresa" },
+                        "zemepisna_sirka": {
+                            "type": "number",
+                            "title": "Zeměpisná šířka",
+                            "description": "Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná šířka",
+                            "examples": [
+                                52.5118998
+                            ]
+                        },
+                        "zemepisna_delka": {
+                            "type": "number",
+                            "title": "Zeměpisná délka",
+                            "description": "Osoby, organizace a místa, kterých se oznámení týká. Zeměpisná délka",
+                            "examples": [
+                                13.4247552
+                            ]
+                        },
+                        "souradnicovy_system": {
+                            "type": "string",
+                            "title": "Souřadnicový systém",
+                            "description": "Souřadnicový systém podle registru EPSG označující jednotlivé systémy, např. 4326 (pro klasický WGS84) nebo 5514 (pro česko-slovenský S-JTSK).",
+                            "examples": [
+                                "4326"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

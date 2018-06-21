@@ -21,19 +21,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="{{ "/images/favicons/favicon-96x96.png" | relative_url }}">
 		<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicons/favicon-16x16.png" | relative_url }}">
 		<link rel="manifest" href="{{ "/images/favicons/manifest.json" | relative_url }}">	
-		<style type="text/css">
-			body {
-				background-image:url("/images/spec/{{ page.status }}.svg") !important;
-			}
-		</style>
 		<script class="remove" src="{{ "/js/respec-odcz.js" | relative_url}}"></script>
-		<script class="remove">
-			var respecConfig = {
-				specStatus: "BASE",
-				inlineCSS: "true",
-				lint: "false"
-			  };		
-		</script>
 	</head>
 	<body>
 		{{ content }}

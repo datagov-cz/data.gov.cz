@@ -12,6 +12,7 @@ plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 langs:
   en:

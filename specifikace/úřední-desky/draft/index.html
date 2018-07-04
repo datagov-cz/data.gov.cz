@@ -15,14 +15,14 @@ status: ED
 		latestVersion: "https://data.gov.cz/specifikace/úřední-desky/",
 		editors: [{
           name: "Michal Škop",
-          url: "mailto:skop@kohovolit.eu",
+          url: "https://skop.eu/",
 		  company:    "Ministerstvo vnitra",
 		  companyURL: "http://www.mvcr.cz"
         },{
           name: "Jakub Klímek",
           url: "https://jakubklimek.com/#me",
 		  company:    "Ministerstvo vnitra",
-		  companyURL: "http://www.mvcr.cz"		  
+		  companyURL: "http://www.mvcr.cz"
         }],
 		inlineCSS: "true",
 		github: "https://github.com/opendata-mvcr/datove-standardy/",
@@ -34,7 +34,7 @@ status: ED
 				href: "https://data.gov.cz"
 			}]
 		}],
-	  };		
+	  };
 </script>
 
 <section id="abstract">
@@ -43,9 +43,11 @@ status: ED
 <section id="úvod" class="informative">
 
 	<h2>Úvod</h2>
-
 	<p>
-		Seznam všech oznámení na úřední desce (informace o platnosti, obsahu a odkazy na konkrétní dokumenty).
+		Tento dokument popisuje datový standard, jak zveřejňovat informace o oznámeních z úředních desek jako otevřená data. Ukazuje, jak reprezentovat jednotlivé informace o platnosti oznámení, obsahu, odkazy na konkrétní dokumenty, apod.
+	</p>
+	<p>
+		Data mohou být v různých formátech - příklady jsou zde v JSON, XML a CSV.
 	</p>
 
 </section>
@@ -67,10 +69,10 @@ status: ED
 	</figure>
 </section>
 
-<section id="specifikace">	
+<section id="specifikace">
 
 	<h2>Specifikace</h2>
-	
+
 	<section id="třída-oznámení">
 		<h3>Oznámení</h3>
 
@@ -99,7 +101,7 @@ status: ED
 				</tbody>
 			</table>
 		</section>
-		
+
 		<section id="vlastnost-oznámení-identifikátor">
 			<h4>identifikátor</h4>
 			<table class="definition">
@@ -124,8 +126,8 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
-	
+		</section>
+
 		<section id="vlastnost-oznámení-url">
 			<h4>url</h4>
 			<table class="definition">
@@ -150,7 +152,7 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-název">
 			<h4>název</h4>
@@ -176,7 +178,7 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-anotace">
 			<h4>anotace</h4>
@@ -202,15 +204,15 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-zverejneno">
 			<h4>zveřejněno</h4>
-			
+
 			<p class="warning">
 				Datum nebo datum a čas. Ne obojí! Pak správný datový typ.
 			</p>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -233,15 +235,15 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-sejmuto">
 			<h4>sejmuto</h4>
-			
+
 			<p class="warning">
 				Datum nebo datum a čas. Ne obojí! Pak správný datový typ.
 			</p>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -264,15 +266,15 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-schvaleno">
 			<h4>schváleno</h4>
-			
+
 			<p class="warning">
 				Konzistence! Proč tady jen datum a ne čas? Přidat a pak správný datový typ.
 			</p>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -295,11 +297,11 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-znacka">
 			<h4>značka</h4>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -322,11 +324,11 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-číslo-jednací">
 			<h4>číslo jednací</h4>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -349,11 +351,11 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-revize">
 			<h4>revize</h4>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -376,15 +378,15 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-oznámení-agenda">
 			<h4>agenda</h4>
-			
+
 			<p class="warning">
 				K mapování do CSV zmínit že v CSV lze jen jednu agendu, aby z toho nedělali seznam uvnitř buňky.
 			</p>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -407,8 +409,8 @@ status: ED
 					</tr>
 				</tbody>
 			</table>
-		</section>	
-	
+		</section>
+
 	</section>
 
 	<section id="třída-organizace">
@@ -436,9 +438,9 @@ status: ED
 						<td>Příklad:</td>
 						<td>00258245</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-organizace-nazev">
 			<h4>název</h4>
@@ -462,12 +464,12 @@ status: ED
 						<td>Příklad:</td>
 						<td>Město Horní Datová</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
 		</section>
 
 	</section>
-	
+
 	<section id="třída-autor">
 		<h3>Autor</h3>
 
@@ -493,9 +495,9 @@ status: ED
 						<td>Příklad:</td>
 						<td>00258256</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
-		</section>	
+		</section>
 
 		<section id="vlastnost-autor-nazev">
 			<h4>název</h4>
@@ -519,17 +521,17 @@ status: ED
 						<td>Příklad:</td>
 						<td>Obec Dolní Datová</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
 		</section>
-		
+
 	</section>
-	
+
 	<section id="třída-dokument">
 		<h3>Dokument</h3>
-		
+
 		<p>Další dokument.<p>
-		
+
 		<section id="vlastnost-dokument-nazev">
 			<h4>název</h4>
 			<table class="definition">
@@ -552,10 +554,10 @@ status: ED
 						<td>Příklad:</td>
 						<td>Příloha 1</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
 		</section>
-		
+
 		<section id="vlastnost-dokument-url">
 			<h4>url</h4>
 			<table class="definition">
@@ -578,19 +580,19 @@ status: ED
 						<td>Příklad:</td>
 						<td>https://example.com/uredni-deska/2018-1/priloha1.odt</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
-		</section>	
+		</section>
 	</section>
-		
+
 	<section id="třída-subjekt">
 		<h3>Subjekt</h3>
-		
+
 		<p>Subjekt, kterého se oznámení týká.<p>
-		
+
 		<section id="vlastnost-subjekt-ico">
 			<h4>ičo</h4>
-			
+
 			<table class="definition">
 				<thead>
 					<tr>
@@ -611,10 +613,10 @@ status: ED
 						<td>Příklad:</td>
 						<td>00258267</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
-			
-		</section>	
+
+		</section>
 
 		<section id="vlastnost-subjekt-nazev">
 			<h4>název</h4>
@@ -638,13 +640,13 @@ status: ED
 						<td>Příklad:</td>
 						<td>Sbor dobrovolných hasičů Dolní Datová</td>
 					</tr>
-				</tbody>				
+				</tbody>
 			</table>
-			
+
 		</section>
-				
+
 	</section>
-	
+
 </section>
 
 <section id="reprezentace">
@@ -661,7 +663,7 @@ status: ED
 		<p>
 			<a href="schémata/uredni-deska-20180615.json">Schéma pro formát JSON (JSON Schema)</a>
 		</p>
-		
+
 	</section>
 
 	<section id="reprezentace-xml">
@@ -670,33 +672,33 @@ status: ED
 		<p>
 			<a href="schémata/uredni-deska-20180615.xsd">Schéma pro formát XML (XSD, XML Schema)</a>
 		</p>
-		
+
 	</section>
 
 	<section id="reprezentace-csv">
 		<h3>CSV</h3>
-		
+
 		<p>
-			Je také možné použít zjednodušený zápis v CSV. 
-			Má ale jistá omezení. 
-			Je možné použít max. 1 prvek, který v obecném formátu může mít více položek (např. další soubory/přílohy oznámení, agendy). 
-			Také nelze používat vlastní atributy nad rámec standardu. 
+			Je také možné použít zjednodušený zápis v CSV.
+			Má ale jistá omezení.
+			Je možné použít max. 1 prvek, který v obecném formátu může mít více položek (např. další soubory/přílohy oznámení, agendy).
+			Také nelze používat vlastní atributy nad rámec standardu.
 		</p>
-		
+
 		<p class="warning">
 			Proč by nešlo použít vlastní atributy? to lze vždy
 		</p>
-		
+
 		<p>
 			K dispozici je <a href="schémata/csv-schema-20180615.json">Datové schéma dle specifikace CSV on the Web</a>.
 		</p>
-		
+
 		<p class="note">
 			Jména sloupců se tvoří z atributů, zanořování se řeší spojením názvů pomocí "_".
 		</p>
-		
+
 	</section>
-	
+
 </section>
 
 <section id="příklady">
@@ -704,16 +706,16 @@ status: ED
 
 	<section id="příklady-jednoduché-oznámení">
 		<h3>Jednoduché oznámení</h3>
-		
+
 		<p>
-			Všechny atributy schématu jsou nepovinné. 
+			Všechny atributy schématu jsou nepovinné.
 			Nicméně bez některých základních atributů publikace prakticky ztrácí smysl.
 		</p>
-		
+
 		<p>
 			Příklad minimalistického oznámení zveřejněného na úřední desce:
 		</p>
-		
+
 		<pre class="example json">
 [
     {
@@ -732,15 +734,15 @@ status: ED
 
 	<section id="příklady-jednoduché-oznámení-vlastní-atributy">
 		<h3>Jednoduché oznámení s vlastními atributy</h3>
-		
+
 		<p>
 			Do schématu si lze přidávat libovolně další vlastní atributy.
 		</p>
-		
+
 		<p>
 			Příklad přidání vlastních atributů nad rámec standardu:
 		</p>
-		
+
 		<pre class="example json">
 [
     {
@@ -758,19 +760,19 @@ status: ED
     }
 ]</pre>
 	</section>
-	
+
 	<section id="příklady-více-oznámení">
 		<h3>Více oznámení - úřední deska</h3>
-		
+
 		<p>
 			Úřední deska bude nejčastěji obsahovat více oznámení.
 			Ty jsou potom jednotlivými prvky pole.
 		</p>
-		
+
 		<p>
 			Příklad více oznámení:
 		</p>
-		
+
 		<pre class="example json">
 [
     {
@@ -799,18 +801,18 @@ status: ED
     }
 ]</pre>
 	</section>
-	
+
 	<section id="příklady-komplexní-oznámení">
 		<h3>Komplexní oznámení</h3>
-		
+
 		<p>
 			Oznámení může obsahovat velké množství informací, např. o původním autorovi oznámení nebo o místě, kterého se oznámení týká.
 		</p>
-		
+
 		<p>
 			Příklad komplexního oznámení:
 		</p>
-		
+
 		<pre class="example json">
 [
     {
@@ -935,16 +937,16 @@ status: ED
 
 	<section id="zápis-v-xml">
 		<h3>Zápis v XML</h3>
-		
+
 		<p>
 			Obdobně lze oznámení zaznamenat také v XML.
 			Opět je zde možné, jako ukázané výše u JSON, si vybrat jen některé atributy nebo naopak další vlastní přidat.
 		</p>
-		
+
 		<p>
 			Příklad zveřejnění dvou oznámení - jednoduchého a komplexního - v XML:
 		</p>
-		
+
 		<pre class="example xml">
 &lt;?xml version="1.0" encoding="UTF-8" ?&gt;
 &lt;uredni_deska&gt;

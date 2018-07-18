@@ -39,9 +39,7 @@
 		  <li class="nav-item dropdown">
 			  <a data-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-en.png" | relative_url}}" alt="English" style="width: 1.2rem;"></a>
 			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu">
-				<button type="button" tabindex="0" class="dropdown-item">
-					<a href="{{ p.url }}" class="{{ p.lang }}" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}"></a>
-				</button>
+                <a href="{{ p.url }}" class="{{ p.lang }} dropdown-item" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}"></a>
 			</div>
 		  </li>	  
 			{% endif %}

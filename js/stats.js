@@ -5,7 +5,7 @@
 
     function readNumbers() {
         const url = CATALOG_URL + "/api/v1/solr/info";
-        fetch(url).then((response) => {
+        fetch(url).then(function(response) {
             return response.json();
         }).then((body) => {
             const datasetCount = numberToStringAddSpaces(body.data.numberOfDatasets);

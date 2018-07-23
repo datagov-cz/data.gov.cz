@@ -7,7 +7,7 @@
         const url = CATALOG_URL + "/api/v1/solr/info";
         fetch(url).then(function(response) {
             return response.json();
-        }).then((body) => {
+        }).then(function(body) {
             const datasetCount = numberToStringAddSpaces(body.data.numberOfDatasets);
             const publisherCount = numberToStringAddSpaces(body.data.numberOfPublishers);
             const keywordCount = numberToStringAddSpaces(body.data.numberOfKeywords);

@@ -1,0 +1,1076 @@
+---
+layout: spec
+ref: SpecUredniDesky
+lang: cs
+title: Úřední desky
+redirect_from: "/specifikace/úřední-desky/"
+status: ED
+---
+<script class="remove">
+	var respecConfig = {
+		specStatus: "ED",
+		showPreviousVersion: true,
+		prevVersion: "https://opendata.gov.cz/datova-sada:uredni-deska",
+		thisVersion: "https://data.gov.cz/specifikace/úřední-desky/draft/",
+		latestVersion: "https://data.gov.cz/specifikace/úřední-desky/",
+		editors: [{
+          name: "Michal Škop",
+          url: "mailto:skop@kohovolit.eu",
+		  company:    "Ministerstvo vnitra",
+		  companyURL: "http://www.mvcr.cz"
+        },{
+          name: "Jakub Klímek",
+          url: "https://jakubklimek.com/#me",
+		  company:    "Ministerstvo vnitra",
+		  companyURL: "http://www.mvcr.cz"		  
+        }],
+		inlineCSS: "true",
+		github: "https://github.com/opendata-mvcr/datove-standardy/",
+		lint: "false",
+		otherLinks: [{
+			key: "Odkazy",
+			data: [{
+				value: "Portál otevřených dat",
+				href: "https://data.gov.cz"
+			}]
+		}],
+	  };		
+</script>
+
+<section id="abstract">
+</section>
+
+<section id="úvod" class="informative">
+
+	<h2>Úvod</h2>
+
+	<p>
+		Seznam všech oznámení na úřední desce (informace o platnosti, obsahu a odkazy na konkrétní dokumenty).
+	</p>
+
+</section>
+
+<section id="přehled">
+
+	<h2>Přehled</h2>
+
+	<figure><img alt="Diagram minimalistického datového schématu" src="obrázky/gazette_20180615_simple.png">
+		<figcaption>
+			Diagram minimalistického datového schématu.
+		</figcaption>
+	</figure>
+
+	<figure><img alt="Diagram komplexního datového schématu" src="obrázky/gazette_20180615_full.png">
+		<figcaption>
+			Diagram komplexního datového schématu.
+		</figcaption>
+	</figure>
+</section>
+
+<section id="specifikace">	
+
+	<h2>Specifikace</h2>
+	
+	<section id="třída-oznámení">
+		<h3>Oznámení</h3>
+
+		<section id="vlastnost-oznámení-id">
+			<h4>id</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>id</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:celé-císlo">Celé číslo</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Id oznámení na úřední desce</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>1024</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<section id="vlastnost-oznámení-identifikátor">
+			<h4>identifikátor</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>identifikator</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Jednoznačný identifikátor dokumentu tvořícího oznámení, např. vlastní číselná řada.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>P18D00000072</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+	
+		<section id="vlastnost-oznámení-url">
+			<h4>url</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>url</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:url">URL</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>URL oznámení (s lidsky čitelnou zprávou)</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>https://example.com/úřední_deska/2018-1</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-název">
+			<h4>název</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>nazev</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Název oznámení.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>Dotační program Hasiči 2018</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-anotace">
+			<h4>anotace</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>anotace</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Krátké shrnutí oznámení, anotace, abstrakt.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>Program na podporu dobrovolných hasičů v roce 2018</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-zverejneno">
+			<h4>zveřejněno</h4>
+			
+			<p class="warning">
+				Datum nebo datum a čas. Ne obojí! Pak správný datový typ.
+			</p>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>zverejneno</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Datum, příp. i čas, zveřejnění oznámení na úřední desce.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>2018-01-03T11:12:13+01:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-sejmuto">
+			<h4>sejmuto</h4>
+			
+			<p class="warning">
+				Datum nebo datum a čas. Ne obojí! Pak správný datový typ.
+			</p>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>sejmuto</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Datum, příp. i čas, sejmutí oznámení, tj. do kdy je oznámení zveřejněno na úřední desce.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>2018-01-03T11:12:13+01:00</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-schvaleno">
+			<h4>schváleno</h4>
+			
+			<p class="warning">
+				Konzistence! Proč tady jen datum a ne čas? Přidat a pak správný datový typ.
+			</p>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>schvaleno</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:datum">Datum</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Datum vydání/schválení oznámení.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>2017-12-31</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-znacka">
+			<h4>značka</h4>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>znacka</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Spisová značka oznámení.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>OV/13/2018-Tisj</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-číslo-jednací">
+			<h4>číslo jednací</h4>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>cislo_jednaci</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Číslo jednací oznámení.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>OV/666/18 Tisj</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-revize">
+			<h4>revize</h4>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>revize</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Označení revize/verze oznámení.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>20180101</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+
+		<section id="vlastnost-oznámení-agenda">
+			<h4>agenda</h4>
+			
+			<p class="warning">
+				K mapování do CSV zmínit že v CSV lze jen jednu agendu, aby z toho nedělali seznam uvnitř buňky.
+			</p>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>agenda</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Agendy, kategorie, správní činnosti, pod které spadá oznámení.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>dotace</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>	
+	
+	</section>
+
+	<section id="třída-organizace">
+		<h3>Organizace</h3>
+
+		<section id="vlastnost-organizace-ico">
+			<h4>ičo</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>ico</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Provozovatel úřední desky. IČO.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>00258245</td>
+					</tr>
+				</tbody>				
+			</table>
+		</section>	
+
+		<section id="vlastnost-organizace-nazev">
+			<h4>název</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>nazev</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Provozovatel úřední desky. Název.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>Město Horní Datová</td>
+					</tr>
+				</tbody>				
+			</table>
+		</section>
+
+	</section>
+	
+	<section id="třída-autor">
+		<h3>Autor</h3>
+
+		<section id="vlastnost-autor-ico">
+			<h4>ičo</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>ico</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Původní autor oznámení. IČO.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>00258256</td>
+					</tr>
+				</tbody>				
+			</table>
+		</section>	
+
+		<section id="vlastnost-autor-nazev">
+			<h4>název</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>nazev</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Původní autor oznámení. Název.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>Obec Dolní Datová</td>
+					</tr>
+				</tbody>				
+			</table>
+		</section>
+		
+	</section>
+	
+	<section id="třída-dokument">
+		<h3>Dokument</h3>
+		
+		<p>Další dokument.<p>
+		
+		<section id="vlastnost-dokument-nazev">
+			<h4>název</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>nazev</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Název dokumentu.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>Příloha 1</td>
+					</tr>
+				</tbody>				
+			</table>
+		</section>
+		
+		<section id="vlastnost-dokument-url">
+			<h4>url</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>url</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:url">URL</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>URL dokumentu.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>https://example.com/uredni-deska/2018-1/priloha1.odt</td>
+					</tr>
+				</tbody>				
+			</table>
+		</section>	
+	</section>
+		
+	<section id="třída-subjekt">
+		<h3>Subjekt</h3>
+		
+		<p>Subjekt, kterého se oznámení týká.<p>
+		
+		<section id="vlastnost-subjekt-ico">
+			<h4>ičo</h4>
+			
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>ico</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>IČO subjektu, kterého se oznámení týká.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>00258267</td>
+					</tr>
+				</tbody>				
+			</table>
+			
+		</section>	
+
+		<section id="vlastnost-subjekt-nazev">
+			<h4>název</h4>
+			<table class="definition">
+				<thead>
+					<tr>
+						<th>Vlastnost:</th>
+						<th>nazev</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Typ:</td>
+						<td><a href="https://opendata.gov.cz/datovy-typ:řetezec">Řetězec</a></td>
+					</tr>
+					<tr>
+						<td>Popis:</td>
+						<td>Název subjektu, kterého se oznámení týká.</td>
+					</tr>
+					<tr>
+						<td>Příklad:</td>
+						<td>Sbor dobrovolných hasičů Dolní Datová</td>
+					</tr>
+				</tbody>				
+			</table>
+			
+		</section>
+				
+	</section>
+	
+</section>
+
+<section id="reprezentace">
+
+	<h2>Reprezentace v otevřených formátech</h2>
+
+	<p>
+		Soubory s datovými schématy si můžete stáhnout, zahrnout do svých publikačních plánů a upravit dle vlastních potřeb.
+	</p>
+
+	<section id="reprezentace-json">
+		<h3>JSON</h3>
+
+		<p>
+			<a href="schémata/uredni-deska-20180615.json">Schéma pro formát JSON (JSON Schema)</a>
+		</p>
+		
+	</section>
+
+	<section id="reprezentace-xml">
+		<h3>XML</h3>
+
+		<p>
+			<a href="schémata/uredni-deska-20180615.xsd">Schéma pro formát XML (XSD, XML Schema)</a>
+		</p>
+		
+	</section>
+
+	<section id="reprezentace-csv">
+		<h3>CSV</h3>
+		
+		<p>
+			Je také možné použít zjednodušený zápis v CSV. 
+			Má ale jistá omezení. 
+			Je možné použít max. 1 prvek, který v obecném formátu může mít více položek (např. další soubory/přílohy oznámení, agendy). 
+			Také nelze používat vlastní atributy nad rámec standardu. 
+		</p>
+		
+		<p class="warning">
+			Proč by nešlo použít vlastní atributy? to lze vždy
+		</p>
+		
+		<p>
+			K dispozici je <a href="schémata/csv-schema-20180615.json">Datové schéma dle specifikace CSV on the Web</a>.
+		</p>
+		
+		<p class="note">
+			Jména sloupců se tvoří z atributů, zanořování se řeší spojením názvů pomocí "_".
+		</p>
+		
+	</section>
+	
+</section>
+
+<section id="příklady">
+	<h2>Příklady</h2>
+
+	<section id="příklady-jednoduché-oznámení">
+		<h3>Jednoduché oznámení</h3>
+		
+		<p>
+			Všechny atributy schématu jsou nepovinné. 
+			Nicméně bez některých základních atributů publikace prakticky ztrácí smysl.
+		</p>
+		
+		<p>
+			Příklad minimalistického oznámení zveřejněného na úřední desce:
+		</p>
+		
+		<pre class="example json">
+[
+    {
+        "id": 1024,
+        "identifikator": "2018-13",
+        "organizace": {
+            "ico": "00258245"
+        },
+        "url": "https://example.com/uredni_deska/2018-2",
+        "nazev": "Podpora spolkového života ve městě",
+        "zverejneno": "2018-01-20",
+        "sejmuto": "2018-02-20",
+    }
+]</pre>
+	</section>
+
+	<section id="příklady-jednoduché-oznámení-vlastní-atributy">
+		<h3>Jednoduché oznámení s vlastními atributy</h3>
+		
+		<p>
+			Do schématu si lze přidávat libovolně další vlastní atributy.
+		</p>
+		
+		<p>
+			Příklad přidání vlastních atributů nad rámec standardu:
+		</p>
+		
+		<pre class="example json">
+[
+    {
+        "id": 1025,
+        "identifikator": "2018-14",
+        "organizace": {
+            "ico": "00258245"
+        },
+        "url": "https://example.com/uredni_deska/2018-3",
+        "nazev": "Podpora spolkového života ve městě II",
+        "zverejneno": "2018-01-20",
+        "sejmuto": "2018-02-20",
+        "zverejnil": "Mirek Dušín",
+        "odbor": "VD"
+    }
+]</pre>
+	</section>
+	
+	<section id="příklady-více-oznámení">
+		<h3>Více oznámení - úřední deska</h3>
+		
+		<p>
+			Úřední deska bude nejčastěji obsahovat více oznámení.
+			Ty jsou potom jednotlivými prvky pole.
+		</p>
+		
+		<p>
+			Příklad více oznámení:
+		</p>
+		
+		<pre class="example json">
+[
+    {
+        "id": 1024,
+        "identifikator": "2018-13",
+        "organizace": {
+            "ico": "00258245"
+        },
+        "url": "https://example.com/uredni_deska/2018-2",
+        "nazev": "Podpora spolkového života ve městě",
+        "zverejneno": "2018-01-20",
+        "sejmuto": "2018-02-20"
+    },
+    {
+        "id": 1025,
+        "identifikator": "2018-14",
+        "organizace": {
+            "ico": "00258245"
+        },
+        "url": "https://example.com/uredni_deska/2018-3",
+        "nazev": "Podpora spolkového života ve městě II",
+        "zverejneno": "2018-01-20",
+        "sejmuto": "2018-02-20",
+        "zverejnil": "Mirek Dušín",
+        "odbor": "VD"
+    }
+]</pre>
+	</section>
+	
+	<section id="příklady-komplexní-oznámení">
+		<h3>Komplexní oznámení</h3>
+		
+		<p>
+			Oznámení může obsahovat velké množství informací, např. o původním autorovi oznámení nebo o místě, kterého se oznámení týká.
+		</p>
+		
+		<p>
+			Příklad komplexního oznámení:
+		</p>
+		
+		<pre class="example json">
+[
+    {
+        "id": 1024,
+        "identifikator": "P2018-13",
+        "organizace": {
+            "nazev": "Město Horní Datová",
+            "ico": "00258245",
+            "adresa": {
+                "kod_adm": 696285,
+                "kod_obce": " CZ0325 559351",
+                "nazev_obce": "Horní Datová",
+                "momc": "Horní Datová 1 - Drahotín",
+                "kod_casti_obce": "121533",
+                "nazev_casti_obce": "Žižkov",
+                "nazev_ulice": "Hlavní",
+                "typ_so": "č.ev.",
+                "cislo_domovni": 12,
+                "cislo_orientacni": 1,
+                "znak_cisla_orientacniho": "a",
+                "psc": "33101",
+                "kod_okresu": "CZ032",
+                "nazev_okresu": "Plzeň-sever",
+                "kod_kraje": "CZ032",
+                "nazev_kraje": "Plzeňský kraj",
+                "budova": "HD Gate",
+                "mistnost": "Místnost 4001",
+                "url": "https://horni.datova",
+                "email": "info@horni.datova"
+            }
+        },
+        "autor": {
+            "nazev": "Obec Dolní Datová",
+            "ico": "00258245",
+            "adresa": {
+                "kod_adm": 696285,
+                "kod_obce": " CZ0325 559352",
+                "nazev_obce": "Dolní Datová",
+                "kod_casti_obce": "121544",
+                "nazev_ulice": "Polní",
+                "typ_so": "č.p.",
+                "cislo_domovni": 1,
+                "psc": "33101",
+                "kod_okresu": "CZ032",
+                "nazev_okresu": "Plzeň-sever",
+                "kod_kraje": "CZ032",
+                "nazev_kraje": "Plzeňský kraj",
+                "url": "https://dolni.datova",
+                "email": "love@dolni.datova"
+            }
+        },
+        "url": "https://example.com/uredni_deska/2018-1",
+        "nazev": "Dotační program Hasiči 2018",
+        "anotace": "Program na podporu dobrovolných hasičů v roce 2018",
+        "zverejneno": "2018-01-03T11:12:13+01:00",
+        "sejmuto": "2018-02-03",
+        "schvaleno": "2017-12-31",
+        "znacka": "OV/13/2018-Tisj",
+        "cislo_jednaci": "OV/666/18 Tisj",
+        "revize": "20180101",
+        "agenda": [
+            "dotace",
+            "přenesená působnost"
+        ],
+        "dokument": [
+            {
+                "nazev": "Příloha 1",
+                "url": "https://example.com/uredni_deska/2018-1/priloha1.odt"
+            },
+            {
+                "nazev": "Příloha 2",
+                "url": "https://example.com/uredni_deska/2018-1/priloha2.jpg"
+            }
+        ],
+        "subjekt": [
+            {
+                "nazev":"Sbor dobrovolných hasičů Dolní Datová",
+                "ico": "00258267",
+                "adresa": {
+                    "kod_ruian": 694185,
+                    "typ_ruian": "stavební objekt",
+                    "kod_obce": " CZ0325 559352",
+                    "nazev_obce": "Dolní Datová",
+                    "kod_casti_obce": "121544",
+                    "nazev_ulice": "Hasičská",
+                    "typ_so": "č.p.",
+                    "cislo_domovni": 13,
+                    "psc": "33101",
+                    "kod_okresu": "CZ032",
+                    "nazev_okresu": "Plzeň-sever",
+                    "kod_kraje": "CZ032",
+                    "nazev_kraje": "Plzeňský kraj",
+                    "zemepisna_sirka": 52.5118998,
+                    "zemepisna_delka": 13.4247552,
+                    "url": "https://fajni-hasici-dolni.datova",
+                    "email": "hori@fajni-hasici-dolni.datova"
+                }
+            },
+            {
+                "nazev":"Spolek dobrovolných požárníků Dolní Datová",
+                "ico": "00258256",
+                "adresa": {
+                    "kod_obce": " CZ0325 559352",
+                    "nazev_obce": "Dolní Datová",
+                    "kod_casti_obce": "121544",
+                    "nazev_ulice": "Hasičská",
+                    "typ_so": "č.p.",
+                    "cislo_domovni": 666,
+                    "psc": "33101",
+                    "kod_okresu": "CZ032",
+                    "nazev_okresu": "Plzeň-sever",
+                    "kod_kraje": "CZ032",
+                    "nazev_kraje": "Plzeňský kraj",
+                    "url": "https://super-hasici-dolni.datova",
+                    "email": "hori@super-hasici-dolni.datova"
+                }
+            }
+        ]
+    }
+]</pre>
+	</section>
+
+	<section id="zápis-v-xml">
+		<h3>Zápis v XML</h3>
+		
+		<p>
+			Obdobně lze oznámení zaznamenat také v XML.
+			Opět je zde možné, jako ukázané výše u JSON, si vybrat jen některé atributy nebo naopak další vlastní přidat.
+		</p>
+		
+		<p>
+			Příklad zveřejnění dvou oznámení - jednoduchého a komplexního - v XML:
+		</p>
+		
+		<pre class="example xml">
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;uredni_deska&gt;
+    &lt;oznameni&gt;
+        &lt;id&gt;1024&lt;/id&gt;
+        &lt;identifikator&gt;P2018-12&lt;/identifikator&gt;
+        &lt;organizace&gt;
+            &lt;ico&gt;00258245&lt;/ico&gt;
+        &lt;/organizace&gt;
+        &lt;url&gt;https://example.com/uredni_deska/2018-2&lt;/url&gt;
+        &lt;nazev&gt;Podpora spolkového života ve městě&lt;/nazev&gt;
+        &lt;zverejneno&gt;2018-01-20&lt;/zverejneno&gt;
+        &lt;sejmuto&gt;2018-02-20&lt;/sejmuto&gt;
+    &lt;/oznameni&gt;
+    &lt;oznameni&gt;
+    	&lt;id&gt;1025&lt;/id&gt;
+    	&lt;identifikator&gt;P2018-13&lt;/identifikator&gt;
+    	&lt;organizace&gt;
+    		&lt;nazev&gt;Město Horní Datová&lt;/nazev&gt;
+    		&lt;ico&gt;00258245&lt;/ico&gt;
+    		&lt;adresa&gt;
+    			&lt;kod_adm&gt;696285&lt;/kod_adm&gt;
+    			&lt;kod_obce&gt; CZ0325 559351&lt;/kod_obce&gt;
+    			&lt;nazev_obce&gt;Horní Datová&lt;/nazev_obce&gt;
+    			&lt;momc&gt;Horní Datová 1 - Drahotín&lt;/momc&gt;
+    			&lt;kod_casti_obce&gt;121533&lt;/kod_casti_obce&gt;
+    			&lt;nazev_casti_obce&gt;Žižkov&lt;/nazev_casti_obce&gt;
+    			&lt;nazev_ulice&gt;Hlavní&lt;/nazev_ulice&gt;
+    			&lt;typ_so&gt;č.ev.&lt;/typ_so&gt;
+    			&lt;cislo_domovni&gt;12&lt;/cislo_domovni&gt;
+    			&lt;cislo_orientacni&gt;1&lt;/cislo_orientacni&gt;
+    			&lt;znak_cisla_orientacniho&gt;a&lt;/znak_cisla_orientacniho&gt;
+    			&lt;psc&gt;33101&lt;/psc&gt;
+    			&lt;kod_okresu&gt;CZ032&lt;/kod_okresu&gt;
+    			&lt;nazev_okresu&gt;Plzeň-sever&lt;/nazev_okresu&gt;
+    			&lt;kod_kraje&gt;CZ032&lt;/kod_kraje&gt;
+    			&lt;nazev_kraje&gt;Plzeňský kraj&lt;/nazev_kraje&gt;
+    			&lt;budova&gt;HD Gate&lt;/budova&gt;
+    			&lt;mistnost&gt;Místnost 4001&lt;/mistnost&gt;
+    			&lt;url&gt;https://horni.datova&lt;/url&gt;
+    			&lt;email&gt;info@horni.datova&lt;/email&gt;
+    		&lt;/adresa&gt;
+    	&lt;/organizace&gt;
+    	&lt;autor&gt;
+    		&lt;nazev&gt;Obec Dolní Datová&lt;/nazev&gt;
+    		&lt;ico&gt;00258245&lt;/ico&gt;
+    		&lt;adresa&gt;
+    			&lt;kod_adm&gt;696285&lt;/kod_adm&gt;
+    			&lt;kod_obce&gt; CZ0325 559352&lt;/kod_obce&gt;
+    			&lt;nazev_obce&gt;Dolní Datová&lt;/nazev_obce&gt;
+    			&lt;kod_casti_obce&gt;121544&lt;/kod_casti_obce&gt;
+    			&lt;nazev_ulice&gt;Polní&lt;/nazev_ulice&gt;
+    			&lt;typ_so&gt;č.p.&lt;/typ_so&gt;
+    			&lt;cislo_domovni&gt;1&lt;/cislo_domovni&gt;
+    			&lt;psc&gt;33101&lt;/psc&gt;
+    			&lt;kod_okresu&gt;CZ032&lt;/kod_okresu&gt;
+    			&lt;nazev_okresu&gt;Plzeň-sever&lt;/nazev_okresu&gt;
+    			&lt;kod_kraje&gt;CZ032&lt;/kod_kraje&gt;
+    			&lt;nazev_kraje&gt;Plzeňský kraj&lt;/nazev_kraje&gt;
+    			&lt;url&gt;https://dolni.datova&lt;/url&gt;
+    			&lt;email&gt;love@dolni.datova&lt;/email&gt;
+    		&lt;/adresa&gt;
+    	&lt;/autor&gt;
+    	&lt;url&gt;https://example.com/uredni_deska/2018-1&lt;/url&gt;
+    	&lt;nazev&gt;Dotační program Hasiči 2018&lt;/nazev&gt;
+    	&lt;anotace&gt;Program na podporu dobrovolných hasičů v roce 2018&lt;/anotace&gt;
+    	&lt;zverejneno&gt;2018-01-03T11:12:13+01:00&lt;/zverejneno&gt;
+    	&lt;sejmuto&gt;2018-02-03&lt;/sejmuto&gt;
+    	&lt;schvaleno&gt;2017-12-31&lt;/schvaleno&gt;
+    	&lt;znacka&gt;OV/13/2018-Tisj&lt;/znacka&gt;
+    	&lt;cislo_jednaci&gt;OV/666/18 Tisj&lt;/cislo_jednaci&gt;
+    	&lt;revize&gt;20180101&lt;/revize&gt;
+    	&lt;agenda&gt;dotace&lt;/agenda&gt;
+    	&lt;agenda&gt;přenesená působnost&lt;/agenda&gt;
+    	&lt;dokument&gt;
+    		&lt;nazev&gt;Příloha 1&lt;/nazev&gt;
+    		&lt;url&gt;https://example.com/uredni_deska/2018-1/priloha1.odt&lt;/url&gt;
+    	&lt;/dokument&gt;
+    	&lt;dokument&gt;
+    		&lt;nazev&gt;Příloha 2&lt;/nazev&gt;
+    		&lt;url&gt;https://example.com/uredni_deska/2018-1/priloha2.jpg&lt;/url&gt;
+    	&lt;/dokument&gt;
+    	&lt;subjekt&gt;
+    		&lt;nazev&gt;Sbor dobrovolných hasičů Dolní Datová&lt;/nazev&gt;
+    		&lt;ico&gt;00258267&lt;/ico&gt;
+    		&lt;adresa&gt;
+    			&lt;kod_ruian&gt;694185&lt;/kod_ruian&gt;
+    			&lt;typ_ruian&gt;stavební objekt&lt;/typ_ruian&gt;
+    			&lt;kod_obce&gt; CZ0325 559352&lt;/kod_obce&gt;
+    			&lt;nazev_obce&gt;Dolní Datová&lt;/nazev_obce&gt;
+    			&lt;kod_casti_obce&gt;121544&lt;/kod_casti_obce&gt;
+    			&lt;nazev_ulice&gt;Hasičská&lt;/nazev_ulice&gt;
+    			&lt;typ_so&gt;č.p.&lt;/typ_so&gt;
+    			&lt;cislo_domovni&gt;13&lt;/cislo_domovni&gt;
+    			&lt;psc&gt;33101&lt;/psc&gt;
+    			&lt;kod_okresu&gt;CZ032&lt;/kod_okresu&gt;
+    			&lt;nazev_okresu&gt;Plzeň-sever&lt;/nazev_okresu&gt;
+    			&lt;kod_kraje&gt;CZ032&lt;/kod_kraje&gt;
+    			&lt;nazev_kraje&gt;Plzeňský kraj&lt;/nazev_kraje&gt;
+    			&lt;url&gt;https://fajni-hasici-dolni.datova&lt;/url&gt;
+    			&lt;email&gt;hori@fajni-hasici-dolni.datova&lt;/email&gt;
+    		&lt;/adresa&gt;
+            &lt;zemepisna_sirka&gt;52.5118998&lt;/zemepisna_sirka&gt;
+            &lt;zemepisna_delka&gt;13.4247552&lt;/zemepisna_delka&gt;
+    	&lt;/subjekt&gt;
+    	&lt;subjekt&gt;
+    		&lt;nazev&gt;Spolek dobrovolných požárníků Dolní Datová&lt;/nazev&gt;
+    		&lt;ico&gt;00258256&lt;/ico&gt;
+    		&lt;adresa&gt;
+    			&lt;kod_obce&gt; CZ0325 559352&lt;/kod_obce&gt;
+    			&lt;nazev_obce&gt;Dolní Datová&lt;/nazev_obce&gt;
+    			&lt;kod_casti_obce&gt;121544&lt;/kod_casti_obce&gt;
+    			&lt;nazev_ulice&gt;Hasičská&lt;/nazev_ulice&gt;
+    			&lt;typ_so&gt;č.p.&lt;/typ_so&gt;
+    			&lt;cislo_domovni&gt;666&lt;/cislo_domovni&gt;
+    			&lt;psc&gt;33101&lt;/psc&gt;
+    			&lt;kod_okresu&gt;CZ032&lt;/kod_okresu&gt;
+    			&lt;nazev_okresu&gt;Plzeň-sever&lt;/nazev_okresu&gt;
+    			&lt;kod_kraje&gt;CZ032&lt;/kod_kraje&gt;
+    			&lt;nazev_kraje&gt;Plzeňský kraj&lt;/nazev_kraje&gt;
+    			&lt;url&gt;https://super-hasici-dolni.datova&lt;/url&gt;
+    			&lt;email&gt;hori@super-hasici-dolni.datova&lt;/email&gt;
+    		&lt;/adresa&gt;
+    	&lt;/subjekt&gt;
+    &lt;/oznameni&gt;
+&lt;/uredni_deska&gt;</pre>
+	</section>
+
+</section>

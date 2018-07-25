@@ -2,7 +2,7 @@
 layout: post
 icon: whatshot
 title: Čau lidi!
-detail: false
+detail: true
 ref: MalinaZdraví
 lang: cs
 author: jakub_malina

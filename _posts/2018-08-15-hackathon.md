@@ -1,7 +1,7 @@
 ---
 layout: post
 icon: whatshot
-title: Proběhne druhý ročník hackathonu veřejné správy
+title: Proběhne druhý ročník Hackathonu veřejné správy
 detail: true
 ref: Hackathon
 lang: cs

@@ -19,62 +19,106 @@ lang: cs
 
 	<hr/>
 
-	<div class="row">
+	<div class="row" id="začínáme-s-excelem">
 		
-		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>Začínáme s Excelovským souborem</h2>
+		<div class="col-12 col-md-12 col-lg-4 section">
+			<h2>1. Začínáme s Excelovským souborem</h2>
 			<p>
-				bllll
+				Typickým zdrojem otevřených dat je Excelovský soubor.
+				Ten sám o sobě může obsahovat spoustu problémů, kterým se souhrnně říká "<a href="příklady/barevný.xlsx">Barevný Excel</a>".
+				Ty však nesouvisejí s otevřenými daty.
+			</p>
+			<p>
+				Předpokládáme tedy, že máme takzvaný &quot;<a href="příklady/slušný.xlsx">slušný Excel</a>&quot;, tedy 1 list, na kterém je tabulka která není formátovaná, začíná v buňce A1, na prvním řádku má názvy sloupců a obsah splňuje alespoň <a href="https://cs.wikipedia.org/wiki/Normalizace_databáze#První_normální_forma_(1NF)" title="1NF">první normální formu</a>.
+			</p>
+
+		</div>
+		
+		<div class="col-12 col-md-6 col-lg-4 section">
+			<h2>Barevný Excel</h2>
+			<p>
+				Takto by to vypadat nemělo.
+				<img src="obrázky/barevný-excel.png" class="img-fluid" alt="Barevný Excel"/>
+			</p>
+		</div>
+	 
+		<div class="col-12 col-md-6 col-lg-4 section">
+			<h2>Slušný Excel</h2>
+			<p>
+				Takhle je to lepší.
+				<img src="obrázky/slušný-excel.png" class="img-fluid" alt="Barevný Excel"/>
+			</p>
+		</div>
+
+	</div>
+
+	<hr/>
+
+	<div class="row" id="vyrábíme-csv">
+		
+		<div class="col-12 col-md-12 col-lg-4 section">
+			<h2>2. Vyrábíme CSV</h2>
+			<p>
+				Formátem pro otevřená tabulková data je <a href="https://opendata.gov.cz/standardy:csv" title="csv">formát CSV</a>.
+				Tabulku z Excelu tedy musíme do tohoto formátu převést.
+				Přitom je třeba dát pozor na <a href="https://opendata.gov.cz/špatná-praxe:start#nejčastější_chyby_při_použití_formátu_csv" title="Špatná praxe v CSV">typické chyby</a>, které se při tvorbě CSV souborů vyskytují.
 			</p>
 		</div>
 		
 		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>Máme excel</h2>
+			<h2>Špatné CSV</h2>
 			<p>
-				bllll
+				Takto by to vypadat nemělo.
+				Špatný oddělovač, špatné kódování, <a href="příklady/špatné.csv" title="špatné CSV">špatné CSV</a>.
+				<img src="obrázky/špatné-csv.png" class="img-fluid" alt="Špatné CSV"/>
 			</p>
 		</div>
 	 
+		<div class="col-12 col-md-6 col-lg-4 section">
+			<h2>Správné CSV</h2>
+			<p>
+				Takhle je to lepší. <a href="příklady/správné.csv" title="správné CSV">Správné CSV</a>. <a href="http://csvlint.io/" title="CSV Lint">Zvalidujte si ho</a>.
+				<img src="obrázky/správné-csv.png" class="img-fluid" alt="Špatné CSV"/>
+				Další příklady:
+				<ul>
+					<li><a href="https://data.cssz.cz/dump/doba-rizeni-o-namitkach.csv" title="ČSSZ">Příklad 1</a></li>
+					<li><a href="http://www.mdcr.cz/MDCR/media/otevrenadata/faktury/2016/faktury_cendis_2016.csv" title="CENDIS">Příklad 2</a></li>
+				</ul>
+			</p>
+		</div>
+
 	</div>
 
 	<hr/>
 
 	<div class="row">
 		
-		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>CSV</h2>
+		<div class="col-12 col-md-12 col-lg-4 section">
+			<h2>3. CSV vystavujeme na web</h2>
 			<p>
-				pozor na špatnou praxi
+				Aby se k CSV souboru někdo dostal, je třeba ho umístit na web.
+				To znamená někam, kde bude mít své stabilní URL.
+				Pak ověříme, že jsme se nedopustili nějaké z rozšířených <a href="https://opendata.gov.cz/špatná-praxe:start#přístup_k_otevřeným_datůmtechnické_překážky" title="Chyby s HTTP">chyb ve zpřístupnění souboru na webu</a>.
 			</p>
 		</div>
 		
-		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>CSV</h2>
-			<p>
-				bllll
-			</p>
+		<div class="col-12 col-md-4 col-lg-4 section">
+			<h2>Časté chyby</h2>
+			<ul>
+				<li><a href="https://opendata.gov.cz/špatná-praxe:http" title="HTTP">HTTP místo HTTPS</a></li>
+				<li><a href="https://opendata.gov.cz/špatná-praxe:https" title="Chybné HTTPS">Chybně nastavené HTTPS</a></li>
+				<li><a href="https://opendata.gov.cz/špatná-praxe:komprese" title="Komprese">Chybějící komprese</a></li>
+				<li><a href="https://opendata.gov.cz/špatná-praxe:http-content-type" title="HTTP hlavičky">Špatné HTTP hlavičky</a></li>
+			</ul>
 		</div>
 	 
-	</div>
-
-	<hr/>
-
-	<div class="row">
-		
-		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>CSV vystavíme na web</h2>
-			<p>
-				pozor na špatnou praxi
-			</p>
+		<div class="col-12 col-md-4 col-lg-4 section">
+			<h2>Správný příklad</h2>
+			<ul>
+				<li><a href="https://mvcr1.opendata.cz/czechpoint/2009.csv" title="CzechPoint">CSV přístupné přes HTTPS, se správnými HTTP hlavičkami a kompresí</a></li>
+			</ul>
 		</div>
-		
-		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>CSV</h2>
-			<p>
-				bllll
-			</p>
-		</div>
-	 
+
 	</div>
 	
 	<hr/>
@@ -83,26 +127,6 @@ lang: cs
 		
 		<div class="col-12 col-md-6 col-lg-8 section">
 			<h2>Opatříme schématem</h2>
-			<p>
-				pozor na špatnou praxi
-			</p>
-		</div>
-		
-		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>CSV</h2>
-			<p>
-				bllll
-			</p>
-		</div>
-	 
-	</div>
-
-	<hr/>
-
-	<div class="row">
-		
-		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>Ověříme nastavení HTTP</h2>
 			<p>
 				pozor na špatnou praxi
 			</p>

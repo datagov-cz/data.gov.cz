@@ -125,20 +125,68 @@ lang: cs
 
 	<div class="row">
 		
-		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>Opatříme schématem</h2>
+		<div class="col-12 col-md-12 col-lg-4 section">
+			<h2>4. Soubor opatříme schématem</h2>
 			<p>
-				pozor na špatnou praxi
+				K CSV souboru patří strojově čitelné schéma, které definuje datové typy sloupců, případně poskytuje lepší popis sloupců než-li jejich název.
+				Pro CSV soubor tedy <a href="https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3#definice_vlastního_schématu_pro_data_v_csv">vytvoříme schéma dle standardu CSV on the Web</a> ve formě JSON-LD deskriptoru.
+				Pak ho spolu s CSV souborem vystavíme na web.
 			</p>
 		</div>
 		
 		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>CSV</h2>
+			<h2>Příklady bez schématu</h2>
 			<p>
-				bllll
+				<ul>
+					<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/http---opendata.praha.eu-api-3-action-package_show-id-adopce-zvirat" title="Praha">CSV bez schématu</a></li>
+					<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/http---data.mmr.cz-api-3-action-package_show-id-prehled-faktur-crr-z-roku-2016" title="MMR">CSV bez schématu, špatný formát data</a></li>
+					<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/98766" title="ČOI">CSV bez schématu, chybný oddělovač</a></li>
+				</ul>
 			</p>
 		</div>
 	 
+		<div class="col-12 col-md-6 col-lg-4 section">
+			<h2>Příklady se schématem</h2>
+			<p>
+				<ul>
+					<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/http---vdb.czso.cz-pll-eweb-package_show-id-200068" title="ČSÚ">CSV se schématem</a></li>
+					<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/247025692">CSV se schématem</a></li>
+				</ul>
+			</p>
+		</div>
+
+	</div>
+
+	<hr/>
+
+	<div class="row">
+		
+		<div class="col-12 col-md-12 col-lg-4 section">
+			<h2>5. Specifikujeme metadata</h2>
+			<p>
+				<a href="https://opendata.gov.cz/cinnost:priprava-katalogizacniho-zaznamu">Připravíme si metadatový záznam</a> o datové sadě.
+				Měl by být co nejúplnější.
+				Zejména by měl odkazovat na webovou stránku s dokumentací datové sady.
+				Ta by měla být v HTML (jsme na Webu), nikoliv PDF či Word.
+			</p>
+		</div>
+		
+		<div class="col-12 col-md-4 col-lg-4 section">
+			<h2>Příklady nedostatečného popisu</h2>
+			<ul>
+				<li><a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A1-sada%2Fhttps---opendata.plzen.eu-api-3-action-package_show-id-gis-rastrovy-podklad-uzemni-plan-plzen-1-zakladni-vykres" title="Plzeň">Chybí podmínky užití, témata, distribuce vedou na HTML stránku.</a></li>
+				<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/http---opendata.mzp.cz-api-3-action-package_show-id-faktury-cenia" title="Cenia">Chybí podmínky užití, popis, kontaktní bod i časové pokrytí.</a>
+			</ul>
+		</div>
+	 
+		<div class="col-12 col-md-4 col-lg-4 section">
+			<h2>Příklady plného popisu</h2>
+			<ul>
+				<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/https---data.cssz.cz-api-3-action-package_show-id-duchodci-v-cr-krajich-okresech" title="ČSSZ">Příklad s HTML dokumentací, tématy a kontaktním bodem</a></li>
+				<li><a href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datová-sada/http---vdb.czso.cz-pll-eweb-package_show-id-170242" title="ČSÚ">Příklad s HTML dokumentací, časovým pokrytím a kontaktním bodem</a></li>
+			</ul>
+		</div>
+
 	</div>
 
 	<hr/>
@@ -146,36 +194,20 @@ lang: cs
 	<div class="row">
 		
 		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>Specifikujeme metadata</h2>
+			<h2>6. Zaregistrujeme v NKOD</h2>
 			<p>
-				pozor na špatnou praxi
+				Nejjednodušší možností je vyplnit formulář a výslednou zprávu zaslat datovou schránkou do NKOD.
+				Nevyplňujeme jen povinné položky, snažíme se pečlivě vyplnit co nejvíce informací.
+				Ty pak pomůžou uživatelům data najít a pochopit.
 			</p>
 		</div>
 		
 		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>CSV</h2>
+			<h2>NKOD nefunguje</h2>
 			<p>
-				bllll
-			</p>
-		</div>
-	 
-	</div>
-
-	<hr/>
-
-	<div class="row">
-		
-		<div class="col-12 col-md-6 col-lg-8 section">
-			<h2>Zaregistrujeme v NKOD</h2>
-			<p>
-				pozor na špatnou praxi
-			</p>
-		</div>
-		
-		<div class="col-12 col-md-6 col-lg-4 section">
-			<h2>CSV</h2>
-			<p>
-				bllll
+				Nyní bohužel datovou sadu do NKOD nezaregistrujete.
+				Ledaže byste již měli registrován svůj lokální katalog.
+				Pak datovou sadu zaregistrujte tam.
 			</p>
 		</div>
 	 

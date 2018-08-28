@@ -130,7 +130,7 @@ lang: cs
 					</div>
 					<img class="card-img" src="obrázky/správné-csv.png" alt="Správné CSV"/>
 					<div class="card-footer text-right">
-						<a href="příklady/správné.csv" class="card-link" title="Správné CSV">Stáhnout</a>
+						<a href="příklady/správné.csv" class="card-link" title="Správné CSV">Příklad 1</a>
 						<a href="https://data.cssz.cz/dump/doba-rizeni-o-namitkach.csv" class="card-link" title="ČSSZ">Příklad 2</a>
 						<a href="http://www.mdcr.cz/MDCR/media/otevrenadata/faktury/2016/faktury_cendis_2016.csv" class="card-link" title="CENDIS">Příklad 3</a>
 					</div>
@@ -305,7 +305,7 @@ lang: cs
 			
 			<div class="col-12 col-md-6 col-lg-4 d-flex">
 				<div class="card text-white bg-danger mb-3">
-					<div class="card-header">NKOD v roce 2018 nefunguje</div>
+					<div class="card-header">Registrace do NKOD v roce 2018 nefunguje</div>
 					<div class="card-body">
 						<p class="card-text">
 							Nyní bohužel datovou sadu do NKOD nezaregistrujete.
@@ -322,4 +322,64 @@ lang: cs
 		</div>
 	</div>
 
+	<hr/>
+
+	<div id="co-dál">
+		<h2 class="mb-3">Co dál?</h2>
+
+		<div class="row">
+			
+			<div class="col-12 col-md-12 col-lg-4 d-flex">
+				<div class="card border-success mb-3">
+					<div class="card-header text-success">Systematický přístup</div>
+					<div class="card-body">
+						<p class="card-text">
+							Ukázali jsme si postup publikace jednoho souboru.
+							Typicky se ale v instituci nachází celá řada datových sad, které by bylo možno publikovat.
+							Pokud by se ale postupovalo tímto jednoduchým způsobem, brzy by došlo k nejrůznějším zmatkům.
+							Po prvotním úspěchu s pár prvními datovými sadami je tedy nutno přikročit k <a href="https://opendata.gov.cz/standardy:start" title="Postup otevírání dat">systematizaci otevírání dat v instituci</a>.
+						</p>
+					</div>
+					<div class="card-footer text-right">
+						<a href="https://opendata.gov.cz/standardy:start" class="card-link" title="Postup otevírání dat v instituci">Postup otevírání dat</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-12 col-md-12 col-lg-4 d-flex">
+				<div class="card border-success mb-3">
+					<div class="card-header text-success">Propojená data</div>
+					<div class="card-body">
+						<p class="card-text">
+							CSV je nejlepší formát pro tabulková data.
+							Stále ale má své nedostatky - nejednoznačná identifikace entit v datech, nutnost hledání použitých číselníků a jiných souvisejících dat apod.
+							Tyto nedostatky jsou vyřešeny použitím tzv. Propojených dat, což je dnes nejlepší způsob publikace dat na webu.
+							Jedním z dalších kroků by tedy mělo být zváýžení publikace dat také tímto vhodnějším způsobem.
+						</p>
+					</div>
+					<div class="card-footer text-right">
+						<a href="https://opendata.gov.cz/propojená-data:start" class="card-link" title="Propojená data">Propojená data</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12 col-md-12 col-lg-4 d-flex">
+				<div class="card border-success mb-3">
+					<div class="card-header text-success">Lokální katalog otevřených dat</div>
+					<div class="card-body">
+						<p class="card-text">
+							Pokud vaše instituce bude publikovat více než pár datových sad, je vhodné implementovat Lokální katalog otevřených dat.
+							Existují pro něj buď open-source implementace, nebo jej lze vyřešit generováním pár souborů.
+							Lokální katalog se jednou registruje do NKOD a dále se již nemusíte zabývat posíláním datových zpráv.
+							NKOD si vše potřebné bude pravidelně číst z vašeho katalogu.
+						</p>
+					</div>
+					<div class="card-footer text-right">
+						<a href="https://opendata.gov.cz/standardy:zprovozneni-lokalniho-katalogu" class="card-link" title="Zprovoznění lokálního katalogu otevřených dat">Lokální katalog</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </div>

@@ -10,9 +10,16 @@ a {
     color: #057fa5;
 }
 
-.btn-primary {
+a.btn.btn-primary {
     background-color: #057fa5;
     border-color: white;
+	color: white;
+}
+
+a.btn.btn-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: #057fa5;
 }
 
 .btn-secondary {
@@ -25,12 +32,6 @@ a {
     background-color: #057fa5;
     border-color: white;
 	color: white;
-}
-
-.jumbotron .btn-primary:hover {
-    background-color: white;
-    border-color: white;
-    color: #057fa5;
 }
 
 .jumbotron {

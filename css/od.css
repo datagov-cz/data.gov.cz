@@ -1,22 +1,14 @@
-.navbar-toggler-icon {
+.navbar-toggler-icon, .navbar-light .navbar-nav .nav-link, a {
     color: #057fa5;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #057fa5;
-}
-
-a {
-    color: #057fa5;
-}
-
-a.btn.btn-primary {
+a.btn.btn-primary, button.btn.btn-primary {
     background-color: #057fa5;
     border-color: white;
 	color: white;
 }
 
-a.btn.btn-primary:hover {
+a.btn.btn-primary:hover, button.btn.btn-primary:hover {
     background-color: white;
     border-color: white;
     color: #057fa5;

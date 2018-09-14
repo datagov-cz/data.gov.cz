@@ -50,6 +50,7 @@ lang: cs
 						<h3 class="h5 card-title">Barevný Excel</h3>
 						<p class="card-text">
 							Takto by to vypadat nemělo.
+							Význam nesmí být určen jen barvou, datumy (čísla, ...) nesmí být v přirozeném jazyce.
 						</p>
 					</div>
 					<img class="card-img" src="obrázky/barevný-excel.png" alt="Barevný Excel"/>
@@ -66,6 +67,7 @@ lang: cs
 						<h3 class="h5 card-title">Slušný Excel</h3>
 						<p class="card-text">
 							Takhle je to lepší.
+							1 list má 1 tabulku, nejsou použity prázdné ani sloučené buňky pro formátování.
 						</p>
 					</div>
 					<img class="card-img" src="obrázky/slušný-excel.png" alt="Slušný Excel"/>
@@ -94,6 +96,10 @@ lang: cs
 							Tabulku z Excelu tedy musíme do tohoto formátu převést.
 							Přitom je třeba dát pozor na <a href="https://opendata.gov.cz/špatná-praxe:start#nejčastější_chyby_při_použití_formátu_csv" title="Špatná praxe v CSV">typické chyby</a>, které se při tvorbě CSV souborů vyskytují.
 						</p>
+						<div class="alert alert-warning" role="alert">
+							Microsoft Excel neumí správné CSV otevřít přímo.
+							Je třeba ho importovat.
+						</div>
 					</div>
 					<div class="card-footer bg-white text-right">
 						<a href="https://opendata.gov.cz/standardy:csv" class="card-link" title="csv">O CSV</a>
@@ -180,6 +186,12 @@ lang: cs
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item"><a href="https://mvcr1.opendata.cz/czechpoint/2009.csv" title="CzechPoint">CSV přístupné přes HTTPS, se správnými HTTP hlavičkami a kompresí</a></li>
 					</ul>
+					<div class="card-body">
+						<div class="alert alert-warning" role="alert">
+							Tento soubor je na Microsoft Excel příliš velký.
+							Zkuste třeba <a href="https://www.emeditor.com/">EmEditor</a> nebo jiný prohlížeč velkých souborů.
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -205,6 +217,7 @@ lang: cs
 					</div>
 					<div class="card-footer bg-white text-right">
 						<a href="https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3#definice_vlastního_schématu_pro_data_v_csv" class="card-link" title="CSV on the Web">CSV on the Web</a>
+						<a href="http://data.wu.ac.at/csvengine/csvm" class="card-link" title="CSV Engine">Generátor metadat</a>
 					</div>
 				</div>
 			</div>

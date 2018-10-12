@@ -8,5 +8,5 @@ lang: cs
 author: michal_kubáň
 ---
 
-Vše o konferenci naleznete [zde](https://opendata.gov.cz/edu:konference:2018). Neváhejte a [registrujte](https://1url.cz/FM1fs) se ještě dnes!
+Blíží se [naše výroční konference](https://opendata.gov.cz/edu:konference:2018). Neváhejte a [registrujte](https://1url.cz/FM1fs) se ještě dnes!
 

@@ -3,7 +3,7 @@ layout: post
 icon: whatshot
 title: Veřejná konzultace k otevřeným datům
 detail: false
-ref: VerejnaKonzulataceKOtevrenymDatum
+ref: VerejnaKonzultaceKOtevrenymDatum
 lang: cs
 author: michal_kubáň
 ---

@@ -3,7 +3,7 @@ layout: post
 icon: whatshot
 title: Prezentace z výroční konference 2018
 detail: false
-ref: VyrocniKonference2018Prezetna
+ref: VyrocniKonference2018Prezentace
 lang: cs
 author: michal_kubáň
 ---

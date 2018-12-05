@@ -2,7 +2,7 @@
 layout: post
 icon: whatshot
 title: Česko klesá v mezinárodním hodnocení otevřených dat 
-detail: false
+detail: true
 ref: opendamaturityreport2018
 lang: cs
 author: michal_kubáň

@@ -18,7 +18,7 @@ Evropská komise v minulých dnech zveřejnila každoroční hodnocení za oblas
 
 Evropská komise, která v předchozích letech hodnotila pouze oblast koordinace a vyspělost národních portálů, přidala další dvě kritéria, tj. dopad otevřených dat a kvalita poskytovaných dat. Změna metodiky výrazně zamíchala pořadím. Zatímco v loňském roce bylo v nejlepší skupině “trend-setters” 15 zemí EU, tak nyní, po změně metodiky, zůstalo na špičce pouze 5 států: Irsko, Španělsko, Francie, Itálie a Kypr. Do skupiny fast-trackers, ve kterém v loňském roce bylo pouze 8 zemí včetně České republiky, se v letošním roce zakotvilo 16 zemí. 
 
-[logo]: https://data.gov.cz/images/posts/ODM-2018-CS.png "CZECH REPUBLIC State-od-Play on Open Data - 2018"
+![CZECH REPUBLIC State-od-Play on Open Data - 2018](https://data.gov.cz/images/posts/ODM-2018-CS.png)
 
 Velké nedostatky právě v novém kritériu, t.j. měření dopadu otevřených dat v oblasti ekonomické, sociální, společenské a využívání otevřených dat ve službách, se výrazně podepsaly na postavení ČR. Zajímavostí je, že i země známé svou vyspělostí a pokročilostí v eGovernmentu jako např. Estonsko, skončilo ve skupině beginners na 23. místě. Zástupci Evropské komise vybrali jako nejlepší příklad ve způsobu publikaci dat [otevřená propojená data České správy sociálního zabezpečení](https://data.cssz.cz/). V kategorii určující zajímavý příklad znovu využití dat: službu [Hlídač státu](https://www.hlidacstatu.cz/). 
 

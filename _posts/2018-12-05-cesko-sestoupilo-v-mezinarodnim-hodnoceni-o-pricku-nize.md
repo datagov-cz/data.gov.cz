@@ -10,11 +10,7 @@ author: michal_kubáň
 
 <p>
 Podle studie <a href="https://www.europeandataportal.eu/sites/default/files/edp_landscaping_insight_report_n4_2018.pdf">Open Data Maturity in Europe 2018</a> se Česká republika umístila na posledním místě ve druhé nejlepší skupině v tzv. “fast-trackers.”
-</p>
-
 <!--more-->
-
-<p>
 Česko se umístilo spolu s Finskem, Chorvatskem a Rumunskem na posledních příčkách ve skupině fast-trackers. Samotná <a href="https://www.europeandataportal.eu/sites/default/files/country-factsheet_czech-republic_2018.pdf">Česká republika</a> se tak z 20. místa posunula o jednu příčku níže. ČR v hodnotících indikátorech patří k horšímu průměru v EU. Vyniká ale v určování podmínek užití v Národním katalogu otevřených dat. ČR rovněž dominuje v technické mini-disciplíně, a tedy zda, její katalogizační záznamy jsou v souladu s mezinárodním katalogizačním standardem DCAT-AP. Podrobnější hodnocení v jednotlivých oblastech si můžete rozkliknout v interaktivní <a href="https://www.europeandataportal.eu/en/dashboard#2018">dashboardu</a>.
 </p>
   

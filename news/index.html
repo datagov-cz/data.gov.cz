@@ -15,8 +15,8 @@ postindex: true
         <div class="col-12 col-md-6 col-lg-4">
 			<div class="section">
 			  <div>
-                <h5>{{ post.title }}</h5>
-                <h6>{{ post.date | date: "%-d %B %Y" }}</h6>
+                <h3 class="h5">{{ post.title }}</h3>
+                <p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
                 <div>
 					{{ post.excerpt }}
 				</div>
@@ -34,7 +34,8 @@ postindex: true
         {% for post in posts offset:3 %}
         <div class="col-12">
 			<div class="section">
-                <h6 class="">{{ post.date | date: "%-d %B %Y" }}</h6>
+                <h3 class="h5">{{ post.title }}</h3>
+				<p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
                 <p class="flow-text">
                     {{ post.excerpt | remove: '<p>' | remove: '<p class="flow-text">' | remove: '</p>' }}
                 </p>

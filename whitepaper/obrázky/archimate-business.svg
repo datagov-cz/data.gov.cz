@@ -63,7 +63,7 @@
       ><path d="M285 537 L504 537 L504 594 L285 594 L285 537 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath20"
-      ><path d="M309 542 L480 542 L480 576 L309 576 L309 542 Z"
+      ><path d="M311 542 L477 542 L477 576 L311 576 L311 542 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath21"
       ><path d="M261 45 L528 45 L528 96 L261 96 L261 45 Z"
@@ -462,8 +462,8 @@
       ><rect x="286" y="538" clip-path="url(#clipPath19)" fill="rgb(255,255,181)" width="217" stroke-dasharray="none" rx="10" ry="10" height="55" stroke="none"
       /><rect x="286" y="538" clip-path="url(#clipPath19)" fill="none" width="216" stroke-dasharray="none" rx="10" ry="10" height="54" stroke="rgb(178,178,126)"
       /><polygon fill="none" stroke-dasharray="none" clip-path="url(#clipPath19)" points=" 485 549 493 549 493 546 499 551 493 556 493 553 485 553" stroke="black"
-      /><text x="310" y="556" clip-path="url(#clipPath20)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve"
-      >Schvalení publikačních splánů a</text
+      /><text x="312" y="556" clip-path="url(#clipPath20)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve"
+      >Schválení publikačních plánů a</text
       ><text x="359" y="572" clip-path="url(#clipPath20)" fill="black" stroke-dasharray="none" stroke="none" xml:space="preserve"
       >datových sad</text
       ><rect x="262" y="46" clip-path="url(#clipPath21)" fill="rgb(255,255,181)" width="265" stroke-dasharray="none" height="49" stroke="none"

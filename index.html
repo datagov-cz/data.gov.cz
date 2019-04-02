@@ -73,7 +73,7 @@ homepage: true
 		{% for post in posts limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4">
 			<h3 class="h5">{{ post.title }}</h3>
-			<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</h6>
+			<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
 			<p>
 				{{ post.excerpt }}
 			</p>
@@ -86,4 +86,4 @@ homepage: true
 </div>
 
 
-<script type="text/javascript" src="{{ "/js/stats.js" | relative_url }}" ></script>
+<script src="{{ "/js/stats.js" | relative_url }}" ></script>

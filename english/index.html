@@ -73,9 +73,7 @@ homepage: true
 		<div class="col-12 col-md-6 col-lg-4">
 			<h3 class="h5">{{ post.title }}</h3>
 			<p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
-			<p>
-				{{ post.excerpt }}
-			</p>
+			{{ post.excerpt }}
 			{% if post.detail %}
 			<a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
 			{% endif %}
@@ -84,4 +82,4 @@ homepage: true
 	 </div>
 </div>
 
-<script type="text/javascript" src="{{ "/js/stats.js" | relative_url }}" ></script>
+<script src="{{ "/js/stats.js" | relative_url }}" ></script>

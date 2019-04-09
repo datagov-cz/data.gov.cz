@@ -1,3 +1,15 @@
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  transition: .6s opacity ease;
+}
+/* Disable transitions for if reduced motion is enabled: */
+@media (prefers-reduced-motion:reduce) {
+  .carousel-fade .active.carousel-item-left,
+  .carousel-fade .active.carousel-item-right {
+    transition: none;
+  }
+} 
+
 .navbar-toggler-icon, .navbar-light .navbar-nav .nav-link, a {
     color: #057fa5;
 }

@@ -6,247 +6,275 @@ lang: cs
 ---
 
   <div class="container">
-	<h1>White paper Otevřená data</h1>
-	<p class="lead">
-		Když stavím nový IS nebo upravuji existující, co musím udělat, abych byl Open Data Ready?
-	</p>
-	
-	<dl>
-		<dt>Vydáno</dt>
-		<dd>Prosinec 2018</dt>
+    <h1>White paper Otevřená data</h1>
+    <p class="lead">
+        Když stavím nový IS nebo upravuji existující, co musím udělat, abych byl Open Data Ready?
+    </p>
+    
+    <dl>
+        <dt>Vydáno</dt>
+        <dd>Prosinec 2018</dt>
 
-		<dt>Schválil</dt>
-		<dd>Ing. Petr Kuchař, ředitel <a href="https://www.mvcr.cz/webpm/clanek/odbor-hlavniho-architekta-egovernmentu.aspx">odboru Hlavního architekta eGovernmentu</a>, <a href="https://www.mvcr.cz/">MVČR</a></dt>
+        <dt>Schválil</dt>
+        <dd>Ing. Petr Kuchař, ředitel <a href="https://www.mvcr.cz/webpm/clanek/odbor-hlavniho-architekta-egovernmentu.aspx">odboru Hlavního architekta eGovernmentu</a>, <a href="https://www.mvcr.cz/">MVČR</a></dt>
 
-	</dl>
-	
-	<hr/>
-	
-	<h2>Obsah</h2>
-	
-	<ol>
-		<li><a href="#shrnutí">Shrnutí</a></li>
-		<li><a href="#co-jsou-a-nejsou-otevřená-data">Co jsou a co nejsou otevřená data?</a></li>
-		<li><a href="#možnosti-přípravy-is-pro-otevřená-data">Možnosti přípravy IS pro otevřená data</a></li>
-		<li><a href="#příprava-dat-k-pubikaci">Následná příprava dat k publikaci v podobě otevřených dat</a></li>
-		<li><a href="#ochrana-osobních-údajů">Ochrana osobních údajů</a></li>
-		<li><a href="#právní-aspekty">Právní aspekty</a></li>
-		<li><a href="#odbor-hlavního-architekta-egovernmentu">Odbor Hlavního architekta eGovernmentu Ministerstva vnitra</a></li>
-		<li><a href="#archimate">Pohled Archimate</a></li>
-	</ol>
+    </dl>
+    
+    <hr/>
+    
+    <h2>Obsah</h2>
+    
+    <ol>
+        <li><a href="#shrnutí">Shrnutí</a></li>
+        <li><a href="#co-jsou-a-nejsou-otevřená-data">Co jsou a co nejsou otevřená data?</a></li>
+        <li><a href="#možnosti-přípravy-is-pro-otevřená-data">Možnosti přípravy IS pro otevřená data</a></li>
+        <li><a href="#příprava-dat-k-pubikaci">Následná příprava dat k publikaci v podobě otevřených dat</a></li>
+		<li><a href="#zajištění-kvality-publikovaných-dat">Zajištění kvality publikovaných dat</a></li>
+        <li><a href="#ochrana-osobních-údajů">Ochrana osobních údajů</a></li>
+        <li><a href="#právní-aspekty">Právní aspekty</a></li>
+        <li><a href="#odbor-hlavního-architekta-egovernmentu">Odbor Hlavního architekta eGovernmentu Ministerstva vnitra</a></li>
+        <li><a href="#archimate">Pohled Archimate</a></li>
+    </ol>
 
-	<hr/>
-	
-	<h2 id="shrnutí">Shrnutí</h2>
-	
-	<p>
-		Pro zajištění publikace otevřených dat z IS je třeba:
-	</p>
+    <hr/>
+    
+    <h2 id="shrnutí">Shrnutí</h2>
+    
+    <p>
+        Pro zajištění publikace otevřených dat z IS je třeba:
+    </p>
 
-	<ol>
-		<li>Zajistit možnost získávání kompletních dat z IS v podobě datových souborů ve strojově čitelném a otevřeném formátu</li>
-		<li>Zajistit publikaci datových souborů na webu organizace nebo v jejím lokálním katalogu otevřených dat</li>
-		<li>Opatřit je lidsky čitelnou dokumentací a strojově čitelným schématem</li>
-		<li>Opatřit je otevřenými podmínkami užití</li>
-		<li>Zaregistrovat je v Národním katalogu otevřených dat (NKOD)</li>
-	</ol>
-	
-	<hr/>
+    <ol>
+        <li>Zajistit možnost získávání kompletních dat z IS v podobě datových souborů ve strojově čitelném a otevřeném formátu</li>
+        <li>Zajistit publikaci datových souborů na webu organizace nebo v jejím lokálním katalogu otevřených dat</li>
+        <li>Opatřit je lidsky čitelnou dokumentací a strojově čitelným schématem</li>
+        <li>Opatřit je otevřenými podmínkami užití</li>
+        <li>Zaregistrovat je v Národním katalogu otevřených dat (NKOD)</li>
+    </ol>
+    
+    <hr/>
 
-	<h2 id="co-jsou-a-nejsou-otevřená-data">Co jsou a co nejsou otevřená data?</h2>
+    <h2 id="co-jsou-a-nejsou-otevřená-data">Co jsou a co nejsou otevřená data?</h2>
 
-	<p>
-		Otevřená data jsou:
-	</p>
+    <p>
+        Otevřená data jsou:
+    </p>
 
-	<ol>
-		<li>Volně přístupná na webu jako datové soubory ke stažení ve strojově čitelném a otevřeném formátu - CSV, XML, JSON, RDF a další formáty s otevřenou specifikací</li>
-		<li>Opatřená podmínkami užití neomezujícími jejich užití, viz <a href="https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti">návod na stanovení podmínek užití</a></li>
-		<li>Evidovaná v <a href="https://data.gov.cz">Národním katalogu otevřených dat (NKOD)</a> jako datové sady opatřené přímými odkazy na datové soubory, které je tvoří</li>
-		<li>Úplný obsah databáze nebo agregovaná statistika</li>
-		<li>Opatřená dokumentací</li>
-		<li>Připravena s cílem co nejsnazšího strojového zpracování programátory apod.</li>
-		<li>Opatřená kontaktem na kurátora pro zpětnou vazbu (chyby, žádost o rozšíření, apod.)</li>
-		<li>Jsou publikovány dle otevřených formálních norem ve smyslu <a href="https://www.zakonyprolidi.cz/cs/1999-106#p4b-1">§ 4b odst. 1 zákona č. 106/1999 Sb. o svobodném přístupu k informacím</a>.</li>
-	</ol>
-	
-	<p>
-		Pokud vaše datová sada nesplňuje všechny uvedené podmínky, nejedná se o otevřená data české veřejné správy podle <a href="https://www.zakonyprolidi.cz/cs/1999-106">zákona č. 106/1999 Sb., o svobodném přístupu k informacím</a>, který definuje otevřená data ve svém <a href="	https://www.zakonyprolidi.cz/cs/1999-106#p3-11">§ 3 odst. 11</a>.
-	</p>
-	
-	<p>
-		Otevřenými daty zejména není:
-	</p>
-	
-	<ol>
-		<li>odkaz na vyhledávací formulář určený pro koncové uživatele</li>
-		<li>odkaz na novou stránku s dalšími informacemi</li>
-		<li>odkaz na veřejné mapové rozhraní GIS</li>
-		<li>odkaz na API umožňující přístup k jednotlivým záznamům či vyhledávání záznamů, nikoliv export kompletních dat</li>
-		<li>datový soubor ve formátu PDF</li>
-		<li>datový soubor ve formátu XLS formátovaný pro tisk nebo obsahující výpočty</li>
-		<li>datový soubor v pseudo-CSV formátu (např. jiný oddělovač než “,”)</li>
-	</ol>
-	
-	<hr/>
+    <ol>
+        <li>Volně přístupná na webu jako datové soubory ke stažení ve strojově čitelném a otevřeném formátu - CSV, XML, JSON, RDF a další formáty s otevřenou specifikací</li>
+        <li>Opatřená podmínkami užití neomezujícími jejich užití, viz <a href="https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti">návod na stanovení podmínek užití</a></li>
+        <li>Evidovaná v <a href="https://data.gov.cz">Národním katalogu otevřených dat (NKOD)</a> jako datové sady opatřené přímými odkazy na datové soubory, které je tvoří</li>
+        <li>Úplný obsah databáze nebo agregovaná statistika</li>
+        <li>Opatřená dokumentací</li>
+        <li>Připravena s cílem co nejsnazšího strojového zpracování programátory apod.</li>
+        <li>Opatřená kontaktem na kurátora pro zpětnou vazbu (chyby, žádost o rozšíření, apod.)</li>
+        <li>Jsou publikovány dle otevřených formálních norem ve smyslu <a href="https://www.zakonyprolidi.cz/cs/1999-106#p4b-1">§ 4b odst. 1 zákona č. 106/1999 Sb. o svobodném přístupu k informacím</a>.</li>
+    </ol>
+    
+    <p>
+        Pokud vaše datová sada nesplňuje všechny uvedené podmínky, nejedná se o otevřená data české veřejné správy podle <a href="https://www.zakonyprolidi.cz/cs/1999-106">zákona č. 106/1999 Sb., o svobodném přístupu k informacím</a>, který definuje otevřená data ve svém <a href="   https://www.zakonyprolidi.cz/cs/1999-106#p3-11">§ 3 odst. 11</a>.
+    </p>
+    
+    <p>
+        Otevřenými daty zejména není:
+    </p>
+    
+    <ol>
+        <li>odkaz na vyhledávací formulář určený pro koncové uživatele</li>
+        <li>odkaz na novou stránku s dalšími informacemi</li>
+        <li>odkaz na veřejné mapové rozhraní GIS</li>
+        <li>odkaz na API umožňující přístup k jednotlivým záznamům či vyhledávání záznamů, nikoliv export kompletních dat</li>
+        <li>datový soubor ve formátu PDF</li>
+        <li>datový soubor ve formátu XLS formátovaný pro tisk nebo obsahující výpočty</li>
+        <li>datový soubor v pseudo-CSV formátu (např. jiný oddělovač než “,”)</li>
+    </ol>
+    
+    <hr/>
 
-	<h2 id="možnosti-přípravy-is-pro-otevřená-data">Možnosti přípravy IS pro otevřená data</h2>
-	
-	<p>
-		Zásadní je mít přístup k datům IS. Provozovaný IS tedy musí:
-	</p>
-	
-	<ol>
-		<li>umožňovat přístup k databázi nebo</li>
-		<li>mít možnost stahovat volitelně strukturovaná data (tabulky) z reportingového modulu systému nebo</li>
-		<li>nabídnout API, ze kterého se dají pravidelně získávat kompletní data v podobě datových souborů</li>
-	</ol>
-	
-	<h3 id="možnosti-přípravy-is-export-otevřená-data">Export dat nebo API v otevřeném formátu - preferované řešení</h3>
-	
-	<p>
-		IS má rozhraní pro pravidelný export dat nebo neomezené API, které organizace může vytěžit a získat kompletní data v jednom z otevřených formátů.
-	</p>
-	
-	<ul>
-		<li>Pro tabulková data je to <a href="https://www.ietf.org/rfc/rfc4180.txt">CSV</a></li>
-		<li>Pro hierarchická data je to <a href="https://www.w3.org/XML/">XML</a> nebo <a href="http://www.json.org/">JSON</a></li>
-		<li>Pro grafová data je to <a href="https://www.w3.org/RDF/">RDF</a></li>
-		<li>Pro geodata je to jeden z <a href="https://data.gov.cz/otevřené-formální-normy/prostorová-data/">otevřených formátů pro geodata</a> - GeoJSON, ESRI Shapefile, OGC GML, OGC GeoPackage.</li>
-	</ul>
-	
-	<p>
-		Struktura dat je zdokumentována jednak lidsky čitelným dokumentem a jednak strojově čitelným schématem.
-	</p>
-	
-	<ul>
-		<li>Pro CSV je to schéma <a href="https://www.w3.org/TR/tabular-data-primer/">CSV on the Web</a></li>
-		<li>Pro XML je to <a href="https://www.w3.org/XML/Schema">XML Schema</a></li>
-		<li>Pro JSON je to <a href="http://json-schema.org/">JSON schema</a></li>
-		<li>Pokud je použit vlastní slovník pro RDF, je popsán pomocí <a href="https://www.w3.org/TR/rdf-schema/">RDFS</a> nebo <a href="https://www.w3.org/TR/owl2-overview/">OWL</a></li>
-	</ul>
-	
-	<p>
-		V takovém případě jsou získaná kompletní data z IS připravena k publikaci formou otevřených dat.
-	</p>
-	
-	<h3 id="možnosti-přípravy-is-export-proprietární-formát">Export dat nebo API v proprietárním formátu</h3>
-	
-	<p>
-		Pokud se jedná o rozšíření existujícího IS, který neumožňuje export dat nebo nenabízí API ve strojově čitelném a otevřeném formátu a takovou úpravu nelze ve Vašem IS provést, využije se stávající export či API, které váš IS již umí (např. do MS Excel), a tento výstup se dále zpracuje do otevřeného formátu pomocí dalších nástrojů tak, aby bylo dosaženo stavu jako v případě přímého exportu do otevřeného formátu.
-	</p>
-	
-	<hr/>
+    <h2 id="možnosti-přípravy-is-pro-otevřená-data">Možnosti přípravy IS pro otevřená data</h2>
+    
+    <p>
+        Zásadní je mít přístup k datům IS. Provozovaný IS tedy musí:
+    </p>
+    
+    <ol>
+        <li>umožňovat přístup k databázi nebo</li>
+        <li>mít možnost stahovat volitelně strukturovaná data (tabulky) z reportingového modulu systému nebo</li>
+        <li>nabídnout API, ze kterého se dají pravidelně získávat kompletní data v podobě datových souborů</li>
+    </ol>
+    
+    <h3 id="možnosti-přípravy-is-export-otevřená-data">Export dat nebo API v otevřeném formátu - preferované řešení</h3>
+    
+    <p>
+        IS má rozhraní pro pravidelný export dat nebo neomezené API, které organizace může vytěžit a získat kompletní data v jednom z otevřených formátů.
+    </p>
+    
+    <ul>
+        <li>Pro tabulková data je to <a href="https://www.ietf.org/rfc/rfc4180.txt">CSV</a></li>
+        <li>Pro hierarchická data je to <a href="https://www.w3.org/XML/">XML</a> nebo <a href="http://www.json.org/">JSON</a></li>
+        <li>Pro grafová data je to <a href="https://www.w3.org/RDF/">RDF</a></li>
+        <li>Pro geodata je to jeden z <a href="https://data.gov.cz/otevřené-formální-normy/prostorová-data/">otevřených formátů pro geodata</a> - GeoJSON, ESRI Shapefile, OGC GML, OGC GeoPackage.</li>
+    </ul>
+    
+    <p>
+        Struktura dat je zdokumentována jednak lidsky čitelným dokumentem a jednak strojově čitelným schématem.
+    </p>
+    
+    <ul>
+        <li>Pro CSV je to schéma <a href="https://www.w3.org/TR/tabular-data-primer/">CSV on the Web</a></li>
+        <li>Pro XML je to <a href="https://www.w3.org/XML/Schema">XML Schema</a></li>
+        <li>Pro JSON je to <a href="http://json-schema.org/">JSON schema</a></li>
+        <li>Pokud je použit vlastní slovník pro RDF, je popsán pomocí <a href="https://www.w3.org/TR/rdf-schema/">RDFS</a> nebo <a href="https://www.w3.org/TR/owl2-overview/">OWL</a></li>
+    </ul>
+    
+    <p>
+        V takovém případě jsou získaná kompletní data z IS připravena k publikaci formou otevřených dat.
+    </p>
+    
+    <h3 id="možnosti-přípravy-is-export-proprietární-formát">Export dat nebo API v proprietárním formátu</h3>
+    
+    <p>
+        Pokud se jedná o rozšíření existujícího IS, který neumožňuje export dat nebo nenabízí API ve strojově čitelném a otevřeném formátu a takovou úpravu nelze ve Vašem IS provést, využije se stávající export či API, které váš IS již umí (např. do MS Excel), a tento výstup se dále zpracuje do otevřeného formátu pomocí dalších nástrojů tak, aby bylo dosaženo stavu jako v případě přímého exportu do otevřeného formátu.
+    </p>
+    
+    <hr/>
 
-	<h2 id="příprava-dat-k-pubikaci">Následná příprava dat k publikaci v podobě otevřených dat</h2>
-	
-	<p>
-		Data získaná z IS jedním z popsaných způsobů je následně třeba publikovat jako otevřená data.
-		To znamená minimálně:
-	</p>
-	
-	<ol>
-		<li>V případě API zajistit jeho vytěžení pro získání kompletních dat k publikaci (tj. případná přímá publikace API nenaplňuje podmínky otevřených dat)</li>
-		<li>Zajistit pravidelnou aktualizaci získaných dat (dle charakteru dat to může být ve frekvenci např. denně, měsíčně nebo ročně)</li>
-		<li>Publikovat získaná data na web ke stažení a následně publikovat každou jejich aktualizaci</li>
-		<li>Opatřit je dokumentací, podmínkami užití a kontaktem na kurátora</li>
-		<li>Katalogizovat je v Národním katalogu otevřených dat (NKOD)</li>
-	</ol>
-	
-	<p>
-		K tomu lze využít nástrojů pro přípravu, publikaci a katalogizaci otevřených dat, jako je třeba <a href="https://etl.linkedpipes.com">LinkedPipes ETL</a>.
-	</p>
-	
-	<p>
-		Publikace otevřených dat by měla být zajištěna koncepčně na úrovni celé organizace.
-		Kompletní postupy jsou k dispozici na <a href="https://data.gov.cz">Portálu otevřených dat</a>, naleznete zde rovněž informace o školeních a workshopech, které Ministerstvo vnitra k této problematice poskytuje.
-	</p>
-	
-	<p>
-		Pro příklad vhodného způsobu zveřejnění datové sady v lokálním katalogu se lze podívat na <a href="https://data.cssz.cz">katalog České správy sociálního zabezpečení (ČSSZ)</a>.
-	</p>
-	
-	<hr/>
+    <h2 id="příprava-dat-k-pubikaci">Následná příprava dat k publikaci v podobě otevřených dat</h2>
+    
+    <p>
+        Data získaná z IS jedním z popsaných způsobů je následně třeba publikovat jako otevřená data.
+        To znamená minimálně:
+    </p>
+    
+    <ol>
+        <li>V případě API zajistit jeho vytěžení pro získání kompletních dat k publikaci (tj. případná přímá publikace API nenaplňuje podmínky otevřených dat)</li>
+        <li>Zajistit pravidelnou aktualizaci získaných dat (dle charakteru dat to může být ve frekvenci např. denně, měsíčně nebo ročně)</li>
+        <li>Publikovat získaná data na web ke stažení a následně publikovat každou jejich aktualizaci</li>
+        <li>Opatřit je dokumentací, podmínkami užití a kontaktem na kurátora</li>
+        <li>Katalogizovat je v Národním katalogu otevřených dat (NKOD)</li>
+    </ol>
+    
+    <p>
+        K tomu lze využít nástrojů pro přípravu, publikaci a katalogizaci otevřených dat, jako je třeba <a href="https://etl.linkedpipes.com">LinkedPipes ETL</a>.
+    </p>
+    
+    <p>
+        Publikace otevřených dat by měla být zajištěna koncepčně na úrovni celé organizace.
+        Kompletní postupy jsou k dispozici na <a href="https://data.gov.cz">Portálu otevřených dat</a>, naleznete zde rovněž informace o školeních a workshopech, které Ministerstvo vnitra k této problematice poskytuje.
+    </p>
+    
+    <p>
+        Pro příklad vhodného způsobu zveřejnění datové sady v lokálním katalogu se lze podívat na <a href="https://data.cssz.cz">katalog České správy sociálního zabezpečení (ČSSZ)</a>.
+    </p>
+    
+    <hr/>
 
-	<h2 id="ochrana-osobních-údajů">Ochrana osobních údajů</h2>
-	
-	<p>
-		Pokud jsou předmětem evidence informačního systému osobní údaje ve smyslu <a href="https://www.zakonyprolidi.cz/cs/2000-101">zákona č. 101/2000 Sb., o ochraně osobních údajů</a> a <a href="https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=celex%3A32016R0679">nařízení (EU) č. 2016/679, Obecné nařízení o ochraně osobních údajů (GDPR)</a>, neznamená to, že nelze ze systému publikovat otevřená data.
-		Ve formátu otevřených dat lze zveřejnit následující:
-	</p>
-	
-	<ol>
-		<li>Pakliže se jedná o veřejnou evidenci či rejstřík a zvláštní právní předpis nařizuje zveřejnění informací, lze zveřejnit osobní údaje v podobě otevřených dat.</li>
-		<li>Anonymizace či Pseudonymizace. Z dat se odstraní osobní údaje a případně se nahradí bezvýznamovým umělým identifikátorem. Data bez osobních údajů se pak mohou zveřejnit v podobě otevřených dat. Ovšem pozor, v závislosti na charakteru dat je třeba zkontrolovat, zda data ve své kombinaci neumožňují identifikaci konkrétní osoby i po odstranění zjevných osobních údajů. Zejména se může jednat o kombinace jako město, věk a pohlaví nebo podobné.</li>
-		<li>Agregace. Data, která není možné nebo vhodné zveřejnit dle předchozího bodu, lze zveřejnit v agregované podobě. Tedy v podobě statistik. V případě zveřejnění statistik je žádoucí použít co nejjemnější možné členění.Tedy například počet přijatých podání uvádět raději po měsících namísto jen po letech.</li>
-	</ol>
-	
-	<p>
-		Více informací naleznete na <a href="https://opendata.gov.cz/dokumenty:ochrana-osobních-údajů-a-gdpr">stránce o ochraně osobních údajů a GDPR ve vztahu k otevřeným datům</a>.
-	</p>
-	
-	<hr/>
+    <h2 id="zajištění-kvality-publikovaných-dat">Zajištění kvality publikovaných dat</h2>
+    
+    <p>
+        Kvalita publikovaných datových sad je klíčovým předpokladem pro následné zhodnocování a užívání publikovaných dat a je především vymezena:
+    </p>
+    
+    <ol>
+        <li>Kvalitou samotného obsahu datové sady – předmětem publikace musí být aktuální a úplné informace z původního zdroje s maximální možnou granularitou, a pokud tomu nebrání legislativa, tak bez agregací a modifikací.</li>
+        <li>Kvalitou a standardizací datových schémat publikovaných datových sad, což především znamená:
+            <ol>
+                <li>využívání a dodržování otevřených formálních norem při návrhu datových schémat a také opětovné používání sdílených &quot;de facto&quot; standardů datových schémat již publikovaných sad,</li>
+                <li>nepublikování již publikovaných informací, místo toho využívaní odkazů na již publikované datové entity v jiných datových sadách a publikovaných rejstřících,</li>
+                <li>dodržování následujících pravidel pro publikaci atributů publikovaných datových entit:
+                    <ul>
+                        <li>pokud název i hodnota atributu není ničím určena (neřídí se číselníkem, ani není odvozena z jiné entity) – zcela volná definice publikujícím,</li>
+                        <li>pokud název i hodnoty se řídí sdílenými číselníky - musí vycházet z těchto dostupných a definovaných číselníků,</li>
+                        <li>pokud název i hodnoty jsou určeny vztahem, nebo vyplývají ze vztahu na jinou publikovanou entitu – je nutné atribut nahradit vhodným vztahem na příslušnou entitu.</li>
+                    </ul>
+                </li>           
+            </ol>
+        </li>
+        <li>Kvalitou a úplností metadat datové sady – struktura nutných popisných informací je určena stávajícími požadavky pro katalogizaci datových sad v NKOD.</li>
+        <li>Kvalitou a zajištěním trvalé dostupnosti publikovaných datových sad publikující organizací v trvalých internetových umístěních a tak dlouho, jak je to možné.</li>
+    </ol>
 
-	<h2 id="právní-aspekty">Právní aspekty</h2>
-	
-	<p>
-		Legislativní rámec otevřených dat v České republice tvoří jejich úprava obsažená v <a href="https://www.zakonyprolidi.cz/cs/1999-106">Zákoně č. 106/1999 Sb., o svobodném přístupu k informacím</a> a v <a href="https://www.zakonyprolidi.cz/cs/2016-425">Nařízení vlády č. 425/2016 Sb., o seznamu informací zveřejňovaných jako otevřená data</a>, které stanovuje vybraným orgánům veřejné správy povinnost zveřejňovat data z konkrétních jimi spravovaných informačních systémů ve formě otevřených dat.
-	</p>
-	
-	<p>
-		Více informací o strategických dokumentech, akčních plánech a souvisejících předpisech ČR i EU naleznete na stránce věnované <a href="https://opendata.gov.cz/legislativa:start">legislativnímu prostředí otevřených dat</a>.
-	</p>
-	
-	<hr/>
+    <hr/>
 
-	<h2 id="odbor-hlavního-architekta-egovernmentu">Odbor Hlavního architekta eGovernmentu Ministerstva vnitra</h2>
-	
-	<p>
-		Vrcholným orgánem ve veřejné správě pro otevřená data je odbor Hlavního architekta eGovernmentu ministerstva vnitra (OHA), který má danou problematiku v gesci. OHA plní koordinační roli, věnuje se právní úpravě otevřených dat a dohlíží na zachování principů otevřených dat u nových systémů veřejné správy. 
-		Koordinační role je ztělesněna zejména Národním koordinátorem otevřených dat, který zprostředkovává informace a kontakty mezi orgány veřejné správy a poskytuje jim podporu a součinnost.
-	</p>
-	
-	<p>
-		Veškeré informace o otevřených datech jsou k nalezení na <a href="https://data.gov.cz">Portálu otevřených dat</a>, který OHA MVČR spravuje.
-		Na portále najdou potřebné informace všechny zainteresované role, ať už jde o uživatele či poskytovatele otevřených dat, od přehledových informací přes technické návody, příklady dobré a špatné praxe až po detailní návod, jak v konkrétní instituci zavést správné procesy vedoucí k udržitelnému poskytování otevřených dat.
-	</p>
-	
-	<p>
-		OHA MVČR také vydává <a href="https://opendata.gov.cz/otevřené-formální-normy:start">Otevřené formální normy (OFN)</a>, které slouží jako standardy pro jednotlivé oblasti publikace otevřených dat.
-	</p>
-	
-	<p>
-		OHA v rámci vydávání stanovisek k IT projektům kontroluje u Informačních systémů veřejné správy, ať už nově vznikajících či u rozšiřovaných a modernizovaných stávajících, zachování principů otevřených dat, a to zejména princip &quot;open data ready&quot;.
-		U schvalovaných systémů tedy musí být zajištěn přístup k veškerým datům vedeným v databázích dotčených předmětem projektu ve strojově čitelném a otevřeném formátu, tento přístup musí být zajištěn bez dodatečných finančních nákladů a žadatel musí mít možnost se zpřístupněnými daty libovolně nakládat.
-		OHA dále kontroluje, zdali budou tato data zveřejňovaná ve formátu otevřených dat.
-	</p>
-	
-	<hr/>
+    <h2 id="ochrana-osobních-údajů">Ochrana osobních údajů</h2>
+    
+    <p>
+        Pokud jsou předmětem evidence informačního systému osobní údaje ve smyslu <a href="https://www.zakonyprolidi.cz/cs/2000-101">zákona č. 101/2000 Sb., o ochraně osobních údajů</a> a <a href="https://eur-lex.europa.eu/legal-content/CS/ALL/?uri=celex%3A32016R0679">nařízení (EU) č. 2016/679, Obecné nařízení o ochraně osobních údajů (GDPR)</a>, neznamená to, že nelze ze systému publikovat otevřená data.
+        Ve formátu otevřených dat lze zveřejnit následující:
+    </p>
+    
+    <ol>
+        <li>Pakliže se jedná o veřejnou evidenci či rejstřík a zvláštní právní předpis nařizuje zveřejnění informací, lze zveřejnit osobní údaje v podobě otevřených dat.</li>
+        <li>Anonymizace či Pseudonymizace. Z dat se odstraní osobní údaje a případně se nahradí bezvýznamovým umělým identifikátorem. Data bez osobních údajů se pak mohou zveřejnit v podobě otevřených dat. Ovšem pozor, v závislosti na charakteru dat je třeba zkontrolovat, zda data ve své kombinaci neumožňují identifikaci konkrétní osoby i po odstranění zjevných osobních údajů. Zejména se může jednat o kombinace jako město, věk a pohlaví nebo podobné.</li>
+        <li>Agregace. Data, která není možné nebo vhodné zveřejnit dle předchozího bodu, lze zveřejnit v agregované podobě. Tedy v podobě statistik. V případě zveřejnění statistik je žádoucí použít co nejjemnější možné členění.Tedy například počet přijatých podání uvádět raději po měsících namísto jen po letech.</li>
+    </ol>
+    
+    <p>
+        Více informací naleznete na <a href="https://opendata.gov.cz/dokumenty:ochrana-osobních-údajů-a-gdpr">stránce o ochraně osobních údajů a GDPR ve vztahu k otevřeným datům</a>.
+    </p>
+    
+    <hr/>
 
-	<h2 id="archimate">Pohled Archimate</h2>
-	
-	<p>
-		V této sekci naleznete přehled otevřených dat v kontextu OVM namodelovaný v jazyce <a href="http://pubs.opengroup.org/architecture/archimate3-doc/">Archimate</a>.
-	</p>
-	
-	<h3 id="archimate-business">Business</h3>
-	
-	<p>
-		<img src="obrázky/archimate-business.svg" class="img-fluid" alt="Business vrstva Archimate">
-		Na byznys vrstvě se nachází legislativa dotýkající se otevřených dat a procesy a objekty, které se zapojují do publikace otevřených dat.
-		Jednotlivé procesy OVM jsou ve větším detailu popsány na <a href="https://data.gov.cz">Portálu otevřených dat</a>, kde se také nalézají <a href="https://opendata.gov.cz/otevřené-formální-normy:start">Otevřené formální normy</a>, které OVM při publikaci otevřených dat dodržuje.
-		Klient pak data očekává ve formátu popsaném Otevřenou formální normou.
-		eGovernment provozuje Portál otevřených dat s Národním katalogem otevřených dat, kam jsou otevřená data OVM registrována, a kde je klient VS hledá.
-		OVM navíc provozuje Lokální katalog otevřených dat, který je tím národním harvestován.
-	</p>
-	
-	<h3 id="archimate-aplikační">Aplikační</h3>
-	
-	<p>
-		<img src="obrázky/archimate-aplikační.svg" class="img-fluid" alt="Aplikační vrstva Archimate">
-		Na aplikační vrstvě hraje hlavní roli datový Portál OVM, na kterém jsou zveřejněna otevřená data OVM a který obsahuje Lokální katalog otevřených dat.
-		Do něj jsou katalogizována otevřená data OVM a z něj metadata přebírá Národní katalog otevřených dat.
-		Klient VS pak přistupuje přímo k souborům či API poskytovaným přes Portál OVM.
-	</p>
-	
+    <h2 id="právní-aspekty">Právní aspekty</h2>
+    
+    <p>
+        Legislativní rámec otevřených dat v České republice tvoří jejich úprava obsažená v <a href="https://www.zakonyprolidi.cz/cs/1999-106">Zákoně č. 106/1999 Sb., o svobodném přístupu k informacím</a> a v <a href="https://www.zakonyprolidi.cz/cs/2016-425">Nařízení vlády č. 425/2016 Sb., o seznamu informací zveřejňovaných jako otevřená data</a>, které stanovuje vybraným orgánům veřejné správy povinnost zveřejňovat data z konkrétních jimi spravovaných informačních systémů ve formě otevřených dat.
+    </p>
+    
+    <p>
+        Více informací o strategických dokumentech, akčních plánech a souvisejících předpisech ČR i EU naleznete na stránce věnované <a href="https://opendata.gov.cz/legislativa:start">legislativnímu prostředí otevřených dat</a>.
+    </p>
+    
+    <hr/>
+
+    <h2 id="odbor-hlavního-architekta-egovernmentu">Odbor Hlavního architekta eGovernmentu Ministerstva vnitra</h2>
+    
+    <p>
+        Vrcholným orgánem ve veřejné správě pro otevřená data je odbor Hlavního architekta eGovernmentu ministerstva vnitra (OHA), který má danou problematiku v gesci. OHA plní koordinační roli, věnuje se právní úpravě otevřených dat a dohlíží na zachování principů otevřených dat u nových systémů veřejné správy. 
+        Koordinační role je ztělesněna zejména Národním koordinátorem otevřených dat, který zprostředkovává informace a kontakty mezi orgány veřejné správy a poskytuje jim podporu a součinnost.
+    </p>
+    
+    <p>
+        Veškeré informace o otevřených datech jsou k nalezení na <a href="https://data.gov.cz">Portálu otevřených dat</a>, který OHA MVČR spravuje.
+        Na portále najdou potřebné informace všechny zainteresované role, ať už jde o uživatele či poskytovatele otevřených dat, od přehledových informací přes technické návody, příklady dobré a špatné praxe až po detailní návod, jak v konkrétní instituci zavést správné procesy vedoucí k udržitelnému poskytování otevřených dat.
+    </p>
+    
+    <p>
+        OHA MVČR také vydává <a href="https://opendata.gov.cz/otevřené-formální-normy:start">Otevřené formální normy (OFN)</a>, které slouží jako standardy pro jednotlivé oblasti publikace otevřených dat.
+    </p>
+    
+    <p>
+        OHA v rámci vydávání stanovisek k IT projektům kontroluje u Informačních systémů veřejné správy, ať už nově vznikajících či u rozšiřovaných a modernizovaných stávajících, zachování principů otevřených dat, a to zejména princip &quot;open data ready&quot;.
+        U schvalovaných systémů tedy musí být zajištěn přístup k veškerým datům vedeným v databázích dotčených předmětem projektu ve strojově čitelném a otevřeném formátu, tento přístup musí být zajištěn bez dodatečných finančních nákladů a žadatel musí mít možnost se zpřístupněnými daty libovolně nakládat.
+        OHA dále kontroluje, zdali budou tato data zveřejňovaná ve formátu otevřených dat.
+    </p>
+    
+    <hr/>
+
+    <h2 id="archimate">Pohled Archimate</h2>
+    
+    <p>
+        V této sekci naleznete přehled otevřených dat v kontextu OVM namodelovaný v jazyce <a href="http://pubs.opengroup.org/architecture/archimate3-doc/">Archimate</a>.
+    </p>
+    
+    <h3 id="archimate-business">Business</h3>
+    
+    <p>
+        <img src="obrázky/archimate-business.svg" class="img-fluid" alt="Business vrstva Archimate">
+        Na byznys vrstvě se nachází legislativa dotýkající se otevřených dat a procesy a objekty, které se zapojují do publikace otevřených dat.
+        Jednotlivé procesy OVM jsou ve větším detailu popsány na <a href="https://data.gov.cz">Portálu otevřených dat</a>, kde se také nalézají <a href="https://opendata.gov.cz/otevřené-formální-normy:start">Otevřené formální normy</a>, které OVM při publikaci otevřených dat dodržuje.
+        Klient pak data očekává ve formátu popsaném Otevřenou formální normou.
+        eGovernment provozuje Portál otevřených dat s Národním katalogem otevřených dat, kam jsou otevřená data OVM registrována, a kde je klient VS hledá.
+        OVM navíc provozuje Lokální katalog otevřených dat, který je tím národním harvestován.
+    </p>
+    
+    <h3 id="archimate-aplikační">Aplikační</h3>
+    
+    <p>
+        <img src="obrázky/archimate-aplikační.svg" class="img-fluid" alt="Aplikační vrstva Archimate">
+        Na aplikační vrstvě hraje hlavní roli datový Portál OVM, na kterém jsou zveřejněna otevřená data OVM a který obsahuje Lokální katalog otevřených dat.
+        Do něj jsou katalogizována otevřená data OVM a z něj metadata přebírá Národní katalog otevřených dat.
+        Klient VS pak přistupuje přímo k souborům či API poskytovaným přes Portál OVM.
+    </p>
+    
   </div>

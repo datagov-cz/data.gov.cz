@@ -58,3 +58,15 @@ a.btn.btn-primary:hover, button.btn.btn-primary:hover {
         background-size: 400px 230px ;
     }
 }
+
+ol > li > ol > li {
+	list-style-type: lower-alpha ;
+}
+
+dl > dd > ol > li {
+	list-style-type: lower-alpha ;
+}
+
+ol > li > ol > li > ol > li {
+	list-style-type: lower-roman ;
+}

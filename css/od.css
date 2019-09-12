@@ -1,3 +1,30 @@
+:root {
+	--color-background: white ;
+	--color-background-footer: #fff;
+	--color-text-default: black ; 
+	--color-text-inverted: white ; 
+	--color-text-accent: #057fa5 ;
+	--color-text-accent-inverted: black ;
+	--color-base: #057fa5 ;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #222 ;
+		--color-background-footer: #333;
+		--color-text-default: #ddd ; 
+		--color-text-inverted: #222 ; 
+		--color-text-accent: white ;
+		--color-text-accent-inverted: white ;
+		--color-base: #057fa544 ;
+	}
+	
+	a {
+		text-decoration: underline;
+	}
+	
+}
+
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
   transition: .6s opacity ease;
@@ -10,36 +37,66 @@
   }
 } 
 
-.navbar-toggler-icon, .navbar-light .navbar-nav .nav-link, a {
-    color: #057fa5;
+body {
+	color: var(--color-text-default);
+	background-color: var(--color-background);		
 }
 
+input.form-control {
+	background-color: var(--color-background-footer);
+	color: var(--color-text-default);
+}
+
+span.input-group-text {
+	background-color: var(--color-background-footer);
+	color: var(--color-text-default);
+}
+
+footer {
+	background-color: var(--color-background-footer);
+}
+	
+div.dropdown-menu.show {
+	background-color: var(--color-background);		
+}
+
+.navbar-toggler-icon:hover, .navbar-light .navbar-nav .nav-link:hover, a:hover {
+	color: var(--color-text-accent-inverted);
+}
+
+.navbar-toggler-icon, .navbar-light .navbar-nav .nav-link, a {
+    color: var(--color-text-accent);
+}
+
+a {
+	color: var(--color-text-accent);
+}
 a.btn.btn-primary, button.btn.btn-primary {
-    background-color: #057fa5;
-    border-color: white;
-	color: white;
+    background-color: var(--color-text-accent);
+    border-color: var(--color-text-inverted);
+	color: var(--color-text-inverted);
 }
 
 a.btn.btn-primary:hover, button.btn.btn-primary:hover {
-    background-color: white;
-    border-color: white;
-    color: #057fa5;
+    background-color: var(--color-text-inverted);
+    border-color: var(--color-text-inverted);
+    color: var(--color-text-accent);
 }
 
 .btn-secondary {
-    background-color: white;
-    border-color: #057fa5;
-	color: #057fa5;
+    background-color: var(--color-text-inverted);
+    border-color: var(--color-text-accent);
+	color: var(--color-text-accent);
 }
 
 .btn-secondary:hover {
-    background-color: #057fa5;
-    border-color: white;
-	color: white;
+    background-color: var(--color-text-accent);
+    border-color: var(--color-text-inverted);
+	color: var(--color-text-inverted);
 }
 
 .jumbotron {
-    background-color: #057fa5;
+    background-color: var(--color-base);
 }
 
 @media (min-width: 768px) {

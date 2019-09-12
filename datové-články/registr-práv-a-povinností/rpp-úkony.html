@@ -16440,18 +16440,907 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#218;&#345;edn&#237;-hodiny-pracovi&#353;&#357;-OVM">&#218;&#345;edn&#237; hodiny pracovi&#353;&#357; OVM<a class="anchor-link" href="#&#218;&#345;edn&#237;-hodiny-pracovi&#353;&#357;-OVM">&#182;</a></h3><p>K pracovištím OVM jsou evidovány také úřední hodiny. Nejsou evidovány v RPP, ale v jiném datovém zdroji, v tzv. seznamu OVM, který je dostupný na <a href="https://www.czechpoint.cz/spravadat/ovm/datafile.do?format=xml&amp;service=seznamovm">portálu Czechpoint</a> v podobě XML souborů ke stažení. Uvedený odkaz vede na seznam OVM se základními údaji ke každému OVM, které se částečně překrývají s daty o OVM v RPP. Pro každý OVM je uvedeno URL XML souboru s detailem OVM, kde jsou uvedeny úřední hodiny tzv. úřadoven. Ty cca odpovídají pracovištím OVM vedeným v RPP. Protože ale nejsou sdíleny mezi pracovištěmi a úřadovnami identifikátory, ani nejsou pracoviště a úřadovny nijak jina přímo propojeny, souvislost mezi nimi není jasně definována. Čili v RPP zjistíme, na jakých pracovištích je úkon vykonáván a v seznamu OVM zjistíme úřední hodiny úřadoven, ale úřadovny a pracoviště přímo nepropojíme.</p>
+<p>Nepřímo ale můžeme zkusit propojení prostřednictvím adresních míst. Pokud je dané pracoviště na stejném adresním místě jako úřadovna, je vysoká pravděpodobnost, že pracoviště a úřadovna je totožné.</p>
+<p>Podívejme se znovu na výsledek pracovišť vykonávajících úkon U1074.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vykonávajícíPracoviště</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ukon</th>
+      <th>id</th>
+      <th>ovm</th>
+      <th>ovmIc</th>
+      <th>adresniMisto</th>
+      <th>adresaNonRuian</th>
+      <th>stat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00242098</td>
+      <td>242098</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/12917931</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132</td>
+      <td>243132</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22987215</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00296643</td>
+      <td>296643</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/20429444</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00297534</td>
+      <td>297534</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/24229059</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00300535</td>
+      <td>300535</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/27404234</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00301825</td>
+      <td>301825</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/11223197</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00286010</td>
+      <td>286010</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/12331520</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00081531</td>
+      <td>81531</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/17837448</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00075370</td>
+      <td>75370</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/24570222</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00266094</td>
+      <td>266094</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/25298429</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00245836</td>
+      <td>245836</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/8680353</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00246476</td>
+      <td>246476</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/14812223</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00250627</td>
+      <td>250627</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/17695082</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00251984</td>
+      <td>251984</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/9005803</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00249998</td>
+      <td>249998</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/5521980</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00279943</td>
+      <td>279943</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/15222055</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00251810</td>
+      <td>251810</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/25232479</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00245551</td>
+      <td>245551</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/11827653</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00252921</td>
+      <td>252921</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/17393523</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00296651</td>
+      <td>296651</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/20588887</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00297569</td>
+      <td>297569</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/25453696</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00297313</td>
+      <td>297313</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/12558095</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00262587</td>
+      <td>262587</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/12226742</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00300063</td>
+      <td>300063</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/4607155</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00260771</td>
+      <td>260771</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/13118391</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00284891</td>
+      <td>284891</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/23211661</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00296317</td>
+      <td>296317</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/14084201</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00281859</td>
+      <td>281859</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/24036536</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00298212</td>
+      <td>298212</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/8381356</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00262978</td>
+      <td>262978</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/23653124</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>201</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00232947</td>
+      <td>232947</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/14434601</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00298221</td>
+      <td>298221</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/8464324</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00298077</td>
+      <td>298077</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/8458600</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>204</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00257265</td>
+      <td>257265</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/955914</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00256455</td>
+      <td>256455</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/20752873</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00276944</td>
+      <td>276944</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/1910043</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00257966</td>
+      <td>257966</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/636576</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00279072</td>
+      <td>279072</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/5607965</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00277819</td>
+      <td>277819</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/23088249</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00303461</td>
+      <td>303461</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/14261367</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>211</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00303038</td>
+      <td>303038</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/8131350</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00283061</td>
+      <td>283061</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/18992196</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>213</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00283193</td>
+      <td>283193</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/10192492</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00259438</td>
+      <td>259438</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/14867664</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>215</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00301311</td>
+      <td>301311</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/11265825</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00304271</td>
+      <td>304271</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/17200768</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>217</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00276227</td>
+      <td>276227</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/21582068</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00294900</td>
+      <td>294900</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/3459489</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>219</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00293199</td>
+      <td>293199</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/16057503</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00236195</td>
+      <td>236195</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/11616971</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/70891508</td>
+      <td>70891508</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/23778326</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>222</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00063584</td>
+      <td>63584</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/28350278</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/70891095</td>
+      <td>70891095</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22075208</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>224</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00240915</td>
+      <td>240915</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/25636154</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>225</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00063517</td>
+      <td>63517</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/21773998</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>226</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00063797</td>
+      <td>63797</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22375198</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>227</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/70892156</td>
+      <td>70892156</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/17840015</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>228</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00063894</td>
+      <td>63894</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22541527</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>229</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00235440</td>
+      <td>235440</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/21154872</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>230</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/úkon/U1073</td>
+      <td>U1073</td>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/60162694</td>
+      <td>60162694</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22178597</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<p>231 rows × 7 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>V této sekci popisujeme práci s úředními hodinami úřadoven pouze pomocí SPARQL. Pokud chcete pracovat se zdrojovými XML soubory, můžete se alespoň inspirovat.</p>
+<p>Pro účely jednotnější práce s RPP a seznamem OVM jsme převedli XML data ze seznamu OVM do RDF podoby a zpřístupnili přes výukový <a href="https://píseček.opendata.cz/sparql">SPARQL endpoint zvaný "píseček"</a>. V něm jsou mj. právě data ze seznamu OVM včetně potřebných úředních hodin. OVM tam jsou identifikována pomocí jiných IRI, která jsou ale prolinkována na IRI OVM v otevřených datech z RPP pomocí predikátu (vazby) <a href="https://www.w3.org/TR/owl-ref/#sameAs-def">owl:sameAs</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">endpointPíseček</span><span class="o">=</span><span class="n">RemoteEndpoint</span><span class="p">(</span>
+    <span class="s2">&quot;https://xn--pseek-zsa0u.opendata.cz/sparql&quot;</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Následující dotaz v seznamu OVM vyhledá pro město Příbram ekvivalent Příbramy v RPP, kde je evidována s IRI <a href="https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132">https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132</a> a vypíše adresní místa úřadoven evidovaných v seznamu pracovišť.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úřadovny</span><span class="o">=</span><span class="n">endpointPíseček</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;</span>
+<span class="s2">PREFIX s: &lt;http://schema.org/&gt;</span>
+<span class="s2">PREFIX ruian-link: &lt;https://data.gov.cz/slovník/ruian/linky/&gt;</span>
+<span class="s2">SELECT *</span>
+<span class="s2">WHERE {</span>
+<span class="s2">    VALUES (?ovmRPP) {(&lt;https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132&gt;)}</span>
+<span class="s2">    </span>
+<span class="s2">    ?ovm owl:sameAs ?ovmRPP ;</span>
+<span class="s2">      s:hasPOS ?pos .</span>
+<span class="s2">      </span>
+<span class="s2">    ?pos s:address/ruian-link:adresni-misto ?adresniMisto .</span>
+<span class="s2">}</span>
+<span class="s2">LIMIT 10&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="n">úřadovny</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[22]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ovmRPP</th>
+      <th>ovm</th>
+      <th>pos</th>
+      <th>adresniMisto</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132</td>
+      <td>https://data.gov.cz/zdroj/ovm/00243132</td>
+      <td>https://data.gov.cz/zdroj/ovm/00243132/uradovna/1</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22987215</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vidíme, že pro město Příbram se adresní místo pracoviště evidované v RPP shoduje s adresním místem úřadovny evidované v seznamu OVM. Pracoviště a úřadovnu tak můžeme zkusit chápat jako ekvivalentní a pro pracoviště Příbrami vykonávající úkon U1073 můžeme získat otevírací dobu, případně další údaje evidované v seznamu OVM. Otevírací dobu lze získat pomocí následujícího SPARQL dotazu.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úřadovny</span><span class="o">=</span><span class="n">endpointPíseček</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;</span>
+<span class="s2">PREFIX s: &lt;http://schema.org/&gt;</span>
+<span class="s2">PREFIX ruian-link: &lt;https://data.gov.cz/slovník/ruian/linky/&gt;</span>
+<span class="s2">SELECT ?ovmRPP ?adresniMisto ?den (STR(?opens) AS ?od) (STR(?closes) AS ?do)</span>
+<span class="s2">WHERE {</span>
+<span class="s2">  VALUES (?ovmRPP ?adresniMisto) {(&lt;https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132&gt; &lt;https://linked.cuzk.cz/resource/ruian/adresni-misto/22987215&gt;)}</span>
+<span class="s2">    </span>
+<span class="s2">  ?ovm owl:sameAs ?ovmRPP ;</span>
+<span class="s2">    s:hasPOS ?pos .</span>
+<span class="s2">     </span>
+<span class="s2">  ?pos s:address/ruian-link:adresni-misto ?adresniMisto ;</span>
+<span class="s2">    s:hoursAvailable ?hours .</span>
+<span class="s2">    </span>
+<span class="s2">  ?hours s:dayOfWeek ?den ;</span>
+<span class="s2">    s:opens ?opens ;</span>
+<span class="s2">    s:closes ?closes .</span>
+<span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
+<span class="n">úřadovny</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ovmRPP</th>
+      <th>adresniMisto</th>
+      <th>den</th>
+      <th>od</th>
+      <th>do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22987215</td>
+      <td>http://schema.org/Monday</td>
+      <td>08:00:00</td>
+      <td>17:00:00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00243132</td>
+      <td>https://linked.cuzk.cz/resource/ruian/adresni-misto/22987215</td>
+      <td>http://schema.org/Wednesday</td>
+      <td>08:00:00</td>
+      <td>17:00:00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
 </div>
     </div>
   </div>

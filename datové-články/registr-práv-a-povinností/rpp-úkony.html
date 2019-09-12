@@ -13116,10 +13116,11 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Uk&#225;zka-pr&#225;ce-s-otev&#345;en&#253;mi-daty-o-&#250;konech-z-Registru-pr&#225;v-a-povinnost&#237;">Uk&#225;zka pr&#225;ce s otev&#345;en&#253;mi daty o &#250;konech z Registru pr&#225;v a povinnost&#237;<a class="anchor-link" href="#Uk&#225;zka-pr&#225;ce-s-otev&#345;en&#253;mi-daty-o-&#250;konech-z-Registru-pr&#225;v-a-povinnost&#237;">&#182;</a></h1><p>Otevřená data z registru práv a povinností (RPP) sestávají z referenčních údajů o působnostech jednotlivých orgánů veřejné moci (OVM). Mezi orgány veřejné moci se řadí centrální úřady (např. Česká správa sociálního zabezpečení), ministerstva, obce (resp. jejich obecní úřady), ale např. i vysoké školy.</p>
+<h1 id="Uk&#225;zka-pr&#225;ce-s-otev&#345;en&#253;mi-daty-o-&#250;konech-z-Registru-pr&#225;v-a-povinnost&#237;">Uk&#225;zka pr&#225;ce s otev&#345;en&#253;mi daty o &#250;konech z Registru pr&#225;v a povinnost&#237;<a class="anchor-link" href="#Uk&#225;zka-pr&#225;ce-s-otev&#345;en&#253;mi-daty-o-&#250;konech-z-Registru-pr&#225;v-a-povinnost&#237;">&#182;</a></h1><p>Otevřená data z registru práv a povinností (RPP) sestávají z referenčních údajů o působnostech jednotlivých orgánů veřejné moci (OVM). Mezi orgány veřejné moci se řadí instituce veřejné správy jako např. centrální úřady (např. Česká správa sociálního zabezpečení), ministerstva, obce (resp. jejich obecní úřady), ale např. i vysoké školy.</p>
 <p>Součástí údajů o působnostech OVM vedených v RPP jsou údaje o úkonech, které OVM vykonávají. Úkony odpovídají ve většině případů službám veřejné správy, kdy konkrétní úředník umožňuje nebo pomáhá konkrétnímu občanovi vypořádat jeho práva nebo povinnosti. Příkladem úkonu je např. "Ohlašení stavebního záměru", "Vydání stavebního povolení", "Vydání osvědčení o rovnocenosti vzdělání do zahraničí", "Žádost o registraci klenotnické slitiny nebo její změnu" nebo "Vydání cestovního pasu".</p>
 <p>Otevřená data z RPP umožňují vytvořit aplikaci, která by podávala přehled úkonů vykonávaných veřejnou správou, ukazovala, na jakých úřadech může občan, podnikatel nebo právnická osoba vybraný úkon vyřídit, doporučovala související úkony nebo informovala, zda lze daný úkon vyřešit i elektronicky. Dokonce RPP ve spojení s RÚIAN (Registr územních identifikátorů, adres a nemovitostí) umožňuje zobrazovat na mapě ČR, na jakých pracovištích lze dané úkony řešit a existují i data, která obsahují otevírací doby těchto pracovišť.</p>
-<p>Takto načrtnutá aplikace ještě neexistuje už jenom z důvodu, že data o úkonech v RPP jsou poměrně čerstvá. Vzhledem k jejich čerstvosti jsou také ale v některých oblastech neúplná. Např. Úřad práce eviduje v RPP pouze jedno pracoviště a tak z RPP vyplývá, že úkony týkající se sociálních dávek musí občané řešit pouze na jednom pracovišti v Praze, což je evidentně nesmysl. Další přidanou hodnotou aplikace by tak mohlo být poukazování na tyto neúplnosti, což může být zajímavou zpětnou vazbou pro úřady, které data do RPP dodávají, nebo pro NKÚ, který veřejnou správu kontroluje.</p>
+<p>Takto načrtnutá aplikace ještě neexistuje, už jenom z toho důvodu, že data o úkonech v RPP jsou poměrně čerstvá. Vzhledem k jejich čerstvosti jsou také ale v některých oblastech neúplná. Např. Úřad práce eviduje v RPP pouze jedno pracoviště a tak z RPP vyplývá, že úkony týkající se sociálních dávek musí občané řešit pouze na jednom pracovišti v Praze, což je evidentně nesmysl. Další přidanou hodnotou aplikace by tak mohlo být poukazování na tyto neúplnosti, což může být zajímavou zpětnou vazbou pro úřady, které data do RPP dodávají, nebo pro NKÚ, který veřejnou správu kontroluje.</p>
+<p>Zdrojový kód tohoto Jupyter Notebooku lze <a href="https://github.com/opendata-mvcr/opendata-mvcr.github.io/blob/master/datové-články/registr-práv-a-povinností/rpp-úkony.ipynb">stáhnout</a> z GitHubu. Nezapomeňte na <a href="https://github.com/opendata-mvcr/opendata-mvcr.github.io/tree/master/datové-články/registr-práv-a-povinností/img">obrázky s konceptuálními schématy</a>.</p>
 
 </div>
 </div>
@@ -13129,9 +13130,8 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Konceptu&#225;ln&#237;-sch&#233;ma-&#250;kon&#367;-v-RPP">Konceptu&#225;ln&#237; sch&#233;ma &#250;kon&#367; v RPP<a class="anchor-link" href="#Konceptu&#225;ln&#237;-sch&#233;ma-&#250;kon&#367;-v-RPP">&#182;</a></h2><p>Na úrovni konceptuálního modelu RPP jsou úkony instancemi třídy <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/úkon">Úkon</a>. Kompletní konceptuální schéma úkonů je uvedno na následujícím obrázku a je detailněji vysvětlováno ve zbytku článku.</p>
 <p><img src="img/ukony-komplet.png" alt="Konceptuální schéma úkonů v RPP"></p>
-<h2 id="Zp&#345;&#237;stupn&#283;n&#237;-dat-o-&#250;konech-v-RPP">Zp&#345;&#237;stupn&#283;n&#237; dat o &#250;konech v RPP<a class="anchor-link" href="#Zp&#345;&#237;stupn&#283;n&#237;-dat-o-&#250;konech-v-RPP">&#182;</a></h2><p>JSON struktura, ve které jsou otevřená data distribuována, je zdokumentována v <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/2019-04-03/#json-přehled">dokumentaci datové sady s úkony</a>. Datovou sadu s úkony lze stáhnout prostřednictvím <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">katalogizačního záznamu v NKOD</a>. Tato datová sada ale obsahuje pouze základní data o úkonech. Doplňující data jsou dostupná v dalších datových sadách z Registru práv a povinností. Na potřebné datové sady vždy upozorníme v příslušné části článku.</p>
-<p>Otevřená data z RPP jsou dostupná nejenom v podobě JSON souborů ke stažení, ale také v podobě <a href="https://lod-cloud.net/">otevřených propojených dat (angl. Linked Open Data)</a>. S touto podobou lze pracovat přímo prostřednitvím veřejně dostupného <a href="https://rpp-opendata.egon.gov.cz/odrpp/sparql">SPARQL endpointu</a>. SPARQL endpoint je webová služba, která přijímá dotazy v dotazovacím jazyku <a href="https://www.w3.org/TR/sparql11-overview/">SPARQL</a> a výsledky vrací buď v podobě tabulek serializovaných jako CSV, JSON nebo XML soubory nebo ve zvolené serializaci datového modelu <a href="https://www.w3.org/RDF/">RDF</a>.</p>
-<p>V tomto článku ukážeme příklady práce s daty o úkonech z RPP jak prostřednictvím JSON souborů ke stažení, tak prostřednictvím SPARQL endpointu. Příklady práce nad SPARQL endpointem jsou vyjádřeny ve SPARQL dotazech, které vracejí výsledky v podobě tabulek formátovaných jako CSV soubory. Lze s nimi dále pracovat pomocí libovolných k tomu vhodných nástrojů. Příklady zde uvedené mohou posloužit jako základ aplikace popisované v úvodu.</p>
+<h2 id="Zp&#345;&#237;stupn&#283;n&#237;-dat-o-&#250;konech-v-RPP">Zp&#345;&#237;stupn&#283;n&#237; dat o &#250;konech v RPP<a class="anchor-link" href="#Zp&#345;&#237;stupn&#283;n&#237;-dat-o-&#250;konech-v-RPP">&#182;</a></h2><p>Data o úkonech jsou dostupná v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a> a jejich struktura je zdokumentována v <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/2019-04-03/#json-přehled">dokumentaci</a>. Datová sada obsahuje pouze základní data o úkonech. Doplňující data jsou dostupná v <a href="https://data.gov.cz/datov%C3%A9-sady?kl%C3%AD%C4%8Dov%C3%A1%20slova=registr%20pr%C3%A1v%20a%20povinnost%C3%AD&amp;str%C3%A1nka=0">dalších datových sadách</a> z Registru práv a povinností. Na potřebné datové sady vždy upozorníme v příslušné části článku.</p>
+<p>Každá datová sada z RPP je dostupná ve dvou podobách, tzv. distribucích. Ty jsou z věcného pohledu totožné. Dokonce jsou téměř totožné i z pohledu formátu (obě jsou ve formátu JSON). Liší se pouze datovým modelem. JSON distribuce jsou klasickými JSON soubory. <a href="https://json-ld.org/">JSON-LD</a> distribuce jsou také JSON soubory, ale doplněné o tzv. <a href="https://www.w3.org/TR/json-ld/#the-context">JSON-LD kontext</a>, který mapuje JSON strukturu do datového modelu RDF s dodržením principů <a href="https://lod-cloud.net/">otevřených propojených dat (angl. Linked Open Data)</a>. S touto podobou lze pracovat přímo prostřednitvím veřejně dostupného <a href="https://rpp-opendata.egon.gov.cz/odrpp/sparql">SPARQL endpointu</a>. SPARQL endpoint je webová služba, která přijímá dotazy v dotazovacím jazyku <a href="https://www.w3.org/TR/sparql11-overview/">SPARQL</a> a výsledky vrací buď v podobě tabulek serializovaných jako CSV, JSON nebo XML soubory nebo ve zvolené serializaci datového modelu <a href="https://www.w3.org/RDF/">RDF</a>.</p>
 
 </div>
 </div>
@@ -13139,7 +13139,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Pr&#225;ce-s-RPP-prost&#345;ednictv&#237;m-SPARQL-endpointu">Pr&#225;ce s RPP prost&#345;ednictv&#237;m SPARQL endpointu<a class="anchor-link" href="#Pr&#225;ce-s-RPP-prost&#345;ednictv&#237;m-SPARQL-endpointu">&#182;</a></h2><p>Nejprve nastavíme prostředí pro prácí s RDF a SPARQLem pro spouštění SPARQL dotazů a zobrazování výsledků v tomto článku.</p>
+<h2 id="Pr&#225;ce-s-RPP-prost&#345;ednictv&#237;m-SPARQL-endpointu">Pr&#225;ce s RPP prost&#345;ednictv&#237;m SPARQL endpointu<a class="anchor-link" href="#Pr&#225;ce-s-RPP-prost&#345;ednictv&#237;m-SPARQL-endpointu">&#182;</a></h2><p>Svoji aplikaci můžete vystavět přímo nad <a href="https://rpp-opendata.egon.gov.cz/odrpp/sparql">SPARQL endpointem</a>. Nebudete tak muset budovat datový back-end. Na druhou stranu jste závislí na dostupnosti a výkonu veřejného SPARQL endpointu.</p>
+<p>Prostřednictvím HTTPS GET/POST požadavků můžete na <a href="https://rpp-opendata.egon.gov.cz/odrpp/sparql">SPARQL endpoint</a> zasílat SPARQL dotazy dle příkladů SPARQL dotazů uvedených níže. V případě SELECT dotazů jsou výsledkem tabulková data, která si můžete nechat vracet v různých formátech (CSV, XML, JSON, ...). Seznam možných formátů a způsob jak se na daný formát zeptat zjistíte pohledem na kód formulářového pole "Results Format" v <a href="https://rpp-opendata.egon.gov.cz/odrpp/sparql">uživatelském rozhraní SPARQL endpointu</a>.</p>
+<p>Alternativou je zprovoznit si vlastní lokální RDF úložiště a využít jeho vlastní SPARQL endpoint pro dotazování. Lze využít např. <a href="https://jena.apache.org/documentation/fuseki2/">Apache Jena Fuseki</a> nebo <a href="http://graphdb.ontotext.com/">GraphDB</a>. V Národním katalogu otevřených dat je potřeba získat odkazy ke stažení JSON-LD distribucí.</p>
+<p>Pro spouštění SPARQL dotazů uvedených v tomto článku prostřednictvím prostřeí <a href="https://jupyter.org/">Jupyter Notebooks</a> je nejprve nutno nastavit prostředí pro prácí s RDF a SPARQLem.</p>
 
 </div>
 </div>
@@ -13198,11 +13201,34 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Svoji aplikaci můžete vystavět přímo nad SPARQL endpointem. Nebudete tak muset budovat datový back-end. Na druhou stranu jste závislí na dostupnosti a výkonu veřejného SPARQL endpointu.</p>
-<p>Prostřednictvím HTTPS GET/POST požadavků můžete na SPARQL endpoint zasílat SPARQL dotazy na konkrétní objekty dle příkladů SPARQL dotazů uvedených níže. V případě SELECT dotazů jsou výsledkem tabulková data, která si můžete nechat vracet v různých formátech (CSV, XML, JSON, ...). Seznam možných formátů a způsob jak se na daný formát zeptat zjistíte pohledem na kód formulářového pole "Results Format" v <a href="https://rpp-opendata.egon.gov.cz/odrpp/sparql">uživatelském rozhraní SPARQL endpointu</a>.</p>
-<p>Alternativou je zprovoznit si vlastní lokální RDF úložiště a využít jeho vlastní SPARQL endpoint pro dotazování. Lze využít např. <a href="https://jena.apache.org/documentation/fuseki2/">Apache Jena Fuseki</a> nebo <a href="http://graphdb.ontotext.com/">GraphDB</a>. V Národním katalogu otevřených dat je potřeba získat odkazy ke stažení JSON-LD distribucí.</p>
-<p>A nyní již k samotnému dotazování nad úkony z RPP.</p>
-<h3 id="Z&#225;kladn&#237;-&#250;daje-o-&#250;konech">Z&#225;kladn&#237; &#250;daje o &#250;konech<a class="anchor-link" href="#Z&#225;kladn&#237;-&#250;daje-o-&#250;konech">&#182;</a></h3><p>Nejprve si pro ukázku vypíšeme seznam prvních 10 úkonů. K tomu slouží následující dotaz.</p>
+<h2 id="Pr&#225;ce-s-RPP-prost&#345;ednictv&#237;m-JSON-soubor&#367;">Pr&#225;ce s RPP prost&#345;ednictv&#237;m JSON soubor&#367;<a class="anchor-link" href="#Pr&#225;ce-s-RPP-prost&#345;ednictv&#237;m-JSON-soubor&#367;">&#182;</a></h2><p>Jak jsme popsali výše, prostřednictvím <a href="https://data.gov.cz/datov%C3%A9-sady?kl%C3%AD%C4%8Dov%C3%A1%20slova=registr%20pr%C3%A1v%20a%20povinnost%C3%AD">katalogizačních záznamů v NKOD</a> je možné stáhnout JSON distribuce datových sad z Registru práv a povinností a pro aplikaci využít tyto JSON soubory. Ty je samozřejmě nutno si uložit ve vhodném úložišti nabízejícím i vhodné dotazovací prostředí. Dokumentace každé z datových sad dokumentuje JSON strukturu a každý prvek JSON struktury odkazuje na odpovídající prvek konceptuálního schématu. Z konceptuálního pohledu je tak JSON reprezentace totožná s RDF reprezentací. Pouze v RDF reprezentaci je přirozeně zachycena grafová (síťová) struktura RPP, zatímco JSON struktury jsou z principu hierarchické a rozdělené do několika souborů. Práce s JSON podobou je tak v tomto ohledu s RPP trochu složitější.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="P&#345;&#237;klady-pr&#225;ce-s-daty">P&#345;&#237;klady pr&#225;ce s daty<a class="anchor-link" href="#P&#345;&#237;klady-pr&#225;ce-s-daty">&#182;</a></h2><p>Ve zbytku článku si ukážeme možnosti práce s daty o úkonech v RPP. Jednotlivé podkapitoly se věnují jiné části dat o úkonech a popisují ji pomocí konceptuálního modelu, poskytují ukázku SPARQL dotazu či dotazů nad touto částí dat a specifikují odpovídající JSON strukturu pro ty, kteří nechtějí pracovat s RDF reprezentací a dotazovacím jazykem SPARQL. Specifikace JSON struktury je vyjádřena v notaci dotazů v dotazovacím jazyku <a href="https://graphql.org/">GraphQL</a>.</p>
+<h3 id="Z&#225;kladn&#237;-&#250;daje-o-&#250;konech">Z&#225;kladn&#237; &#250;daje o &#250;konech<a class="anchor-link" href="#Z&#225;kladn&#237;-&#250;daje-o-&#250;konech">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>O každém úkonu jsou v RPP vedeny následující základní údaje: identifikátor úkonu, název úkonu, popis úkonu, zda lze o výkon úkonu požádat elektronicky (vazba <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-elektronickou-formu-úkonu">Má elektronickou formu úkonu</a>) a agenda, v rámci které je úkon vykonáván. Agenda označuje ucelenou oblast, ve které jeden nebo více OVM působí. Příklady agend jsou "Dohled nad finančním trhem", "Lidské tkáně a buňky" nebo "Veřejné zdravotní pojištění". Agenda je propojena s úkonem prostřednictvím vazby <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vykonáván-v-agendě">Je vykonáván v agendě</a>.</p>
+<p>Následující obrázek ukazuje konceptuální schéma základních údajů o úkonech.</p>
+<p><img src="img/úkon-základ.png" alt="Základní údaje o úkonech"></p>
+<p>Popsané konceptuální schéma již jde nad rámec základních dat o úkonech. Zmiňuje také data o agendách (konkrétně jejich kód a název), které jsou dostupné v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb">Agendy</a>. To, jaká data tato datová sada obsahuje, je popsáno v <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/agendy/">dokumentaci</a>. Dále je pro práci potřeba datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F420dc4fe7034cdb75bb0d1baf2c357d3">Číselník elektronických forem úkonů</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/číselník-elektronických-forem-úkonů/">dokumentace</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="SPARQL-a-RDF">SPARQL a RDF<a class="anchor-link" href="#SPARQL-a-RDF">&#182;</a></h4><p>Nejprve si pro ukázku vypíšeme seznam prvních 10 úkonů. K tomu slouží následující SPARQL dotaz.</p>
 
 </div>
 </div>
@@ -13212,7 +13238,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úkony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT *</span>
@@ -13221,7 +13247,7 @@ div#notebook {
 <span class="s2">    a:má-název-úkonu ?nazev .</span>
 <span class="s2">}</span>
 <span class="s2">LIMIT 10&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">úkony</span>
 </pre></div>
 
     </div>
@@ -13327,10 +13353,6 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ve výsledku vidíme 10 úkonů. Pro každý úkon vidíme jeho IRI a název. Ve světě LOD je každá entita identifikována svým IRI. Toto IRI je zároveň dereferencovatelné, při jeho dereferencování dostaneme data o identifikované entitě.</p>
-<p>O každém úkonu jsou v RPP vedeny následující základní údaje: identifikátor úkonu, název úkonu, popis úkonu, zda lze o výkon úkonu požádat elektronicky (vazba <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-elektronickou-formu-úkonu">Má elektronickou formu úkonu</a>) a agenda, v rámci které je úkon vykonáván. Agenda označuje ucelenou oblast, ve které jeden nebo více OVM působí. Příklady agend jsou "Dohled nad finančním trhem", "Lidské tkáně a buňky" nebo "Veřejné zdravotní pojištění". Agenda je propojena s úkonem prostřednictvím vazby <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vykonáván-v-agendě">Je vykonáván v agendě</a>.</p>
-<p>Následující obrázek ukazuje konceptuální schéma základních údajů o úkonech.</p>
-<p><img src="img/úkon-základ.png" alt="Základní údaje o úkonech"></p>
-<p>Popsané konceptuální schéma již jde nad rámec základních dat o úkonech. Zmiňuje také data o agendách (konkrétně jejich název), které jsou dostupné v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb">Agendy</a>. To, jaká data tato datová sada obsahuje, je popsáno v <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/agendy/">dokumentaci</a>. Dále je potřebná datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F420dc4fe7034cdb75bb0d1baf2c357d3">Číselník elektronických forem úkonů</a> a jeho <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/číselník-elektronických-forem-úkonů/">dokumentace</a>.</p>
 <p>Následující dotaz vrací základní údaje pro úkon U1073 "Zřízení nového válečného hrobu".</p>
 
 </div>
@@ -13341,7 +13363,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úkonyNázvy</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT *</span>
@@ -13353,7 +13375,7 @@ div#notebook {
 <span class="s2">    l:má-elektronickou-formu-úkonu ?elForma ;</span>
 <span class="s2">    l:je-vykonáván-v-agendě ?agenda .</span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">úkonyNázvy</span>
 </pre></div>
 
     </div>
@@ -13431,7 +13453,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úkonZákladníDetail</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 <span class="s2">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
@@ -13449,7 +13471,7 @@ div#notebook {
 <span class="s2">  ?agenda l:má-název-agendy ?agendaNazev ;</span>
 <span class="s2">    l:má-kód-agendy ?agendaKod .</span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">úkonZákladníDetail</span>
 </pre></div>
 
     </div>
@@ -13517,10 +13539,54 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory je možné tyto základní údaje o úkonech získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>. V JSON souboru jsou výše popsané údaje kódovány v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    identifikátor,
+    název,
+    popis,
+    agenda,
+    elektronická-forma
+  }
+}</code></pre>
+<p>Název agendy (příp. další atributy agend) lze získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb">Agenda</a>. V JSON souboru je identifikátor agendy odkazovaný z úkonu, kód a název agendy kódován v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    id,
+    kód
+    název
+  }
+}</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Poskytov&#225;n&#237;-&#250;kon&#367;">Poskytov&#225;n&#237; &#250;kon&#367;<a class="anchor-link" href="#Poskytov&#225;n&#237;-&#250;kon&#367;">&#182;</a></h3><p>OVM poskutuje úkony. To, že daný OVM poskytuje úkon, je v RPP zaznamenáno buď přímo nebo je zde uvedeno, že úkon je poskytován kategorií OVM. Úkon pak vykonává každý OVM, který do kategorie patří. Konceptuální schéma poskytování úkonů je znázorněno na následujícím obrázku.</p>
 <p><img src="img/poskytování-úkonů-01.png" alt="Konceptuální schéma poskytování úkonů"></p>
 <p>Vazba mezi úkonem a OVM, resp. kategorií OVM, není jednoduchou binární vazbou. Do vazby totiž vstupuje ještě další prvek, o kterém si řekneme až později. Pro nyní není podstatný. Z důvodu tohoto dalšího prvku je vazba ternární a je proto reprezentována samostatnou třídou <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">Poskytování úkonu</a>. Třída <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/úkon">Úkon</a> je pak propojena s třídou <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">Poskytování úkonu</a> prostřednictvím vazby <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">Je poskytován</a>. S třídami <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">Orgán veřejné moci</a> a <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/kategorie-orgánů-veřejné-moci">Kategorie orgánů veřejné moci</a> je propojena prostřednictvím vazby <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele">Má poskytovatele</a>.</p>
-<p>Následující dotaz vrací OVM či jejich kategorie, které poskytují úkon U1073 "Zřízení nového válečného hrobu".</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>V případě, že úkon poskytuje celá kategorie OVM, je potřeba také získat OVM, které do kategorie patří. Vazba mezi kategorií a OVM není jednoduchou binární vazbou, neboť vztah mezi OVM a kategorií má svoje atributy. Konceptuální model zařazení OVM do kategorií je znározněn na následujícím obrázku.</p>
+<p><img src="img/ovm-a-kategorie.png" alt="Zařazení OVM do kategorií"></p>
+<p>Pro práci s daty o OVM a jejich zařazení do kategorií je potřebná datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/orgány-veřejné-moci/">dokumentace</a>. Pro práci s daty o kategoriích OVM je potřebná datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F4cdc3767e173806c2a7bb345459731a5">Kategorie orgánů veřejné moci</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/kategorie-orgánů-veřejné-moci/">dokumentace</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="SPARQL-a-RDF">SPARQL a RDF<a class="anchor-link" href="#SPARQL-a-RDF">&#182;</a></h4><p>Následující dotaz vrací OVM či jejich kategorie, které poskytují úkon U1073 "Zřízení nového válečného hrobu".</p>
 
 </div>
 </div>
@@ -13530,7 +13596,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">poskytujícíOVMaKategorie</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 <span class="s2">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
@@ -13551,7 +13617,7 @@ div#notebook {
 <span class="s2">      l:má-název-kategorie ?kategorieNazev .</span>
 <span class="s2">  }</span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">poskytujícíOVMaKategorie</span>
 </pre></div>
 
     </div>
@@ -13651,9 +13717,6 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>V případě, že úkon poskytuje celá kategorie OVM, je potřeba také získat OVM, které do kategorie patří. Vazba mezi kategorií a OVM není jednoduchou binární vazbou, neboť vztah mezi OVM a kategorií má svoje atributy. Konceptuální model zařazení OVM do kategorií je znározněn na následujícím obrázku.</p>
-<p><img src="img/ovm-a-kategorie.png" alt="Zařazení OVM do kategorií"></p>
-<p>Pro práci s daty o OVM a jejich zařazení do kategorií je potřebná datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/orgány-veřejné-moci/">dokumentace</a>. Pro práci s daty o kategoriích OVM je potřebná datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F4cdc3767e173806c2a7bb345459731a5">Kategorie orgánů veřejné moci</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/kategorie-orgánů-veřejné-moci/">dokumentace</a>.</p>
 <p>Následující dotaz vrací OVM zařazené do kategorie KO12 "Kraje a hl. m. Praha".</p>
 
 </div>
@@ -13664,7 +13727,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ovm</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ovmVKategorii</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT DISTINCT ?kategorie ?kategorieId ?kategorieNazev ?ovm ?ovmIc ?ovmNazev</span>
@@ -13689,7 +13752,7 @@ div#notebook {
 <span class="s2">  ?kategorie l:má-identifikátor-kategorie ?kategorieId ;</span>
 <span class="s2">    l:má-název-kategorie ?kategorieNazev .</span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ovm</span>
+<span class="n">ovmVKategorii</span>
 </pre></div>
 
     </div>
@@ -13874,6 +13937,54 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory lze OVM a kategorie OVM poskytující úkony získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>, kde jsou kódovány v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    poskytování-úkonu {
+      poskytovatel
+    }
+  }
+}</code></pre>
+<p>kde hodnotou prvku <code>poskytovatel</code> je buď id OVM nebo id kategorie OVM.</p>
+<p>Pro získání údajů o OVM je nutno přistoupit do JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a>, kde jsou identifikátor OVM referencovaný z úkonu, název OVM a IČ osoby OVM kódovány v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/orgány-veřejné-moci/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    id,
+    název,
+    ičo
+  }
+}</code></pre>
+<p>Pro získání údajů o kategorii OVM je nutno přistoupit do JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F4cdc3767e173806c2a7bb345459731a5">Kategorie orgánů veřejné moci</a>, kde jsou identifikátor kategorie OVM referencovaný z úkonu, název OVM a jeho v RPP evidovaný identifikátor kódovány v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/kategorie-orgánů-veřejné-moci/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    id,
+    název,
+    identifikátor
+  }
+}</code></pre>
+<p>U kategorií OVM je nutno odlišit <code>id</code> a <code>identifikátor</code>. První je identifikátor používaný k referencování mezi datovými sadami. Druhý je identifikátor tak, jak je uveden v RPP.</p>
+<p>Dále pak pro získání kategorií, do kterých OVM spadá je nutno přistoupit do JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a>, kde je uveden seznam identifikátu kategorií, do kterých OVM patří kódován v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/orgány-veřejné-moci/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    seznam-kategorií {
+      kategorie,
+      zařazení-od,
+      zařazení-do
+    }
+  }
+}</code></pre>
+<p>Prvek <code>kategorie</code> je referencí na kategorii v datové sadě datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F4cdc3767e173806c2a7bb345459731a5">Kategorie orgánů veřejné moci</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Vykon&#225;v&#225;n&#237;-&#250;kon&#367;">Vykon&#225;v&#225;n&#237; &#250;kon&#367;<a class="anchor-link" href="#Vykon&#225;v&#225;n&#237;-&#250;kon&#367;">&#182;</a></h3><p>Poskytování úkonu vyplývá z legislativy, která říká, že daný OVM nebo OVM dané kategorie mají úkon poskytovat. Ještě to ale neznamená, že úkon skutečně poskytují. Může například dojít k tomu, že určitý OVM ve skutečnosti úkon, který má poskytovat, přenese na jiný OVM. Skutečnost je pak v RPP zaznamenána v podobě výkonu úkonů. V tomto případě jsou zaznamenávány výkony úkonů na detail jednotlivých OVM, nikoliv na úroveň kategorií. Tj. jestliže je v RPP zaznamenáno, že daná kategorie poskytuje úkon, pak je v RPP také zaznamenáno, že každý jednotlivý OVM z této kategorie úkon vykonává, pokud výkon úkonu nepřenesl tento OVM na jiný OVM. Konceptuální schéma poskytování úkonů je znázorněno na následujícím obrázku.</p>
 <p><img src="img/vykonávání-úkonů-01.png" alt="Konceptuální schéma výkonu úkonů"></p>
 
@@ -13886,7 +13997,14 @@ div#notebook {
 <p>Vazba mezi úkonem a OVM opět není jednoduchou binární vazbou. Do vazby opět vstupují další prvek, které nyní pro jednoduchost pomineme. Výkon úkonu probíhá v rámci tzv. působnosti OVM v agendě. OVM je pro výkon agendy registrovaný. Registrace OVM pro výkon agendy v RPP znamená, že OVM se oficiálně přihlašuje k tomu, že agendu skutečně vykonává. Registrace je na konceptuální úrovni reprezentována třídou <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/registrace-pro-výkon-agendy">Registrace pro výkon agendy</a> a je propojena s třídou <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">Orgán veřejné moci </a> prostřednictvím vazby <a href="https://slovník.gov.cz/agendový/104/pojem/má-registrovaný-subjekt">Má registrovaný subjekt</a>. Registrace je navázaná i na samostatnou agendu, ale tato vazba teď není podstatná. Registrace znamená, že OVM vykonává i některé úkony vykonávané v rámci agendy (viz dotazy výše). Registrací vzniká působnost v agendě reprezentovaná třídou <a href="https://slovník.gov.cz/agendový/104/pojem/působnost-v-agendě">Působnost v agendě</a>. Na registraci je navázaná vazbou <a href="https://slovník.gov.cz/agendový/104/pojem/vznikla-v-rámci-registrace">Vznikla v rámci registrace</a>. V rámci působnosti pak již registrovaný OVM vykonává jednotlivé úkony. Výkony úkonu jsou reprezentovány třídou <a href="https://slovník.gov.cz/agendový/104/pojem/výkon-úkonu">Výkon úkonu</a> a na úkony jsou navázány vazbou <a href="https://slovník.gov.cz/agendový/104/pojem/má-vykonávaný-úkon">Má vykonávaný úkon</a>.</p>
 <p>Tuto cestu mezi úkony a OVM, které je vykonávají, je nutno zahrnout do dotazů nad daty. Ještě poznamenejme, že úkon může vykonávat také tzv. soukromoprávní uživatel údajů, ale to teď pro jednoduchost vynechme a uvažujme pro výkon úkonů pouze OVM.</p>
 <p>Data o výkonech úkonů v rámci působnosti v agendách jsou dostupná v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F7ee91a644bf6da16a9f5c4f337163c0f">Působnost v agendách</a>. Pro práci s datovou sadou využijte <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/působnost-v-agendách/">dokumentaci</a>. Je nutno upozornit, že se jedná o poměrně velkou datovou sadu čítající 634730 působností, přičemž 1 působnost je poměrně složitým objektem (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/působnost-v-agendách/">dokumentace</a>).</p>
-<p>Následující dotaz vrací OVM, které poskytují úkon U1073 "Zřízení nového válečného hrobu".</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="SPARQL-a-RDF">SPARQL a RDF<a class="anchor-link" href="#SPARQL-a-RDF">&#182;</a></h4><p>Následující SPARQL dotaz vrací OVM, které vykonávají úkon U1073 "Zřízení nového válečného hrobu".</p>
 
 </div>
 </div>
@@ -13896,7 +14014,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vykonávajícíOVMaKategorie</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT DISTINCT ?ukon ?id ?ovm ?ovmIc ?ovmNazev</span>
@@ -13913,7 +14031,7 @@ div#notebook {
 <span class="s2">  ?ukon l:má-identifikátor-úkonu ?id .</span>
 
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">vykonávajícíOVMaKategorie</span>
 </pre></div>
 
     </div>
@@ -14460,11 +14578,31 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory lze OVM vykonávající úkony získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F7ee91a644bf6da16a9f5c4f337163c0f">Působnost v agendách</a> (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/působnost-v-agendách/">dokumentace</a> pro detailní popis struktury). Je nutno upozornit, že se jedná o poměrně velkou datovou sadu čítající 634730 působností, přičemž 1 působnost je poměrně složitým objektem. Prvek <code>položky</code> v JSON souboru je seznamem (polem) jednotlivých působností v agendách. Každá působnost je navázána na OVM a na úkony, které OVM v rámci této působnosti vykonává. OVM a úkony jsou kódovány v následující JSON struktuře:</p>
+
+<pre><code>{
+  položky {
+    registrace {
+      ovm
+    },
+    úkony {
+      úkon
+    }
+  }
+}</code></pre>
+<p>kde hodnotou prvku <code>ovm</code> je reference na id OVM do datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a> a hodnotou prvku <code>úkon</code> je reference na id úkonu do datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Pracovi&#353;t&#283;,-kde-jsou-&#250;kony-vykon&#225;v&#225;ny">Pracovi&#353;t&#283;, kde jsou &#250;kony vykon&#225;v&#225;ny<a class="anchor-link" href="#Pracovi&#353;t&#283;,-kde-jsou-&#250;kony-vykon&#225;v&#225;ny">&#182;</a></h3><p>Pokud OVM vykonává úkon na konkrétních pracovištích, pak jsou také evidována v RPP. Souvislost mezi výkonem úkonu a pracovištěm vykonávajícího OVM je znázorněna na následujícím konceptuálním schématu.</p>
 <p><img src="img/vykonávání-úkonů-02.png" alt="Konceptuální schéma výkonu úkonů na pracovištích"></p>
 <p>Pracoviště jsou reprezentovánav koncetuálním modelu třídou <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/pracoviště">Pracoviště</a>. Pracoviště jsou propojena s výkonem úkonu vazbou <a href="https://slovník.gov.cz/agendový/104/pojem/vykonává-úkon-na-pracovišti">Vykonává úkon na pracovišti</a>. Pracoviště je prostřednictvím vazby <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-adresu-pracoviště">Má adresu pracoviště</a> propojeno na svoji adresu. Ta může být uvedena buď v podobě adresního místa RÚIAN nebo jako textová adresa, pokud se jedná o adresu, která není evidována v RÚIAN. Dále je pracoviště propojeno prostřednictvím vazby <a href="https://slovník.gov.cz/agendový/104/pojem/má-stát-pracoviště">Má stát pracoviště</a> na stát, ve kterém se pracoviště nachází. Stát je uveden pouze v případě zahraničních pracovišť (např. velvyslanectví). Orgán veřejné moci je asociován se seznamem svých pracovišť vazbou <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-pracoviště-vykonávající-úkon">Má pracoviště vykonávající úkon</a>.</p>
 <p>Vazby pracovišť na výkony úkonů jsou dostupné v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F7ee91a644bf6da16a9f5c4f337163c0f">Působnost v agendách</a>. Pro práci s datovou sadou využijte <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/působnost-v-agendách/">dokumentaci</a>. Data o pracovištích jsou dostupná v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a> a použijte <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/orgány-veřejné-moci/">dokumentaci</a>.</p>
-<p>Následující dotaz vrací pracoviště, na kterých je vykonáván úkon U1073 "Zřízení nového válečného hrobu".</p>
+<h4 id="SPARQL-a-RDF">SPARQL a RDF<a class="anchor-link" href="#SPARQL-a-RDF">&#182;</a></h4><p>Následující dotaz vrací pracoviště, na kterých je vykonáván úkon U1073 "Zřízení nového válečného hrobu".</p>
 
 </div>
 </div>
@@ -14474,7 +14612,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vykonávajícíPracoviště</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT DISTINCT ?ukon ?id ?ovm ?ovmIc ?adresniMisto ?adresaNonRuian ?stat</span>
@@ -14506,7 +14644,7 @@ div#notebook {
 <span class="s2">  ?ukon l:má-identifikátor-úkonu ?id .</span>
 
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">vykonávajícíPracoviště</span>
 </pre></div>
 
     </div>
@@ -15178,7 +15316,45 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Z výsledku můžeme vyčíst, že adres, na kterých je úkon vykonáván je méně, než OVM, které úkon vykonávají. To je způsobeno určitou děravostí RPP, která je vidět např. na Hlavním městě Praze (IČ 00064581). Hlavní město Praha má evidována celkem <a href="https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00064581">4 pracoviště</a>. Pokud se ale podíváme na <a href="https://rpp-opendata.egon.gov.cz/odrpp/zdroj/působnost/A549/00064581">působnost Hlavního města Prahy, v rámci které vykonává úkon U1073</a>, zjistíme, že pracoviště není uvedeno.</p>
-<h3 id="GPS-sou&#345;adnice-a-dal&#353;&#237;-&#250;daje-adresn&#237;ch-m&#237;st-pracovi&#353;&#357;">GPS sou&#345;adnice a dal&#353;&#237; &#250;daje adresn&#237;ch m&#237;st pracovi&#353;&#357;<a class="anchor-link" href="#GPS-sou&#345;adnice-a-dal&#353;&#237;-&#250;daje-adresn&#237;ch-m&#237;st-pracovi&#353;&#357;">&#182;</a></h3><p>Z výsledku předchozího dotazu také můžeme vyčíst, že adresy pracovišť jsou uvedeny v podobě referencí na adresní místa RÚIAN. V otevřených datech z RPP ale údaje o těchto adresách dostupné nejsou a je nutno využít otevřená data z RÚIAN. V oblasti LOD ČÚZK stanovil tvar IRI jednotlivých RÚIAN objektů, včetně adresních míst, ale data v podobě LOD ještě neposkytuje. Nicméně, neoficiálně jsou data RÚIANu v LOD podobě dostupná prostřednictvím <a href="https://linked.cuzk.cz.opendata.cz/sparql">SPARQL endpointu iniciativy OpenData.cz</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory lze pracoviště získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F7ee91a644bf6da16a9f5c4f337163c0f">Působnost v agendách</a> (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/působnost-v-agendách/">dokumentace</a> pro detailní popis struktury). Pracoviště jsou uvedeny vedle vazby působnosti na úkon v následující JSON struktuře:</p>
+
+<pre><code>{
+  položky {
+    úkony {
+      pracoviště
+    }
+  }
+}</code></pre>
+<p>kde hodnotou prvku <code>pracoviště</code> je reference na id pracoviště do datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a>, kde je uvedeno v následující struktuře:</p>
+
+<pre><code>{
+  položky {
+    pracoviště-ovm {
+      id,
+      adresa-pr,
+      adresa-pr-txt,
+      stat-pr
+    }
+  }
+}</code></pre>
+<p>kde referencované id pracoviště je uvedeno v prvku <code>id</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="GPS-sou&#345;adnice-a-dal&#353;&#237;-&#250;daje-adresn&#237;ch-m&#237;st-pracovi&#353;&#357;">GPS sou&#345;adnice a dal&#353;&#237; &#250;daje adresn&#237;ch m&#237;st pracovi&#353;&#357;<a class="anchor-link" href="#GPS-sou&#345;adnice-a-dal&#353;&#237;-&#250;daje-adresn&#237;ch-m&#237;st-pracovi&#353;&#357;">&#182;</a></h3><p>Z výsledku předchozího dotazu také můžeme vyčíst, že adresy pracovišť jsou uvedeny v podobě referencí na adresní místa RÚIAN. V otevřených datech z RPP ale údaje o těchto adresách dostupné nejsou a je nutno využít otevřená data z RÚIAN.</p>
+<p>Níže je popsána pouze práce s RÚIAN prostřednictvím dotazovacího jazyka SPARQL. ČÚZK poskytuje RÚIAN svými vlastními prostředky buď prostřednictvím <a href="https://data.gov.cz/datov%C3%A9-sady?kl%C3%AD%C4%8Dov%C3%A1%20slova=R%C3%9AIAN">datových sad</a> v NKOD nebo prostřednictvím <a href="https://vdp.cuzk.cz/">Veřejného dálkového přístupu k RÚIAN</a>.</p>
+<p>V oblasti LOD ČÚZK stanovil tvar IRI jednotlivých RÚIAN objektů, včetně adresních míst, ale data v podobě LOD ještě neposkytuje. Nicméně, neoficiálně jsou data RÚIANu v LOD podobě dostupná prostřednictvím <a href="https://linked.cuzk.cz.opendata.cz/sparql">SPARQL endpointu iniciativy OpenData.cz</a>.</p>
 
 </div>
 </div>
@@ -15211,7 +15387,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">adresniMistoGPS</span><span class="o">=</span><span class="n">endpointRUIAN</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">adresníMístoGPS</span><span class="o">=</span><span class="n">endpointRUIAN</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">PREFIX geo: &lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="s2">PREFIX s: &lt;http://schema.org/&gt;</span>
 <span class="s2">SELECT ?adresniMisto ?lat ?lon</span>
@@ -15224,7 +15400,7 @@ div#notebook {
 <span class="s2">    s:longitude ?lon .</span>
 <span class="s2">}</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">adresniMistoGPS</span>
+<span class="n">adresníMístoGPS</span>
 </pre></div>
 
     </div>
@@ -15296,7 +15472,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">adresniMistoDetail</span><span class="o">=</span><span class="n">endpointRUIAN</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">adresníMístoDetail</span><span class="o">=</span><span class="n">endpointRUIAN</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">PREFIX ruian: &lt;https://linked.cuzk.cz/ontology/ruian/&gt;</span>
 <span class="s2">PREFIX s: &lt;http://schema.org/&gt;</span>
 <span class="s2">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
@@ -15329,7 +15505,7 @@ div#notebook {
 
 <span class="s2">}</span>
 <span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">adresniMistoDetail</span>
+<span class="n">adresníMístoDetail</span>
 </pre></div>
 
     </div>
@@ -15408,7 +15584,7 @@ div#notebook {
 <h3 id="Subjekty-vyu&#382;&#237;vaj&#237;c&#237;-&#250;kon">Subjekty vyu&#382;&#237;vaj&#237;c&#237; &#250;kon<a class="anchor-link" href="#Subjekty-vyu&#382;&#237;vaj&#237;c&#237;-&#250;kon">&#182;</a></h3><p>Pro každý úkon je uvedeno, jaké typy subjektů mohou úkon využívat. Přesněji to znamená vymezení subjektu, který může podat žádost o výkon úkonu. Jsou rozlišovány pouze 3 typy subjektů - fyzická osoba (FO), podnikající fyzická osoba (PFO) a právnická osoba (PO). Vazbu mezi úkonem a typem subjektů, které úkon využívají znázorňuje následující konceptuální schéma.</p>
 <p><img src="img/typ-subjektu-k-úkonu.png" alt="Subjekty využívající úkon"></p>
 <p>Pro práci s typy subjektů je ještě potřeba datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F281575084358cb8be628b7cc66020c2c">Číselník typů subjektů</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/číselník-typů-subjektů/">dokumentace</a>.</p>
-<p>Následující dotaz vrací, jaké typy subjektů mohou využívat úkon U1073 "Zřízení nového válečného hrobu".</p>
+<h4 id="SPARQL">SPARQL<a class="anchor-link" href="#SPARQL">&#182;</a></h4><p>Následující dotaz vrací, jaké typy subjektů mohou využívat úkon U1073 "Zřízení nového válečného hrobu".</p>
 
 </div>
 </div>
@@ -15418,7 +15594,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">typySubjektů</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 <span class="s2">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
@@ -15432,7 +15608,7 @@ div#notebook {
 <span class="s2">  ?typSubjektu skos:notation ?typSubjektuKod .</span>
 
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">typySubjektů</span>
 </pre></div>
 
     </div>
@@ -15500,11 +15676,26 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory je možné typy subjektů navázané k úkonu získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>, kde je vazba mezi úkonem a typy subjektů kódována v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    subjekty-využívající-úkon
+  }
+}</code></pre>
+<p>Prvek <code>subjekty-využívající-úkon</code> je seznamem referencí na identifikátory typů subjektů uvedených v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F281575084358cb8be628b7cc66020c2c">Číselník typů subjektů</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="M&#237;stn&#237;-p&#345;&#237;slu&#353;nost-&#250;konu">M&#237;stn&#237; p&#345;&#237;slu&#353;nost &#250;konu<a class="anchor-link" href="#M&#237;stn&#237;-p&#345;&#237;slu&#353;nost-&#250;konu">&#182;</a></h3><p>Místo výkonu úkonu může být pro žadatele omezeno. Pokud je omezeno, potom žadatel může žádat o výkon úkonu pouze na pracovištích odpovídajících tomuto místu.</p>
 <p>Omezení místa je v konceptuálním schématu RPP reprezentováno třídou <a href="https://slovník.gov.cz/agendový/104/pojem/místní-příslušnost">Místní příslušnost</a>. K místní příslušnosti jsou k dispozici následující údaje - vazba <a href="https://slovník.gov.cz/agendový/104/pojem/je-místní-příslušností-pro-typ-subjektu">Je místní příslušností pro typ subjektu</a> odkazující na typ subjektu, kterého se omezení týká, vazba <a href="https://slovník.gov.cz/agendový/104/pojem/má-poskytovatele-v-místní-příslušnosti">Má poskytovatele v místní příslušnosti</a> odkazující na OVM nebo kategorii OVM, která v dané místní příslušnosti úkon vykonává a vazba <a href="https://slovník.gov.cz/agendový/104/pojem/má-typ-místní-příslušnosti">Má typ místní příslušnosti</a> vymezující, jak je místo výkonu omezeno. Konceptuální schéma místních přísluností úkonu ukazuje následující obrázek.</p>
 <p><img src="img/místní-příslušnost-úkonu.png" alt="Místní příslušnosti úkonů"></p>
 <p>Pro práci s typy místních příslušností je ještě potřeba datová sada <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2Fcf79f7477c758122a8d99891e66a9800">Číselník typů místních příslušností k subjektům</a> a její <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/číselník-typů-místních-příslušností-k-subjektům/">dokumentace</a>.</p>
-<p>Existující typy místních příslušností vrací následující dotaz.</p>
+<h4 id="SPARQL-a-RDF">SPARQL a RDF<a class="anchor-link" href="#SPARQL-a-RDF">&#182;</a></h4><p>Existující typy místních příslušností vrací následující dotaz.</p>
 
 </div>
 </div>
@@ -15514,7 +15705,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">typyMistniPrislusnosti</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">typyMístníPříslušnosti</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="s2">SELECT ?kod ?nazev</span>
 <span class="s2">WHERE {</span>
@@ -15522,7 +15713,7 @@ div#notebook {
 <span class="s2">    skos:notation ?kod ;</span>
 <span class="s2">    skos:prefLabel ?nazev .</span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">typyMistniPrislusnosti</span>
+<span class="n">typyMístníPříslušnosti</span>
 </pre></div>
 
     </div>
@@ -15617,7 +15808,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">místníPříslušnostiKÚkonu</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 <span class="s2">PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
@@ -15645,7 +15836,7 @@ div#notebook {
 <span class="s2">  }</span>
 
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">místníPříslušnostiKÚkonu</span>
 </pre></div>
 
     </div>
@@ -15803,10 +15994,30 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Sdru&#382;ov&#225;n&#237;-&#250;kon&#367;-podle-v&#283;cn&#253;ch-souvislost&#237;">Sdru&#382;ov&#225;n&#237; &#250;kon&#367; podle v&#283;cn&#253;ch souvislost&#237;<a class="anchor-link" href="#Sdru&#382;ov&#225;n&#237;-&#250;kon&#367;-podle-v&#283;cn&#253;ch-souvislost&#237;">&#182;</a></h3><p>Pro aplikační využití dat z RPP by mohlo být užitečné sdružovat úkony dle nějaké věcné souvislosti. V případě, že se uživatel zajímá o nějaký úkon, mohla by aplikace nabízet související úkony. Bohužel neexistuje procesní model veřejné správy, který by mohl být využit pro navádění uživatele na následující či předcházející úkon v procesu, příp. na všechny úkony v daném procesu. Byly zpracovány tzv. životní situace, ty ale nejsou ve strojově zpracovatelné podobě a už vůbec ne navázány na úkony v RPP.</p>
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory je možné místní příslušnosti navázané k úkonu získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>, kde je vazba mezi úkonem a místními příslušnostmi kódována v následující JSON struktuře (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    místní-příslušnost {
+      typ-subjektu,
+      typ-místní-příslušnosti,
+      poskytovatel-k-místní-příslušnosti
+    }
+  }
+}</code></pre>
+<p>kde <code>typ-subjektu</code> je referencí na identifikátor typu subjektů uvedený v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F281575084358cb8be628b7cc66020c2c">Číselník typů subjektů</a>, <code>typ-místní-příslušnosti</code> je referencí na identifikátor typu místní příslušnosti uvedený v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2Fcf79f7477c758122a8d99891e66a9800">Číselník typů místních příslušností k subjektům</a> a <code>poskytovatel-k-místní-příslušnosti</code> je referencí na identifikátor OVM z datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51">Orgány veřejné moci</a> nebo kategorie OVM z datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F4cdc3767e173806c2a7bb345459731a5">Kategorie orgánů veřejné moci</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Sdru&#382;ov&#225;n&#237;-&#250;kon&#367;-podle-v&#283;cn&#253;ch-souvislost&#237;---agendy">Sdru&#382;ov&#225;n&#237; &#250;kon&#367; podle v&#283;cn&#253;ch souvislost&#237; - agendy<a class="anchor-link" href="#Sdru&#382;ov&#225;n&#237;-&#250;kon&#367;-podle-v&#283;cn&#253;ch-souvislost&#237;---agendy">&#182;</a></h3><p>Pro aplikační využití dat z RPP by mohlo být užitečné sdružovat úkony dle nějaké věcné souvislosti. V případě, že se uživatel zajímá o nějaký úkon, mohla by aplikace nabízet související úkony. Bohužel neexistuje procesní model veřejné správy, který by mohl být využit pro navádění uživatele na následující či předcházející úkon v procesu, příp. na všechny úkony v daném procesu. Byly zpracovány tzv. životní situace, ty ale nejsou ve strojově zpracovatelné podobě a už vůbec ne navázány na úkony v RPP.</p>
 <p>Jednu možnost sdružování nám RPP dává. Tou jsou agendy a činnosti, ze kterých se agendy skládají. Zatímco úkony jsou totiž pohledem na veřejnou správu z úhlu pohledu občana, podnikatele nebo právnické osoby, tak agendy a činnosti jsou pohledem na veřejnou správu z úhlu pohledu veřejné správy samotné, resp. legislativy, která veřejnou správu definuje.</p>
 <p>Tak např. úkon U1073 "Zřízení nového válečného hrobu", který používáme jako příklad patří do agendy A549 "Péče o válečné hroby".</p>
-<p>Následující dotaz vrací seznam všech úkonů, které do této agendy patří.</p>
+<p>Takové sdružování podle agendy, může uživatelům pomoci dohledávat související úkony a navádět uživatele, aby na něco při vyřizování svých záležitostí nezapomněl. Dále může sdružování podle agendy, resp. doplnění údajů o úkonu údaji o agendě, vhodně doplnit informaci k úkonu, jehož název nemusí být zcela jasný. Např. z názvu úkonu U1094 nevyplývá, že je tento úkon spojen s válečnými hroby.</p>
+<h4 id="SPARQL-a-RDF">SPARQL a RDF<a class="anchor-link" href="#SPARQL-a-RDF">&#182;</a></h4><p>Následující dotaz vrací seznam všech úkonů, které do této agendy patří.</p>
 
 </div>
 </div>
@@ -15816,7 +16027,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukony</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úkonyVAgendě</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT ?ukon ?id ?nazev ?agenda</span>
@@ -15828,7 +16039,7 @@ div#notebook {
 <span class="s2">    a:má-název-úkonu ?nazev .</span>
 
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukony</span>
+<span class="n">úkonyVAgendě</span>
 </pre></div>
 
     </div>
@@ -15920,13 +16131,19 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Takové sdružování podle agendy, může uživatelům pomoci dohledávat související úkony a navádět uživatele, aby na něco při vyřizování svých záležitostí nezapomněl.</p>
-<p>Dále může sdružování podle agendy, resp. doplnění údajů o úkonu údaji o agendě, vhodně doplnit informaci k úkonu, jehož název nemusí být zcela jasný. Např. z názvu úkonu U1094 nevyplývá, že je tento úkon spojen s válečnými hroby.</p>
-<p>Agendy se skládají z činností, což je detailnější pohled na veřejnou správu z pohledu legislativy a veřejné správy samotné. Úkony nejsou vázány jen na agendy, jak bylo ukázáno výše, ale také na činnosti v těchto agendách. Vazba ale není tak přímočará. Pro činnosti je nutno odlišit poskytování úkonu a výkon úkonu popsané výše. Pro připomenutí, poskytování úkonu reflektuje to, jak je souvislost mezi úkonem a OVM zapsána v legislativě. Úkon může poskytovat OVM nebo celá kategorie OVM. Výkon úkonu pak značí, jak je to ve skutečnosti. Skutečnost se od legislativní definice může lišit např. z důvodu přenosu působností mezi obcemi apod.</p>
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě JSON souborů lze vazbu na agendy získat v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>, viz <a href="#JSON">popis výše</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Sdru&#382;ov&#225;n&#237;-&#250;kon&#367;-podle-v&#283;cn&#253;ch-souvislost&#237;---&#269;innosti">Sdru&#382;ov&#225;n&#237; &#250;kon&#367; podle v&#283;cn&#253;ch souvislost&#237; - &#269;innosti<a class="anchor-link" href="#Sdru&#382;ov&#225;n&#237;-&#250;kon&#367;-podle-v&#283;cn&#253;ch-souvislost&#237;---&#269;innosti">&#182;</a></h3><p>Agendy se skládají z činností, což je detailnější pohled na veřejnou správu z pohledu legislativy a veřejné správy samotné. Úkony nejsou vázány jen na agendy, jak bylo ukázáno výše, ale také na činnosti v těchto agendách. Vazba ale není tak přímočará. Pro činnosti je nutno odlišit poskytování úkonu a výkon úkonu popsané výše. Pro připomenutí, poskytování úkonu reflektuje to, jak je souvislost mezi úkonem a OVM zapsána v legislativě. Úkon může poskytovat OVM nebo celá kategorie OVM. Výkon úkonu pak značí, jak je to ve skutečnosti. Skutečnost se od legislativní definice může lišit např. z důvodu přenosu působností mezi obcemi apod.</p>
 <p>Z pohledu poskytování úkonů jsou činnosti navázány na třídu <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">Poskytování úkonu</a> prostřednictvím vazby <a href="https://slovník.gov.cz/agendový/104/pojem/je-poskytován-v-rámci-činnosti">Je poskytován v rámci činnosti</a>. Z pohledu výkonu úkonů jsou činnosti navázány na třídu <a href="https://slovník.gov.cz/agendový/104/pojem/působnost-v-agendě">Poskytování úkonu</a> prostřednictvím vazby <a href="https://slovník.gov.cz/agendový/104/pojem/vykonává-činnosti-v-rámci-působnosti">Vykonává činnosti v rámci působnosti</a>. Konceptuální schéma je zachyceno na následujícím obrázku.</p>
 <p><img src="img/úkony-činnosti.png" alt="Úkony a činnosti"></p>
 <p>Data o činnostech jsou dostupná v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb">Agendy</a>, která již byla zmiňována výše.</p>
-
+<h4 id="SPARQL">SPARQL<a class="anchor-link" href="#SPARQL">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -15935,7 +16152,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cinnosti</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">činnosti</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT DISTINCT ?ukon ?id ?cinnost ?cinnostKod ?cinnostNazev</span>
@@ -15956,7 +16173,7 @@ div#notebook {
 <span class="s2">    a:má-kód-činnosti ?cinnostKod .</span>
 <span class="s2">  </span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">cinnosti</span>
+<span class="n">činnosti</span>
 </pre></div>
 
     </div>
@@ -16112,7 +16329,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ukonyPoskytovaneVCinnosti</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">úkonyPoskytovanéPřiČinnosti</span><span class="o">=</span><span class="n">endpoint</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;PREFIX l: &lt;https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/&gt;</span>
 <span class="s2">PREFIX a: &lt;https://slovník.gov.cz/agendový/104/pojem/&gt;</span>
 
 <span class="s2">SELECT DISTINCT ?cinnost ?ukon ?id ?nazev</span>
@@ -16125,7 +16342,7 @@ div#notebook {
 <span class="s2">    a:má-název-úkonu ?nazev .</span>
 <span class="s2">  </span>
 <span class="s2">}&quot;&quot;&quot;</span><span class="p">)</span>
-<span class="n">ukonyPoskytovaneVCinnosti</span>
+<span class="n">úkonyPoskytovanéPřiČinnosti</span>
 </pre></div>
 
     </div>
@@ -16185,6 +16402,43 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="JSON">JSON<a class="anchor-link" href="#JSON">&#182;</a></h4><p>V případě práce s JSON soubory lze činnosti, v rámci kterých jsou úkony poskytovány získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F02925784ee989ac89fbb61d2e3b94c8e">Úkony</a>, kde jsou kódovány v následující JSON struktuře vedle vazby na OVM či kategorie OVM poskytující úkon (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/úkony/">dokumentace</a> pro jejich detailní popis):</p>
+
+<pre><code>{
+  položky {
+    poskytování-úkonu {
+      činnost
+    }
+  }
+}</code></pre>
+<p>kde hodnotou prvku <code>činnost</code> je referencí na identifikátor činnosti.</p>
+<p>Činnosti vykonávané v rámci působnosti v agendě, ve které jsou úkony vykonávány, lze získat z JSON distribuce datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F7ee91a644bf6da16a9f5c4f337163c0f">Působnost v agendách</a> (viz <a href="https://data.gov.cz/otevřené-formální-normy/registr-práv-a-povinností/působnost-v-agendách/">dokumentace</a> pro detailní popis struktury).</p>
+
+<pre><code>{
+  položky {
+    činnosti
+  }
+}</code></pre>
+<p>kde hodnotou prvku <code>činnosti</code> je seznam referencí na identifikátory činnosti.</p>
+<p>Údaje o činnosti, jako např. výše uvedený název jsou potom v datové sadě <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb">Agendy</a>, kde jsou činnosti uvedeny v následující JSON struktuře:</p>
+
+<pre><code>{
+  položky {
+    činnosti {
+      id,
+      kód-činnosti,
+      název-činnosti
+    }
+  }
+}</code></pre>
+<p>kde prvek <code>id</code> je referencovaným identifikátorem z datové sady <a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FMV%2F706529437%2F7ee91a644bf6da16a9f5c4f337163c0f">Působnost v agendách</a>.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">

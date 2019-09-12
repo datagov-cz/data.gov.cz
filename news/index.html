@@ -7,7 +7,7 @@ postindex: true
 ---
 
   <div class="container">
-	<h1 class="header center orange-text">What's new in open data in Czechia</h1>
+	<h1 class="header center">What's new in open data in Czechia</h1>
 	<hr/>
     <div class="row">
         {% assign posts=site.posts | where:"lang", page.lang %}
@@ -29,7 +29,7 @@ postindex: true
         {% endfor %}
      </div>
     <hr/>
-    <h2 class="orange-text center">Older posts</h2>
+    <h2 class="center">Older posts</h2>
     <div class="row">
         {% for post in posts offset:3 %}
         <div class="col-12">

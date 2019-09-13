@@ -23,6 +23,13 @@
 		text-decoration: underline;
 	}
 	
+	a:hover {
+		text-decoration: none ;
+	}
+	
+	button.navbar-toggler {
+		background-color: var(--color-background-footer);
+	}
 }
 
 .carousel-fade .active.carousel-item-left,
@@ -60,24 +67,21 @@ div.dropdown-menu.show {
 	background-color: var(--color-background);		
 }
 
-.navbar-toggler-icon:hover, .navbar-light .navbar-nav .nav-link:hover, a:hover {
+.navbar-light .navbar-nav .nav-link:hover, a:hover {
 	color: var(--color-text-accent-inverted);
 }
 
-.navbar-toggler-icon, .navbar-light .navbar-nav .nav-link, a {
+a, a.dropdown-item, a.nav-item:focus, .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:focus {
     color: var(--color-text-accent);
 }
 
-a {
-	color: var(--color-text-accent);
-}
 a.btn.btn-primary, button.btn.btn-primary {
     background-color: var(--color-text-accent);
     border-color: var(--color-text-inverted);
 	color: var(--color-text-inverted);
 }
 
-a.btn.btn-primary:hover, button.btn.btn-primary:hover {
+a.btn.btn-primary:hover, button.btn.btn-primary:hover, a.dropdown-item:hover {
     background-color: var(--color-text-inverted);
     border-color: var(--color-text-inverted);
     color: var(--color-text-accent);

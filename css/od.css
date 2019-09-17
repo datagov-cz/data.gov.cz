@@ -19,6 +19,14 @@
 		--color-base: #057fa544 ;
 	}
 	
+	.alert a {
+		color: var(--color-text-inverted) ;
+	}
+	
+	.alert a:hover {
+		color: var(--color-text-inverted) ;	
+	}
+
 	a {
 		text-decoration: underline;
 	}
@@ -29,7 +37,8 @@
 	
 	button.navbar-toggler {
 		background-color: var(--color-background-footer);
-	}
+	}	
+
 }
 
 .carousel-fade .active.carousel-item-left,

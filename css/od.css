@@ -44,7 +44,7 @@
   }
 } 
 
-body {
+body, .card-body, .list-group-item {
 	color: var(--color-text-default);
 	background-color: var(--color-background);		
 }
@@ -59,7 +59,7 @@ span.input-group-text {
 	color: var(--color-text-default);
 }
 
-footer {
+footer, .card-header, .card-footer {
 	background-color: var(--color-background-footer);
 }
 	

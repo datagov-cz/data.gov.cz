@@ -44,7 +44,7 @@
   }
 } 
 
-body, .card-body, .list-group-item {
+body, .card-body, .list-group-item, div.card {
 	color: var(--color-text-default);
 	background-color: var(--color-background);		
 }

@@ -60,12 +60,7 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
   * zvyšování transparentnosti veřejné správy
 
 ## Kdo již v České republice publikuje otevřená data?
-  * [Hlavní město Praha](https://opendata.praha.eu/)
-  * [Kraj Vysočina](https://opendata.kr-vysocina.cz/)
-  * [Město Děčín](http://www.mmdecin.cz/component/k2/item/552)
-  * [Česká správa sociálního zabezpečení](https://data.cssz.cz/)
-  * [Český statistický úřad](https://www.czso.cz/csu/czso/otevrena_data)
-  * [Ministerstvo vnitra - Národní katalog otevřených dat](https://data.gov.cz)
+  * [Poskytovatelé v Národním katalogu otevřených dat](https://data.gov.cz/poskytovatelé)
 
 > **Otevřná data neexistují ve vzduchoprázdnu, jsou součástí [systému pro otevřené vládnutí](https://opendata.gov.cz/informace:kontext:start).**
 

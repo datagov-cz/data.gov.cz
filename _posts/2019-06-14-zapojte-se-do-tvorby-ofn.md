@@ -8,7 +8,7 @@ lang: cs
 author: michal_kubáň
 ---
 
-Průběžně pracujeme na technických standardech pro otevřená data tzv. [otevřených formálních normách (OFN)](https://opendata.gov.cz/otevřené-formální-normy:start). 
+Průběžně pracujeme na technických standardech pro otevřená data tzv. [otevřených formálních normách (OFN)](https://ofn.gov.cz). 
 Aby byla odpovídající data použitelná, potřebujeme zpětnou vazbu od vás, praktiků. 
 [Připomínkujte a navrhujte nové!](https://github.com/opendata-mvcr/otevrene-formalni-normy) 
-Co nevidět vydáme OFN pro [prostorová data](https://data.gov.cz/otevřené-formální-normy/prostorová-data/).
+Co nevidět vydáme OFN pro [prostorová data](https://ofn.gov.cz/prostorová-data/).

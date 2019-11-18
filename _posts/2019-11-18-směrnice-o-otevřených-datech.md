@@ -1,7 +1,7 @@
 ---
 layout: post
 icon: whatshot
-title: Evropská unie nahrazuje směrnici PSI směrnicí o otevřených datech a rozšiřuje nová pravidla přístupu k datům 
+title: Evropská unie rozšiřuje pravidla přístupu k datům novou směrnicí o otevřených datech
 detail: true
 ref: PSIaPravidlaPřístupukDatumů
 lang: cs

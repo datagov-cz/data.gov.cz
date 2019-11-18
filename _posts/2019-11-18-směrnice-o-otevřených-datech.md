@@ -8,7 +8,7 @@ lang: cs
 author: michal_kubáň
 ---
 
-Dne 20.6.2019 byla v Úředním věstníku EU pod číslem [2019/1024](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=uriserv:OJ.L_.2019.172.01.0056.01.CES&toc=OJ:L:2019:172:TOC) publikována směrnice o otevřených datech a opakovaném použití informací veřejného sektoru. Tato směrnice s účinností od července 2021 nahradí původní směrnici o informacích veřejného sektoru (PSI) z roku [2003/98 /ES](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32003L0098) a její novější úpravu z roku 2013 ([2013/37/EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A32013L0037)). 
+Dne 20. 6. 2019 byla v Úředním věstníku EU pod číslem [2019/1024](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=uriserv:OJ.L_.2019.172.01.0056.01.CES&toc=OJ:L:2019:172:TOC) publikována směrnice o otevřených datech a opakovaném použití informací veřejného sektoru. Tato směrnice s účinností od července 2021 nahradí původní směrnici o informacích veřejného sektoru (PSI) z roku [2003/98 /ES](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=celex%3A32003L0098) a její novější úpravu z roku 2013 ([2013/37/EU](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX%3A32013L0037)). 
 
 <!--more-->
 

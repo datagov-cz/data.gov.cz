@@ -25,7 +25,7 @@ Hodnotící studie Open Data Maturity Report ([podrobný report](https://www.eur
 
 <img src="/images/posts/2019-12-12-01.png" alt="Figure 4: EU28 average open data maturity per dimension" style="width:100%;"/>
 
-Celkově Česko zaostává za Evropským průměrem o pouhé 2% (64% z 66%). V oblasti koordinace politik ČR skončila na 14. místě. V oblasti datového portálu ČR skončilo na 28. místě a na 21. místě se umístilo v měření dopadů otevřených dat. 
+Celkově Česko zaostává za evropským průměrem o pouhé 2% (64% z 66%). V oblasti koordinace politik ČR skončila na 14. místě. V oblasti datového portálu ČR skončilo na 28. místě a na 21. místě se umístilo v měření dopadů otevřených dat. 
 
 
 <img src="/images/posts/2019-12-12-02.png" alt="State-od-Play on open data 2019. Maturity level rating and overall maturity level segmentation." style="width:100%;"/>

@@ -76,7 +76,7 @@ div.dropdown-menu.show {
 	background-color: var(--color-background);		
 }
 
-.navbar-light .navbar-nav .nav-link:hover, a:hover {
+.navbar-light .navbar-nav .nav-link:hover, a:hover, .navbar-light .navbar-nav .nav-link.active{
 	color: var(--color-text-accent-inverted);
 }
 

@@ -12,9 +12,7 @@ Zapojte se do sběru návrhů datových sad s vysokou hodnotou, které budou pov
 
 <!--more-->
 
-Vážení přátelé otevřených dat,
-
-pravděpodobně využíváte, nebo berete v úvahu, při svých aktivitách informace z veřejné správy ČR a rádi byste měli přístup i k dalším informacím, pro něž by platila povinnost veřejné správy je zpřístupňovat veřejně, bezplatně, s neomezujícími podmínkami pro jejich užití a zajištěnou snadnou strojovou zpracovatelností.
+Pravděpodobně využíváte, nebo berete v úvahu, při svých aktivitách informace z veřejné správy ČR a rádi byste měli přístup i k dalším informacím, pro něž by platila povinnost veřejné správy je zpřístupňovat veřejně, bezplatně, s neomezujícími podmínkami pro jejich užití a zajištěnou snadnou strojovou zpracovatelností.
 
 Pokud ano, máte nyní možnost sami doporučit, jaké informace z veřejné správy by měly být takovým způsobem volně dostupné pro podporu Vašich aktivit. Stačí pouze využít jednoduchý [webový formulář](https://docs.google.com/forms/d/e/1FAIpQLSdRQEQ4X3yC3ofmv-NhlDsOg8-ctbNH020_J9zsenlY9CXtkw/viewform).
 

@@ -32,6 +32,6 @@ Celkově Česko zaostává za evropským průměrem o pouhé 2% (64% z 66%). V o
 
 Nejlepšího výkonu Česká republika dosáhla v oblasti kvality metadat a otevřených dat, ve kterém ČR skončila na druhém místě za Irskem. 
 
-<img src="/images/posts/2019-12-12-02.png" alt="State-od-Play on open data 2019. Dimension performance." style="width:100%;"/>
+<img src="/images/posts/2019-12-12-03.png" alt="State-od-Play on open data 2019. Dimension performance." style="width:100%;"/>
 
 Letošní výsledky samohodnotícího dotazníku, který každoročně zpracovávají samotní gestoři agendy otevřených dat v členských státech, přinesl velké překvapení. Sousední Slovensko spadlo z 8. místa na 29. místo. Opačným směrem kráčelo naopak Dánsko, které z 28. místa doputovalo na 6. místo.

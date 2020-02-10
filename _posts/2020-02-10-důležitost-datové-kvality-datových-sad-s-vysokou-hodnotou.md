@@ -8,7 +8,7 @@ lang: cs
 author: michal_kubáň
 ---
 
-Zapojte se do sběru návrhů datových sad s vysokou hodnotou v šesti kategoriích (geoprostorové údaje, pozorování Země a životní prostředí, meteorologie, statistika, společnosti a vlastnictví společností, mobilita), které budou povinně publikovány jako otevřená data napříč všemi členskými zeměmi EU jakožto součást nově schválené směrnice o otevřených datech.
+Publikace takzvaných datových sad s vysokou hodnotou, což je termín, který zavádí evropská směrnice o otevřených datech (2019/1024), nesplní očekávání, pokud nebude společně s jejich seznamem řádně řešena i jejich datová kvalita.
 
 <!--more-->
 

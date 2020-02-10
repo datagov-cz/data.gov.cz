@@ -1,7 +1,7 @@
 ---
 layout: post
 icon: whatshot
-title: Importance of data quality of High Value Datasets
+title: Importance of data quality of high-value datasets
 detail: true
 ref: důležitost-datové-kvality-datových-sad-s-vysokou-hodnotou
 lang: en
@@ -19,7 +19,7 @@ This paragraph is followed by a position paper by the team of the National Open 
 
 ---
 
-## High value datasets 
+## High-value datasets 
 
 [The Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELLAR%3Aa6ef4c41-97eb-11e9-9369-01aa75ed71a1) introduces so-called high-value datasets, which, when used repeatedly by various data processors, will have interesting benefits for the European economy and society. The list of those datasets is currently being prepared. Following approval, the listed datasets will have to be published in all EU member states as open data, i.e. in a machine-readable and open format, without restricting terms of use, available for free on the Internet.
 

@@ -43,19 +43,19 @@ We, therefore, request that all EU member states and the European Commission put
 We suggest that the definition of quality includes attributes as defined bellow and that they are fulfilled for each dataset in a way mentioned.
 
 Structure and semantics
-:Specified by an ontology expressed in all EU languages based on the [ISA​ Core Vocabularies]() and on other existing ontologies and vocabularies as much as possible.
+: Specified by an ontology expressed in all EU languages based on the [ISA​ Core Vocabularies]() and on other existing ontologies and vocabularies as much as possible.
 
 Completeness
-:A requirement to publish the entire list of all existing instances of all elements of the ontology determining the structure and semantics.
+: A requirement to publish the entire list of all existing instances of all elements of the ontology determining the structure and semantics.
 
 Granularity
-:A requirement to publish data on the granularity level according to the ontology without any aggregation of instances of specified ontology elements.
+: A requirement to publish data on the granularity level according to the ontology without any aggregation of instances of specified ontology elements.
 
 Data linking
-:Usage of prescribed code lists and thesauri from the EU Vocabularies, which will be actively maintained for the needs of high-value datasets; semantic links to other datasets are expressed both on the ontology level and the level of particular entities expressed in the dataset
+: Usage of prescribed code lists and thesauri from the EU Vocabularies, which will be actively maintained for the needs of high-value datasets; semantic links to other datasets are expressed both on the ontology level and the level of particular entities expressed in the dataset
 
 Formats
-:Definition of one or more formats using logical schemas (e.g. RDF, XML, JSON schema, etc.) such that the dataset is made available in at least one of these formats; usage of Linked Data principles for data linking, the concept of IRIs in particular; elements of the logical schema take advantage of or are mapped to ontology elements, which define their semantics.
+: Definition of one or more formats using logical schemas (e.g. RDF, XML, JSON schema, etc.) such that the dataset is made available in at least one of these formats; usage of Linked Data principles for data linking, the concept of IRIs in particular; elements of the logical schema take advantage of or are mapped to ontology elements, which define their semantics.
 
 Data access interface
 : Prescribe the required interface, which is bulk download, API, or both; in the case of bulk download, the mandatory distribution of the content of the dataset to data files is prescribed, such that the files follow the specified ontology (see the structure and semantics attribute) and logical schema (see the format attribute); in the case of API, a mandatory technical specification of API is prescribed, which adheres to the ontology (see the structure and semantics attribute) and the logical schema (see the format attribute). Furthermore, the API must, in addition, provide a way to conveniently download the complete dataset.

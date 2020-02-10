@@ -18,6 +18,8 @@ Požadavky v tomto dokumentu budou relevantní v okamžiku, kdy budou datové sa
 
 ---
 
+## Datové sady s vysokou hodnotou
+
 [Směrnice Evropského parlamentu a Rady (EU) 2019/1024 ze dne 20. června 2019 o otevřených datech a opakovaném použití informací veřejného sektoru](https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELLAR%3Aa6ef4c41-97eb-11e9-9369-01aa75ed71a1) zavádí tzv. datové sady s vysokou hodnotou. Jedná se o datové sady, jejichž opakované použití různými zpracovateli dat bude mít zajímavé přínosy pro evropskou ekonomiku a společnost. V současné době je připravován jejich seznam. Po jeho schválení budou muset být datové sady uvedené v seznamu publikovány ve všech členských státech EU jako otevřená data, tj. ve strojově čitelném a otevřeném formátu, bez omezujících podmínek užití, volně na internetu a bezplatně.
 
 Koncept datových sad s vysokou hodnotou se týká vyjmenovaných oblastí, kterými v současnosti jsou:
@@ -38,6 +40,8 @@ Bez sjednocené úrovně kvality datových sad s vysokou hodnotou nemůže směr
 Než začneme uvažovat nad sjednocováním úrovně kvality datových sad, je nejprve nutné se zamyslet nad pojmem kvalita dat. Kvalita dat je široký pojem, který lze ale shrnout jednoduchou definicí. Kvalitní data jsou data, která jsou dobře připravená ke zpracování zpracovateli. Dobře připravená data jsou data, která se dají snadno nalézt a u kterých se zpracovatel může spolehnout na správnost jejich obsahu a na neměnnost podoby jejich poskytování v čase a prostoru. Podoba poskytování dat může mít mnoho atributů. Patří mezi ně struktura dat, jejich sémantika, úplnost či granularita, propojení s jinými daty, formáty, ve kterých jsou data poskytována, technické rozhraní pro přístup k datům, podoba katalogizačního záznamu o datové sadě v Evropském datovém portálu, atd. Neměnnost podoby poskytování v čase znamená, že poskytovatel nemění v průběhu času jednotlivé atributy, případně provádí jen nutné zpětně kompatibilní změny za účelem zvyšování kvality. Neměnnost podoby poskytování v prostoru znamená, že atributy jsou shodné napříč jednotlivými poskytovateli dané datové sady. Často jsou tyto atributy shrnuty do 4 základních principů, tzv. FAIR data (Findability, Accessibility, Interoperability, Reusability).
 
 Požadujeme proto, aby všechny členské státy EU a Evropská komise vyvinuly maximální úsilí k dosažení jednotné definice kvality datových sad s vysokou hodnotou. Jelikož je ale pojem velmi široký, je nutné, aby definice poskytovala jasný výčet těch atributů, které jsou důležité z pohledu vytváření jednotného otevřeného datového prostoru v rámci EU. Dále požadujeme, aby definice kvality byla aplikována na každou stanovenou datovou sadu s vysokou hodnotou. To znamená určit konkrétní naplnění jednotlivých atributů definice kvality pro každou jednotlivou datovou sadu.
+
+## Důležité atributy datové kvality
 
 Navrhujeme, aby definice kvality zahrnovala atributy uvedené v následující tabulce a dále aby byly pro každou datovou sadu naplněny způsobem, uvedenýn níže.
 
@@ -71,6 +75,8 @@ Podmínky užití
 Vytvořená definice stanovuje požadavky na minimální podobu datové sady. Každý poskytovatel bude povinen definici při publikaci datové sady dodržet. Může jí ale libovolným avšak zpětně kompatibilním způsobem rozšířit. Zpětná kompatibilita znamená, že poskytovatel musí zajistit, že libovolný správně fungující způsob softwarového zpracování datové sady dle stanovené jednotné definice funguje správně též nad rozšířenou definicí stanovenou poskytovatelem.
 
 Dále požadujeme, aby byly na úrovni EU vytvořeny jasně definované, zdokumentované a replikovatelné automatizované a manuální mechanismy pro kontrolu kvality poskytovaných datových sad v jednotlivých výše zmíněných atributech. Testy kvality by měly probíhat v pravidelných intervalech, a jejich výsledky by měly být zveřejňovány na k tomu určeném webu, případně i v Evropském datovém portálu. Zveřejňování výsledků pak vytvoří tlak na poskytovatele, kteří požadované kvality publikace nedosahují a poskytuje pozitivní zpětnou vazbu pro poskytovatele, kteří kvalitní data publikují. Manuální testy se musí řídit jasně definovanou metodikou. Automatizované testy musí probíhat výhradně za použití open-source nástrojů a musí být zdokumentovány tak, aby si je každý mohl ověřit, tzn. u sebe zprovoznit.
+
+## Návrhované způsoby testování datové kvality
 
 V následujícím přehledu navrhujeme, jakým způsobem by mohly být jednotlivé atributy testovány:
 

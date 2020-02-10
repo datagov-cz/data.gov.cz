@@ -19,6 +19,8 @@ This paragraph is followed by a position paper by the team of the National Open 
 
 ---
 
+## High value datasets 
+
 [The Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELLAR%3Aa6ef4c41-97eb-11e9-9369-01aa75ed71a1) introduces so-called high-value datasets, which, when used repeatedly by various data processors, will have interesting benefits for the European economy and society. The list of those datasets is currently being prepared. Following approval, the listed datasets will have to be published in all EU member states as open data, i.e. in a machine-readable and open format, without restricting terms of use, available for free on the Internet.
 
 The concept of high-value datasets pertains to referred thematic categories, which currently are as follows:
@@ -39,6 +41,8 @@ The directive cannot contribute to creating a unified data space without a unifo
 Before considering the unification of quality standards for datasets, it is necessary to examine the term data quality first. Data quality is a broad term that can nevertheless be summarized with a simple definition. High quality data is data that is well prepared for processing by a data processor. Well prepared data is data that can be easily located and that the processor can count on the correctness of its contents and the immutability of the form of its provision in time and space. The form of data provision can have many attributes. Among them are data structure, semantics, completeness and granularity, data interconnectivity, the formats in which the data is provided, the data access technical interface, the form of the dataset catalogization record in the European Data Portal, etc. The immutability of the form of data provision in time entails that the provider does not change individual attributes over time and makes only the necessary backwards-compatible changes that aim to increase quality. The immutability of the form of data provision in space means that the attributes are the same across individual providers of the dataset. Oftentimes, these attributes are summarized into 4 main principles as FAIR data (Findability, Accessibility, Interoperability, Reusability).
 
 We, therefore, request that all EU member states and the European Commission put maximum effort into achieving a uniform definition of high-value dataset quality. Since the term is very broad, it is necessary that the definition provides a concise listing of attributes which are important in terms of creating a unified open data space within the EU. Furthermore, we request that the definition of quality be applied to every formulated high-value dataset; that is, determine the exact fulfillment of individual attributes of the definition of quality for each dataset.
+
+## Important data quality attributes 
 
 We suggest that the definition of quality includes attributes as defined bellow and that they are fulfilled for each dataset in a way mentioned.
 
@@ -73,6 +77,8 @@ The created definition specifies requirements on the minimal form of a dataset. 
 
 
 Furthermore, we require that clearly defined, well documented and replicable automated and manual mechanisms for quality control of provided datasets defined by individual attributes mentioned above are created on the EU level. Quality testing should be performed routinely and its results should be made public on a website created for this purpose, perhaps even on the European Data Portal. Publishing results publically then puts pressure on providers who do not satisfy the required quality of publication and creates positive feedback for providers who publish high quality data. Manual testing must follow a clearly defined methodology. Automated tests must be conducted using open-source tools only and must be documented in such a way that anybody can verify the results; that is, deploy the tests themselves.
+
+## Suggested ways of testing data quality 
 
 We propose the ways in which the attributes could be tested:
 

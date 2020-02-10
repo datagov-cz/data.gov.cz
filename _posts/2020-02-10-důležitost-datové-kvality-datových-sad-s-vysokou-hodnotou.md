@@ -1,7 +1,7 @@
 ---
 layout: post
 icon: whatshot
-title: Veřejná konzultace k datovým sadám s vysokou hodnotou 
+title: Důležitost datové kvality datových sad s vysokou hodnotou
 detail: true
 ref: důležitost-datové-kvality-datových-sad-s-vysokou-hodnotou
 lang: cs

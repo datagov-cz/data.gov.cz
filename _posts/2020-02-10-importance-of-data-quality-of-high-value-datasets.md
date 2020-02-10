@@ -1,7 +1,7 @@
 ---
 layout: post
 icon: whatshot
-title: Veřejná konzultace k datovým sadám s vysokou hodnotou 
+title: Importance of data quality of High Value Datasets
 detail: true
 ref: důležitost-datové-kvality-datových-sad-s-vysokou-hodnotou
 lang: en

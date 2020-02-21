@@ -46,6 +46,27 @@ homepage: true
 </div>
 
 <div class="container">
+	<h2 class="">Články ze světa otevřených dat</h2>
+	<div class="row">
+		{% assign clanky=site.clanky | where:"lang", page.lang %}
+		{% for clanek in clanky limit:3 %}
+		<div class="col-12 col-md-6 col-lg-4 mb-4">
+			aaa
+			<h3 class="h5">{{ clanek.title }}</h3>
+			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+			{{ clanek.excerpt }}
+			{% if clanek.detail %}
+			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
+			{% endif %}
+		  </div>
+		{% endfor %}
+	 </div>
+	 <p class=""><a class="btn btn-secondary" href="články" role="button">Všechny články &raquo;</a></p>
+	 <hr/>
+</div>
+
+
+<div class="container">
   <div class="row">
 	<div class="col-md-4">
 	  <h2>Interested in opening data</h2>

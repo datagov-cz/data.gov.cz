@@ -46,32 +46,12 @@ homepage: true
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-	<div class="col-md-4">
-	  <h2>Zájemci o otevírání dat</h2>
-	  <p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
-	  <p><a class="btn btn-secondary" href="informace/základy-otevřených-dat-pro-zájemce/" role="button">Více informací &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-	  <h2>Poskytovatelé dat</h2>
-	  <p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
-	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
-   </div>
-	<div class="col-md-4">
-	  <h2>Uživatelé dat</h2>
-	  <p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
-	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">Více informací &raquo;</a></p>
-	</div>
-  </div>
-</div>
-
-<div class="container">
-  <hr/>
+<div class="container mb-4">
+	<h2 class="">Novinky ze světa otevřených dat</h2>
 	<div class="row">
 		{% assign posts=site.posts | where:"lang", page.lang %}
 		{% for post in posts limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4">
+		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h5">{{ post.title }}</h3>
 			<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
 			{{ post.excerpt }}
@@ -81,7 +61,49 @@ homepage: true
 		  </div>
 		{% endfor %}
 	 </div>
+	 <p class=""><a class="btn btn-secondary" href="novinky" role="button">Všechny novinky &raquo;</a></p>
+	 <hr/>
 </div>
 
+<div class="container">
+	<h2 class="">Články ze světa otevřených dat</h2>
+	<div class="row">
+		{% assign clanky=site.clanky | where:"lang", page.lang %}
+		{% for clanek in clanky limit:3 %}
+		<div class="col-12 col-md-6 col-lg-4 mb-4">
+			aaa
+			<h3 class="h5">{{ clanek.title }}</h3>
+			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+			{{ clanek.excerpt }}
+			{% if clanek.detail %}
+			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
+			{% endif %}
+		  </div>
+		{% endfor %}
+	 </div>
+	 <p class=""><a class="btn btn-secondary" href="články" role="button">Všechny články &raquo;</a></p>
+	 <hr/>
+</div>
+
+<div class="container">
+	<h2 class="">Důležité informace pro členy ekosystému otevřených dat</h2>
+	<div class="row">
+		<div class="col-md-4">
+			<h3>Zájemci o otevírání dat</h3>
+			<p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
+			<p><a class="btn btn-secondary" href="informace/základy-otevřených-dat-pro-zájemce/" role="button">Více informací &raquo;</a></p>
+		</div>
+		<div class="col-md-4">
+			<h3>Poskytovatelé dat</h3>
+			<p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
+			<p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
+		</div>
+		<div class="col-md-4">
+			<h3>Uživatelé dat</h3>
+			<p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
+			<p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">Více informací &raquo;</a></p>
+		</div>
+	</div>
+</div>
 
 <script src="{{ "/js/stats.js" | relative_url }}" ></script>

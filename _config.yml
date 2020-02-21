@@ -21,3 +21,8 @@ langs:
   cs:
     en: English
     flag: /images/flag-cs.png
+
+collections:
+  clanky:
+    output: true
+    permalink: /články/:path

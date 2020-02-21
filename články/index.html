@@ -1,0 +1,136 @@
+---
+layout: default
+title: Články
+ref: Articles
+lang: cs
+articleindex: true
+---
+
+  <div class="container">
+	<h1 class="header center">Články</h1>
+	<hr/>
+    <div class="row">
+        {% assign clanky=site.clanky | where:"lang", page.lang %}
+        {% for clanek in clanky limit:3 %}
+        <div class="col-12 col-md-6 col-lg-4">
+			<div class="section">
+			  <div>
+                <h3 class="h5">{{ clanek.title }}</h3>
+                <h4><i class="material-icons">{{ clanek.icon }}</i></h4>
+                <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+                <div>
+					{{ clanek.excerpt }}
+				</div>
+                {% if clanek.detail %}
+                <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+                {% endif %}
+			  </div>
+			</div>
+		</div>
+        {% endfor %}
+     </div>
+    <hr/>
+    <h2 class="center">Starší články</h2>
+    <div class="row">
+        {% for clanek in clanky offset:3 %}
+        <div class="col-12 col-md-6 col-lg-4">
+			<div class="section">
+                <h3 class="h5">{{ clanek.title }}</h3>
+				<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+                <p class="flow-text">
+                    {{ clanek.excerpt | remove: '<p>' | remove: '<p class="flow-text">' | remove: '</p>' }}
+                </p>
+                {% if clanek.detail %}
+                <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+                {% endif %}
+			</div>
+		</div>
+        {% endfor %}       
+	</div>
+  </div>
+
+  <div class="container">
+    <h1 class="header center">Datové články</h1>
+    <hr/>
+      <div class="row">
+          {% assign datove=site.clanky | where:"lang", page.lang | where:"typ", "datový" %}
+          {% for clanek in datove limit:3 %}
+          <div class="col-12 col-md-6 col-lg-4">
+        <div class="section">
+          <div>
+                  <h3 class="h5">{{ clanek.title }}</h3>
+                  <h4><i class="material-icons">{{ clanek.icon }}</i></h4>
+                  <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+                  <div>
+            {{ clanek.excerpt }}
+          </div>
+                  {% if clanek.detail %}
+                  <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+                  {% endif %}
+          </div>
+        </div>
+      </div>
+          {% endfor %}
+       </div>
+      <hr/>
+      <h2 class="center">Starší články</h2>
+      <div class="row">
+          {% for clanek in datove offset:3 %}
+          <div class="col-12 col-md-6 col-lg-4">
+        <div class="section">
+                  <h3 class="h5">{{ clanek.title }}</h3>
+          <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+                  <p class="flow-text">
+                      {{ clanek.excerpt | remove: '<p>' | remove: '<p class="flow-text">' | remove: '</p>' }}
+                  </p>
+                  {% if clanek.detail %}
+                  <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+                  {% endif %}
+        </div>
+      </div>
+          {% endfor %}       
+    </div>
+    </div>
+
+    <div class="container">
+      <h1 class="header center">Vzdělávací články</h1>
+      <hr/>
+        <div class="row">
+            {% assign datove=site.clanky | where:"lang", page.lang | where:"typ", "vzdělávací" %}
+            {% for clanek in datove limit:3 %}
+            <div class="col-12 col-md-6 col-lg-4">
+          <div class="section">
+            <div>
+                    <h3 class="h5">{{ clanek.title }}</h3>
+                    <h4><i class="material-icons">{{ clanek.icon }}</i></h4>
+                    <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+                    <div>
+              {{ clanek.excerpt }}
+            </div>
+                    {% if clanek.detail %}
+                    <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+                    {% endif %}
+            </div>
+          </div>
+        </div>
+            {% endfor %}
+         </div>
+        <hr/>
+        <h2 class="center">Starší články</h2>
+        <div class="row">
+            {% for clanek in datove offset:3 %}
+            <div class="col-12 col-md-6 col-lg-4">
+          <div class="section">
+                    <h3 class="h5">{{ clanek.title }}</h3>
+            <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+                    <p class="flow-text">
+                        {{ clanek.excerpt | remove: '<p>' | remove: '<p class="flow-text">' | remove: '</p>' }}
+                    </p>
+                    {% if clanek.detail %}
+                    <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+                    {% endif %}
+          </div>
+        </div>
+            {% endfor %}       
+      </div>
+      </div>

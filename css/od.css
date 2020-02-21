@@ -37,7 +37,15 @@
 	
 	button.navbar-toggler {
 		background-color: var(--color-background-footer);
-	}	
+	}
+
+	hr {
+		border: 1px dotted white ;
+	}
+
+	.navbar-light .navbar-nav .show>.nav-link {
+		color: var(--color-text-accent-inverted);
+	}
 
 }
 

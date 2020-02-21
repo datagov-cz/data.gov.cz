@@ -71,12 +71,11 @@ homepage: true
 		{% assign clanky=site.clanky | where:"lang", page.lang %}
 		{% for clanek in clanky limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
-			aaa
-			<h3 class="h5">{{ clanek.title }}</h3>
+			<h3 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
 			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
 			{{ clanek.excerpt }}
 			{% if clanek.detail %}
-			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
+			<a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
 			{% endif %}
 		  </div>
 		{% endfor %}

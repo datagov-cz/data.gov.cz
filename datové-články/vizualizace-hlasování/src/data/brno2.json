@@ -1,0 +1,614 @@
+{    "motion": {
+        "name": "Matěj Hollan náměstkem primátora"
+    },
+    "end_date": "2014-11-25",
+    "time": "09:58",
+    "requirement": "Nadpoloviční většina všech členů",
+    "votes": [
+        {
+            "voter": {
+                "name": "Bednaříková Lubora"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Bořecký Petr"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Janíček Marek"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Karasová Karin"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Kratochvíl Tomáš"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Maťáková Barbora"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mrázek Richard"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Novotný René"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Plaga Robert"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Rusňáková Petra"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Schwab Martin"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Staněk Pavel"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vokřál Petr"
+            },
+            "group": {
+                "name": "ANO 2011",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Boleslav Pavel"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Humpolíček Miloslav"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ides Jiří"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Křemečková Naděžda"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Novotný Jiří"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Oliva Jiří"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Onderka Roman"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Pospíšil Oliver"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Šafařík Petr"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Sázavský Pavel"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Žďárský Vlastimil"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Borecký Daniel"
+            },
+            "group": {
+                "name": "Komunistická strana Čech a Moravy",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Hráček Jiří"
+            },
+            "group": {
+                "name": "Komunistická strana Čech a Moravy",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Říha Martin"
+            },
+            "group": {
+                "name": "Komunistická strana Čech a Moravy",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Sýkorová Helena"
+            },
+            "group": {
+                "name": "Komunistická strana Čech a Moravy",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Beran Vít"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Crha Antonín"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Hladík Petr"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Juránek Stanislav"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Liptáková Klára"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Rychnovský Daniel"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Suchý Jaroslav"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Cechová Šárka"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Kerndl Robert"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Kratochvíl Petr"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Šťástka Libor"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Vižďa František"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Ander Martin"
+            },
+            "group": {
+                "name": "Strana zelených",
+                "abbreviation": "SZ",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Drápalová Jana"
+            },
+            "group": {
+                "name": "Strana zelených",
+                "abbreviation": "SZ",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Fajnorová Ivana"
+            },
+            "group": {
+                "name": "Strana zelených",
+                "abbreviation": "SZ",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vlašín Mojmír"
+            },
+            "group": {
+                "name": "Strana zelených",
+                "abbreviation": "SZ",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Drbal Josef"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Dubová Zdeňka"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Kacer Jaroslav"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Urubek Pavel"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Freund Martin"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Hofmanová Karla"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Hollan Jan"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Hollan Matěj"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Kašpaříková Hana"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Koláčný Tomáš"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ulip Jiří"
+            },
+            "group": {
+                "name": "Žít Brno s podporou Pirátů",
+                "abbreviation": "ŽB",
+                "color": "#a82ea3"
+            },
+            "option": "yes"
+        }
+    ]
+}

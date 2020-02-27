@@ -38,7 +38,7 @@ Pro přípravu dat pro `D3` si naistalujeme potřebné programy `ndjson-cli`, `t
 
 Pro přípravu dat a pro vykreslení v QGISu potřebujeme samozřejmě nainstalovat [QGIS](https://www.qgis.org/en/site/).
 
-### Mapa v D3
+### Postup: Mapa v D3
 
 #### Příprava dat
 
@@ -213,8 +213,6 @@ var projection = d3.geoMercator()
 ```
 ![Map 2](images/map2.png)
 
-Nejpozději nyní si všimneme, že jedna obec - Blatná - v souboru z RÚIANu chybí (stejně jako Roudnice mezi ORP). Už o tom ale na ČÚZK vědí, tak snad v době, kdy to čtete, už tam ta díra není.
-
 Obarvíme obce dle hustoty:
 ``` js
 // měřítko - barevná škála
@@ -294,7 +292,7 @@ Jenom změníme vstupní soubor `orp-simple-data-topo.json` na `orp-simple-data-
 
 ![Map 5](images/map5.png)
 
-### Mapa v QGIS
+### Postup: Mapa v QGIS
 
 Jako vstupní použijeme připravené soubory `obce.shp` (a jím odpovídající soubory `obce.`) a `obce_hustota.csv` (+ `orp.shp` a `orp_hustota.csv`) - dle postupu popsaném k D3.
 
@@ -343,7 +341,12 @@ A obdobně bychom mohli udělat mapu pro ORP.
 - [orp_hustota.csvw](data/orp_hustota.csvt)
 - [orp-simple-data-topo.json](orp-simple-data-topo.json)
 
-### Zdroje:
+### Další užití
+Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných postupem vytvořená mapa průměrného věku v obcích ČR:
+
+![Map 6](images/map6.png)
+
+### Použité nástroje a zdroje:
 #### D3
 - [California Population Density - Michael Bostock](https://bl.ocks.org/mbostock/5562380)
 - [Tutoriál Command-Line Cartography - Michael Bostocka](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c)
@@ -359,4 +362,4 @@ A obdobně bychom mohli udělat mapu pro ORP.
 - [Creating a choropleth / heat map](https://www.youtube.com/watch?v=rG6UphZGmg4)
 - [Projekce pro ČR](https://www.zive.cz/poradna/problem-s-georeferencovanim/sc-20-cq-633325/default.aspx?consultanswers=1)
 
-Michal Škop, leden 2020
+Michal Škop, únor 2020

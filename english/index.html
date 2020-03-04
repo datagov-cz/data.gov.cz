@@ -46,27 +46,29 @@ homepage: true
 </div>
 
 <div class="container">
-	<h2 class="">Články ze světa otevřených dat</h2>
-	<div class="row">
-		{% assign clanky=site.clanky | where:"lang", page.lang %}
-		{% for clanek in clanky limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4 mb-4">
-			aaa
-			<h3 class="h5">{{ clanek.title }}</h3>
-			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
-			{{ clanek.excerpt }}
-			{% if clanek.detail %}
-			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
-			{% endif %}
-		  </div>
-		{% endfor %}
+	<h2 class="mb-2">News from the open data world</h2>
+	<hr/>
+	  <div class="row">
+		  {% assign posts=site.posts | where:"lang", page.lang %}
+		  {% for post in posts limit:3 %}
+		  <div class="col-12 col-md-6 col-lg-4">
+			  <h3 class="h5">{{ post.title }}</h3>
+			  <p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
+			  {{ post.excerpt }}
+			  {% if post.detail %}
+			  <a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
+			  {% endif %}
+			</div>
+		  {% endfor %}
+	   </div>
+	   <div class="d-flex flex-row-reverse">
+		<p class=""><a class="btn btn-secondary" href="news" role="button">News archive &raquo;</a></p>
 	 </div>
-	 <p class=""><a class="btn btn-secondary" href="články" role="button">Všechny články &raquo;</a></p>
-	 <hr/>
-</div>
-
+  </div>  
 
 <div class="container">
+  <h2 class="mb-2">Important information for members of the open data ecosystem</h2>
+  <hr/>
   <div class="row">
 	<div class="col-md-4">
 	  <h2>Interested in opening data</h2>
@@ -84,23 +86,6 @@ homepage: true
 	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">More info (in Czech) &raquo;</a></p>
 	</div>
   </div>
-</div>
-
-<div class="container">
-  <hr/>
-	<div class="row">
-		{% assign posts=site.posts | where:"lang", page.lang %}
-		{% for post in posts limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4">
-			<h3 class="h5">{{ post.title }}</h3>
-			<p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
-			{{ post.excerpt }}
-			{% if post.detail %}
-			<a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
-			{% endif %}
-		  </div>
-		{% endfor %}
-	 </div>
 </div>
 
 <script src="{{ "/js/stats.js" | relative_url }}" ></script>

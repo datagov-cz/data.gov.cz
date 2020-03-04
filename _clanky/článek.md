@@ -1,11 +1,10 @@
 ---
 layout: post
 icon: whatshot
-title: New Open Data Portal
-detail: false
+title: Umíme psát články na web!
 lang: cs
-ref: DataPaper2
+ref: DataPaper1
 author: jakub_klímek
 ---
 
-A new portal dealing with open data in Czechia is launched!
+Umíme psát články, snad jich bude více :)

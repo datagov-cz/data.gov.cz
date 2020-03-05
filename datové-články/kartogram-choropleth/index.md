@@ -18,7 +18,7 @@ Zkusíme tu více postupů, jak se k výsledné mapě dostat:
 - pomocí [javascriptové knihovny D3](https://d3js.org/)
 - v GISovém programu [QGIS](https://www.qgis.org/)
 
-### Data
+### Použitá data
 Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevřených dat](https://data.gov.cz/datov%C3%A9-sady).
 
 - Pro geografickou část použijeme data z RÚIANu od ČÚZK: [RUIAN Stát - SHP](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---atom.cuzk.cz-api-3-action-package_show-id-cz-00025712-cuzk_ruian-staty-shp_1).
@@ -27,7 +27,7 @@ Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevř
 
 ### Instalace potřebných programů
 
-Pro přípravu dat pro `D3` si naistalujeme potřebné programy `ndjson-cli`, `topojson-server`, `topojson-simplify`, `topojson-client`, `shapefile`, `d3-tsv` (možná je třeba užít `sudo`):
+Pro přípravu dat pro `D3` si naistalujeme potřebné programy, které jsou _open source a zdarma_: `ndjson-cli`, `topojson-server`, `topojson-simplify`, `topojson-client`, `shapefile`, `d3-tsv` (možná je třeba užít `sudo`):
 
     npm install ndjson-cli
     npm install topojson-server
@@ -36,9 +36,9 @@ Pro přípravu dat pro `D3` si naistalujeme potřebné programy `ndjson-cli`, `t
     npm install shapefile
     npm install -g d3-dsv # note: this did not work without the -g
 
-Pro přípravu dat a pro vykreslení v QGISu potřebujeme samozřejmě nainstalovat [QGIS](https://www.qgis.org/en/site/).
+Pro přípravu dat a pro vykreslení v QGISu potřebujeme samozřejmě nainstalovat [QGIS](https://www.qgis.org/en/site/), který je _open source a zdarma_.
 
-### Postup: Mapa v D3
+### Postup zpracování: Mapa v D3
 
 #### Příprava dat
 
@@ -81,7 +81,7 @@ Např. pomocí `Pivot tables` z rovnou v `LibreOffice Calc` (`Insert->Pivot Tabl
 
 ![Pivot](images/pivot.png)
 
-Bohužel kódy ORP v těchto datech a datech z RÚIANu nejsou shodné, tak je ještě musíme sjednotit. Takže opět použijeme [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-cis65) a najdeme si `Číselní obcí s rozšířenou působností`. Přímo se nám nabízí stažení jenom v `XML`, což by znamenalo další práci navíc. Naštěstí NKOD má odkaz i na zdrojovou stránku s dokumentací (`Zobrazit dokumentaci`) a [na této stránce](https://apl.czso.cz/iSMS/cisinfo.jsp?kodcis=65) skočíme na `Ke stažení` a [tady](https://apl.czso.cz/iSMS/cisdata.jsp?kodcis=65) už si můžeme vybrat i formát `CSV`. Dáme [stáhnout](https://apl.czso.cz/iSMS/cisexp.jsp?kodcis=65&typdat=0&cisvaz=80007_97&datpohl=25.01.2020&cisjaz=203&format=2&separator=%2C) a máme soubor `CIS0065_CS.csv`.
+Bohužel kódy ORP v těchto datech a datech z RÚIANu nejsou shodné, tak je ještě musíme sjednotit. Takže opět použijeme [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-cis65) a najdeme si `Číselník obcí s rozšířenou působností`. Přímo se nám nabízí stažení jenom v `XML`, což by znamenalo další práci navíc. Naštěstí NKOD má odkaz i na zdrojovou stránku s dokumentací (`Zobrazit dokumentaci`) a [na této stránce](https://apl.czso.cz/iSMS/cisinfo.jsp?kodcis=65) skočíme na `Ke stažení` a [tady](https://apl.czso.cz/iSMS/cisdata.jsp?kodcis=65) už si můžeme vybrat i formát `CSV`. Dáme [stáhnout](https://apl.czso.cz/iSMS/cisexp.jsp?kodcis=65&typdat=0&cisvaz=80007_97&datpohl=25.01.2020&cisjaz=203&format=2&separator=%2C) a máme soubor `CIS0065_CS.csv`.
 
 Z toho nás zajímají sloupce `CHODNOTA` (alias kód ORP dle ČSÚ) a `KOD_RUIAN` (alias kód ORP dle RÚIANu).
 
@@ -292,7 +292,7 @@ Jenom změníme vstupní soubor `orp-simple-data-topo.json` na `orp-simple-data-
 
 ![Map 5](images/map5.png)
 
-### Postup: Mapa v QGIS
+### Postup zpracování: Mapa v QGIS
 
 Jako vstupní použijeme připravené soubory `obce.shp` (a jím odpovídající soubory `obce.`) a `obce_hustota.csv` (+ `orp.shp` a `orp_hustota.csv`) - dle postupu popsaném k D3.
 
@@ -362,4 +362,7 @@ Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných p
 - [Creating a choropleth / heat map](https://www.youtube.com/watch?v=rG6UphZGmg4)
 - [Projekce pro ČR](https://www.zive.cz/poradna/problem-s-georeferencovanim/sc-20-cq-633325/default.aspx?consultanswers=1)
 
-Michal Škop, únor 2020
+### Autor
+Michal Škop
+
+únor 2020

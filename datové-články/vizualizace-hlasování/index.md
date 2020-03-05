@@ -5,7 +5,7 @@ ref: Hlasování
 lang: cs
 author: Michal Škop
 ---
-### _<a href="https://michalskop.gitlab.io/votings_vue/" target="_blank">Demo aplikace</a>_
+_Rychlý odkaz: <a href="https://michalskop.gitlab.io/votings_vue/" target="_blank">Demo aplikace</a>_
 
 Poslankyně Olga Richterová [dala na Instagram obrázek tabulky výsledku hlasování](https://www.instagram.com/p/B5aGaDDnnQX/). Je to tabulka, která je _vlevo dole_ u každého hlasování v Poslanecké sněmovně (konkrétně toto hlasování je [zde](http://www.psp.cz/sqw/hlasy.sqw?g=71631&l=cz)).
 
@@ -95,9 +95,12 @@ Obdobně lze vyzualizovat nejrůznější hlasování: z jiných parlamentů, z
 
 ## Použité nástroje a zdroje
 (ale jde to mnoha způsoby, záleží, s čím jsem zvyklí dělat)
-- [Vue.js](ttps://vuejs.org/v2/guide/) - v tom budeme vařit
-- [Canvg](https://github.com/canvg/canvg) - na vykouzlení konečných obrázků
-- [Python](https://docs.python.org/3/) - pomocí toho si zpracováváme ta surová data
-- [Výsledná miniaplikace](src/)
+- [Vue.js](ttps://vuejs.org/v2/guide/) - v tom budeme vařit - _open source a zdarma_
+- [Canvg](https://github.com/canvg/canvg) - na vykouzlení konečných obrázků - _open source a zdarma_
+- [Python](https://docs.python.org/3/) - pomocí toho si zpracováváme ta surová data - _open source a zdarma_
+- [Výsledná miniaplikace](src/) - _open source a zdarma_
 
-Michal Škop, únor 2020
+## Autor
+Michal Škop
+
+únor 2020

@@ -3,7 +3,7 @@ jakub_klímek:
     name: Jakub Klímek
     email: jakub@jakubklimek.com
     twitter: jakub_klimek
-    web: https://jakubklimek.com
+    web: https://jakub.klímek.com
 michal_kubáň:
     name: Michal Kubáň 
     email: michal.kuban@mvcr.cz
@@ -16,3 +16,7 @@ martin_nečaský:
     name: Martin Nečaský 
     email: martin.necasky@mvcr.cz
     twitter: MartinNecasky
+martin_víta:
+    name: Martin Víta
+    web: https://www.martinvita.eu/
+    email: info@martinvita.eu

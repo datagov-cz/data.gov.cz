@@ -13,7 +13,7 @@ V současné době registruje [Národní katalog otevřených dat (NKOD)][link n
 <!--more-->
 ## Použitá data
 
-Tento nástroj pracuje s [Datovými sadami (CSV)](https://data.gov.cz/soubor/datov%C3%A9-sady.csv), které jsou registrovány v Národním katalogu otevřených dat (jedná se tedy v podstatě o metadata k sadám, které jsou dostupné prostřednictvím NKOD), přičemž sama tato data jsou poskytována jako otevřená.
+Tento nástroj pracuje s [Datovými sadami (CSV)][link data], které jsou registrovány v Národním katalogu otevřených dat (jedná se tedy v podstatě o metadata k sadám, které jsou dostupné prostřednictvím NKOD), přičemž sama tato data jsou poskytována jako otevřená.
 
 ## Postup zpracování
 
@@ -59,6 +59,7 @@ Z tabulky podobností byl následně ručně připraven HTML kód s obslužným 
 * [knihovna dplyr][link dplyr] (open source aplikace)
 
 [link nkod]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
+[link data]: https://data.gov.cz/soubor/datov%C3%A9-sady.csv "Datové sady"
 [link recom]: https://www.martinvita.eu/podobne_datove_sady_nkod.html "Doporučovací systém"
 [link stopslova]: https://nlp.fi.muni.cz/cs/StopList "Stop slova v ČR"
 [link dtm]: https://en.wikipedia.org/wiki/Document-term_matrix "Document-term matrix"

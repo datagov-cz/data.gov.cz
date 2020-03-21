@@ -1,16 +1,19 @@
 ---
-layout: contained
-title: Hackathony 2019
-ref: Hackathony
+layout: post
+detail: true
+lang: true
 lang: cs
-author: Jiří Marek
+icon: list
+ref: hackathony-2019
+author: jiří_marek
+date: 2020-03-21 12:00:00
+title: Hackathony 2019
 ---
-
-#Hackathony 2019
 
 Hackathony se staly v posledních letech stále oblíbenějším nástrojem, jak přijít s rychlými návrhy nových procesů, aplikací a řešení, které mohou rozvinout prakticky jakoukoliv oblast veřejného nebo soukromého života. Jedná se prakticky o soutěž s cílem nalézt nejlepší řešení předem dané výzvy. 
 
 I když “hackovat” je možné prakticky cokoliv, hackathony které využívají některý typ otevřených dat, jsou nejčastějším příkladem takových akcí. Kromě nových nápadů mají hackathony i svoji popularizační rovinu a významně pomáhají v šíření povědomí o přínosech otevřených dat mezi laickou i odbornou veřejností. Jelikož rok 2019 byl na tyto akce v České republice opravdu bohatý, rozhodli jsme se několik těchto akcí blíže analyzovat a poukázat na jejich využití otevřených dat.
+<!--more-->
 
 ![úvodní foto](images/hackathony-uvodní-foto.png) [^1]
 

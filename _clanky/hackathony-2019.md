@@ -1,12 +1,9 @@
 ---
-layout: post
-detail: true
+layout: contained
+title: Hackathony 2019
+ref: Hackathony
 lang: cs
-icon: list
-ref: hackathony_2019
-author: jiří_marek
-date: 2020-03-10 12:00:00
-title: Kterou další ještě mohu využít? ...aneb o doporučování podobných datových sad z NKOD
+author: Jiří Marek
 ---
 
 #Hackathony 2019

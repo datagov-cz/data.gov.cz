@@ -1,8 +1,19 @@
-#Zdravotní příčiny úmrtí v ČR
+---
+layout: post
+detail: true
+lang: true
+lang: cs
+icon: list
+ref: ZemřelívČR
+author: robert_spál
+date: 2020-03-21 12:00:00
+title: Zdravotní příčiny úmrtí v ČR
+---
 
 Český statistický úřad (ČSÚ) každoročně publikuje v [Národním katalogu otevřených dat](https://data.gov.cz/datov%C3%A9-sady) (NKOD) počty zemřelých za celou ČR. Data zachycují nejen samotnou příčinu úmrtí, ale také další zajímavé atributy jako například pohlaví zemřelých anebo kategorizaci nemocí. 
 
 Samotná surová data však nejsou příliš přistupná analytické práci a laická veřejnost jen stěží dokáže s těmito daty jednoduše pracovat. Rozhodli jsme se proto vytvořit nástroj, který široké veřejnosti umožní získat ucelený obrázek o celkové situaci v této oblasti. Nástroj by měl být přístupný, jednoduše ovladatelný a vizuálně přitažlivý tak, aby se s ním potenciálním uživatelům dobře pracovalo a aby byli schopni rychle a jednoduše získat informace, které potřebují. Z těchto důvodů jsme se proto rozhodli vytvořit filtrovací analytický nástroj pomocí technologie [Power BI](https://powerbi.microsoft.com/en-us/).
+<!--more-->
 
 <iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMzY2NTRjNjYtYzIyZC00OGFlLTgwMTgtNzY2ZGJiYzY2MjI3IiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 

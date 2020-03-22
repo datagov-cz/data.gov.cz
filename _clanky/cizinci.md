@@ -9,24 +9,25 @@ date: 2020-03-22 11:00:00
 title: Cizinci v ČR
 ---
 
-- Kolik jich je? 
-- Kde jsou? 
-- Jak jsou staří, či které národy jsou u nás nejvíce zastoupeny?
-
-Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického úřadu][ČSÚ], který katalogizuje v [Národním katalogu otevřených dat][NKOD] datové sady o [Počtech cizinců podle státního občanství, věku a pohlaví][Source] již od roku 2004. Pro potřeby této práci se podíváme na dostupné datové distribuce "pouze" 10 let zpět, tedy od roku 2009. 
+Česko se stává kosmopolitní zemí. Jde o logický vývoj společnosti, která se internacionalizuje, a to zejména z důvodů nabídky pracovních příležitostí a obecně relativně vysoké kvality života. Pojďme se podívat na tento jev podrobněji očima dat. V České republice bylo k 31.12.2018 564 000 cizinců. 
+- Jaké jsou národnosti?
+- Kde je cizinců nejvíce? 
+- Jaké věkové skupiny?
 <!--more-->
 
-### K čemu chceme dojít?
+Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického úřadu][ČSÚ], který katalogizuje v [Národním katalogu otevřených dat][NKOD] datové sady o [Počtech cizinců podle státního občanství, věku a pohlaví][Source] již od roku 2004. Pro potřeby této práci se podíváme na dostupné datové distribuce "pouze" 10 let zpět, tedy od roku 2009. 
+
+## K čemu chceme dojít?
 Článek si klade za cíl představit práci s daty v programu [Power BI][Power BI] a vytvořit níže uvedený dashboard. Druhým cílem je pak vizualizace dat v programu [QGIS][A Free and Open Source Geographic Information System]. 
 
 <iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMzM5YTktOTI0YS00MzQzLTkzYjMtYjI1OTQxNTgxNGZjIiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
 
-## Jaká data použijeme?
+## Použitá data
 
 Primárními daty pro naši práci jsou již představená data o cizincích v distribucích od roku 2009 do roku 2018. K pochopení struktury dat a významu číselníků je nutné nahlédnout do [metodiky][Metodika počtu cizinců], která je vždy k danému datasetu k dispozici. Další úskalím, které nám ČSÚ trochu práci ztěžuje, je zipování souborů, a to i tam, kde se nachází pouze jeden .csv soubor.
 Jelikož jsou data o cizincích publikovaná do úrovně okresů, budou nás sekundárně zajímat rovněž data o počtech obyvatel v jednotlivých okresech. Zde však již ČSÚ otevřená data nepublikuje, proto je nutné si je stáhnout z jejich [veřejné databáze][Veřejná databáze ČSÚ]. Třetím zdrojem dat je soubor [Správních hranic a hranic katastrálních území ČR][Data] od [ČÚZK][ČÚZK], kde budou použity .shp okresů v programu QGIS.
 
-## Jak toho dosáhneme?
+## Postup zpracování
 V první řadě si nainstalujeme [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=58494). Při práci v PBI budeme pracovat s více samostatnými .csv soubory, které máme uložené v jedné složce. Je tedy dobré pracovat s celou složkou s jednotlivými soubory, což PBI umožňuje. Po otevření programu tedy zvolíme tedy Get data --> Folder a poté všechny .csv ![zkomprimujeme do 1 souboru](../attachments/články/cizinci/obrázky/1komprimace_csv.png). Následně se můžeme přepnout do módu Edit Queries, kde bude nutné data ještě upravit. V první řadě je nutné se vypořádat s tím, že ČSÚ nám data podstrčil agregovaně či spíše duplicitně. V prvotním součtu totiž dojdeme k tomu, že v České republice máme 9 029 520 cizinců jen v roce 2018. Je tedy jasné, že data jsou různě agregována, a to jak za věkové skupiny, tak národnosti, pohlaví ... a to v různých měřítkách a ještě se všemi možnými kombinacemi. Cílem je tedy dostat se pouze k počtům za okresy. Toho docílíme tak, že zapneme filtraci v jednotlivých sloupcích, a to následovně: 
 
 - Pohlavi_kod - vybereme hodnoty 1 a 2 (tím jsme odfiltrovaly prázdné/agregované hodnoty) 
@@ -52,8 +53,9 @@ Anamorfóza (ang. cartogram) nám zderformuje mapu dle zastoupení zvolené prom
 
 Podobně použijeme i relativní počty, tedy procentuální zastoupení cizinců na celkové populaci v daném území. Zde je důležité si data rovněž předpřipravit např. v Google Sheets a poté je stejnou cestou nahrát do QGIS. Mapu pak dotváříme v sekci ![symbologie](../attachments/články/cizinci/obrázky/8symbology.png), kde byla zvolena kvantilová klasifikace. Závěrečné editace mapy docílíme v tlačítku "nové tiskové rozvržení" v horním menu, kde postupně přidáme ![název, legendu a měřítko](../attachments/články/cizinci/obrázky/9legenda.png). 
 
+## Další užití, závěr
+Ve výstupech nejsou použity další územní měřítka, za které lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je data obohatit o tzv. [Informativní přehledy][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, u statutární měst i za městské části. 
 
-### Závěr, zdroje, užitečné odkazy a data
 Tvorba datového dashboardu v PowerBI (pokud odečtu peripetie s pochopení struktury dat) trvala asi 2 hodiny (od mírně pokročilého uživatele). Vizualizace v QGIS trvaly rovněž cca 2 hodiny (od začátečníka s QGIS). Níže uvádím některé užitečné zdroje k práci:
  
 - [Jak připojit .csv k vrstvě .shp][Návod]
@@ -69,6 +71,7 @@ Tvorba datového dashboardu v PowerBI (pokud odečtu peripetie s pochopení stru
 [Metodika počtu cizinců]: (https://www.czso.cz/csu/cizinci/metodika-poctu-cizincu) "Metodika ČSÚ k počítání cizinců"
 [Veřejná databáze ČSÚ]: (https://vdb.czso.cz/vdbvo2/faces/cs/index.jsf?page=home "vdb čsú"
 [ČÚZK]: https://www.cuzk.cz/ "Český úřad zeměměřičský a katastrální"
+[Info MVČR]: https://www.mvcr.cz/clanek/informativni-pocty-obyvatel-v-obcich.aspx "Informativní přehledy o počtech cizinců"
 [Návod]: https://training.gismentors.eu/qgis-zacatecnik/vektorova_data/join.html "Návod na připojení vrstev"
 [Návod_2]: https://training.gismentors.eu/qgis-pokrocily/ruzne/grafy.html "Návod na tvorbu kartodiagramů"
 

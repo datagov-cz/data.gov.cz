@@ -46,9 +46,7 @@
 	.navbar-light .navbar-nav .show>.nav-link {
 		color: var(--color-text-accent-inverted);
 	}
-
 }
-
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
   transition: .6s opacity ease;

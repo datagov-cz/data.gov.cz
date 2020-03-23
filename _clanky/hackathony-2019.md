@@ -14,7 +14,10 @@ Hackathony se staly v posledních letech stále oblíbenějším nástrojem, jak
 I když “hackovat” je možné prakticky cokoliv, hackathony které využívají některý typ otevřených dat, jsou nejčastějším příkladem takových akcí. Kromě nových nápadů mají hackathony i svoji popularizační rovinu a významně pomáhají v šíření povědomí o přínosech otevřených dat mezi laickou i odbornou veřejností. Jelikož rok 2019 byl na tyto akce v České republice opravdu bohatý, rozhodli jsme se několik těchto akcí blíže analyzovat a poukázat na jejich využití otevřených dat.
 <!--more-->
 
-{% include image.html url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg" description="Foto: <a href='https://hackujstat.cz/' title='Hackuj stát'>Hackathon veřejné správy</a>" %}
+{% include image.html 
+   url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg"
+   description="Foto: <a href='https://hackujstat.cz/' title='Hackuj stát'>Hackathon veřejné správy</a>" 
+%}
 
 ## Hackathony s cílem zlepšit veřejnou správu
 Jako první si představíme hackathony, které svým zaměřením míří zejména na zlepšení témat ve veřejném prostoru (ve městech a národní úrovni).
@@ -63,7 +66,10 @@ Speciální kategorii hackathonů jsou poté hackathony, které pořádají souk
 ## Studentské a neziskové hackathony
 Téma hackathonů se nevyhýbá ani univerzitnímu a neziskovému sektoru. Za zajímavé akce tohoto typu je možné v roce 2019 označit například [Wikimedia Hackathon][wikimedia] nebo [Soutěž UniT Brno][unitbrno], kterou pořádá [BEST Brno][bestbrno] jako studentská organizace Vysokého učení technického v Brně. Na studentských hackathon se naopak nejčastěji setkáme právě s různými otevřenými daty jak z veřejného tak z akademického sektoru.
 
-{% include image.html url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-unit-extended.png" description="Foto: <a href='https://best.vutbr.cz/' title='Best Brno'>Best Brno</a>" %}
+{% include image.html 
+   url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-unit-extended.png" 
+   description="Foto: <a href='https://best.vutbr.cz/' title='Best Brno'>Best Brno</a>" 
+%}
 
 ## A jak takový hackathon uspořádat?
 Zaujaly Vás hackathony natolik, že byste rádi takovou akci uspořádali? Pokud ano, připravili jsme pro vás krátké shrnutí, na co byste neměli zapomenout při přípravě tohoto typu akce. Pokud byste chtěli potřebovali bližší konzultaci, neváhejte nám napsat na emailovou adresu [otevrenadata@mvcr.cz][odmvcr] a do předmětu zprávy dát "*hackathony*".

@@ -103,9 +103,9 @@ Obdobně lze vyzualizovat nejrůznější hlasování: z jiných parlamentů, z
 
 ## Použité nástroje a zdroje
 (ale jde to mnoha způsoby, záleží, s čím jsem zvyklí dělat)
-- [Vue.js][link_vue](https://vuejs.org/v2/guide/) - v tom budeme vařit - _open source a zdarma_
-- [Canvg][link_canvg](https://github.com/canvg/canvg) - na vykouzlení konečných obrázků - _open source a zdarma_
-- [Python][link_python](https://docs.python.org/3/) - pomocí toho si zpracováváme ta surová data - _open source a zdarma_
+- [Vue.js][link_vue] - v tom budeme vařit - _open source a zdarma_
+- [Canvg][link_canvg] - na vykouzlení konečných obrázků - _open source a zdarma_
+- [Python][link_python] - pomocí toho si zpracováváme ta surová data - _open source a zdarma_
 - [Výsledná miniaplikace][link_app] - _open source a zdarma_
 
 

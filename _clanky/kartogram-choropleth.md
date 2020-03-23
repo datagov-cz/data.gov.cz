@@ -1,29 +1,35 @@
 ---
-layout: contained
-title: Kartogram ČR (Choropleth, choropletová mapa)
+layout: post
+detail: true
+title: Kartogram ČR - Zobrazení v mapách (choropletová mapa)
 ref: Choroplet
 lang: cs
-author: Michal Škop
+author: michal_škop
+date: 2020-02-10 03:14:15
 ---
+<img src="/attachments/články/kartogram-choropleth/images/map4.png" width="350">
+
+Jednou ze základních vizualizací jsou choropletové mapy.
+
+<!--more-->
+V češtině jsou trochu nešťastně zvané kartogramy (neboť [cartogram][link_wiki_cartogram] v angličtině a mnoha jiných jazycích je něco jiného)
+
 ## Zobrazení v mapách: Obce a ORP v ČR - hustota obyvatel
-
-Jednou ze základních vizualizací jsou choropletové mapy, v češtině trochu nešťastně zvané kartogramy (neboť cartogram v angličtině a mnoha jiných jazycích je [něco jiného](https://en.wikipedia.org/wiki/Cartogram)).
-
-Cílem je zhotovit takovouto mapu zobrazující hustotu obyvatel v obcích a obdobnou v [ORP](https://cs.wikipedia.org/wiki/Obec_s_roz%C5%A1%C3%AD%C5%99enou_p%C5%AFsobnost%C3%AD) ("malé okresy") v ČR. Hustota obyvatel je tu zvolená na ukázku, stejně tak lze zobrazit leccos jiného.
+Cílem je zhotovit takovouto mapu zobrazující hustotu obyvatel v obcích a obdobnou v [ORP][link_wiki_orp] ("malé okresy") v ČR. Hustota obyvatel je tu zvolená na ukázku, stejně tak lze zobrazit leccos jiného.
 
 ![kartogram obce](/attachments/články/kartogram-choropleth/images/map4.png)
 
 Zkusíme tu více postupů, jak se k výsledné mapě dostat:
 
-- pomocí [javascriptové knihovny D3](https://d3js.org/)
-- v GISovém programu [QGIS](https://www.qgis.org/)
+- pomocí [javascriptové knihovny D3][link_d3]
+- v GISovém programu [QGIS][link_qgis]
 
 ### Použitá data
-Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevřených dat](https://data.gov.cz/datov%C3%A9-sady).
+Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevřených dat][link_nkod].
 
-- Pro geografickou část použijeme data z RÚIANu od ČÚZK: [RUIAN Stát - SHP](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---atom.cuzk.cz-api-3-action-package_show-id-cz-00025712-cuzk_ruian-staty-shp_1).
+- Pro geografickou část použijeme data z RÚIANu od ČÚZK: [RUIAN Stát - SHP][link_ruian_shp].
 
-- Pro data o počtu obyvatel a rozloze území použijeme data ČSÚ: [Statistická data pro územně analytické podklady](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-340129).
+- Pro data o počtu obyvatel a rozloze území použijeme data ČSÚ: [Statistická data pro územně analytické podklady][link_stat_data].
 
 ### Instalace potřebných programů
 
@@ -36,20 +42,20 @@ Pro přípravu dat pro `D3` si naistalujeme potřebné programy, které jsou _op
     npm install shapefile
     npm install -g d3-dsv # note: this did not work without the -g
 
-Pro přípravu dat a pro vykreslení v QGISu potřebujeme samozřejmě nainstalovat [QGIS](https://www.qgis.org/en/site/), který je _open source a zdarma_.
+Pro přípravu dat a pro vykreslení v QGISu potřebujeme samozřejmě nainstalovat [QGIS][link_qgis], který je _open source a zdarma_.
 
 ### Postup zpracování: Mapa v D3
 
 #### Příprava dat
 
 ##### Standardizace geodat
-Z RÚIANu si [stáhneme data](http://services.cuzk.cz/shp/stat/epsg-5514/1.zip) a ze souboru `1.zip` extrahujeme do svého pracovního adresáře všechny soubory začínající `OBCE_P` (obce) a `ORP_P` (ORP).
+Z RÚIANu si [stáhneme data][link_ruian_data] a ze souboru `1.zip` extrahujeme do svého pracovního adresáře všechny soubory začínající `OBCE_P` (obce) a `ORP_P` (ORP).
 
 Tyto `SHP` soubory mají zatím několik problémů:
 - Nejsou v kódování UTF-8, ale v českém Win-1250
 - Jsou ve speciálním česko-slovenském souřadnicovém systému S-JTSK a ne v daleko běžnějším WGS 84.
 
-Oba tyto problémy pořešíme projednou ručně - v LibreOffice a v QGISu. Jiné postupy pro geo-kódování jsou navržené [třeba zde](https://twitter.com/skopmichal/status/1215398869867036672).
+Oba tyto problémy pořešíme projednou ručně - v LibreOffice a v QGISu. Jiné postupy pro geo-kódování jsou navržené [třeba zde][link_twitter_geocoding].
 
 UTF-8:
 - Otevřeme `OBCE_P.dbf` v `LibreOffice Calcu` (vybereme kódování `Eastern Europe (Windows-1250/WinLatin2`)
@@ -69,7 +75,7 @@ Podobně si přetransformujeme i ORP do souborů `<pracovní adresář>/orp.shp`
 ![Save Vector Layer As](images/save_vector_layer_as.png)
 
 ##### Příprava statistických dat
-Z ČSÚ [stáhneme data](https://www.czso.cz/documents/62353418/114658260/340129-19data062819.zip) a extrahujeme do svého pracovního adresáře soubor `UAP01_2018` (příp. novější rok). Z něj vyfiltrujeme (opět např. ručně v `LibreOffice Calc`) řádky, které v sloupci `vuk_txt` mají hodnoty `Celková výměra (v hektarech)` a `Počet obyvatel`. A vytvoříme si nový soubor `<pracovní adresář>/obce_hustota.csv`, a dopočteme si hustotu obyvatel na 1 km2. Vyplatí se nám původní soubor nejprve seřadit dle `vuk_txt` a `uzemi_kod` (což je kód obce). Můžeme se vyhnout některým možným problémům při zobrazování dat v budoucnu, pokud tu hustotu zaokrouhlíme (tj. `=round(počet obyvatel / výměra * 100)`). Tabulka bude vypadat nějak takto, pro budoucí potřeby si kód obce (`uzemi_kod`) označíme jako `id` (budeme potřebovat slupce `id` a `hustota`):
+Z ČSÚ [stáhneme data][link_csu_data] a extrahujeme do svého pracovního adresáře soubor `UAP01_2018` (příp. novější rok). Z něj vyfiltrujeme (opět např. ručně v `LibreOffice Calc`) řádky, které v sloupci `vuk_txt` mají hodnoty `Celková výměra (v hektarech)` a `Počet obyvatel`. A vytvoříme si nový soubor `<pracovní adresář>/obce_hustota.csv`, a dopočteme si hustotu obyvatel na 1 km2. Vyplatí se nám původní soubor nejprve seřadit dle `vuk_txt` a `uzemi_kod` (což je kód obce). Můžeme se vyhnout některým možným problémům při zobrazování dat v budoucnu, pokud tu hustotu zaokrouhlíme (tj. `=round(počet obyvatel / výměra * 100)`). Tabulka bude vypadat nějak takto, pro budoucí potřeby si kód obce (`uzemi_kod`) označíme jako `id` (budeme potřebovat slupce `id` a `hustota`):
 
 id    | Celková výměra (v hektarech) | Počet obyvatel | hustota | uzemi_txt
 ----- | -----                        | -----          | -----   | -----
@@ -81,7 +87,7 @@ Např. pomocí `Pivot tables` z rovnou v `LibreOffice Calc` (`Insert->Pivot Tabl
 
 ![Pivot](/attachments/články/kartogram-choropleth/images/pivot.png)
 
-Bohužel kódy ORP v těchto datech a datech z RÚIANu nejsou shodné, tak je ještě musíme sjednotit. Takže opět použijeme [Národní katalog otevřených dat](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-cis65) a najdeme si `Číselník obcí s rozšířenou působností`. Přímo se nám nabízí stažení jenom v `XML`, což by znamenalo další práci navíc. Naštěstí NKOD má odkaz i na zdrojovou stránku s dokumentací (`Zobrazit dokumentaci`) a [na této stránce](https://apl.czso.cz/iSMS/cisinfo.jsp?kodcis=65) skočíme na `Ke stažení` a [tady](https://apl.czso.cz/iSMS/cisdata.jsp?kodcis=65) už si můžeme vybrat i formát `CSV`. Dáme [stáhnout](https://apl.czso.cz/iSMS/cisexp.jsp?kodcis=65&typdat=0&cisvaz=80007_97&datpohl=25.01.2020&cisjaz=203&format=2&separator=%2C) a máme soubor `CIS0065_CS.csv`.
+Bohužel kódy ORP v těchto datech a datech z RÚIANu nejsou shodné, tak je ještě musíme sjednotit. Takže opět použijeme [Národní katalog otevřených dat][link_csu_ciselnik] a najdeme si `Číselník obcí s rozšířenou působností`. Přímo se nám nabízí stažení jenom v `XML`, což by znamenalo další práci navíc. Naštěstí NKOD má odkaz i na zdrojovou stránku s dokumentací (`Zobrazit dokumentaci`) a [na této stránce][link_csu_orp] skočíme na `Ke stažení` a [tady][link_csu_orp_2] už si můžeme vybrat i formát `CSV`. Dáme [stáhnout][link_csu_orp_soubor] a máme soubor `CIS0065_CS.csv`.
 
 Z toho nás zajímají sloupce `CHODNOTA` (alias kód ORP dle ČSÚ) a `KOD_RUIAN` (alias kód ORP dle RÚIANu).
 
@@ -96,7 +102,7 @@ id    | Celková výměra (v hektarech) | Počet obyvatel | hustota | prislorp_t
 
 ##### Tranformace z SHP do TopoJSONu
 
-Pro použití v `D3` potřebujeme přetransformovat data z formátu `SHP`. Půjdeme zde hlavně podle [tohoto tutoriálu od autora knihovny D3 Mike Bostocka](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c).
+Pro použití v `D3` potřebujeme přetransformovat data z formátu `SHP`. Půjdeme zde hlavně podle [tutoho tutoriálu od autora knihovny D3 Mike Bostocka][link_tutorial].
 
 Během tohoto postupu budeme také chtít zjednodušit hranice území. Je to proto, že jsou z RÚIANu příliš podrobné pro naše účely a tím pádem je ten soubor dost velký (`obce.shp` má 85 MB).
 
@@ -348,21 +354,40 @@ Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných p
 
 ### Použité nástroje a zdroje:
 #### D3
-- [California Population Density - Michael Bostock](https://bl.ocks.org/mbostock/5562380)
-- [Tutoriál Command-Line Cartography - Michael Bostocka](https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c)
-- [Tento tutoriál zjednodušeně v Observable](https://observablehq.com/@michalskop/kartogram-choropleth-choropletova-mapa)
-- [TopoJSON-simplify](https://github.com/topojson/topojson-simplify)
-- [NDJSON-CLI](https://github.com/mbostock/ndjson-cli)
-- [TopoJSON-client](https://github.com/topojson/topojson-client)
-- [TopoJSON-server](https://github.com/mbostock/topojson-server)
-- [Streming Shapefile Parser](https://github.com/mbostock/shapefile)
-
+- [California Population Density - Michael Bostock][link_california]
+- [Tutoriál Command-Line Cartography - Michael Bostock][link_tutorial]
+- [Tento tutoriál zjednodušeně v Observable][link_tutorial_observable]
+- [TopoJSON-simplify][link_sipmlify]
+- [NDJSON-CLI][link_cli]
+- [TopoJSON-client][link_client]
+- [TopoJSON-server][link_server]
+- [Streming Shapefile Parser][link_parser]
 
 #### QGIS
 - [Creating a choropleth / heat map](https://www.youtube.com/watch?v=rG6UphZGmg4)
 - [Projekce pro ČR](https://www.zive.cz/poradna/problem-s-georeferencovanim/sc-20-cq-633325/default.aspx?consultanswers=1)
 
-### Autor
-Michal Škop
 
-únor 2020
+[link_wiki_cartogram]: https://en.wikipedia.org/wiki/Cartogram "Cartogram"
+[link_wiki_orp]: https://cs.wikipedia.org/wiki/Obec_s_roz%C5%A1%C3%AD%C5%99enou_p%C5%AFsobnost%C3%AD "ORP"
+[link_d3]: https://d3js.org/ "D3"
+[link_qgis]: https://www.qgis.org/ "QGIS"
+[link_nkod]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
+[link_ruian_shp]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---atom.cuzk.cz-api-3-action-package_show-id-cz-00025712-cuzk_ruian-staty-shp_1 "NKOD - RÚIAN - SHP soubor obce ČR"
+[link_stat_data]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-340129 "NKOD - ČSÚ - Statistická data pro územně analytické podklady"
+[link_ruian_data]: http://services.cuzk.cz/shp/stat/epsg-5514/1.zip) "RÚIAN - SHP soubor obce ČR"
+[link_twitter_geocoding]: https://twitter.com/skopmichal/status/1215398869867036672 "Twitter - diskuse o geokódování"
+[link_csu_data]: https://www.czso.cz/documents/62353418/114658260/340129-19data062819.zip "ČSÚ - data o obcích"
+[link_csu_ciselnik]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-cis65 "Číselník obcí s rozšířenou působností"
+[link_csu_orp]: https://apl.czso.cz/iSMS/cisinfo.jsp?kodcis=65 "ČSÚ - ORP"
+[link_csu_orp_2]: https://apl.czso.cz/iSMS/cisdata.jsp?kodcis=65 "ČSÚ - ORP - soubory"
+[link_csu_orp_soubor]:https://apl.czso.cz/iSMS/cisexp.jsp?kodcis=65&typdat=0&cisvaz=80007_97&datpohl=25.01.2020&cisjaz=203&format=2&separator=%2C "ČSÚ - ORP - CSV"
+[link_tutorial]: https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c "Tutoriál Command-Line Cartography - Michael Bostock"
+[link_california]: https://bl.ocks.org/mbostock/5562380 "California Population Density - Michael Bostock"
+[link_tutorial_observable]: https://observablehq.com/@michalskop/kartogram-choropleth-choropletova-mapa "Tento tutoriál zjednodušeně v Observable"
+
+[link_sipmlify]: https://github.com/topojson/topojson-simplify "TopoJSON-simplify"
+[link_cli]: https://github.com/mbostock/ndjson-cli "NDJSON-CLI"
+[link_client]: https://github.com/topojson/topojson-client "TopoJSON-client"
+[link_server]: https://github.com/mbostock/topojson-server "TopoJSON-server"
+[link_parser]: https://github.com/mbostock/shapefile "Streming Shapefile Parser"

@@ -14,7 +14,9 @@ title: Zdravotní příčiny úmrtí v ČR
 Samotná surová data však nejsou příliš přistupná analytické práci a laická veřejnost jen stěží dokáže s těmito daty jednoduše pracovat. Rozhodli jsme se proto vytvořit nástroj, který široké veřejnosti umožní získat ucelený obrázek o celkové situaci v této oblasti. Nástroj by měl být přístupný, jednoduše ovladatelný a vizuálně přitažlivý tak, aby se s ním potenciálním uživatelům dobře pracovalo a aby byli schopni rychle a jednoduše získat informace, které potřebují. Z těchto důvodů jsme se proto rozhodli vytvořit filtrovací analytický nástroj pomocí technologie [Power BI][powerbi].
 <!--more-->
 
-<iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiMzY2NTRjNjYtYzIyZC00OGFlLTgwMTgtNzY2ZGJiYzY2MjI3IiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://app.powerbi.com/view?r=eyJrIjoiMzY2NTRjNjYtYzIyZC00OGFlLTgwMTgtNzY2ZGJiYzY2MjI3IiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen></iframe>
+</div>
 
 ## Použitá data
 

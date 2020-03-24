@@ -1,4 +1,4 @@
-# Zdravotní příčiny úmrtí v ČR
+# Zdravotní příčiny úmrtí v ČR mezi roky 2009 až 2018
 
 
 Český statistický úřad (ČSÚ) každoročně publikuje v [Národním katalogu otevřených dat](https://data.gov.cz/datov%C3%A9-sady) (NKOD) počty zemřelých za celou ČR. Data zachycují nejen samotnou příčinu úmrtí, ale také další zajímavé atributy jako například pohlaví zemřelých anebo kategorizaci nemocí. [Data](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-130143) jsou agregována jak za celou ČR, tak i na kraje a okresy a umožňují nám získat unikátní pohled na vývoj zdraví českých občanů od roku 2006. 

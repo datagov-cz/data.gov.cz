@@ -10,7 +10,7 @@ articleindex: true
 	<h1 class="header center">Články</h1>
 	<hr/>
     <div class="row">
-        {% assign clanky=site.clanky | where:"lang", page.lang %}
+        {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
         <div class="col-12 col-md-6 col-lg-4">
 			<div class="section">

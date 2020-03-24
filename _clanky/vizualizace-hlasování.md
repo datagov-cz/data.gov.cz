@@ -4,11 +4,10 @@ detail: true
 title: Vizualizace hlasování
 ref: Hlasování
 lang: cs
+image: ../attachments/články/vizualizace-hlasovani/images/chart_1.png
 author: michal_škop
 date: 2020-02-20 03:14:15
 ---
-<img src="../attachments/články/vizualizace-hlasovani/images/chart_1.png" width="350">
-
 Přehledné zobrazení výsledku hlasování je užitečné pro novináře a jejich čtenáře, pro politiky nebo pro nejrůznější lobby.
 
 <!--more-->

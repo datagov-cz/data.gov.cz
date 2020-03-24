@@ -71,11 +71,14 @@ homepage: true
 	<h2 class="mb-2">Články ze světa otevřených dat</h2>
 	<hr/>
 	<div class="row">
-		{% assign clanky=site.clanky | where:"lang", page.lang | reverse%}
+		{% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
 		{% for clanek in clanky limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
 			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+            {% if clanek.image %}
+            <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+            {% endif %}
 			{{ clanek.excerpt}}
 			{% if clanek.detail %}
 			<a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Číst dále &raquo;</a>

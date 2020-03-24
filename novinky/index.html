@@ -7,43 +7,37 @@ postindex: true
 ---
 
   <div class="container">
-	<h1 class="header center">Novinky v otevřených datech</h1>
-	<hr/>
+    <h1 class="header center">Novinky v otevřených datech</h1>
+    <hr/>
     <div class="row">
         {% assign posts=site.posts | where:"lang", page.lang %}
         {% for post in posts limit:3 %}
         <div class="col-12 col-md-6 col-lg-4">
-			<div class="section">
-			  <div>
-                <h3 class="h5">{{ post.title }}</h3>
-                <p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
-                <div>
-					{{ post.excerpt }}
-				</div>
-                {% if post.detail %}
-                <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
-                {% endif %}
-			  </div>
-			</div>
-		</div>
+          <div class="section">
+            <h3 class="h5">{{ post.title }}</h3>
+            <p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+            {{ post.excerpt }}
+            {% if post.detail %}
+            <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+            {% endif %}
+          </div>
+        </div>
         {% endfor %}
-     </div>
+    </div>
     <hr/>
-    <h2 class="center">Starší novinky</h2>
+    <h2>Starší novinky</h2>
     <div class="row">
         {% for post in posts offset:3 %}
         <div class="col-12 col-md-6 col-lg-4">
-			<div class="section">
-                <h3 class="h5">{{ post.title }}</h3>
-				<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
-                <p class="flow-text">
-                    {{ post.excerpt | remove: '<p>' | remove: '<p class="flow-text">' | remove: '</p>' }}
-                </p>
-                {% if post.detail %}
-                <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
-                {% endif %}
-			</div>
-		</div>
+          <div class="section">
+            <h3 class="h5">{{ post.title }}</h3>
+            <p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+            {{ post.excerpt }}
+            {% if post.detail %}
+            <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+            {% endif %}
+          </div>
+        </div>
         {% endfor %}       
-	</div>
+      </div>
   </div>

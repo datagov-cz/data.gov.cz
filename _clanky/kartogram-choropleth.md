@@ -4,11 +4,10 @@ detail: true
 title: Kartogram ČR - Zobrazení v mapách (choropletová mapa)
 ref: Choroplet
 lang: cs
+image: ../attachments/články/kartogram-choropleth/images/map4.png
 author: michal_škop
 date: 2020-02-10 03:14:15
 ---
-<img src="../attachments/články/kartogram-choropleth/images/map4.png" width="350">
-
 Jednou ze základních vizualizací jsou choropletové mapy.
 
 <!--more-->

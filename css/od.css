@@ -18,7 +18,7 @@
 		--color-text-accent-inverted: white ;
 		--color-base: #057fa544 ;
 	}
-	
+
 	.alert a {
 		color: var(--color-text-inverted) ;
 	}

@@ -5,7 +5,7 @@ jakub_klímek:
     twitter: jakub_klimek
     web: https://jakub.klímek.com
 michal_kubáň:
-    name: Michal Kubáň 
+    name: Michal Kubáň
     email: michal.kuban@mvcr.cz
     twitter: kubanster
     web: http://twitter.com/kubanster
@@ -13,7 +13,7 @@ jakub_malina:
     name: Jakub Malina
     email: jakub.malina@mvcr.cz
 martin_nečaský:
-    name: Martin Nečaský 
+    name: Martin Nečaský
     email: martin.necasky@mvcr.cz
     twitter: MartinNecasky
 martin_víta:
@@ -31,3 +31,8 @@ jiří_marek:
     email: jiri.marek@mvcr.cz
     twitter: JM_microblog
     web: https://www.linkedin.com/in/marekjiri/
+    email: info@martinvita.eu
+michal_škop:
+    name: Michal Škop
+    web: https://www.skop.eu/
+    email: michal.skop@kohovolit.eu

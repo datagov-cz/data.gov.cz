@@ -3,10 +3,10 @@ layout: post
 detail: true
 lang: cs
 icon: list
-ref: cizinci-v-čr
+ref: vývoj-počtu-cizinců-v-čr-mezi-lety-2009-a-2018
 author: martin_dvořák
 date: 2020-03-22 11:00:00
-title: Cizinci v ČR 2009-2018
+title: Vývoj počtu cizinců v ČR mezi lety 2009 a 2018
 ---
 
 Česko se stává kosmopolitní zemí. Jde o logický vývoj společnosti, která se internacionalizuje, a to zejména z důvodů nabídky pracovních příležitostí a obecně relativně vysoké kvality života. Pojďme se podívat na tento jev podrobněji očima dat. V České republice bylo k 31.12.2018 564 000 cizinců. 
@@ -20,7 +20,7 @@ Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického ú�
 ## K čemu chceme dojít?
 Článek si klade za cíl představit práci s daty v programu [Power BI][Power BI] a vytvořit níže uvedený dashboard. Druhým cílem je pak vizualizace dat v programu [QGIS][A Free and Open Source Geographic Information System]. 
 
-<iframe width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMzM5YTktOTI0YS00MzQzLTkzYjMtYjI1OTQxNTgxNGZjIiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe class="embed-responsive-item" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMzM5YTktOTI0YS00MzQzLTkzYjMtYjI1OTQxNTgxNGZjIiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen></iframe>
 
 ## Použitá data
 

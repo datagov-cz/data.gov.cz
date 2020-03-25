@@ -3,10 +3,10 @@ layout: post
 detail: true
 lang: cs
 icon: list
-ref: cizinci
+ref: cizinci-v-čr
 author: martin_dvořák
 date: 2020-03-22 11:00:00
-title: Cizinci v ČR
+title: Cizinci v ČR 2009-2018
 ---
 
 Česko se stává kosmopolitní zemí. Jde o logický vývoj společnosti, která se internacionalizuje, a to zejména z důvodů nabídky pracovních příležitostí a obecně relativně vysoké kvality života. Pojďme se podívat na tento jev podrobněji očima dat. V České republice bylo k 31.12.2018 564 000 cizinců. 

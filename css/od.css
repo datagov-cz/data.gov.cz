@@ -1,6 +1,6 @@
 :root {
 	--color-background: white ;
-	--color-background-footer: #fff;
+	--color-background-footer: white;
 	--color-text-default: black ; 
 	--color-text-inverted: white ; 
 	--color-text-accent: #057fa5 ;
@@ -18,7 +18,7 @@
 		--color-text-accent-inverted: white ;
 		--color-base: #057fa544 ;
 	}
-	
+
 	.alert a {
 		color: var(--color-text-inverted) ;
 	}
@@ -58,6 +58,11 @@
     transition: none;
   }
 } 
+
+pre {
+	color: var(--color-text-accent);
+	background-color: var(--color-background-footer:);
+}
 
 body, .card-body, .list-group-item, div.card {
 	color: var(--color-text-default);

@@ -3,10 +3,10 @@ layout: post
 detail: true
 lang: cs
 icon: list
-ref: zemřelí-v-ČR
+ref: zdravotní-příčiny-úmrtí-v-čr-mezi-lety-2009-až-2018
 author: robert_spál
 date: 2020-03-20 11:00:00
-title: Zdravotní příčiny úmrtí v ČR
+title: Zdravotní příčiny úmrtí v ČR mezi lety 2009 až 2018
 ---
 
 Český statistický úřad (ČSÚ) každoročně publikuje v [Národním katalogu otevřených dat][NKOD] (NKOD) počty zemřelých za celou ČR. Data zachycují nejen samotnou příčinu úmrtí, ale také další zajímavé atributy jako například pohlaví zemřelých anebo kategorizaci nemocí. 

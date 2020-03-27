@@ -8,9 +8,9 @@ homepage: true
   <div class="container text-white">
 	<div class="row">
 	  <div class="col-md-6">
-		<h1 class="display-3">Otevřená data</h1>
+		<h1 class="display-3">Portál otevřených dat</h1>
 		<p>Vše, co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
-		<p><a href="informace/základy-otevřených-dat-pro-zájemce/" class="btn btn-primary">Základy otevřených dat</a></p>
+		<p><a href="datové-sady" class="btn btn-primary">Národní katalog otevřených dat</a></p>
 	  </div>
 	  <div class="col-md-6 text-right d-none d-md-block">
 	    <div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
@@ -46,33 +46,14 @@ homepage: true
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-	<div class="col-md-4">
-	  <h2>Zájemci o otevírání dat</h2>
-	  <p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
-	  <p><a class="btn btn-secondary" href="informace/základy-otevřených-dat-pro-zájemce/" role="button">Více informací &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-	  <h2>Poskytovatelé dat</h2>
-	  <p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
-	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
-   </div>
-	<div class="col-md-4">
-	  <h2>Uživatelé dat</h2>
-	  <p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
-	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">Více informací &raquo;</a></p>
-	</div>
-  </div>
-</div>
-
-<div class="container">
-  <hr/>
+<div class="container mb-4">
+	<h2 class="mb-2">Novinky ze světa otevřených dat</h2>
+	<hr/>
 	<div class="row">
 		{% assign posts=site.posts | where:"lang", page.lang %}
 		{% for post in posts limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4">
-			<h3 class="h5">{{ post.title }}</h3>
+		<div class="col-12 col-md-6 col-lg-4 mb-4">
+			<h3 class="h4">{{ post.title }}</h3>
 			<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
 			{{ post.excerpt }}
 			{% if post.detail %}
@@ -81,7 +62,55 @@ homepage: true
 		  </div>
 		{% endfor %}
 	 </div>
+	 <div class="d-flex flex-row-reverse">
+		<p class=""><a class="btn btn-secondary" href="novinky" role="button">Archiv novinek &raquo;</a></p>
+	 </div>
 </div>
 
+<div class="container">
+	<h2 class="mb-2">Články ze světa otevřených dat</h2>
+	<hr/>
+	<div class="row">
+		{% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
+		{% for clanek in clanky limit:3 %}
+		<div class="col-12 col-md-6 col-lg-4 mb-4">
+			<h3 class="h4"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
+			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+            {% if clanek.image %}
+            <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+            {% endif %}
+			{{ clanek.excerpt}}
+			{% if clanek.detail %}
+			<a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Číst dále &raquo;</a>
+			{% endif %}
+		  </div>
+		{% endfor %}
+	 </div>
+	 <div class="d-flex flex-row-reverse">
+	 	<p class=""><a class="btn btn-secondary" href="články" role="button">Starší články &raquo;</a></p>
+	</div>
+</div>
+
+<div class="container">
+	<h2 class="mb-2">Důležité informace pro členy ekosystému otevřených dat</h2>
+	<hr/>
+	<div class="row">
+		<div class="col-md-4">
+			<h3 class="h4">Zájemci o otevírání dat</h3>
+			<p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
+			<p><a class="btn btn-secondary" href="informace/základy-otevřených-dat-pro-zájemce/" role="button">Více informací &raquo;</a></p>
+		</div>
+		<div class="col-md-4">
+			<h3 class="h4">Poskytovatelé dat</h3>
+			<p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
+			<p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
+		</div>
+		<div class="col-md-4">
+			<h3 class="h4">Uživatelé dat</h3>
+			<p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
+			<p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">Více informací &raquo;</a></p>
+		</div>
+	</div>
+</div>
 
 <script src="{{ "/js/stats.js" | relative_url }}" ></script>

@@ -1,0 +1,174 @@
+{
+    "motion": {
+        "name": "Prodej budovy základní školy "
+    },
+    "end_date": "2015-12-09",
+    "requirement": "Nadpoloviční většina všech členů",
+    "votes": [
+        {
+            "voter": {
+                "name": "Dudek Milan"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Gross Václav"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Hanzlíček Zdeněk"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mařík Karel"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Soutner Vít"
+            },
+            "group": {
+                "name": "Česká strana sociálně demokratická",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Dušička Tomáš"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Lorenzová Markéta"
+            },
+            "group": {
+                "name": "Křesťansko-demokratická unie - Československá strana lidová",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Kouba Tomáš"
+            },
+            "group": {
+                "name": "MY",
+                "abbreviation": "MY",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Novotný Jiří"
+            },
+            "group": {
+                "name": "MY",
+                "abbreviation": "MY",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Belbl Emanuel"
+            },
+            "group": {
+                "name": "Nezávislí pro Plasko",
+                "abbreviation": "NzP",
+                "color": "#a7f63d"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Fazekaš Martin"
+            },
+            "group": {
+                "name": "Nezávislí pro Plasko",
+                "abbreviation": "NzP",
+                "color": "#a7f63d"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Škop Petr"
+            },
+            "group": {
+                "name": "Nezávislí pro Plasko",
+                "abbreviation": "NzP",
+                "color": "#a7f63d"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Bezdíčková Jitka"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Šiml Václav"
+            },
+            "group": {
+                "name": "Občanská demokratická strana",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Prantner Jiří"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        }
+    ]
+}

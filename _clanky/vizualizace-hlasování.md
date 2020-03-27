@@ -6,7 +6,7 @@ ref: Hlasování
 lang: cs
 image: ../attachments/články/vizualizace-hlasovani/images/chart_1.png
 author: michal_škop
-date: 2020-02-20 03:14:15
+date: 2020-03-26 03:14:15
 ---
 Přehledné zobrazení výsledku hlasování je užitečné pro novináře a jejich čtenáře, pro politiky nebo pro nejrůznější lobby.
 

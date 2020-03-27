@@ -5,7 +5,7 @@ lang: cs
 icon: list
 ref: ČlánekDoporučováníNKOD
 author: martin_víta
-date: 2020-03-10 12:00:00
+date: 2020-03-26 12:00:00
 title: Kterou další ještě mohu využít? ...aneb o doporučování podobných datových sad z NKOD
 ---
 

@@ -5,7 +5,7 @@ lang: cs
 icon: list
 ref: zdravotní-příčiny-úmrtí-v-čr-mezi-lety-2009-až-2018
 author: robert_spál
-date: 2020-03-20 11:00:00
+date: 2020-03-26 11:00:00
 title: Zdravotní příčiny úmrtí v ČR mezi lety 2009 až 2018
 ---
 

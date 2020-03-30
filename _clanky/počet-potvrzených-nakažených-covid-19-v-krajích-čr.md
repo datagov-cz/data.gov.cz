@@ -323,7 +323,7 @@ Výsledný graf s poměrem stran 2:1 (např. pro Twitter):
 [link_python]: https://www.python.org/ "Python"
 [link_pandas]: https://pandas.pydata.org/ "Pandas"
 [link_cz_prepare_data_mzcr_py]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_prepare_data_mzcr.py "Příprava dat v Pythonu"
-[link_cz_matrix_chart_py]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_matrix_chart.py" "Vykreslení grafu v Pythonu"
+[link_cz_matrix_chart_py]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_matrix_chart.py "Vykreslení grafu v Pythonu"
 [link_cz_regions_infected_csv]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_regions_infected.csv "Kumulativní počty nakažených po krajích v _CSV_"
 [link_plotly]: https://plotly.com/python/ "Plotly"
 [link_bootswatch]: https://bootswatch.com/ "Bootswatch"

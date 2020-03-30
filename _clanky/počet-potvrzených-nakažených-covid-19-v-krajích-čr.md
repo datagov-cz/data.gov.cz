@@ -1,30 +1,29 @@
 ---
 layout: post
 detail: true
-title: Počet potvrzených nakažených osob Covid-19 v krajích ČR
+title: Počet potvrzených nakažených osob COVID-19 v krajích ČR
 ref: covid-19-kraje
 lang: cs
 image: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png
 author: michal_škop
 date: 2020-03-30 03:14:15
 ---
-Zobrazení vývoje počtu potvrzených nakažených lidí Covid-19 v krajích ČR s použitím otevřených dat z krajských hygienických stanic.
 
+Ministerstvo zdravotnictví ČR začalo 27.3.2020 zveřejňovat na svém [dashboardu][link_opendata_covid19] dlouho očekávaná otevřená data z krajských hygienických stanic o onemocnění způsobených virem COVID-19.
+
+Použijeme je na vytvoření grafu průběhu počtu potvrzených osob s nákazou virem COVID-19. Tentokrát použijeme Python. Cílem je vytvořit tento graf (inspirovaný grafy z [Financial Times][link_ft]).
 <!--more-->
-## Úvod
-Ministerstvo zdravotnictví ČR začalo 27.3.2020 zveřejňovat na svém [dashboardu][link_opendata_covid19] dlouho očekávaná otevřená data z krajských hygienických stanic o onemocnění způsobených virem Covid-19.
 
-Použijeme je na vytvoření grafu průběhu počtu potvrzených osob s nákazou virem Covid-19. Tentokrát použijeme Python. Cílem je vytvořit tento graf (inspirovaný grafy z [Financial Times][link_ft]):
+{% include image.html url="../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png" description="Počet potvrzených nakažených COVID-19 v krajích ČR k 29.3.2020" %}
 
-{% include image.html url="../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png" description="Počet potvrzených nakažených Covid-19 v krajích ČR k 29.3.2020" %}
-
-## Data
-- Soubor `CSV` _COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic_, který je dostupný na [dashbordu Covid-19 MZČR][link_opendata_covid19]. Konkrétně jde o [tento soubor][link_osoby_csv].
+## Použitá data
+- Soubor `CSV` _COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic_, který je dostupný na [dashbordu COVID-19 MZČR][link_opendata_covid19]. Konkrétně jde o [tento soubor][link_osoby_csv].
 - Na základní informace o krajích (potřebujeme _počet lidí_ a _kód NUTS kraje_) by bylo dobré použít poslední data z ČSÚ, ale s ohledem na malý rozsah můžeme vzít data z Wikipedie o [krajích ČR][link_wikipedia_kraje_v_cesku] a [kódech NUTS][link_wikipedia_cz_nuts]. A nakopírujeme je dohromady do jednoho souboru [`cz_regions.csv`][link_cz_regions_csv].
 
+## Postup zpracování
 
+Postup zpracování je rozdělen na dvě části. V první se budeme zabývat přípravou dat a v druhé následně kreslením grafu.
 
-## Postup
 ### Příprava dat
 Cílem této části je připravit kumulativní data potvrzených nakažených do _CSV_ tabulky tak, aby se snáze dělal graf. Tj. aby byla informace o počtu pro každý den a každý kraj (přesto, že ve zdrojových datech třeba takový údaj - kombinace určité datum a určitý kraj - není, protože tam bylo 0 nových případů).
 
@@ -250,7 +249,7 @@ fig.update_layout(
             'size': 45,
             'color': colors['dark']
         },
-        'text': "<b>Covid 19 - Potvrzené případy na 100 000 obyvatel (kumulativní) - Kraje ČR - " + datetime.date.today().strftime("%-d.%-m.%Y") + "</b>"
+        'text': "<b>COVID 19 - Potvrzené případy na 100 000 obyvatel (kumulativní) - Kraje ČR - " + datetime.date.today().strftime("%-d.%-m.%Y") + "</b>"
     },
     font={"family": "Ubuntu", "color": colors['primary']},
     template="plotly_white"
@@ -299,7 +298,7 @@ fig.write_image(path + "cz_regions_twitter.png")
 ## Výsledek
 
 Výsledný graf s poměrem stran 2:1 (např. pro Twitter):
-{% include image.html url="../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions_twitter.png" description="Covid 19 - Potvrzené případy na 100 000 obyvatel (kumulativní) - Kraje ČR k 29.3.2020" %}
+{% include image.html url="../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions_twitter.png" description="COVID 19 - Potvrzené případy na 100 000 obyvatel (kumulativní) - Kraje ČR k 29.3.2020" %}
 
 - [Výsledný graf 4:3 PNG][link_chart_png]
 - [Výsledný graf 4:3 SVG][link_chart_svg]
@@ -314,7 +313,7 @@ Výsledný graf s poměrem stran 2:1 (např. pro Twitter):
 - [Plotly][link_plotly] - knihovna pro kreslení grafů, _open source a zdarma_
 - [Bootswatch][link_bootswatch] - _themes_ pro Bootstrap, _open source a zdarma_
 
-[link_opendata_covid19]: https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19 "Otevřená data MZČR/KHS o Covid-19"
+[link_opendata_covid19]: https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19 "Otevřená data MZČR/KHS o COVID-19"
 [link_osoby_csv]: https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/osoby.csv "Soubor `CSV` COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic"
 [link_wikipedia_kraje_v_cesku]: https://cs.wikipedia.org/wiki/Kraje_v_Česku "Wikipedia: Kraje v Česku"
 [link_wikipedia_cz_nuts]: https://cs.wikipedia.org/wiki/CZ-NUTS "Wikipedia: CZ-NUTS"

@@ -46,6 +46,21 @@
 	.navbar-light .navbar-nav .show>.nav-link {
 		color: var(--color-text-accent-inverted);
 	}
+
+	::-webkit-scrollbar {
+		background-color: #1c1e1f;
+		color: #c5c1b9;
+	}
+	::-webkit-scrollbar-corner {
+		background-color: #181a1b;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #2a2c2e;
+	}
+	::selection {
+		background-color: #005ccc;
+		color: #ffffff;
+	}
 }
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {

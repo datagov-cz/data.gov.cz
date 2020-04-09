@@ -15,7 +15,7 @@ I když “hackovat” je možné prakticky cokoliv, hackathony které využíva
 <!--more-->
 
 {% include image.html 
-   url="../attachments/články/obrázky/hackathony-2019-úvodní-foto.jpg"
+   url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg"
    description="Foto: <a href='https://hackujstat.cz/' title='Hackuj stát'>Hackathon veřejné správy</a>" 
 %}
 
@@ -67,7 +67,7 @@ Speciální kategorii hackathonů jsou poté hackathony, které pořádají souk
 Téma hackathonů se nevyhýbá ani univerzitnímu a neziskovému sektoru. Za zajímavé akce tohoto typu je možné v roce 2019 označit například [Wikimedia Hackathon][wikimedia] nebo [Soutěž UniT Brno][unitbrno], kterou pořádá [BEST Brno][bestbrno] jako studentská organizace Vysokého učení technického v Brně. Na studentských hackathon se naopak nejčastěji setkáme právě s různými otevřenými daty jak z veřejného tak z akademického sektoru.
 
 {% include image.html 
-   url="../attachments/články/obrázky/hackathony-2019-unit-extended.png"
+   url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-unit-extended.png"
    description="Foto: <a href='https://best.vutbr.cz/' title='Best Brno'>Best Brno</a>" 
 %}
 

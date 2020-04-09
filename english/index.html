@@ -8,8 +8,9 @@ homepage: true
   <div class="container text-white">
 	<div class="row">
 	  <div class="col-md-6">
-		<h1 class="display-3">Open data</h1>
+		<h1 class="display-3">Open data portal</h1>
 		<p>All you need to know about open data in Czechia</p>
+		<p><a href="/datasets" class="btn btn-primary">National open data catalog</a></p>
 	  </div>
 	  <div class="col-md-6 text-right d-none d-md-block">
 	    <div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
@@ -46,6 +47,29 @@ homepage: true
 </div>
 
 <div class="container">
+	<h2 class="mb-2">News from the open data world</h2>
+	<hr/>
+	  <div class="row">
+		  {% assign posts=site.posts | where:"lang", page.lang %}
+		  {% for post in posts limit:3 %}
+		  <div class="col-12 col-md-6 col-lg-4">
+			  <h3 class="h5">{{ post.title }}</h3>
+			  <p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
+			  {{ post.excerpt }}
+			  {% if post.detail %}
+			  <a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
+			  {% endif %}
+			</div>
+		  {% endfor %}
+	   </div>
+	   <div class="d-flex flex-row-reverse">
+		<p class=""><a class="btn btn-secondary" href="news" role="button">News archive &raquo;</a></p>
+	 </div>
+  </div>  
+
+<div class="container">
+  <h2 class="mb-2">Important information for members of the open data ecosystem</h2>
+  <hr/>
   <div class="row">
 	<div class="col-md-4">
 	  <h2>Interested in opening data</h2>
@@ -63,23 +87,6 @@ homepage: true
 	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">More info (in Czech) &raquo;</a></p>
 	</div>
   </div>
-</div>
-
-<div class="container">
-  <hr/>
-	<div class="row">
-		{% assign posts=site.posts | where:"lang", page.lang %}
-		{% for post in posts limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4">
-			<h3 class="h5">{{ post.title }}</h3>
-			<p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
-			{{ post.excerpt }}
-			{% if post.detail %}
-			<a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
-			{% endif %}
-		  </div>
-		{% endfor %}
-	 </div>
 </div>
 
 <script src="{{ "/js/stats.js" | relative_url }}" ></script>

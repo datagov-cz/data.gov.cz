@@ -15,7 +15,7 @@ I když “hackovat” je možné prakticky cokoliv, hackathony které využíva
 <!--more-->
 
 {% include image.html 
-   url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg"
+   url="../attachments/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg"
    description="Foto: <a href='https://hackujstat.cz/' title='Hackuj stát'>Hackathon veřejné správy</a>" 
 %}
 

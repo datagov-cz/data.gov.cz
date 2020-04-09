@@ -16,7 +16,7 @@ I když “hackovat” je možné prakticky cokoliv, hackathony které využíva
 
 {% include image.html 
    url="../attachments/články/.../obrázky/hackathony-2019-úvodní-foto.jpg"
-   description="Foto: <a href='https://hackujstat.cz/' title='Hackuj stát'>Hackathon veřejné správy[^1]</a>" 
+   description="Foto: <a href='https://hackujstat.cz/' title='Hackuj stát'>Hackathon veřejné správy</a>" 
 %}
 
 ## Hackathony s cílem zlepšit veřejnou správu
@@ -68,14 +68,14 @@ Téma hackathonů se nevyhýbá ani univerzitnímu a neziskovému sektoru. Za za
 
 {% include image.html 
    url="../attachments/články/.../obrázky/hackathony-2019-unit-extended.png"
-   description="Foto: <a href='https://best.vutbr.cz/' title='Hackuj stát'>Best Brno[^2]</a>" 
+   description="Foto: <a href='https://best.vutbr.cz/' title='Hackuj stát'>Best Brno</a>" 
 %}
 
 ## A jak takový hackathon uspořádat?
 Zaujaly Vás hackathony natolik, že byste rádi takovou akci uspořádali? Pokud ano, připravili jsme pro vás krátké shrnutí, na co byste neměli zapomenout při přípravě tohoto typu akce. Pokud byste chtěli potřebovali bližší konzultaci, neváhejte nám napsat na emailovou adresu [otevrenadata@mvcr.cz][odmvcr] a do předmětu zprávy dát "*hackathony*".
 
 ### O čem takový hackathon je?
-Hackathon neboli soutěžní akce, která trvá od 24 do 48 hodin s cílem nalézt řešení zadaného problému. Účastníci pracují v týmech nejčastěji ve velikosti 2-6 osob. Není důležité, zda se jedná o práci na softwarovém nebo hardwarovém řešení (není to tedy jen pro IT vývojáře). Důležité je za dobu trvání soutěže vytvořit fungující prototyp, který ukáže, jak by navržené řešení mohlo fungovat v praxi. [^3]
+Hackathon neboli soutěžní akce, která trvá od 24 do 48 hodin s cílem nalézt řešení zadaného problému. Účastníci pracují v týmech nejčastěji ve velikosti 2-6 osob. Není důležité, zda se jedná o práci na softwarovém nebo hardwarovém řešení (není to tedy jen pro IT vývojáře). Důležité je za dobu trvání soutěže vytvořit fungující prototyp, který ukáže, jak by navržené řešení mohlo fungovat v praxi. [^1]
 
 ### Tipy na uspořádání hackathonu
 K úspěchu akce potřebujete zejména následujícíh 8 věcí:
@@ -103,9 +103,7 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 
 ------------
 
-[^1]: [Hackuj stát](https://hackujstat.cz/)
-[^2]: [Best Brno](https://best.vutbr.cz/)
-[^3]: [Dictionary.com](https://www.dictionary.com/browse/hackathon)
+[^1]: [Dictionary.com](https://www.dictionary.com/browse/hackathon)
 
 
 [hackujstat]: https://hackujstat.cz/ "Hackathon veřejné správy"

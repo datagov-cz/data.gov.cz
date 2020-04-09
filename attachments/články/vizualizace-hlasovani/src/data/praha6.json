@@ -1,0 +1,504 @@
+{
+    "votes": [
+        {
+            "voter": {
+                "name": "Bc. Jiří Holeček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Bc. Taťána Klíčová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Evžen Králík"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. arch. Martin Polách"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. Roman Mejstřík"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "JUDr. Patricie Pražáková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Marek Tolde"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Zdeněk Hořánek"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. René Pekárek"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Lucie Válová"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "PhDr. Miloš Balabán"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "JUDr. Štěpán Stupčuk"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Jan Bartůšek"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "MUDr. Marián Hošek"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. Jiří Dolejš"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "JUDr. Ivan Hrůza"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "PhDr. Helena Briardová"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Ing. Alan Zubr"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Ing. Jiří Lála"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Ing. Marie Pojerová"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Jakub Stárek"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "PhDr. Ondřej Balatka"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "MUDr. Věroslav Gebouský"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ing. Mgr. Libor Bezděk"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. Mgr. Oldřich Kužílek"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Jan Lacina"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "MUDr. Iveta Borská"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Šabach"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "doc. RNDr. Jakub Hruška CSc."
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Dott.ssa Renata Parbusová"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. arch. Eva Smutná"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. Jaromír Vaculík"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. Milena Hanušová"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Benda"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Růžička"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Lucie Weitzová"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Marek Baxa"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Ondřej Kolář"
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "MUDr. Zdeněk Žižka CSc."
+            },
+            "group": {
+                "name": "TOP 09",
+                "abbreviation": "TOP 09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ing. Vladimír Šraier MBA"
+            },
+            "group": {
+                "name": "Zelení",
+                "abbreviation": "Zelení",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Jan Sládek"
+            },
+            "group": {
+                "name": "Zelení",
+                "abbreviation": "Zelení",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Pavla Ducháčková Chotková"
+            },
+            "group": {
+                "name": "Zelení",
+                "abbreviation": "Zelení",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Mgr. Petra Kolínská"
+            },
+            "group": {
+                "name": "Zelení",
+                "abbreviation": "Zelení",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "MUDr. Antonín Nechvátal"
+            },
+            "group": {
+                "name": "Zelení",
+                "abbreviation": "Zelení",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "PhDr. Karolína Brabcová"
+            },
+            "group": {
+                "name": "Zelení",
+                "abbreviation": "Zelení",
+                "color": "#06b15d"
+            },
+            "option": "yes"
+        }
+    ],
+    "motion": {
+        "name": "Návrh rozpočtu Městské části Praha 6 na rok 2015"
+    },
+    "end_date": "2015-10-21",
+    "requirement": "Nadpoloviční většina všech členů"
+}

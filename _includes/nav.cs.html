@@ -7,31 +7,39 @@
 
 	  <div class="collapse navbar-collapse" id="collapsingNavbar">
 		<ul class="navbar-nav ml-auto w-100 justify-content-end">
-		  {% if page.postindex %}
-		  <li class="nav-item">
-			<span class="nav-link active">Novinky</span>
-		  </li>
-		  {% else %}
-		  <li class="nav-item">
-			<a class="nav-link" href="{{ "/novinky" | relative_url}}">Novinky</a>
-		  </li>
-		  {% endif %}
-		  <li class="nav-item">
-			<a class="nav-link" href="/datové-sady">Datové sady</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="/poskytovatelé">Poskytovatelé</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="/klíčová-slova">Klíčová slova</a>
+			{% if page.articleindex %}
+			<li class="nav-item">
+				<span class="nav-link active">Články</span>
+			</li>
+			{% else %}
+			<li class="nav-item">
+				<a class="nav-link" href="{{ "/články" | relative_url}}">Články</a>
+			</li>
+			{% endif %}
+			{% if page.postindex %}
+			<li class="nav-item">
+			  <span class="nav-link active">Novinky</span>
+			</li>
+			{% else %}
+			<li class="nav-item">
+			  <a class="nav-link" href="{{ "/novinky" | relative_url}}">Novinky</a>
+			</li>
+			{% endif %}
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Národní katalog otevřených dat</a>
+			<div class="dropdown-menu" aria-labelledby="dropdown01">
+			  <a class="dropdown-item" href="/datové-sady">Datové sady</a>
+			  <a class="dropdown-item" href="/poskytovatelé">Poskytovatelé</a>
+			  <a class="dropdown-item" href="/klíčová-slova">Klíčová slova</a>
+			  <a class="dropdown-item" href="/lokální-katalogy">Lokální katalogy</a>
+			</div>
 		  </li>
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="https://opendata.gov.cz" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Další</a>
+			<a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Další informace</a>
 			<div class="dropdown-menu" aria-labelledby="dropdown01">
-			  <a class="dropdown-item" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-zájemce">Pro zájemce o otevírání dat</a>
+			  <a class="dropdown-item" href="informace/základy-otevřených-dat-pro-zájemce/">Pro zájemce o otevírání dat</a>
 			  <a class="dropdown-item" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Pro uživatele a programátory</a>
 			  <a class="dropdown-item" href="https://opendata.gov.cz">Pro poskytovatele dat</a>
-			  <a class="dropdown-item" href="/lokální-katalogy">Lokální katalogy</a>
 			</div>
 		  </li>
 	  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}

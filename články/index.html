@@ -1,0 +1,50 @@
+---
+layout: default
+title: Články
+ref: Articles
+lang: cs
+articleindex: true
+---
+
+  <div class="container">
+	<h1 class="header center">Články</h1>
+	<hr/>
+    <div class="row">
+        {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
+        {% for clanek in clanky limit:3 %}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="section">
+            <h3 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
+              <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
+              <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+              {% if clanek.image %}
+              <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+              {% endif %}
+              {{ clanek.excerpt }}
+              {% if clanek.detail %}
+              <p><a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+              {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+     </div>
+    <hr/>
+    <h2>Starší články</h2>
+    <div class="row">
+        {% for clanek in clanky offset:3 %}
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="section">
+            <h3 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
+            <p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+            {% if clanek.image %}
+            <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+            {% endif %}
+            {{ clanek.excerpt}}
+            {% if clanek.detail %}
+            <p><a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}       
+  </div>
+  </div>

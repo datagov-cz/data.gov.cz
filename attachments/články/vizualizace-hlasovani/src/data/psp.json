@@ -1,0 +1,2209 @@
+{
+    "motion": {
+        "name": "Změna čl. 124 Římského statutu Mezinárodního trestního soudu (je třeba 120)"
+    },
+    "end_date": "2019-11-28",
+    "requirement": "Quorum 120",
+    "votes": [
+        {
+            "voter": {
+                "name": "Ivan Adamec"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Věra Adámková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Hana Aulická Jírovcová"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ondřej Babka"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Andrej Babiš"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Andrea Babišová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Dana Balcarová"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Margita Balaštíková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Bartošek"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ivan Bartoš"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Lukáš Bartoň"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Bauer"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Martin Baxa"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Petr Beitl"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Petr Bendl"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Ondřej Benešík"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Marek Benda"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Stanislav Berkovec"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Birke"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Stanislav Blaha"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Pavel Blažek"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Jiří Bláha"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Marian Bojko"
+            },
+            "group": {
+                "name": "Nezařaz",
+                "abbreviation": "Nezařaz",
+                "color": "#888888"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Richard Brabec"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Andrea Brzobohatá"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Milan Brázdil"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Bžoch"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Běhounek"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Josef Bělica"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Pavel Bělobrádek"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Chvojka"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Dolínek"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jiří Dolejš"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Klára Dostálová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Lenka Dražilová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Dvořák"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "František Elfmark"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Faltýnek"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Farský"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Kamal Farhan"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Milan Feranec"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Dominik Feri"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Mikuláš Ferjenčík"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Eva Fialová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Fiala"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Radim Fiala"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Vojtěch Filip"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Foldyna"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Stanislav Fridrich"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Alena Gajdůšková"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Gazdík"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Pavla Golasowská"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Miroslav Grebeníček"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Stanislav Grospič"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Hamáček"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Tomáš Hanzel"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Milan Hnilička"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Holík"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Radek Holomčík"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Hrnčíř"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Tereza Hyťhová"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Josef Hájek"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Miloslav Janulík"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jakub Janda"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Monika Jarošová"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Pavel Jelínek"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Martin Jiránek"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Aleš Juchelka"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Marian Jurečka"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Stanislav Juránek"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Pavel Juříček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ivan Jáč"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Adam Kalous"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Iva Kalátová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Miroslav Kalousek"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "David Kasal"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vít Kaňkovský"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Václav Klaus"
+            },
+            "group": {
+                "name": "Nezařaz",
+                "abbreviation": "Nezařaz",
+                "color": "#888888"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jiří Kobza"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Tomáš Kohoutek"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Kohoutek"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Lukáš Kolářík"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Martin Kolovratník"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "František Kopřiva"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Josef Kott"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Radek Koten"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Pavel Kováčik"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Věra Kovářová"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Lenka Kozlová"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Barbora Kořanová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Karel Krejza"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jana Krutáková"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Robert Králíček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Roman Kubíček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Kubík"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Martin Kupka"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Kytýr"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Helena Langšádlová"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jana Levová"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jan Lipavský"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Leo Luzar"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Zuzana Majerová Zahradníková"
+            },
+            "group": {
+                "name": "Nezařaz",
+                "abbreviation": "Nezařaz",
+                "color": "#888888"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Taťána Malá"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Přemysl Mališ"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jaroslav Martinů"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Tomáš Martínek"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Květa Matušovská"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Eva Matyášová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ilona Mauritzová"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Jiří Mašek"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Karla Maříková"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Marcela Melková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jakub Michálek"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Mihola"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jana Mračková Vildumetzová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vojtěch Munzar"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Patrik Nacher"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "František Navrkal"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ivana Nevludová"
+            },
+            "group": {
+                "name": "Nezařaz",
+                "abbreviation": "Nezařaz",
+                "color": "#888888"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Marek Novák"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Miroslava Němcová"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Monika Oborná"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Tomio Okamura"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Ladislav Okleštěk"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Zdeněk Ondráček"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Roman Onderka"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Zuzana Ožanová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jana Pastuchová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Daniel Pawlas"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Markéta Pekarová Adamová"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "František Petrtýl"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vojtěch Pikal"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Pavel Plzák"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Zdeněk Podal"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Ivo Pojezný"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ondřej Polanský"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Milan Pour"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Pošvář"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "David Pražák"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ondřej Profant"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Věra Procházková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Pavel Pustějovský"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Pávek"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Marie Pěnčíková"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Karel Rais"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vít Rakušan"
+            },
+            "group": {
+                "name": "STAN",
+                "abbreviation": "STAN",
+                "color": "#5d8c00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Michal Ratiborský"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Olga Richterová"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Richter"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Miloslav Rozner"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Radek Rozvoral"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Miloslava Rutová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Pavel Růžička"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Sadovský"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Karel Schwarzenberg"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Schiller"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Roman Sklenák"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jan Skopeček"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Antonín Staněk"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Pavel Staněk"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Zbyněk Stanjura"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jiří Strýček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Bohuslav Svoboda"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Karel Tureček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Petr Třešňák"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Valenta"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Kateřina Valachová"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jiří Ventruba"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Petr Venhoda"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Ondřej Veselý"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Adam Vojtěch"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Lubomír Volný"
+            },
+            "group": {
+                "name": "Nezařaz",
+                "abbreviation": "Nezařaz",
+                "color": "#888888"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Jan Volný"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Radek Vondráček"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Ivo Vondrák"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Miloslava Vostrá"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Václav Votava"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Petr Vrána"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Tomáš Vymazal"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Rostislav Vyzula"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "František Vácha"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Vlastimil Válek"
+            },
+            "group": {
+                "name": "TOP09",
+                "abbreviation": "TOP09",
+                "color": "#723769"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Helena Válková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Radovan Vích"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Marek Výborný"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Jan Zahradník"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Lubomír Zaorálek"
+            },
+            "group": {
+                "name": "ČSSD",
+                "abbreviation": "ČSSD",
+                "color": "#F07D00"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Radek Zlesák"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Lucie Šafránková"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Karla Šlechtová"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Lubomír Španěl"
+            },
+            "group": {
+                "name": "SPD",
+                "abbreviation": "SPD",
+                "color": "#ea2329"
+            },
+            "option": "no"
+        },
+        {
+            "voter": {
+                "name": "Julius Špičák"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "David Štolpa"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Pavel Žáček"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "abstain"
+        },
+        {
+            "voter": {
+                "name": "Monika Červíčková"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jana Černochová"
+            },
+            "group": {
+                "name": "ODS",
+                "abbreviation": "ODS",
+                "color": "#004494"
+            },
+            "option": "absent"
+        },
+        {
+            "voter": {
+                "name": "Alexander Černý"
+            },
+            "group": {
+                "name": "KSČM",
+                "abbreviation": "KSČM",
+                "color": "#8c0000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Lukáš Černohorský"
+            },
+            "group": {
+                "name": "Piráti",
+                "abbreviation": "Piráti",
+                "color": "#000000"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Čižinský"
+            },
+            "group": {
+                "name": "KDU-ČSL",
+                "abbreviation": "KDU-ČSL",
+                "color": "#e6ac21"
+            },
+            "option": "yes"
+        },
+        {
+            "voter": {
+                "name": "Jan Řehounek"
+            },
+            "group": {
+                "name": "ANO",
+                "abbreviation": "ANO",
+                "color": "#261060"
+            },
+            "option": "yes"
+        }
+    ]
+}

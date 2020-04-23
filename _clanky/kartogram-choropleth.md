@@ -6,7 +6,7 @@ ref: Choropleth
 lang: cs
 image: ../attachments/články/kartogram-choropleth/images/map3.png
 author: michal_škop
-date: 2020-04-23 08:08:08
+date: 2020-04-23 07:00:00
 ---
 
 Jednou ze základních vizualizací jsou choropletové mapy. Ukážeme si, jak sestrojit takovou mapu ČR za pomoci otevřených dat a open source nástrojů.
@@ -320,7 +320,7 @@ V `Layer Properties` teď vybereme `Symbology` a jdeme obarvovat mapu dle hustot
 
 {% include image.html url="../attachments/články/kartogram-choropleth/images/symbology.png" description="Obarvování mapy v QGIS." %}
 
-Teď už nám chybí jenom připravit jako obrázekbundle exec jekyll serve (pokud nechceme rovnou udělat screenshot) a přidat legendu.
+Teď už nám chybí jenom připravit jako obrázek (pokud nechceme rovnou udělat screenshot) a přidat legendu.
 
 Vytvoříme nový `Layout`: `Project->Layout Manager ...`. Odklikáme a máme nové okno `Layout 1`.
 

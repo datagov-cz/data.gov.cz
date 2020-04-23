@@ -6,7 +6,7 @@ ref: Choropleth
 lang: cs
 image: ../attachments/články/kartogram-choropleth/images/map3.png
 author: michal_škop
-date: 2020-04-23 07:00:00
+date: 2020-04-23 07:00:00 +02:00
 ---
 
 Jednou ze základních vizualizací jsou choropletové mapy.

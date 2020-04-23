@@ -8,6 +8,7 @@ url: "https://data.gov.cz" # the base hostname & protocol for your site
 # Build settings
 excerpt_separator: <!--more-->
 
+timezone: Europe/Prague
 plugins:
   - jekyll-mentions
   - jekyll-feed

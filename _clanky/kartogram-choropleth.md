@@ -9,20 +9,22 @@ author: michal_škop
 date: 2020-04-23 08:08:08
 ---
 
-Jednou ze základních vizualizací jsou choropletové mapy.
+Jednou ze základních vizualizací jsou choropletové mapy. Ukážeme si, jak sestrojit takovou mapu ČR za pomoci otevřených dat a open source nástrojů.
 <!--more-->
 
 V češtině jsou trochu nešťastně zvané kartogramy (neboť [cartogram][link_wiki_cartogram] v angličtině a mnoha jiných jazycích je něco jiného).
 
 ## Zobrazení v mapách: Obce a ORP v ČR - hustota obyvatel
-Cílem je zhotovit takovouto mapu zobrazující hustotu obyvatel v obcích a obdobnou v [ORP][link_wiki_orp] ("malé okresy") v ČR. Hustota obyvatel je tu zvolená na ukázku, stejně tak lze zobrazit leccos jiného.
+Cílem je zhotovit takovouto mapu zobrazující hustotu zalidnění v obcích a obdobnou v [ORP][link_wiki_orp] ("malé okresy") v ČR. Hustota zalidnění je tu zvolená na ukázku, stejně tak lze zobrazit leccos jiného.
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map4.png" description="Hustota obyvatel v obcích ČR." %}
+{% include image.html url="../attachments/články/kartogram-choropleth/images/map4.png" description="Hustota zalidnění v obcích ČR." %}
 
 Zkusíme tu více postupů, jak se k výsledné mapě dostat:
 
 - pomocí [javascriptové knihovny D3][link_d3]
 - v GISovém programu [QGIS][link_qgis]
+
+Samozřejmě je těch možných postupů mnohem více, např. pomocí [package RCzechia v R][link_rczechia].
 
 ### Použitá data
 Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevřených dat][link_nkod].
@@ -55,7 +57,7 @@ Tyto `SHP` soubory mají zatím několik problémů:
 - Nejsou v kódování UTF-8, ale v českém Win-1250
 - Jsou ve speciálním česko-slovenském souřadnicovém systému S-JTSK a ne v daleko běžnějším WGS 84.
 
-Oba tyto problémy pořešíme projednou ručně - v LibreOffice a v QGISu. Jiné postupy pro geo-kódování jsou navržené [třeba zde][link_twitter_geocoding].
+Oba tyto problémy pořešíme projednou ručně - v LibreOffice a v QGISu. Jiné postupy pro geo-kódování jsou navržené [třeba zde][link_twitter_geocoding], příp. kódování češtiny lze řešit i v QGISu, jak je [popsáno zde][link_twitter_qgis].
 
 UTF-8:
 - Otevřeme `OBCE_P.dbf` v `LibreOffice Calcu` (vybereme kódování `Eastern Europe (Windows-1250/WinLatin2`)
@@ -65,8 +67,6 @@ UTF-8:
 WGS 84:
 - Otevřeme `OBCE_P.shp` v `QGIS`.
 
-Rovnou se při načtení nabídne transformace do `WGS 84` (`EPSG:4326`)
-
 - V Panelu `Layers` kliknutím pravým na `OBCE_P` otevřeme kontextové menu, dáme `Export->Save Features As ...`.
 - Zadáme `File name` jako `<pracovní adresář>/obce.shp` a jako `CRS` dáme `WGS 84` a uložíme.
 
@@ -75,7 +75,7 @@ Podobně si přetransformujeme i ORP do souborů `<pracovní adresář>/orp.shp`
 {% include image.html url="../attachments/články/kartogram-choropleth/images/save_vector_layer_as.png" description="Uložení přetransformovaných souborů." %}
 
 ##### Příprava statistických dat
-Z ČSÚ [stáhneme data][link_csu_data] a extrahujeme do svého pracovního adresáře soubor `UAP01_2018` (příp. novější rok). Z něj vyfiltrujeme (opět např. ručně v `LibreOffice Calc`) řádky, které v sloupci `vuk_txt` mají hodnoty `Celková výměra (v hektarech)` a `Počet obyvatel`. A vytvoříme si nový soubor `<pracovní adresář>/obce_hustota.csv`, a dopočteme si hustotu obyvatel na 1 km2. Vyplatí se nám původní soubor nejprve seřadit dle `vuk_txt` a `uzemi_kod` (což je kód obce). Můžeme se vyhnout některým možným problémům při zobrazování dat v budoucnu, pokud tu hustotu zaokrouhlíme (tj. `=round(počet obyvatel / výměra * 100)`). Tabulka bude vypadat nějak takto, pro budoucí potřeby si kód obce (`uzemi_kod`) označíme jako `id` (budeme potřebovat slupce `id` a `hustota`):
+Z ČSÚ [stáhneme data][link_csu_data] a extrahujeme do svého pracovního adresáře soubor `UAP01_2018` (příp. novější rok). Z něj vyfiltrujeme (opět např. ručně v `LibreOffice Calc`) řádky, které v sloupci `vuk_txt` mají hodnoty `Celková výměra (v hektarech)` a `Počet obyvatel`. A vytvoříme si nový soubor `<pracovní adresář>/obce_hustota.csv`, a dopočteme si hustotu zalidnění na 1 km2. Vyplatí se nám původní soubor nejprve seřadit dle `vuk_txt` a `uzemi_kod` (což je kód obce). Můžeme se vyhnout některým možným problémům při zobrazování dat v budoucnu, pokud tu hustotu zaokrouhlíme (tj. `=round(počet obyvatel / výměra * 100)`). Tabulka bude vypadat nějak takto, pro budoucí potřeby si kód obce (`uzemi_kod`) označíme jako `id` (budeme potřebovat slupce `id` a `hustota`):
 
 id    | Celková výměra (v hektarech) | Počet obyvatel | hustota | uzemi_txt
 ----- | -----                        | -----          | -----   | -----
@@ -246,7 +246,7 @@ d3.json("obce-simple-data-topo.json", function(error, data) {
 });
 ```
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map3.png" description="Mapa ČR obarvená dle hustoty obyvatel." %}
+{% include image.html url="../attachments/články/kartogram-choropleth/images/map3.png" description="Mapa ČR obarvená dle hustoty zalidnění." %}
 
 Přidáme měřítko - legendu:
 
@@ -279,7 +279,7 @@ g.append("text")
   .attr("fill", "#000")
   .attr("text-anchor", "start")
   .attr("font-weight", "bold")
-  .text("Hustota obyvatel na 1 km2");
+  .text("Hustota zalidnění na 1 km2");
 
 g.call(d3.axisBottom(x)
    .tickSize(13)
@@ -288,15 +288,15 @@ g.call(d3.axisBottom(x)
    .remove();
 ```
 
-A máme výslednou mapu hustoty obyvatel v obcích ČR:
+A máme výslednou mapu hustoty zalidnění v obcích ČR:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map4.png" description="Hustota obyvatel v obcích ČR." %}
+{% include image.html url="../attachments/články/kartogram-choropleth/images/map4.png" description="Hustota zalidnění v obcích ČR." %}
 
 [Celý soubor index.html](../attachments/články/kartogram-choropleth/data/index.html).
 
 Jenom změníme vstupní soubor `orp-simple-data-topo.json` na `orp-simple-data-topo.json`, upravíme měřítko (nejmenší hustota v ORP je 31) a máme i mapu dle ORP:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map5.png" description="Hustota obyvatel v ORP v ČR." %}
+{% include image.html url="../attachments/články/kartogram-choropleth/images/map5.png" description="Hustota zalidnění v ORP v ČR." %}
 
 ### Postup zpracování: Mapa v QGIS
 
@@ -332,11 +332,11 @@ Legendu si můžeme doupravit (pravým v Layoutu legendy: `Item properties ...`)
 
 Výsledek si můžeme vyexportovat v `SVG` nebo `PNG`, ..., např. `Layout->Export as Image...`
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/obce_qgis.png" description="Hustota obyvatel dle obcí v ČR - vytvořeno v QGIS." %}
+{% include image.html url="../attachments/články/kartogram-choropleth/images/obce_qgis.png" description="Hustota zalidnění dle obcí v ČR - vytvořeno v QGIS." %}
 
 A obdobně bychom mohli udělat mapu pro ORP.
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/orp_qgis.png" description="Hustota obyvatel dle ORP v ČR - vytvořeno v QGIS." %}
+{% include image.html url="../attachments/články/kartogram-choropleth/images/orp_qgis.png" description="Hustota zalidnění dle ORP v ČR - vytvořeno v QGIS." %}
 
 ### Použité soubory
 - [index.html](../attachments/články/kartogram-choropleth/data/index.html)
@@ -347,8 +347,13 @@ A obdobně bychom mohli udělat mapu pro ORP.
 - [orp_hustota.csvw](../attachments/články/kartogram-choropleth/data/orp_hustota.csvt)
 - [orp-simple-data-topo.json](orp-simple-data-topo.json)
 
+### Další užití
+Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných postupem vytvořená mapa průměrného věku v obcích ČR:
+
+{% include image.html url="../attachments/články/kartogram-choropleth/images/map6.png" description="Průměrný věk obyvatel dle obcí v ČR." %}
+
 #### GeoJSONy a TopoJSONy ČR
-Připravené a zjednodušené dle postupu výše, stav duben 2020
+Připravené a zjednodušené soubory dle postupu výše, stav duben 2020, WGS 84
 
 - Katastrální území: [katastralni_uzemi-simple.json](../attachments/články/kartogram-choropleth/data/katastralni_uzemi-simple.json), [katastralni_uzemi-simple-topo.json](../attachments/články/kartogram-choropleth/data/katastralni_uzemi-simple-topo.json)
 - Volební okrsky: [volebni_okrsky-simple.json](../attachments/články/kartogram-choropleth/data/volebni_okrsky-simple.json), [volebni_okrsky-simple-topo.json](../attachments/články/kartogram-choropleth/data/volebni_okrsky-simple-topo.json)
@@ -361,18 +366,12 @@ Připravené a zjednodušené dle postupu výše, stav duben 2020
 - Regiony (NUTS 2): [regiony-simple.json](../attachments/články/kartogram-choropleth/data/regiony-simple.json), [regiony-simple-topo.json](../attachments/články/kartogram-choropleth/data/regiony-simple-topo.json)
 - ČR: [cr-simple.json](../attachments/články/kartogram-choropleth/data/cr-simple.json), [cr-simple-topo.json](../attachments/články/kartogram-choropleth/data/cr-simple-topo.json)
 
-### Další užití
-Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných postupem vytvořená mapa průměrného věku v obcích ČR:
-
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map6.png" description="Průměrný věk obyvatel dle obcí v ČR." %}
-
-
 ### Použité nástroje a zdroje:
 #### D3
 - [California Population Density - Michael Bostock][link_california]
 - [Tutoriál Command-Line Cartography - Michael Bostock][link_tutorial]
 - [Tento tutoriál zjednodušeně v Observable][link_tutorial_observable]
-- [TopoJSON-simplify][link_sipmlify]
+- [TopoJSON-simplify][link_simplify]
 - [NDJSON-CLI][link_cli]
 - [TopoJSON-client][link_client]
 - [TopoJSON-server][link_server]
@@ -390,8 +389,9 @@ Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných po
 [link_nkod]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
 [link_ruian_shp]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---atom.cuzk.cz-api-3-action-package_show-id-cz-00025712-cuzk_ruian-staty-shp_1 "NKOD - RÚIAN - SHP soubor obce ČR"
 [link_stat_data]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-340129 "NKOD - ČSÚ - Statistická data pro územně analytické podklady"
-[link_ruian_data]: http://services.cuzk.cz/shp/stat/epsg-5514/1.zip) "RÚIAN - SHP soubor obce ČR"
+[link_ruian_data]: http://services.cuzk.cz/shp/stat/epsg-5514/1.zip "RÚIAN - SHP soubor obce ČR"
 [link_twitter_geocoding]: https://twitter.com/skopmichal/status/1215398869867036672 "Twitter - diskuse o geokódování"
+[link_twitter_qgis]: https://twitter.com/OtoKalab/status/1253242600011808768 "Twitter - diskuse o kódováních v QGIS"
 [link_csu_data]: https://www.czso.cz/documents/62353418/114658260/340129-19data062819.zip "ČSÚ - data o obcích"
 [link_csu_ciselnik]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-cis65 "Číselník obcí s rozšířenou působností"
 [link_csu_orp]: https://apl.czso.cz/iSMS/cisinfo.jsp?kodcis=65 "ČSÚ - ORP"
@@ -401,8 +401,10 @@ Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných po
 [link_california]: https://bl.ocks.org/mbostock/5562380 "California Population Density - Michael Bostock"
 [link_tutorial_observable]: https://observablehq.com/@michalskop/kartogram-choropleth-choropletova-mapa "Tento tutoriál zjednodušeně v Observable"
 
-[link_sipmlify]: https://github.com/topojson/topojson-simplify "TopoJSON-simplify"
+[link_simplify]: https://github.com/topojson/topojson-simplify "TopoJSON-simplify"
 [link_cli]: https://github.com/mbostock/ndjson-cli "NDJSON-CLI"
 [link_client]: https://github.com/topojson/topojson-client "TopoJSON-client"
 [link_server]: https://github.com/mbostock/topojson-server "TopoJSON-server"
-[link_parser]: https://github.com/mbostock/shapefile "Streming Shapefile Parser"
+[link_parser]: https://github.com/mbostock/shapefile "Streaming Shapefile Parser"
+
+[link_rczechia]: https://www.jla-data.net/cze/package-rczechia/index.html "Package RCZechia"

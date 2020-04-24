@@ -22,10 +22,10 @@ I když “hackovat” je možné prakticky cokoliv, hackathony které využíva
 ## Hackathony s cílem zlepšit veřejnou správu
 Jako první si představíme hackathony, které svým zaměřením míří zejména na zlepšení témat ve veřejném prostoru (ve městech a národní úrovni).
 
-### Hackathon veřejné správy
+### Hackathon veřejné správy ver. 3.0 
 
 pořadatel: 
-:   Nejvyšší kontrolní úřad
+ Nejvyšší kontrolní úřad
 
 web:
 : [https://hackujstat.cz][hackujstat]
@@ -34,7 +34,7 @@ V září se již tradičně konal nejznámější hackathon v naší zemi zamě
 
 ### Hack Prague 2019
 pořadatel:
-: HackPrague
+ HackPrague
 
 web:
 : [https://hackprague.com/hackathon2019/][hackprague]
@@ -42,8 +42,7 @@ web:
 Měsíci květnu poté patřil již 3. ročník hackathonu Hack Prague, který se zaměřuje na zlepšení Hlavního města Prahy. Záštitu nad akcí převzalo mimo Hlavního města Prahy ještě Ministerstvo průmyslu a obchodu a Ministerstvo pro místní rozvoj. Hlavními tématy hackathonu byla kvalita života ve městě, mobilita a zapojení veřejnosti do komunitního života. Vítězem se stala aplikace [Smart Traffic][smarttraffic] zaměřená na analýzu dopravní situace pomocí dat z kamerových systémů. Mezi další aplikace, které jsou prakticky hned použitelné, patří aplikace [Park & Roll][parkroll], která může doporučit dostupné nejbližší parkoviště Park and Ride.
 
 ### Copernicus Hackathon
-pořadatel: 
-: S.A.B. Aerospace, s.r.o.
+pořadatel: S.A.B. Aerospace, s.r.o.
 
 web:
 : [http://www.czechspaceyear.com/coha/][copernicushackathon] 

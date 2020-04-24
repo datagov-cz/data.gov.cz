@@ -28,7 +28,7 @@ pořadatel:
  Nejvyšší kontrolní úřad
 
 web:
-: [https://hackujstat.cz][hackujstat]
+ [https://hackujstat.cz][hackujstat]
 
 V září se již tradičně konal nejznámější hackathon v naší zemi zaměřený na témata veřejné správy. Tento hackathon je speciální tím, že je pořádán zejména institucemi státní správy. Letos se zapojilo již 21 partnerů. První místo získala aplikace “Statistika hrou”, která má za cíl  prezentovat otevřená data různých institucí zábavným interaktivním způsobem ve formě kvízu. Aplikace má formu chatbota, který provází hráče jednotlivými otázkami. Zacílení na mladší generaci je zde zřejmé, protože je možné tuto hru napojit například na Facebook Messenger. Aplikace je dostupná v rámci tohoto repozitáře [githubu]. Zajímavostí je poté i zapojení Technologické agentury ČR, která poskytla svá data o výzkumu. Další aplikace, které byly letos během hackathon vyrobeny jsou dostupné na webové adrese soutěže a datové sady jsou dostupné přímo na stránkách [akce](https://hackujstat.cz/) nebo v rámci [Národního katalogu otevřených dat][NKOD]. 
 
@@ -37,7 +37,7 @@ pořadatel:
  HackPrague
 
 web:
-: [https://hackprague.com/hackathon2019/][hackprague]
+ [https://hackprague.com/hackathon2019/][hackprague]
 
 Měsíci květnu poté patřil již 3. ročník hackathonu Hack Prague, který se zaměřuje na zlepšení Hlavního města Prahy. Záštitu nad akcí převzalo mimo Hlavního města Prahy ještě Ministerstvo průmyslu a obchodu a Ministerstvo pro místní rozvoj. Hlavními tématy hackathonu byla kvalita života ve městě, mobilita a zapojení veřejnosti do komunitního života. Vítězem se stala aplikace [Smart Traffic][smarttraffic] zaměřená na analýzu dopravní situace pomocí dat z kamerových systémů. Mezi další aplikace, které jsou prakticky hned použitelné, patří aplikace [Park & Roll][parkroll], která může doporučit dostupné nejbližší parkoviště Park and Ride.
 
@@ -45,7 +45,7 @@ Měsíci květnu poté patřil již 3. ročník hackathonu Hack Prague, který s
 pořadatel: S.A.B. Aerospace, s.r.o.
 
 web:
-: [http://www.czechspaceyear.com/coha/][copernicushackathon] 
+ [http://www.czechspaceyear.com/coha/][copernicushackathon] 
 
 Akce, která se konala na podzim v Brně, byla poměrně netradičně zaměřena na zpracování tzv. “vesmírných dat” neboli tzv. “downstream” dat z evropských [družic Copernicus][druzicecopernicus]. Možná to nemusí být na první pohled patrné, ale zpracování vesmírných dat bude pro veřejnou správu čím dál zajímavější a důležitější, zejména pro oblasti jakými jsou např. boj s klimatickou změnou nebo různé druhy dalších celoplošných analýz. Hackathon se zaměřil na využití dat pro některé typy analýz životního prostředí s ohledem na turismusm. 
 
@@ -55,7 +55,7 @@ pořadatel:
 : CeeHacks
 
 web:
-: [https://www.ceehacks.com/smhprague2019/][smhprague2019]] a [https://www.ceehacks.com/shhprague2019/][shhpraguje2019]
+ [https://www.ceehacks.com/smhprague2019/][smhprague2019]] a [https://www.ceehacks.com/shhprague2019/][shhpraguje2019]
 
 [Smart Mobility Hackathon][smhprague2019] se konal v dubnu, snažil pomoci městům a firmám zlepšovat jejich služby v oblasti mobility. Novinkou tohoto roku je poté od stejného pořadatele hackathon [Smart Health][shhprague2019] zaměřující se na oblast zdraví. V rámci tohoto hackathonu se objevila témata zaměřená na zlepšení zdravotního stavu pacientů s cukrovkou nebo na předvídání chování pacientů. Specialitou poté byla “challenge” pro vývoj aplikace s cílem pomoci usnadnit rodinný život s pacientem s Alzheimerovou nemocí.
 

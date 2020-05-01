@@ -56,7 +56,7 @@ pořadatel:
 : CeeHacks
 
 web:
-: [https://www.ceehacks.com/smhprague2019/][smhprague2019]] a [https://www.ceehacks.com/shhprague2019/][shhpraguje2019]
+: [https://www.ceehacks.com/smhprague2019/][smhprague2019] a [https://www.ceehacks.com/shhprague2019/][shhprague2019]
 
 Dalším v dnešní době již zaběhnutým hackathonem u nás je [Smart Mobility Hackathon][smhprague2019], který se koná v Praze během měsíce dubna a který se snaží pomoci městům a firmám zlepšovat jejich služby specificky v oblasti mobility. Novinkou letošního roku je poté od stejného pořadatele hackathon [Smart Health][shhprague2019] zaměřující se na oblast zdraví. V rámci tohoto hackathonu se objevila témata zaměřená na zlepšení zdravotního stavu pacientů s cukrovkou nebo na předvídání chování pacientů. Specialitou poté byla “challenge” pro vývoj aplikace s cílem pomoci usnadnit rodinný život s pacientem s Alzheimerovou nemocí.
 
@@ -109,14 +109,14 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 [hackujstat]: https://hackujstat.cz/ "Hackathon veřejné správy"
 [hackprague]: https://hackprague.com/hackathon2019/ "Hack Praguje 2019"
 [statistikahrou]: https://hackujstat-v3-team-11.github.io/ "Github Statistika Hrou"
-[smerniceOD]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024&from=CS "Směrnice EU 1024/2019"
+[směrniceOD]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024&from=CS "Směrnice EU 1024/2019"
 [NKOD]: https://data.gov.cz/ "Národní katalog otevřených dat"
 [smarttraffic]: https://devpost.com/software/smart-traffic-5b9lk6 "Aplikace Smart Traffic"
 [parkroll]: https://devpost.com/software/park-and-roll "Aplikace Park & Roll"
-[copernicushacktahon]: http://www.czechspaceyear.com/coha/ "Copernicus Hackathon"
+[copernicushackathon]: http://www.czechspaceyear.com/coha/ "Copernicus Hackathon"
 [druzicecopernicus]: http://copernicus.gov.cz/pristup-k-datum "Družice Copernicus"
 [smhprague2019]: https://www.ceehacks.com/smhprague2019/ "Smart Mobility Hackathon 2019"
-[shhpraguje2019]: https://www.ceehacks.com/shhprague2019/ "Smart Health Hackathon 2019"
+[shhprague2019]: https://www.ceehacks.com/shhprague2019/ "Smart Health Hackathon 2019"
 [ABB]: https://www.abbccc.cz/#vysledky "ABB Hackathon"
 [kiwigoogle]: https://www.voicehackathon.org/ "Voicehackathon"
 [codebrewhack]: https://codebrewhack.com/cz/tracky/ "Codebrewhack"
@@ -127,4 +127,4 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 [bestbrno]: https://best.vutbr.cz/ "Best Brno"
 [odmvcr]: otevrenadata@mvcr.cz "otevrenadata@mvcr.cz"
 [znamkamarada]: https://www.znamkamarada.cz/ "Hackathon Znám kamaráda"
-[kontrolnihackathon]: https://hackathon.eurosai2020.cz/ "1. mezinárodní hackathon kontrolních institucí"
+[kontrolníhackathon]: https://hackathon.eurosai2020.cz/ "1. mezinárodní hackathon kontrolních institucí"

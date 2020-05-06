@@ -71,7 +71,7 @@ Nejprve si do QGIS nahrajeme shapefile administrativních hranic, okresů které
 Poté je třeba do GIS nahrát data o počtech cizinců a je třeba je připojit k vrstvě .shp okresů, kterou jsme stáhli z ČÚZK.
 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csv.png"
+    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csvPNG.png"
     description="Přidání dat o počtech cizinců"
 %}
 
@@ -80,15 +80,15 @@ Poté je třeba do GIS nahrát data o počtech cizinců a je třeba je připojit
     description="Připojení dat"
 %}
  
-Následně si stáhneme plugin cartogram  a v záložce vektor --> cartogram --> compute cartogram - zvolíme proměnnou absolutního počtu cizinců. 
+Následně si stáhneme plugin cartogram  a v záložce "vektor" --> "cartogram" --> "compute cartogram" - zvolíme proměnnou absolutního počtu cizinců. 
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/7plugin.png"
     description="Plugin cartogram"
 %}
 
-Anamorfóza (ang. cartogram) nám zderformuje mapu dle zastoupení zvolené proměnné, kde samozřejmě dominuje významně Praha a dále velká krajská města. Za zmínku stojí rovněž okres Mladá Boleslav, kde je tradičně zastoupen velký počet cizinců zaměstnaných ve firmě Škoda. 
+Anamorfóza (ang. cartogram) nám zderformuje mapu dle zastoupení zvolené proměnné, kde samozřejmě významně dominuje Praha a dále velká krajská města. Za zmínku stojí rovněž okres Mladá Boleslav, kde je tradičně zastoupen velký počet cizinců zaměstnaných ve firmě Škoda. 
 
-Podobně použijeme i relativní počty, tedy procentuální zastoupení cizinců na celkové populaci v daném území. Zde je důležité si data rovněž předpřipravit např. v Google Sheets a poté je stejnou cestou nahrát do QGIS. Mapu pak dotváříme v sekci symbologie, kde byla zvolena kvantilová klasifikace.
+Podobně použijeme i relativní počty, tedy procentuální zastoupení cizinců na celkové populaci v daném území. Zde je důležité si data rovněž předpřipravit např. v někteérm z tabulkových editorů (např. Google Sheets, Microsoft Excel, CalC apod.) a poté je stejnou cestou nahrát do QGIS. Mapu poté dotváříme v sekci symbologie, kde byla zvolena kvantilová klasifikace.
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/8symbology.png"
     description="Dotvoření mapy v sekci symbologie"
@@ -100,9 +100,9 @@ Závěrečné editace mapy docílíme v tlačítku "nové tiskové rozvržení" 
 %}
 
 ## Další užití, závěr
-Ve výstupech nejsou použity další územní měřítka, za které lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je data obohatit o tzv. [Informativní přehledy][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, u statutární měst i za městské části. 
+Ve výstupech nejsou použity jiná územní měřítka, ve kterých lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je data obohatit o tzv. [Informativní přehledy][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, statutární města nebo městské části. 
 
-Tvorba datového dashboardu v PowerBI (pokud odečtu peripetie s pochopení struktury dat) trvala asi 2 hodiny (od mírně pokročilého uživatele). Vizualizace v QGIS trvaly rovněž cca 2 hodiny (od začátečníka s QGIS). Níže uvádím některé užitečné zdroje k práci:
+Tvorba datového dashboardu v PBI (pokud odečtu "peripetie" z pochopení struktury dat) trvala asi 2 hodiny (pro mírně pokročilého uživatele). Vizualizace v QGIS trvaly rovněž cca 2 hodiny (pro začátečníka s QGIS). Níže uvádíme některé užitečné zdroje pro práci na obodných datech, jaké jsou uvedeny v tomto článku:
  
 - [Jak připojit .csv k vrstvě .shp][Návod]
 - [Tvorba kartodiagramů][Návod_2]

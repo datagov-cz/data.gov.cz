@@ -30,14 +30,14 @@ Primárními daty pro naši práci jsou již představená data o cizincích v d
 Jelikož jsou data o cizincích publikovaná do úrovně okresů, budou nás sekundárně zajímat rovněž data o počtech obyvatel v jednotlivých okresech. Zde již ČSÚ otevřená data nepublikuje, proto je nutné si je stáhnout z jejich [veřejné databáze][Veřejná databáze ČSÚ]. Třetím zdrojem dat je soubor [Správních hranic a hranic katastrálních území ČR][Data] od [ČÚZK][ČÚZK], kde budou použity .shp okresů v programu QGIS.
 
 ## Postup zpracování
-V první řadě si nainstalujeme [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=58494) (dále jen PBI). Při práci v PBI budeme pracovat s více samostatnými .csv soubory, které máme uložené v jedné složce. Je tedy dobré pracovat s celou složkou s jednotlivými soubory, což PBI umožňuje. Po otevření programu tedy zvolíme tedy Get data --> Folder a poté všechny soubory .csv zkomprimujeme do 1 souboru. 
+V první řadě si nainstalujeme [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=58494) (dále jen PBI). Při práci v PBI budeme pracovat s více samostatnými .csv soubory. Je tedy dobré pracovat s celou složkou, kde mámem uložené jednotlivé soubory, což PBI umožňuje. Po otevření programu tedy zvolíme funkci "Get data --> Folder" a poté všechny soubory .csv zkomprimujeme do 1 souboru. 
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/1komprimace_csv.png"
     description="Komprimace souborů csv"
 %}
-Následně se můžeme přepnout do módu Edit Queries, kde bude nutné data ještě upravit. V první řadě je nutné se vypořádat s tím, že ČSÚ nám data podstrčil agregovaně či spíše duplicitně. V prvotním součtu totiž dojdeme k tomu, že v České republice máme 9 029 520 cizinců jen v roce 2018. Je tedy jasné, že data jsou různě agregována, a to jak za věkové skupiny, tak národnosti, pohlaví ... a to v různých měřítkách a ještě se všemi možnými kombinacemi. Cílem je tedy dostat se pouze k počtům za okresy. Toho docílíme tak, že zapneme filtraci v jednotlivých sloupcích, a to následovně: 
+Následně se můžeme přepnout do módu "Edit Queries", kde bude nutné data ještě upravit. V první řadě se musíme vypořádat s tím, že ČSÚ nám data podstrčil agregovaně či spíše duplicitně. V prvotním součtu totiž dojdeme k tomu, že v České republice máme 9 029 520 cizinců jen v roce 2018. Je tedy jasné, že data jsou různě agregována, a to jak za věkové skupiny, tak národnosti, pohlaví ... a to v různých měřítkách a ještě se všemi možnými kombinacemi. Cílem je tedy dostat se pouze k počtům za okresy. Toho docílíme tak, že zapneme filtraci v jednotlivých sloupcích, a to následovně: 
 
-- Pohlavi_kod - vybereme hodnoty 1 a 2 (tím jsme odfiltrovaly prázdné/agregované hodnoty) 
+- Pohlavi_kod - vybereme hodnoty 1 a 2 (tím jsme odfiltrovali prázdné/agregované hodnoty) 
 - Vek_kod - vypneme prázdné hodnoty
 - Vuzemi_kod vypneme číslo 19 (úroveň ČR)
 

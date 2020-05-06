@@ -5,17 +5,17 @@ lang: cs
 icon: list
 ref: vývoj-počtu-cizinců-v-čr-mezi-lety-2009-a-2018
 author: martin_dvořák
-date: 2020-05-07 08:00:00
+date: 2020-04-07 08:00:00
 title: Vývoj počtu cizinců v ČR mezi lety 2009 a 2018
 ---
 
 Česko se stává kosmopolitní zemí. Jde o logický vývoj společnosti, která se internacionalizuje, a to zejména z důvodů nabídky pracovních příležitostí a obecně relativně vysoké kvality života. Pojďme se podívat na tento jev podrobněji očima dat. V České republice bylo k 31.12.2018 564 000 cizinců. 
 - Jaké jsou národnosti?
 - Kde je cizinců nejvíce? 
-- Jaké věkové skupiny?
+- O jaké věkové skupiny se jedná?
 <!--more-->
 
-Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického úřadu][ČSÚ], který katalogizuje v [Národním katalogu otevřených dat][NKOD] datové sady o [Počtech cizinců podle státního občanství, věku a pohlaví][Source] již od roku 2004. Pro potřeby této práci se podíváme na dostupné datové distribuce "pouze" 10 let zpět, tedy od roku 2009. 
+Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického úřadu][ČSÚ], který katalogizuje v [Národním katalogu otevřených dat][NKOD] datové sady o [Počtech cizinců podle státního občanství, věku a pohlaví][Source] již od roku 2004. Pro potřeby této analýzy se podíváme na dostupné datové distribuce "pouze" 10 let zpět, tedy od roku 2009. 
 
 ## K čemu chceme dojít?
 Článek si klade za cíl představit práci s daty v programu [Power BI][Power BI] a vytvořit níže uvedený dashboard. Druhým cílem je pak vizualizace dat v programu [QGIS][A Free and Open Source Geographic Information System]. 
@@ -26,11 +26,11 @@ Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického ú�
 
 ## Použitá data
 
-Primárními daty pro naši práci jsou již představená data o cizincích v distribucích od roku 2009 do roku 2018. K pochopení struktury dat a významu číselníků je nutné nahlédnout do [metodiky][Metodika počtu cizinců], která je vždy k danému datasetu k dispozici. Další úskalím, které nám ČSÚ trochu práci ztěžuje, je zipování souborů, a to i tam, kde se nachází pouze jeden .csv soubor.
-Jelikož jsou data o cizincích publikovaná do úrovně okresů, budou nás sekundárně zajímat rovněž data o počtech obyvatel v jednotlivých okresech. Zde však již ČSÚ otevřená data nepublikuje, proto je nutné si je stáhnout z jejich [veřejné databáze][Veřejná databáze ČSÚ]. Třetím zdrojem dat je soubor [Správních hranic a hranic katastrálních území ČR][Data] od [ČÚZK][ČÚZK], kde budou použity .shp okresů v programu QGIS.
+Primárními daty pro naši práci jsou již představená data o cizincích v distribucích od roku 2009 do roku 2018. K pochopení struktury dat a významu číselníků je nutné nahlédnout do [metodiky][Metodika počtu cizinců], která je vždy k danému datasetu k dispozici. Další úskalím, které nám ČSÚ trochu práci ztěžuje, je "zipování souborů, a to i tam, kde se nachází pouze jeden .csv soubor.
+Jelikož jsou data o cizincích publikovaná do úrovně okresů, budou nás sekundárně zajímat rovněž data o počtech obyvatel v jednotlivých okresech. Zde již ČSÚ otevřená data nepublikuje, proto je nutné si je stáhnout z jejich [veřejné databáze][Veřejná databáze ČSÚ]. Třetím zdrojem dat je soubor [Správních hranic a hranic katastrálních území ČR][Data] od [ČÚZK][ČÚZK], kde budou použity .shp okresů v programu QGIS.
 
 ## Postup zpracování
-V první řadě si nainstalujeme [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=58494). Při práci v PBI budeme pracovat s více samostatnými .csv soubory, které máme uložené v jedné složce. Je tedy dobré pracovat s celou složkou s jednotlivými soubory, což PBI umožňuje. Po otevření programu tedy zvolíme tedy Get data --> Folder a poté všechny soubory .csv zkomprimujeme do 1 souboru. 
+V první řadě si nainstalujeme [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=58494) (dále jen PBI). Při práci v PBI budeme pracovat s více samostatnými .csv soubory, které máme uložené v jedné složce. Je tedy dobré pracovat s celou složkou s jednotlivými soubory, což PBI umožňuje. Po otevření programu tedy zvolíme tedy Get data --> Folder a poté všechny soubory .csv zkomprimujeme do 1 souboru. 
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/1komprimace_csv.png"
     description="Komprimace souborů csv"

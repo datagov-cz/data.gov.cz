@@ -24,6 +24,7 @@ Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického ú�
 <iframe class="embed-responsive-item" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMzM5YTktOTI0YS00MzQzLTkzYjMtYjI1OTQxNTgxNGZjIiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen></iframe>
 </div>
 
+
 ## Použitá data
 
 Primárními daty pro naši práci jsou již představená data o cizincích v distribucích od roku 2009 do roku 2018. K pochopení struktury dat a významu číselníků je nutné nahlédnout do [metodiky][Metodika počtu cizinců], která je vždy k danému datasetu k dispozici. Další úskalím, které nám ČSÚ trochu práci ztěžuje, je "zipování souborů, a to i tam, kde se nachází pouze jeden .csv soubor.

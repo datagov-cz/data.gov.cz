@@ -9,7 +9,7 @@ date: 2020-05-07 01:00:00
 title: Vývoj počtu cizinců v ČR mezi lety 2009 a 2018
 ---
 
-Česko se stává kosmopolitní zemí. Jde o logický vývoj společnosti, která se internacionalizuje, a to zejména z důvodů nabídky pracovních příležitostí a obecně relativně vysoké kvality života. Pojďme se podívat na tento jev podrobněji očima dat. V České republice bylo k 31.12.2018 564 000 cizinců. 
+Česká republika se stává kosmopolitní zemí. Jde o logický vývoj společnosti, která se internacionalizuje, a to zejména z důvodů nabídky pracovních příležitostí a obecně relativně vysoké kvality života. Pojďme se podívat na tento jev podrobněji očima dat. V České republice bylo k 31.12.2018 564 000 cizinců. 
 - Jaké jsou národnosti?
 - Kde je cizinců nejvíce? 
 - O jaké věkové skupiny se jedná?
@@ -93,16 +93,16 @@ Podobně použijeme i relativní počty, tedy procentuální zastoupení cizinc�
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/8symbology.png"
     description="Dotvoření mapy v sekci symbologie"
 %}
-Závěrečné editace mapy docílíme v tlačítku "nové tiskové rozvržení" v horním menu, kde postupně přidáme název, legendu a měřítko
+Závěrečnou editací mapy provedeme pomocí tlačítka "nové tiskové rozvržení" v horním menu, kde postupně přidáme název, legendu a měřítko
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/9legenda.png"
     description="Přidání názvu, legendy a měřítka"
 %}
 
 ## Další užití, závěr
-Ve výstupech nejsou použity jiná územní měřítka, ve kterých lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je data obohatit o tzv. [Informativní přehledy][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, statutární města nebo městské části. 
+Ve výstupech nejsou použita jiná územní měřítka, ve kterých lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je data obohatit o tzv. [Informativní přehledy][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, statutární města nebo městské části. 
 
-Tvorba datového dashboardu v PBI (pokud odečtu "peripetie" z pochopení struktury dat) trvala asi 2 hodiny (pro mírně pokročilého uživatele). Vizualizace v QGIS trvaly rovněž cca 2 hodiny (pro začátečníka s QGIS). Níže uvádíme některé užitečné zdroje pro práci na obodných datech, jaké jsou uvedeny v tomto článku:
+Tvorba datového dashboardu v PBI (pokud nepočítáme "peripetie" z pochopení struktury dat) trvala asi 2 hodiny (pro mírně pokročilého uživatele). Vizualizace v QGIS trvaly rovněž cca 2 hodiny (pro začátečníka s QGIS). Níže uvádíme některé užitečné zdroje pro práci na obodných datech, jaké jsou uvedeny v tomto článku:
  
 - [Jak připojit .csv k vrstvě .shp][Návod]
 - [Tvorba kartodiagramů][Návod_2]

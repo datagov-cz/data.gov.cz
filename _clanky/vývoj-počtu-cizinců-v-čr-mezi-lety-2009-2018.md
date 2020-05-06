@@ -24,7 +24,6 @@ Na tyto otázky se pokusíme odpovědět s pomocí [Českého statistického ú�
 <iframe class="embed-responsive-item" src="https://app.powerbi.com/view?r=eyJrIjoiY2QwMzM5YTktOTI0YS00MzQzLTkzYjMtYjI1OTQxNTgxNGZjIiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9" frameborder="0" allowFullScreen></iframe>
 </div>
 
-\
 
 ## Použitá data
 

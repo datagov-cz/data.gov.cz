@@ -69,6 +69,7 @@ Výsledek anamorfované mapy.
 
 Nejprve si do QGIS nahrajeme shapefile administrativních hranic, okresů které jsme si uvedli na začátku. Z horní lišty vybereme "Vrstva" --> "Přidat vrstvu" --> "Přidat vektorovou vrstvu" a nahrajeme okresy. 
 Poté je třeba do GIS nahrát data o počtech cizinců a je třeba je připojit k vrstvě .shp okresů, kterou jsme stáhli z ČÚZK.
+
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csv.png"
     description="Přidání dat o počtech cizinců"

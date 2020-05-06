@@ -71,7 +71,7 @@ Nejprve si do QGIS nahrajeme shapefile administrativních hranic, okresů které
 Poté je třeba do GIS nahrát data o počtech cizinců a je třeba je připojit k vrstvě .shp okresů, kterou jsme stáhli z ČÚZK.
 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csv.png"
+    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/55nahrat_csv.png"
     description="Přidání dat o počtech cizinců"
 %}
 

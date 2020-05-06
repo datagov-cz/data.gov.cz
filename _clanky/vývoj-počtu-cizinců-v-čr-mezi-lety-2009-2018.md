@@ -95,7 +95,7 @@ Podobně použijeme i relativní počty, tedy procentuální zastoupení cizinc�
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/8symbology.png"
     description="Dotvoření mapy v sekci symbologie"
 %}
-Závěrečnou editací mapy provedeme pomocí tlačítka "nové tiskové rozvržení" v horním menu, kde postupně přidáme název, legendu a měřítko
+Závěrečnou editaci mapy provedeme pomocí tlačítka "nové tiskové rozvržení" v horním menu, kde postupně přidáme název, legendu a měřítko.
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/9legenda.png"
     description="Přidání názvu, legendy a měřítka"

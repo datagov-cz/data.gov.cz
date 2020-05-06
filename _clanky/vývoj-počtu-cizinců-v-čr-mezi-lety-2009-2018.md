@@ -43,9 +43,9 @@ Následně se můžeme přepnout do módu "Edit Queries", kde bude nutné data j
 
 Číselníky (pohlavi_cis, vek_cis, ...) pro tuto ukázku nepotřebujeme, jelikož vše důležité je obsaženo v textových hodnotách. Nicméně všechny relevantní [číselníky](https://data.gov.cz/datové-sady?dotaz=číselníky&poskytovatel=Český%20statistický%20úřad) lze rovněž najít v NKOD ve formátu .xml a případně je připojit do datového modelu. 
 
-Po dokončení úprav editor uzavřeme (tlačítko Close & Apply) a dále pracujeme již jen s vizualizačními technikami. V boxu na pravé straně máme všechny datové sady, v druhém sloupci pak možnosti vizualizací a v třetím boxu jsou filtry. Pro naše účely nejvíce využíváme bar & column charts. Vše funguje systémem drag & drop, kde vybíráme z tabulkové části data do částí "os x a y", případně do legendy a do pole "values". Jednotlivá pole zle i posunovat přímo do vizualizačního boxu a PBI samo zvolí nejvhodnější vizualizaci. Na závěr ještě umístíme Slicer s jednotlivými roky. Všechna pole pak formátujeme v sekci "Format". 
+Po dokončení úprav editor uzavřeme (tlačítko "Close & Apply") a dále pracujeme jen s vizualizačními technikami. V boxu na pravé straně máme všechny datové sady, v druhém sloupci pak možnosti vizualizací a v třetím boxu jsou filtry. Pro naše účely nejvíce využíváme "bar & column charts". Vše funguje systémem drag & drop, kde vybíráme z tabulkové části data do částí "os x a y", případně do legendy a do pole "values". Jednotlivá pole lze i posunovat přímo do vizualizačního boxu a PBI samo zvolí nejvhodnější vizualizaci. Na závěr ještě umístíme "Slicer" s jednotlivými roky. Všechna pole pak formátujeme v sekci "Format". 
 
-První sekce je tedy hotová, přepneme na druhý list, na kterém využijeme mapovou vizualizaci pro prezentaci počtu cizinců v okresech. PBI mají defaultně nastavené Bing mapy (jako možnost lze využít i plugin "esri maps for PBI", které jsou však pod placenou licencí). V mapě do pole Location zvolíme okres, do pole Size pak pole hodnota --> vykreslení okresů dle počtu cizinců a použijeme pouze rok 2018. Ve finální vizualizaci došlo k chybě, kde byl okres Plzeň-sever geolokován do Francie.
+První sekce je tedy hotová, přepneme na druhý list, na kterém využijeme mapovou vizualizaci pro prezentaci počtu cizinců v okresech. PBI mají základně nastavené Bing mapy (jako možnost lze využít i plugin "esri maps for PBI", které jsou však pod placenou licencí). V mapě do pole "Location" zvolíme okres, do pole "Size" pak pole "hodnota" --> "vykreslení okresů dle počtu cizinců" a použijeme pouze rok 2018. Ve finální vizualizaci došlo k chybě, kde byl okres Plzeň-sever geolokován do Francie.
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/2plzen_ve_francii.png"
     description="Chyba v geolokaci okresu Plzeň"
@@ -55,11 +55,11 @@ První sekce je tedy hotová, přepneme na druhý list, na kterém využijeme ma
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/3county.png"
     description="Oprava chyby v geolokaci"
 %}
-Do legendy pak přidáme atribut pohlaví. Power BI pak nabízí mnoho dalších možností, jak data upravovat a vizualizovat. 
+Do legendy pak přidáme atribut pohlaví. PBI pak nabízí mnoho dalších možností, jak data upravovat a vizualizovat. 
 
 ## A co v QGIS?
 
-QGIS je volně dostupný open source software určený zejména pro prezentaci prostorových dat. V této části tak použijeme klasický kartogram pro prezentaci vývoje podílu cizinců v okresech ČR a využijeme i plugin cartogram pro tvorbu [anamorfované mapy](https://cs.wikipedia.org/wiki/Anamorf%C3%B3za_), kterou použijeme pro vizualizaci absolutních počtů. 
+QGIS je volně dostupný open source software určený zejména pro prezentaci prostorových dat. V této části tak použijeme klasický kartogram pro prezentaci vývoje podílu cizinců v okresech ČR a využijeme i "plugin cartogram" pro tvorbu [anamorfované mapy](https://cs.wikipedia.org/wiki/Anamorf%C3%B3za_), kterou vizualizujeme absolutní počty cizinců v ČR. 
 
 Výsledek anamorfované mapy.
 {% include image.html
@@ -67,7 +67,7 @@ Výsledek anamorfované mapy.
     description="Anamorfovaná mapa"
 %}
 
-Nejprve si do QGIS nahrajeme shapefile administrativních hranic, okresů které jsme si uvedli na začátku. Z horní lišty vybereme Vrstva --> Přidat vrstvu --> Přidat vektorovou vrstvu a nahrajeme okresy. 
+Nejprve si do QGIS nahrajeme shapefile administrativních hranic, okresů které jsme si uvedli na začátku. Z horní lišty vybereme "Vrstva" --> "Přidat vrstvu" --> "Přidat vektorovou vrstvu" a nahrajeme okresy. 
 Poté je třeba do GIS nahrát data o počtech cizinců a je třeba je připojit k vrstvě .shp okresů, kterou jsme stáhli z ČÚZK.
 {% include image.html
     url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csv"

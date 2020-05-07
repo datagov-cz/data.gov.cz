@@ -22,43 +22,43 @@ I když “hackovat” je možné prakticky cokoliv, hackathony které využíva
 ## Hackathony s cílem zlepšit veřejnou správu
 Jako první si představíme hackathony, které svým zaměřením míří zejména na zlepšení témat ve veřejném prostoru (ve městech a národní úrovni).
 
-### Hackathon veřejné správy
+### Hackathon veřejné správy ver. 3.0 
 
 pořadatel: 
-:   Nejvyšší kontrolní úřad
+ Nejvyšší kontrolní úřad
 
 web:
-: [https://hackujstat.cz][hackujstat]
+ [https://hackujstat.cz][hackujstat]
 
-V září se již tradičně konal nejznámější hackathon v naší zemi zaměřený na témata veřejné správy. Tento hackathon je speciální tím, že je pořádán zejména institucemi státní správy. Letos se zapojilo již 21 partnerů. První místo získala aplikace “Statistika hrou”, která má za cíl  prezentovat otevřená data různých institucí zábavným interaktivním způsobem ve formě kvízu. Aplikace má formu chatbota, který provází hráče jednotlivými otázkami. Zacílení na mladší generaci je zde zřejmé, protože je možné tuto hru napojit například na Facebook Messenger. Aplikace je dostupná v rámci tohoto repozitáře [githubu][statistikahrou]. Zajímavostí je poté i zapojení Technologické agentury ČR, která poskytla svá data o výzkumu. Rozdíl mezi otevíráním dat veřejné správy a dat výzkumných se totiž neustále sbližují, čemuž odpovídá i nová legislativa EU v podobě [Směrnice Evropského parlamentu a Rady (EU) 2019/1024 ze dne 20. června 2019 o otevřených datech a opakovaném použití informací veřejného sektoru][směrniceOD], která poprvé pracuje s oběma termíny. Další aplikace, které byly letos během hackathon vyrobeny jsou dostupné na webové adrese soutěže a datové sady jsou dostupné přímo na stránkách [akce](https://hackujstat.cz/) nebo v rámci [Národního katalogu otevřených dat][NKOD]. 
+V září se již tradičně konal nejznámější hackathon v naší zemi zaměřený na témata veřejné správy. Tento hackathon je speciální tím, že je pořádán zejména institucemi státní správy. Minulý rok se zapojilo již 21 partnerů. První místo získala aplikace “Statistika hrou”, která má za cíl  prezentovat otevřená data různých institucí zábavným interaktivním způsobem ve formě kvízu. Aplikace má formu chatbota, který provází hráče jednotlivými otázkami. Zacílení na mladší generaci je zde zřejmé, protože je možné tuto hru napojit například na Facebook Messenger. Aplikace je dostupná v rámci tohoto repozitáře [githubu][statistikahrou]. Zajímavostí bylo poté i zapojení Technologické agentury ČR, která poskytla svá data o výzkumu. Rozdíl mezi otevíráním dat veřejné správy a dat výzkumných se totiž neustále sbližují, čemuž odpovídá i nová legislativa EU v podobě [Směrnice Evropského parlamentu a Rady (EU) 2019/1024 ze dne 20. června 2019 o otevřených datech a opakovaném použití informací veřejného sektoru][směrniceOD], která poprvé pracuje s oběma termíny.  Další aplikace, které byly letos během hackathon vyrobeny jsou dostupné na webové adrese soutěže a datové sady jsou dostupné přímo na stránkách [akce](https://hackujstat.cz/) nebo v rámci [Národního katalogu otevřených dat][NKOD]. 
 
 ### Hack Prague 2019
 pořadatel:
-: HackPrague
+ HackPrague
 
 web:
-: [https://hackprague.com/hackathon2019/][hackprague]
+ [https://hackprague.com/hackathon2019/][hackprague]
 
-Měsíci květnu poté patřil již 3. ročník hackathonu Hack Prague, který se zaměřuje na zlepšení Hlavního města Prahy. Záštitu nad akcí převzalo mimo Hlavního města Prahy ještě Ministerstvo průmyslu a obchodu a Ministerstvo pro místní rozvoj. Letošní témata byla zaměřená na kvalitu života ve městě, mobilitu nebo zapojení veřejnosti do komunitního života. Vítězem se stala aplikace [Smart Traffic][smarttraffic] zaměřená na analýzu dopravní situace pomocí dat z kamerových systémů. Mezi další aplikace, které jsou prakticky hned použitelné patří aplikace [Park & Roll][parkroll], která může doporučit dostupné nejbližší parkoviště Park and Ride.
+Měsíci květnu poté patřil již 3. ročník hackathonu Hack Prague, který se zaměřuje na zlepšení Hlavního města Prahy. Záštitu nad akcí převzalo mimo Hlavního města Prahy ještě Ministerstvo průmyslu a obchodu a Ministerstvo pro místní rozvoj. Hlavní témata hackathonu byla kvalita života ve městě, mobilita a zapojení veřejnosti do komunitního života. Vítězem se stala aplikace [Smart Traffic][smarttraffic] zaměřená na analýzu dopravní situace pomocí dat z kamerových systémů. Mezi další aplikace, které jsou prakticky hned použitelné, patří aplikace [Park & Roll][parkroll], která může doporučit dostupné nejbližší parkoviště Park and Ride.
 
 ### Copernicus Hackathon
 pořadatel: 
-: S.A.B. Aerospace, s.r.o.
+ S.A.B. Aerospace, s.r.o.
 
 web:
-: [http://www.czechspaceyear.com/coha/][copernicushackathon] 
+ [http://www.czechspaceyear.com/coha/][copernicushackathon] 
 
-Září bylo na hackathony bohaté a další zajímavý hackathon se konal tentokrát v Brně. Akce byla poměrně netradičně zaměřena na zpracování tzv. “vesmírných dat” neboli tzv. “downstream” dat z evropských [družic Copernicus][druzicecopernicus]. Možná to nemusí být na první pohled patrné, ale zpracování vesmírných dat bude pro veřejnou správu čím dál zajímavější a důležitější zejména pro oblasti jako je boj s klimatickou změnou nebo různé druhy dalších celoplošných analýz, proto se v budoucnu k tématu vrátíme ještě v samostatném článku. Témata totoho hackathonu se zaměřovala na využití dat právě pro některý typ analýz životního prostředí případně na zlepšení turismu. 
+Akce, která se konala na podzim v Brně, byla poměrně netradičně zaměřena na zpracování tzv. “vesmírných dat” neboli tzv. “downstream” dat z evropských [družic Copernicus][druzicecopernicus]. Možná to nemusí být na první pohled patrné, ale zpracování vesmírných dat bude pro veřejnou správu čím dál zajímavější a důležitější, zejména pro oblasti jakými jsou např. boj s klimatickou změnou nebo různé druhy dalších celoplošných analýz. Hackathon se zaměřil na využití dat pro některé typy analýz životního prostředí s ohledem na turismusm. 
 
 ### Smart Mobility Hackathon a Smart Health Hackathon 
 
 pořadatel: 
-: CeeHacks
+ CeeHacks
 
 web:
-: [https://www.ceehacks.com/smhprague2019/][smhprague2019]] a [https://www.ceehacks.com/shhprague2019/][shhpraguje2019]
+ [https://www.ceehacks.com/smhprague2019/][smhprague2019] a [https://www.ceehacks.com/shhprague2019/][shhprague2019]
 
-Dalším v dnešní době již zaběhnutým hackathonem u nás je [Smart Mobility Hackathon][smhprague2019], který se koná v Praze během měsíce dubna a který se snaží pomoci městům a firmám zlepšovat jejich služby specificky v oblasti mobility. Novinkou letošního roku je poté od stejného pořadatele hackathon [Smart Health][shhprague2019] zaměřující se na oblast zdraví. V rámci tohoto hackathonu se objevila témata zaměřená na zlepšení zdravotního stavu pacientů s cukrovkou nebo na předvídání chování pacientů. Specialitou poté byla “challenge” pro vývoj aplikace s cílem pomoci usnadnit rodinný život s pacientem s Alzheimerovou nemocí.
+[Smart Mobility Hackathon][smhprague2019] se konal v dubnu, snažil pomoci městům a firmám zlepšovat jejich služby v oblasti mobility. Novinkou tohoto roku je poté od stejného pořadatele hackathon [Smart Health][shhprague2019] zaměřující se na oblast zdraví. V rámci tohoto hackathonu se objevila témata zaměřená na zlepšení zdravotního stavu pacientů s cukrovkou nebo na předvídání chování pacientů. Specialitou poté byla “challenge” pro vývoj aplikace s cílem pomoci usnadnit rodinný život s pacientem s Alzheimerovou nemocí.
 
 ## Hackathony s cílem vylepšit firemní proces nebo nějakou službu
 Speciální kategorii hackathonů jsou poté hackathony, které pořádají soukromé společnosti. Nejčastějším důvodem pro uspořádání tohoto typu hackathonu je snaha o vylepšení nabízených služeb a získání nových podnětů, dále se jedná zejména o marketingově zajímavou aktivitu pro danou společnost a v neposlední řadě je možné tyto akce využít jako náborovou akcí pro získání kvalitních zaměstnanců. Letos této možnosti využily například firmy jako je [ABB][ABB], která uspořádala první hackathon v České republice přímo v továrně, dále společnost [Kiwi s Google Development Group Brno][kiwigoogle] připravila tzv. “voicehackathon” specializovaný na turistické a hlasové asistenty. Za další akcí spadající do této kategorie je možné označit [Codebrewhack][codebrewhack] případně hackathon společnosti [AT&T][atat] a mnoho dalších ([První průmyslový hackathon][iotea]...). Tyto hackathony často využívají dat, které zpřístupní sami společnosti pro účely soutěže.
@@ -72,7 +72,7 @@ Téma hackathonů se nevyhýbá ani univerzitnímu a neziskovému sektoru. Za za
 %}
 
 ## A jak takový hackathon uspořádat?
-Zaujaly Vás hackathony natolik, že byste rádi takovou akci uspořádali? Pokud ano, připravili jsme pro vás krátké shrnutí, na co byste neměli zapomenout při přípravě tohoto typu akce. Pokud byste chtěli potřebovali bližší konzultaci, neváhejte nám napsat na emailovou adresu [otevrenadata@mvcr.cz][odmvcr] a do předmětu zprávy dát "*hackathony*".
+Zaujaly Vás hackathony natolik, že byste rádi takovou akci uspořádali? Pokud ano, připravili jsme pro vás krátké shrnutí, na co byste neměli zapomenout při přípravě tohoto typu akce. Pokud byste potřebovali bližší konzultaci, neváhejte nám napsat na emailovou adresu [otevrenadata@mvcr.cz][odmvcr] a do předmětu zprávy dát "*hackathony*".
 
 ### O čem takový hackathon je?
 Hackathon neboli soutěžní akce, která trvá od 24 do 48 hodin s cílem nalézt řešení zadaného problému. Účastníci pracují v týmech nejčastěji ve velikosti 2-6 osob. Není důležité, zda se jedná o práci na softwarovém nebo hardwarovém řešení (není to tedy jen pro IT vývojáře). Důležité je za dobu trvání soutěže vytvořit fungující prototyp, který ukáže, jak by navržené řešení mohlo fungovat v praxi. [^1]
@@ -109,14 +109,14 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 [hackujstat]: https://hackujstat.cz/ "Hackathon veřejné správy"
 [hackprague]: https://hackprague.com/hackathon2019/ "Hack Praguje 2019"
 [statistikahrou]: https://hackujstat-v3-team-11.github.io/ "Github Statistika Hrou"
-[smerniceOD]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024&from=CS "Směrnice EU 1024/2019"
+[směrniceOD]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024&from=CS "Směrnice EU 1024/2019"
 [NKOD]: https://data.gov.cz/ "Národní katalog otevřených dat"
 [smarttraffic]: https://devpost.com/software/smart-traffic-5b9lk6 "Aplikace Smart Traffic"
 [parkroll]: https://devpost.com/software/park-and-roll "Aplikace Park & Roll"
-[copernicushacktahon]: http://www.czechspaceyear.com/coha/ "Copernicus Hackathon"
+[copernicushackathon]: http://www.czechspaceyear.com/coha/ "Copernicus Hackathon"
 [druzicecopernicus]: http://copernicus.gov.cz/pristup-k-datum "Družice Copernicus"
 [smhprague2019]: https://www.ceehacks.com/smhprague2019/ "Smart Mobility Hackathon 2019"
-[shhpraguje2019]: https://www.ceehacks.com/shhprague2019/ "Smart Health Hackathon 2019"
+[shhprague2019]: https://www.ceehacks.com/shhprague2019/ "Smart Health Hackathon 2019"
 [ABB]: https://www.abbccc.cz/#vysledky "ABB Hackathon"
 [kiwigoogle]: https://www.voicehackathon.org/ "Voicehackathon"
 [codebrewhack]: https://codebrewhack.com/cz/tracky/ "Codebrewhack"
@@ -127,4 +127,4 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 [bestbrno]: https://best.vutbr.cz/ "Best Brno"
 [odmvcr]: otevrenadata@mvcr.cz "otevrenadata@mvcr.cz"
 [znamkamarada]: https://www.znamkamarada.cz/ "Hackathon Znám kamaráda"
-[kontrolnihackathon]: https://hackathon.eurosai2020.cz/ "1. mezinárodní hackathon kontrolních institucí"
+[kontrolníhackathon]: https://hackathon.eurosai2020.cz/ "1. mezinárodní hackathon kontrolních institucí"

@@ -5,7 +5,7 @@ lang: cs
 icon: list
 ref: hackathony-2019
 author: jiří_marek
-date: 2020-04-09 08:00:00
+date: 2020-04-09 08:00:00 +02:00
 title: Hackathony 2019
 ---
 

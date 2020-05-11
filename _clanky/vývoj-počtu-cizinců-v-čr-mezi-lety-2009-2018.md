@@ -65,7 +65,7 @@ Do legendy pak přidáme atribut pohlaví. PBI pak nabízí mnoho dalších mož
 QGIS je volně dostupný open source software určený zejména pro prezentaci prostorových dat. V této části tak použijeme klasický kartogram pro prezentaci vývoje podílu cizinců v okresech ČR a využijeme i "plugin cartogram" pro tvorbu [anamorfované mapy](https://cs.wikipedia.org/wiki/Anamorf%C3%B3za_), kterou vizualizujeme absolutní počty cizinců v ČR. 
 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/4ciz_anamorf.svg"
+    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/4ciz_anamorf.png"
     description="Anamorfovaná mapa"
 %}
 
@@ -101,8 +101,8 @@ Závěrečnou editaci mapy provedeme pomocí tlačítka "nové tiskové rozvrže
     description="Přidání názvu, legendy a měřítka"
 %}
 
-## Další využití dat/vizualizací a zdrojů
-Ve výstupech nejsou použita jiná územní měřítka, ve kterých lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je data obohatit o tzv. [Informativní přehledy][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, statutární města nebo městské části. 
+## Další využití dat, vizualizací a zdrojů
+Ve výstupech nejsou použita jiná územní měřítka, ve kterých lze data zobrazovat. V tomto ohledu se nabízí minimálně zpracování za kraje ČR. Další možností je vizualizaci obohatit o data tzv. [Informativních přehledů][Info MVČR] cizinců, které publikuje Ministerstvo vnitra za obce, statutární města nebo městské části. 
 
 Tvorba datového dashboardu v PBI (pokud nepočítáme "peripetie" z pochopení struktury dat) trvala asi 2 hodiny (pro mírně pokročilého uživatele). Vizualizace v QGIS trvaly rovněž cca 2 hodiny (pro začátečníka s QGIS). Níže uvádíme některém užitečné zdroje pro práci na obdobných datech, jaké jsou uvedeny v tomto článku:
  

@@ -24,7 +24,7 @@ V zobrazeném strukturovaném výsledku vidíte údaje o Pierrovi Curie a také 
 
 Pohledy na entity, které jsme viděli, a přechod z jedné entity na druhou prostřednitvím souvislosti mezi nimi, nás přibližuje k významu slova *graf*. Nemá význam ve smyslu např. sloupcového nebo koláčového diagramu, který používáme pro vizualizaci statistických ukazatelů. Znamená datovou strukturu pocházející ze světa matematiky označovanou také pojmem *graf*. Matematický graf je tvořen uzly, které jsou propojeny hranami. Znalostní graf reprezentuje každou entitu reálného světa právě jako uzel v grafu. Vztahy mezi entitami jsou pak reprezentovány jako hrany v grafu. Hrany jsou označeny názvem reprezentovaného vztahu. Informace, kterou ukazují předchozí obrázky z výsledků vyhledávání na anglickém Google, jsou tak ve skutečnosti reprezentovány ve struktuře matematického grafu podobné té zobrazené na následujícím obrázku.
 
-![Reprezentace informací o Marie Curie a Pierrovi Currie ve znalostním grafu](./znalostní-grafy/znalostní-grafy-01-nobelova-cena-fyzika-google.png)
+![Reprezentace informací o Marie Curie a Pierrovi Currie ve znalostním grafu](./znalostní-grafy/znalostní-grafy-01-curieovi-ve-znalostním-grafu.png)
 
 Na obrázku vidíme uzly grafu, které reprezentují entity reálného světa. Uzly zobrazené modře reprezentují osoby. Tmavě zelené uzly reprezentují místa spojená se životem těchto osob. Světle zelené uzly reprezentují ocenění získaná osobami. Světle modré uzly jsou pak jejich objevy a šedé uzly reprezentují kategorie, do kterých tyto objevy patří. Hrany zobrazené jako šipky pak reprezentují souvislosti mezi entitami. Např. vidíme, že Pierre je manželem Marie nebo že Marie je matkou Ève.
 
@@ -44,7 +44,7 @@ Existují i další iniciativy, ve kterých vznikají znalostní grafy. Wikidata
 
 Jak uvidíme v dalších částech tohoto seriálu, výhodou znalostních grafů je snadnost jejich vzájemného propojování. Často již dokonce propojené jsou. Zde si uveďme pouze jednoduchý příklad využívající propojení znalostního grafu OpenStreetMap Sophox se znalostním grafem Wikidata. Příklad zobrazuje na mapě všechny zoologické zahrady světa podle databáze OpenStreeMap a jejich fotografie uváděné ve znalostním grafu Wikidata. Můžete si jej [pustit naživo](https://sophox.org/embed.html#PREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0A%23defaultView%3AMap%0ASELECT%20%3Fzoo%20%3Fname%20%3Floc%20%3Fzoowd%20%3Fimage%0AWHERE%20%7B%0A%20%20%20%3Fzoo%20osmt%3Atourism%20%22zoo%22%3B%0A%20%20%20%20%20%20osmm%3Aloc%20%3Floc%20%3B%0A%20%20%20%20%20%20osmt%3Aname%20%3Fname%20.%0A%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%3Fzoo%20osmt%3Awikidata%20%3Fzoowd%20.%0A%20%20%20%20%20SERVICE%20%3Chttps%3A%2F%2Fquery.wikidata.org%2Fsparql%3E%20%7B%0A%20%20%20%20%20%20%20%3Fzoowd%20wdt%3AP18%20%3Fimage%0A%20%20%20%20%20%7D%0A%20%20%20%7D%0A%7D), ale chvíli počkejte, bude se chvíli počítat. Můžete si pak zkusit najít např. Zoologickou zahradu hl. m. Prahy.
 
-![Pohled na znalostní graf Wikidata s 8 vybranými českými filmy a lidmi, kteří je vytvořili](./znalostní-grafy/znalostní-grafy-01-top-8-českých-filmů-ve-znalostním-grafu.png)
+![Pohled na znalostní graf Wikidata s 8 vybranými českými filmy a lidmi, kteří je vytvořili](./znalostní-grafy/znalostní-grafy-01-osm-wikidata-zoo.png)
 
 Existují i doménově zaměřené znalostní grafy. Např. v oblasti bioinformatiky vznikaly znalostní grafy ještě dříve, než byl pojem znalostních grafů zaveden. Následujcí seznam uvádí několik příkladů volně dostupných znalostních grafů z této oblasti:
 

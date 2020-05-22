@@ -1,10 +1,10 @@
 ---
 layout: post
 detail: true
-title: Znalostní grafy - úvod
+title: Série: Znalostní grafy: Díl 1: úvod
 ref: znalostni-grafy-uvod
 lang: cs
-image: ../attachments/znalostní-grafy/znalostní-grafy-01.png
+image: ../attachments/články/znalostní-grafy/znalostní-grafy-01.png
 author: martin_nečaský
 date: 2020-04-23 07:00:00 +02:00
 ---

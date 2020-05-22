@@ -1,7 +1,7 @@
 ---
 layout: post
 detail: true
-title: Série: Znalostní grafy: Díl 1: úvod
+title: "Série: Znalostní grafy: Díl 1: Úvod"
 ref: znalostni-grafy-uvod
 lang: cs
 image: ../attachments/články/znalostní-grafy/znalostní-grafy-01.png

@@ -6,7 +6,7 @@ ref: znalostni-grafy-uvod
 lang: cs
 image: ../attachments/články/znalostní-grafy/znalostní-grafy-01.png
 author: martin_nečaský
-date: 2020-04-23 07:00:00 +02:00
+date: 2020-06-08 07:00:00 +02:00
 ---
 
 V květnu 2012 začal Google používat pojem *Knowledge Graph* (česky *znalostní graf*) pro označení svojí znalostní báze, kterou používá pro doplňování výsledků vyhledávání. Od té doby se pojem rozšířil do řady oblastí a zasáhl i do světa otevřených dat. V tomto seriálu si znalostní grafy představíme a podíváme se, jak lze s nimi strojově pracovat a jaké mohou najít uplatnění a dokonce jej již nachází ve světě otevřených dat.
@@ -14,21 +14,21 @@ V květnu 2012 začal Google používat pojem *Knowledge Graph* (česky *znalost
 
 ## Co je znalostní graf?
 
-Začali jsme u Googlu a ještě u něj chvíli zůstaneme. Znalostní báze, pro kterou Google v květnu 2012 použil pojem znalostní graf, je tvořena záznamy, které popisují entity reálného světa jako jsou např. osoby nebo místa, a vztahy mezi entitami jako např. vztah mezi manželi či rodiči a jejich dětmi. Při používání vyhledávače Google se můžete na znalostní graf Google snadno podívat. Zkuste v anglické verzi vyhledávače Google zadat dotaz *'Husband of Marie Curie'* (bohužel česká verze Google nepřipojuje k výsledkům vyhledávání výpis ze znalostního grafu). Kromě webových stránek spojených se zadaným vyhledávacím dotazem uvidíte i strukturovanou informaci o Pierrovi Curie, manželovi Marie Curie, zobrazenou na následujícím obrázku.
+Začali jsme u Googlu a ještě u něj chvíli zůstaneme. Znalostní báze, pro kterou Google v květnu 2012 použil pojem znalostní graf, je tvořena záznamy, které popisují entity reálného světa, jako jsou např. osoby nebo místa, a vztahy mezi entitami jako např. vztah mezi manželi či rodiči a jejich dětmi. Při používání vyhledávače Google se můžete na znalostní graf Google snadno podívat. Zkuste v anglické verzi vyhledávače Google zadat dotaz *'Husband of Marie Curie'* (bohužel česká verze Google nepřipojuje k výsledkům vyhledávání výpis ze znalostního grafu). Kromě webových stránek spojených se zadaným vyhledávacím dotazem uvidíte i strukturovanou informaci o Pierrovi Curie, manželovi Marie Curie, zobrazenou na následujícím obrázku.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/znalostní-grafy-01-pierre-curie-google.png"
    description="Strukturovaný výsledek na dotaz 'Husband of Marie Curie' vrácený vyhledávačem Google z jeho znalostního grafu"
 %}
 
-V zobrazeném strukturovaném výsledku vidíte údaje o Pierrovi Curie a také odkazy na související entity. Např. na jeho manželku, děti, objevy nebo ocenění, které získal. Na vybranou entitu lze kliknout a získat strukturované zobrazení jejích údajů včetně dalších vztažených entit tak, jak jsou reprezentovány ve znalostním grafu Google. Např. si můžeme vybrat *Nobelovu cenu za fyziku* a tak se vlastně ve znalostním grafu přesunout na jiné místo.
+V zobrazeném strukturovaném výsledku vidíte údaje o Pierrovi Curie a také odkazy na související entity. Např. na jeho manželku, děti, objevy nebo ocenění, která získal. Na vybranou entitu lze kliknout a získat strukturované zobrazení jejích údajů včetně dalších vztažených entit tak, jak jsou reprezentovány ve znalostním grafu Google. Např. si můžeme vybrat *Nobelovu cenu za fyziku* a tak se vlastně ve znalostním grafu přesunout na jiné místo.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/znalostní-grafy-01-nobelova-cena-fyzika-google.png"
    description="Strukturované údaje o Nobelově ceně za fyziku ve znalostním grafu Google"
 %}
 
-Pohledy na entity, které jsme viděli, a přechod z jedné entity na druhou prostřednitvím souvislosti mezi nimi, nás přibližuje k významu slova *graf*. Nemá význam ve smyslu např. sloupcového nebo koláčového diagramu, který používáme pro vizualizaci statistických ukazatelů. Znamená datovou strukturu pocházející ze světa matematiky označovanou také pojmem *graf*. Matematický graf je tvořen *uzly*, které jsou propojeny *hranami*. Znalostní graf reprezentuje každou entitu reálného světa právě jako uzel v grafu. Vztahy mezi entitami jsou pak reprezentovány jako hrany v grafu. Hrany jsou označeny názvem reprezentovaného vztahu. Informace, kterou ukazují předchozí obrázky z výsledků vyhledávání na anglickém Google, jsou tak ve skutečnosti reprezentovány ve struktuře matematického grafu podobné té zobrazené na následujícím obrázku.
+Pohledy na entity, které jsme viděli, a přechod z jedné entity na druhou prostřednitvím souvislosti mezi nimi nás přibližuje k významu slova *graf*. Nemá význam ve smyslu např. sloupcového nebo koláčového diagramu, který používáme pro vizualizaci statistických ukazatelů. Znamená datovou strukturu pocházející ze světa matematiky označovanou také pojmem *graf*. Matematický graf je tvořen *uzly*, které jsou propojeny *hranami*. Znalostní graf reprezentuje každou entitu reálného světa právě jako uzel v grafu. Vztahy mezi entitami jsou pak reprezentovány jako hrany v grafu. Hrany jsou označeny názvem reprezentovaného vztahu. Informace, kterou ukazují předchozí obrázky z výsledků vyhledávání na anglickém Google, jsou tak ve skutečnosti reprezentovány ve struktuře matematického grafu podobné té zobrazené na následujícím obrázku.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/znalostní-grafy-01-curieovi-ve-znalostním-grafu.png"
@@ -52,7 +52,7 @@ V prostředí otevřených dat je v současnosti nejvýraznějším znalostním 
    description="Pohled na znalostní graf Wikidata s 8 vybranými českými filmy a lidmi, kteří je vytvořili"
 %}
 
-Existují i další iniciativy, ve kterých vznikají znalostní grafy. Wikidata není jediným veřejně dostupným znalostním grafem, který není doménově zaměřen. Mezi další obecné veřejné znalostní grafy patří např. znalostní graf [DBpedia][link_dbpedia], který je vytvářen vytěžováním strukturovaných dat z Wikipedie, nebo znalostní graf [KBpedia][link_kbpedia], který integruje jiné znalostní grafy, mimo jiné i Wikidata a DBpedia. Do kategorie obecných znalostních grafů patří také geografické znalostní grafy, které reprezentují místa na mapě v podobě znalostního grafu. Z této oblasti zmiňme zajímavý znalostní graf [Sophox][link_sophox], který zpřístupňuje obsah známé databáze [OpenStreetMap][link_osm] jako znalostní graf.
+Existují i další iniciativy, ve kterých vznikají znalostní grafy. Wikidata nejsou jediným veřejně dostupným znalostním grafem, který není doménově zaměřen. Mezi další obecné veřejné znalostní grafy patří např. znalostní graf [DBpedia][link_dbpedia], který je vytvářen vytěžováním strukturovaných dat z Wikipedie, nebo znalostní graf [KBpedia][link_kbpedia], který integruje jiné znalostní grafy, mimo jiné i Wikidata a DBpedia. Do kategorie obecných znalostních grafů patří také geografické znalostní grafy, které reprezentují místa na mapě v podobě znalostního grafu. Z této oblasti zmiňme zajímavý znalostní graf [Sophox][link_sophox], který zpřístupňuje obsah známé databáze [OpenStreetMap][link_osm] jako znalostní graf.
 
 Jak uvidíme v dalších částech tohoto seriálu, výhodou znalostních grafů je snadnost jejich vzájemného propojování. Často již dokonce propojené jsou. Zde si uveďme pouze jednoduchý příklad využívající propojení znalostního grafu OpenStreetMap Sophox se znalostním grafem Wikidata. Příklad zobrazuje na mapě všechny zoologické zahrady světa podle databáze OpenStreetMap a jejich fotografie uváděné ve znalostním grafu Wikidata. Můžete si jej [pustit naživo][zoo], ale chvíli to bude trvat, protože se bude nějakou dobu počítat. Můžete si pak zkusit najít např. Zoologickou zahradu hl. m. Prahy.
 
@@ -73,8 +73,8 @@ Znalostní grafy jsou v posledních letech oblíbené také v oblasti kultury a 
 
  * [Smithsonian American Art Museum][link_saam] zpřístupňuje metadatovou znalostní bázi o umělcích a uměleckých dílech jako znalostní graf
  * [Rijksdienst voor het Cultureel Erfgoed][link_rce], holandská státní agentura kulturního dědictví zpřístupňuje metadata o holandském kulturním dědictví jako znalostní graf
- * [Europeana][link_europeana] sdružuje metadata o evropském kulturním dědictví z evropských muzeí, galerií, knihoven a acrhivů a zpřístupňuje je i v podobě znalostního grafu
- * [Getty Research Institute][link_getty] zpřístupňuje v podobě znalostního grafu strukturované slovníky a data o umění a architetuře
+ * [Europeana][link_europeana] sdružuje metadata o evropském kulturním dědictví z evropských muzeí, galerií, knihoven a archivů a zpřístupňuje je i v podobě znalostního grafu
+ * [Getty Research Institute][link_getty] zpřístupňuje v podobě znalostního grafu strukturované slovníky a data o umění a architektuře
  * [Linked Jazz][link_linkedjazz] reprezentuje jazzovou historii jako znalostní graf
 
 Znalostní grafy z příkladů výše jsou poskytovány jako otevřená data, tj. pod svobodnými podmínkami užití ve strojově čitelných a otevřených formátech. Poskytovat otevřená data v podobě znalostního grafu sice není ještě zcela běžné, ale počet příkladů roste a především díky znalostním grafům, jako jsou [Wikidata][link_wikidata], [DBpedia][link_dbpedia] nebo [Sophox][link_sophox] zajímavě roste i množství dat dostupných v této podobě.
@@ -96,9 +96,9 @@ Zkusme se teď jenom namátkou na nějaký uzel znalostního grafu registru prá
    description="Pohled na okolí agendy ve znalostním grafu registru práv a povinností"
 %}
 
-Červené obdelníky s kulatými rohy reprezentují orgány veřejné moci. Žluté pětiúhelníky reprezentují agendy. Světle hnědé šestiúhelníky reprezentují činnosti v rámci agendy. Zelené hvězdy potom reprezentují údaje, které orgán veřejné moci čte při výkonu agendy z jiných agend. Obrázek nám tak např. ukazuje, že úřady vykonávající agendu *"Ochrana chmele"* čtou při výkonu jejich činnosti údaje o osobách ze základního registru osob. Osobami v základním registru nejsou občané, ale subjekty, kterým bylo přiděleno IČ. Jedná se tak zjednodušeně řečeno o právnické a podnikající fyzické osoby.
+Červené obdélníky s kulatými rohy reprezentují orgány veřejné moci. Žluté pětiúhelníky reprezentují agendy. Světle hnědé šestiúhelníky reprezentují činnosti v rámci agendy. Zelené hvězdy potom reprezentují údaje, které orgán veřejné moci čte při výkonu agendy z jiných agend. Obrázek nám tak např. ukazuje, že úřady vykonávající agendu *"Ochrana chmele"* čtou při výkonu jejich činností údaje o osobách ze základního registru osob. Osobami v základním registru nejsou občané, ale subjekty, kterým bylo přiděleno IČ. Jedná se tak zjednodušeně řečeno o právnické a podnikající fyzické osoby.
 
-Druhým znalostním grafem, který můžeme v Národním katalogu otevřených dat najít, je zlatostní graf popisující jeho samotný obsah, tj. katalogizační záznamy v něm vedené. Obsah Národního katalogu otevřených dat je v Národním katalogu otevřených dat katalogizován jako [jedna datová sada][nkod_znalostní_graf]. Údaje datové sady jsou reprezentovány dle evropského standardu [DCAT-AP][link_dcatap], který požaduje reprezentaci katalogizačních záznamů právě v podobě znalostního grafu.
+Druhým znalostním grafem, který můžeme v Národním katalogu otevřených dat najít, je znalostní graf popisující jeho samotný obsah, tj. katalogizační záznamy v něm vedené. Obsah Národního katalogu otevřených dat je v Národním katalogu otevřených dat katalogizován jako [jedna datová sada][nkod_znalostní_graf]. Údaje datové sady jsou reprezentovány dle evropského standardu [DCAT-AP][link_dcatap], který požaduje reprezentaci katalogizačních záznamů právě v podobě znalostního grafu.
 
 Zkusme se podívat, jak jsou jednotlivé katalogizační záznamy evidované v Národním katalogu otevřených dat reprezentovány ve znalostním grafu. Není k tomu potřeba stahovat datovou sadu s obsahem Národního katalogu otevřených dat. Využijeme jednoduchého systému URL. Zkuste si v Národním katalogu otevřených dat najít datovou sadu [*"Volby do Poslanecké sněmovny Parlamentu ČR 2017 - celkové výsledky za ČR a kraje"*][volby_do_PS]. Vedle názvu datové sady na stránce s jejím detailem uvidíte symbol odkazu, viz následující obrázek.
 
@@ -107,7 +107,7 @@ Zkusme se podívat, jak jsou jednotlivé katalogizační záznamy evidované v N
    description="Pohled na okolí agendy ve znalostním grafu Národního katalogu otevřených dat"
 %}
 
-Klikněte na tento symbol. Dostanete se na lidsky čitelný výpis uzlu reprezentujícího datovou sadu ve znalostním grafu Národního katalogu otevřených dat. Podobně jako v předchozích příkladech můžete od tohoto místa začít znalostní graf procházet. Opět můžeme znalostní graf i vizualizovat. Např. následující obrázek ukazuje vizualizaci pro zvoleného poskytovatele, *Český statistický úřad* datové katalogy, ve kterých katalogizuje svoje datové sady.
+Klikněte na tento symbol. Dostanete se na lidsky čitelný výpis uzlu reprezentujícího datovou sadu ve znalostním grafu Národního katalogu otevřených dat. Podobně jako v předchozích příkladech můžete od tohoto místa začít znalostní graf procházet. Opět můžeme znalostní graf i vizualizovat. Např. následující obrázek ukazuje vizualizaci pro zvoleného poskytovatele, *Český statistický úřad*, datové katalogy, ve kterých katalogizuje svoje datové sady.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/znalostní-grafy-01-nkod-rpp-csu.png"

@@ -128,7 +128,7 @@ Tento článek slouží jako úvod do světa znalostních grafů. Ukázali jsme 
 [link_dbpedia]: https://wiki.dbpedia.org/ "DBpedia"
 [link_kbpedia]: https://kbpedia.org/ "KBpedia"
 [link_sophox]: https://wiki.openstreetmap.org/wiki/Sophox "Sophox"
-[zoo]: https://sophox.org/embed.html#PREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0A%23defaultView%3AMap%0ASELECT%20%3Fzoo%20%3Fname%20%3Floc%20%3Fzoowd%20%3Fimage%0AWHERE%20%7B%0A%20%20%20%3Fzoo%20osmt%3Atourism%20%22zoo%22%3B%0A%20%20%20%20%20%20osmm%3Aloc%20%3Floc%20%3B%0A%20%20%20%20%20%20osmt%3Aname%20%3Fname%20.%0A%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%3Fzoo%20osmt%3Awikidata%20%3Fzoowd%20.%0A%20%20%20%20%20SERVICE%20%3Chttps%3A%2F%2Fquery.wikidata.org%2Fsparql%3E%20%7B%0A%20%20%20%20%20%20%20%3Fzoowd%20wdt%3AP18%20%3Fimage%0A%20%20%20%20%20%7D%0A%20%20%20%7D%0A%7D) "Zoologické zahrady"
+[zoo]: https://sophox.org/embed.html#PREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0A%23defaultView%3AMap%0ASELECT%20%3Fzoo%20%3Fname%20%3Floc%20%3Fzoowd%20%3Fimage%0AWHERE%20%7B%0A%20%20%20%3Fzoo%20osmt%3Atourism%20%22zoo%22%3B%0A%20%20%20%20%20%20osmm%3Aloc%20%3Floc%20%3B%0A%20%20%20%20%20%20osmt%3Aname%20%3Fname%20.%0A%20%20%20OPTIONAL%20%7B%0A%20%20%20%20%20%3Fzoo%20osmt%3Awikidata%20%3Fzoowd%20.%0A%20%20%20%20%20SERVICE%20%3Chttps%3A%2F%2Fquery.wikidata.org%2Fsparql%3E%20%7B%0A%20%20%20%20%20%20%20%3Fzoowd%20wdt%3AP18%20%3Fimage%0A%20%20%20%20%20%7D%0A%20%20%20%7D%0A%7D "Zoologické zahrady"
 [link_osm]: https://wiki.openstreetmap.org/ "OpenStreetMap"
 [link_gene_ontology]: http://geneontology.org/ "Gene Ontology"
 [link_nci_thesaurus]: https://ncit.nci.nih.gov/ncitbrowser/pages/home.jsf?version=20.05a "NCI Thesaurus"

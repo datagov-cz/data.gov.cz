@@ -126,7 +126,7 @@ A existují i slovníky, které se snaží postihnout celý svět nebo jeho výz
 * [bioschemas.org](https://bioschemas.org/) - slovník pro znalostní grafy v oblasti life sciences
 * [ISA Core Vocabularies](https://ec.europa.eu/isa2/solutions/core-vocabularies_en) - sada slovníků pro zajištění interoperability mezi informačními systémy veřejné správy v EU
 
-Každý slovník definuje seznam vlastností a jejich IRI. Pro každou vlastnost typicky definuje její název a popis a také jaké typy uzlů mohou tyto vlastnosti mít a co může být jejich hodnotou. Slovník je tak možná až příliš zjednodušující pojem, protože má také charakter datového schématu. Jak taková definice vypadá technicky si ukážeme v jiném dílu našeho seriálu.
+Každý slovník definuje seznam vlastností a jejich IRI. Pro každou vlastnost typicky definuje její název a popis a také jaké typy uzlů mohou tyto vlastnosti mít a co může být jejich hodnotou. Slovník je tak možná až příliš zjednodušující pojem, protože má také charakter datového schématu. Jak taková definice vypadá technicky si opět ukážeme v jiném dílu našeho seriálu.
 
 Pojďme teď některé z výše uvedených slovníků použít, abychom konečně došli ke správnému vyjádření našeho příkladu v modelu RDF. Pokud se podíváte do slovníku [schema.org](https://schema.org), který má i jednoduché uživatelské rozhraní pro jeho procházení, naleznete v něm definici vlastnosti s IRI [`https://schema.org/name`](https://schema.org/name). Vlastnost je definována jako univerzální vlastnost pro specifikaci jmen a názvů věcí. Můžeme jí tak použít pro vyjádření názvu ČSÚ. Výsledná RDF trojice tak bude vypadat následovně.
 

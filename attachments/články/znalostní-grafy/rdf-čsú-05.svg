@@ -28,15 +28,13 @@
       <text x="913.2637" y="319.7139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">https://data.gov.cz/zdroj/datové-schránky/2gfaasy</text>
       <ellipse rx="171" fill="none" ry="18" clip-path="url(#clipPath2)" cx="1005" cy="381"/>
       <text x="881.2764" y="385.7139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">https://data.gov.cz/zdroj/ovm/právní-forma/325</text>
-      <rect fill="none" x="834" width="138.8" height="30" y="228.4093" clip-path="url(#clipPath2)"/>
-      <text x="843.2535" y="248.1232" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">"Český statistický úřad</text>
+      <text x="829.0328" y="248.1232" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">"Český statistický úřad"@cs</text>
       <ellipse clip-path="url(#clipPath2)" fill="none" rx="171" cx="236.8" ry="18" cy="94.4" stroke="rgb(255,153,0)"/>
       <text x="80.0207" y="99.1139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">https://rpp-opendata.egon.gov.cz/odrpp/zdroj/agenda/A687</text>
       <ellipse clip-path="url(#clipPath2)" fill="none" rx="171" cx="411" ry="18" cy="28.4" stroke="rgb(255,153,0)"/>
       <text x="254.2207" y="33.1139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">https://rpp-opendata.egon.gov.cz/odrpp/zdroj/agenda/A688</text>
       <ellipse clip-path="url(#clipPath2)" fill="none" rx="171" cx="699" ry="18" cy="84.4" stroke="rgb(153,51,102)"/>
       <text x="537.583" y="89.1139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">https://linked.cuzk.cz/resource/ruian/adresni-misto/25852213</text>
-      <rect x="870" y="6.4" clip-path="url(#clipPath2)" fill="none" width="294.8" height="30" stroke="rgb(153,51,102)"/>
       <text x="875.691" y="26.1139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">"POINT(14.507664872462017 50.06974511746305)"</text>
       <ellipse clip-path="url(#clipPath2)" fill="none" rx="218" cx="447" ry="18" cy="234" stroke="rgb(255,153,0)"/>
       <text x="245.8711" y="238.7139" clip-path="url(#clipPath2)" fill="black" font-family="sans-serif" stroke="none" xml:space="preserve">https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593</text>
@@ -61,8 +59,8 @@
       <text x="2" xml:space="preserve" y="12.0537" clip-path="url(#clipPath3)" stroke="none">https://data.gov.cz/slovník/ovm/právníForma</text>
     </g>
     <g stroke-linecap="butt" transform="matrix(1,0,0,1,-60,-1)" fill="rgb(153,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(153,204,0)" stroke-miterlimit="1.45">
-      <path fill="none" d="M546.8576 300.7176 L826.1014 255.8338" clip-path="url(#clipPath2)"/>
-      <path d="M834 254.5642 L821.3586 251.5319 L825.1141 255.9924 L822.9456 261.4052 Z" clip-path="url(#clipPath2)" stroke="none"/>
+      <path fill="none" d="M546.8576 300.7176 L815.5014 257.5375" clip-path="url(#clipPath2)"/>
+      <path d="M823.4 256.268 L810.7586 253.2357 L814.5141 257.6962 L812.3456 263.1089 Z" clip-path="url(#clipPath2)" stroke="none"/>
     </g>
     <g font-size="10px" stroke-linecap="butt" transform="matrix(0.9877,-0.1564,0.1564,0.9877,592.0041,264.1048)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
       <text x="2" xml:space="preserve" y="12.0537" clip-path="url(#clipPath4)" stroke="none">https://schema.org/name</text>
@@ -74,9 +72,9 @@
     <g font-size="10px" stroke-linecap="butt" transform="matrix(1,0,0,1,-60,-1)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
       <text x="694.8926" xml:space="preserve" y="47.2395" clip-path="url(#clipPath2)" stroke="none">http://www.w3.org/ns/locn#geometry</text>
     </g>
-    <g stroke-linecap="butt" transform="matrix(1,0,0,1,-60,-1)" fill="rgb(153,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke="rgb(153,204,0)" stroke-miterlimit="1.45">
-      <path fill="none" d="M455.5559 297.0025 L450.5208 259.9261" clip-path="url(#clipPath2)"/>
-      <path d="M449.4443 251.9989 L446.1046 264.5626 L450.6554 260.917 L456.0136 263.2169 Z" clip-path="url(#clipPath2)" stroke="none"/>
+    <g stroke-linecap="butt" transform="matrix(1,0,0,1,-60,-1)" fill="rgb(153,204,0)" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" stroke-dasharray="12,4" stroke="rgb(153,204,0)" stroke-width="2" stroke-miterlimit="1.45">
+      <path fill="none" d="M455.5559 297.0025 L450.6554 260.917" clip-path="url(#clipPath2)"/>
+      <path d="M449.4443 251.9989 L445.6871 266.133 L450.8068 262.0318 L456.8348 264.6192 Z" clip-path="url(#clipPath2)" stroke="none"/>
     </g>
     <g font-size="10px" stroke-linecap="butt" transform="matrix(1,0,0,1,-60,-1)" text-rendering="geometricPrecision" font-family="sans-serif" shape-rendering="geometricPrecision" stroke-miterlimit="1.45">
       <text x="267.0669" xml:space="preserve" y="281.3282" clip-path="url(#clipPath2)" stroke="none">http://www.w3.org/2002/07/owl#sameAs</text>

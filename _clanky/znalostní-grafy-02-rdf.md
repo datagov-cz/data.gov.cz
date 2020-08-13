@@ -28,7 +28,7 @@ RDF reprezentuje data v podobě grafu tvořeného uzly a hranami, které je prop
 Je tedy přirozené jej použít i jako model pro strojovou reprezentaci znalostních grafů, které chceme sdílet na webu.
 Není jediným modelem používaným pro reprezentaci znalostních grafů.
 Oblíbeným je pro reprezentaci znalostních grafů také *property graph model*, který ale není modelem určeným pro sdílení dat na webu, ale spíše databázovým modelem podporovaným mnoha grafovými databázemi.
-Více si o tomto databázovém modelu a jeho souvislostech s modelem RDF řekneme v jiném díle tohoto seriálu.
+Více si o tomto databázovém modelu a jeho souvislostech s modelem RDF řekneme v jiném dílu tohoto seriálu.
 V tomto dílu se zaměříme na model RDF.
 
 ### Identifikace uzlů pomocí IRI
@@ -54,7 +54,7 @@ Uvažme například znalostní graf Národního katalogu otevřených dat, kter�
 Jako uzel je v něm reprezentován Český statistický úřad (ČSÚ) jako orgán veřejné moci, který poskytuje otevřená data.
 Uzel má přiřazen IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593).
 K IRI můžete přistoupit (klikněte na něj).
-Váš prohlížeč prostřednictvím HTTP protokolu IRI vyhledá v prostředí webu a získá počítačovou reprezentaci ČSÚ dostupnou na serveru lokalizovaným s pomocí tohoto IRI.
+Váš prohlížeč prostřednictvím HTTP protokolu IRI vyhledá v prostředí webu a získá počítačovou reprezentaci ČSÚ dostupnou na serveru lokalizovaném s pomocí tohoto IRI.
 Záměrně neříkáme, že získá věc jako takovou, ale jen její reprezentaci.
 Protože samozřejmě přistoupením k IRI nezískáte ČSÚ jako takový, ale reprezentaci nějakých údajů o ČSÚ, které jsou na příslušném serveru o ČSÚ vedeny.
 Díky HTTP protokolu ještě probíhá zajímavá komunikace mezi vaším prohlížečem a serverem, kterou nazýváme *HTTP content negotiation*, kdy váš prohlížeč požaduje od serveru reprezentaci ČSÚ v konkrétním počítačovém formátu.
@@ -181,7 +181,7 @@ Opět je zde paralela s lidským jazykem.
 Řekne-li někdo "má název", rozumíte významu takového sousloví, protože použil slova z jazyka, který znáte, tj. z češtiny.
 Řekne-li ale "tiene un nombre", možná už nerozumíte, protože použil slova ze španělštiny.
 Řekne-li "एक नाव आहे", pravděpodobně sáhnete po překladači.
-Mimochodem jedná se o [Maráthštinu](https://www.wikidata.org/wiki/Q1571) (a mimochodem tento odkaz využívá znalostní graf Wikidata k anotaci textu, čímž jej zajímavě obohacuje, ale o tom až v nějakém jiném dílu našeho seriálu).
+Mimochodem, jedná se o [Maráthštinu](https://www.wikidata.org/wiki/Q1571) (a mimochodem tento odkaz využívá znalostní graf Wikidata k anotaci textu, čímž jej zajímavě obohacuje, ale o tom až v nějakém jiném dílu našeho seriálu).
 
 Existují generické slovníky, které se hodí pro téměř jakýkoliv znalostní graf. Např.:
 
@@ -215,7 +215,7 @@ Jak taková definice vypadá technicky si opět ukážeme v jiném dílu našeho
 Pojďme teď některé z výše uvedených slovníků použít, abychom konečně došli ke správnému vyjádření našeho příkladu v modelu RDF.
 Pokud se podíváte do slovníku [schema.org](http://schema.org), který má i jednoduché uživatelské rozhraní pro jeho procházení, naleznete v něm definici vlastnosti s IRI [`http://schema.org/name`](http://schema.org/name).
 Vlastnost je definována jako univerzální vlastnost pro specifikaci jmen a názvů věcí.
-Můžeme jí tak použít pro vyjádření názvu ČSÚ. Výsledná RDF trojice tak bude vypadat následovně.
+Můžeme ji tak použít pro vyjádření názvu ČSÚ. Výsledná RDF trojice tak bude vypadat následovně.
 
 ~~~~~~
 <https://data.gov.cz/zdroj/ovm/00025593>   <http://schema.org/name>   "Český statistický úřad" .
@@ -249,8 +249,8 @@ Ano, existuje např. katalog [Linked Open Vocabularies (LOV)](https://lov.linked
 
 Když uvažujeme o věcech, často si je klasifikujeme podle jejich společných charakteristik.
 Rozlišujeme tak např. knihy, vozidla, organizace, zvířata nebo lidi.
-(Možná se divíte proč říkáme, že člověk je věc, ale chápejte prosím v kontextu tohoto článku pojem věc jako něco velmi obecného, ve smyslu cokoliv nebo kdokoliv.)
-Pokud o něčem víme, že je vozidlem pak o tom uvažujeme a přemýšlíme jinak, než pokud o něčem víme, že je organizací.
+(Možná se divíte, proč říkáme, že člověk je věc, ale chápejte prosím v kontextu tohoto článku pojem věc jako něco velmi obecného, ve smyslu cokoliv nebo kdokoliv.)
+Pokud o něčem víme, že je vozidlem, pak o tom uvažujeme a přemýšlíme jinak, než pokud o něčem víme, že je organizací.
 Klasifikace nám udává základní charakter dané věci.
 Znalost základního charakteru je důležitá i pro strojové zpracování, abychom danou věc interpretovali a zpracovali správně.
 V modelu RDF tuto základní klasifikaci věcí provádíme pomocí přiřazování věcí do tzv. *tříd*.
@@ -293,7 +293,7 @@ Při publikaci na webu je pak doporučováno používat IRI, která jsou zárove
 To umožňuje standardními nástroji IRI dereferencovat, tj. na bázi protokolu HTTP je vyhledávat a získávat jejich reprezentaci.
 Jak jsme již psali výše, na každé IRI uvedené v příkladech výše můžete ze svého prohlížeče přistoupit a dereferencovat jej.
 
-Hlavní výhodou modelu RDF je většinou uvádněna jeho flexibilita.
+Jako hlavní výhoda modelu RDF je většinou uváděna jeho flexibilita.
 Máme-li IRI věci, můžeme o ní vyjádřit v podobě RDF trojice jakékoliv tvrzení nezávisle na tom, jaká jiná tvrzení jsme my nebo někdo jiný o věci vyjádřili.
 Jednoduše přidáme novou trojici nebo trojice.
 Protože reprezentace tvrzení v RDF modelu není vázaná žádným schématem, není nutné cokoliv kvůli přidání nových trojic měnit.
@@ -352,7 +352,7 @@ Přímo v datech tato informace obsažena není.
 V modelu RDF je naopak možné ji zaznamenat přímo jako součást dat stejně jako jakékoliv jiné tvrzení a to v podobě trojice s predikátem, který je k tomu přímo určený.
 Jedná se o predikát [`http://www.w3.org/2002/07/owl#sameAs`](http://www.w3.org/2002/07/owl#sameAs) ze slovníku OWL.
 Pomocí něj vyjádříme, že dva různé uzly identifikované různými IRI ve skutečnosti reprezentují tutéž věc.
-Situaci, kdy oba znalostní grafy identifikují ČSÚ jiným IRI ukazuje následující obrázek.
+Situaci, kdy oba znalostní grafy identifikují ČSÚ jiným IRI, ukazuje následující obrázek.
 Trojice vyjadřující, že obě IRI reprezentují ČSÚ, je součástí znalostního grafu Národního katalogu otevřených dat.
 
 {% include image.html 
@@ -386,7 +386,7 @@ Příslušná vizuální hrana je na obrázku zobrazena jako modrá přerušovan
 
 ### Formáty pro zápis RDF modelu
 
-Výše uvedený zápis je již validní zápisem vyjádření dat v RDF modelu.
+Výše uvedený zápis je již validním zápisem vyjádření dat v RDF modelu.
 RDF model ale můžeme zapsat v různých formátech.
 Pojďme se ve zbytku článku podívat na 2 nejčastěji používané formáty pro zápis znalostních grafů vyjádřených v modelu RDF.
 
@@ -396,7 +396,7 @@ Výše uvedené příklady byly vyjádřeny ve formátu [Turtle][turtle].
 Formát Turtle ale zavádí tzv. "syntaktický cukr", který zápis RDF trojic významně zkracuje.
 Prvním vylepšením je, že RDF trojice se stejným subjektem, tj. tvrzení o stejné věci, můžeme seskupit a subjekt uvést pouze jednou.
 Zbylé dvojice s predikátem a objektem oddělujeme středníkem.
-Další seskupení můžeme provést v případě trojic se stejným subjektem i predikátem tak, že objekty uvídme oddělené čárkou.
+Další seskupení můžeme provést v případě trojic se stejným subjektem i predikátem tak, že objekty uvádíme oddělené čárkou.
 Výsledná notace je potom následující.
 
 ~~~~~~
@@ -410,7 +410,7 @@ Výsledná notace je potom následující.
 Dále je možné využít *prefixování*, abychom nemuseli v IRI vypisovat jejich opakující se části.
 Prefix umožňuje zkrátit všechna IRI se stejným začátkem tak, že místo opakujícího se začátku uvedeme identifikátor prefixu.
 Prefix je deklarován přímo jako součást zápisu RDF trojic.
-Následující příkad zavedení a využití prefixů demonstruje.
+Následující příklad zavedení a využití prefixů demonstruje.
 Jedná se o zápis stejných dat, jako v předchozím příkladu.
 
 ~~~~~~
@@ -484,7 +484,7 @@ ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19  dct:publisher ovm:0002
 
 Distribuce znalostních grafů ve formátu Turtle je vhodná např. pro situace, kdy chceme umožnit konzumentům pohodlné nahrání dat do jejich grafové databáze.
 Formát ale nevyhovuje všem.
-Např. v prostředí webových aplikací často vytvářených s využitím jazyka JavaScript se někteří programátoři s formátem Turtle neztotožňují a tvrdošijně trvají na svém formátu pro výměnu dat prostřednictvím API, kterým je formát JSON.
+Např. v prostředí webových aplikací často vytvářených s využitím jazyka JavaScript se někteří programátoři s formátem Turtle neztotožňují a tvrdošíjně trvají na svém formátu pro výměnu dat prostřednictvím API, kterým je formát JSON.
 RDF komunita vyšla tomuto požadavku vstříc a zavedla formát pro serializaci dat v RDF modelu JSON-LD.
 Zápis RDF dat ve formátu JSON-LD má dvě části.
 Jednou částí je reprezentace dat ve standardním formátu JSON.
@@ -497,7 +497,7 @@ Uveďme si pouze příklad zápisu znalostního grafu v RDF modelu z našeho př
 Na následujícím příkladu vidíte standardní JSON strukturu.
 Vidíte běžnou JSON strukturu.
 Snad jen klíče `@id` a `@type` vám mohou připadat nezvyklé.
-Ty JSON-LD potřebuje k rozpoznání IRI věci, o níž data v JSON zápisu zapisujeme a k rozpoznání IRI typů.
+Ty JSON-LD potřebuje k rozpoznání IRI věci, o níž data v JSON zápisu zapisujeme, a k rozpoznání IRI typů.
 Pokud vám v klíčích vadí `@`, můžete je v kontextu přejmenovat.
 
 ~~~~~~
@@ -545,7 +545,7 @@ Můžete si to [vyzkoušet na hřišti](https://json-ld.org/playground/#startTab
 
 ## Závěr
 
-Tento článek slouží jako úvod do modelu RDF, který podává jako model vhodný pro počítačově zpracovatelný zápis znalostních grafů vhodný pro publikaci na webu.
+Tento článek slouží jako úvod do modelu RDF. Ten je podán jako model hodící se pro počítačově zpracovatelný zápis znalostních grafů vhodný pro publikaci na webu.
 Ukázali jsme si principy modelu a také jeho výhody, které při jeho využití pro publikaci otevřených dat na webu získáme.
 Ukázali jsme si také 2 nejpoužívanější formáty pro jeho zápis.
 V dalším dílu si ukážeme, že data reprezentovaná v modelu RDF můžeme chápat databázově a dotazovat se nad nimi pomocí dotazovacího jazyka SPARQL.

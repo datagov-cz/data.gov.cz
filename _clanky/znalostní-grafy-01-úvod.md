@@ -4,7 +4,7 @@ detail: true
 title: "Série Znalostní grafy: Díl 1: Úvod"
 ref: znalostni-grafy-uvod
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-01.png
+image: ../attachments/články/znalostní-grafy/znalostní-grafy-01.jpg
 author: martin_nečaský
 date: 2020-06-08 07:00:00 +02:00
 ---

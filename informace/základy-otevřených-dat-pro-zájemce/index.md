@@ -62,7 +62,7 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
 ## Kdo již v České republice publikuje otevřená data?
   * [Poskytovatelé v Národním katalogu otevřených dat](https://data.gov.cz/poskytovatelé)
 
-> **Otevřná data neexistují ve vzduchoprázdnu, jsou součástí [systému pro otevřené vládnutí](https://opendata.gov.cz/informace:kontext:start).**
+> **Otevřená data neexistují ve vzduchoprázdnu, jsou součástí [systému pro otevřené vládnutí](https://opendata.gov.cz/informace:kontext:start).**
 
 ## Možný postup otevírání dat
   - [Rychle publikovat první datovou sadu](/otevřená-data-snadno-a-rychle/)

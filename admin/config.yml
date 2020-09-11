@@ -1,47 +1,48 @@
-# config.yml
-
 backend:
   name: github
   repo: opendata-mvcr/opendata-mvcr.github.io
-  branch: feature/netlify-cms # Branch to update (optional; defaults to master)
-media_folder: 'attachments'
+  branch: develop # Branch to update (optional; defaults to master)
+media_folder: '/attachments'
 site_url: https://pod-test.mvcr.gov.cz
-logo_url: https://data.gov.cz/images/logo.png
+logo_url: https://pod-test.mvcr.gov.cz/images/logo.png
 locale: 'cs'
 publish_mode: editorial_workflow
 collections:
   - name: 'news'
     label: 'Novinky'
+    label_singular: 'Novinka'
     folder: '_posts/'
     create: true
-    media_folder: '{{media_folder}}/články'
+    media_folder: '{{media_folder}}/články/{{year}}-{{month}}-{{day}}-{{slug}}'
+    public_folder: '{{public_folder}}/články/{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Detail', name: 'detail', widget: 'boolean' }
-      - { label: 'Reference', name: 'ref', widget: 'string' }
-      - { label: 'Language', name: 'lang', widget: 'string' }
-      - { label: 'Icon', name: 'icon', widget: 'string' }
-      - { label: 'Author', name: 'author', widget: 'string'}
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Název', hint: 'Název novinky', name: 'title', widget: 'string', required: true}
+      - { label: 'Detail', hint: 'Bude mít novinka samostatnou stránku? Pak je třeba abstrakt do přehledu oddělit pomocí <!--more-->', name: 'detail', widget: 'boolean', required: true, default: false}
+      - { label: 'Reference', hint: 'Unikátní řetězec pro spárování různých jazykových verzí novinky.', name: 'ref', widget: 'string', required: true}
+      - { label: 'Jazyk', name: 'lang', hint: 'Čeština cs, angličtina en', widget: 'string', required: true, default: 'cs' }
+      - { label: 'Ikonka', name: 'icon', widget: 'hidden', required: true, default: 'whatshot' }
+      - { label: 'Autor', name: 'author', hint: 'Identifikátor z https://github.com/opendata-mvcr/opendata-mvcr.github.io/blob/master/_data/authors.yml', widget: 'string'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'articles'
     label: 'Články'
+    label_singular: 'Článek'
     folder: '_clanky/'
     create: true
     media_folder: '{{media_folder}}/články/{{slug}}'
+    public_folder: '{{public_folder}}/články/{{slug}}'
     editor:
       preview: false
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Detail', name: 'detail', widget: 'boolean' }
-      - { label: 'Reference', name: 'ref', widget: 'string' }
-      - { label: 'Language', name: 'lang', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'string' }
-      - { label: 'Author', name: 'author', widget: 'string'}
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Název', hint: 'Název článku', name: 'title', widget: 'string' }
+      - { label: 'Detail', hint: 'Bude mít článek samostatnou stránku? Pak je třeba abstrakt do přehledu oddělit pomocí <!--more-->', name: 'detail', widget: 'boolean', default: true}
+      - { label: 'Reference', hint: 'Unikátní řetězec pro spárování různých jazykových verzí článku.', name: 'ref', widget: 'string' }
+      - { label: 'Jazyk', name: 'lang', hint: 'Čeština cs, angličtina en', widget: 'string', required: true, default: 'cs' }
+      - { label: 'Obrázek', hint: 'Obrázek zobrazený v přehledu článků.', name: 'image', widget: 'image', required: false}
+      - { label: 'Autor', name: 'author', hint: 'Identifikátor z https://github.com/opendata-mvcr/opendata-mvcr.github.io/blob/master/_data/authors.yml', widget: 'string'}
+      - { label: 'Datum publikace', hint: 'Musí být v minulosti', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

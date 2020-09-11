@@ -1,0 +1,45 @@
+# config.yml
+
+backend:
+  name: github
+  repo: opendata-mvcr/opendata-mvcr.github.io
+  branch: feature/netlify-cms # Branch to update (optional; defaults to master)
+media_folder: 'attachments/cms'
+site_url: https://pod-test.mvcr.gov.cz
+logo_url: https://data.gov.cz/images/logo.png
+locale: 'cs'
+publish_mode: editorial_workflow
+collections:
+  - name: 'news'
+    label: 'Novinky'
+    folder: '_posts/'
+    create: true
+    editor:
+      preview: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Detail', name: 'detail', widget: 'boolean' }
+      - { label: 'Reference', name: 'ref', widget: 'string' }
+      - { label: 'Language', name: 'lang', widget: 'string' }
+      - { label: 'Icon', name: 'icon', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string'}
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'articles'
+    label: 'Články'
+    folder: '_clanky/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Detail', name: 'detail', widget: 'boolean' }
+      - { label: 'Reference', name: 'ref', widget: 'string' }
+      - { label: 'Language', name: 'lang', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string'}
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

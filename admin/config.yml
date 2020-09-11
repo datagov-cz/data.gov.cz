@@ -5,6 +5,7 @@ backend:
 media_folder: '/attachments'
 site_url: https://pod-test.mvcr.gov.cz
 logo_url: https://pod-test.mvcr.gov.cz/images/logo.png
+base_url: https://pod-test.mvcr.gov.cz
 locale: 'cs'
 publish_mode: editorial_workflow
 collections:

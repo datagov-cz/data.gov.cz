@@ -23,9 +23,18 @@ collections:
       - { label: 'Název', hint: 'Název novinky', name: 'title', widget: 'string', required: true}
       - { label: 'Detail', hint: 'Bude mít novinka samostatnou stránku? Pak je třeba abstrakt do přehledu oddělit pomocí <!--more-->', name: 'detail', widget: 'boolean', required: true, default: false}
       - { label: 'Reference', hint: 'Unikátní řetězec pro spárování různých jazykových verzí novinky.', name: 'ref', widget: 'string', required: true}
-      - { label: 'Jazyk', name: 'lang', hint: 'Čeština cs, angličtina en', widget: 'string', required: true, default: 'cs' }
+      - label: 'Jazyk'
+        name: 'lang'
+        hint: 'Čeština cs, angličtina en'
+        widget: 'select'
+        options: [ 'cs', 'en' ]
+        required: true
+        default: 'cs'
       - { label: 'Ikonka', name: 'icon', widget: 'hidden', required: true, default: 'whatshot' }
-      - { label: 'Autor', name: 'author', hint: 'Identifikátor z https://github.com/opendata-mvcr/opendata-mvcr.github.io/blob/master/_data/authors.yml', widget: 'string'}
+      - label: 'Autor'
+        name: 'author'
+        widget: 'select'
+        options: [ 'jakub_klímek', 'michal_kubáň', 'jakub_malina', 'martin_nečaský', 'martin_víta', 'robert_spál', 'martin_dvořák', 'jiří_marek', 'michal_škop' ]
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'articles'
     label: 'Články'
@@ -41,8 +50,17 @@ collections:
       - { label: 'Název', hint: 'Název článku', name: 'title', widget: 'string' }
       - { label: 'Detail', hint: 'Bude mít článek samostatnou stránku? Pak je třeba abstrakt do přehledu oddělit pomocí <!--more-->', name: 'detail', widget: 'boolean', default: true}
       - { label: 'Reference', hint: 'Unikátní řetězec pro spárování různých jazykových verzí článku.', name: 'ref', widget: 'string' }
-      - { label: 'Jazyk', name: 'lang', hint: 'Čeština cs, angličtina en', widget: 'string', required: true, default: 'cs' }
+      - label: 'Jazyk'
+        name: 'lang'
+        hint: 'Čeština cs, angličtina en'
+        widget: 'select'
+        options: [ 'cs', 'en' ]
+        required: true
+        default: 'cs'
       - { label: 'Obrázek', hint: 'Obrázek zobrazený v přehledu článků.', name: 'image', widget: 'image', required: false}
-      - { label: 'Autor', name: 'author', hint: 'Identifikátor z https://github.com/opendata-mvcr/opendata-mvcr.github.io/blob/master/_data/authors.yml', widget: 'string'}
+      - label: 'Autor'
+        name: 'author'
+        widget: 'select'
+        options: [ 'jakub_klímek', 'michal_kubáň', 'jakub_malina', 'martin_nečaský', 'martin_víta', 'robert_spál', 'martin_dvořák', 'jiří_marek', 'michal_škop' ]
       - { label: 'Datum publikace', hint: 'Musí být v minulosti', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -4,7 +4,7 @@ backend:
   name: github
   repo: opendata-mvcr/opendata-mvcr.github.io
   branch: feature/netlify-cms # Branch to update (optional; defaults to master)
-media_folder: 'attachments/cms'
+media_folder: 'attachments'
 site_url: https://pod-test.mvcr.gov.cz
 logo_url: https://data.gov.cz/images/logo.png
 locale: 'cs'
@@ -14,6 +14,7 @@ collections:
     label: 'Novinky'
     folder: '_posts/'
     create: true
+    media_folder: '{{media_folder}}/články'
     editor:
       preview: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -31,6 +32,7 @@ collections:
     label: 'Články'
     folder: '_clanky/'
     create: true
+    media_folder: '{{media_folder}}/články/{{slug}}'
     editor:
       preview: false
     fields:

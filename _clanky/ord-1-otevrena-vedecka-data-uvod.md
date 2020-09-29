@@ -1,19 +1,18 @@
 ---
 layout: post
 detail: true
+title: "Otevřená vědecká data: Díl 1: Úvod"
+ref: ord-1-otevrena-vedecka-data-uvod
 lang: cs
-icon: list
-ref: ord_1_otevřená-vědecká-data-úvod
 author: jiří_marek
 date: 2020-09-25 08:00:00 +02:00
-title: Otevřená vědecká data: Díl 1: Úvod
 ---
 
 Otevřená data mají mnoho podob a objevují se v mnoha kontextech. Kromě otevřených dat veřejného sektoru, která představují základ celé otevřeně-datové rodiny, existují např. ještě otevřená data o životním prostředí. Posledním - i když ne úplně novým členem - této rodiny jsou tzv. "otevřená vědecká data" z anglického originálu "Open Research Data". V následujícím článku, který je další ze série seriálových článků se dozvíte o tom, co jsou to otevřená vědecká data, jak se jejich důležitost v průběhu pandemické situace výrazně zvýšila a zejména to, jak tato data nejsou zase tak vzdálená od otevřených dat veřejného sektoru, která zná veřejnost nejvíce.
 
 
 {% include image.html 
-   url="../attachments/články/ord_1_otevřená-vědecká-data-úvod/obrázky/vodan.png"
+   url="../attachments/články/ord-1-otevrena-vedecka-data-uvod/obrázky/vodan.png"
    description="Foto: <a href='https://www.go-fair.org/implementation-networks/overview/vodan/' title='VODAN'>Virus Outbreak Data Network (VODAN)</a>" 
 %}
 
@@ -48,7 +47,7 @@ Konečným cílem těchto snah by pak mělo být, aby se tato iniciativa začlen
 Zavěrečná podklapitola je poté věnována ukázce toho, že propojení veřejného a akademického sektoru v oblasti otevřených dat se postupně stává každodenní realitou. Jako určitý prapočátek těchto snah je možné považovat zákon 123/1998 Sb., o právu na informace o životním prostředí a s ním spojenou tzv. "INSPIRE směrnici", který přímo tyto oblasti nepropojoval, ale tématicky se zaměřoval na oblast, jejíž výstupy používá jak veřejná správa tak i akdemické obec. A přesto, i když se zdálo, že tyto dva světy stojí odděleně, k postupnému sbližování docházelo aktivitami jako je např. "občanská věda - Citizen Science" nebo rozvoj tzv. "rozhodování na základě faktů - evidence-based policymaking". Praktickým vyústěním několika let "vzájemného oťukávání" je poté možné pozorovat nové iniciatvy Evropské komise jako jsou [Science Meets Parliaments/Science Meets Regions][SMP/SMR] nebo [City Sciecne Initiave][CSI], kdy obě tyto aktivity mají jasný cíl a to přivést výsledky výzkumu blíže využítí ve veřejné správě a to jak na úrovni metodické, legislativní ale právě i datově-technické. V této oblasti je aktivní v ČR např. město Brno, které se do obou výše zmíněných iniciativ zapojilo a k tomu velmi silně podporuje vzájemné provazování akademického sektoru na místní samosprávu různými nástroji jako jsou např. strategické dokumenty ([Strategie #brno2050][brno2050], [RIS JMK][RIS]) nebo konkrétními projekty jako např. dlouho plánované "Smart City Vouchery", které mají po vzoru [Inovačních][IV] a [Kreativních][KV] voucherů "bořit bariéry" mezi městskými firmami a právě akademickým sektorem. Cílm je tak jasný, postupně výzávat obě strany k hluubší spolupráci. Příklad z národní úrovně, který je přímo zaměřený na otevřená data je poté výskyt otevřených datových sad o nemoci COVID-19 v [Národním katalogu otevřených dat][NKOD]. Z evropské úrovně poté lze vyzvihnout umístění všech reportů a datových sad [Joint Research Center][JRC] jako výzkumného centra Evropské komise v [Evropském datovém katalogu][EUKOD].
 
 {% include image.html 
-   url="../attachments/články/ord_1_otevřená-vědecká-data-úvod/obrázky/City_Science_Initiative.png"
+   url="../attachments/články/ord-1-otevrena-vedecka-data-uvod/obrázky/City_Science_Initiative.png"
    description="Foto: <a href='https://ec.europa.eu/jrc/communities/en/community/city-science-initiative' title='City Science Initiative'>City Science Initiative</a>" 
 %}
 

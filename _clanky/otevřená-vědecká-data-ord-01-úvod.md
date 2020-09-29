@@ -2,21 +2,21 @@
 layout: post
 detail: true
 title: "Otevřená vědecká data: Díl 1: Úvod"
-ref: ord-1-otevrena-vedecka-data-uvod
+ref: otevrena-vedecka-data-ord-01-uvod
 lang: cs
+image: ../attachments/články/otevřená-vědecká-data-ord-01-úvod/obrázky/vodan.png
 author: jiří_marek
 date: 2020-09-25 08:00:00 +02:00
 ---
 
 Otevřená data mají mnoho podob a objevují se v mnoha kontextech. Kromě otevřených dat veřejného sektoru, která představují základ celé otevřeně-datové rodiny, existují např. ještě otevřená data o životním prostředí. Posledním - i když ne úplně novým členem - této rodiny jsou tzv. "otevřená vědecká data" z anglického originálu "Open Research Data". V následujícím článku, který je další ze série seriálových článků se dozvíte o tom, co jsou to otevřená vědecká data, jak se jejich důležitost v průběhu pandemické situace výrazně zvýšila a zejména to, jak tato data nejsou zase tak vzdálená od otevřených dat veřejného sektoru, která zná veřejnost nejvíce.
 
+<!--more-->
 
 {% include image.html 
-   url="../attachments/články/ord-1-otevrena-vedecka-data-uvod/obrázky/vodan.png"
+   url="../attachments/články/otevřená-vědecká-data-ord-01-úvod/obrázky/vodan.png"
    description="Foto: <a href='https://www.go-fair.org/implementation-networks/overview/vodan/' title='VODAN'>Virus Outbreak Data Network (VODAN)</a>" 
 %}
-
-<!--more-->
 
 ## Co to jsou otevřená vědecká data?
 Definice otevřených vědeckých dat je jednoduchá i složitá současně. Pokud se ale nebudeme snažit definovat, co to znamená "věda" samotná, jedná se prakticky o sdílení, otevírání a opakované využívání dat, která pochází z vědeckého prostředí nebo vznikla v rámci tzv. "vědeckého procesu" jak uvadí procesní definici např. [Koščík a kol.][koscik]. Další vodítko jak definovat tento typ dat nám přináší i nová legislativa EU v podobě [Směrnice Evropského parlamentu a Rady (EU) 2019/1024 ze dne 20. června 2019 o otevřených datech a opakovaném použití informací veřejného sektoru][směrniceOD], která poprvé legislativně definuje vědecká data jako tzv. "údaje z výzkumu": 	
@@ -47,7 +47,7 @@ Konečným cílem těchto snah by pak mělo být, aby se tato iniciativa začlen
 Zavěrečná podklapitola je poté věnována ukázce toho, že propojení veřejného a akademického sektoru v oblasti otevřených dat se postupně stává každodenní realitou. Jako určitý prapočátek těchto snah je možné považovat zákon 123/1998 Sb., o právu na informace o životním prostředí a s ním spojenou tzv. "INSPIRE směrnici", který přímo tyto oblasti nepropojoval, ale tématicky se zaměřoval na oblast, jejíž výstupy používá jak veřejná správa tak i akdemické obec. A přesto, i když se zdálo, že tyto dva světy stojí odděleně, k postupnému sbližování docházelo aktivitami jako je např. "občanská věda - Citizen Science" nebo rozvoj tzv. "rozhodování na základě faktů - evidence-based policymaking". Praktickým vyústěním několika let "vzájemného oťukávání" je poté možné pozorovat nové iniciatvy Evropské komise jako jsou [Science Meets Parliaments/Science Meets Regions][SMP/SMR] nebo [City Sciecne Initiave][CSI], kdy obě tyto aktivity mají jasný cíl a to přivést výsledky výzkumu blíže využítí ve veřejné správě a to jak na úrovni metodické, legislativní ale právě i datově-technické. V této oblasti je aktivní v ČR např. město Brno, které se do obou výše zmíněných iniciativ zapojilo a k tomu velmi silně podporuje vzájemné provazování akademického sektoru na místní samosprávu různými nástroji jako jsou např. strategické dokumenty ([Strategie #brno2050][brno2050], [RIS JMK][RIS]) nebo konkrétními projekty jako např. dlouho plánované "Smart City Vouchery", které mají po vzoru [Inovačních][IV] a [Kreativních][KV] voucherů "bořit bariéry" mezi městskými firmami a právě akademickým sektorem. Cílm je tak jasný, postupně výzávat obě strany k hluubší spolupráci. Příklad z národní úrovně, který je přímo zaměřený na otevřená data je poté výskyt otevřených datových sad o nemoci COVID-19 v [Národním katalogu otevřených dat][NKOD]. Z evropské úrovně poté lze vyzvihnout umístění všech reportů a datových sad [Joint Research Center][JRC] jako výzkumného centra Evropské komise v [Evropském datovém katalogu][EUKOD].
 
 {% include image.html 
-   url="../attachments/články/ord-1-otevrena-vedecka-data-uvod/obrázky/City_Science_Initiative.png"
+   url="../attachments/články/otevřená-vědecká-data-ord-01-úvod/obrázky/City_Science_Initiative.png"
    description="Foto: <a href='https://ec.europa.eu/jrc/communities/en/community/city-science-initiative' title='City Science Initiative'>City Science Initiative</a>" 
 %}
 
@@ -57,8 +57,6 @@ V tomto kontextu poté nesmíne opomenout ani stále větší využívání akro
 Článek představil úvod do nové skupiny otevřených dat, která bude v následujícím období nabírat stále více na důležitosti. Jak bylo diskutováno v závěru, trend propojování vědeckého a veřejného sektoru je velmi aktuální a ještě o něm určitě uslyšíme. Druhý z této série článků se proto zaměří na hlubší diskuzi právě toho, jak mohou zpětně otevřená vědecká data ovlivnit postupy, metodiky a technická řešení otevírání dat veřejného sektoru.
 
 Pokud Vás zaujalo téma otevřených vědeckých dat, neváhejte nám napsat na [otevrenadata@mvcr.cz][odmvcr]. Do předmětu prosím uveďte "*ord*" a my se Vás pokusíme nasměrovat na některého z kolegů z českých univerzit a výzkumných center, se kterými jsme v této oblasti ve spojení. Mezi tím než se nám to povede, tak se můžete podívat do [Národního katalogu otevřených dat][NKOD] na další zajímavé datové sady z vědeckého i veřejné prostředí. 
-
-------------
 
 [koscik]: https://obchod.wolterskluwer.cz/cz/vyzkumna-data-a-vyzkumne-databaze-pravni-ramec-zpracovani-a-sdileni-vedeckych-poznatku.p4405.html "Výzkumná data a výzkumné databáze. Právní rámec zpracování a sdílení vědeckých poznatků"
 [směrniceOD]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024&from=CS "Směrnice EU 1024/2019"

@@ -9,9 +9,10 @@ author: jiří_marek
 date: 2020-09-25 08:00:00 +02:00
 ---
 
-Otevřená data mají mnoho podob a objevují se v mnoha kontextech. Kromě otevřených dat veřejného sektoru, která představují základ celé otevřeně-datové rodiny, existují např. ještě otevřená data o životním prostředí. Posledním - i když ne úplně novým členem - této rodiny jsou tzv. "otevřená vědecká data" z anglického originálu "Open Research Data". V následujícím článku, který je další ze série seriálových článků se dozvíte o tom, co jsou to otevřená vědecká data, jak se jejich důležitost v průběhu pandemické situace výrazně zvýšila a zejména to, jak tato data nejsou zase tak vzdálená od otevřených dat veřejného sektoru, která zná veřejnost nejvíce.
-
+Otevřená data mají mnoho podob a objevují se v mnoha kontextech. Kromě otevřených dat veřejného sektoru, která představují základ celé otevřeně-datové rodiny, existují např. ještě otevřená data o životním prostředí. Posledním - i když ne úplně novým členem - této rodiny jsou tzv. "otevřená vědecká data" z anglického originálu "Open Research Data". 
 <!--more-->
+
+V následujícím článku, který je další ze série seriálových článků se dozvíte o tom, co jsou to otevřená vědecká data, jak se jejich důležitost v průběhu pandemické situace výrazně zvýšila a zejména to, jak tato data nejsou zase tak vzdálená od otevřených dat veřejného sektoru, která zná veřejnost nejvíce.
 
 {% include image.html 
    url="../attachments/články/otevřená-vědecká-data-ord-01-úvod/obrázky/vodan.png"

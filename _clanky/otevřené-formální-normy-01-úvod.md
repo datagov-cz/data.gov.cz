@@ -75,7 +75,7 @@ Důležitou vlastností OFN je, že třídy, které se vyskytují ve více různ
 To zajistí, že např. vstupné na festival (událost) bude reprezentováno stejně, jako vstupné na hrad či zámek (turistický cíl), což usnadní zpracování dat dle různých OFN.
 Dále využití těchto sdílených specifikací umožňuje publikovat data, pro která ještě OFN neexistuje, alespoň podobným způsobem.
 V Obrázku 2 jsou třídy vyskytující se ve více různých OFN označeny šedým rámečkem.
-Můžeme zde vidět i třídu Vstupné označený šedým rámečkem.
+Můžeme zde vidět i třídu Vstupné označenou šedým rámečkem.
 To znamená, že třída Vstupné je specifikována ve sdílené specifikaci a v OFN pro turistické cíle je přepoužita, stejně jako v jiných OFN, které potřebují pracovat se vstupným.
 
 Již existující pojmy lze dále specifikovat.
@@ -104,7 +104,7 @@ Při poskytování informací podle zákona 106/1999 Sb. má formát [co nejvíc
 To se týká i poskytování informací v podobě otevřených dat.
 Aby byl maximalizován užitek otevřených dat, doporučuje MV ČR postupovat [dle vydávaných OFN][ofn].
 Není ale samozřejmě možné a ani účelné vydat najednou OFN pro všechny typy dat ve všech doménách, ve kterých je možné otevřená data poskytovat.
-OFN vznikají na základě poptávky poskytovatelů nebo konzumentů otevřených dat, kteří také dávají požadavky na jejich podobu.
+OFN proto vznikají na základě poptávky poskytovatelů nebo konzumentů otevřených dat, kteří také dávají požadavky na jejich podobu.
 Při publikaci dat dle OFN má tak poskytovatel jistotu, že formátuje svá data správně, jednotně s ostatními poskytovateli a očekávatelně pro zpracovatele.
 
 {% include image.html 
@@ -119,14 +119,14 @@ Potom poskytne pouze část, kterou publikovat může.
 Jednotlivé části formátu popsaného v OFN jsou totiž nepovinné.
 Musí ale počítat s tím, že přílišné omezení poskytovaných údajů datovou sadu znehodnotí.
 Poskytovatel také může chtít publikovat data nad rámec toho, co je v OFN sjednocené.
-Pak může datovou strukturu rozšířit, za předpokladu, že tak učiní v souladu s existujícími sdílenými specifikacemi, a že své rozšíření vhodně zdokumentuje formou webové stránky a strojově čitelných schémat tak, aby jeho rozšíření bylo snadno pochopitelné a validovatelné.
+Pak může datovou strukturu rozšířit za předpokladu, že tak učiní v souladu s existujícími sdílenými specifikacemi a že své rozšíření vhodně zdokumentuje formou webové stránky a strojově čitelných schémat tak, aby jeho rozšíření bylo snadno pochopitelné a validovatelné.
 Struktura takové dokumentace je pak stejná, jako struktura OFN.
 
 ## Možnost účasti na tvorbě otevřených formálních norem
 
 Tvorba a konzultace OFN probíhá na [platformě GitHub][ofn-gh], což je verzovací systém běžně používaný vývojáři softwaru a autory webových stránek.
 OFN lze tedy jednak sledovat v celém průběhu její tvorby, a také lze její podobu aktivně ovlivnit.
-To lze buď formou diskuze o konkrétním problému (GitHub Issue), nebo přímo příspěvkem do kódu či textu (Pull Request). 
+To je možné buď formou diskuze o konkrétním problému (GitHub Issue), nebo přímo příspěvkem do kódu či textu (Pull Request). 
 Stejným způsobem může libovolný poskytovatel požádat o tvorbu nové OFN, kterou ve spolupráci s MV ČR vytvoří.
 Alternativně může publikovat datovou sadu i bez konzultace s MV ČR.
 V takovém případě ale je nutné využívat sdílené specifikace, které již pro některé části dat existují stejně jako v případě publikace dat nad rámec již existující OFN.
@@ -139,7 +139,7 @@ I v tomto případě je nutné vzniklou datovou sadu řádně zdokumentovat tak,
 
 ## Zpracování otevřených dat dle OFN
 
-Zpracovatelé dat, jako například portály s informacemi o turistických cílech, mohou všechny datové sady odpovídající OFN najít strojově, automatizovatelně a opakovatelně pomocí API [Národního katalogu otevřených dat][pod].
+Zpracovatelé dat, jako například portály s informacemi o turistických cílech, mohou všechny datové sady odpovídající OFN najít strojově, automatizovaně a opakovaně pomocí API [Národního katalogu otevřených dat][pod].
 Dohromady s jednotným formátem, který specifikuje OFN, je pak již snadné data od jednotlivých poskytovatelů pravidelně stahovat a zpracovávat.
 MV ČR připravuje ukázkovou, open-source aplikaci, která tento proces a následné využití dat dle OFN názorně ukáže.
 

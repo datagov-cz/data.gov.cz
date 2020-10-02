@@ -5,7 +5,7 @@ title: "Otevřená data a otevřené formální normy"
 ref: otevrene-formalni-normy-01-uvod
 lang: cs
 author: jakub_klímek
-date: 2020-10-01 01:00:00 +02:00
+date: 2020-10-02 06:00:00 +02:00
 ---
 
 Pro mnoho veřejných institucí se poskytování otevřených dat stalo běžným způsobem sdílení informací s veřejností.

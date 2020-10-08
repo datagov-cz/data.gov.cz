@@ -131,3 +131,7 @@ V prvním grafu je zobrazen pokles mobility obyvatelstva v krajích ČR oproti p
 ## Další využití dat, vizualizací a zdrojů
 
 Geolokační data se postupně začleňují do rozvojových koncepcí veřejné správy a k většímu rozšíření by pomohlo jejich zpřístupnění, a to zejména cenové. Tato data tak využívají standardně větší města, které mají finanční, ale i technické dovednosti, aby tato data zpracovávala. V ukázce byl představen 1 z možných výstupů, nicméně z dat je možné vytvářet řadu dalších výstupů i podle toho, jakou otázku bychom chtěli zodpovědět.
+
+[ˇ1]: T-Mobile cca 40 %, O2 cca 40 %, Vodafone cca 20 %
+[ˇ2]: Může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly)
+[ˇ3]: Probíhá alespoň 1x30 minut, pokud není aktivní sms/volání či příjem internu

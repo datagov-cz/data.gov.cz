@@ -33,7 +33,7 @@ Identifikační údaje o právě využívané anténě a další doplňkové inf
 
 ## Kalibrace dat
 
-Mobilní operátor v rámci svého finálního produktu neposkytuje surová data ve smyslu pohybu určité osoby v území (ID SIM karty). Z pohledu uživatele, tedy např. zástupce veřejné správy, to ani není mnohdy žádoucí, jelikož většinou chce znát komplexní profil svého území. Zde tedy přichází na řadu kalibrace. V České republice působí 3 hlavní poskytovatelé geolokačních dat - O2, Vodafone a T-Mobile, kde má každý má na telekomunikačním trhu určitý podíl[^1]. Tento podíl je tedy nutné dopočítat do 100 %, přičemž je nutné vzít v úvahu, že se tento podíl liší napříč územím[^2]. Do kalibrační fáze tedy v zásadě vstupují tyto faktory:
+Mobilní operátor v rámci svého finálního produktu neposkytuje surová data ve smyslu pohybu určité osoby v území (ID SIM karty). Z pohledu uživatele, tedy např. zástupce veřejné správy, to ani není mnohdy žádoucí, jelikož většinou chce znát komplexní profil svého území. Zde tedy přichází na řadu kalibrace. V České republice působí 3 hlavní poskytovatelé geolokačních dat - O2, Vodafone a T-Mobile, kde má každý má na telekomunikačním trhu určitý podíl (T-Mobile cca 40 %, O2 cca 40 %, Vodafone 20 %). Tento podíl je tedy nutné dopočítat do 100 %, přičemž je nutné vzít v úvahu, že se tento podíl liší napříč územím. Například může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly). Do kalibrační fáze tedy v zásadě vstupují tyto faktory:
 
 * podíl na trhu v daném území
 * počet obyvatel v daném území
@@ -41,7 +41,7 @@ Mobilní operátor v rámci svého finálního produktu neposkytuje surová data
 * sdílení BTS napříč operátory
 * geomorfologie terénu (členitý terén znesnadňuje přenos signálu)
 * očištění dat od zařízení, které rovněž komunikují skrz BTS (smart zařízení)
-* intenzita připojování[^3] SIM do sítě BTS
+* intenzita připojování SIM do sítě BTS (minimálně 1x za 30 minut - častěji, pokud jsou aktivní data, volání či sms)
 
 ## Výstupy
 
@@ -131,7 +131,3 @@ V prvním grafu je zobrazen pokles mobility obyvatelstva v krajích ČR oproti p
 ## Další využití dat, vizualizací a zdrojů
 
 Geolokační data se postupně začleňují do rozvojových koncepcí veřejné správy a k většímu rozšíření by pomohlo jejich zpřístupnění, a to zejména cenové. Tato data tak využívají standardně větší města, které mají finanční, ale i technické dovednosti, aby tato data zpracovávala. V ukázce byl představen 1 z možných výstupů, nicméně z dat je možné vytvářet řadu dalších výstupů i podle toho, jakou otázku bychom chtěli zodpovědět.
-
-[ˇ1]: T-Mobile cca 40 %, O2 cca 40 %, Vodafone cca 20 %
-[ˇ2]: Může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly)
-[ˇ3]: Probíhá alespoň 1x30 minut, pokud není aktivní sms/volání či příjem internu

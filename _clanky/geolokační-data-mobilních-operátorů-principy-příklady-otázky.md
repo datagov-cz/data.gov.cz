@@ -15,13 +15,13 @@ date: 2020-10-07T18:46:01.316Z
 
 Mobilita obyvatelstva je jedním ze základních rysů novodobé společnosti. Především v urbanizovaných územích dosahuje mobilita osob vysokých intenzit a má zásadní dopady do fungování měst a metropolitních regionů. Současně s rostoucí mobilitou osob zároveň dochází k proměnám v dělbě přepravní práce, rytmech každodenní dojížďky či v délce dojížďkových vzdáleností. Důsledky vysoce mobilitní společnosti mají typické projevy v podobě kongescí, nevyhovujících kapacit veřejné dopravy (VD), zatížené dopravní infrastruktury či nebezpečných dopravních úseků. Na základě výše uvedeného se významně zvyšuje i zájem tato mobilitní data sledovat a analyzovat.
 
-[Český statistický úřad](https://www.czso.cz/ "Český statistický úřad") standardně zjišťuje dojížďku a vyjížďku do zaměstnání a škol - tato data však zjišťuje pouze 1x za 10 let při [Sčítání lidu, domů a bytů](https://www.czso.cz/csu/scitani2021 "Sčítání lidu, domů a bytů"). Další várku těchto dat tedy budeme znát z roku 2021 (výsledky 2022/23). Přestože tato data mají své limity (četnost zjišťování, neuvedení místa dojížďky od respondentů, není zde informace o nepravidelné dojížďce), stále se jedná o nejrelevantnější zdroj informací o dopravních vztazích v území. Dalším zdrojem dat o mobilitě je sčítání dopravy realizované od [Ředitelství silnic a dálnic](https://www.rsd.cz/wps/portal/ "Ředitelství silnic a dálnic") zpravidla 1x za 5 let (v roce 2020 sčítání probíhá) - zde pak známe dopravní intenzity na vybraných profilech silnic zejména vyšší třídy, avšak tato data nám nic neříkají o dopravních vazbách. Pokud pomineme nákladné vlastní výzkumy a šetření, tak nám zbývá obrátit se na soukromé společnosti, jako je např. Google, který vazby typu origin-destination sleduje, avšak neposkytuje.
+[Český statistický úřad](https://www.czso.cz/ "Český statistický úřad") standardně zjišťuje dojížďku a vyjížďku do zaměstnání a škol - tato data však zjišťuje pouze 1x za 10 let při [Sčítání lidu, domů a bytů](https://www.czso.cz/csu/scitani2021 "Sčítání lidu, domů a bytů"). Další várku těchto dat tedy budeme znát z roku 2021 (výsledky 2022/23). Přestože tato data mají své limity (četnost zjišťování, neuvedení místa dojížďky od respondentů, není zde informace o nepravidelné dojížďce), stále se jedná o nejrelevantnější zdroj informací o dopravních vztazích v území. Dalším zdrojem dat o mobilitě je sčítání dopravy realizované od [Ředitelství silnic a dálnic](https://www.rsd.cz/wps/portal/ "Ředitelství silnic a dálnic") zpravidla 1x za 5 let (v roce 2020 sčítání probíhá) - zde pak známe dopravní intenzity na vybraných profilech silnic zejména vyšší třídy, avšak tato data nám nic neříkají o dopravních vazbách. Pokud pomineme nákladné vlastní výzkumy a šetření, tak nám zbývá obrátit se na soukromé společnosti, jako je např. Google, který vazby typu origin-destination (ve vztahu dvou lokalit se jedná o "počátek" a "cíl") sleduje, avšak neposkytuje.
 
 Kromě konvenčních statistických zdrojů dat tak bylo až donedávna prakticky nemožné zjistit základní prostorové vzorce různých typů dojížďkových proudů. V poslední době se však v důsledku technologického pokroku a téměř totální penetrace společnosti mobilními technologiemi začala využívat zbytková signalizační data mobilních operátorů jako alternativní zdroj dat poskytující obraz o mobilitě osob. Výhodou těchto dat je celoplošné pokrytí zájmového území (cca 95 % obyvatel využívá mobilní telefon), zachycení časových průběhů cest, možnost poměrně přesného zachycení výchozích a cílových oblastí (v závislosti na hustotě urbanizovaného území, hustotě sítě základních převodních stanic BTS či konfiguraci terénu) a především postihnutí dalších účelů cest kromě pracovní (školní) dojížďky (ačkoliv účel cesty lze jen hrubě odhadovat).
 
 ## Co jsou to geolokační data?
 
-Jedná se o signalizační data, které vysílá SIM karta, prostřednictvím které se SIM připojuje do systému pozemních přenosových antén, tzv. síť BTS (basic transmitter stations). Každá anténa je schopna pokrýt prostorově omezené území a obsloužit omezený počet uživatelů. Mobilní operátoři proto vytvářejí síť těchto BTS tak, aby dosáhli co největšího pokrytí signálem a zajistili obslužnost všech uživatelů, a to i v časech „komunikačních špiček“.
+Jedná se o signalizační data, které vysílá SIM karta a jejichž prostřednictvím se SIM připojuje do systému pozemních přenosových antén, tzv. síť BTS (basic transmitter stations). Každá anténa je schopna pokrýt prostorově omezené území a obsloužit omezený počet uživatelů. Mobilní operátoři proto vytvářejí síť těchto BTS tak, aby dosáhli co největšího pokrytí signálem a zajistili obslužnost všech uživatelů, a to i v časech „komunikačních špiček“.
 
 Interaktivní mapu stanic BTS je možné nalézt na webu [GSMweb](https://gsmweb.cz "GSMweb"), kde jsou zmapované stanice kategorizovány dle jednotlivých poskytovatelů. Níže na obrázku je výřez mapy sítí BTS společnosti T-Mobile v Brně. Data jsou na webu i ke stažení.
 
@@ -33,9 +33,7 @@ Identifikační údaje o právě využívané anténě a další doplňkové inf
 
 ## Kalibrace dat
 
-Mobilní operátor v rámci svého finálního produktu neposkytuje surová data ve smyslu pohybu určité osoby v území (ID SIM karty). Z pohledu uživatele, tedy např. zástupce veřejné správy, to ani není mnohdy žádoucí, jelikož většinou chce znát komplexní profil svého území. Zde tedy přichází na řadu kalibrace. V České republice působí 3 hlavní poskytovatelé geolokačních dat - O2, Vodafone a T-Mobile, kde má každý má na telekomunikačním trhu určitý podíl (T-Mobile cca 40 %, O2 cca 40 %, Vodafone 20 %). Tento podíl je tedy nutné dopočítat do 100 %, přičemž je nutné vzít v úvahu, že se tento podíl liší napříč územím. Například může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly)
-. Do kalibrační fáze tedy v zásadě vstupují tyto faktory:
-
+Mobilní operátor v rámci svého finálního produktu neposkytuje surová data ve smyslu pohybu určité osoby v území (ID SIM karty). Z pohledu uživatele, tedy např. zástupce veřejné správy, to ani není mnohdy žádoucí, jelikož většinou chce znát komplexní profil svého území, tedy o všech obyvatelích (nikoli o uživatelích 1 operátora). Zde tedy přichází na řadu kalibrace. V České republice působí 3 hlavní poskytovatelé geolokačních dat - O2, Vodafone a T-Mobile, kde má každý má na telekomunikačním trhu určitý podíl (T-Mobile cca 40 %, O2 cca 40 %, Vodafone 20 %). Tento podíl je tedy nutné dopočítat do 100 %, přičemž je nutné vzít v úvahu, že se tento podíl liší napříč územím. Například může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly). Do kalibrační fáze tedy v zásadě vstupují tyto faktory:
 * podíl na trhu v daném území
 * počet obyvatel v daném území
 * rozložení BTS stanic
@@ -43,10 +41,11 @@ Mobilní operátor v rámci svého finálního produktu neposkytuje surová data
 * geomorfologie terénu (členitý terén znesnadňuje přenos signálu)
 * očištění dat od zařízení, které rovněž komunikují skrz BTS (smart zařízení)
 * intenzita připojování SIM do sítě BTS (minimálně 1x za 30 minut - častěji, pokud jsou aktivní data, volání či sms)
+Těmito kalibračními kroky tedy dostaneme model, který co nejvíce odpovídá realitě rozložení obyvatelstva v území. 
 
-## Výstupy
+## Výstupy z kalibrace dat
 
-Výstupy se samozřejmě liší dle jednotlivých typů analýz. Pokud bychom chtěli zjišťovat “pouze” počet přítomných obyvatel v území, může výstup vypadat například takto:
+Výstupy se samozřejmě liší dle jednotlivých typů analýz. Níže v textu jsou popsány dva typy analýz, a sice "přítomné obyvatelstvo v území" a "pohyby obyvatel". Pokud bychom chtěli zjišťovat “pouze” počet přítomných obyvatel v území, může výstup vypadat například takto:
 
 kod_obec_p,day,hour,users
 506699,weekend,0,327
@@ -55,18 +54,15 @@ kod_obec_p,day,hour,users
 506699,weekend,3,326
 506699,weekend,4,333
 
-“kod_obec_p" -  znamená kód obce
-“day” - pracovní den, víkend
-“hour” - denní doba 0-24h
-“users” - počet uživatelů (SIM v území)
+Kde “kod_obec_p" znamená kód obce; “day” znamená pracovní den/víkend; “hour” znamená denní doba 0-24h; “users” značí počet uživatelů (SIM v území).
 
-Výsledek [Přítomné obyvatelstvo v obcích JMK](http://jmk.brno.ml/ "Přítomné ob. v JMK")  v programu [Carto](https://carto.com/ "Carto"). Zdrojový kód stránky je možné nalézt na [Gitlabu](https://bitbucket.org/blue4world/brno_data_operatoru/src/master "Gitlab projekt").
+Výsledek [Přítomné obyvatelstvo v obcích Jihomoravského kraje](http://jmk.brno.ml/ "Přítomné ob. v JMK") vizualizovaný v programu [Carto](https://carto.com/ "Carto"). Zdrojový kód stránky je možné nalézt na [Gitlabu](https://bitbucket.org/blue4world/brno_data_operatoru/src/master "Gitlab projekt").
 
-Na základě těchto dat pak lze s určitou mírou (ne)přesnosti vizualizovat časoprostorové rytmy v obcích. Na základě příkladu výše tak máme rámcový přehled o vývoji počtu přítomných obyvatel v 672 obcích JMK. Největší přidanou hodnotou těchto dat pak je srovnání s údaji ČSÚ, který standardně publikuje počet obyvatel, který se samozřejmě v čase nemění. S ohledem na rozvoj samospráv nebo územní plánování, ale třeba i na Rozpočtové určení daní (RUD), mohou tato data pomoci lépe pochopit dané území.
+Na základě těchto dat pak lze s určitou mírou (ne)přesnosti vizualizovat časoprostorové rytmy v obcích. Na základě příkladu výše tak máme rámcový přehled o vývoji počtu přítomných obyvatel v 672 obcích Jihomoravského kraje. Největší přidanou hodnotou těchto dat pak je srovnání s údaji ČSÚ, který standardně publikuje počet obyvatel, který se samozřejmě v čase nemění. S ohledem na rozvoj samospráv nebo územní plánování, ale třeba i na Rozpočtové určení daní (RUD), mohou tato data pomoci lépe pochopit dané území.
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/2.PROFIL.png" description="Denní rytmus území obce Hodonín" %}
 
-Případně je možné stejná data kategorizovat dle typologie osob, tedy zda je daný uživatel v území rezident, pracující či návštěvník, viz tab.
+Případně je možné stejná data kategorizovat dle typologie osob, tedy zda je daný uživatel v území rezident, pracující či návštěvník, viz tabulka.
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/3.TAB_KAT.png" description="Rozdělení dle rezidentů, návštěvníků a pracujících" %}
 
@@ -84,11 +80,11 @@ Kde položka “start_cas” a cil_cas” nabývá hodnot 0-23, “start_level�
 
 ## Příklady - co s daty dělat?
 
-V této ukázce budou vizualizovány základní přepravní proudy ve městě Brně prostřednictvím open-source geografického nástroje [QGIS](https://qgis.org/ "QGIS"). Cílem bude zobrazit hlavní přepravní proudy mezi katastrálními územími (48 jednotek) a zjistit tak, které katastrální vazby jsou v Brně nejsilnější. Níže v mapě vidíte, k jakému výsledku chceme dojít.
+V této ukázce budou vizualizovány základní přepravní proudy ve městě Brně prostřednictvím open source geografického nástroje [QGIS](https://qgis.org/ "QGIS"). Cílem bude zobrazit hlavní přepravní proudy mezi katastrálními územími (48 jednotek) a zjistit tak, které katastrální vazby jsou v Brně nejsilnější. Níže v mapě vidíte, k jakému výsledku chceme dojít.
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/4.VYSLEDEK_PROUDY.png" description="Nejintenzivnější přepravní vazby mezi KÚ v Brně" %}
 
-Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci") za průměrnou středu. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`), ale i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level`a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v JMK, 4 kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN`v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
+Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci") za průměrnou středu. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`), ale i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level`a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v Jihomoravském kraji, 4 kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN`v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/5.STRUKTURA.png" description="Struktura dat" %}
 
@@ -118,7 +114,7 @@ Nyní zbývá nastavit síla dopravních vazeb. V symbologii v sekci “value”
 
 Tímto docílíme výsledné mapy z úvodu. Takto vizualizovaná data pak mohou rámcově sloužit pro strategické účely městu, například při dimenzování městské dopravy.
 
-## Katalogizace v NKOD?
+## Potenciál katalogizace v NKOD
 
 Data mobilních operátorů nejsou (až na výjimky) veřejná, natož katalogizována v Národním katalogu otevřených dat. Všechny příklady pocházejí z konkrétních zakázek, byť data jsou zveřejněna na lokálních datových katalozích. Přesto však, a zvláště v současné covidové době, se ukazuje, jak by tato data byla potřeba pro efektivnější plánování a minimálně pro veřejnou správu by měla být v nějaké podobě přístupná.
 

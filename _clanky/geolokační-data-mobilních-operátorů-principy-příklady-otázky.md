@@ -15,7 +15,7 @@ date: 2020-10-07T18:46:01.316Z
 
 Mobilita obyvatelstva je jedním ze základních rysů novodobé společnosti. Především v urbanizovaných územích dosahuje mobilita osob vysokých intenzit a má zásadní dopady do fungování měst a metropolitních regionů. Současně s rostoucí mobilitou osob zároveň dochází k proměnám v dělbě přepravní práce, rytmech každodenní dojížďky či v délce dojížďkových vzdáleností. Důsledky vysoce mobilitní společnosti mají typické projevy v podobě kongescí, nevyhovujících kapacit veřejné dopravy (VD), zatížené dopravní infrastruktury či nebezpečných dopravních úseků. Na základě výše uvedeného se významně zvyšuje i zájem tato mobilitní data sledovat a analyzovat.
 
-[Český statistický úřad](https://www.czso.cz/ "Český statistický úřad") standardně zjišťuje dojížďku a vyjížďku do zaměstnání a škol - tato data však zjišťuje pouze 1x za 10 let při [Sčítání lidu, domů a bytů](https://www.czso.cz/csu/scitani2021 "Sčítání lidu, domů a bytů"). Další várku těchto dat tedy budeme znát z roku 2021 (výsledky 2022/23). Přestože tato data mají své limity (četnost zjišťování, neuvedení místa dojížďky od respondentů, není zde informace o nepravidelné dojížďce), stále se jedná o nejrelevantnější zdroj informací o dopravních vztazích v území. Dalším zdrojem dat o mobilitě je sčítání dopravy realizované od [Ředitelství silnic a dálnic](https://www.rsd.cz/wps/portal/ "Ředitelství silnic a dálnic") zpravidla 1x za 5 let (v roce 2020 sčítání probíhá) - zde pak známe dopravní intenzity na vybraných profilech silnic zejména vyšší třídy, avšak tato data nám nic neříkají o dopravních vazbách. Pokud pomineme nákladné vlastní výzkumy a šetření, tak nám zbývá obrátit se na soukromé společnosti, jako je např. Google, který vazby typu origin-destination (ve vztahu dvou lokalit se jedná o "počátek" a "cíl") sleduje, avšak neposkytuje.
+[Český statistický úřad][ČSÚ] standardně zjišťuje dojížďku a vyjížďku do zaměstnání a škol - tato data však zjišťuje pouze 1x za 10 let při [Sčítání lidu, domů a bytů][SLDB]. Další várku těchto dat tedy budeme znát z roku 2021 (výsledky 2022/23). Přestože tato data mají své limity (četnost zjišťování, neuvedení místa dojížďky od respondentů, není zde informace o nepravidelné dojížďce), stále se jedná o nejrelevantnější zdroj informací o dopravních vztazích v území. Dalším zdrojem dat o mobilitě je sčítání dopravy realizované od [Ředitelství silnic a dálnic][ŘSD] zpravidla 1x za 5 let (v roce 2020 sčítání probíhá) - zde pak známe dopravní intenzity na vybraných profilech silnic zejména vyšší třídy, avšak tato data nám nic neříkají o dopravních vazbách. Pokud pomineme nákladné vlastní výzkumy a šetření, tak nám zbývá obrátit se na soukromé společnosti, jako je např. Google, který vazby typu origin-destination (ve vztahu dvou lokalit se jedná o "počátek" a "cíl") sleduje, avšak neposkytuje.
 
 Kromě konvenčních statistických zdrojů dat tak bylo až donedávna prakticky nemožné zjistit základní prostorové vzorce různých typů dojížďkových proudů. V poslední době se však v důsledku technologického pokroku a téměř totální penetrace společnosti mobilními technologiemi začala využívat zbytková signalizační data mobilních operátorů jako alternativní zdroj dat poskytující obraz o mobilitě osob. Výhodou těchto dat je celoplošné pokrytí zájmového území (cca 95 % obyvatel využívá mobilní telefon), zachycení časových průběhů cest, možnost poměrně přesného zachycení výchozích a cílových oblastí (v závislosti na hustotě urbanizovaného území, hustotě sítě základních převodních stanic BTS či konfiguraci terénu) a především postihnutí dalších účelů cest kromě pracovní (školní) dojížďky (ačkoliv účel cesty lze jen hrubě odhadovat).
 
@@ -23,7 +23,7 @@ Kromě konvenčních statistických zdrojů dat tak bylo až donedávna praktick
 
 Jedná se o signalizační data, které vysílá SIM karta a jejichž prostřednictvím se SIM připojuje do systému pozemních přenosových antén, tzv. síť BTS (basic transmitter stations). Každá anténa je schopna pokrýt prostorově omezené území a obsloužit omezený počet uživatelů. Mobilní operátoři proto vytvářejí síť těchto BTS tak, aby dosáhli co největšího pokrytí signálem a zajistili obslužnost všech uživatelů, a to i v časech „komunikačních špiček“.
 
-Interaktivní mapu stanic BTS je možné nalézt na webu [GSMweb](https://gsmweb.cz "GSMweb"), kde jsou zmapované stanice kategorizovány dle jednotlivých poskytovatelů. Níže na obrázku je výřez mapy sítí BTS společnosti T-Mobile v Brně. Data jsou na webu i ke stažení.
+Interaktivní mapu stanic BTS je možné nalézt na webu [GSMweb][GSM], kde jsou zmapované stanice kategorizovány dle jednotlivých poskytovatelů. Níže na obrázku je výřez mapy sítí BTS společnosti T-Mobile v Brně. Data jsou na webu i ke stažení.
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/1.GSM.png" description="BTS od T-Mobile v Brně" %}
 
@@ -56,7 +56,7 @@ kod_obec_p,day,hour,users
 
 Kde “kod_obec_p" znamená kód obce; “day” znamená pracovní den/víkend; “hour” znamená denní doba 0-24h; “users” značí počet uživatelů (SIM v území).
 
-Výsledek [Přítomné obyvatelstvo v obcích Jihomoravského kraje](http://jmk.brno.ml/ "Přítomné ob. v JMK") vizualizovaný v programu [Carto](https://carto.com/ "Carto"). Zdrojový kód stránky je možné nalézt na [Gitlabu](https://bitbucket.org/blue4world/brno_data_operatoru/src/master "Gitlab projekt").
+Výsledek [Přítomné obyvatelstvo v obcích Jihomoravského kraje][Přítomní] vizualizovaný v programu [Carto][Carto]. Zdrojový kód stránky je možné nalézt na [Gitlabu][GitLab].
 
 Na základě těchto dat pak lze s určitou mírou (ne)přesnosti vizualizovat časoprostorové rytmy v obcích. Na základě příkladu výše tak máme rámcový přehled o vývoji počtu přítomných obyvatel v 672 obcích Jihomoravského kraje. Největší přidanou hodnotou těchto dat pak je srovnání s údaji ČSÚ, který standardně publikuje počet obyvatel, který se samozřejmě v čase nemění. S ohledem na rozvoj samospráv nebo územní plánování, ale třeba i na Rozpočtové určení daní (RUD), mohou tato data pomoci lépe pochopit dané území.
 
@@ -80,11 +80,11 @@ Kde položka “start_cas” a cil_cas” nabývá hodnot 0-23, “start_level�
 
 ## Příklady - co s daty dělat?
 
-V této ukázce budou vizualizovány základní přepravní proudy ve městě Brně prostřednictvím open source geografického nástroje [QGIS](https://qgis.org/ "QGIS"). Cílem bude zobrazit hlavní přepravní proudy mezi katastrálními územími (48 jednotek) a zjistit tak, které katastrální vazby jsou v Brně nejsilnější. Níže v mapě vidíte, k jakému výsledku chceme dojít.
+V této ukázce budou vizualizovány základní přepravní proudy ve městě Brně prostřednictvím open source geografického nástroje [QGIS][QGIS]. Cílem bude zobrazit hlavní přepravní proudy mezi katastrálními územími (48 jednotek) a zjistit tak, které katastrální vazby jsou v Brně nejsilnější. Níže v mapě vidíte, k jakému výsledku chceme dojít.
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/4.VYSLEDEK_PROUDY.png" description="Nejintenzivnější přepravní vazby mezi KÚ v Brně" %}
 
-Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora](https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci") za průměrnou středu. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`), ale i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level`a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v Jihomoravském kraji, 4 kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN`v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
+Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora][Dataset] za průměrnou středu. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`), ale i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level`a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v Jihomoravském kraji, 4 kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN`v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/5.STRUKTURA.png" description="Struktura dat" %}
 
@@ -92,7 +92,7 @@ Nyní už máme data nachystaná pro práci v programu QGIS. Po spuštění vybe
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/6.QGIS_VLOŽIT.png" description="Načtení dat do QGIS" %}
 
-Do mapy se nám tak přidalo 48 bodů (centroidy KÚ). Pro lepší práci je vhodné zvolit podkladovou mapu, např. orfofoto ČR. Z výběru “vrstva”-->”přidat vrstvu”-->”přidat WMS/WMTS vrstvu”. V dialogovém okně pak klikneme na “nové” a z geoportálu [ČÚZK](https://www.cuzk.cz/ "Český úřad zeměměřičský a katastrální") vybereme WMS vrstvu ortofoto a nahrajeme ji do položky URL. Zavřeme a zvolíme “připojit” a následně “přidat”. Okno zavřeme.
+Do mapy se nám tak přidalo 48 bodů (centroidy KÚ). Pro lepší práci je vhodné zvolit podkladovou mapu, např. orfofoto ČR. Z výběru “vrstva”-->”přidat vrstvu”-->”přidat WMS/WMTS vrstvu”. V dialogovém okně pak klikneme na “nové” a z geoportálu [ČÚZK][ČÚZK] vybereme WMS vrstvu ortofoto a nahrajeme ji do položky URL. Zavřeme a zvolíme “připojit” a následně “přidat”. Okno zavřeme.
 
 Cílem projektu je transformace bodů na linie s využitím sloupce `pocet_kalibrovano`, který vyjadřuje intenzitu přepravních proudů. Při kliknutí na vrstvu v levém panelu se otevře symbologie dané vrstvy. Body změníme z kategorie “jednoduchý symbol” na “odstupňovaný” a následně klikneme na samotný symbol. V dialogovém okně pak klikneme na “jednoduchá značka” a v sekci “Typ vrstvy symbolů” vybereme “generátor geometrie”. V “typ geometrie” pak vybereme “LineString/Multilinestring”.
 
@@ -106,7 +106,7 @@ Syntax posléze musíme doplnit ještě o atributy, ze kterých se má linie vyt
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/9.GEOM_SYNT.png" description="Syntax výpočtu geometrie" %}
 
-Dostaneme tak příkaz `make_line( $geometry, make_point( "cil_X", "cil_Y" ))`. Klikneme “použít”
+Dostaneme tak příkaz `make_line( $geometry, make_point( "cil_X", "cil_Y" ))`. Klikneme “použít”.
 
 Nyní zbývá nastavit síla dopravních vazeb. V symbologii v sekci “value” vybereme `pocet_kalibrovano` a vlevo dole vybereme klasifikaci dle Přirozených zlomů (natural breaks). Vpravo dole poté nastavíme počet tříd na 10. Nejméně významné proudy pak odškrtneme a necháme jen linie nad 80 osob. 
 
@@ -129,3 +129,14 @@ V prvním grafu je zobrazen pokles mobility obyvatelstva v krajích ČR oproti p
 ## Další využití dat, vizualizací a zdrojů
 
 Geolokační data se postupně začleňují do rozvojových koncepcí veřejné správy a k většímu rozšíření by pomohlo jejich zpřístupnění, a to zejména cenové. Tato data tak využívají standardně větší města, které mají finanční, ale i technické dovednosti, aby tato data zpracovávala. V ukázce byl představen 1 z možných výstupů, nicméně z dat je možné vytvářet řadu dalších výstupů i podle toho, jakou otázku bychom chtěli zodpovědět.
+
+[ČSÚ]: https://www.czso.cz/ "Český statistický úřad"
+[SLDB]: https://www.czso.cz/csu/scitani2021 "Sčítání lidu, domů a bytů"
+[ŘSD]: https://www.rsd.cz/wps/portal/ "Ředitelství silnic a dálnic"
+[GSM]: https://gsmweb.cz "GSMweb"
+[Přítomní]: http://jmk.brno.ml/ "Přítomné ob. v JMK"
+[Carto]: https://carto.com/ "Carto"
+[GitLab]: https://bitbucket.org/blue4world/brno_data_operatoru/src/master "Gitlab projekt"
+[QGIS]: https://qgis.org "QGIS"
+[Dataset]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci"
+[ČÚZK]: https://www.cuzk.cz/ "Český úřad zeměměřičský a katastrální"

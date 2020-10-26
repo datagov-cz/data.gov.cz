@@ -58,7 +58,7 @@ Jak uvidíme v dalších částech tohoto seriálu, výhodou znalostních grafů
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/znalostní-grafy-01-osm-wikidata-zoo.png"
-   description="Pohled na zobrazení zoologických zahdrad v databázi OpenStreetMap"
+   description="Pohled na zobrazení zoologických zahrad v databázi OpenStreetMap"
 %}
 
 Existují i doménově zaměřené znalostní grafy. Např. v oblasti bioinformatiky vznikaly znalostní grafy ještě dříve, než byl pojem znalostních grafů zaveden. Následujcí seznam uvádí několik příkladů volně dostupných znalostních grafů z této oblasti:

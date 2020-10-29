@@ -33,7 +33,7 @@ Identifikační údaje o právě využívané anténě a další doplňkové inf
 
 ## Kalibrace dat
 
-Mobilní operátor v rámci svého finálního produktu neposkytuje surová data ve smyslu pohybu určité osoby v území (ID SIM karty). Z pohledu uživatele, tedy např. zástupce veřejné správy, to ani není mnohdy žádoucí, jelikož většinou chce znát komplexní profil svého území, tedy o všech obyvatelích (nikoli o uživatelích 1 operátora). Zde tedy přichází na řadu kalibrace. V České republice působí 3 hlavní poskytovatelé geolokačních dat - O2, Vodafone a T-Mobile, kde má každý má na telekomunikačním trhu určitý podíl (T-Mobile cca 40 %, O2 cca 40 %, Vodafone 20 %). Tento podíl je tedy nutné dopočítat do 100 %, přičemž je nutné vzít v úvahu, že se tento podíl liší napříč územím. Například může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly). Do kalibrační fáze tedy v zásadě vstupují tyto faktory:
+Mobilní operátor v rámci svého finálního produktu neposkytuje surová data ve smyslu pohybu určité osoby v území (ID SIM karty). Z pohledu uživatele, tedy např. zástupce veřejné správy, to ani není mnohdy žádoucí, jelikož většinou chce znát komplexní profil svého území, tedy data o všech obyvatelích (nikoli o uživatelích 1 operátora). Zde tedy přichází na řadu kalibrace. V České republice působí 3 hlavní poskytovatelé geolokačních dat - O2, Vodafone a T-Mobile, kde má každý má na telekomunikačním trhu určitý podíl (T-Mobile cca 40 %, O2 cca 40 %, Vodafone 20 %). Tento podíl je tedy nutné dopočítat do 100 %, přičemž je nutné vzít v úvahu, že se tento podíl liší napříč územím. Například může nastat situace, kde v nějaké části města sídlí velká firma, kde mají všichni zaměstnanci firemní tarify od určitého poskytovatele (nelze tedy použít republikové podíly). Do kalibrační fáze tedy v zásadě vstupují tyto faktory:
 * podíl na trhu v daném území
 * počet obyvatel v daném území
 * rozložení BTS stanic
@@ -41,6 +41,7 @@ Mobilní operátor v rámci svého finálního produktu neposkytuje surová data
 * geomorfologie terénu (členitý terén znesnadňuje přenos signálu)
 * očištění dat od zařízení, které rovněž komunikují skrz BTS (smart zařízení)
 * intenzita připojování SIM do sítě BTS (minimálně 1x za 30 minut - častěji, pokud jsou aktivní data, volání či sms)
+
 Těmito kalibračními kroky tedy dostaneme model, který co nejvíce odpovídá realitě rozložení obyvatelstva v území. 
 
 ## Výstupy z kalibrace dat
@@ -54,7 +55,7 @@ kod_obec_p,day,hour,users
 506699,weekend,3,326
 506699,weekend,4,333
 
-Kde “kod_obec_p" znamená kód obce; “day” znamená pracovní den/víkend; “hour” znamená denní doba 0-24h; “users” značí počet uživatelů (SIM v území).
+kde “kod_obec_p" znamená kód obce; “day” znamená pracovní den/víkend; “hour” znamená denní doba 0-24h; “users” značí počet uživatelů (SIM v území).
 
 Výsledek [Přítomné obyvatelstvo v obcích Jihomoravského kraje][Přítomní] vizualizovaný v programu [Carto][Carto]. Zdrojový kód stránky je možné nalézt na [Gitlabu][GitLab].
 
@@ -118,7 +119,7 @@ Tímto docílíme výsledné mapy z úvodu. Takto vizualizovaná data pak mohou 
 
 Data mobilních operátorů nejsou (až na výjimky) veřejná, natož katalogizována v Národním katalogu otevřených dat. Všechny příklady pocházejí z konkrétních zakázek, byť data jsou zveřejněna na lokálních datových katalozích. Přesto však, a zvláště v současné covidové době, se ukazuje, jak by tato data byla potřeba pro efektivnější plánování a minimálně pro veřejnou správu by měla být v nějaké podobě přístupná.
 
-Nařízení vlády o nouzovém stavu vyhlášeném 12. 3. 2020 kvůli pandemii COVID-19 měla vliv na každodenní rutinu občanů Česka. Opatření vlády se zaměřovala zejména na omezení styku více lidí na 1 místě, což mělo významný vliv na omezení každodenní mobility, ať už do práce, školy, za službami či rekreací.
+Nařízení vlády o nouzovém stavu vyhlášeném 12. 3. 2020 kvůli pandemii COVID-19 měla vliv na každodenní rutinu občanů Česka. Opatření vlády se zaměřovala zejména na omezení styku více lidí na jednom místě, což mělo významný vliv na omezení každodenní mobility, ať už do práce, školy, za službami či rekreací.
 
 V prvním grafu je zobrazen pokles mobility obyvatelstva v krajích ČR oproti průměrnému týdnu před nouzovým stavem. Druhý graf zase ukazuje pokles zahraničních SIM na území ČR po zavedení nouzového stavu. Právě tato data pro národní, respektive krajskou úroveň by měla být dostupná pro analytické účely veřejné správy a tím pádem i katalogizována v NKOD. Veřejná správa by na operátory mohla v tomto ohledu více tlačit i například proto, že Český telekomunikační úřad poskytuje operátorům frekvence pro komunikace.
 
@@ -128,7 +129,7 @@ V prvním grafu je zobrazen pokles mobility obyvatelstva v krajích ČR oproti p
 
 ## Další využití dat, vizualizací a zdrojů
 
-Geolokační data se postupně začleňují do rozvojových koncepcí veřejné správy a k většímu rozšíření by pomohlo jejich zpřístupnění, a to zejména cenové. Tato data tak využívají standardně větší města, které mají finanční, ale i technické dovednosti, aby tato data zpracovávala. V ukázce byl představen 1 z možných výstupů, nicméně z dat je možné vytvářet řadu dalších výstupů i podle toho, jakou otázku bychom chtěli zodpovědět.
+Geolokační data se postupně začleňují do rozvojových koncepcí veřejné správy a k většímu rozšíření by pomohlo jejich zpřístupnění, a to zejména cenové. Tato data tak využívají standardně větší města, která mají finanční, ale i technické dovednosti, aby tato data zpracovávala. V ukázce byl představen jeden z možných výstupů, nicméně z dat je možné vytvářet řadu dalších výstupů i podle toho, jakou otázku bychom chtěli zodpovědět.
 
 [ČSÚ]: https://www.czso.cz/ "Český statistický úřad"
 [SLDB]: https://www.czso.cz/csu/scitani2021 "Sčítání lidu, domů a bytů"

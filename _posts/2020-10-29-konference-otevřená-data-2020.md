@@ -1,7 +1,7 @@
 ---
 layout: post
 icon: whatshot
-title: Konference Otevřená data ve veřejné správě
+title: Otevřená data 2020
 detail: false
 ref: VýročníKonference2020
 lang: cs

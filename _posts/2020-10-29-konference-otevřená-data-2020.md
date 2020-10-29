@@ -2,7 +2,7 @@
 layout: post
 icon: whatshot
 title: Konference Otevřená data ve veřejné správě
-detail: true
+detail: false
 ref: VýročníKonference2020
 lang: cs
 author: michal_kubáň

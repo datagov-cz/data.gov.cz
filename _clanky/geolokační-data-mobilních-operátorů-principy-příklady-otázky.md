@@ -63,7 +63,7 @@ Na základě těchto dat pak lze s určitou mírou (ne)přesnosti vizualizovat �
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/2.PROFIL.png" description="Denní rytmus území obce Hodonín" %}
 
-Případně je možné stejná data kategorizovat dle typologie osob, tedy zda je daný uživatel v území rezident, pracující či návštěvník, viz tabulka.
+Případně je možné stejná data kategorizovat dle typologie osob, tedy zda je daný uživatel v území rezident, pracující či návštěvník, viz tabulka. Například statut rezidenta je přiřazen osobě, která se dlouhodobě a pravidelně vyskytuje v daném území v nočních hodinách (00:00-05:00).
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/3.TAB_KAT.png" description="Rozdělení dle rezidentů, návštěvníků a pracujících" %}
 

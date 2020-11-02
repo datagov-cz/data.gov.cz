@@ -5,7 +5,7 @@ detail: true
 ref: geolokační-data-mobilních-operátorů-principy-příklady-otázky
 lang: cs
 author: martin_dvořák
-date: 2020-10-07T18:46:01.316Z
+date: 2020-11-02T07:00:00 +01:00
 ---
 Článek se zaměřuje na podstatu fungování geolokačních dat mobilních operátorů s cílem přiblížit tato data veřejnosti a nastínit možnosti vlastní analýzy, včetně praktické ukázky. Zároveň bude cílem poukázat na potenciál publikace těchto dat v Národním katalogu otevřených dat.
 

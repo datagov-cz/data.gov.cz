@@ -10,12 +10,12 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-background: #222 ;
-		--color-background-footer: #333;
+		--color-background: #111 ;
+		--color-background-footer: #222;
 		--color-text-default: #ddd ; 
 		--color-text-inverted: #222 ; 
-		--color-text-accent: white ;
-		--color-text-accent-inverted: white ;
+		--color-text-accent: #3bb5dc ;
+		--color-text-accent-inverted: #3bb5dc ;
 		--color-base: #057fa544 ;
 	}
 
@@ -27,20 +27,16 @@
 		color: var(--color-text-inverted) ;	
 	}
 
-	a {
+	a:hover {
+		border-color: var(--color-text-accent-inverted) ;
+	}
+
+	.nav-link.active {
 		text-decoration: underline;
 	}
 	
-	a:hover {
-		text-decoration: none ;
-	}
-	
-	button.navbar-toggler {
-		background-color: var(--color-background-footer);
-	}
-
 	hr {
-		border: 1px dotted white ;
+		border: 1px dotted var(--color-text-accent) ;
 	}
 
 	.navbar-light .navbar-nav .show>.nav-link {
@@ -58,7 +54,7 @@
 		background-color: #2a2c2e;
 	}
 	::selection {
-		background-color: #005ccc;
+		background-color: #3bb5dc;
 		color: #ffffff;
 	}
 }
@@ -76,7 +72,7 @@
 
 pre {
 	color: var(--color-text-accent);
-	background-color: var(--color-background-footer:);
+	background-color: var(--color-background-footer);
 }
 
 body, .card-body, .list-group-item, div.card {

@@ -15,7 +15,7 @@
 		--color-text-default: #ddd ; 
 		--color-text-inverted: #222 ; 
 		--color-text-accent: #3bb5dc ;
-		--color-text-accent-inverted: #3bb5dc ;
+		--color-text-accent-inverted: white ;
 		--color-base: #057fa544 ;
 	}
 
@@ -115,7 +115,7 @@ a.btn.btn-primary, button.btn.btn-primary {
 a.btn.btn-primary:hover, button.btn.btn-primary:hover, a.dropdown-item:hover {
     background-color: var(--color-text-inverted);
     border-color: var(--color-text-inverted);
-    color: var(--color-text-accent);
+    color: var(--color-text-accent-inverted);
 }
 
 .btn-secondary {

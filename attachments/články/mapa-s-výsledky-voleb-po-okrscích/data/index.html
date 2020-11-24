@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<meta charset="utf-8" />
+<svg width="960" height="520"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
+
+<script>
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+    var projection = d3.geoMercator()
+        .center([15.34, 49.75]) //střed ČR
+        .scale(7000) // měřítko, nastavíme dle potřeb
+        .translate([width / 2, height / 2]) // posuneme do středu SVG
+
+var path = d3.geoPath()
+    .projection(projection);
+
+//legenda
+
+d3.json("volebni_okrsky-simple-data-topo.json", function(error, data) {
+  d3.json("parties.json", function(err, parties) {
+    if (error) throw error;
+
+    var subunits = topojson.feature(data, data.objects.tracts) // obce
+
+    // vykreslíme obce
+    svg.selectAll(".subunit")
+        .data(subunits.features)
+        .enter().append("path")
+        .attr("class", function(d) { return "subunit " + d.id; })
+        //.attr("fill", function(d) { return color(d.properties.hustota); })
+        .attr("fill", function(d) {
+          let mx = 0
+          let px = ''
+          for (let i = 1; i <= 85; i++) {
+            let v = parseInt(d.properties[ i.toString() ])
+            if (v > mx) {
+              mx = v
+              px = i
+            }
+          }
+          if (px == '') {
+              return "#aaa"
+          } else {
+            return parties[px]['color']
+          }
+        })
+        .attr("stroke", "#888")
+        .attr("stroke-width", "0.25")
+        //.attr("stroke-dasharray", "1,5")
+        .attr("stroke-linejoin", "round")
+        .attr("d", path)
+  })
+});
+</script>
+</html>

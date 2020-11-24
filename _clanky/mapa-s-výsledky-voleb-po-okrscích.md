@@ -6,7 +6,7 @@ ref: mapa-s-vysledky-voleb-po-okrscich-kraje-2020
 lang: cs
 image: ../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.png
 author: michal_škop
-date: 2020-11-26 07:00:00 +01:00
+date: 2020-11-24 07:00:00 +01:00
 ---
 Mapy s volebními výsledky jsou již tradiční součástí volebního servisu mnoha médií. Ale poněvadž při letošních krajských volbách 2020 žádné médium celou tuto mapu nedělalo, vytvoříme si ji sami - sami si potom můžete postup zopakovat např. při příštích volbách. 
 <!--more-->
@@ -90,16 +90,16 @@ Detailní mapa např. umožňuje i pohled dovnitř měst, např. zde jsou zobraz
 [link_lidovky]: https://www.lidovky.cz/prezidentske-volby-2018.aspx?k=vysledky-druhe-kolo&t=okrsky-mapa "Prezidentské volby 2018."
 [link_volebniatlas]: https://volebniatlas.cz/ "Volební atlas"
 [link_sulek]: https://marcel.sulek.eu/2018/02/05/volebni-mapy.html "Volební mapy"
-[link_choropleth_qgis]: https://data.gov.cz/%C4%8Dl%C3%A1nky/kartogram-choropleth#postup-zpracov%C3%A1n%C3%AD-mapa-v-qgis "Kartogram ČR (choropleth, choropletová mapa): Postup zpracování v QGIS"
+[link_choropleth_qgis]: ../kartogram-choropleth#postup-zpracování-mapa-v-qgis "Kartogram ČR (choropleth, choropletová mapa): Postup zpracování v QGIS"
 [link_leaflet]: https://leafletjs.com/examples/choropleth/ "Leaflet: Choropleth"
-[link_nkod]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
-[link_ruian]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---atom.cuzk.cz-api-3-action-package_show-id-cz-00025712-cuzk_ruian-staty-shp_1 "NKOD - RÚIAN - SHP - soubor obce ČR"
-[link_csu]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-kz2020okrsky "NKOD - ČSÚ - výsledky voleb"
-[link_csu_2]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-kz2020cis "NKOD - ČSÚ - číselníky k volbám"
+[link_nkod]: https://data.gov.cz/datové-sady "NKOD"
+[link_ruian]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2Fhttps---atom.cuzk.cz-api-3-action-package_show-id-cz-00025712-cuzk_ruian-staty-shp_1 "NKOD - RÚIAN - SHP - soubor obce ČR"
+[link_csu]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-kz2020okrsky "NKOD - ČSÚ - výsledky voleb"
+[link_csu_2]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-kz2020cis "NKOD - ČSÚ - číselníky k volbám"
 [link_political_parties]: https://github.com/michalskop/political_parties/blob/master/cz/parties.csv "Political parties CZ"
-[link_choropleth]: https://data.gov.cz/%C4%8Dl%C3%A1nky/kartogram-choropleth "Kartogram ČR (choropleth, choropletová mapa)"
-[link_choropleth_install]: https://data.gov.cz/%C4%8Dl%C3%A1nky/kartogram-choropleth#instalace-pot%C5%99ebn%C3%BDch-program%C5%AF "Kartogram ČR (choropleth, choropletová mapa): Instalace potřebných programů"
-[link_choropleth_maps]: https://data.gov.cz/%C4%8Dl%C3%A1nky/kartogram-choropleth#postup-zpracov%C3%A1n%C3%AD-mapa-v-d3 "Kartogram ČR (choropleth, choropletová mapa): Postup zpracování - mapa v D3"
+[link_choropleth]: ../kartogram-choropleth "Kartogram ČR (choropleth, choropletová mapa)"
+[link_choropleth_install]: ../kartogram-choropleth#instalace-potřebných-programů "Kartogram ČR (choropleth, choropletová mapa): Instalace potřebných programů"
+[link_choropleth_maps]: ../kartogram-choropleth#postup-zpracování-mapa-v-d3 "Kartogram ČR (choropleth, choropletová mapa): Postup zpracování - mapa v D3"
 [link_attributes]: https://gis.stackexchange.com/questions/12329/how-to-delete-fields-in-qgis "How to delete fields in QGIS"
 
 [link_simplify]: https://github.com/topojson/topojson-simplify "TopoJSON-simplify"

@@ -2,7 +2,7 @@
 layout: post
 detail: true
 title: Mapa s výsledky voleb po okrscích
-ref: mapa-vysledky-voleb
+ref: mapa-s-vysledky-voleb-po-okrscich-kraje-2020
 lang: cs
 image: ../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.png
 author: michal_škop

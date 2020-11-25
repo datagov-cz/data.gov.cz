@@ -36,7 +36,7 @@ Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevř
 ### Postup zpracování
 S přípravou mapových podkladů budeme postupovat podle [návodu][link_choropleth] a volební data zpracujeme sami nově.
 
-Nejprve tedy připravíme mapové podklady dle [instalace][link_choropleth_install] a [návodu][link_choropleth_maps] Pouze místo obcí a ORP jako v příkladě výše použijeme volební okrsky (soubory `VU.xxx`)
+Nejprve tedy připravíme mapové podklady dle [instalace][link_choropleth_install] a [návodu][link_choropleth_maps]. Pouze místo obcí a ORP jako v příkladě výše použijeme volební okrsky (soubory `VU.xxx`).
 
 Nejprve odstraníme z mapy přebytečné atributy v QGIS ([návod][link_attributes]) a získáme soubor `volebni_okrsky.shp` (a další).
 

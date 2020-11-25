@@ -17,7 +17,7 @@ Zároveň jde o ukázkové použití a spojování otevřených dat z různých 
 
 {% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.png" description="Krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS a koalice (modrá), STAN a koalice (zelená), KDU-ČSL a koalice (žlutá), Piráti a koalice (černá), ČSSD a koalice (oranžová), KSČM (rudá), SPD (červená), ostatní barvy jsou lokální strany." %}
 
-Volební výsledky jsou v ČR dostupné až na úroveň volebních okrsků (volebních místností), což vedlo ke vzniku velmi podrobných map v několika médiích, např. v [Rozhlase][link_rozhlas] nebo v [Lidovkách][link_lidovky]
+Volební výsledky jsou v ČR dostupné až na úroveň volebních okrsků (volebních místností), což vedlo ke vzniku velmi podrobných map v několika médiích, např. v [Rozhlase][link_rozhlas] nebo v [Lidovkách][link_lidovky].
 
 Při letošních krajských volbách ale trochu překvapivě žádné mapy za celou ČR nevznikly (existují jen trochu jinak dělané [mapy po krajích][link_volebniatlas]).
 
@@ -45,7 +45,7 @@ Musíme ještě vyřešit problém jednoznačného id pro oba zdroje dat (RÚIAN
 - `oooooo` je šestimístný kód ČSÚ pro obce - pokud má obec čtvrti, je to kód čtvrti, pokud ne, je to kód obce, a
 - `vu` je číslo okrsku.
 
-V souboru `volebni_okrsky.dbf` to např. můžeme udělat snadno i ručně přidáním nového sloupce (název odpovídající .dbf: `PLACE_ID,C,40`) a vzorcem `=IF(D2="",CONCAT(C2,"-",B2+1-1),CONCAT(D2,"-",B2+1-1))`
+V souboru `volebni_okrsky.dbf` to např. můžeme udělat snadno i ručně přidáním nového sloupce (název odpovídající .dbf: `PLACE_ID,C,40`) a vzorcem `=IF(D2="",CONCAT(C2,"-",B2+1-1),CONCAT(D2,"-",B2+1-1))`.
 
 Volební data si zpracujeme do tabulky statistics.csv pomocí vlastního krátkého skriptu v Pythonu [transform.py](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/transform.py).
 

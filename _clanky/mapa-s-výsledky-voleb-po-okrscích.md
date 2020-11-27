@@ -6,7 +6,7 @@ ref: mapa-s-vysledky-voleb-po-okrscich-kraje-2020
 lang: cs
 image: ../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.png
 author: michal_škop
-date: 2020-11-24 07:00:00 +01:00
+date: 2020-11-27 07:00:00 +01:00
 ---
 Mapy s volebními výsledky jsou již tradiční součástí volebního servisu mnoha médií. Ale poněvadž při letošních krajských volbách 2020 žádné médium celou tuto mapu nedělalo, vytvoříme si ji sami - sami si potom můžete postup zopakovat např. při příštích volbách. 
 <!--more-->

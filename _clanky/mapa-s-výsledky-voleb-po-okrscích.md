@@ -105,7 +105,7 @@ Detailní mapa např. umožňuje i pohled dovnitř měst, např. zde jsou zobraz
 [link_simplify]: https://github.com/topojson/topojson-simplify "TopoJSON-simplify"
 [link_cli]: https://github.com/mbostock/ndjson-cli "NDJSON-CLI"
 [link_client]: https://github.com/topojson/topojson-client "TopoJSON-client"
-[link_server]: https://github.com/mbostock/topojson-server "TopoJSON-server"
+[link_server]: https://github.com/topojson/topojson-server "TopoJSON-server"
 [link_parser]: https://github.com/mbostock/shapefile "Streaming Shapefile Parser"
 
 [link_d3]: https://d3js.org/ "D3.js"

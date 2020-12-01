@@ -1,0 +1,597 @@
+{
+  "1": {
+    "KSTRANA": "1",
+    "VSTRANA": "1179",
+    "ZKRATKAK30": "BEZPEČNOST,ODPOVĚDNOST,SOLID.",
+    "ZKRATKAK8": "BOS",
+    "color": "#921c53"
+  },
+  "2": {
+    "KSTRANA": "2",
+    "VSTRANA": "769",
+    "ZKRATKAK30": "Str. konz. pravice-Řád národa",
+    "ZKRATKAK8": "SKP - ŘN",
+    "color": "#2b468b"
+  },
+  "3": {
+    "KSTRANA": "3",
+    "VSTRANA": "1453",
+    "ZKRATKAK30": "Koalice DSSS, ČiKR",
+    "ZKRATKAK8": "DSSS+ČiKR",
+    "color": "#779"
+  },
+  "4": {
+    "KSTRANA": "4",
+    "VSTRANA": "227",
+    "ZKRATKAK30": "Koalice ČSSD, Zelení",
+    "ZKRATKAK8": "ČSSD + Zelení",
+    "color": "#566"
+  },
+  "5": {
+    "KSTRANA": "5",
+    "VSTRANA": "715",
+    "ZKRATKAK30": "Demokratická strana zelených",
+    "ZKRATKAK8": "DSZ-ZA PR.ZVÍŘ.",
+    "color": "#1a8926"
+  },
+  "6": {
+    "KSTRANA": "6",
+    "VSTRANA": "1458",
+    "ZKRATKAK30": "Trikolóra, Soukromníci, NEZ",
+    "ZKRATKAK8": "Trikol+Souk+NEZ",
+    "color": "#698"
+  },
+  "7": {
+    "KSTRANA": "7",
+    "VSTRANA": "166",
+    "ZKRATKAK30": "STAROSTOVÉ A NEZÁVISLÍ",
+    "ZKRATKAK8": "STAN",
+    "color": "#5d8c00"
+  },
+  "8": {
+    "KSTRANA": "8",
+    "VSTRANA": "1446",
+    "ZKRATKAK30": "Trikolóra a Strana soukr. ČR",
+    "ZKRATKAK8": "Trikol+Soukrom",
+    "color": "#799"
+  },
+  "9": {
+    "KSTRANA": "9",
+    "VSTRANA": "1474",
+    "ZKRATKAK30": "KDU-ČSL, ADS A NESTRANÍCI",
+    "ZKRATKAK8": "KDU+ADS+Nestr.",
+    "color": "#e6ac21"
+  },
+  "10": {
+    "KSTRANA": "10",
+    "VSTRANA": "103",
+    "ZKRATKAK30": "Str.pro otevřenou společnost",
+    "ZKRATKAK8": "SOS",
+    "color": "#579"
+  },
+  "11": {
+    "KSTRANA": "11",
+    "VSTRANA": "687",
+    "ZKRATKAK30": "ODS a TOP 09",
+    "ZKRATKAK8": "ODS+TOP 09",
+    "color": "#004494"
+  },
+  "12": {
+    "KSTRANA": "12",
+    "VSTRANA": "1",
+    "ZKRATKAK30": "KDU-ČSL",
+    "ZKRATKAK8": "KDU-ČSL",
+    "color": "#e6ac21"
+  },
+  "13": {
+    "KSTRANA": "13",
+    "VSTRANA": "5",
+    "ZKRATKAK30": "Strana zelených",
+    "ZKRATKAK8": "Zelení",
+    "color": "#06b15d"
+  },
+  "14": {
+    "KSTRANA": "14",
+    "VSTRANA": "1217",
+    "ZKRATKAK30": "Morav. a Slez. pirátská strana",
+    "ZKRATKAK8": "MS Piráti",
+    "color": "#937"
+  },
+  "15": {
+    "KSTRANA": "15",
+    "VSTRANA": "770",
+    "ZKRATKAK30": "VÝCHODOČEŠI",
+    "ZKRATKAK8": "VČ",
+    "color": "#378"
+  },
+  "16": {
+    "KSTRANA": "16",
+    "VSTRANA": "1114",
+    "ZKRATKAK30": "Svoboda a př. demokracie (SPD)",
+    "ZKRATKAK8": "SPD",
+    "color": "#ea2329"
+  },
+  "17": {
+    "KSTRANA": "17",
+    "VSTRANA": "344",
+    "ZKRATKAK30": "Koalice pro Pardubický kraj",
+    "ZKRATKAK8": "KDU+SNKED+Nestr",
+    "color": "#e6ac21"
+  },
+  "18": {
+    "KSTRANA": "18",
+    "VSTRANA": "79",
+    "ZKRATKAK30": "Národní demokracie",
+    "ZKRATKAK8": "ND",
+    "color": "#863"
+  },
+  "19": {
+    "KSTRANA": "19",
+    "VSTRANA": "720",
+    "ZKRATKAK30": "Česká pirátská strana",
+    "ZKRATKAK8": "Piráti",
+    "color": "#000000"
+  },
+  "20": {
+    "KSTRANA": "20",
+    "VSTRANA": "703",
+    "ZKRATKAK30": "Starostové pro Liberecký kraj",
+    "ZKRATKAK8": "SLK",
+    "color": "#5d8c00"
+  },
+  "21": {
+    "KSTRANA": "21",
+    "VSTRANA": "1350",
+    "ZKRATKAK30": "PIRÁTI a STAROSTOVÉ",
+    "ZKRATKAK8": "PIRÁTI a STAN",
+    "color": "#000000"
+  },
+  "22": {
+    "KSTRANA": "22",
+    "VSTRANA": "83",
+    "ZKRATKAK30": "Moravané",
+    "ZKRATKAK8": "Moravané",
+    "color": "#feca0a"
+  },
+  "23": {
+    "KSTRANA": "23",
+    "VSTRANA": "1237",
+    "ZKRATKAK30": "VIZE - národní socialisté",
+    "ZKRATKAK8": "VIZENS",
+    "color": "#934"
+  },
+  "24": {
+    "KSTRANA": "24",
+    "VSTRANA": "1453",
+    "ZKRATKAK30": "Koalice DSSS, ČiKR",
+    "ZKRATKAK8": "DSSS+ČiKR",
+    "color": "#439"
+  },
+  "25": {
+    "KSTRANA": "25",
+    "VSTRANA": "1465",
+    "ZKRATKAK30": "Pro TOP Vysočinu",
+    "ZKRATKAK8": "TOP+KAN+Monarch",
+    "color": "#464"
+  },
+  "26": {
+    "KSTRANA": "26",
+    "VSTRANA": "1451",
+    "ZKRATKAK30": "Koalice VOK, KVC",
+    "ZKRATKAK8": "KVC+VOK",
+    "color": "#846"
+  },
+  "27": {
+    "KSTRANA": "27",
+    "VSTRANA": "1152",
+    "ZKRATKAK30": "Starostové pro Vysočinu",
+    "ZKRATKAK8": "STAN+SNK ED",
+    "color": "#5d8c00"
+  },
+  "28": {
+    "KSTRANA": "28",
+    "VSTRANA": "1118",
+    "ZKRATKAK30": "VOK - Volba pro kraj",
+    "ZKRATKAK8": "VOK",
+    "color": "#995"
+  },
+  "29": {
+    "KSTRANA": "29",
+    "VSTRANA": "687",
+    "ZKRATKAK30": "Koalice ODS a TOP 09",
+    "ZKRATKAK8": "ODS+TOP 09",
+    "color": "#004494"
+  },
+  "30": {
+    "KSTRANA": "30",
+    "VSTRANA": "1468",
+    "ZKRATKAK30": "3PK-Pro prosperující Pard. kr.",
+    "ZKRATKAK8": "ČSSD+SproK",
+    "color": "#F07D00"
+  },
+  "31": {
+    "KSTRANA": "31",
+    "VSTRANA": "1446",
+    "ZKRATKAK30": "TRIKOLÓRA - SOUKROMNÍCI",
+    "ZKRATKAK8": "Trikol+Soukrom",
+    "color": "#859"
+  },
+  "32": {
+    "KSTRANA": "32",
+    "VSTRANA": "1455",
+    "ZKRATKAK30": "Koalice KDU-ČSL, VPM, Nestran.",
+    "ZKRATKAK8": "KDU+VPM+Nestr.",
+    "color": "#743"
+  },
+  "33": {
+    "KSTRANA": "33",
+    "VSTRANA": "53",
+    "ZKRATKAK30": "Občanská demokratická strana",
+    "ZKRATKAK8": "ODS",
+    "color": "#004494"
+  },
+  "34": {
+    "KSTRANA": "34",
+    "VSTRANA": "785",
+    "ZKRATKAK30": "Zdraví Sport Prosperita",
+    "ZKRATKAK8": "PRO Zdraví",
+    "color": "#e31e24"
+  },
+  "35": {
+    "KSTRANA": "35",
+    "VSTRANA": "1453",
+    "ZKRATKAK30": "DSSS - Čistý kraj",
+    "ZKRATKAK8": "DSSS+ČiKR",
+    "color": "#739"
+  },
+  "36": {
+    "KSTRANA": "36",
+    "VSTRANA": "1453",
+    "ZKRATKAK30": "DSSS - STOP KRIMIGRANTŮM!",
+    "ZKRATKAK8": "DSSS+ČiKR",
+    "color": "#467"
+  },
+  "37": {
+    "KSTRANA": "37",
+    "VSTRANA": "1225",
+    "ZKRATKAK30": "Jednotní",
+    "ZKRATKAK8": "JEDNOTNÍ",
+    "color": "#689"
+  },
+  "38": {
+    "KSTRANA": "38",
+    "VSTRANA": "156",
+    "ZKRATKAK30": "Dělnic.str.sociální spravedl.",
+    "ZKRATKAK8": "DSSS",
+    "color": "#183F7C"
+  },
+  "39": {
+    "KSTRANA": "39",
+    "VSTRANA": "1129",
+    "ZKRATKAK30": "SNK1 - Starostové našeho kraje",
+    "ZKRATKAK8": "SNK1",
+    "color": "#359"
+  },
+  "40": {
+    "KSTRANA": "40",
+    "VSTRANA": "736",
+    "ZKRATKAK30": "SPR-REP.STR.ČECH,MORAVY,SLEZ.",
+    "ZKRATKAK8": "SPR-RSČMS",
+    "color": "#586"
+  },
+  "41": {
+    "KSTRANA": "41",
+    "VSTRANA": "704",
+    "ZKRATKAK30": "Severočeši.cz",
+    "ZKRATKAK8": "S.cz",
+    "color": "#975"
+  },
+  "42": {
+    "KSTRANA": "42",
+    "VSTRANA": "1478",
+    "ZKRATKAK30": "Koalice UFO, ProMOST",
+    "ZKRATKAK8": "UFO+ProMOST",
+    "color": "#346"
+  },
+  "43": {
+    "KSTRANA": "43",
+    "VSTRANA": "762",
+    "ZKRATKAK30": "ALIANCE NÁRODNÍCH SIL",
+    "ZKRATKAK8": "ANS",
+    "color": "#2d3092"
+  },
+  "44": {
+    "KSTRANA": "44",
+    "VSTRANA": "1467",
+    "ZKRATKAK30": "Spolu pro Moravu",
+    "ZKRATKAK8": "TOP+Z+LES+MZH+I",
+    "color": "#778"
+  },
+  "45": {
+    "KSTRANA": "45",
+    "VSTRANA": "7",
+    "ZKRATKAK30": "Česká str.sociálně demokrat.",
+    "ZKRATKAK8": "ČSSD",
+    "color": "#F07D00"
+  },
+  "46": {
+    "KSTRANA": "46",
+    "VSTRANA": "1447",
+    "ZKRATKAK30": "ODS a Starostové pro občany",
+    "ZKRATKAK8": "ODS+STO",
+    "color": "#004494"
+  },
+  "47": {
+    "KSTRANA": "47",
+    "VSTRANA": "1464",
+    "ZKRATKAK30": "Koalice TOP 09, HDK, LES",
+    "ZKRATKAK8": "TOP 09+HDK+LES",
+    "color": "#899"
+  },
+  "48": {
+    "KSTRANA": "48",
+    "VSTRANA": "1470",
+    "ZKRATKAK30": "Spojenci - TOP09, Hlas, Zelení",
+    "ZKRATKAK8": "TOP+Hlas+Zelení",
+    "color": "#595"
+  },
+  "49": {
+    "KSTRANA": "49",
+    "VSTRANA": "112",
+    "ZKRATKAK30": "MÍSTNÍ HNUTÍ ZA HARM. ROZVOJ",
+    "ZKRATKAK8": "HNHRM",
+    "color": "#499"
+  },
+  "50": {
+    "KSTRANA": "50",
+    "VSTRANA": "768",
+    "ZKRATKAK30": "ANO 2011",
+    "ZKRATKAK8": "ANO",
+    "color": "#261060"
+  },
+  "51": {
+    "KSTRANA": "51",
+    "VSTRANA": "1457",
+    "ZKRATKAK30": "Starostové pro jižní Moravu",
+    "ZKRATKAK8": "STAN+SOL",
+    "color": "#5d8c00"
+  },
+  "52": {
+    "KSTRANA": "52",
+    "VSTRANA": "1442",
+    "ZKRATKAK30": "ČSSD a Patrioti Olom. kraje",
+    "ZKRATKAK8": "ČSSD a POK",
+    "color": "#F07D00"
+  },
+  "53": {
+    "KSTRANA": "53",
+    "VSTRANA": "1058",
+    "ZKRATKAK30": "TOP 09 a KDU-ČSL - Spol.pro JČ",
+    "ZKRATKAK8": "KDU-ČSL+TOP 09",
+    "color": "#468"
+  },
+  "54": {
+    "KSTRANA": "54",
+    "VSTRANA": "1476",
+    "ZKRATKAK30": "Koalice STAN, Zelení, NEZ",
+    "ZKRATKAK8": "STAN+Zelení+NEZ",
+    "color": "#5d8c00"
+  },
+  "55": {
+    "KSTRANA": "55",
+    "VSTRANA": "1141",
+    "ZKRATKAK30": "Soukromníci a Svobodní",
+    "ZKRATKAK8": "Soukrom+Svobod",
+    "color": "#599"
+  },
+  "56": {
+    "KSTRANA": "56",
+    "VSTRANA": "74",
+    "ZKRATKAK30": "Levice",
+    "ZKRATKAK8": "Levice",
+    "color": "#875"
+  },
+  "57": {
+    "KSTRANA": "57",
+    "VSTRANA": "1466",
+    "ZKRATKAK30": "Koalice ODA, Hlas, SNK ED",
+    "ZKRATKAK8": "ODA+Hlas+SNK ED",
+    "color": "#567"
+  },
+  "58": {
+    "KSTRANA": "58",
+    "VSTRANA": "1475",
+    "ZKRATKAK30": "STAN,Zelení,PRO PLZEŇ",
+    "ZKRATKAK8": "STAN+Z+PROPLZEŇ",
+    "color": "#5d8c00"
+  },
+  "59": {
+    "KSTRANA": "59",
+    "VSTRANA": "1058",
+    "ZKRATKAK30": "Společně pro Liberecký kraj",
+    "ZKRATKAK8": "KDU-ČSL+TOP 09",
+    "color": "#e6ac21"
+  },
+  "60": {
+    "KSTRANA": "60",
+    "VSTRANA": "1453",
+    "ZKRATKAK30": "DSSS - ČiKR",
+    "ZKRATKAK8": "DSSS+ČiKR",
+    "color": "#477"
+  },
+  "61": {
+    "KSTRANA": "61",
+    "VSTRANA": "210",
+    "ZKRATKAK30": "Koalice ODS+KDU-ČSL",
+    "ZKRATKAK8": "KDU-ČSL+ODS",
+    "color": "#e6ac21"
+  },
+  "62": {
+    "KSTRANA": "62",
+    "VSTRANA": "659",
+    "ZKRATKAK30": "Koalice STAN, TOP 09",
+    "ZKRATKAK8": "TOP+STAN",
+    "color": "#723769"
+  },
+  "63": {
+    "KSTRANA": "63",
+    "VSTRANA": "47",
+    "ZKRATKAK30": "Komunistická str.Čech a Moravy",
+    "ZKRATKAK8": "KSČM",
+    "color": "#8c0000"
+  },
+  "64": {
+    "KSTRANA": "64",
+    "VSTRANA": "1450",
+    "ZKRATKAK30": "Spojenci pro Olomoucký kraj",
+    "ZKRATKAK8": "KDU+Z+TOP+ProOl",
+    "color": "#e6ac21"
+  },
+  "65": {
+    "KSTRANA": "65",
+    "VSTRANA": "716",
+    "ZKRATKAK30": "Strana soukromníků ČR",
+    "ZKRATKAK8": "Soukromníci",
+    "color": "#594"
+  },
+  "66": {
+    "KSTRANA": "66",
+    "VSTRANA": "1460",
+    "ZKRATKAK30": "Soukromníci a ODA",
+    "ZKRATKAK8": "Soukromníci+ODA",
+    "color": "#977"
+  },
+  "67": {
+    "KSTRANA": "67",
+    "VSTRANA": "98",
+    "ZKRATKAK30": "Volte Pr.Blok www.cibulka.net",
+    "ZKRATKAK8": "PB",
+    "color": "#0000ff"
+  },
+  "68": {
+    "KSTRANA": "68",
+    "VSTRANA": "55",
+    "ZKRATKAK30": "Koruna Česká (monarch.strana)",
+    "ZKRATKAK8": "Monarchiste.cz",
+    "color": "#569"
+  },
+  "69": {
+    "KSTRANA": "69",
+    "VSTRANA": "1173",
+    "ZKRATKAK30": "Občanská demokratická aliance",
+    "ZKRATKAK8": "ODA",
+    "color": "#758"
+  },
+  "70": {
+    "KSTRANA": "70",
+    "VSTRANA": "1227",
+    "ZKRATKAK30": "Trikolóra hnutí občanů",
+    "ZKRATKAK8": "Trikolóra",
+    "color": "#3243d2"
+  },
+  "71": {
+    "KSTRANA": "71",
+    "VSTRANA": "714",
+    "ZKRATKAK30": "Svobodní",
+    "ZKRATKAK8": "Svobodní",
+    "color": "#009982"
+  },
+  "72": {
+    "KSTRANA": "72",
+    "VSTRANA": "1229",
+    "ZKRATKAK30": "Změna 2020",
+    "ZKRATKAK8": "Z 2020",
+    "color": "#576"
+  },
+  "73": {
+    "KSTRANA": "73",
+    "VSTRANA": "1454",
+    "ZKRATKAK30": "Koalice ODS, STAN, VČ",
+    "ZKRATKAK8": "ODS+STAN+VČ",
+    "color": "#004494"
+  },
+  "74": {
+    "KSTRANA": "74",
+    "VSTRANA": "687",
+    "ZKRATKAK30": "ODS s podp.TOP 09 a nez.star.",
+    "ZKRATKAK8": "ODS+TOP 09",
+    "color": "#004494"
+  },
+  "75": {
+    "KSTRANA": "75",
+    "VSTRANA": "747",
+    "ZKRATKAK30": "ZaRegion",
+    "ZKRATKAK8": "ZaRegion",
+    "color": "#634"
+  },
+  "76": {
+    "KSTRANA": "76",
+    "VSTRANA": "1445",
+    "ZKRATKAK30": "ODS s podpor. Svobodných a SOM",
+    "ZKRATKAK8": "ODS+Svobod.+SOM",
+    "color": "#004494"
+  },
+  "77": {
+    "KSTRANA": "77",
+    "VSTRANA": "1456",
+    "ZKRATKAK30": "JsmePRO,LES,SNKED,Zelení,TOP09",
+    "ZKRATKAK8": "JP+LES+ED+Z+TOP",
+    "color": "#687"
+  },
+  "78": {
+    "KSTRANA": "78",
+    "VSTRANA": "1471",
+    "ZKRATKAK30": "Změna pro lidi a pro krajinu",
+    "ZKRATKAK8": "Změna+NBPLK",
+    "color": "#848"
+  },
+  "79": {
+    "KSTRANA": "79",
+    "VSTRANA": "1231",
+    "ZKRATKAK30": "Aletrnativa pro nez.kand.2020",
+    "ZKRATKAK8": "ANK 2020",
+    "color": "#549"
+  },
+  "80": {
+    "KSTRANA": "80",
+    "VSTRANA": "766",
+    "ZKRATKAK30": "JIHOČEŠI 2012",
+    "ZKRATKAK8": "JIH 12",
+    "color": "#884"
+  },
+  "81": {
+    "KSTRANA": "81",
+    "VSTRANA": "142",
+    "ZKRATKAK30": "Starostové pro kraj",
+    "ZKRATKAK8": "Starostové",
+    "color": "#544"
+  },
+  "82": {
+    "KSTRANA": "82",
+    "VSTRANA": "137",
+    "ZKRATKAK30": "ROZUMNÍ - Petr Hannig",
+    "ZKRATKAK8": "Rozumní",
+    "color": "#6fb7c5"
+  },
+  "83": {
+    "KSTRANA": "83",
+    "VSTRANA": "1234",
+    "ZKRATKAK30": "Mladí pro Pardubický kraj",
+    "ZKRATKAK8": "MPK",
+    "color": "#499"
+  },
+  "84": {
+    "KSTRANA": "84",
+    "VSTRANA": "1190",
+    "ZKRATKAK30": "Moravské zemské hnutí",
+    "ZKRATKAK8": "MZH",
+    "color": "#ffdf10"
+  },
+  "85": {
+    "KSTRANA": "85",
+    "VSTRANA": "1444",
+    "ZKRATKAK30": "Pro KRAJinu",
+    "ZKRATKAK8": "Zelení+LES",
+    "color": "#498"
+  }
+}

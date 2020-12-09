@@ -164,7 +164,7 @@ Více informací naleznete na [webu OFN][ofn].
 [sportoviště]: https://ofn.gov.cz/sportoviště/2020-07-01/ "OFN Sportoviště"
 [kudy-z-nudy]: https://www.kudyznudy.cz/ "Kudy z nudy"
 [tip-na-výlet]: http://tipnavylet.cz/ "Tip na výlet"
-[sdílené-specifikace]: https://opendata.gov.cz/otevřené-formální-normy:start#specifikace_pro_nejčastěji_se_vyskytující_části_dat_sdílené_specifikace "Sdílené specifikace"
+[sdílené-specifikace]: /ofn/#sdílené-specifikace "Sdílené specifikace"
 [schema-org]: http://schema.org "Schema.org"
 [json-ld]: https://www.w3.org/TR/json-ld11/ "JSON-LD 1.1"
 [json-schema]: https://json-schema.org/ "JSON Schema"

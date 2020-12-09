@@ -1,0 +1,116 @@
+---
+layout: default
+title: Otevřené formální normy (OFN)
+ref: otevřené-formální-normy
+lang: cs
+---
+
+  <div class="container">
+    <h1>{{page.title}}</h1>
+    <p class="lead">
+        Otevřené formální normy ve smyslu <a href="https://www.zakonyprolidi.cz/cs/1999-106#p3-9">§ 3 odst. 9 zákona č. 106/1999 Sb., o svobodném přístupu k informacím</a> jsou pro poskytovatele otevřených dat kteří jsou povinnými subjekty dle <a href="https://www.zakonyprolidi.cz/cs/1999-106#p4b-1">§ 4b odst. 1 zákona č. 106/1999 Sb. o svobodném přístupu k informacím</a> závazné.
+        Jedná se o technická doporučení zaměřená na vybrané datové sady, která zajišťují, že stejná data publikovaná různými poskytovateli budou interoperabilní.
+        Tím je umožněno taková data jednodušeji využívat nezávisle na tom, od kterého jsou poskytovatele.
+    </p>
+
+    <p>
+        Na otevřených formálních normách <a href="https://github.com/opendata-mvcr/otevrene-formalni-normy">pracujeme na GitHubu</a>.
+        Navrhujte nové normy a přispívejte do existujících!
+    </p>
+
+    <h2 id="význam">Význam a způsob použití otevřených formálních norem</h2>
+    <p>
+        Otevřená formální norma (OFN) specifikuje, jak publikovat data o konkrétních věcech, např. sportovištích, akcích apod.
+        Pro poskytovatele dat jsme vytvořili <a href="použití-poskytovateli/">návod k použití OFN poskytovateli dat</a>.
+        Smysl OFN a zamýšlený způsob použití je ve zkratce následující:
+    </p>
+    <ul>
+        <li>Pokud publikujete data, která významově odpovídají tomu, co modelujeme, použijte tuto specifikaci, ať je to všude stejně a dá se s daty jednotně pracovat, nezávisle na zdroji.</li>
+        <li>Všechny položky jsou nepovinné, tj. pokud některé nemáte, a objektivně nejsou potřeba, nic se neděje, prostě je v datech vynecháte.</li>
+        <li>V OFN pro konkrétní datové sady ale máme "minimalistický" příklad. Tím říkáme, že pokud nepublikujete/nemáte ani to co je v něm, tak ta data zřejmě nebudou dávat smysl a tudíž je nikdo nebude schopen použít, což je proti smyslu otevřených dat.</li>
+        <li>
+            Pokud máte položky navíc, tak je můžete libovolně přidat.
+            V tom případě bychom byli rádi, kdybyste nám <a href="https://github.com/opendata-mvcr/otevrene-formalni-normy/issues">dali vědět</a>, abychom mohli zvážit, zda to není něco, u čeho má smysl uvažovat o zanesení do OFN pro ostatní poskytovatele a zpracovatele těchto dat.
+        </li>
+    </ul>
+
+    <h2 id="konkrétní">OFN pro konkrétní datové sady</h2>
+    <p>
+        Následující Otevřené formální normy jsou finalizované.
+        To znamená, že podle nich může probíhat implementace.
+        Případné připomínky k nim budou zapracovány za delší dobu a co nejcitlivěji k aktuální verzi.
+    </p>
+    <ul>
+        <li><a href="https://ofn.gov.cz/registr-práv-a-povinností/">Registr práv a povinností</a></li>
+        <li><a href="https://ofn.gov.cz/aktuality/">Aktuality</a></li>
+        <li><a href="https://ofn.gov.cz/sportoviště/">Sportoviště</a></li>
+        <li><a href="https://ofn.gov.cz/turistické-cíle/">Turistické cíle</a></li>
+        <li><a href="https://ofn.gov.cz/události/">Události</a></li>
+    </ul>
+    <p>
+        Dále jsou rozpracovány následující Otevřené formální normy pro konkrétní datové sady:
+    </p>
+    <ul>
+        <li><a href="https://ofn.gov.cz/bezúplatná-plnění-a-dary/">Bezúplatná plnění a dary</a></li>
+        <li><a href="https://ofn.gov.cz/dřeviny/">Dřeviny</a></li>
+        <li><a href="https://ofn.gov.cz/faktury/">Faktury</a></li>
+        <li><a href="https://ofn.gov.cz/hlasování/">Hlasování</a></li>
+        <li><a href="https://ofn.gov.cz/nádoby-na-tříděný-odpad/">Nádoby na tříděný odpad</a></li>
+        <li><a href="https://ofn.gov.cz/pracovní-místa/">Pracovní místa</a></li>
+        <li><a href="https://ofn.gov.cz/pracovní-místa-ve-vědě-a-výzkumu/">Pracovní místa ve vědě a výzkumu</a></li>
+        <li><a href="https://ofn.gov.cz/sběrné-dvory/">Sběrné dvory</a></li>
+        <li><a href="https://ofn.gov.cz/témata-dizertačních-prací/">Témata dizertačních prací</a></li>
+        <li><a href="https://ofn.gov.cz/úřední-desky/">Úřední desky</a></li>
+    </ul>
+
+    <h2 id="sdílené-specifikace">Specifikace pro nejčastěji se vyskytující části dat (sdílené specifikace)</h2>
+    <p>
+        Společné části vyskytující se ve více datových sadách pak specifikujeme v tzv. sdílených specifikacích, na které se pak odkazují ostatní otevřené formální normy a specifikace.
+        Následující specifikace jsou finalizované.
+        To znamená, že podle nich může probíhat implementace.
+        Případné připomínky k nim budou zapracovány za delší dobu a co nejcitlivěji k aktuální verzi.
+    </p>
+    <ul>
+        <li><a href="https://ofn.gov.cz/základní-datové-typy/">Základní datové typy</a> - Ano či ne (booleovská hodnota), Celé číslo, Desetinné číslo, Datum, Čas, Datum a čas, Řetězec, URL, Cena, Množství</li>
+        <li><a href="https://ofn.gov.cz/věc/">Věc</a> - Společný předek všech tříd definovaných v OFN a sdílených specifikacích. Definuje identifikátor, název, popis, čas zneplatnění apod.</li>
+        <li><a href="https://ofn.gov.cz/adresy/">Adresy</a></li>
+        <li><a href="https://ofn.gov.cz/bezbariérovost/">Bezbariérovost</a></li>
+        <li><a href="https://ofn.gov.cz/časová-specifikace/">Časová specifikace</a></li>
+        <li><a href="https://ofn.gov.cz/digitální-objekty/">Digitální objekty</a></li>
+        <li><a href="https://ofn.gov.cz/kontakty/">Kontakty</a></li>
+        <li><a href="https://ofn.gov.cz/lidé-a-osoby/">Lidé a osoby</a></li>
+        <li><a href="https://ofn.gov.cz/umístění/">Umístění</a></li>
+        <li><a href="https://ofn.gov.cz/vstupné/">Vstupné</a></li>
+    </ul>
+
+    <p>
+        Dále pracujeme na:
+    </p>
+    <ul>
+        <li><a href="https://ofn.gov.cz/práce/">Práce</a></li>
+        <li><a href="https://ofn.gov.cz/školství/">Školství</a></li>
+        <li><a href="https://ofn.gov.cz/věda-a-výzkum/">Věda a výzkum</a></li>
+    </ul>
+
+    <h2 id="obecnější">Obecnější OFN pro různé typy dat</h2>
+    <p>
+        Následující Otevřené formální normy jsou finalizované.
+        To znamená, že podle nich může probíhat implementace.
+        Případné připomínky k nim budou zapracovány za delší dobu a co nejcitlivěji k aktuální verzi.
+    </p>
+    <ul>
+        <li><a href="https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/">Rozhraní katalogů otevřených dat</a></li>
+        <li><a href="https://ofn.gov.cz/prostorová-data/">Prostorová data</a></li>
+    </ul>
+
+    <p>
+        Dále pracujeme na následujících obecnějších otevřených formálních normách:
+    </p>
+    <ul>
+        <li><a href="https://ofn.gov.cz/číselníky/">Číselníky</a></li>
+        <li><a href="https://ofn.gov.cz/propojená-data/">Propojená data (Linked Data)</a></li>
+        <li><a href="https://ofn.gov.cz/propojená-data-s-časovou-složkou/">Propojená data s časovou složkou</a></li>
+        <li><a href="https://opendata.gov.cz/standardy:technicke-standardy-pro-datove-sady-na-stupni-3">Technické standardy pro datové sady na stupni otevřenosti 3</a></li>
+    </ul>
+
+  </div>

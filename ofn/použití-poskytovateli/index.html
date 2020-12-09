@@ -1,0 +1,167 @@
+---
+layout: default
+title: Jak mám jako poskytovatel použít otevřené formální normy
+ref: otevřené-formální-normy-návod-pro-poskytovatele
+lang: cs
+---
+
+  <div class="container">
+    <h1>{{page.title}}</h1>
+    <p class="lead">
+        Otevřené formální normy (OFN) jsou technická doporučení zaměřená na vybrané datové sady, která zajišťují, že stejná data publikovaná různými poskytovateli budou interoperabilní.
+        Tím je umožněno taková data jednodušeji využívat nezávisle na tom, od kterého jsou poskytovatele.
+        Pro poskytovatele otevřených dat, kteří jsou povinnými subjekty dle <a href="https://www.zakonyprolidi.cz/cs/1999-106#p2">zákona č. 106/1999 Sb. o svobodném přístupu k informacím</a>, jsou však tato doporučení závazná dle <a href="https://www.zakonyprolidi.cz/cs/1999-106#p4b-1">§ 4b odst. 1</a>.
+        Cílem tohoto návodu je poskytnout pro poskytovatele dat návod, jak správně Otevřené formální normy použít a na co v datech nezapomínat.
+    </p>
+
+    <p>
+        Seznam existujících OFN a jejich stav, tj. zda jsou v přípravě a mohou se měnit, nebo zda jsou vydané, naleznete v příslušné <a href="https://ofn.gov.cz">sekci Portálu otevřených dat</a>.
+        Jak již bylo řečeno v úvodu, používání OFN ve smyslu <a href="https://www.zakonyprolidi.cz/cs/1999-106#p3-9">§ 3 odst. 9 zákona č. 106/1999 Sb., o svobodném přístupu k informacím</a> je pro poskytovatele otevřených dat dle <a href="https://www.zakonyprolidi.cz/cs/1999-106#p4b-1">§ 4b odst. 1 zákona č. 106/1999 Sb. o svobodném přístupu k informacím</a> závazné.
+        V době psaní návodu byly vydány 4 OFN, které jsou zaměřeny na obce.
+        Jedná se o <a href="https://ofn.gov.cz/turistické-cíle/">Turistické cíle</a>, <a href="https://ofn.gov.cz/sportoviště/">Sportoviště</a>, <a href="https://ofn.gov.cz/události/">Události</a> a <a href="https://ofn.gov.cz/aktuality/">Aktuality</a>.
+    </p>
+
+    <h2 id="odpovídající-téma">Odpovídají má data tématicky existující OFN?</h2>
+    <p>
+        Prvním krokem při publikaci otevřených dat je uvědomění si, o čem publikovaná data jsou. Existuje pro dané téma OFN?
+        Pokud ano, pak je třeba se jí řídit, aby byla publikovaná data interoperabilní, tj. aby aplikace, které konzumují data dle dané OFN, nemusely být upravovány pro zpracování různých proprietárních formátů dat.
+    </p>
+
+    <p>
+        Pokud otevřená formální norma pro moje téma ještě neexistuje ani v rozpracovaném stavu, pak se dostáváme mimo záběr tohoto návodu.
+        Tuto situaci popíšeme někdy příště.
+        Nyní pouze řekneme, že i tak je třeba použít alespoň tzv. <a href="../#sdílené-specifikace">sdílené specifikace</a>, které standardizují podobu často se opakujících částí dat, a vzniklou datovou sadu dokumentovat stylem a obsahem, který odpovídá stylu a obsahu OFN.
+    </p>
+
+    <p>
+        Pro zbytek návodu předpokládáme, že publikovaná data tématicky odpovídají některé z vydaných či rozpracovaných OFN.
+    </p>
+
+    <h2 id="sdílené-specifikace">OFN a sdílené specifikace</h2>
+    <p>
+        Otevřené formální normy jsou vydávány systematicky tak, že stejné typy věcí jsou specifikovány pouze jednou, jako tzv. <a href="../#sdílené-specifikace">sdílené specifikace</a>.
+        Příkladem může být <a href="https://ofn.gov.cz/časová-specifikace/">časová specifikace</a>, která je použita v jedné OFN jako <a href="https://ofn.gov.cz/sportoviště/2020-07-01/#vazba-sportoviště-otevírací-doba">otevírací doba sportoviště</a> a v jiné OFN jako <a href="https://ofn.gov.cz/nádoby-na-tříděný-odpad/#vazba-nádoba-na-odpad-časy-vývozu">plán vývozu kontejneru na sklo</a>.
+        Samotné možnosti časové specifikace jsou ale stejné, a tedy specifikovány ve zvláštním dokumentu.
+    </p>
+
+    {% include image.html url="https://ofn.gov.cz/turistické-cíle/2020-07-01/obrázky/turistický-cíl.svg" description="Přehledový obrázek OFN Turistické cíle" %}
+
+    <h2 id="datový-formát">Datový formát předepsaný OFN</h2>
+    <p>
+        Otevřená formální norma, např. pro turistické cíle, specifikuje, že data budou publikována ve formátu JSON, který je specifikován dokumentem <a href="https://www.ecma-international.org/publications/standards/Ecma-404.htm">ECMA-404</a> a dále upřesněn dokumentem <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>, a musí být validní vůči <a href="https://json-schema.org/specification.html">JSON schématu</a>, které je součástí OFN v sekci Příklady.
+        Položky, které jsou v datech obsaženy, pak musí svým významem odpovídat na jejich popis v sekci Specifikace dané OFN.
+        Poskytovatel dat tedy musí zařídit převod dat z existujícího formátu, pokud to není přímo ten v OFN.
+        Tím je zajištěno, že data budou zpracovatelná aplikacemi využívajícími OFN bez další transformace.
+    </p>
+
+    <p>
+        Všechny položky specifikované v OFN jsou nepovinné.
+        Pokud tedy poskytovatel pro některou z předepsaných položek nemá data, tak ji zkrátka nevyužije.
+        Naopak také platí, že do dat dle OFN lze přidávat vlastní data, pokud v OFN popsána nejsou.
+        V tom případě ale výsledný soubor musí zůstat validní vůči JSON schématu specifikovaném v OFN.
+        Rozšíření musí využívat <a href="../#sdílené-specifikace">sdílené specifikace</a> a musí být řádně zdokumentováno specifikací rozšiřujících položek a rozšířeným JSON schématem v podobném stylu, jako je samotná OFN.
+    </p>
+
+    <p>
+        Zároveň ale platí, že každá OFN má uveden tzv. minimalistický příklad, u kterého by již vynechání libovolné položky učinilo taková data nepoužitelnými.
+    </p>
+
+    <p>
+        Příklad: Datová sada turistických cílů bude JSON soubor vystavený na webu, validní vůči JSON schématu <a href="https://ofn.gov.cz/turistické-cíle/2020-07-01/schémata/turistické-cíle.json">https://ofn.gov.cz/turistické-cíle/2020-07-01/schémata/turistické-cíle.json</a> - validitu lze ověřit např. v nástroji <a href="https://www.jsonschemavalidator.net/">JSON Schema Validator</a>.
+    </p>
+
+    <h2 id="iri">Identifikátory IRI</h2>
+    <p>
+        Každá datová entita publikovaná dle OFN má svůj identifikátor ve tvaru IRI - Internationalized Resource Identifier (<a href="https://tools.ietf.org/html/rfc3987">RFC 3987</a>) - v JSON klíči <code>&quot;iri&quot;</code>.
+        Používání IRI pro identifikací věcí v otevřených datech je velmi důležité.
+        Zajišťuje totiž, že dvě různé věci publikované v různých datových sadách různých poskytovatelů nebudou nikdy identifikovány pomocí stejného identifikátoru.
+        To se jinak běžně děje - není těžké si představit, že turistický cíl v jedné datové sadě je identifikován např. <code>&quot;tc23&quot;</code>, což je ale shodou okolností použito také jako identifikátor jiného turistického cíle jiného poskytovatele, a také jako identifikátor ozubeného kolečka v nějakém systému výrobního závodu.
+        Na základě identifikátoru <code>&quot;tc23&quot;</code> pak vlastně vůbec nevíme, která věc je takto identifikována.
+        Používání IRI tak usnadňuje integraci dat z více zdrojů a zvyšuje datovou interoperabilitu, což je hlavním cílem OFN.
+    </p>
+
+    <p>
+        Používání IRI pro identifikaci entit v otevřených datech není třeba se bát.
+        Každý poskytovatel má již nyní registrovánu svojí doménu minimálně pro svojí webovou prezentaci.
+        Tuto doménu lze v nejjednodušším případě použít i pro tvorbu identifikátorů pro datové entity vyčleněním části cesty IRI k tomuto účelu, např. <code>https://www.poskytovatel.cz/data/</code>.
+        Alternativně lze pro účely identifikace datových entit zřídit subdoménu, např. https://data.poskytovatel.cz.
+    </p>
+
+    <p>
+        Pro entity daného typu, např. turistické cíle, pak lze vyčlenit další část cesty IRI, a tedy pro konkrétní turistický cíl použít např. <code>https://data.poskytovatel.cz/turistické-cíle/1234</code>.
+        Zde je třeba zdůraznit, že se jedná pouze o identifikátor (IRI), nikoliv lokátor (URL).
+        Tedy minimálně z počátku není třeba řešit, aby IRI <code>https://data.poskytovatel.cz/turistické-cíle/1234</code> &quot;někam vedlo&quot;, tj. aby uživatel při přístupu na něj například pomocí webového prohlížeče dostal nějaká data, nebo viděl nějakou stránku.
+        Jedinou funkci, kterou IRI v tomto případě má, je funkce rozlišovací, identifikační.
+        Tedy pokud jsou dvě věci identifikovány stejným IRI, jedná se záměrně o stejnou věc.
+        Naopak, dvě různé věci budou identifikovány dvěma různými IRI.
+    </p>
+
+    <p>
+        Pro zajištění pořádku v přidělování IRI jednotlivým datovým entitám poskytovatelům doporučujeme si pro něj stanovit pravidla.
+        Ta budou obsahovat specifikace použité domény a případné dělení prostoru cesty IRI jak mezi jednotlivé typy entit, tak např. dle administrativního uspořádání poskytovatele - např. po jednotlivých odděleních.
+        Jednou přidělená IRI by měla být co nejstabilnější, aby se na ně mohli uživatelé dat spolehnout.
+        Je tedy třeba je volit pečlivě, dle stanovených pravidel.
+    </p>
+
+    <p>
+        Ač jsou všechny položky v OFN vždy nepovinné, správné používání IRI pro identifikaci entit, o kterých data jsou, je velmi důležité, a mělo by být využito vždy - nic tomu totiž nebrání a výhody jsou jasné.
+    </p>
+
+    <h2 id="změny-v-čase">Data měnící se v čase</h2>
+    <p>
+        Data se v čase mění a při jejich publikaci na webu je třeba s tím počítat.
+        Datové položky přibývají, ubývají a mění se, a uživatelé dat musí být schopni tyto skutečnosti snadno zjistit.
+        Pro časový okamžik vytvoření či změny záznamu o věci jako např. o turistickém cíli, slouží položky <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-vytvořeno">Vytovřeno</a> a <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-aktualizováno">Aktualizováno</a>.
+        Složitější situace je ale u informování uživatelů o zrušení nějaké věci, kde rozlišujeme 2 typy datových sad dle jejich předpokládané frekvence aktualizace - datové sady aktualizované občas a datové sady aktualizované často.
+    </p>
+
+    <h3 id="aktualizace-občas">Datové sady aktualizované občas</h3>
+    <p>
+        Datovou sadou aktualizovanou občas je například seznam sportovišť či turistických cílů, kde se nepředpokládá, že by ubývaly a přibývaly třeba několikrát denně, nebo že by se již předem vědělo, do kdy je daný turistický cíl relevantní.
+    </p>
+
+    <p>
+        Pokud nějaká věc přibude, je pro uživatele snadné tuto skutečnost zjistit - v datech nalezne věc s novým IRI, kterou dříve neviděl.
+        Pokud ale naopak některá věc zmizí, je třeba uživatele na tuto skutečnost explicitně upozornit.
+        Jinak by totiž musel pokaždé kontrolovat celou datovou sadu oproti jejímu minulému stavu, zda nějaké věci nechybí, přičemž by nebylo jasné, zda chybějící věci například jen dočasně nevypadly z exportu.
+        K explicitnímu označení odstraněné věci tedy slouží položka <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-zneplatněno">Zneplatněno</a>, která obsahuje časový okamžik zneplatnění záznamu o věci.
+        Použije se tak, že záznam o věci, například turistickém cíli, z datové sady nezmizí.
+        Zůstane v ní navždy se svým IRI, jen místo všech ostatních položek zůstane pouze položka <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-zneplatněno">Zneplatněno</a>.
+        Uživatelům je tak jasné, že někdy existoval např. turistický cíl identifikovaný <code>https://data.poskytovatel.cz/turistické-cíle/1234</code>, ale byl zrušen.
+        Této technice se někdy říká také tombstone - náhrobek.
+    </p>
+
+    <p>
+        Příklad:
+    </p>
+    {% highlight json %}
+{
+    "iri": "https://data.poskytovatel.cz/hrady/Karlštejn",
+    "typ": "Turistický cíl",
+    "zneplatněno": {
+        "typ": "Časový okamžik",
+        "datum_a_čas": "2020-12-01T08:00:00+02:00"
+    }
+}{% endhighlight %}
+    </code>
+
+    <h3 id="aktualizace-často">Datové sady aktualizované často</h3>
+    <p>
+        Datovou sadou aktualizovanou často je například seznam aktualit.
+        U těch bývá dopředu jasné, jak dlouho jsou relevantní, a uživatelé předpokládají, že se datová sada bude měnit často.
+        Nemá také smysl pro takovou datovou sadu navždy držet identifikátory již nerelevantních novinek jako v minulém případě, protože brzy by většina takové datové sady obsahovala již nerelevantní data.
+    </p>
+
+    <p>
+        V tomto případě se využije položka <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-relevantní-do">Relevantní do</a>, která obsahuje časový okamžik, do kterého je daná věc relevantní.
+        Tedy již v okamžiku přečtení takové položky si může uživatel naplánovat její opětovné smazání.
+    </p>
+
+    <h2 id="katalogizace">Katalogizace datové sady využívající OFN</h2>
+    <p>
+        V okamžiku, kdy máme datovou sadu dle OFN vypublikovánu jako soubor ke stažení na webu a máme ověřeno, že je validní vůči JSON schématu v dané OFN, je třeba datovou sadu zaregistrovat v Národním katalogu otevřených dat, kde je vhodné uvést, že datová sada je publikována dle dané OFN.
+        Podle této informace totiž budou datovou sadu hledat aplikace, které s daty dle této OFN budou umět pracovat.
+        V aktuální verzi NKOD je třeba specifikovat URL konkrétní verze konkrétní otevřené formální normy, např. <code>https://ofn.gov.cz/turistické-cíle/2020-07-01/</code> - jako odkaz na dokumentaci datové sady.
+        V připravované aktualizaci NKOD již bude pro tento účel zvláštní pole Specifikace.
+    </p>
+  </div>

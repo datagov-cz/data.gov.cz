@@ -4,7 +4,7 @@ detail: true
 title: Mapa s výsledky voleb po okrscích
 ref: mapa-s-vysledky-voleb-po-okrscich-kraje-2020
 lang: cs
-image: ../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.png
+image: ../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/malá-mapa.webp
 author: michal_škop
 date: 2020-11-27 07:00:00 +01:00
 ---
@@ -15,7 +15,7 @@ Zároveň jde o ukázkové použití a spojování otevřených dat z různých 
 
 ## Výsledek: Krajské volby 2020 v mapě
 
-{% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.png" description="Krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS a koalice (modrá), STAN a koalice (zelená), KDU-ČSL a koalice (žlutá), Piráti a koalice (černá), ČSSD a koalice (oranžová), KSČM (rudá), SPD (červená), ostatní barvy jsou lokální strany." %}
+{% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.webp" description="Krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS a koalice (modrá), STAN a koalice (zelená), KDU-ČSL a koalice (žlutá), Piráti a koalice (černá), ČSSD a koalice (oranžová), KSČM (rudá), SPD (červená), ostatní barvy jsou lokální strany." %}
 
 Volební výsledky jsou v ČR dostupné až na úroveň volebních okrsků (volebních místností), což vedlo ke vzniku velmi podrobných map v několika médiích, např. v [Rozhlase][link_rozhlas] nebo v [Lidovkách][link_lidovky].
 
@@ -71,7 +71,7 @@ Volební mapy lze použít prakticky pro libovolné volby, referenda, apod.
 
 Detailní mapa např. umožňuje i pohled dovnitř měst, např. zde jsou zobrazeny výsledky krajských voleb 2020 v Plzni a nejbližším okolí, kde jsou zřetelně vidět ostrůvky - sídliště - v moři modré (ODS), kde vyhrávalo fialové ANO.
 
-{% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/plzen_popisy.png" description="Plzeň a okolí - krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS + TOP 09 (modrá), STAN + SZ + PRO Plzeň (zelená), Piráti (černá). Je zde vidět, že ANO vyhrávalo hlavně na sídlištích. (Zvětšený výřez z mapy popsané výše s doplněnými názvy sídlišť.)" %}
+{% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/plzeň_popisy.webp" description="Plzeň a okolí - krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS + TOP 09 (modrá), STAN + SZ + PRO Plzeň (zelená), Piráti (černá). Je zde vidět, že ANO vyhrávalo hlavně na sídlištích. (Zvětšený výřez z mapy popsané výše s doplněnými názvy sídlišť.)" %}
 
 Zjednodušené volebních okrsky ke stažení: [TopoJSON](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/volebni_okrsky-simple-topo.json), [GeoJSON](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/volebni_okrsky-simple.json)
 

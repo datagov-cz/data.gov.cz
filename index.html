@@ -54,7 +54,7 @@ homepage: true
 		{% for post in posts limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4">{{ post.title }}</h3>
-			<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+			<p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
 			{{ post.excerpt }}
 			{% if post.detail %}
 			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
@@ -75,7 +75,7 @@ homepage: true
 		{% for clanek in clanky limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
-			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+			<p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
             {% if clanek.image %}
             <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
             {% endif %}

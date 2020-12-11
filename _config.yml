@@ -18,10 +18,10 @@ plugins:
 langs:
   en:
     cs: česky
-    flag: /images/flag-en.png
+    flag: /images/flag-en.svg
   cs:
     en: English
-    flag: /images/flag-cs.png
+    flag: /images/flag-cs.svg
 
 collections:
   clanky:

@@ -34,10 +34,10 @@
 	  {% for p in posts %}
 		{% if p.lang != page.lang %}
 		  <li class="nav-item dropdown">
-			  <a data-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-cs.png" | relative_url}}" alt="Čeština" style="width: 1.2rem;"></a>
-			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu">
+			  <a data-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-cs.svg" | relative_url}}" alt="Čeština" style="width: 1.3rem;"></a>
+			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu lang-menu">
 				<button type="button" tabindex="0" class="dropdown-item">
-					<a href="{{ p.url }}" class="{{ p.lang }}" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}"></a>
+					<a href="{{ p.url }}" class="{{ p.lang }}" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}" style="width: 1.3rem;"></a>
 				</button>
 			</div>
 		  </li>

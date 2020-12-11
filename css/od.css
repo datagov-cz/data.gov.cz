@@ -162,3 +162,7 @@ dl > dd > ol > li {
 ol > li > ol > li > ol > li {
 	list-style-type: lower-roman ;
 }
+
+div.language-drop-down.dropdown-menu.lang-menu.show {
+	min-width: 0;
+}

@@ -14,7 +14,7 @@ articleindex: true
         {% for clanek in clanky limit:3 %}
         <div class="col-12 col-md-6 col-lg-4">
           <div class="section">
-            <h3 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
+            <h2 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h2>
               <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
               <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
               {% if clanek.image %}

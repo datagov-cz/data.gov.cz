@@ -14,7 +14,7 @@ postindex: true
       {% for post in posts limit:3 %}
       <div class="col-12 col-md-6 col-lg-4">
         <div class="section">
-          <h3 class="h5">{{ post.title }}</h3>
+          <h2 class="h5">{{ post.title }}</h2>
           <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
           {{ post.excerpt }}
           {% if post.detail %}

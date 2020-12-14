@@ -8,8 +8,8 @@ lang: cs
   <div class="container">
     <h1>{{page.title}}</h1>
     <p class="lead">
-        Otevřené formální normy (OFN) jsou technická doporučení zaměřená na vybrané datové sady, která zajišťují, že stejná data publikovaná různými poskytovateli budou interoperabilní.
-        Tím je umožněno taková data jednodušeji využívat nezávisle na tom, od kterého jsou poskytovatele.
+        Otevřené formální normy (OFN) jsou technická doporučení zaměřená na vybrané datové sady.
+        Zajišťují, že stejná data publikovaná různými poskytovateli je možné jednodušeji využívat nezávisle na tom, kdo data poskytuje.
         Pro poskytovatele otevřených dat, kteří jsou povinnými subjekty dle <a href="https://www.zakonyprolidi.cz/cs/1999-106#p2">zákona č. 106/1999 Sb. o svobodném přístupu k informacím</a>, jsou však tato doporučení závazná dle <a href="https://www.zakonyprolidi.cz/cs/1999-106#p4b-1">§ 4b odst. 1</a>.
         Cílem tohoto návodu je poskytnout pro poskytovatele dat návod, jak správně Otevřené formální normy použít a na co v datech nezapomínat.
     </p>
@@ -30,7 +30,7 @@ lang: cs
     <p>
         Pokud otevřená formální norma pro moje téma ještě neexistuje ani v rozpracovaném stavu, pak se dostáváme mimo záběr tohoto návodu.
         Tuto situaci popíšeme někdy příště.
-        Nyní pouze řekneme, že i tak je třeba použít alespoň tzv. <a href="../#sdílené-specifikace">sdílené specifikace</a>, které standardizují podobu často se opakujících částí dat, a vzniklou datovou sadu dokumentovat stylem a obsahem, který odpovídá stylu a obsahu OFN.
+        Nyní pouze řekneme, že i tak je třeba použít alespoň tzv. <a href="../#sdílené-specifikace">sdílené specifikace</a>, které standardizují podobu často se opakujících částí dat, a že vzniklou datovou sadu je třeba dokumentovat stylem a obsahem, který odpovídá stylu a obsahu OFN.
     </p>
 
     <p>
@@ -44,20 +44,28 @@ lang: cs
         Samotné možnosti časové specifikace jsou ale stejné, a tedy specifikovány ve zvláštním dokumentu.
     </p>
 
+    <p>
+        V přehledových obrázcích v OFN jsou tyto typy entit označeny rámečkem s šedě podbarveným nadpisem.
+        V době psaní článku je vydána sdílená specifikace pro <a href="https://ofn.gov.cz/základní-datové-typy/">základní datové typy</a> zahrnující celé číslo, desetinné číslo, datum, čas, datum a čas, řetězec, text, URL, cenu a množství.
+        Dále je vydána sdílená specifikace pro <a href="https://ofn.gov.cz/věc/">Věc</a>, což je společný předek všech typů entit definovaných v OFN a sdílených specifikacích a definuje identifikátor ve formě IRI, název, popis, čas zneplatnění apod.
+        Tyto položky lze tedy použít pro libovolný typ datové entity.
+        Dále jsou dostupné konkrétní sdílené specifikace pro <a href="https://ofn.gov.cz/adresy/">adresy</a>, <a href="https://ofn.gov.cz/bezbariérovost/">bezbariérovost</a>, <a href="https://ofn.gov.cz/časová-specifikace/">časovou specifikaci</a>, <a href="https://ofn.gov.cz/digitální-objekty/">digitální objekty</a>, <a href="https://ofn.gov.cz/kontakty/">kontakty</a>, <a href="https://ofn.gov.cz/lidé-a-osoby/">lidi a osoby</a>, <a href="https://ofn.gov.cz/umístění/">umístění</a> či <a href="https://ofn.gov.cz/vstupné/">vstupné</a>.
+    </p>
+
     {% include image.html url="https://ofn.gov.cz/turistické-cíle/2020-07-01/obrázky/turistický-cíl.svg" description="Přehledový obrázek OFN Turistické cíle" %}
 
     <h2 id="datový-formát">Datový formát předepsaný OFN</h2>
     <p>
         Otevřená formální norma, např. pro turistické cíle, specifikuje, že data budou publikována ve formátu JSON, který je specifikován dokumentem <a href="https://www.ecma-international.org/publications/standards/Ecma-404.htm">ECMA-404</a> a dále upřesněn dokumentem <a href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>, a musí být validní vůči <a href="https://json-schema.org/specification.html">JSON schématu</a>, které je součástí OFN v sekci Příklady.
-        Položky, které jsou v datech obsaženy, pak musí svým významem odpovídat na jejich popis v sekci Specifikace dané OFN.
-        Poskytovatel dat tedy musí zařídit převod dat z existujícího formátu, pokud to není přímo ten v OFN.
+        Položky, které jsou v datech obsaženy, pak musí svým významem odpovídat jejich popisu v sekci Specifikace dané OFN.
+        Poskytovatel tedy musí zařídit převod dat z existujícího formátu, pokud data ve formátu požadovaném OFN zatím nejsou.
         Tím je zajištěno, že data budou zpracovatelná aplikacemi využívajícími OFN bez další transformace.
     </p>
 
     <p>
         Všechny položky specifikované v OFN jsou nepovinné.
         Pokud tedy poskytovatel pro některou z předepsaných položek nemá data, tak ji zkrátka nevyužije.
-        Naopak také platí, že do dat dle OFN lze přidávat vlastní data, pokud v OFN popsána nejsou.
+        Naopak také platí, že do dat dle OFN lze přidávat vlastní data, i když v OFN popsána nejsou.
         V tom případě ale výsledný soubor musí zůstat validní vůči JSON schématu specifikovaném v OFN.
         Rozšíření musí využívat <a href="../#sdílené-specifikace">sdílené specifikace</a> a musí být řádně zdokumentováno specifikací rozšiřujících položek a rozšířeným JSON schématem v podobném stylu, jako je samotná OFN.
     </p>
@@ -111,8 +119,8 @@ lang: cs
     <p>
         Data se v čase mění a při jejich publikaci na webu je třeba s tím počítat.
         Datové položky přibývají, ubývají a mění se, a uživatelé dat musí být schopni tyto skutečnosti snadno zjistit.
-        Pro časový okamžik vytvoření či změny záznamu o věci jako např. o turistickém cíli, slouží položky <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-vytvořeno">Vytovřeno</a> a <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-aktualizováno">Aktualizováno</a>.
-        Složitější situace je ale u informování uživatelů o zrušení nějaké věci, kde rozlišujeme 2 typy datových sad dle jejich předpokládané frekvence aktualizace - datové sady aktualizované občas a datové sady aktualizované často.
+        Pro časový okamžik vytvoření či změny záznamu o věci jako např. o turistickém cíli, slouží položky <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-vytvořeno">Vytvořeno</a> a <a href="https://ofn.gov.cz/věc/2020-07-01/#vlastnost-věc-aktualizováno">Aktualizováno</a>.
+        Složitější situace je ale u informování uživatelů o zrušení záznamu o nějaké věci, což se liší podle předpokládané frekvence aktualizace datových sad - datové sady aktualizované občas a datové sady aktualizované často.
     </p>
 
     <h3 id="aktualizace-občas">Datové sady aktualizované občas</h3>
@@ -159,7 +167,7 @@ lang: cs
 
     <h2 id="katalogizace">Katalogizace datové sady využívající OFN</h2>
     <p>
-        V okamžiku, kdy máme datovou sadu dle OFN vypublikovánu jako soubor ke stažení na webu a máme ověřeno, že je validní vůči JSON schématu v dané OFN, je třeba datovou sadu zaregistrovat v Národním katalogu otevřených dat, kde je vhodné uvést, že datová sada je publikována dle dané OFN.
+        V okamžiku, kdy máme datovou sadu dle OFN vypublikovánu jako soubor ke stažení na webu a máme ověřeno, že je validní vůči JSON schématu v dané OFN, je třeba datovou sadu zaregistrovat v Národním katalogu otevřených dat, kde je nutné uvést, že datová sada je publikována dle dané OFN.
         Podle této informace totiž budou datovou sadu hledat aplikace, které s daty dle této OFN budou umět pracovat.
         V aktuální verzi NKOD je třeba specifikovat URL konkrétní verze konkrétní otevřené formální normy, např. <code>https://ofn.gov.cz/turistické-cíle/2020-07-01/</code> - jako odkaz na dokumentaci datové sady.
         V připravované aktualizaci NKOD již bude pro tento účel zvláštní pole Specifikace.

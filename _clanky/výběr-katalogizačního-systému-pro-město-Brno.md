@@ -5,7 +5,7 @@ detail: true
 ref: výběr-katalogizačního-systému-pro-město-Brno
 lang: cs
 author: robert_spál
-date: 2020-12-13T07:00:00 +01:00
+date: 2020-12-16T07:00:00 +01:00
 ---
 Článek se zaměřuje na různé aspekty výběru datového katalogu v prostředí české samosprávy. Na příkladu města Brna jsou zde do hloubky srovnány hlavně dva katalogizační systémy - CKAN a ArcGIS HUB. Specifikace a popsané funkcionality těchto dvou systémů mohou posloužit jako vodítko při výběru vhodného systému i dalším organizacím.
 

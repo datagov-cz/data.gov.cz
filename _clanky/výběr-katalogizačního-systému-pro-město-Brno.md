@@ -73,7 +73,7 @@ Pokud Vás zajímá problematika správy otevřených dat v kontextu města Brna
 [DATABRNO]: https://data.brno.cz/ "Portál otevřených dat města Brna"
 [WAZE]: https://data.brno.cz/search?collection=Dataset&q=waze "Otevřená data z aplikace WAZE za město Brno"
 [AMERICKEHO]: https://project-open-data.cio.gov/v1.1/schema/ "Americký standard DCAT"
-[GITHUB]: https://github-este-to-doplnim "Repozitář datového odělení města Brna na GitHubu"
+[GITHUB]: https://github.com/opendatabrno/HUBtoNKOD "Repozitář datového odělení města Brna na GitHubu"
 [AOPK]: https://gis-aopkcr.opendata.arcgis.com/ "Agentura ochrany přírody a krajiny"
 [SYDNEY]: https://data.cityofsydney.nsw.gov.au/ "Portál otevřených dat města Sydney"
 [WASHINGTON]: https://opendata.dc.gov/ "Portál otevřených dat města Washington D.C."

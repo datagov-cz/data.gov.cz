@@ -2,9 +2,9 @@
 layout: post
 title: "Série Znalostní grafy: Díl 3: SPARQL"
 detail: true
-ref: série-znalostní-grafy-díl-3-sparql
+ref: série-znalostní-grafy-03-sparql
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-02.jpg
+image: ../attachments/články/znalostní-grafy/znalostní-grafy-03.jpg
 author: martin_nečaský
 date: 2020-09-11T13:27:01.144Z
 ---

@@ -40,13 +40,13 @@ Také nám říká, jakou má datovou schránku a že ČSÚ publikuje datovou sa
 %}
 
 Grafový vzor je matematický graf stejně jako i samotný znalostní graf.
-Pouze některé uzly v něm nejsou fixovány na konkrétní IRI nebo datovou hodnotu, ale mají přiřazenu proměnnou.
-Stejně tak některé hrany nemají přiřazeno fixní IRI určující konkrétní predikát, ale místo predikátu je zde proměnná.
+Pouze některé uzly v něm nejsou konkrétními IRI nebo datovými hodnotami, ale proměnnými.
+Stejně tak některé hrany nemají určen konkrétní predikát v podobě IRI, ale místo predikátu je uvedena proměnná.
 Proměnné jsou v grafových vzorech uvozeny otazníkem.
 Proměnnou tak je např. `?název` nebo `?organizace`.
 
-Pokud proměnné v grafovém vzoru zafixujeme na konkrétní IRI nebo datové hodnoty, získáváme znalostní graf.
-Grafový vzor specifikuje dotaz do znalostního grafu, jehož vyhodnocení spočívá ve vyhledání částí znalostního grafu, které odpovídají nějakému zafixování grafového vzoru.
+Pokud proměnné v grafovém vzoru nahradíme konkrétním IRI nebo datovou hodnotou, získáváme znalostní graf.
+Grafový vzor specifikuje dotaz do znalostního grafu, jehož vyhodnocení spočívá ve vyhledání částí znalostního grafu, které odpovídají nějakému nahrazení proměnných v grafovém vzoru.
 Uvažme např. grafový vzor na následujícím obrázku.
 Skládá se z jednoho uzlu, který je fixován na kontrétní IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593), jednoho uzlu, který není fixován na žádné IRI ani hodnotu, ale má přiřazenu proměnnou `?název`, a hrany, která má přiřazen konkrétní predikát [`http://schema.org/name`](http://schema.org/name).
 
@@ -111,7 +111,7 @@ Pozor na to, že se jedná o jinou syntaxi než syntaxe používaná pro zápis 
 Následující příklad je už správným výrazem dotazu.
 
 ~~~~~~
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovm: <https://data.gov.cz/slovník/ovm/>
 PREFIX schema: <http://schema.org/>
 
 SELECT ?název
@@ -127,8 +127,8 @@ Jak jej můžeme nyní použít a dotázat se na konkrétní znalostní graf?
 RDF úložiště nabízejí webovou službu zvanou *SPARQL endpoint*, které můžete svůj SPARQL dotaz zaslat a služba vám zašle odpověď.
 Tuto možnost pro dotazování využijeme.
 Nejprve je nutno mít znalostní graf vyjádřený v modelu RDF někde uložen.
-Pokud máme k dispozici pouze export dat v podobě RDF dumpu, můžeme si jej stáhnout a nahrát do vlastního RDF úložiště.
-Někdy má ale poskytovatel dat data uložena ve vlastním RDF úložišti a SPARQL endpoint k němu zpřístupní veřejně.
+Pokud máme k dispozici pouze export RDF dat v podobě souboru ke stažení, můžeme si jej stáhnout a nahrát do vlastního RDF úložiště.
+Někdy má ale poskytovatel data uložena ve vlastním RDF úložišti a SPARQL endpoint k němu zpřístupní veřejně.
 
 Příklad znalostního grafu výše je součástí většího znalostního grafu, který již je uložen v RDF úložišti s [veřejně přístupným][nkod-ep] SPARQL endpointem.
 Jedná se o RDF úložiště [Národního katalogu otevřených dat (NKOD)][nkod].
@@ -145,6 +145,12 @@ Všimněte si možnosti výběru formátu v poli *Results Format*.
 Vyberte formát CSV a spusťte dotaz znovu.
 Získáte CSV soubor s výsledkem, kde je již kódování v pořádku.
 Tento výstup je zřejmě výstup, který potřebujete pro další strojové zpracování výsledku ve svém oblíbeném nástroji, který pracuje s tabulkovými daty v podobě CSV souborů.
+
+RDF úložiště Národního katalogu otevřených dat nenabízí moc pěkné uživatelské rozhraní pro SPARQL dotazování.
+Pro příklady SPARQL dotazů v tomto článku využijeme uživateslké rozhraní [Yasgui](https://github.com/TriplyDB/Yasgui), které je [veřejně dostupné](https://yasgui.triply.cc/).
+Stačí zde zadat URL SPARQL endpointu, nad kterým se chceme dotazovat, což v našem případě znamená [SPARQL endpoint NKOD][nkod-ep].
+Všechny níže uvedené přílkady si můžete vyzkoušet v tomto rozhraní sami a nebo můžete kliknout na odkaz poskytnutý pod každým příkladem.
+Odkaz povede na spuštění daného dotazu v Yasgui.
 
 ## Pokročilejší SPARQL dotazování
 
@@ -168,7 +174,11 @@ WHERE {
     ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 dct:publisher ?poskytovatel .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Samotné IRI poskytovatele stačí, pokud máme nástroj, který je schopen IRI dereferencovat a získat o něm údaje.
 Pokud ale chceme jako výsledek SPARQL dotazu získat CSV soubor a s ním pracovat v nástroji, který neumí s IRI pracovat, potřebujeme dostat údaje o poskytovateli přímo do CSV souboru.
@@ -186,13 +196,46 @@ WHERE {
     ?poskytovatel schema:name ?názevPoskytovatele .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3FnázevPoskytovatele+%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3FnázevPoskytovatele+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
 
 Můžeme chtít získat další údaje o poskytovateli, např. údaje o jeho datové schránce.
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+
+Zde se dostáváme k problému, který někteří programátoři a databázoví specialisté popisují jako nevýhodu dotazování v jazyku SPARQL.
+Jiní jej nevidí jako problém, ale naopak jako dobrou vlastnost celého přístupu, ale tuto debatu zde v článku nepovedeme.
+Jde o to, že znalostní graf, nad kterým se dotazujeme, nemá pěkně definované schéma.
+Schématem myslíme definici struktury znalostního grafu, tj. jaké typy uzlů se v něm mohou vyskytovat a jaké mají vlastnosti.
+Na začátku článku jsme SPARQL srovnávali s relačními databázemi a jazykem SQL.
+Relační databáze mají jasně definované schéma popisující strukturu tabulek.
+Psaní SQL dotazů je pak jednodušší, protože si můžeme schéma jednoduše zobrazit před sebou.
+Při psaní SPARQL dotazů takový komfort nemáme.
+
+Někdy je znalostní graf strukturován podle nějakého standardu nebo doporučení, které je zdokumentováno.
+To je případ i znalostního grafu Národního katalogu otevřených dat z našeho příkladu.
+Je strukturován podle standardu [DCAT-AP][dcatap].
+Jeho dokumentace specifikuje, jaké typy uzlů se ve znalostním grafu mohou vyskytnout a jaké mohou mít vlastnosti.
+Struktura znalostního grafu ale nemůže být konkrétním standardem svázána.
+Nad jeho rámec tak mohou být ve znalostním grafu další typy uzlů a vlastností.
+Kompletní schéma tak není snadné a často ani možné vyjádřit úplně.
+Pro základní dotazování můžeme ale využít prosté podívání se na vybrané uzly.
+Můžeme se tak např. podívat na naši konkrétní datovou sadu [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
+Vidíme zde, jaké vlastnosti datová sada má.
+Ty můžeme použít v našich dotazech.
+Můžeme se také podívat na jejich hodnoty, např. na poskytovatele naší datové sady, a zjistit, jaké vlastnosti jsou pro ně ve znalostním grafu uvedeny.
+
+Ke konci článku se budeme věnovat problematice zjišťování schématu detailněji.
+Zde zatím pokračujme v příkladech.
+Pohledem na [poskytovatele datové sady](https://data.gov.cz/zdroj/ovm/00025593) [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19) zjistíme, že jsou vedeny údaje o jeho datové schránce.
+Můžeme se na ni zeptat.
+>>>>>>> Stashed changes
 
 ~~~~~~
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema: <http://schema.org/>
 PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ovm: <https://data.gov.cz/slovník/ovm/>
 PREFIX ds: <https://data.gov.cz/zdroj/datové-sady/>
 
 SELECT ?poskytovatel ?název ?identifikátorDatovéSchránky
@@ -205,7 +248,11 @@ WHERE {
     ?datováSchránka skos:notation ?identifikátorDatovéSchránky .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3Fnázev+%3FidentifikátorDatovéSchránky%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3Fnázev+.%0D%0A++++%3Fposkytovatel+ovm%3AdatováSchránka+%3FdatováSchránka+.%0D%0A%0D%0A++++%3FdatováSchránka+skos%3Anotation+%3FidentifikátorDatovéSchránky+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20.%0A%20%20%20%20%3Fposkytovatel%20ovm%3Adatov%C3%A1Schr%C3%A1nka%20%3Fdatov%C3%A1Schr%C3%A1nka%20.%0A%0A%20%20%20%20%3Fdatov%C3%A1Schr%C3%A1nka%20skos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Všimněme si, že u tohoto dotazu neuvádíme v klauzuli `SELECT` všechny proměnné použité v grafovém vzoru.
 IRI datové schránky ve výsledku nechceme a proto proměnnou `?datováSchránka` neuvádíme.
@@ -215,8 +262,10 @@ V předchozím dotazu máme dvě trojice grafového vzoru se stejným subjektem 
 Můžeme je zkrátit následujícím způsobem.
 
 ~~~~~~
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema: <http://schema.org/>
 PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ovm: <https://data.gov.cz/slovník/ovm/>
 PREFIX ds: <https://data.gov.cz/zdroj/datové-sady/>
 
 SELECT ?poskytovatel ?název ?identifikátorDatovéSchránky
@@ -229,15 +278,21 @@ WHERE {
     ?datováSchránka skos:notation ?identifikátorDatovéSchránky .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3Fnázev+%3FidentifikátorDatovéSchránky%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3Fnázev+%3B%0D%0A++++++ovm%3AdatováSchránka+%3FdatováSchránka+.%0D%0A%0D%0A++++%3FdatováSchránka+skos%3Anotation+%3FidentifikátorDatovéSchránky+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20%3B%0A%20%20%20%20%20%20ovm%3Adatov%C3%A1Schr%C3%A1nka%20%3Fdatov%C3%A1Schr%C3%A1nka%20.%0A%0A%20%20%20%20%3Fdatov%C3%A1Schr%C3%A1nka%20skos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Další zkrácení je možné pomocí konstruktu *cesty*.
 Protože nepotřebujeme proměnnou `?datováSchránka`, můžeme ji v grafovém vzoru vynechat a specifikovat cestu v grafu k identifikátoru datové schránky.
 Cesta sestává z IRI predikátů oddělených lomitkem `/`, které nahrazuje nepotřebnou proměnnou.
 
 ~~~~~~
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX schema: <http://schema.org/>
 PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX ovm: <https://data.gov.cz/slovník/ovm/>
 PREFIX ds: <https://data.gov.cz/zdroj/datové-sady/>
 
 SELECT ?poskytovatel ?název ?identifikátorDatovéSchránky
@@ -248,7 +303,11 @@ WHERE {
       ovm:datováSchránka/skos:notation ?identifikátorDatovéSchránky .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3Fnázev+%3FidentifikátorDatovéSchránky%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3Fnázev+%3B%0D%0A++++++ovm%3AdatováSchránka%2Fskos%3Anotation+%3FidentifikátorDatovéSchránky+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20%3B%0A%20%20%20%20%20%20ovm%3Adatov%C3%A1Schr%C3%A1nka%2Fskos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Pojďme nyní dotaz otočit a místo na poskytovatele konkrétní datové sady se zeptejme na datové sady daného poskytovatele.
 Můžeme zůstat u ČSÚ.
@@ -256,15 +315,19 @@ Nejprve se zeptejme na seznam datových sad ČSÚ.
 
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT ?datováSada ?název
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dct:title ?názevDatovéSady .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+%3FdatováSada+%3Fnázev%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dct%3Atitle+%3Fnázev+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zev%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Dotaz je jednoduchý, výsledek je bohatší - obsahuje všechny datové sady ČSÚ.
 Datové sady jsou v NKOD opatřeny klíčovými slovy.
@@ -274,15 +337,19 @@ Zkusme získat seznam klíčových slov, které ČSÚ používá pro svoje datov
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT ?slovo
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dcat:keyword ?slovo .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+%3Fslovo%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fslovo%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Výsledek není úplně takový, jaký bychom chtěli, protože klíčová slova se v něm opakují.
 Pomocí klíčového slova `DISTINCT` můžeme v dotazu specifikovat, že chceme z výsledku odstranit duplicitní řádky.
@@ -292,16 +359,20 @@ Klíčové slovo `DISTINCT` i klauzuli `ORDER BY` je nutno používat s opatrnos
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?slovo
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dcat:keyword ?slovo .
 }
 ORDER BY ?slovo
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fslovo%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+.%0D%0A}%0D%0AORDER+BY+%3Fslovo&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fslovo%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20.%0A%7D%0AORDER%20BY%20%3Fslovo&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 V klíčových slovech si můžeme všimnout, že ČSÚ používá pro označení některých svých datových sad klíčové slovo *číselník* a *číselníky*.
 Pokud chceme vybrat pouze ty datové sady, které jsou označeny tímto klíčovým slovem, musíme specifikovat filtr.
@@ -312,18 +383,22 @@ Následující dotaz využívá filtrování k získání číselníků ČSÚ.
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?datováSada ?názevDatovéSady
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dcat:keyword ?slovo ;
         dct:title ?názevDatovéSady .
 
     FILTER(?slovo = "číselník" || ?slovo = "číselník")
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER(%3Fslovo+%3D+"číselník"+||+%3Fslovo+%3D+"číselník")%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Na tomto místě poznáme, zda si dotazy opravdu zkoušíte pustit.
 Pokud zkoušíte, asi se divíte, proč je výsledek prázdný.
@@ -342,18 +417,22 @@ Následující oprava dotazu uvádí obě možnosti.
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?datováSada ?názevDatovéSady
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dcat:keyword ?slovo ;
         dct:title ?názevDatovéSady .
 
     FILTER(STR(?slovo) = "číselník" || ?slovo = "číselník"@cs)
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER(STR(%3Fslovo)+%3D+"číselník"+||+%3Fslovo+%3D+"číselník"%40cs)%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Nyní už výsledek vypadá správně.
 Ve výsledku nám ale mohou vadit datové sady, které nejsou číselníky, ale datovými sadami s vazbami mezi číselníky.
@@ -363,25 +442,29 @@ Pojďme si je tedy z výsledku dotazu odfiltrovat.
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?datováSada ?názevDatovéSady
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dcat:keyword ?slovo ;
         dct:title ?názevDatovéSady .
 
     FILTER((STR(?slovo) = "číselník" || ?slovo = "číselník"@cs) && ?slovo != "vazba"@cs)
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER((STR(%3Fslovo)+%3D+"číselník"+||+%3Fslovo+%3D+"číselník"%40cs)+%26%26+%3Fslovo+!%3D+"vazba"%40cs)%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER((STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%20%26%26%20%3Fslovo%20!%3D%20%22vazba%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Doufáme, že už si dotazy opravdu zkoušíte.
 Ve výsledku vazby stále vidíme.
 Jak je to možné, když je filtrujeme pryč?
 Odpověď je jednoduchá - nefiltrujeme je.
 Vysvětlení je ale trochu složitější.
-Nesouvisí s dotazovacím jazykem SPARQL ale s logikou.
+Nesouvisí s dotazovacím jazykem SPARQL, souvisí s logikou.
 Vyhodnocení dotazu znamená, že jsou ve znalostním grafu vyhledávány části, které odpovídají grafovému vzoru.
 Jistě jste si pro datové sady s vazbami všimli, že nejsou označeny pouze klíčovým slovem *vazba*, ale i jinými klíčovými slovy, např. právě *číselník* nebo *ČSÚ*.
 A proto se podaří pro grafový vzor najít část, která odpovídá datové sadě ČSÚ s klíčovým slovem, které není slovem *vazba* a datová sada s vazbami je vrácena ve výsledku.
@@ -396,11 +479,11 @@ Neexistenci můžeme vyjádřit pomocí konstrukce `FILTER NOT EXISTS`, která u
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?datováSada ?názevDatovéSady
 WHERE {
-    ?datováSada dct:publisher ovm:00025593 ;
+    ?datováSada dct:publisher ovmr:00025593 ;
         dcat:keyword ?slovo ;
         dct:title ?názevDatovéSady .
 
@@ -411,7 +494,11 @@ WHERE {
     }
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER((STR(%3Fslovo)+%3D+"číselník"+||+%3Fslovo+%3D+"číselník"%40cs))%0D%0A++++FILTER+NOT+EXISTS+{%0D%0A++++++++%3FdatováSada+dcat%3Akeyword+%3FjinéSlovo+.%0D%0A++++++++FILTER(%3FjinéSlovo+%3D+"vazba"%40cs)%0D%0A++++}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER((STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs))%0A%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%3Fdatov%C3%A1Sada%20dcat%3Akeyword%20%3Fjin%C3%A9Slovo%20.%0A%20%20%20%20%20%20%20%20FILTER(%3Fjin%C3%A9Slovo%20%3D%20%22vazba%22%40cs)%0A%20%20%20%20%7D%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Zde jsme se dostali až k samotným logickým základům dotazování, které se hodí i při používání jiných dotazovacích jazyků.
 Chtěli jsme pouze demonstrovat podobnost síly jazyka SPARQL s jinými dotazovacími jazyky, např. SQL.
@@ -436,7 +523,11 @@ WHERE {
 }
 GROUP BY ?poskytovatel
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fposkytovatel+(COUNT(%3FdatováSada)+AS+%3FpočetDatovýchSad)%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+%3Fposkytovatel+.%0D%0A}%0D%0AGROUP+BY+%3Fposkytovatel&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Zkusme výsledek trochu vylepšit.
 Nejprve výsledek seřaďme.
@@ -458,18 +549,22 @@ WHERE {
 GROUP BY ?poskytovatel ?názevPoskytovatele
 ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fposkytovatel+%3FnázevPoskytovatele+(COUNT(%3FdatováSada)+AS+%3FpočetDatovýchSad)%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3FnázevPoskytovatele+.%0D%0A}%0D%0AGROUP+BY+%3Fposkytovatel+%3FnázevPoskytovatele%0D%0AORDER+BY+%3FpočetDatovýchSad&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 ## Dotazy na strukturu znalostního grafu
 
-Abychom byli schopni konstruovat dotazy nad znalostním grafem, musíme znát jeho strukturu nebo-li schéma, stejně jako musíme znát strukturu tabulek v relační databázi, pokud chceme zapsat dotaz v jazyku SQL.
-Struktura znalostního grafu ale může být, a typicky je, složitá a heterogenní, a nemusí tak být jednoduché strukturu poznat a vyznat se v ní.
+Vraťme se ještě k problému zjišťování schématu znalostního grafu.
+Jak jsme již popisovali, pro konstrukci dotazů nad znalostním grafem musíme znát jeho strukturu nebo-li schéma.
 Výhoda datového modelu RDF spočívá v možnosti zakódování schématu přímo v datech.
 Tj. schéma není definováno explicitně, ale vyplývá implicitně z tvaru samotných dat.
 Určitá omezení na strukturu nebo předepsaná doporučená struktura sice může být dána pomocí slovníku nebo ontologie, ale není striktní (viz např. slovník [schema.org](https://schema.org/docs/full.html), který používáme i v našich příkladech).
 To dává znalostním grafům zajímavou míru flexibility, ale může být potíží, pokud se chceme v datech vyznat a zapsat dotaz.
 Toto ale není vlastností modelu RDF nebo jazyka SPARQL.
-Jedná se o to, že ve znalostních grafech reprezentujeme složitá data ve velké míře detailu.
+Jde o to, že ve znalostních grafech reprezentujeme složitá data ve velké míře detailu.
 Vysoká složitost datového schématu se pak projeví v jakémkoliv datovém modelu.
 
 Dotazovací jazyk SPARQL nám umožňuje se na strukturu dat ptát.
@@ -478,14 +573,18 @@ Jak jsme řekli na začátku článku, proměnnou můžeme použít nejenom na m
 A tak se můžeme např. zeptat na to, jaké všechny vlastnosti jsou popsány pro ČSÚ.
 
 ~~~~~~
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?vlastnost
 WHERE {
-    ovm:00025593 ?vlastnost [] .
+    ovmr:00025593 ?vlastnost [] .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fvlastnost%0D%0AWHERE+{%0D%0A++++ovm%3A00025593++%3Fvlastnost+[]+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fvlastnost%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20%3Fvlastnost%20%5B%5D%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Povšimněte si konstruktu `[]`.
 Ten říká, že je nám jedno, co je v dané odpovídají části znalostního grafu za hodnotu, nepřiřazujeme ji do proměnné a tudíž ji ani nebudeme chtít ve výsledku.
@@ -495,20 +594,23 @@ Obvykle ale necheme vlastnosti pospané pro jednu konkrétní entitu, ale pro v�
 Můžeme se tak nejprve zeptat, jakého typu je ČSÚ.
 
 ~~~~~~
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT DISTINCT ?typ
 WHERE {
-    ovm:00025593 a ?typ .
+    ovmr:00025593 a ?typ .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Ftyp%0D%0AWHERE+{%0D%0A++++ovm%3A00025593+a+%3Ftyp+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftyp%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20a%20%3Ftyp%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Můžeme si pak vybrat jeden typ, abychom zjistitli, jaké vlastnosti jsou ve znalostním grafu používány pro entity tohoto typu.
 Vyberme si např. `schema:Organization`.
 
 ~~~~~~
-PREFIX ovm: <https://data.gov.cz/zdroj/ovm/>
 PREFIX schema: <http://schema.org/>
 
 SELECT DISTINCT ?vlastnost
@@ -517,7 +619,11 @@ WHERE {
     ?vlastnost [] .
 }
 ~~~~~~~~~~~~
+<<<<<<< Updated upstream
 {% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fvlastnost%0D%0AWHERE+{%0D%0A++[]+a+schema%3AOrganization+%3B%0D%0A++++%3Fvlastnost+[]+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
+=======
+[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fvlastnost%0AWHERE%20%7B%0A%20%20%5B%5D%20a%20schema%3AOrganization%20%3B%0A%20%20%20%20%3Fvlastnost%20%5B%5D%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+>>>>>>> Stashed changes
 
 Výsledek nám pomůže při psaní SPARQL dotazů na poskytovatele ve znalostním grafu NKOD.
 S dotazy na strukturu dat ale opatrně.

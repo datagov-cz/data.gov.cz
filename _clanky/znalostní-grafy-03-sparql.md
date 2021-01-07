@@ -174,11 +174,8 @@ WHERE {
     ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 dct:publisher ?poskytovatel .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Samotné IRI poskytovatele stačí, pokud máme nástroj, který je schopen IRI dereferencovat a získat o něm údaje.
 Pokud ale chceme jako výsledek SPARQL dotazu získat CSV soubor a s ním pracovat v nástroji, který neumí s IRI pracovat, potřebujeme dostat údaje o poskytovateli přímo do CSV souboru.
@@ -196,12 +193,7 @@ WHERE {
     ?poskytovatel schema:name ?názevPoskytovatele .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3FnázevPoskytovatele+%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3FnázevPoskytovatele+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-
-Můžeme chtít získat další údaje o poskytovateli, např. údaje o jeho datové schránce.
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Zde se dostáváme k problému, který někteří programátoři a databázoví specialisté popisují jako nevýhodu dotazování v jazyku SPARQL.
 Jiní jej nevidí jako problém, ale naopak jako dobrou vlastnost celého přístupu, ale tuto debatu zde v článku nepovedeme.
@@ -229,7 +221,6 @@ Ke konci článku se budeme věnovat problematice zjišťování schématu detai
 Zde zatím pokračujme v příkladech.
 Pohledem na [poskytovatele datové sady](https://data.gov.cz/zdroj/ovm/00025593) [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19) zjistíme, že jsou vedeny údaje o jeho datové schránce.
 Můžeme se na ni zeptat.
->>>>>>> Stashed changes
 
 ~~~~~~
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -248,11 +239,7 @@ WHERE {
     ?datováSchránka skos:notation ?identifikátorDatovéSchránky .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3Fnázev+%3FidentifikátorDatovéSchránky%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3Fnázev+.%0D%0A++++%3Fposkytovatel+ovm%3AdatováSchránka+%3FdatováSchránka+.%0D%0A%0D%0A++++%3FdatováSchránka+skos%3Anotation+%3FidentifikátorDatovéSchránky+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20.%0A%20%20%20%20%3Fposkytovatel%20ovm%3Adatov%C3%A1Schr%C3%A1nka%20%3Fdatov%C3%A1Schr%C3%A1nka%20.%0A%0A%20%20%20%20%3Fdatov%C3%A1Schr%C3%A1nka%20skos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20.%0A%20%20%20%20%3Fposkytovatel%20ovm%3Adatov%C3%A1Schr%C3%A1nka%20%3Fdatov%C3%A1Schr%C3%A1nka%20.%0A%0A%20%20%20%20%3Fdatov%C3%A1Schr%C3%A1nka%20skos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Všimněme si, že u tohoto dotazu neuvádíme v klauzuli `SELECT` všechny proměnné použité v grafovém vzoru.
 IRI datové schránky ve výsledku nechceme a proto proměnnou `?datováSchránka` neuvádíme.
@@ -278,11 +265,7 @@ WHERE {
     ?datováSchránka skos:notation ?identifikátorDatovéSchránky .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3Fnázev+%3FidentifikátorDatovéSchránky%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3Fnázev+%3B%0D%0A++++++ovm%3AdatováSchránka+%3FdatováSchránka+.%0D%0A%0D%0A++++%3FdatováSchránka+skos%3Anotation+%3FidentifikátorDatovéSchránky+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20%3B%0A%20%20%20%20%20%20ovm%3Adatov%C3%A1Schr%C3%A1nka%20%3Fdatov%C3%A1Schr%C3%A1nka%20.%0A%0A%20%20%20%20%3Fdatov%C3%A1Schr%C3%A1nka%20skos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20%3B%0A%20%20%20%20%20%20ovm%3Adatov%C3%A1Schr%C3%A1nka%20%3Fdatov%C3%A1Schr%C3%A1nka%20.%0A%0A%20%20%20%20%3Fdatov%C3%A1Schr%C3%A1nka%20skos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Další zkrácení je možné pomocí konstruktu *cesty*.
 Protože nepotřebujeme proměnnou `?datováSchránka`, můžeme ji v grafovém vzoru vynechat a specifikovat cestu v grafu k identifikátoru datové schránky.
@@ -303,11 +286,7 @@ WHERE {
       ovm:datováSchránka/skos:notation ?identifikátorDatovéSchránky .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ds%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F>%0D%0A%0D%0ASELECT+%3Fposkytovatel+%3Fnázev+%3FidentifikátorDatovéSchránky%0D%0AWHERE+{%0D%0A++++ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3Fnázev+%3B%0D%0A++++++ovm%3AdatováSchránka%2Fskos%3Anotation+%3FidentifikátorDatovéSchránky+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20%3B%0A%20%20%20%20%20%20ovm%3Adatov%C3%A1Schr%C3%A1nka%2Fskos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20skos%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovm%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2F%3E%0APREFIX%20ds%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%3E%0A%0ASELECT%20%3Fposkytovatel%20%3Fn%C3%A1zev%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%0AWHERE%20%7B%0A%20%20%20%20ds%3Ahttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zev%20%3B%0A%20%20%20%20%20%20ovm%3Adatov%C3%A1Schr%C3%A1nka%2Fskos%3Anotation%20%3Fidentifik%C3%A1torDatov%C3%A9Schr%C3%A1nky%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Pojďme nyní dotaz otočit a místo na poskytovatele konkrétní datové sady se zeptejme na datové sady daného poskytovatele.
 Můžeme zůstat u ČSÚ.
@@ -323,11 +302,7 @@ WHERE {
         dct:title ?názevDatovéSady .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0APREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+%3FdatováSada+%3Fnázev%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dct%3Atitle+%3Fnázev+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zev%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zev%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Dotaz je jednoduchý, výsledek je bohatší - obsahuje všechny datové sady ČSÚ.
 Datové sady jsou v NKOD opatřeny klíčovými slovy.
@@ -345,11 +320,7 @@ WHERE {
         dcat:keyword ?slovo .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+%3Fslovo%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fslovo%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fslovo%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Výsledek není úplně takový, jaký bychom chtěli, protože klíčová slova se v něm opakují.
 Pomocí klíčového slova `DISTINCT` můžeme v dotazu specifikovat, že chceme z výsledku odstranit duplicitní řádky.
@@ -368,11 +339,7 @@ WHERE {
 }
 ORDER BY ?slovo
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fslovo%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+.%0D%0A}%0D%0AORDER+BY+%3Fslovo&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fslovo%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20.%0A%7D%0AORDER%20BY%20%3Fslovo&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fslovo%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20.%0A%7D%0AORDER%20BY%20%3Fslovo&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 V klíčových slovech si můžeme všimnout, že ČSÚ používá pro označení některých svých datových sad klíčové slovo *číselník* a *číselníky*.
 Pokud chceme vybrat pouze ty datové sady, které jsou označeny tímto klíčovým slovem, musíme specifikovat filtr.
@@ -394,11 +361,7 @@ WHERE {
     FILTER(?slovo = "číselník" || ?slovo = "číselník")
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER(%3Fslovo+%3D+"číselník"+||+%3Fslovo+%3D+"číselník")%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Na tomto místě poznáme, zda si dotazy opravdu zkoušíte pustit.
 Pokud zkoušíte, asi se divíte, proč je výsledek prázdný.
@@ -428,11 +391,7 @@ WHERE {
     FILTER(STR(?slovo) = "číselník" || ?slovo = "číselník"@cs)
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER(STR(%3Fslovo)+%3D+"číselník"+||+%3Fslovo+%3D+"číselník"%40cs)%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Nyní už výsledek vypadá správně.
 Ve výsledku nám ale mohou vadit datové sady, které nejsou číselníky, ale datovými sadami s vazbami mezi číselníky.
@@ -453,11 +412,7 @@ WHERE {
     FILTER((STR(?slovo) = "číselník" || ?slovo = "číselník"@cs) && ?slovo != "vazba"@cs)
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER((STR(%3Fslovo)+%3D+"číselník"+||+%3Fslovo+%3D+"číselník"%40cs)+%26%26+%3Fslovo+!%3D+"vazba"%40cs)%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER((STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%20%26%26%20%3Fslovo%20!%3D%20%22vazba%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER((STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%20%26%26%20%3Fslovo%20!%3D%20%22vazba%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Doufáme, že už si dotazy opravdu zkoušíte.
 Ve výsledku vazby stále vidíme.
@@ -494,11 +449,7 @@ WHERE {
     }
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+dcat%3A+<http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23>%0D%0APREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3FdatováSada+%3FnázevDatovéSady%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+ovm%3A00025593+%3B%0D%0A++++++++dcat%3Akeyword+%3Fslovo+%3B%0D%0A++++++++dct%3Atitle+%3FnázevDatovéSady+.%0D%0A%0D%0A++++FILTER((STR(%3Fslovo)+%3D+"číselník"+||+%3Fslovo+%3D+"číselník"%40cs))%0D%0A++++FILTER+NOT+EXISTS+{%0D%0A++++++++%3FdatováSada+dcat%3Akeyword+%3FjinéSlovo+.%0D%0A++++++++FILTER(%3FjinéSlovo+%3D+"vazba"%40cs)%0D%0A++++}%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER((STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs))%0A%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%3Fdatov%C3%A1Sada%20dcat%3Akeyword%20%3Fjin%C3%A9Slovo%20.%0A%20%20%20%20%20%20%20%20FILTER(%3Fjin%C3%A9Slovo%20%3D%20%22vazba%22%40cs)%0A%20%20%20%20%7D%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER((STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs))%0A%20%20%20%20FILTER%20NOT%20EXISTS%20%7B%0A%20%20%20%20%20%20%20%20%3Fdatov%C3%A1Sada%20dcat%3Akeyword%20%3Fjin%C3%A9Slovo%20.%0A%20%20%20%20%20%20%20%20FILTER(%3Fjin%C3%A9Slovo%20%3D%20%22vazba%22%40cs)%0A%20%20%20%20%7D%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Zde jsme se dostali až k samotným logickým základům dotazování, které se hodí i při používání jiných dotazovacích jazyků.
 Chtěli jsme pouze demonstrovat podobnost síly jazyka SPARQL s jinými dotazovacími jazyky, např. SQL.
@@ -523,11 +474,7 @@ WHERE {
 }
 GROUP BY ?poskytovatel
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fposkytovatel+(COUNT(%3FdatováSada)+AS+%3FpočetDatovýchSad)%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+%3Fposkytovatel+.%0D%0A}%0D%0AGROUP+BY+%3Fposkytovatel&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Zkusme výsledek trochu vylepšit.
 Nejprve výsledek seřaďme.
@@ -549,11 +496,7 @@ WHERE {
 GROUP BY ?poskytovatel ?názevPoskytovatele
 ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fposkytovatel+%3FnázevPoskytovatele+(COUNT(%3FdatováSada)+AS+%3FpočetDatovýchSad)%0D%0AWHERE+{%0D%0A++++%3FdatováSada+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++%3Fposkytovatel+schema%3Aname+%3FnázevPoskytovatele+.%0D%0A}%0D%0AGROUP+BY+%3Fposkytovatel+%3FnázevPoskytovatele%0D%0AORDER+BY+%3FpočetDatovýchSad&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 ## Dotazy na strukturu znalostního grafu
 
@@ -580,11 +523,7 @@ WHERE {
     ovmr:00025593 ?vlastnost [] .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fvlastnost%0D%0AWHERE+{%0D%0A++++ovm%3A00025593++%3Fvlastnost+[]+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fvlastnost%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20%3Fvlastnost%20%5B%5D%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fvlastnost%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20%3Fvlastnost%20%5B%5D%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Povšimněte si konstruktu `[]`.
 Ten říká, že je nám jedno, co je v dané odpovídají části znalostního grafu za hodnotu, nepřiřazujeme ji do proměnné a tudíž ji ani nebudeme chtít ve výsledku.
@@ -601,11 +540,7 @@ WHERE {
     ovmr:00025593 a ?typ .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Ftyp%0D%0AWHERE+{%0D%0A++++ovm%3A00025593+a+%3Ftyp+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftyp%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20a%20%3Ftyp%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftyp%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20a%20%3Ftyp%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Můžeme si pak vybrat jeden typ, abychom zjistitli, jaké vlastnosti jsou ve znalostním grafu používány pro entity tohoto typu.
 Vyberme si např. `schema:Organization`.
@@ -619,11 +554,7 @@ WHERE {
     ?vlastnost [] .
 }
 ~~~~~~~~~~~~
-<<<<<<< Updated upstream
-{% raw %}[(zkusit dotaz)](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fvlastnost%0D%0AWHERE+{%0D%0A++[]+a+schema%3AOrganization+%3B%0D%0A++++%3Fvlastnost+[]+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+){% endraw %}
-=======
-[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fvlastnost%0AWHERE%20%7B%0A%20%20%5B%5D%20a%20schema%3AOrganization%20%3B%0A%20%20%20%20%3Fvlastnost%20%5B%5D%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table)
->>>>>>> Stashed changes
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fvlastnost%0AWHERE%20%7B%0A%20%20%5B%5D%20a%20schema%3AOrganization%20%3B%0A%20%20%20%20%3Fvlastnost%20%5B%5D%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Výsledek nám pomůže při psaní SPARQL dotazů na poskytovatele ve znalostním grafu NKOD.
 S dotazy na strukturu dat ale opatrně.

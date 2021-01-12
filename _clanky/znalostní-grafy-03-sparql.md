@@ -4,9 +4,9 @@ title: "Série Znalostní grafy: Díl 3: SPARQL"
 detail: true
 ref: série-znalostní-grafy-03-sparql
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-03.jpg
+image: ../attachments/články/znalostní-grafy/znalostní-grafy-03.webp
 author: martin_nečaský
-date: 2020-12-21 05:00:00 +01:00
+date: 2021-01-12 15:00:00 +01:00
 ---
 V [minulém dílu][link_previous] seriálu jsme se seznámili s datovým modelem RDF, který je vhodný pro sdílení znalostních grafů ve strojově zpracovatelné podobě otevřených dat.
 V tomto dílu si ukážeme, jak můžeme se znalostními grafy reprezentovanými v modelu RDF pracovat pomocí dotazovacího jazyka SPARQL.
@@ -501,7 +501,6 @@ ORDER BY ?početDatovýchSad
 ## Dotazy na strukturu znalostního grafu
 
 Vraťme se ještě k problému zjišťování schématu znalostního grafu.
-Jak jsme již popisovali, pro konstrukci dotazů nad znalostním grafem musíme znát jeho strukturu nebo-li schéma.
 Výhoda datového modelu RDF spočívá v možnosti zakódování schématu přímo v datech.
 Tj. schéma není definováno explicitně, ale vyplývá implicitně z tvaru samotných dat.
 Určitá omezení na strukturu nebo předepsaná doporučená struktura sice může být dána pomocí slovníku nebo ontologie, ale není striktní (viz např. slovník [schema.org](https://schema.org/docs/full.html), který používáme i v našich příkladech).
@@ -510,8 +509,10 @@ Toto ale není vlastností modelu RDF nebo jazyka SPARQL.
 Jde o to, že ve znalostních grafech reprezentujeme složitá data ve velké míře detailu.
 Vysoká složitost datového schématu se pak projeví v jakémkoliv datovém modelu.
 
-Dotazovací jazyk SPARQL nám umožňuje se na strukturu dat ptát.
-Můžeme tak využít síly jazyka SPARQL při samotné konstrukci SPARQL dotazů.
+Jak jsme již popisovali výše, schéma můžeme zjišťovat dereferencí IRI vybraných uzlů, které použijeme jako příklady.
+Pomocí příkladů ale nikdy nemůžeme zjistit úplné schéma.
+Pokud nutně potřebujeme kompletní schéma, využijeme dotazovací jazyk SPARQL.
+Ten nám umožňuje se na strukturu dat ptát.
 Jak jsme řekli na začátku článku, proměnnou můžeme použít nejenom na místě subjektu nebo objektu, ale také na místě predikátu.
 A tak se můžeme např. zeptat na to, jaké všechny vlastnosti jsou popsány pro ČSÚ.
 

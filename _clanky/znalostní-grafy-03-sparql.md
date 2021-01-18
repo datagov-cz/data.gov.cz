@@ -19,7 +19,7 @@ V tomto dílu si ukážeme, jak můžeme se znalostními grafy reprezentovanými
 Je podobný dotazovacímu jazyku SQL, který je určený pro dotazování do dat reprezentovaných v relačním datovém modelu, tj. v podobě tabulek uložených v relační databázi.
 Rozdíl je právě v datovém modelu.
 V SQL popisujeme, z jakých tabulek chceme extrahovat jaké řádky pomocí podmínek, které musí tyto řádky splňovat.
-Ve SPARQL popisujeme, jaké části dotazovaného znalostního grafu chceme extrahovat pomocí pomocí podmínek, které musí uzly extrahovaných částí splňovat.
+Ve SPARQL popisujeme, jaké části dotazovaného znalostního grafu chceme extrahovat pomocí podmínek, které musí uzly extrahovaných částí splňovat.
 Pomocí dotazu v jazyku SQL konstruujeme tabulku s výsledky.
 Pomocí dotazu v jazyku SPARQL konstruujeme buď znalostní graf s výsledky nebo tabulku s výsledky.
 Pro jednoduchost se v tomto článku budeme zabývat pouze dotazy, které vrací tabulku.
@@ -40,7 +40,7 @@ Také nám říká, jakou má datovou schránku a že ČSÚ publikuje datovou sa
 %}
 
 Grafový vzor je matematický graf stejně jako i samotný znalostní graf.
-Pouze některé uzly v něm nejsou konkrétními IRI nebo datovými hodnotami, ale proměnnými.
+Liší se v tom, že některé uzly v něm nejsou konkrétními IRI nebo datovými hodnotami, ale proměnnými.
 Stejně tak některé hrany nemají určen konkrétní predikát v podobě IRI, ale místo predikátu je uvedena proměnná.
 Proměnné jsou v grafových vzorech uvozeny otazníkem.
 Proměnnou tak je např. `?název` nebo `?organizace`.
@@ -88,13 +88,24 @@ Odpovědí je hodnota, kterou můžeme dosadit za proměnnou `?název` tak, že 
 V našem případě se jedná o dosazení `?název` = `"Český statistický úřad"@cs`.
 
 Samotný zápis grafového vzoru ještě není validním SPARQL dotazem.
-SPARQL dotaz ještě musí specifikovat, jakým způsobem mají být strukturovány výsledky dotazu, tj. výsledky dosazení konkrétních hodnot do grafového vzoru.
-Nejjednodušší je strukturování do tabulky, kdy vyjmenujeme, jaké proměnné v grafovém vzoru dotazu tvoří sloupečky výsledné tabulky.
-SPARQL dotaz má dvě klauzule, podobně jako základní dotaz v jazyku SQL: `SELECT` a `WHERE`.
-Klauzule `WHERE` obsahuje grafový vzor uzavřený ve složených závorkách.
-Klauzule `SELECT` obsahuje seznam proměnných z grafového vzoru, jejichž dosazené hodnoty pro jednotlivé části znalostního grafu odpovídající grafovému vzoru chceme mít ve výsledku.
-Následují příklad je SPARQL dotazem, který vrací tabulku s jedním sloupečkem odpovídajícím proměnné `?název`.
+SPARQL dotaz ještě musí specifikovat, jakým způsobem mají být strukturovány výsledky dotazu, tj. výsledky dosazení konkrétních hodnot do proměnných v grafovém vzoru.
+Výsledek dotazu může být strukturován buď v podobě tabulky nebo v podobě znalostního grafu.
+V tomto článku si ukážeme první možnost.
+SPARQL dotaz má pak následující podobu.
+
+~~~~~~
+SELECT *seznam proměnných*
+WHERE {
+    *grafový vzor*
+}
+~~~~~~~~~~~~
+
+Za klíčovým slovem `WHERE` je grafový vzor uzavřený ve složených závorkách.
+Za klíčovým slovem `SELECT` je seznam proměnných z grafového vzoru, jejichž dosazené hodnoty pro jednotlivé části znalostního grafu odpovídající grafovému vzoru chceme mít ve výsledku.
+Výsledkem vyhodnocení dotazu je tabulka, jejíž sloupce odpovídají jednotlivým proměnným vyjmenovaným za klíčovým slovem `SELECT`.
 Každý řádek tabulky odpovídá právě jedné části znalostního grafu, která odpovídá znalostnímu grafu.
+
+Následující příklad je SPARQL dotazem, který vrací tabulku s jedním sloupečkem odpovídajícím proměnné `?název`.
 Pro náš znalostní graf bude mít tabulka jeden řádek, protože se dotazujeme na název konkrétní organizace, která má navíc pouze jeden název.
 
 ~~~~~~
@@ -104,19 +115,19 @@ WHERE {
 }
 ~~~~~~~~~~~~
 
-Výraz dotazu ještě není kompletní, protože používáme prefixy.
+Výraz dotazu ještě není kompletní, protože v grafovém vzoru používáme prefixy.
 Stejně jako v zápisu RDF trojic musíme i zde prefixy definovat.
 V jazyku SPARQL k tomu slouží klauzule `PREFIX`.
 Pozor na to, že se jedná o jinou syntaxi než syntaxe používaná pro zápis RDF trojic.
 Následující příklad je už správným výrazem dotazu.
 
 ~~~~~~
-PREFIX ovm: <https://data.gov.cz/slovník/ovm/>
 PREFIX schema: <http://schema.org/>
+PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 
 SELECT ?název
 WHERE {
-    ovm:00025593  schema:name ?název .
+    ovmr:00025593  schema:name ?název .
 }
 ~~~~~~~~~~~~
 
@@ -130,15 +141,15 @@ Nejprve je nutno mít znalostní graf vyjádřený v modelu RDF někde uložen.
 Pokud máme k dispozici pouze export RDF dat v podobě souboru ke stažení, můžeme si jej stáhnout a nahrát do vlastního RDF úložiště.
 Někdy má ale poskytovatel data uložena ve vlastním RDF úložišti a SPARQL endpoint k němu zpřístupní veřejně.
 
-Příklad znalostního grafu výše je součástí většího znalostního grafu, který již je uložen v RDF úložišti s [veřejně přístupným][nkod-ep] SPARQL endpointem.
+Příklad znalostního grafu výše je součástí většího znalostního grafu, který již je uložen v RDF úložišti s veřejně přístupným SPARQL endpointem.
 Jedná se o RDF úložiště [Národního katalogu otevřených dat (NKOD)][nkod].
-Zkuste ze svého prohlížeče SPARQL endpoint otevřít.
+Zkuste ze svého prohlížeče SPARQL endpoint [otevřít][nkod-ep].
 Prohlížeč zobrazí formulář, kde do pole *Query Text* zkopírujte příklad kompletního SPARQL dotazu výše.
 Potom stiskněte tlačítko *Run Query*.
 {% raw %}Pokud jste na mobilu nebo se vám nechce kopírovat, můžete si dotaz [spustit rovnou](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+%3Fnázev%0D%0AWHERE+{%0D%0A++++ovm%3A00025593++schema%3Aname+%3Fnázev+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+).{% endraw %}
 
 Výsledkem je tabulka s jedním sloupcem a jedním řádkem (nepočítáme-li hlavičku tabulky), kde je uveden výsledek dotazu.
-Asi se divíte divné hlavičce.
+Asi se divíte zvláštní hlavičce.
 To je chyba daného SPARQL endpointu, pro HTML výpis špatně pracuje s kódováním.
 Vraťte se ale na stránku s formulářem.
 Všimněte si možnosti výběru formátu v poli *Results Format*.
@@ -147,9 +158,9 @@ Získáte CSV soubor s výsledkem, kde je již kódování v pořádku.
 Tento výstup je zřejmě výstup, který potřebujete pro další strojové zpracování výsledku ve svém oblíbeném nástroji, který pracuje s tabulkovými daty v podobě CSV souborů.
 
 RDF úložiště Národního katalogu otevřených dat nenabízí moc pěkné uživatelské rozhraní pro SPARQL dotazování.
-Pro příklady SPARQL dotazů v tomto článku využijeme uživateslké rozhraní [Yasgui](https://github.com/TriplyDB/Yasgui), které je [veřejně dostupné](https://yasgui.triply.cc/).
+Pro příklady SPARQL dotazů v tomto článku využijeme uživatelské rozhraní [Yasgui](https://triply.cc/docs/yasgui), které je [veřejně dostupné](https://yasgui.triply.cc/).
 Stačí zde zadat URL SPARQL endpointu, nad kterým se chceme dotazovat, což v našem případě znamená [SPARQL endpoint NKOD][nkod-ep].
-Všechny níže uvedené přílkady si můžete vyzkoušet v tomto rozhraní sami a nebo můžete kliknout na odkaz poskytnutý pod každým příkladem.
+Všechny níže uvedené příklady si můžete vyzkoušet v tomto rozhraní sami a nebo můžete kliknout na odkaz poskytnutý pod každým příkladem.
 Odkaz povede na spuštění daného dotazu v Yasgui.
 
 ## Pokročilejší SPARQL dotazování
@@ -161,9 +172,9 @@ Na principech ale už nic měnit nebudeme.
 Začněme se složitějšími grafovými vzory.
 Vraťme se k příkladu na prvním obrázku článku.
 Ukazuje nám datovou sadu s IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
-Datová sada má pokytovatele, který je k ní připojen pomocí hrany označené predikátem [`http://purl.org/dc/terms/publisher`](http://purl.org/dc/terms/publisher).
+Datová sada má poskytovatele, který je k ní připojen pomocí hrany označené predikátem [`http://purl.org/dc/terms/publisher`](http://purl.org/dc/terms/publisher).
 Předpokládejme, že známe IRI datové sady a chceme se zeptat na jejího poskytovatele.
-Dotaz vyjádříme ve SPARQL následujícím způsbem.
+Dotaz vyjádříme ve SPARQL následujícím způsobem.
 
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -197,10 +208,10 @@ WHERE {
 
 Zde se dostáváme k problému, který někteří programátoři a databázoví specialisté popisují jako nevýhodu dotazování v jazyku SPARQL.
 Jiní jej nevidí jako problém, ale naopak jako dobrou vlastnost celého přístupu, ale tuto debatu zde v článku nepovedeme.
-Jde o to, že znalostní graf, nad kterým se dotazujeme, nemá pěkně definované schéma.
+Jde o to, že znalostní graf, nad kterým se dotazujeme, nemá explicitně definované schéma.
 Schématem myslíme definici struktury znalostního grafu, tj. jaké typy uzlů se v něm mohou vyskytovat a jaké mají vlastnosti.
 Na začátku článku jsme SPARQL srovnávali s relačními databázemi a jazykem SQL.
-Relační databáze mají jasně definované schéma popisující strukturu tabulek.
+Relační databáze mají schéma popisující strukturu tabulek definováno explicitně.
 Psaní SQL dotazů je pak jednodušší, protože si můžeme schéma jednoduše zobrazit před sebou.
 Při psaní SPARQL dotazů takový komfort nemáme.
 
@@ -324,7 +335,7 @@ WHERE {
 
 Výsledek není úplně takový, jaký bychom chtěli, protože klíčová slova se v něm opakují.
 Pomocí klíčového slova `DISTINCT` můžeme v dotazu specifikovat, že chceme z výsledku odstranit duplicitní řádky.
-Navíc můžeme chtít pro přehlednost seznam setřídit podle abecedy, k čemuž můžeme použít dolňující klauzili `ORDER BY`.
+Navíc můžeme chtít pro přehlednost seznam setřídit podle abecedy, k čemuž můžeme použít doplňující klauzuli `ORDER BY`.
 Klíčové slovo `DISTINCT` i klauzuli `ORDER BY` je nutno používat s opatrností, neboť odstranění duplicit nebo třídění může být výpočetně náročnější, zejména pokud se dotýká více sloupců.
 
 ~~~~~~
@@ -370,7 +381,7 @@ Ne, problém je jinde.
 Zkuste se vrátit k výsledku předchozího dotazu, který vracel seznam klíčových slov.
 Podívejte se detailně na výsledek.
 Uvidíte, že na řádcích nejsou prosté řetězce, ale řetězce opatřené ještě kódem jazyka, ve kterém je řetězec uveden.
-Jedná se tak o jiný datový typ, jehož hodnoty nelze přímo porovnávat z prostými řetězc.
+Jedná se tak o jiný datový typ, jehož hodnoty nelze přímo porovnávat s prostými řetězci.
 Máme dvě možnosti.
 Můžeme aplikovat na proměnnou `?slovo` [SPARQL funkci](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#SparqlOps) `STR`, která hodnotu proměnné převede na prostý řetězec.
 Pro jazykový řetězec to znamená prosté odhození kódu jazyka z hodnoty.
@@ -394,7 +405,7 @@ WHERE {
 {% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zevDatov%C3%A9Sady%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dcat%3Akeyword%20%3Fslovo%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%0A%20%20%20%20FILTER(STR(%3Fslovo)%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%20%7C%7C%20%3Fslovo%20%3D%20%22%C4%8D%C3%ADseln%C3%ADk%22%40cs)%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Nyní už výsledek vypadá správně.
-Ve výsledku nám ale mohou vadit datové sady, které nejsou číselníky, ale datovými sadami s vazbami mezi číselníky.
+Ve výsledku nám mohou vadit datové sady, které nejsou číselníky, ale datovými sadami s vazbami mezi číselníky.
 Když se podíváme na vybranou datovou sadu s vazbami, např. [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-cis69vaz44`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-cis69vaz44), můžeme si všimnout, že používá klíčové slovo *vazba*.
 Pojďme si je tedy z výsledku dotazu odfiltrovat.
 
@@ -458,10 +469,9 @@ Chtěli jsme pouze demonstrovat podobnost síly jazyka SPARQL s jinými dotazova
 
 V jazyku SPARQL můžeme také zapisovat tzv. agregační dotazy.
 Jedná se o dotazy, které nevrací prvky, ale jejich počty, průměry jejich číselných vlastností apod.
-SPARQL je v tomto stejný.
-Existuje zde klauzule [`GROUP BY`](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#aggregates), pomocí které speficifikujeme, že se části znalostního grafu, které odpovídají grafovému vzoru, seskupí podle hodnoty nějaké proměnné, tzv. *agregační proměnné*.
+Existuje zde klauzule [`GROUP BY`](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#aggregates), pomocí které speficifikujeme, že se části znalostního grafu odpovídající grafovému vzoru seskupí podle hodnoty nějaké proměnné, tzv. *agregační proměnné*.
 Jedna skupina obsahuje ty části znalostního grafu, pro které má agregační proměnná stejnou hodnotu.
-Ve specifikaci výsledku potom můžeme uvést buď agregační proměnnou, agregaci nějaké neagregační proměnné, např. pomocí agregační funkce `AVG` pro průměr nebo spočítáním počtů prvků ve skupině pomocí agregační funkce `COUNT`.
+Ve specifikaci výsledku potom můžeme uvést buď agregační proměnnou, agregaci nějaké neagregační proměnné, např. pomocí agregační funkce `AVG` pro průměr nebo spočítání počtů prvků ve skupině pomocí agregační funkce `COUNT`.
 Uveďme si agregace na příkladu.
 Chceme vědět počet datových sad podle poskytovatele.
 
@@ -530,7 +540,7 @@ Povšimněte si konstruktu `[]`.
 Ten říká, že je nám jedno, co je v dané odpovídají části znalostního grafu za hodnotu, nepřiřazujeme ji do proměnné a tudíž ji ani nebudeme chtít ve výsledku.
 
 
-Obvykle ale necheme vlastnosti pospané pro jednu konkrétní entitu, ale pro všechny entity daného typu.
+Obvykle ale nechceme vlastnosti popsané pro jednu konkrétní entitu, ale pro všechny entity daného typu.
 Můžeme se tak nejprve zeptat, jakého typu je ČSÚ.
 
 ~~~~~~
@@ -543,7 +553,7 @@ WHERE {
 ~~~~~~~~~~~~
 {% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20DISTINCT%20%3Ftyp%0AWHERE%20%7B%0A%20%20%20%20ovmr%3A00025593%20a%20%3Ftyp%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
-Můžeme si pak vybrat jeden typ, abychom zjistitli, jaké vlastnosti jsou ve znalostním grafu používány pro entity tohoto typu.
+Můžeme si pak vybrat jeden typ, abychom zjistili, jaké vlastnosti jsou ve znalostním grafu používány pro entity tohoto typu.
 Vyberme si např. `schema:Organization`.
 
 ~~~~~~
@@ -570,7 +580,7 @@ Po jejím uplynutí vám vrátí time out chybu.
 V tomto článku jsme se seznámili se základními principy dotazování nad znalostními grafy pomocí dotazovacího jazyka SPARQL.
 Zjistili jsme, že dotazování je založeno na grafových vzorech a vyhledávání částí znalostního grafu, které grafovým vzorům odpovídají.
 Viděli jsme řadu příkladů, které nám ukázaly jednoduché i složitější dotazy vyjádřené v jazyku SPARQL, jejichž základem jsou právě grafové vzory.
-Seznámili jsme se se základními i některými pokročilými konstrukty jazyka SPARQL, jako jsou např. agregace výsledků nebo dotazování na strukturu znalostního grafu.
+Seznámili jsme se se základními i pokročilými konstrukty jazyka SPARQL, jako jsou např. agregace výsledků nebo dotazování na strukturu znalostního grafu.
 Všechny příklady SPARQL dotazů jsou dotazy nad znalostním grafem [Národního katalogu otevřených dat (NKOD)][nkod].
 Každý lze přímo spustit nad veřejným [SPARQL endpointem NKOD][nkod-ep].
 Čeká nás několik dílů tohoto seriálu, kde představíme další veřejné SPARQL endpointy.

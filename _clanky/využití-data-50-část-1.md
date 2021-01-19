@@ -5,7 +5,7 @@
 V dubnu 2019 Zeměměřický úřad otevřel datové sady Data200 a Data50. Databáze Data200 je digitální geografický model území ČR odpovídající přesností a stupněm generalizace měřítku 1:200 000. Data50 jsou pak digitálním geografickým modelem území ČR odvozeným z kartografické databáze pro Základní mapu ČR 1:50 000. Zamysleli jsme se nad tím, jak data využít ke zjednodušení procesu povolování dočasných staveb v ochranných pásmech letiště.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/screen_vysledku.png"
+   url="../attachments/články/využití-data-50/screen_vysledku.webp"
    description="Aplikace Altimeter zobrazující možná výšková omezení dočasných staveb v okolí letiště."
 %}
 

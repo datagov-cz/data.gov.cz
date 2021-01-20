@@ -1,13 +1,14 @@
 ---
 layout: post
 detail: true
-title: Využití Data50 1
+title: Využití Data50 -část 1
 ref: data50-1
 lang: cs
 image: ../attachments/články/využití-data-50/screen_vysledku.webp
 author: Michal Med
 date: 2021-01-18 03:14:15
 ---
+První ze série článků o využití otevřených dat Zeměměřického úřadu se zabývá hledáním problému, který by data pomohla vyřešit a výběrem vhodných datových sad.
 
 # Využití open dat Zeměměřického úřadu pro povolování dočasných staveb - část 1
 
@@ -28,6 +29,7 @@ Zmíněný problém se dotýká schvalování dočasných staveb, které výško
 Cílem je tedy použít data Zeměměřického úřadu k vytvoření digitálního modelu terénu, vytvořit si modely ochranných pásem letiště a v aplikaci nadmořské výšky těchto objektů porovnávat. Letiště tak může stavitelům většinu staveb schválit nebo domítnout pouhým kliknutím v aplikaci a geodeti budou vyjíždět do terénu pouze v mezních případech (vstupní data budou mít pouze omezenou přesnost).
 
 ## Použitá data
+Data pocházející minimálně ze dvou zdrojů slouží k tvorbě digitálního modelu reliéfu a k modelu ochranných pásem.
 
 ### Data výškopisu
 Nejpodrobnějšími daty obsahujícími nadmořskou výšku reliéfu poskytovanými veřejnými institucemi (avšak nikoli veřejně) v ČR je [Digitální model reliéfu][link_dmr], který obsahuje data pořízená laserovým skenováním. Tato datová sada ovšem nepatří mezi otevřené datové sady a její pořizovací cena odpovídá [ceníku][ceník_ZÚ_link].

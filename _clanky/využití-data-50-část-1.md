@@ -1,7 +1,7 @@
 ---
 layout: post
 detail: true
-title: Využití open dat Zeměměřického úřadu pro povolování dočasných staveb - část 1
+title: Využití otevřených dat Zeměměřického úřadu pro povolování dočasných staveb - část 1
 ref: data50-1
 lang: cs
 image: ../attachments/články/využití-data-50/screen_vysledku.webp

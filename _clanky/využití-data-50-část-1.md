@@ -10,9 +10,10 @@ date: 2021-01-18 03:14:15
 ---
 První ze série článků o využití otevřených dat Zeměměřického úřadu se zabývá hledáním problému, který by data pomohla vyřešit a výběrem vhodných datových sad.
 
+<!--more-->
+
 # Využití open dat Zeměměřického úřadu pro povolování dočasných staveb - část 1
 
-<!--more-->
 ## Úvod
 V dubnu 2019 Zeměměřický úřad otevřel datové sady Data200 a Data50. Databáze Data200 je digitální geografický model území ČR odpovídající přesností a stupněm generalizace měřítku 1:200 000. Data50 jsou pak digitálním geografickým modelem území ČR odvozeným z kartografické databáze pro Základní mapu ČR 1:50 000. Zamysleli jsme se nad tím, jak data využít ke zjednodušení procesu povolování dočasných staveb v ochranných pásmech letiště.
 

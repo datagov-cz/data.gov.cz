@@ -16,7 +16,9 @@ V tomto dílu si ukážeme, jak můžeme se znalostními grafy reprezentovanými
 ## Co je SPARQL?
 
 [SPARQL][sparql11] je dotazovací jazyk určený pro dotazování do dat reprezentovaných v [datovém modelu RDF][link_previous].
-Je podobný dotazovacímu jazyku SQL, který je určený pro dotazování do dat reprezentovaných v relačním datovém modelu, tj. v podobě tabulek uložených v relační databázi.
+V [prvním dílu][link_first] seriálu o znalostních grafech jsme si ukázali řadu příkladů datových zdrojů, které reprezentují svá data v datovém modelu RDF. U všech z nich můžete využít SPARQL pro získávání dat.
+
+SPARQL je podobný dotazovacímu jazyku SQL, který je určený pro dotazování do dat reprezentovaných v relačním datovém modelu, tj. v podobě tabulek uložených v relační databázi.
 Rozdíl je právě v datovém modelu.
 V SQL popisujeme, z jakých tabulek chceme extrahovat jaké řádky pomocí podmínek, které musí tyto řádky splňovat.
 Ve SPARQL popisujeme, jaké části dotazovaného znalostního grafu chceme extrahovat pomocí podmínek, které musí uzly extrahovaných částí splňovat.
@@ -55,7 +57,7 @@ Skládá se z jednoho uzlu, který je fixován na kontrétní IRI [`https://data
    description="Grafový vzor odpovídající znalostnímu grafu s názvem ČSÚ"
 %}
 
-Pokud tento grafový vzor použijeme jako dotaz nad znalostním grafem, odpovídá každé části tohoto znalostního grafu, která obsahuje uzel s IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593), hranu s predikátem [`http://schema.org/name`](http://schema.org/name) vedoucí z tohoto uzlu do jiného uzlu.
+Pokud tento grafový vzor použijeme jako dotaz nad znalostním grafem, odpovídá každé části dotazovaného znalostního grafu, která obsahuje uzel s IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593), hranu s predikátem [`http://schema.org/name`](http://schema.org/name) vedoucí z tohoto uzlu do jiného uzlu.
 Tento jiný uzel není grafovým vzorem specifikován.
 Pokud jej tedy použijeme na znalostní graf z příkladu výše, odpovídá grafový vzor části zobrazené na následujícím obrázku.
 
@@ -89,7 +91,7 @@ V našem případě se jedná o dosazení `?název` = `"Český statistický ú�
 
 Samotný zápis grafového vzoru ještě není validním SPARQL dotazem.
 SPARQL dotaz ještě musí specifikovat, jakým způsobem mají být strukturovány výsledky dotazu, tj. výsledky dosazení konkrétních hodnot do proměnných v grafovém vzoru.
-Výsledek dotazu může být strukturován buď v podobě tabulky nebo v podobě znalostního grafu.
+Výsledek dotazu může být strukturován buď v podobě tabulky, nebo v podobě znalostního grafu.
 V tomto článku si ukážeme první možnost.
 SPARQL dotaz má pak následující podobu.
 
@@ -118,7 +120,7 @@ WHERE {
 Výraz dotazu ještě není kompletní, protože v grafovém vzoru používáme prefixy.
 Stejně jako v zápisu RDF trojic musíme i zde prefixy definovat.
 V jazyku SPARQL k tomu slouží klauzule `PREFIX`.
-Pozor na to, že se jedná o jinou syntaxi než syntaxe používaná pro zápis RDF trojic.
+Pozor na to, že se jedná o jinou syntaxi než je syntaxe používaná pro zápis RDF trojic.
 Následující příklad je už správným výrazem dotazu.
 
 ~~~~~~
@@ -150,7 +152,7 @@ Potom stiskněte tlačítko *Run Query*.
 
 Výsledkem je tabulka s jedním sloupcem a jedním řádkem (nepočítáme-li hlavičku tabulky), kde je uveden výsledek dotazu.
 Asi se divíte zvláštní hlavičce.
-To je chyba daného SPARQL endpointu, pro HTML výpis špatně pracuje s kódováním.
+To je chyba daného SPARQL endpointu, který pro HTML výpis špatně pracuje s kódováním.
 Vraťte se ale na stránku s formulářem.
 Všimněte si možnosti výběru formátu v poli *Results Format*.
 Vyberte formát CSV a spusťte dotaz znovu.
@@ -255,7 +257,7 @@ WHERE {
 Všimněme si, že u tohoto dotazu neuvádíme v klauzuli `SELECT` všechny proměnné použité v grafovém vzoru.
 IRI datové schránky ve výsledku nechceme a proto proměnnou `?datováSchránka` neuvádíme.
 
-Podobně jako jsme mohli syntakticky zkracovat zápis RDF trojic se stejným subjektem, můžeme zkracovat i části grafového vzoru.
+Podobně, jako jsme mohli syntakticky zkracovat zápis RDF trojic se stejným subjektem, můžeme zkracovat i části grafového vzoru.
 V předchozím dotazu máme dvě trojice grafového vzoru se stejným subjektem (začátkem).
 Můžeme je zkrátit následujícím způsobem.
 
@@ -280,7 +282,7 @@ WHERE {
 
 Další zkrácení je možné pomocí konstruktu *cesty*.
 Protože nepotřebujeme proměnnou `?datováSchránka`, můžeme ji v grafovém vzoru vynechat a specifikovat cestu v grafu k identifikátoru datové schránky.
-Cesta sestává z IRI predikátů oddělených lomitkem `/`, které nahrazuje nepotřebnou proměnnou.
+Cesta sestává z IRI predikátů oddělených lomítkem `/`, které nahrazuje nepotřebnou proměnnou.
 
 ~~~~~~
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -433,7 +435,7 @@ Vysvětlení je ale trochu složitější.
 Nesouvisí s dotazovacím jazykem SPARQL, souvisí s logikou.
 Vyhodnocení dotazu znamená, že jsou ve znalostním grafu vyhledávány části, které odpovídají grafovému vzoru.
 Jistě jste si pro datové sady s vazbami všimli, že nejsou označeny pouze klíčovým slovem *vazba*, ale i jinými klíčovými slovy, např. právě *číselník* nebo *ČSÚ*.
-A proto se podaří pro grafový vzor najít část, která odpovídá datové sadě ČSÚ s klíčovým slovem, které není slovem *vazba* a datová sada s vazbami je vrácena ve výsledku.
+A proto se podaří pro grafový vzor najít část, která odpovídá datové sadě ČSÚ s klíčovým slovem, které není slovem *vazba*, a datová sada s vazbami je vrácena ve výsledku.
 
 Pro řešení tohoto problému nám nestačí filtrování pomocí jednoduché výrokové logiky, ale potřebujeme existenční kvantifikátor.
 Ten nám umožní rozšířit předchozí vzor tak, abychom mohli říci, že chceme pouze takové datové sady, pro které *neexistuje* klíčové slovo *vazba*.
@@ -508,12 +510,32 @@ ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
 {% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
+Možná jste si všimli, že druhý dotaz vrací jiný počet poskytovatelů než předchozí dotaz (ke dni vydání článků vrací první dotaz 44 poskytovatelů, druhý 42).
+Je to způsobeno tím, že pro některé poskytovatele neexistuje hodnota vlastnosti `schema:name` a proto nejsou do výsledku vybrány.
+Pokud chceme mít ve výsledku i tyto poskytovatele, musíme v dotazu specifikovat, že část grafového vzoru s vlatností `schema:name` je nepovinná.
+Část grafového vzoru můžeme ve SPARQL označit jako nepovinnou pomocí klíčového slova `OPTIONAL` následovaným nepovinnou částí grafového vzoru ve složených závorkách, jak je ukázáno na následujícím příkladu.
+
+~~~~~~
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX schema: <http://schema.org/>
+
+SELECT DISTINCT ?poskytovatel ?názevPoskytovatele (COUNT(?datováSada) AS ?početDatovýchSad)
+WHERE {
+    ?datováSada dct:publisher ?poskytovatel .
+
+    OPTIONAL { ?poskytovatel schema:name ?názevPoskytovatele . }
+}
+GROUP BY ?poskytovatel ?názevPoskytovatele
+ORDER BY ?početDatovýchSad
+~~~~~~~~~~~~
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+DISTINCT+%3Fposkytovatel+%3FnázevPoskytovatele+%28COUNT%28%3FdatováSada%29+AS+%3FpočetDatovýchSad%29%0D%0AWHERE+%7B%0D%0A++++%3FdatováSada+dct%3Apublisher+%3Fposkytovatel+.%0D%0A%0D%0A++++OPTIONAL+%7B+%3Fposkytovatel+schema%3Aname+%3FnázevPoskytovatele+.+%7D%0D%0A%7D%0D%0AGROUP+BY+%3Fposkytovatel+%3FnázevPoskytovatele%0D%0AORDER+BY+%3FpočetDatovýchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+
 ## Dotazy na strukturu znalostního grafu
 
 Vraťme se ještě k problému zjišťování schématu znalostního grafu.
 Výhoda datového modelu RDF spočívá v možnosti zakódování schématu přímo v datech.
 Tj. schéma není definováno explicitně, ale vyplývá implicitně z tvaru samotných dat.
-Určitá omezení na strukturu nebo předepsaná doporučená struktura sice může být dána pomocí slovníku nebo ontologie, ale není striktní (viz např. slovník [schema.org](https://schema.org/docs/full.html), který používáme i v našich příkladech).
+Určitá omezení na strukturu nebo předepsaná doporučená struktura sice mohou být dána pomocí slovníku nebo ontologie, ale nejsou striktní (viz např. slovník [schema.org](https://schema.org/docs/full.html), který používáme i v našich příkladech).
 To dává znalostním grafům zajímavou míru flexibility, ale může být potíží, pokud se chceme v datech vyznat a zapsat dotaz.
 Toto ale není vlastností modelu RDF nebo jazyka SPARQL.
 Jde o to, že ve znalostních grafech reprezentujeme složitá data ve velké míře detailu.
@@ -577,7 +599,10 @@ Po jejím uplynutí vám vrátí time out chybu.
 
 ## Závěr
 
-V tomto článku jsme se seznámili se základními principy dotazování nad znalostními grafy pomocí dotazovacího jazyka SPARQL.
+Tento článek je třetím dílem v seriálu článků o znalostních grafech.
+[První díl][link_first] je úvodem do znalostních grafů, který vysvětluje pojem znalostní graf a ukazuje několik příkladů.
+[Druhý díl][link_previous] představuje datový model RDF, který je standardním datovým modelem pro publikaci znalostních grafů na Webu.
+V tomto, třetím, dílu jsme se seznámili se základními principy dotazování nad znalostními grafy reprezentovanými v datovém modelu RDF pomocí dotazovacího jazyka SPARQL.
 Zjistili jsme, že dotazování je založeno na grafových vzorech a vyhledávání částí znalostního grafu, které grafovým vzorům odpovídají.
 Viděli jsme řadu příkladů, které nám ukázaly jednoduché i složitější dotazy vyjádřené v jazyku SPARQL, jejichž základem jsou právě grafové vzory.
 Seznámili jsme se se základními i pokročilými konstrukty jazyka SPARQL, jako jsou např. agregace výsledků nebo dotazování na strukturu znalostního grafu.
@@ -587,6 +612,7 @@ Každý lze přímo spustit nad veřejným [SPARQL endpointem NKOD][nkod-ep].
 Uvidíme také např., že v jednom SPARQL dotazu se můžeme dotázat i do více SPARQL endpointů najednou.
 
 [link_previous]: https://data.gov.cz/články/znalostní-grafy-02-rdf "Minulý díl"
+[link_first]: https://data.gov.cz/články/znalostní-grafy-01-úvod "První díl"
 [sparql11]: https://www.w3.org/TR/sparql11-overview/ "SPARQL 1.1. Overview"
 [nkod]: https://data.gov.cz "Národní katalog otevřených dat (NKOD)"
 [nkod-ep]: https://data.gov.cz/sparql "SPARQL endpoint NKOD" 

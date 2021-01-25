@@ -57,7 +57,7 @@ Skládá se z jednoho uzlu, který je fixován na kontrétní IRI [`https://data
    description="Grafový vzor odpovídající znalostnímu grafu s názvem ČSÚ"
 %}
 
-Pokud tento grafový vzor použijeme jako dotaz nad znalostním grafem, odpovídá každé části dotazovaného znalostního grafu, která obsahuje uzel s IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593), hranu s predikátem [`http://schema.org/name`](http://schema.org/name) vedoucí z tohoto uzlu do jiného uzlu.
+Pokud tento grafový vzor použijeme jako dotaz nad znalostním grafem, odpovídá každé části dotazovaného znalostního grafu, která obsahuje uzel s IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593) a hranu s predikátem [`http://schema.org/name`](http://schema.org/name) vedoucí z tohoto uzlu do jiného uzlu.
 Tento jiný uzel není grafovým vzorem specifikován.
 Pokud jej tedy použijeme na znalostní graf z příkladu výše, odpovídá grafový vzor části zobrazené na následujícím obrázku.
 
@@ -91,7 +91,7 @@ V našem případě se jedná o dosazení `?název` = `"Český statistický ú�
 
 Samotný zápis grafového vzoru ještě není validním SPARQL dotazem.
 SPARQL dotaz ještě musí specifikovat, jakým způsobem mají být strukturovány výsledky dotazu, tj. výsledky dosazení konkrétních hodnot do proměnných v grafovém vzoru.
-Výsledek dotazu může být strukturován buď v podobě tabulky, nebo v podobě znalostního grafu.
+Jak jsme již zmiňovali výše, výsledek SPARQL dotazu může být strukturován buď v podobě tabulky, nebo v podobě znalostního grafu.
 V tomto článku si ukážeme první možnost.
 SPARQL dotaz má pak následující podobu.
 
@@ -105,7 +105,7 @@ WHERE {
 Za klíčovým slovem `WHERE` je grafový vzor uzavřený ve složených závorkách.
 Za klíčovým slovem `SELECT` je seznam proměnných z grafového vzoru, jejichž dosazené hodnoty pro jednotlivé části znalostního grafu odpovídající grafovému vzoru chceme mít ve výsledku.
 Výsledkem vyhodnocení dotazu je tabulka, jejíž sloupce odpovídají jednotlivým proměnným vyjmenovaným za klíčovým slovem `SELECT`.
-Každý řádek tabulky odpovídá právě jedné části znalostního grafu, která odpovídá znalostnímu grafu.
+Každý řádek tabulky odpovídá právě jedné části znalostního grafu, která odpovídá grafovému vzoru.
 
 Následující příklad je SPARQL dotazem, který vrací tabulku s jedním sloupečkem odpovídajícím proměnné `?název`.
 Pro náš znalostní graf bude mít tabulka jeden řádek, protože se dotazujeme na název konkrétní organizace, která má navíc pouze jeden název.
@@ -148,7 +148,7 @@ Jedná se o RDF úložiště [Národního katalogu otevřených dat (NKOD)][nkod
 Zkuste ze svého prohlížeče SPARQL endpoint [otevřít][nkod-ep].
 Prohlížeč zobrazí formulář, kde do pole *Query Text* zkopírujte příklad kompletního SPARQL dotazu výše.
 Potom stiskněte tlačítko *Run Query*.
-{% raw %}Pokud jste na mobilu nebo se vám nechce kopírovat, můžete si dotaz [spustit rovnou](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+%3Fnázev%0D%0AWHERE+{%0D%0A++++ovm%3A00025593++schema%3Aname+%3Fnázev+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+).{% endraw %}
+{% raw %}Pokud jste na mobilu nebo se vám nechce kopírovat, můžete si námi připravený dotaz [spustit rovnou](https://data.gov.cz/sparql?default-graph-uri=&query=PREFIX+ovm%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0APREFIX+schema%3A+<http%3A%2F%2Fschema.org%2F>%0D%0A%0D%0ASELECT+%3Fnázev%0D%0AWHERE+{%0D%0A++++ovm%3A00025593++schema%3Aname+%3Fnázev+.%0D%0A}&format=text%2Fhtml&timeout=0&debug=on&run=+Run+Query+).{% endraw %}
 
 Výsledkem je tabulka s jedním sloupcem a jedním řádkem (nepočítáme-li hlavičku tabulky), kde je uveden výsledek dotazu.
 Asi se divíte zvláštní hlavičce.
@@ -232,7 +232,7 @@ Můžeme se také podívat na jejich hodnoty, např. na poskytovatele naší dat
 
 Ke konci článku se budeme věnovat problematice zjišťování schématu detailněji.
 Zde zatím pokračujme v příkladech.
-Pohledem na [poskytovatele datové sady](https://data.gov.cz/zdroj/ovm/00025593) [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19) zjistíme, že jsou vedeny údaje o jeho datové schránce.
+Pohledem na [poskytovatele](https://data.gov.cz/zdroj/ovm/00025593) datové sady [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19) zjistíme, že jsou vedeny údaje o jeho datové schránce.
 Můžeme se na ni zeptat.
 
 ~~~~~~
@@ -312,10 +312,10 @@ PREFIX ovmr: <https://data.gov.cz/zdroj/ovm/>
 SELECT ?datováSada ?název
 WHERE {
     ?datováSada dct:publisher ovmr:00025593 ;
-        dct:title ?názevDatovéSady .
+        dct:title ?název .
 }
 ~~~~~~~~~~~~
-{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20ovmr%3A%20%3Chttps%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F%3E%0A%0ASELECT%20%3Fdatov%C3%A1Sada%20%3Fn%C3%A1zev%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20ovmr%3A00025593%20%3B%0A%20%20%20%20%20%20%20%20dct%3Atitle%20%3Fn%C3%A1zevDatov%C3%A9Sady%20.%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX+dct%3A+<http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F>%0D%0APREFIX+ovmr%3A+<https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fovm%2F>%0D%0A%0D%0ASELECT+%3FdatováSada+%3Fnázev%0D%0AWHERE+%7B%0D%0A++++%3FdatováSada+dct%3Apublisher+ovmr%3A00025593+%3B%0D%0A++++++++dct%3Atitle+%3Fnázev+.%0D%0A%7D&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Dotaz je jednoduchý, výsledek je bohatší - obsahuje všechny datové sady ČSÚ.
 Datové sady jsou v NKOD opatřeny klíčovými slovy.
@@ -510,10 +510,10 @@ ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
 {% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20schema%3A%20%3Chttp%3A%2F%2Fschema.org%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20schema%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
-Možná jste si všimli, že druhý dotaz vrací jiný počet poskytovatelů než předchozí dotaz (ke dni vydání článků vrací první dotaz 44 poskytovatelů, druhý 42).
+Možná jste si všimli, že druhý dotaz vrací jiný počet poskytovatelů než předchozí dotaz (ke dni vydání článku vrací první dotaz 44 poskytovatelů, druhý 42).
 Je to způsobeno tím, že pro některé poskytovatele neexistuje hodnota vlastnosti `schema:name` a proto nejsou do výsledku vybrány.
 Pokud chceme mít ve výsledku i tyto poskytovatele, musíme v dotazu specifikovat, že část grafového vzoru s vlatností `schema:name` je nepovinná.
-Část grafového vzoru můžeme ve SPARQL označit jako nepovinnou pomocí klíčového slova `OPTIONAL` následovaným nepovinnou částí grafového vzoru ve složených závorkách, jak je ukázáno na následujícím příkladu.
+Část grafového vzoru můžeme ve SPARQL označit jako nepovinnou pomocí klíčového slova `OPTIONAL` následovaného nepovinnou částí grafového vzoru ve složených závorkách, jak je ukázáno na následujícím příkladu.
 
 ~~~~~~
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -535,7 +535,7 @@ ORDER BY ?početDatovýchSad
 Vraťme se ještě k problému zjišťování schématu znalostního grafu.
 Výhoda datového modelu RDF spočívá v možnosti zakódování schématu přímo v datech.
 Tj. schéma není definováno explicitně, ale vyplývá implicitně z tvaru samotných dat.
-Určitá omezení na strukturu nebo předepsaná doporučená struktura sice mohou být dána pomocí slovníku nebo ontologie, ale nejsou striktní (viz např. slovník [schema.org](https://schema.org/docs/full.html), který používáme i v našich příkladech).
+Určitá omezení na strukturu nebo předepsaná doporučená struktura sice mohou být dány pomocí slovníku nebo ontologie, ale nejsou striktní (viz např. slovník [schema.org](https://schema.org/docs/full.html), který používáme i v našich příkladech).
 To dává znalostním grafům zajímavou míru flexibility, ale může být potíží, pokud se chceme v datech vyznat a zapsat dotaz.
 Toto ale není vlastností modelu RDF nebo jazyka SPARQL.
 Jde o to, že ve znalostních grafech reprezentujeme složitá data ve velké míře detailu.

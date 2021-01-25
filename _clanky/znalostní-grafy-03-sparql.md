@@ -6,7 +6,7 @@ ref: série-znalostní-grafy-03-sparql
 lang: cs
 image: ../attachments/články/znalostní-grafy/znalostní-grafy-03.webp
 author: martin_nečaský
-date: 2021-01-12 15:00:00 +01:00
+date: 2021-01-25 15:00:00 +01:00
 ---
 V [minulém dílu][link_previous] seriálu jsme se seznámili s datovým modelem RDF, který je vhodný pro sdílení znalostních grafů ve strojově zpracovatelné podobě otevřených dat.
 V tomto dílu si ukážeme, jak můžeme se znalostními grafy reprezentovanými v modelu RDF pracovat pomocí dotazovacího jazyka SPARQL.

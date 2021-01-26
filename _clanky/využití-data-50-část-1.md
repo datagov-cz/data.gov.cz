@@ -8,7 +8,7 @@ image: ../attachments/články/využití-data-50/screen_vysledku.webp
 author: Michal Med
 date: 2021-01-18 03:14:15
 ---
-První ze série článků o využití otevřených dat Zeměměřického úřadu se zabývá hledáním problému, který by data pomohla vyřešit a výběrem vhodných datových sad.
+První ze série článků o využití otevřených dat Zeměměřického úřadu se zabývá hledáním problému, který by otevřená data pomohla vyřešit, a výběrem vhodných datových sad.
 
 <!--more-->
 
@@ -25,7 +25,7 @@ V dubnu 2019 Zeměměřický úřad otevřel datové sady Data200 a Data50. Data
 ## Popis problému
 Letiště Václava Havla má hodně práce se schvalováním dočasných staveb v okolí letiště. Na letišti, nad ním a v jeho okolí se nachází celá řada ochranných pásem, které mají různá omezení, ať už se jedná o bezletové zóny, zóny s omezeným vstupem nebo zóny se stavebním omezením. Ochranná pásma jsou definována v [Leteckém předpisu L14 - letiště][link_l14], schváleným Ministerstvem dopravy ČR a zpracovaným Úřadem pro civilní letectví.
 
-Zmíněný problém se dotýká schvalování dočasných staveb, které výškově mohou zasahovat do Ochranného pásma leteckých staveb (popsaných v hlavě 11 dokumentu L14), především stavebních jeřábů. Většina staveb v okolí letiště do ochranného pásma nezasahuje --  jedná se často o výrobní nebo překladní haly -- při jejich výstavbě je však potřeba využití jeřábů, které by do ochranných pásem zasáhnout mohly. V každém takovém případě musí dát stavební firma k posouzení letišti, zda se jejich jeřáb pod limit ochranného pásma vejde, nebo ne. Případů nebývá tolik, jsou však řešeny geodetickou nivelací na místě měřením nadmořské výšky povrchu ajeho porovnáním s výškou ochranných pásem. To je časově docela náročné. Nadmořská výška terénu je přitom měřena a poskytována Zeměměřickým úřadem.
+Zmíněný problém se dotýká schvalování dočasných staveb, které výškově mohou zasahovat do Ochranného pásma leteckých staveb (popsaných v hlavě 11 dokumentu L14), především stavebních jeřábů. Většina staveb v okolí letiště do ochranného pásma nezasahuje --  jedná se často o výrobní nebo překladní haly -- při jejich výstavbě je však potřeba využití jeřábů, které by do ochranných pásem zasáhnout mohly. V každém takovém případě musí dát stavební firma k posouzení letišti, zda se jejich jeřáb pod limit ochranného pásma vejde, nebo ne. Případů nebývá tolik, jsou však řešeny geodetickou nivelací na místě měřením nadmořské výšky povrchu a jeho porovnáním s výškou ochranných pásem. To je časově docela náročné. Nadmořská výška terénu je přitom měřena a poskytována Zeměměřickým úřadem.
 
 Cílem je tedy použít data Zeměměřického úřadu k vytvoření digitálního modelu terénu, vytvořit si modely ochranných pásem letiště a v aplikaci nadmořské výšky těchto objektů porovnávat. Letiště tak může stavitelům většinu staveb schválit nebo domítnout pouhým kliknutím v aplikaci a geodeti budou vyjíždět do terénu pouze v mezních případech (vstupní data budou mít pouze omezenou přesnost).
 
@@ -37,7 +37,7 @@ Nejpodrobnějšími daty obsahujícími nadmořskou výšku reliéfu poskytovan�
 
 Dalšími datovými sadami s informacemi o povrchu jsou datové sady Data50 a Data200, které jsou od dubna 2019 zařazeny mezi [otevřené datové sady][nkod_data50_link]. Datová sada Data50 je odvozená z kartografické databáze Základní mapy 1:50 000 a obsahuje digitální geografický model ČR odpovídající přesností a stupněm generalizace měřítku 1:50 000. Databáze obsahuje 59 typů geografických objektů (feature), které jsou rozděleny do osmi tématických oblastí. Podle těchto oblastí je datová sada rozdělena do podskupin. Každá podskupina obsahuje soubory ve [formátu SHP][shapefile_spec] pro každý typ geografického objektu. Nadmořská výška je součástí tématického celku Reliéf v souboru `Vrstevnice.shp`.
 
-Kvalita dat by měla být popsána v [metadatech][matadata_data50] a jelikož kvalitou je i jejich přesnost, pak nás zajímá přesnost vrstevnic. Ta je udávaná v metrech jako výškový rozdíl dvou vrstevnic vedle sebe.V metadatech tato informace není, z dalších dokumentů Zeměměřického úřadu a dat samotných však vyplývá, že data obsahují tři typy vrstevnic:
+Kvalita dat by měla být popsána v [metadatech][matadata_data50] a jelikož kvalitou je i jejich přesnost, pak nás zajímá přesnost vrstevnic. Ta je udávaná v metrech jako výškový rozdíl dvou vrstevnic vedle sebe. V metadatech tato informace není, z dalších dokumentů Zeměměřického úřadu a dat samotných však vyplývá, že data obsahují tři typy vrstevnic:
 - **základní**, které jsou rozlišeny po deseti metrech,
 - **doplňkové**, které jsou uváděny s přesností na pět metrů a zhušťují síť základních vrstevnic především v plošších územích,
 - **zdůrazněné**, které jsou rozlišeny po 50 metrech a pravděpodobně slouží pouze k tomu, aby byly v mapě zobrazeny silnější čarou.

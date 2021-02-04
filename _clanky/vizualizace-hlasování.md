@@ -28,7 +28,6 @@ Naším cílem bude takovýto obrázek:
 
 ## Data
 ### Běžně dostupné suroviny
-- Otevřená formální norma Hlasování (dočasně zrušena)
 - [Otevřená data z hlasování z Národního katalogu otevřených dat][link_nkod_hlasovani]
 
 ### Suroviny, které musíme trochu hledat
@@ -42,7 +41,7 @@ V katalogu otevřených dat zjistíte, že zas tak moc těch hlasování tam nen
 
 Pokud se ale koukneme na to, co máme k dispozici - starší Prahu 6, Hradec Králové, Děčín z Katalogu otevřených dat nebo další odjinud (Sněmovnu, z Hlasovali.cz) - viďíme, že všechna ta hlasování mají zcela jiný formát. Takže prvně si je převedeme do jednotného formátu, abychom je mohli snadno použít.
 
-Použijeme část této části otevřené formální normy, ale budeme si muset k tomu ještě dodat pár věcí - barvu strany, aby graf byl co nejpřehlednější, nebo `requirement`, tj. jak se výsledek hlasování počítá. Taky si u stran přidáme `abbreviation`, tedy zkratku strany kvůli legendě. Náš soubor by měl nakonce vypadat takto v JSONu:
+K tomu si budeme muset ještě dodat pár věcí - barvu strany, aby graf byl co nejpřehlednější, nebo `requirement`, tj. jak se výsledek hlasování počítá. Taky si u stran přidáme `abbreviation`, tedy zkratku strany kvůli legendě. Náš soubor by měl nakonce vypadat takto v JSONu:
 ```JSON
 {
     "motion": {

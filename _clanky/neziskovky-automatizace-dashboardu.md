@@ -8,14 +8,13 @@ image: ../attachments/články/neziskovky-automatizace-dashboardu/obrázky/uvod.
 author: robert_spál
 date: 2021-02-01T07:00:00 +01:00
 ---
-Článek popisuje postup jak nad otevřenými daty vytvořit automatickou aktualizaci pro zobrazování do analytického dashboardu pomocí nástrojů zdarma a bez nutnosti vědět programovat.
+Článek popisuje postup jak nad otevřenými daty vytvořit automatickou aktualizaci pro zobrazování do analytického dashboardu pomocí nástrojů zdarma a bez nutnosti umět programovat.
 
 <!--more-->
 
 Už delší dobu existuje řada nástrojů, které i běžnému uživateli bez znalosti IT umožňují vytvořit si nad daty reportingovou nástěnku, tzv. dashboard. 
 Tyto nástroje zvládají už i poloautomatickou aktualizaci, kdy častokrát stačí data jenom získat/stáhnout, zkopírovat, nahrát a dashboard se už sám aktualizuje. 
-I takto zjednodušený proces se však stává příliš náročným, pokud potřebujeme data aktualizovat na denní nebo týdenní bázi.  
-Navíc, mnohokrát se stává, že i měsíční nebo roční aktualizace přináší pocit rutiny a zbytečně stráveného času.
+I takto zjednodušený proces se však stává příliš náročným, pokud potřebujeme data aktualizovat na denní nebo týdenní bázi. Navíc, mnohokrát se stává, že i měsíční nebo roční aktualizace přináší pocit rutiny a zbytečně stráveného času.
 
 Pokud byste si chtěli ulehčit práci a vytvořit nad daty z [Národního katalogu otevřených dat][NKOD] (NKOD) nebo jakéhokoliv jiného datového zdroje dashboard, který bude aktualizován i bez nutnosti trávit čas znovu nahráváním, kopírováním a úpravou souborů, máme pro Vás dobrou zprávu. 
 Existuje způsob, jak se můžete k takovému automaticky aktualizovanému dashboardu dopracovat. 
@@ -27,25 +26,25 @@ Následující text vám nabízíme jako menší kuchařku toho, jak se k takov�
 **Co budeme potřebovat:**
 
 * textový editor kódu - nástroj pro psaní a a spouštění skriptů. 
-Pro to aby jsme nemuseli data v dashboardu neustále ručně aktualizovat, budeme potřebovat skript, který za nás tuto práci bude sám pravidelně dělat. 
-Textové editory jsou pak prostředí kde se takovéto skripty píšou a spouští.
+Pro to, abychom nemuseli data v dashboardu neustále ručně aktualizovat, budeme potřebovat skript, který za nás tuto práci bude sám pravidelně dělat. 
+Textové editory jsou pak prostředí, kde se takovéto skripty píšou a spouští.
 
-* programovací jazyk Python instalovaný na počítači - skript který použijeme je psaný v jazyku Python a proto aby ho náš textový editor věděl interpretovat, je nutné mít tento jazyk nainstalovaný na svém počítači. 
+* programovací jazyk Python instalovaný na počítači - skript který použijeme je psaný v jazyku Python a aby ho náš textový editor uměl interpretovat, je nutné mít tento jazyk nainstalovaný na svém počítači. 
 Můžeme si také pomoci analogií typů písma. 
-Word, který jistě znáte, umí psát text v různých druzích písma jak například Arial nebo Calibri. 
-Některé písma, jako například Quicksand, však nemá předinstalované a proto aby jsme mohli psát článek i v tomto druhu písma, je nutné si Quicksand nejdříve stáhnou a pak nainstalovat na počítač. 
-Word už pak sám rozpozná a nabídne nám možnost v tomto písmu psát. 
+Word, který jistě znáte, umí psát text v různých druzích písma jako například Arial nebo Calibri. 
+Některá písma, jako například Quicksand, však nemá předinstalovaná a abychom mohli psát článek i v tomto druhu písma, je nutné si Quicksand nejdříve stáhnou a pak nainstalovat na počítač. 
+Word už pak sám písmo rozpozná a nabídne nám možnost v tomto písmu psát. 
 Stejně pak funguje i textový editor. 
 S nainstalovaným jazykem Python získá možnost skripty v Pythonu interpretovat.
 
-* účet Google - účet Google jistě znáte a mnozí z vás ho už i máte, protože existuje široká paleta nástrojů které je možné s tímto účtem využívat jako například YouTube nebo Gmail. 
-Pro naše účely je tento účet důležitý proto že nám umožní zdarma využívat také služby Google Data Studio pro vytvoření dashboardu a developerskou konzoli pro komunikaci skriptu s Google Sheets.
+* účet Google - účet Google jistě znáte a mnozí z vás ho už i máte, protože existuje široká paleta nástrojů, které je možné s tímto účtem využívat jako například YouTube nebo Gmail. 
+Pro naše účely je tento účet důležitý proto, že nám umožní zdarma využívat také služby Google Data Studio pro vytvoření dashboardu a developerskou konzoli pro komunikaci skriptu s Google Sheets.
 
 ## Editor kódu
 
 První ingrediencí, kterou budeme potřebovat, je textový editor kódu, ve kterém budeme spouštět předpřipravený skript pro aktualizaci dat. 
 Můžete použít kterýkoliv z volně dostupných editorů, jako například [Notepad++][NOTEPAD], [PyCharm][PYCHARM] nebo [Atom][ATOM]. 
-Všechny jsou zdarma a fungují na na všech platformách - Linux, OS X a také Windows. 
+Všechny jsou zdarma a fungují na všech platformách - Linux, OS X a také Windows. 
 Po stažení a instalaci jste připraveni kterýkoliv z nich začít hned používat. 
 My jsme využili editor [Sublime][SUBLIME], ale na tom, který si zvolíte, vůbec nezáleží.
 
@@ -75,7 +74,7 @@ Z úvodní obrazovky na stránce console.developers.google.com si v levém menu 
 Z vyskakovacího menu si vybereme možnost Servisní účet/Service Account. 
 Zde vyplníme jméno účtu, roli a vygenerujeme klíč v JSON. Pro roli si zvolíme Project>Editor. 
 Po skončení celého procesu se vám do počítače stáhne JSON dokument, což je vygenerovaný klíč, který budete dále používat pro ověřování. 
-Pokud se vám klíč nevygeneruje, nebo ho ztratíte, je vždy možné si ho dodatečně vygenerovat v rozcestníku pověření. 
+Pokud se vám klíč nevygeneruje nebo ho ztratíte, je vždy možné si ho dodatečně vygenerovat v rozcestníku pověření. 
 Kdyby jste se v této fázi ztratili, nebo si nevěděli rady, je dobré se také porozhlédnout na YouTube, kde je velké množství [tutoriálů][YOUTUBE], které vás krok za krokem provedou celým výše popsaným procesem.
 
 *Tip: Je dobrou praxí změnit název JSON souboru hned po stažení. 
@@ -99,15 +98,15 @@ Dalším krokem je pak [stažení python skriptu][SKRIPT], s kterým budeme dál
 Pro další práci jsou důležité 3 řádky - 9, 19 a 21. 
 Začneme tedy řádkem číslo 9. 
 Zde stačí vyměnit url adresu za adresu, na které je ke stažení CSV distribuce vaší datové sady. 
-V případě že máte jiný formát než-li CSV, bude nutné skript upravit nahrazením výrazu read_csv také v řádku 10.
+V případě, že máte jiný formát než CSV, bude nutné skript upravit nahrazením výrazu read_csv také v řádku 10.
 Seznam možností a podrobný návod najdete například [zde][IMPORTOTHER]. 
-V našem případě načítáme data z [NKOD][NKOD], konkrétne z datové sady [Neziskové organizace v ČR][NEZISKOVKY] a její distribuce v CSV. 
+V našem případě načítáme data z [NKOD][NKOD], konkrétně z datové sady [Neziskové organizace v ČR][NEZISKOVKY] a její distribuce v CSV. 
 Formát CSV jsme zvolili z důvodu jednoduché manipulace a širokého využívání veřejností.
 
 {% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/neziskovky.webp" description="Datová sada Neziskové organizace v ČR s distribucí CSV z které skript stahuje data." %}
 
-V řádku 19 nahradíte ještě cestu k JSON klíči tak, aby se směřovala do umístění JSON souboru na vašem počítači. 
-V řádku 21 pak sekvenci v zátvorce nahradíte vlastním ID Google Sheetu, se kterým chcete pracovat. 
+V řádku 19 nahradíte ještě cestu k JSON klíči tak, aby směřovala do umístění JSON souboru na vašem počítači. 
+V řádku 21 pak sekvenci v závorce nahradíte vlastním ID Google Sheetu, se kterým chcete pracovat. 
 Toto ID najdete v url řádku otevřeného Google Sheetu. 
 
 {% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/sheets.webp" description="ID Google Sheetu" %}
@@ -118,17 +117,17 @@ Nástroje zdarma, jako například Google Sheets, častokrát omezují velikost 
 Je to z důvodu, aby nedošlo k přílišnému vytížení nástroje, které by ho mohlo pak znefunkčnit. 
 Proto jsou také v skriptu v řádcích 27 a 29 použity dvě rozdílné metody. 
 Je to z toho důvodu, že Google omezuje jeden požadavek na maximálně 75 000 záznamů a jelikož datová sada Neziskové organizace v ČR má přes 130 000 záznamů, bylo nutné je rozdělit a nahrát postupně ve dvou požadavcích/metodách. 
-Proto aby jsme mohli data poslat ve dvou samostatných požadavcích jsou nutné také řádky 14 a 15, které nejdříve rozdělují dataset na dvě části - do 75 000 záznamů a od 75 000 záznamů. 
-Pokud je vaše datová sada konzistentně menší jak 75 000 záznamů, tyto řádky 14 a 15 a řádek 29 nebudete vůbec potřebovat. 
+Proto, abychom mohli data poslat ve dvou samostatných požadavcích, jsou nutné také řádky 14 a 15, které nejdříve rozdělují dataset na dvě části - do 75 000 záznamů a od 75 000 záznamů. 
+Pokud je vaše datová sada konzistentně menší než 75 000 záznamů, tyto řádky 14 a 15 a řádek 29 nebudete vůbec potřebovat. 
 Když ještě smažete číslovku 1 z řádku 27, dostanete skript schopný automatizace do počtu 75 000 záznamů.  
-Naopak když máte víc jak 150 000 záznamů, tak stačí duplikovat a upravit řádky 15 a 29 obdobně, jako je bylo nutné upravit při prvním rozšíření na 150 000 záznamů.
+Naopak když máte více než 150 000 záznamů, tak stačí duplikovat a upravit řádky 15 a 29 obdobně, jako je bylo nutné upravit při prvním rozšíření na 150 000 záznamů.
 
 Když teď skript spustíte (Tools>Build v editoru Sublime), automaticky se vám vaše data v Google Sheetu aktualizují. 
 Spouštět skript jednoduchým stlačením tlačítka můžete provádět pravidelně dle potřeby. 
 V případě, že je nutná velmi častá aktualizace, např. každý den, je možné nastavit na vašem počítači automatické spouštění skriptu pomocí [Task Scheduler][PLANOVAC].
 
 Po úspěšném nastavení skriptu se nám tak už všechna data dostávají automaticky do našeho Google Sheetu. 
-V případě neziskových organizací jsou data úplná a srozumitelná - pro to aby jsme je dokázali číst nepotřebujeme žádnou dokumentaci nebo manuál. 
+V případě neziskových organizací jsou data úplná a srozumitelná - pro to, abychom je dokázali číst, nepotřebujeme žádnou dokumentaci nebo manuál. 
 Může se však stát, že i po nahrání do Google Sheetu bude třeba data ještě upravovat tak, aby byla srozumitelná a prezentovatelná pro veřejnost. 
 Abyste data nemuseli po každém načtení znova a znova upravovat a čistit, je dobré využít možnosti [makro][MAKRO], kterou Google Sheet nabízí. 
 Jednoduše vám to umožní automatizovat čištění a úpravy, které jste už jednou dělali.
@@ -143,7 +142,7 @@ Na konci dne tak můžete mít [podobný][DASHBOARD], automaticky aktualizovaný
 
 Konečný výsledek v podobě dashboardu si můžete prohlédnout na [samostatné stránce][DASHBOARD]. 
 
-Nastavení a prolouskání celého postupu od začátka až po finální dashboard, který se Vám bude líbit, by vám dle složitosti a stavu dat mělo zabrat cca 1-2 dny. 
+Nastavení a prolouskání celého postupu od začátku až po finální dashboard, který se Vám bude líbit, by vám dle složitosti a stavu dat mělo zabrat cca 1-2 dny. 
 Nastavení samotné automatické aktualizace by vám nemělo zabrat víc jak hodinu. 
 Výhodou takto vytvořeného dashboardu je, že vám v budoucnosti odpadne nutnost rutinní aktualizace. 
 Další výhodou také je, že při replikaci postupu nad jinými daty už nebudete muset řešit instalace a vytváření klíčů a účtů. 

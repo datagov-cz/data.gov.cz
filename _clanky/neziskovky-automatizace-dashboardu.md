@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jak na automatické aktualizace “dashboradu”, i když neumím programovat
+title: Jak na automatické aktualizace “dashboardu”, i když neumím programovat
 detail: true
 ref: neziskovky-automatizace-dashboardu
 lang: cs

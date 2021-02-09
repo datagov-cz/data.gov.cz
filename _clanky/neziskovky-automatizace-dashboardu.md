@@ -29,12 +29,12 @@ Následující text vám nabízíme jako menší kuchařku toho, jak se k takov�
 Pro to, abychom nemuseli data v dashboardu neustále ručně aktualizovat, budeme potřebovat skript, který za nás tuto práci bude sám pravidelně dělat. 
 Textové editory jsou pak prostředí, kde se takovéto skripty píšou a spouští.
 
-* programovací jazyk Python instalovaný na počítači - skript který použijeme je psaný v jazyku Python a aby ho náš textový editor uměl interpretovat, je nutné mít tento jazyk nainstalovaný na svém počítači. 
+* programovací jazyk Python instalovaný na počítači - skript, který použijeme, je psaný v jazyku Python a aby ho náš textový editor uměl interpretovat, je nutné mít tento jazyk nainstalovaný na svém počítači. 
 Můžeme si také pomoci analogií typů písma. 
 Word, který jistě znáte, umí psát text v různých druzích písma jako například Arial nebo Calibri. 
-Některá písma, jako například Quicksand, však nemá předinstalovaná a abychom mohli psát článek i v tomto druhu písma, je nutné si Quicksand nejdříve stáhnou a pak nainstalovat na počítač. 
+Některá písma, jako například Quicksand, však nemá předinstalovaná a abychom mohli psát článek i v tomto druhu písma, je nutné si Quicksand nejdříve stáhnout a nainstalovat na počítač. 
 Word už pak sám písmo rozpozná a nabídne nám možnost v tomto písmu psát. 
-Stejně pak funguje i textový editor. 
+Stejně funguje i textový editor. 
 S nainstalovaným jazykem Python získá možnost skripty v Pythonu interpretovat.
 
 * účet Google - účet Google jistě znáte a mnozí z vás ho už i máte, protože existuje široká paleta nástrojů, které je možné s tímto účtem využívat jako například YouTube nebo Gmail. 
@@ -54,8 +54,7 @@ K tomu, aby váš textový editor dokázal interpretovat, co do něj píšete, b
 Ten si [stáhnete z úvodní obrazovky][PYTHON] a následně, po stažení, jej opět nainstalujete obdobně jako textový editor. 
 Pak bude nutné přidat ještě knihovny pro rozpoznání metod a příkazů. 
 Knihovny nainstalujete zapsáním příkazu do [příkazového řádku][RADEK], kde napíšete - ```pip install pandas``` a stisknete enter. 
-Postup opakujte ještě dvakrát: pro příkazy ```pip install gspread``` a ```pip install gspread_dataframe```. 
-Po doběhnutí poslední instalace jste co se týče Pythonu připraveni.
+Postup opakujte ještě dvakrát: pro příkazy ```pip install gspread``` a ```pip install gspread_dataframe```. V případě že váš editor kódu nedokáže rozpoznat, že knihovny byly nainstalovány, jak se to například může stát u editoru PyCharm, řešením je nainstalovat knihovny přímo v editoru kódu přidáním identických výrazů hned na začátek skriptu, který si později v článku stáhneme. Po doběhnutí poslední instalace jste co se týče Pythonu připraveni.
 
 ## Účet Google
 
@@ -117,13 +116,13 @@ Nástroje zdarma, jako například Google Sheets, častokrát omezují velikost 
 Je to z důvodu, aby nedošlo k přílišnému vytížení nástroje, které by ho mohlo pak znefunkčnit. 
 Proto jsou také v skriptu v řádcích 27 a 29 použity dvě rozdílné metody. 
 Je to z toho důvodu, že Google omezuje jeden požadavek na maximálně 75 000 záznamů a jelikož datová sada Neziskové organizace v ČR má přes 130 000 záznamů, bylo nutné je rozdělit a nahrát postupně ve dvou požadavcích/metodách. 
-Proto, abychom mohli data poslat ve dvou samostatných požadavcích, jsou nutné také řádky 14 a 15, které nejdříve rozdělují dataset na dvě části - do 75 000 záznamů a od 75 000 záznamů. 
+Abychom mohli data poslat ve dvou samostatných požadavcích, jsou nutné také řádky 14 a 15, které nejdříve rozdělují dataset na dvě části - do 75 000 záznamů a od 75 000 záznamů. 
 Pokud je vaše datová sada konzistentně menší než 75 000 záznamů, tyto řádky 14 a 15 a řádek 29 nebudete vůbec potřebovat. 
 Když ještě smažete číslovku 1 z řádku 27, dostanete skript schopný automatizace do počtu 75 000 záznamů.  
 Naopak když máte více než 150 000 záznamů, tak stačí duplikovat a upravit řádky 15 a 29 obdobně, jako je bylo nutné upravit při prvním rozšíření na 150 000 záznamů.
 
 Když teď skript spustíte (Tools>Build v editoru Sublime), automaticky se vám vaše data v Google Sheetu aktualizují. 
-Spouštět skript jednoduchým stlačením tlačítka můžete provádět pravidelně dle potřeby. 
+Spouštět skript jednoduchým zmáčknutím tlačítka můžete provádět pravidelně dle potřeby. 
 V případě, že je nutná velmi častá aktualizace, např. každý den, je možné nastavit na vašem počítači automatické spouštění skriptu pomocí [Task Scheduler][PLANOVAC].
 
 Po úspěšném nastavení skriptu se nám tak už všechna data dostávají automaticky do našeho Google Sheetu. 

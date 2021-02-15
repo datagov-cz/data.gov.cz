@@ -131,7 +131,7 @@ V poslední části článku se podíváme na to, co je vlastně výsledkem cel�
 - [OpenStreetMap][openstreetmap]
 - [WMS služba INSPIRE Parcely][wms-cp]
 
-[MiMe-clanek-1]: TODO:add-IRI "První část článku o využití otevřených dat Zeměměřického úřadu"
+[MiMe-clanek-1]: ./využití-data-50-část-1.md "První část článku o využití otevřených dat Zeměměřického úřadu"
 [link_l14]: https://aim.rlp.cz/predpisy/predpisy/dokumenty/L/L-14/data/print/L-14_cely.pdf "Letecký předpis L14 - Letiště"
 [link_dmr]: https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=vyskopis&metadataID=CZ-CUZK-DMR5G-V&head_tab=sekce-02-gp&menu=302 "Digitální model reliéfu 5. generace"
 [ceník_ZÚ_link]: https://geoportal.cuzk.cz/Dokumenty/Cenik.pdf "Ceník produktů Zeměměřického úřadu"

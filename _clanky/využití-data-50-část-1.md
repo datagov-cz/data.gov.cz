@@ -13,7 +13,7 @@ První ze série článků o využití otevřených dat Zeměměřického úřad
 <!--more-->
 
 ## Úvod
-V dubnu 2019 Zeměměřický úřad otevřel datové sady Data200 a Data50. Databáze Data200 je digitální geografický model území ČR odpovídající přesností a stupněm generalizace měřítku 1:200 000. Data50 jsou pak digitálním geografickým modelem území ČR odvozeným z kartografické databáze pro Základní mapu ČR 1:50 000. Zamysleli jsme se nad tím, jak data využít ke zjednodušení procesu povolování dočasných staveb v ochranných pásmech letiště.
+V dubnu 2019 Zeměměřický úřad otevřel datové sady [Data200][nkod_data200_link] a [Data50][nkod_data50_link]. Databáze Data200 je digitální geografický model území ČR odpovídající přesností a stupněm generalizace měřítku 1:200 000. Data50 jsou pak digitálním geografickým modelem území ČR odvozeným z kartografické databáze pro Základní mapu ČR 1:50 000. Zamysleli jsme se nad tím, jak data využít ke zjednodušení procesu povolování dočasných staveb v ochranných pásmech letiště.
 
 {% include image.html
    url="../attachments/články/využití-data-50/screen_vysledku.webp"
@@ -64,6 +64,7 @@ V druhé části článku se podíváme na to, jak data zpracovat.
 [link_dmr]: https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=vyskopis&metadataID=CZ-CUZK-DMR5G-V&head_tab=sekce-02-gp&menu=302 "Digitální model reliéfu 5. generace"
 [ceník_ZÚ_link]: https://geoportal.cuzk.cz/Dokumenty/Cenik.pdf "Ceník produktů Zeměměřického úřadu"
 [nkod_data50_link]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FZmmerickyU%2F671714680 "Záznam datové sady Data50 v Národním katalogu otevřených dat"
+[nkod_data200_link]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FZmmerickyU%2F671715799 "Záznam datové sady Data200 v Národním katalogu otevřených dat"
 [shapefile_spec]: https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf "Technický popis formátu ESRI Shapefile"
 [metadata_data50]: https://geoportal.cuzk.cz/getHTML.aspx?mode=Metadata&fnc=getRecord&identifierid=CZ-CUZK-DATA50-RELIEF-V "Metadata vrstvy Reliéf datové sady Data50"
 [octave]: https://www.gnu.org/software/octave/index "Programovací jazyk GNU Octave"

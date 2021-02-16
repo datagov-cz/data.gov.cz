@@ -6,7 +6,7 @@ ref: neziskovky-automatizace-dashboardu
 lang: cs
 image: ../attachments/články/neziskovky-automatizace-dashboardu/obrázky/uvod.webp
 author: robert_spál
-date: 2021-02-01T07:00:00 +01:00
+date: 2021-02-16T07:00:00 +01:00
 ---
 Článek popisuje postup jak nad otevřenými daty vytvořit automatickou aktualizaci pro zobrazování do analytického dashboardu pomocí nástrojů zdarma a bez nutnosti umět programovat.
 

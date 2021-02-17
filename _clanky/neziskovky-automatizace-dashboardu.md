@@ -21,7 +21,8 @@ Existuje způsob, jak se můžete k takovému automaticky aktualizovanému dashb
 Nevyžaduje navíc žádné znalosti programování, je zcela zdarma a není ani nijak zvlášť komplikovaný. 
 Postup má sice velké množství kroků, avšak tyto jsou většinou velmi jednoduché a mnohé z nich je nutné udělat jenom jednou. 
 Konečný proces, zbavený jednorázových kroků, je velice jednoduchý, efektivní a lehce replikovatelný na další a další datové sady. 
-Následující text vám nabízíme jako menší kuchařku toho, jak se k takovému dashboardu dopracovat. Budeme pracovat v operačním programu Windows. Pro Linux nebo IOS je postup v principu stejný, i když se v dílčích částech mírně odlišuje.
+Následující text vám nabízíme jako menší kuchařku toho, jak se k takovému dashboardu dopracovat.
+Budeme pracovat v operačním programu Windows. Pro Linux nebo IOS je postup v principu stejný, i když se v dílčích částech mírně odlišuje.
 
 **Co budeme potřebovat:**
 

@@ -6,7 +6,7 @@ ref: neziskovky-automatizace-dashboardu
 lang: cs
 image: ../attachments/články/neziskovky-automatizace-dashboardu/obrázky/uvod.webp
 author: robert_spál
-date: 2021-02-16T07:00:00 +01:00
+date: 2021-02-16 07:00:00 +01:00
 ---
 Článek popisuje postup jak nad otevřenými daty vytvořit automatickou aktualizaci pro zobrazování do analytického dashboardu pomocí nástrojů zdarma a bez nutnosti umět programovat.
 
@@ -22,6 +22,7 @@ Nevyžaduje navíc žádné znalosti programování, je zcela zdarma a není ani
 Postup má sice velké množství kroků, avšak tyto jsou většinou velmi jednoduché a mnohé z nich je nutné udělat jenom jednou. 
 Konečný proces, zbavený jednorázových kroků, je velice jednoduchý, efektivní a lehce replikovatelný na další a další datové sady. 
 Následující text vám nabízíme jako menší kuchařku toho, jak se k takovému dashboardu dopracovat.
+Budeme pracovat v operačním programu Windows. Pro Linux nebo IOS je postup v principu stejný, i když se v dílčích částech mírně odlišuje.
 
 **Co budeme potřebovat:**
 
@@ -120,6 +121,13 @@ Abychom mohli data poslat ve dvou samostatných požadavcích, jsou nutné také
 Pokud je vaše datová sada konzistentně menší než 75 000 záznamů, tyto řádky 14 a 15 a řádek 29 nebudete vůbec potřebovat. 
 Když ještě smažete číslovku 1 z řádku 27, dostanete skript schopný automatizace do počtu 75 000 záznamů.  
 Naopak když máte více než 150 000 záznamů, tak stačí duplikovat a upravit řádky 15 a 29 obdobně, jako je bylo nutné upravit při prvním rozšíření na 150 000 záznamů.
+
+*Tip*: Nový prázdný Google sheet se vytvoří s rozsahem 1000 řádků.
+Aby Python skript fungoval korektně, je nutné manuálně Google sheet rozšířit.
+Tlačítko pro takové rozšíření najdete na spodní liště sheetu a zobrazí se vám po srolování se k poslední hodnotě.
+Zde si zvolíte počet řádků, které by váš sheet měl obsahovat, a stiskněte tlačítko Přidejte.
+V našem případě jsme si pro jistotu svolili hodnotu 150 000, i když jsme měli méně než 140 000 záznamů.
+Limit pro počet řádků je 5 milionů.
 
 Když teď skript spustíte (Tools>Build v editoru Sublime), automaticky se vám vaše data v Google Sheetu aktualizují. 
 Spouštět skript jednoduchým zmáčknutím tlačítka můžete provádět pravidelně dle potřeby. 

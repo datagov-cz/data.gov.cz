@@ -122,12 +122,12 @@ Pokud je vaše datová sada konzistentně menší než 75 000 záznamů, tyto ř
 Když ještě smažete číslovku 1 z řádku 27, dostanete skript schopný automatizace do počtu 75 000 záznamů.  
 Naopak když máte více než 150 000 záznamů, tak stačí duplikovat a upravit řádky 15 a 29 obdobně, jako je bylo nutné upravit při prvním rozšíření na 150 000 záznamů.
 
-*Tip*: Nový prázdný Google sheet se vytvoří s rozsahem 1000 řádků.
+*Tip: Nový prázdný Google sheet se vytvoří s rozsahem 1000 řádků.
 Aby Python skript fungoval korektně, je nutné manuálně Google sheet rozšířit.
 Tlačítko pro takové rozšíření najdete na spodní liště sheetu a zobrazí se vám po srolování se k poslední hodnotě.
 Zde si zvolíte počet řádků, které by váš sheet měl obsahovat, a stiskněte tlačítko Přidejte.
 V našem případě jsme si pro jistotu svolili hodnotu 150 000, i když jsme měli méně než 140 000 záznamů.
-Limit pro počet řádků je 5 milionů.
+Limit pro počet řádků je 5 milionů.*
 
 Když teď skript spustíte (Tools>Build v editoru Sublime), automaticky se vám vaše data v Google Sheetu aktualizují. 
 Spouštět skript jednoduchým zmáčknutím tlačítka můžete provádět pravidelně dle potřeby. 

@@ -51,31 +51,29 @@ Abyste si např. mohli přečíst tento článek, váš prohlížeč prostředni
 RDF používá IRI, většinou právě v podobě URL, pro identifikaci uzlů znalostních grafů.
 IRI je zobecněním URL, např. je v něm možné používat české znaky (používá kódování UTF-8).
 Uvažme například znalostní graf Národního katalogu otevřených dat, který jsme viděli již v předchozím dílu.
-Jako uzel je v něm reprezentován Český statistický úřad (ČSÚ) jako orgán veřejné moci, který poskytuje otevřená data.
-Uzel má přiřazen IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593).
+Jako uzel je v něm reprezentována datová sada se statistikou cizinců podle státního občanství, věku a pohlaví za rok 2018.
+Uzel má přiřazen IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
 K IRI můžete přistoupit (klikněte na něj).
-Váš prohlížeč prostřednictvím HTTP protokolu IRI vyhledá v prostředí webu a získá počítačovou reprezentaci ČSÚ dostupnou na serveru lokalizovaném s pomocí tohoto IRI.
-Záměrně neříkáme, že získá věc jako takovou, ale jen její reprezentaci.
-Protože samozřejmě přistoupením k IRI nezískáte ČSÚ jako takový, ale reprezentaci nějakých údajů o ČSÚ, které jsou na příslušném serveru o ČSÚ vedeny.
-Díky HTTP protokolu ještě probíhá zajímavá komunikace mezi vaším prohlížečem a serverem, kterou nazýváme *HTTP content negotiation*, kdy váš prohlížeč požaduje od serveru reprezentaci ČSÚ v konkrétním počítačovém formátu.
+Váš prohlížeč prostřednictvím HTTP protokolu IRI vyhledá v prostředí webu a získá počítačovou reprezentaci údajů o datové sadě dostupnou na serveru lokalizovaném s pomocí tohoto IRI.
+Díky HTTP protokolu ještě probíhá zajímavá komunikace mezi vaším prohlížečem a serverem, kterou nazýváme *HTTP content negotiation*, kdy váš prohlížeč požaduje od serveru reprezentaci údajů o datové sadě v konkrétním počítačovém formátu.
 Prohlížeč je určen k tomu, aby věci zobrazoval v podobě čitelné pro člověka.
 Proto požaduje reprezentaci ve formátu HTML.
-Pokud by ale k IRI přistupoval jiný typ klienta, např. nějaká aplikace, která chce s reprezentací ČSÚ dále počítačově pracovat, požádá o jiný formát.
+Pokud by ale k IRI přistupoval jiný typ klienta, např. nějaká aplikace, která chce s reprezentací dále počítačově pracovat, požádá o jiný formát.
 Formátům se budeme věnovat v závěru tohoto článku.
 
 ### Reprezentace tvrzení o věcech v podobě RDF trojic
 
 Jak jsme si řekli v minulém dílu, ve znalostních grafech reprezentujeme věci a tvrzení o nich.
 V modelu RDF vyjadřujeme tvrzení o věci ve vazbě na IRI uzlu, který věc v grafu reprezentuje.
-Máme-li tedy ČSÚ z příkladu výše a uzel, který ČSÚ reprezentuje ve znalostním grafu Národního katalogu otevřených dat, můžeme na IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593) navázat tvrzení např. o názvu ČSÚ, jeho datové schránce, jakou má právní formu, nebo o tom, jaké datové sady publikuje jako otevřená data.
+Máme-li tedy datovou sadu z příkladu výše a uzel, který ji reprezentuje ve znalostním grafu Národního katalogu otevřených dat, můžeme na IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19) navázat tvrzení např. o názvu datové sady nebo o klíčových slovech, která ji charakterizují.
 
 RDF model umožňuje vyjadřovat tvrzení o věcech v podobě jednoduchých vět, které gramaticky sestávají z podmětu, přísudku a předmětu.
-Takovými větami jsou například:
+Ukažme si příklady takových vět.
+Pro jednoduchost budeme v příkladech datovou sadu pojmenovávat slovy "statistika cizinců" místo původního dlouhého názvu.
 
-* ČSÚ má název Český statistický úřad.
-* ČSÚ má datovou schránku 2gfaasy.
-* ČSÚ má právní formu Organizační složka státu.
-* Cizinci podle státního občanství, věku a pohlaví - rok 2018 má poskytovatele ČSÚ.
+* Statistika cizinců má název "Cizinci podle státního občanství, věku a pohlaví - rok 2018".
+* Statistika cizinců je charakterizována klíčovým slovem "státní občanství".
+* Statistika cizinců je charakterizována klíčovým slovem "cizinec".
 
 Věty se mohou zdát z češtinářského hlediska trochu kostrbaté, ale přesně takto uvažujeme v datovém modelu RDF.
 Vlastně rozpadneme údaje o věcech do takto jednoduchých, můžeme říci atomických vět.
@@ -87,29 +85,27 @@ RDF model zavádí následující strukturu zvanou *trojice*:
 subjekt predikát objekt .
 ~~~~~~~~~~~~
 
-Subjekt je obdobou podmětu, predikát je obdobou přísudku a objekt je obdobou podmětu.
+Subjekt je obdobou podmětu, predikát je obdobou přísudku a objekt je obdobou předmětu.
 Výše uvedené věty tak zůstávají stejné, jenom jsou trochu více strukturované, jak ukazuje následující příklad.
 
 ~~~~~~
-"ČSÚ"   "má název"   "Český statistický úřad" .
-"ČSÚ"   "má datovou schránku"   "2gfaasy" .
-"ČSÚ"   "má právní formu"   "Organizační složka státu" 
-"Cizinci podle státního občanství, věku a pohlaví - rok 2018"   "má poskytovatele"   "ČSÚ" .
+"Statistika cizinců"   "má název"    "Cizinci podle státního občanství, věku a pohlaví - rok 2018".
+"Statistika cizinců"   "je charakterizována klíčovým slovem"   "státní občanství".
+"Statistika cizinců"   "je charakterizována klíčovým slovem"   "cizinec".
 ~~~~~~~~~~~~
 
-Čili např. hned v první větě je "ČSÚ" subjektem, "má název" predikátem a "Český statistický úřad" objektem.
-V poslední větě je naopak "ČSÚ" objektem, subjektem je "Cizinci podle státního občanství, věku a pohlaví - rok 2018" a predikátem je "má poskytovatele".
+Čili např. hned v první větě je "Statistika cizinců" subjektem, "má název" predikátem a "Cizinci podle státního občanství, věku a pohlaví - rok 2018" objektem.
 Možná přemýšlíte, jak výše uvedené věty souvisí se znalostními grafy, jsou to přeci jen věty.
 Ve skutečnosti je souvislost zcela přirozená.
 Vlastně kdykoliv používáme přirozený jazyk, vyjadřujeme svým způsobem nějaký znalostní graf.
 Běžný lidský jazyk je velmi komplexní a počítač jej neumí jako grafovou strukturu reprezentovat automaticky, i když počítačová lingvistika učinila v tomto směru značný pokrok a to i v tak složitých jazycích, jakým je čeština.
 Pokud si ale běžný jazyk omezíme výše uvedeným způsobem, znalostní graf je v něm patrný - každá věta popisuje hranu spojující uzly definované subjektem a objektem.
 Predikát je pak pojmenováním hrany.
-Čtyři věty uvedené výše tak popisují znalostní graf, který je graficky vyjádřen na následujícím obrázku.
+Tři věty uvedené výše tak popisují znalostní graf, který je graficky vyjádřen na následujícím obrázku.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/rdf-čsú-01.svg"
-   description="Znalostní graf reprezentovaný větami o ČSÚ vyjádřeným v omezené češtině"
+   description="Znalostní graf reprezentovaný větami o datové sadě se statistikou cizinců vyjádřeným v omezené češtině"
 %}
 
 
@@ -117,53 +113,39 @@ Predikát je pak pojmenováním hrany.
 
 Výše uvedený zápis je jenom přiblížení ke správnému vyjádření tvrzení v modelu RDF.
 Jak jsme si řekli výše, k identifikaci věcí nepoužívá RDF model řetězce, ale IRI.
-Např. jsme si řekli, že ve znalostním grafu Národního katalogu otevřených dat má ČSÚ přiřazeno IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593).
-V trojicích z našeho příkladu je tedy místo řetězce "ČSÚ" k identifikaci Českého statistického úřadu používáno toto IRI a to na místě subjektu i objektu.
+Např. jsme si řekli, že ve znalostním grafu Národního katalogu otevřených dat má naše datová sada přiřazeno IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
+V trojicích z našeho příkladu je tedy místo řetězce "Statistika cizinců" k identifikaci datové sady používáno toto IRI.
 Syntakticky je IRI uváděno ve špičatých závorkách.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   "má název"   "Český statistický úřad" .
-<https://data.gov.cz/zdroj/ovm/00025593>   "má datovou schránku"   "2gfaasy" .
-<https://data.gov.cz/zdroj/ovm/00025593>   "má právní formu"   "Organizační složka státu" .
-"Cizinci podle státního občanství, věku a pohlaví - rok 2018"   "má poskytovatele"   <https://data.gov.cz/zdroj/ovm/00025593> .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "má název"    "Cizinci podle státního občanství, věku a pohlaví - rok 2018".
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "je charakterizována klíčovým slovem"   "státní občanství".
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "je charakterizována klíčovým slovem"   "cizinec".
 ~~~~~~~~~~~~
 
 Obecně platí, že subjektem v trojici je vždy IRI věci, o které v trojici něco tvrdíme.
-Poslední trojice specifikující tvrzení o datové sadě "Cizinci podle státního občanství, věku a pohlaví - rok 2018" tedy není správně.
-Protože o datové sadě specifikujeme tvrzení, musíme ji chápat jako věc, které přiřadíme IRI a toto IRI pak používáme v každé trojici, která o datové sadě specifikuje nějaké tvrzení.
-
-~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   "má název"   "Český statistický úřad" .
-<https://data.gov.cz/zdroj/ovm/00025593>   "má datovou schránku"   "2gfaasy" .
-<https://data.gov.cz/zdroj/ovm/00025593>   "má právní formu"   "Organizační složka státu" .
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "má poskytovatele"   <https://data.gov.cz/zdroj/ovm/00025593> .
-~~~~~~~~~~~~
-
 Objektem v trojici může být buď IRI věci nebo tzv. *literál*, což je primitivní datová hodnota uvedená v uvozovkách.
-Hned první trojice specifikuje název ČSÚ.
-Hodnotou názvu je literál "Český statistický úřad" a objekt je tedy vyjádřen jako literál.
-Další trojice specifikuje datovou schránku ČSÚ.
-V příkladu výše máme jako hodnotu uveden literál "2gfaasy".
-RDF model nám ale neumožňuje o literálu specifikovat další tvrzení.
-Protože chceme v našich datech popsat nejenom identifikátor datové schránky, ale také např. datum jejího vzniku, zda je veřejná a další, potřebujeme ji vyjádřit jako věc, která bude identifikována v trojicích svým IRI.
-V našich datech můžeme pro datové schránky určit vlastní podobu IRI nebo použijeme existující z jiného znalostního grafu.
-V tomto příkladu si vytvoříme vlastní.
-Výsledek vidíte v příkladu níže.
-Stejně přistoupíme i k právním formám. Např. právní formu "Organizační složka státu" potřebujeme chápat jako věc se svým IRI.
-Na toto IRI pak v dalších trojicích navážeme další orgány veřejné správy s touto právní formou. 
+Výše uvedené tři trojice mají jako svoje objekty literály - název datové sady a klíčová slova.
+Uvažujme nyní následující větu.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   "má název"   "Český statistický úřad" .
-<https://data.gov.cz/zdroj/ovm/00025593>   "má datovou schránku"   <https://data.gov.cz/zdroj/datové-schránky/2gfaasy> .
-<https://data.gov.cz/zdroj/ovm/00025593>   "má právní formu"   <https://data.gov.cz/zdroj/ovm/právní-forma/325> .
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "má poskytovatele"   <https://data.gov.cz/zdroj/ovm/00025593> .
+"Národní katalog otevřených dat"   "obsahuje datovou sadu"    "Statistika cizinců".
 ~~~~~~~~~~~~
 
-Následující obrázek je vizuální reprezentací znalostního grafu vyjádřeného v poslední variantě tvrzení o ČSÚ.
+Zde se naše datová sada vyskytuje v místě objektu.
+V této trojici bude tedy v místě objektu IRI a ne literál jako v příkladech výše.
+V místě subjektu bude IRI Národního katalogu otevřených dat.
+Výsledek vidíte v příkladu níže.
+
+~~~~~~
+<https://data.gov.cz/zdroj/katalog/NKOD>   "obsahuje datovou sadu"   <https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19> .
+~~~~~~~~~~~~
+
+Následující obrázek je vizuální reprezentací 4 výše uvedených trojic.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/rdf-čsú-02.svg"
-   description="Znalostní graf reprezentovaný větami o ČSÚ s využitím IRI na místě subjektů a objektů"
+   description="Znalostní graf reprezentovaný větami o datové sadě se statistikou cizinců s využitím IRI na místě subjektů a objektů"
 %}
 
 
@@ -172,7 +154,8 @@ Následující obrázek je vizuální reprezentací znalostního grafu vyjádře
 Stále ale ještě nemáme správné vyjádření v modelu RDF.
 IRI totiž RDF model používá i pro predikáty.
 Tj. neidentifikuje vlastnosti věcí pomocí řetězců jako předchozí příklad, ale chápe vlastnosti také jako věci, které mají svá IRI.
-Zatímco ale pro entity, o kterých něco tvrdíme, jako např. ČSÚ, vytváříme vlastní IRI, např. v poddoméně `https://data.gov.cz/zdroj/`, tak pro vlastnosti IRI nezavádíme, ale snažíme se využívat to, co již existuje. 
+Zatímco ale pro entity, o kterých něco tvrdíme, vytváříme vlastní IRI, např. v poddoméně `https://data.gov.cz/zdroj/`, tak pro vlastnosti vlastní IRI zavádět nemusíme.
+Můžeme využívat to, co již existuje. 
 Vlastnosti a jejich IRI jsou definovány v tzv. *slovnících*.
 Existuje mnoho slovníků, ze kterých můžeme vybírat.
 Takové přepoužívání existujících slovníků významně přispívá k interoperabilitě znalostních grafů.
@@ -196,6 +179,7 @@ Např.:
 
 * [GoodRelations](http://www.heppnetz.de/ontologies/goodrelations/v1.html) - slovník pro znalostní grafy v oblasti e-commerce
 * [DCAT](http://www.w3.org/TR/vocab-dcat/) - slovník pro popis datových sad a katalogů datových sad
+* [DCAT-AP](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201) - rozšíření slovníku DCAT pro katalogizaci datových sad v rámci EU
 * [FOAF](http://www.foaf-project.org/) - slovník pro popis lidí a vztahů mezi nimi
 * [ORG](https://www.w3.org/TR/vocab-org/) - slovník pro popis organizací a jejich struktury
 * [HL7 FHIR](https://www.hl7.org/fhir/rdf.html) - slovník pro zdravotnictví
@@ -213,32 +197,25 @@ Slovník je tak možná až příliš zjednodušující pojem, protože má tak�
 Jak taková definice vypadá technicky si opět ukážeme v jiném dílu našeho seriálu.
 
 Pojďme teď některé z výše uvedených slovníků použít, abychom konečně došli ke správnému vyjádření našeho příkladu v modelu RDF.
-Pokud se podíváte do slovníku [schema.org](http://schema.org), který má i jednoduché uživatelské rozhraní pro jeho procházení, naleznete v něm definici vlastnosti s IRI [`http://schema.org/name`](http://schema.org/name).
-Vlastnost je definována jako univerzální vlastnost pro specifikaci jmen a názvů věcí.
-Můžeme ji tak použít pro vyjádření názvu ČSÚ. Výsledná RDF trojice tak bude vypadat následovně.
+Pokud se podíváte do slovníku [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), naleznete v něm definici vlastnosti s IRI [`http://purl.org/dc/terms/title`](http://purl.org/dc/terms/title).
+Vlastnost je definována jako univerzální vlastnost pro specifikaci názvů věcí.
+Ve znalostním grafu Národního katalogu otevřených dat je použita pro vyjádření názvů datových sad.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://schema.org/name>   "Český statistický úřad" .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
 ~~~~~~~~~~~~
 
-Velmi oblíbeným slovníkem je slovník [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), který definuje vlastnost s IRI [`http://purl.org/dc/terms/publisher`](http://purl.org/dc/terms/publisher).
-Je definována jako univerzální vlastnost pro specifikaci toho, kdo danou věc zveřejnil.
-U trojice s datovou sadou zveřejněnou ČSÚ to znamená následující finální vyjádření.
+Pro vyjádření klíčových slov charakterizujících datovou sadu je použita vlastnost s IRI [`http://www.w3.org/ns/dcat#keyword`](http://www.w3.org/ns/dcat#keyword) ze slovníku [DCAT](http://www.w3.org/TR/vocab-dcat/).
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/publisher>   <https://data.gov.cz/zdroj/ovm/00025593> .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/ns/dcat#keyword>   "státní občanství" .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/ns/dcat#keyword>   "cizinec" .
 ~~~~~~~~~~~~
 
-Zbylé dvě trojice z příkladu se týkají vlastností specifických pro veřejnou správu ČR, které existující slovníky nepokrývají.
-V tom případě si můžeme zavést svoje vlastní nové vlastnosti s našimi vlastními IRI.
-Ukazuje je následující příklad.
-Jak je přesně zavést, si ukážeme v jiném dílu tohoto seriálu.
+Poslední trojice přiřazující datovou sadu k Národnímu katalogu otevřených dat má jako predikát vlastnost s IRI [`http://www.w3.org/ns/dcat#dataset`](http://www.w3.org/ns/dcat#dataset) ze slovníku [DCAT](http://www.w3.org/TR/vocab-dcat/).
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://schema.org/name>   "Český statistický úřad" .
-<https://data.gov.cz/zdroj/ovm/00025593>   <https://data.gov.cz/slovník/ovm/datováSchránka>   <https://data.gov.cz/zdroj/datové-schránky/2gfaasy> .
-<https://data.gov.cz/zdroj/ovm/00025593>   <https://data.gov.cz/slovník/ovm/právníForma>   <https://data.gov.cz/zdroj/ovm/právní-forma/325> .
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/publisher>   <https://data.gov.cz/zdroj/ovm/00025593> .
+<https://data.gov.cz/zdroj/katalog/NKOD>   <http://www.w3.org/ns/dcat#dataset>   <https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19> .
 ~~~~~~~~~~~~
 
 Možná se ptáte, kde lze hledat existující slovníky.
@@ -256,35 +233,16 @@ Znalost základního charakteru je důležitá i pro strojové zpracování, aby
 V modelu RDF tuto základní klasifikaci věcí provádíme pomocí přiřazování věcí do tzv. *tříd*.
 
 Třída v RDF modelu je chápána jako množina věcí, které mají stejné charakteristiky.
-Třídou tak může být např. množina všech organizací.
-Do této množiny patří např. ČSÚ.
+Třídou tak může být např. množina všech datových sad.
+Do této množiny patří např. naše datová sada z příkladů výše.
 Z pohledu RDF modelu je třída opět věcí a má tak své IRI.
 Přiřazení věci do třídy specifikujeme trojicí, kde subjektem je věc, predikátem je vlastnost definovaná přímo ve specifikaci modelu RDF `<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>` a objektem je třída.
-Ve znalostním grafu Národního katalogu otevřených dat je např. použita třída ze slovníku schema.org s IRI `<http://schema.org/Organization>`, která je množinou všech organizací.
-Konkrétně je přiřazení ČSÚ do třídy vyjádřeno v RDF modelu jako následující trojice.
+Ve znalostním grafu Národního katalogu otevřených dat je např. použita třída ze slovníku [DCAT](http://www.w3.org/TR/vocab-dcat/) s IRI `<http://www.w3.org/ns/dcat#Dataset>`, která je množinou všech datových sad.
+Konkrétně je přiřazení datové sady do třídy vyjádřeno v RDF modelu jako následující trojice.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://schema.org/Organization> .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://www.w3.org/ns/dcat#Dataset> .
 ~~~~~~~~~~~~
-
-Věc může být přiřazena do více tříd.
-To se může hodit, neboť často pro daný koncept existuje více slovníků, které pro něj zavádějí svoji třídu.
-Tak např. pro označení množiny všech organizací nemusíme použít jen výše uvedenou třídu ze slovníku schema.org.
-Např. slovník [Core Public Organization Vocabulary](https://joinup.ec.europa.eu/solution/core-public-organisation-vocabulary) vydaný Evropskou komisí zavádí pro organizace třídu [`http://data.europa.eu/m8g/PublicOrganisation`](http://data.europa.eu/m8g/PublicOrganisation).
-ČSÚ tak můžeme přiřadit i do této třídy.
-
-~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://schema.org/Organization> .
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://data.europa.eu/m8g/PublicOrganisation> .
-~~~~~~~~~~~~
-
-Výsledný příklad už je plnohodnotným vyjádřením znalostního grafu v RDF modelu.
-Následující obrázek jej vizualizuje.
-
-{% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-03.svg"
-   description="Znalostní graf o ČSÚ v modelu RDF"
-%}
 
 ### Výhody modelu RDF
 
@@ -298,91 +256,53 @@ Máme-li IRI věci, můžeme o ní vyjádřit v podobě RDF trojice jakékoliv t
 Jednoduše přidáme novou trojici nebo trojice.
 Protože reprezentace tvrzení v RDF modelu není vázaná žádným schématem, není nutné cokoliv kvůli přidání nových trojic měnit.
 Pokud potřebujeme přestrukturovat již vyjádřená tvrzení, můžeme původní ponechat kvůli zpětné kompatibilitě s nástroji, které je využívají, a přidat nové vyjádření v nových trojicích.
-Např. můžeme z nějakého důvodu potřebovat vyjádřit název ČSÚ pomocí vlastnosti [`http://www.w3.org/2004/02/skos/core#prefLabel`](http://www.w3.org/2004/02/skos/core#prefLabel) ze slovníku SKOS.
-Nemusíme kvůli tomu odstraňovat tvrzení o názvu ČSÚ vyjádřeném pomocí vlastnosti [`http://schema.org/name`](http://schema.org/name) ze slovníku schema.org.
+Např. můžeme z nějakého důvodu potřebovat vyjádřit název datové sady pomocí vlastnosti [`http://www.w3.org/2004/02/skos/core#prefLabel`](http://www.w3.org/2004/02/skos/core#prefLabel) ze slovníku [SKOS](http://www.w3.org/TR/skos-primer).
+Nemusíme kvůli tomu odstraňovat již existující tvrzení o názvu.
 Můžeme v datech ponechat obě trojice.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://schema.org/name>   "Český statistický úřad" .
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://www.w3.org/2004/02/skos/core#prefLabel>   "Český statistický úřad" .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/2004/02/skos/core#prefLabel>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
 ~~~~~~~~~~~~
 
 Model RDF také zajímavě pomáhá při zajišťování interoperability, což ve světě otevřených dat obzvlášť oceníme.
 Různí zpracovatelé dat mohou rozumět různým jazykům.
 Různým jazykům v modelu RDF odpovídají různé slovníky.
-Jeden nástroj může rozumět slovníku schema.org, jiný pak slovníku SKOS.
-Výše uvedený příklad poskytuje údaje o ČSÚ pro oba nástroje.
+Jeden nástroj může rozumět slovníku [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/), jiný pak slovníku [SKOS](http://www.w3.org/TR/skos-primer).
+Výše uvedený příklad poskytuje údaje o datové sadě pro oba nástroje.
 Ač se tedy může zdát, že příklad obsahuje duplicitu, zdvojení je právě z důvodu zajištění interoperability.
 
 Jiný případ související s interoperabilitou je, když dva datové zdroje poskytují data reprezentovaná v modelu RDF a jeden zpracovatel je zpracovává.
 Z obou datových zdrojů snadno vytvoříme jeden balík dat tím, že prostě slijeme trojice získané z obou datových zdrojů na jedno místo a můžeme s daty bez dalších úprav pracovat.
-Jak přesně s nimi můžeme pracovat bude předmětem dalšího dílu tohoto seriálu.
 
 Ideální pro takové slévání trojic je, pokud pro stejné věci používají oba datové zdroje stejná IRI.
 Představme si to na příkladu znalostního grafu Národního katalogu otevřených dat a znalostního grafu Registru práv a povinností, o kterém jsme také psali v minulém díle.
-Oba datové zdroje poskytují údaje o ČSÚ v podobě RDF trojic.
-Představme si, že oba používají pro identifikaci ČSÚ IRI [`https://data.gov.cz/zdroj/ovm/00025593`](https://data.gov.cz/zdroj/ovm/00025593).
-Potom po slití trojic z obou datových zdrojů máme pohromadě trojice, které mají ve svém subjektu toto IRI a můžeme s nimi rovnou pracovat jako s jedním celkem.
+Znalostní graf Národního katalogu otevřených dat obsahuje pro datovou sadu také tvrzení o jejím poskytovateli.
+
+~~~~~~
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/publisher>   <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593> .
+~~~~~~~~~~~~
+
+Jedná se o poskytovatele s IRI [`https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593`](https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593) a jde o Český statistický úřad (ČSÚ).
+O tomto IRI ale nenajdeme ve znalostním grafu Národního katalogu otevřených dat zajímavá tvrzení, kde by byl ČSÚ na místě subjektu.
+Najdeme je ale ve znalostním grafu Registru práv a povinností.
+Zkuste si na uvedené IRI ČSÚ kliknout.
+Dostanete se do znalostního grafu Registru práv a povinností, kde vidíte detailní sadu tvrzení o ČSÚ.
+Po slití trojic z obou znalostních grafů máme pohromadě tvrzení o ČSÚ a můžeme s nimi pracovat.
+Můžeme také říci, že se oba dva znalostní grafy vzájemně obohacují a nám jako zpracovatelům dat odpadá jejich pracná integrace.
 Výsledek slití ukazuje následující obrázek.
 Zelené šipky reprezentují RDF trojice ze znalostního grafu Národního katalogu otevřených dat.
 Oranžové šipky reprezentují RDF trojice ze znalostního grafu Registru práv a povinností.
-Oranžové šipky vedoucí ze zeleného uzlu reprezentujícího ČSÚ značí, že znalostní graf Registru práv a povinností používá pro identifikaci ČSÚ IRI ze znalostního grafu Národního katalogu otevřených dat.
 
 {% include image.html 
    url="../attachments/články/znalostní-grafy/rdf-čsú-04.svg"
    description="Snadné slévání RDF trojic z různých datových zdrojů"
 %}
 
-Na obrázku můžete také vidět, že znalostní graf Registru práv a povinností specifikuje adresní místo sídla ČSÚ.
-Adresní místo chápe jako věc, pro níž používá IRI z domény Českého úřadu zeměměřičského a katastrálního (ČÚZK).
-Fialová hrana na obrázku značí RDF trojici ze znalostního grafu RÚIAN, který spravuje ČÚZK.
-Na obrázku tak vidíme trojice ze tří různých znalostních grafů.
-Abychom s nimi mohli pracovat, nemusíme dělat nic víc, než je slít na jedno místo.
-
-Výše uvedená situace ale neodpovídá skutečnosti.
-Ve skutečnosti není vhodné ve znalostním grafu Registru práv a povinností používat k identifikaci ČSÚ IRI ze znalostního grafu Národního katalogu otevřených dat.
-Jde např. o dereferencování.
-Prostřednictvím dereferencování tohoto IRI se vždy dostaneme pouze na tvrzení ze znalostního grafu Národního katalogu otevřených dat, nikoliv na tvrzení ze znalostního grafu Registru práv a povinností.
-Proto používá znalostní graf Registru práv a povinností pro identifikaci ČSÚ vlastní IRI [`https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593`](https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593).
-Tím ale přicházíme o výhodu popsanou výše.
-Jedná se o běžnou situaci, kdy různé datové zdroje identifikují stejnou věc svými vlastními a tudíž různými identifikátory.
-Většina datových modelů a jazyků řeší tuto situaci obdobou klíčů a cizích klíčů.
-Někde ve schématu, které je vyjádřeno jinde, v jiném jazyku a v jiném modelu, je popsáno, jakým způsobem se na sebe reprezentace věcí odkazují.
-Přímo v datech tato informace obsažena není.
-V modelu RDF je naopak možné ji zaznamenat přímo jako součást dat stejně jako jakékoliv jiné tvrzení a to v podobě trojice s predikátem, který je k tomu přímo určený.
-Jedná se o predikát [`http://www.w3.org/2002/07/owl#sameAs`](http://www.w3.org/2002/07/owl#sameAs) ze slovníku OWL.
-Pomocí něj vyjádříme, že dva různé uzly identifikované různými IRI ve skutečnosti reprezentují tutéž věc.
-Situaci, kdy oba znalostní grafy identifikují ČSÚ jiným IRI, ukazuje následující obrázek.
-Trojice vyjadřující, že obě IRI reprezentují ČSÚ, je součástí znalostního grafu Národního katalogu otevřených dat.
-
-{% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-05.svg"
-   description="Využití vlatnosti owl:sameAs ze slovníku OWL pro propojování znalostních grafů"
-%}
-
-Pokud přistoupíte na IRI z příkladu výše, zjistíte, že vizualizovaná reprezentace již odpovídá tomu, jak skutečně oba znalostní grafy vypadají.
-Zjistíte také, že znalostí graf Registru práv a povinností nezavádí vlastní IRI pro adresní místo.
-V tomto případě používá IRI ze znalostního grafu RÚIAN.
-Zde to stačí, protože žádné vlastní tvrzení o adresním místě, kromě jeho přiřazování jako adresy sídla, znalostní graf Registru práv a povinností neobsahuje a není potřeba při dereferencování IRI adresního místa zpřístupňovat nějaká pro Registr práv a povinností specifická tvrzení.
-Znalostní graf Registru práv a povinností tak jen odkazuje do znalostního grafu RÚIAN.
-
-Výše uvedený příklad předpokládá, že propojení různých IRI ČSÚ je s pomocí predikátu [`http://www.w3.org/2002/07/owl#sameAs`](http://www.w3.org/2002/07/owl#sameAs) vyjádřeno v jednom nebo druhém znalostním grafu.
-Co když ale není?
-Nezbývá nám pak než postupovat stejně jako postupujeme s jakýmikoliv jinými daty.
-RDF model nám v této situaci nijak nepomůže.
-Musíme zjistit, jaké jiné identifikace ČSÚ (nebo o orgánech veřejné moci obecně) máme v obou znalostních grafech k dispozici a vyzkoumat, které z nich můžeme pro integraci použít.
-RDF model nám oproti jiným datovým modelům a jazykům pomáhá při exploraci neznámých dat, ale to probereme až v některém z dalších dílů seriálu.
-
-Ve chvíli, kdy ale souvislost objevíme (např. IČO orgánů veřejné správy), RDF model je opět ve hře.
-Objevené souvislosti, které nyní v nějaké podobě držíme u sebe v nějaké naší vlastní reprezentaci, můžeme vyjádřit v podobě RDF trojic s predikátem [`http://www.w3.org/2002/07/owl#sameAs`](http://www.w3.org/2002/07/owl#sameAs) a publikovat je na web, aby je ostatní mohli využít a nemuseli data integrovat tak jako my.
-My jsme v této situaci svůj čas neušetřili, ale ostatní zpracovatelé dat ano.
-Tuto situaci znázorňuje další obrázek, kdy trojice propojující obě IRI ČSÚ, je součástí znalostního grafu vygenerovaného někým, kdo souvislost mezi oběma IRI objevil.
-Příslušná vizuální hrana je na obrázku zobrazena jako modrá přerušovaná šipka.
-
-{% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-06.svg"
-   description="Integrace dvou znalostních grafů zpracovatelem dat"
-%}
+Ve skutečnosti se v obrázku vyskytuje ještě fialová barva.
+Ta označuje znalostní graf Registru územních identifikátorů, adres a nemovitostí (RÚIAN).
+Uvedené IRI je funkční, ale vede pouze na HTML reprezentaci adresního místa.
+ČÚZK se na publikaci v modelu RDF ale připravuje.
 
 ### Formáty pro zápis RDF modelu
 
@@ -400,11 +320,11 @@ Další seskupení můžeme provést v případě trojic se stejným subjektem i
 Výsledná notace je potom následující.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/ovm/00025593>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://schema.org/Organization>, <http://data.europa.eu/m8g/PublicOrganisation> ;
-                                           <http://schema.org/name>   "Český statistický úřad" ;
-                                           <https://data.gov.cz/slovník/ovm/datováSchránka>   <https://data.gov.cz/zdroj/datové-schránky/2gfaasy> ;
-                                           <https://data.gov.cz/slovník/ovm/právníForma>   <https://data.gov.cz/zdroj/ovm/právní-forma/325> .
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/publisher>   <https://data.gov.cz/zdroj/ovm/00025593> .
+<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://www.w3.org/ns/dcat#Dataset> ;
+      <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" ;
+      <http://www.w3.org/ns/dcat#keyword>   "státní občanství", "cizinec" .
+
+<https://data.gov.cz/zdroj/katalog/NKOD>   <http://www.w3.org/ns/dcat#dataset>   <https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19> .
 ~~~~~~~~~~~~
 
 Dále je možné využít *prefixování*, abychom nemuseli v IRI vypisovat jejich opakující se části.
@@ -414,70 +334,47 @@ Následující příklad zavedení a využití prefixů demonstruje.
 Jedná se o zápis stejných dat, jako v předchozím příkladu.
 
 ~~~~~~
-@prefix schema: <http://schema.org/> .
-@prefix isa: <http://data.europa.eu/m8g/> .
-@prefix sovm: <https://data.gov.cz/slovník/ovm/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ovm: <https://data.gov.cz/zdroj/ovm/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ds: <https://data.gov.cz/zdroj/datové-sady/> .
-@prefix dsch: <https://data.gov.cz/zdroj/datové-schránky/> .
-@prefix pf: <https://data.gov.cz/zdroj/právní-formy/> .
 
-ovm:00025593  rdf:type  schema:Organization, isa:PublicOrganisation ;
-              schema:name "Český statistický úřad" ;
-              sovm:datováSchránka dsch:2gfaasy ;
-              sovm:právníForma  pf:325 .
-ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19  dct:publisher ovm:00025593 .
+ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 rdf:type dcat:Dataset ;
+      dct:title "Cizinci podle státního občanství, věku a pohlaví - rok 2018" ;
+      dcat:keyword "státní občanství", "cizinec" .
+
+<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 .
 ~~~~~~~~~~~~
 
 Zkrátit zápis můžeme také vyjádřením predikátu `http://www.w3.org/1999/02/22-rdf-syntax-ns#type` symbolem `a`, jak ukazuje následující zápis.
 
 ~~~~~~
-@prefix schema: <http://schema.org/> .
-@prefix isa: <http://data.europa.eu/m8g/> .
-@prefix sovm: <https://data.gov.cz/slovník/ovm/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix ovm: <https://data.gov.cz/zdroj/ovm/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ds: <https://data.gov.cz/zdroj/datové-sady/> .
-@prefix dsch: <https://data.gov.cz/zdroj/datové-schránky/> .
-@prefix pf: <https://data.gov.cz/zdroj/právní-formy/> .
 
-ovm:00025593  a  schema:Organization, isa:PublicOrganisation ;
-              schema:name "Český statistický úřad" ;
-              sovm:datováSchránka dsch:2gfaasy ;
-              sovm:právníForma  pf:325 .
-ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19  dct:publisher ovm:00025593 .
+ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 a dcat:Dataset ;
+      dct:title "Cizinci podle státního občanství, věku a pohlaví - rok 2018" ;
+      dcat:keyword "státní občanství", "cizinec" .
+
+<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 .
 ~~~~~~~~~~~~
 
 Ve formátu Turtle lze také pohodlně zapsat další drobné detaily modelu RDF, které jsou ale v mnoha situacích potřebné.
-Jedná se o datové typy literálů a označení jazyka, ve kterém je daný literál uveden.
-Pro jeden literál nemůžeme oba nástroje kombinovat.
-Literál označený jazykem je automaticky chápán s datovým typem řetězec.
-Pro datové typy literálů RDF model přepoužívá datové typy jazyka [XML Schema Definition (XSD)](https://www.w3.org/TR/xmlschema-2/).
-Oba konstrukty demonstruje následující příklad.
-Ukazuje název ČSÚ v češtině a angličtině a přidává nové tvrzení o ČSÚ o datu jeho vzniku.
-Datum vzniku je typován na datový typ xsd:dateTime (datový typ datum definovaný ve specifikaci XSD).
+Jedná se např. o označení jazyka, ve kterém je daný literál uveden pomocí tzv. language tagu.
 
 ~~~~~~
-@prefix schema: <http://schema.org/> .
-@prefix isa: <http://data.europa.eu/m8g/> .
-@prefix sovm: <https://data.gov.cz/slovník/ovm/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ovm: <https://data.gov.cz/zdroj/ovm/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix ds: <https://data.gov.cz/zdroj/datové-sady/> .
-@prefix dsch: <https://data.gov.cz/zdroj/datové-schránky/> .
-@prefix pf: <https://data.gov.cz/zdroj/právní-formy/> .
 
-ovm:00025593  a  schema:Organization, isa:PublicOrganisation ;
-              schema:name "Český statistický úřad"@cs, "Czech statistical office"@en ;
-              schema:foundingDate   "1969-01-08"^^xsd:date ;
-              sovm:datováSchránka dsch:2gfaasy ;
-              sovm:právníForma  pf:325 .
-ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19  dct:publisher ovm:00025593 .
+ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 a dcat:Dataset ;
+      dct:title "Cizinci podle státního občanství, věku a pohlaví - rok 2018"@cs ;
+      dcat:keyword "státní občanství"@cs, "cizinec"@cs .
+
+<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 .
 ~~~~~~~~~~~~
 
 #### Formát JSON-LD
@@ -495,48 +392,32 @@ Navíc pro experimentování s JSON-LD existuje [hřiště][json-ld-playground],
 
 Uveďme si pouze příklad zápisu znalostního grafu v RDF modelu z našeho příkladu.
 Na následujícím příkladu vidíte standardní JSON strukturu.
-Vidíte běžnou JSON strukturu.
 Snad jen klíče `@id` a `@type` vám mohou připadat nezvyklé.
 Ty JSON-LD potřebuje k rozpoznání IRI věci, o níž data v JSON zápisu zapisujeme, a k rozpoznání IRI typů.
 Pokud vám v klíčích vadí `@`, můžete je v kontextu přejmenovat.
 
 ~~~~~~
 {
-  "@id": "ovm/00025593",
-  "@type": ["Organization","PublicOrganization"],
-  "jméno": "Český statistický úřad",
-  "založeno": "1969-01-08",
-  "schránka": "datové-schránky/2gfaasy",
-  "forma": "právní-forma/325",
-  "datové-sady": ["datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19"]
+  "@id": "http---vdb.czso.cz-pll-eweb-package_show-id-290038r19",
+  "@type": "Dataset",
+  "jméno": "Cizinci podle státního občanství, věku a pohlaví - rok 2018",
+  "klíčová-slova": ["státní občanství", "cizinec"],
+  "katalog": "https://data.gov.cz/zdroj/katalog/NKOD"
 }
 ~~~~~~~~~~~~
 
 A v následujícím výpisu vidíte příslušný JSON-LD kontext, jehož aplikací na JSON reprezentaci pomocí JSON-LD procesoru získáme stejné RDF trojice, jaké specifikuje výše uvedený příklad zapsaný ve formátu Turtle.
-Můžete si to [vyzkoušet na hřišti](https://json-ld.org/playground/#startTab=tab-nquads&json-ld=%7B%22%40context%22%3A%7B%22%40base%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2F%22%2C%22Organization%22%3A%22https%3A%2F%2Fschema.org%2FOrganization%22%2C%22PublicOrganization%22%3A%22http%3A%2F%2Fdata.europa.eu%2Fm8g%2FPublicOrganization%22%2C%22jm%C3%A9no%22%3A%22https%3A%2F%2Fschema.org%2Fname%22%2C%22zalo%C5%BEeno%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fschema.org%2FfoundingDate%22%2C%22%40type%22%3A%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23date%22%7D%2C%22schr%C3%A1nka%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2Fdatov%C3%A1Schr%C3%A1nka%22%2C%22%40type%22%3A%22%40id%22%7D%2C%22forma%22%3A%7B%22%40id%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fslovn%C3%ADk%2Fovm%2Fpr%C3%A1vn%C3%ADForma%22%2C%22%40type%22%3A%22%40id%22%7D%2C%22datov%C3%A9-sady%22%3A%7B%22%40reverse%22%3A%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Fpublisher%22%2C%22%40container%22%3A%22%40set%22%2C%22%40type%22%3A%22%40id%22%7D%7D%2C%22%40id%22%3A%22ovm%2F00025593%22%2C%22%40type%22%3A%5B%22Organization%22%2C%22PublicOrganization%22%5D%2C%22jm%C3%A9no%22%3A%22%C4%8Cesk%C3%BD%20statistick%C3%BD%20%C3%BA%C5%99ad%22%2C%22zalo%C5%BEeno%22%3A%221969-01-08%22%2C%22schr%C3%A1nka%22%3A%22datov%C3%A9-schr%C3%A1nky%2F2gfaasy%22%2C%22forma%22%3A%22pr%C3%A1vn%C3%AD-forma%2F325%22%2C%22datov%C3%A9-sady%22%3A%5B%22datov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-290038r19%22%5D%7D).
+Můžete si to [vyzkoušet na hřišti](https://json-ld.org/playground/#startTab=tab-nquads&json-ld=%7B%22%40context%22%3A%7B%22%40base%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%22%2C%22Dataset%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset%22%2C%22jm%C3%A9no%22%3A%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23keyword%22%2C%22katalog%22%3A%7B%22%40reverse%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23dataset%22%2C%22%40type%22%3A%22%40id%22%7D%7D%2C%22%40id%22%3A%22http---vdb.czso.cz-pll-eweb-package_show-id-290038r19%22%2C%22%40type%22%3A%22Dataset%22%2C%22jm%C3%A9no%22%3A%22Cizinci%20podle%20st%C3%A1tn%C3%ADho%20ob%C4%8Danstv%C3%AD%2C%20v%C4%9Bku%20a%20pohlav%C3%AD%20-%20rok%202018%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%5B%22st%C3%A1tn%C3%AD%20ob%C4%8Danstv%C3%AD%22%2C%22cizinec%22%5D%2C%22katalog%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fkatalog%2FNKOD%22%7D&context=%7B%22%40context%22%3A%7B%22%40base%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%22%2C%22Dataset%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset%22%2C%22jm%C3%A9no%22%3A%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23keyword%22%2C%22katalog%22%3A%7B%22%40reverse%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23dataset%22%2C%22%40type%22%3A%22%40id%22%7D%7D%7D).
 
 ~~~~~~
 {
   "@context": {
-    "@base": "https://data.gov.cz/zdroj/",
-    "Organization": "http://schema.org/Organization",
-    "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganization",
-    "jméno": "http://schema.org/name",
-    "založeno": {
-      "@id": "http://schema.org/foundingDate",
-      "@type": "http://www.w3.org/2001/XMLSchema#date"
-    },
-    "schránka": {
-      "@id": "https://data.gov.cz/slovník/ovm/datováSchránka",
-      "@type": "@id"
-    },
-    "forma": {
-      "@id": "https://data.gov.cz/slovník/ovm/právníForma",
-      "@type": "@id"
-    },
-    "datové-sady": {
-      "@reverse": "http://purl.org/dc/terms/publisher",
-      "@container": "@set",
+    "@base": "https://data.gov.cz/zdroj/datové-sady/",
+    "Dataset": "http://www.w3.org/ns/dcat#Dataset",
+    "jméno": "http://purl.org/dc/terms/title",
+    "klíčová-slova": "http://www.w3.org/ns/dcat#keyword",
+    "katalog": {
+      "@reverse": "http://www.w3.org/ns/dcat#dataset",
       "@type": "@id"
     }
   }

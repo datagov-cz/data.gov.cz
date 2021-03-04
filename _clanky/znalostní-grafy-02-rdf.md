@@ -46,10 +46,9 @@ URL má pěkné vlastnosti, které se hodí i pro uzly znalostních grafů na we
 Nejedná se totiž pouze o globální identifikátor.
 URL je také tzv. *lokátorem*, protože umožňuje v prostředí webu vyhledat a získat počítačovou reprezentaci identifikované věci.
 To umožňuje protokol HTTP.
-Abyste si např. mohli přečíst tento článek, váš prohlížeč prostřednictvím protokolu HTTP vyhledal v prostředí webu URL https://data.gov.cz/články/znalostní-grafy-02-rdf a získal HTML reprezentaci článku, kterou pro vás zpracoval a zobrazil vám ji.
+Abyste si např. mohli přečíst tento článek, váš prohlížeč prostřednictvím protokolu HTTP vyhledal v prostředí webu URL `https://data.gov.cz/články/znalostní-grafy-02-rdf` a získal HTML reprezentaci článku, kterou pro vás zpracoval a zobrazil vám ji.
 
 RDF používá IRI, většinou právě v podobě URL, pro identifikaci uzlů znalostních grafů.
-IRI je zobecněním URL, např. je v něm možné používat české znaky (používá kódování UTF-8).
 Uvažme například znalostní graf Národního katalogu otevřených dat, který jsme viděli již v předchozím dílu.
 Jako uzel je v něm reprezentována datová sada se statistikou cizinců podle státního občanství, věku a pohlaví za rok 2018.
 Uzel má přiřazen IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
@@ -164,7 +163,7 @@ Opět je zde paralela s lidským jazykem.
 Řekne-li někdo "má název", rozumíte významu takového sousloví, protože použil slova z jazyka, který znáte, tj. z češtiny.
 Řekne-li ale "tiene un nombre", možná už nerozumíte, protože použil slova ze španělštiny.
 Řekne-li "एक नाव आहे", pravděpodobně sáhnete po překladači.
-Mimochodem, jedná se o [Maráthštinu](https://www.wikidata.org/wiki/Q1571) (a mimochodem tento odkaz využívá znalostní graf Wikidata k anotaci textu, čímž jej zajímavě obohacuje, ale o tom až v nějakém jiném dílu našeho seriálu).
+Mimochodem, jedná se o [Maráthštinu](https://www.wikidata.org/wiki/Q1571) a tento odkaz využívá znalostní graf Wikidata k anotaci textu, čímž jej zajímavě obohacuje, ale o tom až v nějakém jiném dílu našeho seriálu.
 
 Existují generické slovníky, které se hodí pro téměř jakýkoliv znalostní graf. Např.:
 
@@ -226,7 +225,7 @@ Ano, existuje např. katalog [Linked Open Vocabularies (LOV)](https://lov.linked
 
 Když uvažujeme o věcech, často si je klasifikujeme podle jejich společných charakteristik.
 Rozlišujeme tak např. knihy, vozidla, organizace, zvířata nebo lidi.
-(Možná se divíte, proč říkáme, že člověk je věc, ale chápejte prosím v kontextu tohoto článku pojem věc jako něco velmi obecného, ve smyslu cokoliv nebo kdokoliv.)
+Možná se divíte, proč říkáme, že člověk je věc, ale chápejte prosím v kontextu tohoto článku pojem věc jako něco velmi obecného, ve smyslu cokoliv nebo kdokoliv.
 Pokud o něčem víme, že je vozidlem, pak o tom uvažujeme a přemýšlíme jinak, než pokud o něčem víme, že je organizací.
 Klasifikace nám udává základní charakter dané věci.
 Znalost základního charakteru je důležitá i pro strojové zpracování, abychom danou věc interpretovali a zpracovali správně.

@@ -4,7 +4,7 @@ detail: true
 title: "Série Znalostní grafy: Díl 2: Datový model RDF"
 ref: znalostni-grafy-rdf
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-02.jpg
+image: ../attachments/články/znalostní-grafy/znalostní-grafy-02.webp
 author: martin_nečaský
 date: 2020-08-10 07:00:00 +02:00
 ---

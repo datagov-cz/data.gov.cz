@@ -157,7 +157,7 @@ Samozřejmě v případě změny struktury dat ze strany publikující instituce
 V případě, že jsou však publikovaná data konzistentní (jako například ty o neziskových organizacích), bude při dalších aktualizacích pouze stačit, když spustíte skript (nebo vám ho spustí sám operační systém) a dashboard se vám během několika málo minut aktualizuje sám. 
 A pak už jen stačí si pochvalovat, kolik času vám automatické aktualizace ušetřily a že jste se zase něco nového naučili.
 
-[NKOD]: https://data.gov.cz/datové-sady?dotaz= "Národní katalog otevřených dat"
+[NKOD]: https://data.gov.cz/datové-sady "Národní katalog otevřených dat"
 [NOTEPAD]: https://notepad-plus-plus.org "Notepad++"
 [PYCHARM]: https://www.jetbrains.com/pycharm/ "PyCharm"
 [ATOM]: https://atom.io/ "Atom"
@@ -172,7 +172,7 @@ A pak už jen stačí si pochvalovat, kolik času vám automatické aktualizace 
 [YOUTUBE]: https://www.youtube.com/watch?v=T1vqS1NL89E "YouTube"
 [SKRIPT]: https://drive.google.com/file/d/1JVnXqjO9O-U9MCNg1090nFfXrWGNb47g/view?usp=sharing "Skript"
 [IMPORTOTHER]: https://www.datacamp.com/community/tutorials/importing-data-into-pandas "Ostatní typy dat"
-[NEZISKOVKY]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2FBrno%2F855242099%2Faee8d88c79b4e167a10b57c0ce827ec5 "Neziskovky"
+[NEZISKOVKY]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F98321 "Neziskovky"
 [PLANOVAC]: https://www.windowscentral.com/how-create-automated-task-using-task-scheduler-windows-10 "Plánovač úloh"
 [MAKRO]: https://www.benlcollins.com/spreadsheets/google-sheets-macros/ "Makro"
 [TABLEAU]: https://public.tableau.com/en-us/s/ "Tableau Public"

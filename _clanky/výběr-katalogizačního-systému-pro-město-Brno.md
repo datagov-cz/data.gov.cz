@@ -64,7 +64,7 @@ Pokud Vás zajímá problematika správy otevřených dat v kontextu města Brna
 [KANADSKA]: https://open.canada.ca/en/open-data "Portál otevřených dat kanadské vlády"
 [OLOMOUC]: https://data.olomouc.eu/ "Portál otevřených dat Olomouc"
 [HRADEC]: http://opendata.mmhk.cz/ "Portál otevřených dat města Hradec Králové"
-[NKOD]: https://data.gov.cz/datové-sady?dotaz= "Národní katalog otevřených dat"
+[NKOD]: https://data.gov.cz/datové-sady "Národní katalog otevřených dat"
 [OFN]: https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/draft/ "Otevřená formální norma Rozhraní katalogů otevřených dat"
 [ENTRYSCAPE]: https://entryscape.com/en/ "Katalogizační systém Entryscape"
 [DATAPRESS]: https://datapress.com/ "Katalogizační systém DataPress"

@@ -139,5 +139,5 @@ Geolokační data se postupně začleňují do rozvojových koncepcí veřejné 
 [Carto]: https://carto.com/ "Carto"
 [GitLab]: https://bitbucket.org/blue4world/brno_data_operatoru/src/master "Gitlab projekt"
 [QGIS]: https://qgis.org "QGIS"
-[Dataset]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci"
+[Dataset]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci"
 [ČÚZK]: https://www.cuzk.cz/ "Český úřad zeměměřičský a katastrální"

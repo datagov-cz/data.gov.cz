@@ -471,7 +471,7 @@ Chtěli jsme pouze demonstrovat podobnost síly jazyka SPARQL s jinými dotazova
 
 V jazyku SPARQL můžeme také zapisovat tzv. agregační dotazy.
 Jedná se o dotazy, které nevrací prvky, ale jejich počty, průměry jejich číselných vlastností apod.
-Existuje zde klauzule [`GROUP BY`](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#aggregates), pomocí které speficifikujeme, že se části znalostního grafu odpovídající grafovému vzoru seskupí podle hodnoty nějaké proměnné, tzv. *agregační proměnné*.
+Existuje zde klauzule [`GROUP BY`](https://www.w3.org/TR/2013/REC-sparql11-query-20130321/#aggregates), pomocí které specifikujeme, že se části znalostního grafu odpovídající grafovému vzoru seskupí podle hodnoty nějaké proměnné, tzv. *agregační proměnné*.
 Jedna skupina obsahuje ty části znalostního grafu, pro které má agregační proměnná stejnou hodnotu.
 Ve specifikaci výsledku potom můžeme uvést buď agregační proměnnou, agregaci nějaké neagregační proměnné, např. pomocí agregační funkce `AVG` pro průměr nebo spočítání počtů prvků ve skupině pomocí agregační funkce `COUNT`.
 Uveďme si agregace na příkladu.
@@ -605,8 +605,8 @@ Každý lze přímo spustit nad veřejným [SPARQL endpointem NKOD][nkod-ep].
 Čeká nás několik dílů tohoto seriálu, kde představíme další veřejné SPARQL endpointy.
 Uvidíme také např., že v jednom SPARQL dotazu se můžeme dotázat i do více SPARQL endpointů najednou.
 
-[link_previous]: https://data.gov.cz/články/znalostní-grafy-02-rdf "Minulý díl"
-[link_first]: https://data.gov.cz/články/znalostní-grafy-01-úvod "První díl"
+[link_previous]: znalostní-grafy-02-rdf "Minulý díl"
+[link_first]: znalostní-grafy-01-úvod "První díl"
 [sparql11]: https://www.w3.org/TR/sparql11-overview/ "SPARQL 1.1. Overview"
 [nkod]: https://data.gov.cz "Národní katalog otevřených dat (NKOD)"
 [nkod-ep]: https://data.gov.cz/sparql "SPARQL endpoint NKOD" 

@@ -430,7 +430,7 @@ Ukázali jsme si principy modelu a také jeho výhody, které při jeho využit�
 Ukázali jsme si také 2 nejpoužívanější formáty pro jeho zápis.
 V dalším dílu si ukážeme, že data reprezentovaná v modelu RDF můžeme chápat databázově a dotazovat se nad nimi pomocí dotazovacího jazyka SPARQL.
 
-[link_previous]: https://data.gov.cz/články/znalostní-grafy-01-úvod "Minulý díl"
+[link_previous]: znalostní-grafy-01-úvod "Minulý díl"
 [json-ld11]: https://www.w3.org/TR/json-ld11/ "JSON-LD 1.1"
 [json-ld-playground]: https://json-ld.org/playground/ "JSON-LD playground"
 [rdf11]: https://www.w3.org/TR/rdf11-primer/ "RDF" 

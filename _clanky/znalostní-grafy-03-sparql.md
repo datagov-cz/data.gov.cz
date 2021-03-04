@@ -476,17 +476,21 @@ Jedna skupina obsahuje ty části znalostního grafu, pro které má agregační
 Ve specifikaci výsledku potom můžeme uvést buď agregační proměnnou, agregaci nějaké neagregační proměnné, např. pomocí agregační funkce `AVG` pro průměr nebo spočítání počtů prvků ve skupině pomocí agregační funkce `COUNT`.
 Uveďme si agregace na příkladu.
 Chceme vědět počet datových sad podle poskytovatele.
+Zde si všimněte, že jsme přidali ještě další trojici do grafového vzoru, která říká, že entita `?datováSada` je (typu) datová sada.
+Predikát pro ono "je (typu)" má v modelu RDF zkrácené IRI `rdf:type` a v syntaxi Turtle se dále zkracuje právě slovem "a", což vychází ze způsobu čtení tohoto tvrzení v angličtině, kde bychom řekli "There is **a** dataset" nebo "There is an entity (`?datováSada`) which is **a** dataset (`dcat:Dataset`)".
 
 ~~~~~~
-PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct:  <http://purl.org/dc/terms/>
 
 SELECT DISTINCT ?poskytovatel (COUNT(?datováSada) AS ?početDatovýchSad)
 WHERE {
-    ?datováSada dct:publisher ?poskytovatel .
+    ?datováSada a dcat:Dataset;
+       dct:publisher ?poskytovatel .
 }
 GROUP BY ?poskytovatel
 ~~~~~~~~~~~~
-{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20dct%3A%20%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20a%20dcat%3ADataset%3B%0A%20%20%20%20%20%20%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Zkusme výsledek trochu vylepšit.
 Nejprve výsledek seřaďme.
@@ -496,39 +500,43 @@ Protože do výsledku může jít pouze agregační proměnná, musíme mít dv�
 Princip je ale stejný.
 
 ~~~~~~
-PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dcat:  <http://www.w3.org/ns/dcat#>
+PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX lsgov: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>
 
 SELECT DISTINCT ?poskytovatel ?názevPoskytovatele (COUNT(?datováSada) AS ?početDatovýchSad)
 WHERE {
-    ?datováSada dct:publisher ?poskytovatel .
+    ?datováSada a dcat:Dataset ;
+        dct:publisher ?poskytovatel .
 
     ?poskytovatel lsgov:má-název-orgánu-veřejné-moci ?názevPoskytovatele .
 }
 GROUP BY ?poskytovatel ?názevPoskytovatele
 ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
-{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20a%20dcat%3ADataset%20%3B%0A%20%20%20%20%20%20%20%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
-Možná jste si všimli, že druhý dotaz vrací jiný počet poskytovatelů než předchozí dotaz (ke dni vydání článku vrací první dotaz 44 poskytovatelů, druhý 43).
+Možná jste si všimli, že druhý dotaz vrací jiný počet poskytovatelů než předchozí dotaz (ke dni vydání článku vrací první dotaz 42 poskytovatelů, druhý 41).
 Je to způsobeno tím, že pro některé poskytovatele neexistuje hodnota vlastnosti `lsgov:má-název-orgánu-veřejné-moci` a proto nejsou do výsledku vybrány.
 Pokud chceme mít ve výsledku i tyto poskytovatele, musíme v dotazu specifikovat, že část grafového vzoru s vlatností `lsgov:má-název-orgánu-veřejné-moci` je nepovinná.
 Část grafového vzoru můžeme ve SPARQL označit jako nepovinnou pomocí klíčového slova `OPTIONAL` následovaného nepovinnou částí grafového vzoru ve složených závorkách, jak je ukázáno na následujícím příkladu.
 
 ~~~~~~
-PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dcat:  <http://www.w3.org/ns/dcat#>
+PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX lsgov: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>
 
 SELECT DISTINCT ?poskytovatel ?názevPoskytovatele (COUNT(?datováSada) AS ?početDatovýchSad)
 WHERE {
-    ?datováSada dct:publisher ?poskytovatel .
+    ?datováSada a dcat:Dataset ;
+       dct:publisher ?poskytovatel .
 
     OPTIONAL { ?poskytovatel lsgov:má-název-orgánu-veřejné-moci ?názevPoskytovatele . }
 }
 GROUP BY ?poskytovatel ?názevPoskytovatele
 ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
-{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20OPTIONAL%20%7B%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%20%7D%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20a%20dcat%3ADataset%20%3B%0A%20%20%20%20%20%20%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20OPTIONAL%20%7B%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%20%7D%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 Nyní máme ale ve výsledku jednoho poskytovatele bez názvu.
 Název má ve znalostním grafu Národního katalogu otevřených dat uveden, ale ne jako hodnotu vlastnosti `lsgov:má-název-orgánu-veřejné-moci`, protože není orgánem veřejné moci a není tak reprezentován ve znalostním grafu Registru práv a povinností.
@@ -536,12 +544,14 @@ Prozkoumáním znalostního grafu zjistíme, že má název uveden jako hodnotu 
 Zkusme tedy rozšířit SPARQL dotaz o grafový vzor pro tuto vlastnost.
 
 ~~~~~~
-PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dcat:  <http://www.w3.org/ns/dcat#>
+PREFIX dct:   <http://purl.org/dc/terms/>
 PREFIX lsgov: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>
 
 SELECT DISTINCT ?poskytovatel ?názevPoskytovatele (COUNT(?datováSada) AS ?početDatovýchSad)
 WHERE {
-    ?datováSada dct:publisher ?poskytovatel .
+    ?datováSada a dcat:Dataset ;
+       dct:publisher ?poskytovatel .
 
     OPTIONAL { ?poskytovatel lsgov:má-název-orgánu-veřejné-moci ?názevPoskytovatele . }
 
@@ -550,7 +560,7 @@ WHERE {
 GROUP BY ?poskytovatel ?názevPoskytovatele
 ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
-{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20OPTIONAL%20%7B%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%20%7D%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20a%20dcat%3ADataset%3B%0A%20%20%20%20%20%20%20%20%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20OPTIONAL%20%7B%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%20%7D%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
 
 ## Dotazy na strukturu znalostního grafu
 

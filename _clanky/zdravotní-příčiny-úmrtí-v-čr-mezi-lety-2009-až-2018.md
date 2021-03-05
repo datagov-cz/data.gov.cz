@@ -49,9 +49,9 @@ Zpracování dat v nástroji [Power BI][powerbi] proto může sloužit pro vizua
 
 [NKOD]: https://data.gov.cz/ "Národní katalog otevřených dat"
 [powerbi]: https://powerbi.microsoft.com/en-us/ "Power BI"
-[data]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-130143 "Datové sady"
+[data]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-130143 "Datové sady"
 [googlesheets]: https://www.google.com/sheets/about/ "Google Sheets"
 [youtube]: https://www.youtube.com/watch?v=AGrl-H87pRU "Návod na Youtube"
 [dashboard]: https://app.powerbi.com/view?r=eyJrIjoiMzY2NTRjNjYtYzIyZC00OGFlLTgwMTgtNzY2ZGJiYzY2MjI3IiwidCI6ImI4MDRlNTE5LTFjYzYtNDk3ZC1hOTVmLWUwMDIwNGMwMzhlZSIsImMiOjh9 "Dasbhboard Power Bi"
-[data2]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-130140 "Data Naděje dožití v okresech ČR"
-[data3]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-260017 "Data Práceneschopnost"
+[data2]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-130140 "Data Naděje dožití v okresech ČR"
+[data3]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-260017 "Data Práceneschopnost"

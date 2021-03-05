@@ -111,7 +111,7 @@ Obdobně lze vyzualizovat nejrůznější hlasování: z jiných parlamentů, z
 [link_psp_hlasovani]: http://www.psp.cz/sqw/hlasy.sqw?g=71631&l=cz "Hlasování v PSP"
 [link_guardian]: https://www.theguardian.com/politics/ng-interactive/2019/mar/12/how-did-your-mp-vote-in-the-march-brexit-votes "Guardian - Brexit votes"
 [link_ofn_hlasovani]: https://ofn.gov.cz/hlasování/draft/ "Otevřená formální norma Hlasování"
-[link_nkod_hlasovani]: https://data.gov.cz/datov%C3%A9-sady?dotaz=Hlasov%C3%A1n%C3%AD%20zastupitelstva "Otevřená data z hlasování z Národního katalogu otevřených dat"
+[link_nkod_hlasovani]: https://data.gov.cz/datové-sady?dotaz=Hlasov%C3%A1n%C3%AD%20zastupitelstva "Otevřená data z hlasování z Národního katalogu otevřených dat"
 [link_psp_opendata]: http://www.psp.cz/sqw/hp.sqw?k=1300 "Hlasování a otevřená data ze Sněmovny"
 [link_barvy]: https://github.com/michalskop/political_parties/blob/master/cz/parties.csv "Barvy pro politické strany"
 [link_obce]: https://hlasovali.cz "Některá starší hlasování z obcí"

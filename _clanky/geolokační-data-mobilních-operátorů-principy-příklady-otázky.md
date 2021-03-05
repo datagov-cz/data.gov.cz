@@ -85,7 +85,7 @@ V této ukázce budou vizualizovány základní přepravní proudy ve městě Br
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/4.VYSLEDEK_PROUDY.png" description="Nejintenzivnější přepravní vazby mezi KÚ v Brně" %}
 
-Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora][Dataset] za průměrnou středu. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna, můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`) i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level` a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v Jihomoravském kraji, 4=kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN` v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
+Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora][Dataset] za typické pondělí. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna, můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`) i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level` a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v Jihomoravském kraji, 4=kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN` v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
 
 {% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/5.STRUKTURA.png" description="Struktura dat" %}
 
@@ -139,5 +139,5 @@ Geolokační data se postupně začleňují do rozvojových koncepcí veřejné 
 [Carto]: https://carto.com/ "Carto"
 [GitLab]: https://bitbucket.org/blue4world/brno_data_operatoru/src/master "Gitlab projekt"
 [QGIS]: https://qgis.org "QGIS"
-[Dataset]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2Fhttps---kod.brno.cz-api-action-package_show-id-pohyb-obyvatel "Podklad pro vizualizaci"
+[Dataset]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F44992785%2F855242099%2Fc92a733cdca6b47f3ad5061c3f326a4b "Podklad pro vizualizaci"
 [ČÚZK]: https://www.cuzk.cz/ "Český úřad zeměměřičský a katastrální"

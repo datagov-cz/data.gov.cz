@@ -541,26 +541,78 @@ ORDER BY ?početDatovýchSad
 Nyní máme ale ve výsledku jednoho poskytovatele bez názvu.
 Název má ve znalostním grafu Národního katalogu otevřených dat uveden, ale ne jako hodnotu vlastnosti `lsgov:má-název-orgánu-veřejné-moci`, protože není orgánem veřejné moci a není tak reprezentován ve znalostním grafu Registru práv a povinností.
 Prozkoumáním znalostního grafu zjistíme, že má název uveden jako hodnotu vlastnosti `foaf:name`.
-Zkusme tedy rozšířit SPARQL dotaz o grafový vzor pro tuto vlastnost.
+Tuto vlastnost mají ve znalostním grafu Národního katalogu otevřených dat všichni poskytovatelé dat.
+Zkusme tedy změnit SPARQL dotaz na tuto vlastnost.
+
+Je zde ale drobná technická komplikace.
+Úložiště RDF trojic znalostního grafu Národního katalogu otevřených dat je rozčleněno do tzv. [pojmenovaných grafů](https://www.w3.org/TR/sparql11-query/#specifyingDataset).
+Zjednodušeně řečeno to znamená, že trojice tvořící znalostní graf Národního katalogu otevřených dat jsou logicky rozděleny do množin, z nichž každá tvoří samostatný logický graf, který je pojmenovaný a identifikovaný pomocí IRI.
+Konkrétně v našem případě je vytvořen pojmenovaný graf pro každou datovou sadu katalogizovanou v Národním katalogu otevřených dat.
+Je to tak totiž vyžadováno [Evropským datovým portálem](https://www.europeandataportal.eu), který používá SPARQL endpoint Národního katalogu otevřených dat pro harvestaci katalogizačních záznamů.
+Ten také vyžaduje, aby název poskytovatele datové sady byl uveden pomocí vlastnosti `foaf:name` přímo jako trojice ve znalostním grafu této datové sady.
+V Národním katalogu otevřených dat to pak znamená, že název poskytovatele je pomocí vlastnosti `foaf:name` uveden tolikrát, kolik publikuje datových sad.
+
+Uvažujme následující grafový vzor:
+
+~~~~~~
+?datováSada a dcat:Dataset ;
+   dct:publisher ?poskytovatel .
+
+?poskytovatel foaf:name ?názevPoskytovatele .
+~~~~~~~~~~~~
+
+Co znamená vzhledem k výše uvedenému?
+Že při jeho vyhodnocování chceme dvojice (datová sada, poskytovatel) a k poskytovateli všechna opakování hodnoty jeho vlastnosti `foaf:name`.
+V Národním katalogu je jako poskytovatel Český úřad zeměměřičský a katastrální s řádově 100.000 datových sad.
+Pro každou z nich je ve znalostním grafu 1 pojmenovaný graf s názvem úřadu.
+Výše uvedený grafový vzor tak vede na 100.000 datových sad a ke každé je vybrán 100.000x název úřadu.
+Slovy matematika, tvoříme kartézský součin dvou množin - množiny datových sad poskytovatele a množiny opakování názvu poskytovatele v každé datové sadě.
+To vede na 10.000.000.000 řádků výsledku.
+Takový dotaz by se možná vyhodnotil, ale určitě za dobu delší než je stanovený time out pro vyhodnocování dotazů na zcela veřejném SPARQL endpointu Národního katalogu otevřených dat.
+K dotazu musíme přistoupit chytřeji.
+Musíme omezit kartézský součin.
+V tomto případě to lze jednoduše s využitím klauzule `GRAPH` uvnitř specifikace grafového vzoru dotazu.
+Klauzule má následující tvar.
+
+~~~~~~
+GRAPH <IRI-grafu> {
+    *grafový vzor*
+}
+~~~~~~~~~~~~
+
+Definuje, že grafový vzor se má vyhodnocovat pouze uvnitř pojmenovaného grafu s daným IRI.
+Pokud nechceme specifikovat vyhodnocení uvnitř konkrétního grafu ale uvnitř nějakého (avšak jednoho) grafu, použijeme místo konkrétního IRI proměnnou.
+
+~~~~~~
+GRAPH ?g {
+    *grafový vzor*
+}
+~~~~~~~~~~~~
+
+Zkusme získaný poznatek aplikovat.
 
 ~~~~~~
 PREFIX dcat:  <http://www.w3.org/ns/dcat#>
 PREFIX dct:   <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX lsgov: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>
 
 SELECT DISTINCT ?poskytovatel ?názevPoskytovatele (COUNT(?datováSada) AS ?početDatovýchSad)
 WHERE {
-    ?datováSada a dcat:Dataset ;
-       dct:publisher ?poskytovatel .
+    GRAPH ?g {
+      ?datováSada a dcat:Dataset ;
+         dct:publisher ?poskytovatel .
 
-    OPTIONAL { ?poskytovatel lsgov:má-název-orgánu-veřejné-moci ?názevPoskytovatele . }
-
-    OPTIONAL { ?poskytovatel foaf:name ?názevPoskytovatele . }
+      ?poskytovatel foaf:name ?názevPoskytovatele .
+    }
 }
 GROUP BY ?poskytovatel ?názevPoskytovatele
 ORDER BY ?početDatovýchSad
 ~~~~~~~~~~~~
-{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20%3Fdatov%C3%A1Sada%20a%20dcat%3ADataset%3B%0A%20%20%20%20%20%20%20%20%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20OPTIONAL%20%7B%20%3Fposkytovatel%20lsgov%3Am%C3%A1-n%C3%A1zev-org%C3%A1nu-ve%C5%99ejn%C3%A9-moci%20%3Fn%C3%A1zevPoskytovatele%20.%20%7D%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query%201&headers=%7B%7D&contentTypeConstruct=text%2Fturtle%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+{% raw %}[(zkusit dotaz)](https://yasgui.triply.cc/#query=PREFIX%20dcat%3A%20%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20dct%3A%20%20%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20foaf%3A%20%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0APREFIX%20lsgov%3A%20%3Chttps%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%20(COUNT(%3Fdatov%C3%A1Sada)%20AS%20%3Fpo%C4%8DetDatov%C3%BDchSad)%0AWHERE%20%7B%0A%20%20%20%20GRAPH%20%3Fg%20%7B%0A%20%20%20%20%20%20%3Fdatov%C3%A1Sada%20a%20dcat%3ADataset%20%3B%0A%20%20%20%20%20%20%20%20%20dct%3Apublisher%20%3Fposkytovatel%20.%0A%0A%20%20%20%20%20%20%3Fposkytovatel%20foaf%3Aname%20%3Fn%C3%A1zevPoskytovatele%20.%0A%20%20%20%20%7D%0A%7D%0AGROUP%20BY%20%3Fposkytovatel%20%3Fn%C3%A1zevPoskytovatele%0AORDER%20BY%20%3Fpo%C4%8DetDatov%C3%BDchSad&endpoint=https%3A%2F%2Fdata.gov.cz%2Fsparql&requestMethod=POST&tabTitle=Query&headers=%7B%7D&contentTypeConstruct=application%2Fn-triples%2C*%2F*%3Bq%3D0.9&contentTypeSelect=application%2Fsparql-results%2Bjson%2C*%2F*%3Bq%3D0.9&outputFormat=table){% endraw %}
+
+Dotaz je vyhodnocen tak, že hledáme datové sady a jejich poskytovatele s jejich názvem, ale vždy celé pouze v rámci jednoho pojmenovaného grafu.
+Tím se vyhneme kartézskému součinu mezi datovými sadami a opakováním názvů poskytovatelů pro jednotlivé datové sady.
 
 ## Dotazy na strukturu znalostního grafu
 

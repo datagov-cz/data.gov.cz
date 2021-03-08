@@ -12,7 +12,7 @@ date: 2021-03-08 01:12:23
 Dokončení série článků o využití otevřených dat Zeměměřického úřadu se zabývá využitím dat upravených v předchozí části v aplikaci pro povolování dočasných staveb v okolí letiště. Také rozebírá možná rozšíření a problémy řešení i další využití.
 
 <!--more-->
-## Úvod a Shrnutí
+## Úvod a shrnutí
 V [prvních][MiMe-clanek-1] [dvou][MiMe-clanek-2] částech článku bylo popsáno zjednodušení procesu povolování dočasných staveb v prostoru ochranných pásem Letiště Václava Havla v Praze. Na základě použití [datové sady Data50][nkod_data50_link] a pravidel popsaných v [Leteckém předpisu L14 - letiště][link_l14] byl vytvořen digitální model reliéfu v okolí letiště a model jeho ochranných pásem. V poslední části se podíváme na to, co je vlastně výsledkem, a jak tyto výsledky využít na letišti i jinde.
 
 

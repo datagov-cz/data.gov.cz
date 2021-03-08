@@ -97,14 +97,14 @@ Pro výpočet DEM použijeme modul `r.surf.contour`, jehož použití je popsán
 Výsledná rastrová vrstva bude vstupem do modulu `r.surf.contour`. Před spuštěním modulu se ujistěte, že máte nastavenou masku a region, včetně požadovaného rozlišení.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/v.surf.contour.webp"
+   url="../attachments/články/využití-data-50/r.surf.contour.webp"
    description="Výpočet DEM z vrstevnic."
 %}
 
 Připravte se na to, že výpočet může trvat i několik desítek minut. Výstup si poté můžete zobrazit v kanvasu pomocí tlačítka `View output`.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/v.surf.contour-output.webp"
+   url="../attachments/články/využití-data-50/r.surf.contour-output.webp"
    description="Výsledný DEM."
 %}
 

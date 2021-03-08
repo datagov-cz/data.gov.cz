@@ -5,8 +5,8 @@ title: Využití otevřených dat Zeměměřického úřadu pro povolování do�
 ref: data50-3
 lang: cs
 image: ../attachments/články/využití-data-50/screen_vysledku.webp
-author: Michal Med
-date: 2021-02-16 17:18:19
+author: michal_med
+date: 2021-03-08 01:12:23
 ---
 
 Dokončení série článků o využití otevřených dat Zeměměřického úřadu se zabývá využitím dat upravených v předchozí části v aplikaci pro povolování dočasných staveb v okolí letiště. Také rozebírá možná rozšíření a problémy řešení i další využití.

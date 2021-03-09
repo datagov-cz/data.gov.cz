@@ -12,20 +12,20 @@ Pokračování série článků o využití otevřených dat Zeměměřického �
 
 <!--more-->
 ## Shrnutí a úvod
-V [první části článku][MiMe-clanek-1] byl identifikován problém složitých postupů povolování dočasných staveb v prostoru ochranných pásem Letiště Václava Havla v Praze. Proces by mělo zjednodušit vytvřoření modelu ochranných pásem a jeho porovnání s digitální mapou reliéfu. Při zachování otevřených dat by to mělo být možné s použitím datové sady Data50. Model ochranných pásem je možné vymodelovat podle pravidel popsaných v [Leteckém předpisu L14 - letiště][link_l14]. V této části článku se podíváme na to, jak data zpracovat.
+V [první části článku][MiMe-clanek-1] byl identifikován problém složitých postupů povolování dočasných staveb v prostoru ochranných pásem Letiště Václava Havla v Praze. Proces by mělo zjednodušit vytvoření modelu ochranných pásem a jeho porovnání s digitální mapou reliéfu. Pro vytvoření modelu je možné použít otevřená data, konkrétně datovou sadu [Data50][nkod_data50_link]. Model ochranných pásem je možné vymodelovat podle pravidel popsaných v [Leteckém předpisu L14 - letiště][link_l14]. V této části článku se podíváme na to, jak data zpracovat.
 
 ## Postup zpracování
 Pro porovnání nadmořské výšky plánované stavby a ochranného pásma je potřeba vytvořit rastrové vrstvy s digitálním modelem reliéfu a s ochrannými pásmy letiště. Pro ochranná pásma je nejprve potřeba vytvořit podkladová vektorová data. Na to byl použit [GNU Octave][octave], skriptovací jazyk podobný Matlabu. Digitální model reliéfu byl vytvořen v programu [QGIS][qgis] s využitím pluginu pro podporu knihoven z programu [Grass][grass] z vrstevnic datové sady Data50.
 
 ### Tvorba ochranných pásem
-Ochranná pásma jsou v Leteckém předpisu L14 rozdělena na několik druhů. Pro naše účely jsou zásadní OP se zákazem staveb a OP s výškovým omezením staveb. Předpis definuje ochranná pásma relativním vztahem k ose dráhy v závislosti na kódovém číslu letiště (řekněme, že kódové číslo označuje velikost letiště). Ochranné pásmo se zákazem staveb je pro dráhu definováno následovně:
+Ochranná pásma (OP) jsou v Leteckém předpisu L14 rozdělena na několik druhů. Pro naše účely jsou zásadní OP se zákazem staveb a OP s výškovým omezením staveb. Předpis definuje ochranná pásma relativním vztahem k ose dráhy v závislosti na kódovém číslu letiště (řekněme, že kódové číslo označuje velikost letiště). Ochranné pásmo se zákazem staveb je pro dráhu definováno následovně:
 
 {% include image.html
    url="../attachments/články/využití-data-50/OP_zakaz_staveb.webp"
    description="Definice ochranného pásma se zákazem staveb dle Leteckého předpisu L14."
 %}
 
-V tomto pásmu je úplný zákaz výstavby. V ochranných pásmech s výškovým omezením staveb nesmí nové stavby přesahovat definovaná ochranná pásma. V pásmech tedy nezáleží jen na poloze, ale i na výšce. Ochranných pásem s výškovým omezením staveb je několik. Jejich výška se obecně zvyškuje se vzdáleností od dráhy, ve směru vzletou a přistání výrazně pomaleji.
+V tomto pásmu je úplný zákaz výstavby. V ochranných pásmech s výškovým omezením staveb nesmí nové stavby přesahovat definovaná ochranná pásma. V pásmech tedy nezáleží jen na poloze, ale i na výšce. Ochranných pásem s výškovým omezením staveb je několik. Jejich výška se obecně zvyšuje se vzdáleností od dráhy, ve směru vzletu a přistání výrazně pomaleji.
 
 {% include image.html
    url="../attachments/články/využití-data-50/OP_vyskove_omezeni_staveb.webp"
@@ -39,7 +39,7 @@ Každé OP s výškovým omezením staveb je opět definováno relativně vůči
    description="Popis OP vzletových a přibližovacích prostorů podle Leteckého předpisu L14."
 %}
 
-Letecký předpis L14 platí obecně pro všechna letiště. Každé letiště má pak definovány souřadnice koncové body osy dráhy (v souřadnicovém systému S-JTSK) a kódové číslo letiště. Letiště Václava Havla má dráhy dvě a každá má vlastní koncové body osy dráhy, označené RWY06-RWY24 a RWY12-RWY30.
+Letecký předpis L14 platí obecně pro všechna letiště. Každé letiště má pak definovány souřadnice koncových bodů osy dráhy (v souřadnicovém systému S-JTSK) a kódové číslo letiště. Letiště Václava Havla má dráhy dvě a každá má vlastní koncové body osy dráhy, označené RWY06-RWY24 a RWY12-RWY30.
 
 Definice drah z Leteckého předpisu lze převést do matematických rovnic. Jedinými proměnnými jsou souřadnice koncových bodů osy dráhy a kódové číslo letiště. Matematické rovnice byly zapsány v jazyce Octave. Výstupem ze skriptu jsou soubory ve formátu CSV obsahující geometrii polygonů vyjádřených pomocí Well-Known Text (WKT) zápisu i s jejich nadmořskou výškou (jako třetí souřadnice každého lomového bodu). Jeden z lichoběžníkových polygonů Letiště Václava Havla je v CSV vyjádřen následovně:
 
@@ -55,7 +55,7 @@ Cílem dalšího kroku je připravit pro tzv. rasterizaci vektorových dat. V pr
 | 2 | LINESTRING(-766251.293902 -1040740.167983,-765252.177851 -1044003.131394) | 516.400000 |
 | 3 | LINESTRING(-771876.837640 -1041580.285370,-770383.653181 -1046456.802217) | 516.400000 |
 
-V Grass GIS (a prostřednictvím pluginu i v QGIS) je možné převádět vrstevinice do Digital Elevation Model (DEM) mnoha způsoby. Řada z nich je detailně popsána v [uživatelském návodu Grass GIS](https://grasswiki.osgeo.org/wiki/Contour_lines_to_DEM), včetně vhodnosti jejich použití na různá vstupní data. Tento způsob není vhodný jen pro rasterizaci ochranných pásem, ale - jak pozorný čtenář již tuší - i pro tvorbu DEM z vrstevnic [Data50][nkod_data50_link].
+V Grass GIS (a prostřednictvím pluginu i v QGIS) je možné převádět vrstevnice do Digital Elevation Model (DEM) mnoha způsoby. Řada z nich je detailně popsána v [uživatelském návodu Grass GIS](https://grasswiki.osgeo.org/wiki/Contour_lines_to_DEM), včetně vhodnosti jejich použití na různá vstupní data. Tento způsob není vhodný jen pro rasterizaci ochranných pásem, ale - jak pozorný čtenář již tuší - i pro tvorbu DEM z vrstevnic [Data50][nkod_data50_link].
 
 ### Postupy rasterizace vrstevnic v QGIS
 Následující postup platí stejně pro rasterizaci ochranných pásem i pro tvorbu DEM z vrstevnic datové sady Data50. Vstupem jsou vektorová data v libovolném formátu, který je možné načíst do QGISu. Ochranná pásma jsou v CSV, vrstevnice v shapefile. Data jsou zpracována v programu QGIS s pluginem Grass. Při spuštění Grass pluginu je potřeba nastavit si tzv. LOCATION a MAPSET (jak se v Grass říká projektům a jeho adresářům).
@@ -81,7 +81,7 @@ K načtení vektorových dat z QGIS do Grass pluginu slouží modul `v.in.ogr.qg
 
 #### 1. Nastavení regionu a masky
 
-Grass plugin, stejně jako samotný Grass Gis, operuje s tzv regionem. Ten je definován rozsahem souřadnic v definovaném souřadnicovém systému (v našem případě EPSG:5514 S-JTSK / East North) a s daným rozlišením. Rozlišení se týká rastrových dat a je pro nás důležité, protože definuje velikost pixelu ve výsledném DEM. Pro Letiště Václava Havla pracujeme s rozlišením 10, tedy 10 metrů jako délka hrany jednoho pixelu. Region je možné nastavit v záložce Region Grass pluginu.
+Grass plugin, stejně jako samotný Grass Gis, operuje s tzv. regionem. Ten je definován rozsahem souřadnic v definovaném souřadnicovém systému (v našem případě EPSG:5514 S-JTSK / East North) a s daným rozlišením. Rozlišení se týká rastrových dat a je pro nás důležité, protože definuje velikost pixelu ve výsledném DEM. Pro Letiště Václava Havla pracujeme s rozlišením 10, tedy 10 metrů jako délka hrany jednoho pixelu. Region je možné nastavit v záložce Region Grass pluginu.
 
 Dalším konstruktem Grassu, který se nám bude hodit je maska. Maska se nastavuje pomocí modulu `r.mask` (jedná se tedy o rastr) a definuje výřez, ve kterém budou probíhat další výpočty. Tento krok je velice důležitý vzhledem k rychlosti celého výpočtu. Interpolace poměrně velkého území na základě vrstevnic s rozlišením 10 metrů je velice nákladná operace a pomocí masky je možné výrazně omezit rozsah dat, pro která bude výpočet probíhat, a tím i výrazně zkrátit dobu výpočtu. Jako masku pro ochranná pásma jsme použili polygony těchto pásem (přece jenom k něčemu jsou). Při výpočtu DEM z vrstevnic Data50 jsme jako masku použili buffer o poloměru 15 kilometrů od obou drah Letiště Václava Havla. Buffer jde snadno udělat v QGISu (`Vector -> Geoprocessing Tools -> Buffer`) i v Grass GIS (`v.buffer` a následnou rasterizací).
 

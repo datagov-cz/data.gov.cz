@@ -58,14 +58,14 @@
 		color: #ffffff;
 	}
 }
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-next {
   transition: .6s opacity ease;
 }
 /* Disable transitions for if reduced motion is enabled: */
 @media (prefers-reduced-motion:reduce) {
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-next {
     transition: none;
   }
 } 
@@ -138,7 +138,6 @@ a.btn.btn-primary:hover, button.btn.btn-primary:hover, a.dropdown-item:hover {
     .jumbotron {
         padding-top: 0;
         padding-bottom: 0;
-
     }
 
     .jumbotron .container {

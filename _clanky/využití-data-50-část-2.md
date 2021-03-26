@@ -130,6 +130,7 @@ V poslední části článku se podíváme na to, co je vlastně výsledkem cel�
 - [Data50][metadata_data50]
 - [OpenStreetMap][openstreetmap]
 - [WMS služba INSPIRE Parcely][wms-cp]
+- [chybný oddělovač údajů][chybný_oddělovač_údajů_link]
 
 [MiMe-clanek-1]: https://data.gov.cz/články/využití-data-50-část-1 "První část článku o využití otevřených dat Zeměměřického úřadu"
 [link_l14]: https://aim.rlp.cz/predpisy/predpisy/dokumenty/L/L-14/data/print/L-14_cely.pdf "Letecký předpis L14 - Letiště"

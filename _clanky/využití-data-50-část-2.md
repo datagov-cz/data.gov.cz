@@ -6,7 +6,7 @@ ref: data50-2
 lang: cs
 image: ../attachments/články/využití-data-50/r.surf.contour-output.webp
 author: michal_med
-date: 2021-03-08 01:12:23
+date: 2021-03-25 01:12:23
 ---
 Pokračování série článků o využití otevřených dat Zeměměřického úřadu se zabývá postupem zpracování dat pro tvorbu modelu ochranných pásem a rasterizaci vrstevnic za účelem tvorby digitálního modelu reliéfu.
 
@@ -60,8 +60,8 @@ V Grass GIS (a prostřednictvím pluginu i v QGIS) je možné převádět vrstev
 ### Postupy rasterizace vrstevnic v QGIS
 Následující postup platí stejně pro rasterizaci ochranných pásem i pro tvorbu DEM z vrstevnic datové sady Data50. Vstupem jsou vektorová data v libovolném formátu, který je možné načíst do QGISu. Ochranná pásma jsou v CSV, vrstevnice v shapefile. Data jsou zpracována v programu QGIS s pluginem Grass. Při spuštění Grass pluginu je potřeba nastavit si tzv. LOCATION a MAPSET (jak se v Grass říká projektům a jeho adresářům).
 
-#### 0. Načtení dat do QGISu a Grass pluginu
-Z Data source manager (`Layer -> Data Source Manager`, nebo `Ctrl + L`) lze načíst do QGIS všechny typy vektorovžch i rastrových dat. Pro vrstevnice v shapefile stačí načítat přes `Vector`, CSV soubory s vrstevnicemi a polygony ochranných pásem je potřeba načíst přes `Delimited text`. V případě CSV je potřeba vybrat souřadnicový referenční systém (EPSG:5514 - S-JTSK / Krovak East North) a zvolit oddělovač, pokud je jiný než čárka `,`. To v našem případě je, je to středník `;`, protože čárkou jsou odděleny dvojice (nebo trojice) souřadnic. Data budou načtena stisknutím tlačítka `Add`.
+#### Načtení dat do QGISu a Grass pluginu
+Z Data source manager (`Layer -> Data Source Manager`, nebo `Ctrl + L`) lze načíst do QGIS všechny typy vektorových i rastrových dat. Pro vrstevnice v shapefile stačí načítat přes `Vector`, CSV soubory s vrstevnicemi a polygony ochranných pásem je potřeba načíst přes `Delimited text`. V případě CSV je potřeba vybrat souřadnicový referenční systém (EPSG:5514 - S-JTSK / Krovak East North) a zvolit oddělovač, pokud je jiný než čárka `,`. To v našem případě je, je to středník `;`, protože čárkou jsou odděleny dvojice (nebo trojice) souřadnic (pozornému čtenáři připomínáme, že při práci s jiným typem dat, než jsou geo data, je potřeba se při přípravě dat k publikaci používání středníku `;` jako oddělovače vyhnout, viz [chybný oddělovač údajů][chybný_oddělovač_údajů_link]. Data budou načtena stisknutím tlačítka `Add`.
 
 {% include image.html
    url="../attachments/články/využití-data-50/add_csv.webp"
@@ -131,11 +131,11 @@ V poslední části článku se podíváme na to, co je vlastně výsledkem cel�
 - [OpenStreetMap][openstreetmap]
 - [WMS služba INSPIRE Parcely][wms-cp]
 
-[MiMe-clanek-1]: ./využití-data-50-část-1.md "První část článku o využití otevřených dat Zeměměřického úřadu"
+[MiMe-clanek-1]: https://data.gov.cz/články/využití-data-50-část-1 "První část článku o využití otevřených dat Zeměměřického úřadu"
 [link_l14]: https://aim.rlp.cz/predpisy/predpisy/dokumenty/L/L-14/data/print/L-14_cely.pdf "Letecký předpis L14 - Letiště"
 [link_dmr]: https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=vyskopis&metadataID=CZ-CUZK-DMR5G-V&head_tab=sekce-02-gp&menu=302 "Digitální model reliéfu 5. generace"
 [ceník_ZÚ_link]: https://geoportal.cuzk.cz/Dokumenty/Cenik.pdf "Ceník produktů Zeměměřického úřadu"
-[nkod_data50_link]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F60458500%2F671714680 "Záznam datové sady Data50 v Národním katalogu otevřených dat"
+[nkod_data50_link]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F60458500%2F671714680 "Záznam datové sady Data50 v Národním katalogu otevřených dat"                    
 [nkod_data200_link]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F60458500%2F671715799 "Záznam datové sady Data200 v Národním katalogu otevřených dat"
 [shapefile_spec]: https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf "Technický popis formátu ESRI Shapefile"
 [metadata_data50]: https://geoportal.cuzk.cz/getHTML.aspx?mode=Metadata&fnc=getRecord&identifierid=CZ-CUZK-DATA50-RELIEF-V "Metadata vrstvy Reliéf datové sady Data50"
@@ -145,3 +145,4 @@ V poslední části článku se podíváme na to, co je vlastně výsledkem cel�
 [react-leaflet]: https://react-leaflet.js.org/ "React komponenty pro mapy v Leafletu"
 [openstreetmap]: http://openstreetmap.org "Otevřená databáze prostorových dat"
 [wms-cp]: https://geoportal.cuzk.cz/Default.aspx?lng=CZ&mode=TextMeta&side=INSPIRE_dSady&metadataID=CZ-00025712-CUZK_WMS-MD_CP&metadataXSL=metadata.sluzba&menu=416&head_tab=sekce-04-gp "Webová služba poskytující obrazová data Parcel harmonizovaná a poskytovaná dle směrnice INSPIRE"
+[chybný_oddělovač_údajů_link]: https://opendata.gov.cz/standardy:csv:chybn%C3%BD-odd%C4%9Blova%C4%8D

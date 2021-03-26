@@ -58,7 +58,7 @@ Zubaté okraje pásem jsou způsobeny zvoleným rozlišením a maskou, kdy někt
 
 ## Další využití
 
-Aplikace tohoto typu má řadu dalších způsobů, jak by se dala využít. Mezi nápady, které byly diskutovány s případnými zájemci, patří:
+Aplikace tohoto typu má řadu dalších způsobů, jak by se dala využít, např.:
 
  * měření výšky budov v okolí dalších letišť,
  * postupné zavedení dalších ochranných pásem a použití pro plánování letových drah dronů,

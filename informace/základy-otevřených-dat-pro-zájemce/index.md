@@ -51,7 +51,7 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
   * [Mapy bez bariér](https://mapybezbarier.cz/cs)
   * [Hlídač smluv](https://www.hlidacsmluv.cz/)
   * [Podej to](https://podejto.cz/)
-  * [Velká mapa malého podnikání](https://samizdat.cz/rozjezdy/)
+  * [Velká mapa malého podnikání](https://interaktivni.rozhlas.cz/podnikani-mapa/)
 
 ## Přínos otevřených dat
   * lepší služby pro občany - příležitost pro vznik nových užitečných aplikací

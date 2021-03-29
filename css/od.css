@@ -57,6 +57,9 @@
 		background-color: #3bb5dc;
 		color: #ffffff;
 	}
+	.card {
+		border-color: var(--color-base);
+	}
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-next {

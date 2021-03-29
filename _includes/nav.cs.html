@@ -7,9 +7,15 @@
 
 	  <div class="collapse navbar-collapse" id="collapsingNavbar">
 		<ul class="navbar-nav ml-auto w-100 justify-content-end">
+			{% if page.ref == 'Education' %}
+			<li class="nav-item">
+				<span class="nav-link active">Vzdělávání</span>
+			</li>
+			{% else %}
 			<li class="nav-item">
 				<a class="nav-link" href="{{ "/vzdělávání" | relative_url}}">Vzdělávání</a>
 			</li>
+			{% endif %}
 			{% if page.ref == 'Articles' %}
 			<li class="nav-item">
 				<span class="nav-link active">Články</span>

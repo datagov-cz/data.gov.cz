@@ -63,7 +63,7 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
   * [Poskytovatelé v Národním katalogu otevřených dat](https://data.gov.cz/poskytovatelé)
 
 ## Je zájem o data spravovaná mojí organizací?
-Podívejte se na [seznam podnětuů na otevření dat](https://docs.google.com/spreadsheets/d/1vL_x1b9eTHgauo0XzJVXuEBI2aU1BHHZdl7AiUuXoyg), zda už někdo o vaše data neprojevil zájem.
+Podívejte se na [seznam podnětů na otevření dat](https://docs.google.com/spreadsheets/d/1vL_x1b9eTHgauo0XzJVXuEBI2aU1BHHZdl7AiUuXoyg), zda už někdo o vaše data neprojevil zájem.
 
 > **Otevřená data neexistují ve vzduchoprázdnu, jsou součástí [systému pro otevřené vládnutí](https://opendata.gov.cz/informace:kontext:start).**
 

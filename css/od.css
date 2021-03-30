@@ -123,7 +123,7 @@ a.btn.btn-primary, button.btn.btn-primary {
 
 a.btn.btn-primary:hover, button.btn.btn-primary:hover, a.dropdown-item:hover {
     background-color: var(--color-text-inverted);
-    border-color: var(--color-text-inverted);
+    border-color: var(--color-base);
     color: var(--color-text-accent-inverted);
 }
 

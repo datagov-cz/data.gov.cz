@@ -31,10 +31,6 @@
 		border-color: var(--color-text-accent-inverted) ;
 	}
 
-	.nav-link.active {
-		text-decoration: underline;
-	}
-	
 	hr {
 		border: 1px dotted var(--color-text-accent) ;
 	}

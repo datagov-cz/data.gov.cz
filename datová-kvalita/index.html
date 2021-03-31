@@ -1,0 +1,158 @@
+---
+layout: contained
+title: Datová kvalita (nejen) v oblasti otevřených dat
+ref: DataQuality
+lang: cs
+---
+
+<p>
+    Datová kvalita je obecně velmi široký pojem.
+    Vystihnout se však dá jako "připravenost dat k použití".
+    Nízká datová kvalita tedy představuje zásadní problém pro využívání potenciálu otevřených dat.
+</p>
+
+<p>
+    Za kvalitu svých dat i svých katalogizačních záznamů zodpovídají jednotliví poskytovatelé.
+    Ti tedy musí na kvalitu svých dat dbát, pravidelně ji sledovat a dělat kroky k nápravě zjištěných nedostatků.
+    Zde nabízíme přehled nástrojů, kterými poskytovatele ve zlepšování kvality jejich dat podporujeme.
+</p>
+
+<hr/>
+
+<h2 class="text-center">Nástroje pro zlepšení kvality otevřených dat</h2>
+
+<div class="row">
+    <div class="col-md-4 d-flex mt-3">
+        <div class="card">
+            <h3 class="card-header h5">Statistiky NKOD</h3>
+            <div class="card-body">                
+                <p class="text-center">
+                    <i class="bi-speedometer2" style="font-size: 64pt"></i>
+                </p>
+                <p class="card-text">
+                    Denně měříme dostupnost zdrojů registrovaných v Národním katalogu otevřených dat spolu se statistikami kvality jejich metadatových záznamů.
+                    Mají právě vaše datové sady vyplněné všechny povinné položky?
+                    Jsou vámi registrované soubory a služby dostupné?
+                </p>
+                <a href="https://opendata.gov.cz/statistika:start" class="btn btn-secondary stretched-link">Statistiky NKOD</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex mt-3">
+        <div class="card">
+            <h3 class="card-header h5">Příklady špatné praxe</h3>
+            <div class="card-body">
+                <p class="text-center">
+                    <i class="bi-list-check" style="font-size: 64pt"></i>
+                </p>
+                <p class="card-text">
+                    Sbíráme příklady špatné praxe v otevírání dat a postupy jejich nápravy.
+                    Všem tak pomáháme se učit z chyb ostatních.
+                    Také ve formátu CSV oddělujete hodnoty středníkem?
+                    Dělíte distribuce datové sady dle časového pokrytí nebo dle tématu?
+                </p>
+                <a href="https://opendata.gov.cz/špatná-praxe:start" class="btn btn-secondary stretched-link">Špatná praxe</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex mt-3">
+        <div class="card">
+            <h3 class="card-header h5">Otevřené formální normy</h3>
+            <div class="card-body">
+                <p class="text-center">
+                    <i class="bi-layout-text-window-reverse" style="font-size: 64pt"></i>
+                </p>
+                <p class="card-text">
+                    Tvoříme otevřené formální normy - standardy, jejichž dodržování přispívá ke zvyšování interoperability otevřených dat.
+                    Otevřené formální normy se týkají jak obecných oblastí, jako propojená data či geodata, tak i konkrétních datových sad jako turistické cíle či aktuality.
+                </p>
+                <a href="https://ofn.gov.cz" class="btn btn-secondary stretched-link">Otevřené formální normy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="text-center pt-5 pb-3">Ukazatele kvality v NKOD</h2>
+<p class="lead text-center">...aneb &quot;co mám dělat, aby to bylo zelený&quot;</p>
+
+<div class="row">
+    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
+        <div class="card">
+            <img src="/images/kvalita/nedostupný.webp" class="card-img-top" alt="Nedostupné URL">
+            <div class="card-body">                
+                <h3 class="cart-title">
+                    Nedostupné URL
+                </h3>
+                <p class="card-text">
+                    Toto indikuje problém s registrovaným URL, v tomto případě URL souboru ke stažení.
+                    Příčin může být několik, chybová zpráva je viditelná po kliknutí na ikonku.
+                    Typicky URL vede na neexistující zdroj, nebo je špatně nakonfigurován protokol HTTPS.
+                </p>
+                <a href="https://opendata.gov.cz/špatná-praxe:https" class="btn btn-secondary stretched-link">Konfigurace HTTPS</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
+        <div class="card">
+            <img src="/images/kvalita/cors.webp" class="card-img-top" alt="Nedostupné URL">
+            <div class="card-body">                
+                <h3 class="cart-title">
+                    Nedostupné CORS
+                </h3>
+                <p class="card-text">
+                    Tato ikona indikuje problém s technikou CORS.
+                    Bez její podpory nebudou moci aplikace běžící v prohlížeči se souborem pracovat.
+                    Typicky je třeba korektně implementovat HTTP metodu <code>OPTIONS</code>.
+                </p>
+                <a href="https://opendata.gov.cz/špatná-praxe:chybějící-cors" class="btn btn-secondary stretched-link">Technika CORS</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
+        <div class="card">
+            <img src="/images/kvalita/media-typ.webp" class="card-img-top" alt="Nedostupné URL">
+            <div class="card-body">                
+                <h3 class="cart-title">
+                    Chybný Media typ
+                </h3>
+                <p class="card-text">
+                    Tato chyba indikuje, že Media typ registrovaný v NKOD pro soubor ke stažení neodpovídá tomu, které v hlavičce <code>Content-Type</code> indikuje webový server.
+                    Toto znesnadňuje aplikační použití takových souborů.
+                </p>
+                <a href="https://opendata.gov.cz/špatná-praxe:http-content-type" class="btn btn-secondary stretched-link">Chybný Media typ</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
+        <div class="card">
+            <img src="/images/kvalita/podmínky-užití.webp" class="card-img-top" alt="Nedostupné URL">
+            <div class="card-body">                
+                <h3 class="cart-title">
+                    Chybějící podmínky užití
+                </h3>
+                <p class="card-text">
+                    Bez podmínek užití nejsou registrovaná data otevřená.
+                    Nedáváte tak uživatelům právní jistotu v tom, co mohou a co nemohou s daty dělat.
+                    Poskytujeme návod, jak podmínky užití stanovit.
+                </p>
+                <a href="https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti" class="btn btn-secondary stretched-link">Stanovení podmínek užití</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
+        <div class="card">
+            <img src="/images/kvalita/vlastní-licence.webp" class="card-img-top" alt="Nedostupné URL">
+            <div class="card-body">                
+                <h3 class="cart-title">
+                    Vlastní podmínky užití
+                </h3>
+                <p class="card-text">
+                    Národní katalog otevřených dat poskytuje předpřipravené podmínky užití pro různé případy, které mohou v otevřených datech nastat.
+                    Používat vlastní podmínky užití by tedy nemělo být třeba.
+                    Pokud použity jsou, typicky to znamená, že buď data ve skutečnosti nejsou otevřená, nebo byl špatně vyplněn katalogizační záznam.
+                </p>
+                <a href="https://opendata.gov.cz/špatná-praxe:vlastní-licenční-podmínky" class="btn btn-secondary stretched-link">Vlastní podmínky užití</a>
+            </div>
+        </div>
+    </div>
+</div>

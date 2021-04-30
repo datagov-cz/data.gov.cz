@@ -8,10 +8,10 @@ image: ../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/main.
 author: michal_škop
 date: 2021-03-27 07:00:00 +01:00
 ---
-Jak kvalitně, rychle a levně informovat občany nebo turisty? Díky otevřeným datům si lze usnadnit práci. Jak přesně to funguje, ukazuje ukázková aplikace pro vedení obcí na přípravu letáků o turistických cílech a sportovištích v obci.
+Jak kvalitně, rychle a levně informovat občany nebo turisty? Díky otevřeným datům si lze usnadnit práci. Jak přesně to funguje, předvádí ukázková aplikace pro vedení obcí na přípravu letáků o turistických cílech a sportovištích v obci.
 
 <!--more-->
-Jedním z problémů u obcí při otevírání dat je nedostatečná motivace jejich správců. Lidé ve vedení často nevidí přínos otevírání vlastních dat - mnohdy argumentují tím, že jim to přinese jen víc práce. Zároveň je pro ně leckdy obtížné rozlišit samotná otevřená data od aplikace, která s těmito daty pracuje.
+Jedním z problémů u obcí při otevírání dat je nedostatečná motivace jejich správců. Lidé ve vedení obcí často nevidí přínos otevírání vlastních dat - mnohdy argumentují tím, že jim to přinese jen víc práce. Zároveň je pro ně leckdy obtížné rozlišit samotná otevřená data od aplikace, která s těmito daty pracuje.
 
 Na pomoc s překonáváním těchto problémů vznikla ukázková aplikace, která demonstruje dopad otevření dat přímo do off-line prostředí, do „reálného světa“.
 
@@ -19,7 +19,7 @@ Mnoho obcí či regionů si nechává tisknout informačně-propagační letáky
 
 Pokud budou obce tato data připravovat podle určitých společných pravidel, tzv. [otevřených formálních norem][link_klimek], a publikovat je v [Národním katalogu otevřených dat][link_nkod], mohou být tato data jednoduše využita pro nejrůznější aplikace a webové služby. Naše aplikace slouží jako ukázka praktického využití správně publikovaných dat – zatím v testovacím prostředí.
 
-Aplikace ukazuje princip, kdy se dokonce jedno obecné řešení může použít v mnoha obcích. Stačí, když obce dodají data – ve standardním formátu a standardně je zaregistrují v Národním katalogu otevřených dat. A v tomto případě si poté mohou vygenerovat leták ve formátu pdf pro tisk (v několika barevných variantách pro ukázku): s turistickými cíly, s přehledem sportovišť pro vlastní občany
+Aplikace ukazuje princip, kdy se dokonce jedno obecné řešení může použít v mnoha obcích. Stačí, když obce dodají data – ve standardním formátu a standardně je zaregistrují v Národním katalogu otevřených dat. Při využití aplikace si poté mohou vygenerovat leták ve formátu pdf pro tisk (v několika barevných variantách): s turistickými cíly, s přehledem sportovišť pro vlastní občany.
 
 {% include image.html url="../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/sport.webp" description="Vzhled ukázkové aplikace na vygenerování pdf pro tisk letáků se seznamem sportovišť." %}
 
@@ -34,15 +34,15 @@ Aplikace dále umožňuje přidat vlastní data, např. s použitím Národního
 - [NKOD: Sportoviště][link_nkod_sportoviste]
 
 ### Postup zpracování
-Ukázková aplikace má předem nastaveno několik vybraných turistických cílů a sportovišť. Zároveň ale také umožňuje nahrát vlastní data, takže je možné si rovnou vyzkoušet, jak to bude vypadat na míru konkrétní obci. Stačí data zveřejnit v patřičném formátu, v tomto případě `json`.
+Ukázková aplikace má předem nastavených několik vybraných turistických cílů a sportovišť. Zároveň ale také umožňuje nahrát vlastní data, takže je možné si rovnou vyzkoušet, jak to bude vypadat na míru konkrétní obci. Stačí data zveřejnit v patřičném formátu, v tomto případě `json`.
 
 Ten musí odpovídat předepsaným standardům, aby vše bez potíží fungovalo. Vytvořit potřebný formát je snadné [podle návodu][link_ofn_priklady].
 
 Pro pomoc či konzultaci je možné obrátit se na [tým otevřených dat MV ČR][link_kontakt_mvcr].
 
-Co se souborem dál? URL adresa aplikace pak výsledný soubor s daty jednoduše načte tím, že se do parametru `dataurl` vloží URL konkrétního souboru ). 
+Co se souborem dál? URL adresa aplikace pak výsledný soubor s daty jednoduše načte tím, že se do parametru `dataurl` vloží URL konkrétního souboru. 
 
-Na závěr je doporučeno dát o svém souboru ke stažení vědět. K tomu slouží Národní katalog otevřených dat (NKOD)
+Na závěr je doporučeno dát o svém souboru ke stažení vědět. K tomu slouží Národní katalog otevřených dat (NKOD).
 
 
 #### Ukázky
@@ -51,7 +51,7 @@ Na závěr je doporučeno dát o svém souboru ke stažení vědět. K tomu slou
 - [https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https://oha03.mvcr.gov.cz/soubory/více-cílů.jsonld][link_app_cile] (Ukázkový seznam turistických cílů)
 - [https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https://michalskop.gitlab.io/ofnapp/data/skala.json][link_app_skala] (Ukázka jednoho turistického cíle)
 
-##### Přímé zobrazení turistického cíle
+##### Přímé zobrazení turistického cíle:
 - [https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https://oha03.mvcr.gov.cz/soubory/více-cílů.jsonld&iri=https://www.spilberk.cz/Vícecílový2][link_app_spilberk] (Ukázka jednoho vybraného turistického cíle ze seznamu)
 
 ###### Parametry URL

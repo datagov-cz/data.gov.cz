@@ -6,7 +6,7 @@ ref: z-otevřených-dat-rovnou-na-plakát
 lang: cs
 image: ../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/main.webp
 author: michal_škop
-date: 2021-03-27 07:00:00 +01:00
+date: 2021-05-04 07:00:00 +01:00
 ---
 Jak kvalitně, rychle a levně informovat občany nebo turisty? Díky otevřeným datům si lze usnadnit práci. Jak přesně to funguje, předvádí ukázková aplikace pro vedení obcí na přípravu letáků o turistických cílech a sportovištích v obci.
 

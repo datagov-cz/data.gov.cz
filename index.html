@@ -55,6 +55,9 @@ homepage: true
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4">{{ post.title }}</h3>
 			<p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+			{% if post.image %}
+			<p><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
+			{% endif %}
 			{{ post.excerpt }}
 			{% if post.detail %}
 			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
@@ -76,10 +79,10 @@ homepage: true
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
 			<p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
-            {% if clanek.image %}
-            <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
-            {% endif %}
-			{{ clanek.excerpt}}
+			{% if clanek.image %}
+			<p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+			{% endif %}
+			{{ clanek.excerpt }}
 			{% if clanek.detail %}
 			<a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Číst dále &raquo;</a>
 			{% endif %}

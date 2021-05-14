@@ -15,6 +15,9 @@ lang: cs
           <div class="section">
             <h2 class="h5">{{ post.title }}</h2>
             <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+            {% if post.image %}
+			      <p><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
+			      {% endif %}
             {{ post.excerpt }}
             {% if post.detail %}
             <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>

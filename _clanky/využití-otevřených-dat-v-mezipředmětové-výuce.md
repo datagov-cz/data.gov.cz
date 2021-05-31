@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Využití otevřených dat v mezipředmětové výuce
+title: Využití otevřených dat v mezipředmětové výuce na základní škole
 detail: true
 ref: využití-otevřených-dat-v-mezipředmětové-výuce
 lang: cs

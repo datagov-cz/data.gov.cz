@@ -6,7 +6,7 @@ ref: využití-otevřených-dat-v-mezipředmětové-výuce
 lang: cs
 image: ../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/úvod.webp
 author: miroslav_mráz
-date: 2021-05-30 07:00:00 +01:00
+date: 2021-05-31 07:00:00 +01:00
 ---
 Článek popisuje, jak lze s otevřenými daty pracovat ve výuce již na základní škole. Miroslav Mráz z brněnské ZŠ Labyrinth představuje projekt, na kterém pracoval se žáky 7. třídy.
 

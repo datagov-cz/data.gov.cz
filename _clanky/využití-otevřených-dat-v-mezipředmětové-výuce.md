@@ -48,7 +48,7 @@ description="Zadání pro žáky" %}
 * Po žácích jsem chtěl, aby si o data sami řekli. Pro většinu z nich to bylo poprvé, co si o něco říkali nějaké instituci. Níže jsou ukázky jejich emailů.
 
 {% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/žádost-o-otevřená-data-1.webp" 
-description="Ukázka méně formálního psaného projevu žáků" %}
+description="" %}
 {% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/žádost-o-otevřená-data-2.webp" 
 description="Ukázka méně formálního psaného projevu žáků" %}
 
@@ -90,14 +90,14 @@ V druhé části projektu jsme přidali fyziku (téma energetiky). S kolegyněmi
 * Elektroauto si s sebou nese „uhlíkový batoh” z výroby baterie, který postupně maže během provozu
 
 {% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/energetika.webp" 
-description="Zadání 2. části projektu" %}
+description="" %}
 {% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/zadání2.webp" 
 description="Zadání 2. části projektu" %}
 
 Žáci na základě dostupných dat porovnali celkové emise obou aut a vypočítali, po kolika kilometrech elektroauto smaže svůj uhlíkový batoh z výroby baterie.
 
 {% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/srovnání.webp" 
-description="Výsledky žáků v 2. části projektu" %}
+description="" %}
 {% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/porovnání.webp" 
 description="Výsledky žáků v 2. části projektu" %}
 

@@ -58,14 +58,14 @@ Z tabulky podobností byl následně ručně připraven HTML kód s obslužným 
 * [knihovna readr][link readr] (open source aplikace)
 * [knihovna dplyr][link dplyr] (open source aplikace)
 
-[link nkod]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
-[link data]: https://data.gov.cz/soubor/datov%C3%A9-sady.csv "Datové sady"
+[link nkod]: https://data.gov.cz/datové-sady "NKOD"
+[link data]: https://data.gov.cz/soubor/datové-sady.csv "Datové sady"
 [link recom]: https://www.martinvita.eu/podobne_datove_sady_nkod.html "Doporučovací systém"
 [link stopslova]: https://nlp.fi.muni.cz/cs/StopList "Stop slova v ČR"
 [link dtm]: https://en.wikipedia.org/wiki/Document-term_matrix "Document-term matrix"
 [link tfidf]: https://en.wikipedia.org/wiki/Tf%E2%80%93idf "TF-IDF"
 [link cosine]: https://en.wikipedia.org/wiki/Cosine_similarity "Cosine similarity"
-[link cuzk]: https://data.gov.cz/datov%C3%A9-sady?poskytovatel=%C4%8Cesk%C3%BD%20%C3%BA%C5%99ad%20zem%C4%9Bm%C4%9B%C5%99ick%C3%BD%20a%20katastr%C3%A1ln%C3%AD "ČÚZK"
+[link cuzk]: https://data.gov.cz/datové-sady?poskytovatel=https%3A%2F%2Frpp-opendata.egon.gov.cz%2Fodrpp%2Fzdroj%2Forgán-veřejné-moci%2F00025712 "ČÚZK"
 [link bloglsa]: https://blog.seznam.cz/2011/10/semanticka-analyza-textu-4/ "LSA blog"
 [link rstudio]: https://rstudio.com/ "RStudio"
 [link rproj]: https://www.r-project.org/ "R project"

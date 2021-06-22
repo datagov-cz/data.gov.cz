@@ -27,8 +27,6 @@ Proto umožníme vystoupit více účastníkům a těm, kteří se do programu n
 
 V případě jakýchkoliv dotazů nás prosím kontaktujte na otevrenadata@mvcr.cz.
 
-Těšíme se na setkání.
-
 [6. ročník konference Otevřená data 2021]: https://opendata.gov.cz/edu:konference:2021 "Konference Otevřená data 2021"
 [strukturované přihlášky příspěvku]: https://docs.google.com/forms/d/1DBOE5oUl54mTu4MXrjS5BHjGKYMVfA28L-LE0ogGRvs/ "Přihláška příspěvku na konferenci Otevřená data 2021"
 [Portálu otevřených dat]: https://data.gov.cz/články/ "Portál otevřených dat"

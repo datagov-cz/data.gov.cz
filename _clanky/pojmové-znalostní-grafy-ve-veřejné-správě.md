@@ -60,7 +60,7 @@ Legislativní pojmy samotné pak pocházejí z různých zákonů a vyhlášek.
 Proto se SSP skládá z menších vzájemně propojených slovníků, které jsou uspořádány do hierarchické struktury.
 Ukažme si ji na příkladu:
 
-{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image3.svg" description="Ukázka sémantického slovníku pojmů souvisejících s pojmem 'budova'." %}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image3.svg" description="Ukázka sémantického slovníku pojmů souvisejících se slovem 'budova'." %}
 
 Uprostřed diagramu vidíme již dobře známé pojmy *Budova* v úrovni legislativních slovníků.
 V našem případě by tato úroveň obsahovala tři slovníky - pro každý z uvedených zákonů jeden (pro přehlednost diagramu v něm neuvádíme pojmy Nadzemní stavba či Nadzemní stavba a její podzemní části a specializační vazby zkracujeme přímo vazbou obou Budov na pojem Stavba).
@@ -73,7 +73,7 @@ Podrobnější popis tohoto slovníku je nad rámec tohoto úvodního textu a č
 Abychom poskytli vyhledávači datových sad informaci o významu dat, potřebujeme jej popsat.
 Podívejme se nyní na použití SSP pro popis datové sady [Energeticky šetrné budovy][esb], distribuované v podobě tabulky (např. ve formátu CSV).
 
-{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image1.svg" description="Příklad datové sady." %}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image1.svg" description="Příklad datové sady energeticky šetrných budov." %}
 
 Pro tento účel nás zajímá zejména pravá část výše uvedeného diagramu.
 V agendové vrstvě nalezneme pojmy, které nejsou zákonem definovány, ale jsou používané při výkonu jednotlivých agend registru práv a povinností (v našem příkladě takový pojem nemáme).
@@ -84,10 +84,10 @@ Například pojem *Název budovy* označující jeden ze sloupců datové sady, 
 Ukázali jsme si na příkladech jak použít Sémantický slovník pojmů pro zpřesnění vyhledávání dat.
 Škála použití SSP je však mnohem širší.
 
-{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image2.svg" description="Semantický slovník pojmů." %}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image2.svg" description="Užití semantického slovníku pojmů." %}
 
 Znalost zachycenou formálními vazbami mezi jedinečně definovanými pojmy lze dále využít např. pro automatické generování datových schémat, jejich dokumentace či formulářů pro efektivní sběr dat.
-Jako "vedlejší produkt” můžeme rovněž snadno automaticky vygenerovat běžný výkladový slovník pojmů dané oblasti.
+Jako "vedlejší produkt" můžeme rovněž snadno automaticky vygenerovat běžný výkladový slovník pojmů dané oblasti.
 SSP je distribuován v podobě propojených dat, a v souladu se standardy [RDF][rdf], [OWL][owl], [SKOS][skos] a [SPARQL][sparql] konzorcia W3C.
 
 V dalších dílech série se pak budeme zabývat jak podrobnějším popisem technik konceptuálního modelování znalostí pro tvorbu SSP, tak i nástroji, kterými lze SSP rozvíjet a spravovat.

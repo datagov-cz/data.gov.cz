@@ -9,9 +9,7 @@ author: petr_křemen
 date: 2021-06-25 11:38:00 +02:00
 ---
 
-# Pojmové znalostní grafy ve veřejné správě
-
-Věděli jste, že se slovo “budova” vyskytuje v zákonech v různých významech? 
+Věděli jste, že se slovo 'budova' vyskytuje v zákonech v různých významech? 
 Například v [Zákoně č. 406/2000 Sb. (Zákon o hospodaření energií)][zhe] označuje vyhřívané objekty, zatímco v [Zákoně č. 256/2013 Sb. (Zákon o katastru nemovitostí)][zkn] označuje i objekty nevyhřívané.
 <!--more-->
 Když se poté dostanete k nějaké datové sadě o budovách (např. pražská otevřená datová sada [Energeticky šetrné budovy][esb]) nevíte, o kterých budovách tato datová sada mluví.
@@ -27,18 +25,13 @@ A aby pojmům lépe rozuměl stroj, jsou pojmy vzájemně propojeny významovým
 Pojďme se teď blíž podívat na příklady různých významů slova budova.
 Když se na definice obou pojmů podíváme blíž, vidíme, že mají některé rozdílné (vyznačené zeleně a modře) a některé společné charakteristiky (ty vyznačené nejsou):
 
-{% include image7.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image7.svg"
-description="Dva významy slova 'budova' z české legislativě.%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image7.svg" description="Dva významy slova 'budova' z české legislativy." %}
 
-První, čeho si všimneme je, že oba pojmy odvozují svůj význam od slova “stavba”.
-Vzhledem k tomu, že žádný z obou zákonů pojem stavba nedefinuje, lze se pouze domnívat, že jsou oba významy slova “stavba” stejné, a to například ve smyslu [Zákona č. 183/2006 Sb. (Zákon o územním plánování a stavebním řádu)][sz].
+První, čeho si všimneme je, že oba pojmy odvozují svůj význam od slova "stavba”.
+Vzhledem k tomu, že žádný z obou zákonů pojem stavba nedefinuje, lze se pouze domnívat, že jsou oba významy slova "stavba” stejné, a to například ve smyslu [Zákona č. 183/2006 Sb. (Zákon o územním plánování a stavebním řádu)][sz].
 Vybereme-li z definic obou pojmů další klíčové charakteristiky (které jsou v tomto případě opět v daných zákonech blíže nedefinované), můžeme je znázornit v podobě *znalostních grafů*:
 
-{% include image5.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image5.svg"
-description="Pojmové znalostní grafy různých definic slova 'budova'.
-%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image5.svg" description="Pojmové znalostní grafy různých definic slova 'budova'." %}
 
 Pozorný čtenář jistě zaznamenal, že tyto znalostní grafy mají speciální podobu oproti grafům představeným [v úvodním článku o znalostních grafech][zgu], neboť jednotlivé uzly označují výhradně typy či kategorie věcí (např. *Budova*), nikoliv věci samotné (např. *Chrám sv. Víta*).
 Takovým znalostním grafům budeme říkat *pojmové*.
@@ -47,23 +40,17 @@ Např. každá budova ve smyslu zákona č. 256/2013 je speciálním případem 
 Těmi mohou být např. *lokalizační údaje*, které jsou popsány v [Zákoně č. 111/2009 Sb. (Zákon o základních registrech)][zzr], avšak pro jednoduchost je ve výše uvedených příkladech neuvádíme.
 
 ## Vyhledávání dat pomocí pojmových znalostních grafů
-Uvedené dva významy slova “budova” nejsou nijak vyčerpávající.
-Jistě i každý z nás slovu “budova” přiřadí trochu jiný význam.
-Představme si nyní zájemce o datovou sadu o budovách, pod kterými zájemce rozumí “stavby, které jsou vytápěné”:
+Uvedené dva významy slova 'budova' nejsou nijak vyčerpávající.
+Jistě i každý z nás slovu 'budova' přiřadí trochu jiný význam.
+Představme si nyní zájemce o datovou sadu o budovách, pod kterými zájemce rozumí "stavby, které jsou vytápěné":
 
-{% include image6.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image6.svg"
-description="Definice budovy jako vytápěné stavby.
-%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image6.svg" description="Definice budovy jako vytápěné stavby." %}
 
-Spojením všech tří příkladů znalostních grafů dohromady vidíme vztahy mezi jednotlivými významy slova “budova”:
+Spojením všech tří příkladů znalostních grafů dohromady vidíme vztahy mezi jednotlivými významy slova 'budova':
 
-{% include image4.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image4.svg"
-description="Znalostní graf vzniklý spojením tří definic slova 'budova'.
-%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image4.svg" description="Znalostní graf vzniklý spojením tří definic slova 'budova'." %}
 
-Aniž bychom šli do detailů logického aparátu znalostních grafů, lze intuitivně vysledovat, že zájemce o datovou sadu chápe slovo “budova” ve významu užším, než pojem Budova (dle Zákona č. 406/2000 Sb.) - to je v grafu znázorněno oranžovou šipkou.
+Aniž bychom šli do detailů logického aparátu znalostních grafů, lze intuitivně vysledovat, že zájemce o datovou sadu chápe slovo 'budova' ve významu užším, než pojem Budova (dle Zákona č. 406/2000 Sb.) - to je v grafu znázorněno oranžovou šipkou.
 Pokud bychom využili tento znalostní graf pro vyhledávání datových sad, mohl by právě této oranžové šipky vyhledávač využít, aby zájemci nabídl datovou sadu o budovách ve smyslu Zákona č. 406/2000 Sb., tedy např. zmíněnou datovou sadu [Energeticky šetrné budovy][esb].
 
 ## Sémantický slovník pojmů veřejné správy
@@ -73,10 +60,7 @@ Legislativní pojmy samotné pak pocházejí z různých zákonů a vyhlášek.
 Proto se SSP skládá z menších vzájemně propojených slovníků, které jsou uspořádány do hierarchické struktury.
 Ukažme si ji na příkladu:
 
-{% include image3.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image3.svg"
-description="Ukázka sémantickéo slovníku pojmů souvisejících s pojmem 'budova'.
-%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image3.svg" description="Ukázka sémantického slovníku pojmů souvisejících s pojmem 'budova'." %}
 
 Uprostřed diagramu vidíme již dobře známé pojmy *Budova* v úrovni legislativních slovníků.
 V našem případě by tato úroveň obsahovala tři slovníky - pro každý z uvedených zákonů jeden (pro přehlednost diagramu v něm neuvádíme pojmy Nadzemní stavba či Nadzemní stavba a její podzemní části a specializační vazby zkracujeme přímo vazbou obou Budov na pojem Stavba).
@@ -89,10 +73,7 @@ Podrobnější popis tohoto slovníku je nad rámec tohoto úvodního textu a č
 Abychom poskytli vyhledávači datových sad informaci o významu dat, potřebujeme jej popsat.
 Podívejme se nyní na použití SSP pro popis datové sady [Energeticky šetrné budovy][esb], distribuované v podobě tabulky (např. ve formátu CSV).
 
-{% include image1.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image1.svg"
-description="Příklad datové sady.
-%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image1.svg" description="Příklad datové sady." %}
 
 Pro tento účel nás zajímá zejména pravá část výše uvedeného diagramu.
 V agendové vrstvě nalezneme pojmy, které nejsou zákonem definovány, ale jsou používané při výkonu jednotlivých agend registru práv a povinností (v našem příkladě takový pojem nemáme).
@@ -103,13 +84,10 @@ Například pojem *Název budovy* označující jeden ze sloupců datové sady, 
 Ukázali jsme si na příkladech jak použít Sémantický slovník pojmů pro zpřesnění vyhledávání dat.
 Škála použití SSP je však mnohem širší.
 
-{% include image2.svg
-url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image2.svg"
-description="Semantický slovník pojmů.".
-%}
+{% include image.html url="../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/image2.svg" description="Semantický slovník pojmů." %}
 
 Znalost zachycenou formálními vazbami mezi jedinečně definovanými pojmy lze dále využít např. pro automatické generování datových schémat, jejich dokumentace či formulářů pro efektivní sběr dat.
-Jako “vedlejší produkt” můžeme rovněž snadno automaticky vygenerovat běžný výkladový slovník pojmů dané oblasti.
+Jako "vedlejší produkt” můžeme rovněž snadno automaticky vygenerovat běžný výkladový slovník pojmů dané oblasti.
 SSP je distribuován v podobě propojených dat, a v souladu se standardy [RDF][rdf], [OWL][owl], [SKOS][skos] a [SPARQL][sparql] konzorcia W3C.
 
 V dalších dílech série se pak budeme zabývat jak podrobnějším popisem technik konceptuálního modelování znalostí pro tvorbu SSP, tak i nástroji, kterými lze SSP rozvíjet a spravovat.

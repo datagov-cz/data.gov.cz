@@ -97,9 +97,9 @@ V dalších dílech série se pak budeme zabývat jak podrobnějším popisem te
 [sz]: https://aplikace.mvcr.cz/sbirka-zakonu/ViewFile.aspx?type=c&id=4909
 [zzr]: https://aplikace.mvcr.cz/sbirka-zakonu/ViewFile.aspx?type=c&id=5470
 [esb]: https://opendata.praha.eu/dataset/udrzitelna-energetika/resource/e49f30cf-d207-427d-8298-0d6a71fd8558
-[zgs]: https://data.gov.cz/%C4%8Dl%C3%A1nky/znalostn%C3%AD-grafy-03-sparql
-[zgu]: https://data.gov.cz/%C4%8Dl%C3%A1nky/znalostn%C3%AD-grafy-01-%C3%BAvod
-[ssp]: https://xn--slovnk-7va.gov.cz
+[zgs]: https://data.gov.cz/článk/znalostní-grafy-03-sparql
+[zgu]: https://data.gov.cz/články/znalostní-grafy-01-úvod
+[ssp]: https://slovník.gov.cz
 [rdf]: https://www.w3.org/TR/rdf11-concepts/#bib-RDF11-PRIMER
 [owl]: https://www.w3.org/TR/2012/REC-owl2-overview-20121211/
 [skos]: https://www.w3.org/TR/2009/REC-skos-reference-20090818/

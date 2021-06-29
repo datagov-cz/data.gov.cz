@@ -4,7 +4,7 @@ detail: true
 title: "Pojmové znalostní grafy ve veřejné správě"
 ref: pojmové-znalostní-grafy-ve-veřejné-správě
 lang: cs
-image: ../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/ssp.png
+image: ../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/ssp.webp
 author: petr_křemen
 date: 2021-06-25 11:38:00 +02:00
 ---

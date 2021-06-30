@@ -6,7 +6,7 @@ ref: pojmové-znalostní-grafy-ve-veřejné-správě
 lang: cs
 image: ../attachments/články/pojmové-znalostní-grafy-ve-veřejné-správě/ssp.webp
 author: petr_křemen
-date: 2021-06-25 11:38:00 +02:00
+date: 2021-06-30 06:38:00 +02:00
 ---
 
 Věděli jste, že se slovo 'budova' vyskytuje v zákonech v různých významech? 

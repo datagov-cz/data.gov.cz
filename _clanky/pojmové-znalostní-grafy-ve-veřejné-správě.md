@@ -12,7 +12,7 @@ date: 2021-06-30 06:38:00 +02:00
 Věděli jste, že se slovo 'budova' vyskytuje v zákonech v různých významech? 
 Například v [Zákoně č. 406/2000 Sb. (Zákon o hospodaření energií)][zhe] označuje vyhřívané objekty, zatímco v [Zákoně č. 256/2013 Sb. (Zákon o katastru nemovitostí)][zkn] označuje i objekty nevyhřívané.
 <!--more-->
-Když se poté dostanete k nějaké datové sadě o budovách (např. pražská otevřená datová sada [Energeticky šetrné budovy][esb]) nevíte, o kterých budovách tato datová sada mluví.
+Když se poté dostanete k nějaké datové sadě o budovách (např. pražská otevřená datová sada [Energeticky šetrné budovy][esb]), nevíte, o kterých budovách tato datová sada mluví.
 A nejedná se jen o vás - neví to ani vyhledávače datových sad, takže Vám nemohou pomoci vybrat datovou sadu přesně dle vaší potřeby.
 A tak, chcete-li vědět, zda v datové sadě naleznete třeba skladové haly, či autobusové zastávky, nezbývá Vám, než jednotlivé záznamy datové sady prozkoumat jednotlivě.
 

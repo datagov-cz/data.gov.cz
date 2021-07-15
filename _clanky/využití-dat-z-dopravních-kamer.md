@@ -25,7 +25,7 @@ Za další průzkum stojí i propojení těchto dat z kamer (z kterých lze zís
 
 Dat o mobilitě existuje v ČR mnoho (např. použité v [Atlase mobility][link_atlas_mobility]), ovšem naprostá většina z nich není veřejně dostupná.
 
-### Použitá data
+## Použitá data
 Z mnoha veřejných kamerových systémů používaných v ČR poskytuje data veřejnosti jako otevřená data pouze Plzeňský kraj v rámci projektu „[Systém sběru informací o průjezdu a měření rychlosti vozidel na území Plzeňského kraje][link_system]“.
 
 Data z tohoto projektu jsou registrována v [NKOD - Národním katalogu otevřených dat][link_nkod]
@@ -38,10 +38,10 @@ Za každé vozidlo jsou k dispozici čas průjezdu, rychlost, směr, typ vozidla
 
 Zdrojová data jsou dostupná po jednotlivých dnech v zazipovaných souborech.
 
-### Postup zpracování
+## Postup zpracování
 V tomto článku se zpracování ukazuje v jazyce Python 3 s velkým použitím knihovny Pandas.
 
-#### Stažení a extrakce dat
+### Stažení a extrakce dat
 Pro práci s podrobnými daty o průjezdu každého vozidla je třeba nejprve data získat - a) a buď si pořídit jejich lokální kopii nebo b) je zpracovat rovnou při stažení (a soubor neukládat)
 
 U obou postupů je třeba počítat s tím, že velikost zazipovaných souborů je kolem 5 - 10 MB, takže kompletní 5 letá historie znamená stažení až **20 GB** dat.
@@ -50,22 +50,24 @@ Pokud u první varianty navíc rozzipujeme stažený soubor a uložíme samotná
 
 Ukázka hlavní části kódu, který stáhne a extrahuje data o kamerách pro jeden den `d`.
 
-    dstring = d.strftime("%Y%m%d")
-    url = "https://doprava.plzensky-kraj.cz/opendata/doprava/den/DOPR_D_" + dstring + ".zip"
-    r = requests.get(url)
-    with zipfile.ZipFile(io.BytesIO(r.content)) as z:
-    with z.open("DOPR_D_" + dstring + ".csv") as f:
-        df = pd.read_csv(f, header=None, delimiter="|")
+```python
+dstring = d.strftime("%Y%m%d")
+url = "https://doprava.plzensky-kraj.cz/opendata/doprava/den/DOPR_D_" + dstring + ".zip"
+r = requests.get(url)
+with zipfile.ZipFile(io.BytesIO(r.content)) as z:
+  with z.open("DOPR_D_" + dstring + ".csv") as f:
+    df = pd.read_csv(f, header=None, delimiter="|")
+```
 
 Celý použitý soubor: [download.py](../attachments/články/využití-dat-z-dopravních-kamer/download.py)
 
-### Výpočty střední rychlosti, překračování rychlosti
+## Výpočty střední rychlosti, překračování rychlosti
 
 Vzhledem k velikosti dat si postup rozdělíme do dvou kroků.
 Načteme data za každý den a pro každou kameru (a směr jízdy) spočítáme požadované statistiky (pokud jsou data ok)
 Spočteme statistiky za všechny dny.
 
-#### Načtení dat, výpočet statistik pro každou kameru, směr a den
+### Načtení dat, výpočet statistik pro každou kameru, směr a den
 V tomto kroku je potřeba vyhodnotit, zda data jsou pro danou kameru za daný den úplná (což nemusí být). Vzhledem k povaze dat, kdy chybějící data chybějí “bez upozornění”, je třeba použít nějakou heuristiku. V případě tohoto článku šlo o nenulový počet zaznamenaných vozidel v každé hodině mimo několika nočních. Pokud tomu některá data za den a kameru nevyhověla, dále se s nimi nepracovalo.
 
 Pro každou kameru, směr a den poté spočítáme počet vozidel, mediánovou rychlost a podíl vozidel, které jely rychleji než postupně 30, 40, ... 100 km/h.
@@ -74,30 +76,31 @@ Vzhledem k velikosti souborů se vyplatí věnovat pozornost způsobu zpracován
 
 Použitý soubor: [daily.py](../attachments/články/využití-dat-z-dopravních-kamer/daily.py)
 
-#### Celkové statistiky pro danou kameru
+### Celkové statistiky pro danou kameru
 Pro zobrazení v mapě spočteme pro všední dny střední počet vozidel a střední podíl vozidel, která jela rychleji než 50 km/h. S ohledem na robustnost použijeme median a ne průměr (čímž také de facto vyřešíme problém se státními svátky připadajícími na dny pondělí až pátek, kdy je provoz logicky výrazně jiný než v pracovní dny).
 
 Příklad kódu na výpočet středního (median) podílu vozidel, která jela rychleji než 50 km/h, pondělí-pátek, za každou kameru (jen její hlavní směr):
 
-    # podíl vozidel s rychlostí > 50 km/h, Po-Pá, jen hlavní směr kamery
-    pd.pivot_table(daily[(daily['day'].between(0, 4)) & (daily['direction'] == 1)].dropna(), values='min50', index='id', aggfunc=lambda x: np.percentile(x, 50)).reset_index().to_csv("working_day_over50.csv")
-
+```python
+# podíl vozidel s rychlostí > 50 km/h, Po-Pá, jen hlavní směr kamery
+pd.pivot_table(daily[(daily['day'].between(0, 4)) & (daily['direction'] == 1)].dropna(), values='min50', index='id', aggfunc=lambda x: np.percentile(x, 50)).reset_index().to_csv("working_day_over50.csv")
+```
 
 Podobně bychom ale mohli spočítat další statistiky - např. podíl vozidel jedoucí rychleji než 70 km/h, statistiky po jednotlivých letech, atd. Příklady takových dalších výpočtů jsou v odkazovaném souboru.
 
 Použitý soubor: [statistics.py](../attachments/články/využití-dat-z-dopravních-kamer/statistics.py)
 
-### Zobrazení v mapě
+## Zobrazení v mapě
 
 Souřadnice umístění kamer lze získat s trochou snahy přímo ze zdrojového kódu [mapy s dopravními informacemi projektu kamer][link_system_mapa].
 
 Pro zobrazení v mapě je možné použít různé způsoby. Zde použijeme aplikaci [Flourish][link_flourish], mezi jiné způsoby by určitě patřilo zobrazení pomocí knihovny [Leaflet][link_leaflet] . Jako příklad použití Leafletu může sloužit právě [mapa projektu Plzeňského kraje][link_system_mapa].
 
-### Výsledek
+## Výsledek
 
 Výsledná mapa přehledně zobrazuje informace o intenzitě i rychlosti dopravy v jednotlivých místech kraje.
 
-#### Mapa: Podíl vozidel překračujících 50 km/h - Plzeňský kraj
+### Mapa: Podíl vozidel překračujících 50 km/h - Plzeňský kraj
 
 {% include image.html url="../attachments/články/využití-dat-z-dopravních-kamer/mapa1.webp" description="Podíl vozidel překračujících 50 km/h | Plzeňský kraj" %}
 
@@ -106,10 +109,10 @@ Legenda:
 - Velikost bodu odpovídá střednímu počtu vozidel, které daným místem projedou (jedním směrem).
 - Barva bodu odpovídá střednímu podílu vozidel překračujících 50 km/h (žlutá málo až černá skoro všechna).
 
-#### Interaktivní verze 
+### Interaktivní verze 
 [Interaktivní mapa podílu vozidel překračujících 50 km/h v Plzeňském kraji][link_interaktivni]
 
-### Další užití
+## Další užití
 
 Přímo s těmito daty a výše uvedeným postupem lze zcela obdobně vytvořit mapy s jinými vypočtenými statistikami. Např. s podílem vozidel, které už významně překračují rychlostní limit a jedou více jak 70 km/h. Nebo se lze zaměřit jen na časy, kdy děti chodí do a ze školy, apod.
 
@@ -119,7 +122,7 @@ Podobný postup se stejnými daty byl použit jako jeden z argumentů při [anal
 
 Analýza půjde použít i v okamžiku, kdy některé další subjekty začnou publikovat obdobná data ze svých kamer.
 
-### Použité nástroje a zdroje
+## Použité nástroje a zdroje
 
 - [Pandas][link_pandas] - open source knihovna
 - [Flourish][link_flourish] - služba zdarma po registraci (freemium)

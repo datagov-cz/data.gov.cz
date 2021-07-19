@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light">
 	<div class="container">
 	  <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img width="174" height="30" class="d-inline-block align-top" src="{{ "/images/logo.png" | relative_url }}" alt="Open data in Czechia"></img></a>
-	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Show navigation">
+	  <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Show navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 	  
@@ -11,7 +11,7 @@
 			<a class="nav-link" href="{{ "/news" | relative_url}}">News</a>
 		  </li>
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">National Open Data Catalog</a>
+			<a class="nav-link dropdown-toggle" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">National Open Data Catalog</a>
 			<div class="dropdown-menu" aria-labelledby="dropdown01">
 			  <a class="dropdown-item" href="/datasets">Datasets</a>
 			  <a class="dropdown-item" href="/publishers">Publishers</a>
@@ -20,7 +20,7 @@
 			</div>
 		  </li> 
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">More</a>
+			<a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">More</a>
 			<div class="dropdown-menu" aria-labelledby="dropdown01">
 			  <a class="dropdown-item" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-zájemce">Interested in opening data (in Czech)</a>
 			  <a class="dropdown-item" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Users and programmers (in Czech)</a>
@@ -31,10 +31,10 @@
 		  {% for p in posts %}
 			{% if p.lang != page.lang %}
 		  <li class="nav-item dropdown">
-			  <a data-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-en.png" | relative_url}}" alt="English" style="width: 1.2rem;"></a>
-			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu">
+			  <a data-bs-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-en.svg" | relative_url}}" alt="English" style="width: 1.3rem;"></a>
+			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu lang-menu">
 				<button type="button" tabindex="0" class="dropdown-item">
-					<a href="{{ p.url }}" class="{{ p.lang }}" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}"></a>
+					<a href="{{ p.url }}" class="{{ p.lang }}" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}" style="width: 1.3rem;"></a>
 				</button>
 			</div>
 		  </li>	  

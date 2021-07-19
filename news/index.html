@@ -3,7 +3,6 @@ layout: default
 title: News
 ref: Posts
 lang: en
-postindex: true
 ---
 
   <div class="container">
@@ -14,8 +13,8 @@ postindex: true
       {% for post in posts limit:3 %}
       <div class="col-12 col-md-6 col-lg-4">
         <div class="section">
-          <h3 class="h5">{{ post.title }}</h3>
-          <p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
+          <h2 class="h5">{{ post.title }}</h2>
+          <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
           {{ post.excerpt }}
           {% if post.detail %}
           <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
@@ -31,7 +30,7 @@ postindex: true
       <div class="col-12 col-md-6 col-lg-4">
         <div class="section">
           <h3 class="h5">{{ post.title }}</h3>
-          <p class="h6 text-muted">{{ post.date | date: "%-d %B %Y" }}</p>
+          <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
           {{ post.excerpt }}
           {% if post.detail %}
           <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>

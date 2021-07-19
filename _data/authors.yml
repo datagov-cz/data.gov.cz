@@ -31,8 +31,13 @@ jiří_marek:
     email: jiri.marek@mvcr.cz
     twitter: JM_microblog
     web: https://www.linkedin.com/in/marekjiri/
-    email: info@martinvita.eu
 michal_škop:
     name: Michal Škop
     web: https://www.skop.eu/
     email: michal.skop@kohovolit.eu
+michal_med:
+    name: Michal Med
+    email: michal.med@mvcr.cz
+miroslav_mráz:
+    name: Miroslav Mráz
+    email: mraz.b.miroslav@gmail.com

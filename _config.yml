@@ -4,6 +4,7 @@ title: Portál otevřených dat České republiky
 description: Portál otevřených dat a Národní katalog otevřených dat České republiky
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://data.gov.cz" # the base hostname & protocol for your site
+#develop: true
 
 # Build settings
 excerpt_separator: <!--more-->
@@ -18,10 +19,10 @@ plugins:
 langs:
   en:
     cs: česky
-    flag: /images/flag-en.png
+    flag: /images/flag-en.svg
   cs:
     en: English
-    flag: /images/flag-cs.png
+    flag: /images/flag-cs.svg
 
 collections:
   clanky:

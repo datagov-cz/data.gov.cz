@@ -44,7 +44,7 @@ Následně se můžeme přepnout do módu "Edit Queries", kde bude nutné data j
 - Vek_kod - vypneme prázdné hodnoty
 - Vuzemi_kod vypneme číslo 19 (úroveň ČR)
 
-Číselníky (pohlavi_cis, vek_cis, ...) pro tuto ukázku nepotřebujeme, jelikož vše důležité je obsaženo v textových hodnotách. Nicméně všechny relevantní [číselníky](https://data.gov.cz/datové-sady?dotaz=číselníky&poskytovatel=Český%20statistický%20úřad) lze rovněž najít v NKOD ve formátu .xml a případně je připojit do datového modelu. 
+Číselníky (pohlavi_cis, vek_cis, ...) pro tuto ukázku nepotřebujeme, jelikož vše důležité je obsaženo v textových hodnotách. Nicméně všechny relevantní [číselníky](https://data.gov.cz/datové-sady?dotaz=číselníky&poskytovatel=https%3A%2F%2Frpp-opendata.egon.gov.cz%2Fodrpp%2Fzdroj%2Forgán-veřejné-moci%2F00025593) lze rovněž najít v NKOD ve formátu .xml a případně je připojit do datového modelu. 
 
 Po dokončení úprav editor uzavřeme (tlačítko "Close & Apply") a dále pracujeme jen s vizualizačními technikami. V boxu na pravé straně máme všechny datové sady, v druhém sloupci pak možnosti vizualizací a v třetím boxu jsou filtry. Pro naše účely nejvíce využíváme "bar & column charts". Vše funguje systémem drag & drop, kde vybíráme z tabulkové části data do částí "os x a y", případně do legendy a do pole "values". Jednotlivá pole lze i posunovat přímo do vizualizačního boxu a PBI samo zvolí nejvhodnější vizualizaci. Na závěr ještě umístíme "Slicer" s jednotlivými roky. Všechna pole pak formátujeme v sekci "Format". 
 
@@ -112,8 +112,8 @@ Tvorba datového dashboardu v PBI (pokud nepočítáme "peripetie" z pochopení 
 
 [ČSÚ]: https://www.czso.cz/ "Český statistický úřad"
 [NKOD]: https://data.gov.cz/ "Národní katalog otevřených dat"
-[Source]: https://data.gov.cz/datové-sady?dotaz=cizinci&klíčová%20slova=státní%20občanství "Zdrojové soubory"
-[Data]: https://data.gov.cz/datová-sada?iri=https%253A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2FZmmerickyU%2F752310056 "Data ČÚZK pro QGIS"
+[Source]: https://data.gov.cz/datové-sady?dotaz=cizinci&klíčová-slova=státní%20občanství "Zdrojové soubory"
+[Data]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F60458500%2F752310056 "Data ČÚZK pro QGIS"
 [Power BI]: https://powerbi.microsoft.com/cs-cz/ "Microsoft Power BI"
 [A Free and Open Source Geographic Information System]: https://qgis.org/en/site/ "QGIS"
 [Metodika počtu cizinců]: (https://www.czso.cz/csu/cizinci/metodika-poctu-cizincu) "Metodika ČSÚ k počítání cizinců"
@@ -122,6 +122,3 @@ Tvorba datového dashboardu v PBI (pokud nepočítáme "peripetie" z pochopení 
 [Info MVČR]: https://www.mvcr.cz/clanek/informativni-pocty-obyvatel-v-obcich.aspx "Informativní přehledy o počtech cizinců"
 [Návod]: https://training.gismentors.eu/qgis-zacatecnik/vektorova_data/join.html "Návod na připojení vrstev"
 [Návod_2]: https://training.gismentors.eu/qgis-pokrocily/ruzne/grafy.html "Návod na tvorbu kartodiagramů"
-
-
-

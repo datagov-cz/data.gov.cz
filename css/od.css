@@ -31,10 +31,6 @@
 		border-color: var(--color-text-accent-inverted) ;
 	}
 
-	.nav-link.active {
-		text-decoration: underline;
-	}
-	
 	hr {
 		border: 1px dotted var(--color-text-accent) ;
 	}
@@ -57,15 +53,24 @@
 		background-color: #3bb5dc;
 		color: #ffffff;
 	}
+	.card {
+		border-color: var(--color-base);
+	}
+	.navbar-light .navbar-toggler-icon {
+		background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='gray' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+	}
+	.navbar-light .navbar-toggler {
+		border-color: gray;
+	}
 }
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-next {
   transition: .6s opacity ease;
 }
 /* Disable transitions for if reduced motion is enabled: */
 @media (prefers-reduced-motion:reduce) {
-  .carousel-fade .active.carousel-item-left,
-  .carousel-fade .active.carousel-item-right {
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-next {
     transition: none;
   }
 } 
@@ -114,7 +119,7 @@ a.btn.btn-primary, button.btn.btn-primary {
 
 a.btn.btn-primary:hover, button.btn.btn-primary:hover, a.dropdown-item:hover {
     background-color: var(--color-text-inverted);
-    border-color: var(--color-text-inverted);
+    border-color: var(--color-base);
     color: var(--color-text-accent-inverted);
 }
 
@@ -138,7 +143,6 @@ a.btn.btn-primary:hover, button.btn.btn-primary:hover, a.dropdown-item:hover {
     .jumbotron {
         padding-top: 0;
         padding-bottom: 0;
-
     }
 
     .jumbotron .container {
@@ -161,4 +165,8 @@ dl > dd > ol > li {
 
 ol > li > ol > li > ol > li {
 	list-style-type: lower-roman ;
+}
+
+div.language-drop-down.dropdown-menu.lang-menu.show {
+	min-width: 0;
 }

@@ -4,16 +4,16 @@ ref: Home
 lang: cs
 homepage: true
 ---
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron mb-4 pt-4 pt-md-0">
   <div class="container text-white">
 	<div class="row">
 	  <div class="col-md-6">
-		<h1 class="display-3">Portál otevřených dat</h1>
+		<h1 class="display-3">Portál otevřených dat{% if site.develop %} - TESTOVACÍ VERZE {% endif %}</h1>
 		<p>Vše, co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
 		<p><a href="datové-sady" class="btn btn-primary">Národní katalog otevřených dat</a></p>
 	  </div>
-	  <div class="col-md-6 text-right d-none d-md-block">
-	    <div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+	  <div class="col-md-6 text-end d-none d-md-block">
+	    <div id="count" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="3000">
 		  <div class="carousel-inner">
 			<div class="carousel-item active">
 			  <p class="display-3" id="datasetCountLabel"> ?</p>
@@ -29,11 +29,11 @@ homepage: true
 			</div>
 		  </div>
 		</div>
-		<form id="searchForm" class="form-inline float-right" action="https://data.gov.cz/datové-sady">
-			<label class="sr-only" for="dotaz">Název hledané datové sady</label>
+		<form id="searchForm" class="form-inline float-end" action="https://data.gov.cz/datové-sady">
+			<label class="visually-hidden" for="dotaz">Název hledané datové sady</label>
 			<div class="input-group">
 			  <div class="input-group-prepend">
-				<span class="input-group-text " id="search-addon"><i class="material-icons">search</i></span>
+				<span class="input-group-text " id="search-addon"><i class="bi-search"></i></span>
 			  </div>
 			  <input class="form-control" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Název hledané datové sady" aria-describedby="search-addon">
 			  <div class="input-group-append">
@@ -54,7 +54,10 @@ homepage: true
 		{% for post in posts limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4">{{ post.title }}</h3>
-			<p class="h6 text-muted">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+			<p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+			{% if post.image %}
+			<p><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
+			{% endif %}
 			{{ post.excerpt }}
 			{% if post.detail %}
 			<a href="{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
@@ -75,11 +78,11 @@ homepage: true
 		{% for clanek in clanky limit:3 %}
 		<div class="col-12 col-md-6 col-lg-4 mb-4">
 			<h3 class="h4"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
-			<p class="h6 text-muted">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
-            {% if clanek.image %}
-            <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
-            {% endif %}
-			{{ clanek.excerpt}}
+			<p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+			{% if clanek.image %}
+			<p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+			{% endif %}
+			{{ clanek.excerpt }}
 			{% if clanek.detail %}
 			<a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Číst dále &raquo;</a>
 			{% endif %}

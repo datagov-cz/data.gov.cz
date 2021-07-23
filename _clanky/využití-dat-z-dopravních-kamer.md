@@ -6,7 +6,7 @@ ref: využití-dat-z-dopravních-kamer
 lang: cs
 image: ../attachments/články/využití-dat-z-dopravních-kamer/mapa1.webp
 author: michal_škop
-date: 2021-07-14 07:00:00 +01:00
+date: 2021-07-23 07:00:00 +01:00
 ---
 Kolik kterým místem projíždí aut, kolik z nich jezdí nebezpečně rychle. To jsou jen některé statistiky, které lze získat z otevřených dat z dopravních kamer.
 <!--more-->

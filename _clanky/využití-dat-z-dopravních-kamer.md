@@ -11,7 +11,7 @@ date: 2021-07-14 07:00:00 +01:00
 Kolik kterým místem projíždí aut, kolik z nich jezdí nebezpečně rychle. To jsou jen některé statistiky, které lze získat z otevřených dat z dopravních kamer.
 <!--more-->
 
-Česká republika je plná kamer provozovaných jak veřejnými organizacemi (např. policie státní i městské, obce, kraje, ŘSD), tak i soukromými. Jen naprosté minimum z nich ale poskytuje nějakou další službu veřejnosti nebo firmám nad rámec úzce omezeného důvodu své instalace.
+Česká republika je plná kamer provozovaných jak veřejnými organizacemi (např. policií státní i městskou, obcemi, kraji, ŘSD), tak i soukromými. Jen naprosté minimum z nich ale poskytuje nějakou další službu veřejnosti nebo firmám nad rámec úzce omezeného důvodu své instalace.
 
 Tento článek ukazuje malý kousek potenciálu, který v sobě otevřená data z existujících kamer mají. Jako příklad dalšího využití otevřených dat z dopravních kamer vznikla mapová aplikace, která vizualizuje data z dopravních kamer v Plzeňském kraji. Konkrétně zde je ukázán detailní postup tvorby mapy *Podíl vozidel překračujících 50 km/h zaznamenaných dopravními kamerami v Plzeňském kraji*.
 
@@ -32,7 +32,7 @@ V tomto článku se zpracování ukazuje v jazyce Python 3 s velkým použitím 
 ### Stažení a extrakce dat
 Pro práci s podrobnými daty o průjezdu každého vozidla je třeba nejprve data získat a a) buď si pořídit jejich lokální kopii nebo b) je zpracovat rovnou při stažení (a soubor neukládat). 
 
-U obou postupů je třeba počítat s tím, že velikost zazipovaných souborů je kolem 5 - 10 MB, takže kompletní 5 letá historie znamená stažení až **20 GB** dat. Pokud u první varianty navíc rozzipujeme stažený soubor a uložíme samotná data (v .csv, aby se s nimi následně snadněji pracovalo), musíme počítat s tím, že **1 rok** zabere až nějakých **40 GB** místa na disku. Proto stojí za úvahu uložit pouze údaje, které budeme potřebovat (v případě této analýzy soubory zabíraly zhruba **80 GB**).
+U obou postupů je třeba počítat s tím, že velikost zazipovaných souborů je kolem 5 - 10 MB, takže kompletní pětiletá historie znamená stažení až **20 GB** dat. Pokud u první varianty navíc rozzipujeme stažený soubor a uložíme samotná data (v .csv, aby se s nimi následně snadněji pracovalo), musíme počítat s tím, že **1 rok** zabere až nějakých **40 GB** místa na disku. Proto stojí za úvahu uložit pouze údaje, které budeme potřebovat (v případě této analýzy soubory zabíraly zhruba **80 GB**).
 
 Ukázka hlavní části kódu, který stáhne a extrahuje data o kamerách pro jeden den `d`.
 

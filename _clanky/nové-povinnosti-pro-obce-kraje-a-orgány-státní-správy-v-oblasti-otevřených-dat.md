@@ -39,9 +39,13 @@ Vzdělávací aktivity Ministerstva vnitra v oblasti otevřených dat jsou zamě
 
 Mnoho úřadů se díky zákonu č. 261/2021 Sb., kterým se mění některé zákony v souvislosti s další elektronizací postupů orgánů veřejné moci, setká s praxí publikace otevřených dat vůbec poprvé. Je proto velmi důležité, aby se na novou povinnost co nejlépe připravily.
 
+<<<<<<< Updated upstream
 * Poté jsme si určili, podle čeho budeme definovat kvalitu ovzduší. Dospěli jsme k tomu, že nás zajímají částice PM2,5, PM10 a NO2 v intervalu od 1.1.2020 do 31.8. 2020. O vlivu těchto částic na lidské zdraví jsme se dozvěděli ze stránek [Můžu dýchat][můžu dýchat].
 * Data o [mobilitě obyvatel][mobilita obyvatel] jsem našel na portálu [data.brno.cz][Data Brno], který je registrován v [Národním katalogu otevřených dat (NKOD)][NKOD]. Rozhodl jsem se použít data uživatelů aplikace Waze, protože a) byly dostupné narozdíl od dat ze SIM karet v delším časovém horizontu (ačkoli jsem je musel potupně přepsat ručně z grafu Pokles mobility obyvatelstva v Brně v [tomto článku] a popravdě nevím, proč není v tomto časovém období také v csv.) a b) narozdíl od regionálních Google Mobility reportů se týkaly Brna.
 * Kde seženeme data ke kvalitě ovzduší? Touto otázkou jsem se zabýval při plánování projektu ještě o prázdninách. Weby s daty o kvalitě ovzduší, na které jsem narazil ([Můžu dýchat][můžu dýchat] a [Brněnské ovzduší][brněnskéovzduší]), čerpaly z dat [Českého hydrometeorologického ústavu][CHMI]. Jenže tam jsem dohledal pouze aktuální denní hodnoty a data z roku 2019 (později jsem se dozvěděl, že je to proto, že data z ČHMÚ prochází validací a jsou uveřejněna se zpožděním, tzn. data za rok 2020 se uveřejňují v první polovině roku 2021). Rozhodl jsem se tedy obrátit s prosbou na Můžu dýchat a k mému příjemnému překvapení jsem o pár dnů později obdržel dataset ve formátu csv.
+=======
+
+>>>>>>> Stashed changes
     
 [OFN úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN pro úřední desky"
 [ofn.gov.cz]: https://ofn.gov.cz/ "OFN"

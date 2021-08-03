@@ -4,9 +4,8 @@ title: Nové povinnosti pro obce, kraje a orgány státní správy v oblasti ote
 detail: true
 ref: Nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat
 lang: cs
-image: ../attachments/články/Nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat/úvod.webp
-author: jakub_míšek, marie_vítová
-date: 2021-08-2 07:00:00 +01:00
+author: jakub_míšek
+date: 2021-08-3 07:00:00 +01:00
 ---
 V rámci dalšího rozvoje digitálních služeb veřejné správy a samosprávy vzniká podle právě přijatého zákona č. 261/2021 Sb. nová povinnost pro obce s rozšířenou působností, kraje a státní orgány zveřejňovat metadata informací z úředních desek jako otevřená data. Tato povinnost dopadne na několik stovek úřadů státní správy a samosprávy v České republice a je třeba se na ni rychle připravit - v účinnost totiž vstupuje již od února příštího roku.
 
@@ -43,7 +42,7 @@ Mnoho úřadů se díky zákonu č. 261/2021 Sb., kterým se mění některé z�
 [OFN úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN pro úřední desky"
 [ofn.gov.cz]: https://ofn.gov.cz/ "OFN"
 [podmínky užití]: https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti "Podmínky užití"
-[NKOD]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
+[NKOD]: https://data.gov.cz/datové-sady "NKOD"
 [rozhodnutí o způsobu katalogizace]: https://opendata.gov.cz/cinnost:rozhodnuti-o-zpusobu-katalogizace-dat "Rozhodnutí o způsobu katalogizace"
 [otevírání dat v kostce]: https://opendata.gov.cz/informace:otevírání-dat-v-kostce "Otevírání dat v kostce"
 [POD]: https://data.gov.cz/ "Portál otevřených dat"

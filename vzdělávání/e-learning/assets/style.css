@@ -4,7 +4,8 @@
   /* By default reveal.js white theme utilize pixels. */
   --r-block-margin: 0.5em;
   --r-heading-margin: 0 0.5em 0 0;
-
+  /* We also need to set font. */
+  --r-font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 :root {
@@ -57,6 +58,7 @@ body {
   height: 100vh;
   width: 100vw;
   flex-direction: column;
+  font-family: var(--r-main-font);
 }
 
 header {

@@ -13,7 +13,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --r-background-color: #fff;
-  --r-main-font: Source Sans Pro, Helvetica, sans-serif;
+  --r-main-font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --r-main-font-size: 42px;
   --r-main-color: #222;
   --r-block-margin: 20px;

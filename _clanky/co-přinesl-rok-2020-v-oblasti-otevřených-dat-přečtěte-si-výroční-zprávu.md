@@ -8,7 +8,8 @@ author: michal_kubáň
 date: 2021-08-19 08:00:00 +01:00
 ---
 Jak vypadal rok 2020 optikou veřejné správy v oblasti otevřených dat? Jak pandemie koronaviru ovlivnila agendu otevřených dat v České republice.
-Vláda schválila Výroční zpráva o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí. 
+Vláda schválila Výroční zpráva o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí.
+<!--more-->
 
 V roce 2020 pandemie koronaviru ukázala nejen v České republice, ale i ve světě, že pokud chce společnost reagovat na krizi, tak se musí rozhodovat na základě relevantních a kvalitních dat.
 Data tak slouží jako základní kameny pro tvorbu opatření, prognóz, programů a reforem.

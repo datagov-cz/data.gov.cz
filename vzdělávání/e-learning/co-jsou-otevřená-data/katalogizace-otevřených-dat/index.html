@@ -1,247 +1,199 @@
-<!doctype html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../../assets/reveal.js/reset.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/reveal.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/theme/white.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme">
-    <link rel="stylesheet" href="../../assets/style.css">
-    <title>Online kurz Co jsou otevřená data</title>
-  </head>
-  <body>
+---
+layout: revealjs
+title: Katalogizace otevřených dat - e-Learning otevřených dat
+---
+<section>
+  <h2>Katalogizace otevřených dat</h2>
+  <p>K tomu, aby byla zajištěna kvalita celé infrastruktury otevřených
+    dat, je zapotřebí:</p>
+  <ul class="fragment fade-up">
+    <li>mít k dispozici i <strong>kvalitní „data o datech“, čili
+        metadata,</strong></li>
+    <li>zajistit snadnou “nalezitelnost” (findability) dat.</li>
+  </ul>
+  <p class="fragment fade-up">Tyto požadavky jsou naplňovány <strong>katalogizací
+      otevřených dat.</strong></p>
+</section>
 
-    <header>
-      <img src="../../../../images/ozp_logo_cz.webp" id="logo-esf" alt="Evropská unie,
-        Evropský sociální fond, Operační program Zaměstnanost" />
-      <img src="../../../../images/logo.png" alt="Otevřená Data" />
-    </header>
+<section>
+  <h2>Katalogizace otevřených dat II.</h2>
+  <p><strong>Nejsou-li data opatřena příslušnými metadaty a řádně
+      zkatalogizována,</strong> pak:</p>
+  <ul class="fragment fade-up">
+    <li>hrozí riziko, že <strong>uživatelé sady nenajdou,</strong></li>
+    <li>uživatelé budou mít <strong>pochyby o jejich platnosti a původu,</strong></li>
+    <li>vinou špatně dostupné dokumentace hrozí riziko, že <strong>data
+        budou dezinterpretována,</strong></li>
+    <li>uživatelé nebudou mít přehled o tom, jaké <strong>jsou podmínky
+        užití příslušné datové sady.</strong></li>
+  </ul>
+</section>
 
-    <div class="reveal presentation"> <div class="slides">
+<section>
+  <div class="flex-column-fill">
+    <h2>Národní katalog otevřených dat (NKOD)</h2>
+    <p><a href="https://data.gov.cz/datové-sady" target="_blank">Národní
+        katalog otevřených dat</a> sdružuje <strong>metadata o
+        otevřených datových sadách v rámci celé ČR.</strong></p>
+    <p class="fragment fade-up"><strong>NKOD umožňuje vyhledávat a
+        filtrovat datové sady,</strong> např. podle poskytovatelů,
+      klíčových slov atp.</p>
+    <a href="https://data.gov.cz/datové-sady" target="_blank"
+      class="image-container">
+      <img class="fragment fade-up" src="NKODscreenshot.webp" />
+    </a>
+  </div>
+</section>
 
-        <!-- CONTENT:START -->
+<section>
+  <h2>Seznámení s Národním katalogem otevřených dat (NKOD)</h2>
+  <p>V NKOD lze datové sady filtrovat a vyhledávat mj. podle
+    poskytovatelů, klíčových slov, formátů aj.</p>
+  <p class="fragment fade-up">Zkuste si nyní vyhledat v NKOD seznam
+    datových sad, jejichž poskytovatelem je Statutární město Brno a jsou
+    ve formátu CSV.</p>
+  <p class="fragment fade-up">Řešení si prozradíme na dalším slidu…</p>
+</section>
 
-        <section>
-          <h2>Katalogizace otevřených dat</h2>
-          <p>K tomu, aby byla zajištěna kvalita celé infrastruktury otevřených
-            dat, je zapotřebí:</p>
-          <ul class="fragment fade-up">
-            <li>mít k dispozici i <strong>kvalitní „data o datech“, čili
-                metadata,</strong></li>
-            <li>zajistit snadnou “nalezitelnost” (findability) dat.</li>
-          </ul>
-          <p class="fragment fade-up">Tyto požadavky jsou naplňovány <strong>katalogizací
-              otevřených dat.</strong></p>
-        </section>
+<section>
+  <h2>Seznámení s NKOD II</h2>
+  <p>Výpis příslušných datových sad se nachází např. na <a
+      href="https://data.gov.cz/datové-sady?poskytovatel=https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785&formáty=http://publications.europa.eu/resource/authority/file-type/CSV"
+      target="_blank">této stránce</a></p>
+  <p class="fragment fade-up">Dospěli jste také k tomuto výpisu?</p>
+</section>
 
-        <section>
-          <h2>Katalogizace otevřených dat II.</h2>
-          <p><strong>Nejsou-li data opatřena příslušnými metadaty a řádně
-              zkatalogizována,</strong> pak:</p>
-          <ul class="fragment fade-up">
-            <li>hrozí riziko, že <strong>uživatelé sady nenajdou,</strong></li>
-            <li>uživatelé budou mít <strong>pochyby o jejich platnosti a původu,</strong></li>
-            <li>vinou špatně dostupné dokumentace hrozí riziko, že <strong>data
-                budou dezinterpretována,</strong></li>
-            <li>uživatelé nebudou mít přehled o tom, jaké <strong>jsou podmínky
-                užití příslušné datové sady.</strong></li>
-          </ul>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Seznámení s NKOD III</h2>
+    <div class="flex-row-cropp">
+      <div style="flex: 1;" class="flex-column">
+        <p>Postup je jednoduchý: nejprve provedeme filtrování<br />ve
+          výpisu „Poskytovatelé“ (<a
+            href="https://data.gov.cz/datové-sady?poskytovatel=https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785"
+            target="_blank">Statutární město Brno</a>),</p>
+        <div class="image-container">
+          <img class="fragment fade-up" src="Brno1.webp" />
+        </div>
+      </div>
+      <div style="flex: 1;" class="flex-column">
+        <p class="fragment fade-up">následně zvolíme filtr ve výpisu
+          „Formáty“ (<a
+            href="https://data.gov.cz/datové-sady?poskytovatel=https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785&formáty=http://publications.europa.eu/resource/authority/file-type/CSV"
+            target="_blank">CSV</a>).</p>
+        <div class="image-container">
+          <img class="fragment fade-up" src="Brno2.webp" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Národní katalog otevřených dat (NKOD)</h2>
-            <p><a href="https://data.gov.cz/datové-sady" target="_blank">Národní
-                katalog otevřených dat</a> sdružuje <strong>metadata o
-                otevřených datových sadách v rámci celé ČR.</strong></p>
-            <p class="fragment fade-up"><strong>NKOD umožňuje vyhledávat a
-                filtrovat datové sady,</strong> např. podle poskytovatelů,
-              klíčových slov atp.</p>
-            <a href="https://data.gov.cz/datové-sady" target="_blank"
-              class="image-container">
-              <img class="fragment fade-up" src="NKODscreenshot.webp" />
-            </a>
-          </div>
-        </section>
+<section>
+  <h2>Národní katalog otevřených dat (NKOD)</h2>
+  <p>V katalogových záznamech k datovým sadám registrovaným v NKOD jsou
+    k dispozici informace mj. o:</p>
+  <ul class="fragment fade-up">
+    <li>názvu,</li>
+    <li>popisu,</li>
+    <li>poskytovateli,</li>
+    <li>geografickém pokrytí,</li>
+    <li>časovém pokrytí,</li>
+    <li>dokumentaci,</li>
+    <li>podmínkách užití,</li>
+    <li>periodicitě aktualizace,</li>
+    <li>datovém schématu,</li>
+    <li>kontaktu na správce/kurátora dat.</li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Seznámení s Národním katalogem otevřených dat (NKOD)</h2>
-          <p>V NKOD lze datové sady filtrovat a vyhledávat mj. podle
-            poskytovatelů, klíčových slov, formátů aj.</p>
-          <p class="fragment fade-up">Zkuste si nyní vyhledat v NKOD seznam
-            datových sad, jejichž poskytovatelem je Statutární město Brno a jsou
-            ve formátu CSV.</p>
-          <p class="fragment fade-up">Řešení si prozradíme na dalším slidu…</p>
-        </section>
+<section>
+  <h2>Metadata a NKOD</h2>
+  <p>Jako <strong>metadata</strong> označujeme „data o datech“.</p>
+  <p class="fragment fade-up">Položky uvedené na předchozím slidu byly
+    tedy <strong>ukázkami metadat</strong> k otevřeným datovým sadám.</p>
+  <p class="fragment fade-up">Ve vztahu k NKOD dělíme <strong>metadata
+      na povinná</strong> (musí být u každé datové sady) a <strong>nepovinná.</strong></p>
+  <p class="fragment fade-up">Obecně platí: čím více metadat k dané sadě
+    poskytneme, tím je větší pravděpodobnost, že ji potenciální
+    uživatelé dohledají.</p>
+</section>
 
-        <section>
-          <h2>Seznámení s NKOD II</h2>
-          <p>Výpis příslušných datových sad se nachází např. na <a
-              href="https://data.gov.cz/datové-sady?poskytovatel=https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785&formáty=http://publications.europa.eu/resource/authority/file-type/CSV"
-              target="_blank">této stránce</a></p>
-          <p class="fragment fade-up">Dospěli jste také k tomuto výpisu?</p>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Ukázka detailu datové sady</h2>
+    <p>Podívejme se nyní na <a
+        href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00007064/706529437/9c73b802263c5e0ccf5542f10fbc35bb"
+        target="_blank">detail konkrétní datové sady v NKOD</a>…</p>
+    <a
+      href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00007064/706529437/9c73b802263c5e0ccf5542f10fbc35bb"
+      target="_blank" class="image-container">
+      <img class="fragment fade-up" src="agendy.webp" />
+    </a>
+  </div>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Seznámení s NKOD III</h2>
-            <div class="flex-row-cropp">
-              <div style="flex: 1;" class="flex-column">
-                <p>Postup je jednoduchý: nejprve provedeme filtrování<br />ve
-                  výpisu „Poskytovatelé“ (<a
-                    href="https://data.gov.cz/datové-sady?poskytovatel=https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785"
-                    target="_blank">Statutární město Brno</a>),</p>
-                <div class="image-container">
-                  <img class="fragment fade-up" src="Brno1.webp" />
-                </div>
-              </div>
-              <div style="flex: 1;" class="flex-column">
-                <p class="fragment fade-up">následně zvolíme filtr ve výpisu
-                  „Formáty“ (<a
-                    href="https://data.gov.cz/datové-sady?poskytovatel=https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785&formáty=http://publications.europa.eu/resource/authority/file-type/CSV"
-                    target="_blank">CSV</a>).</p>
-                <div class="image-container">
-                  <img class="fragment fade-up" src="Brno2.webp" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<section>
+  <h2>NKOD a důvěryhodnost</h2>
+  <p>Proč můžeme datové sady katalogizované v NKOD považovat za
+    důvěryhodné?
+  </p>
+  <p class="fragment fade-up">Do NKOD mohou být zaregistrovány
+    datové sady orgánů veřejné moci (např. orgánů státní správy,
+    měst, obcí, …) na základě příslušného formálního požadavku,
+    případně některých dalších veřejných institucí.</p>
+</section>
 
-        <section>
-          <h2>Národní katalog otevřených dat (NKOD)</h2>
-          <p>V katalogových záznamech k datovým sadám registrovaným v NKOD jsou
-            k dispozici informace mj. o:</p>
-          <ul class="fragment fade-up">
-	    <li>názvu,</li>
-	    <li>popisu,</li>
-	    <li>poskytovateli,</li>	  
-            <li>geografickém pokrytí,</li>
-            <li>časovém pokrytí,</li>
-            <li>dokumentaci,</li>
-            <li>podmínkách užití,</li>
-            <li>periodicitě aktualizace,</li>
-            <li>datovém schématu,</li>
-            <li>kontaktu na správce/kurátora dat.</li>
-          </ul>
-        </section>
+<section>
+  <h2>Registrace datové sady NKOD</h2>
+  <p>Jak zaregistrovat datovou sadu do Národního katalogu otevřených
+    dat?</p>
+  <p class="fragment fade-up">Existují v zásadě dva základní
+    způsoby:</p>
+  <ul>
+    <li class="fragment fade-up">registrace jednotlivé datové sady
+      pomocí vyplnění formuláře v NKOD a zaslání výsledné registrace
+      datovou schránkou,</li>
+    <li class="fragment fade-up">zprovoznění a registrace lokálního
+      katalogu instituce s rozhraním dle <a
+        href="https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/2021-01-11/"
+        target="_blank">Otevřené formální normy</a>, jehož obsah je
+      pravidelně přenášen do NKOD.</li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Metadata a NKOD</h2>
-          <p>Jako <strong>metadata</strong> označujeme „data o datech“.</p>
-          <p class="fragment fade-up">Položky uvedené na předchozím slidu byly
-            tedy <strong>ukázkami metadat</strong> k otevřeným datovým sadám.</p>
-          <p class="fragment fade-up">Ve vztahu k NKOD dělíme <strong>metadata
-              na povinná</strong> (musí být u každé datové sady) a <strong>nepovinná.</strong></p>
-          <p class="fragment fade-up">Obecně platí: čím více metadat k dané sadě
-            poskytneme, tím je větší pravděpodobnost, že ji potenciální
-            uživatelé dohledají.</p>
-        </section>
+<section>
+  <h2>Lokální katalog</h2>
+  <p>Lokální katalog je aplikace, která slouží ke správě metadat o
+    (otevřených datech) dané instituce.</p>
+  <p class="fragment fade-up">Na úrovni instituce hraje podobnou
+    roli jako NKOD na úrovni národní.</p>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Ukázka detailu datové sady</h2>
-            <p>Podívejme se nyní na <a
-                href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00007064/706529437/9c73b802263c5e0ccf5542f10fbc35bb"
-                target="_blank">detail konkrétní datové sady v NKOD</a>…</p>
-            <a
-              href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00007064/706529437/9c73b802263c5e0ccf5542f10fbc35bb"
-              target="_blank" class="image-container">
-              <img class="fragment fade-up" src="agendy.webp" />
-            </a>
-          </div>
-        </section>
+<section>
+  <h2>Provozovatelé lokálních katalogů v ČR</h2>
+  <p>Lokální katalogy otevřených dat provozuje v ČR řada institucí,
+    mj. například:</p>
+  <ul class="fragment fade-up">
+    <li><a href="https://opendata.mfcr.cz/" target="_blank">Ministerstvo
+        financí ČR</a></li>
+    <li><a
+        href="https://data.cssz.cz/web/otevrena-data/katalog-otevrenych-dat"
+        target="_blank">Česká správa sociálního zabezpečení</a></li>
+    <li><a href="https://data.mpsv.cz/web/data/uvod"
+        target="_blank">Ministerstvo práce a sociálních věcí ČR</a></li>
+    <li>…a řada <a
+        href="https://data.gov.cz/lokální-katalogy"
+        target="_blank">dalších institucí veřejné správy</a></li>
+  </ul>
+</section>
 
-        <section>
-          <h2>NKOD a důvěryhodnost</h2>
-          <p>Proč můžeme datové sady katalogizované v NKOD považovat za
-            důvěryhodné?<p>
-              <p class="fragment fade-up">Do NKOD mohou být zaregistrovány
-                datové sady orgánů veřejné moci (např. orgánů státní správy,
-                měst, obcí, …) na základě příslušného formálního požadavku,
-                případně některých dalších veřejných institucí.</p>
-            </section>
-
-            <section>
-              <h2>Registrace datové sady NKOD</h2>
-              <p>Jak zaregistrovat datovou sadu do Národního katalogu otevřených
-                dat?</p>
-              <p class="fragment fade-up">Existují v zásadě dva základní
-                způsoby:</p>
-              <ul>
-                <li class="fragment fade-up">registrace jednotlivé datové sady
-                  pomocí vyplnění formuláře v NKOD a zaslání výsledné registrace
-                  datovou schránkou,</li>
-                <li class="fragment fade-up">zprovoznění a registrace lokálního
-                  katalogu instituce s rozhraním dle <a
-                    href="https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/2021-01-11/"
-                    target="_blank">Otevřené formální normy</a>, jehož obsah je
-                  pravidelně přenášen do NKOD.</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2>Lokální katalog</h2>
-              <p>Lokální katalog je aplikace, která slouží ke správě metadat o
-                (otevřených datech) dané instituce.</p>
-              <p class="fragment fade-up">Na úrovni instituce hraje podobnou
-                roli jako NKOD na úrovni národní.</p>
-            </section>
-
-            <section>
-              <h2>Provozovatelé lokálních katalogů v ČR</h2>
-              <p>Lokální katalogy otevřených dat provozuje v ČR řada institucí,
-                mj. například:</p>
-              <ul class="fragment fade-up">
-                <li><a href="https://opendata.mfcr.cz/" target="_blank">Ministerstvo
-                    financí ČR</a></li>
-                <li><a
-                    href="https://data.cssz.cz/web/otevrena-data/katalog-otevrenych-dat"
-                    target="_blank">Česká správa sociálního zabezpečení</a></li>
-                <li><a href="https://data.mpsv.cz/web/data/uvod"
-                    target="_blank">Ministerstvo práce a sociálních věcí ČR</a></li>
-                <li>…a řada <a
-                    href="https://data.gov.cz/lokální-katalogy"
-                    target="_blank">dalších institucí veřejné správy</a></li>
-              </ul>
-            </section>
-
-            <section>
-              <h2>Konec modulu</h2>
-              <p><em>Pokračujte prosím na <a href="../legislativa-v-oblasti-od/">následující modul</a>.</em></p>
-	      <p><em>V případě hlubšího zájmu o toto téma – zejména z technického hlediska – doporučujeme e-learningový kurz <a href="../../katalogizace-otevřených-dat/" target="_blank">Katalogizace otevřených dat</a>.</em></p>
-            </section>
-
-            <!-- CONTENT:END -->
-
-          </div> </div>
-
-        <footer>
-          Projekt: Rozvoj datových politik v oblasti zlepšování kvality a
-          interoperability dat veřejné správy / Registrační číslo:
-          CZ.03.4.74/0.0/0.0/15_025/0013983
-        </footer>
-
-        <script src="../../assets/main.js"></script>
-        <script src="../../assets/reveal.js/reveal.js"></script>
-        <script src="../../assets/reveal.js/plugin/notes/notes.js"></script>
-        <script src="../../assets/reveal.js/plugin/markdown/markdown.js"></script>
-        <script src="../../assets/reveal.js/plugin/highlight/highlight.js"></script>
-        <script>
-   Reveal.initialize({
-     // Use all the available space.
-     "width": "100%",
-     "height": "100%",
-     //
-	 "hash": true,
-     "embedded": true,
-     "center": false, // Do not use vertical centering, so top is always at the top.
-     "plugins": [ RevealMarkdown, RevealHighlight, RevealNotes ]
-   });
-</script>
-
-      </body>
-    </html>
+<section>
+  <h2>Konec modulu</h2>
+  <p><em>Pokračujte prosím na <a href="../legislativa-v-oblasti-od/">následující
+        modul</a>.</em></p>
+  <p><em>V případě hlubšího zájmu o toto téma – zejména z technického
+      hlediska – doporučujeme e-learningový kurz <a
+        href="../../katalogizace-otevřených-dat/" target="_blank">Katalogizace
+        otevřených dat</a>.</em></p>
+</section>

@@ -1,311 +1,261 @@
-<!doctype html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../../assets/reveal.js/reset.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/reveal.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/theme/white.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme">
-    <link rel="stylesheet" href="../../assets/style.css">
-    <title>Online kurz Co jsou otevřená data</title>
-  </head>
-  <body>
+---
+layout: revealjs
+title: Co jsou otevřená data - e-Learning otevřených dat
+---
+<section>
+  <h2>Co jsou to otevřená data</h2>
+  <p>Namísto definice otevřených dat – která přijde později – si nejprve
+    ukážeme <strong>příklady otevřených dat a jak mohou být taková data
+      využívána.</strong></p>
+</section>
 
-    <header>
-      <img src="../../../../images/ozp_logo_cz.webp" id="logo-esf" alt="Evropská unie,
-        Evropský sociální fond, Operační program Zaměstnanost" />
-      <img src="../../../../images/logo.png" alt="Otevřená Data" />
-    </header>
+<section>
+  <h2>Příklad I / Interaktivní mapa aktivních případů COVID-19 na
+    Novinky.cz</h2>
+  <p>Ministerstvo zdravotnictví poskytuje data týkající se onemocnění
+    covid 19. Tato data mohou být využita např. v podobě interaktivních
+    vizualizací. Poskytovatel nemusí tyto vizualizace připravovat –
+    otevřením dat poskytovatel umožnil třetí straně (např. serveru
+    novinky.cz) vytvořit vizualizaci dat na mapovém podkladu, která
+    slouží jako <a
+      href="https://www.novinky.cz/koronavirus/clanek/koronavirus-a-cesko-mapa-aktivnich-pripadu-v-okresech-cr-40337119"
+      target="_blank">nová služba občanům</a>.</p>
+  <a
+    href="https://www.novinky.cz/koronavirus/clanek/koronavirus-a-cesko-mapa-aktivnich-pripadu-v-okresech-cr-40337119"
+    target="_blank">
+    <img class="fragment fade-up" src="uzis.webp" style="height: 50%" />
+  </a>
+  <p>Příslušnou <a
+      href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/https---opendata.mzcr.cz-api-3-action-package_show-id-covid-19-prehled-osob-s-prokazanou-nakazou-dle-hlaseni-krajskych-hygienickych-stanic-v2"
+      target="_blank">datovou sadu najdeme v Národním katalogu
+      otevřených dat</a>.</p>
+</section>
 
-    <div class="reveal presentation"> <div class="slides">
+<section>
+  <h2>Příklad II / Hlídač státu</h2>
+  <p>Hlídač státu umožňuje prostřednictvím webového rozhraní prohledávat
+    velké množství dokumentů majících původ ve veřejné správě či
+    provádět nad nimi analytickou činnost. Příkladem mohou být data o <a
+      href="https://www.hlidacstatu.cz/data/Index/kontrolni-akce-nku"
+      target="_blank">kontrolních akcích zveřejňovaná Nejvyšším
+      kontrolním úřadem</a> – ta jsou jedním z prohledávaných zdrojů.</p>
+  <a href="https://www.hlidacstatu.cz/data/Index/kontrolni-akce-nku"
+    target="_blank">
+    <img class="fragment fade-up" src="hlidac.webp" style="height: 50%"
+      />
+  </a>
+  <p>Příslušnou <a
+      href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/49370227/98221"
+      target="_blank">datovou sadu najdeme v Národním katalogu
+      otevřených dat</a>.</p>
+</section>
 
-        <!-- CONTENT:START -->
+<section>
+  <h2>Principy otevřených dat I</h2>
+  <p>Uvedené dvě aplikace mají společné mimo jiné to, že staví na
+    <strong>otevřených datech.</strong></p>
+  <p class="fragment fade-up">Klíčové je především to, že:</p>
+  <ul class="fragment fade-up">
+    <li>data, s nimiž aplikace pracují, lze zpracovávat strojově, tzv.
+      <strong>strojová čitelnost</strong> (bude vysvětlena později),</li>
+    <li>data jsou <strong>k dispozici za jasně definovaných podmínek,
+        které nejsou omezující – nevylučují některé skupiny uživatelů či
+        určité způsoby použití,</strong> například komerční.</li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Co jsou to otevřená data</h2>
-          <p>Namísto definice otevřených dat – která přijde později – si nejprve
-            ukážeme <strong>příklady otevřených dat a jak mohou být taková data
-              využívána.</strong></p>
-        </section>
+<section>
+  <h2>Principy otevřených dat II</h2>
+  <p>Další důležité aspekty používaných dat:</p>
+  <ul class="fragment fade-up">
+    <li>Data, s nimiž aplikace pracují, jsou ve formátech s <strong>otevřenou
+        specifikací</strong> – pro jejich otevření či přečtení nemusejí
+      tvůrci aplikací pořizovat konkrétní speciální programy.</li>
+    <li>Jsou <strong>dobře zdokumentovaná a jejich poskytovatel je důvěryhodný –
+        jsou zaregistrována v <a href="https://data.gov.cz/datové-sady"
+          target="_blank">Národním katalogu otevřených dat</a>.</strong></li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Příklad I / Interaktivní mapa aktivních případů COVID-19 na
-            Novinky.cz</h2>
-          <p>Ministerstvo zdravotnictví poskytuje data týkající se onemocnění
-            covid 19. Tato data mohou být využita např. v podobě interaktivních
-            vizualizací. Poskytovatel nemusí tyto vizualizace připravovat –
-            otevřením dat poskytovatel umožnil třetí straně (např. serveru
-            novinky.cz) vytvořit vizualizaci dat na mapovém podkladu, která
-            slouží jako <a
-              href="https://www.novinky.cz/koronavirus/clanek/koronavirus-a-cesko-mapa-aktivnich-pripadu-v-okresech-cr-40337119"
-              target="_blank">nová služba občanům</a>.</p>
-          <a
-            href="https://www.novinky.cz/koronavirus/clanek/koronavirus-a-cesko-mapa-aktivnich-pripadu-v-okresech-cr-40337119"
-            target="_blank">
-            <img class="fragment fade-up" src="uzis.webp" style="height: 50%" />
-          </a>
-          <p>Příslušnou <a
-              href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/https---opendata.mzcr.cz-api-3-action-package_show-id-covid-19-prehled-osob-s-prokazanou-nakazou-dle-hlaseni-krajskych-hygienickych-stanic-v2"
-              target="_blank">datovou sadu najdeme v Národním katalogu
-              otevřených dat</a>.</p>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Aplikace nejsou otevřená data</h2>
+    <p><strong>Aplikace nelze zaměňovat za otevřená data.</strong>
+      Aplikace může být přístupná bezplatně, může být i užitečná, ale…</p>
+    <p class="fragment fade-up">…nikdo jiný než vlastník dat nebude moci
+      vytvořit podobnou či lepší aplikaci, nebo data v ní prezentovaná
+      integrovat do svého systému.</p>
+    <p class="fragment fade-up">Příkladem může být <a
+        href="https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-aktivity-klistat"
+        target="_blank">mapová vizualizace aktivity klíštěte obecného na
+        území ČR</a>, kterou na svých stránkách zveřejňuje Český
+      hydrometeorologický ústav.</p>
+    <a
+      href="https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-aktivity-klistat"
+      target="_blank"
+      class="image-container">
+      <img class="fragment fade-up" src="chmi_kliste.webp" />
+    </a>
+  </div>
+</section>
 
-        <section>
-          <h2>Příklad II / Hlídač státu</h2>
-          <p>Hlídač státu umožňuje prostřednictvím webového rozhraní prohledávat
-            velké množství dokumentů majících původ ve veřejné správě či
-            provádět nad nimi analytickou činnost. Příkladem mohou být data o <a
-              href="https://www.hlidacstatu.cz/data/Index/kontrolni-akce-nku"
-              target="_blank">kontrolních akcích zveřejňovaná Nejvyšším
-              kontrolním úřadem</a> – ta jsou jedním z prohledávaných zdrojů.</p>
-          <a href="https://www.hlidacstatu.cz/data/Index/kontrolni-akce-nku"
-            target="_blank">
-            <img class="fragment fade-up" src="hlidac.webp" style="height: 50%"
-              />
-          </a>
-          <p>Příslušnou <a
-              href="https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/49370227/98221"
-              target="_blank">datovou sadu najdeme v Národním katalogu
-              otevřených dat</a>.</p>
-        </section>
+<section>
+  <h2>Co je strojová čitelnost?</h2>
+  <p><strong>Strojově čitelná data</strong></p>
+  <ul class="fragment fade-up">
+    <li>jsou ve formátu, který umožňuje aplikacím přistupovat k
+      jednotlivým datovým položkám,</li>
+    <li>jsou strukturována tak, aby umožňovala automatické zpracování.</li>
+  </ul>
+  <p class="fragment fade-up">Příkladem strojově čitelných dat je dobře
+    strukturovaná tabulka ve <a
+      href="https://opendata.gov.cz/standardy:csv" target="_blank">formátu
+      CSV</a> (textový soubor pro tabulková data, ve kterém jsou
+    jednotlivé položky odděleny čárkami).</p>
+</section>
 
-        <section>
-          <h2>Principy otevřených dat I</h2>
-          <p>Uvedené dvě aplikace mají společné mimo jiné to, že staví na
-            <strong>otevřených datech.</strong></p>
-          <p class="fragment fade-up">Klíčové je především to, že:</p>
-          <ul class="fragment fade-up">
-            <li>data, s nimiž aplikace pracují, lze zpracovávat strojově, tzv.
-              <strong>strojová čitelnost</strong> (bude vysvětlena později),</li>
-            <li>data jsou <strong>k dispozici za jasně definovaných podmínek,
-                které nejsou omezující – nevylučují některé skupiny uživatelů či
-                určité způsoby použití,</strong> například komerční.</li>
-          </ul>
-        </section>
+<section>
+  <h2>Jaká data nejsou strojově čitelná?</h2>
+  <ul>
+    <li>soubory ve formátu XLSX obsahující grafické formátování,
+      případně vložené grafy,</li>
+    <li class="fragment fade-up">naskenované PDF dokumenty,</li>
+    <li class="fragment fade-up">mapy v aplikacích, které jsou ovládány
+      „lidským uživatelem“.</li>
+  </ul>
+  <p class="fragment fade-up">V těchto případech k jednotlivým datovým
+    položkám <strong>nelze obecně přistupovat pomocí programu/aplikace</strong>
+    – je zapotřebí člověka, aby porozuměl významu dat (např. vyčetl data
+    z grafu či mapy).</p>
+</section>
 
-        <section>
-          <h2>Principy otevřených dat II</h2>
-          <p>Další důležité aspekty používaných dat:</p>
-          <ul class="fragment fade-up">
-            <li>Data, s nimiž aplikace pracují, jsou ve formátech s <strong>otevřenou
-                specifikací</strong> – pro jejich otevření či přečtení nemusejí
-              tvůrci aplikací pořizovat konkrétní speciální programy.</li>
-            <li>Jsou <strong>dobře zdokumentovaná a jejich poskytovatel je důvěryhodný – jsou zaregistrována v <a href="https://data.gov.cz/datové-sady" target="_blank">Národním katalogu otevřených dat</a>.</strong></li>
-          </ul>
-        </section>
+<section>
+  <h2>Datová sada vs. distribuce datové sady</h2>
+  <p>Pro úplnost ještě představíme dvojici souvisejících pojmů: datová
+    sada a distribuce datové sady.</p>
+  <p class="fragment fade-up"><strong>Datová sada</strong> je množina
+    souvisejících dat, vztahujících se k jednomu věcnému tématu.</p>
+  <p class="fragment fade-up"><strong>Distribuce datové sady</strong> je
+    konkrétní datový zdroj, typicky v podobě souboru či aplikačního
+    rozhraní API, který zpřístupňuje data datové sady nebo jejich část.</p>
+  <p class="fragment fade-up">Informace o poskytovaných distribucích
+    dané datové sady se objevuje mj. v příslušném katalogizačním záznamu
+    v NKOD.</p>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Aplikace nejsou otevřená data</h2>
-            <p><strong>Aplikace nelze zaměňovat za otevřená data.</strong>
-              Aplikace může být přístupná bezplatně, může být i užitečná, ale…</p>
-            <p class="fragment fade-up">…nikdo jiný než vlastník dat nebude moci
-              vytvořit podobnou či lepší aplikaci, nebo data v ní prezentovaná
-              integrovat do svého systému.</p>
-            <p class="fragment fade-up">Příkladem může být <a
-                href="https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-aktivity-klistat"
-                target="_blank">mapová vizualizace aktivity klíštěte obecného na
-                území ČR</a>, kterou na svých stránkách zveřejňuje Český
-              hydrometeorologický ústav.</p>
-            <a
-              href="https://www.chmi.cz/predpovedi/predpovedi-pocasi/ceska-republika/predpoved-aktivity-klistat"
-              target="_blank"
-              class="image-container">
-              <img class="fragment fade-up" src="chmi_kliste.webp" />
-            </a>
-          </div>
-        </section>
+<section>
+  <h2>Datová sada vs. distribuce datové sady II</h2>
+  <p>Příkladem může být datová sada faktur přijatých daným úřadem, její
+    distribuce pak může mít podobu CSV souboru.</p>
+  <p class="fragment fade-up"><strong>Jedna datová sada může mít více
+      distribucí,</strong> např. CSV soubor, XML soubor aj.</p>
+  <p class="fragment fade-up">Ovšem pozor, jednotlivé distribuce nemohou
+    být strukturovány/děleny např. po kvarálech, letech, obcích, krajích
+    – v tom případě by se jednalo o různé datové sady.</p>
+</section>
 
-        <section>
-          <h2>Co je strojová čitelnost?</h2>
-          <p><strong>Strojově čitelná data</strong></p>
-          <ul class="fragment fade-up">
-            <li>jsou ve formátu, který umožňuje aplikacím přistupovat k
-              jednotlivým datovým položkám,</li>
-            <li>jsou strukturována tak, aby umožňovala automatické zpracování.</li>
-          </ul>
-          <p class="fragment fade-up">Příkladem strojově čitelných dat je dobře
-            strukturovaná tabulka ve <a
-              href="https://opendata.gov.cz/standardy:csv" target="_blank">formátu
-              CSV</a> (textový soubor pro tabulková data, ve kterém jsou
-            jednotlivé položky odděleny čárkami).</p>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Datová sada vs. distribuce datové sady III</h2>
+    <p>Ukázkou jedné datové sady s více distribucemi mohou být např. <a
+        href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00007064%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb"
+        target="_blank">Agendy evidované v Registru práv a povinností</a>
+      ve smyslu § 51 zákona č. 111/2009 Sb. o základních registrech,
+      které jsou dostupné ve formátu JSON, JSON-LD i jako
+      SPARQL-endpoint.</p>
+    <a
+      href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00007064%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb"
+      target="_blank" class="image-container">
+      <img class="fragment fade-up" src="agendy.webp" />
+    </a>
+  </div>
+</section>
 
-        <section>
-          <h2>Jaká data nejsou strojově čitelná?</h2>
-          <ul>
-            <li>soubory ve formátu XLSX obsahující grafické formátování,
-              případně vložené grafy,</li>
-            <li class="fragment fade-up">naskenované PDF dokumenty,</li>
-            <li class="fragment fade-up">mapy v aplikacích, které jsou ovládány
-              „lidským uživatelem“.</li>
-          </ul>
-          <p class="fragment fade-up">V těchto případech k jednotlivým datovým
-            položkám <strong>nelze obecně přistupovat pomocí programu/aplikace</strong>
-            – je zapotřebí člověka, aby porozuměl významu dat (např. vyčetl data
-            z grafu či mapy).</p>
-        </section>
+<section>
+  <h2>Neomezující podmínky užití I</h2>
+  <p>Podmínky užití dat:</p>
+  <ul class="fragment fade-up">
+    <li>neomezují jejich uživatele ve způsobu použití dat – <strong>lze
+        je použít jakýmkoliv způsobem, který není v rozporu se zákonem,</strong></li>
+    <li><strong>umožňují komerční užití,</strong></li>
+    <li><strong>umožňují další šíření,</strong> přičemž při dalším
+      šíření musí mít všichni uživatelé stejná oprávnění s daty nakládat</li>
+  </ul>
+  <p class="fragment fade-up">Cílem je umožnit <strong>snadné šíření dat
+      jak pro nekomerční tak i komerční účely.</strong></p>
+</section>
 
-        <section>
-          <h2>Datová sada vs. distribuce datové sady</h2>
-          <p>Pro úplnost ještě představíme dvojici souvisejících pojmů: datová
-            sada a distribuce datové sady.</p>
-          <p class="fragment fade-up"><strong>Datová sada</strong> je množina
-            souvisejících dat, vztahujících se k jednomu věcnému tématu.</p>
-          <p class="fragment fade-up"><strong>Distribuce datové sady</strong> je
-            konkrétní datový zdroj, typicky v podobě souboru či aplikačního
-            rozhraní API, který zpřístupňuje data datové sady nebo jejich část.</p>
-          <p class="fragment fade-up">Informace o poskytovaných distribucích
-            dané datové sady se objevuje mj. v příslušném katalogizačním záznamu
-            v NKOD.</p>
-        </section>
+<section>
+  <h2>Neomezující podmínky užití II</h2>
+  <p>Neomezující podmínky umožňují, aby <strong>data byla využívána bez
+      nutnosti vyjednávat s jejich poskytovatelem.</strong></p>
+  <p class="fragment fade-up">Data splňující takovéto principy lze
+    „přibalit“ k vyvíjené aplikaci/službě, tu je možné integrovat do
+    dalších systémů, dále šířit za stejných podmínek, …</p>
+</section>
 
-        <section>
-          <h2>Datová sada vs. distribuce datové sady II</h2>
-          <p>Příkladem může být datová sada faktur přijatých daným úřadem, její
-            distribuce pak může mít podobu CSV souboru.</p>
-          <p class="fragment fade-up"><strong>Jedna datová sada může mít více
-              distribucí,</strong> např. CSV soubor, XML soubor aj.</p>
-          <p class="fragment fade-up">Ovšem pozor, jednotlivé distribuce nemohou
-            být strukturovány/děleny např. po kvarálech, letech, obcích, krajích
-            – v tom případě by se jednalo o různé datové sady.</p>
-        </section>
+<section>
+  <h2>Vymezení otevřených dat</h2>
+  <p>Za <strong>otevřená data</strong> budeme nyní považovat taková
+    data, která jsou:</p>
+  <ul class="fragment fade-up">
+    <li>dostupná na internetu ke stažení bez technických a jiných překážek
+      (registrace, omezení počtu přístupů, ...),</li>
+    <li>strojově čitelná,</li>
+    <li>používající standardy s volně dostupnou specifikací,</li>
+    <li>jsou registrována v Národním katalogu otevřených dat,</li>
+    <li>zpřístupněna za jasně definovaných podmínek užití dat bez
+      omezení.</li>
+  </ul>
+  <p class="fragment fade-up"><em>V dalších modulech definici otevřených
+      dat upřesníme vzhledem k naší legislativě – definice ale
+      samozřejmě bude v souladu s těmito principy.</em></p>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Datová sada vs. distribuce datové sady III</h2>
-            <p>Ukázkou jedné datové sady s více distribucemi mohou být např. <a
-                href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00007064%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb"
-                target="_blank">Agendy evidované v Registru práv a povinností</a>
-              ve smyslu § 51 zákona č. 111/2009 Sb. o základních registrech,
-              které jsou dostupné ve formátu JSON, JSON-LD i jako
-              SPARQL-endpoint.</p>
-            <a
-              href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00007064%2F706529437%2F9c73b802263c5e0ccf5542f10fbc35bb"
-              target="_blank" class="image-container">
-              <img class="fragment fade-up" src="agendy.webp" />
-            </a>
-          </div>
-        </section>
+<section>
+  <h2>Otevřená data v ČR a FAIR principy I</h2>
+  <p>Otevřená data v ČR <strong>jsou v souladu s obecnými principy FAIR</strong>
+    – ty požadují, aby data byla:</p>
+  <ul class="fragment fade-up">
+    <li><strong>vyhledatelná (Findable),</strong></li>
+    <li><strong>dostupná (Accessible),</strong></li>
+    <li><strong>interoperabilní (Interoperable),</strong></li>
+    <li><strong>opětovně využitelná (Reusable).</strong></li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Neomezující podmínky užití I</h2>
-          <p>Podmínky užití dat:</p>
-          <ul class="fragment fade-up">
-            <li>neomezují jejich uživatele ve způsobu použití dat – <strong>lze
-                je použít jakýmkoliv způsobem, který není v rozporu se zákonem,</strong></li>
-            <li><strong>umožňují komerční užití,</strong></li>
-            <li><strong>umožňují další šíření,</strong> přičemž při dalším
-              šíření musí mít všichni uživatelé stejná oprávnění s daty nakládat</li>
-          </ul>
-          <p class="fragment fade-up">Cílem je umožnit <strong>snadné šíření dat
-              jak pro nekomerční tak i komerční účely.</strong></p>
-        </section>
+<section>
+  <h2>Otevřená data v ČR a FAIR principy II</h2>
+  <ul>
+    <li><strong>(F) Vyhledatelnost</strong> otevřených dat je zajištěna
+      jejich registrací do NKOD a vyplněním všech povinných položek
+      metadat.</li>
+    <li class="fragment fade-up"><strong>(A) Dostupnost</strong> je
+      zajištěna jejich vystavením na internetu.</li>
+    <li class="fragment fade-up"><strong>(I) Interoperabilita</strong>
+      je zajištěna využíváním otevřených formátů, strojovou čitelností a
+      standardů.</li>
+    <li class="fragment fade-up"><strong>(R) Opětovná využitelnost</strong>
+      je pak zajištěna vhodnými (neomezujícími) podmínkami užití.</li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Neomezující podmínky užití II</h2>
-          <p>Neomezující podmínky umožňují, aby <strong>data byla využívána bez
-              nutnosti vyjednávat s jejich poskytovatelem.</strong></p>
-          <p class="fragment fade-up">Data splňující takovéto principy lze
-            „přibalit“ k vyvíjené aplikaci/službě, tu je možné integrovat do
-            dalších systémů, dále šířit za stejných podmínek, …</p>
-        </section>
+<section>
+  <h2>Obecné přínosy otevřených dat</h2>
+  <p>Mezi hlavní přínosy otevřených dat patří:</p>
+  <ul class="fragment fade-up">
+    <li>zvyšování <strong>transparentnosti organizace,</strong></li>
+    <li>podpora snadného a <strong>opětovného užití dat,</strong> ať už
+      dalšími úřady či veřejností,</li>
+    <li>poskytnutí příležitosti pro <strong>vývoj užitečných aplikací
+        třetími stranami nad těmito daty.</strong></li>
+  </ul>
+  <p class="fragment fade-up">Další přínosy jsou uvedeny na <a
+      href="https://opendata.gov.cz/informace:přínosy-otevřených-dat"
+      target="_blank">Portálu pro poskytovatele otevřených dat</a>.</p>
+</section>
 
-        <section>
-          <h2>Vymezení otevřených dat</h2>
-          <p>Za <strong>otevřená data</strong> budeme nyní považovat taková
-            data, která jsou:</p>
-          <ul class="fragment fade-up">
-            <li>dostupná na internetu ke stažení bez technických a jiných překážek (registrace, omezení počtu přístupů, ...),</li>
-            <li>strojově čitelná,</li>
-            <li>používající standardy s volně dostupnou specifikací,</li>
-            <li>jsou registrována v Národním katalogu otevřených dat,</li>
-            <li>zpřístupněna za jasně definovaných podmínek užití dat bez
-              omezení.</li>
-          </ul>
-          <p class="fragment fade-up"><em>V dalších modulech definici otevřených
-              dat upřesníme vzhledem k naší legislativě – definice ale
-              samozřejmě bude v souladu s těmito principy.</em></p>
-        </section>
-
-        <section>
-          <h2>Otevřená data v ČR a FAIR principy I</h2>
-          <p>Otevřená data v ČR <strong>jsou v souladu s obecnými principy FAIR</strong>
-            – ty požadují, aby data byla:</p>
-          <ul class="fragment fade-up">
-            <li><strong>vyhledatelná (Findable),</strong></li>
-            <li><strong>dostupná (Accessible),</strong></li>
-            <li><strong>interoperabilní (Interoperable),</strong></li>
-            <li><strong>opětovně využitelná (Reusable).</strong></li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Otevřená data v ČR a FAIR principy II</h2>
-          <ul>
-            <li><strong>(F) Vyhledatelnost</strong> otevřených dat je zajištěna
-              jejich registrací do NKOD a vyplněním všech povinných položek
-              metadat.</li>
-            <li class="fragment fade-up"><strong>(A) Dostupnost</strong> je
-              zajištěna jejich vystavením na internetu.</li>
-            <li class="fragment fade-up"><strong>(I) Interoperabilita</strong>
-              je zajištěna využíváním otevřených formátů, strojovou čitelností a
-              standardů.</li>
-            <li class="fragment fade-up"><strong>(R) Opětovná využitelnost</strong>
-              je pak zajištěna vhodnými (neomezujícími) podmínkami užití.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Obecné přínosy otevřených dat</h2>
-          <p>Mezi hlavní přínosy otevřených dat patří:</p>
-          <ul class="fragment fade-up">
-            <li>zvyšování <strong>transparentnosti organizace,</strong></li>
-            <li>podpora snadného a <strong>opětovného užití dat,</strong> ať už
-              dalšími úřady či veřejností,</li>
-            <li>poskytnutí příležitosti pro <strong>vývoj užitečných aplikací
-                třetími stranami nad těmito daty.</strong></li>
-          </ul>
-          <p class="fragment fade-up">Další přínosy jsou uvedeny na <a
-              href="https://opendata.gov.cz/informace:přínosy-otevřených-dat"
-              target="_blank">Portálu pro poskytovatele otevřených dat</a>.</p>
-        </section>
-
-        <section>
-          <h2>Konec modulu</h2>
-          <p><em>Pokračujte prosím na <a href="../otevřenost/">následující modul</a>.</em></p>
-        </section>
-
-        <!-- CONTENT:END -->
-
-      </div> </div>
-
-    <footer>
-      Projekt: Rozvoj datových politik v oblasti zlepšování kvality a
-      interoperability dat veřejné správy / Registrační číslo:
-      CZ.03.4.74/0.0/0.0/15_025/0013983
-    </footer>
-
-    <script src="../../assets/main.js"></script>
-    <script src="../../assets/reveal.js/reveal.js"></script>
-    <script src="../../assets/reveal.js/plugin/notes/notes.js"></script>
-    <script src="../../assets/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="../../assets/reveal.js/plugin/highlight/highlight.js"></script>
-    <script>
-   Reveal.initialize({
-     // Use all the available space.
-     "width": "100%",
-     "height": "100%",
-     //
-	 "hash": true,
-     "embedded": true,
-     "center": false, // Do not use vertical centering, so top is always at the top.
-     "plugins": [ RevealMarkdown, RevealHighlight, RevealNotes ]
-   });
-</script>
-
-  </body>
-</html>
+<section>
+  <h2>Konec modulu</h2>
+  <p><em>Pokračujte prosím na <a href="../otevřenost/">následující modul</a>.</em></p>
+</section>

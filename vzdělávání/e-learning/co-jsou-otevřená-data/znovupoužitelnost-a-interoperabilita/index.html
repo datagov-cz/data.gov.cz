@@ -1,287 +1,237 @@
-<!doctype html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../../assets/reveal.js/reset.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/reveal.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/theme/white.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme">
-    <link rel="stylesheet" href="../../assets/style.css">
-    <title>Online kurz Co jsou otevřená data</title>
-  </head>
-  <body>
+---
+layout: revealjs
+title: Znovupoužitelnost a interoperabilita - e-Learning otevřených dat
+---
+<section>
+  <h2>Znovupoužitelnost a interoperabilita</h2>
+  <p>Obecným cílem publikování otevřených dat je umožnit nejrůznějším
+    subjektům jejich využívání a následné vytváření hodnot z těchto dat.</p>
+  <p class="fragment fade-up">Cílem je, že daná konkrétní data budou
+    <strong>využívána znovu a znovu různými způsoby a budou dále
+      propojována s dalšími daty.</strong></p>
+  <p class="fragment fade-up">Zajištění znovupoužitelnosti a interoperability –
+    pojem interoperability bude vysvětlen v následujícím příkladu – nám umožní
+    realizovat tyto cíle co nejjednodušeji.</p>
+</section>
 
-    <header>
-      <img src="../../../../images/ozp_logo_cz.webp" id="logo-esf" alt="Evropská unie,
-        Evropský sociální fond, Operační program Zaměstnanost" />
-      <img src="../../../../images/logo.png" alt="Otevřená Data" />
-    </header>
+<section>
+  <h2>Motivační příklad</h2>
+  <p>Představme si několik obcí z daného regionu, které budou publikovat
+    seznamy nadcházejících akcí jako otevřená data a vývojáře, který by
+    chtěl vytvořit mobilní aplikaci, která bude mít charakter kalendáře
+    akcí v daném regionu…</p>
+  <p class="fragment fade-up">…čili chtěl by vytvořit novou službu
+    občanům, která bude využívat existující datové zdroje.</p>
+</section>
 
-    <div class="reveal presentation"> <div class="slides">
+<section>
+  <h2>Motivační příklad II</h2>
+  <p>Zamýšlená aplikace bude v každém případě zpracovávat jednotlivé
+    datové zdroje.</p>
+  <p class="fragment fade-up">Předpokladem pro jejich jednoduché a
+    efektivní zpracování je to, že “podobná data budou publikována
+    stejným způsobem”.</p>
+</section>
 
-        <!-- CONTENT:START -->
+<section>
+  <div class="flex-column-fill">
+    <h2>Motivační příklad III</h2>
+    <div class="flex-row-cropp">
+      <div style="flex: 1;">
+        <p>Pokud bude jedna obec ve svém datovém zdroji uvádět data
+          událostí v podobě “23. září 2021”,<br />druhá “2021-09-23”,<br
+            />třetí…,<br />pak bude nutné „každý zdroj zpracovávat
+          speciálně“.</p>
+      </div>
+      <div style="flex: 0.8;" class="flex-column">
+        <p class="fragment fade-up"><em>Situace vypadá následovně: obce
+            znázorněné šedými obdélníčky poskytují otevřená data
+            stejného typu v různých podobách znázorněných různě
+            barevnými útvary.</em></p>
+        <div class="image-container">
+          <img class="fragment fade-up" src="standardizace2.webp" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section>
-          <h2>Znovupoužitelnost a interoperabilita</h2>
-          <p>Obecným cílem publikování otevřených dat je umožnit nejrůznějším
-            subjektům jejich využívání a následné vytváření hodnot z těchto dat.</p>
-          <p class="fragment fade-up">Cílem je, že daná konkrétní data budou
-            <strong>využívána znovu a znovu různými způsoby a budou dále
-              propojována s dalšími daty.</strong></p>
-          <p class="fragment fade-up">Zajištění znovupoužitelnosti a interoperability – pojem interoperability bude vysvětlen v následujícím příkladu – nám umožní realizovat tyto cíle co nejjednodušeji.</p>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Motivační příklad IV</h2>
+    <div class="flex-row-cropp">
+      <div style="flex: 1;">
+        <p>Klíčovým krokem k efektivnímu řešení je <strong>standardizace.</strong></p>
+        <p class="fragment fade-up">Budou-li všechny obce publikovat
+          <strong>stejné typy dat stejným způsobem</strong> – například
+          datum pouze ve tvaru RRRR-MM-DD – bude zpracování jejich
+          datových zdrojů výrazně jednodušší.</p>
+      </div>
+      <div style="flex: 0.8;" class="flex-column">
+        <p class="fragment fade-up"><em>Situace vypadá nyní takto: obce
+            znázorněné šedými obdélníčky poskytují svá data stejného
+            typu standardizovaným způsobem. Jejich data pak lze
+            zpracovávat univerzálním způsobem.</em></p>
+        <div class="image-container">
+          <img class="fragment fade-up" src="standardizace1.webp" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section>
-          <h2>Motivační příklad</h2>
-          <p>Představme si několik obcí z daného regionu, které budou publikovat
-            seznamy nadcházejících akcí jako otevřená data a vývojáře, který by
-            chtěl vytvořit mobilní aplikaci, která bude mít charakter kalendáře
-            akcí v daném regionu…</p>
-          <p class="fragment fade-up">…čili chtěl by vytvořit novou službu
-            občanům, která bude využívat existující datové zdroje.</p>
-        </section>
+<section>
+  <h2>Standardizace pomáhá eliminovat situace, kdy…</h2>
+  <ul>
+    <li>stejné atributy ve dvou datových sadách jsou pojmenovávány
+      různě, naopak stejně pojmenované atributy mají různý význam,</li>
+    <li class="fragment fade-up">různé identifikátory použité k
+      identifikaci stejných věcí, naopak stejné identifikátory k
+      identifikaci různých věcí,</li>
+    <li class="fragment fade-up">různé způsoby popisu dané oblasti,
+      např. v jednom datovém zdroji je adresa jako celek, ve druhém je
+      oddělena ulice, číslo popisné aj.</li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Motivační příklad II</h2>
-          <p>Zamýšlená aplikace bude v každém případě zpracovávat jednotlivé
-            datové zdroje.</p>
-          <p class="fragment fade-up">Předpokladem pro jejich jednoduché a
-            efektivní zpracování je to, že “podobná data budou publikována
-            stejným způsobem”.</p>
-        </section>
+<section>
+  <h2>Standardizace v oblasti otevřených dat II</h2>
+  <p>Cílem standardizace je dosažení interoperability.</p>
+  <p class="fragment fade-up">Jakým způsobem toho dosáhneme?</p>
+  <p class="fragment fade-up"><strong>Shodou na atributech, jejich
+      názvech a typech jejich hodnot.</strong></p>
+  <p class="fragment fade-up">Budeme-li např. pracovat s adresami,
+    dohodneme se, že budeme používat položky (atributy) jméno_ulice,
+    číslo_popisné, číslo_orientační, ..., které budeme nazývat právě
+    takto, a všechny budou texty, čili řetězce znaků.</p>
+  <p class="fragment fade-up"><em>Pozn. V případě čísla orientačního
+      bychom mohli uvažovat o datovém typu „přirozeného čísla“, ale
+      chceme mít možnost uvést v této položce třeba i řetězec „81b“.</em></p>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Motivační příklad III</h2>
-            <div class="flex-row-cropp">
-              <div style="flex: 1;">
-                <p>Pokud bude jedna obec ve svém datovém zdroji uvádět data
-                  událostí v podobě “23. září 2021”,<br />druhá “2021-09-23”,<br
-                    />třetí…,<br />pak bude nutné „každý zdroj zpracovávat
-                  speciálně“.</p>
-              </div>
-              <div style="flex: 0.8;" class="flex-column">
-                <p class="fragment fade-up"><em>Situace vypadá následovně: obce
-                    znázorněné šedými obdélníčky poskytují otevřená data
-                    stejného typu v různých podobách znázorněných různě
-                    barevnými útvary.</em></p>
-                <div class="image-container">
-                  <img class="fragment fade-up" src="standardizace2.webp" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<section>
+  <h2>Standardizace v oblasti otevřených dat III</h2>
+  <p>Obecně to znamená, že budeme standardizovat a následně používat
+    stejná datová schémata pro popis stejných entit.</p>
+  <p>Připomeňme, že datová schémata popisují strukturu dat.</p>
+</section>
 
-        <section>
-          <div class="flex-column-fill">
-            <h2>Motivační příklad IV</h2>
-            <div class="flex-row-cropp">
-              <div style="flex: 1;">
-                <p>Klíčovým krokem k efektivnímu řešení je <strong>standardizace.</strong></p>
-                <p class="fragment fade-up">Budou-li všechny obce publikovat
-                  <strong>stejné typy dat stejným způsobem</strong> – například
-                  datum pouze ve tvaru RRRR-MM-DD – bude zpracování jejich
-                  datových zdrojů výrazně jednodušší.</p>
-              </div>
-              <div style="flex: 0.8;" class="flex-column">
-                <p class="fragment fade-up"><em>Situace vypadá nyní takto: obce
-                    znázorněné šedými obdélníčky poskytují svá data stejného
-                    typu standardizovaným způsobem. Jejich data pak lze
-                    zpracovávat univerzálním způsobem.</em></p>
-                <div class="image-container">
-                  <img class="fragment fade-up" src="standardizace1.webp" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<section>
+  <h2>Otevřené formální normy</h2>
+  <p>Příkladem standardizace jsou otevřené formální normy.</p>
+  <p class="fragment fade-up"><strong>Otevřenou formální normou</strong>
+    je obecně pravidlo, které bylo vydáno písemně a obsahuje specifikace
+    požadavků na zajištění schopnosti různých programových vybavení
+    vzájemně si poskytovat služby a efektivně spolupracovat.</p>
+</section>
 
-        <section>
-          <h2>Standardizace pomáhá eliminovat situace, kdy…</h2>
-          <ul>
-            <li>stejné atributy ve dvou datových sadách jsou pojmenovávány
-              různě, naopak stejně pojmenované atributy mají různý význam,</li>
-            <li class="fragment fade-up">různé identifikátory použité k
-              identifikaci stejných věcí, naopak stejné identifikátory k
-              identifikaci různých věcí,</li>
-            <li class="fragment fade-up">různé způsoby popisu dané oblasti,
-              např. v jednom datovém zdroji je adresa jako celek, ve druhém je
-              oddělena ulice, číslo popisné aj.</li>
-          </ul>
-        </section>
+<section>
+  <h2>Otevřené formální normy II</h2>
+  <p>Otevřené formální normy jsou zavedeny v legislativě (v zákoně č.
+    106/1999 Sb., § 3 odst. 9).</p>
+  <p class="fragment fade-up">Tento zákon také říká, že: „formát i
+    metadata (zveřejňovaných dat) by měly co nejvíce splňovat otevřené
+    formální normy.“ – viz § 4b odst. 1.</p>
+</section>
 
-        <section>
-          <h2>Standardizace v oblasti otevřených dat II</h2>
-          <p>Cílem standardizace je dosažení interoperability.</p>
-          <p class="fragment fade-up">Jakým způsobem toho dosáhneme?</p>
-          <p class="fragment fade-up"><strong>Shodou na atributech, jejich
-              názvech a typech jejich hodnot.</strong></p>
-          <p class="fragment fade-up">Budeme-li např. pracovat s adresami,
-            dohodneme se, že budeme používat položky (atributy) jméno_ulice,
-            číslo_popisné, číslo_orientační, ..., které budeme nazývat právě
-            takto, a všechny budou texty, čili řetězce znaků.</p>
-          <p class="fragment fade-up"><em>Pozn. V případě čísla orientačního
-              bychom mohli uvažovat o datovém typu „přirozeného čísla“, ale
-              chceme mít možnost uvést v této položce třeba i řetězec „81b“.</em></p>
-        </section>
+<section>
+  <h2>Otevřené formální normy III</h2>
+  <p>Co je cílem otevřených formálních norem?</p>
+  <ul class="fragment fade-up">
+    <li><strong>sjednotit věcný obsah, chcete-li konceptualizaci,</strong></li>
+    <li><strong>sjednotit strukturu a formát dat.</strong></li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Standardizace v oblasti otevřených dat III</h2>
-          <p>Obecně to znamená, že budeme standardizovat a následně používat
-            stejná datová schémata pro popis stejných entit.</p>
-          <p>Připomeňme, že datová schémata popisují strukturu dat.</p>
-        </section>
+<section>
+  <h2>Příklad otevřené formální normy</h2>
+  <p>Otevřenou formální normu budeme ilustrovat na konkrétním příkladu
+    sportovišť.</p>
+  <p class="fragment fade-up">Ukázkovým využitím této formální normy pak
+    může být publikování dat o sportovištích jednotlivými obcemi.</p>
+  <p class="fragment fade-up">Na základě toho pak může vzniknout
+    aplikace, která vyhledá v našem okolí sportoviště a zjistí jejich
+    otevírací dobu.</p>
+</section>
 
-        <section>
-          <h2>Otevřené formální normy</h2>
-          <p>Příkladem standardizace jsou otevřené formální normy.</p>
-          <p class="fragment fade-up"><strong>Otevřenou formální normou</strong>
-            je obecně pravidlo, které bylo vydáno písemně a obsahuje specifikace
-            požadavků na zajištění schopnosti různých programových vybavení
-            vzájemně si poskytovat služby a efektivně spolupracovat.</p>
-        </section>
+<section>
+  <h2>Příklad otevřené formální normy II</h2>
+  <p>Sportoviště může mít např. podmínky využívání, což je text – stejně
+    tak v případě provozního řádu.</p>
+  <p class="fragment fade-up">Sportoviště může mít samozřejmě nějakou
+    provozní dobu, což jsou časové specifikace, které jsou popsány v
+    jiné – znovupoužitelné – otevřené formální normě.</p>
+  <p class="fragment fade-up">A podobně bychom mohli pokračovat dále.</p>
+</section>
 
-        <section>
-          <h2>Otevřené formální normy II</h2>
-          <p>Otevřené formální normy jsou zavedeny v legislativě (v zákoně č.
-            106/1999 Sb., § 3 odst. 9).</p>
-          <p class="fragment fade-up">Tento zákon také říká, že: „formát i
-            metadata (zveřejňovaných dat) by měly co nejvíce splňovat otevřené
-            formální normy.“ – viz § 4b odst. 1.</p>
-        </section>
+<section>
+  <h2>Příklad otevřené formální normy III</h2>
+  <p>Neformálně jsme takto ukázali, jak vzniká konceptualizace – určení,
+    s jakými objekty budeme pracovat, jakou mají strukturu a jaké jsou
+    mezi nimi vztahy.</p>
+  <p class="fragment fade-up">Také jsme si ukázali, že atributy těchto
+    objektů mají nějaké typy – např. číslo, text, …</p>
+</section>
 
-        <section>
-          <h2>Otevřené formální normy III</h2>
-          <p>Co je cílem otevřených formálních norem?</p>
-          <ul class="fragment fade-up">
-            <li><strong>sjednotit věcný obsah, chcete-li konceptualizaci,</strong></li>
-            <li><strong>sjednotit strukturu a formát dat.</strong></li>
-          </ul>
-        </section>
+<section>
+  <h2>Příklad otevřené formální normy IV</h2>
+  <p>Vztah reálných dat instituce a OFN lze shrnout v následujících
+    bodech:</p>
+  <ul class="fragment fade-up">
+    <li>má-li poskytovatel data – ve smyslu konkrétních položek – která
+      <strong>jsou v příslušné OFN uvedena, pak by měl tato data
+        publikovat v souladu s touto OFN,</strong></li>
+    <li>pokud poskytovatel data, která jsou v OFN uvedena – opět ve
+      smyslu konkrétních položek, <strong>nemá, pak je nemusí
+        publikovat,</strong> což není v rozporu s OFN,</li>
+    <li>má-li poskytovatel ještě další data, která <strong>v OFN nejsou
+        zmíněna, pak je může publikovat v souladu s principy OD
+        libovolně.</strong></li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Příklad otevřené formální normy</h2>
-          <p>Otevřenou formální normu budeme ilustrovat na konkrétním příkladu
-            sportovišť.</p>
-          <p class="fragment fade-up">Ukázkovým využitím této formální normy pak
-            může být publikování dat o sportovištích jednotlivými obcemi.</p>
-          <p class="fragment fade-up">Na základě toho pak může vzniknout
-            aplikace, která vyhledá v našem okolí sportoviště a zjistí jejich
-            otevírací dobu.</p>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Příklad otevřené formální normy V</h2>
+    <p>Výsledkem pak může být model v podobě grafu:</p>
+    <a href="https://ofn.gov.cz/sportoviště/#přehled" target="_blank"
+      class="image-container">
+      <img class="fragment fade-up" src="ofnSportoviste.svg" />
+    </a>
+  </div>
+</section>
 
-        <section>
-          <h2>Příklad otevřené formální normy II</h2>
-          <p>Sportoviště může mít např. podmínky využívání, což je text – stejně
-            tak v případě provozního řádu.</p>
-          <p class="fragment fade-up">Sportoviště může mít samozřejmě nějakou
-            provozní dobu, což jsou časové specifikace, které jsou popsány v
-            jiné – znovupoužitelné – otevřené formální normě.</p>
-          <p class="fragment fade-up">A podobně bychom mohli pokračovat dále.</p>
-        </section>
+<section>
+  <h2>Příklad otevřené formální normy VI</h2>
+  <p>Kompletní formální normu pro sportoviště si může <a
+      href="https://ofn.gov.cz/sportoviště/" target="_blank">prohlédnout</a>.</p>
+  <p class="fragment fade-up">V tomto modulu nám nejde o to naučit se
+    tvořit otevřené formální normy, ale jen získat přehled o tom, k čemu
+    otevřené formální normy jsou a co v nich můžeme najít.</p>
+  <p class="fragment fade-up">O otevřených formálních normách se můžete
+    dozvědět v jednom z našich <a href="https://data.gov.cz/vzdělávání/"
+      target="_blank">dalších online kurzů</a>.</p>
+</section>
 
-        <section>
-          <h2>Příklad otevřené formální normy III</h2>
-          <p>Neformálně jsme takto ukázali, jak vzniká konceptualizace – určení,
-            s jakými objekty budeme pracovat, jakou mají strukturu a jaké jsou
-            mezi nimi vztahy.</p>
-          <p class="fragment fade-up">Také jsme si ukázali, že atributy těchto
-            objektů mají nějaké typy – např. číslo, text, …</p>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Otevřené formální normy – shrnutí</h2>
+    <p><strong>Publikace dat s využitím otevřených formálních</strong>
+      norem umožní:</p>
+    <ul class="fragment fade-up">
+      <li>vytvářet snadno aplikace “konzumující data z více zdrojů”,</li>
+      <li>dosáhnout časových a finančních úspor, neboť uživatelé nebudou
+        muset trávit tolik času přípravou a integrací dat z různých
+        zdrojů.</li>
+    </ul>
+    <div class="image-container">
+      <img class="fragment fade-up" src="ofnPrakticky.svg" />
+    </div>
+  </div>
+</section>
 
-        <section>
-          <h2>Příklad otevřené formální normy IV</h2>
-          <p>Vztah reálných dat instituce a OFN lze shrnout v následujících
-            bodech:</p>
-          <ul class="fragment fade-up">
-            <li>má-li poskytovatel data – ve smyslu konkrétních položek – která
-              <strong>jsou v příslušné OFN uvedena, pak by měl tato data
-                publikovat v souladu s touto OFN,</strong></li>
-            <li>pokud poskytovatel data, která jsou v OFN uvedena – opět ve
-              smyslu konkrétních položek, <strong>nemá, pak je nemusí
-                publikovat,</strong> což není v rozporu s OFN,</li>
-            <li>má-li poskytovatel ještě další data, která <strong>v OFN nejsou
-                zmíněna, pak je může publikovat v souladu s principy OD
-                libovolně.</strong></li>
-          </ul>
-        </section>
-
-        <section>
-          <div class="flex-column-fill">
-            <h2>Příklad otevřené formální normy V</h2>
-            <p>Výsledkem pak může být model v podobě grafu:</p>
-            <a href="https://ofn.gov.cz/sportoviště/#přehled" target="_blank"
-              class="image-container">
-              <img class="fragment fade-up" src="ofnSportoviste.svg" />
-            </a>
-          </div>
-        </section>
-
-        <section>
-          <h2>Příklad otevřené formální normy VI</h2>
-          <p>Kompletní formální normu pro sportoviště si může <a
-              href="https://ofn.gov.cz/sportoviště/" target="_blank">prohlédnout</a>.</p>
-          <p class="fragment fade-up">V tomto modulu nám nejde o to naučit se
-            tvořit otevřené formální normy, ale jen získat přehled o tom, k čemu
-            otevřené formální normy jsou a co v nich můžeme najít.</p>
-          <p class="fragment fade-up">O otevřených formálních normách se můžete
-            dozvědět v jednom z našich <a href="https://data.gov.cz/vzdělávání/"
-              target="_blank">dalších online kurzů</a>.</p>
-        </section>
-
-        <section>
-          <div class="flex-column-fill">
-            <h2>Otevřené formální normy – shrnutí</h2>
-            <p><strong>Publikace dat s využitím otevřených formálních</strong>
-              norem umožní:</p>
-            <ul class="fragment fade-up">
-              <li>vytvářet snadno aplikace “konzumující data z více zdrojů”,</li>
-              <li>dosáhnout časových a finančních úspor, neboť uživatelé nebudou
-                muset trávit tolik času přípravou a integrací dat z různých
-                zdrojů.</li>
-            </ul>
-            <div class="image-container">
-              <img class="fragment fade-up" src="ofnPrakticky.svg" />
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Konec modulu</h2>
-          <p><em>Pokračujte prosím na <a href="../katalogizace-otevřených-dat/">následující modul</a>.</em></p>
-        </section>
-
-        <!-- CONTENT:END -->
-
-      </div> </div>
-
-    <footer>
-      Projekt: Rozvoj datových politik v oblasti zlepšování kvality a
-      interoperability dat veřejné správy / Registrační číslo:
-      CZ.03.4.74/0.0/0.0/15_025/0013983
-    </footer>
-
-    <script src="../../assets/main.js"></script>
-    <script src="../../assets/reveal.js/reveal.js"></script>
-    <script src="../../assets/reveal.js/plugin/notes/notes.js"></script>
-    <script src="../../assets/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="../../assets/reveal.js/plugin/highlight/highlight.js"></script>
-    <script>
-   Reveal.initialize({
-     // Use all the available space.
-     "width": "100%",
-     "height": "100%",
-     //
-	 "hash": true,
-     "embedded": true,
-     "center": false, // Do not use vertical centering, so top is always at the top.
-     "plugins": [ RevealMarkdown, RevealHighlight, RevealNotes ]
-   });
-</script>
-
-  </body>
-</html>
+<section>
+  <h2>Konec modulu</h2>
+  <p><em>Pokračujte prosím na <a href="../katalogizace-otevřených-dat/">následující
+        modul</a>.</em></p>
+</section>

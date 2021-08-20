@@ -1,147 +1,95 @@
-<!doctype html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../../assets/reveal.js/reset.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/reveal.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/theme/white.css">
-    <link rel="stylesheet"
-      href="../../assets/reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme">
-    <link rel="stylesheet" href="../../assets/style.css">
-    <title>Online kurz Publikační plán a publikace dat</title>
-  </head>
-  <body>
+---
+layout: revealjs
+title: Publikační plán a publikace dat - e-Learning otevřených dat
+---
+<section>
+  <h2>Publikační plán a publikace dat</h2>
+  <p><em>online kurz</em></p>
+  <p>předpokládaná doba studia kurzu 2,5 hod.</p>
+</section>
 
-    <header>
-      <img src="../../../../images/ozp_logo_cz.webp" id="logo-esf" alt="Evropská
-        Enie, Evropský sociální fond, Operační program Zaměstnanost" />
-      <img src="../../../../images/logo.png" alt="Otevřená Data" />
-    </header>
+<section>
+  <h2>Úvod do kurzu “Publikační plán a publikace dat”</h2>
+  <p>Publikační plán – <strong>základní dokument, o který se opírá
+      systematické otevírání dat v organizaci</strong> (<a
+      href="https://opendata.gov.cz/vzor:start" target="_blank">podívejte
+      se na ukázky vzorových publikačních plánů</a>).</p>
+  <p class="fragment fade-up">Tento kurz vás <strong>kompletně provede</strong>
+    tvorbou publikačního plánu včetně:</p>
+  <ul>
+    <li class="fragment fade-up"><strong>představení rolí,</strong>
+      které se na jeho tvorbě podílejí,</li>
+    <li class="fragment fade-up"><strong>procesního pohledu</strong> na
+      problematiku,</li>
+    <li class="fragment fade-up"><strong>identifikace datových sad</strong>
+      pro publikaci jako OD,</li>
+    <li class="fragment fade-up"><strong>analýzy přínosů a rizik</strong>
+      publikace OD.</li>
+  </ul>
+</section>
 
-    <div class="reveal presentation"> <div class="slides">
+<section>
+  <h2>Proč otevírat data?</h2>
+  <ul>
+    <li>Připomeňme si, jaké jsou hlavní přínosy otevírání dat…</li>
+    <li class="fragment fade-up">zvyšování <strong>transparentnosti
+        organizace,</strong></li>
+    <li class="fragment fade-up">podpora snadného a <strong>opětovného
+        užití dat</strong> (ať už dalšími úřady či veřejností),</li>
+    <li class="fragment fade-up">poskytnutí příležitosti pro <strong>vývoj
+        užitečných aplikací třetími stranami nad těmito daty,</strong></li>
+    <li class="fragment fade-up">dodržení <strong>zákonných povinností a
+        architektonických principů.</strong></li>
+  </ul>
+  <p class="fragment fade-up">Další přínosy jsou uvedeny na <a
+      href="https://opendata.gov.cz/informace:přínosy-otevřených-dat"
+      target="_blank">Portálu pro poskytovatele otevřených dat</a>.</p>
+</section>
 
-        <!-- CONTENT:START -->
+<section>
+  <h2>Proč vytvářet publikační plán?</h2>
+  <p>Publikační plán:</p>
+  <ul>
+    <li class="fragment fade-up">umožňuje <strong>systematicky otevírat</strong>
+      data organizace,</li>
+    <li class="fragment fade-up">poskytuje informace o tom, <strong>které
+        datové sady organizace se budou otevírat – vzhledem k přínosům a
+        rizikům,</strong></li>
+    <li class="fragment fade-up">stanovuje <strong>harmonogram
+        otevírání,</strong></li>
+    <li class="fragment fade-up">obsahuje <strong>základní
+        charakteristiky (metadata) k datovým sadám</strong> – jaké budou
+      podmínky jejich užití a kdo bude za sady odpovídat,</li>
+    <li class="fragment fade-up">ukazuje vedení stav dat vedených v
+      jejich IT systémech.</li>
+  </ul>
+</section>
 
-        <section>
-          <h1>Publikační plán a publikace dat</h1>
-          <p><em>online kurz</em></p>
-          <p>předpokládaná doba studia kurzu 2,5 hod.</p>
-        </section>
+<section>
+  <h2>Otevírání dat bez publikačního plánu</h2>
+  <p>Pokud organizace otevírají data <strong>bez publikačního plánu</strong>,
+    dochází k následujícím situacím:</p>
+  <ul>
+    <li class="fragment fade-up">Otevírání dat se děje nesystematicky či
+      ad-hoc.</li>
+    <li class="fragment fade-up">Potenciální uživatelé neví, jaké datové
+      sady organizace otevře a kdy.</li>
+    <li class="fragment fade-up">Uvnitř organizace není jasné, u kterých
+      datových sad převažují přínosy jejich otevření nad riziky.</li>
+    <li class="fragment fade-up">V organizaci není zřejmé, kdy a jaké
+      zdroje je potřeba na otevírání datových sad alokovat.</li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Úvod do kurzu “Publikační plán a publikace dat”</h2>
-          <p>Publikační plán – <strong>základní dokument, o který se opírá
-              systematické otevírání dat v organizaci</strong> (<a
-              href="https://opendata.gov.cz/vzor:start" target="_blank">podívejte
-              se na ukázky vzorových publikačních plánů</a>).</p>
-          <p class="fragment fade-up">Tento kurz vás <strong>kompletně provede</strong>
-            tvorbou publikačního plánu včetně:</p>
-          <ul>
-            <li class="fragment fade-up"><strong>představení rolí,</strong>
-              které se na jeho tvorbě podílejí,</li>
-            <li class="fragment fade-up"><strong>procesního pohledu</strong> na
-              problematiku,</li>
-            <li class="fragment fade-up"><strong>identifikace datových sad</strong>
-              pro publikaci jako OD,</li>
-            <li class="fragment fade-up"><strong>analýzy přínosů a rizik</strong>
-              publikace OD.</li>
-          </ul>
-        </section>
+<section>
+  <div class="flex-column-fill">
+    <h2>Otevírání dat bez publikačního plánu v praxi</h2>
+    <div class="image-container"> <img src="závěr.webp" /> </div>
+  </div>
+</section>
 
-        <section>
-          <h2>Proč otevírat data?</h2>
-          <ul>
-            <li>Připomeňme si, jaké jsou hlavní přínosy otevírání dat…</li>
-            <li class="fragment fade-up">zvyšování <strong>transparentnosti
-                organizace,</strong></li>
-            <li class="fragment fade-up">podpora snadného a <strong>opětovného
-                užití dat</strong> (ať už dalšími úřady či veřejností),</li>
-            <li class="fragment fade-up">poskytnutí příležitosti pro <strong>vývoj
-                užitečných aplikací třetími stranami nad těmito daty,</strong></li>
-            <li class="fragment fade-up">dodržení <strong>zákonných povinností a architektonických principů.</strong></li>
-          </ul>
-          <p class="fragment fade-up">Další přínosy jsou uvedeny na <a
-              href="https://opendata.gov.cz/informace:přínosy-otevřených-dat"
-              target="_blank">Portálu pro poskytovatele otevřených dat</a>.</p>
-        </section>
-
-        <section>
-          <h2>Proč vytvářet publikační plán?</h2>
-          <p>Publikační plán:</p>
-          <ul>
-            <li class="fragment fade-up">umožňuje <strong>systematicky otevírat</strong>
-              data organizace,</li>
-            <li class="fragment fade-up">poskytuje informace o tom, <strong>které
-                datové sady organizace se budou otevírat – vzhledem k přínosům a
-                rizikům,</strong></li>
-            <li class="fragment fade-up">stanovuje <strong>harmonogram
-                otevírání,</strong></li>
-            <li class="fragment fade-up">obsahuje <strong>základní
-                charakteristiky (metadata) k datovým sadám</strong> – jaké budou
-              podmínky jejich užití a kdo bude za sady odpovídat,</li>
-            <li class="fragment fade-up">ukazuje vedení stav dat vedených v
-              jejich IT systémech.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Otevírání dat bez publikačního plánu</h2>
-          <p>Pokud organizace otevírají data <strong>bez publikačního plánu</strong>,
-            dochází k následujícím situacím:</p>
-          <ul>
-            <li class="fragment fade-up">Otevírání dat se děje nesystematicky či
-              ad-hoc.</li>
-            <li class="fragment fade-up">Potenciální uživatelé neví, jaké datové
-              sady organizace otevře a kdy.</li>
-            <li class="fragment fade-up">Uvnitř organizace není jasné, u kterých
-              datových sad převažují přínosy jejich otevření nad riziky.</li>
-            <li class="fragment fade-up">V organizaci není zřejmé, kdy a jaké
-              zdroje je potřeba na otevírání datových sad alokovat.</li>
-          </ul>
-        </section>
-
-        <section>
-          <div class="flex-column-fill">
-            <h2>Otevírání dat bez publikačního plánu v praxi</h2>
-            <div class="image-container"> <img src="závěr.webp" /> </div>
-          </div>
-        </section>
-
-        <section>
-          <h2>Konec modulu</h2>
-          <p><em>Pokračujte prosím na <a href="../otevírání-dat-jeden-z-procesů-organizace/">následující modul</a>.</em></p>
-        </section>
-
-        <!-- CONTENT:END -->
-
-      </div> </div>
-
-    <footer>
-      Projekt: Rozvoj datových politik v oblasti zlepšování kvality a
-      interoperability dat veřejné správy / Registrační číslo:
-      CZ.03.4.74/0.0/0.0/15_025/0013983
-    </footer>
-
-    <script src="../../assets/main.js"></script>
-    <script src="../../assets/reveal.js/reveal.js"></script>
-    <script src="../../assets/reveal.js/plugin/notes/notes.js"></script>
-    <script src="../../assets/reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="../../assets/reveal.js/plugin/highlight/highlight.js"></script>
-    <script>
-   Reveal.initialize({
-     // Use all the available space.
-     "width": "100%",
-     "height": "100%",
-     //
-	 "hash": true,
-     "embedded": true,
-     "center": false, // Do not use vertical centering, so top is always at the top.
-     "plugins": [ RevealMarkdown, RevealHighlight, RevealNotes ]
-   });
-</script>
-
-  </body>
-</html>
+<section>
+  <h2>Konec modulu</h2>
+  <p><em>Pokračujte prosím na <a
+        href="../otevírání-dat-jeden-z-procesů-organizace/">následující modul</a>.</em></p>
+</section>

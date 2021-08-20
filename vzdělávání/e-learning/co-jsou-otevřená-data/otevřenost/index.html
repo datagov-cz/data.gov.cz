@@ -1,233 +1,180 @@
-<!doctype html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-      maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../../assets/reveal.js/reset.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/reveal.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/theme/white.css">
-    <link rel="stylesheet" href="../../assets/reveal.js/plugin/highlight/monokai.css"
-      id="highlight-theme">
-    <link rel="stylesheet" href="../../assets/style.css">
-    <title>Online kurz Co jsou otevřená data</title>
-  </head>
-  <body>
+---
+layout: revealjs
+title: Otevřenost - e-Learning otevřených dat
+---
+<section>
+  <h2>Otevřenost</h2>
+  <p>V tomto modulu přesněji vymezíme pojem otevřenosti – klíčový
+    atribut otevřených dat.</p>
+  <p class="fragment fade-up">Otevřenost rozdělíme na dvě nezávislé
+    větve:</p>
+  <ul class="fragment fade-up">
+    <li><strong>otevřenost právní,</strong></li>
+    <li><strong>otevřenost technickou.</strong></li>
+  </ul>
+</section>
 
-    <header>
-      <img src="../../../../images/ozp_logo_cz.webp" id="logo-esf" alt="Evropská unie,
-        Evropský sociální fond, Operační program Zaměstnanost" />
-      <img src="../../../../images/logo.png" alt="Otevřená Data" />
-    </header>
+<section>
+  <h2>Právní otevřenost</h2>
+  <p>Co jsou <strong>podmínky užití otevřených dat?</strong></p>
+  <p class="fragment fade-up"><strong>Informace o tom, jak mohu s
+      příslušnými daty nakládat.</strong></p>
+  <p class="fragment fade-up"><strong>Jejich součástí může být i
+      licenční oprávnění.</strong></p>
+  <p class="fragment fade-up">Podmínky obecně zajišťují
+    bezproblémové užití otevřených dat a zabraňují případnému
+    porušení autorských a databázových práv, která se k danému
+    obsahu mohou vázat.</p>
+  <p class="fragment fade-up">Cílem je, aby podmínky užití <strong>nekladly
+      uživatelům zbytečné právní překážky.</strong></p>
+</section>
 
-    <div class="reveal presentation"> <div class="slides">
+<section>
+  <h2>Podmínky užití otevřených dat</h2>
+  <p>Klíčové aspekty podmínek užití:</p>
+  <ul class="fragment fade-up">
+    <li><strong>neomezují způsob ani užití</strong> příslušných dat,</li>
+    <li><strong>nevylučují žádnou skupinu uživatelů</strong> (např.
+      komerční instituce).</li>
+  </ul>
+  <p class="fragment fade-up">Důsledky:</p>
+  <ul class="fragment fade-up">
+    <li>Data lze <strong>dále distribuovat.</strong></li>
+    <li>Při dalším šíření dat mají <strong>všichni uživatelé stejná
+        práva na jejich využití.</strong></li>
+  </ul>
+</section>
 
-        <!-- CONTENT:START -->
+<section>
+  <div class="flex-column-fill">
+    <h2>Problémové situace v oblasti právní otevřenosti I.</h2>
+    <p>Přístup k datům, který je podmíněn <strong>uzavřením smlouvy
+        či registrací.</strong></p>
+    <div class="image-container"> <img class="fragment fade-up"
+        src="form.webp" /> </div>
+  </div>
+</section>
 
-        <section>
-          <h2>Otevřenost</h2>
-          <p>V tomto modulu přesněji vymezíme pojem otevřenosti – klíčový
-            atribut otevřených dat.</p>
-          <p class="fragment fade-up">Otevřenost rozdělíme na dvě nezávislé
-            větve:</p>
-          <ul class="fragment fade-up">
-            <li><strong>otevřenost právní,</strong></li>
-            <li><strong>otevřenost technickou.</strong></li>
-          </ul>
-        </section>
+<section>
+  <h2>Problémové situace v oblasti právní otevřenosti II.</h2>
+  <ul>
+    <li>Vzdání se odpovědnosti – v podmínkách užití se obecně
+      <strong>nelze vzdát odpovědnosti</strong> za data – příkladem
+      může být situace, kdy poskytovatel data poskytuje na základě
+      zákonné povinnosti, např. podle zákona o svobodném přístupu k
+      informacím.</li>
+    <li class="fragment fade-up">Dalšími problémovými situacemi jsou
+      např.:
+      <ul class="fragment fade-up">
+        <li>užívání licencí tam, kde není třeba,</li>
+        <li>generické licence,</li>
+        <li>užívání vlastních licenčních podmínek,</li>
+        <li>chybné užití licencí Creative Commons.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
 
-        <section>
-          <h2>Právní otevřenost</h2>
-          <p>Co jsou <strong>podmínky užití otevřených dat?</strong><p>
-              <p class="fragment fade-up"><strong>Informace o tom, jak mohu s
-                  příslušnými daty nakládat.</strong></p>
-              <p class="fragment fade-up"><strong>Jejich součástí může být i
-                  licenční oprávnění.</strong></p>
-              <p class="fragment fade-up">Podmínky obecně zajišťují
-                bezproblémové užití otevřených dat a zabraňují případnému
-                porušení autorských a databázových práv, která se k danému
-                obsahu mohou vázat.</p>
-              <p class="fragment fade-up">Cílem je, aby podmínky užití <strong>nekladly
-                  uživatelům zbytečné právní překážky.</strong></p>
-            </section>
+<section>
+  <h2>Technická otevřenost</h2>
+  <p>Cílem technické otevřenosti je <strong>maximálně usnadnit
+      práci s datovými sadami ze strany aplikací/programů.</strong></p>
+  <p class="fragment fade-up">Technická otevřenost se opírá o dva
+    již zmíněné koncepty:</p>
+  <ul class="fragment fade-up">
+    <li><strong>strojová čitelnost,</strong></li>
+    <li><strong>otevřené formáty.</strong></li>
+  </ul>
+</section>
 
-            <section>
-              <h2>Podmínky užití otevřených dat</h2>
-              <p>Klíčové aspekty podmínek užití:</p>
-              <ul class="fragment fade-up">
-                <li><strong>neomezují způsob ani užití</strong> příslušných dat,</li>
-                <li><strong>nevylučují žádnou skupinu uživatelů</strong> (např.
-                  komerční instituce).</li>
-              </ul>
-              <p class="fragment fade-up">Důsledky:</p>
-              <ul class="fragment fade-up">
-                <li>Data lze <strong>dále distribuovat.</strong></li>
-                <li>Při dalším šíření dat mají <strong>všichni uživatelé stejná
-                    práva na jejich využití.</strong></li>
-              </ul>
-            </section>
+<section>
+  <h2>Strojová čitelnost</h2>
+  <p><strong>Strojově čitelný formát</strong><br />– formát
+    datového souboru s takovou strukturou, která <strong>umožňuje
+      programům/aplikacím</strong> nalézt, rozpoznat a získat z
+    tohoto datového souboru konkrétní informace, včetně
+    jednotlivých údajů a jejich vnitřní struktury</p>
+</section>
 
-            <section>
-              <div class="flex-column-fill">
-                <h2>Problémové situace v oblasti právní otevřenosti I.</h2>
-                <p>Přístup k datům, který je podmíněn <strong>uzavřením smlouvy
-                    či registrací.</strong></p>
-                <div class="image-container"> <img class="fragment fade-up"
-                    src="form.webp" /> </div>
-              </div>
-            </section>
+<section>
+  <h2>Datové schéma</h2>
+  <p>Předpokladem pro efektivní využívání OD je popis těchto dat.</p>
+  <p class="fragment fade-up">Je zapotřebí popsat jejich strukturu
+    a vysvětlit význam jednotlivých položek. Cílem je, aby data
+    správně interpretoval nejen tvůrce, ale především ostatní.</p>
+  <p class="fragment fade-up">K tomu slouží <strong>datové schéma:</strong>
+    datovým schématem rozumíme popis struktury datové sady.</p>
+  <p class="fragment fade-up">Datové schéma, rovněž ve strojově
+    čitelné podobě, v podstatě popisuje, <strong>jaké položky
+      budeme v datové sadě uchovávat. Distribuujeme je přímo s
+      datovou sadou.</strong></p>
+  <p class="fragment fade-up">Datové schéma pro datovou sadu
+    grantových projektů může např. stanovit, že budeme uchovávat
+    informace jako “název příjemce”, “IČO příjemce”, “název
+    projektu” atp. Příklad datového schématu – <a
+      href="https://www.isvavai.cz/dokumenty/open-data/CEP-projekty.csv-metadata.json"
+      target="_blank">Příjemci z ISVaV</a></p>
+</section>
 
-            <section>
-              <h2>Problémové situace v oblasti právní otevřenosti II.</h2>
-              <ul>
-                <li>Vzdání se odpovědnosti – v podmínkách užití se obecně
-                  <strong>nelze vzdát odpovědnosti</strong> za data – příkladem
-                  může být situace, kdy poskytovatel data poskytuje na základě
-                  zákonné povinnosti, např. podle zákona o svobodném přístupu k
-                  informacím.</li>
-                <li class="fragment fade-up">Dalšími problémovými situacemi jsou
-                  např.:
-                  <ul class="fragment fade-up">
-                    <li>užívání licencí tam, kde není třeba,</li>
-                    <li>generické licence,</li>
-                    <li>užívání vlastních licenčních podmínek,</li>
-                    <li>chybné užití licencí Creative Commons.</li>
-                  </li>
-                </ul>
-              </section>
+<section>
+  <h2>Otevřený formát</h2>
+  <p><strong>Otevřený formát</strong><br /> – takový formát
+    datového souboru, který <strong>není závislý na konkrétním
+      technickém a programovém vybavení a popis tohoto formátu je
+      zpřístupněn veřejnosti</strong> bez jakéhokoli omezení.</p>
+</section>
 
-              <section>
-                <h2>Technická otevřenost</h2>
-                <p>Cílem technické otevřenosti je <strong>maximálně usnadnit
-                    práci s datovými sadami ze strany aplikací/programů.</strong></p>
-                <p class="fragment fade-up">Technická otevřenost se opírá o dva
-                  již zmíněné koncepty:</p>
-                <ul class="fragment fade-up">
-                  <li><strong>strojová čitelnost,</strong></li>
-                  <li><strong>otevřené formáty.</strong></li>
-                </ul>
-              </section>
+<section>
+  <h2>Otevřený formát vs. strojová čitelnost</h2>
+  <p>Všimněme si, že <strong>využití otevřeného formátu ještě
+      nemusí zaručovat strojovou čitelnost:</strong> špatně
+    strukturovaná data v otevřeném formátu nemusí být možné
+    přímočaře zpracovávat aplikací bez zásahu člověka.</p>
+  <p class="fragment fade-up">Naopak <strong>strojově čitelný
+      formát ještě nemusí být otevřený,</strong> tj. nemusí být k
+    dispozici veřejně specifikace daného formátu – aplikace s daty
+    v příslušném formátu může pracovat, ale formát nemusí být
+    transparentní.</p>
+</section>
 
-              <section>
-                <h2>Strojová čitelnost</h2>
-                <p><strong>Strojově čitelný formát</strong><br />– formát
-                  datového souboru s takovou strukturou, která <strong>umožňuje
-                    programům/aplikacím</strong> nalézt, rozpoznat a získat z
-                  tohoto datového souboru konkrétní informace, včetně
-                  jednotlivých údajů a jejich vnitřní struktury</p>
-              </section>
+<section>
+  <h2>Příklady otevřených formátů</h2>
+  <p>Mezi nejvýznamnější představitele otevřených formátů patří:</p>
+  <ul class="fragment fade-up">
+    <li>RDF – grafový model pro uchovávání faktů v podobě trojic
+      “subjekt-predikát-objekt”,</li>
+    <li>JSON – formát pro data se stromovou strukturou,</li>
+    <li>XML – formát podobného užití jako JSON,</li>
+    <li>CSV – textový formát pro tabulková data.</li>
+  </ul>
+</section>
 
-              <section>
-                <h2>Datové schéma</h2>
-                <p>Předpokladem pro efektivní využívání OD je popis těchto dat.</p>
-                <p class="fragment fade-up">Je zapotřebí popsat jejich strukturu
-                  a vysvětlit význam jednotlivých položek. Cílem je, aby data
-                  správně interpretoval nejen tvůrce, ale především ostatní.</p>
-                <p class="fragment fade-up">K tomu slouží <strong>datové schéma:</strong>
-                  datovým schématem rozumíme popis struktury datové sady.</p>
-                <p class="fragment fade-up">Datové schéma, rovněž ve strojově
-                  čitelné podobě, v podstatě popisuje, <strong>jaké položky
-                    budeme v datové sadě uchovávat. Distribuujeme je přímo s
-                    datovou sadou.</strong></p>
-                <p class="fragment fade-up">Datové schéma pro datovou sadu
-                  grantových projektů může např. stanovit, že budeme uchovávat
-                  informace jako “název příjemce”, “IČO příjemce”, “název
-                  projektu” atp. Příklad datového schématu – <a
-                    href="https://www.isvavai.cz/dokumenty/open-data/CEP-projekty.csv-metadata.json"
-                    target="_blank">Příjemci z ISVaV</a></p>
-              </section>
+<section>
+  <h2>Příklady formátů, které nejsou otevřené</h2>
+  <p>Formátů, které nejsou otevřené, je celá řada. Namátkou
+    jmenujme třeba:</p>
+  <ul class="fragment fade-up">
+    <li>formáty doc, xls,</li>
+    <li>formáty využívané kreslícími programy (CorelDraw, …).</li>
+  </ul>
+</section>
 
-              <section>
-                <h2>Otevřený formát</h2>
-                <p><strong>Otevřený formát</strong><br /> – takový formát
-                  datového souboru, který <strong>není závislý na konkrétním
-                    technickém a programovém vybavení a popis tohoto formátu je
-                    zpřístupněn veřejnosti</strong> bez jakéhokoli omezení.</p>
-              </section>
+<section>
+  <h2>Příklady strojově NEčitelných dat</h2>
+  <p>Tradičním příkladem strojově nečitelných dat je „barevný
+    Excel“, tedy soubor ve formátu MS Excel, který je formátovaný
+    pro tisk nebo čtení lidmi.</p>
+  <p class="fragment fade-up">Dalšími příklady dat, která nejsou
+    strojově čitelná, jsou:</p>
+  <ul class="fragment fade-up">
+    <li>naskenované dokumenty uložené ve formátu PDF,</li>
+    <li>html stránky (webové stránky) obsahující tabulky.</li>
+  </ul>
+</section>
 
-              <section>
-                <h2>Otevřený formát vs. strojová čitelnost</h2>
-                <p>Všimněme si, že <strong>využití otevřeného formátu ještě
-                    nemusí zaručovat strojovou čitelnost:</strong> špatně
-                  strukturovaná data v otevřeném formátu nemusí být možné
-                  přímočaře zpracovávat aplikací bez zásahu člověka.</p>
-                <p class="fragment fade-up">Naopak <strong>strojově čitelný
-                    formát ještě nemusí být otevřený,</strong> tj. nemusí být k
-                  dispozici veřejně specifikace daného formátu – aplikace s daty
-                  v příslušném formátu může pracovat, ale formát nemusí být
-                  transparentní.</p>
-              </section>
-
-              <section>
-                <h2>Příklady otevřených formátů</h2>
-                <p>Mezi nejvýznamnější představitele otevřených formátů patří:</p>
-                <ul class="fragment fade-up">
-                  <li>RDF – grafový model pro uchovávání faktů v podobě trojic
-                    “subjekt-predikát-objekt”,</li>
-                  <li>JSON – formát pro data se stromovou strukturou,</li>
-                  <li>XML – formát podobného užití jako JSON,</li>
-                  <li>CSV – textový formát pro tabulková data.</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2>Příklady formátů, které nejsou otevřené</h2>
-                <p>Formátů, které nejsou otevřené, je celá řada. Namátkou
-                  jmenujme třeba:</p>
-                <ul class="fragment fade-up">
-                  <li>formáty doc, xls,</li>
-                  <li>formáty využívané kreslícími programy (CorelDraw, …).</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2>Příklady strojově NEčitelných dat</h2>
-                <p>Tradičním příkladem strojově nečitelných dat je „barevný
-                  Excel“, tedy soubor ve formátu MS Excel, který je formátovaný
-                  pro tisk nebo čtení lidmi.</p>
-                <p class="fragment fade-up">Dalšími příklady dat, která nejsou
-                  strojově čitelná, jsou:</p>
-                <ul class="fragment fade-up">
-                  <li>naskenované dokumenty uložené ve formátu PDF,</li>
-                  <li>html stránky (webové stránky) obsahující tabulky.</li>
-                </ul>
-              </section>
-
-              <section>
-
-                <section>
-                  <h2>Konec modulu</h2>
-                  <p><em>Pokračujte prosím na <a href="../znovupoužitelnost-a-interoperabilita/">následující
-                        modul</a>.</em></p>
-                </section>
-
-                <!-- CONTENT:END -->
-
-              </div> </div>
-
-            <footer>
-              Projekt: Rozvoj datových politik v oblasti zlepšování kvality a
-              interoperability dat veřejné správy / Registrační číslo:
-              CZ.03.4.74/0.0/0.0/15_025/0013983
-            </footer>
-
-            <script src="../../assets/main.js"></script>
-            <script src="../../assets/reveal.js/reveal.js"></script>
-            <script src="../../assets/reveal.js/plugin/notes/notes.js"></script>
-            <script src="../../assets/reveal.js/plugin/markdown/markdown.js"></script>
-            <script src="../../assets/reveal.js/plugin/highlight/highlight.js"></script>
-            <script>
-   Reveal.initialize({
-     // Use all the available space.
-     "width": "100%",
-     "height": "100%",
-     //
-	 "hash": true,
-     "embedded": true,
-     "center": false, // Do not use vertical centering, so top is always at the top.
-     "plugins": [ RevealMarkdown, RevealHighlight, RevealNotes ]
-   });
-</script>
-
-          </body>
-        </html>
+<section>
+  <h2>Konec modulu</h2>
+  <p><em>Pokračujte prosím na <a
+        href="../znovupoužitelnost-a-interoperabilita/">následující
+        modul</a>.</em></p>
+</section>

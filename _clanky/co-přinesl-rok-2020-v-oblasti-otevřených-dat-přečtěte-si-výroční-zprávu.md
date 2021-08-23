@@ -5,7 +5,7 @@ detail: true
 ref: co-prinesl-rok-2020-v-oblasti-otevřených-dat-prectete-si-vyrocni-zprávu
 lang: cs
 author: michal_kubáň
-date: 2021-08-23 08:00:00 +01:00
+date: 2021-08-24 06:00:00 +01:00
 ---
 Jak vypadal rok 2020 optikou veřejné správy v oblasti otevřených dat? Jak pandemie koronaviru ovlivnila agendu otevřených dat v České republice.
 Vláda schválila Výroční zpráva o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí.

@@ -7,8 +7,10 @@ lang: cs
 author: michal_kubáň
 date: 2021-08-24 06:00:00 +01:00
 ---
-Jak vypadal rok 2020 optikou veřejné správy v oblasti otevřených dat? Jak pandemie koronaviru ovlivnila agendu otevřených dat v České republice.
-Vláda schválila Výroční zpráva o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí.
+Jak vypadal rok 2020 optikou veřejné správy v oblasti otevřených dat? Jak pandemie koronaviru ovlivnila agendu otevřených dat v České republice?
+Vláda projednala dne 23. srpna 2021 Výroční zprávu o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí. Kompletní materiál je zveřejněn [zde][VZ OD 2020].
+
+[VZ OD 2020]: https://opendata.gov.cz/_media/dokumenty:výroční_zpráva_od_za_rok_2020.pdf "Výroční zpráva OD 2020"
 <!--more-->
 
 V roce 2020 pandemie koronaviru ukázala nejen v České republice, ale i ve světě, že pokud chce společnost reagovat na krizi, tak se musí rozhodovat na základě relevantních a kvalitních dat.
@@ -54,6 +56,3 @@ V rámci tohoto projektu byla realizována i výroční konference “Otevřená
 Příslib publikace otevřených dat byl identifikován u 34 % žádostí k ICT projektům, posuzovaným odborem Hlavního architekta eGovernmentu Ministerstva vnitra v roce 2020. Předpokladem pro publikaci otevřených dat je mj. i zajištění přístupu k datům v informačních systémech (vyjma výše citovaných výjimek zveřejnění).
 Kompletní přístup k datům byl v roce 2020 zajištěn u 78 % posuzovaných ICT projektů. V roce 2020 bylo evidováno také 22 požadavků na nové datové sady z řad budoucích potenciálních uživatelů, přičemž, kromě jednoho požadavku, nebyly identifikovány legislativní překážky pro jejich zveřejnění.
 I přes zajištění technického a legislativního rámce pro publikaci otevřených dat se zatím nenastartoval proces publikace většího množství dat z některých resortů, které by mohly být využity pro tvorbu nových služeb, produktů a pro analytické účely.
-Výroční zprávu o stavu otevřených dat za rok 2020 projednala Vláda ČR v pondělí 23. srpna 2021. Kompletní materiál je zveřejněn [zde][VZ OD 2020].
-
-[VZ OD 2020]: https://opendata.gov.cz/_media/dokumenty:výroční_zpráva_od_za_rok_2020.pdf "Výroční zpráva OD 2020"

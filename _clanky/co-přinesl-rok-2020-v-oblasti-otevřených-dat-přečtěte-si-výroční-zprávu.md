@@ -3,14 +3,15 @@ layout: post
 title: Co přinesl rok 2020 v oblasti otevřených dat? Přečtěte si výroční zprávu
 detail: true
 ref: co-prinesl-rok-2020-v-oblasti-otevřených-dat-prectete-si-vyrocni-zprávu
+image: ../attachments/články/výroční-zpráva-2020/úvodní.webp 
 lang: cs
 author: michal_kubáň
 date: 2021-08-24 06:00:00 +01:00
 ---
-Jak vypadal rok 2020 optikou veřejné správy v oblasti otevřených dat? Jak pandemie koronaviru ovlivnila agendu otevřených dat v České republice?
-Vláda projednala dne 23. srpna 2021 Výroční zprávu o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí. Kompletní materiál je zveřejněn [zde][VZ OD 2020].
 
-[VZ OD 2020]: https://opendata.gov.cz/_media/dokumenty:výroční_zpráva_od_za_rok_2020.pdf "Výroční zpráva OD 2020"
+Jak vypadal rok 2020 optikou veřejné správy v oblasti otevřených dat? Jak pandemie koronaviru ovlivnila agendu otevřených dat v České republice?
+Vláda projednala dne 23. srpna 2021 Výroční zprávu o stavu otevřených dat v České republice a my vám z ní přinášíme krátké shrnutí.
+
 <!--more-->
 
 V roce 2020 pandemie koronaviru ukázala nejen v České republice, ale i ve světě, že pokud chce společnost reagovat na krizi, tak se musí rozhodovat na základě relevantních a kvalitních dat.
@@ -25,7 +26,9 @@ Publikace otevřených dat u ministerstev je s ohledem na množství dat a jejic
 Některá ministerstva zajišťují publikaci dat v celém resortu, jiná zatím nepublikovala žádnou datovou sadu.
 Některé resorty sice již mají interní směrnici a plán pro publikaci otevřených dat, ale silně ztrácejí v datové kvalitě, což výrazně komplikuje uživatelům zpracování dat.
 Za příklady dobré praxe poskytovatelů otevřených dat můžeme označit Českou správu sociálního zabezpečení a Ministerstvo financí.
+
 V mezinárodním hodnocení Evropské komise v tzv. Open Data Maturity Reportu Česká republika klesla na 21. příčku. 
+
 Povinné subjekty a informace ve formě otevřených dat definuje zákon č. 106/1999 Sb., o svobodném přístupu k informacím a nařízení vlády č. 425/2016 Sb., o seznamu informací zveřejňovaných jako otevřená data.
 V roce 2020 Ministerstvo vnitra pracovalo na implementaci evropského právního rámce pro otevřená data, tj. směrnice EU č. 2019/1024 o otevřených datech a informacích veřejného sektoru.
 Transpozici směrnice do české legislativy lze očekávat na podzim roku 2021.
@@ -56,3 +59,7 @@ V rámci tohoto projektu byla realizována i výroční konference “Otevřená
 Příslib publikace otevřených dat byl identifikován u 34 % žádostí k ICT projektům, posuzovaným odborem Hlavního architekta eGovernmentu Ministerstva vnitra v roce 2020. Předpokladem pro publikaci otevřených dat je mj. i zajištění přístupu k datům v informačních systémech (vyjma výše citovaných výjimek zveřejnění).
 Kompletní přístup k datům byl v roce 2020 zajištěn u 78 % posuzovaných ICT projektů. V roce 2020 bylo evidováno také 22 požadavků na nové datové sady z řad budoucích potenciálních uživatelů, přičemž, kromě jednoho požadavku, nebyly identifikovány legislativní překážky pro jejich zveřejnění.
 I přes zajištění technického a legislativního rámce pro publikaci otevřených dat se zatím nenastartoval proces publikace většího množství dat z některých resortů, které by mohly být využity pro tvorbu nových služeb, produktů a pro analytické účely.
+
+Kompletní informace se dozvíte ve [výroční zprávě][VZ OD 2020]. 
+
+[VZ OD 2020]: https://opendata.gov.cz/_media/dokumenty:výroční_zpráva_od_za_rok_2020.pdf "Výroční zpráva OD 2020"

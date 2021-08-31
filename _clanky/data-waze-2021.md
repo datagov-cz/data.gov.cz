@@ -6,7 +6,7 @@ ref: data-waze-2021
 lang: cs
 image: ../attachments/články/data-waze-2021/4-srovnanimest.webp
 author: martin_dvořák
-date: 2021-08-30 07:00:00 +01:00
+date: 2021-08-31 07:00:00 +01:00
 ---
 Dopravní data jsou základním předpokladem pro efektivní plánování dopravy. Pro ucelený přehled o dopravní situaci je vždy dobré spojit více datových zdrojů, jako jsou například dopravní nehody, data z [Národního dopravního informačního systému NDIC][link_NDIC], data ze [Sčítání dopravy][link_sčítání] či v poslední době stále více populárnější data z dopravní navigace Waze. Jak a kde poslední zmíněná data získat, co nabízí a jak je využít v plánování dopravy, si ukážeme v tomto článku. 
 <!--more-->

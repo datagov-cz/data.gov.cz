@@ -1,10 +1,10 @@
 ---
 layout: post
+icon: whatshot
 title: E-learning - nová možnost vzdělávání v oblasti otevřených dat
 detail: true
 ref: e-learning
 lang: cs
-image: ../attachments/články/e-learning/úvodní-obrázek.webp
 author: marie_vítová
 date: 2021-09-01 06:00:00 +01:00
 ---

@@ -9,7 +9,7 @@ author: marie_vítová
 date: 2021-09-01 06:00:00 +01:00
 ---
 Ministerstvo vnitra již několik let nabízí bezplatná školení v oblasti otevřených dat pro všechny zájemce z řad pracovníků státní správy a samosprávy i odborné veřejnosti. 
-V rámci rozšiřování těchto vzdělávacích aktivit a zvyšování jejich dostupnosti je od září 2021 na Portálu otevřených dat k dispozici nová forma vzdělávání: e-learningové kurzy.
+V rámci rozšiřování těchto vzdělávacích aktivit a zvyšování jejich dostupnosti je od září 2021 na Portálu otevřených dat k dispozici nová forma vzdělávání: [e-learningové kurzy][sekce e-learning].
 
 <!--more-->
 

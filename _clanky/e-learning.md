@@ -13,6 +13,99 @@ V rámci rozšiřování těchto vzdělávacích aktivit a zvyšování jejich d
 
 <!--more-->
 
+## Jak kurzy vypadají a kde je lze najít?
+
+Přehledu všech dostupných e-learningových kurzů je věnována [samostatná podsekce v části Vzdělávání][sekce e-learning] na Portálu otevřených dat.
+V současné době je v podobě e-learningu k dispozici základní kurz [Co jsou otevřená data][úvodní kurz] zaměřený na široké publikum, který nevyžaduje žádné specifické IT znalosti či dovednosti nad rámec uživatelské znalosti PC a seznamuje uživatele s konceptem otevřených dat, dále je k dispozici manažersky orientovaný kurz zaměřený na [publikační plán][publikační plán] organizace a publikaci dat a rovněž trojice technicky orientovaných kurzů: [Katalogizace otevřených dat][katalogizace], [Úvod do otevřených formálních norem][úvod do OFN] a [Technické aspekty otevřených dat][technické aspekty].
+
+<div class="row">
+      
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
+    <div class="card">
+        <div class="card-body">
+        <h2 class="card-title h5">Co jsou otevřená data</h2>
+        <p>
+            Cílem školení je poskytnout veřejnosti základní informace o tom, co otevřená data jsou, proč se mají publikovat a jak je chápeme v kontextu ČR. Absolvent kurzu by měl mj. být schopen vyhledat otevřená data, posoudit, jaká data se mají publikovat povinně, a chápat základní pojmy v oblasti otevřených dat.
+        </p>
+        <a href="/vzdělávání/e-learning/co-jsou-otevřená-data/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
+        </div>
+        <div class="card-footer"><i class="bi-stopwatch"></i> 2,5 hodiny</div>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
+    <div class="card">
+        <div class="card-body">
+        <h2 class="card-title h5">Publikační plán a publikace dat</h2>
+        <p>
+            Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni realizovat, resp. řídit vytvoření publikačního plánu dané organizace.
+        </p>
+        <a href="/vzdělávání/e-learning/publikační-plán-a-publikace-dat/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
+        </div>
+        <div class="card-footer"><i class="bi-stopwatch"></i> 2,5 hodiny</div>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
+    <div class="card">
+        <div class="card-body">
+        <h2 class="card-title h5">Katalogizace otevřených dat</h2>
+        <p>
+            Cílem školení je poskytnout koordinátorovi otevírání dat takové informace, aby byl schopen rozhodnout o způsobu katalogizace otevřených dat, kurátorům takové informace, aby byli schopni řádně plnit katalogizační záznamy datových sad a správci katalogu OD a IT specialistům takové informace, které jim umožňí určit formu implementace lokálního katalogu otevřených dat a jeho implementaci řídit.
+        </p>
+        <a href="/vzdělávání/e-learning/katalogizace-otevřených-dat/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
+        </div>
+        <div class="card-footer"><i class="bi-stopwatch"></i> 45 minut</div>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
+    <div class="card">
+        <div class="card-body">
+        <h2 class="card-title h5">Úvod do otevřených formálních norem (OFN)</h2>
+        <p>
+            Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni posoudit možnost/nutnost využití otevřených formálních norem, výhody aplikace OFN v rámci organizace otevírající svoje data a rovněž aby byli schopni využívání OFN iniciovat a koordinovat.
+            Kurz není zaměřen na technické aspekty tvorby nových OFN.
+        </p>
+        <a href="/vzdělávání/e-learning/otevřené-formální-normy-ofn/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
+        </div>
+        <div class="card-footer"><i class="bi-stopwatch"></i> 2 hodiny</div>
+    </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
+    <div class="card">
+        <div class="card-body">
+        <h2 class="card-title h5">Technické aspekty otevřených dat</h2>
+        <p>
+            Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby měli přehled o technologiích a technických postupech používaných v otevřených datech a byli schopni již samostatně dohledat detailní informace potřebné k technické realizaci otevírání dat, resp. řídit technickou stránku otevírání dat dané organizace.
+        </p>
+        <a href="/vzdělávání/e-learning/technické-aspekty-otevřených-dat/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
+        </div>
+        <div class="card-footer"><i class="bi-stopwatch"></i> 2 hodiny</div>
+    </div>
+    </div>
+    
+</div>
+
+Kurzy se skládají jednotlivých modulů, z nichž je možné si vybírat.
+Kurz je možné časově rozložit do více dní a libovolně se vracet k jeho jednotlivým částem.
+Je ovšem doporučeno absolvovat vždy celý kurz, aby školená osoba získala kompletní znalosti k danému tématu.
+
+## Certifikát a závěrečný test
+
+Každý z e-learningových kurzů je zakončen dobrovolným testem - tyto testy jsou určeny absolventům kurzu k ověření si správného pochopení získaných informací a znalostí.
+Test po vyplnění odpovědí nabídne zobrazení výsledku správnosti jednotlivých odpovědí a u chybných odpovědí zobrazí správnou odpověď a případné vysvětlení. Současně absolvent získá informaci, kolik bodů z maxima možných svými odpověďmi získal.
+
+Test současně slouží i jako podklad k vystavení certifikátu o absolvování kurzu, v případě, že absolvent kurzu si v testu tuto možnost vybere.
+
+## Kdo se kurzu může zúčastnit?
+
+Kurzy jsou volně dostupné, není třeba se nikde registrovat.
+První e-learningový kurz nevyžaduje žádné předběžné znalosti z oblasti otevřených dat, postačí jen základní uživatelská znalost běžných kancelářských aplikací pro práci s daty (tabulkový procesor). 
+
+Další výše zmiňované kurzy předpokládají přehled v oblasti otevřených dat, který lze načerpat právě v rámci předchozího základního kurzu.
+
 ## Proč e-learning vznikl?
 
 Je zřejmé, že míra využívání otevřených dat a rozvoj ekosystému otevřených dat jsou významným způsobem závislé na proškolení kompetentních pracovníků. 
@@ -23,94 +116,6 @@ Na rozdíl od online školení, která se konají s lektorem v předem daném č
 Vzdělávat se v oblasti otevřených dat je tedy nyní možné z pohodlí domova či kanceláře, přičemž “porce výuky” si lze dávkovat dle aktuálních časových možností a preferencí uživatele.
 
 Obě formy - tj. online školení a e-learningové kurzy - reagují jednak na aktuální situaci, kdy se “ne-prezenční” vzdělávací akce dostávají do popředí z epidemických důvodů, ale také na zvýšenou poptávku po školení, která je motivována nutností publikovat otevřená data ze strany výrazně širší skupiny institucí, viz náš článek [Nové povinnosti pro ORP, kraje a orgány státní správy][článek JaMí] v oblasti otevřených dat.
-
-<div class="row">
-      
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5" id="co-jsou-otevřená-data">Co jsou otevřená data<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#co-jsou-otevřená-data" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-            <p>
-              Cílem školení je poskytnout veřejnosti základní informace o tom, co otevřená data jsou, proč se mají publikovat a jak je chápeme v kontextu ČR. Absolvent kurzu by měl mj. být schopen vyhledat otevřená data, posoudit, jaká data se mají publikovat povinně, a chápat základní pojmy v oblasti otevřených dat.
-            </p>
-            
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 2,5 hodiny</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5" id="publikační-plán-a-publikace-dat">Publikační plán a publikace dat<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#publikační-plán-a-publikace-dat" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-            <p>
-              Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni realizovat, resp. řídit vytvoření publikačního plánu dané organizace.
-            </p>
-            
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 2,5 hodiny</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5" id="katalogizace-otevřených-dat">Katalogizace otevřených dat<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#katalogizace-otevřených-dat" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-            <p>
-              Cílem školení je poskytnout koordinátorovi otevírání dat takové informace, aby byl schopen rozhodnout o způsobu katalogizace otevřených dat, kurátorům takové informace, aby byli schopni řádně plnit katalogizační záznamy datových sad a správci katalogu OD a IT specialistům takové informace, které jim umožňí určit formu implementace lokálního katalogu otevřených dat a jeho implementaci řídit.
-            </p>
-            
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 45 minut</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5" id="úvod-do-otevřených-formálních-norem-ofn">Úvod do otevřených formálních norem (OFN)<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#úvod-do-otevřených-formálních-norem-ofn" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-            <p>
-              Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni posoudit možnost/nutnost využití otevřených formálních norem, výhody aplikace OFN v rámci organizace otevírající svoje data a rovněž aby byli schopni využívání OFN iniciovat a koordinovat.
-              Kurz není zaměřen na technické aspekty tvorby nových OFN.
-            </p>
-            
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 2 hodiny</div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5" id="technické-aspekty-otevřených-dat">Technické aspekty otevřených dat<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="" href="#technické-aspekty-otevřených-dat" style="font: 1em / 1 anchorjs-icons; padding-left: 0.375em;"></a></h2>
-            <p>
-              Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby měli přehled o technologiích a technických postupech používaných v otevřených datech a byli schopni již samostatně dohledat detailní informace potřebné k technické realizaci otevírání dat, resp. řídit technickou stránku otevírání dat dané organizace.
-            </p>
-            
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 2 hodiny</div>
-        </div>
-      </div>
-      
-    </div>
-
-## Kdo se kurzu může zúčastnit?
-
-Kurzy jsou volně dostupné, není třeba se nikde registrovat. První e-learningový kurz nevyžaduje žádné předběžné znalosti z oblasti otevřených dat, postačí jen základní uživatelská znalost běžných kancelářských aplikací pro práci s daty (tabulkový procesor). 
-
-Další výše zmiňované kurzy předpokládají přehled v oblasti otevřených dat, který lze načerpat právě v rámci předchozího základního kurzu.
-
-## Jak kurzy vypadají a kde je lze najít?
-
-V současné době je v podobě e-learningu k dispozici základní kurz [Co jsou otevřená data][úvodní kurz] zaměřený na široké publikum, který nevyžaduje žádné specifické IT znalosti či dovednosti nad rámec uživatelské znalosti PC a seznamuje uživatele s konceptem otevřených dat, dále je k dispozici manažersky orientovaný kurz zaměřený na [publikační plán][publikační plán] organizace a publikaci dat a rovněž trojice technicky orientovaných kurzů: [Katalogizace otevřených dat][katalogizace], [Úvod do otevřených formálních norem][úvod do OFN] a [Technické aspekty otevřených dat][technické aspekty]. Přehledu všech dostupných e-learningových kurzů je věnována [samostatná sekce][sekce e-learning] na Portálu otevřených dat.
-
-Kurzy se skládají jednotlivých modulů, z nichž je možné si vybírat. Kurz je možné časově rozložit do více dní a libovolně se vracet k jeho jednotlivým částem. Je ovšem doporučeno absolvovat vždy celý kurz, aby školená osoba získala kompletní znalosti k danému tématu.
-
-## Certifikát a závěrečný test
-
-Každý z e-learningových kurzů je zakončen dobrovolným testem - tyto testy jsou určeny absolventům kurzu k ověření si správného pochopení získaných informací a znalostí. Test po vyplnění odpovědí nabídne zobrazení výsledku správnosti jednotlivých odpovědí a u chybných odpovědí zobrazí správnou odpověď a případné vysvětlení. Současně absolvent získá informaci, kolik bodů z maxima možných svými odpověďmi získal.
-
-Test současně slouží i jako podklad k vystavení certifikátu o absolvování kurzu, v případě, že absolvent kurzu si v testu tuto možnost vybere.
     
 [sekce POD]: /vzdělávání/ "Sekce vzdělávání na POD"
 [článek JaMí]: /články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Úřední desky - článek JaMí"
@@ -119,4 +124,4 @@ Test současně slouží i jako podklad k vystavení certifikátu o absolvován�
 [katalogizace]: /vzdělávání/e-learning/katalogizace-otevřených-dat/ "Kurz Katalogizace"
 [úvod do OFN]: /vzdělávání/e-learning/otevřené-formální-normy-ofn/ "Kurz Úvod do OFN"
 [technické aspekty]: /vzdělávání/e-learning/technické-aspekty-otevřených-dat/ "Kurz Technické aspekty OD"
-[sekce e-learning]: /vzdělávání/e-learning/ "POD - E-learning"
+[sekce e-learning]: /vzdělávání/e-learning/ "E-learning - Vzdělávání - Portál otevřených dat"

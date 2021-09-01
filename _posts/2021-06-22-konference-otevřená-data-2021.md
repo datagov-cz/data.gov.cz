@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Sdílejte svoje zkušenosti na konferenci Otevřená data 2021
 detail: true
 ref: Konference2021CallForPapers

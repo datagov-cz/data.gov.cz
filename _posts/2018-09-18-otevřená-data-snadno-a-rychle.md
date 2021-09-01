@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Návod, jak dostat otevřená data snadno a rychle. A správně.
 detail: false
 ref: ODSnadnoRychleNews

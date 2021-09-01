@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Důležitost datové kvality datových sad s vysokou hodnotou
 detail: true
 ref: důležitost-datové-kvality-datových-sad-s-vysokou-hodnotou

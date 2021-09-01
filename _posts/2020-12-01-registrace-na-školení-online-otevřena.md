@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Registrace pro úvodní školení otevřených dat on-line otevřena
 detail: false
 ref: OnlineŠkolení2020RegistraceOtevřena

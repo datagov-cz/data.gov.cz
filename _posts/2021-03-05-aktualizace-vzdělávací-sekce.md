@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Aktualizovali jsme vzdělávací sekci 
 detail: false
 ref: 2021-03-05-aktualizace-vzdělávací-sekce

@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Konference Otevřená data 2020 bude 23. 10. 2020
 detail: false
 ref: Konference2020SaveTheDate

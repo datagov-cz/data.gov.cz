@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: "Webinář: Otevřená data ve zdravotnictví II"
 detail: false
 ref: 2021-04-23-otevřená-data-ve-zdravotnictví-webinář

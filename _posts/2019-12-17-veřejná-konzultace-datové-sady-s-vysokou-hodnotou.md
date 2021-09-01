@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Veřejná konzultace k datovým sadám s vysokou hodnotou 
 detail: true
 ref: VeřejnáKonzultaceHVDS

@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Zúčastněte se „Dnů otevřených dat EU“ a pomozte utvářet naši digitální budoucnost
 detail: true
 image: ../attachments/2021-05-14/úvodní.webp

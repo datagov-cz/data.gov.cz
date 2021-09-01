@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Data pro lepší Česko
 detail: false
 ref: DataProLepsiCesko

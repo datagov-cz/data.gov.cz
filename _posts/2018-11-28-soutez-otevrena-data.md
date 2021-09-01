@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Soutěž o nejlepší aplikaci nad otevřenými daty
 detail: false
 ref: SestyRocnikSoutezeAplikaceNadOtevrenymiDaty

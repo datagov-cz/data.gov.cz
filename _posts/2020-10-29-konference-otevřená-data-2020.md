@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Konference Otevřená data 2020
 detail: false
 ref: VýročníKonference2020

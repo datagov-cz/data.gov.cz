@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Česko si mírně polepšilo v mezinárodním hodnocení otevřených dat
 detail: true
 ref: MezinárodníHodnoceníOtevřenýchDat2019

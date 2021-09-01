@@ -4,9 +4,9 @@ title: Nové možnosti vzdělávání v oblasti otevřených dat
 detail: true
 ref: e-learning
 lang: cs
-image: ../attachments/články/e-learning/uvodni_obrazek.webp
+image: ../attachments/články/e-learning/úvodní-obrázek.webp
 author: marie_vítová
-date: 2021-09-01 06:00:00 +01:00
+date: 2021-08-31 06:00:00 +01:00
 ---
 Ministerstvo vnitra  již několik let nabízí bezplatná školení v oblasti otevřených dat pro všechny zájemce z řad pracovníků státní správy a samosprávy i odborné veřejnosti. 
 V rámci rozšiřování těchto vzdělávacích aktivit a zvyšování jejich dostupnosti je od září 2021 na Portálu otevřených dat k dispozici nová forma vzdělávání: e-learningové kurzy.
@@ -46,11 +46,11 @@ Každý z e-learningových kurzů je zakončen dobrovolným testem - tyto testy 
 
 Test současně slouží i jako podklad k vystavení certifikátu o absolvování kurzu, v případě, že absolvent kurzu si v testu tuto možnost vybere.
     
-[sekce POD]: https://opendata-mvcr.github.io/vzdělávání/ "Sekce vzdělávání na POD"
-[článek JaMí]: https://data.gov.cz/články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Úřední desky - článek JaMí"
-[úvodní kurz]: https://opendata-mvcr.github.io/vzdělávání/e-learning/co-jsou-otevřená-data/ "Kurz Co jsou otevřená data"
-[publikační plán]: https://opendata-mvcr.github.io/vzdělávání/e-learning/publikační-plán-a-publikace-dat/ "Kurz Publikační plán"
-[katalogizace]: https://opendata-mvcr.github.io/vzdělávání/e-learning/katalogizace-otevřených-dat/ "Kurz Katalogizace"
-[úvod do OFN]: https://opendata-mvcr.github.io/vzdělávání/e-learning/otevřené-formální-normy-ofn/ "Kurz Úvod do OFN"
-[technické aspekty]: https://opendata-mvcr.github.io/vzdělávání/e-learning/technické-aspekty-otevřených-dat/ "Kurz Technické aspekty OD"
-[sekce e-learning]: https://opendata-mvcr.github.io/vzdělávání/e-learning/ "POD - E-learning"
+[sekce POD]: /vzdělávání/ "Sekce vzdělávání na POD"
+[článek JaMí]: /články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Úřední desky - článek JaMí"
+[úvodní kurz]: /vzdělávání/e-learning/co-jsou-otevřená-data/ "Kurz Co jsou otevřená data"
+[publikační plán]: /vzdělávání/e-learning/publikační-plán-a-publikace-dat/ "Kurz Publikační plán"
+[katalogizace]: /vzdělávání/e-learning/katalogizace-otevřených-dat/ "Kurz Katalogizace"
+[úvod do OFN]: /vzdělávání/e-learning/otevřené-formální-normy-ofn/ "Kurz Úvod do OFN"
+[technické aspekty]: /vzdělávání/e-learning/technické-aspekty-otevřených-dat/ "Kurz Technické aspekty OD"
+[sekce e-learning]: /vzdělávání/e-learning/ "POD - E-learning"

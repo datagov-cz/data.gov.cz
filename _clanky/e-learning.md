@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nové možnosti vzdělávání v oblasti otevřených dat
+title: E-learning - nová možnost vzdělávání v oblasti otevřených dat
 detail: true
 ref: e-learning
 lang: cs

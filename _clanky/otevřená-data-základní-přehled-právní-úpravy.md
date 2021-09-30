@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Otevřená data: Základní přehled právní úpravy
+title: "Otevřená data: Základní přehled právní úpravy"
 detail: true
 ref: základní-přehled-právní-úpravy
 lang: cs
-image: ../attachments/články/právní-úvod/paragraf.webp
+image: ../attachments/články/otevřená-data-základní-přehled-právní-úpravy/paragraf.webp
 author: jakub_míšek
 date: 2021-09-30 07:00:00 +01:00
 ---
@@ -40,7 +40,7 @@ Tato nová úprava zavádí pro veřejně dostupné informace vedené v zákonem
 Druhou novinkou je zavedení povinnosti poskytovat jako otevřená data metadata úředních desek, tato povinnost však nabude účinnosti až 1. 2. 2022. 
 Povinné subjekty podle zákona č. 106/1999 Sb. však mohou poskytovat jako otevřená data i jiné informace, než ty u kterých tak stanoví povinně zákon, a to na základě obecné diskrece vyplývající z [§ 5 odst. 5 zákona][paragraf-5].
 
-{% include image.html url="../attachments/články/právní-úvod/ilustracni.webp" description="Ilustrační obrázek" %}
+{% include image.html url="../attachments/články/otevřená-data-základní-přehled-právní-úpravy/ilustracni.webp" description="Ilustrační obrázek" %}
 
 Česká právní úprava otevřených dat však dozná v blízké době několika změn. 
 V roce 2019 byla přijata směrnice EU č. 2019/1024, o otevřených datech a opakovaném použití informací veřejného sektoru (tzv. OD Směrnice), která s účinností od července 2021 nahradila výše zmíněnou směrnici z roku 2003 a její novelu. 
@@ -67,7 +67,7 @@ Současná úprava česká otevřených dat stanoví jasné povinnosti určujíc
 [zákon-106]: https://www.zakonyprolidi.cz/cs/1999-106 "Zákon č. 106/1999 Sb., o svobodném přístupu k informacím"
 [paragraf-4b]: https://www.zakonyprolidi.cz/cs/1999-106#p4b "Zákon č. 106/1999 Sb., p 4b"
 [paragraf-3]: https://www.zakonyprolidi.cz/cs/1999-106#p3 "Zákon č. 106/1999 Sb., p 3"
-[NKOD]: https://data.gov.cz/datové-sady "NKOD"
+[NKOD]: /datové-sady "NKOD"
 [zákon-298]: https://www.zakonyprolidi.cz/cs/2016-298 "Open Data novela 298/2016 Sb."
 [nařízení-425]: https://www.zakonyprolidi.cz/cs/2016-425 "Nařízení vlády č. 425/2016 Sb."
 [zákon-261]: https://www.zakonyprolidi.cz/cs/2021-261 "Změnový zákon č. 261/2021 Sb."
@@ -76,4 +76,4 @@ Současná úprava česká otevřených dat stanoví jasné povinnosti určujíc
 [zákon-12]: https://www.zakonyprolidi.cz/cs/2020-12 "Zákon č. 12/2020 Sb., o právu na digitální služby"
 [zákon-111]: https://www.zakonyprolidi.cz/cs/2009-111 "Zákon č. 111/2009 Sb., o základních registrech"
 [zákon-123]: https://www.zakonyprolidi.cz/cs/1998-123 "Zákon č. 123/1998 Sb., o právu na informace o životním prostředí"
-[POD vzdělávání]: https://data.gov.cz/vzdělávání/ "Portál otevřených dat - Vzdělávání"
+[POD vzdělávání]: /vzdělávání/ "Portál otevřených dat - Vzdělávání"

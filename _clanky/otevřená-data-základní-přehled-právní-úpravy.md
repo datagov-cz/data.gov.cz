@@ -73,7 +73,6 @@ Současná úprava česká otevřených dat stanoví jasné povinnosti určujíc
 [zákon-261]: https://www.zakonyprolidi.cz/cs/2021-261 "Změnový zákon č. 261/2021 Sb."
 [paragraf-5a]: https://www.zakonyprolidi.cz/cs/1999-106#p5a "Zákon č. 106/1999 Sb., p 5a"
 [paragraf-5]: https://www.zakonyprolidi.cz/cs/1999-106#p5 "Zákon č. 106/1999 Sb., p 5"
-
 [zákon-12]: https://www.zakonyprolidi.cz/cs/2020-12 "Zákon č. 12/2020 Sb., o právu na digitální služby"
 [zákon-111]: https://www.zakonyprolidi.cz/cs/2009-111 "Zákon č. 111/2009 Sb., o základních registrech"
 [zákon-123]: https://www.zakonyprolidi.cz/cs/1998-123 "Zákon č. 123/1998 Sb., o právu na informace o životním prostředí"

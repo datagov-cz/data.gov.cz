@@ -44,7 +44,7 @@ Povinné subjekty podle zákona č. 106/1999 Sb. však mohou poskytovat jako ote
 
 Česká právní úprava otevřených dat však dozná v blízké době několika změn. 
 V roce 2019 byla přijata směrnice EU č. 2019/1024, o otevřených datech a opakovaném použití informací veřejného sektoru (tzv. OD Směrnice), která s účinností od července 2021 nahradila výše zmíněnou směrnici z roku 2003 a její novelu. 
-Ke stejnému datu mělo rovněž dojít k implementaci OD Směrnice do českého právního řádu, což se však bohužel vzhledem k předvolební situaci nestihlo. 
+Ke stejnému datu mělo rovněž dojít k implementaci OD Směrnice do českého právního řádu, což se ale z důvodu plného vytížení poslanecké sněmovny nestihlo. 
 OD Směrnice dále prohlubuje důraz na poskytování PSI v co nejotevřenější podobě a oproti své předchůdkyni přináší tři zásadní novinky. 
 První z nich spočívá v rozšíření působnosti směrnice na veřejné podniky ve smyslu definice vycházející ze směrnice 2014/25/EU, tedy na obchodní společnosti podnikající v klíčových oblastech fakticky ovládané státem. 
 Druhá novinka spočívá v zavedení tzv. datových sad s vysokou socioekonomickou hodnotou, které budou stanoveny prováděcím předpisem k OD Směrnici, a které budou povinně zveřejňovány napříč EU. 
@@ -62,7 +62,7 @@ Zákonem č. 261/2021 Sb. došlo rovněž k dílčí novele [zákona č. 111/200
 V současné době čeká v Poslanecké sněmovně na první čtení vládní návrh implementačního předpisu výše zmíněné OD směrnice, který krom změn v zákoně č. 106/1999 Sb. předpokládá rovněž změny v [zákoně č. 123/1998 Sb., o právu na informace o životním prostředí][zákon-123], které jsou nezbytné vzhledem k nutnosti narovnání regulace otevřených dat v těchto velmi blízkých předpisech. 
 Již je však jasné, že do voleb v říjnu 2021 se projednání tohoto zákona nestihne a bude nutné implementační novelu předložit znovu nové sněmovně.
 
-Současná úprava česká otevřených dat stanoví jasné povinnosti určující, které informace mají být jako otevřená data publikovány. Zároveň však nechává otevřené dveře možnosti poskytovat otevřená data dobrovolně nad rámec těchto povinností. Odbor hlavního architekta eGovernmentu nabízí pro zájemce z řad povinných subjektů i široké veřejnosti podporu s poskytováním otevřených dat v podobě [konzultací a školení][POD vzdělávání].
+Současná úprava česká otevřených dat stanoví jasné povinnosti určující, které informace mají být jako otevřená data publikovány. Zároveň však nechává otevřené dveře možnosti poskytovat otevřená data dobrovolně nad rámec těchto povinností. Odbor Hlavního architekta eGovernmentu nabízí pro zájemce z řad povinných subjektů i široké veřejnosti podporu s poskytováním otevřených dat v podobě [konzultací a školení][POD vzdělávání].
  
 [zákon-106]: https://www.zakonyprolidi.cz/cs/1999-106 "Zákon č. 106/1999 Sb., o svobodném přístupu k informacím"
 [paragraf-4b]: https://www.zakonyprolidi.cz/cs/1999-106#p4b "Zákon č. 106/1999 Sb., p 4b"
@@ -77,3 +77,4 @@ Současná úprava česká otevřených dat stanoví jasné povinnosti určujíc
 [zákon-111]: https://www.zakonyprolidi.cz/cs/2009-111 "Zákon č. 111/2009 Sb., o základních registrech"
 [zákon-123]: https://www.zakonyprolidi.cz/cs/1998-123 "Zákon č. 123/1998 Sb., o právu na informace o životním prostředí"
 [POD vzdělávání]: /vzdělávání/ "Portál otevřených dat - Vzdělávání"
+[zákon-365]: https://www.zakonyprolidi.cz/cs/2000-365 "Zákon č. 365/2000 Sb., o informačních systémech veřejné správy"

@@ -16,4 +16,4 @@ Vítěz každé kategorie obdrží finanční odměnu na další rozvoj aplikace
 
 Nebo se přijďte alespoň podívat na slavnostní vyhlášení 23. listopadu v Centru současného umění DOX v rámci Civic Tech Open 2021.
 
-[Soutěž Společně otevíráme data]: https://osf.cz/programy/ziva-demokracie/nas-stat-nase-data/soutez-spolecne-otevirame-data-2021/ "Soutěž Společně otevíráme data"
+[soutěže Společně otevíráme data]: https://osf.cz/programy/ziva-demokracie/nas-stat-nase-data/soutez-spolecne-otevirame-data-2021/ "Soutěž Společně otevíráme data"

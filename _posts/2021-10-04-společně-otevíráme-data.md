@@ -7,7 +7,7 @@ lang: cs
 author: radka_domanská
 ---
 
-Do 20. října 2021 můžete přihlašovat své aplikace do soutěže Společně otevíráme data, ve které Nadace OSF oceňuje nejlepší aplikace postavené nad otevřenými daty v ČR. 
+Do 20. října 2021 můžete přihlašovat své aplikace do [soutěže Společně otevíráme data], ve které Nadace OSF oceňuje nejlepší aplikace postavené nad otevřenými daty v ČR. 
 Letos se klání uskuteční ve 4 kategoriích - městská data, zdraví, vzdělávání, klima a životní prostředí.
 <!--more-->
 

@@ -11,7 +11,7 @@ date: 2021-10-27 06:00:00 +01:00
 Jedním z přínosů otevřených dat je poskytnutí možnosti participace odborné veřejnosti na monitorování datové kvality, případně na aktivitách typu čištění dat (*„data cleansing“*). Tyto aktivity mají smysl jak směrem k uživatelům dat – poskytnou-li ti, kteří data čistí, výsledky své činnosti dalším uživatelům, kteří tak mohou následně pracovat s kvalitnějšími daty, tak směrem k tvůrcům otevřených dat, kteří na základě toho mohou podniknout kroky ke zvyšování datové kvality na úrovni „zdroje“. V tomto článku stručně zmíníme některé pojmy a techniky spadající do řízení datové kvality a následně je aplikujeme na příkladě dat o projektech výzkumu, vývoje a inovacích, které jsou finacovány ze státního, příp. krajských rozpočtů. Naznačené přístupy mohou být využity i u řady dalších datových sad jiných poskytovatelů otevřených dat.
 <!--more-->
 
-Doplňme ještě na úvod, že pohled na kvalitu otevřených dat z jiné perspektivy je k dispozici v příslušné sekci [Portálu pro poskytovaltele][link_pod_data_quality]. My se zde zaměříme zejména na “obsah datové sady”.
+Doplňme ještě na úvod, že pohled na kvalitu otevřených dat z jiné perspektivy je k dispozici v příslušné sekci [Portálu pro poskytovatele][link_pod_data_quality]. My se zde zaměříme zejména na “obsah datové sady”.
 
 Otázka datové kvality je v prostředí otevřených dat klíčová, neboť koncept otevřených dat vychází z potřeb znovupoužitelnosti a propojování s dalšími daty. Chyba v primárních, resp. zdrojových datech se tak může propisovat dále a snižovat kvalitu dalších výstupů, které jsou na těchto datech založeny.
 

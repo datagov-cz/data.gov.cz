@@ -19,7 +19,7 @@ Pro zajištění dohledatelnosti otevřených dat v ČR slouží [Národní kata
 > *“Otevřenými daty se pro účely tohoto zákona rozumí informace zveřejňované způsobem umožňujícím dálkový přístup v otevřeném a strojově čitelném formátu, jejichž způsob ani účel následného využití není omezen a které jsou evidovány v národním katalogu otevřených dat.”*
 > -- [§ 3 odst. 11 zákona č. 106/1999 Sb. o svobodném přístupu k informacím][106]
 
-Dohledatelnost dat, angl. findability, je jedním z tzv. FAIR principů dat, společně s jejich přístupností (accessibility), interoperabilitou, tj. snadností pracovat s více datovými zdroji dohromady, a znovupoužitelností (reusability), tj. možností používat jedna data ve více kontextech.
+Dohledatelnost dat, angl. findability, je jedním z tzv. FAIR principů dat společně s jejich přístupností (accessibility), interoperabilitou, tj. snadností pracovat s více datovými zdroji dohromady, a znovupoužitelností (reusability), tj. možností používat jedna data ve více kontextech.
 Dodržováním FAIR principů je zajištěna použitelnost dat, což je hlavní účel otevřených dat, tedy dat pocházejících z veřejné správy a publikovaných pro použití veřejností.
 
 Tedy veškerá otevřená data v ČR jsou zaregistrována v NKOD, a data, která v NKOD zaregistrovaná nejsou, nejsou otevřená.

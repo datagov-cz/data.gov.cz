@@ -4,7 +4,7 @@ title: Vybrané techniky analýzy datové kvality a jejich aplikace na data z Ce
 detail: true
 ref: techniky-analýzy-datové-kvality-cep
 lang: cs
-image: ../attachments/články/techniky-analýzy-datové-kvality-cep/0-data-quality-cep.webp
+image: ../attachments/články/techniky-analýzy-datové-kvality-cep/0-datová-kvalita-cep.webp
 author: martin_víta
 date: 2021-10-27 06:00:00 +01:00
 ---

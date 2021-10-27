@@ -216,7 +216,7 @@ Na tyto úvahy může navázat analýza vzniku chyb – v případě tohoto data
 [link_cep]: https://www.isvavai.cz/cep/ "Centralní evidence projektů IS VaVaI"
 [link_isvavai]: https://www.isvavai.cz "IS VaVaI"
 [link_narizeni]: https://www.zakonyprolidi.cz/cs/2009-397 "Nařízení vlády č. 397/2009 Sb., o informačním systému výzkumu, experimentálního vývoje a inovací"
-[link_od_cep]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00006599%2F841711772 "Datová sada CEP"
+[link_od_cep]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00006599%2F841711772 "Datová sada CEP"
 [link_od_cep_schema]: https://www.isvavai.cz/dokumenty/open-data/CEP-projekty.csv-metadata.json "Datové schéma CEP"
 [link_starfos]: https://www.starfos.cz "STARFOS"
 [link_google_cld3]: https://github.com/google/cld3 "Knihovna Google's Compact Language Detector 3"

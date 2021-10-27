@@ -2,7 +2,7 @@
 layout: post
 title: Vybrané techniky analýzy datové kvality a jejich aplikace na data z Centrální evidence projektů VaVaI
 detail: true
-ref: data-quality-cep
+ref: techniky-analýzy-datové-kvality-cep
 lang: cs
 image: ../attachments/články/techniky-analýzy-datové-kvality-cep/0-data-quality-cep.webp
 author: martin_víta

@@ -211,7 +211,7 @@ Na tyto úvahy může navázat analýza vzniku chyb – v případě tohoto data
 - [readr][link_readr] - Balíček readr
 - [cld3][link_r_cld3] - Balíček cld3 (Google's Compact Language Detector 3)
 
-[link_pod_data_quality]: https://data.gov.cz/datová-kvalita/ "Datová kvalita (nejen) v oblasti otevřených dat"
+[link_pod_data_quality]: /datová-kvalita/ "Datová kvalita (nejen) v oblasti otevřených dat"
 [link_phd_pejcoch]: https://vskp.vse.cz/44713_komplexni-rizeni-kvality-dat-a-informaci "Komplexní řízení kvality dat a informací – dizertační práce"
 [link_cep]: https://www.isvavai.cz/cep/ "Centralní evidence projektů IS VaVaI"
 [link_isvavai]: https://www.isvavai.cz "IS VaVaI"

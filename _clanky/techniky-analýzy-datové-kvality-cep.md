@@ -6,7 +6,7 @@ ref: techniky-analýzy-datové-kvality-cep
 lang: cs
 image: ../attachments/články/techniky-analýzy-datové-kvality-cep/0-datová-kvalita-cep.webp
 author: martin_víta
-date: 2021-10-27 06:00:00 +01:00
+date: 2021-10-29 06:00:00 +01:00
 ---
 Jedním z přínosů otevřených dat je poskytnutí možnosti participace odborné veřejnosti na monitorování datové kvality, případně na aktivitách typu čištění dat (*„data cleansing“*). Tyto aktivity mají smysl jak směrem k uživatelům dat – poskytnou-li ti, kteří data čistí, výsledky své činnosti dalším uživatelům, kteří tak mohou následně pracovat s kvalitnějšími daty, tak směrem k tvůrcům otevřených dat, kteří na základě toho mohou podniknout kroky ke zvyšování datové kvality na úrovni „zdroje“. V tomto článku stručně zmíníme některé pojmy a techniky spadající do řízení datové kvality a následně je aplikujeme na příkladě dat o projektech výzkumu, vývoje a inovacích, které jsou finacovány ze státního, příp. krajských rozpočtů. Naznačené přístupy mohou být využity i u řady dalších datových sad jiných poskytovatelů otevřených dat.
 <!--more-->

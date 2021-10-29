@@ -22,7 +22,7 @@ Pro zajištění dohledatelnosti otevřených dat v ČR slouží [Národní kata
 Dohledatelnost dat, angl. findability, je jedním z tzv. FAIR principů dat společně s jejich přístupností (accessibility), interoperabilitou, tj. snadností pracovat s více datovými zdroji dohromady, a znovupoužitelností (reusability), tj. možností používat jedna data ve více kontextech.
 Dodržováním FAIR principů je zajištěna použitelnost dat, což je hlavní účel otevřených dat, tedy dat pocházejících z veřejné správy a publikovaných pro použití veřejností.
 
-Tedy veškerá otevřená data v ČR jsou zaregistrována v NKOD, a data, která v NKOD zaregistrovaná nejsou, nejsou otevřená.
+Tedy veškerá otevřená data v ČR jsou zaregistrována v NKOD a data, která v NKOD zaregistrovaná nejsou, nejsou otevřená.
 Z tohoto pohledu je NKOD klíčovým informačním systémem veřejné správy.
 
 ## Uživatelské vyhledávání dat v NKOD
@@ -33,23 +33,23 @@ Přes uživatelské rozhraní katalogu lze vyhledávat datové sady jednak pomoc
 {% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/textové-vyhledávání-v-nkod.webp" description="Obrázek 1 - Textové vyhledávání v NKOD" %}
 
 Výsledky hledání nemusí být zobrazeny pouze jako potenciálně dlouhý seznam datových sad.
-Lze je seskupit podle klíčových slov nebo téma do tzv. word cloudu, kde je vidět, kolik datových sad je zařazeno pod které téma či klíčové slovo (viz obrázek 2).
+Lze je seskupit podle klíčových slov nebo témat do tzv. word cloudu, kde je vidět, kolik datových sad je zařazeno pod které téma či klíčové slovo (viz obrázek 2).
 
 {% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/zobrazení-výsledků-vyhledávání-podle-témat.webp" description="Obrázek 2 - Zobrazení výsledků vyhledávání podle témat datových sad" %}
 
-Pokud jste datovou sadu nenalezli, můžete zkusit popsat co jste hledali a nenašli jako požadavek na otevření dat pomocí odkazu “Podnět na data k otevření” v patičce.
+Pokud jste datovou sadu nenalezli, můžete zkusit popsat, co jste hledali a nenašli, jako požadavek na otevření dat pomocí odkazu “Podnět na data k otevření” v patičce.
 
 {% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/záznam-datové-sady.webp" description="Obrázek 3 - Záznam datové sady" %}
 
 Po nalezení hledané datové sady je zobrazen její detailní záznam, tzv. metadata (viz obrázek 3).
-Ten obsahuje název, popis, klíčová slova a témata, kterými je datová sada popsaná, dále pak periodicitu aktualizace datové sady, informace o tom, jakého časového úseku, případně území se datová sada týká a pak také odkaz na dokumentaci datové sady.
+Ten obsahuje název, popis, klíčová slova a témata, kterými je datová sada popsaná, dále pak periodicitu aktualizace datové sady, informace o tom, jakého časového úseku, případně území se datová sada týká, a pak také odkaz na dokumentaci datové sady.
 V dokumentaci se nachází veškeré informace k vybrané datové sadě, včetně informací o tom, jak data nejlépe zpracovávat, nebo na co si naopak dát při jejich zpracování pozor.
 Další užitečnou informací je pak kontaktní bod datové sady, kam se můžete obrátit, pokud k ní budete mít libovolné dotazy či připomínky.
-Dále pak záznam datové sady obsahuje odkaz na specifikace a otevřené formální normy, kterými se datová sada řídí.
+Záznam datové sady dále obsahuje odkaz na specifikace a otevřené formální normy, kterými se datová sada řídí.
 Právě využívání existujících specifikací a otevřených formálních norem přispívá k naplnění principu interoperability z FAIR principů dat.
 
 Ve spodní části záznamu o datové sadě jsou pak uvedeny její distribuce (viz obrázek 4).
-Distribuce datové sady představují její fyzickou podobu ve formě souborů ke stažení, nebo datové služby (API).
+Distribuce datové sady představují její fyzickou podobu ve formě souborů ke stažení nebo datové služby (API).
 Jedna datová sada může být k dispozici ve formě více distribucí, které se od sebe liší v případě souboru ke stažení datovým formátem, nebo se jedná o datovou službu.
 Každá distribuce pak má specifikovány své podmínky užití, datový formát a, pokud je k dispozici, strojově čitelné schéma souboru ke stažení či specifikaci datové služby.
 Otevřené podmínky užití pak přispívají k naplnění principu reusability z FAIR principů dat.
@@ -60,14 +60,14 @@ Při tvorbě záznamu o datové sadě poskytovatelé často dělají tu chybu, �
 To je ale v rozporu s webovým standardem pro datové katalogy DCAT (Data Catalog Vocabulary), jeho evropskou adaptací DCAT-AP a českou implementací DCAT-AP-CZ v podobě otevřené formální normy, viz omezení na distribuce výše.
 Správným způsobem je každý takový soubor popsat jako samostatnou datovou sadu včetně metadat o časovém či územním pokrytí.
 Pro indikaci faktu, že spolu tyto datové sady věcně souvisí, lze využít tzv. datové série.
-To je datová sada, která nemá vlastní distribuce, ale zastřešuje jiné datové sady a série.
+To jsou datové sady, které nemají vlastní distribuce, ale zastřešují jiné datové sady a série.
 Takto lze datové sady hierarchicky uspořádat bez porušování standardů a vynechávání důležitých metadat.
-U datové sady, která je součástí datové série je toto indikováno odkazem “Tato datová sada je součástí datové série” viz obrázek 5.
+U datové sady, která je součástí datové série, je toto indikováno odkazem “Tato datová sada je součástí datové série” viz obrázek 5.
 
 {% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/datová-sada-součástí-datové-série.webp" description="Obrázek 5 - Datová sada součástí datové série" %}
 
 ## Kontroly kvality registrovaných datových sad
-Veškeré odkazy, které jsou součástí záznamů datových sad v NKOD jsou pravidelně kontrolovány z hlediska dostupnosti a také z hlediska dostupnosti techniky CORS, což je zjednodušeně řečeno nastavení webového serveru, které umožňuje s daty pracovat aplikacím běžícím přímo ve webových prohlížečích, kterých je poslední dobou čím dál tím více.
+Veškeré odkazy, které jsou součástí záznamů datových sad v NKOD, jsou pravidelně kontrolovány z hlediska dostupnosti a také z hlediska dostupnosti techniky CORS, což je zjednodušeně řečeno nastavení webového serveru, které umožňuje s daty pracovat aplikacím běžícím přímo ve webových prohlížečích, kterých je poslední dobou čím dál tím více.
 Pokud kontrola dopadne dobře, je vedle příslušného odkazu zobrazen zelený štítek, respektive zelený nápis HTTP.
 Naopak problém je indikován červeně (viz obrázek 4).
 Souhrnné statistiky s problémy jsou pak k dispozici poskytovatelům na [stránce věnované datové kvalitě][kvalita].
@@ -77,7 +77,7 @@ Kromě kontrol dostupnosti obsahuje záznam distribuce datové sady také indik�
 Pokud daná distribuce není nijak chráněná a neobsahuje osobní údaje, pak lze data bez obav libovolně použít.
 To je opět indikováno zelenými symboly u jednotlivých kategorií podmínek užití.
 Pokud ale například poskytovatel indikuje, že má vlastní úpravu podmínek užití, se kterou je třeba se seznámit před samotným užitím dat, je toto indikováno oranžově.
-Červený indikátor pak znamená, že podmínky užití nebyly specifikovány vůbec, a tedy se nejedná o otevřená data, nebo že data obsahují osobní údaje, a na jejich zpracovatele se vztahuje regulace GDPR.
+Červený indikátor pak znamená, že podmínky užití nebyly specifikovány vůbec, a tedy se nejedná o otevřená data, nebo že data obsahují osobní údaje a na jejich zpracovatele se vztahuje regulace GDPR.
 
 
 ## Evropská hierarchie datových katalogů
@@ -104,16 +104,16 @@ Záznamy datových sad v NKOD lze vyhledávat ručně, jak bylo popsáno v textu
 A to jak ve formě souborů ke stažení ve formátu RDF TriG a v omezené podobě ve formátu CSV, tak i přes několik druhů aplikačních rozhraní API - SPARQL endpoint, Linked Data Fragments a GraphQL.
 Například práci s rozhraním SPARQL endpoint se věnuje jeden ze článků na Portálu otevřených dat - [Série Znalostní grafy: Díl 3: SPARQL][SPARQL].
 
-Tato rozhraní pak umožňují vznik aplikací třetích stran, které v NKOD automatizovaně vyhledávají datové sady, kterým rozumí, a které umí zpracovávat.
+Tato rozhraní pak umožňují vznik aplikací třetích stran, které v NKOD automatizovaně vyhledávají datové sady, kterým rozumí a které umí zpracovávat.
 Na straně poskytovatelů dat tak stačí, aby svá data správně zaregistrovali v NKOD.
-Aplikace třetích stran je v NKOD pak automaticky najdou a zpracují je.
+Aplikace třetích stran je v NKOD automaticky najdou a zpracují je.
 Příkladem takové aplikace může být [vyhledávač turistických cílů registrovaných v NKOD][vyhledávač-v-nkod], který pak nalezené turistické cíle předává [generátoru plakátů][plakáty].
 Fungování těchto aplikací je možné díky dodržování příslušných [otevřených formálních norem][OFN], v tomto případě pro rozhraní katalogů otevřených dat a pro turistické cíle.
 
 ## NKOD jako inspirace pro poskytovatele dat
 
 Národní katalog otevřených dat lze využít i jako inspiraci pro poskytovatele, kteří nevědí, jaké datové sady otevírat, nebo jejich otevírání prioritizují.
-Velký přínos mají ty datové sady, které obsahově a formátem odpovídají datovým sadám, které také publikují ostatní poskytovatelé, a pro které již existují otevřené formální normy specifikující, jak mají taková data vypadat.
+Velký přínos mají ty datové sady, které obsahově a formátem odpovídají datovým sadám, které také publikují ostatní poskytovatelé a pro které již existují otevřené formální normy specifikující, jak mají taková data vypadat.
 Příkladem jsou tedy data o turistických cílech, událostech, aktualitách či sportovištích.
 Uživatelům dat se totiž jejich zpracování například ve formě nové aplikace musí vyplatit.
 To se nestane, pokud data o turistických cílech budou publikovat třeba jen dvě nebo tři obce, nebo budou data v nějakém novém, neznámém formátu.

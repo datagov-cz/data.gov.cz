@@ -12,4 +12,4 @@ Tato povinnost vyplývá z novelizace zákona č.106/1999 Sb.
 [Registrujte se!][workshop]
 
 
-[workshop]: "/vzdělávání/on-line/#publikace-úředních-desek-jako-otevřená-data" Publikace úředních desek jako otevřená data
+[workshop]: /vzdělávání/on-line/#publikace-úředních-desek-jako-otevřená-data Publikace úředních desek jako otevřená data

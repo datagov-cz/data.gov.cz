@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Konference Otevřená data 2020 bude online.
 detail: false
 ref: Konference2020

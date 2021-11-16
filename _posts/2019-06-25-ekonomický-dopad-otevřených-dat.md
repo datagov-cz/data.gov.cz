@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Ekonomický dopad otevřených dat
 detail: false
 ref: 2019-06-25-ekonomicky-dopad-otevrenych-dat

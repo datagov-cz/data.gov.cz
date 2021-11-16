@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Konference Otevřená data ve veřejné správě se blíží
 detail: false
 ref: VyrocniKonference2018

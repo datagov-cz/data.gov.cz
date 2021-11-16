@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Máme pro vás termín letošní výroční konference o otevřených datech 
 detail: false
 ref: 2019-05-27-výroční-konference-2019-datum

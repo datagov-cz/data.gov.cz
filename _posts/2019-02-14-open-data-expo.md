@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Čtvrtý ročník Open Data Expo je tady!
 detail: false
 ref: 2019-02-14-čtvrtý-ročník-open-data-expo

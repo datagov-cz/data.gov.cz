@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Záznam z konference Otevřená data 2020 je venku!
 detail: false
 ref: ZáznamKonference2020

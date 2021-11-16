@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Program výroční konference Otevřená data ve veřejné správě 2019 je venku!
 detail: false
 ref: VyrocniKonference2019Program

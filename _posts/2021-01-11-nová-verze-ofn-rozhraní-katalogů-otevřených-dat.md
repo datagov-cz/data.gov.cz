@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Nová verze OFN Rozhraní katalogů otevřených dat
 detail: false
 ref: Vydána-OFN-LKOD-2020-01-11

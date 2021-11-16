@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Konference Otevřená data ve veřejné správě
 detail: true
 ref: VýročníKonference2019

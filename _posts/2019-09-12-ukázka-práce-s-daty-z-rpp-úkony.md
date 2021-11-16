@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Ukázky práce s daty o úkonech veřejné správy z Registru práv a povinností
 detail: false
 ref: DatovyClanekRPPUkony

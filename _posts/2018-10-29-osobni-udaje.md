@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Ošetření osobních dat při zveřejňování otevřených dat
 detail: false
 ref: OsetreniOsobnichDatPriZverejnovani

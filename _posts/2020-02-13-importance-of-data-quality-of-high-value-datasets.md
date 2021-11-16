@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Importance of data quality of high-value datasets
 detail: true
 ref: důležitost-datové-kvality-datových-sad-s-vysokou-hodnotou

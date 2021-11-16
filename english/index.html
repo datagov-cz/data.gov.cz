@@ -4,7 +4,7 @@ ref: Home
 lang: en
 homepage: true
 ---
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron mb-4 pt-4 pt-md-0">
   <div class="container text-white">
 	<div class="row">
 	  <div class="col-md-6">
@@ -12,8 +12,8 @@ homepage: true
 		<p>All you need to know about open data in Czechia</p>
 		<p><a href="/datasets" class="btn btn-primary">National open data catalog</a></p>
 	  </div>
-	  <div class="col-md-6 text-right d-none d-md-block">
-	    <div id="count" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+	  <div class="col-md-6 text-end d-none d-md-block">
+	    <div id="count" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="3000">
 		  <div class="carousel-inner">
 			<div class="carousel-item active">
 			  <p class="display-3" id="datasetCountLabel"> ?</p>
@@ -29,13 +29,11 @@ homepage: true
 			</div>
 		  </div>
 		</div>
-		<form id="searchForm" class="form-inline float-right" action="https://data.gov.cz/datasets">
-			<label class="sr-only" for="dotaz">Dataset name</label>
+		<form id="searchForm" class="form-inline float-end" action="https://data.gov.cz/datasets">
+			<label class="visually-hidden" for="dotaz">Dataset name</label>
 			<div class="input-group">
 			  <div class="input-group-prepend">
-				<span class="input-group-text " id="search-addon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-				  </svg></span>
+				<span class="input-group-text " id="search-addon"><i class="bi-search"></i></span>
 			  </div>
 			  <input class="form-control" type="text" placeholder="Dataset name" name="dotaz" id="dotaz" title="Dataset name" aria-describedby="search-addon">
 			  <div class="input-group-append">
@@ -57,6 +55,9 @@ homepage: true
 		  <div class="col-12 col-md-6 col-lg-4">
 			  <h3 class="h5">{{ post.title }}</h3>
 			  <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
+			  {% if post.image %}
+			  <p><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
+			  {% endif %}
 			  {{ post.excerpt }}
 			  {% if post.detail %}
 			  <a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
@@ -91,4 +92,5 @@ homepage: true
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
 <script src="{{ "/js/stats.js" | relative_url }}" ></script>

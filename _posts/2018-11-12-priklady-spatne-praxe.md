@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Příklady špatné praxe v oblasti otevřených dat
 detail: false
 ref: PrikladySpatnePraxe

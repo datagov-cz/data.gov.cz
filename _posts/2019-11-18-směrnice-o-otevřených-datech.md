@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Evropská unie rozšiřuje pravidla přístupu k datům novou směrnicí o otevřených datech
 detail: true
 ref: PSIaPravidlaPřístupukDatumů

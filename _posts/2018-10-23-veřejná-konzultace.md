@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Veřejná konzultace k otevřeným datům
 detail: false
 ref: VerejnaKonzultaceKOtevrenymDatum

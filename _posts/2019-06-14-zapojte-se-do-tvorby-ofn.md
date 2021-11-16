@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Zapojte se do tvorby otevřených formálních norem!
 detail: false
 ref: 2019-06-14-zapojte-se-do-tvorby-ofn

@@ -51,7 +51,7 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
   * [Mapy bez bariér](https://mapybezbarier.cz/cs)
   * [Hlídač smluv](https://www.hlidacsmluv.cz/)
   * [Podej to](https://podejto.cz/)
-  * [Velká mapa malého podnikání](https://samizdat.cz/rozjezdy/)
+  * [Velká mapa malého podnikání](https://interaktivni.rozhlas.cz/podnikani-mapa/)
 
 ## Přínos otevřených dat
   * lepší služby pro občany - příležitost pro vznik nových užitečných aplikací
@@ -61,6 +61,9 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
 
 ## Kdo již v České republice publikuje otevřená data?
   * [Poskytovatelé v Národním katalogu otevřených dat](https://data.gov.cz/poskytovatelé)
+
+## Je zájem o data spravovaná mojí organizací?
+Podívejte se na [seznam podnětů na otevření dat](https://docs.google.com/spreadsheets/d/1vL_x1b9eTHgauo0XzJVXuEBI2aU1BHHZdl7AiUuXoyg), zda už někdo o vaše data neprojevil zájem.
 
 > **Otevřená data neexistují ve vzduchoprázdnu, jsou součástí [systému pro otevřené vládnutí](https://opendata.gov.cz/informace:kontext:start).**
 

@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Evropská komise vyhlášuje výzvu CEF Telecom pro oblast otevřených dat 
 detail: false
 ref: 2019-07-04-evropská-komise-vyhlášuje-výzvu-CEF

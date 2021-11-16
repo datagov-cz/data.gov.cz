@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: 3. ročník hackathonu otevřených dat veřejné správy je za dveřmi 
 detail: false
 ref: hackathon-2019

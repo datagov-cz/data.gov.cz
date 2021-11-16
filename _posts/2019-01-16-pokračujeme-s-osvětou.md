@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Pokračujeme s osvětou pro veřejnou správu
 detail: false
 ref: 2019-01-16-pokračujeme-s-osvětou

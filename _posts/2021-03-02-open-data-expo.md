@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Šestý ročník Open Data Expo je za dveřmi!
 detail: false
 ref: 2021-03-02-šestý-ročník-open-data-expo

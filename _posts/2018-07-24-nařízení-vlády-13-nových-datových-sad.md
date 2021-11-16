@@ -1,6 +1,5 @@
 ---
 layout: post
-icon: whatshot
 title: Do nařízení vlády přibylo 13 povinně zveřejňovaných datových sad
 detail: false
 ref: NovelaNarizeni2018

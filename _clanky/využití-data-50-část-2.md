@@ -6,7 +6,7 @@ ref: data50-2
 lang: cs
 image: ../attachments/články/využití-data-50/r.surf.contour-output.webp
 author: michal_med
-date: 2021-03-25 01:12:23
+date: 2021-11-16 03:14:15 +01:00
 ---
 Pokračování série článků o využití otevřených dat Zeměměřického úřadu se zabývá postupem zpracování dat pro tvorbu modelu ochranných pásem a rasterizaci vrstevnic za účelem tvorby digitálního modelu reliéfu.
 

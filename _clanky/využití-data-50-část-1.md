@@ -6,7 +6,7 @@ ref: data50-1
 lang: cs
 image: ../attachments/články/využití-data-50/screen_vysledku.webp
 author: michal_med
-date: 2021-02-26 03:14:15 +01:00
+date: 2021-11-16 03:14:15 +01:00
 ---
 
 První ze série článků o využití otevřených dat Zeměměřického úřadu se zabývá hledáním problému, který by otevřená data pomohla vyřešit, a výběrem vhodných datových sad.
@@ -64,8 +64,8 @@ V druhé části článku se podíváme na to, jak data zpracovat.
 [link_l14]: https://aim.rlp.cz/predpisy/predpisy/dokumenty/L/L-14/data/print/L-14_cely.pdf "Letecký předpis L14 - Letiště"
 [link_dmr]: https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=vyskopis&metadataID=CZ-CUZK-DMR5G-V&head_tab=sekce-02-gp&menu=302 "Digitální model reliéfu 5. generace"
 [ceník_ZÚ_link]: https://geoportal.cuzk.cz/Dokumenty/Cenik.pdf "Ceník produktů Zeměměřického úřadu"
-[nkod_data50_link]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F60458500%2F671714680 "Záznam datové sady Data50 v Národním katalogu otevřených dat"
-[nkod_data200_link]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F60458500%2F671715799 "Záznam datové sady Data200 v Národním katalogu otevřených dat"
+[nkod_data50_link]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025712%2F34423d60148943ae1452079b62a67a29 "Záznam datové sady Data50 v Národním katalogu otevřených dat"
+[nkod_data200_link]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025712%2F2164699059cccbca453466a63bff1305 "Záznam datové sady Data200 v Národním katalogu otevřených dat"
 [shapefile_spec]: https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf "Technický popis formátu ESRI Shapefile"
 [metadata_data50]: https://geoportal.cuzk.cz/getHTML.aspx?mode=Metadata&fnc=getRecord&identifierid=CZ-CUZK-DATA50-RELIEF-V "Metadata vrstvy Reliéf datové sady Data50"
 [octave]: https://www.gnu.org/software/octave/index "Programovací jazyk GNU Octave"

@@ -74,7 +74,7 @@ Aplikace tohoto typu má řadu dalších způsobů, jak by se dala využít, nap
 - [OpenStreetMap][openstreetmap]
 - [WMS služba INSPIRE Parcely][wms-cp]
 
-[MiMe-clanek-1]: https://data.gov.cz/články/využití-data-50-část-1 
+[MiMe-clanek-1]: https://data.gov.cz/články/využití-data-50-část-1
 [MiMe-clanek-2]: https://data.gov.cz/články/využití-data-50-část-2
 [link_l14]: https://aim.rlp.cz/predpisy/predpisy/dokumenty/L/L-14/data/print/L-14_cely.pdf "Letecký předpis L14 - Letiště"
 [link_dmr]: https://geoportal.cuzk.cz/Default.aspx?mode=TextMeta&side=vyskopis&metadataID=CZ-CUZK-DMR5G-V&head_tab=sekce-02-gp&menu=302 "Digitální model reliéfu 5. generace"

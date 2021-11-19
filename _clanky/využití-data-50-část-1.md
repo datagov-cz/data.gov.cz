@@ -6,7 +6,7 @@ ref: data50-1
 lang: cs
 image: ../attachments/články/využití-data-50/screen_vysledku.webp
 author: michal_med
-date: 2021-11-16 03:14:15 +01:00
+date: 2021-02-26 03:14:15 +01:00
 ---
 
 První ze série článků o využití otevřených dat Zeměměřického úřadu se zabývá hledáním problému, který by otevřená data pomohla vyřešit, a výběrem vhodných datových sad.

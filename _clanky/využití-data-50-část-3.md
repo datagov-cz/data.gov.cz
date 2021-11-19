@@ -6,7 +6,7 @@ ref: data50-3
 lang: cs
 image: ../attachments/články/využití-data-50/screen_vysledku.webp
 author: michal_med
-date: 2021-11-16 03:14:15 +01:00
+date: 2021-02-26 03:14:15 +01:00
 ---
 
 Dokončení série článků o využití otevřených dat Zeměměřického úřadu se zabývá využitím dat upravených v předchozí části v aplikaci pro povolování dočasných staveb v okolí letiště. Také rozebírá možná rozšíření a problémy řešení i další využití.

@@ -17,10 +17,11 @@ Klasická volební mapa s výsledky voleb po jednotlivých okrscích tentokrát 
 
 ### Výsledek: Volební mapa ČR dle toho, jak lidé v jednotlivých regionech volí
 
-#### “Klasická” geografická mapa vs. “volební mapa”
 Při podrobnější analýze výsledků voleb si můžeme položit otázku, jak je ČR rozdělená dle toho, koho lidé v jednotlivých regionech volí. Takovouto nebo podobné otázky lze zodpovědět díky otevřených datům. 
 
-Získáme tím jinou “mapu” než klasickou geografickou. Na geografické mapě jsou u sebe místa, která jsou u sebe blízko v realitě. Jako třeba Aš a Kraslice nebo Karviná a Orlová. Daleko od sebe jsou místa, mezi kterými musíte urazit velkou vzdálenost - jako z Aše do Karviné. Na geografické mapě ČR jsou tedy na jednom konci Aš a Kraslice a na druhém Karviná a Orlová, někde mezi nimi např. Praha a Brno.
+#### “Klasická” geografická mapa vs. “volební mapa”
+
+Cílem bude vytvořit jinou “mapu” než klasickou geografickou. Na geografické mapě jsou u sebe místa, která jsou u sebe blízko v realitě. Jako třeba Aš a Kraslice nebo Karviná a Orlová. Daleko od sebe jsou místa, mezi kterými musíte urazit velkou vzdálenost - jako z Aše do Karviné. Na geografické mapě ČR jsou tedy na jednom konci Aš a Kraslice a na druhém Karviná a Orlová, někde mezi nimi např. Praha a Brno.
 
 V naší “volební mapě” ale budou u sebe místa, kde lidé volí obdobně. Najednou budou Aš, Kraslice, Karviná i Orlová blízko u sebe, protože lidé tam volí velmi podobně. A výsledky voleb se tam velmi liší třeba od Prahy nebo Brna. V rámci ČR budou Aš, Kraslice, Karviná i Orlová na jednom konci a Praha a Brno na druhém.
 
@@ -52,6 +53,8 @@ Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevř
 
 ### Postup zpracování
 
+V této části si nejprve představíme použitou analytickou metodu a poté projdeme postupně jednotlivé kroky analýzy od přípravy dat až po získání výsledného grafu ("mapy").
+
 #### Analytická metoda
 Jako základ je použito [klasické multidimensionální škálování][link_mds] a [analýza hlavních komponent][link_pca], kde základ jsou výsledky voleb v jednotlivých volebních okrscích.
 
@@ -81,7 +84,18 @@ Barevné rozlišení je dle NUTS 2.
 
 [Celý soubor v html/js je zde.][link_html]
 
-### Další
+Všechny vypočtené soubory (např. pro obdobné zobrazení krajů nebo okresů):
+
+- [souřadníce městských obvodů a částí][link_region6]
+- [souřadníce obcí][link_region5]
+- [souřadníce ORP][link_region4]
+- [souřadníce okresů][link_region3]
+- [souřadníce krajů][link_region2]
+- [souřadníce celé ČR][link_region1]
+- [jména obcí][link_pretty]
+- [souřadnice stran][link_parties]
+
+### Další užití
 Tento článek ukazuje, že otevřená data o volbách v kombinaci s dalšími otevřenými zdroji umožňují i další detailnější analýzy jdou nad základní popis volebních výsledků.
 
 Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i komerčně v médiích nebo např. v politickém marketingu.
@@ -115,3 +129,11 @@ Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i 
 [link_numpy]: https://numpy.org/ "Numpy"
 [link_cmdscale]: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale "cmdscale function"
 [link_princomp]: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/princomp "princomp function"
+[link_region6]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions6_coords_rot.csv "Vypočtené souřadníce městských obvodů a částí"
+[link_region5]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions5_coords_rot.csv "Vypočtené souřadníce obcí"
+[link_region4]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions4_coords_rot.csv "Vypočtené souřadníce ORP"
+[link_region3]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions3_coords_rot.csv "Vypočtené souřadníce okresů"
+[link_region2]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions2_coords_rot.csv "Vypočtené souřadníce krajů"
+[link_region1]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions1_coords_rot.csv "Vypočtené souřadníce celé ČR"
+[link_pretty]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions1_coords_rot.csv "Jména obcí"
+[link_parties]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/cz_2021_party.csv "Vypočtené souřadníce kandidujících stran"

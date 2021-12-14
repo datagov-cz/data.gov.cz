@@ -5,7 +5,7 @@ title: Národní katalog otevřených dat - výchozí bod práce s daty
 ref: národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty-e-gov-2021
 lang: cs
 author: jakub_klímek
-date: 2021-10-27 07:00:00 +02:00
+date: 2021-12-14 07:00:00 +01:00
 ---
 Kdykoliv v dnešní době hledáme informace na webu, typicky začínáme s některým z vyhledávačů jako je DuckDuckGo, Seznam.cz, Google nebo Bing.
 Ty nám umožňují hledat webové stránky na základě jejich textového obsahu.

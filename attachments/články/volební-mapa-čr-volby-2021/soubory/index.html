@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Explodable</title>
+  <!--<link rel="stylesheet" href="bootstrap.min.css">-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="//d3js.org/d3.v3.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!--<script src="d3.v3.min.js"></script>-->
+  <script src="d3.tip.js"></script>
+  <!--<script src="jquery-1.11.1.min.js"></script>-->
+  <style>
+
+    .circle {
+      fill: #888;
+      stroke-opacity: 0.01;
+      stroke: #888;
+      stroke-width: 0;
+      fill-opacity: 0.2;
+      visibility: hidden;
+    }
+    .party {
+      visibility: hidden;
+      fill-opacity: 0.01;
+      stroke-opacity: 1;
+      /*stroke: #f00;*/
+    }
+    .text {
+        visibility: hidden;
+        fill-opacity: 0.99;
+        /*fill: #444;*/
+    }
+    .text.active {
+        fill-opacity: 0.85;
+    }
+
+    .big {
+      stroke-width: 2px;
+    }
+
+    .small {
+
+    }
+
+    .stronger {
+      color: yellow;
+    }
+    .visible {
+      visibility: visible;
+    }
+    .active {
+      fill-opacity: 0.75;
+      stroke-opacity: 1;
+    }
+    .ellipse {
+        fill-opacity: 0;
+        stroke: #f00;
+        stroke-opacity: 0.75;
+    }
+
+
+    /* D3 tips */
+    .d3-tip {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+    }
+    /* Creates a small triangle extender for the tooltip */
+    /*.d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }*/
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+    .top {
+        width: 100vw;
+        padding: 10px;
+        color: white;
+        /*font-size: 3em;*/
+        /*background-color: #fed201;*/
+    }
+  </style>
+</head>
+<body>
+    <h1 class="text-center top bg-primary">
+      <strong>POLITICAL MAP OF CZECHIA: ELECTIONS 2021</strong><br/>
+      <small>POLITICKÁ MAPA ČR: VOLBY 2021</small><br />
+    </h1>
+
+  <!-- chart -->
+  <div class="row">
+      <div class="col-1" style="">
+          <img src="nuts2.png" width="150" />
+      </div>
+      <p class="col-9" id="chart"></p>
+      <div class="col-2">
+          <img src="windrose.png" width="150" />
+      </div>
+  </div>
+
+
+  <div class="alert alert-info" >Reset: <button id="reset-0" value="0" class="reset btn btn-primary">Czech Republic</button> <button id="reset-1" value="1" class="reset btn btn-primary">Regions (kraje)</button> <button id="reset-2" value="2" class="reset btn btn-primary">Sub-Regions (okresy)</button> <button id="reset-3" value="3" class="reset btn btn-primary">Towns (obce)</button> <button id="reset-5" value="5" class="reset btn btn-primary">Districts (okrsky)</button> | <button class="party-toggle doshow btn btn-success">Toggle parties</button>
+  </div>
+  <div class="alert alert-info container">
+      <i class="fa fa-info-circle"></i> Explorable: European Elections in Czechia 2019, MDS based on results from districts (weighted)<br />
+     90% of people live inside the ellipse (on district level)
+  </div>
+
+  <script type="text/javascript">
+
+	// Chart dimensions.
+	var margin = {top: 10, right: 0, bottom: 0, left: 30},
+		width = 1500 - margin.right,
+		height = 600 - margin.top - margin.bottom;
+	//Various scales. These domains make assumptions of data, naturally.
+    var xmax = 40,
+        ymax = 4.5;
+    var
+	xScale = d3.scale.linear()
+	  .domain([xmax, -xmax])
+	  .range([0, width]),
+    yScale = d3.scale.linear()
+      .domain([ymax, -ymax])
+      .range([height, 0]),
+    radiusScale = d3.scale.sqrt()
+      .domain([0, 500000])
+      .range([0, 50]);
+
+
+    function region2color(r){
+      if (r == 'Hlavní město Praha') return '#b276b2';
+      if (r == 'Středočeský kraj') return '#f17cb0';
+      if ((r == 'Plzeňský kraj') || (r == 'Jihočeský kraj')) return '#5DA5DA' //'#aec7e8';
+      if ((r == 'Ústecký kraj') || (r == 'Karlovarský kraj')) return '#FAA43A';
+      if ((r == 'Královéhradecký kraj') || (r == 'Pardubický kraj') || (r == 'Liberecký kraj')) return '#60bd68';
+      if ((r == 'Zlínský kraj') || (r == 'Olomoucký kraj')) return '#decf3f';
+      if ((r == 'Jihomoravský kraj') || (r == 'Kraj Vysočina')) return '#b2912f';
+      if (r == 'Moravskoslezský kraj') return '#f15854';
+      return '#4d4d4d';
+    }
+
+    /* Initialize tooltip */
+    tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
+      return '<span class="stronger">' + d['name'] + "</span><br>";
+    });
+
+    // Create the SVG container and set the origin.
+    var svg = d3.select("#chart").append("svg")
+	  .attr("width", width + margin.left + margin.right)
+	  .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+	  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+	/* Invoke the tip in the context of your visualization */
+    svg.call(tip);
+
+	// Add tooltip div
+    var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 1e-6);
+
+	// Load the data.
+	d3.csv("regions4_show.csv", function(data) {
+        data.sort(function(a, b) {
+            return parseFloat(a.size) - parseFloat(b.size);
+        });
+
+	//   var circle = svg.selectAll(".circle")
+	// 	  .data(data)
+	// 	.enter().append("circle")
+	// 	  .attr("r",function(d) {
+	// 		  return Math.max(1,radiusScale(d['size']));
+	// 		})
+	// 	  .attr("cx", function(d) {return xScale(d['dim1']);})
+	// 	  .attr("cy", function(d) {return yScale(d['dim2']);})
+	// 	  .attr("class", function(d) {
+	// 	      clas = "circle ";
+	// 	      if (d['size'] > 1500) clas += "big";
+	// 	      else clas += "small";
+	// 	      if (d['level'] == 3) clas += " active explorable visible";
+	// 	      else clas += " explorable";
+	// 	      clas += " level-" + d['level']
+	// 	      return clas;
+	// 	  })
+	// 	  .attr("style", function(d) {
+	// 	    return "stroke:" + region2color(d['region']) + ";fill:" + region2color(d['region']);
+	// 	  })
+	// 	  .attr("id", function(d) {return "id-" + d.id;})
+	// 	  .on("mouseover", tip.show)
+	//       .on("mouseout", tip.hide)
+	//       .on("click", clicked)
+    //texts:
+    svg.selectAll(".text")
+              .data(data)
+        .enter().append("text")
+          .attr("x", function(d) {return xScale(d['dim1']);})
+          .attr("y", function(d) {return yScale(d['dim2']) + Math.max(Math.min(70, Math.sqrt(parseInt(d['size'])) / 10), 2) / 3;})
+          .attr("font-size", function(d) {
+              if (d['size'] > 10) {
+                  var si = 0;
+                  si = Math.max(Math.min(70, Math.sqrt(parseInt(d['size'])) / 10), 2);
+                  return si + "px"
+              } else {
+                  return 0
+              }
+          })
+          .attr("font-weight", function(d) {
+              if (d['size'] > 50000) {
+                  return "bold";
+              }
+              return "default";
+          })
+          .attr("class", function(d) {
+		      clas = "text ";
+		      // if (d['level'] == 3) clas += " visible";
+		      // else clas += "";
+          clas += " visible"
+		      clas += " level-" + d['level']
+		      return clas;
+		  })
+          .attr("fill", function(d) {
+              return region2color(d['region'])
+          })
+          .attr("id", function(d) {return "text-id-" + d.id;})
+          .attr("text-anchor", "middle")
+          .text(function(d) {return d['name']});
+
+
+	  function clicked(item) {
+	    if (this.classList.contains("explored")) {
+	      deexplore(item);
+	    } else {
+          if(this.classList.contains("explorable")) {
+            explore(item);
+          }
+        }
+	  }
+
+	  function deexplore(item) {
+	    svg.selectAll(".circle").filter(
+	        function(d,i) {
+	          return d.parent_id == item.id;
+	        }
+	      )
+	      .transition()
+	          .duration(200)
+	          .attr("cx", function(d) {
+	            return xScale(item.dim1);
+	          })
+	          .attr("cy", function(d) {
+	            return yScale(item['dim2']);
+	          })
+	          .each("end", atEnd);
+
+          svg.selectAll(".text").filter(
+  	        function(d, i) {
+  	          return d.parent_id == item.id;
+  	        }
+  	      )
+	  }
+
+	  function atEnd(it) {
+          svg.selectAll(".circle").filter(
+            function(d,i) {
+              return d.id == it.id
+            }
+          )
+          .classed("visible",false);
+
+          svg.selectAll(".text").filter(
+  	        function(d, i) {
+  	          return d.parent_id == item.id;
+  	        }
+  	      )
+          .classed("visible",false);
+
+	      svg.selectAll(".circle").filter(
+	          function(d,i) {
+	            return d.id == it.parent_id;
+	          }
+	        ).classed("active",true)
+	        .classed("explorable",true)
+	        .classed("explored",false)
+
+        svg.selectAll(".text").filter(
+  	          function(d,i) {
+  	            return d.id == it.parent_id;
+  	          }
+  	        ).classed("active",true)
+  	        .classed("explorable",true)
+  	        .classed("explored",false)
+      }
+
+      function explore(item) {
+        svg.selectAll(".circle")
+          .classed("active",false);
+
+        svg.selectAll(".text")
+            .classed("active",false);
+
+        svg.selectAll(".circle").filter(
+          function(d,i) {
+            return d.parent_id == item.id;
+          }
+        )
+        .classed("visible",true)
+        .classed("active",true)
+        .attr("cx", function(d) {
+          return xScale(item.dim1);
+        })
+        .attr("cy", function(d) {
+          return yScale(item.dim2);
+        })
+        .transition()
+          .duration(200)
+          .attr("cx", function(d) {
+            return xScale(d.dim1);
+          })
+          .attr("cy", function(d) {
+            return yScale(d['dim2']);
+          });
+
+          svg.selectAll(".text").filter(
+            function(d,i) {
+              return d.parent_id == item.id;
+            }
+          )
+          .classed("visible",true)
+          .classed("active",true)
+
+          svg.select("#id-"+item.id)
+            .classed("explorable",false)
+            .classed("active",false)
+            .classed("explored",true)
+
+            // texts:
+            svg.select("#text-id-"+item.id)
+              .classed("explorable",false)
+              .classed("active",false)
+              .classed("explored",true)
+      }
+
+	});
+
+	d3.csv("cz_2021_party.csv", function(data) {
+	  var circle = svg.selectAll(".party")
+		  .data(data)
+		.enter().append("circle")
+		  .attr("r",function(d) {
+			  return Math.max(1,radiusScale(d['size']));
+			})
+		  .attr("cx", function(d) {return xScale(d['dim1']);})
+		  .attr("cy", function(d) {return yScale(d['dim2']);})
+		  .attr("class", function(d) {
+		      clas = "party ";
+		      if (d['size'] > 50000) clas += "big";
+		      else clas += "small";
+		      return clas;
+		  })
+          .attr("stroke", function(d) {return d['color']})
+		  .on("mouseover", tip.show)
+	      .on("mouseout", tip.hide)
+
+    // partylines:
+    //   var line = svg.selectAll(".partyline")
+    //         .data(data)
+    //     .enter().append("line")
+    //         .attr("x1", function() {return xScale(-7)})
+    //         .attr("y1", function() {return yScale(0.75)})
+    //         .attr("x2", function(d) {return xScale(d['dim1'])})
+    //         .attr("y2", function(d) {return yScale(d['dim2'])})
+    //         .attr("stroke", function(d) {return d['color']})
+    //         .attr("stroke-width", function(d) {
+    //             if (parseInt(d['size']) > 50000) {
+    //                 return parseInt(d['size'] / 50000)
+    //             } else {
+    //                 return 0
+    //             }
+    //         })
+
+
+	})
+
+    //ellipse is calculated to cover 90 % of the districts (voters)
+    svg.append("ellipse")
+        .attr("cx", function() {return xScale(0)})
+        .attr("cy", function() {return yScale(0)})
+        .attr("rx", function() {return (xScale(-776) - xScale(0))})
+        .attr("ry", function() {return (Math.abs(yScale(-146) - yScale(0)))})
+        .attr("class", "ellipse")
+        .style("stroke-dasharray", ("3, 5"))
+
+	$(document).ready(function(){
+	  $('.reset').click(function() {
+	    level = $(this).attr("value");
+	    // svg.selectAll(".circle").filter(
+	    //     function(d,i) {
+	    //       return d.level == level;
+	    //     }
+	    //   )
+	    //   .classed("active",true)
+	    //   .classed("explorable",true)
+	    //   .classed("explored",false)
+	    //   .classed("visible",true);
+
+          // texts:
+        svg.selectAll(".text").filter(
+  	        function(d,i) {
+  	          return d.level == level;
+  	        }
+  	      )
+  	      .classed("active",true)
+  	      .classed("explorable",true)
+  	      .classed("explored",false)
+  	      .classed("visible",true);
+
+	    // svg.selectAll(".circle").filter(
+	    //     function(d,i) {
+	    //       return !(d.level == level);
+	    //     }
+	    //   )
+	    //   .classed("active",false)
+	    //   .classed("explorable",true)
+	    //   .classed("explored",false)
+	    //   .classed("visible",false);
+
+        // texts:
+          svg.selectAll(".text").filter(
+              function(d,i) {
+                return !(d.level == level);
+              }
+            )
+            .classed("active",false)
+            .classed("explorable",true)
+            .classed("explored",false)
+            .classed("visible",false);
+
+	  });
+	});
+
+	  $('.party-toggle').click(function() {
+	    if (this.classList.contains("doshow")) {
+	      svg.selectAll(".party")
+	        .classed("visible",true);
+	    } else {
+	      svg.selectAll(".party")
+	        .classed("visible",false);
+	    }
+	    $('.party-toggle').toggleClass("doshow");
+	  });
+
+  </script>
+</body>
+</html>

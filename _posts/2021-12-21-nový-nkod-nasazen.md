@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Nová verze NKOD nasazena do produkce
-detail: true
+detail: false
 ref: NovyNKODNasazen2021
 lang: cs
 author: jakub_klímek

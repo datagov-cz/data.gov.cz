@@ -6,7 +6,7 @@ ref: volební-mapa-čr-volby-2021
 lang: cs
 image: ../attachments/články/volební-mapa-čr-volby-2021/obrázky/orp.svg
 author: michal_škop
-date: 2021-11-28 07:00:00 +01:00
+date: 2021-12-19 07:00:00 +01:00
 ---
 Aš a Kraslice jsou na západním konci ČR, Karviná s Orlovou na východním. Přesto volebním chováním jsou na společném extrému v rámci ČR. Detailní klasické geografické mapy s volebními výsledky jsou již tradiční součástí volebního servisu médií. Ukážeme si proto podrobnější analýzu výsledků parlamentních voleb 2021 za pomoci otevřených dat - cílem je mapa ČR, ale ne klasická geografická, nýbrž “volební”.
 
@@ -17,11 +17,10 @@ Klasická volební mapa s výsledky voleb po jednotlivých okrscích tentokrát 
 
 ### Výsledek: Volební mapa ČR dle toho, jak lidé v jednotlivých regionech volí
 
+#### “Klasická” geografická mapa vs. “volební mapa”
 Při podrobnější analýze výsledků voleb si můžeme položit otázku, jak je ČR rozdělená dle toho, koho lidé v jednotlivých regionech volí. Takovouto nebo podobné otázky lze zodpovědět díky otevřených datům. 
 
-#### “Klasická” geografická mapa vs. “volební mapa”
-
-Cílem bude vytvořit jinou “mapu” než klasickou geografickou. Na geografické mapě jsou u sebe místa, která jsou u sebe blízko v realitě. Jako třeba Aš a Kraslice nebo Karviná a Orlová. Daleko od sebe jsou místa, mezi kterými musíte urazit velkou vzdálenost - jako z Aše do Karviné. Na geografické mapě ČR jsou tedy na jednom konci Aš a Kraslice a na druhém Karviná a Orlová, někde mezi nimi např. Praha a Brno.
+Získáme tím jinou “mapu” než klasickou geografickou. Na geografické mapě jsou u sebe místa, která jsou u sebe blízko v realitě. Jako třeba Aš a Kraslice nebo Karviná a Orlová. Daleko od sebe jsou místa, mezi kterými musíte urazit velkou vzdálenost - jako z Aše do Karviné. Na geografické mapě ČR jsou tedy na jednom konci Aš a Kraslice a na druhém Karviná a Orlová, někde mezi nimi např. Praha a Brno.
 
 V naší “volební mapě” ale budou u sebe místa, kde lidé volí obdobně. Najednou budou Aš, Kraslice, Karviná i Orlová blízko u sebe, protože lidé tam volí velmi podobně. A výsledky voleb se tam velmi liší třeba od Prahy nebo Brna. V rámci ČR budou Aš, Kraslice, Karviná i Orlová na jednom konci a Praha a Brno na druhém.
 
@@ -29,21 +28,23 @@ Obdobná mapa byla [publikována na Investigace.cz][link_investigace].
 
 Použijeme analytické metody, které co nejlépe vystihnou v dvourozměrném prostoru (“2D mapa”) rozdíly mezi jednotlivými volebními okrsky (obcemi, okresy, atd.) a zároveň i mezi jednotlivými kandidujícími stranami. 
 
-Tato analýza v případě parlamentních voleb 2021 ukazuje to, že hlavní rozdíl u větších stran ve volebním zisku v jednotlivých volebních okrscích byl: obě koalice (SPOLU a PirSTAN) vs. ANO + SPD + KSČM. Tedy zjednodušeně, pokud v nějakém okrsku měla koalice SPOLU nadprůměrný zisk, spíše tam měl nadprůměrný zisk i PirSTAN. A obdobně to platilo pro trojici ANO, SPD a KSČM. Což tedy představuje osu X v naší “mapě”.
+Tato analýza v případě parlamentních voleb 2021 ukazuje to, že hlavní rozdíl u větších stran ve volebním zisku v jednotlivých volebních okrscích byl: obě koalice (SPOLU a PirSTAN) vs. ANO + SPD. Tedy zjednodušeně, pokud v nějakém okrsku měla koalice SPOLU nadprůměrný zisk, spíše tam měl nadprůměrný zisk i PirSTAN. A obdobně to platilo pro dvojici ANO, SPD. Což tedy představuje osu X v naší “mapě”.
 
 Osa Y je zhruba dělení SPOLU a ANO vs. PirSTAN a SPD. Další osy by vystihovaly např. větší nebo menší zisky ČSSD a Přísahy. Ale pro jednoduchost nám stačí osy dvě.
 
 #### Obce s rozšířenou působností
-{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/orp.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle ORP (obce s rozšířenou působností). Osa X zhruba odpovídá rozdělení ANO+SPD+KSČM (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
+{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/orp.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle ORP (obce s rozšířenou působností). Osa X zhruba odpovídá rozdělení ANO+SPD (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
 
-Na první pohled vidíme, že extrémy z hlediska volebního chování jsou v ČR na jedné straně části Moravskoslezského, Ústeckého a Karlovarského kraje (obecně více ANO, SPD a KSČM) vs. Praha a nejbližší okolí na straně druhé (více SPOLU a PirSTAN).
+{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/nuts2.webp" description="Barevná legenda k předchozí mapě - NUTS2." %}
+
+Na první pohled vidíme, že extrémy z hlediska volebního chování jsou v ČR na jedné straně části Moravskoslezského, Ústeckého a Karlovarského kraje (obecně více ANO, SPD) vs. Praha a nejbližší okolí na straně druhé (více SPOLU a PirSTAN).
 
 #### Městské části
-Takovýto model nám umožní se podívat na různé úrovně geografické - od jednotlivých volebních okrsků po kraje nebo NUTS2. Jako příklad se můžeme podívat na města, která jsou při volbách dělená na městské obvody. Zde např. jasně vystupují na straně ANO+SPD+KSČM okrajovější sídliště v rámci jednotlivých velkých měst (Ostrava-Jih, Neštěmice a Severní terasa v Ústí nad Labem, Plzeň 1 (Bolevec), Starý Lískovec nebo Kohoutovice v Brně, Praha 11 a Praha 12 v rámci Prahy). Na druhou stranu potom centra volila více obě koalice (Moravská Ostrava a Přívoz, Ústí nad Labem-město, Plzeň 2 (Slovany) a 3 (centrum a Bory), Brno-střed, Praha 1, 2, 3, 5, 6 a 7 v rámci Prahy).
+Takovýto model nám umožní se podívat na různé úrovně geografické - od jednotlivých volebních okrsků po kraje nebo NUTS2. Jako příklad se můžeme podívat na města, která jsou při volbách dělená na městské obvody. Zde např. jasně vystupují na straně ANO+SPD okrajovější sídliště v rámci jednotlivých velkých měst (Ostrava-Jih, Neštěmice a Severní terasa v Ústí nad Labem, Plzeň 1 (Bolevec), Starý Lískovec nebo Kohoutovice v Brně, Praha 11 a Praha 12 v rámci Prahy). Na druhou stranu potom centra volila více obě koalice (Moravská Ostrava a Přívoz, Ústí nad Labem-město, Plzeň 2 (Slovany) a 3 (centrum a Bory), Brno-střed, Praha 1, 2, 3, 5, 6 a 7 v rámci Prahy).
 
 Lze takto udělat např. i meziměstská srovnání: Brno-střed volí podobně jako Praha 3, nejvíce “pro-koaliční” číst Plzně (Plzeň 2 - Slovany) jako nejméně “pro-koaliční” část Prahy (Praha 11 a 12), Ostrava-Jih podobně jako Nestěmice a Severní terasa v Ústí nad Labem.
 
-{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/momc.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle městských částí ve městech, která jsou takto členěna. Osa X zhruba odpovídá rozdělení ANO+SPD+KSČM (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
+{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/momc.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle městských částí ve městech, která jsou takto členěna. Osa X zhruba odpovídá rozdělení ANO+SPD (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
 
 ### Použitá data
 Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevřených dat][link_nkod]:
@@ -53,13 +54,11 @@ Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevř
 
 ### Postup zpracování
 
-V této části si nejprve představíme použitou analytickou metodu a poté projdeme postupně jednotlivé kroky analýzy od přípravy dat až po získání výsledného grafu ("mapy").
-
 #### Analytická metoda
 Jako základ je použito [klasické multidimensionální škálování][link_mds] a [analýza hlavních komponent][link_pca], kde základ jsou výsledky voleb v jednotlivých volebních okrscích.
 
 #### Příprava dat
-V této fázi si připravíme základní tabulku, kde na každém řádku budou informace o výsledku hlasování v jednom volebním okrsku spolu se všemi doplňující geografickými informacemi o tomto okrsku (obec, ORP, okres, kraj, příp. městské části u měst, které se dělí na volební obvody).
+V této fázi si připravíme základní tabulku, kde na každém řádku budou informace o výsledku hlasování v jednom volebním okrsku spolu se všemi doplňujícími geografickými informacemi o tomto okrsku (obec, ORP, okres, kraj, příp. městské části u měst, které se dělí na volební obvody).
 
 Jako vstup použijeme otevřená data o výsledku voleb po okrscích. Jedinou výjimkou jsou zde informace o ORP (obce s rozšířenou působností), které v těchto datech nejsou, jejich názvy získáme přímo z číselníku těchto obcí také od ČSÚ.
 
@@ -78,25 +77,14 @@ Tento postup využívá toho, že multidimensionální škálování má matemat
 [Postup v jazyce R je zde.][link_analyza]
 
 #### Zobrazení grafu (“volební mapy”)
-Samotné zobrazení lze udělat mnoha způsoby, typicky. v tabulkových procesorech (Excel, Libre Office, Google Sheets). Zde používám zobrazení přímo názvů jednotlivých ORP za pomoci HTML s javascriptovou knihovnou D3.
+Samotné zobrazení lze udělat mnoha způsoby, typicky v tabulkových procesorech (Excel, Libre Office, Google Sheets). Zde používám zobrazení přímo názvů jednotlivých ORP za pomoci HTML s javascriptovou knihovnou D3.
 
 Barevné rozlišení je dle NUTS 2.
 
 [Celý soubor v html/js je zde.][link_html]
 
-Všechny vypočtené soubory (např. pro obdobné zobrazení krajů nebo okresů):
-
-- [souřadníce městských obvodů a částí][link_region6]
-- [souřadníce obcí][link_region5]
-- [souřadníce ORP][link_region4]
-- [souřadníce okresů][link_region3]
-- [souřadníce krajů][link_region2]
-- [souřadníce celé ČR][link_region1]
-- [jména obcí][link_pretty]
-- [souřadnice stran][link_parties]
-
-### Další užití
-Tento článek ukazuje, že otevřená data o volbách v kombinaci s dalšími otevřenými zdroji umožňují i další detailnější analýzy jdou nad základní popis volebních výsledků.
+### Další
+Tento článek ukazuje, že otevřená data o volbách v kombinaci s dalšími otevřenými zdroji umožňují i další detailnější analýzy, které jdou nad základní popis volebních výsledků.
 
 Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i komerčně v médiích nebo např. v politickém marketingu.
 
@@ -106,7 +94,7 @@ Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i 
 - R ([cmdscale][link_cmdscale], [princomp][link_princomp])
 
 ### Závěr
-Článek ukazuje jednu z metod, jak detailněji analyzovat volební výsledky na růzých geografických úrovních od volebních okrsků po kraje. Zároveň demonstruje, jak používat volební a další otevřená data z ČSÚ.
+Článek ukazuje jednu z metod, jak detailněji analyzovat volební výsledky na růzých geografických úrovních od volebních okrsků po kraje. Zároveň demonstruje, jak používat volební a další otevřená data ČSÚ.
 
 
 
@@ -129,11 +117,3 @@ Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i 
 [link_numpy]: https://numpy.org/ "Numpy"
 [link_cmdscale]: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale "cmdscale function"
 [link_princomp]: https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/princomp "princomp function"
-[link_region6]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions6_coords_rot.csv "Vypočtené souřadníce městských obvodů a částí"
-[link_region5]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions5_coords_rot.csv "Vypočtené souřadníce obcí"
-[link_region4]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions4_coords_rot.csv "Vypočtené souřadníce ORP"
-[link_region3]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions3_coords_rot.csv "Vypočtené souřadníce okresů"
-[link_region2]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions2_coords_rot.csv "Vypočtené souřadníce krajů"
-[link_region1]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions1_coords_rot.csv "Vypočtené souřadníce celé ČR"
-[link_pretty]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/regions1_coords_rot.csv "Jména obcí"
-[link_parties]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/cz_2021_party.csv "Vypočtené souřadníce kandidujících stran"

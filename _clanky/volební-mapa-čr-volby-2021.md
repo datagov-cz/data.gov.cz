@@ -94,7 +94,7 @@ Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i 
 - R ([cmdscale][link_cmdscale], [princomp][link_princomp])
 
 ### Závěr
-Článek ukazuje jednu z metod, jak detailněji analyzovat volební výsledky na růzých geografických úrovních od volebních okrsků po kraje. Zároveň demonstruje, jak používat volební a další otevřená data ČSÚ.
+Článek ukazuje jednu z metod, jak detailněji analyzovat volební výsledky na různých geografických úrovních od volebních okrsků po kraje. Zároveň demonstruje, jak používat volební a další otevřená data ČSÚ.
 
 
 

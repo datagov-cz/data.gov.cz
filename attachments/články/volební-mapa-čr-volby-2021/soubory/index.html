@@ -9,7 +9,7 @@
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <!--<script src="d3.v3.min.js"></script>-->
-  <script src="d3.tip.js"></script>
+  <!-- <script src="d3.tip.js"></script> -->
   <!--<script src="jquery-1.11.1.min.js"></script>-->
   <style>
 
@@ -62,14 +62,14 @@
 
 
     /* D3 tips */
-    .d3-tip {
+    /* .d3-tip {
       line-height: 1;
       font-weight: bold;
       padding: 12px;
       background: rgba(0, 0, 0, 0.8);
       color: #fff;
       border-radius: 2px;
-    }
+    } */
     /* Creates a small triangle extender for the tooltip */
     /*.d3-tip:after {
       box-sizing: border-box;
@@ -83,7 +83,7 @@
       text-align: center;
     }*/
     /* Style northward tooltips differently */
-    .d3-tip.n:after {
+    /* .d3-tip.n:after {
       margin: -1px 0 0 0;
       top: 100%;
       left: 0;
@@ -92,9 +92,10 @@
         width: 100vw;
         padding: 10px;
         color: white;
-        /*font-size: 3em;*/
-        /*background-color: #fed201;*/
-    }
+        /*font-size: 3em;
+        /*background-color: #fed201;
+    }*/
+    
   </style>
 </head>
 <body>
@@ -106,21 +107,21 @@
   <!-- chart -->
   <div class="row">
       <div class="col-1" style="">
-          <img src="nuts2.png" width="150" />
+          <!-- <img src="nuts2.png" width="150" /> -->
       </div>
       <p class="col-9" id="chart"></p>
       <div class="col-2">
-          <img src="windrose.png" width="150" />
+          <!-- <img src="windrose.png" width="150" /> -->
       </div>
   </div>
 
 
-  <div class="alert alert-info" >Reset: <button id="reset-0" value="0" class="reset btn btn-primary">Czech Republic</button> <button id="reset-1" value="1" class="reset btn btn-primary">Regions (kraje)</button> <button id="reset-2" value="2" class="reset btn btn-primary">Sub-Regions (okresy)</button> <button id="reset-3" value="3" class="reset btn btn-primary">Towns (obce)</button> <button id="reset-5" value="5" class="reset btn btn-primary">Districts (okrsky)</button> | <button class="party-toggle doshow btn btn-success">Toggle parties</button>
-  </div>
-  <div class="alert alert-info container">
+  <!-- <div class="alert alert-info" >Reset: <button id="reset-0" value="0" class="reset btn btn-primary">Czech Republic</button> <button id="reset-1" value="1" class="reset btn btn-primary">Regions (kraje)</button> <button id="reset-2" value="2" class="reset btn btn-primary">Sub-Regions (okresy)</button> <button id="reset-3" value="3" class="reset btn btn-primary">Towns (obce)</button> <button id="reset-5" value="5" class="reset btn btn-primary">Districts (okrsky)</button> | <button class="party-toggle doshow btn btn-success">Toggle parties</button>
+  </div> -->
+  <!-- <div class="alert alert-info container">
       <i class="fa fa-info-circle"></i> Explorable: European Elections in Czechia 2019, MDS based on results from districts (weighted)<br />
      90% of people live inside the ellipse (on district level)
-  </div>
+  </div> -->
 
   <script type="text/javascript">
 
@@ -156,9 +157,9 @@
     }
 
     /* Initialize tooltip */
-    tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
-      return '<span class="stronger">' + d['name'] + "</span><br>";
-    });
+    // tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
+    //   return '<span class="stronger">' + d['name'] + "</span><br>";
+    // });
 
     // Create the SVG container and set the origin.
     var svg = d3.select("#chart").append("svg")
@@ -169,12 +170,12 @@
 
 
 	/* Invoke the tip in the context of your visualization */
-    svg.call(tip);
+    // svg.call(tip);
 
 	// Add tooltip div
-    var div = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("opacity", 1e-6);
+    // var div = d3.select("body").append("div")
+    // .attr("class", "tooltip")
+    // .style("opacity", 1e-6);
 
 	// Load the data.
 	d3.csv("regions4_show.csv", function(data) {
@@ -375,8 +376,8 @@
 		      return clas;
 		  })
           .attr("stroke", function(d) {return d['color']})
-		  .on("mouseover", tip.show)
-	      .on("mouseout", tip.hide)
+		  // .on("mouseover", tip.show)
+	      // .on("mouseout", tip.hide)
 
     // partylines:
     //   var line = svg.selectAll(".partyline")
@@ -408,51 +409,51 @@
         .style("stroke-dasharray", ("3, 5"))
 
 	$(document).ready(function(){
-	  $('.reset').click(function() {
-	    level = $(this).attr("value");
-	    // svg.selectAll(".circle").filter(
-	    //     function(d,i) {
-	    //       return d.level == level;
-	    //     }
-	    //   )
-	    //   .classed("active",true)
-	    //   .classed("explorable",true)
-	    //   .classed("explored",false)
-	    //   .classed("visible",true);
+	  // // $('.reset').click(function() {
+	  //   // level = $(this).attr("value");
+	  //   // svg.selectAll(".circle").filter(
+	  //   //     function(d,i) {
+	  //   //       return d.level == level;
+	  //   //     }
+	  //   //   )
+	  //   //   .classed("active",true)
+	  //   //   .classed("explorable",true)
+	  //   //   .classed("explored",false)
+	  //   //   .classed("visible",true);
 
-          // texts:
-        svg.selectAll(".text").filter(
-  	        function(d,i) {
-  	          return d.level == level;
-  	        }
-  	      )
-  	      .classed("active",true)
-  	      .classed("explorable",true)
-  	      .classed("explored",false)
-  	      .classed("visible",true);
+    //       // texts:
+    //     svg.selectAll(".text").filter(
+  	//         function(d,i) {
+  	//           return d.level == level;
+  	//         }
+  	//       )
+  	//       .classed("active",true)
+  	//       .classed("explorable",true)
+  	//       .classed("explored",false)
+  	//       .classed("visible",true);
 
-	    // svg.selectAll(".circle").filter(
-	    //     function(d,i) {
-	    //       return !(d.level == level);
-	    //     }
-	    //   )
-	    //   .classed("active",false)
-	    //   .classed("explorable",true)
-	    //   .classed("explored",false)
-	    //   .classed("visible",false);
+	  //   // svg.selectAll(".circle").filter(
+	  //   //     function(d,i) {
+	  //   //       return !(d.level == level);
+	  //   //     }
+	  //   //   )
+	  //   //   .classed("active",false)
+	  //   //   .classed("explorable",true)
+	  //   //   .classed("explored",false)
+	  //   //   .classed("visible",false);
 
-        // texts:
-          svg.selectAll(".text").filter(
-              function(d,i) {
-                return !(d.level == level);
-              }
-            )
-            .classed("active",false)
-            .classed("explorable",true)
-            .classed("explored",false)
-            .classed("visible",false);
+    //     // texts:
+    //       svg.selectAll(".text").filter(
+    //           function(d,i) {
+    //             return !(d.level == level);
+    //           }
+    //         )
+    //         .classed("active",false)
+    //         .classed("explorable",true)
+    //         .classed("explored",false)
+    //         .classed("visible",false);
 
-	  });
+	  // });
 	});
 
 	  $('.party-toggle').click(function() {

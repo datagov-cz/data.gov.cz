@@ -6,7 +6,7 @@ ref: volební-mapa-čr-volby-2021
 lang: cs
 image: ../attachments/články/volební-mapa-čr-volby-2021/obrázky/orp.svg
 author: michal_škop
-date: 2021-12-19 07:00:00 +01:00
+date: 2021-12-22 07:00:00 +01:00
 ---
 Aš a Kraslice jsou na západním konci ČR, Karviná s Orlovou na východním. Přesto volebním chováním jsou na společném extrému v rámci ČR. Detailní klasické geografické mapy s volebními výsledky jsou již tradiční součástí volebního servisu médií. Ukážeme si proto podrobnější analýzu výsledků parlamentních voleb 2021 za pomoci otevřených dat - cílem je mapa ČR, ale ne klasická geografická, nýbrž “volební”.
 

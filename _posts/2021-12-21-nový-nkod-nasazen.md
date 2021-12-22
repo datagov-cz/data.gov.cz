@@ -13,5 +13,5 @@ Lze také označit, kterými specifikacemi a [Otevřenými formálními normami]
 
 [Národního katalogu otevřených dat (NKOD)]: /datové-sady "Národní katalog otevřených dat (NKOD)"
 [GraphQL]: /graphql "GraphQL rozhraní NKOD"
-[Linked Data Fragments]: /nkod-ldf "Linked Data Fragments rozhraní NKOD"
+[Linked Data Fragments]: /ldf/nkod-ldf "Linked Data Fragments rozhraní NKOD"
 [Otevřenými formálními normami]: https://ofn.gov.cz "Otevřené formální normy"

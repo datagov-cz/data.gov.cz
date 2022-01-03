@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Nová povinnost – § 5a odst. 2 zákona č. 106/1999 Sb., o svobodném přístupu k  informacím
+title: Nová povinnost publikace veřejných registrů jako otevřená data
 detail: true
-ref: NováPovinnost5a2-106-1999-2022
+ref: NováPovinnostPublikaceVeřejnýchRegistrů2022
 lang: cs
 author: jakub_míšek
 date: 2022-01-03 07:00:00 +01:00
@@ -63,7 +63,7 @@ Právní úprava otevřených dat podle tohoto zákona se tak na ně přímo nev
 Jde například o informace spadající pod působnost zákona č. 123/1998 Sb. (byť tento zákon v zásadě poskytování informací v kvalitě otevřených dat již umožňuje), nebo o informace katastru nemovitostí.
 
 Doufáme, že tato klasifikace dat veřejného sektoru může pomoci v rozhodnutí, zda povinné subjekty spravují nějaké informace, ke kterým se nově vztahuje povinnost poskytovat je jako otevřená data.
-Závěrem připomínáme, že odbor hlavního architekta eGovernmentu MVČR nabízí podporu a pořádá školení, které se i těmto otázkám věnují.
+Závěrem připomínáme, že odbor Hlavního architekta eGovernmentu MVČR nabízí podporu a pořádá školení, které se i těmto otázkám věnují.
 
 [novela]: https://www.zakonyprolidi.cz/cs/2021-261 "Změnová novela č. 261/2021 Sb."
 [povinnost]: nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat

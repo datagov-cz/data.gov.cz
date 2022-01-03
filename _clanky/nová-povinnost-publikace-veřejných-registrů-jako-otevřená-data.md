@@ -66,4 +66,4 @@ Doufáme, že tato klasifikace dat veřejného sektoru může pomoci v rozhodnut
 Závěrem připomínáme, že odbor Hlavního architekta eGovernmentu MVČR nabízí podporu a pořádá školení, které se i těmto otázkám věnují.
 
 [novela]: https://www.zakonyprolidi.cz/cs/2021-261 "Změnová novela č. 261/2021 Sb."
-[povinnost]: nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat
+[povinnost]: nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat"

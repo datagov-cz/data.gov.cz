@@ -256,7 +256,7 @@ WHERE {
 Další možností, jak zjistit strukturu dat ze znalostního grafu Registru práv a povinností, je podívat se do dokumentace datových sad, prostřednictvím kterých je nabízen jako otevřená data.
 [Seznam datových sad Registru práv a povinností](https://data.gov.cz/datové-sady?dotaz=rpp) najdete v Národním katalogu otevřených dat.
 Při pohledu na katalogizační záznamy jednotlivých datových sad uvidíte i odkaz na dokumentaci, kde je zdokumentována i RDF struktura.
-Pro zjistění struktury orgánů veřejné moci, kteří jsou poskytovateli datových sad v Národním katalogu otevřených dat, potřebujete konkrétně [datovou sadu o orgánech veřejné moci](https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F706529437%2F44a9d6abacd4d0e83a0694e74d028f51).
+Pro zjistění struktury orgánů veřejné moci, kteří jsou poskytovateli datových sad v Národním katalogu otevřených dat, potřebujete konkrétně [datovou sadu o orgánech veřejné moci](https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F44a9d6abacd4d0e83a0694e74d028f51).
 
 Všimněme si, že u předchozího dotazu neuvádíme v klauzuli `SELECT` všechny proměnné použité v grafovém vzoru.
 IRI datové schránky ve výsledku nechceme a proto proměnnou `?datováSchránka` neuvádíme.

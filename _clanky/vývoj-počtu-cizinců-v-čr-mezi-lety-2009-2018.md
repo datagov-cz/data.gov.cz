@@ -35,7 +35,7 @@ Jelikož jsou data o cizincích publikovaná do úrovně okresů, budou nás sek
 ## Postup zpracování
 V první řadě si nainstalujeme [Power BI](https://www.microsoft.com/en-us/download/details.aspx?id=58494) (dále jen PBI). Při práci v PBI budeme pracovat s více samostatnými .csv soubory. Je tedy dobré pracovat s celou složkou, kde máme uložené jednotlivé soubory, což PBI umožňuje. Po otevření programu tedy zvolíme funkci "Get data --> Folder" a poté všechny soubory .csv zkomprimujeme do 1 souboru. 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/1komprimace_csv.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/1komprimace_csv.png"
     description="Komprimace souborů csv"
 %}
 Následně se můžeme přepnout do módu "Edit Queries", kde bude nutné data ještě upravit. V první řadě se musíme vypořádat s tím, že ČSÚ nám data podstrčil agregovaně či spíše duplicitně. V prvotním součtu totiž dojdeme k tomu, že v České republice máme 9 029 520 cizinců jen v roce 2018. Je tedy jasné, že data jsou různě agregována, a to jak za věkové skupiny, tak národnosti, pohlaví, v různých měřítkách a ještě se všemi možnými kombinacemi. Cílem je tedy dostat se pouze k počtům za okresy. Toho docílíme tak, že zapneme filtraci v jednotlivých sloupcích, a to následovně: 
@@ -50,12 +50,12 @@ Po dokončení úprav editor uzavřeme (tlačítko "Close & Apply") a dále prac
 
 První sekce je tedy hotová, přepneme na druhý list, na kterém využijeme mapovou vizualizaci pro prezentaci počtu cizinců v okresech. PBI mají základně nastavené Bing mapy (jako možnost lze využít i plugin "esri maps for PBI", které jsou však pod placenou licencí). V mapě do pole "Location" zvolíme okres, do pole "Size" pak pole "hodnota" --> "vykreslení okresů dle počtu cizinců" a použijeme pouze rok 2018. Ve finální vizualizaci došlo k chybě, kde byl okres Plzeň-sever geolokován do Francie.
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/2plzen_ve_francii.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/2plzen_ve_francii.png"
     description="Chyba v geolokaci okresu Plzeň"
 %}
  Z tohoto důvodu je nutné přepnout v levém panelu do tabulkové (datové) části, označit sloupec "Okres" a v druhé záložce přiřadit "Data Category: County".
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/3county.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/3county.png"
     description="Oprava chyby v geolokaci"
 %}
 Do legendy pak přidáme atribut pohlaví. PBI pak nabízí mnoho dalších možností, jak data upravovat a vizualizovat. 
@@ -65,7 +65,7 @@ Do legendy pak přidáme atribut pohlaví. PBI pak nabízí mnoho dalších mož
 QGIS je volně dostupný open source software určený zejména pro prezentaci prostorových dat. V této části tak použijeme klasický kartogram pro prezentaci vývoje podílu cizinců v okresech ČR a využijeme i "plugin cartogram" pro tvorbu [anamorfované mapy](https://cs.wikipedia.org/wiki/Anamorf%C3%B3za_), kterou vizualizujeme absolutní počty cizinců v ČR. 
 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/4ciz_anamorf.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/4ciz_anamorf.png"
     description="Anamorfovaná mapa"
 %}
 
@@ -73,18 +73,18 @@ Nejprve si do QGIS nahrajeme shapefile administrativních hranic, okresů které
 Poté je třeba do GIS nahrát data o počtech cizinců a je třeba je připojit k vrstvě .shp okresů, kterou jsme stáhli z ČÚZK.
 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csv.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/5nahrat_csv.png"
     description="Přidání dat o počtech cizinců"
 %}
 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/6gis_JOIN.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/6gis_JOIN.png"
     description="Připojení dat"
 %}
  
 Následně si stáhneme plugin cartogram  a v záložce "vektor" --> "cartogram" --> "compute cartogram" - zvolíme proměnnou absolutního počtu cizinců. 
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/7plugin.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/7plugin.png"
     description="Plugin cartogram"
 %}
 
@@ -92,12 +92,12 @@ Anamorfóza (ang. cartogram) nám zderformuje mapu dle zastoupení zvolené prom
 
 Podobně použijeme i relativní počty, tedy procentuální zastoupení cizinců na celkové populaci v daném území. Zde je důležité si data rovněž předpřipravit např. v někteérm z tabulkových editorů (např. Google Sheets, Microsoft Excel, CalC apod.) a poté je stejnou cestou nahrát do QGIS. Mapu poté dotváříme v sekci symbologie, kde byla zvolena kvantilová klasifikace.
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/8symbology.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/8symbology.png"
     description="Dotvoření mapy v sekci symbologie"
 %}
 Závěrečnou editaci mapy provedeme pomocí tlačítka "nové tiskové rozvržení" v horním menu, kde postupně přidáme název, legendu a měřítko.
 {% include image.html
-    url="../attachments/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/9legenda.png"
+    url="../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/9legenda.png"
     description="Přidání názvu, legendy a měřítka"
 %}
 

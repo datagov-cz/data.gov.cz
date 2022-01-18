@@ -4,7 +4,7 @@ title: "Série Znalostní grafy: Díl 3: SPARQL"
 detail: true
 ref: série-znalostní-grafy-03-sparql
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-03.webp
+image: ../přílohy/články/znalostní-grafy/znalostní-grafy-03.webp
 author: martin_nečaský
 date: 2021-01-25 15:00:00 +01:00
 ---
@@ -37,7 +37,7 @@ Znalostní graf nám o ČSÚ např. říká, že se jedná o veřejnou organizac
 Také nám říká, jakou má datovou schránku a že ČSÚ publikuje datovou sadu.
 
 {% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-03.svg"
+   url="../přílohy/články/znalostní-grafy/rdf-čsú-03.svg"
    description="Znalostní graf o datové sadě v Národním katalogu otevřených dat v modelu RDF"
 %}
 
@@ -53,7 +53,7 @@ Uvažme např. grafový vzor na následujícím obrázku.
 Skládá se z jednoho uzlu, který je fixován na kontrétní IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19), jednoho uzlu, který není fixován na žádné IRI ani hodnotu, ale má přiřazenu proměnnou `?název`, a hrany, která má přiřazen konkrétní predikát [`http://purl.org/dc/terms/title`](http://purl.org/dc/terms/title).
 
 {% include image.html 
-   url="../attachments/články/znalostní-grafy/sparql-čsú-01.svg"
+   url="../přílohy/články/znalostní-grafy/sparql-čsú-01.svg"
    description="Grafový vzor odpovídající znalostnímu grafu s názvem datové sady"
 %}
 
@@ -62,7 +62,7 @@ Tento jiný uzel není grafovým vzorem specifikován.
 Pokud jej tedy použijeme na znalostní graf z příkladu výše, odpovídá grafový vzor části zobrazené na následujícím obrázku.
 
 {% include image.html 
-   url="../attachments/články/znalostní-grafy/sparql-čsú-02.svg"
+   url="../přílohy/články/znalostní-grafy/sparql-čsú-02.svg"
    description="Část znalostního grafu s názvem datové sady odpovídající grafovému vzoru"
 %}
 

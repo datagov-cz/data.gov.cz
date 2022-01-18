@@ -4,7 +4,7 @@ detail: true
 title: Využití otevřených dat Zeměměřického úřadu pro povolování dočasných staveb - část 1
 ref: data50-1
 lang: cs
-image: ../attachments/články/využití-data-50/screen_vysledku.webp
+image: ../přílohy/články/využití-data-50/screen_vysledku.webp
 author: michal_med
 date: 2021-02-26 03:14:15 +01:00
 ---
@@ -17,7 +17,7 @@ První ze série článků o využití otevřených dat Zeměměřického úřad
 V dubnu 2019 Zeměměřický úřad otevřel datové sady [Data200][nkod_data200_link] a [Data50][nkod_data50_link]. Databáze Data200 je digitální geografický model území ČR odpovídající přesností a stupněm generalizace měřítku 1:200 000. Data50 jsou pak digitálním geografickým modelem území ČR odvozeným z kartografické databáze pro Základní mapu ČR 1:50 000. Zamysleli jsme se nad tím, jak data využít ke zjednodušení procesu povolování dočasných staveb v ochranných pásmech letiště.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/screen_vysledku.webp"
+   url="../přílohy/články/využití-data-50/screen_vysledku.webp"
    description="Aplikace Altimeter zobrazující možná výšková omezení dočasných staveb v okolí letiště."
 %}
 

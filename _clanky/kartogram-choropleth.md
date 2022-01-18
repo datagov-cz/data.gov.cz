@@ -4,7 +4,7 @@ detail: true
 title: Kartogram ČR (choropleth, choropletová mapa)
 ref: Choropleth
 lang: cs
-image: ../attachments/články/kartogram-choropleth/images/map3.png
+image: ../přílohy/články/kartogram-choropleth/images/map3.png
 author: michal_škop
 date: 2020-04-23 07:00:00 +02:00
 ---
@@ -17,7 +17,7 @@ V češtině jsou trochu nešťastně zvané kartogramy (neboť [cartogram][link
 ## Zobrazení v mapách: Obce a ORP v ČR - hustota obyvatel
 Cílem je zhotovit takovouto mapu zobrazující hustotu zalidnění v obcích a obdobnou v [ORP][link_wiki_orp] ("malé okresy") v ČR. Hustota zalidnění je tu zvolená na ukázku, stejně tak lze zobrazit leccos jiného.
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map4.png" description="Hustota zalidnění v obcích ČR." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map4.png" description="Hustota zalidnění v obcích ČR." %}
 
 Zkusíme tu více postupů, jak se k výsledné mapě dostat:
 
@@ -72,7 +72,7 @@ WGS 84:
 
 Podobně si přetransformujeme i ORP do souborů `<pracovní adresář>/orp.shp` (a další `orp.` se vytvoří).
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/save_vector_layer_as.png" description="Uložení přetransformovaných souborů." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/save_vector_layer_as.png" description="Uložení přetransformovaných souborů." %}
 
 ##### Příprava statistických dat
 Z ČSÚ [stáhneme data][link_csu_data] a extrahujeme do svého pracovního adresáře soubor `UAP01_2018` (příp. novější rok). Z něj vyfiltrujeme (opět např. ručně v `LibreOffice Calc`) řádky, které v sloupci `vuk_txt` mají hodnoty `Celková výměra (v hektarech)` a `Počet obyvatel`. A vytvoříme si nový soubor `<pracovní adresář>/obce_hustota.csv`, a dopočteme si hustotu zalidnění na 1 km2. Vyplatí se nám původní soubor nejprve seřadit dle `vuk_txt` a `uzemi_kod` (což je kód obce). Můžeme se vyhnout některým možným problémům při zobrazování dat v budoucnu, pokud tu hustotu zaokrouhlíme (tj. `=round(počet obyvatel / výměra * 100)`). Tabulka bude vypadat nějak takto, pro budoucí potřeby si kód obce (`uzemi_kod`) označíme jako `id` (budeme potřebovat slupce `id` a `hustota`):
@@ -85,7 +85,7 @@ id    | Celková výměra (v hektarech) | Počet obyvatel | hustota | uzemi_txt
 
 Např. pomocí `Pivot tables` (`Kontingenční tabulky`) rovnou v `LibreOffice Calc` (`Insert->Pivot Table...`) si vytvoříme obdobný soubor `orp_hustota.csv`, kde budeme mít minimálně `prislorp_kod` a vypočtený sloupec `hustota`.
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/pivot.png" description="Nastavení Pivot tables (kontingenčních tabulek)." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/pivot.png" description="Nastavení Pivot tables (kontingenčních tabulek)." %}
 
 Bohužel kódy ORP v těchto datech a datech z RÚIANu nejsou shodné, tak je ještě musíme sjednotit. Takže opět použijeme [Národní katalog otevřených dat][link_csu_ciselnik] a najdeme si `Číselník obcí s rozšířenou působností`. Přímo se nám nabízí stažení jenom v `XML`, což by znamenalo další práci navíc. Naštěstí NKOD má odkaz i na zdrojovou stránku s dokumentací (`Zobrazit dokumentaci`) a [na této stránce][link_csu_orp] skočíme na `Ke stažení` a [tady][link_csu_orp_2] už si můžeme vybrat i formát `CSV`. Dáme [stáhnout][link_csu_orp_soubor] a máme soubor `CIS0065_CS.csv`.
 
@@ -207,7 +207,7 @@ d3.json("obce-simple-data-topo.json", function(error, data) {
 ```
 A dostaneme první mapu, něco takovéhoto:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map1.png" description="Mapa ČR." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map1.png" description="Mapa ČR." %}
 
 Zvětšíme ji a vycentrujeme na střed ČR (zhruba 49.75N, 15.34E)
 
@@ -218,7 +218,7 @@ var projection = d3.geoMercator()
     .translate([width / 2, height / 2]) // posuneme do středu SVG
 ```
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map2.png" description="Větší mapa ČR." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map2.png" description="Větší mapa ČR." %}
 
 Obarvíme obce dle hustoty:
 ``` js
@@ -246,7 +246,7 @@ d3.json("obce-simple-data-topo.json", function(error, data) {
 });
 ```
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map3.png" description="Mapa ČR obarvená dle hustoty zalidnění." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map3.png" description="Mapa ČR obarvená dle hustoty zalidnění." %}
 
 Přidáme měřítko - legendu:
 
@@ -290,13 +290,13 @@ g.call(d3.axisBottom(x)
 
 A máme výslednou mapu hustoty zalidnění v obcích ČR:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map4.png" description="Hustota zalidnění v obcích ČR." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map4.png" description="Hustota zalidnění v obcích ČR." %}
 
-[Celý soubor index.html](../attachments/články/kartogram-choropleth/data/index.html).
+[Celý soubor index.html](../přílohy/články/kartogram-choropleth/data/index.html).
 
 Jenom změníme vstupní soubor `orp-simple-data-topo.json` na `orp-simple-data-topo.json`, upravíme měřítko (nejmenší hustota v ORP je 31) a máme i mapu dle ORP:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map5.png" description="Hustota zalidnění v ORP v ČR." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map5.png" description="Hustota zalidnění v ORP v ČR." %}
 
 ### Postup zpracování: Mapa v QGIS
 
@@ -314,11 +314,11 @@ Přidáme data o hustotě: `Layer->Add Layer->Add Vector Layer ...` vybereme `<p
 
 V kontextovém menu u `Layers - obce` (pravým tlačítkem myši) vybereme `Properties...` a dostaneme dialog `Layer Properties`. Vybereme `Joins` a přidáme (Tlačítko `+`) nový Join, spojíme `id` s `KOD`, neboli připojíme data o hustotě k mapě.
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/join.png" description="Join v QGIS." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/join.png" description="Join v QGIS." %}
 
 V `Layer Properties` teď vybereme `Symbology` a jdeme obarvovat mapu dle hustoty. Např. takto:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/symbology.png" description="Obarvování mapy v QGIS." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/symbology.png" description="Obarvování mapy v QGIS." %}
 
 Teď už nám chybí jenom připravit jako obrázek (pokud nechceme rovnou udělat screenshot) a přidat legendu.
 
@@ -326,45 +326,45 @@ Vytvoříme nový `Layout`: `Project->Layout Manager ...`. Odklikáme a máme no
 
 V tomto okně `Add Item->Add Map` a myší označíme celou tu připravenou stránku. A mápe mapu v Layoutu. Přidáme legendu `Add Item->Add Legend` a myší zase označíme, kam ji chceme. Jsme v zhruba takovémto stavu:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/layout.png" description="Layout v QGIS." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/layout.png" description="Layout v QGIS." %}
 
 Legendu si můžeme doupravit (pravým v Layoutu legendy: `Item properties ...`) dle svého.
 
 Výsledek si můžeme vyexportovat v `SVG` nebo `PNG`, ..., např. `Layout->Export as Image...`
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/obce_qgis.png" description="Hustota zalidnění dle obcí v ČR - vytvořeno v QGIS." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/obce_qgis.png" description="Hustota zalidnění dle obcí v ČR - vytvořeno v QGIS." %}
 
 A obdobně bychom mohli udělat mapu pro ORP.
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/orp_qgis.png" description="Hustota zalidnění dle ORP v ČR - vytvořeno v QGIS." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/orp_qgis.png" description="Hustota zalidnění dle ORP v ČR - vytvořeno v QGIS." %}
 
 ### Použité soubory
-- [index.html](../attachments/články/kartogram-choropleth/data/index.html)
-- [obce_hustota.csv](../attachments/články/kartogram-choropleth/data/obce_hustota.csv)
-- [obce_hustota.csvt](../attachments/články/kartogram-choropleth/data/obce_hustota.csvt)
-- [obce-simple-data-topo.json](../attachments/články/kartogram-choropleth/data/obce-simple-data-topo.json)
-- [orp_hustota.csv](../attachments/články/kartogram-choropleth/data/orp_hustota.csv)
-- [orp_hustota.csvw](../attachments/články/kartogram-choropleth/data/orp_hustota.csvt)
+- [index.html](../přílohy/články/kartogram-choropleth/data/index.html)
+- [obce_hustota.csv](../přílohy/články/kartogram-choropleth/data/obce_hustota.csv)
+- [obce_hustota.csvt](../přílohy/články/kartogram-choropleth/data/obce_hustota.csvt)
+- [obce-simple-data-topo.json](../přílohy/články/kartogram-choropleth/data/obce-simple-data-topo.json)
+- [orp_hustota.csv](../přílohy/články/kartogram-choropleth/data/orp_hustota.csv)
+- [orp_hustota.csvw](../přílohy/články/kartogram-choropleth/data/orp_hustota.csvt)
 - [orp-simple-data-topo.json](orp-simple-data-topo.json)
 
 ### Další užití
 Obdobně se dají zobrazit další a další mapy, např. zde zcela stejných postupem vytvořená mapa průměrného věku v obcích ČR:
 
-{% include image.html url="../attachments/články/kartogram-choropleth/images/map6.png" description="Průměrný věk obyvatel dle obcí v ČR." %}
+{% include image.html url="../přílohy/články/kartogram-choropleth/images/map6.png" description="Průměrný věk obyvatel dle obcí v ČR." %}
 
 #### GeoJSONy a TopoJSONy ČR
 Připravené a zjednodušené soubory dle postupu výše, stav duben 2020, WGS 84
 
-- Katastrální území: [katastralni_uzemi-simple.json](../attachments/články/kartogram-choropleth/data/katastralni_uzemi-simple.json), [katastralni_uzemi-simple-topo.json](../attachments/články/kartogram-choropleth/data/katastralni_uzemi-simple-topo.json)
-- Volební okrsky: [volebni_okrsky-simple.json](../attachments/články/kartogram-choropleth/data/volebni_okrsky-simple.json), [volebni_okrsky-simple-topo.json](../attachments/články/kartogram-choropleth/data/volebni_okrsky-simple-topo.json)
-- Obce: [obce-simple.json](../attachments/články/kartogram-choropleth/data/obce-simple.json), [obce-simple-topo.json](../attachments/články/kartogram-choropleth/data/obce-simple-topo.json)
-- Stavební úřady: [stavebni_urady-simple.json](../attachments/články/kartogram-choropleth/data/stavebni_urady-simple.json), [stavebni_urady-simple-topo.json](../attachments/články/kartogram-choropleth/data/stavebni_urady-simple-topo.json)
-- Pověřené obecní úřady: [poverene_obecni_urady-simple.json](../attachments/články/kartogram-choropleth/data/poverene_obecni_urady-simple.json), [poverene_obecni_urady-simple-topo.json](../attachments/články/kartogram-choropleth/data/poverene_obecni_urady-simple-topo.json)
-- ORP: [orp-simple.json](../attachments/články/kartogram-choropleth/data/orp-simple.json), [orp-simple-topo.json](../attachments/články/kartogram-choropleth/data/orp-simple-topo.json)
-- Regiony soudržnosti: [regiony_soudrznosti-simple.json](../attachments/články/kartogram-choropleth/data/regiony_soudrznosti-simple.json), [regiony_soudrznosti-simple-topo.json](../attachments/články/kartogram-choropleth/data/regiony_soudrznosti-simple-topo.json)
-- Kraje: [kraje-simple.json](../attachments/články/kartogram-choropleth/data/kraje-simple.json), [kraje-simple-topo.json](../attachments/články/kartogram-choropleth/data/kraje-simple-topo.json)
-- Regiony (NUTS 2): [regiony-simple.json](../attachments/články/kartogram-choropleth/data/regiony-simple.json), [regiony-simple-topo.json](../attachments/články/kartogram-choropleth/data/regiony-simple-topo.json)
-- ČR: [cr-simple.json](../attachments/články/kartogram-choropleth/data/cr-simple.json), [cr-simple-topo.json](../attachments/články/kartogram-choropleth/data/cr-simple-topo.json)
+- Katastrální území: [katastralni_uzemi-simple.json](../přílohy/články/kartogram-choropleth/data/katastralni_uzemi-simple.json), [katastralni_uzemi-simple-topo.json](../přílohy/články/kartogram-choropleth/data/katastralni_uzemi-simple-topo.json)
+- Volební okrsky: [volebni_okrsky-simple.json](../přílohy/články/kartogram-choropleth/data/volebni_okrsky-simple.json), [volebni_okrsky-simple-topo.json](../přílohy/články/kartogram-choropleth/data/volebni_okrsky-simple-topo.json)
+- Obce: [obce-simple.json](../přílohy/články/kartogram-choropleth/data/obce-simple.json), [obce-simple-topo.json](../přílohy/články/kartogram-choropleth/data/obce-simple-topo.json)
+- Stavební úřady: [stavebni_urady-simple.json](../přílohy/články/kartogram-choropleth/data/stavebni_urady-simple.json), [stavebni_urady-simple-topo.json](../přílohy/články/kartogram-choropleth/data/stavebni_urady-simple-topo.json)
+- Pověřené obecní úřady: [poverene_obecni_urady-simple.json](../přílohy/články/kartogram-choropleth/data/poverene_obecni_urady-simple.json), [poverene_obecni_urady-simple-topo.json](../přílohy/články/kartogram-choropleth/data/poverene_obecni_urady-simple-topo.json)
+- ORP: [orp-simple.json](../přílohy/články/kartogram-choropleth/data/orp-simple.json), [orp-simple-topo.json](../přílohy/články/kartogram-choropleth/data/orp-simple-topo.json)
+- Regiony soudržnosti: [regiony_soudrznosti-simple.json](../přílohy/články/kartogram-choropleth/data/regiony_soudrznosti-simple.json), [regiony_soudrznosti-simple-topo.json](../přílohy/články/kartogram-choropleth/data/regiony_soudrznosti-simple-topo.json)
+- Kraje: [kraje-simple.json](../přílohy/články/kartogram-choropleth/data/kraje-simple.json), [kraje-simple-topo.json](../přílohy/články/kartogram-choropleth/data/kraje-simple-topo.json)
+- Regiony (NUTS 2): [regiony-simple.json](../přílohy/články/kartogram-choropleth/data/regiony-simple.json), [regiony-simple-topo.json](../přílohy/články/kartogram-choropleth/data/regiony-simple-topo.json)
+- ČR: [cr-simple.json](../přílohy/články/kartogram-choropleth/data/cr-simple.json), [cr-simple-topo.json](../přílohy/články/kartogram-choropleth/data/cr-simple-topo.json)
 
 ### Použité nástroje a zdroje:
 #### D3

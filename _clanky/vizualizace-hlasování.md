@@ -4,7 +4,7 @@ detail: true
 title: Vizualizace hlasování
 ref: Hlasování
 lang: cs
-image: ../attachments/články/vizualizace-hlasovani/images/chart_1.png
+image: ../přílohy/články/vizualizace-hlasovani/images/chart_1.png
 author: michal_škop
 date: 2020-03-26 03:14:15
 ---
@@ -16,7 +16,7 @@ _Rychlý odkaz: <a href="https://michalskop.gitlab.io/votings_vue/" target="_bla
 
 Poslankyně Olga Richterová [dala na Instagram obrázek tabulky výsledku hlasování][link_instagram]. Je to tabulka, která je _vlevo dole_ u každého hlasování v Poslanecké sněmovně (konkrétně toto hlasování je [zde][link_psp_hlasovani]).
 
-{% include image.html url="../attachments/články/vizualizace-hlasovani/images/iphone_tabulka.png" description="Tabulka jednoho výsledku hlasování na Instagramu" %}
+{% include image.html url="../přílohy/články/vizualizace-hlasovani/images/iphone_tabulka.png" description="Tabulka jednoho výsledku hlasování na Instagramu" %}
 
 Ovšem ukázat _hezky přehledně_ výsledek hlasování je docela užitečná věc nejen pro poslankyni. Může to být pro novináře ze Sněmovny, může to být na obci, může to být prostě leckde.
 
@@ -24,7 +24,7 @@ Abychom neměli jenom takovou tabulku (i když díky i za ní), koukneme, jak t
 
 Naším cílem bude takovýto obrázek:
 
-{% include image.html url="../attachments/články/vizualizace-hlasovani/images/chart_1.png" description="Vizualizace jednoho výsledku hlasování" %}
+{% include image.html url="../přílohy/články/vizualizace-hlasovani/images/chart_1.png" description="Vizualizace jednoho výsledku hlasování" %}
 
 ## Data
 ### Běžně dostupné suroviny
@@ -74,11 +74,11 @@ Tohle je trochu otravná práce, tak pro inspiraci, jak se na to dá jít:
 ### Grafy, obrázky
 Grafy si vytvoříme pomocí Vue.js v SVG. V takovém případě se vcelku automaticky nabízí použít [D3.js][link_d3], ale tady chceme jenom čtverečky a zvládnem to i přímo v Javascriptu s pomocí toho Vue.js, D3 by tady byl zbytečný overkill.
 
-Nejprve si [přetrasformujeme data, jak potřebujeme][link_wrapper](../attachments/články/vizualizace-hlasovani/src/components/Wrapper.vue) (na 2 až 3 skupiny). A tuty přetransformovaný data [vykreslíme do SVG](../attachments/články/vizualizace-hlasovani/src/components/Grid.vue)
+Nejprve si [přetrasformujeme data, jak potřebujeme][link_wrapper](../přílohy/články/vizualizace-hlasovani/src/components/Wrapper.vue) (na 2 až 3 skupiny). A tuty přetransformovaný data [vykreslíme do SVG](../přílohy/články/vizualizace-hlasovani/src/components/Grid.vue)
 
 Tohle rozdělení na 2 kroky je dobré proto, že ze stejných přetransformovaných dat můžeme snadno udělat ještě další graf:
 
-{% include image.html url="../attachments/články/vizualizace-hlasovani/images/chart_2.png" description="Malá vizualizace jednoho výsledku hlasování" %}
+{% include image.html url="../přílohy/články/vizualizace-hlasovani/images/chart_2.png" description="Malá vizualizace jednoho výsledku hlasování" %}
 
 Můžeme také využít reaktivity Vue.js a vytvořit si [CELOU MINIAPLIKACI][link_app]. Můžeme si tam snadno měnit velikosti všecho na grafu a taky měnit rovnou i samotná data.
 
@@ -88,7 +88,7 @@ Do ní ještě zabudujeme tlačítko, které pomocí Canvg vygeneruje z vektorov
 
 A závěrečné srovnání - stejné ústavní hlasování, kde byla potřeba 120 hlasů, vlevo pomocí tabulky z webu Sněmovny, vpravo co jsme z toho ukuchtili:
 
-{% include image.html url="../attachments/články/vizualizace-hlasovani/images/iphone_comparison.png" description="Srovnání vizualizace jednoho výsledku hlasování na psp.cz a dle zde popsaného postupu." %}
+{% include image.html url="../přílohy/články/vizualizace-hlasovani/images/iphone_comparison.png" description="Srovnání vizualizace jednoho výsledku hlasování na psp.cz a dle zde popsaného postupu." %}
 
 (A jen poznámka na závěr: `zdržet se` má na výsledek hlasování úplně stejný vliv jako `hlasovat ne`. U takovýchto ústavních hlasování dokonce i neučást je stejná jako `ne` - není to prostě `podpora návrhu`)
 
@@ -96,7 +96,7 @@ A závěrečné srovnání - stejné ústavní hlasování, kde byla potřeba 12
 
 Obdobně lze vyzualizovat nejrůznější hlasování: z jiných parlamentů, ze zastupitelstev, apod. Jako např. zde ze _zastupitelstva města Plasy_:
 
-{% include image.html url="../attachments/články/vizualizace-hlasovani/images/chart_plasy.png" description="Vizualizace jednoho výsledku hlasování v zastupitelstvu města Plasy." %}
+{% include image.html url="../přílohy/články/vizualizace-hlasovani/images/chart_plasy.png" description="Vizualizace jednoho výsledku hlasování v zastupitelstvu města Plasy." %}
 
 
 ## Použité nástroje a zdroje

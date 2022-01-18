@@ -4,7 +4,7 @@ detail: true
 title: Mapa s výsledky voleb po okrscích
 ref: mapa-s-vysledky-voleb-po-okrscich-kraje-2020
 lang: cs
-image: ../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/malá-mapa.webp
+image: ../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/images/malá-mapa.webp
 author: michal_škop
 date: 2020-11-27 07:00:00 +01:00
 ---
@@ -15,7 +15,7 @@ Zároveň jde o ukázkové použití a spojování otevřených dat z různých 
 
 ## Výsledek: Krajské volby 2020 v mapě
 
-{% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/map.webp" description="Krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS a koalice (modrá), STAN a koalice (zelená), KDU-ČSL a koalice (žlutá), Piráti a koalice (černá), ČSSD a koalice (oranžová), KSČM (rudá), SPD (červená), ostatní barvy jsou lokální strany." %}
+{% include image.html url="../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/images/map.webp" description="Krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS a koalice (modrá), STAN a koalice (zelená), KDU-ČSL a koalice (žlutá), Piráti a koalice (černá), ČSSD a koalice (oranžová), KSČM (rudá), SPD (červená), ostatní barvy jsou lokální strany." %}
 
 Volební výsledky jsou v ČR dostupné až na úroveň volebních okrsků (volebních místností), což vedlo ke vzniku velmi podrobných map v několika médiích, např. v [Rozhlase][link_rozhlas] nebo v [Lidovkách][link_lidovky].
 
@@ -47,7 +47,7 @@ Musíme ještě vyřešit problém jednoznačného id pro oba zdroje dat (RÚIAN
 
 V souboru `volebni_okrsky.dbf` to např. můžeme udělat snadno i ručně přidáním nového sloupce (název odpovídající .dbf: `PLACE_ID,C,40`) a vzorcem `=IF(D2="",CONCAT(C2,"-",B2+1-1),CONCAT(D2,"-",B2+1-1))`.
 
-Volební data si zpracujeme do tabulky statistics.csv pomocí vlastního krátkého skriptu v Pythonu [transform.py](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/transform.py).
+Volební data si zpracujeme do tabulky statistics.csv pomocí vlastního krátkého skriptu v Pythonu [transform.py](../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/data/transform.py).
 
 A poté už můžeme postupovat [podle návodu][link_choropleth_maps].
 
@@ -64,16 +64,16 @@ Tj.
 
 Ještě si připravíme soubor s barvami politických stran, použijeme vlastní krátký skript `join_parties.py` a přidáme [barvy][link_political_parties].
 
-A nyní již jen vše použijeme do výsledného html souboru, kde mírně upravíme [index.html](https://data.gov.cz/attachments/%C4%8Dl%C3%A1nky/kartogram-choropleth/data/index.html) z [Kartogram ČR][link_choropleth]: Nový [index.html](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/index.html).
+A nyní již jen vše použijeme do výsledného html souboru, kde mírně upravíme [index.html](https://data.gov.cz/přílohy/%C4%8Dl%C3%A1nky/kartogram-choropleth/data/index.html) z [Kartogram ČR][link_choropleth]: Nový [index.html](../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/data/index.html).
 
 ### Další užití
 Volební mapy lze použít prakticky pro libovolné volby, referenda, apod. 
 
 Detailní mapa např. umožňuje i pohled dovnitř měst, např. zde jsou zobrazeny výsledky krajských voleb 2020 v Plzni a nejbližším okolí, kde jsou zřetelně vidět ostrůvky - sídliště - v moři modré (ODS), kde vyhrávalo fialové ANO.
 
-{% include image.html url="../attachments/články/mapa-s-výsledky-voleb-po-okrscích/images/plzeň_popisy.webp" description="Plzeň a okolí - krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS + TOP 09 (modrá), STAN + SZ + PRO Plzeň (zelená), Piráti (černá). Je zde vidět, že ANO vyhrávalo hlavně na sídlištích. (Zvětšený výřez z mapy popsané výše s doplněnými názvy sídlišť.)" %}
+{% include image.html url="../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/images/plzeň_popisy.webp" description="Plzeň a okolí - krajské volby 2020 po volebních okrscích: barva odpovídá vítězné straně v daném volebním okrsku: ANO (fialová), ODS + TOP 09 (modrá), STAN + SZ + PRO Plzeň (zelená), Piráti (černá). Je zde vidět, že ANO vyhrávalo hlavně na sídlištích. (Zvětšený výřez z mapy popsané výše s doplněnými názvy sídlišť.)" %}
 
-Zjednodušené volebních okrsky ke stažení: [TopoJSON](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/volebni_okrsky-simple-topo.json), [GeoJSON](../attachments/články/mapa-s-výsledky-voleb-po-okrscích/data/volebni_okrsky-simple.json)
+Zjednodušené volebních okrsky ke stažení: [TopoJSON](../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/data/volebni_okrsky-simple-topo.json), [GeoJSON](../přílohy/články/mapa-s-výsledky-voleb-po-okrscích/data/volebni_okrsky-simple.json)
 
 ### Použité nástroje a zdroje:
 - [Kartogram ČR (choropleth, choropletová mapa)][link_choropleth]

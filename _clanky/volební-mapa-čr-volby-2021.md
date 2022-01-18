@@ -4,7 +4,7 @@ detail: true
 title: Volební mapa ČR - volby 2021
 ref: volební-mapa-čr-volby-2021
 lang: cs
-image: ../attachments/články/volební-mapa-čr-volby-2021/obrázky/orp.svg
+image: ../přílohy/články/volební-mapa-čr-volby-2021/obrázky/orp.svg
 author: michal_škop
 date: 2021-12-22 07:00:00 +01:00
 ---
@@ -13,7 +13,7 @@ Aš a Kraslice jsou na západním konci ČR, Karviná s Orlovou na východním. 
 <!--more-->
 Klasická volební mapa s výsledky voleb po jednotlivých okrscích tentokrát vznikla v několika médiích: Mj. ji zveřejnil [Deník][link_denik], [iRozhlas][link_irozhlas] nebo [Seznam Zprávy][link_seznamzpravy]. Postup, jak na takovéto mapy, lze najít ve starším článku [Mapa s výsledky voleb po okrscích][link_mapa].
 
-{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/mapa_sz.webp" description="Mapa s výsledky voleb po okrscích. Zdroj: <a href='https://www.seznamzpravy.cz/clanek/nejpodrobnejsi-vysledky-voleb-unikatni-mapa-vsech-okrsku-ceska-177583'>Seznam Zprávy</a>" %}
+{% include image.html url="../přílohy/články/volební-mapa-čr-volby-2021/obrázky/mapa_sz.webp" description="Mapa s výsledky voleb po okrscích. Zdroj: <a href='https://www.seznamzpravy.cz/clanek/nejpodrobnejsi-vysledky-voleb-unikatni-mapa-vsech-okrsku-ceska-177583'>Seznam Zprávy</a>" %}
 
 ### Výsledek: Volební mapa ČR dle toho, jak lidé v jednotlivých regionech volí
 
@@ -33,9 +33,9 @@ Tato analýza v případě parlamentních voleb 2021 ukazuje to, že hlavní roz
 Osa Y je zhruba dělení SPOLU a ANO vs. PirSTAN a SPD. Další osy by vystihovaly např. větší nebo menší zisky ČSSD a Přísahy. Ale pro jednoduchost nám stačí osy dvě.
 
 #### Obce s rozšířenou působností
-{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/orp.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle ORP (obce s rozšířenou působností). Osa X zhruba odpovídá rozdělení ANO+SPD (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
+{% include image.html url="../přílohy/články/volební-mapa-čr-volby-2021/obrázky/orp.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle ORP (obce s rozšířenou působností). Osa X zhruba odpovídá rozdělení ANO+SPD (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
 
-{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/nuts2.webp" description="Barevná legenda k předchozí mapě - NUTS2." %}
+{% include image.html url="../přílohy/články/volební-mapa-čr-volby-2021/obrázky/nuts2.webp" description="Barevná legenda k předchozí mapě - NUTS2." %}
 
 Na první pohled vidíme, že extrémy z hlediska volebního chování jsou v ČR na jedné straně části Moravskoslezského, Ústeckého a Karlovarského kraje (obecně více ANO, SPD) vs. Praha a nejbližší okolí na straně druhé (více SPOLU a PirSTAN).
 
@@ -44,7 +44,7 @@ Takovýto model nám umožní se podívat na různé úrovně geografické - od 
 
 Lze takto udělat např. i meziměstská srovnání: Brno-střed volí podobně jako Praha 3, nejvíce “pro-koaliční” číst Plzně (Plzeň 2 - Slovany) jako nejméně “pro-koaliční” část Prahy (Praha 11 a 12), Ostrava-Jih podobně jako Nestěmice a Severní terasa v Ústí nad Labem.
 
-{% include image.html url="../attachments/články/volební-mapa-čr-volby-2021/obrázky/momc.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle městských částí ve městech, která jsou takto členěna. Osa X zhruba odpovídá rozdělení ANO+SPD (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
+{% include image.html url="../přílohy/články/volební-mapa-čr-volby-2021/obrázky/momc.svg" description="“Volební” mapa ČR dle výsledků voleb 2021, dle městských částí ve městech, která jsou takto členěna. Osa X zhruba odpovídá rozdělení ANO+SPD (více vlevo) vs. SPOLU+PirSTAN (více vpravo). Osa Y zhruba odpovídá rozdělení ANO+SPOLU (nahoře) vs. PirSTAN+SPD (dole). Velikost nápisu odpovídá počtu voličů v ORP, barva nápisu potom geografickému NUTS2." %}
 
 ### Použitá data
 Data použitá pro tento projekt si najdeme v [NKOD - Národním katalogu otevřených dat][link_nkod]:
@@ -108,10 +108,10 @@ Takové analýzy mohou být použité v akademickém výzkumu či výuce, ale i 
 [link_ciselniky]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F75f8ed026a37e3c52e7365ad6b22acb7 "Číselníky regionů"
 [link_mds]: https://en.wikipedia.org/wiki/Multidimensional_scaling "Multidimensiální škálování"
 [link_pca]: https://cs.wikipedia.org/wiki/Anal%C3%BDza_hlavn%C3%ADch_komponent "https://cs.wikipedia.org/wiki/Anal%C3%BDza_hlavn%C3%ADch_komponent"
-[link_priprava_dat]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/prepare.py "Příprava dat v jazyce Python"
-[link_matice]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/prepare.py "Výpočet matice vzdáleností v jazyce Python"
-[link_analyza]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/anal.r "Postup anaýzy v jazyce R"
-[link_html]: ../attachments/články/volební-mapa-čr-volby-2021/soubory/index.html "Soubor 'mapy' v html/js"
+[link_priprava_dat]: ../přílohy/články/volební-mapa-čr-volby-2021/soubory/prepare.py "Příprava dat v jazyce Python"
+[link_matice]: ../přílohy/články/volební-mapa-čr-volby-2021/soubory/prepare.py "Výpočet matice vzdáleností v jazyce Python"
+[link_analyza]: ../přílohy/články/volební-mapa-čr-volby-2021/soubory/anal.r "Postup anaýzy v jazyce R"
+[link_html]: ../přílohy/články/volební-mapa-čr-volby-2021/soubory/index.html "Soubor 'mapy' v html/js"
 [link_d3js]: https://d3js.org/ "D3 - Data-Driven Documents"
 [link_pandas]: https://pandas.pydata.org/ "Pandas"
 [link_numpy]: https://numpy.org/ "Numpy"

@@ -4,7 +4,7 @@ detail: true
 title: Počet potvrzených nakažených osob COVID-19 v krajích ČR
 ref: covid-19-kraje
 lang: cs
-image: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png
+image: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png
 author: michal_škop
 date: 2020-03-30 03:14:15
 ---
@@ -14,7 +14,7 @@ Ministerstvo zdravotnictví ČR začalo 27.3.2020 zveřejňovat na svém [dashbo
 Použijeme je na vytvoření grafu průběhu počtu potvrzených osob s nákazou virem COVID-19. Tentokrát použijeme Python. Cílem je vytvořit tento graf (inspirovaný grafy z [Financial Times][link_ft]).
 <!--more-->
 
-{% include image.html url="../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png" description="Počet potvrzených nakažených COVID-19 v krajích ČR k 29.3.2020" %}
+{% include image.html url="../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png" description="Počet potvrzených nakažených COVID-19 v krajích ČR k 29.3.2020" %}
 
 ## Použitá data
 - Soubor `CSV` _COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic_, který je dostupný na [dashbordu COVID-19 MZČR][link_opendata_covid19]. Konkrétně jde o [tento soubor][link_osoby_csv].
@@ -298,7 +298,7 @@ fig.write_image(path + "cz_regions_twitter.png")
 ## Výsledek
 
 Výsledný graf s poměrem stran 2:1 (např. pro Twitter):
-{% include image.html url="../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions_twitter.png" description="COVID 19 - Potvrzené případy na 100 000 obyvatel (kumulativní) - Kraje ČR k 29.3.2020" %}
+{% include image.html url="../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions_twitter.png" description="COVID 19 - Potvrzené případy na 100 000 obyvatel (kumulativní) - Kraje ČR k 29.3.2020" %}
 
 - [Výsledný graf 4:3 PNG][link_chart_png]
 - [Výsledný graf 4:3 SVG][link_chart_svg]
@@ -317,15 +317,15 @@ Výsledný graf s poměrem stran 2:1 (např. pro Twitter):
 [link_osoby_csv]: https://onemocneni-aktualne.mzcr.cz/api/v1/covid-19/osoby.csv "Soubor `CSV` COVID-19: Přehled osob s prokázanou nákazou dle hlášení krajských hygienických stanic"
 [link_wikipedia_kraje_v_cesku]: https://cs.wikipedia.org/wiki/Kraje_v_Česku "Wikipedia: Kraje v Česku"
 [link_wikipedia_cz_nuts]: https://cs.wikipedia.org/wiki/CZ-NUTS "Wikipedia: CZ-NUTS"
-[link_cz_regions_csv]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_regions.csv "Základní info o krajích ČR v _CSV_"
+[link_cz_regions_csv]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_regions.csv "Základní info o krajích ČR v _CSV_"
 [link_ft]: https://www.ft.com/coronavirus-latest "Coronavirus tracked: the latest figures as the pandemic spreads"
 [link_python]: https://www.python.org/ "Python"
 [link_pandas]: https://pandas.pydata.org/ "Pandas"
-[link_cz_prepare_data_mzcr_py]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_prepare_data_mzcr.py "Příprava dat v Pythonu"
-[link_cz_matrix_chart_py]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_matrix_chart.py "Vykreslení grafu v Pythonu"
-[link_cz_regions_infected_csv]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_regions_infected.csv "Kumulativní počty nakažených po krajích v _CSV_"
+[link_cz_prepare_data_mzcr_py]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_prepare_data_mzcr.py "Příprava dat v Pythonu"
+[link_cz_matrix_chart_py]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_matrix_chart.py "Vykreslení grafu v Pythonu"
+[link_cz_regions_infected_csv]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/files/cz_regions_infected.csv "Kumulativní počty nakažených po krajích v _CSV_"
 [link_plotly]: https://plotly.com/python/ "Plotly"
 [link_bootswatch]: https://bootswatch.com/ "Bootswatch"
-[link_chart_png]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png "Výsledný graf 4:3 PNG"
-[link_chart_svg]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.svg "Výsledný graf 4:3 SVG"
-[link_chart_twitter_png]: ../attachments/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions_twitter.png "Výsledný graf 2:1 PNG"
+[link_chart_png]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.png "Výsledný graf 4:3 PNG"
+[link_chart_svg]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions.svg "Výsledný graf 4:3 SVG"
+[link_chart_twitter_png]: ../přílohy/články/počet-potvrzených-nakažených-covid-19-v-krajích-čr/images/cz_regions_twitter.png "Výsledný graf 2:1 PNG"

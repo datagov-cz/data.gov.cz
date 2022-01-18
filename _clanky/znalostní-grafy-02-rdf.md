@@ -4,7 +4,7 @@ detail: true
 title: "Série Znalostní grafy: Díl 2: Datový model RDF"
 ref: znalostni-grafy-rdf
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-02.webp
+image: ../přílohy/články/znalostní-grafy/znalostní-grafy-02.webp
 author: martin_nečaský
 date: 2020-08-10 07:00:00 +02:00
 ---
@@ -103,7 +103,7 @@ Predikát je pak pojmenováním hrany.
 Tři věty uvedené výše tak popisují znalostní graf, který je graficky vyjádřen na následujícím obrázku.
 
 {% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-01.svg"
+   url="../přílohy/články/znalostní-grafy/rdf-čsú-01.svg"
    description="Znalostní graf reprezentovaný větami o datové sadě se statistikou cizinců vyjádřeným v omezené češtině"
 %}
 
@@ -143,7 +143,7 @@ Výsledek vidíte v příkladu níže.
 Následující obrázek je vizuální reprezentací 4 výše uvedených trojic.
 
 {% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-02.svg"
+   url="../přílohy/články/znalostní-grafy/rdf-čsú-02.svg"
    description="Znalostní graf reprezentovaný větami o datové sadě se statistikou cizinců s využitím IRI na místě subjektů a objektů"
 %}
 
@@ -294,7 +294,7 @@ Zelené šipky reprezentují RDF trojice ze znalostního grafu Národního katal
 Oranžové šipky reprezentují RDF trojice ze znalostního grafu Registru práv a povinností.
 
 {% include image.html 
-   url="../attachments/články/znalostní-grafy/rdf-čsú-04.svg"
+   url="../přílohy/články/znalostní-grafy/rdf-čsú-04.svg"
    description="Snadné slévání RDF trojic z různých datových zdrojů"
 %}
 

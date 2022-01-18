@@ -39,7 +39,7 @@ Takovým sjednocením bude zajištěno, že obce budou s minimálními náklady 
 Tento přístup není omezen pouze na turistické cíle, ale je vhodný pro jakákoliv data určená veřejnosti a je plně v duchu [definice OFN v zákoně 106/1999 Sb.][ofn-def], která hovoří o OFN jako o nástroji pro zajištění schopnosti vzájemně si poskytovat služby a efektivně spolupracovat.
 
 {% include image.html 
-   url="../attachments/články/otevřené-formální-normy-01-úvod/přehled.svg"
+   url="../přílohy/články/otevřené-formální-normy-01-úvod/přehled.svg"
    description="Obrázek 1 – Národní katalog otevřených dat a OFN propojují poskytovatele a zpracovatele dat a minimalizují jejich náklady"
 %}
 
@@ -67,7 +67,7 @@ Také je graficky znázorňuje.
 Tímto způsobem je sjednocena základní sémantika dat.
 
 {% include image.html 
-   url="../attachments/články/otevřené-formální-normy-01-úvod/turistický-cíl.svg"
+   url="../přílohy/články/otevřené-formální-normy-01-úvod/turistický-cíl.svg"
    description="Obrázek 2 – Konceptuální model Otevřené formální normy Turistické cíle"
 %}
 
@@ -85,7 +85,7 @@ Toto reprezentujeme vazbou s trojúhelníkovou šipkou na jednom konci.
 Jedná se o běžný prostředek konceptuálního modelování zvaný generalizace (někdy také specializace nebo dědičnost).
 
 {% include image.html 
-   url="../attachments/články/otevřené-formální-normy-01-úvod/aktualita.svg"
+   url="../přílohy/články/otevřené-formální-normy-01-úvod/aktualita.svg"
    description="Obrázek 3 – Konceptuální model Otevřené formální normy Aktuality"
 %}
 
@@ -108,7 +108,7 @@ OFN proto vznikají na základě poptávky poskytovatelů nebo konzumentů otev�
 Při publikaci dat dle OFN má tak poskytovatel jistotu, že formátuje svá data správně, jednotně s ostatními poskytovateli a očekávatelně pro zpracovatele.
 
 {% include image.html 
-   url="../attachments/články/otevřené-formální-normy-01-úvod/sportoviště.svg"
+   url="../přílohy/články/otevřené-formální-normy-01-úvod/sportoviště.svg"
    description="Obrázek 4 – Konceptuální model Otevřené formální normy Sportoviště"
 %}
 
@@ -133,7 +133,7 @@ V takovém případě ale je nutné využívat sdílené specifikace, které ji�
 I v tomto případě je nutné vzniklou datovou sadu řádně zdokumentovat tak, aby mohla sloužit alespoň jako základ pro budoucí OFN.
 
 {% include image.html 
-   url="../attachments/články/otevřené-formální-normy-01-úvod/událost.svg"
+   url="../přílohy/články/otevřené-formální-normy-01-úvod/událost.svg"
    description="Obrázek 5 – Konceptuální model Otevřené formální normy Události"
 %}
 

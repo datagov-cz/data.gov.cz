@@ -4,7 +4,7 @@ title: Vybrané techniky analýzy datové kvality a jejich aplikace na data z Ce
 detail: true
 ref: techniky-analýzy-datové-kvality-cep
 lang: cs
-image: ../attachments/články/techniky-analýzy-datové-kvality-cep/0-datová-kvalita-cep.webp
+image: ../přílohy/články/techniky-analýzy-datové-kvality-cep/0-datová-kvalita-cep.webp
 author: martin_víta
 date: 2021-10-29 06:00:00 +01:00
 ---
@@ -29,7 +29,7 @@ Jelikož cílem tohoto článku není podat systematický výklad přístupů k 
 ### Centrální evidence projektů – součást IS VaVaI
 [Centrální evidence projektů][link_cep], zkráceně CEP, je jednou z klíčových součástí [Informačního systému výzkumu, vývoje a inovací][link_isvavai] (IS VaVaI), který provozuje Úřad vlády ČR na základě [Nařízení vlády č. 367/2009 Sb.][link_narizeni] Zhruba řečeno, obsahuje základní (meta)data o projektech výzkumu, vývoje a inovací, které byly financovány z veřejných prostředků, prostřednictvím poskytovatelů z ČR. Bude-li například fakulta XY řešit výzkumný projekt, jehož poskytovatelem je Technologická agentura ČR (organizační složka státu), objeví se tento projekt mezi položkami CEP. ISVaV poskytuje již řadu let informace prostřednictvím webového rozhraní, viz obrázek.
 
-{% include image.html url="../attachments/články/techniky-analýzy-datové-kvality-cep/1-isvavai.webp" description="Webové rozhraní IS VaVaI" %}
+{% include image.html url="../přílohy/články/techniky-analýzy-datové-kvality-cep/1-isvavai.webp" description="Webové rozhraní IS VaVaI" %}
 
 V souladu s Nařízením vlády je CEP jakožto součást ISVaVu poskytován jako [otevřená data][link_od_cep]. Implementace tohoto Nařízení vyústila v možnost stáhnout si CSV distribuce vybraných částí dat, které jsou spravovány v rámci ISVaV. Jednou z takových distribucí je CSV dataset CEPu, ten je opatřen navíc [schématem][link_od_cep_schema].
 
@@ -103,7 +103,7 @@ Výstup má takovouto podobu:
 
 Je-li rok nižší než 1989, jedná se patrně o chybu, neboť v období nemohlo docházet k financování projektů způsobem, který je zaznamenáván v CEP. Používá-li někdo tato data v dalších aplikacích bez rozmyslu, můžou se tyto typy chyb propagovat dále, viz např. v aplikaci [STARFOS][link_starfos].
 
-{% include image.html url="../attachments/články/techniky-analýzy-datové-kvality-cep/2-starfos.webp" description="Webové rozhraní STARFOS" %}
+{% include image.html url="../přílohy/články/techniky-analýzy-datové-kvality-cep/2-starfos.webp" description="Webové rozhraní STARFOS" %}
 
 Podíváme-li se na distribuci hodnot ve sloupci zeme_sidla (mimo NA položky)
 

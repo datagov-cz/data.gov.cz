@@ -4,7 +4,7 @@ title: "Otevřená data: Základní přehled právní úpravy"
 detail: true
 ref: základní-přehled-právní-úpravy
 lang: cs
-image: ../attachments/články/otevřená-data-základní-přehled-právní-úpravy/paragraf.webp
+image: ../přílohy/články/otevřená-data-základní-přehled-právní-úpravy/paragraf.webp
 author: jakub_míšek
 date: 2021-09-30 07:00:00 +01:00
 ---
@@ -40,7 +40,7 @@ Tato nová úprava zavádí pro veřejně dostupné informace vedené v zákonem
 Druhou novinkou je zavedení povinnosti poskytovat jako otevřená data metadata úředních desek, tato povinnost však nabude účinnosti až 1. 2. 2022. 
 Povinné subjekty podle zákona č. 106/1999 Sb. však mohou poskytovat jako otevřená data i jiné informace, než ty u kterých tak stanoví povinně zákon, a to na základě obecné diskrece vyplývající z [§ 5 odst. 5 zákona][paragraf-5].
 
-{% include image.html url="../attachments/články/otevřená-data-základní-přehled-právní-úpravy/ilustracni.webp" description="Ilustrační obrázek" %}
+{% include image.html url="../přílohy/články/otevřená-data-základní-přehled-právní-úpravy/ilustracni.webp" description="Ilustrační obrázek" %}
 
 Česká právní úprava otevřených dat však dozná v blízké době několika změn. 
 V roce 2019 byla přijata směrnice EU č. 2019/1024, o otevřených datech a opakovaném použití informací veřejného sektoru (tzv. OD Směrnice), která s účinností od července 2021 nahradila výše zmíněnou směrnici z roku 2003 a její novelu. 

@@ -4,7 +4,7 @@ detail: true
 title: Z otevřených dat rovnou na plakát
 ref: z-otevřených-dat-rovnou-na-plakát
 lang: cs
-image: ../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/main.webp
+image: ../přílohy/články/z-otevřených-dat-rovnou-na-plakát/images/main.webp
 author: michal_škop
 date: 2021-05-04 07:00:00 +01:00
 ---
@@ -21,7 +21,7 @@ Pokud budou obce tato data připravovat podle určitých společných pravidel, 
 
 Aplikace ukazuje princip, kdy se dokonce jedno obecné řešení může použít v mnoha obcích. Stačí, když obce dodají data – ve standardním formátu a standardně je zaregistrují v Národním katalogu otevřených dat. Při využití aplikace si poté mohou vygenerovat leták ve formátu pdf pro tisk (v několika barevných variantách): s turistickými cíly, s přehledem sportovišť pro vlastní občany.
 
-{% include image.html url="../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/sport.webp" description="Vzhled ukázkové aplikace na vygenerování pdf pro tisk letáků se seznamem sportovišť." %}
+{% include image.html url="../přílohy/články/z-otevřených-dat-rovnou-na-plakát/images/sport.webp" description="Vzhled ukázkové aplikace na vygenerování pdf pro tisk letáků se seznamem sportovišť." %}
 
 ### Použitá data
 Kde vzít data? Pro naši ukázkovou aplikaci čerpáme z několika zdrojů:
@@ -61,7 +61,7 @@ Na závěr je doporučeno dát o svém souboru ke stažení vědět. K tomu slou
 #### Interaktivní úpravy designu
 Aplikace umožňuje také přímou editaci a přidávání vlastních textů nebo fotek, pokud např. některé informace nejsou v originálních datech.
 
-{% include image.html url="../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/details.webp" description="Interaktivní úpravy plakátku" %}
+{% include image.html url="../přílohy/články/z-otevřených-dat-rovnou-na-plakát/images/details.webp" description="Interaktivní úpravy plakátku" %}
 
 ### Výsledek
 Ukázková aplikace běží na adresách: 
@@ -70,7 +70,7 @@ Ukázková aplikace běží na adresách:
 
 Její zdrojový kód a popis je dostupný jako [open source na GitHubu][link_github].
 
-{% include image.html url="../attachments/články/z-otevřených-dat-rovnou-na-plakát/images/double.webp" description="Ukázkové letáky ve dvou různých barevných variantách vygenerovaných ze stejných otevřených dat - zajímavý turistický cíl v okolí." %}
+{% include image.html url="../přílohy/články/z-otevřených-dat-rovnou-na-plakát/images/double.webp" description="Ukázkové letáky ve dvou různých barevných variantách vygenerovaných ze stejných otevřených dat - zajímavý turistický cíl v okolí." %}
 
 ### Další užití
 Stejná data se ale potom mohou použít mnoha dalšími způsoby, což např. popisuje tento článek [Otevřená data a otevřené formální normy][link_klimek]

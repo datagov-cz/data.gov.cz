@@ -25,7 +25,7 @@ Pokud by technická praxe poskytování dat nebyla maximálně sjednocená, bude
 
 Otevřená formální norma je v zákoně definována v § 3 odst. 9 zákona č. 106/1999 Sb. a jde o písemně stanovené pravidlo či technickou specifikaci, která může poměrně přesně určit konkrétní technický způsob, jakým mají být určité informace poskytovány, včetně detailního popisu sémantické struktury poskytovaných dat. Otevřené formální normy postupně vznikají v nejžádanějších oblastech a Ministerstvo vnitra po konzultacích se zainteresovanými aktéry (obce, které již publikují obsah úředních desek jako data; firmy, které poskytují informační systémy pro obce; firma zabývající se zpracováním dat z úředních desek) vydalo otevřenou formální normu pro úřední desky. Její aktuální verze vydaná 20. 7. 2021 je dostupná na [webu OFN pro úřední desky][OFN úřední desky]. Povinné subjekty tak mohou tento návod snadno následovat a naplnit tak svoji novou povinnost, aby poskytované informace byly opětovně využitelné v maximální možné míře. Obecné informace o tom, jak s otevřenými formálními normami pracovat naleznete na [webu ofn.gov.cz][ofn.gov.cz]. 
 
-{% include image.html url="../attachments/články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy/úřední-deska.svg" description="Datový model úřední desky" %}
+{% include image.html url="../přílohy/články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy/úřední-deska.svg" description="Datový model úřední desky" %}
 
 Aby byla splněna povinnost poskytovat daná data jako otevřená data, tak kromě struktury dat dle otevřené formální normy, je třeba splnit i několik dalších zákonných požadavků. Data je třeba opatřit [podmínkami jejich užití][podmínky užití].
 

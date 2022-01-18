@@ -3,7 +3,7 @@ layout: post
 title: Co přinesl rok 2020 v oblasti otevřených dat? Přečtěte si výroční zprávu
 detail: true
 ref: co-prinesl-rok-2020-v-oblasti-otevřených-dat-prectete-si-vyrocni-zprávu
-image: ../attachments/články/výroční-zpráva-2020/úvodníVZ.webp 
+image: ../přílohy/články/výroční-zpráva-2020/úvodníVZ.webp 
 lang: cs
 author: michal_kubáň
 date: 2021-08-24 06:00:00 +01:00

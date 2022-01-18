@@ -4,7 +4,7 @@ detail: true
 title: Využití otevřených dat Zeměměřického úřadu pro povolování dočasných staveb - část 2
 ref: data50-2
 lang: cs
-image: ../attachments/články/využití-data-50/r.surf.contour-output.webp
+image: ../přílohy/články/využití-data-50/r.surf.contour-output.webp
 author: michal_med
 date: 2021-03-25 01:12:23
 ---
@@ -21,21 +21,21 @@ Pro porovnání nadmořské výšky plánované stavby a ochranného pásma je p
 Ochranná pásma (OP) jsou v Leteckém předpisu L14 rozdělena na několik druhů. Pro naše účely jsou zásadní OP se zákazem staveb a OP s výškovým omezením staveb. Předpis definuje ochranná pásma relativním vztahem k ose dráhy v závislosti na kódovém číslu letiště (řekněme, že kódové číslo označuje velikost letiště). Ochranné pásmo se zákazem staveb je pro dráhu definováno následovně:
 
 {% include image.html
-   url="../attachments/články/využití-data-50/OP_zakaz_staveb.webp"
+   url="../přílohy/články/využití-data-50/OP_zakaz_staveb.webp"
    description="Definice ochranného pásma se zákazem staveb dle Leteckého předpisu L14."
 %}
 
 V tomto pásmu je úplný zákaz výstavby. V ochranných pásmech s výškovým omezením staveb nesmí nové stavby přesahovat definovaná ochranná pásma. V pásmech tedy nezáleží jen na poloze, ale i na výšce. Ochranných pásem s výškovým omezením staveb je několik. Jejich výška se obecně zvyšuje se vzdáleností od dráhy, ve směru vzletu a přistání výrazně pomaleji.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/OP_vyskove_omezeni_staveb.webp"
+   url="../přílohy/články/využití-data-50/OP_vyskove_omezeni_staveb.webp"
    description="Náčrt ochranných pásem s výškovým omezením staveb dle Leteckého předpisu L14."
 %}
 
 Každé OP s výškovým omezením staveb je opět definováno relativně vůči koncovým bodům dráhy, případně vůči OP se zákazem staveb. Kromě velikosti však udává i sklon, pod kterým stoupá, případně výšku (relativně vůči dalším OP). Dobře je to vidět u OP vzletových a přibližovacích prostorů.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/OP_vzlet.webp"
+   url="../přílohy/články/využití-data-50/OP_vzlet.webp"
    description="Popis OP vzletových a přibližovacích prostorů podle Leteckého předpisu L14."
 %}
 
@@ -64,7 +64,7 @@ Následující postup platí stejně pro rasterizaci ochranných pásem i pro tv
 Z Data source manager (`Layer -> Data Source Manager`, nebo `Ctrl + L`) lze načíst do QGIS všechny typy vektorových i rastrových dat. Pro vrstevnice v shapefile stačí načítat přes `Vector`, CSV soubory s vrstevnicemi a polygony ochranných pásem je potřeba načíst přes `Delimited text`. V případě CSV je potřeba vybrat souřadnicový referenční systém (EPSG:5514 - S-JTSK / Krovak East North) a zvolit oddělovač, pokud je jiný než čárka `,`. To v našem případě je, je to středník `;`, protože čárkou jsou odděleny dvojice (nebo trojice) souřadnic - pozornému čtenáři připomínáme, že při práci s jiným typem dat, než jsou geo data, je třeba se při přípravě dat k publikaci používání středníku `;` jakožto oddělovače vyhnout, viz [chybný oddělovač údajů][chybný_oddělovač_údajů_link]. Data budou načtena stisknutím tlačítka `Add`.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/add_csv.webp"
+   url="../přílohy/články/využití-data-50/add_csv.webp"
    description="Načtení CSV dat do QGISu."
 %}
 
@@ -75,7 +75,7 @@ Pro načtení dat do Grass GIS stačí mít data načtená v QGISu ve vektorové
 K načtení vektorových dat z QGIS do Grass pluginu slouží modul `v.in.ogr.qgis`. V Grass pluginu ho můžu vyhledat mezi moduly. Vstupem je vektorová vrstva načtená do QGIS a název vrstvy, jak bude načtena do Grass pluginu.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/v.in.ogr.webp"
+   url="../přílohy/články/využití-data-50/v.in.ogr.webp"
    description="Načtení vektorových dat z QGISu do Grass pluginu."
 %}
 
@@ -90,21 +90,21 @@ Dalším konstruktem Grassu, který se nám bude hodit je maska. Maska se nastav
 Pro výpočet DEM použijeme modul `r.surf.contour`, jehož použití je popsáno v již [zmiňované stránce uživatelského návodu Grass GIS](https://grasswiki.osgeo.org/wiki/Contour_lines_to_DEM). Z názvu modulu je patrné, že se jedná o modul pro práci s rastrovými daty. Proto je potřeba vrstevnice nejprve převést do rastru. K tomu použijeme modul `v.to.rast.attr`, tedy převod vektorové vrstvy do rastrové na základě hodnoty atributu. Tím atributem bude samozřejmě nadmořská výška, tedy `elevation`.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/v.to.rast.attr.webp"
+   url="../přílohy/články/využití-data-50/v.to.rast.attr.webp"
    description="Převod vrstevnic z vektoru do rastru."
 %}
 
 Výsledná rastrová vrstva bude vstupem do modulu `r.surf.contour`. Před spuštěním modulu se ujistěte, že máte nastavenou masku a region, včetně požadovaného rozlišení.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/r.surf.contour.webp"
+   url="../přílohy/články/využití-data-50/r.surf.contour.webp"
    description="Výpočet DEM z vrstevnic."
 %}
 
 Připravte se na to, že výpočet může trvat i několik desítek minut. Výstup si poté můžete zobrazit v kanvasu pomocí tlačítka `View output`.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/r.surf.contour-output.webp"
+   url="../přílohy/články/využití-data-50/r.surf.contour-output.webp"
    description="Výsledný DEM."
 %}
 
@@ -113,7 +113,7 @@ Připravte se na to, že výpočet může trvat i několik desítek minut. Výst
 Posledním krokem je uložení výstupu do souboru. Z rastrových formátů jsme zvolili formát GeoTIFF. Soubor je možné uložit z Grass pluginu rovnou do souboru ve formátu GeoTIFF pomocí modulu `r.out.gdal.gtiff`.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/r.out.gdal.gtiff.webp"
+   url="../přílohy/články/využití-data-50/r.out.gdal.gtiff.webp"
    description="Export rastrového DEM do souboru ve formátu GeoTIFF."
 %}
 

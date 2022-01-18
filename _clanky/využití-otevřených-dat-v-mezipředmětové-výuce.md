@@ -4,7 +4,7 @@ title: Využití otevřených dat v mezipředmětové výuce na základní škol
 detail: true
 ref: využití-otevřených-dat-v-mezipředmětové-výuce
 lang: cs
-image: ../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/úvod.webp
+image: ../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/úvod.webp
 author: miroslav_mráz
 date: 2021-05-31 07:00:00 +01:00
 ---
@@ -32,7 +32,7 @@ Každý, kdo rozjíždí projekt (nejen) s žáky ví, jak důležitá je úvodn
 
 Osobní motivace učitele byla tedy splněna. Jak ale zajistit to hlavní — osobní motivaci žáků? Uvažoval jsem o heslech „datová analýza je oborem 21. století”, „data jsou sexy”, ale mám takový pocit, že na tato hesla slyší hlavně dospělí lidé, co se chtějí rekvalifikovat z méně odborné na více odbornou pozici a rozhodně takto nepřemýšlí dospívající děti na základní škole. Daleko více věřím v přenos [„feynmanovského” nadšení][Feynman] z poznání světa kolem sebe a poskytnutí možností, jak nahlédnout pod pokličku lidem, kteří se v tématu pohybují. Proto máme v plánu (kvůli covid19 jsme zatím neměli příležitost) navštívit Oddělení dat, analýz a evaluací města Brno, kde žáci uvidí, jak se s daty pracuje v rámci města. Neodpustil jsem si také žákům pustit [ukázku ze dne v životě datového analytika][datový analytik] a zeptat se jich, jestli by se jim tato práce líbila.
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/datový-analytik.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/datový-analytik.webp" 
 description="Odpovědi žáků, možnosti 1=vůbec, 5=boží. Při tomto výsledku mě napadá učitelské moudro, že stačí zapálit oheň poznání alespoň u jednoho žáka, aby to mělo smysl." %}
 
 ## 2. Co jsou otevřená data, k čemu jsou a jak si o ně říct. Volba datasetů
@@ -42,14 +42,14 @@ description="Odpovědi žáků, možnosti 1=vůbec, 5=boží. Při tomto výsled
 * Data o [mobilitě obyvatel][mobilita obyvatel] jsem našel na portálu [data.brno.cz][Data Brno], který je registrován v [Národním katalogu otevřených dat (NKOD)][NKOD]. Rozhodl jsem se použít data uživatelů aplikace Waze, protože a) byly dostupné narozdíl od dat ze SIM karet v delším časovém horizontu (ačkoli jsem je musel potupně přepsat ručně z grafu Pokles mobility obyvatelstva v Brně v [tomto článku] a popravdě nevím, proč není v tomto časovém období také v csv.) a b) narozdíl od regionálních Google Mobility reportů se týkaly Brna.
 * Kde seženeme data ke kvalitě ovzduší? Touto otázkou jsem se zabýval při plánování projektu ještě o prázdninách. Weby s daty o kvalitě ovzduší, na které jsem narazil ([Můžu dýchat][můžu dýchat] a [Brněnské ovzduší][brněnskéovzduší]), čerpaly z dat [Českého hydrometeorologického ústavu][CHMI]. Jenže tam jsem dohledal pouze aktuální denní hodnoty a data z roku 2019 (později jsem se dozvěděl, že je to proto, že data z ČHMÚ prochází validací a jsou uveřejněna se zpožděním, tzn. data za rok 2020 se uveřejňují v první polovině roku 2021). Rozhodl jsem se tedy obrátit s prosbou na Můžu dýchat a k mému příjemnému překvapení jsem o pár dnů později obdržel dataset ve formátu csv.
     
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/zadání-pro-žáky.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/zadání-pro-žáky.webp" 
 description="Zadání pro žáky" %}
 
 * Po žácích jsem chtěl, aby si o data sami řekli. Pro většinu z nich to bylo poprvé, co si o něco říkali nějaké instituci. Níže jsou ukázky jejich emailů.
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/žádost-o-otevřená-data-1.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/žádost-o-otevřená-data-1.webp" 
 description="" %}
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/žádost-o-otevřená-data-2.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/žádost-o-otevřená-data-2.webp" 
 description="Ukázka méně formálního psaného projevu žáků" %}
 
 ## Intermezzo — Zjišťuju, že nevím, že nevím
@@ -58,22 +58,22 @@ Nevím už ani proč, ale někdy v půlce října v sobotu (ano — skoro měsí
 
 Původně jsme měli v úmyslu postavit vizualizaci na částicích PM10, nicméně ty jsou z 59% způsobeny lokálním vytápěním domácností a pouze 7% dopravou. Naopak NO2 je ze 34% způsoben dopravou a je tedy relevantnějším ukazatelem pro náš záměr. Pokud bychom se zaměřili na PM10, dospěli bychom k závěru, že omezení dopravy způsobilo zhoršení kvality ovzduší. Proč? Začátek roku 2020 byl teplotně nadprůměrný a panovaly příznivé meteorologické podmínky (nadprůměrná rychlost větru — částice jsou „rozfoukány”). Přesně v době vyhlášení nouzového stavu však došlo k výraznému ochlazení. V kombinaci s vládními omezeními a sníženou mobilitou lidé pobývali více doma a více vytápěli, což vedlo k zvýšení podílu PM10 v ovzduší a tudíž horší kvalitě vzduchu.
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/doprava-březen.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/doprava-březen.webp" 
 description="" %}
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/kvalita-ovzduší.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/kvalita-ovzduší.webp" 
 description="Paradox, na který mě upozornil vedoucí brněnské pobočky ČHMÚ a seznam článků k nastudování. Poté jsem nabrífoval také žáky." %}
 
 ## 3. Ověření první části hypotézy — Vedl pokles mobility k lepšímu ovzduší?
 
 Žáci v první části projektu zkombinovali datasety s mobilitou uživatelů Waze a vývojem částic NO2 v Brně v období 1.3. — 31.5. 2020 a vyšel jim graf níže. Poté měli zvolit, co jim vyšlo.
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/závěr-první-části.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/závěr-první-části.webp" 
 description="Zadání 1. části projektu" %}
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/počet-uživatelů-waze.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/počet-uživatelů-waze.webp" 
 description="Výsledky žáků v 1. části projektu" %}
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/co-ti-vychází.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/co-ti-vychází.webp" 
 description="Výsledky žáků v 1. části projektu" %}
 
 Na závěr této části projektu jsem chtěl zdůraznit toto:
@@ -89,16 +89,16 @@ V druhé části projektu jsme přidali fyziku (téma energetiky). S kolegyněmi
 * Automobil se spalovacím motorem má „druhý” výfuk (na výrobu 1l benzínu je potřeba 1kWh, což obnáší emise cca 600 gCO2)
 * Elektroauto si s sebou nese „uhlíkový batoh” z výroby baterie, který postupně maže během provozu
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/energetika.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/energetika.webp" 
 description="" %}
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/zadání2.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/zadání2.webp" 
 description="Zadání 2. části projektu" %}
 
 Žáci na základě dostupných dat porovnali celkové emise obou aut a vypočítali, po kolika kilometrech elektroauto smaže svůj uhlíkový batoh z výroby baterie.
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/srovnání.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/srovnání.webp" 
 description="" %}
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/porovnání.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/porovnání.webp" 
 description="Výsledky žáků v 2. části projektu" %}
 
 Na závěr této části projektu jsem chtěl zdůraznit toto:
@@ -112,12 +112,12 @@ Na závěr této části projektu jsem chtěl zdůraznit toto:
 Na závěr měli žáci na základě svých výsledků napsat, k čemu došli a zda se potvrdila úvodní hypotéza:
 *Během COVID krize se zlepšila kvalita ovzduší v Brně díky snížené veřejné a soukromé dopravě. Pokud bychom zvýšili počet elektroaut, dala by se kvalita ovzduší udržet na vysoké úrovni i v současnosti bez omezení mobility obyvatel.*
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/co-jsi-zjistil.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/co-jsi-zjistil.webp" 
 description="Závěr projektu — k čemu přišli žáci" %}
 
 Na závěr projektu jsem doplnil závěry žáků následovně:
 
-{% include image.html url="../attachments/články/využití-otevřených-dat-v-mezipředmětové-výuce/hypotéza.webp" 
+{% include image.html url="../přílohy/články/využití-otevřených-dat-v-mezipředmětové-výuce/hypotéza.webp" 
 description="Potvrdila se úvodní hypotéza? aneb Co jsme zkoumali a co ne." %}
 
 ## Poučení

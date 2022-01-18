@@ -4,7 +4,7 @@ title: Dopravní data z navigace Waze - jak je získat a jak s nimi pracovat?
 detail: true
 ref: data-waze-2021
 lang: cs
-image: ../attachments/články/data-waze-2021/4-srovnanimest.webp
+image: ../přílohy/články/data-waze-2021/4-srovnanimest.webp
 author: martin_dvořák
 date: 2021-08-31 07:00:00 +01:00
 ---
@@ -16,7 +16,7 @@ Waze je navigační software pro mobilní telefony a tablety vyvinutý izraelsko
 ## Jak získat data z Waze? 
 Na tuto otázku existuje více odpovědí, zejména v závislosti na tom, k čemu data potřebujete.  Základní statistické přehledy poskytuje společnost Waze na stránkách [Waze Stats][link_stats]. Při rozkliknutí záložky “CZ” pak dostaneme informace o počtech aktivních uživatelů Waze pro dané místo (město, region) v daném čase. Pro přehled o vývoji dopravy ve městě se to může jevit jako dostatečná informace, která může obohatit některé z dopravních analýz. 
 
-{% include image.html url="../attachments/články/data-waze-2021/1-wazestats.webp" description="Týdenní maxima počtu uživatelů Waze v Brně" %}
+{% include image.html url="../přílohy/články/data-waze-2021/1-wazestats.webp" description="Týdenní maxima počtu uživatelů Waze v Brně" %}
 
 Waze však poskytuje i živá data, jež jsou určena pro územní samosprávy, a která Waze poskytuje v rámci projektu ´Waze for Cities Data´ (dále WfC), dříve ´Connected Citizens Programme´. Data z WfC jsou dostupná po registraci - uživatelům však poté nabízí mnohem širší spektrum atributů pro další analýzy, navíc se při zvolení tohoto přístupu otevírá i možnost katalogizace v lokálním katalogu (LKOD, viz dále v článku). 
 
@@ -26,7 +26,7 @@ WfC je program pro sdílení dat, který byl společností Waze nabídnut munici
 * následně vyberete území, pro které chcete zpracovávat data (polygonový výběr - nutno “vyklikat” v mapě)
 * odešlete přihlášku a čekáte na na potvrzení (cca do týdne) 
 
-{% include image.html url="../attachments/články/data-waze-2021/2-vyberoblasti.webp" description="Polygonový výběr oblasti" %}
+{% include image.html url="../přílohy/články/data-waze-2021/2-vyberoblasti.webp" description="Polygonový výběr oblasti" %}
 
 Po potvrzení ze strany společnosti Waze se vám zpřístupní “Waze partner portal”, ze kterého můžete čerpat data. Ta je možné odebírat v zásadě dvěma způsoby: 
 * prostřednictvím Google Data Studia, kde se nachází již zpracovaná data v podobě dashboardů 
@@ -37,18 +37,18 @@ Ve vyhledávači Google zadáme “Google data studio” a po užití stejných 
 
 Zvolíme základní přehled “Key Alerts Dashboard”, který obsahuje 3 jednotlivé reporty: události hlášené uživateli (alerts), dopravní nehody (accidents) a tzv. nepravidelnosti (irregularities), které vyjadřují odchýlení od běžného stavu - v tomto případě to znamená zpoždění, ke kterému dochází oproti plynulému provozu. Všechna data se načítají od uživatelů Waze, kteří projíždí vybraným územím, jež jsme odesílali v přihlášce. Obrázek níže popisuje události (alerty) podle typu (zácpy, nehody, uzavírky či nebezpečné meteorologické podmínky). Veškeré atributy vychází z [číselníku Waze for Cities Data - Data Dictionary for Alerts, Jams, and Irregularities][link_číselník]. Díky těmto předpřipraveným dashboardům tak máme základní přehled např. o problémových ulicích, kde dochází k největším zpožděním či kde dochází k největší nehodovosti, a to v libovolném časovém úseku (od doby registrace do programu WfC). 
 
-{% include image.html url="../attachments/články/data-waze-2021/3-ciselnik.webp" description="Typy událostí v jednotlivých dnech" %}
+{% include image.html url="../přílohy/články/data-waze-2021/3-ciselnik.webp" description="Typy událostí v jednotlivých dnech" %}
 
 Nevýhodou těchto dashboardů je absence mapových podkladů pro prostorovou vizualizaci dat (dají se však napojit např. použitím ´Big query Geoviz´). Je však k dispozici filtr, který v několika atributech umožňuje průzkum dat až do detailu konkrétní ulice a v libovolném čase. Data se rovněž dají z jednotlivých grafů stáhnout do formátu csv nebo nahrát do tabulek Google. 
 
 Covidový dashboard poté ilustruje, jak se proměnila mobilita, respektive automobilová doprava ve městech či státech. Dashboard ukazuje změnu naježděných kilometrů vztažených ke dvěma únorovým týdnům roku 2020, kdy chování obyvatel nebylo Covidem-19 ovlivněno. Níže na obrázku vidíte dashboard srovnávající mobilitu v Praze, Brně a Bratislavě od března 2020 do března 2021. Únorové hodnoty se tedy pohybují v “nulovém” pásmu. Posléze hodnoty začínají variovat podle toho, kdy přišla jaká omezení pohybu. Nejvyšší nárůst automobilové mobility tak nastal v létě, kdy panovala politika rozvolnění. Na podzim a po Novém roce pak došlo opětovně k omezení mobility. Na základě těchto dat se dá rovněž konstatovat, že v Bratislavě byl pokles mobility vůči únorovým datům vyšší, než-li v Praze a Brně. 
 
-{% include image.html url="../attachments/články/data-waze-2021/4-srovnanimest.webp" description="Mobilita ve vybraných městech" %}
+{% include image.html url="../přílohy/články/data-waze-2021/4-srovnanimest.webp" description="Mobilita ve vybraných městech" %}
 
 ### Živá data Waze
 Jak již bylo řečeno, registrací do programu WfC může získat veřejná správa přístup k živým datům v podobě fomátů JSON či XML. Data z Waze feedu se přepisují každé 2 minuty, proto je důležité data ukládat do databáze, aby bylo možné analyzovat i historická data. Data, která si takto ukládáme a případně i zpracováváme, lze posléze katalogizovat v lokálním, potažmo [Národním katalogu otevřených dat (NKOD)][link_NKOD], a to ve standardech otevřených dat se všemi náležitostmi. Doposud jsou v NKOD dvě datové sady, které zde publikoval brněnský magistrát, a sice Plynulost dopravy a Události na cestách. Tyto datové sady jsou zpracovány skrz [GeoEvent server][link_geoevent] - server pro zpracování senzorických dat, včetně jejich ukládání a publikace, pro který má Waze [speciální konektor][link_konektor] včetně návodu. Výsledkem jsou datové sady katalogizované na [datovém portálu města Brna][link_databrno]. Další možností zpracování, analýzy a vizualizace waze dat nabízí například nástroj [Waze Analytics Relational-database Platform][link_wazeanalytics], jehož instalace je popsána na GitHubu. 
 
-{% include image.html url="../attachments/články/data-waze-2021/5-databrno.webp" description="Waze datasety v LKOD data.Brno" %}
+{% include image.html url="../přílohy/články/data-waze-2021/5-databrno.webp" description="Waze datasety v LKOD data.Brno" %}
 
 ## Závěrem
 Zapojením se do programu WfC se otevírá městům celá řada zajímavých možností, jak z tohoto členství benefitovat. Vyjma analýzy dat prostřednictvím Google Data Studia mohou obce či další veřejné instituce začlenit real-time (near real-time) data do svých lokálních katalogů a publikovat tak otevřená data s pravidelnou aktualizací (minutovou, hodinovou, denní, ...). Bez samotného využívání dat pak může město prostřednictvím zapojení do programu WfC například informovat občany o poloze vozidel svážejících odpad, jež dokáží dopravu zejména v úzkých ulicích značně komplikovat. Waze je tedy jednoznačně příkladem dobré praxe sdílení dat soukromého subjektu se zástupci veřejné správy, se kterými pak mohou i další uživatelé dále pracovat a využívat. 

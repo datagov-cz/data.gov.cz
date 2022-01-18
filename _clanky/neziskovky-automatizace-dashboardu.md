@@ -4,7 +4,7 @@ title: Jak na automatické aktualizace “dashboardu”, i když neumím program
 detail: true
 ref: neziskovky-automatizace-dashboardu
 lang: cs
-image: ../attachments/články/neziskovky-automatizace-dashboardu/obrázky/uvod.webp
+image: ../přílohy/články/neziskovky-automatizace-dashboardu/obrázky/uvod.webp
 author: robert_spál
 date: 2021-02-16 07:00:00 +01:00
 ---
@@ -80,7 +80,7 @@ Kdyby jste se v této fázi ztratili, nebo si nevěděli rady, je dobré se tak�
 *Tip: Je dobrou praxí změnit název JSON souboru hned po stažení. 
 Nejlépe na nějaký lehce zapamatovatelný výraz, protože s názvem souboru budeme ještě pracovat.*
 
-{% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/developer.webp" description="Volba typu ověřování. Je zde také možnost vygenerovat si JSON klíč znovu. Tuto funkci najdete v editaci svého nově vytvořeného servisního účtu v sekci Service Account/Servisní účty." %}
+{% include image.html url="../přílohy/články/neziskovky-automatizace-dashboardu/obrázky/developer.webp" description="Volba typu ověřování. Je zde také možnost vygenerovat si JSON klíč znovu. Tuto funkci najdete v editaci svého nově vytvořeného servisního účtu v sekci Service Account/Servisní účty." %}
 
 ## Jak na to
 
@@ -89,11 +89,11 @@ Následně si vytvořte prázdný [Google Sheet][SHEETS] a zkontrolujte, zda-li 
 Pokud ne, tak ji přejmenujte. 
 Pak nasdílejte Google Sheet na úrovni editor s emailem, který jste právě zkopírovali z JSON souboru.
 
-{% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/key.webp" description="JSON soubor s emailem pro sdílení. Sdílení emailu umožní Google Sheets API ověřit, zda jste to skutečně vy, kdo chce data aktualizovat." %}
+{% include image.html url="../přílohy/články/neziskovky-automatizace-dashboardu/obrázky/key.webp" description="JSON soubor s emailem pro sdílení. Sdílení emailu umožní Google Sheets API ověřit, zda jste to skutečně vy, kdo chce data aktualizovat." %}
 
 Dalším krokem je pak [stažení python skriptu][SKRIPT], s kterým budeme dále pracovat v textovém editoru.
 
-{% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/skript.webp" description="Skript po otevření v textovém editoru." %}
+{% include image.html url="../přílohy/články/neziskovky-automatizace-dashboardu/obrázky/skript.webp" description="Skript po otevření v textovém editoru." %}
 
 Pro další práci jsou důležité 3 řádky - 9, 19 a 21. 
 Začneme tedy řádkem číslo 9. 
@@ -103,13 +103,13 @@ Seznam možností a podrobný návod najdete například [zde][IMPORTOTHER].
 V našem případě načítáme data z [NKOD][NKOD], konkrétně z datové sady [Neziskové organizace v ČR][NEZISKOVKY] a její distribuce v CSV. 
 Formát CSV jsme zvolili z důvodu jednoduché manipulace a širokého využívání veřejností.
 
-{% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/neziskovky.webp" description="Datová sada Neziskové organizace v ČR s distribucí CSV z které skript stahuje data." %}
+{% include image.html url="../přílohy/články/neziskovky-automatizace-dashboardu/obrázky/neziskovky.webp" description="Datová sada Neziskové organizace v ČR s distribucí CSV z které skript stahuje data." %}
 
 V řádku 19 nahradíte ještě cestu k JSON klíči tak, aby směřovala do umístění JSON souboru na vašem počítači. 
 V řádku 21 pak sekvenci v závorce nahradíte vlastním ID Google Sheetu, se kterým chcete pracovat. 
 Toto ID najdete v url řádku otevřeného Google Sheetu. 
 
-{% include image.html url="../attachments/články/neziskovky-automatizace-dashboardu/obrázky/sheets.webp" description="ID Google Sheetu" %}
+{% include image.html url="../přílohy/články/neziskovky-automatizace-dashboardu/obrázky/sheets.webp" description="ID Google Sheetu" %}
 
 Tak a jste u konce! 
 Jste teď připraveni automaticky aktualizovat data do velikosti 150 tisíc záznamů. 

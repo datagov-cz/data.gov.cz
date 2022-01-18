@@ -30,16 +30,16 @@ Z tohoto pohledu je NKOD klíčovým informačním systémem veřejné správy.
 Národní katalog otevřených dat v červnu 2021 obsahuje datové sady 45 poskytovatelů z řad ministerstev, obcí, krajů a dalších orgánů veřejné správy.
 Přes uživatelské rozhraní katalogu lze vyhledávat datové sady jednak pomocí textového hledání v jejich názvech a popisech (viz obrázek 1), ale také pomocí tzv. fasetů - tedy podle názvu poskytovatele, klíčových slov, témat datových sad a formátu datových souborů.
 
-{% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/textové-vyhledávání-v-nkod.webp" description="Obrázek 1 - Textové vyhledávání v NKOD" %}
+{% include image.html url="../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/textové-vyhledávání-v-nkod.webp" description="Obrázek 1 - Textové vyhledávání v NKOD" %}
 
 Výsledky hledání nemusí být zobrazeny pouze jako potenciálně dlouhý seznam datových sad.
 Lze je seskupit podle klíčových slov nebo témat do tzv. word cloudu, kde je vidět, kolik datových sad je zařazeno pod které téma či klíčové slovo (viz obrázek 2).
 
-{% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/zobrazení-výsledků-vyhledávání-podle-témat.webp" description="Obrázek 2 - Zobrazení výsledků vyhledávání podle témat datových sad" %}
+{% include image.html url="../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/zobrazení-výsledků-vyhledávání-podle-témat.webp" description="Obrázek 2 - Zobrazení výsledků vyhledávání podle témat datových sad" %}
 
 Pokud jste datovou sadu nenalezli, můžete zkusit popsat, co jste hledali a nenašli, jako požadavek na otevření dat pomocí odkazu “Podnět na data k otevření” v patičce.
 
-{% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/záznam-datové-sady.webp" description="Obrázek 3 - Záznam datové sady" %}
+{% include image.html url="../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/záznam-datové-sady.webp" description="Obrázek 3 - Záznam datové sady" %}
 
 Po nalezení hledané datové sady je zobrazen její detailní záznam, tzv. metadata (viz obrázek 3).
 Ten obsahuje název, popis, klíčová slova a témata, kterými je datová sada popsaná, dále pak periodicitu aktualizace datové sady, informace o tom, jakého časového úseku, případně území se datová sada týká, a pak také odkaz na dokumentaci datové sady.
@@ -54,7 +54,7 @@ Jedna datová sada může být k dispozici ve formě více distribucí, které s
 Každá distribuce pak má specifikovány své podmínky užití, datový formát a, pokud je k dispozici, strojově čitelné schéma souboru ke stažení či specifikaci datové služby.
 Otevřené podmínky užití pak přispívají k naplnění principu reusability z FAIR principů dat.
 
-{% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/distribuce-datové-sady.webp" description="Obrázek 4 - Distribuce datové sady ve formě souborů ke stažení a webových služeb" %}
+{% include image.html url="../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/distribuce-datové-sady.webp" description="Obrázek 4 - Distribuce datové sady ve formě souborů ke stažení a webových služeb" %}
 
 Při tvorbě záznamu o datové sadě poskytovatelé často dělají tu chybu, že jako distribuce jedné datové sady prezentují soubory s rozdílným obsahem, například rozpočet po letech, nebo soubory podle městských částí.
 To je ale v rozporu s webovým standardem pro datové katalogy DCAT (Data Catalog Vocabulary), jeho evropskou adaptací DCAT-AP a českou implementací DCAT-AP-CZ v podobě otevřené formální normy, viz omezení na distribuce výše.
@@ -64,7 +64,7 @@ To jsou datové sady, které nemají vlastní distribuce, ale zastřešují jin�
 Takto lze datové sady hierarchicky uspořádat bez porušování standardů a vynechávání důležitých metadat.
 U datové sady, která je součástí datové série, je toto indikováno odkazem “Tato datová sada je součástí datové série” viz obrázek 5.
 
-{% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/datová-sada-součástí-datové-série.webp" description="Obrázek 5 - Datová sada součástí datové série" %}
+{% include image.html url="../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/datová-sada-součástí-datové-série.webp" description="Obrázek 5 - Datová sada součástí datové série" %}
 
 ## Kontroly kvality registrovaných datových sad
 Veškeré odkazy, které jsou součástí záznamů datových sad v NKOD, jsou pravidelně kontrolovány z hlediska dostupnosti a také z hlediska dostupnosti techniky CORS, což je zjednodušeně řečeno nastavení webového serveru, které umožňuje s daty pracovat aplikacím běžícím přímo ve webových prohlížečích, kterých je poslední dobou čím dál tím více.
@@ -81,7 +81,7 @@ Pokud ale například poskytovatel indikuje, že má vlastní úpravu podmínek 
 
 
 ## Evropská hierarchie datových katalogů
-{% include image.html url="../attachments/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/evropská-hierarchie-datových-katalogů.svg" description="Obrázek 6 - Hierarchie katalogů otevřených dat" %}
+{% include image.html url="../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/evropská-hierarchie-datových-katalogů.svg" description="Obrázek 6 - Hierarchie katalogů otevřených dat" %}
 Národní katalog otevřených dat je součástí hierarchie evropských datových katalogů (viz obrázek 6).
 Záznamy o datových sadách získává jednak přímou registrací, ale také přebíráním těchto záznamů z Lokálních katalogů otevřených dat (LKOD) provozovaných většími poskytovateli dat, jako je např. Česká správa sociálního zabezpečení, Ministerstvo financí či Královéhradecký kraj.
 Z druhé strany jsou záznamy o datových sadách z NKOD poskytovány Oficiálnímu portálu evropských dat (data.europa.eu), kde se záznamy o datech, a to nejen otevřených, sbíhají z celé Evropské unie.

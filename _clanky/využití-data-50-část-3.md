@@ -4,7 +4,7 @@ detail: true
 title: Využití otevřených dat Zeměměřického úřadu pro povolování dočasných staveb - část 3
 ref: data50-3
 lang: cs
-image: ../attachments/články/využití-data-50/screen_vysledku.webp
+image: ../přílohy/články/využití-data-50/screen_vysledku.webp
 author: michal_med
 date: 2021-03-26 01:12:23
 ---
@@ -27,14 +27,14 @@ Výstupem z interpolačních úloh je jeden soubor s digitálním modelem relié
 Aplikace, výstižně nazvaná Altimeter, slouží ke zjištění nadmořské výšky reliéfu a jejímu porovnání s výškou ochranného pásma v místě, kde by měla stát stavba. Největší část okna aplikace zabírá mapové okno (k vizualizaci mapy je použit [React Leaflet][react-leaflet], tedy integrace javascriptové knihovny `Leaflet` pro framework `React`). Mapové podklady jsou použity dílem [OpenStreetMap][openstreetmap] a dílem ze služby [Web Map Service (WMS) pro datovou sadu INSPIRE Parcely][wms-cp], poskytovanou Českým úřadem katastrálním a zeměměřickým (ta se dá ve spodní liště přepínačem vypnout). Kombinací OpenStreetMap a vrstvy s hranicemi katastrálních parcel vzniká tato podkladová mapa:
 
 {% include image.html
-   url="../attachments/články/využití-data-50/podkladová-mapa.webp"
+   url="../přílohy/články/využití-data-50/podkladová-mapa.webp"
    description="Podkladová mapa v aplikaci Altimeter."
 %}
 
 Základní funkce aplikace spočívá ve vybrání místa kliknutím do mapy a stisknutím tlačítka `Ověřit`. V pravé části aplikačního okna se objeví informace o vybraném bodu.
 
 {% include image.html
-   url="../attachments/články/využití-data-50/informace-o-překážkách.webp"
+   url="../přílohy/články/využití-data-50/informace-o-překážkách.webp"
    description="Výsledky měření v aplikaci Altimeter."
 %}
 
@@ -50,7 +50,7 @@ Po ověření výšky je možné zobrazit `Protokol k tisku`. Zatím se jedná o
 Během testování jsme narazili na několik problémů. Jako nejzávažnější se ukázal být problém, kdy na některých místech v mapě je výrazně vyšší hodnota maximální výšky stavby, než by dávalo smysl. Po podrobnějším prozkoumání dat jsme zjistili, že to způsobuje rozlišení výstupních rastrů. Na následujícím obrázku jsou vidět ochranná pásma dráhy a přechodové plochy, každé vizualizované v jiné barevné škále (kvůli kontrastu).
 
 {% include image.html
-   url="../attachments/články/využití-data-50/díry.webp"
+   url="../přílohy/články/využití-data-50/díry.webp"
    description="Vizualizace 'děr' mezi jednotlivými ochrannými pásmy."
 %}
 

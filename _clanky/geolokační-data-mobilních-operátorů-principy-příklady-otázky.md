@@ -25,7 +25,7 @@ Jedná se o signalizační data, která vysílá SIM karta a jejichž prostředn
 
 Interaktivní mapu stanic BTS je možné nalézt na webu [GSMweb][GSM], kde jsou zmapované stanice kategorizovány dle jednotlivých poskytovatelů. Níže na obrázku je výřez mapy sítí BTS společnosti T-Mobile v Brně. Data jsou na webu i ke stažení.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/1.GSM.png" description="BTS od T-Mobile v Brně" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/1.GSM.png" description="BTS od T-Mobile v Brně" %}
 
 V praxi mobilní telefon při komunikaci s přenosovou sítí neustále shromažďuje a analyzuje informace o počtu antén ve svém okolí a síle jejich signálu. Na základě aktuální polohy antén si pak pro komunikaci se sítí vybírá zpravidla tu nejbližší s nejsilnějším signálem. Z geografického hlediska je pak možné území rozdělit do oblastí (cells/buněk), které obsluhují jednotlivé antény.
 
@@ -61,11 +61,11 @@ Výsledek [Přítomné obyvatelstvo v obcích Jihomoravského kraje][Přítomní
 
 Na základě těchto dat pak lze s určitou mírou (ne)přesnosti vizualizovat časoprostorové rytmy v obcích. Na základě příkladu výše tak máme rámcový přehled o vývoji počtu přítomných obyvatel v 672 obcích Jihomoravského kraje. Největší přidanou hodnotou těchto dat je pak srovnání s údaji ČSÚ o počtu obyvatel, který se samozřejmě v čase nemění. S ohledem na rozvoj samospráv nebo územní plánování, ale třeba i na Rozpočtové určení daní (RUD), mohou tato data pomoci lépe pochopit dané území.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/2.PROFIL.png" description="Denní rytmus území obce Hodonín" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/2.PROFIL.png" description="Denní rytmus území obce Hodonín" %}
 
 Případně je možné stejná data kategorizovat dle typologie osob, tedy zda je daný uživatel v území rezident, pracující či návštěvník, viz tabulka. Například statut rezidenta je přiřazen osobě, která se dlouhodobě a pravidelně vyskytuje v daném území v nočních hodinách (00:00-05:00).
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/3.TAB_KAT.png" description="Rozdělení dle rezidentů, návštěvníků a pracujících" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/3.TAB_KAT.png" description="Rozdělení dle rezidentů, návštěvníků a pracujících" %}
 
 Druhým typem dat jsou data o dojížďce, tedy samotné vztahy v území. Tento typ dat je lepší pro znázorňování nejvýznamnějších dopravních proudů. Je samozřejmě nutné si stanovit parametry, které pohyby chceme sledovat, v jakém rozsahu, po jak dlouhou dobu apod. Dodaný výstup tak může vypadat například takto:
 
@@ -83,35 +83,35 @@ Kde položka “start_cas” a cil_cas” nabývá hodnot 0-23, “start_level�
 
 V této ukázce budou vizualizovány základní přepravní proudy ve městě Brně prostřednictvím open source geografického nástroje [QGIS][QGIS]. Cílem bude zobrazit hlavní přepravní proudy mezi katastrálními územími (48 jednotek) a zjistit tak, které katastrální vazby jsou v Brně nejsilnější. Níže v mapě vidíte, k jakému výsledku chceme dojít.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/4.VYSLEDEK_PROUDY.png" description="Nejintenzivnější přepravní vazby mezi KÚ v Brně" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/4.VYSLEDEK_PROUDY.png" description="Nejintenzivnější přepravní vazby mezi KÚ v Brně" %}
 
 Jako podklad použijeme dataset [Pohyb obyvatel na základě dat mobilního operátora][Dataset] za typické pondělí. Tento dataset obsahuje 10 atributů. Pro výsledek práce, kde nás zajímají pouze dopravní proudy mezi katastry Brna, můžeme smazat veškeré časové atributy (`start_cas`, `cil_cas`) i sloupce `day` či `pocet`. Jelikož nás zajímají pouze KÚ Brna (48 jednotek), zapneme si filtr nad sloupci `start_level` a `cil_level`, které označují úrovně administrativních celků (1=KÚ v Brně, 2=obce v okrese Brno-venkov, 3=SO ORP v Jihomoravském kraji, 4=kraje v ČR). Vybereme pouze “1”. Pro práci je ještě vhodné data katastrálních území obohatit o centroidy (souřadnice X, Y). Ty získáme ze souboru “Číselník katastrálních území v Brně”. Připojení pak může proběhnout přes funkci `SVYHLEDAT` přímo v excelu nebo další funkcí `JOIN` v jiném nástroji. Společným atributem jsou kódy jednotlivých katastrů. 
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/5.STRUKTURA.png" description="Struktura dat" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/5.STRUKTURA.png" description="Struktura dat" %}
 
 Nyní už máme data nachystaná pro práci v programu QGIS. Po spuštění vybereme z horní lišty “vrstva”-->”přidat vrstvu”-->”přidat textový soubor s oddělovači” a posléze vybereme upravený soubor avg_day_2_wednesday. V dialogovém okně si pak pohlídáme oddělovač (čárka), správně vyplněné souřadnice XY (centroidy KÚ) a souřadnicový systém (EPSG:4326 WGS 84)a klikneme “přidat”.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/6.QGIS_VLOŽIT.png" description="Načtení dat do QGIS" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/6.QGIS_VLOŽIT.png" description="Načtení dat do QGIS" %}
 
 Do mapy se nám tak přidalo 48 bodů (centroidy KÚ). Pro lepší práci je vhodné zvolit podkladovou mapu, např. orfofoto ČR. Z výběru “vrstva”-->”přidat vrstvu”-->”přidat WMS/WMTS vrstvu”. V dialogovém okně pak klikneme na “nové” a z geoportálu [ČÚZK][ČÚZK] vybereme WMS vrstvu ortofoto a nahrajeme ji do položky URL. Zavřeme a zvolíme “připojit” a následně “přidat”. Okno zavřeme.
 
 Cílem projektu je transformace bodů na linie s využitím sloupce `pocet_kalibrovano`, který vyjadřuje intenzitu přepravních proudů. Při kliknutí na vrstvu v levém panelu se otevře symbologie dané vrstvy. Body změníme z kategorie “jednoduchý symbol” na “odstupňovaný” a následně klikneme na samotný symbol. V dialogovém okně pak klikneme na “jednoduchá značka” a v sekci “Typ vrstvy symbolů” vybereme “generátor geometrie”. V “typ geometrie” pak vybereme “LineString/Multilinestring”.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/7.QGIS_GEOM.png" description="Postup výpočtu geometrie" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/7.QGIS_GEOM.png" description="Postup výpočtu geometrie" %}
 
 Cílem je změnit vzhled bodových vrstev na linie, respektive vizualizovat dopravní proudy mezi KÚ. Toho docílíme v generátoru geometrie (fialové epsilon). Ve vyhledávači je třeba nalézt funkci `make_line`, která nám vytvoří liniovou geometrii ze série bodů.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/8.GEOM_GEN.png" description="Postup tvorby linií" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/8.GEOM_GEN.png" description="Postup tvorby linií" %}
 
 Syntax posléze musíme doplnit ještě o atributy, ze kterých se má linie vytvářet. Tedy cílové souřadnice XY. Do syntaxe tedy doplníme ještě `make_point` a zadáme centroidy katastrů.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/9.GEOM_SYNT.png" description="Syntax výpočtu geometrie" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/9.GEOM_SYNT.png" description="Syntax výpočtu geometrie" %}
 
 Dostaneme tak příkaz `make_line( $geometry, make_point( "cil_X", "cil_Y" ))`. Klikneme na “použít”.
 
 Nyní zbývá nastavit sílu dopravních vazeb. V symbologii v sekci “value” vybereme `pocet_kalibrovano` a vlevo dole vybereme klasifikaci dle Přirozených zlomů (natural breaks). Vpravo dole poté nastavíme počet tříd na 10. Nejméně významné proudy pak odškrtneme a necháme jen linie nad 80 osob. 
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/10.QGIS_SYMB.png" description="Změna symbologie" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/10.QGIS_SYMB.png" description="Změna symbologie" %}
 
 Tímto docílíme výsledné mapy z úvodu. Takto vizualizovaná data pak mohou rámcově sloužit pro strategické účely městu, například při dimenzování městské dopravy.
 
@@ -123,9 +123,9 @@ Nařízení vlády o nouzovém stavu vyhlášeném 12. 3. 2020 kvůli pandemii C
 
 V prvním grafu je zobrazen pokles mobility obyvatelstva v krajích ČR oproti průměrnému týdnu před nouzovým stavem. Druhý graf zase ukazuje pokles zahraničních SIM na území ČR po zavedení nouzového stavu. Právě tato data na národní, resp. krajské úrovni by měla být dostupná pro analytické účely veřejné správy. Pokud by byla katalogizována v NKOD, mohou sloužit i firmám v různých oblastech podnikání a občanům. Veřejná správa by na operátory mohla v tomto ohledu více tlačit i například proto, že Český telekomunikační úřad poskytuje operátorům frekvence pro komunikace.
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/11.MOBILITA_KRAJE.png" description="Pokles mobility v krajích ČR" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/11.MOBILITA_KRAJE.png" description="Pokles mobility v krajích ČR" %}
 
-{% include image.html url="../attachments/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/12.SIM_ZAHR.png" description="Pokles zahraničních SIM v ČR" %}
+{% include image.html url="../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/12.SIM_ZAHR.png" description="Pokles zahraničních SIM v ČR" %}
 
 ## Další využití dat, vizualizací a zdrojů
 

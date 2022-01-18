@@ -2,7 +2,7 @@
 layout: post
 title: Zúčastněte se „Dnů otevřených dat EU“ a pomozte utvářet naši digitální budoucnost
 detail: true
-image: ../attachments/2021-05-14/úvodní.webp
+image: ../přílohy/2021-05-14/úvodní.webp
 ref: 2021-05-14-eu-open-data-days-2021
 lang: cs
 author: michal_kubáň
@@ -43,6 +43,6 @@ Přihlášky [zasílejte do 21. května 2021](https://ec.europa.eu/eusurvey/runn
 Více informací najdete na internetových stránkách [EU Open Data Days](https://op.europa.eu/euopendatadays) a aktuality můžete sledovat na Twitteru [@EU_opendata](https://twitter.com/EU_opendata?ref_src=twsrc%5egoogle|twcamp%5eserp|twgr%5eauthor).
 
 {% include image.html
-   url="/attachments/2021-05-14/banner.webp"
+   url="/přílohy/2021-05-14/banner.webp"
    description="EU Open Data Days 2021"
 %}

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "GraphQL pro NKOD"
+title: Rozhraní GraphQL Národního katalogu otevřených dat
 detail: true
 ref: graphql-pro-nkod
 lang: cs
-image: ../attachments/články/znalostní-grafy/znalostní-grafy-03.webp
+image: ../attachments/články/graphql-pro-nkod-2021/graphiql.png
+date: 2022-02-22 22:22:22 +02:00
 author: petr_škoda
 ---
-V současné době je možné využít GraphQL pro dotazování nad [Národním katalogem otevřených data](https://data.gov.cz/datové-sady).
+V současné době je možné využít pro dotazování nad [Národním katalogem otevřených data](https://data.gov.cz/datové-sady) rozhraní GraphQL.
 Co ale GraphQL je, jak vypadá dotaz v tomto jazyce a jaká data je možné získat? 
 Právě na tyto otázky se snaží odpovědět tento článek.
 

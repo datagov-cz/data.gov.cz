@@ -179,7 +179,8 @@ Předchozí dotaz by tedy šel zapsat třeba následovně:
 [(zkusit dotaz)](https://data.gov.cz/graphql?query=query%7Bdatasets%7Bdata%7Biri%7D%7D%7D)
 
 ## Filtry v jazyce GraphQL 
-Výsledkem předchozích dotazů jsou údaje o deseti datových sadách, nabízí se otázka proč zrovna deset a jak získat informaci o zbývajících datových sadách.
+Výsledkem předchozích dotazů jsou údaje o deseti datových sadách.
+Nabízí se otázka proč zrovna deset a jak získat informaci o zbývajících datových sadách.
 Odpovědí na první otázku je, že omezení velikosti výsledku na 10 datových sad je výchozím nastavením na straně serveru.
 Jak je možné tuto hodnotu změnit a získat datových sad ve výsledku více, či méně?
 Odpovědí na tuto otázkou jsou filtry.
@@ -199,12 +200,12 @@ query {
 
 Porovnáním s předchozím dotazem je vidět, že filtry jsou specifikovány v kulatých závorkách.
 Celý dotaz ukazuje využití filtrů na objektu `datasets` a to konkrétně nastavením hodnot `offset` a `limit` na hodnoty 2 a 3.
-V případě GraphQL pro Národní katalog otevřených tak dotaz vrátí přeskočí první dvě datové sady a vrátí tři následující.
+V případě GraphQL pro Národní katalog otevřených dat tak dotaz přeskočí první dvě datové sady a vrátí tři následující.
 Tento přístup k omezení vrácených dat je běžný pro různé dotazovací jazyky včetně jazyka SPARQL či SQL. 
-Jeho využití je zejména ve stránkování dat v uživatelských aplikací. 
+Jeho využití je zejména ve stránkování dat v uživatelských aplikacích. 
 
 Filtry je pak možné použít, dle specifik daného GraphQL serveru, i za jiným účelem. 
-Na následujícím příklady je použito filtrů k získání datových sad, prvních deseti, of daného poskytovatele.
+Na následujícím příkladu je použití filtrů k získání prvních deseti datových sad daného poskytovatele.
 ~~~~~~graphql
 {
   datasets (
@@ -220,7 +221,7 @@ Na následujícím příklady je použito filtrů k získání datových sad, pr
 ~~~~~~~~~~~~
 [(zkusit dotaz)](https://data.gov.cz/graphql?query=%7B%0A%20%20datasets%20(filters%3A%20%7BpublisherIri%3A%20%22https%3A%2F%2Frpp-opendata.egon.gov.cz%2Fodrpp%2Fzdroj%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci%2F00007064%22%7D)%20%7B%0A%20%20%20%20data%20%7B%0A%20%20%20%20%20%20iri%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A)
 
-Konkrétní možnosti využití filtrů, stejně tak jako formulace zbytku dotazu jsou omezeny konkrétním GraphQL serverem, respektive jeho schématem.
+Konkrétní možnosti využití filtrů, stejně tak jako formulace zbytku dotazu, jsou omezeny konkrétním GraphQL serverem, respektive jeho schématem.
 
 
 ## Specifika GraphQL v českém prostředí
@@ -228,27 +229,27 @@ Než se budeme věnovat tomu, odkud se data berou a na co se uživatel může pt
 
 Hlavní nevýhodou je omezení klíčů, které se používají ve schématu i dotazu. 
 Příkladem těchto klíčů z předchozího dotazu jsou hodnoty `datasets`, `data` a `iri`. 
-Použité klíčů bohužel nemohou, zjednodušeně řečeno, obsahovat písmena s diakritikou.
+Použité klíče bohužel nemohou, zjednodušeně řečeno, obsahovat písmena s diakritikou.
 Není tedy možné v dotazu uvést klíč `název` ale pouze `nazev`.
 Nicméně v současné době existuje několik návrhů na úpravu GraphQL specifikace tak, aby bylo toto omezení odstraněno.
 
 Toto omezení se projevilo v GraphQL schématu Národního katalogu otevřených dat.
 Místo "cestiny" bylo raději v definici schématu použito angličtiny. 
-A co, že je to vlastně to schéma?
+A co že je to vlastně to schéma?
 
 ## GraphQL schéma
-Základem každého GraphQL rozhraní je schéma, které určuje jaké dotazy je možné vykonávat.
+Základem každého GraphQL rozhraní je schéma, které určuje, jaké dotazy je možné vykonávat.
 Z pohledu dotazů pro získání dat (`query`), schéma specifikuje o jaká data a s jakými filtry si může klient požádat.
-Neb by úplný popise možností specifikace GraphQL schématu vydal samostatně na několik článků, omezíme se zde pouze na nutné minimum, nutné pro navigaci schématem GraphQL Národního katalogu otevřených dat.
+Neb by úplný popis možností specifikace GraphQL schématu vydal samostatně na několik článků, omezíme se zde pouze na nutné minimum nutné pro navigaci schématem GraphQL Národního katalogu otevřených dat.
 Schéma je silně typované a mimo samotných dat umožňuje i specifikaci filtrů.
 Silná typovost znamená, že je každé položce přiřazený nějaký datový typ.
 Počet stránek je tedy například celé číslo, název v českém jazyce je pak textovým řetězcem.
 
 Jak ale schéma vypadá, kde je možné ho najít a odkud se vůbec vzalo? 
-Schéma GraphQl pro Národní katalog otevřených dat je založené na otevřené formální normě pro [katalogy otevřených dat][ofn-katalog].
-K prozkoumání GraphQL schématu slouží tzv. introspection, která uživateli umožňuje se dotazovat na samotným schématem opět pomocí jazyka GraphQL.
-Samotné dotazy a jejich výsledky však nejsou snadno čitelné, důvodem je, že nejsou určeny lidem ale aplikacím pro strojové zpracování.
-Pro jejich zobrazení je vhodné využit některého z bohaté sady nástrojů ekosystému kolem GraphQL. 
+Schéma GraphQL pro Národní katalog otevřených dat je založené na otevřené formální normě pro [katalogy otevřených dat][ofn-katalog].
+K prozkoumání GraphQL schématu slouží tzv. _introspection_, která uživateli umožňuje se dotazovat na samotným schématem opět pomocí jazyka GraphQL.
+Samotné dotazy a jejich výsledky však nejsou snadno čitelné, důvodem je, že nejsou určeny lidem, ale aplikacím pro strojové zpracování.
+Pro jejich zobrazení je vhodné využít některého z bohaté sady nástrojů ekosystému kolem GraphQL. 
 
 Je tak možné využít například nástroj [GraphQL Voyager][graphql-voyager] pro vizualizaci schématu.
 Samotný nástroj nabízí, po troše klikání a kopírování, interaktivní pohled na schéma. 
@@ -264,6 +265,7 @@ Vstupním bodem je `Query` ve kterém jsou definovány tři dotazy:
  * `dataset` - slouží k získání informací o jedné datové sadě
  * `datasets` - slouží k získání seznamu datových sad
  * `datasetsWithDistribution` - slouží k získání seznamu datových sad filtrovaných dle distribucí
+
 Pro každý dotaz je na pravé straně specifikován datový typ. 
 Například pro `datasets` je to `DatasetContainer`. 
 Odpovídající šipka nás pak dovede k vizualizaci daného datového typu. 
@@ -365,10 +367,10 @@ výsledek pak může vypadat následovně:
 ~~~~~~~~~~~~
 <br/>
 
-Vizualizace schématu je vhodná pro získání celkového přehledu o tom, jaké data jsou k dispozici.
+Vizualizace schématu je vhodná pro získání celkového přehledu o tom, jaká data jsou k dispozici.
 Co naopak chybí je třeba informace o filtrech.
 
-## GraphiQL
+## Nástroj GraphiQL
 Nabízí se tedy využití jiného, běžně používaného, nástroje [GraphiQL][graphql-graphiql].
 Tento nástroj slouží jako webový klient pro GraphQL.
 V případě Národního katalogu otevřených dat je možné ho najít na adrese [https://data.gov.cz/graphql][graphql-nkod].
@@ -380,9 +382,9 @@ V případě Národního katalogu otevřených dat je možné ho najít na adres
 
 Uživatelské rozhraní nástroje se skládá z několika hlavních částí. 
 První částí (1) je textové pole, kam je možné vložit GraphQL dotaz.
-V další částí (2) je pak zobrazen výsledek dotazu. 
-Dotaz je možné spustit pomocí tlačítka se šipkou (3) případně kombinací kláves ctrl+enter v oblasti textového pole (1).
-Posledním částí rozhraní, které se budeme věnovat, je tlačítko pro zobrazení dokumentace (4).
+V další části (2) je pak zobrazen výsledek dotazu. 
+Dotaz je možné spustit pomocí tlačítka se šipkou (3) případně kombinací kláves `ctrl+enter` v oblasti textového pole (1).
+Poslední částí rozhraní, které se budeme věnovat, je tlačítko pro zobrazení dokumentace (4).
 Po jeho stisknutí se zobrazí panel s dokumentací schématu na levé straně obrazovky.
 
 Pojďme se nyní na tento panel (Obrázek 1) zaměřit a vysvětlit si, jak je ho možné použít k prozkoumání schématu.
@@ -410,7 +412,7 @@ Po jeho otevření můžeme vidět seznam `root types` (Obrázek 1) , ve kterém
 Zde je `query` klíčové slovo, které můžeme použít v dotazu. 
 Za dvojtečkou je pak název datového typu pro toto klíčové slovo `Query`.
 Po kliknutí na název typu se nám zobrazí hodnoty použitelné v dotazu.
-V našem případě jde jde o seznam se třemi položkami (Obrázek 2): `dataset`, `datasets` a `datasetsWithDistribution`.
+V našem případě jde o seznam se třemi položkami (Obrázek 2): `dataset`, `datasets` a `datasetsWithDistribution`.
 
 Zde je obsah jednotlivých položek seznamu již trochu složitější, rozeberme si tedy jeho význam na příkladu: 
 ~~~~~~
@@ -421,27 +423,27 @@ datasets(
 ): DatasetContainer
 ~~~~~~~~~~~~
 Na prvním řádku je název, který je možné použít v dotazu.
-Následuje ve složených závorkách trojice klíčů `filters`, `offset` a `limit`.
+Ve složených závorkách následuje trojice klíčů `filters`, `offset` a `limit`.
 Pro každý klíč je za dvojtečkou uveden datový typ, tedy seznam `DistributionFilter` pro `filters` a `Int`, tedy celé číslo, pro `offset` a `limit`.
-Po ukončení závorky je uveden, za dvojtečkou, "návratový" typ `DatasetContainer`.
+Po ukončení závorky je za dvojtečkou uveden "návratový" typ `DatasetContainer`.
 Zde je možné si kliknutím na libovolný datový typ zobrazit jeho definici. 
 
 Můžeme se například kliknutím na `DatasetsFilter` podívat na definici obsahu filtru (Obrázek 3).
 Zde si můžeme mimo jiné všimnout položky `publisherIri` s hodnotou `string`, tedy textový řetězec. 
-Této položku už jsme využili v jednom z předchozích příkladů. 
+Tuto položku už jsme využili v jednom z předchozích příkladů. 
 
 Nicméně vraťme se k předchozí otázce, proč výsledek obsahuje právě 10 datových sad.
 Důvodem je, že server má počet deset uložen jako výchozí hodnotu pro počet datových sad, které má vrátit.
 Jak ale tuto hodnotu změnit?
 
-Abychom nalezli odpověď na tuto otázku je už třeba mít nějaké zkušenosti s dotazováním. 
+Abychom nalezli odpověď na tuto otázku, je už třeba mít nějaké zkušenosti s dotazováním. 
 V takovém případě si pozorný čtenář snadno všimne hodnot `limit` a `offset` číselného typu v definici filtru pro `datasets` a `datasetsWithDistribution`.
 Jak by tedy mohl vypadat dotaz, který místo 10 datových sad vrátí třeba čtyři?
 
-Než se dostaneme k samotnému dotazu, podívejme se ještě na jednu zajímavou funkcionality nástroje GraphiQL.
-GraphiQL nejen, že umí zobrazit uživateli schéma, ale současně ho umí využít i k napovídání při psaní dotazu v textovém poli (1).
+Než se dostaneme k samotnému dotazu, podívejme se ještě na jednu zajímavou funkcionalitu nástroje GraphiQL.
+GraphiQL nejen že umí zobrazit uživateli schéma, ale současně ho umí využít i k napovídání při psaní dotazu v textovém poli (1).
 Ukažme si to na příkladu. 
-Pokud (1) začneme psát dotaz, máme možnost stisknutím kombinací kláves ctrl a mezerník vyvolat menu se seznamem použitelných hodnot. 
+Pokud (1) začneme psát dotaz, máme možnost stisknutím kombinací kláves `ctrl+mezerník` vyvolat menu se seznamem použitelných hodnot. 
 {% include image.html 
    url="../attachments/články/graphql-pro-nkod-2021/query-datasets-filter-suggestion.webp"
    description="Našeptávání dotazu v nástroji GraphiQL"
@@ -520,18 +522,18 @@ query {
 [(zkusit dotaz)](https://data.gov.cz/graphql?query=query%20%7B%0A%20%20datasets%20(%0A%20%20%20%20limit%3A%20100%0A%20%20%20%20filters%3A%20%7B%0A%20%20%20%20%20%20conformsTo%3A%20%22https%3A%2F%2Fofn.gov.cz%2F%C3%BA%C5%99edn%C3%AD-desky%2F2021-07-20%2F%22%0A%20%20%20%20%7D%0A%20%20)%20%7B%0A%20%20%20%20data%20%7B%0A%20%20%20%20%20%20iri%0A%20%20%20%20%20%20title%20%7B%0A%20%20%20%20%20%20%20%20cs%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20publisher%20%7B%0A%20%20%20%20%20%20%20%20title%20%7B%0A%20%20%20%20%20%20%20%20%20%20cs%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20distribution%20%7B%0A%20%20%20%20%20%20%20%20accessURL%0A%20%20%20%20%20%20%20%20format%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20pagination%20%7B%0A%20%20%20%20%20%20totalCount%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
 Obdoba tohoto dotazu byla použita v ukázkové aplikaci [úředních desek][ofn-uredni-desky].
-Neb byla aplikace již popsána v [jiném článku][clanek-era-desek] necháme zde aplikaci bez dalšího popisu.
+Neb byla aplikace již popsána v [jiném článku][clanek-era-desek], necháme zde aplikaci bez dalšího popisu.
 
-Pro úplnost je vhodné poznamenat, že existují i jiná řešení například stažení dat v CSV, či položení dotazu v jazyce SPARQL. 
+Pro úplnost je vhodné poznamenat, že existují i jiná řešení získání dat z NKOD než pomocí GraphQL, např. stažení dat v CSV, či položení dotazu v jazyce SPARQL.
 
-[nkod]: https://data.gov.cz/datové-sady
+[nkod]: /datové-sady
 [graphql-foundation]: https://graphql.org/foundation/
 [json]: https://www.rfc-editor.org/info/rfc8259
 [dataset-agendy]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F9c73b802263c5e0ccf5542f10fbc35bb
 [ofn-katalog]: https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/2021-01-11/
 [graphql-voyager]: https://github.com/APIs-guru/graphql-voyager
 [graphql-graphiql]: https://github.com/graphql/graphiql
-[graphql-nkod]: https://data.gov.cz/graphql
+[graphql-nkod]: /graphql
 [ofn-uredni-desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html
-[clanek-era-desek]: https://data.gov.cz/články/nová-éra-úředních-desek
+[clanek-era-desek]: nová-éra-úředních-desek
 [školení-json]: /vzdělávání/e-learning/technické-aspekty-otevřených-dat/#5-formáty-pro-otevřená-data-json

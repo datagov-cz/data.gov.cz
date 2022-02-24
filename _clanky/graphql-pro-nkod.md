@@ -8,8 +8,8 @@ image: ../attachments/články/graphql-pro-nkod-2021/graphiql.png
 date: 2022-02-22 22:22:22 +02:00
 author: petr_škoda
 ---
-V současné době je možné využít pro dotazování nad [Národním katalogem otevřených data][nkod] rozhraní GraphQL.
-Co ale GraphQL je, jak vypadá dotaz v tomto jazyce a jaká data je možné získat? 
+V současné době je možné využít pro dotazování nad [Národním katalogem otevřených dat][nkod] rozhraní GraphQL.
+Co ale GraphQL vlastně je, jak vypadá dotaz v tomto jazyce a jaká data je možné získat? 
 Právě na tyto otázky se snaží odpovědět tento článek.
 
 <!--more-->
@@ -21,24 +21,27 @@ Právě na tyto otázky se snaží odpovědět tento článek.
   .figures figcaption { margin: 0 1rem 1rem 1rem; }
 </style>
 
-GraphQL byl vytvořen v roce 2012 a zveřejněn Facebookem v roce 2015.
-Pro zajištění neutrality dalšího rozvoje byla správa GraphQL v roce 2019 předána [nadaci GraphQL][graphql-foundation].
-Členové toto nadace pak nejen rozvíjejí specifikace GraphQL, ale přispívají do bohatého ekosystému této technologie.
+O technologii GraphQL
+---------------------
 
-GraphQL je nezávislé na konkrétním programovacím jazyku a je možné nahlížet na něj z pohledu klienta nebo serveru. 
-Z pohledu serveru se jedná o implementaci programů a knihoven, které jsou schopné provést vyhodnocení GraphQL dotazu a tedy fungovat jako GraphQL endpoint. 
-Pro klienta je pak GraphQL zejména dotazovacím jazykem.
+Jazyk GraphQL byl vytvořen v roce 2012 a zveřejněn Facebookem v roce 2015.
+Pro zajištění neutrality dalšího rozvoje byla správa GraphQL v roce 2019 předána [nadaci GraphQL][graphql-foundation].
+Členové této nadace pak nejen rozvíjejí specifikace GraphQL, ale přispívají do bohatého ekosystému této technologie.
+
+GraphQL je nezávislý na konkrétním programovacím jazyku a je možné na něj nahlížet z pohledu klienta nebo z pohledu serveru. 
+Pro klienta je GraphQL zejména dotazovacím jazykem.
+Z pohledu serveru se jedná o implementaci programů a knihoven, které jsou schopné provést vyhodnocení GraphQL dotazu a tedy fungovat jako tzv. GraphQL endpoint.
 V tomto článku se budeme věnovat hlavně druhému pohledu, tedy dotazování ze strany klienta.
 
-## JSON
+## Datový formát JSON
 GraphQL je jazykem pro zpřístupnění dat zejména webovým aplikacím.
 Za tímto účelem je zcela běžné předávat data ve standardním formátu [JSON][json].
-Než tedy budeme pokračovat pojďme si krátce tento formát představit několika příkladech.
+Než tedy budeme pokračovat, pojďme si krátce tento formát představit na několika příkladech, komplexnější pohled pak naleznete např. v [příslušném e-learningovém kurzu][školení-json].
 
-JSON je textový formát, jenže umí reprezentovat jednoduché hodnoty, pole a kolekce klíč-hodnota.
+JSON je textový formát, ale umí reprezentovat jak jednoduché hodnoty, tak i pole a kolekce klíč-hodnota.
 Jednoduchou hodnotou je třeba číslo, textový řetězec, či hodnota ano/ne.
 
-Pole je kolekcí jednoduchých hodnot, polí nebo objektů. 
+Pole je pak kolekcí jednoduchých hodnot, jiných polí či objektů. 
 V následujícím příkladu je pole, které obsahuje číslo a dva textové řetězce.
 ~~~~~~json
 [1, "dvě", "3"]
@@ -47,7 +50,7 @@ Jak je z příkladu vidět, je možné libovolné hodnoty libovolně kombinovat.
 
 Další konstrukcí formátu JSON je objekt. 
 Objekt je tvořen kolekcí dvojic klíč a hodnota, kde ke každému klíči je přiřazena právě jedna hodnota. 
-Klíče musí být v objektu unikátní, jinými slovy nemohou se opakovat.  
+Klíče musí být v objektu unikátní, tedy se nemohou opakovat.  
 Hodnotou opět může být jednoduchá hodnota, pole nebo další objekt. 
 Klíčem pak může být textový řetězec. 
 Dobrým příkladem objektu může být třeba nákupní seznam.
@@ -70,7 +73,7 @@ Upravený seznam by pak mohl vypadat následovně:
  "banán": {
    "počet": 3,
    "jednotka": "balení"
- }
+ },
  "mléko": {
    "počet": 2,
    "jednotka": "litry"
@@ -94,9 +97,9 @@ V tomto příkladu je kromě IRI datové sady možné najít také její `název
 
 ## První dotaz v GraphQL
 Zápis dotazu v GraphQL je vlastně popisem očekávané struktury výsledku.
-Ačkoliv by zde bylo možné citovat specifikaci raději si ukážeme základy na několika příkladech.
+Ačkoliv by zde bylo možné citovat specifikaci, raději si ukážeme základy na několika příkladech.
 
-Prvním příkladem je dotaz, na seznam datových sad.
+Prvním příkladem je dotaz na seznam datových sad.
 V tomto seznamu pak chceme pro každou datovou sadu vrátit její identifikátor, neboli IRI.
 ~~~~~~graphql
 query {
@@ -162,10 +165,9 @@ Výsledek dotazy pak, dle aktuálního obsahu Národního katalogu otevřených 
 ~~~~~~~~~~~~
 <br/>
 
-Je možné si všimnou podobnosti struktury mezi dotazem a výsledkem. 
-Zejména z hlediska struktury `datasets`, `data` a `iri`. 
+Je možné si všimnout podobnosti struktury mezi dotazem a výsledkem, zejména z hlediska struktury `datasets`, `data` a `iri`. 
 Tato skutečnost není náhodná a jedná se o jednu ze základních vlastností GraphQL. 
-Skrze dotaz si klient vybírá nejen jaká data chce získat, čímž současně specifikuje strukturu odpovědi.
+Skrze dotaz si klient vybírá ta data, která chce získat, čímž současně specifikuje strukturu odpovědi.
 Tato vlastnost GraphQL umožňuje klientovi snadno získat požadovaná data v očekávané struktuře, což ulehčuje následné zpracování získaných dat.
 
 Další důležitou vlastností GraphQL je, že ignoruje bíle znaky, například mezery a konce řádků, v dotazu. 
@@ -532,3 +534,4 @@ Pro úplnost je vhodné poznamenat, že existují i jiná řešení například 
 [graphql-nkod]: https://data.gov.cz/graphql
 [ofn-uredni-desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html
 [clanek-era-desek]: https://data.gov.cz/články/nová-éra-úředních-desek
+[školení-json]: /vzdělávání/e-learning/technické-aspekty-otevřených-dat/#5-formáty-pro-otevřená-data-json

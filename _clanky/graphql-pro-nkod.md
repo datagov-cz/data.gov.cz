@@ -381,9 +381,9 @@ První částí (1) je textové pole, kam je možné vložit GraphQL dotaz.
 V další částí (2) je pak zobrazen výsledek dotazu. 
 Dotaz je možné spustit pomocí tlačítka se šipkou (3) případně kombinací kláves ctrl+enter v oblasti textového pole (1).
 Posledním částí rozhraní, které se budeme věnovat, je tlačítko pro zobrazení dokumentace (4).
-Po jeho stiknutí se zobrazí panel s dokumentací schématu na levé straně obrazovky.
+Po jeho stisknutí se zobrazí panel s dokumentací schématu na levé straně obrazovky.
 
-Pojďmě se nyní na tento panel (Obrázek 1) zaměřit a vysvětlit si, jak je ho možné použít k prozkoumání schématu.
+Pojďme se nyní na tento panel (Obrázek 1) zaměřit a vysvětlit si, jak je ho možné použít k prozkoumání schématu.
 
 <div class="figures">
 
@@ -428,8 +428,8 @@ Můžeme se například kliknutím na `DatasetsFilter` podívat na definici obsa
 Zde si můžeme mimo jiné všimnout položky `publisherIri` s hodnotou `string`, tedy textový řetězec. 
 Této položku už jsme využili v jednom z předchozích příkladů. 
 
-Nicméně vraťmě se k předchozí otázce, proč má výsledek 10 datasetů.
-Odpovědí na počet 10 datasetů je defaultní velikost výsledku použitá na serveru. 
+Nicméně vraťme se k předchozí otázce, proč výsledek obsahuje právě 10 datových sad.
+Důvodem je, že server má počet deset uložen jako výchozí hodnotu pro počet datových sad, které má vrátit.
 Jak ale tuto hodnotu změnit?
 
 Abychom nalezli odpověď na tuto otázku je už třeba mít nějaké zkušenosti s dotazováním. 
@@ -437,9 +437,9 @@ V takovém případě si pozorný čtenář snadno všimne hodnot `limit` a `off
 Jak by tedy mohl vypadat dotaz, který místo 10 datových sad vrátí třeba čtyři?
 
 Než se dostaneme k samotnému dotazu, podívejme se ještě na jednu zajímavou funkcionality nástroje GraphiQL.
-GraphiQL nejen, že umí zobrazit uživateli schéma, ale současně ho umí vuyžít i k napovídání při psaní dotazu v textovém poli (1).
+GraphiQL nejen, že umí zobrazit uživateli schéma, ale současně ho umí využít i k napovídání při psaní dotazu v textovém poli (1).
 Ukažme si to na příkladu. 
-Pokud (1) začneme psát dotaz, máme možnost  stiknutím kombinací kláves ctrl a mezerník vyvolat menu se seznamem použitelných hodnot. 
+Pokud (1) začneme psát dotaz, máme možnost stisknutím kombinací kláves ctrl a mezerník vyvolat menu se seznamem použitelných hodnot. 
 {% include image.html 
    url="../attachments/články/graphql-pro-nkod-2021/query-datasets-filter-suggestion.webp"
    description="Našeptávání dotazu v nástroji GraphiQL"

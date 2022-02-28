@@ -4,7 +4,7 @@ title: Rozhraní GraphQL Národního katalogu otevřených dat
 detail: true
 ref: graphql-pro-nkod
 lang: cs
-image: ../attachments/články/graphql-pro-nkod-2021/graphiql.png
+image: ../attachments/články/graphql-pro-nkod-2021/graphiql.webp
 date: 2022-02-22 22:22:22 +02:00
 author: petr_škoda
 ---

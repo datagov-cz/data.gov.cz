@@ -1,0 +1,2439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="20in"
+   height="8.5in"
+   style="overflow:hidden"
+   version="1.1"
+   id="svg2036"
+   sodipodi:docname="graphql-voyager.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2038"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.76561612"
+     inkscape:cx="1198.3812"
+     inkscape:cy="494.37308"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="viewport-20220103123113458"
+     units="in" />
+  <g
+     id="viewport-20220103123113458"
+     class="svg-pan-zoom_viewport"
+     transform="matrix(0.63372947,0,0,0.77413434,21.35122,16.755664)">
+    <symbol
+       viewBox="-50 -50 580 700"
+       id="DeprecatedIcon">
+      <path
+         style="fill:#f74036"
+         d="m 481.249,420.625 -219,-380 c -4,-7 -11,-11 -19,-11 -8,0 -15,4 -19,11 l -221,382 c -10,17 5,33 19,33 h 442 c 12,0 21,-10 21,-22 0,-5 -1,-9 -4,-13 z m -421,-9 183,-317 183,317 z"
+         id="path1363" />
+      <path
+         style="fill:#f74036"
+         d="m 221.249,192.625 v 97 c 0,12 10,22 22,22 12,0 22,-10 22,-22 v -97 c 0,-12 -10,-22 -22,-22 -12,0 -22,10 -22,22 z"
+         id="path1365" />
+      <path
+         style="fill:#f74036"
+         d="m 243.249,330.625 c -15,0 -27,12 -27,27 0,15 12,28 27,28 15,0 27,-13 27,-28 0,-15 -12,-27 -27,-27 z"
+         id="path1367" />
+    </symbol>
+    <symbol
+       viewBox="0 0 600 600"
+       id="RelayIcon">
+      <g
+         fill="#f26b00"
+         id="g1376">
+        <path
+           d="m 142.536,198.858 c 0,26.36 -21.368,47.72 -47.72,47.72 -26.36,0 -47.722,-21.36 -47.722,-47.72 0,-26.36 21.36,-47.72 47.72,-47.72 26.355,0 47.722,21.36 47.722,47.72"
+           id="path1370" />
+        <path
+           d="M 505.18,414.225 H 238.124 c -35.25,0 -63.926,-28.674 -63.926,-63.923 0,-35.249 28.678,-63.926 63.926,-63.926 h 120.78 c 20.816,0 37.753,-16.938 37.753,-37.756 0,-20.818 -16.938,-37.756 -37.753,-37.756 H 94.81 c -7.227,0 -13.086,-5.86 -13.086,-13.085 0,-7.227 5.86,-13.086 13.085,-13.086 h 264.093 c 35.25,0 63.923,28.678 63.923,63.926 0,35.248 -28.674,63.923 -63.923,63.923 h -120.78 c -20.82,0 -37.756,16.938 -37.756,37.76 0,20.816 16.938,37.753 37.756,37.753 H 505.18 c 7.227,0 13.086,5.86 13.086,13.085 0,7.226 -5.858,13.085 -13.085,13.085 z"
+           id="path1372" />
+        <path
+           d="m 457.464,401.142 c 0,-26.36 21.36,-47.72 47.72,-47.72 26.36,0 47.72,21.36 47.72,47.72 0,26.36 -21.36,47.72 -47.72,47.72 -26.36,0 -47.72,-21.36 -47.72,-47.72"
+           id="path1374" />
+      </g>
+    </symbol>
+    <g
+       id="graph0"
+       class="graph"
+       transform="translate(4,995.0406)">
+      <polygon
+         fill="#ffffff"
+         stroke="transparent"
+         points="2969.0242,4 -4,4 -4,-995.0406 2969.0242,-995.0406 "
+         id="polygon1379" />
+      <!-- Query -->
+      <g
+         id="TYPE::Query"
+         class="node type">
+        <g
+           id="TYPE_TITLE::Query"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="325.5,-399.2406 8.5,-399.2406 8.5,-430.2406 325.5,-430.2406 "
+             id="polygon1381" />
+          <text
+             text-anchor="start"
+             x="142.4966"
+             y="-409.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1383">Query</text>
+        </g>
+        <g
+           id="FIELD::Query::dataset"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="325.5,-368.2406 8.5,-368.2406 8.5,-399.2406 325.5,-399.2406 "
+             id="polygon1386" />
+          <text
+             text-anchor="start"
+             x="14.5"
+             y="-379.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1388">dataset</text>
+          <text
+             text-anchor="start"
+             x="264.3736"
+             y="-378.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1390">Dataset</text>
+        </g>
+        <g
+           id="FIELD::Query::datasets"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="325.5,-337.2406 8.5,-337.2406 8.5,-368.2406 325.5,-368.2406 "
+             id="polygon1393" />
+          <text
+             text-anchor="start"
+             x="14.5"
+             y="-348.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1395">datasets</text>
+          <text
+             text-anchor="start"
+             x="195.028"
+             y="-347.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1397">DatasetContainer</text>
+        </g>
+        <g
+           id="FIELD::Query::datasetsWithDistribution"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="325.5,-306.2406 8.5,-306.2406 8.5,-337.2406 325.5,-337.2406 "
+             id="polygon1400" />
+          <text
+             text-anchor="start"
+             x="14.3224"
+             y="-317.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1402">datasetsWithDistribution</text>
+          <text
+             text-anchor="start"
+             x="195.26401"
+             y="-316.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1404">DatasetContainer</text>
+        </g>
+      </g>
+      <!-- Dataset -->
+      <g
+         id="TYPE::Dataset"
+         class="node type">
+        <g
+           id="TYPE_TITLE::Dataset"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-631.2406 1153.5226,-631.2406 1153.5226,-662.2406 1392.5226,-662.2406 "
+             id="polygon1408" />
+          <text
+             text-anchor="start"
+             x="1242.014"
+             y="-641.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1410">Dataset</text>
+        </g>
+        <g
+           id="FIELD::Dataset::accrualPeriodicity"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-600.2406 1153.5226,-600.2406 1153.5226,-631.2406 1392.5226,-631.2406 "
+             id="polygon1413" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-611.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1415">accrualPeriodicity</text>
+          <text
+             text-anchor="start"
+             x="1344.7402"
+             y="-610.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1417">String</text>
+        </g>
+        <g
+           id="FIELD::Dataset::conformsTo"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-569.2406 1153.5226,-569.2406 1153.5226,-600.2406 1392.5226,-600.2406 "
+             id="polygon1420" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-580.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1422">conformsTo</text>
+          <text
+             text-anchor="start"
+             x="1264.6923"
+             y="-580.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1424">[</text>
+          <text
+             text-anchor="start"
+             x="1269.1385"
+             y="-580.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1426">LanguageString</text>
+          <text
+             text-anchor="start"
+             x="1382.0762"
+             y="-580.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1428">]</text>
+        </g>
+        <g
+           id="FIELD::Dataset::contactPoint"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-538.2406 1153.5226,-538.2406 1153.5226,-569.2406 1392.5226,-569.2406 "
+             id="polygon1431" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-549.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1433">contactPoint</text>
+          <text
+             text-anchor="start"
+             x="1294.9402"
+             y="-548.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1435">ContactPoint</text>
+        </g>
+        <g
+           id="FIELD::Dataset::description"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-507.2406 1153.5226,-507.2406 1153.5226,-538.2406 1392.5226,-538.2406 "
+             id="polygon1438" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-518.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1440">description</text>
+          <text
+             text-anchor="start"
+             x="1273.585"
+             y="-517.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1442">LanguageString</text>
+        </g>
+        <g
+           id="FIELD::Dataset::distribution"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-476.2406 1153.5226,-476.2406 1153.5226,-507.2406 1392.5226,-507.2406 "
+             id="polygon1445" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-487.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1447">distribution</text>
+          <text
+             text-anchor="start"
+             x="1297.6313"
+             y="-487.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1449">[</text>
+          <text
+             text-anchor="start"
+             x="1302.0778"
+             y="-487.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1451">Distribution</text>
+          <text
+             text-anchor="start"
+             x="1382.0762"
+             y="-487.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1453">]</text>
+        </g>
+        <g
+           id="FIELD::Dataset::documentation"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-445.2406 1153.5226,-445.2406 1153.5226,-476.2406 1392.5226,-476.2406 "
+             id="polygon1456" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-456.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1458">documentation</text>
+          <text
+             text-anchor="start"
+             x="1344.7402"
+             y="-455.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1460">String</text>
+        </g>
+        <g
+           id="FIELD::Dataset::iri"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-414.2406 1153.5226,-414.2406 1153.5226,-445.2406 1392.5226,-445.2406 "
+             id="polygon1463" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-425.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1465">iri</text>
+          <text
+             text-anchor="start"
+             x="1370.5258"
+             y="-424.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1467">ID</text>
+        </g>
+        <g
+           id="FIELD::Dataset::isPartOf"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-383.2406 1153.5226,-383.2406 1153.5226,-414.2406 1392.5226,-414.2406 "
+             id="polygon1470" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-394.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1472">isPartOf</text>
+          <text
+             text-anchor="start"
+             x="1344.7402"
+             y="-393.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1474">String</text>
+        </g>
+        <g
+           id="FIELD::Dataset::keyword"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-352.2406 1153.5226,-352.2406 1153.5226,-383.2406 1392.5226,-383.2406 "
+             id="polygon1477" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-363.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1479">keyword</text>
+          <text
+             text-anchor="start"
+             x="1264.6923"
+             y="-363.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1481">[</text>
+          <text
+             text-anchor="start"
+             x="1269.1385"
+             y="-363.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1483">LanguageString</text>
+          <text
+             text-anchor="start"
+             x="1382.0762"
+             y="-363.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1485">]</text>
+        </g>
+        <g
+           id="FIELD::Dataset::publisher"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-321.2406 1153.5226,-321.2406 1153.5226,-352.2406 1392.5226,-352.2406 "
+             id="polygon1488" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-332.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1490">publisher</text>
+          <text
+             text-anchor="start"
+             x="1319.8474"
+             y="-331.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1492">Publisher</text>
+        </g>
+        <g
+           id="FIELD::Dataset::spatial"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-290.2406 1153.5226,-290.2406 1153.5226,-321.2406 1392.5226,-321.2406 "
+             id="polygon1495" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-301.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1497">spatial</text>
+          <text
+             text-anchor="start"
+             x="1335.8474"
+             y="-301.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1499">[</text>
+          <text
+             text-anchor="start"
+             x="1340.2938"
+             y="-301.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1501">String</text>
+          <text
+             text-anchor="start"
+             x="1382.0762"
+             y="-301.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1503">]</text>
+        </g>
+        <g
+           id="FIELD::Dataset::spatialResolutionInMeters"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-259.2406 1153.5226,-259.2406 1153.5226,-290.2406 1392.5226,-290.2406 "
+             id="polygon1506" />
+          <text
+             text-anchor="start"
+             x="1159.0618"
+             y="-270.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1508">spatialResolutionInMeters</text>
+          <text
+             text-anchor="start"
+             x="1351.2426"
+             y="-269.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1510">Float</text>
+        </g>
+        <g
+           id="FIELD::Dataset::temporal"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-228.2406 1153.5226,-228.2406 1153.5226,-259.2406 1392.5226,-259.2406 "
+             id="polygon1513" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-239.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1515">temporal</text>
+          <text
+             text-anchor="start"
+             x="1249.6187"
+             y="-238.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1517">TemporalCoverage</text>
+        </g>
+        <g
+           id="FIELD::Dataset::temporalResolution"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-197.2406 1153.5226,-197.2406 1153.5226,-228.2406 1392.5226,-228.2406 "
+             id="polygon1520" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-208.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1522">temporalResolution</text>
+          <text
+             text-anchor="start"
+             x="1344.7402"
+             y="-207.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1524">String</text>
+        </g>
+        <g
+           id="FIELD::Dataset::theme"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-166.2406 1153.5226,-166.2406 1153.5226,-197.2406 1392.5226,-197.2406 "
+             id="polygon1527" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-177.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1529">theme</text>
+          <text
+             text-anchor="start"
+             x="1335.8474"
+             y="-177.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1531">[</text>
+          <text
+             text-anchor="start"
+             x="1340.2938"
+             y="-177.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1533">String</text>
+          <text
+             text-anchor="start"
+             x="1382.0762"
+             y="-177.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1535">]</text>
+        </g>
+        <g
+           id="FIELD::Dataset::title"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1392.5226,-135.2406 1153.5226,-135.2406 1153.5226,-166.2406 1392.5226,-166.2406 "
+             id="polygon1538" />
+          <text
+             text-anchor="start"
+             x="1159.5226"
+             y="-146.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1540">title</text>
+          <text
+             text-anchor="start"
+             x="1273.585"
+             y="-145.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1542">LanguageString</text>
+        </g>
+      </g>
+      <!-- Query&#45;&gt;Dataset -->
+      <g
+         class="edge"
+         data-from="FIELD::Query::dataset"
+         data-to="TYPE::Dataset"
+         id="g1554">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 325.5,-384.2406 c 288.0106,0 625.229,-7.0217 809.4983,-11.4568"
+           id="path1546" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1134.931,-399.1967 1145.0127,-395.9395 1135.1003,-392.1988 "
+           id="polygon1548" />
+        <text
+           text-anchor="middle"
+           x="748.34723"
+           y="-393.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1550">Query:dataset</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 325.5,-384.2406 c 288.0106,0 625.229,-7.0217 809.4983,-11.4568"
+           class="hover-path"
+           id="path1552" />
+      </g>
+      <!-- DatasetContainer -->
+      <g
+         id="TYPE::DatasetContainer"
+         class="node type">
+        <g
+           id="TYPE_TITLE::DatasetContainer"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="833.3472,-327.2406 664.3472,-327.2406 664.3472,-358.2406 833.3472,-358.2406 "
+             id="polygon1556" />
+          <text
+             text-anchor="start"
+             x="678.83173"
+             y="-337.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1558">DatasetContainer</text>
+        </g>
+        <g
+           id="FIELD::DatasetContainer::data"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="833.3472,-296.2406 664.3472,-296.2406 664.3472,-327.2406 833.3472,-327.2406 "
+             id="polygon1561" />
+          <text
+             text-anchor="start"
+             x="670.34723"
+             y="-307.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1563">data</text>
+          <text
+             text-anchor="start"
+             x="763.328"
+             y="-307.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1565">[</text>
+          <text
+             text-anchor="start"
+             x="767.77441"
+             y="-307.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1567">Dataset</text>
+          <text
+             text-anchor="start"
+             x="822.90082"
+             y="-307.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1569">]</text>
+        </g>
+        <g
+           id="FIELD::DatasetContainer::pagination"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="833.3472,-265.2406 664.3472,-265.2406 664.3472,-296.2406 833.3472,-296.2406 "
+             id="polygon1572" />
+          <text
+             text-anchor="start"
+             x="669.99683"
+             y="-276.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1574">pagination</text>
+          <text
+             text-anchor="start"
+             x="752.05518"
+             y="-275.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1576">Pagination</text>
+        </g>
+      </g>
+      <!-- Query&#45;&gt;DatasetContainer -->
+      <g
+         class="edge"
+         data-from="FIELD::Query::datasets"
+         data-to="TYPE::DatasetContainer"
+         id="g1588">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 325.5,-352.2406 c 109.7646,0 234.8472,13.5243 320.3217,24.8449"
+           id="path1580" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="646.3375,-330.858 655.7848,-326.0624 645.4089,-323.9198 "
+           id="polygon1582" />
+        <text
+           text-anchor="middle"
+           x="494.42361"
+           y="-354.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1584">Query:datasets</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 325.5,-352.2406 c 109.7646,0 234.8472,13.5243 320.3217,24.8449"
+           class="hover-path"
+           id="path1586" />
+      </g>
+      <!-- Query&#45;&gt;DatasetContainer -->
+      <g
+         class="edge"
+         data-from="FIELD::Query::datasetsWithDistribution"
+         data-to="TYPE::DatasetContainer"
+         id="g1598">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 325.5,-321.2406 c 35.4272,0 44.1026,4.3453 79.5,5.8 80.7304,3.3177 172.2238,4.0193 240.4519,3.9449"
+           id="path1590" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="645.7649,-314.9961 655.7708,-311.513 645.7767,-307.9961 "
+           id="polygon1592" />
+        <text
+           text-anchor="middle"
+           x="494.42361"
+           y="-320.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1594">Query:datasetsWithDistribution</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 325.5,-321.2406 c 35.4272,0 44.1026,4.3453 79.5,5.8 80.7304,3.3177 172.2238,4.0193 240.4519,3.9449"
+           class="hover-path"
+           id="path1596" />
+      </g>
+      <!-- LanguageString -->
+      <g
+         id="TYPE::LanguageString"
+         class="node type">
+        <g
+           id="TYPE_TITLE::LanguageString"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2957.5242,-517.2406 2820.5242,-517.2406 2820.5242,-548.2406 2957.5242,-548.2406 "
+             id="polygon1600" />
+          <text
+             text-anchor="start"
+             x="2825.4968"
+             y="-527.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1602">LanguageString</text>
+        </g>
+        <g
+           id="FIELD::LanguageString::cs"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2957.5242,-486.2406 2820.5242,-486.2406 2820.5242,-517.2406 2957.5242,-517.2406 "
+             id="polygon1605" />
+          <text
+             text-anchor="start"
+             x="2826.5242"
+             y="-497.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1607">cs</text>
+          <text
+             text-anchor="start"
+             x="2909.7417"
+             y="-496.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1609">String</text>
+        </g>
+        <g
+           id="FIELD::LanguageString::en"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2957.5242,-455.2406 2820.5242,-455.2406 2820.5242,-486.2406 2957.5242,-486.2406 "
+             id="polygon1612" />
+          <text
+             text-anchor="start"
+             x="2826.5242"
+             y="-466.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1614">en</text>
+          <text
+             text-anchor="start"
+             x="2909.7417"
+             y="-465.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1616">String</text>
+        </g>
+      </g>
+      <!-- Dataset&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::conformsTo"
+         data-to="TYPE::LanguageString"
+         id="g1628">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-585.2406 c 119.1378,0 -12.5453,-180.3594 79.5,-256 353.3119,-290.3432 574.7947,-67.3796 1028.8556,-13 107.3043,12.8511 153.2266,-21.5532 239.146,44 80.0694,61.0898 119.2325,176.4816 136.5418,247.3709"
+           id="path1620" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2880.0649,-563.2828 2878.9635,-552.7453 2873.2533,-561.6697 "
+           id="polygon1622" />
+        <text
+           text-anchor="middle"
+           x="2052.8782"
+           y="-978.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1624">Dataset:conformsTo</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-585.2406 c 119.1378,0 -12.5453,-180.3594 79.5,-256 353.3119,-290.3432 574.7947,-67.3796 1028.8556,-13 107.3043,12.8511 153.2266,-21.5532 239.146,44 80.0694,61.0898 119.2325,176.4816 136.5418,247.3709"
+           class="hover-path"
+           id="path1626" />
+      </g>
+      <!-- Dataset&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::description"
+         data-to="TYPE::LanguageString"
+         id="g1638">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-523.2406 c 150.0058,0 125.4456,-157.3863 267.3556,-206 44.2007,-15.1418 795.9254,-14.2987 841,-2 121.8042,33.2345 244.2264,115.6963 317.9957,172.0339"
+           id="path1630" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2821.3918,-561.6855 2827.1834,-552.8137 2817.1234,-556.1375 "
+           id="polygon1632" />
+        <text
+           text-anchor="middle"
+           x="2052.8782"
+           y="-744.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1634">Dataset:description</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-523.2406 c 150.0058,0 125.4456,-157.3863 267.3556,-206 44.2007,-15.1418 795.9254,-14.2987 841,-2 121.8042,33.2345 244.2264,115.6963 317.9957,172.0339"
+           class="hover-path"
+           id="path1636" />
+      </g>
+      <!-- Dataset&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::keyword"
+         data-to="TYPE::LanguageString"
+         id="g1648">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-367.2406 c 168.5982,0 591.7922,36.2954 754.3556,81 33.941,9.3337 37.6086,25.494 72,33 122.4509,26.725 158.9427,23.7772 282,0 112.4513,-21.7279 144.043,-32.1814 239.146,-96 38.5371,-25.8603 74.9454,-63.0879 102.0667,-94.3459"
+           id="path1640" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2839.617,-446.0785 2848.7818,-451.3943 2844.9324,-441.5235 "
+           id="polygon1642" />
+        <text
+           text-anchor="middle"
+           x="2052.8782"
+           y="-325.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1644">Dataset:keyword</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-367.2406 c 168.5982,0 591.7922,36.2954 754.3556,81 33.941,9.3337 37.6086,25.494 72,33 122.4509,26.725 158.9427,23.7772 282,0 112.4513,-21.7279 144.043,-32.1814 239.146,-96 38.5371,-25.8603 74.9454,-63.0879 102.0667,-94.3459"
+           class="hover-path"
+           id="path1646" />
+      </g>
+      <!-- Dataset&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::title"
+         data-to="TYPE::LanguageString"
+         id="g1658">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-150.2406 c 598.8903,0 850.1867,335.6876 1347.5016,2 98.2854,-65.9474 131.671,-210.759 142.9017,-293.278"
+           id="path1650" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2879.4642,-442.0405 2884.2187,-451.5086 2886.4063,-441.1421 "
+           id="polygon1652" />
+        <text
+           text-anchor="middle"
+           x="2052.8782"
+           y="-63.440601"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1654">Dataset:title</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-150.2406 c 598.8903,0 850.1867,335.6876 1347.5016,2 98.2854,-65.9474 131.671,-210.759 142.9017,-293.278"
+           class="hover-path"
+           id="path1656" />
+      </g>
+      <!-- ContactPoint -->
+      <g
+         id="TYPE::ContactPoint"
+         class="node type">
+        <g
+           id="TYPE_TITLE::ContactPoint"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2138.8782,-837.2406 1966.8782,-837.2406 1966.8782,-868.2406 2138.8782,-868.2406 "
+             id="polygon1660" />
+          <text
+             text-anchor="start"
+             x="2001.3632"
+             y="-847.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1662">ContactPoint</text>
+        </g>
+        <g
+           id="FIELD::ContactPoint::email"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2138.8782,-806.2406 1966.8782,-806.2406 1966.8782,-837.2406 2138.8782,-837.2406 "
+             id="polygon1665" />
+          <text
+             text-anchor="start"
+             x="1972.8782"
+             y="-817.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1667">email</text>
+          <text
+             text-anchor="start"
+             x="2091.0957"
+             y="-816.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1669">String</text>
+        </g>
+        <g
+           id="FIELD::ContactPoint::name"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2138.8782,-775.2406 1966.8782,-775.2406 1966.8782,-806.2406 2138.8782,-806.2406 "
+             id="polygon1672" />
+          <text
+             text-anchor="start"
+             x="1972.427"
+             y="-786.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1674">name</text>
+          <text
+             text-anchor="start"
+             x="2020.4094"
+             y="-785.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1676">LanguageString</text>
+        </g>
+      </g>
+      <!-- Dataset&#45;&gt;ContactPoint -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::contactPoint"
+         data-to="TYPE::ContactPoint"
+         id="g1688">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-554.2406 c 99.7976,0 0.3078,-149.2699 79.5,-210 137.5131,-105.4547 350.4735,-95.9101 476.74,-77.944"
+           id="path1680" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1949.4407,-845.6227 1958.827,-840.7086 1948.4249,-838.6968 "
+           id="polygon1682" />
+        <text
+           text-anchor="middle"
+           x="1529.9504"
+           y="-824.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1684">Dataset:contactPoint</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-554.2406 c 99.7976,0 0.3078,-149.2699 79.5,-210 137.5131,-105.4547 350.4735,-95.9101 476.74,-77.944"
+           class="hover-path"
+           id="path1686" />
+      </g>
+      <!-- Distribution -->
+      <g
+         id="TYPE::Distribution"
+         class="node type">
+        <g
+           id="TYPE_TITLE::Distribution"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-684.2406 1668.3782,-684.2406 1668.3782,-715.2406 1879.3782,-715.2406 "
+             id="polygon1690" />
+          <text
+             text-anchor="start"
+             x="1728.8792"
+             y="-694.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1692">Distribution</text>
+        </g>
+        <g
+           id="FIELD::Distribution::accessService"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-653.2406 1668.3782,-653.2406 1668.3782,-684.2406 1879.3782,-684.2406 "
+             id="polygon1695" />
+          <text
+             text-anchor="start"
+             x="1674.3694"
+             y="-664.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1697">accessService</text>
+          <text
+             text-anchor="start"
+             x="1786.3174"
+             y="-663.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1699">DataService</text>
+        </g>
+        <g
+           id="FIELD::Distribution::accessURL"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-622.2406 1668.3782,-622.2406 1668.3782,-653.2406 1879.3782,-653.2406 "
+             id="polygon1702" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-633.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1704">accessURL</text>
+          <text
+             text-anchor="start"
+             x="1831.5958"
+             y="-632.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1706">String</text>
+        </g>
+        <g
+           id="FIELD::Distribution::compressFormat"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-591.2406 1668.3782,-591.2406 1668.3782,-622.2406 1879.3782,-622.2406 "
+             id="polygon1709" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-602.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1711">compressFormat</text>
+          <text
+             text-anchor="start"
+             x="1831.5958"
+             y="-601.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1713">String</text>
+        </g>
+        <g
+           id="FIELD::Distribution::conformsTo"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-560.2406 1668.3782,-560.2406 1668.3782,-591.2406 1879.3782,-591.2406 "
+             id="polygon1716" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-571.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1718">conformsTo</text>
+          <text
+             text-anchor="start"
+             x="1831.5958"
+             y="-570.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1720">String</text>
+        </g>
+        <g
+           id="FIELD::Distribution::format"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-529.2406 1668.3782,-529.2406 1668.3782,-560.2406 1879.3782,-560.2406 "
+             id="polygon1723" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-540.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1725">format</text>
+          <text
+             text-anchor="start"
+             x="1831.5958"
+             y="-539.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1727">String</text>
+        </g>
+        <g
+           id="FIELD::Distribution::iri"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-498.2406 1668.3782,-498.2406 1668.3782,-529.2406 1879.3782,-529.2406 "
+             id="polygon1730" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-509.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1732">iri</text>
+          <text
+             text-anchor="start"
+             x="1857.3813"
+             y="-508.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1734">ID</text>
+        </g>
+        <g
+           id="FIELD::Distribution::mediaType"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-467.2406 1668.3782,-467.2406 1668.3782,-498.2406 1879.3782,-498.2406 "
+             id="polygon1737" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-478.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1739">mediaType</text>
+          <text
+             text-anchor="start"
+             x="1831.5958"
+             y="-477.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1741">String</text>
+        </g>
+        <g
+           id="FIELD::Distribution::packageFormat"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-436.2406 1668.3782,-436.2406 1668.3782,-467.2406 1879.3782,-467.2406 "
+             id="polygon1744" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-447.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1746">packageFormat</text>
+          <text
+             text-anchor="start"
+             x="1831.5958"
+             y="-446.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1748">String</text>
+        </g>
+        <g
+           id="FIELD::Distribution::termsOfUse"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-405.2406 1668.3782,-405.2406 1668.3782,-436.2406 1879.3782,-436.2406 "
+             id="polygon1751" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-416.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1753">termsOfUse</text>
+          <text
+             text-anchor="start"
+             x="1782.719"
+             y="-415.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1755">TermsOfUse</text>
+        </g>
+        <g
+           id="FIELD::Distribution::title"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1879.3782,-374.2406 1668.3782,-374.2406 1668.3782,-405.2406 1879.3782,-405.2406 "
+             id="polygon1758" />
+          <text
+             text-anchor="start"
+             x="1674.3782"
+             y="-385.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1760">title</text>
+          <text
+             text-anchor="start"
+             x="1760.4406"
+             y="-384.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1762">LanguageString</text>
+        </g>
+      </g>
+      <!-- Dataset&#45;&gt;Distribution -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::distribution"
+         data-to="TYPE::Distribution"
+         id="g1774">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-492.2406 c 86.5702,0 183.1617,-13.5996 257.4083,-27.021"
+           id="path1766" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1649.3266,-522.7091 1659.7934,-521.0671 1650.5871,-515.8235 "
+           id="polygon1768" />
+        <text
+           text-anchor="middle"
+           x="1529.9504"
+           y="-511.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1770">Dataset:distribution</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-492.2406 c 86.5702,0 183.1617,-13.5996 257.4083,-27.021"
+           class="hover-path"
+           id="path1772" />
+      </g>
+      <!-- Publisher -->
+      <g
+         id="TYPE::Publisher"
+         class="node type">
+        <g
+           id="TYPE_TITLE::Publisher"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2131.8782,-242.2406 1974.8782,-242.2406 1974.8782,-273.2406 2131.8782,-273.2406 "
+             id="polygon1776" />
+          <text
+             text-anchor="start"
+             x="2015.8734"
+             y="-252.0406"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1778">Publisher</text>
+        </g>
+        <g
+           id="FIELD::Publisher::iri"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2131.8782,-211.2406 1974.8782,-211.2406 1974.8782,-242.2406 2131.8782,-242.2406 "
+             id="polygon1781" />
+          <text
+             text-anchor="start"
+             x="1980.8782"
+             y="-222.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1783">iri</text>
+          <text
+             text-anchor="start"
+             x="2109.8813"
+             y="-221.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1785">ID</text>
+        </g>
+        <g
+           id="FIELD::Publisher::title"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2131.8782,-180.2406 1974.8782,-180.2406 1974.8782,-211.2406 2131.8782,-211.2406 "
+             id="polygon1788" />
+          <text
+             text-anchor="start"
+             x="1980.4878"
+             y="-191.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1790">title</text>
+          <text
+             text-anchor="start"
+             x="2013.4094"
+             y="-190.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1792">LanguageString</text>
+        </g>
+      </g>
+      <!-- Dataset&#45;&gt;Publisher -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::publisher"
+         data-to="TYPE::Publisher"
+         id="g1804">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-336.2406 c 39.3169,0 41.5021,28.7016 79.5,38.8 178.5774,47.4589 232.4239,-2.1412 414.8556,27.2 22.6595,3.6444 46.7254,8.9933 69.2958,14.6897"
+           id="path1796" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1957.2722,-258.8825 1966.0863,-253.0036 1955.5299,-252.1028 "
+           id="polygon1798" />
+        <text
+           text-anchor="middle"
+           x="1529.9504"
+           y="-302.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1800">Dataset:publisher</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-336.2406 c 39.3169,0 41.5021,28.7016 79.5,38.8 178.5774,47.4589 232.4239,-2.1412 414.8556,27.2 22.6595,3.6444 46.7254,8.9933 69.2958,14.6897"
+           class="hover-path"
+           id="path1802" />
+      </g>
+      <!-- TemporalCoverage -->
+      <g
+         id="TYPE::TemporalCoverage"
+         class="node type">
+        <g
+           id="TYPE_TITLE::TemporalCoverage"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1855.3782,-226.2406 1691.3782,-226.2406 1691.3782,-257.2406 1855.3782,-257.2406 "
+             id="polygon1806" />
+          <text
+             text-anchor="start"
+             x="1696.3698"
+             y="-236.0406"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1808">TemporalCoverage</text>
+        </g>
+        <g
+           id="FIELD::TemporalCoverage::endDate"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1855.3782,-195.2406 1691.3782,-195.2406 1691.3782,-226.2406 1855.3782,-226.2406 "
+             id="polygon1811" />
+          <text
+             text-anchor="start"
+             x="1697.3782"
+             y="-206.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1813">endDate</text>
+          <text
+             text-anchor="start"
+             x="1807.5958"
+             y="-205.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1815">String</text>
+        </g>
+        <g
+           id="FIELD::TemporalCoverage::startDate"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1855.3782,-164.2406 1691.3782,-164.2406 1691.3782,-195.2406 1855.3782,-195.2406 "
+             id="polygon1818" />
+          <text
+             text-anchor="start"
+             x="1697.3782"
+             y="-175.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1820">startDate</text>
+          <text
+             text-anchor="start"
+             x="1807.5958"
+             y="-174.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1822">String</text>
+        </g>
+      </g>
+      <!-- Dataset&#45;&gt;TemporalCoverage -->
+      <g
+         class="edge"
+         data-from="FIELD::Dataset::temporal"
+         data-to="TYPE::TemporalCoverage"
+         id="g1834">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-243.2406 c 95.4127,0 203.8002,10.096 280.4838,18.9463"
+           id="path1826" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1673.6131,-227.7473 1683.1395,-223.1108 1672.8009,-220.7946 "
+           id="polygon1828" />
+        <text
+           text-anchor="middle"
+           x="1529.9504"
+           y="-245.4406"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1830">Dataset:temporal</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1392.5226,-243.2406 c 95.4127,0 203.8002,10.096 280.4838,18.9463"
+           class="hover-path"
+           id="path1832" />
+      </g>
+      <!-- DatasetContainer&#45;&gt;Dataset -->
+      <g
+         class="edge"
+         data-from="FIELD::DatasetContainer::data"
+         data-to="TYPE::Dataset"
+         id="g1844">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 833.3472,-311.2406 c 102.3924,0 215.6419,-23.2815 301.4903,-45.8946"
+           id="path1836" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1134.075,-360.554 1144.6389,-359.7453 1135.8764,-353.7898 "
+           id="polygon1838" />
+        <text
+           text-anchor="middle"
+           x="992.93488"
+           y="-344.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1840">DatasetContainer:data</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 833.3472,-311.2406 c 102.3924,0 215.6419,-23.2815 301.4903,-45.8946"
+           class="hover-path"
+           id="path1842" />
+      </g>
+      <!-- Pagination -->
+      <g
+         id="TYPE::Pagination"
+         class="node type">
+        <g
+           id="TYPE_TITLE::Pagination"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1327.5226,-78.2406 1217.5226,-78.2406 1217.5226,-109.2406 1327.5226,-109.2406 "
+             id="polygon1846" />
+          <text
+             text-anchor="start"
+             x="1230.0066"
+             y="-88.040604"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1848">Pagination</text>
+        </g>
+        <g
+           id="FIELD::Pagination::totalCount"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="1327.5226,-47.2406 1217.5226,-47.2406 1217.5226,-78.2406 1327.5226,-78.2406 "
+             id="polygon1851" />
+          <text
+             text-anchor="start"
+             x="1223.1202"
+             y="-58.840599"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1853">totalCount</text>
+          <text
+             text-anchor="start"
+             x="1304.129"
+             y="-57.840599"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1855">Int</text>
+        </g>
+      </g>
+      <!-- DatasetContainer&#45;&gt;Pagination -->
+      <g
+         class="edge"
+         data-from="FIELD::DatasetContainer::pagination"
+         data-to="TYPE::Pagination"
+         id="g1867">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 833.3472,-280.2406 c 155.3049,0 168.675,97.4153 311.6754,158 17.3736,7.3606 36.442,14.4468 54.4171,20.7021"
+           id="path1859" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1200.9755,-104.7117 1209.2956,-98.1524 1198.701,-98.0915 "
+           id="polygon1861" />
+        <text
+           text-anchor="middle"
+           x="992.93488"
+           y="-272.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1863">DatasetContainer:pagination</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 833.3472,-280.2406 c 155.3049,0 168.675,97.4153 311.6754,158 17.3736,7.3606 36.442,14.4468 54.4171,20.7021"
+           class="hover-path"
+           id="path1865" />
+      </g>
+      <!-- ContactPoint&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::ContactPoint::name"
+         data-to="TYPE::LanguageString"
+         id="g1877">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2138.8782,-790.2406 c 267.4258,0 373.0455,-113.5947 601.146,26 72.9157,44.6235 113.2669,139.1205 132.9069,201.5816"
+           id="path1869" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2876.3313,-563.5083 2875.9072,-552.922 2869.637,-561.4622 "
+           id="polygon1871" />
+        <text
+           text-anchor="middle"
+           x="2359.8782"
+           y="-837.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1873">ContactPoint:name</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2138.8782,-790.2406 c 267.4258,0 373.0455,-113.5947 601.146,26 72.9157,44.6235 113.2669,139.1205 132.9069,201.5816"
+           class="hover-path"
+           id="path1875" />
+      </g>
+      <!-- Distribution&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::Distribution::title"
+         data-to="TYPE::LanguageString"
+         id="g1887">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1879.3782,-389.2406 c 158.3397,0 183.1259,-83.1286 339.5,-108 206.9523,-32.9159 454.4439,-21.9597 582.7978,-12.593"
+           id="path1879" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2802.1262,-513.3098 2811.8387,-509.077 2801.6064,-506.3291 "
+           id="polygon1881" />
+        <text
+           text-anchor="middle"
+           x="2359.8782"
+           y="-522.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1883">Distribution:title</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1879.3782,-389.2406 c 158.3397,0 183.1259,-83.1286 339.5,-108 206.9523,-32.9159 454.4439,-21.9597 582.7978,-12.593"
+           class="hover-path"
+           id="path1885" />
+      </g>
+      <!-- DataService -->
+      <g
+         id="TYPE::DataService"
+         class="node type">
+        <g
+           id="TYPE_TITLE::DataService"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2461.8782,-686.2406 2258.8782,-686.2406 2258.8782,-717.2406 2461.8782,-717.2406 "
+             id="polygon1889" />
+          <text
+             text-anchor="start"
+             x="2311.3723"
+             y="-696.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1891">DataService</text>
+        </g>
+        <g
+           id="FIELD::DataService::endpointDescription"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2461.8782,-655.2406 2258.8782,-655.2406 2258.8782,-686.2406 2461.8782,-686.2406 "
+             id="polygon1894" />
+          <text
+             text-anchor="start"
+             x="2264.7495"
+             y="-666.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1896">endpointDescription</text>
+          <text
+             text-anchor="start"
+             x="2414.4871"
+             y="-665.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1898">String</text>
+        </g>
+        <g
+           id="FIELD::DataService::endpointURL"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2461.8782,-624.2406 2258.8782,-624.2406 2258.8782,-655.2406 2461.8782,-655.2406 "
+             id="polygon1901" />
+          <text
+             text-anchor="start"
+             x="2264.8782"
+             y="-635.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1903">endpointURL</text>
+          <text
+             text-anchor="start"
+             x="2414.0957"
+             y="-634.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1905">String</text>
+        </g>
+        <g
+           id="FIELD::DataService::iri"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2461.8782,-593.2406 2258.8782,-593.2406 2258.8782,-624.2406 2461.8782,-624.2406 "
+             id="polygon1908" />
+          <text
+             text-anchor="start"
+             x="2264.8782"
+             y="-604.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1910">iri</text>
+          <text
+             text-anchor="start"
+             x="2439.8813"
+             y="-603.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1912">ID</text>
+        </g>
+        <g
+           id="FIELD::DataService::title"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2461.8782,-562.2406 2258.8782,-562.2406 2258.8782,-593.2406 2461.8782,-593.2406 "
+             id="polygon1915" />
+          <text
+             text-anchor="start"
+             x="2264.8782"
+             y="-573.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1917">title</text>
+          <text
+             text-anchor="start"
+             x="2342.9407"
+             y="-572.84058"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1919">LanguageString</text>
+        </g>
+      </g>
+      <!-- Distribution&#45;&gt;DataService -->
+      <g
+         class="edge"
+         data-from="FIELD::Distribution::accessService"
+         data-to="TYPE::DataService"
+         id="g1931">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1879.3782,-669.2406 c 123.0911,0 263.5976,9.5995 360.7345,17.7526"
+           id="path1923" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2240.5911,-654.9601 2250.2599,-650.6284 2240.0001,-647.9851 "
+           id="polygon1925" />
+        <text
+           text-anchor="middle"
+           x="2052.8782"
+           y="-671.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1927">Distribution:accessService</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1879.3782,-669.2406 c 123.0911,0 263.5976,9.5995 360.7345,17.7526"
+           class="hover-path"
+           id="path1929" />
+      </g>
+      <!-- TermsOfUse -->
+      <g
+         id="TYPE::TermsOfUse"
+         class="node type">
+        <g
+           id="TYPE_TITLE::TermsOfUse"
+           class="type-title">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-452.2406 2226.8782,-452.2406 2226.8782,-483.2406 2492.8782,-483.2406 "
+             id="polygon1933" />
+          <text
+             text-anchor="start"
+             x="2308.8823"
+             y="-462.04059"
+             font-family="helvetica, open-sans"
+             font-size="18px"
+             fill="#000000"
+             id="text1935">TermsOfUse</text>
+        </g>
+        <g
+           id="FIELD::TermsOfUse::author"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-421.2406 2226.8782,-421.2406 2226.8782,-452.2406 2492.8782,-452.2406 "
+             id="polygon1938" />
+          <text
+             text-anchor="start"
+             x="2232.8782"
+             y="-432.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1940">author</text>
+          <text
+             text-anchor="start"
+             x="2373.9407"
+             y="-431.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1942">LanguageString</text>
+        </g>
+        <g
+           id="FIELD::TermsOfUse::copyrighted_database"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-390.2406 2226.8782,-390.2406 2226.8782,-421.2406 2492.8782,-421.2406 "
+             id="polygon1945" />
+          <text
+             text-anchor="start"
+             x="2232.8782"
+             y="-401.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1947">copyrighted_database</text>
+          <text
+             text-anchor="start"
+             x="2445.0957"
+             y="-400.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1949">String</text>
+        </g>
+        <g
+           id="FIELD::TermsOfUse::copyrighted_work"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-359.2406 2226.8782,-359.2406 2226.8782,-390.2406 2492.8782,-390.2406 "
+             id="polygon1952" />
+          <text
+             text-anchor="start"
+             x="2232.8782"
+             y="-370.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1954">copyrighted_work</text>
+          <text
+             text-anchor="start"
+             x="2445.0957"
+             y="-369.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1956">String</text>
+        </g>
+        <g
+           id="FIELD::TermsOfUse::database_author"
+           class="field edge-source">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-328.2406 2226.8782,-328.2406 2226.8782,-359.2406 2492.8782,-359.2406 "
+             id="polygon1959" />
+          <text
+             text-anchor="start"
+             x="2232.8782"
+             y="-339.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1961">database_author</text>
+          <text
+             text-anchor="start"
+             x="2373.9407"
+             y="-338.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type type-link"
+             id="text1963">LanguageString</text>
+        </g>
+        <g
+           id="FIELD::TermsOfUse::personal_data"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-297.2406 2226.8782,-297.2406 2226.8782,-328.2406 2492.8782,-328.2406 "
+             id="polygon1966" />
+          <text
+             text-anchor="start"
+             x="2232.8782"
+             y="-308.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1968">personal_data</text>
+          <text
+             text-anchor="start"
+             x="2445.0957"
+             y="-307.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1970">String</text>
+        </g>
+        <g
+           id="FIELD::TermsOfUse::sui_generis_database_rights"
+           class="field">
+          <polygon
+             fill="none"
+             stroke="#000000"
+             points="2492.8782,-266.2406 2226.8782,-266.2406 2226.8782,-297.2406 2492.8782,-297.2406 "
+             id="polygon1973" />
+          <text
+             text-anchor="start"
+             x="2232.6782"
+             y="-277.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-name"
+             id="text1975">sui_generis_database_rights</text>
+          <text
+             text-anchor="start"
+             x="2445.4871"
+             y="-276.84061"
+             font-family="helvetica, open-sans"
+             font-size="16px"
+             fill="#000000"
+             class="field-type"
+             id="text1977">String</text>
+        </g>
+      </g>
+      <!-- Distribution&#45;&gt;TermsOfUse -->
+      <g
+         class="edge"
+         data-from="FIELD::Distribution::termsOfUse"
+         data-to="TYPE::TermsOfUse"
+         id="g1989">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1879.3782,-420.2406 c 110.5481,0 234.7819,11.9537 329.2285,23.5391"
+           id="path1981" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2209.3164,-400.1404 2218.81,-395.4371 2208.4555,-393.1935 "
+           id="polygon1983" />
+        <text
+           text-anchor="middle"
+           x="2052.8782"
+           y="-421.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1985">Distribution:termsOfUse</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1879.3782,-420.2406 c 110.5481,0 234.7819,11.9537 329.2285,23.5391"
+           class="hover-path"
+           id="path1987" />
+      </g>
+      <!-- Publisher&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::Publisher::title"
+         data-to="TYPE::LanguageString"
+         id="g1999">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2131.8782,-195.2406 c 270.5154,0 381.5912,122.8225 608.146,-25 77.2453,-50.401 116.8572,-154.7302 135.0942,-221.388"
+           id="path1991" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2871.8123,-442.8163 2877.7602,-451.584 2878.5782,-441.0208 "
+           id="polygon1993" />
+        <text
+           text-anchor="middle"
+           x="2359.8782"
+           y="-194.4406"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text1995">Publisher:title</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2131.8782,-195.2406 c 270.5154,0 381.5912,122.8225 608.146,-25 77.2453,-50.401 116.8572,-154.7302 135.0942,-221.388"
+           class="hover-path"
+           id="path1997" />
+      </g>
+      <!-- DataService&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::DataService::title"
+         data-to="TYPE::LanguageString"
+         id="g2009">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2461.8782,-577.2406 c 119.1834,0 254.3047,28.7412 339.9584,50.6394"
+           id="path2001" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2802.967,-529.9242 2811.774,-524.0345 2801.2164,-523.1466 "
+           id="polygon2003" />
+        <text
+           text-anchor="middle"
+           x="2656.4512"
+           y="-573.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text2005">DataService:title</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2461.8782,-577.2406 c 119.1834,0 254.3047,28.7412 339.9584,50.6394"
+           class="hover-path"
+           id="path2007" />
+      </g>
+      <!-- TermsOfUse&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::TermsOfUse::author"
+         data-to="TYPE::LanguageString"
+         id="g2019">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2492.8782,-437.2406 c 107.4744,0 229.2243,-23.6433 308.9372,-42.4109"
+           id="path2011" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2801.2695,-483.1192 2811.8082,-482.0305 2802.8907,-476.3096 "
+           id="polygon2013" />
+        <text
+           text-anchor="middle"
+           x="2656.4512"
+           y="-469.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text2015">TermsOfUse:author</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2492.8782,-437.2406 c 107.4744,0 229.2243,-23.6433 308.9372,-42.4109"
+           class="hover-path"
+           id="path2017" />
+      </g>
+      <!-- TermsOfUse&#45;&gt;LanguageString -->
+      <g
+         class="edge"
+         data-from="FIELD::TermsOfUse::database_author"
+         data-to="TYPE::LanguageString"
+         id="g2029">
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2492.8782,-343.2406 c 113.8708,0 233.7435,-57.4054 311.2935,-103.2303"
+           id="path2021" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="2802.5669,-449.5892 2812.9465,-451.7136 2806.1572,-443.58 "
+           id="polygon2023" />
+        <text
+           text-anchor="middle"
+           x="2656.4512"
+           y="-412.44061"
+           font-family="Times, serif"
+           font-size="14px"
+           fill="#000000"
+           id="text2025">TermsOfUse:database_author</text>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 2492.8782,-343.2406 c 113.8708,0 233.7435,-57.4054 311.2935,-103.2303"
+           class="hover-path"
+           id="path2027" />
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs2034">
+    <style
+       id="svg-pan-zoom-controls-styles"
+       type="text/css">.svg-pan-zoom-control { cursor: pointer; fill: black; fill-opacity: 0.333; } .svg-pan-zoom-control:hover { fill-opacity: 0.8; } .svg-pan-zoom-control-background { fill: white; fill-opacity: 0.5; } .svg-pan-zoom-control-background { fill-opacity: 0.8; }</style>
+  </defs>
+</svg>

@@ -16,7 +16,7 @@
     <g text-rendering="geometricPrecision" stroke-miterlimit="1.45" shape-rendering="geometricPrecision" font-family="sans-serif" transform="matrix(1,0,0,1,9,-55)" stroke-linecap="butt">
       <text x="695.6523" xml:space="preserve" y="101.7139" clip-path="url(#clipPath2)" stroke="none">?název</text>
       <ellipse rx="270.8" fill="none" ry="26" clip-path="url(#clipPath2)" cx="277.296" cy="97"/>
-      <text x="26.8341" xml:space="preserve" y="101.7139" clip-path="url(#clipPath2)" stroke="none">https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19</text>
+      <text x="26.8341" xml:space="preserve" y="101.7139" clip-path="url(#clipPath2)" stroke="none">https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7</text>
       <path fill="none" d="M548.096 97 L684.6 97" clip-path="url(#clipPath2)"/>
       <path d="M692.6 97 L680.6 92 L683.6 97 L680.6 102 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <text x="554.7476" xml:space="preserve" font-size="11px" y="83.821" clip-path="url(#clipPath2)" stroke="none">http://purl.org/dc/terms/title</text>

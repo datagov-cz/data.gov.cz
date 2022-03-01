@@ -4,7 +4,7 @@ title: Rozhraní GraphQL Národního katalogu otevřených dat
 detail: true
 ref: graphql-pro-nkod
 lang: cs
-image: ../attachments/články/graphql-pro-nkod-2021/graphiql.webp
+image: ../přílohy/články/graphql-pro-nkod-2021/graphiql.webp
 date: 2022-02-22 22:22:22 +02:00
 author: petr_škoda
 ---
@@ -256,7 +256,7 @@ Samotný nástroj nabízí, po troše klikání a kopírování, interaktivní p
 Pro naše potřeby však stačí jeho statická verze.
 
 {% include image.html 
-   url="../attachments/články/graphql-pro-nkod-2021/graphql-voyager.svg"
+   url="../přílohy/články/graphql-pro-nkod-2021/graphql-voyager.svg"
    description="GraphQL schéma Národního katalogu otevřených dat"
 %}
 
@@ -376,7 +376,7 @@ Tento nástroj slouží jako webový klient pro GraphQL.
 V případě Národního katalogu otevřených dat je možné ho najít na adrese [https://data.gov.cz/graphql][graphql-nkod].
 
 {% include image.html 
-   url="../attachments/články/graphql-pro-nkod-2021/graphiql.webp"
+   url="../přílohy/články/graphql-pro-nkod-2021/graphiql.webp"
    description="Rozhraní nástroje GraphiQL"
 %}
 
@@ -392,17 +392,17 @@ Pojďme se nyní na tento panel (Obrázek 1) zaměřit a vysvětlit si, jak je h
 <div class="figures">
 
 {% include image.html 
-   url="../attachments/články/graphql-pro-nkod-2021/document-explorer.webp"
+   url="../přílohy/články/graphql-pro-nkod-2021/document-explorer.webp"
    description="Obrázek 1: Panel s dokumentací v nástroji GraphiQL"
 %}
 
 {% include image.html 
-   url="../attachments/články/graphql-pro-nkod-2021/document-explorer-query.webp"
+   url="../přílohy/články/graphql-pro-nkod-2021/document-explorer-query.webp"
    description="Obrázek 2: Panel s dokumentací pro query v nástroji GraphiQL"
 %}
 
 {% include image.html 
-   url="../attachments/články/graphql-pro-nkod-2021/document-explorer-datasetsfilter.webp"
+   url="../přílohy/články/graphql-pro-nkod-2021/document-explorer-datasetsfilter.webp"
    description="Obrázek 3: Panel s dokumentací pro DatasetFilter v nástroji GraphiQL"
 %}
 
@@ -445,7 +445,7 @@ GraphiQL nejen že umí zobrazit uživateli schéma, ale současně ho umí vyu�
 Ukažme si to na příkladu. 
 Pokud (1) začneme psát dotaz, máme možnost stisknutím kombinací kláves `ctrl+mezerník` vyvolat menu se seznamem použitelných hodnot. 
 {% include image.html 
-   url="../attachments/články/graphql-pro-nkod-2021/query-datasets-filter-suggestion.webp"
+   url="../přílohy/články/graphql-pro-nkod-2021/query-datasets-filter-suggestion.webp"
    description="Našeptávání dotazu v nástroji GraphiQL"
 %}
 Výsledný dotaz pak může vypadat následovně: 

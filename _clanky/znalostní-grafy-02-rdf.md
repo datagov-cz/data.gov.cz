@@ -51,7 +51,7 @@ Abyste si např. mohli přečíst tento článek, váš prohlížeč prostředni
 RDF používá IRI, většinou právě v podobě URL, pro identifikaci uzlů znalostních grafů.
 Uvažme například znalostní graf Národního katalogu otevřených dat, který jsme viděli již v předchozím dílu.
 Jako uzel je v něm reprezentována datová sada se statistikou cizinců podle státního občanství, věku a pohlaví za rok 2018.
-Uzel má přiřazen IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
+Uzel má přiřazen IRI [`https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7`](https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7).
 K IRI můžete přistoupit (klikněte na něj).
 Váš prohlížeč prostřednictvím HTTP protokolu IRI vyhledá v prostředí webu a získá počítačovou reprezentaci údajů o datové sadě dostupnou na serveru lokalizovaném s pomocí tohoto IRI.
 Díky HTTP protokolu ještě probíhá zajímavá komunikace mezi vaším prohlížečem a serverem, kterou nazýváme *HTTP content negotiation*, kdy váš prohlížeč požaduje od serveru reprezentaci údajů o datové sadě v konkrétním počítačovém formátu.
@@ -64,7 +64,7 @@ Formátům se budeme věnovat v závěru tohoto článku.
 
 Jak jsme si řekli v minulém dílu, ve znalostních grafech reprezentujeme věci a tvrzení o nich.
 V modelu RDF vyjadřujeme tvrzení o věci ve vazbě na IRI uzlu, který věc v grafu reprezentuje.
-Máme-li tedy datovou sadu z příkladu výše a uzel, který ji reprezentuje ve znalostním grafu Národního katalogu otevřených dat, můžeme na IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19) navázat tvrzení např. o názvu datové sady nebo o klíčových slovech, která ji charakterizují.
+Máme-li tedy datovou sadu z příkladu výše a uzel, který ji reprezentuje ve znalostním grafu Národního katalogu otevřených dat, můžeme na IRI [`https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7`](https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7) navázat tvrzení např. o názvu datové sady nebo o klíčových slovech, která ji charakterizují.
 
 RDF model umožňuje vyjadřovat tvrzení o věcech v podobě jednoduchých vět, které gramaticky sestávají z podmětu, přísudku a předmětu.
 Ukažme si příklady takových vět.
@@ -112,14 +112,14 @@ Tři věty uvedené výše tak popisují znalostní graf, který je graficky vyj
 
 Výše uvedený zápis je jenom přiblížení ke správnému vyjádření tvrzení v modelu RDF.
 Jak jsme si řekli výše, k identifikaci věcí nepoužívá RDF model řetězce, ale IRI.
-Např. jsme si řekli, že ve znalostním grafu Národního katalogu otevřených dat má naše datová sada přiřazeno IRI [`https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19`](https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19).
+Např. jsme si řekli, že ve znalostním grafu Národního katalogu otevřených dat má naše datová sada přiřazeno IRI [`https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7`](https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7).
 V trojicích z našeho příkladu je tedy místo řetězce "Statistika cizinců" k identifikaci datové sady používáno toto IRI.
 Syntakticky je IRI uváděno ve špičatých závorkách.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "má název"    "Cizinci podle státního občanství, věku a pohlaví - rok 2018".
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "je charakterizována klíčovým slovem"   "státní občanství".
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   "je charakterizována klíčovým slovem"   "cizinec".
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   "má název"    "Cizinci podle státního občanství, věku a pohlaví - rok 2018".
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   "je charakterizována klíčovým slovem"   "státní občanství".
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   "je charakterizována klíčovým slovem"   "cizinec".
 ~~~~~~~~~~~~
 
 Obecně platí, že subjektem v trojici je vždy IRI věci, o které v trojici něco tvrdíme.
@@ -137,7 +137,7 @@ V místě subjektu bude IRI Národního katalogu otevřených dat.
 Výsledek vidíte v příkladu níže.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/katalog/NKOD>   "obsahuje datovou sadu"   <https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19> .
+<https://data.gov.cz/zdroj/katalog/NKOD>   "obsahuje datovou sadu"   <https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7> .
 ~~~~~~~~~~~~
 
 Následující obrázek je vizuální reprezentací 4 výše uvedených trojic.
@@ -168,18 +168,18 @@ Mimochodem, jedná se o [Maráthštinu](https://www.wikidata.org/wiki/Q1571) a t
 Existují generické slovníky, které se hodí pro téměř jakýkoliv znalostní graf. Např.:
 
 * [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) - slovník pro popis digitálních objektů, které mají svůj název, tvůrce, vydatavele, datum vydání, datum aktualizace, apod.
-* [SKOS](http://www.w3.org/TR/skos-primer) - slovník pro vyjádření znalostních struktur jako jsou např. číselníky, klasifikace, taxonomie a thesaury
-* [Data Cube Vocabulary](http://www.w3.org/TR/vocab-data-cube/) - slovník pro vyjádření statistických údajů v podobě datových kostek
+* [SKOS](https://www.w3.org/TR/skos-primer) - slovník pro vyjádření znalostních struktur jako jsou např. číselníky, klasifikace, taxonomie a thesaury
+* [Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube/) - slovník pro vyjádření statistických údajů v podobě datových kostek
 * [Time Ontology](https://www.w3.org/TR/owl-time/) - slovník pro vyjadřování času
-* [Geo Vocabulary](http://www.w3.org/2003/01/geo/) - slovník pro základní vyjadřování geografického umístění
+* [Geo Vocabulary](https://www.w3.org/2003/01/geo/) - slovník pro základní vyjadřování geografického umístění
 
 Existují také různé doménově specifické slovníky, které je vhodné používat v případě, že se náš znalostí graf dané domény nějakým způsobem dotýká.
 Např.:
 
 * [GoodRelations](http://www.heppnetz.de/ontologies/goodrelations/v1.html) - slovník pro znalostní grafy v oblasti e-commerce
-* [DCAT](http://www.w3.org/TR/vocab-dcat/) - slovník pro popis datových sad a katalogů datových sad
+* [DCAT](https://www.w3.org/TR/vocab-dcat/) - slovník pro popis datových sad a katalogů datových sad
 * [DCAT-AP](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/dcat-ap-release-201) - rozšíření slovníku DCAT pro katalogizaci datových sad v rámci EU
-* [FOAF](http://www.foaf-project.org/) - slovník pro popis lidí a vztahů mezi nimi
+* [FOAF](http://xmlns.com/foaf/spec/) - slovník pro popis lidí a vztahů mezi nimi
 * [ORG](https://www.w3.org/TR/vocab-org/) - slovník pro popis organizací a jejich struktury
 * [HL7 FHIR](https://www.hl7.org/fhir/rdf.html) - slovník pro zdravotnictví
 
@@ -201,20 +201,20 @@ Vlastnost je definována jako univerzální vlastnost pro specifikaci názvů v�
 Ve znalostním grafu Národního katalogu otevřených dat je použita pro vyjádření názvů datových sad.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
 ~~~~~~~~~~~~
 
 Pro vyjádření klíčových slov charakterizujících datovou sadu je použita vlastnost s IRI [`http://www.w3.org/ns/dcat#keyword`](http://www.w3.org/ns/dcat#keyword) ze slovníku [DCAT](http://www.w3.org/TR/vocab-dcat/).
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/ns/dcat#keyword>   "státní občanství" .
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/ns/dcat#keyword>   "cizinec" .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://www.w3.org/ns/dcat#keyword>   "státní občanství" .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://www.w3.org/ns/dcat#keyword>   "cizinec" .
 ~~~~~~~~~~~~
 
 Poslední trojice přiřazující datovou sadu k Národnímu katalogu otevřených dat má jako predikát vlastnost s IRI [`http://www.w3.org/ns/dcat#dataset`](http://www.w3.org/ns/dcat#dataset) ze slovníku [DCAT](http://www.w3.org/TR/vocab-dcat/).
 
 ~~~~~~
-<https://data.gov.cz/zdroj/katalog/NKOD>   <http://www.w3.org/ns/dcat#dataset>   <https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19> .
+<https://data.gov.cz/zdroj/katalog/NKOD>   <http://www.w3.org/ns/dcat#dataset>   <https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7> .
 ~~~~~~~~~~~~
 
 Možná se ptáte, kde lze hledat existující slovníky.
@@ -240,7 +240,7 @@ Ve znalostním grafu Národního katalogu otevřených dat je např. použita t�
 Konkrétně je přiřazení datové sady do třídy vyjádřeno v RDF modelu jako následující trojice.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://www.w3.org/ns/dcat#Dataset> .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://www.w3.org/ns/dcat#Dataset> .
 ~~~~~~~~~~~~
 
 ### Výhody modelu RDF
@@ -260,8 +260,8 @@ Nemusíme kvůli tomu odstraňovat již existující tvrzení o názvu.
 Můžeme v datech ponechat obě trojice.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/2004/02/skos/core#prefLabel>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://www.w3.org/2004/02/skos/core#prefLabel>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" .
 ~~~~~~~~~~~~
 
 Model RDF také zajímavě pomáhá při zajišťování interoperability, což ve světě otevřených dat obzvlášť oceníme.
@@ -279,7 +279,7 @@ Představme si to na příkladu znalostního grafu Národního katalogu otevřen
 Znalostní graf Národního katalogu otevřených dat obsahuje pro datovou sadu také tvrzení o jejím poskytovateli.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://purl.org/dc/terms/publisher>   <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593> .
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://purl.org/dc/terms/publisher>   <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593> .
 ~~~~~~~~~~~~
 
 Jedná se o poskytovatele s IRI [`https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593`](https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593) a jde o Český statistický úřad (ČSÚ).
@@ -319,11 +319,11 @@ Další seskupení můžeme provést v případě trojic se stejným subjektem i
 Výsledná notace je potom následující.
 
 ~~~~~~
-<https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://www.w3.org/ns/dcat#Dataset> ;
+<https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://www.w3.org/ns/dcat#Dataset> ;
       <http://purl.org/dc/terms/title>   "Cizinci podle státního občanství, věku a pohlaví - rok 2018" ;
       <http://www.w3.org/ns/dcat#keyword>   "státní občanství", "cizinec" .
 
-<https://data.gov.cz/zdroj/katalog/NKOD>   <http://www.w3.org/ns/dcat#dataset>   <https://data.gov.cz/zdroj/datové-sady/http---vdb.czso.cz-pll-eweb-package_show-id-290038r19> .
+<https://data.gov.cz/zdroj/katalog/NKOD>   <http://www.w3.org/ns/dcat#dataset>   <https://data.gov.cz/zdroj/datové-sady/00025593/719f7b9f2cf4ab7fa40c7e7c459995a7> .
 ~~~~~~~~~~~~
 
 Dále je možné využít *prefixování*, abychom nemuseli v IRI vypisovat jejich opakující se části.
@@ -336,9 +336,9 @@ Jedná se o zápis stejných dat, jako v předchozím příkladu.
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix ds: <https://data.gov.cz/zdroj/datové-sady/> .
+@prefix ds: <https://data.gov.cz/zdroj/datové-sady/00025593/> .
 
-ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 rdf:type dcat:Dataset ;
+ds:719f7b9f2cf4ab7fa40c7e7c459995a7 rdf:type dcat:Dataset ;
       dct:title "Cizinci podle státního občanství, věku a pohlaví - rok 2018" ;
       dcat:keyword "státní občanství", "cizinec" .
 
@@ -351,13 +351,13 @@ Zkrátit zápis můžeme také vyjádřením predikátu `http://www.w3.org/1999/
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix ds: <https://data.gov.cz/zdroj/datové-sady/> .
+@prefix ds: <https://data.gov.cz/zdroj/datové-sady/00025593/> .
 
-ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 a dcat:Dataset ;
+ds:719f7b9f2cf4ab7fa40c7e7c459995a7 a dcat:Dataset ;
       dct:title "Cizinci podle státního občanství, věku a pohlaví - rok 2018" ;
       dcat:keyword "státní občanství", "cizinec" .
 
-<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 .
+<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:719f7b9f2cf4ab7fa40c7e7c459995a7 .
 ~~~~~~~~~~~~
 
 Ve formátu Turtle lze také pohodlně zapsat další drobné detaily modelu RDF, které jsou ale v mnoha situacích potřebné.
@@ -367,13 +367,13 @@ Jedná se např. o označení jazyka, ve kterém je daný literál uveden pomoc�
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix ds: <https://data.gov.cz/zdroj/datové-sady/> .
+@prefix ds: <https://data.gov.cz/zdroj/datové-sady/00025593/> .
 
-ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 a dcat:Dataset ;
+ds:719f7b9f2cf4ab7fa40c7e7c459995a7 a dcat:Dataset ;
       dct:title "Cizinci podle státního občanství, věku a pohlaví - rok 2018"@cs ;
       dcat:keyword "státní občanství"@cs, "cizinec"@cs .
 
-<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:http---vdb.czso.cz-pll-eweb-package_show-id-290038r19 .
+<https://data.gov.cz/zdroj/katalog/NKOD> dcat:dataset ds:719f7b9f2cf4ab7fa40c7e7c459995a7 .
 ~~~~~~~~~~~~
 
 #### Formát JSON-LD
@@ -397,7 +397,7 @@ Pokud vám v klíčích vadí `@`, můžete je v kontextu přejmenovat.
 
 ~~~~~~
 {
-  "@id": "http---vdb.czso.cz-pll-eweb-package_show-id-290038r19",
+  "@id": "719f7b9f2cf4ab7fa40c7e7c459995a7",
   "@type": "Dataset",
   "jméno": "Cizinci podle státního občanství, věku a pohlaví - rok 2018",
   "klíčová-slova": ["státní občanství", "cizinec"],
@@ -406,12 +406,12 @@ Pokud vám v klíčích vadí `@`, můžete je v kontextu přejmenovat.
 ~~~~~~~~~~~~
 
 A v následujícím výpisu vidíte příslušný JSON-LD kontext, jehož aplikací na JSON reprezentaci pomocí JSON-LD procesoru získáme stejné RDF trojice, jaké specifikuje výše uvedený příklad zapsaný ve formátu Turtle.
-Můžete si to [vyzkoušet na hřišti](https://json-ld.org/playground/#startTab=tab-nquads&json-ld=%7B%22%40context%22%3A%7B%22%40base%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%22%2C%22Dataset%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset%22%2C%22jm%C3%A9no%22%3A%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23keyword%22%2C%22katalog%22%3A%7B%22%40reverse%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23dataset%22%2C%22%40type%22%3A%22%40id%22%7D%7D%2C%22%40id%22%3A%22http---vdb.czso.cz-pll-eweb-package_show-id-290038r19%22%2C%22%40type%22%3A%22Dataset%22%2C%22jm%C3%A9no%22%3A%22Cizinci%20podle%20st%C3%A1tn%C3%ADho%20ob%C4%8Danstv%C3%AD%2C%20v%C4%9Bku%20a%20pohlav%C3%AD%20-%20rok%202018%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%5B%22st%C3%A1tn%C3%AD%20ob%C4%8Danstv%C3%AD%22%2C%22cizinec%22%5D%2C%22katalog%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fkatalog%2FNKOD%22%7D&context=%7B%22%40context%22%3A%7B%22%40base%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F%22%2C%22Dataset%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset%22%2C%22jm%C3%A9no%22%3A%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23keyword%22%2C%22katalog%22%3A%7B%22%40reverse%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23dataset%22%2C%22%40type%22%3A%22%40id%22%7D%7D%7D).
+Můžete si to [vyzkoušet na hřišti](https://json-ld.org/playground/#startTab=tab-nquads&json-ld=%7B%22%40context%22%3A%7B%22%40base%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F%22%2C%22Dataset%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23Dataset%22%2C%22jm%C3%A9no%22%3A%22http%3A%2F%2Fpurl.org%2Fdc%2Fterms%2Ftitle%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23keyword%22%2C%22katalog%22%3A%7B%22%40reverse%22%3A%22http%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23dataset%22%2C%22%40type%22%3A%22%40id%22%7D%7D%2C%22%40id%22%3A%22719f7b9f2cf4ab7fa40c7e7c459995a7%22%2C%22%40type%22%3A%22Dataset%22%2C%22jm%C3%A9no%22%3A%22Cizinci%20podle%20st%C3%A1tn%C3%ADho%20ob%C4%8Danstv%C3%AD%2C%20v%C4%9Bku%20a%20pohlav%C3%AD%20-%20rok%202018%22%2C%22kl%C3%AD%C4%8Dov%C3%A1-slova%22%3A%5B%22st%C3%A1tn%C3%AD%20ob%C4%8Danstv%C3%AD%22%2C%22cizinec%22%5D%2C%22katalog%22%3A%22https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fkatalog%2FNKOD%22%7D).
 
 ~~~~~~
 {
   "@context": {
-    "@base": "https://data.gov.cz/zdroj/datové-sady/",
+    "@base": "https://data.gov.cz/zdroj/datové-sady/00025593/",
     "Dataset": "http://www.w3.org/ns/dcat#Dataset",
     "jméno": "http://purl.org/dc/terms/title",
     "klíčová-slova": "http://www.w3.org/ns/dcat#keyword",
@@ -435,4 +435,4 @@ V dalším dílu si ukážeme, že data reprezentovaná v modelu RDF můžeme ch
 [json-ld-playground]: https://json-ld.org/playground/ "JSON-LD playground"
 [rdf11]: https://www.w3.org/TR/rdf11-primer/ "RDF" 
 [iri]: https://ofn.gov.cz/propojen%C3%A1-data/draft/#URI-IRI-URL "IRI"
-[turtle]: http://www.w3.org/TR/turtle/ "Turtle"
+[turtle]: https://www.w3.org/TR/turtle/ "Turtle"

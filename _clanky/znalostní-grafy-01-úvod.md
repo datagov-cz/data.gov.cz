@@ -146,4 +146,4 @@ Tento článek slouží jako úvod do světa znalostních grafů. Ukázali jsme 
 [A999]: https://rpp-opendata.egon.gov.cz/odrpp/zdroj/agenda/A999 "Ageda 999"
 [NKOD_znalostní_graf]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F670509543 "NKOD znalostní graf"
 [link_dcatap]: https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe "DCAT-AP"
-[volby_do_PS]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2Fhttp---vdb.czso.cz-pll-eweb-package_show-id-ps2017vysledky "Volby do PS"
+[volby_do_PS]: https://data.gov.cz/datová-sada?iri=https://data.gov.cz/zdroj/datové-sady/00025593/2e0fb8c2ac05013bc5fee1ce9273a681 "Volby do PS"

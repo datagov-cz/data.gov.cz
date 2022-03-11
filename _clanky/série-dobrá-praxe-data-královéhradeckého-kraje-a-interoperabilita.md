@@ -1,7 +1,7 @@
 ---
 layout: post
 detail: true
-title: Série Dobrá praxe: Data Královéhradeckého kraje a interoperabilita
+title: "Série Dobrá praxe: Data Královéhradeckého kraje a interoperabilita"
 ref: série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita
 lang: cs
 image:

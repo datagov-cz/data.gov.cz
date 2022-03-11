@@ -4,7 +4,7 @@ detail: true
 title: "Série Dobrá praxe: Data Královéhradeckého kraje a interoperabilita"
 ref: série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita
 lang: cs
-image:
+image: ../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Portál.webp
 author: lenka_kováčová
 date:
 ---
@@ -14,6 +14,8 @@ Královéhradecký kraj se díky tomu stal lídrem v oblasti poskytování otev�
 Tento článek ukazuje naši cestu.
 
 <!--more-->
+
+{% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Portál.webp" description="" %}
 
 ## Interoperabilita dat
 Interoperabilita dat neboli jejich vzájemná provázanost patří mezi nejdůležitější aspekty otevřených dat, bez kterých si nelze představit jejich další strojové zpracování.
@@ -70,6 +72,9 @@ Současné otevřené sady kraje, včetně jejich kompatibility s daty v NKOD, b
 
 #### Autor
 Mgr. Tomáš Merta, Královéhradecký kraj a Centrum investic, rozvoje a inovací, člen realizačního týmu [datového portálu Data KHK][Data KHK]
+
+{% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/Data_KHK_logo.webp" description="" %}
+{% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Chytrý_region.webp" description="" %}
 
 [Data KHK]: https://www.datakhk.cz/ "Data KHK"
 [NKOD]: https://data.gov.cz/datov%C3%A9-sady "NKOD"

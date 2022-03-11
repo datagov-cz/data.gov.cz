@@ -74,4 +74,4 @@ Mgr. Tomáš Merta, Královéhradecký kraj a Centrum investic, rozvoje a inovac
 [Data KHK]: https://www.datakhk.cz/ "Data KHK"
 [NKOD]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
 [OFN Adresy]: https://ofn.gov.cz/adresy/2020-07-01/ "OFN Adresy"
-[OFN Prostorová data]: [OFN Prostorová data] "OFN Prostorová data"
+[OFN Prostorová data]: https://ofn.gov.cz/prostorov%C3%A1-data/2019-08-22/ "OFN Prostorová data"

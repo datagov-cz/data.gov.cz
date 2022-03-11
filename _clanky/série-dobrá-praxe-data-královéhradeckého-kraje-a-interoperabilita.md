@@ -5,7 +5,7 @@ title: Série Dobrá praxe: Data Královéhradeckého kraje a interoperabilita
 ref: série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita
 lang: cs
 image:
-author: lenka_kovacova
+author: lenka_kováčová
 date:
 ---
 Otevřená data Královéhradeckého kraje se díky téměř čtyřleté historii publikování postupně vyvinula do podoby, jakou mají nyní na [datovém portálu Data KHK] [Data KHK].

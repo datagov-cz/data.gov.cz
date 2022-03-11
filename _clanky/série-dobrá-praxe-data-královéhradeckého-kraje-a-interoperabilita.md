@@ -51,11 +51,11 @@ Konkrétně byly provedeny tyto úkoly:
 - byly kompletně sjednoceny názvy atributových sloupců u všech datových sad
 - každý záznam dostal vlastní unikátní ID, a to ve formátu akronym nebo zkratka sady a číslo, např. SOKHK1 v datové sadě Seznam organizací Královéhradeckého kraje
 - kódování Windows-1250 v CSV souborech bylo nahrazeno UTF-8
-- adresy byly upraveny dle [OFN u adres] [OFN Adresy]
+- adresy byly upraveny dle [OFN u adres][OFN Adresy]
 - k názvům obcí, správních obvodů ORP a okresů byly doplněny kódy z Registru územní identifikace, adres a nemovitostí (RÚIAN) ve formě IRI
 - telefonní čísla byla dle doporučení upravena na formát +420123456789
 - vzáznamech se již nenacházejí hodnoty „null“, prázdná hodnota je nyní skutečně prázdná
-- souřadnice byly upraveny dle [OFN u prostorových dat] [OFN Prostorová data], k bodovým objektům byla přidána reprezentace ve WKT ve formátu POINT(50.0000 15.0000), do metadat byl navíc doplněn EPSG kód použitého souřadnicového systému (buď 4326 u WGS84 nebo 5514 u S-JTSK / Krovak East North)
+- souřadnice byly upraveny dle [OFN u prostorových dat][OFN Prostorová data], k bodovým objektům byla přidána reprezentace ve WKT ve formátu POINT(50.0000 15.0000), do metadat byl navíc doplněn EPSG kód použitého souřadnicového systému (buď 4326 u WGS84 nebo 5514 u S-JTSK / Krovak East North)
 
 ## Naše motivace
 Jaká byla naše motivace, abychom se vydali výše uvedeným směrem?

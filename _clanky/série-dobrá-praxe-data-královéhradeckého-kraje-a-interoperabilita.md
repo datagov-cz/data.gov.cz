@@ -9,7 +9,7 @@ author: lenka_kováčová
 date:
 ---
 Otevřená data Královéhradeckého kraje se díky téměř čtyřleté historii publikování postupně vyvinula do podoby, jakou mají nyní na [datovém portálu Data KHK][Data KHK].
-Díky jejich sjednocení došlo k posílení jejich interoperability nejen pro potřeby veřejnosti, ale i pro potřeby [NKOD] [NKOD].
+Díky jejich sjednocení došlo k posílení jejich interoperability nejen pro potřeby veřejnosti, ale i pro potřeby [NKOD][NKOD].
 Královéhradecký kraj se díky tomu stal lídrem v oblasti poskytování otevřených dat mezi kraji v ČR a zároveň pro ně i inspirací. 
 Tento článek ukazuje naši cestu.
 

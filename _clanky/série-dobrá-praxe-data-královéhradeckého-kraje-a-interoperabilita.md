@@ -68,7 +68,7 @@ Velmi nám pomohlo i aplikační rozhraní Katalogu otevřených dat Královéhr
 Tímto článkem bychom chtěli vyzvat uživatele portálu Data KHK k tomu, aby si vyzkoušeli práci s Katalogem otevřených dat Královéhradeckého kraje a použili je ve svých vlastních projektech, např. pro zpracování analytických prací či jako podkladové vrstvy v mapových aplikacích. 
 Současné otevřené sady kraje, včetně jejich kompatibility s daty v NKOD, budou otestovány studenty středních a vysokých škol v rámci připravovaného hackathonu nad otevřenými daty, který se uskuteční 13. října 2022 na půdě Univerzity Hradec Králové.
 
-###### Autor
+#### Autor
 Mgr. Tomáš Merta, Královéhradecký kraj a Centrum investic, rozvoje a inovací, člen realizačního týmu [datového portálu Data KHK] [Data KHK]
 
 [Data KHK]: https://www.datakhk.cz/ "Data KHK"

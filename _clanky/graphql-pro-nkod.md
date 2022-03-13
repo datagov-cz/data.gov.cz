@@ -5,7 +5,7 @@ detail: true
 ref: graphql-pro-nkod
 lang: cs
 image: ../přílohy/články/graphql-pro-nkod-2021/graphiql.webp
-date: 2022-03-14 22:22:22 +02:00
+date: 2022-03-11 22:22:22 +02:00
 author: petr_škoda
 ---
 Webové uživatelské rozhraní [Národního katalogu otevřených dat][nkod] poskytuje základní vyhledávání datových sad.

@@ -5,13 +5,15 @@ detail: true
 ref: graphql-pro-nkod
 lang: cs
 image: ../přílohy/články/graphql-pro-nkod-2021/graphiql.webp
-date: 2022-02-22 22:22:22 +02:00
+date: 2022-03-14 22:22:22 +02:00
 author: petr_škoda
 ---
-V současné době je možné využít pro dotazování nad [Národním katalogem otevřených dat][nkod] rozhraní GraphQL.
+Webové uživatelské rozhraní [Národního katalogu otevřených dat][nkod] poskytuje základní vyhledávání datových sad.
+Nalezení datových sad od vybraného poskytovatele, či s daným klíčovým slovem je triviální úlohou.
+Co ale třeba získání všech datových sad, které splňují otevřenou formální normu [Úřední desky][ofn-uredni-desky]?
+Pro efektivní vyhodnocení takového dotazu je třeba použít jiné rozhraní, například SPARQL nebo GraphQl.
 Co ale GraphQL vlastně je, jak vypadá dotaz v tomto jazyce a jaká data je možné získat? 
 Právě na tyto otázky se snaží odpovědět tento článek.
-
 <!--more-->
 
 <style type="text/css" scoped>
@@ -119,10 +121,10 @@ Důvodem existence klíčového slova `query `je skutečnost, že GraphQL podpor
 Například mutace, které je možné použít pro modifikaci dat.
 V tomto článku se však jinými typy dotazů nebudeme zabývat.
 
-Zbytek dotazu ke pak specifický pro Národní katalog otevřených dat. 
+Zbytek dotazu je pak specifický pro Národní katalog otevřených dat. 
 Již od pohledu je vidět, že se budeme ptát na datové sady a jejich identifikátory.
 
-Výsledek dotazy pak, dle aktuálního obsahu Národního katalogu otevřených dat, vypadá následovně. 
+Výsledek dotazu pak, dle aktuálního obsahu Národního katalogu otevřených dat, vypadá následovně. 
 ~~~~~~json
 {
   "data": {
@@ -170,8 +172,8 @@ Tato skutečnost není náhodná a jedná se o jednu ze základních vlastností
 Skrze dotaz si klient vybírá ta data, která chce získat, čímž současně specifikuje strukturu odpovědi.
 Tato vlastnost GraphQL umožňuje klientovi snadno získat požadovaná data v očekávané struktuře, což ulehčuje následné zpracování získaných dat.
 
-Další důležitou vlastností GraphQL je, že ignoruje bíle znaky, například mezery a konce řádků, v dotazu. 
-Je tedy zcela na uživateli zda-li se rozhodne dotaz vizuálně strukturovat, či se zbaví přebytečných bílých znaků za účelem snížení velikosti dotazu.
+Další důležitou vlastností GraphQL je, že ignoruje bílé znaky, například mezery a konce řádků v dotazu. 
+Je tedy zcela na uživateli, zda-li se rozhodne dotaz vizuálně strukturovat, či se zbaví přebytečných bílých znaků za účelem snížení velikosti dotazu.
 Předchozí dotaz by tedy šel zapsat třeba následovně:
 ~~~~~~graphql
 {datasets{data{iri}}}
@@ -180,12 +182,12 @@ Předchozí dotaz by tedy šel zapsat třeba následovně:
 
 ## Filtry v jazyce GraphQL 
 Výsledkem předchozích dotazů jsou údaje o deseti datových sadách.
-Nabízí se otázka proč zrovna deset a jak získat informaci o zbývajících datových sadách.
+Nabízí se otázka, proč zrovna deset a jak získat informaci o zbývajících datových sadách.
 Odpovědí na první otázku je, že omezení velikosti výsledku na 10 datových sad je výchozím nastavením na straně serveru.
 Jak je možné tuto hodnotu změnit a získat datových sad ve výsledku více, či méně?
 Odpovědí na tuto otázkou jsou filtry.
 
-Filtry jsou způsobem jakým je možné v dotazu předat informace, které mají ovlivnit způsob vyhodnocení dotazu.
+Filtry jsou způsobem, jakým je možné v dotazu předat informace, které mají ovlivnit způsob vyhodnocení dotazu.
 Následující dotaz je rozšířením dotazů předchozích:
 ~~~~~~graphql
 query {
@@ -239,7 +241,7 @@ A co že je to vlastně to schéma?
 
 ## GraphQL schéma
 Základem každého GraphQL rozhraní je schéma, které určuje, jaké dotazy je možné vykonávat.
-Z pohledu dotazů pro získání dat (`query`), schéma specifikuje o jaká data a s jakými filtry si může klient požádat.
+Z pohledu dotazů pro získání dat (`query`) schéma specifikuje, o jaká data a s jakými filtry si může klient požádat.
 Neb by úplný popis možností specifikace GraphQL schématu vydal samostatně na několik článků, omezíme se zde pouze na nutné minimum nutné pro navigaci schématem GraphQL Národního katalogu otevřených dat.
 Schéma je silně typované a mimo samotných dat umožňuje i specifikaci filtrů.
 Silná typovost znamená, že je každé položce přiřazený nějaký datový typ.
@@ -279,7 +281,7 @@ Tedy z levé strany skrze `datasets`, `data`, `iri`.
 Představme si situaci, kdy bychom rádi kromě IRI datové sady získali i její název, tedy `title`. 
 Ze schématu je vidět, že `title` je reprezentován objektem, který má dva klíče `cs` a `en`.
 Důvodem pro tuto skutečnost je, že datové sady mohou mít volitelně kromě českého názvu i název v anglickém jazyce.
-S touto znalostí schématu jsme nyní schopni upravit dotaz tak, aby vracel nejen IRI ale i název v českém jazyce. 
+S touto znalostí schématu jsme nyní schopni upravit dotaz tak, aby vracel nejen IRI, ale i název v českém jazyce. 
 ~~~~~~graphql
 query {
   datasets {
@@ -368,7 +370,7 @@ výsledek pak může vypadat následovně:
 <br/>
 
 Vizualizace schématu je vhodná pro získání celkového přehledu o tom, jaká data jsou k dispozici.
-Co naopak chybí je třeba informace o filtrech.
+Co naopak chybí, je třeba informace o filtrech.
 
 ## Nástroj GraphiQL
 Nabízí se tedy využití jiného, běžně používaného, nástroje [GraphiQL][graphql-graphiql].
@@ -424,7 +426,9 @@ datasets(
 ~~~~~~~~~~~~
 Na prvním řádku je název, který je možné použít v dotazu.
 Ve složených závorkách následuje trojice klíčů `filters`, `offset` a `limit`.
-Pro každý klíč je za dvojtečkou uveden datový typ, tedy seznam `DistributionFilter` pro `filters` a `Int`, tedy celé číslo, pro `offset` a `limit`.
+Pro každý klíč je za dvojtečkou uveden datový typ.
+Pro klíč `filters` je typem seznam `DistributionFilter`. 
+Klíče `offset` a 'limit` jsou typu `Int`, tedy celé číslo.
 Po ukončení závorky je za dvojtečkou uveden "návratový" typ `DatasetContainer`.
 Zde je možné si kliknutím na libovolný datový typ zobrazit jeho definici. 
 
@@ -487,8 +491,8 @@ Výsledek dotazu pak vypadá následovně.
 ## Složitější dotaz v GraphQL
 Pro demonstraci složitějšího dotazu si představme následující situaci. 
 Jakožto uživatelé Národního katalogu otevřených dat chceme získat seznam datových sad, které obsahují data z úředních desek.
-Datové sady s tímto obsahem obsahují distribuce, jenž deklarují kompatibilitu s OFN [Úřední desky](https://ofn.gov.cz/úřední-desky/2021-07-20/).
-Uživatelské rozhraní Národního katalogu otevřených dat bohužel nenabízí jednoduchou možnost jak tyto datové sady najít. 
+Datové sady s tímto obsahem obsahují distribuce, jež deklarují kompatibilitu s OFN [Úřední desky](https://ofn.gov.cz/úřední-desky/2021-07-20/).
+Uživatelské rozhraní Národního katalogu otevřených dat bohužel nenabízí jednoduchou možnost, jak tyto datové sady najít. 
 Jedním z možných řešení je položení vhodného dotazu pomocí GraphQL.
 ~~~~~~graphql
 query {
@@ -521,10 +525,33 @@ query {
 ~~~~~~~~~~~~
 [(zkusit dotaz)](https://data.gov.cz/graphql?query=query%20%7B%0A%20%20datasets%20(%0A%20%20%20%20limit%3A%20100%0A%20%20%20%20filters%3A%20%7B%0A%20%20%20%20%20%20conformsTo%3A%20%22https%3A%2F%2Fofn.gov.cz%2F%C3%BA%C5%99edn%C3%AD-desky%2F2021-07-20%2F%22%0A%20%20%20%20%7D%0A%20%20)%20%7B%0A%20%20%20%20data%20%7B%0A%20%20%20%20%20%20iri%0A%20%20%20%20%20%20title%20%7B%0A%20%20%20%20%20%20%20%20cs%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20publisher%20%7B%0A%20%20%20%20%20%20%20%20title%20%7B%0A%20%20%20%20%20%20%20%20%20%20cs%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20distribution%20%7B%0A%20%20%20%20%20%20%20%20accessURL%0A%20%20%20%20%20%20%20%20format%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20pagination%20%7B%0A%20%20%20%20%20%20totalCount%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
-Obdoba tohoto dotazu byla použita v ukázkové aplikaci [úředních desek][ofn-uredni-desky].
-Neb byla aplikace již popsána v [jiném článku][clanek-era-desek], necháme zde aplikaci bez dalšího popisu.
+Obdoba tohoto dotazu byla použita v aplikaci [úředních desek][ofn-uredni-desky].
 
-Pro úplnost je vhodné poznamenat, že existují i jiná řešení získání dat z NKOD než pomocí GraphQL, např. stažení dat v CSV, či položení dotazu v jazyce SPARQL.
+## GraphQL nebo SPARQL
+Pro úplnost je nutné připomenout, že existují i jiná řešení získání dat z NKOD než pomocí GraphQL, např. stažení dat v CSV, či položení dotazu v jazyce SPARQL.
+Kdy ale jaké řešení použít, je lepší SPARQL nebo GraphQL?
+Na podobné otázky bohužel není možné poskytnout jednoduchou univerzální odpověď.
+Každý ze zmiňovaných přístupů totiž cílí na jiné využití. 
+
+SPARQL je silnějším dotazovacím jazykem než GraphQL. 
+Důvodem je nejen samotná síla jazyka, ale zejména skutečnost, že GraphQL je omezené předem daným schématem. 
+Schéma samotné pak určuje možnosti, na které se může uživatel ptát, čímž je poměrně jasně vymezena hranice použitelnosti GraphQL.
+Na druhou stranu je právě pevná definice schématu jednou z výhod GraphQL oproti SPARQL.
+Pevné schéma a nástroje jako GraphiQL umožňují uživateli jednoduše prozkoumat možnosti rozhraní. 
+
+Dalším důležitým rozdílem je pak formát výsledku dotazu.
+Pro GraphQL je výsledek dotazu ve formátu JSON.
+Struktura je navíc definována samotným dotazem, uživatel tedy vždy ví, jaká data dostane.
+Tato vlastnost umožňuje  snadné použití GraphQL ve webových aplikacích, což je také hlavní účel za kterým bylo navrženo.
+Pro SPARQL je sice možné získat výstup také ve formátu JSON, nicméně před dalším využitím je nutné provést netriviální předzpracování.
+
+## Závěr
+V tomto článku jsme si krátce představili GraphQL a jeho možnosti pro získávání dat.
+Dále jsem si popsali schéma GraphQL rozhraní [Národního katalogu otevřených dat][nkod] a ukázali si jednoduchých dotazů.
+
+## Související informace
+ * [Nová éra úředních desek][clanek-era-desek]
+ * [Série Znalostní grafy: Díl 3: SPARQL][clanek-znalosti-grafy-3]
 
 [nkod]: /datové-sady
 [graphql-foundation]: https://graphql.org/foundation/
@@ -537,3 +564,4 @@ Pro úplnost je vhodné poznamenat, že existují i jiná řešení získání d
 [ofn-uredni-desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html
 [clanek-era-desek]: nová-éra-úředních-desek
 [školení-json]: /vzdělávání/e-learning/technické-aspekty-otevřených-dat/#5-formáty-pro-otevřená-data-json
+[clanek-znalosti-grafy-3]: https://data.gov.cz/články/znalostní-grafy-03-sparql

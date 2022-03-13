@@ -11,7 +11,7 @@ author: petr_škoda
 Webové uživatelské rozhraní [Národního katalogu otevřených dat][nkod] poskytuje základní vyhledávání datových sad.
 Nalezení datových sad od vybraného poskytovatele, či s daným klíčovým slovem je triviální úlohou.
 Co ale třeba získání všech datových sad, které splňují otevřenou formální normu [Úřední desky][ofn-uredni-desky]?
-Pro efektivní vyhodnocení takového dotazu je třeba použít jiné rozhraní, například SPARQL nebo GraphQl.
+Pro efektivní vyhodnocení takového dotazu je třeba použít jiné rozhraní, například SPARQL nebo GraphQL.
 Co ale GraphQL vlastně je, jak vypadá dotaz v tomto jazyce a jaká data je možné získat? 
 Právě na tyto otázky se snaží odpovědět tento článek.
 <!--more-->

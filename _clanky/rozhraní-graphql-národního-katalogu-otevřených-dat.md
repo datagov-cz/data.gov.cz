@@ -2,7 +2,7 @@
 layout: post
 title: Rozhraní GraphQL Národního katalogu otevřených dat
 detail: true
-ref: graphql-pro-nkod
+ref: graphql-nkod
 lang: cs
 image: ../přílohy/články/graphql-pro-nkod-2021/graphiql.webp
 date: 2022-03-11 22:22:22 +02:00
@@ -10,7 +10,7 @@ author: petr_škoda
 ---
 Webové uživatelské rozhraní [Národního katalogu otevřených dat][nkod] poskytuje základní vyhledávání datových sad.
 Nalezení datových sad od vybraného poskytovatele, či s daným klíčovým slovem je triviální úlohou.
-Co ale třeba získání všech datových sad, které splňují otevřenou formální normu [Úřední desky][ofn-uredni-desky]?
+Co ale třeba získání všech datových sad, které splňují otevřenou formální normu [Úřední desky][clanek-era-desek]?
 Pro efektivní vyhodnocení takového dotazu je třeba použít jiné rozhraní, například SPARQL nebo GraphQL.
 Co ale GraphQL vlastně je, jak vypadá dotaz v tomto jazyce a jaká data je možné získat? 
 Právě na tyto otázky se snaží odpovědět tento článek.
@@ -525,7 +525,7 @@ query {
 ~~~~~~~~~~~~
 [(zkusit dotaz)](https://data.gov.cz/graphql?query=query%20%7B%0A%20%20datasets%20(%0A%20%20%20%20limit%3A%20100%0A%20%20%20%20filters%3A%20%7B%0A%20%20%20%20%20%20conformsTo%3A%20%22https%3A%2F%2Fofn.gov.cz%2F%C3%BA%C5%99edn%C3%AD-desky%2F2021-07-20%2F%22%0A%20%20%20%20%7D%0A%20%20)%20%7B%0A%20%20%20%20data%20%7B%0A%20%20%20%20%20%20iri%0A%20%20%20%20%20%20title%20%7B%0A%20%20%20%20%20%20%20%20cs%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20publisher%20%7B%0A%20%20%20%20%20%20%20%20title%20%7B%0A%20%20%20%20%20%20%20%20%20%20cs%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20distribution%20%7B%0A%20%20%20%20%20%20%20%20accessURL%0A%20%20%20%20%20%20%20%20format%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20pagination%20%7B%0A%20%20%20%20%20%20totalCount%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D)
 
-Obdoba tohoto dotazu byla použita v aplikaci [úředních desek][ofn-uredni-desky].
+Obdoba tohoto dotazu byla použita v aplikaci [úředních desek][clanek-era-desek].
 
 ## GraphQL nebo SPARQL
 Pro úplnost je nutné připomenout, že existují i jiná řešení získání dat z NKOD než pomocí GraphQL, např. stažení dat v CSV, či položení dotazu v jazyce SPARQL.
@@ -561,7 +561,6 @@ Dále jsem si popsali schéma GraphQL rozhraní [Národního katalogu otevřený
 [graphql-voyager]: https://github.com/APIs-guru/graphql-voyager
 [graphql-graphiql]: https://github.com/graphql/graphiql
 [graphql-nkod]: /graphql
-[ofn-uredni-desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html
-[clanek-era-desek]: nová-éra-úředních-desek
+[clanek-era-desek]: /články/nová-éra-úředních-desek
 [školení-json]: /vzdělávání/e-learning/technické-aspekty-otevřených-dat/#5-formáty-pro-otevřená-data-json
-[clanek-znalosti-grafy-3]: https://data.gov.cz/články/znalostní-grafy-03-sparql
+[clanek-znalosti-grafy-3]: /články/znalostní-grafy-03-sparql

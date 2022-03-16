@@ -77,6 +77,6 @@ Mgr. Tomáš Merta, Královéhradecký kraj a Centrum investic, rozvoje a inovac
 {% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Chytrý_region.webp" description="" %}
 
 [Data KHK]: https://www.datakhk.cz/ "Data KHK"
-[NKOD]: https://data.gov.cz/datov%C3%A9-sady "NKOD"
+[NKOD]: https://data.gov.cz/datové-sady "NKOD"
 [OFN Adresy]: https://ofn.gov.cz/adresy/2020-07-01/ "OFN Adresy"
 [OFN Prostorová data]: https://ofn.gov.cz/prostorová-data/2019-08-22/ "OFN Prostorová data"

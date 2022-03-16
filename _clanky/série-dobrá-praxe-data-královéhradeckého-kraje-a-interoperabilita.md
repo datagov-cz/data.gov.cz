@@ -15,7 +15,9 @@ Tento článek ukazuje naši cestu.
 
 <!--more-->
 
-{% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Portál.webp" description="" %}
+
+{% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/Data_KHK_2.webp" description="Datový portál KHK" %}
+
 
 ## Interoperabilita dat
 Interoperabilita dat neboli jejich vzájemná provázanost patří mezi nejdůležitější aspekty otevřených dat, bez kterých si nelze představit jejich další strojové zpracování.

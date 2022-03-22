@@ -1,19 +1,23 @@
 ---
 layout: post
 detail: true
-title: "Série Dobrá praxe: Data Královéhradeckého kraje a interoperabilita"
-ref: série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita
+title: "Série Praxe otevřených dat v ČR: Data Královéhradeckého kraje a interoperabilita"
+ref: série-praxe-otevřených-dat-v-čr-data-královéhradeckého-kraje-a-interoperabilita
 lang: cs
 image: ../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Portál.webp
 author: lenka_kováčová
 date: 2022-03-21 08:00:00 +01:00
 ---
+Tento článek patří do série Praxe otevřených dat v České republice a zprostředkovává praxi poskytovatele otevřených dat.
+Článek pro vás připravili zástupci Královéhradeckého kraje, kteří se rozhodli sdílet svoji cestu za zlepšením interoperability vlastních dat.
+
+<!--more-->
+
+## Úvod
 Otevřená data Královéhradeckého kraje se díky téměř čtyřleté historii publikování postupně vyvinula do podoby, jakou mají nyní na [datovém portálu Data KHK][Data KHK].
 Díky jejich sjednocení došlo k posílení jejich interoperability nejen pro potřeby veřejnosti, ale i pro potřeby [NKOD][NKOD].
 Královéhradecký kraj se díky tomu stal lídrem v oblasti poskytování otevřených dat mezi kraji v ČR a zároveň pro ně i inspirací. 
 Tento článek ukazuje naši cestu.
-
-<!--more-->
 
 {% include image.html url="../přílohy/články/série-dobrá-praxe-data-královéhradeckého-kraje-a-interoperabilita/KHK_Portál.webp" description="" %}
 

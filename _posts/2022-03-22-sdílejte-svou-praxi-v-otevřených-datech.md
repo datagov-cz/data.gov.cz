@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sdílejte svou praxi v otevřených datech!
-detail: true
+detail: false
 ref: SdilejtePraxi
 lang: cs
 author: lenka_kováčová

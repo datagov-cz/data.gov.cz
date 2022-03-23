@@ -13,6 +13,6 @@ První své zkušenosti sdílí zástupci Královéhradeckého kraje, kteří [v
 Chcete taky sdílet svůj příběh, inspirovat ostatní k publikaci nových a kvalitnějších otevřených dat nebo podpořit další využití otevřených dat? 
 Kontaktujte nás na [otevrenadata@mvcr.cz]. 
 
-[Články]: https://data.gov.cz/%C4%8Dl%C3%A1nky/ "Články"
+[Články]: /články/ "Články"
 [ve svém příspěvku]: https://data.gov.cz/%C4%8Dl%C3%A1nky/s%C3%A9rie-praxe-otev%C5%99en%C3%BDch-dat-v-%C4%8Dr-data-kr%C3%A1lov%C3%A9hradeck%C3%A9ho-kraje-a-interoperabilita "Data KHK a interoperabilita"
 [otevrenadata@mvcr.cz]: mailto:otevrenadata@mvcr.cz "E-mail otevřených dat"

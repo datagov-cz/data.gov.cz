@@ -65,7 +65,10 @@ Pokud se tedy na úřední desce objeví nové oznámení, dostaneme automaticky
 </ol>
 
 ## <em>Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat</em>
-Další ukázkovou aplikací je [přehled publikovaných úředních desek][link_app] (jako otevřená data) spolu s posledními oznámeními, která se na dané úřední desce objevila.
+Další ukázkovou aplikací je přehled úředních desek publikovaných jako otevřená data spolu s posledními oznámeními, která se na dané úřední desce objevila.
+Aplikace je ale jednoduchá, testovací a primárně zaměřená na poskytovatele a řešení jejich problémů.
+Stahuje data ze všech úředních desek, kterých je čím dál tím více, přímo do prohlížeče, tedy spotřebovává hodně dat - v době psaní článku již více jak 100 MB.
+[Pokud však jste na počítači, nebo máte neomezená data, můžete si aplikaci vyzkoušet][link_app].
 
 Cílem tohoto příkladu je ukázat napojení na [Národní katalog otevřených dat (NKOD)][link_nkod] a práci s ním. Zároveň slouží i jako rychlá kontrola pro poskytovatele otevřených dat, že jejich úřední deska je publikována v pořádku (jsou zde vidět i některé počáteční problémy nově publikovaných dat - některé úřední desky např. nemají povolený [CORS][link_cors] a nejdou tedy zatím načítat přímo z takovéto aplikace).
 

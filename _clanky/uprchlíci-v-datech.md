@@ -94,10 +94,10 @@ Tato data pak slouží jako základ pro nejrůznější další analýzy - vále
 
 
 [link_mvcr_data]: https://www.mvcr.cz/clanek/informativni-pocty-obyvatel-v-obcich.aspx "Počty osob s uděleným pobytovým oprávněním v souvislosti s válkou na Ukrajině"
-[link_csu_2020]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F1e6e7cbf1d5791e93de9fc3e46b80413 "Cizinci podle státního občanství, věku a pohlaví - rok 2020"
-[link_csu_okresy]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2Fa129a5408e8e5fd99497e9a22c39775e "Obyvatelstvo podle pětiletých věkových skupin a pohlaví v krajích a okresech"
-[link_ruian]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025712%2Fe0fe186c71d535aeb8effc5e212364ae "RUIAN Stát - SHP"
-[link_kartogram]: https://data.gov.cz/%C4%8Dl%C3%A1nky/kartogram-choropleth "Kartogram ČR (choropleth, choropletová mapa)"
-[link_volby]: https://data.gov.cz/%C4%8Dl%C3%A1nky/mapa-s-v%C3%BDsledky-voleb-po-okrsc%C3%ADch "Mapa s výsledky voleb po okrscích"
+[link_csu_2020]: /datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F1e6e7cbf1d5791e93de9fc3e46b80413 "Cizinci podle státního občanství, věku a pohlaví - rok 2020"
+[link_csu_okresy]: /datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2Fa129a5408e8e5fd99497e9a22c39775e "Obyvatelstvo podle pětiletých věkových skupin a pohlaví v krajích a okresech"
+[link_ruian]: /datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025712%2Fe0fe186c71d535aeb8effc5e212364ae "RUIAN Stát - SHP"
+[link_kartogram]: /články/kartogram-choropleth "Kartogram ČR (choropleth, choropletová mapa)"
+[link_volby]: /články/mapa-s-v%C3%BDsledky-voleb-po-okrsc%C3%ADch "Mapa s výsledky voleb po okrscích"
 [link_rawgraphs]: https://app.rawgraphs.io/ "RAWGraphs"
 [link_libreoffice]: https://www.libreoffice.org/ "LibreOffice"

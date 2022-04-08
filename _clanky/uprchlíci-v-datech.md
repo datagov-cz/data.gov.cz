@@ -6,7 +6,7 @@ ref: uprchlíci-v-datech
 lang: cs
 image: ../přílohy/články/uprchlíci-v-datech/images/main.webp
 author: michal_škop
-date: 2022-04-06 07:00:00 +01:00
+date: 2022-04-08 07:00:00 +02:00
 ---
 Kolik ukrajinských válečných uprchlíků je v ČR, v našem kraji, v naší obci? Díky aktuálním datům a jejich analýze víme, kam směřují, a umíme vysvětlit proč.
 

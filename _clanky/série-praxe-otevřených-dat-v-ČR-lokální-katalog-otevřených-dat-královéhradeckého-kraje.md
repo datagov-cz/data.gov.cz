@@ -4,7 +4,7 @@ detail: true
 title: Série Praxe otevřených dat v ČR: Lokální katalog otevřených dat Královéhradeckého kraje 
 ref:série-praxe-otevřených-dat-v-ČR-:-lokální-katalog-otevřených-dat-královéhradeckého-kraje
 lang: cs
-image:
+image: {% include image.html url="../přílohy/články/série-praxe-otevřených-dat-v-ČR-lokální-katalog-otevřených-dat-královéhradeckého-kraje/Schéma-LKOD-Královéhradeckého-kraje.webp" description="Schéma lokálního katalogu Královéhradeckého kraje" %}
 author: lenka_kováčová
 date:
 ---
@@ -27,13 +27,13 @@ V roce 2018 bylo Královéhradeckým krajem otevřeno celkem 48 datových sad.
 Kraj je následně publikoval přímo v NKOD.
 Lokální katalog v té době nebyl vytvořen, na ten správný a efektivní jsme si museli počkat.
 Jednak jsme neměli potřebné znalosti a zkušenosti v této problematice, celkové podpory rozvoje celého procesu otevřených dat se nám dostalo v roce 2021.
-Tehdy byla schválena realizace datového portálu [datového portálu Data KHK][Data KHK], jehož součástí bylo vytvoření lokálního katalogu otevřených dat.
+Tehdy byla schválena realizace [datového portálu Data KHK][Data KHK], jehož součástí bylo vytvoření lokálního katalogu otevřených dat.
 Náš záměr byl jednoznačný, a to vytvoření automatizovaného lokálního katalogu otevřených dat, který bude plně zdarma.
 Ve spolupráci s členy realizačního týmu datového portálu nyní Královéhradecký kraj provozuje svůj plně soběstačný a automatizovaný lokální katalog otevřených dat, známý pod zkratkou LKOD, postavený na moderní open source technologii.
 
 Funkčnost lokálního katalogu je patrná na následujícím schématu:
 
-
+{% include image.html url="../přílohy/články/série-praxe-otevřených-dat-v-ČR-lokální-katalog-otevřených-dat-královéhradeckého-kraje/Schéma-LKOD-Královéhradeckého-kraje.webp" description="Schéma lokálního katalogu Královéhradeckého kraje" %}
 
 LKOD se nachází na adrese [https://open.datakhk.cz][LKOD KHK] a obsahuje důležité informace o datových sadách, distribucích datových sad, popisky a kontaktní údaje.
 Všechny tyto informace se berou z [datového portálu Data KHK][Data KHK], který slouží jako zdroj pravdy.
@@ -52,17 +52,16 @@ LKOD v Královéhradeckém kraji je kompletně veřejný a scripty pro jeho sest
 Díky tomu lze využít řadu benefitů, které GitHub, Vercel a další platformy nabízejí.
 To vše díky myšlence open source.
 Provoz je tak automatický, resp. bez zásahu člověka.
-Nestojí ani korunu.
 A může sloužit jako inspirace ostatním krajům a institucím.
 
 ## Shrnutí
 Tímto článkem bychom chtěli podpořit vznik lokálních katalogů otevřených dat v této inovativní formě pro další subjekty veřejné správy.
 A také podpořit celou oblast otevřených dat a realizaci digitalizace veřejné správy ke kvalitnějšímu životu občanů a zároveň zkvalitnění přístupnosti a použití dat z této oblasti. 
 
-#### Autor
-Milan Šulc, webový vývojář, specialista na open source, člen realizačního týmu [datového portálu Data KHK][Data KHK]
+#### Autoři
+Milan Šulc, webový vývojář, specialista na open source, člen realizačního týmu [datového portálu Data KHK][Data KHK].
 
-Ing. Radmila Velnerová, vedoucí odboru analýz a podpory řízení, koordinátorka otevřených dat kraje a realizace aktivit [datového portálu Data KHK][Data KHK]
+Ing. Radmila Velnerová, vedoucí odboru analýz a podpory řízení, koordinátorka otevřených dat kraje a realizace aktivit [datového portálu Data KHK][Data KHK].
 
 [Data KHK]: https://www.datakhk.cz/ "Data KHK"
 [LKOD KHK]: https://open.datakhk.cz "LKOD KHK"

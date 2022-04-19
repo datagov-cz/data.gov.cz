@@ -6,7 +6,7 @@ ref: série-praxe-otevřených-dat-v-ČR-lokální-katalog-otevřených-dat-krá
 lang: cs
 image: /přílohy/články/série-praxe-otevřených-dat-v-ČR-lokální-katalog-otevřených-dat-královéhradeckého-kraje/Schéma-LKOD-Královéhradeckého-kraje.webp
 author: lenka_kováčová
-date: 2022-04-13 07:00:00 +02:00
+date: 2022-04-19 07:00:00 +02:00
 ---
 Datové sady otevřených dat Královéhradeckého kraje se v rámci realizace [datového portálu Data KHK][Data KHK] dočkaly svého lokálního katalogu. 
 Jsou zde umístěny k využití pro širokou veřejnost a bonusem navíc je jejich inovativní zobrazení v několika formátech, z nichž nejzajímavější pro občany jsou mapové výstupy.

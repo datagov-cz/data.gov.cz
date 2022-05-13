@@ -2,7 +2,7 @@
 layout: post
 title: Druhé místo v soutěži eOsobnost eGovernmentu pro otevřená data
 detail: true
-ref: eOsobnost
+ref: eOsobnost2022
 lang: cs
 author: lenka_kováčová
 ---

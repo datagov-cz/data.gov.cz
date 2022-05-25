@@ -2,7 +2,7 @@
 layout: post
 title: Začínají konzultace k prováděcímu aktu o High Value Datasets
 detail: false
-ref: VerejnaKonzultaceProvadeciAktHDV
+ref: VerejnaKonzultaceProvadeciAktHVDS
 lang: cs
 author: lenka_kováčová
 ---

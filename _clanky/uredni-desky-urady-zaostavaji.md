@@ -45,9 +45,9 @@ Přehled subjektů, které povinnost splnily a které ještě ne je uveden v [n�
 image vizualizace
 
 ## Použitá data
-Ministerstvo vnitra: [Kompletní metadata - Národní katalog otevřených dat (Přístupový bod SPARQL)]
-Ministerstvo vnitra: [Orgány veřejné moci (SPARQL Endpoint)]
-Testovací aplikace: [Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat]
+- Ministerstvo vnitra: [Kompletní metadata - Národní katalog otevřených dat (Přístupový bod SPARQL)]
+- Ministerstvo vnitra: [Orgány veřejné moci (SPARQL Endpoint)]
+- Testovací aplikace: [Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat]
 
 ## Postup zpracování
 Povinnost publikovat úřední desky jako otevřená data dopadá dle § 5a odst. 3 zákona č. 106/1999 Sb. na státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností.
@@ -56,7 +56,7 @@ Počet organizací v jednotlivých kategoriích lze zobrazit pomocí [dotazu ve 
 Co je to SPARQL a jak psát dotazy jsme psali v [dřívějším článku]. 
 K datu 27.5.2022 existovalo celkem 149 kategorií, přičemž u každého orgánu veřejné moci mohla být vyplněna více než jedna kategorie. 
 Obcí s rozšířenou působností bylo k datu 27.5.2022 celkem 205 (kategorie KO11 s názvem „Obce s rozšířenou působností“) a krajů bylo k datu 27.5.2022 celkem 14 (kategorie KO12 s názvem „Kraje a hl. m. Praha“). 
-Kategorie uvedené u jednotlivých orgánů veřejné moci lze zobrazit pomocí [dotazu do SPARQL endpointu]. 
+Kategorie uvedené u jednotlivých orgánů veřejné moci lze zobrazit pomocí dotazu do [SPARQL endpointu]. 
 
 Identifikace všech státních orgánů je o něco náročnější.
 Již v [článku o nových povinnostech] jsme popisovali, že pojem státní orgány není v zákoně č. 106/1999 Sb. vymezen, nicméně z ustáleného výkladu § 2 téhož zákona vyplývá, že se jedná zejména o ministerstva a další ústřední orgány státní správy ve smyslu kompetenčního zákona (zákon č. 2/1969 Sb.), stejně jako o další orgány státní správy, které jsou nějakému ministerstvu podřízeny a jsou založeny zákonem, zpravidla agendovým.
@@ -103,5 +103,19 @@ Doporučujeme všem povinným subjektům ověřit si stav publikace ve vizualiza
 Po úpravě je možné si aktuální správnost publikace úřední desky ověřit v [testovací aplikaci].
 Věříme, že tento článek přispěje k maximálnímu plnění povinnosti publikace úředních desek a sníží počet dotazů týkajících se nejčastějších chyb.
 I nadále tým národního koordinátora otevřených dat poskytuje metodickou podporu všem poskytovatelům skrze email [otevrenadata@mvcr.cz]. 
+
+
+[minulém článku]: https://data.gov.cz/články/otevřené-úřední-desky-po-čtvrt-roce-je-jich-665 "Otevřené úřední desky - po čtvrt roce je jich 665"
+[návodu]: https://opendata.gov.cz/špatná-praxe:chybějící-cors "Chybějící CORS"
+[OFN pro úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN Úřední desky"
+[předpřipravený záznam]: https://data.gov.cz/formulář/registrace-datové-sady?file=https%3A%2F%2Fofn.gov.cz%2Fúřední-desky%2F2021-07-20%2Fmetadata%2Fúřední-desky.jsonld "Předpřipravený záznam"
+[následující vizualizaci]: https://infogram.com/plneni-povinnosti-publikace-uredni-desky-jako-otevrena-data-1hzj4o35mkjl34p?live "Vizualizace plnění povinnosti publikace úřední desky"
+[Kompletní metadata - Národní katalog otevřených dat (Přístupový bod SPARQL)]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2Ffecee27b4a44fa89cbe8cc491fe5540c "SPARQL Kompletní metadata"
+[Orgány veřejné moci (SPARQL Endpoint)]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F44a9d6abacd4d0e83a0694e74d028f51 "SPARQL OVM"
+[Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html "Testovací aplikace"
+[dřívějším článku]: https://data.gov.cz/články/znalostní-grafy-03-sparql "Série Znalostní grafy: Díl 3: SPARQL"
+[článku o nových povinnostech]: https://data.gov.cz/články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat  "Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat"
+[testovací aplikaci]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html "testovací aplikace"
+[otevrenadata@mvcr.cz]: mailto:otevrenadata@mvcr.cz "mailto:otevrenadata@mvcr.cz"
 
 

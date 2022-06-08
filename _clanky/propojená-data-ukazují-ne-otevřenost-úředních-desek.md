@@ -68,12 +68,12 @@ V levé části je uveden graf typu “semi circle”, který je obdobou koláč
 
 ## Časté chyby v publikaci otevřené úřední desky
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Kraslice.webp" description="Kraslice" %}
-
 Úřední desku jako otevřená data zvládly správně publikovat i menší obce s rozšířenou působností jako například Telč, Kraslice či Vizovice.
 Oproti tomu řada ministerstev, krajů i statutárních měst měla v publikovaných datech chyby nebo je nezveřejnila vůbec.
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Jihomoravský-kraj.webp" description="Jihomoravský-kraj" %}
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Kraslice.webp" description="Kraslice" %}
+
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Jihomoravský-kraj.webp" description="Jihomoravský kraj" %}
 
 Mezi nejčastější chyby, se kterými se subjekty často potýkají, patří nepodporování techniky CORS ze strany webového serveru poskytovatele.
 V případě, že technika CORS není podporována, neumožní data využívat na jiné doméně než na té, na které se data původně nachází, což znemožňuje další využití otevřených dat webovým aplikacím.
@@ -92,7 +92,7 @@ Ministerstvo financí, Ministerstvo práce a sociálních věcí a Ministerstvo 
 
 ## Další užití a závěr
 V části postup zpracování je popsáno, jak byla provedena analýza plnění povinnosti publikace úřední desky formou otevřených dat a na základě uvedeného postupu je možné ji zopakovat k jakémukoliv datu. 
-Zároveň byly k analýze využity SPARQL dotazy, které slouží jako ukázka využití dynamických dat z Registru práv a povinností a Národního katalogu otevřených dat. 
+Zároveň byly k analýze využity SPARQL dotazy, které slouží jako ukázka využití propojených dat z Registru práv a povinností a Národního katalogu otevřených dat. 
 
 Zároveň by měl článek i vizualizace sloužit povinným subjektům k ověření stavu publikace jejich otevřené úřední desky a zjištění, jak upravit případné nedostatky.
 Aktuální správnost publikace úřední desky je možné si v čase ověřit díky testovací aplikaci.

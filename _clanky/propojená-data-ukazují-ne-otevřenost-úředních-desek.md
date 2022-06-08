@@ -4,7 +4,7 @@ title: Propojená data ukazují (ne)otevřenost úředních desek
 detail: true
 ref: propojenadataurednidesky062022
 lang: cs
-image: ../přílohy/články/propojená-data-ukazují-(ne)otevřenost-úředních-desek/ÚD-vizualizace.webp
+image: ../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-vizualizace.webp
 date: 2022-06-09 06:00:00 +01:00
 author: radka_domanská
 ---
@@ -19,7 +19,7 @@ Co je to SPARQL a jak psát dotazy jsme psali v [dřívějším článku].
 
 Přehled subjektů, které povinnost splnily a které ještě ne je uveden v [následující vizualizaci].
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-(ne)otevřenost-úředních-desek/ÚD-vizualizace.webp" description="Vizualizace" %}
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-vizualizace.webp" description="Vizualizace" %}
 
 ## Použitá data
 - Ministerstvo vnitra: [Kompletní metadata - Národní katalog otevřených dat (Přístupový bod SPARQL)]
@@ -64,16 +64,16 @@ Při této analýze byly datové sady bez vazby na OFN dohledány ručně, nicm�
 Výslednou tabulku zobrazující všechny povinné subjekty s uvedením stavu publikace k datu 27.5.2022 jsme vizualizovali pomocí nástroje [infogram].
 V levé části je uveden graf typu “semi circle”, který je obdobou koláčového grafu a zobrazuje počty subjektů dle plnění povinnosti publikace úřední desky. Graf byl vytvořen agregací dle sloupců Typ subjektu a Stav publikace. Graf zobrazuje počet subjektů v dané kategorii, které publikovaly úřední desku dle OFN (správně - označeno zeleně či s chybami - označeno žlutě) a počet subjektů, které úřední desku nepublikovaly (neuvedly vazbu na OFN - označeno oranžově nebo nepublikovaly vubec - označeno červeně). Pomocí šipek uvedených nad grafem je možné zobrazit grafy za ostatní kategorie povinných subjektů. V pravé části vizualizace je zobrazena zdrojová tabulka ke grafu, ve které lze jednoduše vyhledávat dle názvu subjektu a zjistit stav publikace úřední desky u konkrétního subjektu. Data použití ve vizualizaci je možné stáhnout kliknutím na “Download data”.
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-(ne)otevřenost-úředních-desek/ÚD-vyhledávání.webp" description="Vyhledávání" %}
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-vyhledávání.webp" description="Vyhledávání" %}
 
 ## Časté chyby v publikaci otevřené úřední desky
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-(ne)otevřenost-úředních-desek/ÚD-Kraslice.webp" description="Kraslice" %}
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Kraslice.webp" description="Kraslice" %}
 
 Úřední desku jako otevřená data zvládly správně publikovat i menší obce s rozšířenou působností jako například Telč, Kraslice či Vizovice.
 Oproti tomu řada ministerstev, krajů i statutárních měst měla v publikovaných datech chyby nebo je nezveřejnila vůbec.
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-(ne)otevřenost-úředních-desek/ÚD-Jihomoravský-kraj.webp" description="Jihomoravský-kraj" %}
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Jihomoravský-kraj.webp" description="Jihomoravský-kraj" %}
 
 Mezi nejčastější chyby, se kterými se subjekty často potýkají, patří nepodporování techniky CORS ze strany webového serveru poskytovatele.
 V případě, že technika CORS není podporována, neumožní data využívat na jiné doméně než na té, na které se data původně nachází, což znemožňuje další využití otevřených dat webovým aplikacím.
@@ -84,7 +84,7 @@ V neposlední řadě, poskytovatelé často zapomínají do metadat datové sady
 Metadata mohou poskytovatelé jednoduše upravit i po zveřejnění.
 Jak mají vypadat správně vyplněná metadata, ukazuje například [předpřipravený záznam].
 
-{% include image.html url="../přílohy/články/propojená-data-ukazují-(ne)otevřenost-úředních-desek/ÚD-Telč.webp" description="Telč" %}
+{% include image.html url="../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-Telč.webp" description="Telč" %}
 
 Na desítky subjektů otevření úředních desek pořád čeká. 
 Z ministerstev úřední desku k datu 27.5.2022 nepublikovalo Ministerstvo dopravy, Ministerstvo obrany, Ministerstvo průmyslu a obchodu, Ministerstvo spravedlnosti, Ministerstvo zahraničních věcí ani Ministerstvo zdravotnictví.

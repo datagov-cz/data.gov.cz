@@ -40,7 +40,7 @@ Proto byla pro identifikaci státních orgánů využita podmínka zařazení or
 Dle [dotazu na přehled orgánů veřejné moci splňující výše uvedené podmínky] jich bylo celkem 364. 
 Nyní již víme, jak určit celkový počet subjektů, na něž výše zmíněná povinnost dopadá.
 
-Dle [dotazu pro určení subjektů, které danou povinnost plní](tj. zveřejňují v Národním katalogu otevřených dat datovou sadu ve vazbě na OFN), jich k datu 27.5.2022 bylo 212, nicméně jak je vidět z výsledku dotazu, tak někteří poskytovatelé publikovali více datových sad k úředním deskám. 
+Dle [dotazu pro určení subjektů, které danou povinnost plní] (tj. zveřejňují v Národním katalogu otevřených dat datovou sadu ve vazbě na OFN), jich k datu 27.5.2022 bylo 212, nicméně jak je vidět z výsledku dotazu, tak někteří poskytovatelé publikovali více datových sad k úředním deskám. 
 Jednalo se o [Ministerstvo vnitra], [Ministerstvo spravedlnosti], [Ministerstvo zemědělství], [Český úřad zeměměřický a katastrální], [Státní zemědělská a potravinářská inspekce], [Statutární město Ostrava], [Statutární město Chomutov] a [Město Bílovec].
 U těchto subjektů bylo nezbytné projít publikované datové sady a na základě popisu určit, zda publikují data i za jiný subjekt.
 Na základě toho bylo zjištěno, že skutečný počet subjektů publikujících úřední desku jako otevřená data k datu 27.5.2022 není 212, ale 373.
@@ -104,7 +104,7 @@ I nadále tým národního koordinátora otevřených dat bude poskytovat metodi
 [následující vizualizaci]: https://infogram.com/plneni-povinnosti-publikace-uredni-desky-jako-otevrena-data-1hzj4o35mkjl34p?live "Vizualizace plnění povinnosti publikace úřední desky"
 [Kompletní metadata - Národní katalog otevřených dat (Přístupový bod SPARQL)]: /datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2Ffecee27b4a44fa89cbe8cc491fe5540c "SPARQL Kompletní metadata"
 [Orgány veřejné moci (SPARQL Endpoint)]: /datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00007064%2F44a9d6abacd4d0e83a0694e74d028f51 "SPARQL OVM"
-[Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat]: /články/nová-éra-úředních-desek#jednoduché-zobrazení-úředních-desek-pomocí-otevřené-formální-normy-a-národního-katalogu-otevřených-dat "Testovací aplikace"
+[Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html "Testovací aplikace"
 [dotaz na počet organizací v jednotlivých kategoriích]: https://api.triplydb.com/s/LqWC1nQ7c "Dotaz na počet organizací v jednotlivých kategoriích"
 [dotaz na kategorie uvedené u jednotlivých orgánů veřejné moci]: https://api.triplydb.com/s/9T1HNKTdf "Dotaz na kategorie uvedené u jednotlivých orgánů veřejné moci"
 [článku o nových povinnostech]: /články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat"
@@ -113,7 +113,7 @@ I nadále tým národního koordinátora otevřených dat bude poskytovat metodi
 [dotaz na obce neplnící povinnost]: https://api.triplydb.com/s/-4CzrosKo "Dotaz na obce neplnící povinnost"
 [dotaz na kraje neplnící povinnost]: https://api.triplydb.com/s/Hc2mMfplA "Dotaz na kraje neplnící povinnost"
 [dotaz určující státní orgány, které nepublikují v NKOD datovou sadu k úřední desce ve vazbě na OFN pod svým jménem]: https://api.triplydb.com/s/iYhKrEskv "Dotaz určující státní orgány, které nepublikují v NKOD datovou sadu k úřední desce ve vazbě na OFN pod svým jménem"
-[testovací aplikace]: /články/nová-éra-úředních-desek#jednoduché-zobrazení-úředních-desek-pomocí-otevřené-formální-normy-a-národního-katalogu-otevřených-dat "Testovací aplikace"
+[testovací aplikace]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html "Testovací aplikace"
 [návodu]: https://opendata.gov.cz/špatná-praxe:chybějící-cors "Chybějící CORS"
 [OFN pro úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN Úřední desky"
 [předpřipravený záznam]: /formulář/registrace-datové-sady?file=https%3A%2F%2Fofn.gov.cz%2Fúřední-desky%2F2021-07-20%2Fmetadata%2Fúřední-desky.jsonld "Předpřipravený záznam"

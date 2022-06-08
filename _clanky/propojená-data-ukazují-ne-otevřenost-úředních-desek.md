@@ -5,7 +5,7 @@ detail: true
 ref: propojenadataurednidesky062022
 lang: cs
 image: ../přílohy/články/propojená-data-ukazují-ne-otevřenost-úředních-desek/ÚD-vizualizace.webp
-date: 2022-06-09 06:00:00 +01:00
+date: 2022-06-08 06:00:00 +01:00
 author: radka_domanská
 ---
 V [minulém článku] jsme popisovali, proč je důležité otevírat data z úředních desek a jaký je aktuální stav publikace úředních desek.

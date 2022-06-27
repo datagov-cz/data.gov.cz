@@ -1,8 +1,8 @@
 ---
 layout: post
 detail: true
-title: Sčítání lidu&#58; Od císaře pána k otevřeným datům
-# ref: sčítání-lidu-od-císaře-pána-k-otevřeným-datům
+title: "Sčítání lidu: Od císaře pána k otevřeným datům"
+ref: sčítání-lidu-od-císaře-pána-k-otevřeným-datům
 lang: cs
 image: ../přílohy/články/sčítání-lidu-od-císaře-pána-k-otevřeným-datům/images/main.webp
 author: michal_škop

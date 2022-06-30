@@ -19,6 +19,8 @@ Sady otevřených dat jsou obsaženy v katalogu otevřených dat, který je sou�
 Tento katalog otevřených dat je napojen na vlastní automatizovaný a soběstačný Lokální katalog otevřených dat Královéhradeckého kraje (dále jen „LKOD“). 
 Aby se skutečně jednalo o otevřená data, musejí být jednotlivé datové sady zveřejněny způsobem umožňujícím dálkový přístup v otevřeném a strojově čitelném formátu a evidovány v Národním katalogu otevřených dat (dále jen „NKOD“), což je splněno, neboť s využitím nástroje a platformy Vercel se LKOD dostane na správnou URL adresu a NKOD tak může data harvestovat dle potřeby.
 
+{% include image.html url="../přílohy/články/sady-otevřených-dat-na-portálu-data-khk/Sady-otevřených-dat-KHK.webp" description="Data KHK" %}
+
 ## Historický vývoj
 Královéhradecký kraj své sady otevřených dat začal publikovat v roce 2018. 
 Požadavek na jejich poskytování široké veřejnosti vzešel z Komise Rady Královéhradeckého kraje pro otevřenost (dále jen „Komise“).

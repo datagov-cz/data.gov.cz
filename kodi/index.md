@@ -62,7 +62,7 @@ C3V2 - Zajištění podpory propagace otevřených dat v POD formou článků a 
 : [Dokument](výstupy/C3V2.pdf)
 
 C3V3 - Zajištění podpory publikace výsledků Výroční zprávy ke stavu otevřených dat ve VS ČR (zpracovatelem je MV ČR) v POD
-: Zatím nedokončeno
+: [Dokument](výstupy/C3V3.pdf), Přílohy: [Konfigurace Kibana](výstupy/C3V3/export.ndjson), [Konfigurace dashboard indexeru](výstupy/C3V3/indexer-configs.conf)
 
 C3V4 - Propagační články a vizualizace ke konkrétním otevřeným datům v NKOD
 : Zatím nedokončeno

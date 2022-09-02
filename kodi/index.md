@@ -9,7 +9,7 @@ Na této stránce najdete výstupy projektu KODI - [Rozvoj datových politik v o
 
 ## Cíl 1 - Zvýšení počtu orgánů veřejné moci poskytujících otevřená data
 C1V1 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
-: Zatím nedokončeno
+: Zrušen
 
 C1V2 - Analýza legislativy upravující informační systémy veřejné správy a další způsoby poskytování informací
 : [Dokument](výstupy/C1V2.pdf)
@@ -18,6 +18,9 @@ C1V3 - Spolupráce na implementaci novely PSI směrnice (2003/98/ES)
 : [Dokument](výstupy/C1V3.pdf)
 
 C1V4 - Návrh novelizace legislativy upravující informační systémy veřejné správy
+: Zatím nedokončeno
+
+C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
 : Zatím nedokončeno
 
 ## Cíl 2 - Zlepšení kvality otevřených dat
@@ -59,7 +62,7 @@ C3V1 - Komunikační strategie pro cílové skupiny otevřených dat
 : Zatím nedokončeno
 
 C3V2 - Zajištění podpory propagace otevřených dat v POD formou článků a vizualizací nad otevřenými daty evidovanými v NKOD
-: [Dokument](výstupy/C3V2.pdf)
+: Zrušen
 
 C3V3 - Zajištění podpory publikace výsledků Výroční zprávy ke stavu otevřených dat ve VS ČR (zpracovatelem je MV ČR) v POD
 : [Dokument](výstupy/C3V3.pdf), Přílohy: [Konfigurace Kibana](výstupy/C3V3/export.ndjson), [Konfigurace dashboard indexeru](výstupy/C3V3/indexer-configs.conf)
@@ -93,6 +96,9 @@ C3V12 - Rešerše otevřených dat v různých oblastech v zahraničí
 
 C3V13 - Aktualizace metodiky pro tvorbu výroční zprávy o stavu otevřených dat v ČR
 : [Dokument](výstupy/C3V13.pdf)
+
+C3V14 - Metodika pro psaní článků určených k publikaci
+: [Dokument](výstupy/C3V14.pdf)
 
 ## Cíl 4 - Profesionalizace veřejné správy v oblasti otevřených dat
 C4V1 - Aktualizace stávajících školení

@@ -11,4 +11,6 @@ Pravidelná konference Otevřená data se letos uskuteční 28. listopadu a to j
 V rámci programu se podíváme na legislativní novinky, komunikaci mezi poskytovateli a uživateli, nebo využívání otevřených dat v praxi. 
 V panelové debatě otevřeme téma datové kvality a nástrojů k jejímu zlepšení. 
 Kromě týmu národní koordinátorky otevřených dat vystoupí zástupci veřejné správy i veřejnosti. 
-Další informace již brzy.
+Další informace a registrace na [webu konference].
+
+[webu konference]: https://opendata.gov.cz/edu:konference:2022 "konference Otevřená data 2022"

@@ -4,7 +4,7 @@ detail: true
 title: "Implementace směrnice o otevřených datech"
 ref: implementace-směrnice-o-otevřených-datech
 lang: cs
-image: ../přílohy/články/implementace-směrnice-o-otevřených-datech/smerniceOD.webp
+image: ../přílohy/články/implementace-směrnice-o-otevřených-datech/směrnice-OD.webp
 author: lenka_kováčová
 date: 2022-09-20 07:00:00 +02:00
 ---

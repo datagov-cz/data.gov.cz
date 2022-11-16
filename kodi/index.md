@@ -59,7 +59,7 @@ C2V11 - Metodika definice údajů vedených v agendě
 
 ## Cíl 3 - Zvýšení povědomí o otevřených datech
 C3V1 - Komunikační strategie pro cílové skupiny otevřených dat
-: Zatím nedokončeno
+: [Dokument](výstupy/C3V1.pdf), Příloha: [Matice (Excel)](výstupy/C3V1/matice.xlsx)
 
 C3V2 - Zajištění podpory propagace otevřených dat v POD formou článků a vizualizací nad otevřenými daty evidovanými v NKOD
 : Zrušen
@@ -92,7 +92,7 @@ C3V11 - Analýza dopadu otevřených dat do prostředí ČR za rok 2020
 : Zatím nedokončeno
 
 C3V12 - Rešerše otevřených dat v různých oblastech v zahraničí
-: Zatím nedokončeno
+: [Dokument](výstupy/C3V12.pdf)
 
 C3V13 - Aktualizace metodiky pro tvorbu výroční zprávy o stavu otevřených dat v ČR
 : [Dokument](výstupy/C3V13.pdf)

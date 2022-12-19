@@ -93,7 +93,7 @@ CzechInvest realizuje tyto aktivity díky projektu podpořenému z Operačního 
 
 #### Autor
   
-Adam Špán - copywriter v agentuře CzechInvest
+Tým agentury Czechinvest
 
 
 

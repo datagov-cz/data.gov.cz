@@ -93,7 +93,7 @@ CzechInvest realizuje tyto aktivity díky projektu podpořenému z Operačního 
 
 #### Autor
   
-Tým agentury Czechinvest
+Tým agentury CzechInvest
 
 
 

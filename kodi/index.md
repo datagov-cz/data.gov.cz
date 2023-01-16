@@ -37,7 +37,7 @@ C2V4 - Metodika identifikace, publikace, katalogizace a využívání otevřený
 : Zatím nedokončeno
 
 C2V5 - Analýza existujících informačních systémů veřejné správy vč. jejich příslušné legislativy a identifikace datových sad pro veřejný datový fond
-: Zatím nedokončeno
+: [Dokument](výstupy/C2V5.pdf), [Příloha](výstupy/C2V5/příloha.xlsx)
 
 C2V6 - Metodika poskytování dat ve veřejném datovém fondu
 : [Dokument](výstupy/C2V6.pdf)
@@ -74,7 +74,7 @@ C3V5 - Výroční konference o otevřených datech veřejné správy ČR
 : Zatím nedokončeno
 
 C3V6 - Návrh využití ontologických konceptuálních modelů agend v NKOD
-: Zatím nedokončeno
+: [Dokument](výstupy/C3V6.pdf)
 
 C3V7 - Návrh zajištění podpory principů 5* otevřených dat v NKOD
 : Zatím nedokončeno

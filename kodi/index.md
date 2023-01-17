@@ -21,7 +21,7 @@ C1V4 - Návrh novelizace legislativy upravující informační systémy veřejn�
 : Zatím nedokončeno
 
 C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
-: Zatím nedokončeno
+: Zrušen
 
 C1V6 - Analytické dokumenty identifikující právní zakotvení ČR, příslušné subjekty a stav uveřejnění
 : Zatím nedokončeno

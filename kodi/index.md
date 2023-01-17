@@ -23,6 +23,9 @@ C1V4 - Návrh novelizace legislativy upravující informační systémy veřejn�
 C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
 : Zatím nedokončeno
 
+C1V6 - Analytické dokumenty identifikující právní zakotvení ČR, příslušné subjekty a stav uveřejnění
+: Zatím nedokončeno
+
 ## Cíl 2 - Zlepšení kvality otevřených dat
 C2V1 - Vydané otevřené formální normy
 : [Dokument](výstupy/C2V1.pdf), Přílohy: [Kombinované OFN](výstupy/C2V1/ofn-kombinované.pdf)

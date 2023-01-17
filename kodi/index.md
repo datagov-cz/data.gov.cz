@@ -105,19 +105,19 @@ C3V14 - Metodika pro psaní článků určených k publikaci
 
 ## Cíl 4 - Profesionalizace veřejné správy v oblasti otevřených dat
 C4V1 - Aktualizace stávajících školení
-: Zatím nedokončeno
+: Dokončeno. Materiály slouží pro [vzdělávání](/vzdělávání).
 
 C4V2 - Převedení stávajících školení do online podoby
-: Zatím nedokončeno
+: Dokončeno. Materiály slouží pro [e-learning](/vzdělávání/e-learning/).
 
 C4V3 - Nové školení k problematice veřejného datového fondu
-: Zatím nedokončeno
+: Dokončeno. Vzniklo [školení k problematice veřejného datového fondu](/vzdělávání/e-learning/veřejný-datový-fond-VDF-v-architektuře-veřejné-správy/).
 
 C4V4 - Nové školení k problematice využívání a propagace otevřených dat
 : Zatím nedokončeno
 
 C4V5 - Nové školení k problematice konceptuálního datového modelování
-: Zatím nedokončeno
+: Dokončeno. Vzniklo [školení k problematice konceptuálního datového modelování](/vzdělávání/on-line/#modelování-významu-dat-ve-veřejné-správě).
 
 C4V6 - Realizace školení a workshopů
 : Zatím nedokončeno

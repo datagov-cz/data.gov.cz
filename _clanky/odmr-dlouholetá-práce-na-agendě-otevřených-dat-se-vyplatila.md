@@ -6,7 +6,7 @@ ref: odmr-2022-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila
 lang: cs
 image: /přílohy/články/odmr-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila/ODMR_ČR.webp
 author: david_velner
-date: 2022-01-19 10:00:00 +02:00
+date: 2023-01-20 10:00:00 +02:00
 ---
 Jako každý rok, i v roce 2022 vydala Evropská komise zprávu o stavu otevřených dat, tzv. [Open Data Maturity Report (ODMR)]. 
 Studie má za účel vyhodnotit úroveň vyspělosti evropských států v opendatové agendě. 

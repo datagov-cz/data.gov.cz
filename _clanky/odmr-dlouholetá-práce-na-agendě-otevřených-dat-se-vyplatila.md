@@ -4,7 +4,7 @@ detail: true
 title: "ODMR 2022: Dlouholetá práce na agendě otevřených dat se vyplatila"
 ref: odmr-2022-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila
 lang: cs
-image: /přílohy/články/odmr-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila/ODMR_Česká republika.webp
+image: /přílohy/články/odmr-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila/ODMR_ČR.webp
 author: david_velner
 date: 2022-01-19 10:00:00 +02:00
 ---
@@ -42,7 +42,7 @@ Nejpočetnější skupinou je seskupení tzv. Followers, kterou tvoří 14 zemí
 
 Již zmíněný signifikantní posun z 23. příčky na 12. místo byl zapříčiněn mimo jiné i tím, že se poskytovatelé otevřených dat společně s týmem národní koordinátorky soustředili na rozvoj agendy v oblastech, na které se report zaměřuje.
 
-{% include image.html url="../přílohy/články/odmr-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila/ODMR_Česká republika.webp" description="Aktuální stav otevřených dat v ČR: současný stav v porovnání s předchozími roky" %}
+{% include image.html url="../přílohy/články/odmr-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila/ODMR_ČR.webp" description="Aktuální stav otevřených dat v ČR: současný stav v porovnání s předchozími roky" %}
 
 V kategorii koordinace politik (Policy) jsme dosáhli 95 % (85 % v roce 2021) a úspěšnost v kategorii portálů (Portal) se vyšplhala na 70 % (65 % v roce 2021). 
 Skvělé výsledky jsme dosáhli v kategorii hodnocení dopadů (Impact), kde jsme společně s dalšími čtyřmi státy získali rovných 100 % (58 % v roce 2021). 

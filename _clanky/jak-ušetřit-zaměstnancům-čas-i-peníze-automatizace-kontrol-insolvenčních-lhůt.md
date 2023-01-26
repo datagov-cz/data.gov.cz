@@ -130,7 +130,7 @@ Například firma [Surveilligence], která zveřejňuje pravidelné měsíční 
 [The Document Foundation Looker Studio (dříve Google Data Studio)]: https://datastudio.google.com "The Document Foundation Looker Studio" 
 [Insolvenční rejstřík]: https://isir.justice.cz/isir/common/index.do "Insolvenční rejstřík"
 [Veřejný rejstřík a Sbírka listin]: https://or.justice.cz/ias/ui/rejstrik "Veřejný rejstřík a Sbírka listin"
-[Národní katalog otevřených dat (NKOD) - sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00551023%2F77b26516ed9616a5f6675a1d2f8eac4f "sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR"
+[Národní katalog otevřených dat (NKOD) - sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00551023%2F77b26516ed9616a5f6675a1d2f8eac4f "sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR"
 [Portálu otevřených dat]: https://data.gov.cz/ "Portál otevřených dat"
 
 

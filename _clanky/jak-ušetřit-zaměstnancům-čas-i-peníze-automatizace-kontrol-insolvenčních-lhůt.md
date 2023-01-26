@@ -21,7 +21,7 @@ Všechny se v uplynulých měsících objevily ve veřejné databázi Ministerst
 ## Použitá data
 
 Tento unikátní seznam obsahuje informace o všech zaměstnavatelích v České republice, na které bylo v inkriminované době vyhlášeno moratorium před zahájením insolvenčního řízení anebo byl podán insolvenční návrh a u kterých může zaměstnanec čili věřitel uplatňovat mzdové nároky tj. žádat o uspokojení splatných mzdových nároků nevyplacených zaměstnanci zaměstnavatelem, který je v platební neschopnosti. Z údajů za uplynulý měsíc tj. prosinec 2022 vyplývá, že věřitelé-zaměstnanci mohou mzdové nároky nově uplatňovat u 393 dlužníků-zaměstnavatelů.
-Úřady práce denně aktualizovaná databáze insolventních zaměstnavatelů je dostupná na Portálu otevřených dat Ministerstva vnitra, a to ve formátu JSON. 
+Úřady práce denně aktualizovaná databáze insolventních zaměstnavatelů je dostupná na [Portálu otevřených dat] Ministerstva vnitra, a to ve formátu JSON. 
 
 Kromě názvu, identifikačního čísla, sídla či dalších známých adres insolventního zaměstnavatele obsahuje rovněž začátek a konec rozhodného období za které lze uplatňovat mzdové nároky a především lhůtu tj. klíčové datum do kdy je možné mzdové nároky uplatnit u insolvenčního soudu. 
 Datová sada obsahuje pouze insolvence, pro které ještě lhůta pro uplatnění neuplynula.
@@ -57,7 +57,7 @@ Bez programování tak vznikl “Dahsboard“, který uživateli poskytuje zákl
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok4.webp" description="Krok 4" %}
 
-5. Prohlédněte si výsledky a vyberte volbu, kterého hledáte.
+5. Prohlédněte si výsledky a vyberte volbu, kterou hledáte.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok5.webp" description="Krok 5" %}
 
@@ -65,30 +65,30 @@ Bez programování tak vznikl “Dahsboard“, který uživateli poskytuje zákl
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok6.webp" description="Krok 6" %}
 
-7. V tabulce uprostřed se zobrazí  informace o vybraném zaměstnavateli, včetně dat o insolvence a klíčové lhůty pro uplatnění nesplacených mzdových nároků.
+7. V tabulce uprostřed se zobrazí  informace o vybraném zaměstnavateli, včetně dat o insolvenci a klíčové lhůty pro uplatnění nesplacených mzdových nároků.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok7.webp" description="Krok 7" %}
 
 8. Uložte si informace o zaměstnavateli a důležité lhůty pro budoucí potřebu. 
 
-V úvodu zmiňovaná dopravní firma z Trutnovska v Královéhradeckém kraji. 
+Například, v úvodu zmiňovaná dopravní firma z Trutnovska v Královéhradeckém kraji. 
 Insolvenční řízení bylo s touto firmou zahájeno 15. listopadu 2022, a to na návrh věřitele.
 Podle zveřejněného insolvenčního návrhu dluží dvěma bývalým zaměstnancům, a to řidiči nákladního automobilu a dispečerovi mzdu za čtyři měsíce.
 Z našeho “Dashboardu” insolventních zaměstnavatelů evidovaných úřadem práce vyplývá, že v tomto případě uplyne lhůta pro uplatnění nesplacených mzdových nároků 2. května 2023. 
 Obdobná lhůta je i u ostatních zaměstnavatelů, které jsme zmiňovali v úvodu a s nimiž bylo insolvenční řízení zahájeno v listopadu 2022. 
 
-Pomocí karty Vyberte časové rozmezí lze vyhledávat i historické údaje, které se zobrazují tak, že je lze srovnat s předchozím obdobím.
+Pomocí karty *Vyberte časové rozmezí* lze vyhledávat i historické údaje, které se zobrazují tak, že je lze srovnat s předchozím obdobím.
 Daleko nejzajímavější se ovšem jeví informace o insolventních zaměstnavatelích, u kterých uplyne lhůtu pro uplatnění nesplacených mzdových nároků právě dnes, v aktuálním či příštím měsíci nebo o insolventních zaměstnavatelích, u kterých klíčová lhůta již uplynula nebo u kterých mají zaměstnanci na uplatnění nesplacených mzdových nároků ještě dostatek času. 
 
 ## Návod na vyhledání informací podle insolvenčních lhůt
 
 1. Přejděte na webovou službu pro vyhledávání insolventních zaměstnavatelů a kontrolu klíčových lhůt pro uplatnění nesplacených mzdových nároků na URL adrese [https://datastudio.google.com/u/0/reporting/49a144fe-ddf0-4409-87c2-d695d8f37b5b/page/G6Y9C].
 
-2. Na ovládacím panelu tabulky uprostřed klikněte na ikonu volitelné metriky a zaškrtněte políčka Lhůta uplyne dnes, Lhůta uplyne tento měsíc, Lhůta uplyne nejdříve příští měsíc, Lhůta již uplynula.
+2. Na ovládacím panelu tabulky uprostřed klikněte na ikonu volitelné metriky a zaškrtněte políčka *Lhůta uplyne dnes*, *Lhůta uplyne tento měsíc*, *Lhůta uplyne nejdříve příští měsíc*, *Lhůta již uplynula*.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok2a.webp" description="Krok 2" %}
 
-3. Klikněte na příslušnou barevnou kartu Lhůta uplyne dnes, Lhůta uplyne tento měsíc, Lhůta uplyne nejdříve příští měsíc, Lhůta již uplynula.
+3. Klikněte na příslušnou barevnou kartu *Lhůta uplyne dnes*, *Lhůta uplyne tento měsíc*, *Lhůta uplyne nejdříve příští měsíc*, *Lhůta již uplynula*.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok3a.webp" description="Krok 3" %}
 
@@ -116,7 +116,7 @@ Například firma [Surveilligence], která zveřejňuje pravidelné měsíční 
 
 [Veřejný rejstřík a Sbírka listin] - informace Ministerstva spravedlnosti ČR o firmách 
 
-[Národní katalog otevřených dat (NKOD) - sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR] - Seznam zaměstnavatelů v centrální databázi, na které bylo vydáno moratorium před zahájením insolvenčního řízení nebo insolvenčního řízení a kde lze uplatnit mzdové nároky
+[Národní katalog otevřených dat (NKOD) - sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR] - seznam zaměstnavatelů v centrální databázi, na které bylo vydáno moratorium před zahájením insolvenčního řízení nebo insolvenčního řízení a kde lze uplatnit mzdové nároky
 
 
 
@@ -131,7 +131,7 @@ Například firma [Surveilligence], která zveřejňuje pravidelné měsíční 
 [Insolvenční rejstřík]: https://isir.justice.cz/isir/common/index.do "Insolvenční rejstřík"
 [Veřejný rejstřík a Sbírka listin]: https://or.justice.cz/ias/ui/rejstrik "Veřejný rejstřík a Sbírka listin"
 [Národní katalog otevřených dat (NKOD) - sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00551023%2F77b26516ed9616a5f6675a1d2f8eac4f "sada Insolventní zaměstnavatelé evidovaní Úřadem práce ČR"
-
+[Portálu otevřených dat]: https://data.gov.cz/ "Portál otevřených dat"
 
 
 

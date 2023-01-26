@@ -43,33 +43,33 @@ Bez programování tak vznikl “Dahsboard“, který uživateli poskytuje zákl
 
 ## Návod na vyhledání informací podle insolventního zaměstnavatele
 
-1. Přejděte na webovou službu pro vyhledávání insolventních zaměstnavatelů a kontrolu klíčových lhůt pro uplatnění nesplacených mzdových nároků na URL adrese [https://datastudio.google.com/u/0/reporting/49a144fe-ddf0-4409-87c2-d695d8f37b5b/page/G6Y9C].
+1\. Přejděte na webovou službu pro vyhledávání insolventních zaměstnavatelů a kontrolu klíčových lhůt pro uplatnění nesplacených mzdových nároků na URL adrese [https://datastudio.google.com/u/0/reporting/49a144fe-ddf0-4409-87c2-d695d8f37b5b/page/G6Y9C].
 
-2. Vyberte možnost vyhledávání podle zaměstnavatele, identifikačního čísla nebo adresy zaměstnavatele.
+2\. Vyberte možnost vyhledávání podle zaměstnavatele, identifikačního čísla nebo adresy zaměstnavatele.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok2.webp" description="Krok 2" %}
 
-3. Zadejte požadované informace do vyhledávacího pole. 
+3\. Zadejte požadované informace do vyhledávacího pole. 
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok3.webp" description="Krok 3" %}
 
-4. Služba vám nabídne seznam výsledků, které odpovídají vašemu vyhledávání. 
+4\. Služba vám nabídne seznam výsledků, které odpovídají vašemu vyhledávání. 
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok4.webp" description="Krok 4" %}
 
-5. Prohlédněte si výsledky a vyberte volbu, kterou hledáte.
+5\. Prohlédněte si výsledky a vyberte volbu, kterou hledáte.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok5.webp" description="Krok 5" %}
 
-6. Volbu potvrďte klikem myši mimo vyhledávací pole.
+6\. Volbu potvrďte klikem myši mimo vyhledávací pole.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok6.webp" description="Krok 6" %}
 
-7. V tabulce uprostřed se zobrazí  informace o vybraném zaměstnavateli, včetně dat o insolvenci a klíčové lhůty pro uplatnění nesplacených mzdových nároků.
+7\. V tabulce uprostřed se zobrazí  informace o vybraném zaměstnavateli, včetně dat o insolvenci a klíčové lhůty pro uplatnění nesplacených mzdových nároků.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok7.webp" description="Krok 7" %}
 
-8. Uložte si informace o zaměstnavateli a důležité lhůty pro budoucí potřebu. 
+8\. Uložte si informace o zaměstnavateli a důležité lhůty pro budoucí potřebu. 
 
 Například, v úvodu zmiňovaná dopravní firma z Trutnovska v Královéhradeckém kraji. 
 Insolvenční řízení bylo s touto firmou zahájeno 15. listopadu 2022, a to na návrh věřitele.
@@ -82,21 +82,21 @@ Daleko nejzajímavější se ovšem jeví informace o insolventních zaměstnava
 
 ## Návod na vyhledání informací podle insolvenčních lhůt
 
-1. Přejděte na webovou službu pro vyhledávání insolventních zaměstnavatelů a kontrolu klíčových lhůt pro uplatnění nesplacených mzdových nároků na URL adrese [https://datastudio.google.com/u/0/reporting/49a144fe-ddf0-4409-87c2-d695d8f37b5b/page/G6Y9C].
+1\. Přejděte na webovou službu pro vyhledávání insolventních zaměstnavatelů a kontrolu klíčových lhůt pro uplatnění nesplacených mzdových nároků na URL adrese [https://datastudio.google.com/u/0/reporting/49a144fe-ddf0-4409-87c2-d695d8f37b5b/page/G6Y9C].
 
-2. Na ovládacím panelu tabulky uprostřed klikněte na ikonu volitelné metriky a zaškrtněte políčka *Lhůta uplyne dnes*, *Lhůta uplyne tento měsíc*, *Lhůta uplyne nejdříve příští měsíc*, *Lhůta již uplynula*.
+2\. Na ovládacím panelu tabulky uprostřed klikněte na ikonu volitelné metriky a zaškrtněte políčka *Lhůta uplyne dnes*, *Lhůta uplyne tento měsíc*, *Lhůta uplyne nejdříve příští měsíc*, *Lhůta již uplynula*.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok2a.webp" description="Krok 2" %}
 
-3. Klikněte na příslušnou barevnou kartu *Lhůta uplyne dnes*, *Lhůta uplyne tento měsíc*, *Lhůta uplyne nejdříve příští měsíc*, *Lhůta již uplynula*.
+3\. Klikněte na příslušnou barevnou kartu *Lhůta uplyne dnes*, *Lhůta uplyne tento měsíc*, *Lhůta uplyne nejdříve příští měsíc*, *Lhůta již uplynula*.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok3a.webp" description="Krok 3" %}
 
-4. V tabulce se zobrazí  informace o insolventních zaměstnavatelích podle požadovaných kritérií.
+4\. V tabulce se zobrazí  informace o insolventních zaměstnavatelích podle požadovaných kritérií.
 
 {% include image.html url="../přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Krok4a.webp" description="Krok 4" %}
 
-5. Uložte si informace o zaměstnavateli a důležité lhůty pro budoucí potřebu. 
+5\. Uložte si informace o zaměstnavateli a důležité lhůty pro budoucí potřebu. 
 
 Závěrem upozorňujeme, že v lednu 2023 uplyne dle zveřejněných údajů lhůta pro uplatnění mzdových nároků u celkem 412 insolventních zaměstnavatelů. 
 Netýká se to i pohledávek za Vaším zaměstnavatelem? 

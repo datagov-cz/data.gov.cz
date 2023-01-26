@@ -6,7 +6,7 @@ ref: jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenč
 lang: cs
 image: /přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Insolvence_titulka.webp
 author: david_havlík
-date: 2023-01-26 10:00:00 +02:00
+date: 2023-01-26 10:00:00 +01:00
 ---
 V roce 2022 bylo v České republice vyhlášeno celkem 700 bankrotů obchodních společností, což představuje meziroční pokles o 41 bankrotů.
 Zároveň se meziročně snížil i počet krachujících fyzických osob podnikatelů, a to konkrétně na 5 135 a počet osobních bankrotů klesl na 13 259. 

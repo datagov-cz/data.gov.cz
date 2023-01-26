@@ -1,7 +1,7 @@
 ---
 layout: post
 detail: true
-title: "Jak ušetřit zaměstnancům čas i peníze:  Automatizace kontrol insolvenčních lhůt"
+title: "Jak ušetřit zaměstnancům čas i peníze: Automatizace kontrol insolvenčních lhůt"
 ref: jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt
 lang: cs
 image: /přílohy/články/jak-ušetřit-zaměstnancům-čas-i-peníze-automatizace-kontrol-insolvenčních-lhůt/Insolvence_titulka.webp

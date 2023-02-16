@@ -135,5 +135,5 @@ Cílem je posílit veřejnou kontrolu nad financováním politiky.
 [Datlab institut]: https://datlabinstitut.cz/cs/ "Datlab institut"
 [Rekonstrukce státu]: https://www.rekonstrukcestatu.cz/ "Rekonstrukce státu"
 [Politické finance]: https://www.politickefinance.cz/ "Politické finance"
-[Komunikační strategie pro cílové skupiny otevřených dat]: https://data.gov.cz/kodi/výstupy/C3V1.pdf "Komunikační strategie pro cílové skupiny otevřených dat"
-[Analýza a výzkumu trhu otevřených dat v České republice]: https://data.gov.cz/kodi/výstupy/C3V1/matice.xlsx "Matice k analýze a výzkumu trhu otevřených dat v České republice"
+[Komunikační strategie pro cílové skupiny otevřených dat]: kodi/výstupy/C3V1.pdf "Komunikační strategie pro cílové skupiny otevřených dat"
+[Analýza a výzkumu trhu otevřených dat v České republice]: kodi/výstupy/C3V1/matice.xlsx "Matice k analýze a výzkumu trhu otevřených dat v České republice"

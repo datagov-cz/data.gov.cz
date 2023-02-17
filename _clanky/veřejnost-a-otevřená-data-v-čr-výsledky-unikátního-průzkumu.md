@@ -6,7 +6,7 @@ ref: veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu
 lang: cs
 image: /přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/motivace-pro-využívání-otevřených-dat.webp
 author: david_havlík
-date: 2023-02-16 15:00:00 +01:00
+date: 2023-02-17 07:00:00 +01:00
 ---
 V posledních letech se otevřená data stala klíčovým nástrojem pro zvýšení transparentnosti a odpovědnosti hlavně veřejných institucí a podniků. 
 V Česku však dosud nebyly provedeny široce zaměřené průzkumy veřejného mínění, které by odpovídaly na klíčové otázky týkající se využití a dostupnosti otevřených dat. 

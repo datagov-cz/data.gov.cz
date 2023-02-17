@@ -4,7 +4,7 @@ detail: true
 title: "Veřejnost a otevřená data v ČR: Výsledky unikátního průzkumu"
 ref: veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu
 lang: cs
-image: /přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/Obrazek3.webp
+image: /přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/motivace-pro-využívání-otevřených-dat.webp
 author: david_havlík
 date: 2023-02-16 15:00:00 +01:00
 ---
@@ -32,16 +32,16 @@ Otevřená data jsou pro většinu respondentů důležitá.
 Sektory, kde se oslovení respondenti účastní využívání otevřených dat se liší, stejně jako jejich pracovní zařazení, profese a vzdělání.
 Od vysokoškolsky vzdělaných řídících pracovníků ve finančním sektoru, přes úředníky a odborníky v IT na různých stupních dovedností, až po žurnalisty využívající otevřená data napříč obory.
 
-{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/Obrazek1.webp" description="Jak důležité je pro vás, aby data veřejné správy splňovala principy otevřených dat" %}
+{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/principy-otevřených-dat.webp" description="Jak důležité je pro vás, aby data veřejné správy splňovala principy otevřených dat" %}
 
 Respondenti využívají otevřená data pro rozšíření svých odborných znalostí v oborech jako je geografie, meteorologie, mobilita, statistika či evidence obchodních společnosti a majitelů.
 
-{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/Obrazek2.webp" description="Který z následujících sektorů zastupujete z hlediska využívání (otevřených) dat veřejné správy" %}
+{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/který-sektor-zastupujete.webp" description="Který z následujících sektorů zastupujete z hlediska využívání (otevřených) dat veřejné správy" %}
 
 Otevřená data vnímají jako nesmírně důležitá pro efektivní a správné fungování státu.
 Z tohoto důvodu vidí respondenti jako zásadní, aby byla otevřená data orgánů veřejné a státní správy. 
 
-{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/Kolaz1.webp" description="Jaká data využíváte" %}
+{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/jaká-data-využíváte.webp" description="Jaká data využíváte" %}
 
 ## Potřeby a názory respondentů
 
@@ -49,7 +49,7 @@ Zpracovatelé a uživatelé upřednostňují rychlý a efektivní přístup k ot
 Pro realizaci projektů potřebují otevřená data ve strojově čitelném a bez omezení přístupném formátu.
 Dokumentace a metadatové informace jsou pro respondenty zásadní pro správnou interpretaci a využití dat.
 
-{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/Kolaz2.webp" description="Co je pro vás důležité" %}
+{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/jak-hodnotíte-kvalitu-dat.webp" description="Co je pro vás důležité" %}
 
 Poskytovatelé, zpracovatelé a uživatelé otevřených dat v ČR upřednostňují následující potřeby:
 
@@ -63,7 +63,7 @@ Výsledky průzkumu ukazují, že respondenti vysoko hodnotí kvalitu, dostupnos
 Poskytovatelům, zpracovatelům i uživatelům otevřených dat umožňují lépe pochopit požadavky svých cílových skupin a přizpůsobit jim své služby.
 Tyto informace jsou zásadní pro vybudování silnějšího a uživatelsky přívětivějšího systému pro poskytování a využití otevřených dat v ČR. 
 
-{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/Obrazek3.webp" description="Jaké jsou vaše hlavní motivace pro využívání (otevřených) dat veřejné správy" %}
+{% include image.html url="../přílohy/články/veřejnost-a-otevřená-data-v-čr-výsledky-unikátního-průzkumu/motivace-pro-využívání-otevřených-dat.webp" description="Jaké jsou vaše hlavní motivace pro využívání (otevřených) dat veřejné správy" %}
 
 Na základě výzkumu a analýzy trhu otevřených dat v České republice vznikla Komunikační strategie pro cílové skupiny otevřených dat, tedy jakýsi návod jak s těmito skupinami mluvit.
 Nejperspektivnější jsou podle provedeného výzkumu a analýzy následující cílové skupiny:

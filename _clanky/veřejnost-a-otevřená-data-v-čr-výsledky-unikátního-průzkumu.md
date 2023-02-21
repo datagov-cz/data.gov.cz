@@ -114,7 +114,7 @@ Pro podporu této argumentaci je vhodné jako důkaz použít příklady úspě�
 
 Průzkum ukázal že zájem o otevřená data v Česku roste. 
 Lze předpokládat, že s rozvojem moderních technologií (umělá inteligence) a digitálních dovedností poroste i množství uživatelů otevřených dat. 
-Určitě jste se s nimi už setkali a možná o tom ani nevíte. Údaje z [Národního katalogu otevřených dat (NKOD] jsou už dnes využívány pro výzkumné, analytické či vývojové účely, jakož i pro vývoj nových aplikací.
+Určitě jste se s nimi už setkali a možná o tom ani nevíte. Údaje z [Národního katalogu otevřených dat (NKOD)] jsou už dnes využívány pro výzkumné, analytické či vývojové účely, jakož i pro vývoj nových aplikací.
 Například [Monitor státní pokladny] vizualizuje údaje o veřejných rozpočtech anebo [Registr smluv] informuje uživatele o všech veřejných zakázkách v Česku. 
 Kromě toho existují neziskové organizace, které podporují rozvoj otevřených dat v České republice. 
 Mezi ně patří [Hlídač státu], [Datlab institut] či [Rekonstrukce státu].
@@ -128,12 +128,12 @@ Cílem je posílit veřejnou kontrolu nad financováním politiky.
 - [Analýza a výzkumu trhu otevřených dat v České republice]
 
 
-[Národního katalogu otevřených dat (NKOD]: https://data.gov.cz "Národní katalog otevřených dat"
+[Národního katalogu otevřených dat (NKOD)]: https://data.gov.cz "Národní katalog otevřených dat"
 [Monitor státní pokladny]: https://monitor.statnipokladna.cz/ "Monitor státní pokladny"
 [Registr smluv]: https://smlouvy.gov.cz/ "Registr smluv"
 [Hlídač státu]: https://www.hlidacstatu.cz/ "Hlídač státu"
 [Datlab institut]: https://datlabinstitut.cz/cs/ "Datlab institut"
 [Rekonstrukce státu]: https://www.rekonstrukcestatu.cz/ "Rekonstrukce státu"
 [Politické finance]: https://www.politickefinance.cz/ "Politické finance"
-[Komunikační strategie pro cílové skupiny otevřených dat]: kodi/výstupy/C3V1.pdf "Komunikační strategie pro cílové skupiny otevřených dat"
-[Analýza a výzkumu trhu otevřených dat v České republice]: kodi/výstupy/C3V1/matice.xlsx "Matice k analýze a výzkumu trhu otevřených dat v České republice"
+[Komunikační strategie pro cílové skupiny otevřených dat]: /kodi/výstupy/C3V1.pdf "Komunikační strategie pro cílové skupiny otevřených dat"
+[Analýza a výzkumu trhu otevřených dat v České republice]: /kodi/výstupy/C3V1/matice.xlsx "Matice k analýze a výzkumu trhu otevřených dat v České republice"

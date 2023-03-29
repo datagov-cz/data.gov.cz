@@ -133,7 +133,7 @@ Ukazují, že stejná informace může být zpracována velmi různými způsoby
 [link_nkod]: https://data.gov.cz/datové-sady "Národní katalog otevřených dat (NKOD)"
 [link_cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS "Mozilla: CORS"
 [link_spa]: [https://en.wikipedia.org/wiki/Single-page_application "Single Page Application (SPA)"
-[link_app_github]: https://github.com/opendata-mvcr/aplikace-uredni-desky/blob/main/úřední-desky.html "Zdrojový kód aplikace pro zobrazování úředních desek"
+[link_app_github]: https://github.com/datagov-cz/aplikace-uredni-desky/blob/main/úřední-desky.html "Zdrojový kód aplikace pro zobrazování úředních desek"
 [link_graphql_nkod]: https://data.gov.cz/graphql?query=query%20%7B%20datasets%20%7B%20data%20%7B%20title%20%7B%20cs%20%7D%20%7D%20%7D%20%7D "Rozhraní GraphQL NKOD"
 [link_fetch_api]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API "Mozilla: Fetch API"
 [link_dom]: https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction "Mozilla: DOM"

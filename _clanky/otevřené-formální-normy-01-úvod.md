@@ -154,7 +154,7 @@ Více informací naleznete na [webu OFN][ofn].
 [ofn-def]: https://www.zakonyprolidi.cz/cs/1999-106#p3a-3 "Definice Otevřené formální normy"
 [ofn-splňování]: 	https://www.zakonyprolidi.cz/cs/1999-106#p4b-1 "Otevřená data mají splňovat OFN"
 [ofn]: https://ofn.gov.cz "Otevřené formální normy"
-[ofn-gh]: https://github.com/opendata-mvcr/otevrene-formalni-normy "Otevřené formální normy na GitHubu"
+[ofn-gh]: https://github.com/datagov-cz/otevrene-formalni-normy "Otevřené formální normy na GitHubu"
 [mapy-cz]: https://mapy.cz "Mapy.cz"
 [google-maps]: https://maps.google.com "Mapy Google"
 [pod]: https://data.gov.cz "Portál otevřených dat"

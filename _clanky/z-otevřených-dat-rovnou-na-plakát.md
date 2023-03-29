@@ -48,11 +48,11 @@ Na závěr je doporučeno dát o svém souboru ke stažení vědět. K tomu slou
 #### Ukázky
 ##### Vlastní seznam turistických cílů nebo turistický cíl:
 
-- [https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https://oha03.mvcr.gov.cz/soubory/více-cílů.jsonld][link_app_cile] (Ukázkový seznam turistických cílů)
-- [https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https://michalskop.gitlab.io/ofnapp/data/skala.json][link_app_skala] (Ukázka jednoho turistického cíle)
+- [https://datagov-cz.github.io/app-ofn-plakaty/#/?dataurl=https://oha03.mvcr.gov.cz/soubory/více-cílů.jsonld][link_app_cile] (Ukázkový seznam turistických cílů)
+- [https://datagov-cz.github.io/app-ofn-plakaty/#/?dataurl=https://michalskop.gitlab.io/ofnapp/data/skala.json][link_app_skala] (Ukázka jednoho turistického cíle)
 
 ##### Přímé zobrazení turistického cíle:
-- [https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https://oha03.mvcr.gov.cz/soubory/více-cílů.jsonld&iri=https://www.spilberk.cz/Vícecílový2][link_app_spilberk] (Ukázka jednoho vybraného turistického cíle ze seznamu)
+- [https://datagov-cz.github.io/app-ofn-plakaty/#/?dataurl=https://oha03.mvcr.gov.cz/soubory/více-cílů.jsonld&iri=https://www.spilberk.cz/Vícecílový2][link_app_spilberk] (Ukázka jednoho vybraného turistického cíle ze seznamu)
 
 ###### Parametry URL
 - `dataurl` - URL souboru JSON s jedním nebo více turistickými cíli
@@ -65,8 +65,8 @@ Aplikace umožňuje také přímou editaci a přidávání vlastních textů neb
 
 ### Výsledek
 Ukázková aplikace běží na adresách: 
-- [https://opendata-mvcr.github.io/app-ofn-plakaty/#/][link_app] (Turistické cíle)
-- [https://opendata-mvcr.github.io/app-ofn-plakaty/#/sport][link_app_sport] (Sportoviště)
+- [https://datagov-cz.github.io/app-ofn-plakaty/#/][link_app] (Turistické cíle)
+- [https://datagov-cz.github.io/app-ofn-plakaty/#/sport][link_app_sport] (Sportoviště)
 
 Její zdrojový kód a popis je dostupný jako [open source na GitHubu][link_github].
 
@@ -95,18 +95,18 @@ Samotná aplikace slouží jako ukázka, jak lze postupovat při využívání [
 [link_ofn_spilberk]: https://ofn.gov.cz/turistick%C3%A9-c%C3%ADle/2020-07-01/ "Otevřená formální norma pro Turistické cíle"
 [link_nkod_sportoviste]: https://data.gov.cz/datov%C3%A9-sady?dotaz=Sportovi%C5%A1t%C4%9B "Národní katalog otevřených dat: Sportoviště"
 [link_nkod_turisticke_cile]: https://data.gov.cz/datov%C3%A9-sady?dotaz=Turistick%C3%A9%20c%C3%ADle  "Národní katalog otevřených dat: Turistické cíle"
-[link_app]: https://opendata-mvcr.github.io/app-ofn-plakaty/ "Ukázková aplikace k Otevřeným formálním normám: Turistické cíle"
-[link_app_sport]: https://opendata-mvcr.github.io/app-ofn-plakaty/#/sport "Ukázková aplikace k Otevřeným formálním normám: Sportoviště"
-[link_github]: https://github.com/opendata-mvcr/app-ofn-plakaty/ "Zdrojový kód a popis: Ukázková aplikace k Otevřeným formálním normám"
+[link_app]: https://datagov-cz.github.io/app-ofn-plakaty/ "Ukázková aplikace k Otevřeným formálním normám: Turistické cíle"
+[link_app_sport]: https://datagov-cz.github.io/app-ofn-plakaty/#/sport "Ukázková aplikace k Otevřeným formálním normám: Sportoviště"
+[link_github]: https://github.com/datagov-cz/app-ofn-plakaty/ "Zdrojový kód a popis: Ukázková aplikace k Otevřeným formálním normám"
 [link_klimek]: https://data.gov.cz/%C4%8Dl%C3%A1nky/otev%C5%99en%C3%A9-form%C3%A1ln%C3%AD-normy-01-%C3%BAvod "Otevřená data a otevřené formální normy"
 [link_nuxtjs]: https://nuxtjs.org/ "Framework Nuxt.js"
 [link_html2canvas]: https://html2canvas.hertzen.com/ "html2canvas"
 [link_jspdf]: https://rawgit.com/MrRio/jsPDF/master/docs/index.html "jsPDF"
 [link_leaflet]: https://leafletjs.com/ "Leaflet"
 [link_ofn_sportoviste]: https://ofn.gov.cz/sportovi%C5%A1t%C4%9B/2020-07-01/ "Otevřená formální norma Sportoviště"
-[link_app_cile]: https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Foha03.mvcr.gov.cz%2Fsoubory%2Fv%C3%ADce-c%C3%ADl%C5%AF.jsonld "Ukázková aplikace k Otevřeným formálním normám: Seznam turistických cílů"
-[link_app_skala]: https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Fmichalskop.gitlab.io%2Fofnapp%2Fdata%2Fskala.json "Ukázková aplikace k Otevřeným formálním normám: Vybraný turistický cíl"
-[link_app_spilberk]: https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Foha03.mvcr.gov.cz%2Fsoubory%2Fv%C3%ADce-c%C3%ADl%C5%AF.jsonld&iri=https%3A%2F%2Fwww.spilberk.cz%2FV%C3%ADcec%C3%ADlov%C3%BD2 "Ukázková aplikace k Otevřeným formálním normám: Vybraný turistický cíl ze seznamu"
+[link_app_cile]: https://datagov-cz.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Foha03.mvcr.gov.cz%2Fsoubory%2Fv%C3%ADce-c%C3%ADl%C5%AF.jsonld "Ukázková aplikace k Otevřeným formálním normám: Seznam turistických cílů"
+[link_app_skala]: https://datagov-cz.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Fmichalskop.gitlab.io%2Fofnapp%2Fdata%2Fskala.json "Ukázková aplikace k Otevřeným formálním normám: Vybraný turistický cíl"
+[link_app_spilberk]: https://datagov-cz.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Foha03.mvcr.gov.cz%2Fsoubory%2Fv%C3%ADce-c%C3%ADl%C5%AF.jsonld&iri=https%3A%2F%2Fwww.spilberk.cz%2FV%C3%ADcec%C3%ADlov%C3%BD2 "Ukázková aplikace k Otevřeným formálním normám: Vybraný turistický cíl ze seznamu"
 [link_nkod]: https://data.gov.cz/datov%C3%A9-sady "Národní katalog otevřených dat"
 [link_ofn_priklady]: https://ofn.gov.cz/turistick%C3%A9-c%C3%ADle/2020-07-01/#p%C5%99%C3%ADklady "Otevřená formální norma Turistické cíle: Příklady" 
 [link_kontakt_mvcr]: mailto:otevrenadata@dia.gov.cz "Open data team MV ČR"

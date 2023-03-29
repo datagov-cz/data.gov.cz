@@ -27,4 +27,4 @@ Naše žádost o Vaše zapojení do celostátního sběru takových návrhů je 
 
 Na závěr nám dovolte Vás pozvat na Ministerstvo vnitra, kde proběhne 8. 1. 2020 od 16:00 veřejná konzultace k výše představené celoevropské aktivitě, jakož i k představení současných aktivit Ministerstva vnitra na poli otevřených dat a diskuze k nim. Jednání proběhne v budově Centrotex na adrese nám. Hrdinů 1634/3, 140 21 Praha 4-Nusle, přijďte se s námi pobavit a předat nám Vaše požadavky na data.
 
-V případě Vašeho zájmu o účast na veřejné konzultaci prosím potvrďte svojí účast na emailovou adresu [otevrenadata@mvcr.cz](mailto:otevrenadata@mvcr.cz).
+V případě Vašeho zájmu o účast na veřejné konzultaci prosím potvrďte svojí účast na emailovou adresu [otevrenadata@dia.gov.cz](mailto:otevrenadata@dia.gov.cz).

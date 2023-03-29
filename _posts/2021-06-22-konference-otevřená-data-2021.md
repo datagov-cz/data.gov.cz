@@ -24,9 +24,9 @@ Hlavního programu konference se tradičně účastní více než 100 zástupců
 Naším cílem je předat zájemcům otevřených dat cenné informace.
 Proto umožníme vystoupit více účastníkům a těm, kteří se do programu nevejdou, umožníme předat své zkušenosti jiným způsobem, např. formou článku na [Portálu otevřených dat].
 
-V případě jakýchkoliv dotazů nás prosím kontaktujte na [otevrenadata@mvcr.cz].
+V případě jakýchkoliv dotazů nás prosím kontaktujte na [otevrenadata@dia.gov.cz].
 
 [6. ročník konference Otevřená data 2021]: https://opendata.gov.cz/edu:konference:2021 "Konference Otevřená data 2021"
 [strukturované přihlášky příspěvku]: https://docs.google.com/forms/d/e/1FAIpQLSelFrZN5LYgTtbGSEIe9jgz23ABAABOfXWp68tdCgPSqzXwUA/viewform "Přihláška příspěvku na konferenci Otevřená data 2021"
 [Portálu otevřených dat]: https://data.gov.cz/články/ "Portál otevřených dat"
-[otevrenadata@mvcr.cz]: mailto:otevrenadata@mvcr.cz "E-mail otevřených dat"
+[otevrenadata@dia.gov.cz]: mailto:otevrenadata@dia.gov.cz "E-mail otevřených dat"

@@ -97,7 +97,7 @@ Zároveň byly k analýze využity SPARQL dotazy, které slouží jako ukázka v
 Zároveň by měl článek i vizualizace sloužit povinným subjektům k ověření stavu publikace jejich otevřené úřední desky a zjištění, jak upravit případné nedostatky.
 Aktuální správnost publikace úřední desky je možné si v čase ověřit díky testovací aplikaci.
 Věříme, že tento článek přispěje k maximálnímu plnění povinnosti publikace úředních desek a sníží počet dotazů týkajících se nejčastějších chyb.
-I nadále tým národního koordinátora otevřených dat bude poskytovat metodickou podporu všem poskytovatelům skrze email [otevrenadata@mvcr.cz]. 
+I nadále tým národního koordinátora otevřených dat bude poskytovat metodickou podporu všem poskytovatelům skrze email [otevrenadata@dia.gov.cz]. 
 
 [minulém článku]: /články/otevřené-úřední-desky-po-čtvrt-roce-je-jich-665 "Otevřené úřední desky - po čtvrt roce je jich 665"
 [dřívějším článku]: /články/znalostní-grafy-03-sparql "Série Znalostní grafy: Díl 3: SPARQL"
@@ -117,7 +117,7 @@ I nadále tým národního koordinátora otevřených dat bude poskytovat metodi
 [návodu]: https://opendata.gov.cz/špatná-praxe:chybějící-cors "Chybějící CORS"
 [OFN pro úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN Úřední desky"
 [předpřipravený záznam]: /formulář/registrace-datové-sady?file=https%3A%2F%2Fofn.gov.cz%2Fúřední-desky%2F2021-07-20%2Fmetadata%2Fúřední-desky.jsonld "Předpřipravený záznam"
-[otevrenadata@mvcr.cz]: mailto:otevrenadata@mvcr.cz "mailto:otevrenadata@mvcr.cz"
+[otevrenadata@dia.gov.cz]: mailto:otevrenadata@dia.gov.cz "mailto:otevrenadata@dia.gov.cz"
 [kategorie KO11]: https://rpp-opendata.egon.gov.cz/odrpp/zdroj/kategorie-ovm/KO11 "Kategorie KO11 RPP"
 [kategorie KO12]: https://rpp-opendata.egon.gov.cz/odrpp/zdroj/kategorie-ovm/KO12 "Kategorie KO12 RPP"
 [kategorie KO129]:  https://rpp-opendata.egon.gov.cz/odrpp/zdroj/kategorie-ovm/KO129 "Kategorie KO129 RPP"

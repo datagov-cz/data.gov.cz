@@ -72,7 +72,7 @@ Téma hackathonů se nevyhýbá ani univerzitnímu a neziskovému sektoru. Za za
 %}
 
 ## A jak takový hackathon uspořádat?
-Zaujaly Vás hackathony natolik, že byste rádi takovou akci uspořádali? Pokud ano, připravili jsme pro vás krátké shrnutí, na co byste neměli zapomenout při přípravě tohoto typu akce. Pokud byste potřebovali bližší konzultaci, neváhejte nám napsat na emailovou adresu [otevrenadata@mvcr.cz][odmvcr] a do předmětu zprávy dát "*hackathony*".
+Zaujaly Vás hackathony natolik, že byste rádi takovou akci uspořádali? Pokud ano, připravili jsme pro vás krátké shrnutí, na co byste neměli zapomenout při přípravě tohoto typu akce. Pokud byste potřebovali bližší konzultaci, neváhejte nám napsat na emailovou adresu [otevrenadata@dia.gov.cz][odmvcr] a do předmětu zprávy dát "*hackathony*".
 
 ### O čem takový hackathon je?
 Hackathon neboli soutěžní akce, která trvá od 24 do 48 hodin s cílem nalézt řešení zadaného problému. Účastníci pracují v týmech nejčastěji ve velikosti 2-6 osob. Není důležité, zda se jedná o práci na softwarovém nebo hardwarovém řešení (není to tedy jen pro IT vývojáře). Důležité je za dobu trvání soutěže vytvořit fungující prototyp, který ukáže, jak by navržené řešení mohlo fungovat v praxi. [^1]
@@ -99,7 +99,7 @@ K úspěchu akce potřebujete zejména následujícíh 8 věcí:
 ## Závěr
 Z výše uvedeného je vidět, že hackathony jsou využívány různými druhy organizací (veřejné, soukromé, akademické) a jsou to právě otevřená data veřejného sektoru, která nastartovala tuto vlnu “hackování”. Čím kvalitnější (a tím i zajímavější na zpracování) tak budou otevřená data veřejné správy, je možné předpokládat, ještě výraznější dopad připravených řešení. Na závěr je nutné dodat, že začátek roku 2020 již přinesl také řadu zajímavých akcí tohoto druhu. Jako příklad lze uvést velmi diskutovaný hackathon ["Znám kamaráda"][znamkamarada] nebo [1. mezinárodní hackathon kontrolních institucí][kontrolníhackathon].
 
-Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevrenadata@mvcr.cz][odmvcr]. Do předmětu prosím uveďte "*hackathony*" a my se vaši akci pokusíme zařadit do některého z dalších článků na našem portálu [Národního katalogu otevřených dat][NKOD]. 
+Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevrenadata@dia.gov.cz][odmvcr]. Do předmětu prosím uveďte "*hackathony*" a my se vaši akci pokusíme zařadit do některého z dalších článků na našem portálu [Národního katalogu otevřených dat][NKOD]. 
 
 ------------
 
@@ -125,6 +125,6 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 [wikimedia]: https://www.mediawiki.org/wiki/Wikimedia_Hackathon_2019/Program "Wikimedia Hackathon 2019"
 [unitbrno]: https://unitbrno.cz/ "Soutěž Unit Brno"
 [bestbrno]: https://best.vutbr.cz/ "Best Brno"
-[odmvcr]: otevrenadata@mvcr.cz "otevrenadata@mvcr.cz"
+[odmvcr]: otevrenadata@dia.gov.cz "otevrenadata@dia.gov.cz"
 [znamkamarada]: https://www.znamkamarada.cz/ "Hackathon Znám kamaráda"
 [kontrolníhackathon]: https://hackathon.eurosai2020.cz/ "1. mezinárodní hackathon kontrolních institucí"

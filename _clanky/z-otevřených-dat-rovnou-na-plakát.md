@@ -109,5 +109,5 @@ Samotná aplikace slouží jako ukázka, jak lze postupovat při využívání [
 [link_app_spilberk]: https://opendata-mvcr.github.io/app-ofn-plakaty/#/?dataurl=https%3A%2F%2Foha03.mvcr.gov.cz%2Fsoubory%2Fv%C3%ADce-c%C3%ADl%C5%AF.jsonld&iri=https%3A%2F%2Fwww.spilberk.cz%2FV%C3%ADcec%C3%ADlov%C3%BD2 "Ukázková aplikace k Otevřeným formálním normám: Vybraný turistický cíl ze seznamu"
 [link_nkod]: https://data.gov.cz/datov%C3%A9-sady "Národní katalog otevřených dat"
 [link_ofn_priklady]: https://ofn.gov.cz/turistick%C3%A9-c%C3%ADle/2020-07-01/#p%C5%99%C3%ADklady "Otevřená formální norma Turistické cíle: Příklady" 
-[link_kontakt_mvcr]: mailto:otevrenadata@mvcr.cz "Open data team MV ČR"
+[link_kontakt_mvcr]: mailto:otevrenadata@dia.gov.cz "Open data team MV ČR"
 [link_ofn]: https://ofn.gov.cz/ "Otevřené formální normy" 

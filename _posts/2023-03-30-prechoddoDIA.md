@@ -11,5 +11,5 @@ Dne 1.4.2023 se agenda otevřených dat a s ní i celý tým národní koordiná
 
 V této souvislosti se mění i naše kontaktní údaje. V případě potřeby nás již teď můžete kontaktovat na otevrenadata@dia.gov.cz.  Na sociální síti Twitter nás nadále najdete jako [@otevrenadata].
 
-[Digitální a informační agentury]: https://digitalizace.gov.cz/ "Digitální a informační agentura"
+[Digitální a informační agentury]: https://dia.gov.cz/ "Digitální a informační agentura"
 [@otevrenadata]: https://twitter.com/otevrenadata "Twitter otevrenadata"

@@ -24,7 +24,7 @@ C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcíh
 : Zrušen
 
 C1V6 - Analytické dokumenty identifikující právní zakotvení ČR, příslušné subjekty a stav uveřejnění
-: Zatím nedokončeno
+: [Dokument](výstupy/C1V6.pdf)
 
 ## Cíl 2 - Zlepšení kvality otevřených dat
 C2V1 - Vydané otevřené formální normy
@@ -145,4 +145,4 @@ C5V6 - Návrh potřebných úprav výrobní linky a realizace úprav v prototypu
 : Zatím nedokončeno
 
 C5V7 - Pilotní provoz výrobní linky pro účely vzdělávání
-: Zatím nedokončeno
+: [Dokument](výstupy/C5V7.pdf)

@@ -56,7 +56,7 @@ Tento druh párování umožňuje novinářům rychle odhalit podezřelé vztahy
 |10     |[DenisOil s.r.o.]                 |04317106|[17.4.2020]               |[21.6.2021]     |[6]        |[65 255 300 Kč]      |          |
 |50     |[KT Bau s.r.o.]                   |28333004|[9.2.2017]                |[13.5.2020]     |[1]        |[0 Kč]               |          |
 |Celkem |50                                |50      |50                        |50              |7503       |356 017 777 438 Kč   |10|
-
+{: .table .table-striped}
 *Údaje platné ke dni 5.3.2023*
 
 Mezi 941 pravomocně odsouzenými právnickými osobami jsme identifikovali celkem 151 partnerů veřejného sektoru. 

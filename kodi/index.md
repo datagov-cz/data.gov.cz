@@ -77,7 +77,7 @@ C3V5 - Výroční konference o otevřených datech veřejné správy ČR
 : Zatím nedokončeno
 
 C3V6 - Návrh využití ontologických konceptuálních modelů agend v NKOD
-: [Dokument](výstupy/C3V6.pdf)
+: [Dokument](výstupy/C3V6.pdf), Přílohy: [Naplnění SKOD.jsonld](v%C3%BDstupy/C3V6/Napln%C4%9Bn%C3%AD%20SKOD.jsonld), [dcat-ap-viewer-develop.zip](v%C3%BDstupy/C3V6/dcat-ap-viewer-develop.zip), [nkod-graph-browser-master.zip](v%C3%BDstupy/C3V6/nkod-graph-browser-master.zip)
 
 C3V7 - Návrh zajištění podpory principů 5* otevřených dat v NKOD
 : Zatím nedokončeno

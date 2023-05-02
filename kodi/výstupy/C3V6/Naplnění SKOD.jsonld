@@ -1,0 +1,698 @@
+[
+  {
+    "@graph": [
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032",
+        "@type": [
+          "http://linkedpipes.com/ontology/Pipeline"
+        ],
+        "http://etl.linkedpipes.com/ontology/tag": [
+          {
+            "@value": "SKOD"
+          }
+        ],
+        "http://etl.linkedpipes.com/ontology/version": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#int",
+            "@value": "2"
+          }
+        ],
+        "http://linkedpipes.com/ontology/profile": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/2"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "Naplnění SKOD"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/10",
+        "@type": [
+          "http://linkedpipes.com/ontology/Component"
+        ],
+        "http://linkedpipes.com/ontology/configurationGraph": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/graph/33"
+          }
+        ],
+        "http://linkedpipes.com/ontology/template": [
+          {
+            "@id": "http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0"
+          }
+        ],
+        "http://linkedpipes.com/ontology/x": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "695"
+          }
+        ],
+        "http://linkedpipes.com/ontology/y": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "696"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "Files to RDF single graph"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/19",
+        "@type": [
+          "http://linkedpipes.com/ontology/Connection"
+        ],
+        "http://linkedpipes.com/ontology/sourceBinding": [
+          {
+            "@value": "OutputFile"
+          }
+        ],
+        "http://linkedpipes.com/ontology/sourceComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/5"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetBinding": [
+          {
+            "@value": "InputFiles"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/3"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/2",
+        "@type": [
+          "http://linkedpipes.com/ontology/ExecutionProfile"
+        ],
+        "http://linkedpipes.com/ontology/rdfRepositoryPolicy": [
+          {
+            "@id": "http://linkedpipes.com/ontology/repository/SingleRepository"
+          }
+        ],
+        "http://linkedpipes.com/ontology/rdfRepositoryType": [
+          {
+            "@id": "http://linkedpipes.com/ontology/repository/NativeStore"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/3",
+        "@type": [
+          "http://linkedpipes.com/ontology/Component"
+        ],
+        "http://linkedpipes.com/ontology/configurationGraph": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/graph/24"
+          }
+        ],
+        "http://linkedpipes.com/ontology/template": [
+          {
+            "@id": "http://etl.linkedpipes.com/resources/components/l-graphStoreProtocol/0.0.0"
+          }
+        ],
+        "http://linkedpipes.com/ontology/x": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1448"
+          }
+        ],
+        "http://linkedpipes.com/ontology/y": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "721"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "Graph store protocol"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/5",
+        "@type": [
+          "http://linkedpipes.com/ontology/Component"
+        ],
+        "http://linkedpipes.com/ontology/configurationGraph": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/graph/30"
+          }
+        ],
+        "http://linkedpipes.com/ontology/template": [
+          {
+            "@id": "http://etl.linkedpipes.com/resources/components/t-rdfToFile/0.0.0"
+          }
+        ],
+        "http://linkedpipes.com/ontology/x": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1198"
+          }
+        ],
+        "http://linkedpipes.com/ontology/y": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "729"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "RDF to file"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/262c-a866",
+        "@type": [
+          "http://linkedpipes.com/ontology/Component"
+        ],
+        "http://linkedpipes.com/ontology/configurationGraph": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/262c-a866/configuration"
+          }
+        ],
+        "http://linkedpipes.com/ontology/template": [
+          {
+            "@id": "http://etl.linkedpipes.com/resources/components/e-sparqlEndpoint/0.0.0"
+          }
+        ],
+        "http://linkedpipes.com/ontology/x": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "654"
+          }
+        ],
+        "http://linkedpipes.com/ontology/y": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "826"
+          }
+        ],
+        "http://purl.org/dc/terms/description": [
+          {
+            "@value": "Katalogizační záznamy RPP z NKOD"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "SPARQL endpoint"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/849b-8083",
+        "@type": [
+          "http://linkedpipes.com/ontology/Component"
+        ],
+        "http://linkedpipes.com/ontology/configurationGraph": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/849b-8083/configuration"
+          }
+        ],
+        "http://linkedpipes.com/ontology/template": [
+          {
+            "@id": "http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0"
+          }
+        ],
+        "http://linkedpipes.com/ontology/x": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "193"
+          }
+        ],
+        "http://linkedpipes.com/ontology/y": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "765"
+          }
+        ],
+        "http://purl.org/dc/terms/description": [
+          {
+            "@value": "Doplnění katalogizačních záznamů RPP pro SKOD"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "Text holder"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/f803-9b01",
+        "@type": [
+          "http://linkedpipes.com/ontology/Component"
+        ],
+        "http://linkedpipes.com/ontology/configurationGraph": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/f803-9b01/configuration"
+          }
+        ],
+        "http://linkedpipes.com/ontology/template": [
+          {
+            "@id": "http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0"
+          }
+        ],
+        "http://linkedpipes.com/ontology/x": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "1014"
+          }
+        ],
+        "http://linkedpipes.com/ontology/y": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "792"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#prefLabel": [
+          {
+            "@value": "Union"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/connection/08af-9e4f",
+        "@type": [
+          "http://linkedpipes.com/ontology/Connection"
+        ],
+        "http://linkedpipes.com/ontology/sourceBinding": [
+          {
+            "@value": "FilesOutput"
+          }
+        ],
+        "http://linkedpipes.com/ontology/sourceComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/849b-8083"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetBinding": [
+          {
+            "@value": "InputFiles"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/10"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/connection/0ade-9392",
+        "@type": [
+          "http://linkedpipes.com/ontology/Connection"
+        ],
+        "http://linkedpipes.com/ontology/sourceBinding": [
+          {
+            "@value": "OutputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/sourceComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/10"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetBinding": [
+          {
+            "@value": "InputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/f803-9b01"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/connection/1188-8380",
+        "@type": [
+          "http://linkedpipes.com/ontology/Connection"
+        ],
+        "http://linkedpipes.com/ontology/sourceBinding": [
+          {
+            "@value": "OutputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/sourceComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/f803-9b01"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetBinding": [
+          {
+            "@value": "InputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/5"
+          }
+        ]
+      },
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/connection/7584-9f7b",
+        "@type": [
+          "http://linkedpipes.com/ontology/Connection"
+        ],
+        "http://linkedpipes.com/ontology/sourceBinding": [
+          {
+            "@value": "OutputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/sourceComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/262c-a866"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetBinding": [
+          {
+            "@value": "InputRdf"
+          }
+        ],
+        "http://linkedpipes.com/ontology/targetComponent": [
+          {
+            "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/f803-9b01"
+          }
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/262c-a866/configuration",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#defaultGraphControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#encodeRdf": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#encodeRdfControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#endpoint": [
+          {
+            "@value": "https://data.gov.cz/sparql"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#endpointControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#handleInvalidData": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#handleInvalidDataControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#headerAcceptControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#passwordControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#query": [
+          {
+            "@value": "PREFIX dcat: <http://www.w3.org/ns/dcat#>\nPREFIX dct: <http://purl.org/dc/terms/>\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\n\nCONSTRUCT {?s ?p ?o}\nWHERE {\n  VALUES ?datova_sada {\n    <https://data.gov.cz/zdroj/datové-sady/00007064/9c73b802263c5e0ccf5542f10fbc35bb>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/735d2f4f35c2493468ef682afd441418>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/4cdc3767e173806c2a7bb345459731a5>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/d31ca0af022cdc6584903f538c69b2d3>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/d5909cf2cc13053a05dc08137db28c75>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/2da57720c4c2d44f128834a4f7ebb41a>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/527b4095146db54b65c9eca6b969b6ab>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/7ee91a644bf6da16a9f5c4f337163c0f>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/3e4cb5fb5ef67b5e728b95e8a2004e3a>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/64f3831b09ab80f3cd731e2fe9ee7999>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/44a9d6abacd4d0e83a0694e74d028f51>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/08d39930aed7e224a765653a722b8f2c>\n    <https://data.gov.cz/zdroj/datové-sady/00007064/1b2711cefe4c7486ceb7bf65d719b282>\n  }\n  GRAPH ?g {\n    ?datova_sada a dcat:Dataset .\n    ?s ?p ?o .\n  }\n}"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#queryControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useAuthentication": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useAuthenticationControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useTolerantRepository": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useTolerantRepositoryControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#userNameControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/262c-a866/configuration"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/849b-8083/configuration",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-textHolder#content": [
+          {
+            "@value": "@prefix dcat:\t<http://www.w3.org/ns/dcat#> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/9c73b802263c5e0ccf5542f10fbc35bb> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/činnost>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/právní-předpis>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-agendy>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vykonávána-na-základě-ustanovení>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-vykonávána-na-základě-hlavního-ustanovení>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vykonávána-v-agendě>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-kód-činnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-název-činnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-popis-činnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-činnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-činnosti-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-činnosti-do>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/vykonává-agendu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/vykonává-agendu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/vykonává-agendu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/vykonává-agendu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ohlašuje-agendu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-vzniku-agendy>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-zániku-agendy>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-agendy-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-agendy-do>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-poslední-změny-agendy> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/735d2f4f35c2493468ef682afd441418> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/kategorie-soukromoprávních-uživatelů-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vymezena-ustanovením>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ohlašuje-kategorii>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-kategorie-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-kategorie-do> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/4cdc3767e173806c2a7bb345459731a5> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/kategorie-orgánů-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vymezena-ustanovením>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ohlašuje-kategorii>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-kategorie-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-platnost-kategorie-do> .\n      \n<https://data.gov.cz/zdroj/datové-sady/00007064/d31ca0af022cdc6584903f538c69b2d3> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/právní-předpis>,\n  <https://slovník.gov.cz/agendový/104/pojem/objekt-nebo-subjekt-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/údaj>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-kód-objektu-nebo-subjektu-údajů>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-název-objektu-nebo-subjektu-údajů>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-popis-objektu-nebo-subjektu-údajů>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-vymezen-ustanovením-vymezujícím-objekt-nebo-subjekt-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-paragraf-ustanovení>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-odstavec-ustanovení>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-písmeno-ustanovení>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-součástí-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-číslo-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-rok-právního-předpisu>,\n  <https://slovník.gov.cz/agendový/104/pojem/sdružuje-údaje-vedené-nebo-vytvářené-v-rámci-agendy>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-údaj>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-kód-údaje>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-název-údaje>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-popis-údaje>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-údaje>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-vymezen-ustanovením-vymezujícím-údaj> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/d5909cf2cc13053a05dc08137db28c75> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/soukromoprávní-uživatel-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/datová-schránka>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/zařazení-do-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresní-místo>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-obchodní-firmu-nebo-název-nebo-označení-osoby-nebo-jméno-nebo--popřípadně-jména-nebo--a-příjmení-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikační-číslo-osoby-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-typ-datové-schránky>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-oprávněn-k-využívání-údajů-ná-základě-ustanovení>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-zařazený-subjekt>,\n  <https://slovník.gov.cz/agendový/104/pojem/zařazuje-do-kategorie>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-zařazení-do-kategorie>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-vyřazení-z-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-adresu-sídla-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-adresního-místa>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-adresu-místa-podnikání-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datum-vzniku-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datum-zániku-soukromoprávního-uživatele-údajů>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-pozastavené-působení-soukromoprávního-uživatele-údajů-od>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-pozastavené-působení-soukromoprávního-uživatele-údajů-do>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-přerušené-působení-soukromoprávního-uživatele-údajů-od>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-přerušené-působení-soukromoprávního-uživatele-údajů-do> .\n    \n<https://data.gov.cz/zdroj/datové-sady/00007064/2da57720c4c2d44f128834a4f7ebb41a> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-název-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-popis-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-povinnost-sběru-adresy>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-relevantní-pro-plnění-informační-povinnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-oprávněného-klienta>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-vázána-na-činnost>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-místní-příslušnost-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-místní-příslušností-služby-pro-typ-subjektu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-místní-příslušnosti-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-poskytovatele-služby-v-místní-příslušnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/skládá-se-z-úkonu>,\n  <https://slovník.gov.cz/agendový/104/pojem/úkon-služby-veřejné-správy>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-úkonu-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-název-úkonu-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-popis-úkonu-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/právo-či-povinnost-konat-úkon-je-stanovena-ustanovením>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-vykonavatele-úkonu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-fázi>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-vhodný-k-digitalizaci>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-digitální>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-realizován-kanálem>,\n  <https://slovník.gov.cz/agendový/104/pojem/obslužný-kanál>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-realizován>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-plánován-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-plánován-do>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-obslužného-kanálu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-požadovanou-úroveň-důvěry>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-poskytovatele-obslužného-kanálu>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-stanovena-ustanovením>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/527b4095146db54b65c9eca6b969b6ab> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/role>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/vykonává-činnost>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-souhrn-oprávnění-definovaných-rolí>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-souhrn-oprávnění-definovaných-rolí>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-souhrn-oprávnění-definovaných-rolí>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-souhrn-oprávnění-definovaných-rolí> .\n    \n<https://data.gov.cz/zdroj/datové-sady/00007064/7ee91a644bf6da16a9f5c4f337163c0f> dcat:theme\n  <https://slovník.gov.cz/agendový/104/pojem/působnost-v-agendě>,\n  <https://slovník.gov.cz/agendový/104/pojem/vznikla-v-rámci-registrace>,\n  <https://slovník.gov.cz/agendový/104/pojem/registruje-působnost-v-agendě>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-registrovaný-subjekt>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-registrovaný-subjekt>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-registrace>,\n  <https://slovník.gov.cz/agendový/104/pojem/vykonává-činnost-v-rámci-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/vykonává-službu-veřejné-správy-v-rámci-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-vykonávanou-službu-veřejné-správy>,\n  <https://slovník.gov.cz/agendový/104/pojem/vykonává-službu-veřejné-správy-na-pracovišti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-důvod-neuvedení-pracovišť-pro-působnost> .\n    \n<https://data.gov.cz/zdroj/datové-sady/00007064/3e4cb5fb5ef67b5e728b95e8a2004e3a> dcat:theme\n  <https://slovník.gov.cz/agendový/104/pojem/má-převedenou-službu>,\n  <https://slovník.gov.cz/agendový/104/pojem/převádí-službu-z-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/převádí-službu-do-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/převádí-službu-na-pracoviště>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-převodu-služby-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-převodu-služby-do>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-dokument-pro-převod-služby>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-důvod-neuvedení-pracovišť-pro-převod> .\n    \n<https://data.gov.cz/zdroj/datové-sady/00007064/64f3831b09ab80f3cd731e2fe9ee7999> dcat:theme\n  <https://slovník.gov.cz/agendový/104/pojem/má-převedenou-činnost>,\n  <https://slovník.gov.cz/agendový/104/pojem/převádí-činnost-z-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/převádí-činnost-do-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-převodu-činnosti-od>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-převodu-činnosti-do>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-dokument-pro-převod-služby> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/44a9d6abacd4d0e83a0694e74d028f51> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/datová-schránka>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/zařazení-do-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/osoba-stojící-v-čele-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/pracoviště>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresní-místo>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-vnitřní-organizační-jednotkou>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikační-číslo-osoby-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datovou-schránku-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-typ-datové-schránky>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-identifikátor-datové-schránky>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/vykonává-působnost-na-základě-ustanovení>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-zařazený-subjekt>,\n  <https://slovník.gov.cz/agendový/104/pojem/zařazuje-do-kategorie>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-zařazení-do-kategorie>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-vyřazení-z-kategorie>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-adresu-místa-pobytu-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-adresního-místa>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-adresu-sídla-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/stojí-v-čele-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-jméno-a-příjmení-osoby-stojící-v-čele-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-datum-zahájení-výkonu-působnosti-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-ukončení-výkonu-působnosti-orgánu-veřejné-moci>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-pozastavený-výkon-působnosti-orgánu-veřejné-moci-od>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-pozastavený-výkon-působnosti-orgánu-veřejné-moci-do>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-přerušený-výkon-působnosti-orgánu-veřejné-moci-od>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-přerušený-výkon-působnosti-orgánu-veřejné-moci-do>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-pracoviště-vykonávající-úkon>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-adresu-pracoviště>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-adresu-pracoviště-neevidovanou-v-rúian>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-stát-pracoviště>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-otevření-pracoviště>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-uzavření-pracoviště>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-právní-formu-osoby> .\n\n<https://data.gov.cz/zdroj/datové-sady/00007064/08d39930aed7e224a765653a722b8f2c> dcat:theme\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/oprávnění-k-přístupu-k-údajům>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/oprávnění-k-přístupu-k-údaji>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ustanovení-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/právní-předpis>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-kód-oprávnění-k-přístupu-k-údajům>,\n  <https://slovník.gov.cz/agendový/104/pojem/čerpá-údaje-z-agendy>,\n  <https://slovník.gov.cz/agendový/104/pojem/poskytuje-údaje-agendě>,\n  <https://slovník.gov.cz/agendový/104/pojem/zahrnuje-oprávnění-k-přístupu-k-údaji>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-úroveň-přístupu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/zpřístupňuje-údaj>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-oprávněním-pro-roli>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/zpřístupňuje-údaje-na-základě-ustanovení>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-úplné-označení-ustanovení-včetně-označení-právního-předpisu>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-paragraf-ustanovení>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-odstavec-ustanovení>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-písmeno-ustanovení>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-součástí-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-název-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-číslo-právního-předpisu>,\n  <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-rok-právního-předpisu> .\n    \n<https://data.gov.cz/zdroj/datové-sady/00007064/1b2711cefe4c7486ceb7bf65d719b282> dcat:theme\n  <https://slovník.gov.cz/agendový/104/pojem/dokument-převodu-agend>,\n  <https://slovník.gov.cz/agendový/104/pojem/rozhodnutí-o-založení-dokumentu-převodu-agend>,\n  <https://slovník.gov.cz/agendový/104/pojem/rozhodnutí-o-schválení-předání-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-dokumentu-převodu-agend>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-uzavření-dokumentu-převodu-agend>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-datum-ukončení-dokumentu-převodu-agend>,\n  <https://slovník.gov.cz/agendový/104/pojem/je-uzavřen-na-dobu-neurčitou>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-rozhodnutí-o-předání-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-rozhodnutí-o-převzetí-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-rozhodnutí-o-založení-dokumentu-převodu-agend>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-rozhodnutí-o-schválení-předání-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/má-typ-rozhodnutí-o-schválení-předání-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/schvaluje-předání-působnosti>,\n  <https://slovník.gov.cz/agendový/104/pojem/převádí-působnost>,\n  <https://slovník.gov.cz/agendový/104/pojem/přebírá-působnost> ."
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-textHolder#fileName": [
+          {
+            "@value": "skod.ttl"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/849b-8083/configuration"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0/new/1",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/t-singleGraphUnion#Configuration"
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/component/f803-9b01/configuration"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/3/configuration",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#authentification": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "true"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#authentificationControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#checkSize": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#checkSizeControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#endpoint": [
+          {
+            "@value": "https://skod.opendata.cz/sparql-graph-crud-auth/"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#endpointControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#endpointSelectControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#graph": [
+          {
+            "@value": "https://skod.opendata.cz/graph/kodi-výstup-rpp"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#graphControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#passwordControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#replace": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "true"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#replaceControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#repository": [
+          {
+            "@value": "VIRTUOSO"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#repositoryControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/l-graphStoreProtocol#userControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/graph/24"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/29",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName": [
+          {
+            "@value": "data.ttl"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType": [
+          {
+            "@value": "text/turtle"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileTypeControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri": [
+          {
+            "@value": "http://localhost/default"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUriControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/graph/30"
+  },
+  {
+    "@graph": [
+      {
+        "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/32",
+        "@type": [
+          "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration"
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#integer",
+            "@value": "50000"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType": [
+          {
+            "@value": ""
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail": [
+          {
+            "@type": "http://www.w3.org/2001/XMLSchema#boolean",
+            "@value": "false"
+          }
+        ],
+        "http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl": [
+          {
+            "@id": "http://plugins.linkedpipes.com/resource/configuration/None"
+          }
+        ]
+      }
+    ],
+    "@id": "https://etl.opendata.cz/resources/pipelines/1589295632032/graph/33"
+  }
+]

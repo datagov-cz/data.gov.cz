@@ -24,7 +24,7 @@ C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcíh
 : Zrušen
 
 C1V6 - Analytické dokumenty identifikující právní zakotvení ČR, příslušné subjekty a stav uveřejnění
-: [Dokument](výstupy/C1V6.pdf)
+: [Dokument](výstupy/C1V6.pdf), Přílohy: [Analýza](výstupy/C1V6/anal%C3%BDza.xlsx)
 
 ## Cíl 2 - Zlepšení kvality otevřených dat
 C2V1 - Vydané otevřené formální normy

@@ -91,7 +91,7 @@ C3V9 - Návrh zajištění podpory asistenta pro dotazování nad 5* datovými s
 C3V10 - Metodika pro vypracování analýzy dopadu otevřených dat do prostředí ČR
 : [Dokument](výstupy/C3V10.pdf)
 
-C3V11 - Analýza dopadu otevřených dat do prostředí ČR za rok 2020
+C3V11 - Analýza dopadu otevřených dat do prostředí ČR za rok 2022
 : [Dokument](výstupy/C3V11.pdf), Přílohy: [Seznam poptávaných datových sad (podněty)](výstupy/C3V11/Příloha_1_Seznam%20popt%C3%A1van%C3%BDch%20datov%C3%BDch%20sad%20(podn%C4%9Bty).xlsx), [Seznam realizovaných akcí v oblasti otevřených dat](výstupy/C3V11/Příloha_2_Seznam%20realizovan%C3%BDch%20akc%C3%AD%20v%20oblasti%20otev%C5%99en%C3%BDch%20dat.xlsx), [Seznam aplikací](výstupy/C3V11/Příloha_3_Seznam%20aplikac%C3%AD.xlsx), [Seznam odborných článků na portálech otevřených dat](výstupy/C3V11/Příloha_4_Seznam%20odborn%C3%BDch%20%C4%8Dl%C3%A1nk%C5%AF%20na%20port%C3%A1lech%20otev%C5%99en%C3%BDch%20dat.xlsx), [Seznam komunit](výstupy/C3V11/Příloha_5_Seznam%20komunit.xlsx), [Seznam závěrečných prácí k OD](výstupy/C3V11/Příloha_6_Seznam%20z%C3%A1v%C4%9Bre%C4%8Dn%C3%BDch%20pr%C3%A1c%C3%AD%20k%20OD.xlsx), [Seznam schválených žádostí OHA s příslibem OD](výstupy/C3V11/Příloha_7_Seznam%20schv%C3%A1len%C3%BDch%20%C5%BE%C3%A1dost%C3%AD%20OHA%20s%20p%C5%99%C3%ADslibem%20OD.xlsx), [Tabulka bodování](výstupy/C3V11/Příloha_8_Tabulka%20bodov%C3%A1n%C3%AD.xlsx)
 
 C3V12 - Rešerše otevřených dat v různých oblastech v zahraničí

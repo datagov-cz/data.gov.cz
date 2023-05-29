@@ -143,5 +143,5 @@ Ukazují, že stejná informace může být zpracována velmi různými způsoby
 [link_cc]: https://creativecommons.org/licenses/by-sa/3.0 "CC BY-SA 3.0"
 [link_article_dnes]: https://data.gov.cz/2022/02/01/publikace-%C3%BA%C5%99edn%C3%ADch-desek.html "Otevřená data z úředních desek již dnes"
 [link_missing_cors]: https://opendata.gov.cz/%C5%A1patn%C3%A1-praxe:chyb%C4%9Bj%C3%ADc%C3%AD-cors "Chybějící podpora Cross-Origin Resource Sharing (CORS)"
-[link_video_1]: https://www.youtube.com/watch?v=eDWp5yR_tbw&t=2s "Videonávod jak zkontrolovat katalogizační záznam úřední desky"
-[link_video_2]: https://www.youtube.com/watch?v=ylW2j-uDmAI&list=PL1Cp5doNb3zQc_ncuqg85b7ChdsJpBK4e&index=22&t=1s&ab_channel=MinisterstvoVnitraCR "Záznam z workshopu k zveřejňování úředních desek jako otevřená data"
+[link_video_1]: https://www.youtube.com/watch?v=A0BGDchMGGA&t=2s "Videonávod jak zkontrolovat katalogizační záznam úřední desky"
+[link_video_2]: https://www.youtube.com/watch?v=ZGsuMmEvPcA&list=PL1Cp5doNb3zQc_ncuqg85b7ChdsJpBK4e&index=22&t=1s&ab_channel=MinisterstvoVnitraCR "Záznam z workshopu k zveřejňování úředních desek jako otevřená data"

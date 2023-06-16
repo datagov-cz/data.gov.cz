@@ -22,5 +22,5 @@ A to jak z hlediska hodnot naměřených v jednotlivé dny (viz červený krouž
 {% include image.html url="/přílohy/2022-04-13/Dashboardy-poskytovatelů.webp" description="Dashboardy poskytovatelů" %}
 
 [Datové kvalitě]:https://data.gov.cz/datová-kvalita/
-[aktuální obecný dashboard]:https://oha01.mvcr.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!()
+[aktuální obecný dashboard]:https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!()
 [Poskytovatelé]:https://data.gov.cz/poskytovatelé

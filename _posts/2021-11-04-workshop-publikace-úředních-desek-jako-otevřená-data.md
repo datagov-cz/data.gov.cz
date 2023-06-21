@@ -13,4 +13,4 @@ Tato povinnost vyplývá z novelizace zákona č.106/1999 Sb.
 
 
 [workshop]: /vzdělávání/on-line/#publikace-úředních-desek-jako-otevřená-data "Publikace úředních desek jako otevřená data"
-[záznam]: https://youtu.be/ylW2j-uDmAI "Publikace úředních desek jako otevřená data (YouTube)"
+[záznam]: https://youtu.be/ZGsuMmEvPcA "Publikace úředních desek jako otevřená data (YouTube)"

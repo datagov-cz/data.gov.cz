@@ -14,7 +14,7 @@ V médiích je snazší narazit na negativní zprávy a obavy o různé aspekty 
 Níže se zaměříme na sedm konkrétních ukazatelů, které naopak ukazují vzrůstající kvalitu života v České republice. Na základě analýzy dostupných otevřených i neotevřených dat ukážeme, že Česká republika je stále zlepšující se místo k životu.
 
 ### 1. Dvacet tisíc radostí namísto smutků
-Období těsně po narození je pro děti nejcitlivějším obdobím, a bohužel v této fázi dochází k největšímu počtu úmrtí. Nicméně existuje dobrou zpráva: kojenecká úmrtnost se dlouhodobě snižuje po celém světě a Česká republika se pyšní jednou z nejnižších mír úmrtnosti na světě. Tento pozitivní trend je důsledkem mnoha faktorů, včetně zlepšení zdravotnictví, vzdělávání a osvěty.
+Období těsně po narození je pro děti nejcitlivějším obdobím, a bohužel v této fázi dochází k největšímu počtu úmrtí. Nicméně existuje dobrá zpráva: kojenecká úmrtnost se dlouhodobě snižuje po celém světě a Česká republika se pyšní jednou z nejnižších mír úmrtnosti na světě. Tento pozitivní trend je důsledkem mnoha faktorů, včetně zlepšení zdravotnictví, vzdělávání a osvěty.
 
 V minulosti, konkrétně v roce 1870, zemřel v českých zemích jeden z pěti novorozenců. Po druhé světové válce, při nástupu komunistů k moci v roce 1948, se tento poměr zlepšil na jedno úmrtí z patnácti novorozenců. V roce 1990 pak byl tento poměr již přibližně jedno úmrtí na sto novorozenců. Tento pokrok je nepochybně obrovský. Avšak i nadále dochází ke zlepšování situace a v současnosti je poměr přibližně jedno úmrtí na pět set novorozenců.
 
@@ -89,7 +89,7 @@ Zdroje dat jsou v tomto případě různé: od otevřených dat, které jsou reg
 
 - Naděje dožití: Jde o [otevřená data ČSÚ registrovaná v NKODu][link_sdz]. Nicméně ČSÚ má k tomuto tématu i [další data][link_csu_nadeje], která byla nakonec pro naše účely jednorázové analýzy lepší, která ale již v NKODu registrovaná nejsou a jsou poskytována ve formátu XLS.
 
-- Hrubý domácí produkt: [Otevřená data lze najít v NKODu][link_hdp_nkod] od poskytovalete Česká informační agentura životního prostředí (CENIA). Pokud ale chceme delší časový interval (jako v této ukázkové analýze), musíme na stránky ČSÚ, kde jsou [data k dispozici od roku 1990][link_hdp_csu].
+- Hrubý domácí produkt: [Otevřená data lze najít v NKODu][link_hdp_nkod] od poskytovatele Česká informační agentura životního prostředí (CENIA). Pokud ale chceme delší časový interval (jako v této ukázkové analýze), musíme na stránky ČSÚ, kde jsou [data k dispozici od roku 1990][link_hdp_csu].
 
 - Průměrné mzdy: Data o inflaci poskytuje jako [otevřená data ČSÚ][link_nkod_inflace]. Data o mzdách jsou opět z ČSÚ, nyní již ale nejsou registrovaná v NKODu a je třeba jít [přímo na stránky ČSÚ][link_csu_mzdy].
 

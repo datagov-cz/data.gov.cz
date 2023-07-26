@@ -37,7 +37,7 @@ C2V3 - Návrh a realizace prototypu lokálního katalogu otevřených dat
 : [Dokument](výstupy/C2V3.pdf), Přílohy: [LinkedPipes ETL](výstupy/C2V3/etl-develop.zip), [LinkedPipes DCAT-AP Forms](výstupy/C2V3/dcat-ap-forms-develop.zip), [Popis prototypů LKOD](výstupy/C2V3/lkod-master.zip), [Repozitář LKOD - DCAT-AP Dokumenty](výstupy/C2V3/lkod-min-main.zip), [GitHub Actions skript generující soubor katalogu](výstupy/C2V3/lkod-github-actions-master.zip)
 
 C2V4 - Metodika identifikace, publikace, katalogizace a využívání otevřených dat pro samosprávu a pro státní správu
-: Zatím nedokončeno
+: [Dokument](výstupy/C2V4.pdf)
 
 C2V5 - Analýza existujících informačních systémů veřejné správy vč. jejich příslušné legislativy a identifikace datových sad pro veřejný datový fond
 : [Dokument](výstupy/C2V5.pdf), [Příloha](výstupy/C2V5/příloha.xlsx)
@@ -142,7 +142,7 @@ C5V5 - Ověření prototypu výrobní linky v podobě vytvoření konceptuální
 : [Dokument](výstupy/C5V5.pdf)
 
 C5V6 - Návrh potřebných úprav výrobní linky a realizace úprav v prototypu
-: Zatím nedokončeno
+: [Dokument](výstupy/C5V6.pdf)
 
 C5V7 - Pilotní provoz výrobní linky pro účely vzdělávání
 : [Dokument](výstupy/C5V7.pdf)

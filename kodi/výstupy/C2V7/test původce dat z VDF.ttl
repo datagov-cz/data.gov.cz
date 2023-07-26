@@ -1,0 +1,5 @@
+#Převod činností v rámci působnosti má původce ČSÚ
+<https://data.gov.cz/zdroj/datové-sady/00007064/64f3831b09ab80f3cd731e2fe9ee7999> <http://purl.org/dc/terms/creator> <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/00025593> .
+
+#Převod služeb v rámci působnosti má původce DIA
+<https://data.gov.cz/zdroj/datové-sady/00007064/3e4cb5fb5ef67b5e728b95e8a2004e3a> <http://purl.org/dc/terms/creator> <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/17651921> .

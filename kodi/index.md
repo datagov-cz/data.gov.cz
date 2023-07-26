@@ -18,7 +18,7 @@ C1V3 - Spolupráce na implementaci novely PSI směrnice (2003/98/ES)
 : [Dokument](výstupy/C1V3.pdf)
 
 C1V4 - Návrh novelizace legislativy upravující informační systémy veřejné správy
-: Zatím nedokončeno
+: [Dokument](výstupy/C1V4.pdf)
 
 C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
 : Zrušen
@@ -37,7 +37,7 @@ C2V3 - Návrh a realizace prototypu lokálního katalogu otevřených dat
 : [Dokument](výstupy/C2V3.pdf), Přílohy: [LinkedPipes ETL](výstupy/C2V3/etl-develop.zip), [LinkedPipes DCAT-AP Forms](výstupy/C2V3/dcat-ap-forms-develop.zip), [Popis prototypů LKOD](výstupy/C2V3/lkod-master.zip), [Repozitář LKOD - DCAT-AP Dokumenty](výstupy/C2V3/lkod-min-main.zip), [GitHub Actions skript generující soubor katalogu](výstupy/C2V3/lkod-github-actions-master.zip)
 
 C2V4 - Metodika identifikace, publikace, katalogizace a využívání otevřených dat pro samosprávu a pro státní správu
-: Zatím nedokončeno
+: [Dokument](výstupy/C2V4.pdf)
 
 C2V5 - Analýza existujících informačních systémů veřejné správy vč. jejich příslušné legislativy a identifikace datových sad pro veřejný datový fond
 : [Dokument](výstupy/C2V5.pdf), [Příloha](výstupy/C2V5/příloha.xlsx)
@@ -46,7 +46,7 @@ C2V6 - Metodika poskytování dat ve veřejném datovém fondu
 : [Dokument](výstupy/C2V6.pdf)
 
 C2V7 - Návrh zajištění podpory katalogizace dat ve veřejném datovém fondu v NKOD
-: Zatím nedokončeno
+: [Dokument](výstupy/C2V7.pdf)
 
 C2V8 - Metodika kontroly kvality procesního zajištění publikace a katalogizace otevřených dat
 : Zrušen
@@ -80,7 +80,7 @@ C3V6 - Návrh využití ontologických konceptuálních modelů agend v NKOD
 : [Dokument](výstupy/C3V6.pdf), Přílohy: [Naplnění SKOD.jsonld](v%C3%BDstupy/C3V6/Napln%C4%9Bn%C3%AD%20SKOD.jsonld), [dcat-ap-viewer-develop.zip](v%C3%BDstupy/C3V6/dcat-ap-viewer-develop.zip), [nkod-graph-browser-master.zip](v%C3%BDstupy/C3V6/nkod-graph-browser-master.zip)
 
 C3V7 - Návrh zajištění podpory principů 5* otevřených dat v NKOD
-: Zatím nedokončeno
+: [Dokument](výstupy/C3V7.pdf)
 
 C3V8 - Návrh zajištění podpory dokumentace datových sad generované z ontologických konceptuálních datových modelů agend v NKOD
 : [Dokument](výstupy/C3V8.pdf), Přílohy: [Repozitář prototypu](výstupy/C3V8/model-driven-data-main.zip)
@@ -142,7 +142,7 @@ C5V5 - Ověření prototypu výrobní linky v podobě vytvoření konceptuální
 : [Dokument](výstupy/C5V5.pdf)
 
 C5V6 - Návrh potřebných úprav výrobní linky a realizace úprav v prototypu
-: Zatím nedokončeno
+: [Dokument](výstupy/C5V6.pdf)
 
 C5V7 - Pilotní provoz výrobní linky pro účely vzdělávání
 : [Dokument](výstupy/C5V7.pdf)

@@ -46,7 +46,7 @@ C2V6 - Metodika poskytování dat ve veřejném datovém fondu
 : [Dokument](výstupy/C2V6.pdf)
 
 C2V7 - Návrh zajištění podpory katalogizace dat ve veřejném datovém fondu v NKOD
-: Zatím nedokončeno
+: [Dokument](výstupy/C2V7.pdf)
 
 C2V8 - Metodika kontroly kvality procesního zajištění publikace a katalogizace otevřených dat
 : Zrušen
@@ -80,7 +80,7 @@ C3V6 - Návrh využití ontologických konceptuálních modelů agend v NKOD
 : [Dokument](výstupy/C3V6.pdf), Přílohy: [Naplnění SKOD.jsonld](v%C3%BDstupy/C3V6/Napln%C4%9Bn%C3%AD%20SKOD.jsonld), [dcat-ap-viewer-develop.zip](v%C3%BDstupy/C3V6/dcat-ap-viewer-develop.zip), [nkod-graph-browser-master.zip](v%C3%BDstupy/C3V6/nkod-graph-browser-master.zip)
 
 C3V7 - Návrh zajištění podpory principů 5* otevřených dat v NKOD
-: Zatím nedokončeno
+: [Dokument](výstupy/C3V7.pdf)
 
 C3V8 - Návrh zajištění podpory dokumentace datových sad generované z ontologických konceptuálních datových modelů agend v NKOD
 : [Dokument](výstupy/C3V8.pdf), Přílohy: [Repozitář prototypu](výstupy/C3V8/model-driven-data-main.zip)

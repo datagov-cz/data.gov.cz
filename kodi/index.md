@@ -18,7 +18,7 @@ C1V3 - Spolupráce na implementaci novely PSI směrnice (2003/98/ES)
 : [Dokument](výstupy/C1V3.pdf)
 
 C1V4 - Návrh novelizace legislativy upravující informační systémy veřejné správy
-: Zatím nedokončeno
+: [Dokument](výstupy/C1V4.pdf)
 
 C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
 : Zrušen

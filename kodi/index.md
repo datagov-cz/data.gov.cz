@@ -71,10 +71,10 @@ C3V3 - Zajištění podpory publikace výsledků Výroční zprávy ke stavu ote
 : [Dokument](výstupy/C3V3.pdf), Přílohy: [Konfigurace Kibana](výstupy/C3V3/export.ndjson), [Konfigurace dashboard indexeru](výstupy/C3V3/indexer-configs.conf)
 
 C3V4 - Propagační články a vizualizace ke konkrétním otevřeným datům v NKOD
-: Zatím nedokončeno
+: Dokončeno. Výstupy dostupné v sekci [Články](/články).
 
 C3V5 - Výroční konference o otevřených datech veřejné správy ČR
-: Zatím nedokončeno
+: Dokončeno. Záznamy dostupné na [webových stránkách konference]. 
 
 C3V6 - Návrh využití ontologických konceptuálních modelů agend v NKOD
 : [Dokument](výstupy/C3V6.pdf), Přílohy: [Naplnění SKOD.jsonld](v%C3%BDstupy/C3V6/Napln%C4%9Bn%C3%AD%20SKOD.jsonld), [dcat-ap-viewer-develop.zip](v%C3%BDstupy/C3V6/dcat-ap-viewer-develop.zip), [nkod-graph-browser-master.zip](v%C3%BDstupy/C3V6/nkod-graph-browser-master.zip)
@@ -114,16 +114,16 @@ C4V3 - Nové školení k problematice veřejného datového fondu
 : Dokončeno. Vzniklo [školení k problematice veřejného datového fondu](/vzdělávání/e-learning/veřejný-datový-fond-VDF-v-architektuře-veřejné-správy/).
 
 C4V4 - Nové školení k problematice využívání a propagace otevřených dat
-: Zatím nedokončeno
+: Dokončeno. Vzniklo [školení k problematice zpracování a vizualizace otevřených dat](/vzdělávání/e-learning/zpracování-a-vizualizace-otevřených-dat/). 
 
 C4V5 - Nové školení k problematice konceptuálního datového modelování
 : Dokončeno. Vzniklo [školení k problematice konceptuálního datového modelování](/vzdělávání/on-line/#modelování-významu-dat-ve-veřejné-správě).
 
 C4V6 - Realizace školení a workshopů
-: Zatím nedokončeno
+: Dokončeno. Záznamy dostupné v sekci [vzdělávání](/vzdělávání).
 
 C4V7 - Poskytnuté technické, procesní a právní konzultace
-: Zatím nedokončeno
+: Dokončeno.
 
 ## Cíl 5 - Zvýšení interoperability informačních systémů veřejné správy a jimi evidovaných datových sad
 C5V1 - Definice scénářů využití konceptuálních modelů (např. výměny informací mezi agendovými informačními systémy)
@@ -146,3 +146,6 @@ C5V6 - Návrh potřebných úprav výrobní linky a realizace úprav v prototypu
 
 C5V7 - Pilotní provoz výrobní linky pro účely vzdělávání
 : [Dokument](výstupy/C5V7.pdf)
+
+
+[webových stránkách konference]: https://opendata.gov.cz/edu:konference:start "Výroční konference k otevřeným datům"

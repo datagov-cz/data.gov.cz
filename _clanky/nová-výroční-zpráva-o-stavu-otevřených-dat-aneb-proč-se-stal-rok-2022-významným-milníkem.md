@@ -4,7 +4,7 @@ detail: true
 title: "Nová výroční zpráva o stavu otevřených dat aneb proč se stal rok 2022 významným milníkem"
 ref: nová-výroční-zpráva-o-stavu-otevřených-dat-aneb-proč-se-stal-rok-2022-významným-milníkem.
 lang: cs
-image: /přílohy/články/nová-výroční-zpráva-o-stavu-otevřených-dat-aneb-proč-se-stal-rok-2022-významným-milníkem/Výroční-zpráva-o-stavu-OD-za-rok-2022.webp.webp
+image: /přílohy/články/nová-výroční-zpráva-o-stavu-otevřených-dat-aneb-proč-se-stal-rok-2022-významným-milníkem/Výroční-zpráva-o-stavu-OD-za-rok-2022.webp
 author: lenka_kováčová
 date: 2023-09-15 10:00:00 +02:00
 ---

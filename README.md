@@ -7,4 +7,4 @@ Web běží na [GitHub Pages](https://pages.github.com/) a používá [Jekyll](h
 Pokud chcete přispět, forkněte repozitory, vytvořte příspěvek a následně vytvořte pull request.
 
 Tento repozitář byl udržován v rámci projektu OPZ č. CZ.03.4.74/0.0/0.0/15_025/0013983, nyní je udržován z Národního plánu obnovy.
-![Národní plán obnovy](https://data.gov.cz/images/npo_cz.webp).
+![Národní plán obnovy](https://data.gov.cz/images/npo_cz.webp)

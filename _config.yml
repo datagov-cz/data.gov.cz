@@ -28,3 +28,5 @@ collections:
   clanky:
     output: true
     permalink: /články/:path
+
+app_registration_form: https://forms.office.com/e/mK4wLvrww4

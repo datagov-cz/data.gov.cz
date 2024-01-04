@@ -8,11 +8,11 @@ image: přílohy/články/nový-lkod-nejen-pro-prahu/lkod-praha.webp
 author: marie_čermáková
 date: 2024-01-4 12:00:00 +02:00 
 --- 
-**Operátor ICT v loňském roce vytvořil nový lokální katalog otevřených dat. 
+Operátor ICT v loňském roce vytvořil nový lokální katalog otevřených dat. 
 Rozhodl se pro vlastní open source řešení, které nyní dává k dispozici i dalším subjektům. 
 Důvodů, proč se Praha rozhodla vytvořit nový lokální katalog bylo hned několik.
 Jednou z motivací bylo vytvoření takového nástroje, který by pražské organizace a městské části mohly využít pro publikaci svých dat a byly přitom vedeny přímo jako jejich poskytovatelé.
-Už je tedy nebudou muset publikovat prostřednictvím Hlavního města Prahy. To stávající řešení neumožňovalo.**  
+Už je tedy nebudou muset publikovat prostřednictvím Hlavního města Prahy. To stávající řešení neumožňovalo.
 <!--more-->
 
 Přinášíme Vám zkušenosti přímo od Operátora, ale také z Ústeckého kraje, kde toto nové řešení implementují pro vlastní potřeby. 
@@ -21,7 +21,7 @@ Na otázky ohledně lokálního katalogu nám odpovídal Ladislav Bláha z Ope
 **Jaké výhody Vám přineslo zavedení nového lokálního katalogu?**
 
 LB: Implementaci a provoz má plně na starosti Operátor ICT, a.s.. 
-Vyvíjíme v interním týmu, takže máme projekt zcela pod kontrolou a můžeme ho rozvíjet podle potřeb uživatelů.  
+Vyvíjíme ho v interním týmu, takže máme projekt zcela pod kontrolou a můžeme ho rozvíjet podle potřeb uživatelů.  
 
 **Co všechno Vaše řešení LKODu umí?**
 

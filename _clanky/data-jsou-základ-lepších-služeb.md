@@ -12,7 +12,7 @@ Vznik prostředí, které podporuje efektivnější práci s daty má v ČR mi
 Veřejný sektor neví, jaká data má k dispozici, kdo jaká data potřebuje a mnoho důležitých rozhodnutí není daty dostatečně podloženo. 
 Lidé musí obíhat úřady a dokládat opakovaně své informace, protože si je instituce mezi sebou nevyměňují. 
 Potenciál využití dat je však mnohem větší.  
-Kromě lepších služeb občanům může pomoci k celkové vyšší efektivitě fungování státu. Přečtěte si krátké shrnutí toho, proč jsou data důležitá a jaké aktivity v oblasti dat probíhají. 
+Kromě lepších služeb občanům může pomoci k celkové vyšší efektivitě fungování státu. Přečtěte si krátké shrnutí toho, [proč jsou data důležitá] a jaké aktivity v oblasti dat probíhají. 
 <!--more-->
 
 Evropská datová strategie již koncem roku 2020 zdůrazňovala, že je třeba naplno využívat přínosy lepší práce s daty.
@@ -99,3 +99,4 @@ V různých segmentech budou postupně vznikat tzv. datové prostory ([Data Sp
 [na stránce s výstupy projektu]: /kodi/ "Výstupy projektu Kodi"
 [Věcný záměr tohoto zákona]: https://odok.cz/portal/veklep/material/ALBSCL8DQ7VJ/ "ODok Věcný záměr zákona o správě dat veřejného sektoru"
 [Data Spaces]: https://dssc.eu/space/SK/32407574/1+Data+Spaces+101 "Data Spaces 101"
+[proč jsou data důležitá]: přílohy/články/data-jsou-základ-lepších-služeb/proc-potrebujeme-data.pdf "Proč potřebujeme data"

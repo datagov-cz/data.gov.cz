@@ -8,7 +8,7 @@ image: ../přílohy/články/nový-lkod-nejen-pro-prahu/lkod-praha.webp
 author: marie_čermáková
 date: 2024-01-4 12:00:00 +02:00 
 --- 
-Operátor ICT v loňském roce vytvořil nový lokální katalog otevřených dat. 
+Operátor ICT v loňském roce vytvořil [nový lokální katalog otevřených dat]. 
 Rozhodl se pro vlastní open source řešení, které nyní dává k dispozici i dalším subjektům. 
 Důvodů, proč se Praha rozhodla vytvořit nový lokální katalog bylo hned několik.
 Jednou z motivací bylo vytvoření takového nástroje, který by pražské organizace a městské části mohly využít pro publikaci svých dat a byly přitom vedeny přímo jako jejich poskytovatelé.
@@ -85,7 +85,7 @@ Využívání nějakého řešení lokálních katalogů doporučujeme předevš
 Aktuální přehled lokálních katalogů je [k dispozici v NKOD].*
 
 
-
+[nový lokální katalog otevřených dat]: https://opendata.praha.eu/about-lkod "LKOD HMP"
 [geoportál]: https://geoportalpraha.cz/ "Geoportál Praha"
 [OFN pro Rozhraní katalogů otevřených dat: DCAT-AP-CZ]: https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/2021-01-11/#dcat-ap-dokumenty-katalog "OFN Rozhraní katalogu otevřených dat"
 [referenční implementace]: https://github.com/datagov-cz/lkod "Referenční implemetnace LKOD"

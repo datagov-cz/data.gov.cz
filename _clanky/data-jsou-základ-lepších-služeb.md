@@ -4,7 +4,7 @@ detail: true
 title: "Data jsou základ lepších služeb veřejné správy i digitalizace. Je nejvyšší čas s nimi začít správně pracovat"
 ref: data-jsou-základ-lepších-služeb
 lang: cs 
-image: přílohy/články/data-jsou-základ-lepších-služeb/data_jsou_zaklad_lepsich_sluzeb.webp
+image: ../přílohy/články/data-jsou-základ-lepších-služeb/data_jsou_zaklad_lepsich_sluzeb.webp
 author: radka_domanská
 date: 2024-01-9 12:00:00 +02:00 
 --- 

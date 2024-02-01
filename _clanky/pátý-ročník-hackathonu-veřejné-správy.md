@@ -8,8 +8,7 @@ image: ../přílohy/články/pátý-ročník-hackathonu-veřejné-správy/Hackuj
 author: radka_domanská
 date: 2024-02-01 07:00:00 +01:00
 ---
-Hackathony nad otevřenými daty se staly už tradičním zdrojem inovací a inspirace ve veřejné správě.
-19. a 20. ledna se konal již pátý ročník celostátní akce #hackujstat, kterou opět pořádal ve svém sídle Nejvyšší kontrolní úřad.
+Hackathony nad otevřenými daty se staly už tradičním zdrojem inovací a inspirace ve veřejné správě. 19. a 20. ledna se konal již pátý ročník celostátní akce #hackujstat, kterou opět pořádal ve svém sídle Nejvyšší kontrolní úřad.
 První hackathon veřejné správy se uskutečnil v roce 2017 a od té doby stále roste popularita podobných akcí také u dalších institucí.
 Například Královéhradecký kraj organizuje hackathon nad svými otevřenými daty od roku 2019 a díky této akci dokázal zlepšit kvalitu svých otevřených dat.
 O tom, že odvedl dobrou práci svědčí i to, že kvalitu jeho dat ve srovnání s jinými kraji na lednovém hackathonu ocenil i jeden z týmů.

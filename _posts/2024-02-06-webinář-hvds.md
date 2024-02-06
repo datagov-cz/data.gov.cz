@@ -14,7 +14,7 @@ Webinář je primárně doporučen pro poskytovatelé otevřených dat, uvítám
 Témata, kterým se webinář bude věnovat:
 - Aktuální stav plnění povinnosti a výzvy na nejbližší období.
 - DCAT-AP pro HVDs a rozšíření OFN pro rozhraní katalogu otevřených dat.
-- Reporting budoucích povinností, nejčastější dotazy členských států k HVD, další vlna HVD.
+- Reporting budoucích povinností, nejčastější dotazy členských států k HVDs, další vlna HVDs.
 - Diskuse.
   
 Na webináři vystoupí Lenka Kováčová a Jakub Klímek z Digitální a informační agentury a Michal Kubáň jako národní expert vyslaný do Evropské komise (DG CONNECT).

@@ -1,0 +1,2 @@
+import{V as o}from"./p-55e78f21.js";import{p as s}from"./p-2b6bbee5.js";const e=s(o,["SECONDARY","SUCCESS","ERROR","WARNING"]);const m={root:"gov-form-message",content:"gov-form-message__content",icon:"gov-form-message__icon"};export{m as F,e as a};
+//# sourceMappingURL=p-e55a8f78.js.map

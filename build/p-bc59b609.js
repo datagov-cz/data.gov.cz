@@ -1,0 +1,2 @@
+import{g as a}from"./p-40f10385.js";const e=(e,t,r)=>{const s=Object.values(e);const o=s.indexOf(t)>-1;if(!o){a(`[${r}]: Bad parameter with value (${t}). Available parameters are (${s.join(", ")}).`)}};export{e as v};
+//# sourceMappingURL=p-bc59b609.js.map

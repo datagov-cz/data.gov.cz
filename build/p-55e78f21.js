@@ -1,0 +1,2 @@
+var r;(function(r){r["PRIMARY"]="primary";r["SECONDARY"]="secondary";r["SUCCESS"]="success";r["ERROR"]="error";r["WARNING"]="warning";r["CUSTOM"]="custom"})(r||(r={}));var s;(function(r){r["CLASSIC"]="classic";r["SOLID"]="solid"})(s||(s={}));export{s as T,r as V};
+//# sourceMappingURL=p-55e78f21.js.map

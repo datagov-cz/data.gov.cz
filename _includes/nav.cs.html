@@ -1,39 +1,50 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-	<div class="container">
-	  <a href="/" class="navbar-brand d-flex mr-auto"><img width="174" height="30" class="d-inline-block align-top" src="{{ "/images/logo.png" | relative_url }}" alt="Otevřená data"/></a>
-	  <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Zobrazení navigace">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+  <header>
+    <gov-container>
+	  <h4>Portál o datech</h4>
+      <gov-nav wcag-label="Hlavní navigace">
+        {% if page.ref == 'Education' %}
+			<gov-nav-item>
+			Vzdělávání
+			</gov-nav-item>  
+			{% else %}
+			<gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
+				Vzdělávání
+			</gov-nav-item>  
+		{% endif %}
+		{% if page.ref == 'Articles' %}
+		<gov-nav-item>
+			Články
+		</gov-nav-item>
+		{% else %}
+		<gov-nav-item href="{{ "/články" | relative_url}}">
+			Články
+		</gov-nav-item>
+		{% endif %}
+		{% if page.ref == 'DataQuality' %}
+		<gov-nav-item>
+			Datová kvalita
+		</gov-nav-item>
+		{% else %}
+		<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
+			Datová kvalita
+		</gov-nav-item>
+		{% endif %}
+        <gov-nav-item href="/datové-sady">
+          Datové sady
+        </gov-nav-item>
+        <gov-nav-item href="/aplikace">
+          Aplikace
+        </gov-nav-item>
+        <gov-nav-item href="#">
+          Další
+        </gov-nav-item>
+      </gov-nav>
+    </gov-container>
+  </header>
 
-	  <div class="collapse navbar-collapse" id="collapsingNavbar">
+<!--	  <div class="collapse navbar-collapse" id="collapsingNavbar">
 		<ul class="navbar-nav ml-auto w-100 justify-content-end">
-			{% if page.ref == 'Education' %}
-			<li class="nav-item">
-				<span class="nav-link active">Vzdělávání</span>
-			</li>
-			{% else %}
-			<li class="nav-item">
-				<a class="nav-link" href="{{ "/vzdělávání" | relative_url}}">Vzdělávání</a>
-			</li>
-			{% endif %}
-			{% if page.ref == 'Articles' %}
-			<li class="nav-item">
-				<span class="nav-link active">Články</span>
-			</li>
-			{% else %}
-			<li class="nav-item">
-				<a class="nav-link" href="{{ "/články" | relative_url}}">Články</a>
-			</li>
-			{% endif %}
-			{% if page.ref == 'DataQuality' %}
-			<li class="nav-item">
-				<span class="nav-link active">Datová kvalita</span>
-			</li>
-			{% else %}
-			<li class="nav-item">
-				<a class="nav-link" href="{{ "/datová-kvalita" | relative_url}}">Datová kvalita</a>
-			</li>
-			{% endif %}
+			
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Národní katalog otevřených dat</a>
 				<div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -66,4 +77,4 @@
 		</ul>
 	  </div>
 	</div>
-</nav>
+</nav>-->

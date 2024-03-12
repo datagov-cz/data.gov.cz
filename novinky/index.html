@@ -5,41 +5,43 @@ ref: Posts
 lang: cs
 ---
 
-  <div class="container">
-    <h1 class="header center">Novinky v otevřených datech</h1>
-    <hr/>
-    <div class="row">
+  <gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <h1>Novinky v otevřených datech</h1>
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
         {% assign posts=site.posts | where:"lang", page.lang %}
         {% for post in posts limit:3 %}
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="section">
-            <h2 class="h5">{{ post.title }}</h2>
-            <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
-            {% if post.image %}
-			      <p><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
-			      {% endif %}
-            {{ post.excerpt }}
-            {% if post.detail %}
-            <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
-            {% endif %}
-          </div>
-        </div>
+        <gov-tile href="{{ post.url }}">
+          <h2 slot="title">{{ post.title }}</h2>
+          <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+          {% if post.image %}
+          <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
+          {% endif %}
+          {{ post.excerpt }}
+          {% if post.detail %}
+          <gov-button variant="secondary" type="base" size="l">
+            Více &raquo;
+          </gov-button>
+          {% endif %}
+        </gov-tile>
         {% endfor %}
-    </div>
-    <hr/>
+    </gov-tiles>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
     <h2>Starší novinky</h2>
-    <div class="row">
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
         {% for post in posts offset:3 %}
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="section">
-            <h3 class="h5">{{ post.title }}</h3>
-            <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
-            {{ post.excerpt }}
-            {% if post.detail %}
-            <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
-            {% endif %}
-          </div>
-        </div>
+        <gov-tile href="{{ post.url }}">
+          <h3 slot="title">{{ post.title }}</h3>
+          <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+          {{ post.excerpt }}
+          {% if post.detail %}
+          <gov-button variant="secondary" type="base" size="l">
+            Více &raquo;
+          </gov-button>
+          {% endif %}
+        </gov-tile>
         {% endfor %}       
-      </div>
-  </div>
+      </gov-tiles>
+  </gov-container>

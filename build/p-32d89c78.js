@@ -1,0 +1,2 @@
+import{a as n}from"./p-2b6bbee5.js";const o=typeof window!=="undefined";const t=t=>o&&window&&n(t,window);const s=()=>{const n={canValidateWcagOnRender:false,iconsPath:"/assets/icons",iconsLazyLoad:true,documentNode:document?document:null};const o=t("GOV_DS_CONFIG");if(o){return Object.assign(Object.assign({},n),o)}return n};const c=()=>s().canValidateWcagOnRender;const e=()=>s().iconsPath;const a=()=>s().iconsLazyLoad;const d=()=>s().documentNode;export{a,c,d,e as i};
+//# sourceMappingURL=p-32d89c78.js.map

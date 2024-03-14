@@ -32,10 +32,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
   {% if page.image %}<meta name="og:image" content="{{ page.image | remove: '..' | prepend: site.url}}"/>{% endif %}
 
-  <link rel="stylesheet" href="/build/core.css">
-  <link rel="stylesheet" href="/assets/fonts/roboto.css">
-  <script type="module" src="/build/core.esm.js"></script>
-  <script nomodule src="/build/core.js"></script>
+  <link rel="stylesheet" href="https://oha02.dia.gov.cz/design-system/assets/styles/critical.css">
+  <link rel="stylesheet" href="https://oha02.dia.gov.cz/design-system/build/core.css">
+  <link rel="stylesheet" href="https://oha02.dia.gov.cz/design-system/assets/fonts/roboto.css">
+  <script type="module" src="https://oha02.dia.gov.cz/design-system/build/core.esm.js"></script>
+  <script nomodule src="https://oha02.dia.gov.cz/design-system/build/core.js"></script>
 
 <!--  <link type="text/css" rel="stylesheet" href="{{ "/css/od.css" | prepend: site.baseurl }}">
   <link type="text/css" rel="stylesheet" href="{{ "/css/style-light.css" | prepend: site.baseurl }}">

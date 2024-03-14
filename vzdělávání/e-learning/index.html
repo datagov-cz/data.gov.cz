@@ -4,14 +4,16 @@ title: E-learning v oblasti otevřených dat
 ref: E-Learning-Home
 lang: cs
 ---
-
-  <div class="container">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="..">Vzdělávání</a></li>
-        <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-      </ol>
-    </nav>
+<gov-container>
+  <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+  <gov-breadcrumbs wcag-label="You are in the following level">
+    <ul>
+      <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="../..">Portál o datech</a></li>
+      <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="..">Vzdělávání</a></li>
+      <li><gov-icon type="basic" name="chevron-right"></gov-icon><strong>{{page.title}}</strong></li>
+    </ul>
+  </gov-breadcrumbs>
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
     
     <h1 class="header center">{{page.title}}</h1>
     <p>
@@ -19,113 +21,83 @@ lang: cs
       K dispozici je osm kurzů, přičemž u obecnějších kurzů jsou k dispozici detailní informace bez komentáře a u technických kurzů je prezentace obohacena výkladem.
       Kurzy jsou zakončeny závěrečným testem, po jehož úspěšném splnění (minimálně 60 bodů za správné odpovědi ze 100 možných) může účastník požádat o vystavení certifikátu o absolvování kurzu.
     </p>
-    <hr/>
-    <div class="row">
+
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
+    
+    <gov-tiles columns="4" no-border>
       
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Co jsou otevřená data</h2>
-            <p>
-              Cílem školení je poskytnout veřejnosti základní informace o tom, co otevřená data jsou, proč se mají publikovat a jak je chápeme v kontextu ČR. Absolvent kurzu by měl mj. být schopen vyhledat otevřená data, posoudit, jaká data se mají publikovat povinně, a chápat základní pojmy v oblasti otevřených dat.
-            </p>
-            <a href="co-jsou-otevřená-data/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
+      <gov-tile href="co-jsou-otevřená-data/">
+        <gov-card label="Co jsou otevřená data">
+          <p>
+            Cílem školení je poskytnout veřejnosti základní informace o tom, co otevřená data jsou, proč se mají publikovat a jak je chápeme v kontextu ČR. Absolvent kurzu by měl mj. být schopen vyhledat otevřená data, posoudit, jaká data se mají publikovat povinně, a chápat základní pojmy v oblasti otevřených dat.
+          </p>
+          <div slot="footer">
+            <gov-icon type="complex" name="time"></gov-icon> 3,5 hodiny
           </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 3,5 hodiny</div>
-        </div>
-      </div>
+        </gov-card>
+      </gov-tile>
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Publikační plán a publikace dat</h2>
-            <p>
-              Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni realizovat, resp. řídit vytvoření publikačního plánu dané organizace.
-            </p>
-            <a href="publikační-plán-a-publikace-dat/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 3,5 hodiny</div>
+      <gov-tile href="publikační-plán-a-publikace-dat/">
+        <gov-card label="Publikační plán a publikace dat">
+        <p>
+          Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni realizovat, resp. řídit vytvoření publikačního plánu dané organizace.
+        </p>
+        <div slot="footer">
+          <gov-icon type="complex" name="time"></gov-icon> 3,5 hodiny</div>
         </div>
-      </div>
+      </gov-tile>
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Katalogizace otevřených dat</h2>
-            <p>
-              Cílem školení je poskytnout koordinátorovi otevírání dat takové informace, aby byl schopen rozhodnout o způsobu katalogizace otevřených dat, kurátorům takové informace, aby byli schopni řádně plnit katalogizační záznamy datových sad a správci katalogu OD a IT specialistům takové informace, které jim umožňí určit formu implementace lokálního katalogu otevřených dat a jeho implementaci řídit.
-            </p>
-            <a href="katalogizace-otevřených-dat/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 1,5 hodiny</div>
+      <gov-tile href="katalogizace-otevřených-dat/">
+        <gov-card label="Katalogizace otevřených dat">
+        <p>
+          Cílem školení je poskytnout koordinátorovi otevírání dat takové informace, aby byl schopen rozhodnout o způsobu katalogizace otevřených dat, kurátorům takové informace, aby byli schopni řádně plnit katalogizační záznamy datových sad a správci katalogu OD a IT specialistům takové informace, které jim umožňí určit formu implementace lokálního katalogu otevřených dat a jeho implementaci řídit.
+        </p>
+          <div slot="footer"><gov-icon type="complex" name="time"></gov-icon> 1,5 hodiny</div>
         </div>
-      </div>
+      </gov-tile>
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Úvod do otevřených formálních norem (OFN)</h2>
-            <p>
-              Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni posoudit možnost/nutnost využití otevřených formálních norem, výhody aplikace OFN v rámci organizace otevírající svoje data a rovněž aby byli schopni využívání OFN iniciovat a koordinovat.
-              Kurz není zaměřen na technické aspekty tvorby nových OFN.
-            </p>
-            <a href="otevřené-formální-normy-ofn/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 3 hodiny</div>
-        </div>
-      </div>
+      <gov-tile href="otevřené-formální-normy-ofn/">
+        <gov-card label="Úvod do otevřených formálních norem (OFN)">
+        <p>
+          Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni posoudit možnost/nutnost využití otevřených formálních norem, výhody aplikace OFN v rámci organizace otevírající svoje data a rovněž aby byli schopni využívání OFN iniciovat a koordinovat.
+          Kurz není zaměřen na technické aspekty tvorby nových OFN.
+        </p>
+        <div slot="footer"><gov-icon type="complex" name="time"></gov-icon> 3 hodiny</div>
+      </gov-tile>
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Technické aspekty otevřených dat</h2>
-            <p>
-              Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby měli přehled o technologiích a technických postupech používaných v otevřených datech a byli schopni již samostatně dohledat detailní informace potřebné k technické realizaci otevírání dat, resp. řídit technickou stránku otevírání dat dané organizace.
-            </p>
-            <a href="technické-aspekty-otevřených-dat/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 3 hodiny</div>
-        </div>
-      </div>
+      <gov-tile href="technické-aspekty-otevřených-dat/">
+        <gov-card label="Technické aspekty otevřených dat">
+        <p>
+          Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby měli přehled o technologiích a technických postupech používaných v otevřených datech a byli schopni již samostatně dohledat detailní informace potřebné k technické realizaci otevírání dat, resp. řídit technickou stránku otevírání dat dané organizace.
+        </p>
+        <div slot="footer"><gov-icon type="complex" name="time"></gov-icon> 3 hodiny</div>
+      </gov-tile>
       
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Veřejný datový fond (VDF) v architektuře veřejné správy</h2>
-            <p>
-              Cílem školení je seznámit účastníky s novou metodou sdílení údajů ve veřejné správě prostřednictvím veřejného datového fondu (VDF).
-              Veřejný datový fond (VDF) je definován v Informační koncepci ČR (IKČR) jako dílčí cíl 5.10 a je součástí eGovernmentu VS ČR.
-            </p>
-            <a href="veřejný-datový-fond-VDF-v-architektuře-veřejné-správy/" class="btn btn-secondary" role="button">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 4 hodiny</div>
-        </div>
-      </div>
+      <gov-tile href="veřejný-datový-fond-VDF-v-architektuře-veřejné-správy/">
+        <gov-card label="Veřejný datový fond (VDF) v architektuře veřejné správy">
+        <p>
+          Cílem školení je seznámit účastníky s novou metodou sdílení údajů ve veřejné správě prostřednictvím veřejného datového fondu (VDF).
+          Veřejný datový fond (VDF) je definován v Informační koncepci ČR (IKČR) jako dílčí cíl 5.10 a je součástí eGovernmentu VS ČR.
+        </p>
+        <div slot="footer"><gov-icon type="complex" name="time"></gov-icon> 4 hodiny</div>
+      </gov-tile>
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Zpracování a vizualizace otevřených dat</h2>
-            <p>
-              Cílem školení je ponořit se do světa dat a na konkrétních datových sadách si vyzkoušet jejich vyčištění, zpracování i typy vizualizací.
-            </p>
-            <a href="zpracování-a-vizualizace-otevřených-dat/" class="btn btn-secondary">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 4 hodiny</div>
-        </div>
-      </div>
+      <gov-tile href="zpracování-a-vizualizace-otevřených-dat/">
+        <gov-card label="Zpracování a vizualizace otevřených dat">
+          <h2 class="card-title h5"></h2>
+          <p>
+            Cílem školení je ponořit se do světa dat a na konkrétních datových sadách si vyzkoušet jejich vyčištění, zpracování i typy vizualizací.
+          </p>
+        <div slot="footer"><gov-icon type="complex" name="time"></gov-icon> 4 hodiny</div>
+      </gov-tile>
 
-      <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="card-title h5">Modelování významu dat ve veřejné správě</h2>
-            <p>
-              Cílem školení je seznámit datové specialisty a technické správce datových sad a datových rozhraní veřejné správy s problematikou modelování významu dat a ukázat možnosti použití sémantických slovníků v jejich praxi.
-            </p>
-            <a href="modelování-významu-dat-ve-veřejné-správě/" class="btn btn-secondary">E-learning &raquo;</a>
-          </div>
-          <div class="card-footer"><i class="bi-stopwatch"></i> 5 hodin</div>
-        </div>
-      </div>
-    </div>
-  </div>
+      <gov-tile href="modelování-významu-dat-ve-veřejné-správě/">
+        <gov-card label="Modelování významu dat ve veřejné správě">
+        <h2 class="card-title h5">Modelování významu dat ve veřejné správě</h2>
+        <p>
+          Cílem školení je seznámit datové specialisty a technické správce datových sad a datových rozhraní veřejné správy s problematikou modelování významu dat a ukázat možnosti použití sémantických slovníků v jejich praxi.
+        </p>
+        <div slot="footer"><gov-icon type="complex" name="time"></gov-icon> 5 hodin</div>
+      </gov-tile>
+    </gov-tiles>
+</gov-container>

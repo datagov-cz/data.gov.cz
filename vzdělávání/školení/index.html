@@ -5,14 +5,16 @@ ref: ŠkoleníPrezenční
 lang: cs
 ---
 
-<div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="..">Vzdělávání</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-    </ol>
-  </nav>
-
+<gov-container>
+  <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+  <gov-breadcrumbs wcag-label="You are in the following level">
+    <ul>
+      <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="../..">Portál o datech</a></li>
+      <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="..">Vzdělávání</a></li>
+      <li><gov-icon type="basic" name="chevron-right"></gov-icon><strong>{{page.title}}</strong></li>
+    </ul>
+  </gov-breadcrumbs>
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
   <h1 class="header center">{{page.title}}</h1>
 
  
@@ -23,47 +25,47 @@ lang: cs
     <li>Podmínkou realizace je minimální počet 10 účastníků.</li>
   </ul>
 
-  <hr/>
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
-  <div class="row">
-    <div class="col-12 col-md-10">
-      <h2 id="co-jsou-otevřená-data">Otevřená data a další způsoby sdílení dat ve veřejné správě</h2>
-    </div>
-    <div class="col-12 col-md-2">
-      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=zYVrW-9EZk2G1GA90hYHgJIZFKrFC9hAvTG9nlkLeOtUMUdBMkVDSE5WMjRVWFJGVkk4QVVVWDhRWSQlQCN0PWcu" class="btn btn-primary">Poptat formulářem</a>
-    </div>
-    <div class="col-md-6 mb-3">
-      <h3>Anotace</h3>
+  <gov-card promotion="true">
+    <p>Otevřená data a další způsoby sdílení dat ve veřejné správě</p>
+    <gov-icon type="basic" name="person" slot="icon"></gov-icon>
+    <gov-button variant="primary" slot="btn" type="solid" size="m" href="https://forms.office.com/Pages/ResponsePage.aspx?id=zYVrW-9EZk2G1GA90hYHgJIZFKrFC9hAvTG9nlkLeOtUMUdBMkVDSE5WMjRVWFJGVkk4QVVVWDhRWSQlQCN0PWcu" wcag-label="Poptat formulářem nabídku školení">Poptat formulářem</gov-button>
+  </gov-card>
+
+  <gov-tiles columns="2" no-border>
+    <gov-tile>
+      <h3 slot="title">Anotace</h3>
       <p>
         Školení představí účastníkům otevřená data, na kterých si ukážeme, jak se data veřejné správy dají využít, proč je důležitá jejich interoperabilita a dokumentace, co mají úřady povinnost publikovat a kde data vyhledat.
         Tento způsob sdílení dat má ve veřejné správě již 10 letou tradici a řada principů aplikovaných v otevřených datech je využitelná i u ostatních forem sdílení dat, které budou ve školní taktéž zmíněna.
       </p>
-    </div>
-    <div class="col-md-6 mb-3">
-      <h3>Konání školení</h3>
+    </gov-tile>
+    <gov-tile>
+      <h3 slot="title">Konání školení</h3>
       <ul>
         <li>Termíny jsou určovány na základě zájmu prostřednictvím <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=zYVrW-9EZk2G1GA90hYHgJIZFKrFC9hAvTG9nlkLeOtUMUdBMkVDSE5WMjRVWFJGVkk4QVVVWDhRWSQlQCN0PWcu">poptávkového formuláře</a>.</li>
         <li>Účastníci školení obdrží certifikát o účasti.</li>
         <li>Školení je plánováno na 6 hodin.</li>
       </ul>
-    </div>
-    <div class="col-md-6 mb-3">
-      <h3>Obsah školení</h3>
+    </gov-tile>
+    <gov-tile>
+      <h3 slot="title">Obsah školení</h3>
       <ol>
         <li>Data - co, proč, jak</li>
         <li>Datové formáty a příklady využití otevřených dat</li>
         <li>Stav otevřených dat, kvalita dat (nejen otevřených)</li>
         <li>Další formy sdílení dat</li>
       </ol>
-    </div>
-    <div class="col-md-6 mb-3">
-      <h3>Školení je určeno primárně pro</h3>
+    </gov-tile>
+    <gov-tile>
+      <h3 slot="title">Školení je určeno primárně pro</h3>
       <ul>
         <li>pracovníky odborných útvarů, kteří pracují s daty nebo je chtějí sdílet,</li>
         <li>pracovníky oddělení informatiky,</li>
         <li>pracovníky z tiskového odboru,</li>
         <li>odbornou veřejnost.</li>
       </ul>
-    </div>
-  </div>
-</div>
+    </gov-tile>
+  </gov-tiles>
+</gov-container>

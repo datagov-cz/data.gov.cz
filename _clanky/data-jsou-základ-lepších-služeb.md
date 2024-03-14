@@ -4,7 +4,7 @@ detail: true
 title: "Data jsou základ lepších služeb veřejné správy i digitalizace. Je nejvyšší čas s nimi začít správně pracovat"
 ref: data-jsou-základ-lepších-služeb
 lang: cs 
-image: přílohy/články/data-jsou-základ-lepších-služeb/data_jsou_zaklad_lepsich_sluzeb.webp
+image: ../přílohy/články/data-jsou-základ-lepších-služeb/data_jsou_zaklad_lepsich_sluzeb.webp
 author: radka_domanská
 date: 2024-01-9 12:00:00 +02:00 
 --- 
@@ -99,4 +99,4 @@ V různých segmentech budou postupně vznikat tzv. datové prostory ([Data Sp
 [na stránce s výstupy projektu]: /kodi/ "Výstupy projektu Kodi"
 [Věcný záměr tohoto zákona]: https://odok.cz/portal/veklep/material/ALBSCL8DQ7VJ/ "ODok Věcný záměr zákona o správě dat veřejného sektoru"
 [Data Spaces]: https://dssc.eu/space/SK/32407574/1+Data+Spaces+101 "Data Spaces 101"
-[proč jsou data důležitá]: přílohy/články/data-jsou-základ-lepších-služeb/proc-potrebujeme-data.pdf "Proč potřebujeme data"
+[proč jsou data důležitá]: ../přílohy/články/data-jsou-základ-lepších-služeb/proc-potrebujeme-data.pdf "Proč potřebujeme data"

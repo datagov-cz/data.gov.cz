@@ -4,7 +4,7 @@ detail: true
 title: "Nový lokální katalog otevřených dat nabízí řešení nejen pro Prahu. Zdarma přes něj mohou svá data publikovat i další"
 ref: nový-lkod-nejen-pro-prahu
 lang: cs 
-image: přílohy/články/nový-lkod-nejen-pro-prahu/lkod-praha.webp
+image: ../přílohy/články/nový-lkod-nejen-pro-prahu/lkod-praha.webp
 author: marie_čermáková
 date: 2024-01-4 12:00:00 +02:00 
 --- 

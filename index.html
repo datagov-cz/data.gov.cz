@@ -22,7 +22,7 @@ homepage: true
           <h3 slot="title">{{ post.title }}</h3>
           <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
           {% if post.image %}
-          <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
+          <p><img width="100%" src="novinky/{{ post.image }}" alt="{{ post.title }}"/></p>
           {% endif %}
           {{ post.excerpt }}
           {% if post.detail %}
@@ -48,7 +48,7 @@ homepage: true
             <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
             <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
             {% if clanek.image %}
-            <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+            <p><img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
             {{ clanek.excerpt }}
             {% if clanek.detail %}

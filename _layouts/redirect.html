@@ -2,7 +2,18 @@
 title: Přesměrování
 ---
 <!DOCTYPE html>
-{% include base.html %}
+{% assign base = ''
+%}{% if depth <= 1
+    %}{% assign depth = page.url | split: '/' | size 
+%}{% assign base = '.'
+%}{% elsif depth == 2
+%}{% assign base = '..'
+%}{% elsif depth == 3
+%}{% assign base = '../..'
+%}{% elsif depth == 4
+%}{% assign base = '../../..'
+%}{% endif
+%}
 <html lang="cs">
 <head>
   <script>

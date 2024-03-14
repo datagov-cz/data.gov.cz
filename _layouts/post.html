@@ -7,6 +7,7 @@
     
     <article>
         <gov-container>
+          <gov-spacer size="s" breakpoint="sm"></gov-spacer>
           <h1>{{ page.title }}{{depth}}</h1>
           <gov-spacer size="xs" breakpoint="sm"></gov-spacer>
           <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%-d. %-m. %Y"}}</time>,
@@ -21,6 +22,7 @@
           <gov-spacer size="s" breakpoint="sm"></gov-spacer>
         </gov-container>
     </article>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
     
     {% include footer.{{page.lang}}.html %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js"></script>

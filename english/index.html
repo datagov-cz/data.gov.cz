@@ -4,93 +4,64 @@ ref: Home
 lang: en
 homepage: true
 ---
-<div class="jumbotron mb-4 pt-4 pt-md-0">
-  <div class="container text-white">
-	<div class="row">
-	  <div class="col-md-6">
-		<h1 class="display-3">Open data portal</h1>
-		<p>All you need to know about open data in Czechia</p>
-		<p><a href="/datasets" class="btn btn-primary">National open data catalog</a></p>
-	  </div>
-	  <div class="col-md-6 text-end d-none d-md-block">
-	    <div id="count" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="3000">
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <p class="display-3" id="datasetCountLabel"> ?</p>
-			  <p>datasets</p>
-			</div>
-			<div class="carousel-item">
-			  <p class="display-3" id="publisherCountLabel"> ?</p>
-			  <p>publishers</p>
-			</div>
-			<div class="carousel-item">
-			  <p class="display-3" id="keywordCountLabel"> ?</p>
-			  <p>keywords</p>
-			</div>
-		  </div>
-		</div>
-		<form id="searchForm" class="form-inline float-end" action="https://data.gov.cz/datasets">
-			<label class="visually-hidden" for="dotaz">Dataset name</label>
-			<div class="input-group">
-			  <div class="input-group-prepend">
-				<span class="input-group-text " id="search-addon"><i class="bi-search"></i></span>
-			  </div>
-			  <input class="form-control" type="text" placeholder="Dataset name" name="dotaz" id="dotaz" title="Dataset name" aria-describedby="search-addon">
-			  <div class="input-group-append">
-				<button class="btn btn-primary" type="submit">Search</button>
-			  </div>
-			</div>
-		</form>
-	  </div>
-	</div>
-  </div>
-</div>
+<gov-statsbar variant="primary">
+	<gov-statsbar-item><span id="datasetCountLabel">00</span><span slot="text">datasets</span>
+	</gov-statsbar-item><gov-statsbar-item><span id="applicationCountLabel">XX</span><span slot="text">applications</span>
+	</gov-statsbar-item><gov-statsbar-item><span id="publisherCountLabel">YY</span><span slot="text">publishers</span>
+	</gov-statsbar-item><gov-statsbar-item><span id="keywordCountLabel">ZZ</span><span slot="text">keywords</span></gov-statsbar-item>
+</gov-statsbar>
 
-<div class="container">
-	<h2 class="mb-2">News from the open data world</h2>
-	<hr/>
-	  <div class="row">
-		  {% assign posts=site.posts | where:"lang", page.lang %}
-		  {% for post in posts limit:3 %}
-		  <div class="col-12 col-md-6 col-lg-4">
-			  <h3 class="h5">{{ post.title }}</h3>
-			  <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
-			  {% if post.image %}
-			  <p><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
-			  {% endif %}
-			  {{ post.excerpt }}
-			  {% if post.detail %}
-			  <a href="{{ post.url }}" class="btn btn-secondary" role="button">More &raquo;</a>
-			  {% endif %}
-			</div>
-		  {% endfor %}
-	   </div>
-	   <div class="d-flex flex-row-reverse">
-		<p class=""><a class="btn btn-secondary" href="news" role="button">News archive &raquo;</a></p>
-	 </div>
-  </div>  
+<gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <h2>News from the open data world</h2>
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
+        {% assign posts=site.posts | where:"lang", page.lang %}
+        {% for post in posts limit:3 %}
+        <gov-tile href="..{{ post.url }}">
+          <h3 slot="title">{{ post.title }}</h3>
+          <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+          {% if post.image %}
+          <p><img width="100%" src="novinky/{{ post.image }}" alt="{{ post.title }}"/></p>
+          {% endif %}
+          {{ post.excerpt }}
+          {% if post.detail %}
+          <gov-button variant="secondary" type="outlined" size="l">
+            Více &raquo;
+          </gov-button>
+          {% endif %}
+        </gov-tile>
+        {% endfor %}
+    </gov-tiles>
+</gov-container>
 
-<div class="container">
-  <h2 class="mb-2">Important information for members of the open data ecosystem</h2>
-  <hr/>
-  <div class="row">
-	<div class="col-md-4">
-	  <h2>Interested in opening data</h2>
-	  <p>How do I benefit from open data and why should I want it? How do they benefit my town or office of government?</p>
-	  <p><a class="btn btn-secondary" href="../informace/základy-otevřených-dat-pro-zájemce/" role="button">More info (in Czech) &raquo;</a></p>
-	</div>
-	<div class="col-md-4">
-	  <h2>Data publishers</h2>
-	  <p>How to proceed with publishing open data? What are the examples of good and bad practice? And what are the legal aspects of opening data?</p>
-	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">More info (in Czech) &raquo;</a></p>
-   </div>
-	<div class="col-md-4">
-	  <h2>Data users</h2>
-	  <p>Where do I find open data? What are the XML, CSV or RDF formats? Where can I ask for more open data or report a bug?</p>
-	  <p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">More info (in Czech) &raquo;</a></p>
-	</div>
-  </div>
-</div>
+<gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <h2>Important information for members of the open data ecosystem</h2>
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
+		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
+			<h3 slot="title">Interested in opening data</h3>
+			<p>How do I benefit from open data and why should I want it? How do they benefit my town or office of government?</p>
+			<gov-button variant="secondary" type="outlined" size="l">
+				More info (in Czech) &raquo;
+			</gov-button>
+		</gov-tile>
+		<gov-tile href="https://opendata.gov.cz">
+			<h3 slot="title">Data publishers</h3>
+			<p>How to proceed with publishing open data? What are the examples of good and bad practice? And what are the legal aspects of opening data?</p>
+			<gov-button variant="secondary" type="outlined" size="l">
+				More info (in Czech) &raquo;
+			</gov-button>
+		</gov-tile>
+		<gov-tile href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">
+			<h3 slot="title">Data users</h3>
+			<p>Where do I find open data? What are the XML, CSV or RDF formats? Where can I ask for more open data or report a bug?</p>
+			<gov-button variant="secondary" type="outlined" size="l">
+				More info (in Czech) &raquo;
+			</gov-button>
+		</gov-tile>
+	</gov-tiles>
+</gov-container>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="{{ "/js/stats.js" | relative_url }}" ></script>
+<script src="{{base}}/js/stats.js"></script>

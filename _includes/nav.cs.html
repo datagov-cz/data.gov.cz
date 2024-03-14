@@ -7,7 +7,7 @@
 			Vzdělávání
 			</gov-nav-item>  
 			{% else %}
-			<gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
+			<gov-nav-item href="{{ "{{base}}/vzdělávání" | relative_url}}">
 				Vzdělávání
 			</gov-nav-item>  
 		{% endif %}
@@ -16,7 +16,7 @@
 			Články
 		</gov-nav-item>
 		{% else %}
-		<gov-nav-item href="{{ "/články" | relative_url}}">
+		<gov-nav-item href="{{ "{{base}}/články" | relative_url}}">
 			Články
 		</gov-nav-item>
 		{% endif %}
@@ -25,14 +25,14 @@
 			Datová kvalita
 		</gov-nav-item>
 		{% else %}
-		<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
+		<gov-nav-item href="{{ "{{base}}/datová-kvalita" | relative_url}}">
 			Datová kvalita
 		</gov-nav-item>
 		{% endif %}
-        <gov-nav-item href="/datové-sady">
+        <gov-nav-item href="{{base}}/datové-sady">
           Datové sady
         </gov-nav-item>
-        <gov-nav-item href="/aplikace">
+        <gov-nav-item href="{{base}}/aplikace">
           Aplikace
         </gov-nav-item>
         <gov-nav-item href="#">

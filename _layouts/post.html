@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% include base.html %}
 <html lang="{{page.lang}}">
   {% include head.html %}
   <body>
@@ -7,7 +8,7 @@
     <article>
         <gov-container>
           <h1>{{ page.title }}</h1>
-          <gov-spacer size="xs" breakpoint="sm" class="gov-spacer hydrated"></gov-spacer>
+          <gov-spacer size="xs" breakpoint="sm"></gov-spacer>
           <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%-d. %-m. %Y"}}</time>,
           {% if site.data.authors[page.author].web %}
           <a href="{{site.data.authors[page.author].web}}">{{site.data.authors[page.author].name}}</a>
@@ -15,9 +16,9 @@
           {{site.data.authors[page.author].name}}
           {% endif %}
           
-          <gov-spacer size="xs" breakpoint="sm" class="gov-spacer hydrated"></gov-spacer>
+          <gov-spacer size="xs" breakpoint="sm"></gov-spacer>
           {{ content }}
-          <gov-spacer size="s" breakpoint="sm" class="gov-spacer hydrated"></gov-spacer>
+          <gov-spacer size="s" breakpoint="sm"></gov-spacer>
         </gov-container>
     </article>
     

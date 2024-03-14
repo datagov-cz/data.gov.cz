@@ -33,10 +33,10 @@ title: Přesměrování
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{baseurl}}/build/core.css">
-  <link rel="stylesheet" href="{{baseurl}}/assets/fonts/roboto.css">
-  <script type="module" src="{{baseurl}}/build/core.esm.js"></script>
-  <script nomodule src="{{baseurl}}/build/core.js"></script>
+  <link rel="stylesheet" href="/build/core.css">
+  <link rel="stylesheet" href="/assets/fonts/roboto.css">
+  <script type="module" src="/build/core.esm.js"></script>
+  <script nomodule src="/build/core.js"></script>
 
   <link rel="canonical" href="{{page.redirect.to}}">
   <meta http-equiv="refresh" content="0; url={{page.redirect.to}}">

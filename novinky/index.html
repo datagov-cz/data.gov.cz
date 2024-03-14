@@ -12,11 +12,11 @@ lang: cs
     <gov-tiles columns="3" no-border>
         {% assign posts=site.posts | where:"lang", page.lang %}
         {% for post in posts limit:3 %}
-        <gov-tile href="{{ post.url }}">
+        <gov-tile href="{{base}}{{ post.url }}">
           <h2 slot="title">{{ post.title }}</h2>
           <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
           {% if post.image %}
-          <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
+          <p><img width="100%" src="{{base}}{{ post.image }}" alt="{{ post.title }}"/></p>
           {% endif %}
           {{ post.excerpt }}
           {% if post.detail %}
@@ -32,7 +32,7 @@ lang: cs
     <gov-spacer size="l" breakpoint="sm"></gov-spacer>
     <gov-tiles columns="3" no-border>
         {% for post in posts offset:3 %}
-        <gov-tile href="{{ post.url }}">
+        <gov-tile href="{{base}}{{ post.url }}">
           <h3 slot="title">{{ post.title }}</h3>
           <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
           {{ post.excerpt }}

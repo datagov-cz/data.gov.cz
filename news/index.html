@@ -4,7 +4,6 @@ title: News
 ref: Posts
 lang: en
 ---
-
   <div class="container">
     <h1 class="header center">What's new in open data in Czechia</h1>
     <hr/>
@@ -17,7 +16,7 @@ lang: en
           <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
           {{ post.excerpt }}
           {% if post.detail %}
-          <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
+          <p><a href="..{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
           {% endif %}
         </div>
       </div>
@@ -33,7 +32,7 @@ lang: en
           <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
           {{ post.excerpt }}
           {% if post.detail %}
-          <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
+          <p><a href="..{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
           {% endif %}
         </div>
 		  </div>

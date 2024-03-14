@@ -4,7 +4,6 @@ title: Články
 ref: Articles
 lang: cs
 ---
-
   <gov-container>
     <gov-spacer size="s" breakpoint="sm"></gov-spacer>
     <h1>Články</h1>
@@ -12,13 +11,13 @@ lang: cs
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
-        <gov-tile href="{{base}}{{ clanek.url }}">
+        <gov-tile href="..{{ clanek.url }}">
           <!--<div class="section">-->
             <h2 slot="title">{{ clanek.title }}</h2>
             <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
             <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
             {% if clanek.image %}
-            <p><img width="100%" src="{{base}}{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+            <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
             {{ clanek.excerpt }}
             {% if clanek.detail %}
@@ -35,11 +34,11 @@ lang: cs
      <gov-spacer size="l" breakpoint="sm"></gov-spacer>
      <gov-tiles columns="3" no-border>
         {% for clanek in clanky offset:3 %}
-        <gov-tile href="{{base}}{{ clanek.url }}">
+        <gov-tile href="..{{ clanek.url }}">
           <h3 slot="title">{{ clanek.title }}</h3>
           <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
           {% if clanek.image %}
-          <p><img width="100%" src="{{base}}{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+          <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
           {% endif %}
           {{ clanek.excerpt}}
           {% if clanek.detail %}

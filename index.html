@@ -4,116 +4,91 @@ ref: Home
 lang: cs
 homepage: true
 ---
-<div class="jumbotron mb-4 pt-4 pt-md-0">
-  <div class="container text-white">
-	<div class="row">
-	  <div class="col-md-6">
-		<h1 class="display-3">Portál o datech{% if site.develop %} - TESTOVACÍ VERZE {% endif %}</h1>
-		<p>Vše, co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
-		<p><a href="datové-sady" class="btn btn-primary">Národní katalog otevřených dat</a></p>
-	  </div>
-	  <div class="col-md-6 text-end d-none d-md-block">
-	    <div id="count" class="carousel slide carousel-fade" data-bs-ride="carousel" data-interval="3000">
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <p class="display-3" id="datasetCountLabel"> ?</p>
-			  <p>datových sad</p>
-			</div>
-			<div class="carousel-item">
-			  <p class="display-3" id="publisherCountLabel"> ?</p>
-			  <p>poskytovatelů</p>
-			</div>
-			<div class="carousel-item">
-			  <p class="display-3" id="keywordCountLabel"> ?</p>
-			  <p>klíčových slov</p>
-			</div>
-		  </div>
-		</div>
-		<form id="searchForm" class="form-inline float-end" action="https://data.gov.cz/datové-sady">
-			<label class="visually-hidden" for="dotaz">Název hledané datové sady</label>
-			<div class="input-group">
-			  <div class="input-group-prepend">
-				<span class="input-group-text " id="search-addon"><i class="bi-search"></i></span>
-			  </div>
-			  <input class="form-control" type="text" placeholder="Název datové sady" name="dotaz" id="dotaz" title="Název hledané datové sady" aria-describedby="search-addon">
-			  <div class="input-group-append">
-				<button class="btn btn-primary" type="submit">Hledat</button>
-			  </div>
-			</div>
-		</form>
-	  </div>
-	</div>
-  </div>
-</div>
+<gov-statsbar variant="primary">
+	<gov-statsbar-item><span id="datasetCountLabel">00</span><span slot="text">datových sad</span>
+	</gov-statsbar-item><gov-statsbar-item><span id="applicationCountLabel">XX</span><span slot="text">aplikací</span>
+	</gov-statsbar-item><gov-statsbar-item><span id="publisherCountLabel">YY</span><span slot="text">poskytovatelů</span>
+	</gov-statsbar-item><gov-statsbar-item><span id="keywordCountLabel">ZZ</span><span slot="text">klíčových slov</span></gov-statsbar-item>
+</gov-statsbar>
 
-<div class="container mb-4">
-	<h2 class="mb-2">Novinky ze světa otevřených dat</h2>
-	<hr/>
-	<div class="row">
-		{% assign posts=site.posts | where:"lang", page.lang %}
-		{% for post in posts limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4 mb-4">
-			<h3 class="h4">{{ post.title }}</h3>
-			<p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
-			{% if post.image %}
-			<p><a href=".{{ post.url }}"><img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}"/></a></p>
-			{% endif %}
-			{{ post.excerpt }}
-			{% if post.detail %}
-			<a href=".{{ post.url }}" class="btn btn-secondary" role="button">Více informací &raquo;</a>
-			{% endif %}
-		  </div>
-		{% endfor %}
-	 </div>
-	 <div class="d-flex flex-row-reverse">
-		<p class=""><a class="btn btn-secondary" href="novinky" role="button">Archiv novinek &raquo;</a></p>
-	 </div>
-</div>
+<gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <h2>Novinky ze světa otevřených dat</h2>
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
+        {% assign posts=site.posts | where:"lang", page.lang %}
+        {% for post in posts limit:3 %}
+        <gov-tile href="..{{ post.url }}">
+          <h3 slot="title">{{ post.title }}</h3>
+          <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+          {% if post.image %}
+          <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
+          {% endif %}
+          {{ post.excerpt }}
+          {% if post.detail %}
+          <gov-button variant="secondary" type="outlined" size="l">
+            Více &raquo;
+          </gov-button>
+          {% endif %}
+        </gov-tile>
+        {% endfor %}
+    </gov-tiles>
+</gov-container>
 
-<div class="container">
-	<h2 class="mb-2">Články ze světa otevřených dat</h2>
-	<hr/>
-	<div class="row">
-		{% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
-		{% for clanek in clanky limit:3 %}
-		<div class="col-12 col-md-6 col-lg-4 mb-4">
-			<h3 class="h4"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
-			<p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
-			{% if clanek.image %}
-			<p><a href=".{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
-			{% endif %}
-			{{ clanek.excerpt }}
-			{% if clanek.detail %}
-			<a href=".{{ clanek.url }}" class="btn btn-secondary" role="button">Číst dále &raquo;</a>
-			{% endif %}
-		  </div>
-		{% endfor %}
-	 </div>
-	 <div class="d-flex flex-row-reverse">
-	 	<p class=""><a class="btn btn-secondary" href="články" role="button">Starší články &raquo;</a></p>
-	</div>
-</div>
+<gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <h2>Články ze světa otevřených dat</h2>
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
+        {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
+        {% for clanek in clanky limit:3 %}
+        <gov-tile href="..{{ clanek.url }}">
+          <!--<div class="section">-->
+            <h3 slot="title">{{ clanek.title }}</h3>
+            <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
+            <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+            {% if clanek.image %}
+            <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+            {% endif %}
+            {{ clanek.excerpt }}
+            {% if clanek.detail %}
+            <gov-button variant="secondary" type="outlined" size="l">
+              Číst dále &raquo;
+            </gov-button>
+            {% endif %}
+          <!--</div>-->
+        </gov-tile>
+        {% endfor %}
+     </gov-tiles>
+</gov-container>
 
-<div class="container">
-	<h2 class="mb-2">Důležité informace pro členy ekosystému otevřených dat</h2>
-	<hr/>
-	<div class="row">
-		<div class="col-md-4">
-			<h3 class="h4">Zájemci o otevírání dat</h3>
+<gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <h2>Důležité informace pro členy ekosystému otevřených dat</h2>
+    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
+    <gov-tiles columns="3" no-border>
+		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
+			<h3 slot="title">Zájemci o otevírání dat</h3>
 			<p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
-			<p><a class="btn btn-secondary" href="informace/základy-otevřených-dat-pro-zájemce/" role="button">Více informací &raquo;</a></p>
-		</div>
-		<div class="col-md-4">
-			<h3 class="h4">Poskytovatelé dat</h3>
+			<gov-button variant="secondary" type="outlined" size="l">
+				Více informací &raquo;
+			</gov-button>
+		</gov-tile>
+		<gov-tile href="https://opendata.gov.cz">
+			<h3 slot="title">Poskytovatelé dat</h3>
 			<p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
-			<p><a class="btn btn-secondary" href="https://opendata.gov.cz" role="button">Více informací &raquo;</a></p>
-		</div>
-		<div class="col-md-4">
-			<h3 class="h4">Uživatelé dat</h3>
+			<gov-button variant="secondary" type="outlined" size="l">
+				Více informací &raquo;
+			</gov-button>
+		</gov-tile>
+		<gov-tile href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">
+			<h3 slot="title">Uživatelé dat</h3>
 			<p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
-			<p><a class="btn btn-secondary" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory" role="button">Více informací &raquo;</a></p>
-		</div>
-	</div>
-</div>
+			<gov-button variant="secondary" type="outlined" size="l">
+				Více informací &raquo;
+			</gov-button>
+		</gov-tile>
+	</gov-tiles>
+</gov-container>
 
-<script src="{{ "./js/stats.js" | relative_url }}" ></script>
+<script src="{{base}}/js/stats.js" ></script>

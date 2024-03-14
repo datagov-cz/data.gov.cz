@@ -2,24 +2,12 @@
 title: Přesměrování
 ---
 <!DOCTYPE html>
-{% assign base = ''
-%}{% if depth <= 1
-    %}{% assign depth = page.url | split: '/' | size 
-%}{% assign base = '.'
-%}{% elsif depth == 2
-%}{% assign base = '..'
-%}{% elsif depth == 3
-%}{% assign base = '../..'
-%}{% elsif depth == 4
-%}{% assign base = '../../..'
-%}{% endif
-%}
 <html lang="cs">
 <head>
   <script>
     window.GOV_DS_CONFIG = {
       "canValidateWcagOnRender": true,
-      "iconsPath": "/assets/icons"
+      "iconsPath": "https://oha02.dia.gov.cz/design-system/assets/icons"
     };
   </script>
   <meta charset="utf-8">
@@ -45,10 +33,10 @@ title: Přesměrování
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{base}}/build/core.css">
-  <link rel="stylesheet" href="{{base}}/assets/fonts/roboto.css">
-  <script type="module" src="{{base}}/build/core.esm.js"></script>
-  <script nomodule src="{{base}}/build/core.js"></script>
+  <link rel="stylesheet" href="{{baseurl}}/build/core.css">
+  <link rel="stylesheet" href="{{baseurl}}/assets/fonts/roboto.css">
+  <script type="module" src="{{baseurl}}/build/core.esm.js"></script>
+  <script nomodule src="{{baseurl}}/build/core.js"></script>
 
   <link rel="canonical" href="{{page.redirect.to}}">
   <meta http-equiv="refresh" content="0; url={{page.redirect.to}}">

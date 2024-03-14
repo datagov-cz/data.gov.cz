@@ -2,9 +2,10 @@
 title: Portál o datech České republiky
 
 description: Portál o datech a Národní katalog otevřených dat České republiky
-baseurl: "" # the subpath of your site, e.g. /blog
+
+#Změnit před nasazením!
+baseurl: "/data.gov.cz" # the subpath of your site, e.g. /blog.
 url: "https://data.gov.cz" # the base hostname & protocol for your site
-#develop: true
 
 # Build settings
 excerpt_separator: <!--more-->

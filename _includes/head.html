@@ -2,40 +2,40 @@
   <script>
     window.GOV_DS_CONFIG = {
       "canValidateWcagOnRender": true,
-      "iconsPath": "{{base}}/assets/icons"
+      "iconsPath": "https://oha02.dia.gov.cz/design-system/assets/icons"
     };
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#057fa5">
   <meta name="msapplication-TileColor" content="#057fa5">
-  <meta name="msapplication-TileImage" content="{{base}}/images/favicons/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="{{baseurl}}/images/favicons/ms-icon-144x144.png">
   {% if page.homepage %}
   <meta name="google-site-verification" content="KV7DACYOedpCe1G92g1y_QXmmAh_G_tZhtY-atfeI1M" />
   {% endif%}
-  <link rel="apple-touch-icon" sizes="57x57" href="{{base}}/images/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="{{base}}/images/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="{{base}}/images/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="{{base}}/images/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="{{base}}/images/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="{{base}}/images/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="{{base}}/images/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="{{base}}/images/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{base}}/images/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="{{base}}/images/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{base}}/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="{{base}}/images/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{base}}/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="{{base}}/images/favicons/manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{baseurl}}/images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{baseurl}}/images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{baseurl}}/images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{baseurl}}/images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{baseurl}}/images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{baseurl}}/images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{baseurl}}/images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{baseurl}}/images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{baseurl}}/images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{baseurl}}/images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{baseurl}}/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{baseurl}}/images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{baseurl}}/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="{{baseurl}}/images/favicons/manifest.json">
 
   <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
   {% if page.image %}<meta name="og:image" content="{{ page.image | remove: '..' | prepend: site.url}}"/>{% endif %}
 
-  <link rel="stylesheet" href="{{base}}/build/core.css">
-  <link rel="stylesheet" href="{{base}}/assets/fonts/roboto.css">
-  <script type="module" src="{{base}}/build/core.esm.js"></script>
-  <script nomodule src="{{base}}/build/core.js"></script>
+  <link rel="stylesheet" href="{{baseurl}}/build/core.css">
+  <link rel="stylesheet" href="{{baseurl}}/assets/fonts/roboto.css">
+  <script type="module" src="{{baseurl}}/build/core.esm.js"></script>
+  <script nomodule src="{{baseurl}}/build/core.js"></script>
 
 <!--  <link type="text/css" rel="stylesheet" href="{{ "/css/od.css" | prepend: site.baseurl }}">
   <link type="text/css" rel="stylesheet" href="{{ "/css/style-light.css" | prepend: site.baseurl }}">

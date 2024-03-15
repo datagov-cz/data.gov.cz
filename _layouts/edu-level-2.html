@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<gov-container>
+    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
+    <gov-breadcrumbs wcag-label="You are in the following level">
+      <ul>
+        <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="../../..">Portál o datech</a></li>
+        <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="../..">Vzdělávání</a></li>
+        <li><gov-icon type="basic" name="chevron-right"></gov-icon><a href="..">E-learning</a></li>
+        <li><gov-icon type="basic" name="chevron-right"></gov-icon><strong>{{page.title}}</strong></li>
+      </ul>
+    </gov-breadcrumbs>
+  
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
+    {{ content }}
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
+
+</gov-container>

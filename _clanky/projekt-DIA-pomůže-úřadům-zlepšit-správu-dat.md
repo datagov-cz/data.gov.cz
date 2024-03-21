@@ -6,7 +6,7 @@ ref: projekt-DIA-pomůže-úřadům-zlepšit-správu-dat
 lang: cs
 image: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Správa dat.webp
 author: jana_novák_gabrielová
-date: 2022-03-21 07:00:00 +01:00
+date: 2024-03-21 07:00:00 +01:00
 ---
 Data hrají zcela zásadní roli pro schopnost státu rozhodovat se efektivně a účinně, a to nejen v době krizí. 
 Také v oblastech, v nichž stát potřebuje řešit dlouhodobé společenské problémy, mají data nezastupitelnou roli. 

@@ -1,8 +1,22 @@
-  <header>
-    <gov-container>
-	  <h4>Portál o datech</h4>
-      <gov-nav wcag-label="Hlavní navigace">
-        {% if page.ref == 'Education' %}
+<header>
+	<gov-container>
+		<gov-branding>
+			<h4>Portál o datech</h4>
+			<div>
+				<gov-form-search name="test-me-c" variant="primary">
+				<gov-form-input slot="input" id="search" name="test-me" size="m" placeholder="Co hledáte"></gov-form-input>
+					<gov-button slot="button" variant="primary" size="s">
+						Hledat
+					</gov-button>
+				</gov-form-search>
+				<gov-form-select wcag-label="jazyk" size="m" value="cs">
+					<option value="cs">Čeština</option>
+					<option value="en">English</option>
+				</gov-form-select>
+			</div>
+		</gov-branding>
+		<gov-nav wcag-label="Hlavní navigace">
+		{% if page.ref == 'Education' %}
 			<gov-nav-item>
 			Vzdělávání
 			</gov-nav-item>  
@@ -10,71 +24,51 @@
 			<gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
 				Vzdělávání
 			</gov-nav-item>  
-		{% endif %}
-		{% if page.ref == 'Articles' %}
-		<gov-nav-item>
-			Články
-		</gov-nav-item>
-		{% else %}
-		<gov-nav-item href="{{ "/články" | relative_url}}">
-			Články
-		</gov-nav-item>
-		{% endif %}
-		{% if page.ref == 'DataQuality' %}
-		<gov-nav-item>
-			Datová kvalita
-		</gov-nav-item>
-		{% else %}
-		<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
-			Datová kvalita
-		</gov-nav-item>
-		{% endif %}
-        <gov-nav-item href="/datové-sady">
-          Datové sady
-        </gov-nav-item>
-        <gov-nav-item href="/aplikace">
-          Aplikace
-        </gov-nav-item>
-        <gov-nav-item href="#">
-          Další
-        </gov-nav-item>
-      </gov-nav>
+			{% endif %}
+			{% if page.ref == 'Articles' %}
+			<gov-nav-item>
+				Články
+			</gov-nav-item>
+			{% else %}
+			<gov-nav-item href="{{ "/články" | relative_url}}">
+				Články
+			</gov-nav-item>
+			{% endif %}
+			{% if page.ref == 'DataQuality' %}
+			<gov-nav-item>
+				Datová kvalita
+			</gov-nav-item>
+			{% else %}
+			<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
+				Datová kvalita
+			</gov-nav-item>
+			{% endif %}
+			<gov-nav-item href="/datové-sady">
+			Datové sady
+			</gov-nav-item>
+			<gov-nav-item href="/aplikace">
+			Aplikace
+			</gov-nav-item>
+			<gov-nav-dropdown>
+				<span slot="label">Další</span>
+				<ul slot="dropdown">
+				<li>
+					<a href="/základy-otevřených-dat-pro-zájemce/">Pro zájemce o otevírání dat</a>
+				</li>
+				<li>
+					<a href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Pro uživatele a programátory</a>
+				</li>
+				<li>
+					<a href="https://opendata.gov.cz/">Pro poskytovatele dat</a>
+				</li>
+				<li>
+					<a href="/lokální-katalogy">Lokální katalogy</a>
+				</li>
+				<li>
+					<a href="/návrhy-na-datové-sady-k-otevření">Návrhy na datové sady k otevření</a>
+				</li>
+				</ul>
+			</gov-nav-dropdown>
+    	</gov-nav>
     </gov-container>
-  </header>
-
-<!--	  <div class="collapse navbar-collapse" id="collapsingNavbar">
-		<ul class="navbar-nav ml-auto w-100 justify-content-end">
-			
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Národní katalog otevřených dat</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown01">
-				<a class="dropdown-item" href="/datové-sady">Datové sady</a>
-				<a class="dropdown-item" href="/poskytovatelé">Poskytovatelé</a>
-				<a class="dropdown-item" href="/aplikace">Aplikace</a>
-				<a class="dropdown-item" href="/lokální-katalogy">Lokální katalogy</a>
-				<a class="dropdown-item" href="/návrhy-na-datové-sady-k-otevření">Návrhy na data k otevření</a>
-				</div>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Další informace</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown01">
-				<a class="dropdown-item" href="/informace/základy-otevřených-dat-pro-zájemce/">Pro zájemce o otevírání dat</a>
-				<a class="dropdown-item" href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Pro uživatele a programátory</a>
-				<a class="dropdown-item" href="https://opendata.gov.cz">Pro poskytovatele dat</a>
-				</div>
-			</li>
-	  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-	  {% for p in pages %}
-		{% if p.lang != page.lang %}
-		  <li class="nav-item dropdown">
-			  <a data-bs-toggle="dropdown" aria-haspopup="true" href="#" class="dropdown-toggle nav-link" aria-expanded="false"><img src="{{ "/images/flag-cs.svg" | relative_url}}" alt="Čeština" style="width: 1.3rem;"></a>
-			  <div tabindex="-1" aria-hidden="true" role="menu" class="language-drop-down dropdown-menu lang-menu">
-				<a href="{{ p.url }}" class="{{ p.lang }} dropdown-item" title="{{ site.langs[page.lang][p.lang] }}"><img src="{{ site.langs[p.lang].flag | relative_url }}" alt="{{ site.langs[page.lang][p.lang] }}" style="width: 1.3rem;"></a>
-			</div>
-		  </li>
-		{% endif %}
-	  {% endfor %}
-		</ul>
-	  </div>
-	</div>
-</nav>-->
+</header>

@@ -1,19 +1,10 @@
 ---
-layout: default
+layout: edu-level-2
 title: Úvod do otevřených formálních norem
 ref: E-Learning-OFN
 lang: cs
 ---
 
-<div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../..">Vzdělávání</a></li>
-      <li class="breadcrumb-item"><a href="..">E-learning</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-    </ol>
-  </nav>
-  
   <h1 class="header center">{{page.title}}</h1>
   <p>Jedná se o jeden z e-learningových kurzů otevřených dat online.</p>
   
@@ -29,6 +20,8 @@ lang: cs
     Z hlediska rolí se týká především kurátorů, IT specialistů a koordinátorů.
     Může se jednat také o metodiky a analytiky v dané organizaci, kteří &quot;mají k datům blízko&quot;.
   </p>
+
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
   
   <h2>Cíl</h2>
   <p>
@@ -47,7 +40,8 @@ lang: cs
     A mnoha dalšími podobnými.
     Kurz není zaměřen na technické aspekty tvorby nových OFN.
   </p>
-  <hr/>
+  
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
   
   <h2>Struktura kurzu</h2>
   <p>
@@ -59,106 +53,107 @@ lang: cs
     Kurz je zakončen závěrečným testem.
   </p>
 
-  <div class="row">
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">1. Úvod do kurzu otevřených formálních norem</h2>
-          <p class="card-text">
-            Úvodní modul seznamuje absolventy kurzu s jeho strukturou a obsahem všech modulů.
-          </p>
-          <a href="https://www.youtube.com/watch?v=RA-BfUBLFfM" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1Yh_SMdL3m4T-qBB8P8rfI5wPuSkGwSy5joYjXnvXg1E" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+  <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="1. Úvod do kurzu otevřených formálních norem" full-height>
+        <p>
+          Úvodní modul seznamuje absolventy kurzu s jeho strukturou a obsahem všech modulů.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=RA-BfUBLFfM">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Yh_SMdL3m4T-qBB8P8rfI5wPuSkGwSy5joYjXnvXg1E">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
+    
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="2. Principy správného poskytování otevřených dat" full-height>
+        <p>
+          Modul se zaměřuje na vysvětlení základních principů správného poskytování otevřených dat, vysvětluje co je důležité pro zajištění jejich dobré použitelnosti a také proč je to důležité, co to jsou principy tzv. “FAIR data” a jakou mají souvislost s otevřenými formálními normami.
+          Absolvent modulu by si měl odnést důležitost správného poskytování otevřených dat a potřebu její standardizace.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=4g1j-vWSdrY">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1e0Z5L82z7rxgg2FHwjQHN7jPo0fAYGz-hzT9mACSB-g">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">2. Principy správného poskytování otevřených dat</h2>
-          <p class="card-text">
-            Modul se zaměřuje na vysvětlení základních principů správného poskytování otevřených dat, vysvětluje co je důležité pro zajištění jejich dobré použitelnosti a také proč je to důležité, co to jsou principy tzv. “FAIR data” a jakou mají souvislost s otevřenými formálními normami.
-            Absolvent modulu by si měl odnést důležitost správného poskytování otevřených dat a potřebu její standardizace.
-          </p>
-          <a href="https://www.youtube.com/watch?v=4g1j-vWSdrY" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1e0Z5L82z7rxgg2FHwjQHN7jPo0fAYGz-hzT9mACSB-g" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="3. Úvod do praktického použití OFN" full-height>
+        <p>
+          Modul vysvětluje základy, na kterých celý mechanismus otevřených formálních norem stojí, rozebírá repozitář otevřených formálních norem a ukazuje, jak se s takovým repozitářem a jeho prvky pracuje.
+          Přibližuje také nezbytné minimum pro vizualizaci a finalizaci datových struktur.
+          Absolvování modulu je důležité pro porozumění otevřeným formálním normám a také je důležité pro výklad dalších modulů kurzu.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=7JBAFfM-Mqg">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1T8WE8sE5MbVPrSZzcrthQtxZdVX8mlgxIVjCTI4d81k">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">3. Úvod do praktického použití OFN</h2>
-          <p class="card-text">
-            Modul vysvětluje základy, na kterých celý mechanismus otevřených formálních norem stojí, rozebírá repozitář otevřených formálních norem a ukazuje, jak se s takovým repozitářem a jeho prvky pracuje.
-            Přibližuje také nezbytné minimum pro vizualizaci a finalizaci datových struktur.
-            Absolvování modulu je důležité pro porozumění otevřeným formálním normám a také je důležité pro výklad dalších modulů kurzu.
-          </p>
-          <a href="https://www.youtube.com/watch?v=7JBAFfM-Mqg" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1T8WE8sE5MbVPrSZzcrthQtxZdVX8mlgxIVjCTI4d81k" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="4. Využití připravených OFN pro tvorbu datových schémat" full-height>
+        <p>
+          Modul je zaměřen na tvorbu datových schémat datových sad na základě publikovaných OFN pro konkrétní věcná témata.
+          Vysvětluje a názorně na příkladech ukazuje základní možnosti použití hotových OFN.
+          Absolvent modulu by měl být schopen používat připravené OFN nejen v tematických oblastech vymezených samotnou OFN, ale také i v oblastech tematicky odlišných.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=qfMk_Uc22-g">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1s3DiJjaI2CXa_5s4HsdsjXt6YQpbMS1qh8kYitdddB4">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">4. Využití připravených OFN pro tvorbu datových schémat</h2>
-          <p class="card-text">
-            Modul je zaměřen na tvorbu datových schémat datových sad na základě publikovaných OFN pro konkrétní věcná témata.
-            Vysvětluje a názorně na příkladech ukazuje základní možnosti použití hotových OFN.
-            Absolvent modulu by měl být schopen používat připravené OFN nejen v tematických oblastech vymezených samotnou OFN, ale také i v oblastech tematicky odlišných.
-          </p>
-          <a href="https://www.youtube.com/watch?v=qfMk_Uc22-g" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1s3DiJjaI2CXa_5s4HsdsjXt6YQpbMS1qh8kYitdddB4" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="5. Tvorba datových schémat s využitím sdílených specifikací" full-height>
+        <p>
+          Modul se zaměřuje na využití sdílených specifikací při tvorbě datového schématu v případech, kdy pro konkrétní tematickou oblast žádná připravená OFN zatím neexistuje.
+          Absolvent modulu by měl získat znalosti o používání repozitáře OFN, o využití sdílených specifikací k návrhu datové struktury a tvorbě odpovídajícího strojově čitelného datového schématu, a také, že datové sady lze publikovat správně a standardizovaným způsobem i na základě pouhého konceptu tématu datové sady.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=hQ9lbxQUGgY">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1nuasWG6Nkr9kovobwRjt99FFX1m_-IxMFtO0DxkrreQ">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">5. Tvorba datových schémat s využitím sdílených specifikací</h2>
-          <p class="card-text">
-            Modul se zaměřuje na využití sdílených specifikací při tvorbě datového schématu v případech, kdy pro konkrétní tematickou oblast žádná připravená OFN zatím neexistuje.
-            Absolvent modulu by měl získat znalosti o používání repozitáře OFN, o využití sdílených specifikací k návrhu datové struktury a tvorbě odpovídajícího strojově čitelného datového schématu, a také, že datové sady lze publikovat správně a standardizovaným způsobem i na základě pouhého konceptu tématu datové sady.
-          </p>
-          <a href="https://www.youtube.com/watch?v=hQ9lbxQUGgY" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1nuasWG6Nkr9kovobwRjt99FFX1m_-IxMFtO0DxkrreQ" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="6. OFN a proces otevírání dat v organizaci" full-height>
+        <p>
+          Modul je věnován celému proces publikace datové sady a roli a významu OFN v jeho jednotlivých krocích.
+          Absolvent modulu by měl získat povědomí o bohatosti možností využití OFN, o tom, že jsou důležitými nástroji pro zjednodušení a zefektivnění publikace při současném splnění požadavků na standardizaci publikovaných dat, jejich interoperabilitu a naplnění povinnosti publikace dle otevřených formálních norem, vyplývající z legislativy ČR.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=a5q9nRMreM8">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1hxHAzu4gEGVB0FtUb4w9CNwWWneBiBZh4sviedcNctg">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">6. OFN a proces otevírání dat v organizaci</h2>
-          <p class="card-text">
-            Modul je věnován celému proces publikace datové sady a roli a významu OFN v jeho jednotlivých krocích.
-            Absolvent modulu by měl získat povědomí o bohatosti možností využití OFN, o tom, že jsou důležitými nástroji pro zjednodušení a zefektivnění publikace při současném splnění požadavků na standardizaci publikovaných dat, jejich interoperabilitu a naplnění povinnosti publikace dle otevřených formálních norem, vyplývající z legislativy ČR.
-          </p>
-          <a href="https://www.youtube.com/watch?v=a5q9nRMreM8" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1hxHAzu4gEGVB0FtUb4w9CNwWWneBiBZh4sviedcNctg" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-card promotion="true" label="Závěrečný test">
+      <p>
+        Ověřte si nově nabyté znalosti v závěrečném testu.
+        Můžete nás také požádat o certifikát o absolvování kurzu.
+      </p>
+      <gov-icon type="complex" name="graduate" slot="icon"></gov-icon>
+      <gov-button variant="primary" slot="btn" type="solid" size="l" href="https://docs.google.com/forms/d/e/1FAIpQLSdVw63OIZAj6k_O8D11Re2st8qyI8iF-gZwPgduLCtjLlpXtw/viewform" wcag-label="Složit závěrečný test">Test</gov-button>
+    </gov-card>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card border-danger">
-        <div class="card-body">
-          <h2 class="card-title h5">Závěrečný test</h2>
-          <p class="card-text">
-            Ověřte si nově nabyté znalosti v závěrečném testu.
-            Můžete nás také požádat o certifikát o absolvování kurzu.
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVw63OIZAj6k_O8D11Re2st8qyI8iF-gZwPgduLCtjLlpXtw/viewform" class="btn btn-danger" role="button">Test &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
+  </gov-grid>

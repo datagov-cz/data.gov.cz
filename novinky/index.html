@@ -18,11 +18,6 @@ lang: cs
           <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
           {% endif %}
           {{ post.excerpt }}
-          {% if post.detail %}
-          <gov-button variant="secondary" type="base" size="l">
-            Více &raquo;
-          </gov-button>
-          {% endif %}
         </gov-tile>
         {% endfor %}
     </gov-tiles>
@@ -35,11 +30,6 @@ lang: cs
           <h3 slot="title">{{ post.title }}</h3>
           <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
           {{ post.excerpt }}
-          {% if post.detail %}
-          <gov-button variant="secondary" type="base" size="l">
-            Více &raquo;
-          </gov-button>
-          {% endif %}
         </gov-tile>
         {% endfor %}       
       </gov-tiles>

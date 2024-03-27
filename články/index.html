@@ -20,11 +20,6 @@ lang: cs
             <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
             {{ clanek.excerpt }}
-            {% if clanek.detail %}
-            <gov-button variant="secondary" type="base" size="l">
-              Více &raquo;
-            </gov-button>
-            {% endif %}
           <!--</div>-->
         </gov-tile>
         {% endfor %}
@@ -41,11 +36,6 @@ lang: cs
           <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
           {% endif %}
           {{ clanek.excerpt}}
-          {% if clanek.detail %}
-          <gov-button variant="secondary" type="base" size="l">
-            Více &raquo;
-          </gov-button>
-          {% endif %}
         </gov-tile>
         {% endfor %}       
     </gov-tiles>

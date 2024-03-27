@@ -25,11 +25,6 @@ homepage: true
           <p><img width="100%" src="novinky/{{ post.image }}" alt="{{ post.title }}"/></p>
           {% endif %}
           {{ post.excerpt }}
-          {% if post.detail %}
-          <gov-button variant="secondary" type="outlined" size="l">
-            Více &raquo;
-          </gov-button>
-          {% endif %}
         </gov-tile>
         {% endfor %}
     </gov-tiles>
@@ -43,20 +38,12 @@ homepage: true
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
         <gov-tile href="..{{ clanek.url }}">
-          <!--<div class="section">-->
             <h3 slot="title">{{ clanek.title }}</h3>
-            <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
             <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
             {% if clanek.image %}
             <p><img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
             {{ clanek.excerpt }}
-            {% if clanek.detail %}
-            <gov-button variant="secondary" type="outlined" size="l">
-              Číst dále &raquo;
-            </gov-button>
-            {% endif %}
-          <!--</div>-->
         </gov-tile>
         {% endfor %}
      </gov-tiles>
@@ -70,23 +57,14 @@ homepage: true
 		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
 			<h3 slot="title">Zájemci o otevírání dat</h3>
 			<p>Co mi otevřená data přinesou a proč bych je měl chtít? Jak pomohou mé obci či mému úřadu?</p>
-			<gov-button variant="secondary" type="outlined" size="l">
-				Více informací &raquo;
-			</gov-button>
 		</gov-tile>
 		<gov-tile href="https://opendata.gov.cz">
 			<h3 slot="title">Poskytovatelé dat</h3>
 			<p>Jak postupovat při otevírání dat? Jaké jsou příklady dobré a špatné praxe? A jaké jsou právní aspekty otevírání dat?</p>
-			<gov-button variant="secondary" type="outlined" size="l">
-				Více informací &raquo;
-			</gov-button>
 		</gov-tile>
 		<gov-tile href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">
 			<h3 slot="title">Uživatelé dat</h3>
 			<p>Kde najdu otevřená data? Co jsou otevřené formáty XML, CSV či RDF? Kde si mohu říct o další otevřená data nebo nahlásit chybu v datech?</p>
-			<gov-button variant="secondary" type="outlined" size="l">
-				Více informací &raquo;
-			</gov-button>
 		</gov-tile>
 	</gov-tiles>
 </gov-container>

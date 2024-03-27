@@ -1,26 +1,19 @@
 ---
-layout: default
+layout: edu-level-2
 title: Modelování významu dat ve veřejné správě
 ref: E-Learning-Modelování-Významu
 lang: cs
 ---
 
-<div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../..">Vzdělávání</a></li>
-      <li class="breadcrumb-item"><a href="..">E-learning</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-    </ol>
-  </nav>
-
-  <h1 class="header center">{{page.title}}</h1>
+  <h1>{{page.title}}</h1>
   <p>Jedná se o jeden z e-learningových kurzů otevřených dat online.</p>
 
   <h2>Cílová skupina</h2>
   <p>
     E-learningový kurz je určen především pro datové analytiky, kteří pracují s otevřenými daty, nebo daty pocházejícími z informačních systémů veřejné správy, dále pak pro technické správce dat, kteří zajišťují technickou a datovou stránku publikace otevřených dat nebo dat pocházejících z informačních systémů veřejné správy.
   </p>
+
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
   <h2>Cíl</h2>
   <p>
@@ -30,7 +23,8 @@ lang: cs
   <p>
     V průběhu kurzu se uživatelé seznámí s významem modelování významu dat ve veřejné správě. Kurz obsahuje teoretický úvod do modelování a seznámení se s metodikou, podle které je význam dat modelován. Hlavní náplň kurzu se ale zabývá způsobem tvorby sémantických slovníků v konkrétních softwarových nástrojích.
   </p>
-  <hr/>
+  
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
   <h2>Struktura kurzu</h2>
   <p>
@@ -40,99 +34,103 @@ lang: cs
     Kurz je zakončen závěrečným testem.
   </p>
 
-  <div class="row">
+  <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">1. Úvod do modelování významu dat ve veřejné správě</h2>
-          <p class="card-text">
-            V modulu zjistíte,k čemu je dobré popisovat význam dat, jak vytvářet popisy dat pomocí významových slovníků a jaké nástroje lze pro tvorbu významových slovníků použít.
-          </p>
-          <a href="https://youtu.be/rWEcTMIddZo?t=390" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1mXOVyZgaSHTnbCvt5DD_ZAuTIb0ae8HThiVHbVZBr1c/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+  <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="1. Úvod do modelování významu dat ve veřejné správě" full-height>
+        <p>
+          V modulu zjistíte,k čemu je dobré popisovat význam dat, jak vytvářet popisy dat pomocí významových slovníků a jaké nástroje lze pro tvorbu významových slovníků použít.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/rWEcTMIddZo?t=390">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1mXOVyZgaSHTnbCvt5DD_ZAuTIb0ae8HThiVHbVZBr1c">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">2. Metodika tvorby významových slovníků</h2>
-          <p class="card-text">
-            V modulu se seznámíte s tím, jak identifikovat pojmy ve zdrojových datech a jak mezi nimi vytvářet významoví vazby.
-          </p>
-          <a href="https://youtu.be/rWEcTMIddZo?t=3717" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1szmr5HE0RHH4YYcfQIc2hJvYUnQ-puZdsCy6DeiXoIY/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="2. Metodika tvorby významových slovníků" full-height>
+        <p>
+          V modulu se seznámíte s tím, jak identifikovat pojmy ve zdrojových datech a jak mezi nimi vytvářet významoví vazby.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/rWEcTMIddZo?t=3717">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1szmr5HE0RHH4YYcfQIc2hJvYUnQ-puZdsCy6DeiXoIY">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">3. Nástroje pro tvorbu významových slovníků</h2>
-          <p class="card-text">
-            V tomto modulu projdeme v rychlosti celý proces tvorby významového slovníku za pomoci softwarových nástrojů výrobní linky.
-          </p>
-          <a href="https://youtu.be/rWEcTMIddZo?t=6730" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1fQ5JvB6Vv-Z8chWKphuG7P86fqHkKzLIqfIxo5JsHXQ/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="3. Nástroje pro tvorbu významových slovníků" full-height>
+        <p>
+          V tomto modulu projdeme v rychlosti celý proces tvorby významového slovníku za pomoci softwarových nástrojů výrobní linky.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/rWEcTMIddZo?t=6730">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1fQ5JvB6Vv-Z8chWKphuG7P86fqHkKzLIqfIxo5JsHXQ">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">4. Tvorba glosářů v systému TermIt</h2>
-          <p class="card-text">
-            Modul se dopodrobna zabývá nástrojem TermIt a tím, jak v něm vytvářet glosáře.
-          </p>
-          <a href="https://youtu.be/rWEcTMIddZo?t=8738" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1pj9nvSUimD1tE_E4C4egDNHTfAwbCZb7EyCR8UKXnsU/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="4. Tvorba glosářů v systému TermIt" full-height>
+        <p>
+          Modul se dopodrobna zabývá nástrojem TermIt a tím, jak v něm vytvářet glosáře.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/rWEcTMIddZo?t=8738">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1pj9nvSUimD1tE_E4C4egDNHTfAwbCZb7EyCR8UKXnsU">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">5. Tvorba modelů v systému OntoGrapher</h2>
-          <p class="card-text">
-            V modului se seznámíte s používáním nástroje OntoGrapher, především jak vytvářet a upravovat pojmy a vztahy, jak efektivně vytvářet složité modely a jak je validovat.
-          </p>
-          <a href="https://youtu.be/rWEcTMIddZo?t=12499" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1dA3YHGA6KSz4UuYahFrVehE4lSDT1dZrGxbRK_1oF6w/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="5. Tvorba modelů v systému OntoGrapher" full-height>
+        <p>
+          V modulu se seznámíte s používáním nástroje OntoGrapher, především jak vytvářet a upravovat pojmy a vztahy, jak efektivně vytvářet složité modely a jak je validovat.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/rWEcTMIddZo?t=12499">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1dA3YHGA6KSz4UuYahFrVehE4lSDT1dZrGxbRK_1oF6w">
+          Google Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">6. Využití hotových slovníků</h2>
-          <p class="card-text">
-            V závěrečném modelu zjistíte, jak běžný uživatel může prohlížet slovníky, které byly vytvořeny v nástrojích výrobní linky a jak vytvářet na základě hotových slovníků datová schémata. V modulu se pracuje v nástrojích ShowIt a Dataspecer.
-          </p>
-          <a href="https://youtu.be/rWEcTMIddZo?t=15690" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1xOn7ut5mPzQg7Exot1cnzhjzCrOn6XGb_eUOnDEpvnQ/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy ShowIt &raquo;</a>
-          <a href="https://docs.google.com/presentation/d/13_mRTR2zw-JDXomgRCSkvISyam4-jVcMe24EqfNW5AY/edit?usp=share_link" class="btn btn-secondary" role="button">Slidy Dataspecer &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="6. Využití hotových slovníků" full-height>
+        <p>
+          V závěrečném modelu zjistíte, jak běžný uživatel může prohlížet slovníky, které byly vytvořeny v nástrojích výrobní linky a jak vytvářet na základě hotových slovníků datová schémata. V modulu se pracuje v nástrojích ShowIt a Dataspecer.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/rWEcTMIddZo?t=15690">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1xOn7ut5mPzQg7Exot1cnzhjzCrOn6XGb_eUOnDEpvnQ">
+          Slidy ShowIt &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/13_mRTR2zw-JDXomgRCSkvISyam4-jVcMe24EqfNW5AY">
+          Slidy Dataspecer &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card border-danger">
-        <div class="card-body">
-          <h2 class="card-title h5">Závěrečný test</h2>
-          <p class="card-text">
-            Ověřte si nově nabyté znalosti v závěrečném testu.
-            Můžete nás také požádat o certifikát o absolvování kurzu.
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeh_Pn4pg-wsZn2Jfekn-E5HgN5QePGffqotEHLQSYvPEggdw/viewform" class="btn btn-danger" role="button">Test &raquo;</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
+  </gov-grid>
+  
+  <gov-card promotion="true" label="Závěrečný test">
+    <p>
+      Ověřte si nově nabyté znalosti v závěrečném testu.
+      Můžete nás také požádat o certifikát o absolvování kurzu.
+    </p>
+    <gov-icon type="complex" name="graduate" slot="icon"></gov-icon>
+    <gov-button variant="primary" slot="btn" type="solid" size="l" href="https://docs.google.com/forms/d/e/1FAIpQLSeh_Pn4pg-wsZn2Jfekn-E5HgN5QePGffqotEHLQSYvPEggdw/viewform" wcag-label="Složit závěrečný test">Test</gov-button>
+  </gov-card>

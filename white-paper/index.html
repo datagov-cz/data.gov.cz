@@ -1,13 +1,11 @@
 ---
-layout: default
+layout: contained
 title: White paper Otevřená data
 ref: white-paper-otevřená-data
 lang: cs
 ---
 
-  <div class="container">
-    <h1>White paper Otevřená data</h1>
-    <p class="lead">
+    <p>
         Když stavím nový IS nebo upravuji existující, co musím udělat, abych byl Open Data Ready?
     </p>
     
@@ -20,7 +18,7 @@ lang: cs
 
     </dl>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
     
     <h2>Obsah</h2>
     
@@ -36,7 +34,7 @@ lang: cs
         <li><a href="#archimate">Pohled Archimate</a></li>
     </ol>
 
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
     
     <h2 id="shrnutí">Shrnutí</h2>
     
@@ -52,7 +50,7 @@ lang: cs
         <li>Zaregistrovat je v Národním katalogu otevřených dat (NKOD)</li>
     </ol>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="co-jsou-a-nejsou-otevřená-data">Co jsou a co nejsou otevřená data?</h2>
 
@@ -89,7 +87,7 @@ lang: cs
         <li>datový soubor v pseudo-CSV formátu (např. jiný oddělovač než “,”)</li>
     </ol>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="možnosti-přípravy-is-pro-otevřená-data">Možnosti přípravy IS pro otevřená data</h2>
     
@@ -137,7 +135,7 @@ lang: cs
         Pokud se jedná o rozšíření existujícího IS, který neumožňuje export dat nebo nenabízí API ve strojově čitelném a otevřeném formátu a takovou úpravu nelze ve Vašem IS provést, využije se stávající export či API, které váš IS již umí (např. do MS Excel), a tento výstup se dále zpracuje do otevřeného formátu pomocí dalších nástrojů tak, aby bylo dosaženo stavu jako v případě přímého exportu do otevřeného formátu.
     </p>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="příprava-dat-k-pubikaci">Následná příprava dat k publikaci v podobě otevřených dat</h2>
     
@@ -167,7 +165,7 @@ lang: cs
         Pro příklad vhodného způsobu zveřejnění datové sady v lokálním katalogu se lze podívat na <a href="https://data.cssz.cz">katalog České správy sociálního zabezpečení (ČSSZ)</a>.
     </p>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="zajištění-kvality-publikovaných-dat">Zajištění kvality publikovaných dat</h2>
     
@@ -194,7 +192,7 @@ lang: cs
         <li>Kvalitou a zajištěním trvalé dostupnosti publikovaných datových sad poskytovatelů dat na trvalých URL a tak dlouho, jak je to možné.</li>
     </ol>
 
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="ochrana-osobních-údajů">Ochrana osobních údajů</h2>
     
@@ -213,7 +211,7 @@ lang: cs
         Více informací naleznete na <a href="https://opendata.gov.cz/dokumenty:ochrana-osobních-údajů-a-gdpr">stránce o ochraně osobních údajů a GDPR ve vztahu k otevřeným datům</a>.
     </p>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="právní-aspekty">Právní aspekty</h2>
     
@@ -225,7 +223,7 @@ lang: cs
         Více informací o strategických dokumentech, akčních plánech a souvisejících předpisech ČR i EU naleznete na stránce věnované <a href="https://opendata.gov.cz/legislativa:start">legislativnímu prostředí otevřených dat</a>.
     </p>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="odbor-hlavního-architekta-egovernmentu">Odbor Hlavního architekta eGovernmentu Ministerstva vnitra</h2>
     
@@ -249,7 +247,7 @@ lang: cs
         OHA dále kontroluje, zdali budou tato data zveřejňovaná ve formátu otevřených dat.
     </p>
     
-    <hr/>
+    <gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
     <h2 id="archimate">Pohled Archimate</h2>
     
@@ -260,7 +258,7 @@ lang: cs
     <h3 id="archimate-business">Business</h3>
     
     <p>
-        <img src="obrázky/archimate-business.svg" class="img-fluid" alt="Business vrstva Archimate">
+        <img src="obrázky/archimate-business.svg" alt="Business vrstva Archimate">
         Na byznys vrstvě se nachází legislativa dotýkající se otevřených dat a procesy a objekty, které se zapojují do publikace otevřených dat.
         Jednotlivé procesy OVM jsou ve větším detailu popsány na <a href="https://data.gov.cz">Portálu o datech</a>, kde se také nalézají <a href="https://ofn.gov.cz">Otevřené formální normy</a>, které OVM při publikaci otevřených dat dodržuje.
         Klient pak data očekává ve formátu popsaném Otevřenou formální normou.
@@ -271,10 +269,8 @@ lang: cs
     <h3 id="archimate-aplikační">Aplikační</h3>
     
     <p>
-        <img src="obrázky/archimate-aplikační.svg" class="img-fluid" alt="Aplikační vrstva Archimate">
+        <img src="obrázky/archimate-aplikační.svg" alt="Aplikační vrstva Archimate">
         Na aplikační vrstvě hraje hlavní roli datový Portál OVM, na kterém jsou zveřejněna otevřená data OVM a který obsahuje Lokální katalog otevřených dat.
         Do něj jsou katalogizována otevřená data OVM a z něj metadata přebírá Národní katalog otevřených dat.
         Klient VS pak přistupuje přímo k souborům či API poskytovaným přes Portál OVM.
     </p>
-    
-  </div>

@@ -1,14 +1,9 @@
 ---
-layout: default
+layout: contained
 title: Otevřená data snadno a rychle
 ref: ODSnadnoARychle
 lang: cs
 ---
-
-<gov-container>
-	<h1>{{ page.title }}</h1>
-
-	<gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
 	<p>
 		Zde naleznete co nejstručnější návod na publikaci dat jako otevřená data.
@@ -23,10 +18,10 @@ lang: cs
 
 	<gov-wizard size="m" wcag-label="Otevřená data snadno a rychle">
 		<gov-wizard-item label="Začínáme s Excelovským souborem" id="1-začínáme-s-excelovským-souborem" prefix="1" collapsible="true">
-			<gov-tiles columns="3" no-border>
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			
-				<gov-tile>
-					<gov-card label="Postup" class="gov-bg--primary-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
 							Typickým zdrojem otevřených dat je Excelovský soubor.
 							Ten sám o sobě může obsahovat spoustu problémů, kterým se souhrnně říká "<a href="příklady/barevný.xlsx">Barevný Excel</a>".
@@ -39,10 +34,10 @@ lang: cs
 							První normální forma
 						</gov-button>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 				
-				<gov-tile>
-					<gov-card label="Špatně: Barevný Excel" class="gov-bg--error-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Špatně: Barevný Excel" class="gov-bg--error-100">
 						<p>
 							Takto by to vypadat nemělo.
 							Význam nesmí být určen jen barvou, datumy (čísla, ...) nesmí být v přirozeném jazyce.
@@ -52,10 +47,10 @@ lang: cs
 							Stáhnout
 						</gov-button>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-				<gov-tile>
-					<gov-card label="Dobře: Slušný Excel" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Dobře: Slušný Excel" class="gov-bg--success-100">
 						<p>
 							Takhle je to lepší.
 							1 list má 1 tabulku, nejsou použity prázdné ani sloučené buňky pro formátování.
@@ -65,15 +60,15 @@ lang: cs
 							Stáhnout
 						</gov-button>
 					</gov-card>
-				</gov-tile>
-			</gov-tiles>
+				</gov-grid-item>
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			<span slot="prefix">1</span>
 		</gov-wizard-item>
 
 		<gov-wizard-item label="Vyrábíme CSV" id="2-vyrábíme-csv" prefix="2" collapsible="true">
-			<gov-tiles columns="3" no-border>
-				<gov-tile>
-					<gov-card label="Postup" class="gov-bg--primary-100">
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
 							Formátem pro otevřená tabulková data je <a href="https://opendata.gov.cz/standardy:csv" title="csv">formát CSV</a>.
 							Tabulku z Excelu tedy musíme do tohoto formátu převést.
@@ -92,10 +87,10 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 				
-				<gov-tile>
-					<gov-card label="Špatné CSV" class="gov-bg--error-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Špatné CSV" class="gov-bg--error-100">
 						<p>
 							Špatný oddělovač, špatné kódování.
 						</p>
@@ -106,10 +101,10 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 				
-				<gov-tile>
-					<gov-card label="Správné CSV" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Správné CSV" class="gov-bg--success-100">
 						<p>
 							Takhle je to lepší. 
 							<a href="http://csvlint.io/" title="CSV Lint">Zvalidujte si to</a>.
@@ -127,16 +122,16 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>				
-			</gov-tiles>
+				</gov-grid-item>				
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			<span slot="prefix">2</span>
 		</gov-wizard-item>
 		
 		<gov-wizard-item label="CSV vystavujeme na web" id="3-csv-vystavujeme-na-web" prefix="3" collapsible="true">
-			<gov-tiles columns="3" no-border>
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			
-				<gov-tile>
-					<gov-card label="Postup" class="gov-bg--primary-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
 							Aby se k CSV souboru někdo dostal, je třeba ho umístit na web.
 							To znamená někam, kde bude mít své stabilní URL.
@@ -148,10 +143,10 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-				<gov-tile>
-					<gov-card label="Časté chyby" class="gov-bg--error-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Časté chyby" class="gov-bg--error-100">
 						<ul>
 							<li><a href="https://opendata.gov.cz/špatná-praxe:http" title="HTTP">HTTP místo HTTPS</a></li>
 							<li><a href="https://opendata.gov.cz/špatná-praxe:https" title="Chybné HTTPS">Chybně nastavené HTTPS</a></li>
@@ -159,10 +154,10 @@ lang: cs
 							<li><a href="https://opendata.gov.cz/špatná-praxe:http-content-type" title="HTTP hlavičky">Špatné HTTP hlavičky</a></li>
 						</ul>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-				<gov-tile>
-					<gov-card label="Správné příklady" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Správné příklady" class="gov-bg--success-100">
 						<ul>
 							<li><a href="https://data.dia.gov.cz/soubory/czechpoint/2009.csv" title="CzechPoint">CSV přístupné přes HTTPS, se správnými HTTP hlavičkami a kompresí</a></li>
 						</ul>
@@ -171,18 +166,18 @@ lang: cs
 								Zkuste třeba <a href="https://www.emeditor.com/">EmEditor</a> nebo jiný prohlížeč velkých souborů.
 						</gov-message>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-			</gov-tiles>
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			<span slot="prefix">3</span>
 	
 		</gov-wizard-item>
 		
 		<gov-wizard-item label="Soubor opatříme schématem" id="4-soubor-opatříme-schématem" prefix="4" collapsible="true">
-			<gov-tiles columns="3" no-border>
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			
-				<gov-tile>
-					<gov-card label="Postup" class="gov-bg--primary-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
 							K CSV souboru patří strojově čitelné schéma, které definuje datové typy sloupců, případně poskytuje lepší popis sloupců než-li jejich název.
 							Pro CSV soubor tedy <a href="https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3#definice_vlastního_schématu_pro_data_v_csv">vytvoříme schéma dle standardu CSV on the Web</a> ve formě JSON-LD deskriptoru.
@@ -200,35 +195,35 @@ lang: cs
 							</gov-button>
 						</div>
 					</div>
-				</gov-tile>
+				</gov-grid-item>
 				
-				<gov-tile>
-					<gov-card label="Příklady bez schématu" class="gov-bg--error-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Příklady bez schématu" class="gov-bg--error-100">
 						<ul>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00064581%2Fc34f5a6baaa387d2e10695fb46e4bb48" title="Praha">CSV bez schématu</a></li>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F66002222%2Fbb9900c6e8e46ec591c69d6f08bc4684" title="MMR">CSV bez schématu, špatný formát data</a></li>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00020869%2F98719" title="ČOI">CSV bez schématu</a></li>
 						</ul>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-				<gov-tile>
-					<gov-card label="Příklady se schématem" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Příklady se schématem" class="gov-bg--success-100">
 						<ul>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00024341%2F5b973256a97300f688db0882bec64420" title="MZ">CSV se schématem</a></li>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F17651921%2F2da0fa8c9f57dd9ca2eef3ab868ba6f7" title="DIA">CSV se schématem</a></li>
 						</ul>
 					</gov-card>
-				</gov-tile>
-			</gov-tiles>
+				</gov-grid-item>
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			<span slot="prefix">4</span>
 		</gov-wizard-item>
 
 		<gov-wizard-item label="Specifikujeme metadata" id="5-specifikujeme-metadata" prefix="5" collapsible="true">
-			<gov-tiles columns="3" no-border>
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			
-				<gov-tile>
-					<gov-card label="Postup" class="gov-bg--primary-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
 							<a href="https://opendata.gov.cz/cinnost:priprava-katalogizacniho-zaznamu">Připravíme si metadatový záznam</a> o datové sadě.
 							Měl by být co nejúplnější.
@@ -241,35 +236,35 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 				
-				<gov-tile>
-					<gov-card label="Příklady nedostatečného popisu" class="gov-bg--error-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Příklady nedostatečného popisu" class="gov-bg--error-100">
 						<ul>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2Fhttps---opendata.liberec.cz-api-3-action-package_show-id-vybavenost" title="Liberec">Chybí podmínky užití, témata.</a></li>
 						</ul>
 					</div>
-				</gov-tile>
+				</gov-grid-item>
 			 
-				<gov-tile>
-					<gov-card label="Příklady plnějšího popisu" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Příklady plnějšího popisu" class="gov-bg--success-100">
 						<ul>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00006963%2Ff6d179495a4002213f99f9fcee4ce4b4" title="ČSSZ">Příklad s HTML dokumentací, tématy a kontaktním bodem</a></li>
 							<li><a href="https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00025593%2Fea2436cd5ab27fcbd5770b963880cc69" title="ČSÚ">Příklad s HTML dokumentací a kontaktním bodem</a></li>
 						</ul>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-			</gov-tiles>
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 	
 			<span slot="prefix">5</span>
 		</gov-wizard-item>
 
 		<gov-wizard-item label="Zaregistrujeme v NKOD" id="6-zaregistrujeme-v-nkod" prefix="6" collapsible="true">
-			<gov-tiles columns="3" no-border>
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			
-				<gov-tile>
-					<gov-card label="Postup" class="gov-bg--primary-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
 							Nejjednodušší možností je vyplnit formulář a výslednou zprávu zaslat datovou schránkou do NKOD.
 							Nevyplňujeme jen povinné položky, snažíme se pečlivě vyplnit co nejvíce informací.
@@ -281,16 +276,16 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
-			</gov-tiles>
+				</gov-grid-item>
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			<span slot="prefix">6</span>
 		</gov-wizard-item>
 
 		<gov-wizard-item label="Co dál?" id="co-dál" prefix="7" collapsible="true" variant="success">
-			<gov-tiles columns="3" no-border>
+			<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			
-				<gov-tile>
-					<gov-card label="Systematický přístup" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Systematický přístup" class="gov-bg--success-100">
 						<p>
 							Ukázali jsme si postup publikace jednoho souboru.
 							Typicky se ale v instituci nachází celá řada datových sad, které by bylo možno publikovat.
@@ -303,10 +298,10 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 				
-				<gov-tile>
-					<gov-card label="Propojená data" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Propojená data" class="gov-bg--success-100">
 						<p>
 							CSV je nejlepší formát pro tabulková data.
 							Stále ale má své nedostatky - nejednoznačná identifikace entit v datech, nutnost hledání použitých číselníků a jiných souvisejících dat apod.
@@ -319,10 +314,10 @@ lang: cs
 							</gov-button>
 						</div>
 					</gov-card>
-				</gov-tile>
+				</gov-grid-item>
 	
-				<gov-tile>
-					<gov-card label="Lokální katalog otevřených dat" class="gov-bg--success-100">
+				<gov-grid-item size-sm="12/12" size-md="4/12">
+					<gov-card full-height label="Lokální katalog otevřených dat" class="gov-bg--success-100">
 						<p>
 							Pokud vaše instituce bude publikovat více než pár datových sad, je vhodné implementovat Lokální katalog otevřených dat.
 							Existují pro něj buď open-source implementace, nebo jej lze vyřešit generováním pár souborů.
@@ -335,9 +330,8 @@ lang: cs
 							</gov-button>
 						</div>
 					</div>
-				</gov-tile>
-			</gov-tiles>
+				</gov-grid-item>
+			</gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 			<span slot="prefix">7</span>
 		</gov-wizard-item>
 	</gov-wizard>
-</gov-container>

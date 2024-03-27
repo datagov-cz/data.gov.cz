@@ -17,171 +17,154 @@ lang: cs
     Zde nabízíme přehled nástrojů, kterými poskytovatele ve zlepšování kvality jejich dat podporujeme.
 </p>
 
-<hr/>
+<gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
-<h2 class="text-center">Nástroje pro zlepšení kvality otevřených dat</h2>
+<h2>Nástroje pro zlepšení kvality otevřených dat</h2>
 
-<div class="row">
-    <div class="col-md-4 d-flex mt-3">
-        <div class="card">
-            <h3 class="card-header h5">Statistiky NKOD a dashboardy</h3>
-            <div class="card-body">                
-                <p class="text-center">
-                    <i class="bi-speedometer2" style="font-size: 64pt"></i>
-                </p>
-                <p class="card-text">
-                    Denně měříme dostupnost zdrojů registrovaných v Národním katalogu otevřených dat spolu se statistikami kvality jejich metadatových záznamů.
-                    Mají právě vaše datové sady vyplněné všechny povinné položky?
-                    Jsou vámi registrované soubory a služby dostupné?
-                </p>
-                <a href="https://opendata.gov.cz/statistika:start" class="btn btn-secondary">Statistiky NKOD</a>
-                <a href="../poskytovatelé" class="btn btn-secondary">Dashboardy poskytovatelů</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 d-flex mt-3">
-        <div class="card">
-            <h3 class="card-header h5">Příklady špatné praxe</h3>
-            <div class="card-body">
-                <p class="text-center">
-                    <i class="bi-list-check" style="font-size: 64pt"></i>
-                </p>
-                <p class="card-text">
-                    Sbíráme příklady špatné praxe v otevírání dat a postupy jejich nápravy.
-                    Všem tak pomáháme se učit z chyb ostatních.
-                    Také ve formátu CSV oddělujete hodnoty středníkem?
-                    Dělíte distribuce datové sady dle časového pokrytí nebo dle tématu?
-                </p>
-                <a href="https://opendata.gov.cz/špatná-praxe:start" class="btn btn-secondary stretched-link">Špatná praxe</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 d-flex mt-3">
-        <div class="card">
-            <h3 class="card-header h5">Otevřené formální normy</h3>
-            <div class="card-body">
-                <p class="text-center">
-                    <i class="bi-layout-text-window-reverse" style="font-size: 64pt"></i>
-                </p>
-                <p class="card-text">
-                    Tvoříme otevřené formální normy - standardy, jejichž dodržování přispívá ke zvyšování interoperability otevřených dat.
-                    Otevřené formální normy se týkají jak obecných oblastí, jako propojená data či geodata, tak i konkrétních datových sad jako turistické cíle či aktuality.
-                </p>
-                <a href="https://ofn.gov.cz" class="btn btn-secondary stretched-link">Otevřené formální normy</a>
-            </div>
-        </div>
-    </div>
-</div>
+<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12">
+      <gov-card label="Statistiky NKOD a dashboardy" full-height>
+        <p>
+            Denně měříme dostupnost zdrojů registrovaných v Národním katalogu otevřených dat spolu se statistikami kvality jejich metadatových záznamů.
+            Mají právě vaše datové sady vyplněné všechny povinné položky?
+            Jsou vámi registrované soubory a služby dostupné?
+        </p>
+        <gov-spacer size="m" breakpoint="sm"></gov-spacer>
+        <gov-button variant="secondary" type="outlined" size="m" href="https://opendata.gov.cz/statistika:start">
+            Statistiky NKOD
+        </gov-button>
+        <gov-button variant="secondary" type="outlined" size="m" href="../poskytovatelé">
+            Dashboardy poskytovatelů
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12">
+        <gov-card label="Příklady špatné praxe" full-height>
+          <p>
+            Sbíráme příklady špatné praxe v otevírání dat a postupy jejich nápravy.
+            Všem tak pomáháme se učit z chyb ostatních.
+            Také ve formátu CSV oddělujete hodnoty středníkem?
+            Dělíte distribuce datové sady dle časového pokrytí nebo dle tématu?
+          </p>
+          <gov-spacer size="m" breakpoint="sm"></gov-spacer>
+          <gov-button variant="secondary" type="outlined" size="m" href="https://opendata.gov.cz/špatná-praxe:start">
+            Špatná praxe
+          </gov-button>
+        </gov-card>
+      </gov-grid-item>
+      <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12">
+        <gov-card label="Otevřené formální normy" full-height>
+          <p>
+            Tvoříme otevřené formální normy - standardy, jejichž dodržování přispívá ke zvyšování interoperability otevřených dat.
+            Otevřené formální normy se týkají jak obecných oblastí, jako propojená data či geodata, tak i konkrétních datových sad jako turistické cíle či aktuality.
+          </p>
+          <gov-spacer size="m" breakpoint="sm"></gov-spacer>
+          <gov-button variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz">
+            Otevřené formální normy
+          </gov-button>
+        </gov-card>
+      </gov-grid-item>
+  </gov-grid>
 
-<h2 class="text-center pt-5 pb-3">Náhled na dashboard NKOD</h2>
-<p class="lead text-center">&hellip;aneb jak si aktuálně vedou data v NKOD z pohledu správné registrace a dostupnosti</p>
+<gov-spacer size="m" breakpoint="sm"></gov-spacer>
+
+<h2>Náhled na dashboard NKOD</h2>
+<p>&hellip;aneb jak si aktuálně vedou data v NKOD z pohledu správné registrace a dostupnosti</p>
 
 <div class="row">
     <iframe src="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/8c163b20-9650-11ec-9bf1-358ae95b2dd7?embed=true&_g=(filters%3A!())&hide-filter-bar=true"
-    height="430" style="pointer-events: none;"></iframe>
+    height="440" width="100%" style="pointer-events: none;"></iframe>
 </div>
 
-<p class="text-center pt-3">
-    <a href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())" class="btn btn-secondary">Aktuální dashboard NKOD</a>
-</p>
+<gov-button variant="secondary" type="outlined" size="m" href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">
+    Aktuální dashboard NKOD
+</gov-button>
 
-<h2 class="text-center pt-5 pb-3">Ukazatele kvality v NKOD</h2>
-<p class="lead text-center">...aneb &quot;co mám dělat, aby to bylo zelený&quot;</p>
+<gov-spacer size="m" breakpoint="sm"></gov-spacer>
 
-<div class="row">
-    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
-        <div class="card">
-            <img src="/images/kvalita/nedostupný.webp" class="card-img-top" alt="Nedostupné URL">
-            <div class="card-body">                
-                <h3 class="cart-title">
-                    Nedostupné URL
-                </h3>
-                <p class="card-text">
-                    Toto indikuje problém s registrovaným URL, v tomto případě URL souboru ke stažení.
-                    Příčin může být několik, chybová zpráva je viditelná po kliknutí na ikonku.
-                    Typicky URL vede na neexistující zdroj, nebo je špatně nakonfigurován protokol HTTPS.
-                </p>
-                <a href="https://opendata.gov.cz/špatná-praxe:https" class="btn btn-secondary stretched-link">Konfigurace HTTPS</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
-        <div class="card">
-            <img src="/images/kvalita/head.webp" class="card-img-top" alt="Nepodporovaná HTTP HEAD">
-            <div class="card-body">                
-                <h3 class="cart-title">
-                    Nepodporovaná HTTP HEAD
-                </h3>
-                <p class="card-text">
-                    Toto může indikovat problém s nepodporovanou metodou HTTP <code>HEAD</code>, kterou NKOD používá pro zjišťování dostupnosti registrovaných zdrojů.
-                    Je třeba webový server nakonfigurovat tak, aby ji podporoval.
-                    Jedná se o standardní prostředek zjišťování základních informací o zdrojích na Webu, který nevyžaduje jejich stahování.
-                </p>
-                
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
-        <div class="card">
-            <img src="/images/kvalita/cors.webp" class="card-img-top" alt="Nedostupné URL">
-            <div class="card-body">                
-                <h3 class="cart-title">
-                    Nedostupné CORS
-                </h3>
-                <p class="card-text">
-                    Tato ikona indikuje problém s technikou CORS.
-                    Bez její podpory nebudou moci aplikace běžící v prohlížeči se souborem pracovat.
-                    Typicky je třeba korektně implementovat HTTP metodu <code>OPTIONS</code>.
-                </p>
-                <a href="https://opendata.gov.cz/špatná-praxe:chybějící-cors" class="btn btn-secondary stretched-link">Technika CORS</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
-        <div class="card">
-            <img src="/images/kvalita/media-typ.webp" class="card-img-top" alt="Nedostupné URL">
-            <div class="card-body">                
-                <h3 class="cart-title">
-                    Chybný Media typ
-                </h3>
-                <p class="card-text">
-                    Tato chyba indikuje, že Media typ registrovaný v NKOD pro soubor ke stažení neodpovídá tomu, které v hlavičce <code>Content-Type</code> indikuje webový server.
-                    Toto znesnadňuje aplikační použití takových souborů.
-                </p>
-                <a href="https://opendata.gov.cz/špatná-praxe:http-content-type" class="btn btn-secondary stretched-link">Chybný Media typ</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
-        <div class="card">
-            <img src="/images/kvalita/podmínky-užití.webp" class="card-img-top" alt="Nedostupné URL">
-            <div class="card-body">                
-                <h3 class="cart-title">
-                    Chybějící podmínky užití
-                </h3>
-                <p class="card-text">
-                    Bez podmínek užití nejsou registrovaná data otevřená.
-                    Nedáváte tak uživatelům právní jistotu v tom, co mohou a co nemohou s daty dělat.
-                    Poskytujeme návod, jak podmínky užití stanovit.
-                </p>
-                <a href="https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti" class="btn btn-secondary stretched-link">Stanovení podmínek užití</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-4 col-xxl-3 d-flex mt-3">
-        <div class="card">
-            <img src="/images/kvalita/vlastní-licence.webp" class="card-img-top" alt="Nedostupné URL">
-            <div class="card-body">                
-                <h3 class="cart-title">
-                    Vlastní podmínky užití
-                </h3>
-                <p class="card-text">
-                    Národní katalog otevřených dat poskytuje předpřipravené podmínky užití pro různé případy, které mohou v otevřených datech nastat.
-                    Používat vlastní podmínky užití by tedy nemělo být třeba.
-                    Pokud použity jsou, typicky to znamená, že buď data ve skutečnosti nejsou otevřená, nebo byl špatně vyplněn katalogizační záznam.
-                </p>
-                <a href="https://opendata.gov.cz/špatná-praxe:vlastní-licenční-podmínky" class="btn btn-secondary stretched-link">Vlastní podmínky užití</a>
-            </div>
-        </div>
-    </div>
-</div>
+<h2>Ukazatele kvality v NKOD</h2>
+<p>...aneb &quot;co mám dělat, aby to bylo zelený&quot;</p>
+
+<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+			
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+        <gov-card full-height label="Nedostupné URL">
+            <img slot="img" src="/images/kvalita/nedostupný.webp" width="100%" alt="Nedostupné URL">
+            <p>
+                Toto indikuje problém s registrovaným URL, v tomto případě URL souboru ke stažení.
+                Příčin může být několik, chybová zpráva je viditelná po kliknutí na ikonku.
+                Typicky URL vede na neexistující zdroj, nebo je špatně nakonfigurován protokol HTTPS.
+            </p>
+            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/špatná-praxe:https">
+                Konfigurace HTTPS
+            </gov-button>
+        </gov-card>
+    </gov-grid-item>
+
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+        <gov-card full-height label="Nepodporovaná HTTP HEAD">
+            <img slot="img" src="/images/kvalita/head.webp" width="100%" alt="Nepodporovaná HTTP HEAD">
+            <p>
+                Toto může indikovat problém s nepodporovanou metodou HTTP <code>HEAD</code>, kterou NKOD používá pro zjišťování dostupnosti registrovaných zdrojů.
+                Je třeba webový server nakonfigurovat tak, aby ji podporoval.
+                Jedná se o standardní prostředek zjišťování základních informací o zdrojích na Webu, který nevyžaduje jejich stahování.
+            </p>
+        </gov-card>
+    </gov-grid-item>
+
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+        <gov-card full-height label="Nedostupné CORS">
+            <img slot="img" src="/images/kvalita/cors.webp" width="100%" alt="Nedostupné CORS">
+            <p>
+                Tato ikona indikuje problém s technikou CORS.
+                Bez její podpory nebudou moci aplikace běžící v prohlížeči se souborem pracovat.
+                Typicky je třeba korektně implementovat HTTP metodu <code>OPTIONS</code>.
+            </p>
+            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/špatná-praxe:chybějící-cors">
+                Technika CORS
+            </gov-button>
+        </gov-card>
+    </gov-grid-item>
+
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+        <gov-card full-height label="Chybný Media typ">
+            <img slot="img" src="/images/kvalita/media-typ.webp" width="100%" alt="Chybný Media typ">
+            <p>
+                Tato chyba indikuje, že Media typ registrovaný v NKOD pro soubor ke stažení neodpovídá tomu, které v hlavičce <code>Content-Type</code> indikuje webový server.
+                Toto znesnadňuje aplikační použití takových souborů.
+            </p>
+            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/špatná-praxe:http-content-type">
+                Chybný Media typ
+            </gov-button>
+        </gov-card>
+    </gov-grid-item>
+
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+        <gov-card full-height label="Chybějící podmínky užití">
+            <img slot="img" src="/images/kvalita/podmínky-užití.webp" width="100%" alt="Chybějící podmínky užití">
+            <p>
+                Bez podmínek užití nejsou registrovaná data otevřená.
+                Nedáváte tak uživatelům právní jistotu v tom, co mohou a co nemohou s daty dělat.
+                Poskytujeme návod, jak podmínky užití stanovit.
+            </p>
+            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti">
+                Stanovení podmínek užití
+            </gov-button>
+        </gov-card>
+    </gov-grid-item>
+
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+        <gov-card full-height label="Vlastní podmínky užití">
+            <img slot="img" src="/images/kvalita/vlastní-licence.webp" width="100%" alt="Vlastní podmínky užití">
+            <p>
+                Národní katalog otevřených dat poskytuje předpřipravené podmínky užití pro různé případy, které mohou v otevřených datech nastat.
+                Používat vlastní podmínky užití by tedy nemělo být třeba.
+                Pokud použity jsou, typicky to znamená, že buď data ve skutečnosti nejsou otevřená, nebo byl špatně vyplněn katalogizační záznam.
+            </p>
+            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/špatná-praxe:vlastní-licenční-podmínky">
+                Vlastní podmínky užití
+            </gov-button>
+        </gov-card>
+    </gov-grid-item>
+
+</gov-grid>

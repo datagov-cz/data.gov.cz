@@ -9,7 +9,7 @@
     {% include footer.{{page.lang}}.html %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js"></script>
     <script>
-      anchors.add('h2').add('h3'){% for anchor in page.customanchors %}.add('{{ anchor }}'){% endfor %};
+      anchors.add('h2'){% for anchor in page.customanchors %}.add('{{ anchor }}'){% endfor %};
     </script>
   </body>
 </html>

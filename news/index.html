@@ -13,7 +13,8 @@ lang: en
       {% for post in posts limit:3 %}
       <gov-tile href="..{{ post.url }}">
         <h2 slot="title">{{ post.title }}</h2>
-        <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+        <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ post.date | date: "%-d. %-m. %Y" }}</gov-chip>
+        <gov-spacer size="m" breakpoint="sm"></gov-spacer>
         {% if post.image %}
         <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
         {% endif %}
@@ -28,7 +29,8 @@ lang: en
       {% for post in posts offset:3 %}
       <gov-tile href="..{{ post.url }}">
         <h3 slot="title">{{ post.title }}</h3>
-        <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+        <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ post.date | date: "%-d. %-m. %Y" }}</gov-chip>
+        <gov-spacer size="s" breakpoint="sm"></gov-spacer>
         {{ post.excerpt }}
       </gov-tile>
       {% endfor %}       

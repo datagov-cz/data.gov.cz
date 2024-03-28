@@ -20,7 +20,8 @@ homepage: true
         {% for post in posts limit:3 %}
         <gov-tile href="..{{ post.url }}">
           <h3 slot="title">{{ post.title }}</h3>
-          <p class="h6">{{ post.date | date: "%-d. %-m. %Y" }}</p>
+          <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ post.date | date: "%-d. %-m. %Y" }}</gov-chip>
+          <gov-spacer size="m" breakpoint="sm"></gov-spacer>
           {% if post.image %}
           <p><img width="100%" src="novinky/{{ post.image }}" alt="{{ post.title }}"/></p>
           {% endif %}
@@ -28,6 +29,7 @@ homepage: true
         </gov-tile>
         {% endfor %}
     </gov-tiles>
+    <gov-button variant="primary" inverse="true" type="solid" size="m" href="novinky" wcag-label="Přejít do archivu novinek">Archiv novinek</gov-button>
 </gov-container>
 
 <gov-container>
@@ -39,7 +41,8 @@ homepage: true
         {% for clanek in clanky limit:3 %}
         <gov-tile href="..{{ clanek.url }}">
             <h3 slot="title">{{ clanek.title }}</h3>
-            <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+            <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
+            <gov-spacer size="m" breakpoint="sm"></gov-spacer>
             {% if clanek.image %}
             <p><img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
@@ -47,6 +50,7 @@ homepage: true
         </gov-tile>
         {% endfor %}
      </gov-tiles>
+     <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na starší články">Starší články</gov-button>
 </gov-container>
 
 <gov-container>

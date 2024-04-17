@@ -117,7 +117,7 @@ C4V4 - Nové školení k problematice využívání a propagace otevřených dat
 : Dokončeno. Vzniklo [školení k problematice zpracování a vizualizace otevřených dat](/vzdělávání/e-learning/zpracování-a-vizualizace-otevřených-dat/). 
 
 C4V5 - Nové školení k problematice konceptuálního datového modelování
-: Dokončeno. Vzniklo [školení k problematice konceptuálního datového modelování](/vzdělávání/on-line/#modelování-významu-dat-ve-veřejné-správě).
+: Dokončeno. Vzniklo [školení k problematice konceptuálního datového modelování](/vzdělávání/e-learning/modelování-významu-dat-ve-veřejné-správě/).
 
 C4V6 - Realizace školení a workshopů
 : Dokončeno. Záznamy dostupné v sekci [vzdělávání](/vzdělávání).

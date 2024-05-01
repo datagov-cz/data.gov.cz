@@ -31,7 +31,7 @@ A tak zatímco média jsou jasně předpokládaným zpracovatelem otevřených d
 
 Zároveň ale uměla použít detailní data poskytovaná ČSÚ o volebních výsledcích a sestrojit velmi přesný predikční model konečných výsledků voleb na základě aktuálně sečtených okrsků. A ať již byla jejich motivace jakákoliv - snaha vyzkoušet si takové modelování, služba pro veřejnost nebo netradiční upoutávka na své služby (a nejspíše mix více věcí) - tato predikce se dostala ať už přímo, přes sociální sítě nebo skrz média ke statisícům lidí.
 
-<figure class="text-center">
+<figure>
     <img src="../přílohy/články/výsledky-voleb-v-čr-aneb-když-otevřená-data-fungují-na-1/kontejnery.webp" alt="Plnění kontejnerů nebo predikce voleb - obojí jsou modely na základě dat počítané v reálném čase." class="img-fluid mx-auto d-block">
     <figcaption>Plnění kontejnerů nebo predikce voleb - obojí jsou modely na základě dat počítané v reálném čase. Zdroj: <a href="https://www.youtube.com/watch?v=2H7DXV7B2TU">Video společnosti Blindspot.ai</a></figcaption>
 </figure>
@@ -45,7 +45,7 @@ Velmi rychle se objevily také detailní analýzy právě proběhlých voleb. Je
 
 ČSÚ nově publikuje i [hranice volebních okrsků jako otevřená data][link_csu_vo]. To také napomohlo tomu, že mapy výsledků či volební účasti se postupně objevily snad ve všech médiích. Stejně tak publikuje hranice volebních okrsků i ČÚZK.
 
-<figure class="text-center">
+<figure>
     <img src="../přílohy/články/výsledky-voleb-v-čr-aneb-když-otevřená-data-fungují-na-1/mapa.webp" alt="Kolik hlasů získal vítězný kandidát na svého soupeře v jednotlivých okresech. Právě počty hlasů “navíc” jsou pro výsledek voleb důležité." class="img-fluid mx-auto d-block">
     <figcaption>Kolik hlasů získal vítězný kandidát na svého soupeře v jednotlivých okresech. Právě počty hlasů “navíc” jsou pro výsledek voleb důležité. Zdroj: <a href="https://domaci.hn.cz/c1-67165760-prezidentsky-vykaz-zisku-a-ztrat-prinasime-mapy-vyher-a-porazek-pavla-a-babise-podle-rozdilu-hlasu">Hospodářské noviny</a></figcaption>
 </figure>

@@ -1,0 +1,73 @@
+/*
+ * This file contains style for data.gov.cz split into three section.
+ */
+
+/*
+ * Styles can be used only together within element with 'text-content' class.
+ * The objective is to address issue of design-system not being designed
+ * for a text oriented content.
+ *
+ * Selectors are using HTML elements instead of classes to prevent,
+ * content shift as the classes are added later by JavaScript (web components).
+ */
+
+ .text-content ul {
+  margin: 1rem 0;
+}
+
+/* Main container with the content. */
+.text-content>gov-container {
+  margin-bottom: 1rem;
+}
+
+.text-content gov-container {
+  padding-top: 1rem;
+}
+
+.text-content gov-tiles {
+  margin-bottom: 1rem;
+}
+
+.text-content gov-grid {
+  margin-bottom: 1rem;
+}
+
+/*
+ * Section for e-learning with 'text-content' and 'e-learning' classes.
+ * Since e-learning does not have custom template we allow the 'e-learning'
+ * class to be on nested element.
+ */
+
+.text-content .e-learning .gov-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: .25rem;
+}
+
+/*
+ * Section for blog posts, with 'text-content' and 'blog-post' classes.
+ */
+
+.text-content.blog-post figure {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.text-content.blog-post figure img {
+  max-width: 100%;
+}
+
+.text-content.text-content table {
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+
+.text-content.text-content table td {
+  border-top: 1px solid var(--gov-color-secondary-700);
+}
+
+.text-content.text-content table tr {
+  text-align: center;
+}

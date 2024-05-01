@@ -5,9 +5,7 @@ ref: Articles
 lang: cs
 ---
   <gov-container>
-    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
     <h1>Články</h1>
-    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
@@ -16,7 +14,6 @@ lang: cs
             <h2 slot="title">{{ clanek.title }}</h2>
             <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
             <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
-            <gov-spacer size="s" breakpoint="sm"></gov-spacer>
             {% if clanek.image %}
             <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
@@ -25,15 +22,12 @@ lang: cs
         </gov-tile>
         {% endfor %}
      </gov-tiles>
-     <gov-spacer size="s" breakpoint="sm"></gov-spacer>
      <h2>Starší články</h2>
-     <gov-spacer size="l" breakpoint="sm"></gov-spacer>
      <gov-tiles columns="3" no-border>
         {% for clanek in clanky offset:3 %}
         <gov-tile href="..{{ clanek.url }}">
           <h3 slot="title">{{ clanek.title }}</h3>
           <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
-          <gov-spacer size="s" breakpoint="sm"></gov-spacer>
           {% if clanek.image %}
           <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
           {% endif %}

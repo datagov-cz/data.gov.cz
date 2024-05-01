@@ -12,9 +12,7 @@ homepage: true
 </gov-statsbar>
 
 <gov-container>
-    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
     <h2>News from the open data world</h2>
-    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
     <gov-tiles columns="3" no-border>
         {% assign posts=site.posts | where:"lang", page.lang %}
         {% for post in posts limit:3 %}
@@ -36,9 +34,7 @@ homepage: true
 </gov-container>
 
 <gov-container>
-    <gov-spacer size="s" breakpoint="sm"></gov-spacer>
     <h2>Important information for members of the open data ecosystem</h2>
-    <gov-spacer size="l" breakpoint="sm"></gov-spacer>
     <gov-tiles columns="3" no-border>
 		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
 			<h3 slot="title">Interested in opening data</h3>

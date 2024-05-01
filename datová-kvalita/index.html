@@ -17,8 +17,6 @@ lang: cs
     Zde nabízíme přehled nástrojů, kterými poskytovatele ve zlepšování kvality jejich dat podporujeme.
 </p>
 
-<gov-spacer size="m" breakpoint="sm"></gov-spacer>
-
 <h2>Nástroje pro zlepšení kvality otevřených dat</h2>
 
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
@@ -29,7 +27,6 @@ lang: cs
             Mají právě vaše datové sady vyplněné všechny povinné položky?
             Jsou vámi registrované soubory a služby dostupné?
         </p>
-        <gov-spacer size="m" breakpoint="sm"></gov-spacer>
         <gov-button variant="secondary" type="outlined" size="m" href="https://opendata.gov.cz/statistika:start">
             Statistiky NKOD
         </gov-button>
@@ -46,7 +43,6 @@ lang: cs
             Také ve formátu CSV oddělujete hodnoty středníkem?
             Dělíte distribuce datové sady dle časového pokrytí nebo dle tématu?
           </p>
-          <gov-spacer size="m" breakpoint="sm"></gov-spacer>
           <gov-button variant="secondary" type="outlined" size="m" href="https://opendata.gov.cz/špatná-praxe:start">
             Špatná praxe
           </gov-button>
@@ -58,7 +54,6 @@ lang: cs
             Tvoříme otevřené formální normy - standardy, jejichž dodržování přispívá ke zvyšování interoperability otevřených dat.
             Otevřené formální normy se týkají jak obecných oblastí, jako propojená data či geodata, tak i konkrétních datových sad jako turistické cíle či aktuality.
           </p>
-          <gov-spacer size="m" breakpoint="sm"></gov-spacer>
           <gov-button variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz">
             Otevřené formální normy
           </gov-button>
@@ -66,27 +61,25 @@ lang: cs
       </gov-grid-item>
   </gov-grid>
 
-<gov-spacer size="m" breakpoint="sm"></gov-spacer>
-
 <h2>Náhled na dashboard NKOD</h2>
 <p>&hellip;aneb jak si aktuálně vedou data v NKOD z pohledu správné registrace a dostupnosti</p>
 
-<div class="row">
+<div>
     <iframe src="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/8c163b20-9650-11ec-9bf1-358ae95b2dd7?embed=true&_g=(filters%3A!())&hide-filter-bar=true"
     height="440" width="100%" style="pointer-events: none;"></iframe>
 </div>
 
-<gov-button variant="secondary" type="outlined" size="m" href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">
-    Aktuální dashboard NKOD
-</gov-button>
-
-<gov-spacer size="m" breakpoint="sm"></gov-spacer>
+<div>
+    <gov-button variant="secondary" type="outlined" size="m" href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">
+        Aktuální dashboard NKOD
+    </gov-button>
+</div>
 
 <h2>Ukazatele kvality v NKOD</h2>
 <p>...aneb &quot;co mám dělat, aby to bylo zelený&quot;</p>
 
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-			
+    
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
         <gov-card full-height label="Nedostupné URL">
             <img slot="img" src="/images/kvalita/nedostupný.webp" width="100%" alt="Nedostupné URL">

@@ -1,10 +1,10 @@
 (function initialize() {
 
-    const url = CATALOG_URL + "/api/catalog/v2/statistics";
+    const URL = "/api/v2/statistics";
 
     function fetchAndDisplayStatistics() {
 
-        fetch(url).then((response) => response.json()).then((body) => {
+        fetch(URL).then((response) => response.json()).then((body) => {
 
             document.getElementById("datasetCountLabel").textContent =
                 numberToStringAddSpaces(body.data.numberOfDatasets);

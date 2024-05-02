@@ -60,4 +60,4 @@ Podrobnosti o projektu si budete moci brzy přečíst na samostatné podstránce
 [garanta správy dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Garant správy dat"
 [datového architekta]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Datový architekt" 
 [rozhovory]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná%20zpráva%20z%20provedených%20rozhovorů.pdf "Souhrnná zpráva z rozhovorů"
-[Strategie pro správu dat]: ../přílohy/články/STRATEGIE_pro_spravu_dat_ve_VS.pdf "Strategie pro správu dat"
+[Strategie pro správu dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/STRATEGIE_pro_spravu_dat_ve_VS.pdf "Strategie pro správu dat"

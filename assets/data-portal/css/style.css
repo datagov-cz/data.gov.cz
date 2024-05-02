@@ -32,18 +32,18 @@
   margin-bottom: 1rem;
 }
 
-/*
- * Section for e-learning with 'text-content' and 'e-learning' classes.
- * Since e-learning does not have custom template we allow the 'e-learning'
- * class to be on nested element.
- */
-
-.text-content .e-learning .gov-card__footer {
+.text-content .gov-card__footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: .25rem;
 }
+
+/*
+ * Section for e-learning with 'text-content' and 'e-learning' classes.
+ * Since e-learning does not have custom template we allow the 'e-learning'
+ * class to be on nested element.
+ */
 
 /*
  * Section for blog posts, with 'text-content' and 'blog-post' classes.

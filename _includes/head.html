@@ -2,7 +2,7 @@
   <script>
     window.GOV_DS_CONFIG = {
       "canValidateWcagOnRender": true,
-      "iconsPath": "https://oha02.dia.gov.cz/design-system/assets/icons"
+      "iconsPath": "{{site.design_system_assets}}/assets/icons"
     };
   </script>
   <meta charset="utf-8">
@@ -32,12 +32,13 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
   {% if page.image %}<meta name="og:image" content="{{ page.image | remove: '..' | prepend: site.url}}"/>{% endif %}
 
-  <link rel="stylesheet" href="https://oha02.dia.gov.cz/design-system/assets/styles/critical.css">
-  <link rel="stylesheet" href="https://oha02.dia.gov.cz/design-system/build/core.css">
-  <link rel="stylesheet" href="https://oha02.dia.gov.cz/design-system/assets/fonts/roboto.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <script type="module" src="https://oha02.dia.gov.cz/design-system/build/core.esm.js"></script>
-  <script nomodule src="https://oha02.dia.gov.cz/design-system/build/core.js"></script>
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/critical.css">
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/fonts/roboto.css">
+  <link rel="stylesheet" href="{{site.design_system_assets}}/build/core.css">
+  <link rel="stylesheet" href="/assets/data-portal/css/style.css">
+
+  <script type="module" src="{{site.design_system_assets}}/build/core.esm.js"></script>
+  <script nomodule src="{{site.design_system_assets}}/build/core.js"></script>
  
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   
@@ -50,5 +51,5 @@
 {% for page in pages %}
   <link rel="alternate" hreflang="{{ page.lang }}" href="{{site.url}}{{ page.url }}" />
 {% endfor %}
-  <script src="/js/matomo.js"></script>
+  <script src="/assets/data-portal/js/matomo.js"></script>
 </head>

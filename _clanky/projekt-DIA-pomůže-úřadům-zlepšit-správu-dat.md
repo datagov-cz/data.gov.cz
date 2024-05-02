@@ -29,7 +29,7 @@ První z nich, který proběhl na začátku března, se zaměřil na představen
 Současně chce projekt úřady mezi sebou propojit a vytvořit komunitu, v níž budou moci sdílet své zkušenosti. 
 
 ## Strategie správy dat podpoří přípravu ČR na budoucnost
-Jedním z prvních výstupů projektu je Strategie pro správu dat, kterou DIA předloží v nejbližší době k projednání vládě.
+Jedním z prvních výstupů projektu je [Strategie pro správu dat], kterou vláda schválila na konci dubna 2024.
 Je navržena tak, aby namísto vytváření nových a pro úřady kapacitně náročných povinností smysluplně propojila ty, které existují už dnes.
 Zároveň se strategie zaměřuje na vytvoření nezbytných předpokladů uvnitř samotných organizací, aby mohly povinnosti skutečně naplnit.
 DIA počítá s tím, že bude navržené aktivity podporovat a koordinovat tak, aby měly spolupracující organizace po celou dobu své cesty za kvalitní správou dat svého partnera. 
@@ -60,4 +60,4 @@ Podrobnosti o projektu si budete moci brzy přečíst na samostatné podstránce
 [garanta správy dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Garant správy dat"
 [datového architekta]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Datový architekt" 
 [rozhovory]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná%20zpráva%20z%20provedených%20rozhovorů.pdf "Souhrnná zpráva z rozhovorů"
-
+[Strategie pro správu dat]: ../přílohy/články/STRATEGIE_pro_spravu_dat_ve_VS.pdf "Strategie pro správu dat"

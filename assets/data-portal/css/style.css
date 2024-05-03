@@ -71,3 +71,11 @@
 .text-content.text-content table tr {
   text-align: center;
 }
+
+/**
+ * Section with general utilities.
+ */
+.flex-justify-end {
+  display: flex;
+  justify-content: end;
+}

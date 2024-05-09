@@ -5,7 +5,7 @@ title: "Zákon o správě dat a o řízeném přístupu k datům: krok k efektiv
 ref: zákon-o-správě-dat-a-řízeném-přístupu-k-datům
 lang: cs 
 image: ../přílohy/články/zákon-o-správě-dat-a-řízeném-přístupu-k-datům/Data.webp
-author: lenka_kováčová
+author: lenka_kubáňová
 date: 2024-05-09 12:00:00 +02:00 
 --- 
 Digitální a informační agentrua poslala 22. dubna 2024 do mezirezortního připomínkového řízení [návrh zákona o správě dat a o řízeném přístupu k datům].

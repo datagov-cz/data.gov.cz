@@ -20,7 +20,7 @@ Projekt tím výrazně přispěje k rozvoji digitalizace veřejných služeb a
 Uvedené cíle projektu vycházejí z Informační koncepce České republiky (hlavní cíl č. 3 - Rozvoj celkového prostředí podporujícího digitální technologie a principem P18 – Datová suverenita a nezávislost). 
 Jeho výstupy navazují na některé z výsledků projektu Rozvoj datových politik v oblasti zlepšování kvality a interoperability dat veřejné správy (KODI), který skončil v květnu roku 2023.  
 
- ## Výstupy projektu
+## Výstupy projektu
 
 - **[Rozhovory o správě dat]** – ke zhodnocení aktuálního stavu správy a využívání dat veřejné správy proběhly v roce 2023 strukturované rozhovory se zástupci 34 vybraných resortů a ústředních orgánů.
 Ze získaných informací vznikla Souhrnná zpráva z provedených rozhovorů o správě dat.

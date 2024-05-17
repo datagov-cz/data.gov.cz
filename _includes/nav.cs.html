@@ -11,7 +11,7 @@
 		</gov-branding>
 		<gov-nav wcag-label="Hlavní navigace">
 		{% if page.ref == 'Education' %}
-			<gov-nav-item>
+			<gov-nav-item class="active">
 			Vzdělávání
 			</gov-nav-item>  
 			{% else %}
@@ -20,7 +20,7 @@
 			</gov-nav-item>  
 			{% endif %}
 			{% if page.ref == 'Articles' %}
-			<gov-nav-item>
+			<gov-nav-item class="active">
 				Články
 			</gov-nav-item>
 			{% else %}
@@ -29,7 +29,7 @@
 			</gov-nav-item>
 			{% endif %}
 			{% if page.ref == 'DataQuality' %}
-			<gov-nav-item>
+			<gov-nav-item class="active">
 				Datová kvalita
 			</gov-nav-item>
 			{% else %}

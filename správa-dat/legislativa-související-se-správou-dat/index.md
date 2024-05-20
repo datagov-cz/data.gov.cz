@@ -31,7 +31,7 @@ Výsledkem bude postupně rozšiřován systematický přehled o struktuře a v�
 Zbývající část zákona řeší zajištění tzv. řízeného přístupu k datům veřejné správy (v souladu s nařízením o evropské správě dat – Data Governance Act) oprávněnému žadateli při splnění zákonem daných podmínek (prokázané legitimní důvody využití dat apod.).
 Podrobněji se tomuto tématu budeme věnovat na Portálu o datech.  
 
- [Strategie pro správu dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie pro správu dat ve VS.pdf "Strategie pro správu dat"
+ [Strategie pro správu dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%20dat%20ve%20VS.pdf "Strategie pro správu dat"
  [Informační koncepci ČR]: https://archi.gov.cz/ikcr "Informační koncepce ČR"
  [zákon o správě dat a o řízeném přístupu k datům]: https://odok.cz/portal/veklep/material/KORND4KLAAG6/ "Zákon o správě dat a o řízeném přístupu k datům"
  [Důvodové zprávy]: https://odok.cz/portal/services/download/attachment/KORND4KMTQ3H/ "Důvodová práva"

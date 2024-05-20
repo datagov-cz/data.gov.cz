@@ -46,7 +46,7 @@ Správa dat ve veřejném sektoru proto musí být schopna efektivně využívat
 Praktická podoba zajištění správy dat v organizacích veřejné správy představuje další specifikum, a to v podobě zapojení externích dodavatelů a interních útvarů do vlastní správy dat.
 Jak dokládá přiložený graf, jedná se o různé způsoby rozdělení kompetencí ve všech oblastech správy dat (technické, provozní, aplikační). 
 
- {% include image.html url="../přílohy/správa-dat/Způsoby zajištění správy systémů a dat.webp" description="Způsoby zajištění správy systémů a dat" %}
+ {% include image.html url="../../přílohy/správa-dat/Způsoby%20zajištění%20správy%20systémů%20a%20dat.webp" description="Způsoby zajištění správy systémů a dat" %}
 
 Specifika veřejné správy a jejích organizací je nutné pro úspěšnou implementaci správy dat plně respektovat, protože váha jednotlivých specifik může výrazně ovlivnit konečný výsledek. 
 Výchozí metodický rámec pro správu dat (DAMA/DMBoK „Data Management Body of Knowledge“), který se zaměřuje primárně na komerční sektor platí i pro veřejnou správu, jeho implementace ale vyžaduje úpravu na míru právě na základě zmíněných specifik veřejné správy. 

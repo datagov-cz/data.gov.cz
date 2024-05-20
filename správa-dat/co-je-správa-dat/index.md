@@ -22,8 +22,8 @@ Výsledkem společné přípravy byla specifikace pěti doporučených oblastí 
 - Oblast **Zajištění a využití dat** je zaměřena na provozování datových řešení, tj. reálné získávání/vytváření, ukládání, zpracování a zpřístupňování konkrétních dat tak, aby při tom byla zajištěna jejich dostupnost, bezpečnost, kvalita a interoperabilita; dále se zde řeší následná tvorba datových/analytických produktů (reportů, analýz, odpovědí na dotazy, datových sad apod.) pro podporu informovaného rozhodování ve veřejné správě a řízeného přístupu veřejnosti k datům veřejné správy.
 
 V rámci každé z těchto oblastí řešíme několik konkrétnějších témat, která ukazuje následující schéma: 
-{% include image.html url="../přílohy/správa-dat/Schéma správy dat.webp" description="Schéma správy dat" %}
+{% include image.html url="../../přílohy/správa-dat/Schéma%20správy%20dat.webp" description="Schéma správy dat" %}
 
 Další informace o oblastech a tématech správy dat uvádíme v [přehledovém dokumentu]. 
 
-[přehledovém dokumentu]: ../přílohy/správa-dat/Oblasti a témata správy dat.pdf "Oblasti a témata správy dat"
+[přehledovém dokumentu]: ../../přílohy/správa-dat/Oblasti%20a%20témata%20správy%20dat.pdf "Oblasti a témata správy dat"

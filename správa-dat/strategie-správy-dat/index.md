@@ -27,7 +27,7 @@ Výsledky rozhovorů v podstatě potvrdily, že stav správy datového fondu ve�
 Správa dat je tak jednou ze základních překážek, které komplikují digitalizaci veřejných služeb.
 Analýza, která z rozhovorů vychází, proto jasně říká, že je potřeba podniknout kroky k dosažení náležité úrovně správy dat neprodleně, jinak nebude možné držet krok s rostoucími nároky a povinnostmi, které jsou na veřejnou správu kladeny. 
 
-{% include image.html url="../přílohy/správa-dat/Strategie a implementační plán pro období 2024_2025.webp" description="Strategie a implementační plán pro období 2024_2025" %}
+{% include image.html url="../../přílohy/správa-dat/Strategie%20a%20implementační%20plán%20pro%20období%202024_2025.webp" description="Strategie a implementační plán pro období 2024_2025" %}
 
 Kroky navrženými ve strategii chceme vybudovat v úřadech i na centrální úrovni veřejné správy prostředí, ve kterém jsou data kvalitně spravována a efektivně využívána, jak při poskytování služeb, tak i pro podporu informovanějšího rozhodování. Klíčové úkoly pro první implementační období (2024–2025) jsou zde shrnuty a rozděleny do čtyř oblastí: 
 
@@ -73,6 +73,6 @@ Aby se mohla veřejná správa ve větším měřítku rozhodovat na základě d
 
 
 
-[Strategie pro správu dat ve veřejné správě (2024–2030)]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie pro správu dat ve VS.pdf "Strategie pro správu dat"
-[minimálním standardu kvalitní správy dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí Minimálného standardu.pdf "Minimální standard kvalitní správy dat"
-[rozhovorů s 34 organizacemi veřejné správy]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná zpráva z provedených rozhovorů.pdf "Souhrnná zpráva z provedených rozhovorů"
+[Strategie pro správu dat ve veřejné správě (2024–2030)]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%20dat%20ve%20VS.pdf "Strategie pro správu dat"
+[minimálním standardu kvalitní správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard kvalitní správy dat"
+[rozhovorů s 34 organizacemi veřejné správy]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná%20zpráva%20z%20provedených%20rozhovorů.pdf "Souhrnná zpráva z provedených rozhovorů"

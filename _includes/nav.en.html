@@ -19,12 +19,26 @@
 				News
 			</gov-nav-item>
 			{% endif %}
-			<gov-nav-item href="/datasets">
-				Datasets
-			</gov-nav-item>
-			<gov-nav-item href="/applications">
-				Applications
-			</gov-nav-item>
+			<gov-nav-dropdown>
+				<span slot="label">National Open Data Catalog</span>
+				<ul slot="dropdown">
+					<li>
+						<a href="/datasets">Datasets</a>
+					</li>
+					<li>
+						<a href="/applications">Applications</a>
+					</li>
+					<li>
+						<a href="/local-catalogs">Lokální katalogy</a>
+					</li>
+					<li>
+						<a href="/publishers">Publishers</a>
+					</li>
+					<li>
+						<a href="/suggestions-for-datasets-to-be-opened">Návrhy na datové sady k otevření</a>
+					</li>
+				</ul>
+			</gov-nav-dropdown>
 			<gov-nav-dropdown>
 				<span slot="label">More</span>
 				<ul slot="dropdown">
@@ -36,15 +50,6 @@
 					</li>
 					<li>
 						<a href="https://opendata.gov.cz/">Data publishers (in Czech)</a>
-					</li>
-					<li>
-						<a href="/local-catalogs">Lokální katalogy</a>
-					</li>
-					<li>
-						<a href="/publishers">Publishers</a>
-					</li>
-					<li>
-						<a href="/suggestions-for-datasets-to-be-opened">Návrhy na datové sady k otevření</a>
 					</li>
 				</ul>
 			</gov-nav-dropdown>

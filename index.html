@@ -9,7 +9,7 @@ homepage: true
 	<div class="row">
 	  <div class="col-md-6">
 		<h1 class="display-3">Portál o datech{% if site.develop %} - TESTOVACÍ VERZE {% endif %}</h1>
-		<p>Vše, co potřebujete vědět o otevřených datech v&nbsp;České&nbsp;republice</p>
+		<p>Vše, co potřebujete vědět o datech ve veřejné správě</p>
 		<p><a href="datové-sady" class="btn btn-primary">Národní katalog otevřených dat</a></p>
 	  </div>
 	  <div class="col-md-6 text-end d-none d-md-block">
@@ -47,7 +47,7 @@ homepage: true
 </div>
 
 <div class="container mb-4">
-	<h2 class="mb-2">Novinky ze světa otevřených dat</h2>
+	<h2 class="mb-2">Novinky ze světa dat veřejné správy</h2>
 	<hr/>
 	<div class="row">
 		{% assign posts=site.posts | where:"lang", page.lang %}
@@ -71,7 +71,7 @@ homepage: true
 </div>
 
 <div class="container">
-	<h2 class="mb-2">Články ze světa otevřených dat</h2>
+	<h2 class="mb-2">Články ze světa dat veřejné správy</h2>
 	<hr/>
 	<div class="row">
 		{% assign clanky=site.clanky | where:"lang", page.lang | reverse %}

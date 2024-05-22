@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sledujte přímý přenos z konference Jak na data ve veřejné správě!
-detail: true
+detail: false
 ref: PrimyPrenosZKonferenceData2024
 lang: cs
 author: lenka_kováčová

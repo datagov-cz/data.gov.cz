@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-light">
 	<div class="container">
-	  <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img width="174" height="30" class="d-inline-block align-top" src="{{ "/images/logo.png" | relative_url }}" alt="Otevřená data"></img></a>
+	  <a href="/" class="navbar-brand d-flex mr-auto"><img width="174" height="30" class="d-inline-block align-top" src="{{ "/images/logo.png" | relative_url }}" alt="Otevřená data"></img></a>
 	  <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Zobrazení navigace">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
@@ -8,10 +8,16 @@
 	  <div class="collapse navbar-collapse" id="collapsingNavbar">
 		<ul class="navbar-nav ml-auto w-100 justify-content-end">
 			<li class="nav-item">
+				<a class="nav-link" href="{{ "/správa-dat" | relative_url}}">Správa dat</span>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="{{ "/vzdělávání" | relative_url}}">Vzdělávání</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="{{ "/články" | relative_url}}">Články</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ "/datová-kvalita" | relative_url}}">Datová kvalita</a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" id="dropdown02" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Národní katalog otevřených dat</a>

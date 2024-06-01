@@ -1,6 +1,17 @@
 /*
- * This file contains style for data.gov.cz split into three section.
+ * This file contains style for data.gov.cz split into several section.
+ * The first section contains general styles shared by all sites.
  */
+
+/* Add space around headings. */ 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: .75rem;
+}
+
+.gov-footer {
+  margin-top: 1.75rem;
+}
 
 /*
  * Styles can be used only together within element with 'text-content' class.

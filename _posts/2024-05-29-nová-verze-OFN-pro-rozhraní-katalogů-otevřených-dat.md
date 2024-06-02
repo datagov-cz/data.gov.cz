@@ -7,5 +7,5 @@ lang: cs
 author: lenka_kováčová
 ---
 
-Digitální a informační agentura vydala novou verzi otevřené formální normy <a href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/2024-05-28/">DCAT-AP-CZ: Rozhraní katalogů otevřených dat</a>.
+Digitální a informační agentura vydala novou verzi otevřené formální normy [DCAT-AP-CZ: Rozhraní katalogů otevřených dat](https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/2024-05-28/).
 Ta obsahuje úpravu verze nadřazeného standardu z DCAT-AP 2.0.1 na DCAT-AP 3.0.0 a přidání podpory pro katalogizaci datových sad s vysokou hodnotou, tzv. High Value Datasets (HVDs).

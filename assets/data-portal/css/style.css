@@ -13,6 +13,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.75rem;
 }
 
+/* Branding */
+.gov-header gov-branding a {
+  color: var(--gov-nav-color, var(--gov-color-neutral-white));
+  text-decoration: none;
+}
+
+.gov-header gov-branding .heading {
+  font-weight: var(--gov-text-3xl-font-weight);
+  font-size: var(--gov-text-3xl-font-size);
+  line-height: var(--gov-text-3xl-line-height);
+  letter-spacing: var(--gov-text-3xl-letter-spacing);
+}
+
+.gov-header gov-branding .language {
+  display: flex;
+  align-items: center;
+}
+
 /*
  * Styles can be used only together within element with 'text-content' class.
  * The objective is to address issue of design-system not being designed
@@ -22,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
  * content shift as the classes are added later by JavaScript (web components).
  */
 
- .text-content ul {
+.text-content ul {
   margin: 1rem 0;
 }
 
@@ -86,7 +104,9 @@ h1, h2, h3, h4, h5, h6 {
 /**
  * Section with general utilities.
  */
+
 .flex-justify-end {
   display: flex;
   justify-content: end;
 }
+

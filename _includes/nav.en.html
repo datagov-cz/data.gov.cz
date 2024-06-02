@@ -1,13 +1,12 @@
 <header class="gov-header">
-    <gov-container>
+	<gov-container>
 		<gov-branding>
-			<h1><a href="/english">Czech Data Portal</a></h1>
-			<div>
-				<gov-form-select wcag-label="jazyk" size="m" value="cs">
-					<option value="cs">Čeština</option>
-					<option value="en">English</option>
-				</gov-form-select>
-			</div>
+      <div class="heading">
+        <a href="/">Czech Data Portal</a>
+      </div>
+			<div class="language">
+        <a href="">Čeština</a>
+      </div>
 		</gov-branding>
 		<gov-nav wcag-label="Main navigation">
 			{% if page.ref == 'Posts' %}
@@ -29,13 +28,13 @@
 						<a href="/applications">Applications</a>
 					</li>
 					<li>
-						<a href="/local-catalogs">Lokální katalogy</a>
-					</li>
-					<li>
 						<a href="/publishers">Publishers</a>
 					</li>
 					<li>
-						<a href="/suggestions-for-datasets-to-be-opened">Návrhy na datové sady k otevření</a>
+						<a href="/local-catalogs">Local catalogs</a>
+					</li>
+					<li>
+						<a href="/suggestions-for-datasets-to-be-opened">Suggestions for data to be opened</a>
 					</li>
 				</ul>
 			</gov-nav-dropdown>

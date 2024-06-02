@@ -12,7 +12,7 @@ homepage: true
 </gov-statsbar>
 
 <gov-container>
-    <h2>Novinky ze světa otevřených dat</h2>
+    <h2>Novinky ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign posts=site.posts | where:"lang", page.lang %}
         {% for post in posts limit:3 %}
@@ -32,7 +32,7 @@ homepage: true
 </gov-container>
 
 <gov-container>
-    <h2>Články ze světa otevřených dat</h2>
+    <h2>Články ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}

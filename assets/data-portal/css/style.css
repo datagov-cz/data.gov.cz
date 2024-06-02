@@ -78,12 +78,12 @@ h1, h2, h3, h4, h5, h6 {
  * Section for blog posts, with 'text-content' and 'blog-post' classes.
  */
 
-.text-content.blog-post figure {
+.text-content figure {
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.text-content.blog-post figure img {
+.text-content figure img {
   max-width: 100%;
 }
 

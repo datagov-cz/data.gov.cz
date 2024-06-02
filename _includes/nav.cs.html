@@ -9,33 +9,42 @@
       </div>
 		</gov-branding>
 		<gov-nav wcag-label="Hlavní navigace">
+		{% if page.ref == 'DataManagement' %}
+			<gov-nav-item class="active">
+				Správa dat
+			</gov-nav-item> 
+		{% else %}
+			<gov-nav-item href="{{ "/správa-dat" | relative_url}}">
+				Správa dat
+			</gov-nav-item>
+		{% endif %}
 		{% if page.ref == 'Education' %}
 			<gov-nav-item class="active">
 			Vzdělávání
-			</gov-nav-item>  
-			{% else %}
+			</gov-nav-item>
+		{% else %}
 			<gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
 				Vzdělávání
-			</gov-nav-item>  
-			{% endif %}
-			{% if page.ref == 'Articles' %}
+			</gov-nav-item>
+		{% endif %}
+		{% if page.ref == 'Articles' %}
 			<gov-nav-item class="active">
 				Články
 			</gov-nav-item>
-			{% else %}
+		{% else %}
 			<gov-nav-item href="{{ "/články" | relative_url}}">
 				Články
 			</gov-nav-item>
-			{% endif %}
-			{% if page.ref == 'DataQuality' %}
+		{% endif %}
+		{% if page.ref == 'DataQuality' %}
 			<gov-nav-item class="active">
 				Datová kvalita
 			</gov-nav-item>
-			{% else %}
+		{% else %}
 			<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
 				Datová kvalita
 			</gov-nav-item>
-			{% endif %}
+		{% endif %}
 			<gov-nav-dropdown>
 				<span slot="label">Národní katalog otevřených dat</span>
 				<ul slot="dropdown">

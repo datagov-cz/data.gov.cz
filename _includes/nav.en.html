@@ -1,57 +1,61 @@
 <header class="gov-header">
-	<gov-container>
-		<gov-branding>
+    <gov-container>
+     <gov-branding>
       <div class="heading">
-        <a href="/">Czech Data Portal</a>
+        <a href="/english/">Czech Data Portal</a>
       </div>
-			<div class="language">
-        <a href="">Čeština</a>
-      </div>
-		</gov-branding>
-		<gov-nav wcag-label="Main navigation">
-			{% if page.ref == 'Posts' %}
-			<gov-nav-item class="active">
-				News
-			</gov-nav-item>
-			{% else %}
-			<gov-nav-item href="{{ "/news" | relative_url}}">
-				News
-			</gov-nav-item>
-			{% endif %}
-			<gov-nav-dropdown>
-				<span slot="label">National Open Data Catalog</span>
-				<ul slot="dropdown">
-					<li>
-						<a href="/datasets">Datasets</a>
-					</li>
-					<li>
-						<a href="/applications">Applications</a>
-					</li>
-					<li>
-						<a href="/publishers">Publishers</a>
-					</li>
-					<li>
-						<a href="/local-catalogs">Local catalogs</a>
-					</li>
-					<li>
-						<a href="/suggestions-for-datasets-to-be-opened">Suggestions for data to be opened</a>
-					</li>
-				</ul>
-			</gov-nav-dropdown>
-			<gov-nav-dropdown>
-				<span slot="label">More</span>
-				<ul slot="dropdown">
-					<li>
-						<a href="/informace/základy-otevřených-dat-pro-zájemce/">Interested in opening data (in Czech)</a>
-					</li>
-					<li>
-						<a href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Users and programmers (in Czech)</a>
-					</li>
-					<li>
-						<a href="https://opendata.gov.cz/">Data publishers (in Czech)</a>
-					</li>
-				</ul>
-			</gov-nav-dropdown>
-		</gov-nav>
-	</gov-container>
+      {% for p in pages %}
+      {% if p.lang != page.lang %}
+      <div class="language">
+          <a href="{{ p.url }}">Čeština</a>
+      </div>      
+      {% endif %}
+      {% endfor %}
+     </gov-branding>
+        <gov-nav wcag-label="Main navigation">
+            {% if page.ref == 'Posts' %}
+            <gov-nav-item class="active">
+                News
+            </gov-nav-item>
+            {% else %}
+            <gov-nav-item href="{{ "/news" | relative_url}}">
+                News
+            </gov-nav-item>
+            {% endif %}
+            <gov-nav-dropdown>
+                <span slot="label">National Open Data Catalog</span>
+                <ul slot="dropdown">
+                    <li>
+                        <a href="/datasets">Datasets</a>
+                    </li>
+                    <li>
+                        <a href="/applications">Applications</a>
+                    </li>
+                    <li>
+                        <a href="/publishers">Publishers</a>
+                    </li>
+                    <li>
+                        <a href="/local-catalogs">Local catalogs</a>
+                    </li>
+                    <li>
+                        <a href="/suggestions-for-datasets-to-be-opened">Suggestions for data to be opened</a>
+                    </li>
+                </ul>
+            </gov-nav-dropdown>
+            <gov-nav-dropdown>
+                <span slot="label">More</span>
+                <ul slot="dropdown">
+                    <li>
+                        <a href="/informace/základy-otevřených-dat-pro-zájemce/">Interested in opening data (in Czech)</a>
+                    </li>
+                    <li>
+                        <a href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Users and programmers (in Czech)</a>
+                    </li>
+                    <li>
+                        <a href="https://opendata.gov.cz/">Data publishers (in Czech)</a>
+                    </li>
+                </ul>
+            </gov-nav-dropdown>
+        </gov-nav>
+    </gov-container>
 </header>

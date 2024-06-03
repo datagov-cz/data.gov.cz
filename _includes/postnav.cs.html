@@ -1,13 +1,18 @@
 <header class="gov-header">
     <gov-container>
 		<gov-branding>
-			<h1><a href="/">Portál o datech</a></h1>
-			<div>
-				<gov-form-select wcag-label="jazyk" size="m" value="cs">
-					<option value="cs">Čeština</option>
-					<option value="en">English</option>
-				</gov-form-select>
-			</div>
+			<div class="heading">
+				<a href="/">Portál o datech</a>
+			  </div>
+			  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+			  {% for p in pages %}
+				{% if p.lang != page.lang %}
+			  <div class="language">
+				<a href="{{ p.url }}">English</a>
+			  </div>      
+				{% endif %}
+			  {% endfor %}
+			  </gov-branding>
 		</gov-branding>
 		<gov-nav wcag-label="Hlavní navigace">
 			<gov-nav-item href="{{ "/správa-dat" | relative_url}}">

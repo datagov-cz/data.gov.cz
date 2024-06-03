@@ -1,84 +1,89 @@
 <header class="gov-header">
-	<gov-container>
-		<gov-branding>
-      <div class="heading">
-        <a href="/">Portál o datech</a>
-      </div>
-			<div class="language">
-        <a href="">English</a>
-      </div>
-		</gov-branding>
-		<gov-nav wcag-label="Hlavní navigace">
-		{% if page.ref == 'DataManagement' %}
-			<gov-nav-item class="active">
-				Správa dat
-			</gov-nav-item> 
-		{% else %}
-			<gov-nav-item href="{{ "/správa-dat" | relative_url}}">
-				Správa dat
-			</gov-nav-item>
-		{% endif %}
-		{% if page.ref == 'Education' %}
-			<gov-nav-item class="active">
-			Vzdělávání
-			</gov-nav-item>
-		{% else %}
-			<gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
-				Vzdělávání
-			</gov-nav-item>
-		{% endif %}
-		{% if page.ref == 'Articles' %}
-			<gov-nav-item class="active">
-				Články
-			</gov-nav-item>
-		{% else %}
-			<gov-nav-item href="{{ "/články" | relative_url}}">
-				Články
-			</gov-nav-item>
-		{% endif %}
-		{% if page.ref == 'DataQuality' %}
-			<gov-nav-item class="active">
-				Datová kvalita
-			</gov-nav-item>
-		{% else %}
-			<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
-				Datová kvalita
-			</gov-nav-item>
-		{% endif %}
-			<gov-nav-dropdown>
-				<span slot="label">Národní katalog otevřených dat</span>
-				<ul slot="dropdown">
-				<li>
-					<a href="/datové-sady">Datové sady</a>
-				</li>
-				<li>
-					<a href="/aplikace">Aplikace</a>
-				</li>
-				<li>
-					<a href="/poskytovatelé">Poskytovatelé</a>
-				</li>
-				<li>
-					<a href="/lokální-katalogy">Lokální katalogy</a>
-				</li>
-				<li>
-					<a href="/návrhy-na-datové-sady-k-otevření">Návrhy na datové sady k otevření</a>
-				</li>
-				</ul>
-			</gov-nav-dropdown>
-			<gov-nav-dropdown>
-				<span slot="label">Další</span>
-				<ul slot="dropdown">
-				<li>
-					<a href="/informace/základy-otevřených-dat-pro-zájemce/">Pro zájemce o otevírání dat</a>
-				</li>
-				<li>
-					<a href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Pro uživatele a programátory</a>
-				</li>
-				<li>
-					<a href="https://opendata.gov.cz/">Pro poskytovatele dat</a>
-				</li>
-				</ul>
-			</gov-nav-dropdown>
-    	</gov-nav>
+    <gov-container>
+      <gov-branding>
+        <div class="heading">
+          <a href="/">Portál o datech</a>
+        </div>
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	    {% for p in pages %}
+		  {% if p.lang != page.lang %}
+        <div class="language">
+          <a href="{{ p.url }}">English</a>
+        </div>      
+		  {% endif %}
+	    {% endfor %}
+        </gov-branding>
+        <gov-nav wcag-label="Hlavní navigace">
+        {% if page.ref == 'DataManagement' %}
+            <gov-nav-item class="active">
+                Správa dat
+            </gov-nav-item> 
+        {% else %}
+            <gov-nav-item href="{{ "/správa-dat" | relative_url}}">
+                Správa dat
+            </gov-nav-item>
+        {% endif %}
+        {% if page.ref == 'Education' %}
+            <gov-nav-item class="active">
+            Vzdělávání
+            </gov-nav-item>
+        {% else %}
+            <gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
+                Vzdělávání
+            </gov-nav-item>
+        {% endif %}
+        {% if page.ref == 'Articles' %}
+            <gov-nav-item class="active">
+                Články
+            </gov-nav-item>
+        {% else %}
+            <gov-nav-item href="{{ "/články" | relative_url}}">
+                Články
+            </gov-nav-item>
+        {% endif %}
+        {% if page.ref == 'DataQuality' %}
+            <gov-nav-item class="active">
+                Datová kvalita
+            </gov-nav-item>
+        {% else %}
+            <gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
+                Datová kvalita
+            </gov-nav-item>
+        {% endif %}
+            <gov-nav-dropdown>
+                <span slot="label">Národní katalog otevřených dat</span>
+                <ul slot="dropdown">
+                <li>
+                    <a href="/datové-sady">Datové sady</a>
+                </li>
+                <li>
+                    <a href="/aplikace">Aplikace</a>
+                </li>
+                <li>
+                    <a href="/poskytovatelé">Poskytovatelé</a>
+                </li>
+                <li>
+                    <a href="/lokální-katalogy">Lokální katalogy</a>
+                </li>
+                <li>
+                    <a href="/návrhy-na-datové-sady-k-otevření">Návrhy na datové sady k otevření</a>
+                </li>
+                </ul>
+            </gov-nav-dropdown>
+            <gov-nav-dropdown>
+                <span slot="label">Další</span>
+                <ul slot="dropdown">
+                <li>
+                    <a href="/informace/základy-otevřených-dat-pro-zájemce/">Pro zájemce o otevírání dat</a>
+                </li>
+                <li>
+                    <a href="https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory">Pro uživatele a programátory</a>
+                </li>
+                <li>
+                    <a href="https://opendata.gov.cz/">Pro poskytovatele dat</a>
+                </li>
+                </ul>
+            </gov-nav-dropdown>
+        </gov-nav>
     </gov-container>
 </header>

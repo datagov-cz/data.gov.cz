@@ -3,10 +3,10 @@
  * The first section contains general styles shared by all sites.
  */
 
-/* Add space around headings. */ 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: .75rem;
+  word-wrap: break-word;
 }
 
 .gov-footer {
@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5, h6 {
 .gov-header gov-branding .language {
   display: flex;
   align-items: center;
+}
+
+/* We need to set the padding to override the text-content gov-container from bellow. */
+header.gov-header>gov-container {
+  padding-top: 0.5rem;
 }
 
 /*

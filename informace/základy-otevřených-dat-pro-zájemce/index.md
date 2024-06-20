@@ -41,17 +41,12 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
   * evidence psů
   * katalog knihovny, atd.
 
-## Příklady využití otevřených dat
-  * [edesky - úřední desky](https://edesky.cz)
-  * propojení dat o ordinační době lékařů a jízdních řádů - dostupnost lékařské péče pro občany z odlehlejších oblastí
-  * propojení dat České obchodní inspekce, dat o provozovnách a geografických dat - přehled o solidnosti místních provozoven
-  * propojení demografických dat, jízdních řádů a seznamů školek - dostupnost (a obsazenost) školek
-
-## Ukázky webových aplikací využívajících otevřená data
+## [Příklady využití otevřených dat](https://data.gov.cz/aplikace)
   * [Mapy bez bariér](https://mapybezbarier.cz/cs)
   * [Hlídač smluv](https://www.hlidacsmluv.cz/)
-  * [Podej to](https://podejto.cz/)
-  * [Velká mapa malého podnikání](https://interaktivni.rozhlas.cz/podnikani-mapa/)
+  * [Kam s ním?](https://www.kamsnim.cz/)
+  * [Vizualizace hlasování Zastupitelstva města Brna](https://data.brno.cz/apps/hlasování-brněnského-zastupitelstva/explore)
+  * [Katalog služeb veřejné správy](https://app.powerbi.com/view?r=eyJrIjoiZmIzYWY0ZjEtYTA0ZS00ZDZmLTkyY2UtMzFiODFjOTg5Yzk4IiwidCI6IjFkYjQxZDZmLTFmMzctNDZkYi1iZDNlLWM0ODNhYmI4MTA1ZCIsImMiOjh9)
 
 ## Přínos otevřených dat
   * lepší služby pro občany - příležitost pro vznik nových užitečných aplikací

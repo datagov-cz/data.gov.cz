@@ -4,46 +4,35 @@ title: Články
 ref: Articles
 lang: cs
 ---
-
-  <div class="container">
-	<h1 class="header center">Články</h1>
-	<hr/>
-    <div class="row">
+  <gov-container>
+    <h1>Články</h1>
+    <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="section">
-            <h2 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h2>
-              <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
-              <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
-              {% if clanek.image %}
-              <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
-              {% endif %}
-              {{ clanek.excerpt }}
-              {% if clanek.detail %}
-              <p><a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
-              {% endif %}
-          </div>
-        </div>
-        {% endfor %}
-     </div>
-    <hr/>
-    <h2>Starší články</h2>
-    <div class="row">
-        {% for clanek in clanky offset:3 %}
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="section">
-            <h3 class="h5"><a href="{{ clanek.url }}">{{ clanek.title }}</a></h3>
-            <p class="h6">{{ clanek.date | date: "%-d. %-m. %Y" }}</p>
+        <gov-tile href="..{{ clanek.url }}">
+          <!--<div class="section">-->
+            <h2 slot="title">{{ clanek.title }}</h2>
+            <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
+            <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
             {% if clanek.image %}
-            <p><a href="{{ clanek.url }}"><img class="img-fluid" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></a></p>
+            <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
-            {{ clanek.excerpt}}
-            {% if clanek.detail %}
-            <p><a href="{{ clanek.url }}" class="btn btn-secondary" role="button">Více &raquo;</a></p>
-            {% endif %}
-          </div>
-        </div>
+            {{ clanek.excerpt }}
+          <!--</div>-->
+        </gov-tile>
+        {% endfor %}
+     </gov-tiles>
+     <h2>Starší články</h2>
+     <gov-tiles columns="3" no-border>
+        {% for clanek in clanky offset:3 %}
+        <gov-tile href="..{{ clanek.url }}">
+          <h3 slot="title">{{ clanek.title }}</h3>
+          <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
+          {% if clanek.image %}
+          <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+          {% endif %}
+          {{ clanek.excerpt}}
+        </gov-tile>
         {% endfor %}       
-  </div>
-  </div>
+    </gov-tiles>
+  </gov-container>

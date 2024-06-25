@@ -4,39 +4,29 @@ title: News
 ref: Posts
 lang: en
 ---
-
-  <div class="container">
-    <h1 class="header center">What's new in open data in Czechia</h1>
-    <hr/>
-    <div class="row">
+<gov-container>
+  <h1>What's new in open data in Czechia</h1>
+  <gov-tiles columns="3" no-border>
       {% assign posts=site.posts | where:"lang", page.lang %}
       {% for post in posts limit:3 %}
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="section">
-          <h2 class="h5">{{ post.title }}</h2>
-          <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
-          {{ post.excerpt }}
-          {% if post.detail %}
-          <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
-          {% endif %}
-        </div>
-      </div>
+      <gov-tile href="..{{ post.url }}">
+        <h2 slot="title">{{ post.title }}</h2>
+        <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ post.date | date: "%-d. %-m. %Y" }}</gov-chip>
+        {% if post.image %}
+        <p><img width="100%" src="{{ post.image }}" alt="{{ post.title }}"/></p>
+        {% endif %}
+        {{ post.excerpt }}
+      </gov-tile>
       {% endfor %}
-    </div>
-    <hr/>
-    <h2>Older posts</h2>
-    <div class="row">
+  </gov-tiles>
+  <h2>Older posts</h2>
+  <gov-tiles columns="3" no-border>
       {% for post in posts offset:3 %}
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="section">
-          <h3 class="h5">{{ post.title }}</h3>
-          <p class="h6">{{ post.date | date: "%-d %B %Y" }}</p>
-          {{ post.excerpt }}
-          {% if post.detail %}
-          <p><a href="{{ post.url }}" class="btn btn-secondary" role="button">See more &raquo;</a></p>
-          {% endif %}
-        </div>
-		  </div>
+      <gov-tile href="..{{ post.url }}">
+        <h3 slot="title">{{ post.title }}</h3>
+        <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ post.date | date: "%-d. %-m. %Y" }}</gov-chip>
+        {{ post.excerpt }}
+      </gov-tile>
       {% endfor %}       
-	  </div>
-  </div>
+    </gov-tiles>
+</gov-container>

@@ -1,20 +1,11 @@
 ---
-layout: default
+layout: edu-level-2
 title: Zpracování a vizualizace otevřených dat
 ref: E-Learning-Zpracování-Vizualizace
 lang: cs
 ---
 
-<div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../..">Vzdělávání</a></li>
-      <li class="breadcrumb-item"><a href="..">E-learning</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-    </ol>
-  </nav>
-
-  <h1 class="header center">{{page.title}}</h1>
+  <h1>{{page.title}}</h1>
   <p>Jedná se o jeden z e-learningových kurzů otevřených dat online.</p>
 
   <h2>Cílová skupina</h2>
@@ -36,8 +27,7 @@ lang: cs
     <li>Praktická část</li>
     <li>Propagace otevřených dat</li>
   </ul>
-  <hr/>
-
+  
   <h2>Struktura školení</h2>
   <p>
     Školení má <em>4 moduly</em> a zabere přibližně <em>4 hodiny</em>.
@@ -46,74 +36,72 @@ lang: cs
     Kurz je zakončen závěrečným testem.
   </p>
 
-  <div class="row">
+  <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="Úvod" full-height>
+        <p>
+          Na úvod představí přednášející cíle školení, zručnosti které účastníci získají jeho absolvováním a jeho strukturu.
+          V této části se také objeví ukázka práce s RawGraphs.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/JGIGoXt60bA">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg">
+          Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">Úvod</h2>
-          <p class="card-text">
-            Na úvod představí přednášející cíle školení, zručnosti které účastníci získají jeho absolvováním a jeho strukturu.
-            V této části se také objeví ukázka práce s RawGraphs.
-          </p>
-          <a href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-          <a href="https://youtu.be/JGIGoXt60bA" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-        </div>
-      </div>
-    </div>
-  
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">Teoretická část</h2>
-          <p class="card-text">
-            V tomto modulu dojde k prezentaci důvodů proč jsou otevřená data důležitá, jak mohou být užitečná a proč je zpracovávat.
-            Dále přednášející představí, jak taková data vypadají v syrovém stavu a na třech příkladech ukážou, jak je zpracovat - dashboard Covid-19 Praha, aplikace Kam s ním a Analýza dostupnosti veřejnou dopravou.
-          </p>
-          <a href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg/edit#slide=id.ge90061cb2f_0_15" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-          <a href="https://youtu.be/JGIGoXt60bA?t=1016" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="Teoretická část" full-height>
+        <p>
+          V tomto modulu dojde k prezentaci důvodů proč jsou otevřená data důležitá, jak mohou být užitečná a proč je zpracovávat.
+          Dále přednášející představí, jak taková data vypadají v syrovém stavu a na třech příkladech ukážou, jak je zpracovat - dashboard Covid-19 Praha, aplikace Kam s ním a Analýza dostupnosti veřejnou dopravou.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/JGIGoXt60bA?t=1016">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg/edit#slide=id.ge90061cb2f_0_15">
+          Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">Praktická část</h2>
-          <p class="card-text">
-            Modul obsahuje ukázky praktická práce s PowerBI, QGIS, Python a Google Collaboratory.
-          </p>
-          <a href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg/edit#slide=id.geb23ac33b4_0_21" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-          <a href="https://youtu.be/JGIGoXt60bA?t=3074" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="Praktická část" full-height>
+        <p>
+          Modul obsahuje ukázky praktická práce s PowerBI, QGIS, Python a Google Collaboratory.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/JGIGoXt60bA?t=3074">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg/edit#slide=id.geb23ac33b4_0_21">
+          Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">Propagace otevřených dat</h2>
-          <p class="card-text">
-            Modul představí různé způsoby prezentace otevřených dat jako jsou workshopy, konference, výstavy, online nástroje, a jiné.
-          </p>
-          <a href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg/edit#slide=id.ge90061cb2f_0_5" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-          <a href="https://youtu.be/JGIGoXt60bA?t=15503" class="btn btn-secondary" role="button">YouTube &raquo;</a>
-        </div>
-      </div>
-    </div>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <gov-card label="Propagace otevřených dat" full-height>
+        <p>
+          Modul představí různé způsoby prezentace otevřených dat jako jsou workshopy, konference, výstavy, online nástroje, a jiné.
+        </p>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/JGIGoXt60bA?t=15503">
+          YouTube &raquo;
+        </gov-button>
+        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Q42yHe6IUN0G8_OAlog_XKofzMH3GCQKewD5EP6tVZg/edit#slide=id.ge90061cb2f_0_5">
+          Slidy &raquo;
+        </gov-button>
+      </gov-card>
+    </gov-grid-item>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card border-danger">
-        <div class="card-body">
-          <h2 class="card-title h5">Závěrečný test</h2>
-          <p class="card-text">
-            Ověřte si nově nabyté znalosti v závěrečném testu.
-            Můžete nás také požádat o certifikát o absolvování kurzu.
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScK8HmM0MWVSIvPY9sF5rsZl8s5u9oCS3TZ5Z8H1-q9opGmZg/viewform" class="btn btn-danger" role="button">Test &raquo;</a>
-        </div>
-      </div>
-    </div>
-  </div>
+</gov-grid>
 
-</div>
+<gov-card promotion="true" label="Závěrečný test">
+  <p>
+    Ověřte si nově nabyté znalosti v závěrečném testu.
+    Můžete nás také požádat o certifikát o absolvování kurzu.
+  </p>
+  <gov-icon type="complex" name="graduate" slot="icon"></gov-icon>
+  <gov-button variant="primary" slot="btn" type="solid" size="l" href="https://forms.office.com/e/WWZrk7bXVZ" wcag-label="Složit závěrečný test">Test</gov-button>
+</gov-card>

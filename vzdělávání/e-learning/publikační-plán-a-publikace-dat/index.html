@@ -1,20 +1,11 @@
 ---
-layout: default
+layout: edu-level-2
 title: Publikační plán a publikace dat
 ref: E-Learning-Plan
 lang: cs
 ---
 
-<div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../..">Vzdělávání</a></li>
-      <li class="breadcrumb-item"><a href="..">E-learning</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-    </ol>
-  </nav>
-
-  <h1 class="header center">{{page.title}}</h1>
+  <h1>{{page.title}}</h1>
   <p>Jedná se o jeden z e-learningových kurzů otevřených dat online.</p>
   
   <h2>Cílová skupina</h2>
@@ -24,132 +15,76 @@ lang: cs
     Z hlediska rolí půjde především o kurátory, koordinátory, zástupce vedení.
     Může se jednat také o metodiky a analytiky v dané organizaci, kteří „mají k datům blízko“.
   </p>
-  
+
   <h2>Cíl</h2>
   <p>
     Cílem školení je poskytnout kompetentním pracovníkům takové informace, aby byli schopni realizovat, resp. řídit vytvoření publikačního plánu dané organizace. Tento kurz popíše role, které by se měly na tvorbě publikačního plánu podílet a dále představí, jak identifikovat datové sady pro publikaci jako otevřená data a jak analyzovat přínosy a rizika publikace otevřených dat.
   </p>
-  <hr/>
-  
+
   <h2>Struktura kurzu</h2>
   <p>
     Kurz se skládá z <em>8 modulů</em> a zabere přibližně <em>2,5 hodiny</em>.
     Kurz je zakončen závěrečným testem.
   </p>
 
-  <div class="row">
+  <gov-tiles columns="4" no-border>
+    <gov-tile href="úvod-do-kurzu/">
+      <h3 slot="title">1. Úvod do kurzu „Publikační plán a publikace dat“</h3>
+      <p>
+        Modul je představením celého e-learningového kurzu, shrnuje přínosy vytvoření a implementace publikačního plánu i negativní důsledky případného otevírání dat organizace bez publikačního plánu.
+      </p>
+    </gov-tile>  
+    <gov-tile href="otevírání-dat-jeden-z-procesů-organizace/">
+      <h3 slot="title">2. Otevírání dat – jeden z procesů organizace</h3>
+      <p>
+        Modul představuje otevírání dat jako proces a zdůrazňuje jeho výhody.
+        V závěru modulu je celý proces je názorně a systematicky popsán formou videa.
+      </p>
+    </gov-tile>  
+    <gov-tile href="role-v-procesu-otevírání-dat-v-organizaci/">
+      <h3 slot="title">3. Role v procesu otevírání dat v organizaci</h3>
+      <p>
+        Modul představuje čtyři hlavní role v procesu otevírání dat: koordinátor otevírání dat, kurátor dat, správce katalogu OD a IT specialista, přičemž u každé z těchto rolí zmiňuje její zodpovědnosti, kompetence a typické činnosti.
+      </p>
+    </gov-tile>  
+    <gov-tile href="interní-legislativa-v-oblasti-od/">
+      <h3 slot="title">4. Interní legislativa v oblasti OD</h3>
+      <p>
+        Modul seznamuje s přínosy zavedení interní směrnice otevírání dat v organizaci a s obsahem takovéto směrnice.
+        V závěru modulu jsou nabídnuty vzorové směrnice pro různé typy organizací.
+      </p>
+    </gov-tile>  
+    <gov-tile href="identifikace-datových-sad-pro-publikaci-jako-od/">
+      <h3 slot="title">5. Identifikace datových sad pro publikaci jako OD</h3>
+      <p>
+        Modul se zabývá jednotlivými kroky při identifikaci vhodných datových sad k publikování v podobě otevřených dat, tím, kdo je provádí a jak jsou příslušné činnosti zasazeny do procesu otevírání dat.
+      </p>
+    </gov-tile>  
+    <gov-tile href="analýza-přínosů-a-rizik-publikace-od/">
+      <h3 slot="title">6. Analýza přínosů a rizik publikace OD</h3>
+      <p>
+        Modul poskytuje základní přehled přínosů a rizik publikace datových sad jako OD, návody, jak přínosy a rizika identifikovat a jak s nimi pracovat.
+      </p>
+    </gov-tile>  
+    <gov-tile href="podmínky-užití/">
+      <h3 slot="title">7. Podmínky užití</h3>
+      <p>
+        Modul se věnuje podmínkám užití z hlediska jejich tvorby, resp. výběru – zejména s přihlédnutím k autorskoprávním otázkám či otázkám ochrany osobních údajů.
+      </p>
+    </gov-tile>  
+    <gov-tile href="vytvoření-publikačního-plánu-a-jeho-životní-cyklus/">
+      <h3 slot="title">8. Vytvoření publikačního plánu a jeho životní cyklus</h3>
+      <p>
+        Modul se zabývá postupem vytvoření publikačního plánu jakožto harmonogramu publikování zvolených datových sad, dále jeho životním cyklem včetně jeho následné implementace a periodické evaluace.
+      </p>
+    </gov-tile>  
+  </gov-tiles>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">1. Úvod do kurzu „Publikační plán a publikace dat“</h2>
-          <p class="card-text">
-            Modul je představením celého e-learningového kurzu, shrnuje přínosy vytvoření a implementace publikačního plánu i negativní důsledky případného otevírání dat organizace bez publikačního plánu.
-          </p>
-          <a href="úvod-do-kurzu/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
+  <gov-card promotion="true" label="Závěrečný test">
+    <p>Ověřte si nově nabyté znalosti v závěrečném testu.
+      Můžete nás také požádat o certifikát o absolvování kurzu.
+    </p>
+    <gov-icon type="complex" name="graduate" slot="icon"></gov-icon>
+    <gov-button variant="primary" slot="btn" type="solid" size="l" href="https://forms.office.com/e/AXfK3UqAjQ" wcag-label="Složit závěrečný test">Test</gov-button>
+  </gov-card>
 
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">2. Otevírání dat – jeden z procesů organizace</h2>
-          <p class="card-text">
-            Modul představuje otevírání dat jako proces a zdůrazňuje jeho výhody.
-            V závěru modulu je celý proces je názorně a systematicky popsán formou videa.
-          </p>
-          <a href="otevírání-dat-jeden-z-procesů-organizace/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">3. Role v procesu otevírání dat v organizaci</h2>
-          <p class="card-text">
-            Modul představuje čtyři hlavní role v procesu otevírání dat: koordinátor otevírání dat, kurátor dat, správce katalogu OD a IT specialista, přičemž u každé z těchto rolí zmiňuje její zodpovědnosti, kompetence a typické činnosti.
-          </p>
-          <a href="role-v-procesu-otevírání-dat-v-organizaci/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">4. Interní legislativa v oblasti OD</h2>
-          <p class="card-text">
-            Modul seznamuje s přínosy zavedení interní směrnice otevírání dat v organizaci a s obsahem takovéto směrnice.
-            V závěru modulu jsou nabídnuty vzorové směrnice pro různé typy organizací.
-          </p>
-          <a href="interní-legislativa-v-oblasti-od/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">5. Identifikace datových sad pro publikaci jako OD</h2>
-          <p class="card-text">
-            Modul se zabývá jednotlivými kroky při identifikaci vhodných datových sad k publikování v podobě otevřených dat, tím, kdo je provádí a jak jsou příslušné činnosti zasazeny do procesu otevírání dat.
-          </p>
-          <a href="identifikace-datových-sad-pro-publikaci-jako-od/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">6. Analýza přínosů a rizik publikace OD</h2>
-          <p class="card-text">
-            Modul poskytuje základní přehled přínosů a rizik publikace datových sad jako OD, návody, jak přínosy a rizika identifikovat a jak s nimi pracovat.
-          </p>
-          <a href="analýza-přínosů-a-rizik-publikace-od/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">7. Podmínky užití</h2>
-          <p class="card-text">
-            Modul se věnuje podmínkám užití z hlediska jejich tvorby, resp. výběru – zejména s přihlédnutím k autorskoprávním otázkám či otázkám ochrany osobních údajů.
-          </p>
-          <a href="podmínky-užití/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">8. Vytvoření publikačního plánu a jeho životní cyklus</h2>
-          <p class="card-text">
-            Modul se zabývá postupem vytvoření publikačního plánu jakožto harmonogramu publikování zvolených datových sad, dále jeho životním cyklem včetně jeho následné implementace a periodické evaluace.
-          </p>
-          <a href="vytvoření-publikačního-plánu-a-jeho-životní-cyklus/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card border-danger">
-        <div class="card-body">
-          <h2 class="card-title h5">Závěrečný test</h2>
-          <p class="card-text">
-            Ověřte si nově nabyté znalosti v závěrečném testu.
-            Můžete nás také požádat o certifikát o absolvování kurzu.
-          </p>
-          <a href="https://forms.office.com/e/AXfK3UqAjQ" class="btn btn-danger" role="button">Test &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>

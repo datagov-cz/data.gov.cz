@@ -33,10 +33,11 @@ Záznam webináře věnovaného představení rolí garanta správy dat a dato
 Garant správy dat je osobou celkově manažersky odpovědnou za rozvoj správy dat v dané organizaci a také za prosazování strategie pro správu dat v rámci této organizace. 
 Datový architekt je expertní osobou důležitou pro rozvoj správy dat v dané organizaci, udržuje celkový přehled o jejích datech, správě a využívání těchto dat. 
 
-[Vymezení role garanta správy dat]  
-[Vymezení role datového architekta]
- 
+[Vymezení role garanta správy dat]
 
+[Vymezení role datového architekta]
+
+ 
 ## Vymezení a prioritizace věcných oblastí dat
 
 **Webinář: [Výběr prioritní oblasti pro správu dat veřejné správy]** 
@@ -65,9 +66,9 @@ Podpůrné materiály a webináře vznikly v rámci projektu Zajištění podmí
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
 [Představení rolí garanta správy dat a datového architekta ve veřejné správě]: https://youtu.be/tcNr-6bpr6M?si=DtlqCTzRPEHu7ZOr "Představení rolí garanta správy dat a datového architekta ve veřejné správě"
-[Vymezení role garanta správy dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Vymezení role garanta správy dat"
-[Vymezení role datového architekta]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Vymezení role datového architekta"
+[Vymezení role garanta správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Vymezení role garanta správy dat"
+[Vymezení role datového architekta]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Vymezení role datového architekta"
 [Výběr prioritní oblasti pro správu dat veřejné správy]: https://youtu.be/OQxdmktKYB8?si=4iAZcuvxIT0M2DJS "Výběr prioritní oblasti pro správu dat veřejné správy"
-[Metodika pro výběr prioritní oblasti]: ../přílohy/správa-dat/Vymezení%20a%20prioritazice%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
+[Metodika pro výběr prioritní oblasti]: ../../přílohy/správa-dat/Vymezení%20a%20prioritazice%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
 [Význam a kontext popisu dat ve veřejné správě]: https://youtu.be/c1yIKJPUNYI?si=B5g3XHpNtpCCgn8y "Význam a kontext popisu dat ve veřejné správě"
 [Popis dat veřejné správy]: https://youtu.be/H__fZeszjGQ?si=GTe1uE-_igcvVDMh "Popis dat veřejné správy"

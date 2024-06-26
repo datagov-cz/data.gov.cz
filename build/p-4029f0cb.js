@@ -1,0 +1,2 @@
+function n(){return Math.random().toString(16).slice(-4)}function r(r){return`${r}-${n()}${n()}-${n()}-${n()}-${n()}-${n()}${n()}${n()}`}function t(n){if(typeof n!=="string")return n;return n.normalize("NFD").replace(/[\u0300-\u036f]/g,"")}function u(n){if(typeof n!=="string")return n;return n.split(/(\s+)/)}export{r as c,t as r,u as s};
+//# sourceMappingURL=p-4029f0cb.js.map

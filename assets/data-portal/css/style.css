@@ -1,0 +1,117 @@
+/*
+ * This file contains style for data.gov.cz split into several section.
+ * The first section contains general styles shared by all sites.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: .75rem;
+  word-wrap: break-word;
+}
+
+.gov-footer {
+  margin-top: 1.75rem;
+}
+
+/* Branding */
+.gov-header gov-branding a {
+  color: var(--gov-nav-color, var(--gov-color-neutral-white));
+  text-decoration: none;
+}
+
+.gov-header gov-branding .heading {
+  font-weight: var(--gov-text-3xl-font-weight);
+  font-size: var(--gov-text-3xl-font-size);
+  line-height: var(--gov-text-3xl-line-height);
+  letter-spacing: var(--gov-text-3xl-letter-spacing);
+}
+
+.gov-header gov-branding .language {
+  display: flex;
+  align-items: center;
+}
+
+/* We need to set the padding to override the text-content gov-container from bellow. */
+header.gov-header>gov-container {
+  padding-top: 0.5rem;
+}
+
+/*
+ * Styles can be used only together within element with 'text-content' class.
+ * The objective is to address issue of design-system not being designed
+ * for a text oriented content.
+ *
+ * Selectors are using HTML elements instead of classes to prevent,
+ * content shift as the classes are added later by JavaScript (web components).
+ */
+
+.text-content ul {
+  margin: 1rem 0;
+}
+
+/* Main container with the content. */
+.text-content>gov-container {
+  margin-bottom: 1rem;
+}
+
+.text-content gov-container {
+  padding-top: 1rem;
+}
+
+.text-content gov-tiles {
+  margin-bottom: 1rem;
+}
+
+.text-content gov-grid {
+  margin-bottom: 1rem;
+}
+
+.text-content .gov-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: .25rem;
+}
+
+/*
+ * Section for e-learning with 'text-content' and 'e-learning' classes.
+ * Since e-learning does not have custom template we allow the 'e-learning'
+ * class to be on nested element.
+ */
+
+/*
+ * Section for blog posts, with 'text-content' and 'blog-post' classes.
+ */
+
+.text-content figure {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.text-content figure img {
+  max-width: 100%;
+}
+
+.text-content.text-content table {
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+
+.text-content.text-content table td {
+  border-top: 1px solid var(--gov-color-secondary-700);
+}
+
+.text-content.text-content table tr {
+  text-align: center;
+}
+
+/**
+ * Section with general utilities.
+ */
+
+.flex-justify-end {
+  display: flex;
+  justify-content: end;
+}
+

@@ -1,8 +1,7 @@
-    <footer class="footer py-4 mt-2 border-top">
-        <div class="container">
-            <div class="row">
-                <h2 class="visually-hidden">Odkazy na další informace o otevřených datech</h2>
-                <div class="col-md-4">
+    <footer class="gov-footer">
+        <gov-container>
+            <gov-grid role="list">
+                <gov-grid-item size-sm="12/12" size-md="4/12" role="listitem" size="12/12">
                     <h3 class="h6">Registrace do NKOD</h3>
                     <ul>
                         <li><a href="/formulář/registrace-datové-sady">Registrovat novou datovou sadu</a></li>
@@ -14,16 +13,17 @@
                     <ul>
                         <li>Národní koordinátorka otevřených dat: Radka&nbsp;Domanská</li>
                         <li>Kontaktní e-mail: <a href="mailto:otevrenadata@dia.gov.cz">otevrenadata@dia.gov.cz</a></li>
-                        <li>twitter: <a href="https://twitter.com/otevrenadata">@otevrenadata</a></li>
+                        <li>X: <a href="https://x.com/otevrenadata">@otevrenadata</a></li>
                         <li>YouTube: <a href="https://www.youtube.com/playlist?list=PL1Cp5doNb3zQc_ncuqg85b7ChdsJpBK4e">Otevřená data - vzdělávání</a></li>
                         <li><a href="https://dia.gov.cz/">Digitální a informační agentura</a></li>
                     </ul>
-                </div>
-                <div class="col-md-4">
+                </gov-grid-item>
+                <gov-grid-item size-sm="12/12" size-md="4/12" role="listitem" size="12/12">
                     <h3 class="h6">Odkazy</h3>
                     <ul>
                         <li><a href="/novinky">Novinky</a></li>
                         <li><a href="/články">Články</a></li>
+                        <li><a href="/správa-dat">Správa dat</a></li>
                         <li><a href="/vzdělávání">Vzdělávání</a></li>
                         <li><a href="/datové-sady">Národní katalog otevřených dat</a></li>
                         <li><a href="/poskytovatelé">Seznam poskytovatelů</a></li>
@@ -32,21 +32,21 @@
                         <li><a href="https://github.com/datagov-cz/data.gov.cz">Web na GitHubu</a></li>
                         <li><a href="/prohlášení-o-přístupnosti">Prohlášení o přístupnosti</a></li>
                     </ul>
-                </div>
-                <div class="col-md-4">
+                </gov-grid-item>
+                <gov-grid-item size-sm="12/12" size-md="4/12" role="listitem" size="12/12">
                     <h3 class="h6">Poděkování</h3>
                     <p>Tento web vznikl v rámci projektu <a href="https://www.esfcr.cz/projekty-opz/-/asset_publisher/ODuZumtPTtTa/content/implementace-strategii-v-oblasti-otevrenych-dat-ii">OPZ č. CZ.03.4.74/0.0/0.0/15_025/0004172</a> a je dále rozvíjen v rámci projektu <a href="https://www.esfcr.cz/projekty-opz/-/asset_publisher/ODuZumtPTtTa/content/rozvoj-datovych-politik-v-oblasti-zlepsovani-kvality-a-interoperability-dat-verejne-spravy">OPZ č. CZ.03.4.74/0.0/0.0/15_025/0013983</a>. Zvýšení počtu subjektů zveřejňujících otevřená data ve veřejné správě, kteří otevřená data zveřejňují v Národním katalogu otevřených dat byl spolufinancován z Národního plánu obnovy.</p>
                     <div class="bg-white shadow">
-                        <img alt="Národní plán obnovy" class="d-inline-block align-top img-fluid pr-2" id="npologo" src="{{ "/images/npo_cz.webp" | relative_url}}" width="300">
+                        <img alt="Národní plán obnovy" id="npologo" src="{{ "/images/npo_cz.webp" | relative_url}}" width="300">
                     </div>
-                </div>
-            </div>
+                </gov-grid-item>
+            </gov-grid>
             <hr>
-            <div class="row">
-                <div class="col-md-12">
+            <div>
+                <div>
                     Není-li uvedeno jinak, je autorskoprávně a databázově chráněný obsah publikovaný na těchto stránkách licencován pod licencí <a href="https://creativecommons.org/licenses/by/4.0/deed.cs">CC BY 4.0</a>.
                     Při jeho využití uveďte zdroj a odkažte na patřičnou licenci.
                 </div>
             </div>    
-        </div>
+        </gov-container>
     </footer>

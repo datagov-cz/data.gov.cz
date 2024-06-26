@@ -2,9 +2,9 @@
 title: Portál o datech České republiky
 
 description: Portál o datech a Národní katalog otevřených dat České republiky
-baseurl: "" # the subpath of your site, e.g. /blog
+
+baseurl: "" # the subpath of your site, e.g. /blog.
 url: "https://data.gov.cz" # the base hostname & protocol for your site
-#develop: true
 
 # Build settings
 excerpt_separator: <!--more-->
@@ -31,3 +31,6 @@ collections:
 
 app_registration_form: https://forms.office.com/e/mK4wLvrww4
 suggestion_form: https://forms.office.com/e/UuwD7UBnRG
+
+# Path to design-system distribution directory, must not end with '/'.
+design_system_assets: /assets/design-system

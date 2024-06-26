@@ -1,112 +1,91 @@
 ---
-layout: default
+layout: edu-level-2
 title: Katalogizace otevřených dat
 ref: E-Learning-Katalogizace
 lang: cs
 ---
 
-<div class="container">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../..">Vzdělávání</a></li>
-      <li class="breadcrumb-item"><a href="..">E-learning</a></li>
-      <li class="breadcrumb-item active" aria-current="page">{{page.title}}</li>
-    </ol>
-  </nav>
+<h1>{{page.title}}</h1>
+<p>Jedná se o jeden z e-learningových kurzů otevřených dat online.</p>
+
+<h2>Cílová skupina</h2>
+<p>
+  Cílovou skupinou jsou zástupci organizací, které publikují či plánují publikovat otevřená data.
+  Předpokládá se, že se bude jednat jak o odborníky v oblasti IT, kteří budou katalog provozovat, tak o IT neodborníky, kteří budou katalog obsluhovat.
+  Z hlediska rolí půjde především o správce katalogu OD a IT specialisty z hlediska provozu katalogu, a o kurátory a koordinátora OD z hlediska náplně katalogu a jeho zařazení do procesu katalogizace OD.
+</p>
+
+<h2>Cíl</h2>
+<p>
+  Cílem školení je poskytnout koordinátorovi otevírání dat takové informace, aby byl schopen rozhodnout o způsobu katalogizace otevřených dat, kurátorům takové informace, aby byli schopni řádně plnit katalogizační záznamy datových sad a správci katalogu OD a IT specialistům takové informace, které jim umožňí určit formu implementace lokálního katalogu otevřených dat a jeho implementaci řídit.
+</p>
+
+<h2>Struktura kurzu</h2>
+<p>
+  Kurz má <em>4 moduly</em> a zabere přibližně <em>45 minut</em>.
+  Prerekvizitou je absolvování školení <a href="../co-jsou-otevřená-data/">Co jsou otevřená data</a>.
+  Jednotlivé moduly jsou k dispozici formou videí, které lze spustit kliknutím na tlačítko &quot;YouTube&quot;.
+  Prezentace s komentářem jsou dostupné i v textové podobě a lze je zobrazit kliknutím na tlačítko &quot;Google Slidy&quot;.
+  Kurz je zakončen závěrečným testem.
+</p>
+
+<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+    <gov-card label="1. Úvod do katalogizace OD / seznámení s kurzem" full-height>
+      <p>
+        Modul poskytuje uživatelům základní charakteristiky e-learningového kurzu a zároveň tvoří vstupní bránu do celého obsahu.
+      </p>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/fB7i34Bjy94">
+        YouTube
+      </gov-button>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1nB6q_eXWeuPpfJQntgkZPdHYWxJQsAWdEIprcQQFyS4">
+        Google Slidy
+      </gov-button>
+    </gov-card>
+  </gov-grid-item>
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+    <gov-card label="2. Role v procesu otevírání dat v organizaci" full-height>
+      <p>
+        Absolvent modulu by měl získat přehled o tom, jaké role se v procesu otevírání dat v organizaci uplatňují, jaké jsou (rámcově) jejich kompetence, činnosti aj., měl by mít přehled o této části kontextu tvorby PP.
+      </p>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="../publikační-plán-a-publikace-dat/role-v-procesu-otevírání-dat-v-organizaci/">
+        Slidy
+      </gov-button>
+    </gov-card>
+  </gov-grid-item>
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+    <gov-card label="3. Katalogizace OD a Národní katalog otevřených dat" full-height>
+      <p>
+        Absolvent modulu by měl vědět, jak věcně vypadá katalogizace OD, jak se hledá v datových katalozích a jaké dopady to má na podobu katalogizačního záznamu.
+          Navíc by také měl vědět, jaké jsou druhy katalogů otevřených dat a že se mezi sebou katalogizační záznamy předávají.
+      </p>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://youtu.be/sA2BwOU5Lhg">
+        YouTube
+      </gov-button>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1PtaZCXN3VBlAgXdeE6y4-qjPP3aPGJHs3Re6wI84jFc">
+        Google Slidy
+      </gov-button>
+    </gov-card>
+  </gov-grid-item>
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+    <gov-card label="4. Technické zajištění katalogizace otevřených dat" full-height>
+      <p>
+        Absolvent modulu bude znát varianty specifikace API LKOD dle OFN Rozhraní katalogů otevřených dat a možnosti její implementace.
+      </p>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=gJQU0zZOnjw">
+        YouTube
+      </gov-button>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1k4vIZ_o0Ejuh2ubr6wIopknNgV6demIa9LHtpUbVevo">
+        Google Slidy
+      </gov-button>
+    </gov-card>
+  </gov-grid-item>
+</gov-grid>
   
-  <h1 class="header center">{{page.title}}</h1>
-  <p>Jedná se o jeden z e-learningových kurzů otevřených dat online.</p>
-  
-  <h2>Cílová skupina</h2>
-  <p>
-    Cílovou skupinou jsou zástupci organizací, které publikují či plánují publikovat otevřená data.
-    Předpokládá se, že se bude jednat jak o odborníky v oblasti IT, kteří budou katalog provozovat, tak o IT neodborníky, kteří budou katalog obsluhovat.
-    Z hlediska rolí půjde především o správce katalogu OD a IT specialisty z hlediska provozu katalogu, a o kurátory a koordinátora OD z hlediska náplně katalogu a jeho zařazení do procesu katalogizace OD.
+<gov-card promotion="true" label="Závěrečný test">
+  <p>Ověřte si nově nabyté znalosti v závěrečném testu.
+    Můžete nás také požádat o certifikát o absolvování kurzu.
   </p>
-  
-  <h2>Cíl</h2>
-  <p>
-    Cílem školení je poskytnout koordinátorovi otevírání dat takové informace, aby byl schopen rozhodnout o způsobu katalogizace otevřených dat, kurátorům takové informace, aby byli schopni řádně plnit katalogizační záznamy datových sad a správci katalogu OD a IT specialistům takové informace, které jim umožňí určit formu implementace lokálního katalogu otevřených dat a jeho implementaci řídit.
-  </p>
-  <hr/>
-
-  <h2>Struktura kurzu</h2>
-  <p>
-    Kurz má <em>4 moduly</em> a zabere přibližně <em>45 minut</em>.
-    Prerekvizitou je absolvování školení <a href="../co-jsou-otevřená-data/">Co jsou otevřená data</a>.
-    Jednotlivé moduly jsou k dispozici formou videí, které lze spustit kliknutím na tlačítko &quot;YouTube&quot;.
-    Prezentace s komentářem jsou dostupné i v textové podobě a lze je zobrazit kliknutím na tlačítko &quot;Google Slidy&quot;.
-    Kurz je zakončen závěrečným testem.
-  </p>
-  
-  <div class="row">
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">1. Úvod do katalogizace OD / seznámení s kurzem</h2>
-          <p class="card-text">
-            Absolvent modulu by měl získat přehled &quot;o čem kurz bude&quot; a co by se stalo, kdybychom se otázkami z tohoto kurzu nezabývali.
-          </p>
-          <a href="https://youtu.be/fB7i34Bjy94" class="btn btn-secondary" role="button">YouTube&raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1nB6q_eXWeuPpfJQntgkZPdHYWxJQsAWdEIprcQQFyS4" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-header">Opakování</div>
-        <div class="card-body">
-          <h2 class="card-title h5">2. Role v procesu otevírání dat v organizaci</h2>
-          <p class="card-text">
-            Absolvent modulu by měl získat přehled o tom, jaké role se v procesu otevírání dat v organizaci uplatňují, jaké jsou (rámcově) jejich kompetence, činnosti aj., měl by mít přehled o této části kontextu tvorby PP.
-          </p>
-          <a href="../publikační-plán-a-publikace-dat/role-v-procesu-otevírání-dat-v-organizaci/" class="btn btn-secondary" role="button">Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">3. Katalogizace OD a Národní katalog otevřených dat</h2>
-          <p class="card-text">
-            Absolvent modulu by měl vědět, jak věcně vypadá katalogizace OD, jak se hledá v datových katalozích a jaké dopady to má na podobu katalogizačního záznamu.
-            Navíc by také měl vědět, jaké jsou druhy katalogů otevřených dat a že se mezi sebou katalogizační záznamy předávají.
-          </p>
-          <a href="https://youtu.be/sA2BwOU5Lhg" class="btn btn-secondary" role="button">YouTube&raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1PtaZCXN3VBlAgXdeE6y4-qjPP3aPGJHs3Re6wI84jFc" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title h5">4. Technické zajištění katalogizace otevřených dat</h2>
-          <p class="card-text">
-            Absolvent modulu bude znát varianty specifikace API LKOD dle OFN Rozhraní katalogů otevřených dat a možnosti její implementace.
-          </p>
-          <a href="https://www.youtube.com/watch?v=gJQU0zZOnjw" class="btn btn-secondary" role="button">YouTube&raquo;</a>
-          <a href="https://docs.google.com/presentation/d/1k4vIZ_o0Ejuh2ubr6wIopknNgV6demIa9LHtpUbVevo" class="btn btn-secondary" role="button">Google Slidy &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex">
-      <div class="card border-danger">
-        <div class="card-body">
-          <h2 class="card-title h5">Závěrečný test</h2>
-          <p class="card-text">
-            Ověřte si nově nabyté znalosti v závěrečném testu.
-            Můžete nás také požádat o certifikát o absolvování kurzu.
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLMJFrOqIwyPFXAhL1K0PrxS8wQztc7ZZcNmTL6tiPfrbSGg/viewform" class="btn btn-danger" role="button">Test &raquo;</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
+  <gov-icon type="complex" name="graduate" slot="icon"></gov-icon>
+  <gov-button variant="primary" slot="btn" type="solid" size="l" href="https://forms.office.com/e/LFZpBme7ya" wcag-label="Složit závěrečný test">Test</gov-button>
+</gov-card>

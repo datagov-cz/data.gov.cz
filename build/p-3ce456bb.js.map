@@ -1,0 +1,1 @@
+{"version":3,"names":["GridClass","root","GridItemClass"],"sources":["../../packages/core/src/components/gov-grid/constants.ts"],"sourcesContent":["export const GridClass = {\n\troot: 'gov-grid',\n}\n\nexport const GridItemClass = {\n\troot: 'gov-grid-item',\n}\n"],"mappings":"MAAaA,EAAY,CACxBC,KAAM,Y,MAGMC,EAAgB,CAC5BD,KAAM,wB"}

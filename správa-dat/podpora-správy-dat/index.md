@@ -60,9 +60,6 @@ Po úvodní motivační části ukazuje školení celý popis dat na konkrétní
 
 
 
-Podpůrné materiály a webináře vznikly v rámci projektu Zajištění podmínek pro kvalitní správu datového fondu a zajištění řízeného přístupu k datům financovaného Evropskou unií NextGeneration. Reg. č.: CZ.31.1.01/MV/23_62/0000062 
-
-
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
 [Představení rolí garanta správy dat a datového architekta ve veřejné správě]: https://youtu.be/tcNr-6bpr6M?si=DtlqCTzRPEHu7ZOr "Představení rolí garanta správy dat a datového architekta ve veřejné správě"

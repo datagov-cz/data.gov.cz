@@ -5,7 +5,7 @@ ref: PodporaSprávyDat
 lang: cs
 ---
 
-Pro zajištění správných postupů na úřadech vznikají v rámci projektu správy dat podpůrné materiály, jako jsou standardy, metodické postupy a pomůcky, které úřadům usnadní praktické zavádění kvalitní správy dat.
+Pro blabla zajištění správných postupů na úřadech vznikají v rámci projektu správy dat podpůrné materiály, jako jsou standardy, metodické postupy a pomůcky, které úřadům usnadní praktické zavádění kvalitní správy dat.
 Tyto materiály spolu se záznamy workshopů věnovaných tématu správy dat najdete na této stránce rozdělené do jednotlivých tematických oblastí.
 
 ## Minimální standard správy dat

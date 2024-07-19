@@ -3,7 +3,7 @@ layout: post
 detail: true
 title: "Vše, co jste chtěli vědět o HVD a (ne)báli se zeptat"
 ref: vše-co-jste-chtěli-vědět-o-hvd
-image: ../přílohy/články/vše-co-jste-chtěli-vědět-o-hvd/HVD1.png
+image: ../přílohy/články/vše-co-jste-chtěli-vědět-o-hvd/HVD1.webp
 author: lenka_kováčová
 date: 2024-07-19 07:00:00 +02:00
 lang: cs

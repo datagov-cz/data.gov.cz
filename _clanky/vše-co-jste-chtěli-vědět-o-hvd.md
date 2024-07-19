@@ -6,6 +6,7 @@ ref: vše-co-jste-chtěli-vědět-o-hvd
 image: ../přílohy/články/vše-co-jste-chtěli-vědět-o-hvd/HVD1.png
 author: lenka_kováčová
 date: 2024-07-19 07:00:00 +02:00
+lang: cs
 ---
 Na začátku června 2024 vešla v platnost povinnost publikovat tzv. data s vysokou hodnotou (HVD - high value data) – data, jejichž opětovné použití přináší významné výhody pro společnost, životní prostředí a ekonomiku. 
 Formou otázek a odpovědí vám, proto poskytujeme přehled souvislostí, které vám umožní HVD lépe pochopit a využít jejich potenciál.

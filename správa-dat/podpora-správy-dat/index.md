@@ -58,6 +58,12 @@ Záznam webináře věnovaného vysvětlení kontextu popisu dat.  Ukazuje, pro�
 Záznam školení, které si klade za cíl ukázat, jak postupně a jednoduše vybudovat popis dat, který je možné využít nejen pro naplnění zákonných povinností, ale také pro celkové zefektivnění úřadu, zejména pro jeho digitalizaci.  
 Po úvodní motivační části ukazuje školení celý popis dat na konkrétním příkladu – od výběru pojmů, přes tvorbu slovníků, podporované nástroje, řešení častých chyb až k následnému použití v procesech digitalizace úřadu.  
 
+## Datové potřeby
+Součástí dobré správy dat je i to, že úřady věnují systematickou pozornost potřebám, k jejichž naplnění je nutná práce s daty. Tyto datové potřeby je třeba identifikovat a řídit jak v rámci úřadu, tak i směrem k dalším organizacím veřejné správy.
+Úřady by tak měly mít a udržovat si přehled, kdo potřebuje jaká data, kde je potřebuje a také v jaké podobě. S těmito informacemi je pak důležité dále pracovat a zaměřit se i na samotné řešení datových potřeb.
+
+[Řízení datových potřeb]
+
 
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
@@ -69,3 +75,4 @@ Po úvodní motivační části ukazuje školení celý popis dat na konkrétní
 [Metodika pro výběr prioritní oblasti]: ../../přílohy/správa-dat/Vymezení%20a%20prioritazice%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
 [Význam a kontext popisu dat ve veřejné správě]: https://youtu.be/c1yIKJPUNYI?si=B5g3XHpNtpCCgn8y "Význam a kontext popisu dat ve veřejné správě"
 [Popis dat veřejné správy]: https://youtu.be/H__fZeszjGQ?si=GTe1uE-_igcvVDMh "Popis dat veřejné správy"
+[Řízení datových potřeb]: ../../přílohy/správa-dat/Rizeni_datovych_potreb_1.0.pdf "Řízení datových potřeb"

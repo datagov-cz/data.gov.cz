@@ -73,7 +73,7 @@ Součástí dobré správy dat je i to, že úřady věnují systematickou pozor
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
-[Strategie pro správu dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%2dat%20ve%20VS.pdf  "Strategie pro správu dat"
+[Strategie pro správu dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%20dat%20ve%20VS.pdf  "Strategie pro správu dat"
 [Představení rolí garanta správy dat a datového architekta ve veřejné správě]: https://youtu.be/tcNr-6bpr6M?si=DtlqCTzRPEHu7ZOr "Představení rolí garanta správy dat a datového architekta ve veřejné správě"
 [Vymezení role garanta správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Vymezení role garanta správy dat"
 [Vymezení role datového architekta]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Vymezení role datového architekta"

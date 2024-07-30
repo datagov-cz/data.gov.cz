@@ -61,4 +61,3 @@ Podrobnosti o projektu si budete moci brzy přečíst na samostatné podstránce
 [datového architekta]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Datový architekt" 
 [Strategie pro správu dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%20dat%20ve%20VS.pdf "Strategie pro správu dat ve VS"
 [rozhovory]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná%20zpráva%20z%20provedených%20rozhovorů.pdf "Souhrnná zpráva z rozhovorů"
-[Strategie pro správu dat]: ../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/STRATEGIE_pro_spravu_dat_ve_VS.pdf "Strategie pro správu dat"

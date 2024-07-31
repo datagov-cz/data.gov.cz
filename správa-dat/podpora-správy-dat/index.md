@@ -17,6 +17,8 @@ Ten vznikl ve spolupráci s expertní skupinou a na základě rozhovorů s vybra
 Jeho postupným naplňováním se úřadům podaří dosáhnout toho, že jejich data budou kvalitně spravovaná. 
 Díky tomu získají úřady jejich dobrou znalost a zároveň zajistí důvěryhodnost a využitelnost svých dat. 
 
+[Minimální standard správy dat]
+
 ## Strategie pro správu dat ve veřejné správě ČR
 
 **Webinář: [Představení Strategie pro správu dat ve veřejné správě ČR]** 
@@ -24,6 +26,8 @@ Díky tomu získají úřady jejich dobrou znalost a zároveň zajistí důvěry
 Záznam webináře věnovaného představení Strategie pro správu dat ve veřejné správě, kterou vláda schválila na konci dubna 2024.
 Jedná se o první koncepční dokument ČR zaměřený na oblast správy dat ve veřejné správě. 
 Strategie vznikla s cílem lépe připravit náš stát na budoucnost tím, že budou ve veřejné správě vybudovány solidní základy pro práci s daty. 
+
+[Strategie pro správu dat]
  
 ## Role a odpovědnosti ve správě dat
 
@@ -58,10 +62,18 @@ Záznam webináře věnovaného vysvětlení kontextu popisu dat.  Ukazuje, pro�
 Záznam školení, které si klade za cíl ukázat, jak postupně a jednoduše vybudovat popis dat, který je možné využít nejen pro naplnění zákonných povinností, ale také pro celkové zefektivnění úřadu, zejména pro jeho digitalizaci.  
 Po úvodní motivační části ukazuje školení celý popis dat na konkrétním příkladu – od výběru pojmů, přes tvorbu slovníků, podporované nástroje, řešení častých chyb až k následnému použití v procesech digitalizace úřadu.  
 
+## Datové potřeby
+Součástí dobré správy dat je i to, že úřady věnují systematickou pozornost potřebám, k jejichž naplnění je nutná práce s daty. Tyto datové potřeby je třeba identifikovat a řídit jak v rámci úřadu, tak i směrem k dalším organizacím veřejné správy.
+Úřady by tak měly mít a udržovat si přehled, kdo potřebuje jaká data, kde je potřebuje a také v jaké podobě. S těmito informacemi je pak důležité dále pracovat a zaměřit se i na samotné řešení datových potřeb.
+
+[Řízení datových potřeb]
+
 
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
+[Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
+[Strategie pro správu dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%20dat%20ve%20VS.pdf  "Strategie pro správu dat"
 [Představení rolí garanta správy dat a datového architekta ve veřejné správě]: https://youtu.be/tcNr-6bpr6M?si=DtlqCTzRPEHu7ZOr "Představení rolí garanta správy dat a datového architekta ve veřejné správě"
 [Vymezení role garanta správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Vymezení role garanta správy dat"
 [Vymezení role datového architekta]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Vymezení role datového architekta"
@@ -69,3 +81,4 @@ Po úvodní motivační části ukazuje školení celý popis dat na konkrétní
 [Metodika pro výběr prioritní oblasti]: ../../přílohy/správa-dat/Vymezení%20a%20prioritazice%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
 [Význam a kontext popisu dat ve veřejné správě]: https://youtu.be/c1yIKJPUNYI?si=B5g3XHpNtpCCgn8y "Význam a kontext popisu dat ve veřejné správě"
 [Popis dat veřejné správy]: https://youtu.be/H__fZeszjGQ?si=GTe1uE-_igcvVDMh "Popis dat veřejné správy"
+[Řízení datových potřeb]: ../../přílohy/správa-dat/Rizeni_datovych_potreb_1.0.pdf "Řízení datových potřeb"

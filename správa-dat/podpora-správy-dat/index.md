@@ -55,7 +55,9 @@ Cílem webináře je vysvětlit, proč je nezbytné mít přehled o věcných ob
 
 **Webinář: [Význam a kontext popisu dat ve veřejné správě]** 
 
-Záznam webináře věnovaného vysvětlení kontextu popisu dat.  Ukazuje, proč má úřad v rámci kvalitní správy dat popisovat svá data, jaké má popsání dat přínosy, a to i pro samotnou činnost úřadu a pro plnění povinností daných zákonem. Ať už se jedná o ty již existující nebo povinnosti, které nově přicházejí. 
+Záznam webináře věnovaného vysvětlení kontextu popisu dat.
+Ukazuje, proč má úřad v rámci kvalitní správy dat popisovat svá data, jaké má popsání dat přínosy, a to i pro samotnou činnost úřadu a pro plnění povinností daných zákonem.
+Ať už se jedná o ty již existující nebo povinnosti, které nově přicházejí. 
  
 **Školení: [Popis dat veřejné správy]** 
 
@@ -63,8 +65,11 @@ Záznam školení, které si klade za cíl ukázat, jak postupně a jednoduše v
 Po úvodní motivační části ukazuje školení celý popis dat na konkrétním příkladu – od výběru pojmů, přes tvorbu slovníků, podporované nástroje, řešení častých chyb až k následnému použití v procesech digitalizace úřadu.  
 
 ## Datové potřeby
-Součástí dobré správy dat je i to, že úřady věnují systematickou pozornost potřebám, k jejichž naplnění je nutná práce s daty. Tyto datové potřeby je třeba identifikovat a řídit jak v rámci úřadu, tak i směrem k dalším organizacím veřejné správy.
-Úřady by tak měly mít a udržovat si přehled, kdo potřebuje jaká data, kde je potřebuje a také v jaké podobě. S těmito informacemi je pak důležité dále pracovat a zaměřit se i na samotné řešení datových potřeb.
+
+**Webinář: [Identifikace a řízení datových potřeb]** 
+
+Záznam webináře, který se věnoval tématu identifikace a řízení datových potřeb. 
+Jeho cílem je vysvětlit proč má smysl ve veřejné správě systematicky pracovat s informacemi o tom, kdo potřebuje jaká data, kde je potřebuje a také v jaké podobě.  
 
 [Řízení datových potřeb]
 
@@ -81,4 +86,5 @@ Součástí dobré správy dat je i to, že úřady věnují systematickou pozor
 [Metodika pro výběr prioritní oblasti]: ../../přílohy/správa-dat/Vymezení%20a%20prioritazice%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
 [Význam a kontext popisu dat ve veřejné správě]: https://youtu.be/c1yIKJPUNYI?si=B5g3XHpNtpCCgn8y "Význam a kontext popisu dat ve veřejné správě"
 [Popis dat veřejné správy]: https://youtu.be/H__fZeszjGQ?si=GTe1uE-_igcvVDMh "Popis dat veřejné správy"
+[Identifikace a řízení datových potřeb]: https://youtu.be/0tHQdmtiNkM?feature=shared "Identifikace a řízení datových potřeb"
 [Řízení datových potřeb]: ../../přílohy/správa-dat/Rizeni_datovych_potreb_1.0.pdf "Řízení datových potřeb"

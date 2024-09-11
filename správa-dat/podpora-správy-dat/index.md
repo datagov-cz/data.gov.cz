@@ -76,7 +76,9 @@ Jeho cílem je vysvětlit proč má smysl ve veřejné správě systematicky pra
 ## Role odpovědné za data ve věcné oblasti
 
 [Vymezení role vlastníka dat]
+
 [Vymezení role věcného správce dat]
+
 [Vymezení role technického správce dat]
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"

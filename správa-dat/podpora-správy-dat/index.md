@@ -102,4 +102,4 @@ Záznam webináře zaměřeného na představení rolí vlastníka dat, věcnéh
 [Vymezení role věcného správce dat]: ../../přílohy/správa-dat/Role_Vecny_spravce_dat_1.0.pdf "Vymezení role věcného správce dat"
 [Vymezení role technického správce dat]: ../../přílohy/správa-dat/Role_Technicky_spravce_dat_1.0.pdf "Vymezení role technického správce dat"
 [Vymezení role vlastníka dat]: ../../přílohy/správa-dat/Role_Vlastnik_dat_1.0.pdf "Vymezení role vlastníka dat"
-[Představení rolí odpovědných za data ve věcné oblasti]:  https://www.youtube.com/watch?v=476lb7GqoTQ "Představení rolí odpovědných za data ve věcné oblasti"
+[Představení rolí odpovědných za data ve věcné oblasti]:  https://youtu.be/476lb7GqoTQ?si=yQeOah-_ycQniaNE "Představení rolí odpovědných za data ve věcné oblasti"

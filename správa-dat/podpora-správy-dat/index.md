@@ -73,7 +73,17 @@ Jeho cílem je vysvětlit proč má smysl ve veřejné správě systematicky pra
 
 [Řízení datových potřeb]
 
+## Role odpovědné za data ve věcné oblasti
 
+**Webinář: [Představení rolí odpovědných za data ve věcné oblasti]** 
+
+Záznam webináře zaměřeného na představení rolí vlastníka dat, věcného správce a technického správce dat. Jedná se o klíčové pozice pro to, aby byl v každé z věcných oblastí za data někdo odpovědný na manažerské, věcné i technické úrovni. Obsazení těchto rolí, a především naplňování jejich povinností je jedním z kroků směřujících k systematické péči o data ve veřejné správě.
+
+[Vymezení role vlastníka dat]
+
+[Vymezení role věcného správce dat]
+
+[Vymezení role technického správce dat]
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
@@ -88,3 +98,8 @@ Jeho cílem je vysvětlit proč má smysl ve veřejné správě systematicky pra
 [Popis dat veřejné správy]: https://youtu.be/H__fZeszjGQ?si=GTe1uE-_igcvVDMh "Popis dat veřejné správy"
 [Identifikace a řízení datových potřeb]: https://youtu.be/0tHQdmtiNkM?feature=shared "Identifikace a řízení datových potřeb"
 [Řízení datových potřeb]: ../../přílohy/správa-dat/Rizeni_datovych_potreb_1.0.pdf "Řízení datových potřeb"
+[Vymezení role vlastníka dat]: ../../přílohy/správa-dat/Role_Vlastnik_dat_1.0.pdf "Vymezení role vlastníka dat"
+[Vymezení role věcného správce dat]: ../../přílohy/správa-dat/Role_Vecny_spravce_dat_1.0.pdf "Vymezení role věcného správce dat"
+[Vymezení role technického správce dat]: ../../přílohy/správa-dat/Role_Technicky_spravce_dat_1.0.pdf "Vymezení role technického správce dat"
+[Vymezení role vlastníka dat]: ../../přílohy/správa-dat/Role_Vlastnik_dat_1.0.pdf "Vymezení role vlastníka dat"
+[Představení rolí odpovědných za data ve věcné oblasti]:  https://youtu.be/476lb7GqoTQ?si=yQeOah-_ycQniaNE "Představení rolí odpovědných za data ve věcné oblasti"

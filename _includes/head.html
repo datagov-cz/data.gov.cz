@@ -34,7 +34,15 @@
       "@context" : "https://schema.org",
       "@type" : "WebSite",
       "name" : "Portál o datech",
-      "url" : "https://data.gov.cz/"
+      "url" : "https://data.gov.cz/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://data.gov.cz/datové-sady?dotaz={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
   </script>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>

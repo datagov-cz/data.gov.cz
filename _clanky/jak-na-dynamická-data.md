@@ -25,9 +25,9 @@ Poskytování dynamických dat je pro povinné subjekty zákonnou povinnosti. Re
 - [Open Data Směrnice, důvody (4), (8)] - proč zveřejňovat dynamická data
 - [Open Data Směrnice, důvody (31)] - hospodářská hodnota dynamických dat
 - [Open Data Směrnice, důvody (31), (32)] - co znamená bezprostředně po shromáždění
-- [Open Data Směrnice, čl. 1, odst. 8] - co jsou dynamická data
-- [Open Data Směrnice, čl. 5, odst. 5] - co znamená bezprostředně po shromáždění
-- [Open Data Směrnice, čl. 5, odst. 6] - co znamená neúměrné úsilí a kdy dochází k nepřiměřeně omezené využitelnosti
+- [Open Data Směrnice, (čl. 1, odst. 8)] - co jsou dynamická data
+- [Open Data Směrnice, (čl. 5, odst. 5)] - co znamená bezprostředně po shromáždění
+- [Open Data Směrnice, (čl. 5, odst. 6)] - co znamená neúměrné úsilí a kdy dochází k nepřiměřeně omezené využitelnosti
 
 V kontextu dynamický dat se často setkáváme s několik pojmy. 
 Obecně jsou dynamická data data, která se mění, když jsou k dispozici nové informace, nikoliv v předem definovaných intervalech.

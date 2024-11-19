@@ -31,6 +31,7 @@ collections:
 
 app_registration_form: https://forms.office.com/e/mK4wLvrww4
 suggestion_form: https://forms.office.com/e/UuwD7UBnRG
+lkod_validator: https://datagov-cz.github.io/lkod-validator/
 
 # Path to design-system distribution directory, must not end with '/'.
 design_system_assets: /assets/design-system

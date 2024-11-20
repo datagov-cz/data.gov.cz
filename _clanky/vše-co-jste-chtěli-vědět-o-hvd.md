@@ -78,7 +78,7 @@ Povinnosti spojené s HVD tak pomůžou vyrovnat podmínky pro tento typ busines
 [prováděcím nařízením Evropské komise 2023/138]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0138 "prováděcí nařízení Evropské komise 2023/138"
 [Směrnici o otevřených datech]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024 "Směrnice o otevřených datech"
 [příloze]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0138#d1e32-48-1 "Annex"
-[stáhnout na webu data.gov.cz]: ../přílohy/články/vše-co-jste-chtěli-vědět-o-hvd/HVD-Analýza-verze-k-19.7.2024.xlsx "HVD analýza k 19.7.2024"
+[stáhnout na webu data.gov.cz]: ../přílohy/články/vše-co-jste-chtěli-vědět-o-hvd/HVD-Analýza-verze-k-20.11.2024.xlsx "HVD analýza k 20.11.2024"
 [otevřené formální normy pro rozhraní katalogů otevřených dat]: https://ofn.gov.cz/dcat-ap-cz-rozhran%C3%AD-katalog%C5%AF-otev%C5%99en%C3%BDch-dat/2024-05-28/ "OFN pro rozhraní katalogů otevřených dat"
 [Evropském datovém portálu]: https://data.europa.eu/data/datasets?is_hvd=true&locale=undefined "Evropský datový portál"
 [studii]: https://op.europa.eu/en/publication-detail/-/publication/3df0f526-2510-11ee-94cb-01aa75ed71a1/language-en "Identification of data themes for the extensions of public sector High-Value Datasets"

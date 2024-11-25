@@ -85,6 +85,9 @@ Záznam webináře zaměřeného na představení rolí vlastníka dat, věcnéh
 
 [Vymezení role technického správce dat]
 
+## Dopady změn informačních systémů na data
+[Dopady změn informačních systémů na data a jejich správu]
+
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
@@ -103,3 +106,4 @@ Záznam webináře zaměřeného na představení rolí vlastníka dat, věcnéh
 [Vymezení role technického správce dat]: ../../přílohy/správa-dat/Role_Technicky_spravce_dat_1.0.pdf "Vymezení role technického správce dat"
 [Vymezení role vlastníka dat]: ../../přílohy/správa-dat/Role_Vlastnik_dat_1.0.pdf "Vymezení role vlastníka dat"
 [Představení rolí odpovědných za data ve věcné oblasti]:  https://youtu.be/476lb7GqoTQ?si=yQeOah-_ycQniaNE "Představení rolí odpovědných za data ve věcné oblasti"
+[Dopady změn informačních systémů na data a jejich správu]: ../../přílohy/správa-dat/Dopady_zmen_IS_na_data_1.0.pdf "Dopady změn informačních systémů na data a jejich správu"

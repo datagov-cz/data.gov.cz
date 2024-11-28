@@ -86,6 +86,11 @@ Záznam webináře zaměřeného na představení rolí vlastníka dat, věcnéh
 [Vymezení role technického správce dat]
 
 ## Dopady změn informačních systémů na data
+
+**Webinář: [Dopady řešených změn informačních systémů na data a jejich správu]** 
+
+Záznam webináře, který se věnoval datovým aspektům změn informačních systémů. Přináší řadu praktických doporučení, jak zajistit podmínky pro kvalitní správu dat v průběhu změn informačních systémů ve veřejné správě. Věnuje se i tomu, jak systematicky zohledňovat dopady těchto změn na data a jejich správu.
+
 [Dopady změn informačních systémů na data a jejich správu]
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
@@ -107,3 +112,4 @@ Záznam webináře zaměřeného na představení rolí vlastníka dat, věcnéh
 [Vymezení role vlastníka dat]: ../../přílohy/správa-dat/Role_Vlastnik_dat_1.0.pdf "Vymezení role vlastníka dat"
 [Představení rolí odpovědných za data ve věcné oblasti]:  https://youtu.be/476lb7GqoTQ?si=yQeOah-_ycQniaNE "Představení rolí odpovědných za data ve věcné oblasti"
 [Dopady změn informačních systémů na data a jejich správu]: ../../přílohy/správa-dat/Dopady_zmen_IS_na_data_1.0.pdf "Dopady změn informačních systémů na data a jejich správu"
+[Dopady řešených změn informačních systémů na data a jejich správu]:  https://www.youtube.com/watch?v=2ybCwvDISG4 "Dopady řešených změn informačních systémů na data a jejich správu"

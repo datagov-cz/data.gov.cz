@@ -44,7 +44,7 @@ Ukázku těchto nástrojů naleznete ve školení Modelování popisu dat ve ve�
 [otevřenou formální normou pro slovníky]: https://ofn.gov.cz/slovníky  "Otevřená formální norma pro slovníky"
 [Archi]: https://archimatetool.com "Archi"
 [Sparx Enterprise Architect]: https://sparxsystems.com/products/ea/ "Sparx Enterprise Architect"
-[Návod pro popis dat pomocí tabulky]: "Návod pro popis dat pomocí tabulky"
+<!-- [Návod pro popis dat pomocí tabulky]: "Návod pro popis dat pomocí tabulky"
 [Návod pro popis dat pomocí Archi]: "Návod pro popis dat pomocí Archi"
 [Návod pro popis dat pomocí Sparx Enterprise Architect]: "Návod pro popis dat pomocí Sparx Enterprise Architect"
 [MDG technologie] "MDG technologie"
@@ -53,4 +53,4 @@ Ukázku těchto nástrojů naleznete ve školení Modelování popisu dat ve ve�
 [Šablona ve formátu XLSX (obsahuje příkladový slovník)] "Šablona ve formátu XLSX (obsahuje příkladový slovník)"
 [tableTemplateCSV] "Šablona ve formátu CSV (obsahuje příkladový slovník)"
 [tableSopvsXLSX] "Slovník obecných pojmů veřejné správy ve formátu XLSX"
-[tableSopvsCSV] "Slovník obecných pojmů veřejné správy ve formátu CSV"
+[tableSopvsCSV] "Slovník obecných pojmů veřejné správy ve formátu CSV" -->

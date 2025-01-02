@@ -5,18 +5,15 @@ ref: DataModelling-KnowledgeBase
 lang: cs
 ---
 
-Zde najdete odpovědi na časté dotazy a řešení specifických situací, se kterými se během popisu dat můžete setkat. Tato stránka bude průběžně rozšiřována během sbírání zkušeností a zpětné vazby z praxe.
+Zde najdete odpovědi na časté dotazy a řešení specifických situací, se kterými se během popisu dat můžete setkat. Tato stránka bude průběžně rozšiřována se sbíráním zkušeností a zpětné vazby z praxe.
+
+###
 
 ### Doplňující informace
-Dokument uvádí popis dat jako důležitý aspekt správy dat, motivaci k jeho tvorbě (včetně možných využití), základní teorii a postup popisu dat ve formě slovníku.
 
-[alternativníPojmy]
-
-
-[souvisejícíZdroje]
-
-
-[ekvivalentníPojmy]
+* [Co jsou alternativní názvy a jak je vyplňovat?]
+* [Co je to charakteristika "související zdroj" a jaký je rozdíl mezi ní a "zdrojem"?]
+* [Co jsou ekvivalentní pojmy a jaký je rozdíl mezi nimi a alternativními názvy?]
 Pro případy, kdy existují dva pojmy ve dvou slovnících, které mají stejnou definici (tedy popisují přesně to samé), mluvíme o ekvivalentních pojmech (pojem A je ekvivalentní pojmu B). Je důležité, aby ekvivalentní pojmy měly skutečně identický význam ve všech oblastech, tj. pojem A se dá plně zaměnit za pojem B a nemá to na zbytek slovníku/ů žádný dopad. Někdy se stejné pojmy nezávisle na sobě definují například v různých zákonech, nebo se z jednoho ustanovení úmyslně přebírají do jiného (například jako transpozice směrnic Evropské unie do české legislativy).
 Ekvivalentní pojem není to samé, co alternativní název (neboli v běžné mluvě synonym), jelikož pojem není pouze název, ale především definice/popis, která je názvem označena.
 Ekvivalentní pojmy lze ukázat na pojmu „Obecní úřad obce s rozšířenou působností“, jelikož se jedná o obecní úřad obce s rozšířenou působností, který je definován v § 66 zákona č. 128/2000 Sb. o obcích. Pojem „Obecní úřad obce s rozšířenou působností“ ze zákona o obcích je tedy plně zaměnitelný za pojem „Obecní úřad obce s rozšířenou působností“ ze zákona o silničním provozu.

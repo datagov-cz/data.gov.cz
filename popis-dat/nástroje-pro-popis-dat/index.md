@@ -33,17 +33,18 @@ Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat
 [Příkladový slovník a slovník obecných pojmů veřejné správy] -->
 
 
-
 ### Výrobní linka
-Výrobní linka je balíček softwarových nástrojů, vytvořený jako výstup projektu KODI, který slouží k vytváření slovníků a jejich následné publikaci. Jeho součástí jsou
+[Výrobní linka] je balíček softwarových nástrojů, který slouží k vytváření slovníků a jejich následné publikaci. Jeho součástí jsou
 *	nástroje na tvorbu slovníků TermIT a OntoGrapher,
 *	prohlížecí nástroj ShowIT,
 *	nástroj pro tvorbu datových specifikací Dataspecer.
-Ukázku těchto nástrojů naleznete ve školení Modelování popisu dat ve veřejné správě. 
+Ukázku těchto nástrojů naleznete ve školení [Modelování popisu dat ve veřejné správě]. Pro přístup do Výrobní linky si zažádejte na e-mailové adrese <a href= "mailto:data@dia.gov.cz">data@dia.gov.cz</a> - nezapomeňte uvést, pro jakou oblast slovník tvoříte a jak ho plánujete využít (např. evidence údajů agendy do RPP, výkladový slovník apod.).
 
 [otevřenou formální normou pro slovníky]: https://ofn.gov.cz/slovníky  "Otevřená formální norma pro slovníky"
 [Archi]: https://archimatetool.com "Archi"
 [Sparx Enterprise Architect]: https://sparxsystems.com/products/ea/ "Sparx Enterprise Architect"
+[Modelování popisu dat ve veřejné správě]: ../../vzdělávání/e-learning/modelování-významu-dat-ve-veřejné-správě/ "Školení Modelování popisu dat ve veřejné správě"
+[Výrobní linka]: https://slovník.gov.cz/modelujeme/ "Výrobní linka"
 <!-- [Návod pro popis dat pomocí tabulky]: "Návod pro popis dat pomocí tabulky"
 [Návod pro popis dat pomocí Archi]: "Návod pro popis dat pomocí Archi"
 [Návod pro popis dat pomocí Sparx Enterprise Architect]: "Návod pro popis dat pomocí Sparx Enterprise Architect"

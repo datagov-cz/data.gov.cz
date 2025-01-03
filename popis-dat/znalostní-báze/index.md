@@ -1,6 +1,6 @@
 ---
 layout: contained
-title: Znalostní báze
+title: Znalostní báze popisu dat
 ref: DataModelling-KnowledgeBase
 lang: cs
 ---
@@ -15,12 +15,12 @@ Zde najdete odpovědi na časté dotazy a řešení specifických situací, se k
 * [Co jsou datové typy a jak je vyplňovat?]
 
 
-#### Situace nastávající během popisu
+### Situace nastávající během popisu
 
 * [Jak vyjádřit určité "role" (např. fyzická/právnická osoba)?]
 * [Jak vyjádřit "typy" pojmu? Kdy je pojem vlastnost a kdy objekt práva?]
 
-#### Popisování určitých prvků
+### Popisování určitých prvků
 
 * [Jak popisovat číselníky?]
 

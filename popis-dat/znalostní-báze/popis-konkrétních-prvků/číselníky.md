@@ -17,6 +17,7 @@ Před použitím číselníku se ujistěte, že požadované položky nejsou ve 
 * Autoškola má své vlastnosti a vztahy, které nelze vyjádřit položkami číselníků – dají se jen navázat na daný pojem, jak je popsáno výše. 
 
 Proto v tomto případě doporučujeme autoškolu evidovat jako samostatný objekt práva bez nadřazenosti na „Položku číselníku“.
+
 Pro číselníky a jejich položky byla vytvořena [otevřená formální norma], nicméně znovu připomínáme, že pro využívání existujících číselníků není znalost OFN potřeba. 
 
 [otevřená formální norma]: https://ofn.gov.cz/číselníky/  "Otevřená formální norma pro číselníky"

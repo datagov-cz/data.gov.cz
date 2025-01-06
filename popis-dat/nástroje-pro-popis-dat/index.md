@@ -12,17 +12,15 @@ Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat
 
 ##### Ke stažení
 [Návod pro popis dat pomocí tabulky]
-[tableTemplateXLSX]
-[tableSopvsXLSX]
-[tableSampleCSV]
-[tableSopvsCSV]
+[Šablona ve formátu XLSX (obsahuje příkladový slovník)]
+[Šablona ve formátu CSV (obsahuje příkladový slovník)]
 
 ###	Archi
 [Archi] je nástroj na modelování v jazyku ArchiMate. Nástroj je zdarma ke stažení i k jakémukoliv využití (podle permisivní licence MIT)  a dostupný je pro Windows, Linux i macOS. Jazyk ArchiMate se používá pro vyjádření architektury podniku. Pro Archi jsme vytvořili šablonu pro popis dat, se kterou můžete začít nový projekt, nebo ji naimportujete do vašeho existujícího projektu.
 
 ##### Ke stažení
 [Návod pro popis dat pomocí Archi]
-[Šablona pro Archi (obsahuje příkladový slovník a slovník obecných pojmů veřejné správy)]
+[Šablona pro Archi (obsahuje příkladový slovník)]
 
 ### Enterprise Architect  
 [Sparx Enterprise Architect] je oproti Archi komerční nástroj, který podporuje několik modelovacích jazyků, včetně ArchiMate a UML. Připravili jsme šablonu a MDG technologii pro popis dat, pomocí které můžete tvořit slovníky.
@@ -30,7 +28,7 @@ Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat
 ##### Ke stažení
 [Návod pro popis dat pomocí Sparx Enterprise Architect]
 [MDG technologie]
-[Příkladový slovník a slovník obecných pojmů veřejné správy]
+[XMI export s příkladovým slovníkem]
 
 
 ### Výrobní linka
@@ -47,12 +45,10 @@ Ukázku těchto nástrojů naleznete ve školení [Modelování popisu dat ve ve
 [Modelování popisu dat ve veřejné správě]: ../../vzdělávání/e-learning/modelování-významu-dat-ve-veřejné-správě/ "Školení Modelování popisu dat ve veřejné správě"
 [Výrobní linka]: https://slovník.gov.cz/modelujeme/ "Výrobní linka"
 [Návod pro popis dat pomocí tabulky]: ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-Tabulka.pdf" "Návod pro popis dat pomocí tabulky"
+[Šablona ve formátu XLSX (obsahuje příkladový slovník)]: ../../přílohy/popis-dat/šablony/Šablona-pro-popis-dat.xlsx "Šablona ve formátu XLSX (obsahuje příkladový slovník)"
+[Šablona ve formátu CSV (obsahuje příkladový slovník)]: ../../přílohy/popis-dat/šablony/Šablona-pro-popis-dat.zip  "Šablona ve formátu CSV (obsahuje příkladový slovník)"
 [Návod pro popis dat pomocí Archi]: ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-Archi.pdf" "Návod pro popis dat pomocí Archi"
-[Návod pro popis dat pomocí Sparx Enterprise Architect]:  ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-EA.pdf" "Návod pro popis dat pomocí Sparx Enterprise Architect"
-[MDG technologie] "MDG technologie"
-[Příkladový slovník a slovník obecných pojmů veřejné správy] "Příkladový slovník a slovník obecných pojmů veřejné správy"
-[Šablona pro Archi (obsahuje příkladový slovník a slovník obecných pojmů veřejné správy)] "Šablona pro Archi (obsahuje příkladový slovník a slovník obecných pojmů veřejné správy)"
-[Šablona ve formátu XLSX (obsahuje příkladový slovník)] "Šablona ve formátu XLSX (obsahuje příkladový slovník)"
-[tableTemplateCSV] "Šablona ve formátu CSV (obsahuje příkladový slovník)"
-[tableSopvsXLSX] "Slovník obecných pojmů veřejné správy ve formátu XLSX"
-[tableSopvsCSV] "Slovník obecných pojmů veřejné správy ve formátu CSV" -->
+[Šablona pro Archi (obsahuje příkladový slovník)]: ../../přílohy/popis-dat/šablony/Šablona-pro-popis-dat.architemplate "Šablona pro Archi (obsahuje příkladový slovník)"
+[Návod pro popis dat pomocí Sparx Enterprise Architect]:  ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-EA.pdf "Návod pro popis dat pomocí Sparx Enterprise Architect"
+[MDG technologie]: ../../přílohy/popis-dat/šablony/slovníkyMDG.xml "MDG technologie"
+[XMI export s příkladovým slovníkem]: ../../přílohy/popis-dat/šablony/Příkladový-slovník.xml "XMI export s příkladovým slovníkem"

@@ -1,7 +1,7 @@
 ---
 layout: contained
 title: Využití popisu dat
-ref: DataModelling-Tutorial
+ref: DataModelling-Usage
 lang: cs
 ---
 

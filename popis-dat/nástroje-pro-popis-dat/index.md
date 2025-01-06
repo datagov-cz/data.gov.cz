@@ -29,8 +29,8 @@ Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat
 ##### Ke stažení
 
 * [Návod pro popis dat pomocí Sparx Enterprise Architect]
-* [MDG technologie]
-* [XMI export s příkladovým slovníkem]
+* [MDG technologie] (pro stažení klikněte pravým tlačikem na odkaz a zvolte "Uložit odkaz jako...")
+* [XMI export s příkladovým slovníkem] (pro stažení klikněte pravým tlačikem na odkaz a zvolte "Uložit odkaz jako...")
 
 
 ### Výrobní linka

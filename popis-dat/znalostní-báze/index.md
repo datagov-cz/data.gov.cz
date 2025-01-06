@@ -5,7 +5,7 @@ ref: DataModelling-KnowledgeBase
 lang: cs
 ---
 
-Zde najdete odpovědi na časté dotazy a řešení specifických situací, se kterými se během popisu dat můžete setkat. Tato stránka bude průběžně rozšiřována se sbíráním zkušeností a zpětné vazby z praxe.
+Zde najdete odpovědi na časté dotazy a řešení specifických situací, se kterými se během popisu dat můžete setkat.
 
 ### Doplňující informace
 

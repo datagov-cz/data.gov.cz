@@ -22,6 +22,6 @@ Po úvodní motivační části ukazuje školení celý popis dat na konkrétní
 
 [Záznam školení Popis dat veřejné správy (7. 6. 2024)]
 
-[Metodika popisu dat]: ../../přílohy/popis-dat/Metodika-popisu-dat.pdf "Metodika popisu dat"
+[Metodika popisu dat]: ../../přílohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf "Metodika popisu dat"
 [Záznam školení Popis dat veřejné správy (7. 6. 2024)]: https://www.youtube.com/watch?v=H__fZeszjGQ "Záznam školení Popis dat veřejné správy (7. 6. 2024)"
 

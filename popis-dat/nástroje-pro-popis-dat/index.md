@@ -11,24 +11,26 @@ Zde najdete představení nástrojů, pomocí kterých lze popisy dat vytvářet
 Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat začínají a v úřadě nemají zkušenosti s nástroji na tvorbu popisu dat v grafické podobě (neboli s diagramy/pohledy). Tabulka je nejjednodušší řešení pro základní popis dat. Nevyžaduje vynaložení speciálních kapacit kromě znalce oblastí, které jste zvolili pro tvorbu slovníků. Berte však na vědomí, že s růstem počtu pojmů, vlastností a vztahů ale roste komplikovanost a klesá srozumitelnost tabulky. Šablony   jsou připraveny jednak ve formátu XLSX (pro Microsoft Excel) a CSV.
 
 ##### Ke stažení
-[Návod pro popis dat pomocí tabulky]
-[Šablona ve formátu XLSX (obsahuje příkladový slovník)]
-[Šablona ve formátu CSV (obsahuje příkladový slovník)]
+* [Návod pro popis dat pomocí tabulky]
+* [Šablona ve formátu XLSX (obsahuje příkladový slovník)]
+* [Šablona ve formátu CSV (obsahuje příkladový slovník)]
 
 ###	Archi
 [Archi] je nástroj na modelování v jazyku ArchiMate. Nástroj je zdarma ke stažení i k jakémukoliv využití (podle permisivní licence MIT)  a dostupný je pro Windows, Linux i macOS. Jazyk ArchiMate se používá pro vyjádření architektury podniku. Pro Archi jsme vytvořili šablonu pro popis dat, se kterou můžete začít nový projekt, nebo ji naimportujete do vašeho existujícího projektu.
 
 ##### Ke stažení
-[Návod pro popis dat pomocí Archi]
-[Šablona pro Archi (obsahuje příkladový slovník)]
+
+* [Návod pro popis dat pomocí Archi]
+* [Šablona pro Archi (obsahuje příkladový slovník)]
 
 ### Enterprise Architect  
 [Sparx Enterprise Architect] je oproti Archi komerční nástroj, který podporuje několik modelovacích jazyků, včetně ArchiMate a UML. Připravili jsme šablonu a MDG technologii pro popis dat, pomocí které můžete tvořit slovníky.
 
 ##### Ke stažení
-[Návod pro popis dat pomocí Sparx Enterprise Architect]
-[MDG technologie]
-[XMI export s příkladovým slovníkem]
+
+* [Návod pro popis dat pomocí Sparx Enterprise Architect]
+* [MDG technologie]
+* [XMI export s příkladovým slovníkem]
 
 
 ### Výrobní linka

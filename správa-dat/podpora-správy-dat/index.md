@@ -64,6 +64,12 @@ Ať už se jedná o ty již existující nebo povinnosti, které nově přicház
 Záznam školení, které si klade za cíl ukázat, jak postupně a jednoduše vybudovat popis dat, který je možné využít nejen pro naplnění zákonných povinností, ale také pro celkové zefektivnění úřadu, zejména pro jeho digitalizaci.  
 Po úvodní motivační části ukazuje školení celý popis dat na konkrétním příkladu – od výběru pojmů, přes tvorbu slovníků, podporované nástroje, řešení častých chyb až k následnému použití v procesech digitalizace úřadu.  
 
+**Školení: [Popis dat veřejné správy: pokračování]** 
+
+Záznam školení k tématu popisu dat ve veřejné správě, které navazuje na předchozí školení Popis dat veřejné správy z června 2024 a doplňuje jej o praktické zkušenosti s popisem dat, o informace k používání nástrojů pro popis dat a využití popisu dat.
+
+Dalš podrobnosti k tématu popisu dat naleznete na samostatné stránce zde: [Popis dat]
+
 ## Datové potřeby
 
 **Webinář: [Identifikace a řízení datových potřeb]** 
@@ -113,3 +119,5 @@ Záznam webináře, který se věnoval datovým aspektům změn informačních s
 [Představení rolí odpovědných za data ve věcné oblasti]:  https://youtu.be/476lb7GqoTQ?si=yQeOah-_ycQniaNE "Představení rolí odpovědných za data ve věcné oblasti"
 [Dopady změn informačních systémů na data a jejich správu]: ../../přílohy/správa-dat/Dopady_zmen_IS_na_data_1.0.pdf "Dopady změn informačních systémů na data a jejich správu"
 [Dopady řešených změn informačních systémů na data a jejich správu]:  https://www.youtube.com/watch?v=2ybCwvDISG4 "Dopady řešených změn informačních systémů na data a jejich správu"
+[Popis dat veřejné správy: pokračování]: https://www.youtube.com/watch?v=--A8UEaLaQ4 "Popis dat veřejné správy: pokračování"
+[Popis dat]: https://data.gov.cz/popis-dat/ "Popis dat"

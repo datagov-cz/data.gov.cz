@@ -5,7 +5,7 @@ ref: DataModelling-Tutorial
 lang: cs
 ---
 
-Zde najdete naučné materiály pro popis dat.
+Zde najdete všechny potřebné vzdělávací materiály, které Vám pomohou s popisem dat.
 
 ### Metodika popisu dat
 Dokument uvádí popis dat jako důležitý aspekt správy dat, motivaci k jeho tvorbě (včetně možných využití), základní teorii a postup popisu dat ve formě slovníku.
@@ -25,3 +25,9 @@ Po úvodní motivační části ukazuje školení celý popis dat na konkrétní
 [Metodika popisu dat]: ../../přílohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf "Metodika popisu dat"
 [Záznam školení Popis dat veřejné správy (7. 6. 2024)]: https://www.youtube.com/watch?v=H__fZeszjGQ "Záznam školení Popis dat veřejné správy (7. 6. 2024)"
 
+#### Popis dat veřejné správy: pokračování
+Záznam školení k tématu popisu dat ve veřejné správě, které navazuje na školení Popis dat veřejné správy z června 2024 a doplňuje jej o praktické zkušenosti s popisem dat, využití nástrojů pro popis dat a využití popisu dat.
+
+[Záznam školení Popis dat veřejné správy: pokračování]
+
+[Záznam školení Popis dat veřejné správy: pokračování]:https://www.youtube.com/watch?v=--A8UEaLaQ4 "Záznam školení Popis dat veřejné správy: pokračování"

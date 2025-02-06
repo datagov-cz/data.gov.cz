@@ -99,6 +99,15 @@ Záznam webináře, který se věnoval datovým aspektům změn informačních s
 
 [Dopady změn informačních systémů na data a jejich správu]
 
+## Správa dat v informační koncepci úřadu
+
+**Webinář: [Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí]** 
+
+Záznam webináře zaměřeného na představení významu správy dat pro dlouhodobé řízení informačních systémů veřejné správy a také na to, proč a jak do informační koncepce úřadu začlenit oblast dat.
+
+
+
+
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
@@ -121,3 +130,4 @@ Záznam webináře, který se věnoval datovým aspektům změn informačních s
 [Dopady řešených změn informačních systémů na data a jejich správu]:  https://www.youtube.com/watch?v=2ybCwvDISG4 "Dopady řešených změn informačních systémů na data a jejich správu"
 [Popis dat veřejné správy: pokračování]: https://www.youtube.com/watch?v=--A8UEaLaQ4 "Popis dat veřejné správy: pokračování"
 [Popis dat]: https://data.gov.cz/popis-dat/ "Popis dat"
+[Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí]: https://www.youtube.com/watch?v=zPbh6OuLWnM "Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí"

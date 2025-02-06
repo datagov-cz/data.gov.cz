@@ -19,6 +19,8 @@ Díky tomu získají úřady jejich dobrou znalost a zároveň zajistí důvěry
 
 [Minimální standard správy dat]
 
+[Leták minimální standard správy dat]
+
 ## Strategie pro správu dat ve veřejné správě ČR
 
 **Webinář: [Představení Strategie pro správu dat ve veřejné správě ČR]** 
@@ -105,7 +107,7 @@ Záznam webináře, který se věnoval datovým aspektům změn informačních s
 
 Záznam webináře zaměřeného na představení významu správy dat pro dlouhodobé řízení informačních systémů veřejné správy a také na to, proč a jak do informační koncepce úřadu začlenit oblast dat.
 
-
+[Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]
 
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
@@ -131,3 +133,6 @@ Záznam webináře zaměřeného na představení významu správy dat pro dlouh
 [Popis dat veřejné správy: pokračování]: https://www.youtube.com/watch?v=--A8UEaLaQ4 "Popis dat veřejné správy: pokračování"
 [Popis dat]: https://data.gov.cz/popis-dat/ "Popis dat"
 [Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí]: https://www.youtube.com/watch?v=zPbh6OuLWnM "Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí"
+[Leták minimální standard správy dat]: ../../přílohy/správa-dat/Minimalni_standard_letak.pdf
+ "Leták minimální standard správy dat"
+ [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.1.xlsx "Tabulka přehledu věcných oblastí dat včetně jejich kategorizace"

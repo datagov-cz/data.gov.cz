@@ -3,7 +3,7 @@ layout: post
 detail: true
 title: "Doporučení ze Zprávy o vyspělosti otevřených dat 2024"
 ref: Doporučení-ze-Zprávy-o-vyspělosti-otevřených-dat-2024
-image: ../přílohy/články/doporučení-zpráva-ODMR-2024.jpg
+image: ../přílohy/články/doporučení-zpráva-ODMR-2024/Factsheet_ODMR_2024.webp
 author: marie_čermáková
 date: 2025-02-12 07:00:00 +02:00
 lang: cs

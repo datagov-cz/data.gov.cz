@@ -2,9 +2,9 @@
 layout: post 
 detail: true 
 title: "Správa dat se postupně posouvá směrem k vyšší kvalitě"
-ref: Správa dat se postupně posouvá směrem k vyšší kvalitě
+ref: Správa-dat-se-postupně-posouvá-směrem-k-vyšší-kvalitě
 lang: cs 
-image: ../přílohy/články/jak-na-dynamická-data/Dynamicka-data.webp
+image: ../přílohy/články/Správa-dat-se-postupně-posouvá-směrem-k-vyšší-kvalitě/foto-data.webp
 author: jana_novák_gabrielová
 date: 2025-02-12 12:00:00 +02:00 
 --- 

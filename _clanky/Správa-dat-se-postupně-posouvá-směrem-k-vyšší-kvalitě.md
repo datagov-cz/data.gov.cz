@@ -20,11 +20,11 @@ V lednu proběhl pro úřady zapojené do projektu správy dat ke stejnému tém
 
 Z dosavadní spolupráce DIA s 32 úřady vidíme, že se postupně daří posouvat správu dat ve veřejné správě směrem k vyšší kvalitě, což je samozřejmě dobrá zpráva. Za loňský rok poskytla DIA úřadům přibližně 200 individuálních konzultací, připravila řadu webinářů, podpůrných materiálů a metodik.
 
+{% include image.html url="../přílohy/články/Správa-dat-se-postupně-posouvá-směrem-k-vyšší-kvalitě/minimalni-standard.webp" description="Minimální standard SD" %}
+
 Nejlépe je vidět pozitivní změna na tom, jak se naplňují jednotlivá opatření z [minimálního standardu správy dat]. 
 Například 91 % zapojených úřadů již obsadilo klíčové role pro správu dat a 84 % úřadů zahájilo a provádělo popis dat ve zvolené oblasti. 
 To značí, že úřady s podporou DIA postupně berou správu dat za svou a snaží se plnit jednotlivé kroky směřující ke kvalitní práci s daty.
-
-{% include image.html url="../přílohy/články/Správa-dat-se-postupně-posouvá-směrem-k-vyšší-kvalitě/minimalni-standard.webp" description="Minimální standard SD" %}
 
 V nejbližší době se s úřady v rámci tématu správy dat tým DIA zaměří například na datové potřeby, začlenění správy dat do informační koncepce úřadu nebo kategorizaci dat.
 Všechny informace k těmto tématům postupně najdete v sekci [Správa dat], kterou pravidelně aktualizujeme. 

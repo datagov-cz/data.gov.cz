@@ -7,8 +7,6 @@ lang: cs
 
 Zúčastněte se 9. ročníku konference o využávíné dat veřejné správy!
 
-{% include image.html url="../přílohy/konference/2025/mesršmíd.jpg" description="Konference 2025" %}
-
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha + online
 

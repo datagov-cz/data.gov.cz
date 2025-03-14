@@ -1,13 +1,13 @@
 ---
 layout: contained
-title: Konference 2025_Jak na data ve veřejné správě
+title: Konference 2025
 ref: Konference2025
 lang: cs
 ---
 
 {% include image.html url="../../přílohy/konference/2025/Konference_Data_2025.webp" description="" %}
 
-Zúčastněte se 9. ročníku konference o využávíné dat veřejné správy!
+Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o využívání a správě dat státní správy a samosprávy!
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha + online
@@ -28,4 +28,5 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Jitka Faugnerová, Česká agentura životního prostředí
 * Jáchym Brzezina, Envidata
 * Radim Hladík, Filozofický ústav AV
+* Klára Jiráková, Kraj Vysočina
 * A další...

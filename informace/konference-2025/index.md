@@ -5,6 +5,8 @@ ref: Konference2025
 lang: cs
 ---
 
+{% include image.html url="../../přílohy/konference/2025/Konference_Data_2025.webp" description="Konference 2025" %}
+
 Zúčastněte se 9. ročníku konference o využávíné dat veřejné správy!
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00

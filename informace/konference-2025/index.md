@@ -5,12 +5,13 @@ ref: Konference2025
 lang: cs
 ---
 
-{% include image.html url="../../přílohy/konference/2025/Konference_Data_2025.webp" description="Konference 2025" %}
+{% include image.html url="../../přílohy/konference/2025/Konference_Data_2025.webp" description="" %}
 
 Zúčastněte se 9. ročníku konference o využávíné dat veřejné správy!
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha + online
+- **Registrace** Bude spuštěna v dubnu!
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 

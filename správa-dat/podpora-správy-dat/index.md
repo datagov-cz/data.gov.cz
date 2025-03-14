@@ -118,7 +118,7 @@ Záznam webináře zaměřeného na představení významu správy dat pro dlouh
 [Vymezení role garanta správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Garant%20správy%20dat.pdf "Vymezení role garanta správy dat"
 [Vymezení role datového architekta]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Role%20Datový%20architekt.pdf "Vymezení role datového architekta"
 [Výběr prioritní oblasti pro správu dat veřejné správy]: https://youtu.be/OQxdmktKYB8?si=4iAZcuvxIT0M2DJS "Výběr prioritní oblasti pro správu dat veřejné správy"
-[Metodika pro výběr prioritní oblasti]: ../../přílohy/správa-dat/Vymezení%20a%20prioritazice%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
+[Metodika pro výběr prioritní oblasti]: ../../přílohy/správa-dat/Vymezení%20a%20prioritizace%20oblastí.pdf "Metodika pro výběr prioritní oblasti" 
 [Význam a kontext popisu dat ve veřejné správě]: https://youtu.be/c1yIKJPUNYI?si=B5g3XHpNtpCCgn8y "Význam a kontext popisu dat ve veřejné správě"
 [Popis dat veřejné správy]: https://youtu.be/H__fZeszjGQ?si=GTe1uE-_igcvVDMh "Popis dat veřejné správy"
 [Identifikace a řízení datových potřeb]: https://youtu.be/0tHQdmtiNkM?feature=shared "Identifikace a řízení datových potřeb"

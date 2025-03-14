@@ -21,7 +21,6 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Bude upřesněno. Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
 
 ## Na konferenci vystoupí
-* Martin Skovbjerg Jensen, Danish Agency for Digital Government
 * Martin Mesršmíd, Digitální a informační agentura
 * Radek Hábl, Institut prevence a řešení předlužení
 * Jan Cibulka, Samizdat, Český rozhlas
@@ -29,4 +28,5 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Jáchym Brzezina, Envidata
 * Radim Hladík, Filozofický ústav AV
 * Klára Jiráková, Kraj Vysočina
+* Michal Verner, Úřad průmyslového vlastnictví
 * A další...

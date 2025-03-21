@@ -8,12 +8,11 @@ lang: cs
 Zde najdete představení nástrojů, pomocí kterých lze popisy dat vytvářet - včetně návodů a šablon. Vedle námi poskytnutých a podporovaných nástrojů níže lze využít i jiné. Jediný požadavek, který musí nástroje splnit je, že umožňují vytvořit soubor se slovníkem, který je kompatibilní s [otevřenou formální normou pro slovníky]. 
 
 ### Tabulka pro popis dat   
-Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat začínají a v úřadě nemají zkušenosti s nástroji na tvorbu popisu dat v grafické podobě (neboli s diagramy/pohledy). Tabulka je nejjednodušší řešení pro základní popis dat. Nevyžaduje vynaložení speciálních kapacit kromě znalce oblastí, které jste zvolili pro tvorbu slovníků. Berte však na vědomí, že s růstem počtu pojmů, vlastností a vztahů ale roste komplikovanost a klesá srozumitelnost tabulky. Šablony   jsou připraveny jednak ve formátu XLSX (pro Microsoft Excel) a CSV.
+Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat začínají a v úřadě nemají zkušenosti s nástroji na tvorbu popisu dat v grafické podobě (neboli s diagramy/pohledy). Tabulka je nejjednodušší řešení pro základní popis dat. Nevyžaduje vynaložení speciálních kapacit kromě znalce oblastí, které jste zvolili pro tvorbu slovníků. Berte však na vědomí, že s růstem počtu pojmů, vlastností a vztahů ale roste komplikovanost a klesá srozumitelnost tabulky. Šablona je připravena ve formátu XLSX (pro Microsoft Excel).
 
 ##### Ke stažení
 * [Návod pro popis dat pomocí tabulky]
-* [Šablona ve formátu XLSX (obsahuje příkladový slovník)]
-* [Šablona ve formátu CSV (obsahuje příkladový slovník)]
+* [Šablona pro XLSX (obsahuje příkladový slovník)]
 
 ###	Archi
 [Archi] je nástroj na modelování v jazyku ArchiMate. Nástroj je zdarma ke stažení i k jakémukoliv využití (podle permisivní licence MIT)  a dostupný je pro Windows, Linux i macOS. Jazyk ArchiMate se používá pro vyjádření architektury podniku. Pro Archi jsme vytvořili šablonu pro popis dat, se kterou můžete začít nový projekt, nebo ji naimportujete do vašeho existujícího projektu.
@@ -48,7 +47,6 @@ Ukázku těchto nástrojů naleznete ve školení [Modelování popisu dat ve ve
 [Výrobní linka]: https://slovník.gov.cz/modelujeme/ "Výrobní linka"
 [Návod pro popis dat pomocí tabulky]: ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-Tabulka.pdf "Návod pro popis dat pomocí tabulky"
 [Šablona ve formátu XLSX (obsahuje příkladový slovník)]: ../../přílohy/popis-dat/šablony/Šablona-pro-popis-dat.xlsx "Šablona ve formátu XLSX (obsahuje příkladový slovník)"
-[Šablona ve formátu CSV (obsahuje příkladový slovník)]: ../../přílohy/popis-dat/šablony/Šablona-pro-popis-dat.zip  "Šablona ve formátu CSV (obsahuje příkladový slovník)"
 [Návod pro popis dat pomocí Archi]: ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-Archi.pdf "Návod pro popis dat pomocí Archi"
 [Šablona pro Archi (obsahuje příkladový slovník)]: ../../přílohy/popis-dat/šablony/Šablona-pro-popis-dat.architemplate "Šablona pro Archi (obsahuje příkladový slovník)"
 [Návod pro popis dat pomocí Sparx Enterprise Architect]:  ../../přílohy/popis-dat/dokumenty/Návod-pro-popis-dat-EA.pdf "Návod pro popis dat pomocí Sparx Enterprise Architect"

@@ -25,9 +25,9 @@ Po úvodní motivační části ukazuje školení celý popis dat na konkrétní
 [Metodika popisu dat]: ../../přílohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf "Metodika popisu dat"
 [Záznam školení Popis dat veřejné správy (7. 6. 2024)]: https://www.youtube.com/watch?v=H__fZeszjGQ "Záznam školení Popis dat veřejné správy (7. 6. 2024)"
 
-#### Popis dat veřejné správy: pokračování
+#### Popis dat veřejné správy: pokračování (6. 12. 2024)
 Záznam školení k tématu popisu dat ve veřejné správě, které navazuje na předchozí školení Popis dat veřejné správy z června 2024 a doplňuje jej o praktické zkušenosti s popisem dat, o informace k používání nástrojů pro popis dat a využití popisu dat.
 
-[Záznam školení Popis dat veřejné správy: pokračování]
+[Záznam školení Popis dat veřejné správy: pokračování (6. 12. 2024)]
 
-[Záznam školení Popis dat veřejné správy: pokračování]:https://www.youtube.com/watch?v=--A8UEaLaQ4 "Záznam školení Popis dat veřejné správy: pokračování"
+[Záznam školení Popis dat veřejné správy: pokračování (6. 12. 2024)]:https://www.youtube.com/watch?v=--A8UEaLaQ4 "Záznam školení Popis dat veřejné správy: pokračování (6. 12. 2024)"

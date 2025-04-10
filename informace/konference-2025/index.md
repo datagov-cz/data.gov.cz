@@ -21,12 +21,19 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Bude upřesněno. Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
 
 ## Na konferenci vystoupí
+* Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Martin Mesršmíd, Digitální a informační agentura
-* Radek Hábl, Institut prevence a řešení předlužení
-* Jan Cibulka, Samizdat, Český rozhlas
+* Martin Nečaský, Matematicko-fyzikální fakulta UK
 * Jitka Faugnerová, Česká agentura životního prostředí
+* Radek Hábl, Institut prevence a řešení předlužení
+* Aleš Tichopád, Fakulta biomedicínského inženýrství ČVUT
+* Jan Cibulka, Samizdat, Český rozhlas
 * Jáchym Brzezina, Envidata
 * Radim Hladík, Filozofický ústav AV
 * Klára Jiráková, Kraj Vysočina
 * Michal Verner, Úřad průmyslového vlastnictví
+* Libor Drlík, Digitální a informační agentura
+* Zbyšek Stodůlka, Národní archiv
+* Kristýna Zaklová, Zastupko
+* Tomáš Šedivec, Digitální ainformační agentura
 * A další...

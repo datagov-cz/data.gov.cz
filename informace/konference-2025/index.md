@@ -35,5 +35,5 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Libor Drlík, Digitální a informační agentura
 * Zbyšek Stodůlka, Národní archiv
 * Kristýna Zaklová, Zastupko
-* Tomáš Šedivec, Digitální ainformační agentura
+* Tomáš Šedivec, Digitální a informační agentura
 * A další...

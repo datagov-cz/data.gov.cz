@@ -23,7 +23,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 ## Na konferenci vystoupí
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/mesršmíd.jpg" title="Martin Mesršmíd"/>
+      <img width="100%" src="../../přílohy/konference/2025/Mesršmíd.jpg" title="Martin Mesršmíd"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
@@ -43,7 +43,6 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     </gov-grid-item>
 </gov-grid>
 
-* Dále vystoupí:
 * Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Martin Nečaský, Matematicko-fyzikální fakulta UK
 * Jitka Faugnerová, Česká agentura životního prostředí

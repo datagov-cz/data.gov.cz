@@ -43,6 +43,18 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     </gov-grid-item>
 </gov-grid>
 
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Cepr.png" title="Martin Cepr"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Martin Cepr</strong> je lídrem projektového týmu Digitální a informační agentury zaměřeného na rozvoj kvalitní správy dat a spoluautorem Strategie pro správu dat ve veřejné správě (2024–2030). Zároveň se zabývá enterprise architekturou úřadů a je součástí kompetenčního centra NAKIT pro podporu tvorby informačních koncepcí úřadů. Předchozí profesní zkušenosti v oblastech business analýzy a architektury, procesního řízení a business intelligence získal převážně v bankovním sektoru.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+
 * Dále vystoupí:
 * Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Martin Nečaský, Matematicko-fyzikální fakulta UK

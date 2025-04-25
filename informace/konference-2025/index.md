@@ -88,6 +88,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
         <strong>Martin Smetana</strong> má bohaté zkušenosti v oblasti analýzy dat a jejich využití v praxi. Jeho profesní dráha začala na pozici datového analytika, následně vedl oddělení plánování a vyhodnocování kontrol na Nejvyšším kontrolním úřadě (NKÚ). V současné době působí na NKÚ jako ředitel odboru systémové podpory kontrolní činnosti. Tento odbor se zaměřuje na analytickou, metodickou a technickou podporu pro plánování, provádění a vyhodnocování kontrolní činnosti. Martin se také aktivně věnuje sdílení svých znalostí a zkušeností, a proto rád přednáší na různá témata jako je analýza dat, datové vizualizace a data storytellingu.
+      </p>
     </gov-grid-item>
 </gov-grid>
 
@@ -98,6 +99,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
         <strong>Martin Nečaský</strong> působí v oblasti otevřených dat od roku 2011, kdy založil iniciativu OpenData.cz. Od té doby realizoval řadu projektů, ve kterých pomáhal úřadům s otevíráním jejich dat (např. ČTÚ, ČSSZ, MFČR, NKÚ). V současnosti působí jako docent na Matematicko-fyzikální fakultě Univerzity Karlovy v oboru informatika a také jako odborný vedoucí týmu Národního koordinátora otevřených dat na Ministerstvu vnitra ČR, kde pomáhá českým úřadům s publikací otevřených dat a podílí se na tvorbě pravidel, standardů, doporučení a legislativy v oblasti otevřených dat. V oblasti otevřených dat též publikuje v uznávaných mezinárodních vědeckých časopisech jako je např. Semantic Web Journal nebo Journal of Web Semantics.
+      </p>
     </gov-grid-item>
 </gov-grid>
 
@@ -123,6 +125,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     </gov-grid-item>
 </gov-grid>
 
+## Dále vystoupí
 * Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Jitka Faugnerová, Česká agentura životního prostředí
 * Radek Hábl, Institut prevence a řešení předlužení

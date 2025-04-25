@@ -11,8 +11,8 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
-- **Registrace** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená. Je možné, že bude rychle naplněna. V tom případě Vás budeme informovat. Konferenci můžete sledovat i online.
-- **Online přenos** Bude doplněno
+- **Registrace:** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená. Je možné, že bude rychle naplněna. V tom případě Vás budeme informovat. Konferenci můžete sledovat i online na YouTube!
+- **Online přenos:** Bude doplněno
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 
@@ -25,37 +25,37 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 
 * 09:00 - 10:05 **ÚVODNÍ BLOK - TRENDY V DATECH VEŘEJNÉHO SEKTORU**
   * **Zahájení konference a úvodní slovo** Martin Mesršmíd, Digitální a informační agentura
-  * **Key note speach (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí 
-  * **Key note speach** Martin Nečaský, Matematicko - fyzikální faktulta UK
+  * **Key note speech (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí 
+  * **Key note speech** Martin Nečaský, Matematicko-fyzikální faktulta UK
 
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
   * **Naplňování minimálního standardu a jak si stojíme** Libor Drlík, Digitální a informační agentura
   * **Geoportál ČR - jednotný přístup k prostorovým  datům** Jitka Faugnerová, CENIA
-  * **Bude doplněno** Zbyšek Stodůlka, Národní archiv
+  * Zbyšek Stodůlka, Národní archiv
   * **Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis** Martin Cepr, Digitální a informační agentura
-  * **Bude doplněno** Michal Verner, Úřad průmyslového vlastnictví
-  * **Bude doplněno** Klára Jiráková, Kraj Vysočina
+  * Michal Verner, Úřad průmyslového vlastnictví
+  * Klára Jiráková, Kraj Vysočina
 
 * 11:45 - 12:30 **OBĚD**
 
 * 12:30 - 14:00 **BLOK II - VEŘEJNÁ DATA A VĚDA**               
-  * **Bude doplněno** David Hemala, Digitální a informační agentura
+  * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
-  *  **Bude doplněno** EOSC
-  * **Bude doplněno** Radim Hladík, Akademie věd ČR
-  * **Bude doplněno** Jiří Münich, PAQ Research
+  * EOSC
+  * Radim Hladík, Akademie věd ČR
+  * Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**
 
 * 14:30 - 16:00 **BLOK III - OTEVŘENÁ DATA A JEJICH VYUŽITÍ**
-  * **Bude doplněno** Kristýna Zaklová, Zastupko
-  * **Bude doplněno** Jan Cibulka, Český rozhlas
-  * **Bude doplněno** Jáchym Brzezina, Envidata
-  * **Bude doplněno** Radek Hábl, Institut prevence a řešení předlužení
-  * **Bude doplněno** Kristýna Pšorn Zákopčanová
+  * Kristýna Zaklová, Zastupko
+  * Jan Cibulka, Český rozhlas
+  * Jáchym Brzezina, Envidata
+  * Radek Hábl, Institut prevence a řešení předlužení
+  * Kristýna Pšorn Zákopčanová
 
-* 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad
-* 12:30 - 13:15 **DISCUSSION with the representative od the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, D8nska agentura pro digitální vládnutí                  
+* 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
+* 12:30 - 13:15 **DISCUSSION with the representative od the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
 
 
 ## Na konferenci vystoupí
@@ -100,7 +100,6 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
         <strong>Martin Nečaský</strong> působí v oblasti otevřených dat od roku 2011, kdy založil iniciativu OpenData.cz. Od té doby realizoval řadu projektů, ve kterých pomáhal úřadům s otevíráním jejich dat (např. ČTÚ, ČSSZ, MFČR, NKÚ). V současnosti působí jako docent na Matematicko-fyzikální fakultě Univerzity Karlovy v oboru informatika a také jako odborný vedoucí týmu Národního koordinátora otevřených dat na Ministerstvu vnitra ČR, kde pomáhá českým úřadům s publikací otevřených dat a podílí se na tvorbě pravidel, standardů, doporučení a legislativy v oblasti otevřených dat. V oblasti otevřených dat též publikuje v uznávaných mezinárodních vědeckých časopisech jako je např. Semantic Web Journal nebo Journal of Web Semantics.
     </gov-grid-item>
 </gov-grid>
-
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">

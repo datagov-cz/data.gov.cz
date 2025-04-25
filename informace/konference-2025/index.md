@@ -135,6 +135,6 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Zbyšek Stodůlka, Národní archiv
 * Kristýna Zaklová, Zastupko
 * Martin Cepr, Digitální a informační agentura
-* Kristýna Pšor Zákopčanová
+* Kristýna Pšorn Zákopčanová
 * Jiří Münich, PAQ Research
 * A další...

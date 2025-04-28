@@ -54,7 +54,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * Radek Hábl, Institut prevence a řešení předlužení
   * Kristýna Pšorn Zákopčanová
 
-* 10:05 - 11:05 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
+* 10:05 - 11:05 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024 - KAPACITA BYLA NAPLNĚNA!
 * 12:30 - 13:15 **DISCUSSION with the representative of the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
 
 

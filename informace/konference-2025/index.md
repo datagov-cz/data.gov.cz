@@ -125,6 +125,28 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     </gov-grid-item>
 </gov-grid>
 
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/zaklova.webp" title="Kristýna Zaklová"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Kristýna Zaklová</strong> je absolventkou Fakulty informačních technologií VUT v Brně, kde od roku 2023 pokračuje v doktorském studiu. Zaměřuje se na otevřená (vládní) data, jejich zpracování a vizualizace. Dále je zakladatelkou projektu Zastupko.cz, který analyzuje a zpřístupňuje hlasování městských a krajských zastupitelstev. Cílem tohoto projektu je zvýšit transparentnost rozhodování samospráv a umožnit občanům snadno sledovat, jak jejich zástupci hlasují. Mezi její další iniciativy patří např. projekt Komu patřím, který umožňuje jednotné prohledávání dostupných registrů psů a koček.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Brzezina.webp" title="Jáchym Brzezina"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Jáchym Brzezina</strong> více než 10 let působí na Českém hydrometeorologickém ústavu, posledních 7 let jako vedoucí oddělení kvality ovzduší v Brně. Pracovně i ve volném čase se věnuje mimo jiné datové analýze, datové vizualizaci, popularizaci oborů souvisejících s životním prostředím a vývoji webových stránek. Je autorem například vzdělávacího webu infoviz.cz se stovkami infografik a analytického webu envidata.cz, který nabízí rozsáhlé analýzy založené na volně dostupných datech o počasí a klimatu, vodě, kvalitě ovzduší a odpadech.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
 ## Dále vystoupí
 * Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Jitka Faugnerová, Česká agentura životního prostředí
@@ -133,7 +155,6 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * Klára Jiráková, Kraj Vysočina
 * Michal Verner, Úřad průmyslového vlastnictví
 * Zbyšek Stodůlka, Národní archiv
-* Kristýna Zaklová, Zastupko
 * Martin Cepr, Digitální a informační agentura
 * Kristýna Pšorn Zákopčanová
 * Jiří Münich, PAQ Research

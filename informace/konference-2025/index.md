@@ -16,7 +16,7 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 
-Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality např. v podobě HVD (dat s vysokou kvalitou) v kontextu veřejné správy a konkrétních příkladů užití dat a to nejen otevřených.
+Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality a konkrétních příkladů užití dat a to nejen otevřených.
 
 ## Program
 * Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
@@ -42,20 +42,20 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
   * EOSC
-  * Radim Hladík, Akademie věd ČR
+  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
   * Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**
 
 * 14:30 - 16:00 **BLOK III - OTEVŘENÁ DATA A JEJICH VYUŽITÍ**
-  * Kristýna Zaklová, Zastupko
+  * **Zastupko.cz: transparentnost v rozhodování samospráv** Kristýna Zaklová, Zastupko
   * Jan Cibulka, Český rozhlas
-  * Jáchym Brzezina, Envidata
+  * **Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?** Jáchym Brzezina, Envidata
   * Radek Hábl, Institut prevence a řešení předlužení
   * Kristýna Pšorn Zákopčanová
 
 * 10:05 - 11:05 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
-* 12:30 - 13:15 **DISCUSSION with the representative od the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
+* 12:30 - 13:15 **DISCUSSION with the representative of the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
 
 
 ## Na konferenci vystoupí

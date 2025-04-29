@@ -14,6 +14,7 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 - **Registrace:** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená. Je možné, že bude rychle naplněna. V tom případě Vás budeme informovat. Konferenci můžete sledovat i online na YouTube!
 - **Online přenos:** Bude doplněno
 
+
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 
 Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality např. v podobě HVD (dat s vysokou kvalitou) v kontextu veřejné správy a konkrétních příkladů užití dat a to nejen otevřených.
@@ -25,7 +26,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 
 * 09:00 - 10:05 **ÚVODNÍ BLOK - TRENDY V DATECH VEŘEJNÉHO SEKTORU**
   * **Zahájení konference a úvodní slovo** Martin Mesršmíd, Digitální a informační agentura
-  * **Key note speech (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí 
+  * **Key note speech: The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí 
   * **Key note speech** Martin Nečaský, Matematicko-fyzikální faktulta UK
 
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
@@ -41,8 +42,8 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * 12:30 - 14:00 **BLOK II - VEŘEJNÁ DATA A VĚDA**               
   * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
-  * EOSC
-  * Radim Hladík, Akademie věd ČR
+  * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Matej Antol, European Open Science Cloud - Masarykova univerzita
+  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
   * Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**
@@ -54,8 +55,13 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * Radek Hábl, Institut prevence a řešení předlužení
   * Kristýna Pšorn Zákopčanová
 
+WORKSHOPY:
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
-* 12:30 - 13:15 **DISCUSSION with the representative od the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
+* 12:30 - 13:15 **In-depth discussion on similarities and differences in Czech and Danish experiences and areas of focus for the coming years (DISCUSSION in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí
+
+**KAPACITA WORKSHOPŮ JE JIŽ NAPLNĚNA!**             
+
+
 
 
 ## Na konferenci vystoupí

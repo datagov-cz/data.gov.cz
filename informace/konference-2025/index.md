@@ -17,7 +17,7 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 
-Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality např. v podobě HVD (dat s vysokou kvalitou) v kontextu veřejné správy a konkrétních příkladů užití dat a to nejen otevřených.
+Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality a konkrétních příkladů užití dat a to nejen otevřených.
 
 ## Program
 * Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
@@ -43,25 +43,20 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
   * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Matej Antol, European Open Science Cloud - Masarykova univerzita
-  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
+  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
   * Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**
 
 * 14:30 - 16:00 **BLOK III - OTEVŘENÁ DATA A JEJICH VYUŽITÍ**
-  * Kristýna Zaklová, Zastupko
+  * **Zastupko.cz: transparentnost v rozhodování samospráv** Kristýna Zaklová, Zastupko
   * Jan Cibulka, Český rozhlas
-  * Jáchym Brzezina, Envidata
+  * **Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?** Jáchym Brzezina, Envidata
   * Radek Hábl, Institut prevence a řešení předlužení
   * Kristýna Pšorn Zákopčanová
 
-WORKSHOPY:
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
-* 12:30 - 13:15 **In-depth discussion on similarities and differences in Czech and Danish experiences and areas of focus for the coming years (DISCUSSION in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí
-
-**KAPACITA WORKSHOPŮ JE JIŽ NAPLNĚNA!**             
-
-
+* 12:30 - 13:15 **DISCUSSION with the representative od the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
 
 
 ## Na konferenci vystoupí
@@ -131,6 +126,28 @@ WORKSHOPY:
     </gov-grid-item>
 </gov-grid>
 
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/zaklova.webp" title="Kristýna Zaklová"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Kristýna Zaklová</strong> je absolventkou Fakulty informačních technologií VUT v Brně, kde od roku 2023 pokračuje v doktorském studiu. Zaměřuje se na otevřená (vládní) data, jejich zpracování a vizualizace. Dále je zakladatelkou projektu Zastupko.cz, který analyzuje a zpřístupňuje hlasování městských a krajských zastupitelstev. Cílem tohoto projektu je zvýšit transparentnost rozhodování samospráv a umožnit občanům snadno sledovat, jak jejich zástupci hlasují. Mezi její další iniciativy patří např. projekt Komu patřím, který umožňuje jednotné prohledávání dostupných registrů psů a koček.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Brzezina.webp" title="Jáchym Brzezina"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Jáchym Brzezina</strong> více než 10 let působí na Českém hydrometeorologickém ústavu, posledních 7 let jako vedoucí oddělení kvality ovzduší v Brně. Pracovně i ve volném čase se věnuje mimo jiné datové analýze, datové vizualizaci, popularizaci oborů souvisejících s životním prostředím a vývoji webových stránek. Je autorem například vzdělávacího webu infoviz.cz se stovkami infografik a analytického webu envidata.cz, který nabízí rozsáhlé analýzy založené na volně dostupných datech o počasí a klimatu, vodě, kvalitě ovzduší a odpadech.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
 ## Dále vystoupí
 * Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Jitka Faugnerová, Česká agentura životního prostředí
@@ -139,7 +156,6 @@ WORKSHOPY:
 * Klára Jiráková, Kraj Vysočina
 * Michal Verner, Úřad průmyslového vlastnictví
 * Zbyšek Stodůlka, Národní archiv
-* Kristýna Zaklová, Zastupko
 * Martin Cepr, Digitální a informační agentura
 * Kristýna Pšorn Zákopčanová
 * Jiří Münich, PAQ Research

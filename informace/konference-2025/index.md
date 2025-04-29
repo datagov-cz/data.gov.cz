@@ -43,7 +43,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
   * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Matej Antol, European Open Science Cloud - Masarykova univerzita
-  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
+  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
   * Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**

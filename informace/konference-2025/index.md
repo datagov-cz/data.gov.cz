@@ -26,15 +26,15 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 
 * 09:00 - 10:05 **ÚVODNÍ BLOK - TRENDY V DATECH VEŘEJNÉHO SEKTORU**
   * **Zahájení konference a úvodní slovo** Martin Mesršmíd, Digitální a informační agentura
-  * **Key note speech: The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí 
-  * **Key note speech** Martin Nečaský, Matematicko-fyzikální faktulta UK
+  * **Keynote speech: The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí - Keynote speech will be focused on the approach taken by the Danish Data Portal (www.datavejviser.dk), and how this builds upon and interacts with a range of other investments in the quality and availability of public sector data.
+  * **Keynote speech** Martin Nečaský, Matematicko-fyzikální faktulta UK
 
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
   * **Naplňování minimálního standardu a jak si stojíme** Libor Drlík, Digitální a informační agentura
   * **Geoportál ČR - jednotný přístup k prostorovým  datům** Jitka Faugnerová, CENIA
   * Zbyšek Stodůlka, Národní archiv
   * **Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis** Martin Cepr, Digitální a informační agentura
-  * Michal Verner, Úřad průmyslového vlastnictví
+  * **Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat** Michal Verner, Úřad průmyslového vlastnictví
   * Klára Jiráková, Kraj Vysočina
 
 * 11:45 - 12:30 **OBĚD**
@@ -55,8 +55,10 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * Radek Hábl, Institut prevence a řešení předlužení
   * Kristýna Pšorn Zákopčanová
 
+WORKSHOPY:
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
-* 12:30 - 13:15 **DISCUSSION with the representative od the Danish Agency for Digital Government (in English)** Martin Skovbjerg Jensen, Dánska agentura pro digitální vládnutí                  
+* 12:30 - 13:15 **DISCUSSION with Martin Skovbjerg Jensen of the Danish Agency for Digital Government (in English)**
+Chance to further compare and share experiences between the Czech Republic and Denmark. Themes of interest include lessons learned on how to map and describe public sector data that could be shared, which types of information about datasets are most useful to potential data users, and how one prioritises what data should be made more openly available.                  
 
 **KAPACITA WORKSHOPŮ JE JIŽ NAPLNĚNA!** 
 
@@ -149,13 +151,33 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
     </gov-grid-item>
 </gov-grid>
 
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Antol.webp" title="Matej Antol"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Matej Antol</strong> je hlavním projektovým manažerem projektu EOSC-CZ, integrační manažer české e-infrastruktury e-INFRA CZ a výkonný ředitel jednoho z jejích tří partnerů, infrastruktury CERIT-SC zřízeného při Ústavu výpočetní techniky Masrykovy univerzity. Má dlouholetou zkušenost s vedením IT a výzkumných projektů. V rámci svých aktivit vybudoval platformu pro koordinaci řízení IT služeb na MUNI, prostředí pro správu citlivých dat SensitiveCloud a další. Jeho výzkumné aktivity se zaměřují na správu a analýzu komplexních a vysoce dimenzionálních dat (obrazová data, data z oblasti strukturní biologie apod.) za pomocí technik umělé inteligence. 
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Verner.webp" title="Michal Verner"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Michal Verner</strong> vystudoval obory Informatika a Mezinárodní a regionální vztahy v průmyslovém vlastnictví. Oba obory propojuje ve své pozici vedoucího oddělení analýz a digitalizace Úřadu průmyslového vlastnictví. S více než 18 lety praxe v oblasti digitalizace, implementace standardů do řízení organizace a mezinárodní spolupráce přispívá k udržování vedoucí pozice Úřadu průmyslového vlastnictví v oblasti digitalizace a kvality služeb nejen v rámci české státní správy, ale i v mezinárodním srovnání.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
 ## Dále vystoupí
-* Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí
 * Jitka Faugnerová, Česká agentura životního prostředí
 * Radek Hábl, Institut prevence a řešení předlužení
 * Jan Cibulka, Samizdat, Český rozhlas
 * Klára Jiráková, Kraj Vysočina
-* Michal Verner, Úřad průmyslového vlastnictví
 * Zbyšek Stodůlka, Národní archiv
 * Martin Cepr, Digitální a informační agentura
 * Kristýna Pšorn Zákopčanová

@@ -109,6 +109,15 @@ Záznam webináře zaměřeného na představení významu správy dat pro dlouh
 
 [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]
 
+## Kategorizace dat
+**Webinář: [Kategorizace v popisu dat a datových rozhraní]**
+
+Záznam webináře zaměřeného na kategorizaci dat (podle § 23 vyhlášky č. 360/2023 Sb.), a to v souvislosti s popisem dat a datových rozhraní. Přibližuje, jak by měly úřady ke kategorizaci v tomto případě přistupovat a jaké má pro ně přínosy, ať už jde o znalost a dohledatelnost dat nebo řízení informačních systémů veřejné správy.
+
+## Katalogizace dat
+**Webinář: [Katalogy a dohledatelnost dat]**
+
+Záznam webináře, který se zaměřuje na dohledatelnost dat a tvorbu datových katalogů. Shrnuje základní informace o tom, jaké kroky je potřeba podniknout k dohledatelnosti dat, jak si mohou úřady vytvořit lokální katalogy dat a jak katalogizovat datový slovník. Přináší také informace o výhodách katalogizace dat, a to nejen pro jednotlivé úřady, ale i pro celou veřejnou správu.
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
@@ -136,3 +145,5 @@ Záznam webináře zaměřeného na představení významu správy dat pro dlouh
 [Leták minimální standard správy dat]: ../../přílohy/správa-dat/Minimalni_standard_letak.pdf
  "Leták minimální standard správy dat"
  [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.1.xlsx "Tabulka přehledu věcných oblastí dat včetně jejich kategorizace"
+[Kategorizace v popisu dat a datových rozhraní]: https://youtu.be/AuzppRbRqMg "Kategorizace v popisu dat a datových rozhraní"
+[Katalogy a dohledatelnost dat]: https://youtu.be/zk0GobYpFZo "Katalogy a dohledatelnost dat"

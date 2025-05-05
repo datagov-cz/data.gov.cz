@@ -109,7 +109,7 @@ Záznam webináře zaměřeného na představení významu správy dat pro dlouh
 
 [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]
 
-## Ketegorizace dat
+## Kategorizace dat
 **Webinář: [Kategorizace v popisu dat a datových rozhraní]**
 
 Záznam webináře zaměřeného na kategorizaci dat (podle § 23 vyhlášky č. 360/2023 Sb.), a to v souvislosti s popisem dat a datových rozhraní. Přibližuje, jak by měly úřady ke kategorizaci v tomto případě přistupovat a jaké má pro ně přínosy, ať už jde o znalost a dohledatelnost dat nebo řízení informačních systémů veřejné správy.

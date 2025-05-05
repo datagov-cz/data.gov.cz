@@ -50,9 +50,9 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 
 * 14:30 - 16:00 **BLOK III - OTEVŘENÁ DATA A JEJICH VYUŽITÍ**
   * **Zastupko.cz: transparentnost v rozhodování samospráv** Kristýna Zaklová, Zastupko
-  * Jan Cibulka, Český rozhlas
+  * **Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?** Jan Cibulka, Český rozhlas
   * **Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?** Jáchym Brzezina, Envidata
-  * Radek Hábl, Institut prevence a řešení předlužení
+  * **Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému** Radek Hábl, Institut prevence a řešení předlužení
   * Kristýna Pšorn Zákopčanová
 
 WORKSHOPY:
@@ -76,22 +76,11 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Drlík.webp" title="Libor Drlík"/>
+      <img width="100%" src="../../přílohy/konference/2025/Jensen.webp" title="Martin Jensen"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Libor Drlík</strong> je lídrem projektového týmu Digitální a informační agentury zaměřeného na rozvoj kvalitní správy dat a spoluautorem Strategie pro správu dat ve veřejné správě (2024–2030). Zároveň se zabývá enterprise architekturou úřadů a je součástí kompetenčního centra NAKIT pro podporu tvorby informačních koncepcí úřadů. Předchozí profesní zkušenosti v oblastech business analýzy a architektury, procesního řízení a business intelligence získal převážně v bankovním sektoru.
-      </p>
-    </gov-grid-item>
-</gov-grid>
-
-<gov-grid gutter-x="1rem" gutter-y="1rem">
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Smetana.webp" title="Martin Smetana"/>
-    </gov-grid-item>
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
-      <p>
-        <strong>Martin Smetana</strong> má bohaté zkušenosti v oblasti analýzy dat a jejich využití v praxi. Jeho profesní dráha začala na pozici datového analytika, následně vedl oddělení plánování a vyhodnocování kontrol na Nejvyšším kontrolním úřadě (NKÚ). V současné době působí na NKÚ jako ředitel odboru systémové podpory kontrolní činnosti. Tento odbor se zaměřuje na analytickou, metodickou a technickou podporu pro plánování, provádění a vyhodnocování kontrolní činnosti. Martin se také aktivně věnuje sdílení svých znalostí a zkušeností, a proto rád přednáší na různá témata jako je analýza dat, datové vizualizace a data storytellingu.
+        <strong>Martin Skovbjerg Jensen</strong> has been working at the Agency for Digital Government since 2017. Martin has been the project lead on Datavejviser.dk for the last few years. He and his colleagues work to make finding, assessing and re-using data from the public sector easier. Martin also works on data strategy and standardisation issues from a public sector perspective. 
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -109,11 +98,44 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Hladík.webp" title="Radim Hladík"/>
+      <img width="100%" src="../../přílohy/konference/2025/Smetana.webp" title="Martin Smetana"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Radim Hladík</strong> je vědecký pracovník Filosofického ústavu AV ČR v Praze. Jeho výzkum se zaměřuje na kvantitativní studium vědy, textovou analytiku, digitální humanitní vědy a vědeckou komunikaci. Působí jako redaktor časopisu Teorie vědy, předseda České asociace pro digitální humanitní vědy a je vývojářem open-source softwaru Requal pro kvalitativní analýzu dat. Doktorát ze sociologie získal na Fakultě sociálních věd Univerzity Karlovy a absolvoval zahraniční výzkumné pobyty v USA (Columbia University) a Japonsku (National Institute of Informatics).
+        <strong>Martin Smetana</strong> má bohaté zkušenosti v oblasti analýzy dat a jejich využití v praxi. Jeho profesní dráha začala na pozici datového analytika, následně vedl oddělení plánování a vyhodnocování kontrol na Nejvyšším kontrolním úřadě (NKÚ). V současné době působí na NKÚ jako ředitel odboru systémové podpory kontrolní činnosti. Tento odbor se zaměřuje na analytickou, metodickou a technickou podporu pro plánování, provádění a vyhodnocování kontrolní činnosti. Martin se také aktivně věnuje sdílení svých znalostí a zkušeností, a proto rád přednáší na různá témata jako je analýza dat, datové vizualizace a data storytellingu.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Drlík.webp" title="Libor Drlík"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Libor Drlík</strong> je lídrem projektového týmu Digitální a informační agentury zaměřeného na rozvoj kvalitní správy dat a spoluautorem Strategie pro správu dat ve veřejné správě (2024–2030). Zároveň se zabývá enterprise architekturou úřadů a je součástí kompetenčního centra NAKIT pro podporu tvorby informačních koncepcí úřadů. Předchozí profesní zkušenosti v oblastech business analýzy a architektury, procesního řízení a business intelligence získal převážně v bankovním sektoru.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Cepr.webp" title="Martin Cepr"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Martin Cepr</strong> pracuje od roku 2024 na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese https://archi.gov.cz. Spolupracuje i na přípravě systému ISDŘ a jeho testování. 
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Verner.webp" title="Michal Verner"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Michal Verner</strong> vystudoval obory Informatika a Mezinárodní a regionální vztahy v průmyslovém vlastnictví. Oba obory propojuje ve své pozici vedoucího oddělení analýz a digitalizace Úřadu průmyslového vlastnictví. S více než 18 lety praxe v oblasti digitalizace, implementace standardů do řízení organizace a mezinárodní spolupráce přispívá k udržování vedoucí pozice Úřadu průmyslového vlastnictví v oblasti digitalizace a kvality služeb nejen v rámci české státní správy, ale i v mezinárodním srovnání.
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -131,11 +153,44 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Antol.webp" title="Matej Antol"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Matej Antol</strong> je hlavním projektovým manažerem projektu EOSC-CZ, integrační manažer české e-infrastruktury e-INFRA CZ a výkonný ředitel jednoho z jejích tří partnerů, infrastruktury CERIT-SC zřízeného při Ústavu výpočetní techniky Masrykovy univerzity. Má dlouholetou zkušenost s vedením IT a výzkumných projektů. V rámci svých aktivit vybudoval platformu pro koordinaci řízení IT služeb na MUNI, prostředí pro správu citlivých dat SensitiveCloud a další. Jeho výzkumné aktivity se zaměřují na správu a analýzu komplexních a vysoce dimenzionálních dat (obrazová data, data z oblasti strukturní biologie apod.) za pomocí technik umělé inteligence. 
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Hladík.webp" title="Radim Hladík"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Radim Hladík</strong> je vědecký pracovník Filosofického ústavu AV ČR v Praze. Jeho výzkum se zaměřuje na kvantitativní studium vědy, textovou analytiku, digitální humanitní vědy a vědeckou komunikaci. Působí jako redaktor časopisu Teorie vědy, předseda České asociace pro digitální humanitní vědy a je vývojářem open-source softwaru Requal pro kvalitativní analýzu dat. Doktorát ze sociologie získal na Fakultě sociálních věd Univerzity Karlovy a absolvoval zahraniční výzkumné pobyty v USA (Columbia University) a Japonsku (National Institute of Informatics).
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
       <img width="100%" src="../../přílohy/konference/2025/zaklova.webp" title="Kristýna Zaklová"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
         <strong>Kristýna Zaklová</strong> je absolventkou Fakulty informačních technologií VUT v Brně, kde od roku 2023 pokračuje v doktorském studiu. Zaměřuje se na otevřená (vládní) data, jejich zpracování a vizualizace. Dále je zakladatelkou projektu Zastupko.cz, který analyzuje a zpřístupňuje hlasování městských a krajských zastupitelstev. Cílem tohoto projektu je zvýšit transparentnost rozhodování samospráv a umožnit občanům snadno sledovat, jak jejich zástupci hlasují. Mezi její další iniciativy patří např. projekt Komu patřím, který umožňuje jednotné prohledávání dostupných registrů psů a koček.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Cibulka.webp" title="Jan Cibulka"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Jan Cibulka</strong> je datový novinář Českého rozhlasu, specializuje se na prostorové informace, digitální technologie a transparentnost veřejné správy.
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -153,33 +208,19 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Antol.webp" title="Matej Antol"/>
+      <img width="100%" src="../../přílohy/konference/2025/Hábl.webp" title="Radek Hábl"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Matej Antol</strong> je hlavním projektovým manažerem projektu EOSC-CZ, integrační manažer české e-infrastruktury e-INFRA CZ a výkonný ředitel jednoho z jejích tří partnerů, infrastruktury CERIT-SC zřízeného při Ústavu výpočetní techniky Masrykovy univerzity. Má dlouholetou zkušenost s vedením IT a výzkumných projektů. V rámci svých aktivit vybudoval platformu pro koordinaci řízení IT služeb na MUNI, prostředí pro správu citlivých dat SensitiveCloud a další. Jeho výzkumné aktivity se zaměřují na správu a analýzu komplexních a vysoce dimenzionálních dat (obrazová data, data z oblasti strukturní biologie apod.) za pomocí technik umělé inteligence. 
-      </p>
-    </gov-grid-item>
-</gov-grid>
-
-<gov-grid gutter-x="1rem" gutter-y="1rem">
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Verner.webp" title="Michal Verner"/>
-    </gov-grid-item>
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
-      <p>
-        <strong>Michal Verner</strong> vystudoval obory Informatika a Mezinárodní a regionální vztahy v průmyslovém vlastnictví. Oba obory propojuje ve své pozici vedoucího oddělení analýz a digitalizace Úřadu průmyslového vlastnictví. S více než 18 lety praxe v oblasti digitalizace, implementace standardů do řízení organizace a mezinárodní spolupráce přispívá k udržování vedoucí pozice Úřadu průmyslového vlastnictví v oblasti digitalizace a kvality služeb nejen v rámci české státní správy, ale i v mezinárodním srovnání.
+        <strong>Radek Hábl</strong> je absolventem VŠE v Praze.12 let působil na různých finančních pozicích v soukromé sféře. V roce 2014 se přesunul do neziskové oblasti a o tři roky později realizoval projekt Mapa exekucí. V roce 2019 s kolegy založil Institut prevence a řešení předlužení, který se zaměřuje na problematiku zadluženosti domácností. Je členem Rady vlády pro lidská práva a celosvětové sítě sociálních inovátorů Ashoka Fellows Network. Byl odborným poradcem a průvodcem úspěšného dokumentárního seriálu České televize „V exekuci“.
       </p>
     </gov-grid-item>
 </gov-grid>
 
 ## Dále vystoupí
 * Jitka Faugnerová, Česká agentura životního prostředí
-* Radek Hábl, Institut prevence a řešení předlužení
-* Jan Cibulka, Samizdat, Český rozhlas
 * Klára Jiráková, Kraj Vysočina
 * Zbyšek Stodůlka, Národní archiv
-* Martin Cepr, Digitální a informační agentura
 * Kristýna Pšorn Zákopčanová
 * Jiří Münich, PAQ Research
 * A další...

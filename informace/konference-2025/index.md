@@ -32,7 +32,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
   * **Naplňování minimálního standardu a jak si stojíme** Libor Drlík, Digitální a informační agentura
   * **Geoportál ČR - jednotný přístup k prostorovým  datům** Jitka Faugnerová, CENIA
-  * Zbyšek Stodůlka, Národní archiv
+  * **Archivní data jako národní kapitál: umíme využít jejich potenciál?** Zbyšek Stodůlka, Národní archiv
   * **Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis** Martin Cepr, Digitální a informační agentura
   * **Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat** Michal Verner, Úřad průmyslového vlastnictví
   * Klára Jiráková, Kraj Vysočina
@@ -114,6 +114,17 @@ Chance to further compare and share experiences between the Czech Republic and D
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
         <strong>Libor Drlík</strong> je lídrem projektového týmu Digitální a informační agentury zaměřeného na rozvoj kvalitní správy dat a spoluautorem Strategie pro správu dat ve veřejné správě (2024–2030). Zároveň se zabývá enterprise architekturou úřadů a je součástí kompetenčního centra NAKIT pro podporu tvorby informačních koncepcí úřadů. Předchozí profesní zkušenosti v oblastech business analýzy a architektury, procesního řízení a business intelligence získal převážně v bankovním sektoru.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Stodůlka.webp" title="Zbyšek Stodůlka"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Zbyšek Stodůlka</strong> je metodik v Oddělení digitálního archivu a digitálních služeb Národního archivu s více než patnáctiletou zkušeností v oblasti digitální archivace a správy dokumentů. Je členem pracovní podskupiny „Archiving by Design“ Evropské archivní skupiny při Evropské komisi, Vědecké archivní rady, pracovní skupiny pro správu dat RVIS a dalších odborných grémií. Externě přednáší na Univerzitě Karlově a Masarykově univerzitě.
       </p>
     </gov-grid-item>
 </gov-grid>

@@ -11,8 +11,9 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
-- **Registrace:** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená. Je možné, že bude rychle naplněna. V tom případě Vás budeme informovat. Konferenci můžete sledovat i online na YouTube!
-- **Online přenos:** Bude doplněno
+- **Registrace:** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená a aktuálně je bohužel již naplněna. Konferenci ale můžete sledovat i online na YouTube!
+- **Online přenos:** Bude upřesněno [YouTube](https://www.youtube.com/@agentura_dia/streams)
+- Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
 
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
@@ -20,7 +21,6 @@ Pro jejich efektivní využití je však nutné do této oblasti systematicky in
 Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality a konkrétních příkladů užití dat a to nejen otevřených.
 
 ## Program
-* Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
 
 * 08:30 - 09:00 **REGISTRACE**
 
@@ -53,9 +53,9 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?** Jan Cibulka, Český rozhlas
   * **Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?** Jáchym Brzezina, Envidata
   * **Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému** Radek Hábl, Institut prevence a řešení předlužení
-  * Kristýna Pšorn Zákopčanová
+  * Kristína Pšorn Zákopčanová
 
-WORKSHOPY:
+WORKSHOPY (workshopy nebudou přenášeny online!):
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
 * 12:30 - 13:15 **DISCUSSION with Martin Skovbjerg Jensen of the Danish Agency for Digital Government (in English)**
 Chance to further compare and share experiences between the Czech Republic and Denmark. Themes of interest include lessons learned on how to map and describe public sector data that could be shared, which types of information about datasets are most useful to potential data users, and how one prioritises what data should be made more openly available.                  
@@ -114,6 +114,17 @@ Chance to further compare and share experiences between the Czech Republic and D
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
         <strong>Libor Drlík</strong> je lídrem projektového týmu Digitální a informační agentury zaměřeného na rozvoj kvalitní správy dat a spoluautorem Strategie pro správu dat ve veřejné správě (2024–2030). Zároveň se zabývá enterprise architekturou úřadů a je součástí kompetenčního centra NAKIT pro podporu tvorby informačních koncepcí úřadů. Předchozí profesní zkušenosti v oblastech business analýzy a architektury, procesního řízení a business intelligence získal převážně v bankovním sektoru.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Faugnerová.webp" title="Jitka Faugnerová"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Jitka Faugnerová</strong> je vedoucí oddělení geoinformatiky v České informační agentuře životního prostředí (CENIA). Je národní kontaktní osobou pro směrnici INSPIRE v ČR. Má bohaté zkušenosti s koordinací projektů zaměřených na prostorové informace a jejich technickou implementací. Se svým týmem podporuje poskytovatele prostorových dat ve zpřístupňování, organizuje webináře a konference, v rámci kterých sdílí odborná veřejnost své znalosti a zkušenosti. Aktuálně se podílí na budování Geoportálu ČR.
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -228,10 +239,17 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
 </gov-grid>
 
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Pšorn Zákopčanová.webp" title="Kristína Pšorn Zákopčanová"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Kristína Pšorn Zákopčanová</strong> kreslí grafy, datové vizualizace a mapy. Jako designérka vizuální komunikace dat pomáhá odborníkům, vědcům i novinářům převádět složité informace do srozumitelných vizualizací a příběhů. Dlouhodobě spolupracuje s projektem Fakta o klimatu, který prostřednictvím vizualizace dat a vlastní analytické práce usiluje o lepší porozumění klimatické změně a možnostem jejího řešení v Česku. Je také součástí projektu Samizdat, kde tvoří datové články pro zpravodajství – za vizualizaci statistik úmrtí získal tým Novinářskou cenu. Na volné noze se věnuje konzultacím a školení v oblasti datové vizualizace a designového přemýšlení nad daty.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
 ## Dále vystoupí
-* Jitka Faugnerová, Česká agentura životního prostředí
 * Klára Jiráková, Kraj Vysočina
-* Zbyšek Stodůlka, Národní archiv
-* Kristýna Pšorn Zákopčanová
 * Jiří Münich, PAQ Research
-* A další...

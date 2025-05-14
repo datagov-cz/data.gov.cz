@@ -53,7 +53,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?** Jan Cibulka, Český rozhlas
   * **Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?** Jáchym Brzezina, Envidata
   * **Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému** Radek Hábl, Institut prevence a řešení předlužení
-  * Kristína Pšorn Zákopčanová
+  * **Jak na srozumitelnou vizualizaci dat** Kristína Pšorn Zákopčanová
 
 WORKSHOPY (workshopy nebudou přenášeny online!):
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
@@ -253,3 +253,4 @@ Chance to further compare and share experiences between the Czech Republic and D
 ## Dále vystoupí
 * Klára Jiráková, Kraj Vysočina
 * Jiří Münich, PAQ Research
+* David Hemala, DIA

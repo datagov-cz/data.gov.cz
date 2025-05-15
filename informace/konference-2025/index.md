@@ -42,7 +42,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * 12:30 - 14:00 **BLOK II - VEŘEJNÁ DATA A VĚDA**               
   * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
-  * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Matej Antol, European Open Science Cloud - Masarykova univerzita
+  * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Jiří Marek, European Open Science Cloud - Masarykova univerzita
   * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
   * Jiří Münich, PAQ Research
 
@@ -175,11 +175,11 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Antol.webp" title="Matej Antol"/>
+      <img width="100%" src="../../přílohy/konference/2025/Marek.webp" title="Jiří Marek"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Matej Antol</strong> je hlavním projektovým manažerem projektu EOSC-CZ, integrační manažer české e-infrastruktury e-INFRA CZ a výkonný ředitel jednoho z jejích tří partnerů, infrastruktury CERIT-SC zřízeného při Ústavu výpočetní techniky Masrykovy univerzity. Má dlouholetou zkušenost s vedením IT a výzkumných projektů. V rámci svých aktivit vybudoval platformu pro koordinaci řízení IT služeb na MUNI, prostředí pro správu citlivých dat SensitiveCloud a další. Jeho výzkumné aktivity se zaměřují na správu a analýzu komplexních a vysoce dimenzionálních dat (obrazová data, data z oblasti strukturní biologie apod.) za pomocí technik umělé inteligence. 
+        <strong>Jiří Marek</strong> působí jako vedoucí Sekretariátu EOSC CZ, kde zajišťuje implementaci Evropského otevřeného vědeckého cloudu v České republice, a současně zastává pozici Open Science Managera na Masarykově univerzitě. Je jedním z iniciátorů Brněnské Open Source deklarace, která usiluje o vytvoření Národního Open Source Program Office pro veřejný sektor a akademii. Vzdělání má v oboru chemie se specializací na vodíkové technologie a v ICT právu se zaměřením na Open Access, Open Agenda a autorské právo. 
       </p>
     </gov-grid-item>
 </gov-grid>

@@ -35,7 +35,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Archivní data jako národní kapitál: umíme využít jejich potenciál?** Zbyšek Stodůlka, Národní archiv
   * **Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis** Martin Cepr, Digitální a informační agentura
   * **Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat** Michal Verner, Úřad průmyslového vlastnictví
-  * Klára Jiráková, Kraj Vysočina
+  * **European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva** Klára Jiráková, Kraj Vysočina
 
 * 11:45 - 12:30 **OBĚD**
 

@@ -27,7 +27,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * 09:00 - 10:05 **ÚVODNÍ BLOK - TRENDY V DATECH VEŘEJNÉHO SEKTORU**
   * **Zahájení konference a úvodní slovo** Martin Mesršmíd, Digitální a informační agentura
   * **Keynote speech: The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí - Keynote speech will be focused on the approach taken by the Danish Data Portal (www.datavejviser.dk), and how this builds upon and interacts with a range of other investments in the quality and availability of public sector data.
-  * **Keynote speech** Martin Nečaský, Matematicko-fyzikální faktulta UK
+  * **Keynote speech: Role AI ve správě dat** Martin Nečaský, Matematicko-fyzikální faktulta UK
 
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
   * **Naplňování minimálního standardu a jak si stojíme** Libor Drlík, Digitální a informační agentura

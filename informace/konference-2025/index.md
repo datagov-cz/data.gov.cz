@@ -44,7 +44,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
   * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Jiří Marek, European Open Science Cloud - Masarykova univerzita
   * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
-  * Jiří Münich, PAQ Research
+  * **Víme, kam vaše děti chodí do školy. Možnosti a limity dat s vysokým rozlišením.** Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**
 

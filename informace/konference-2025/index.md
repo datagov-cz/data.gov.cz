@@ -35,7 +35,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **Archivní data jako národní kapitál: umíme využít jejich potenciál?** Zbyšek Stodůlka, Národní archiv
   * **Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis** Martin Cepr, Digitální a informační agentura
   * **Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat** Michal Verner, Úřad průmyslového vlastnictví
-  * **European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva** Klára Jiráková, Kraj Vysočina
+  * **European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva** Klára Jiráková, Kraj Vysočina/Ministerstvo zdravotnictví - NCEZ
 
 * 11:45 - 12:30 **OBĚD**
 
@@ -164,6 +164,17 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Jiráková.webp" title="Klára Jiráková"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Klára Jiráková</strong> je předsedkyní Expertní skupiny členských států pro elektronické zdravotnictví (eHealth), která se skládá ze zástupců ostatních členských států odpovědných za implementaci a provoz národních kontaktních míst pro elektronické zdravotnictví,  jež společně tvoří přeshraniční služby elektronického zdravotnictví v EU - MyHealth@EU. Pracuje na Ministerstvu zdravotnictví, v Národním centru elektronického zdravotnictví jako právnička a projektová manažerka a je také dlouhodobou zaměstnankyní odboru informatiky Krajského úřadu Kraje Vysočina, kde je zodpovědná mimo jiné za provoz Národního kontaktního místa pro elektronické zdravotnictví.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
       <img width="100%" src="../../přílohy/konference/2025/Tichopád.webp" title="Aleš Tichopád"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
@@ -251,6 +262,5 @@ Chance to further compare and share experiences between the Czech Republic and D
 </gov-grid>
 
 ## Dále vystoupí
-* Klára Jiráková, Kraj Vysočina
 * Jiří Münich, PAQ Research
 * David Hemala, DIA

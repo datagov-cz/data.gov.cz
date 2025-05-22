@@ -272,6 +272,3 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
 </gov-grid>
 
-## Dále vystoupí
-* Jiří Münich, PAQ Research
-* David Hemala, DIA

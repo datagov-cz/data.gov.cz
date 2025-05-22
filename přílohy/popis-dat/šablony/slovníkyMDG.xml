@@ -1,6 +1,6 @@
-<?xml  version='1.0' encoding='windows-1252' ?>
-<MDG.Technology version="1.0"><Documentation id="0" name="OFN Slovníky" version="1" notes="MDG technologie obsahující prvky umož&#x148;ující tvorbu slovník&#x16F; podle otev&#x159;ené formální normy a metodiky popisu dat Digitální a informa&#x10D;ní agentury." infoURI="https://data.gov.cz" supportURI="data@dia.gov.cz"/><UMLProfiles><UMLProfile profiletype="uml2">
-	<Documentation id="4A999269-9" name="Slovníky" version="1.0" notes="Slovníky"/>
+<?xml  version='1.0' encoding='utf-8' ?>
+<MDG.Technology version="1.0"><Documentation id="0" name="OFN SlovnÃ­ky" version="1.0.1" notes="MDG technologie obsahujÃ­cÃ­ prvky umoÅ¾ÅˆujÃ­cÃ­ tvorbu slovnÃ­kÅ¯ podle otevÅ™enÃ© formÃ¡lnÃ­ normy a metodiky popisu dat DigitÃ¡lnÃ­ a informaÄnÃ­ agentury." infoURI="https://data.gov.cz/popis-dat" supportURI="data@dia.gov.cz"/><UMLProfiles><UMLProfile profiletype="uml2">
+	<Documentation id="4A999269-9" name="SlovnÃ­ky" version="1.0.1" notes="SlovnÃ­ky"/>
 	<Content>
 		<Stereotypes>
 			<Stereotype name="slovnikyPackage" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
@@ -10,7 +10,7 @@
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="adresa lokálního katalogu dat, ve kterém bude slovník registrován" type="" description="" unit="" values="" default=""/>
+					<Tag name="adresa lokÃ¡lnÃ­ho katalogu dat, ve kterÃ©m bude slovnÃ­k registrovÃ¡n" type="" description="" unit="" values="" default=""/>
 					<Tag name="popis" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -22,13 +22,13 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="agenda" type="" description="" unit="" values="" default=""/>
-					<Tag name="agendový informa&#x10D;ní systém" type="" description="" unit="" values="" default=""/>
-					<Tag name="alternativní název" type="" description="" unit="" values="" default=""/>
+					<Tag name="agendovÃ½ informaÄnÃ­ systÃ©m" type="" description="" unit="" values="" default=""/>
+					<Tag name="alternativnÃ­ nÃ¡zev" type="" description="" unit="" values="" default=""/>
 					<Tag name="definice" type="" description="" unit="" values="" default=""/>
-					<Tag name="ekvivalentní pojem" type="" description="" unit="" values="" default=""/>
-					<Tag name="identifikátor" type="" description="" unit="" values="" default=""/>
+					<Tag name="ekvivalentnÃ­ pojem" type="" description="" unit="" values="" default=""/>
+					<Tag name="identifikÃ¡tor" type="" description="" unit="" values="" default=""/>
 					<Tag name="popis" type="" description="" unit="" values="" default=""/>
-					<Tag name="související zdroj" type="" description="" unit="" values="" default=""/>
+					<Tag name="souvisejÃ­cÃ­ zdroj" type="" description="" unit="" values="" default=""/>
 					<Tag name="zdroj" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -40,13 +40,13 @@
 				</AppliesTo>
 				<TaggedValues>
 					<Tag name="agenda" type="" description="" unit="" values="" default=""/>
-					<Tag name="agendový informa&#x10D;ní systém" type="" description="" unit="" values="" default=""/>
-					<Tag name="alternativní název" type="" description="" unit="" values="" default=""/>
+					<Tag name="agendovÃ½ informaÄnÃ­ systÃ©m" type="" description="" unit="" values="" default=""/>
+					<Tag name="alternativnÃ­ nÃ¡zev" type="" description="" unit="" values="" default=""/>
 					<Tag name="definice" type="" description="" unit="" values="" default=""/>
-					<Tag name="ekvivalentní pojem" type="" description="" unit="" values="" default=""/>
-					<Tag name="identifikátor" type="" description="" unit="" values="" default=""/>
+					<Tag name="ekvivalentnÃ­ pojem" type="" description="" unit="" values="" default=""/>
+					<Tag name="identifikÃ¡tor" type="" description="" unit="" values="" default=""/>
 					<Tag name="popis" type="" description="" unit="" values="" default=""/>
-					<Tag name="související zdroj" type="" description="" unit="" values="" default=""/>
+					<Tag name="souvisejÃ­cÃ­ zdroj" type="" description="" unit="" values="" default=""/>
 					<Tag name="zdroj" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -57,16 +57,16 @@
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="alternativní název" type="" description="" unit="" values="" default=""/>
-					<Tag name="datový typ" type="" description="" unit="" values="" default=""/>
+					<Tag name="alternativnÃ­ nÃ¡zev" type="" description="" unit="" values="" default=""/>
+					<Tag name="datovÃ½ typ" type="" description="" unit="" values="" default=""/>
 					<Tag name="definice" type="" description="" unit="" values="" default=""/>
-					<Tag name="ekvivalentní pojem" type="" description="" unit="" values="" default=""/>
-					<Tag name="identifikátor" type="" description="" unit="" values="" default=""/>
-					<Tag name="je pojem sdílen v PPDF?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
-					<Tag name="je pojem ve&#x159;ejný?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="ekvivalentnÃ­ pojem" type="" description="" unit="" values="" default=""/>
+					<Tag name="identifikÃ¡tor" type="" description="" unit="" values="" default=""/>
+					<Tag name="je pojem sdÃ­len v PPDF?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="je pojem veÅ™ejnÃ½?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
 					<Tag name="popis" type="" description="" unit="" values="" default=""/>
-					<Tag name="související zdroj" type="" description="" unit="" values="" default=""/>
-					<Tag name="ustanovení dokládající neve&#x159;ejnost pojmu" type="" description="" unit="" values="" default=""/>
+					<Tag name="souvisejÃ­cÃ­ zdroj" type="" description="" unit="" values="" default=""/>
+					<Tag name="ustanovenÃ­ doklÃ¡dajÃ­cÃ­ neveÅ™ejnost pojmu" type="" description="" unit="" values="" default=""/>
 					<Tag name="zdroj" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -77,15 +77,15 @@
 					</Apply>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="alternativní název" type="" description="" unit="" values="" default=""/>
+					<Tag name="alternativnÃ­ nÃ¡zev" type="" description="" unit="" values="" default=""/>
 					<Tag name="definice" type="" description="" unit="" values="" default=""/>
-					<Tag name="ekvivalentní pojem" type="" description="" unit="" values="" default=""/>
-					<Tag name="identifikátor" type="" description="" unit="" values="" default=""/>
-					<Tag name="je pojem sdílen v PPDF?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
-					<Tag name="je pojem ve&#x159;ejný?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="ekvivalentnÃ­ pojem" type="" description="" unit="" values="" default=""/>
+					<Tag name="identifikÃ¡tor" type="" description="" unit="" values="" default=""/>
+					<Tag name="je pojem sdÃ­len v PPDF?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
+					<Tag name="je pojem veÅ™ejnÃ½?" type="enumeration" description="" unit="" values="Ano,Ne" default=""/>
 					<Tag name="popis" type="" description="" unit="" values="" default=""/>
-					<Tag name="související zdroj" type="" description="" unit="" values="" default=""/>
-					<Tag name="ustanovení dokládající neve&#x159;ejnost pojmu" type="" description="" unit="" values="" default=""/>
+					<Tag name="souvisejÃ­cÃ­ zdroj" type="" description="" unit="" values="" default=""/>
+					<Tag name="ustanovenÃ­ doklÃ¡dajÃ­cÃ­ neveÅ™ejnost pojmu" type="" description="" unit="" values="" default=""/>
 					<Tag name="zdroj" type="" description="" unit="" values="" default=""/>
 				</TaggedValues>
 			</Stereotype>
@@ -95,15 +95,15 @@
 		<Metamodel/>
 	</Content>
 </UMLProfile></UMLProfiles><DiagramProfile><UMLProfile profiletype="uml2">
-	<Documentation id="055F09DA-3" name="Slovníky" version="1.0" notes="Slovníky"/>
+	<Documentation id="055F09DA-3" name="SlovnÃ­ky" version="1.0.1" notes="SlovnÃ­ky"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="Slovníky" notes="Diagram ur&#x10D;en&amp;#253; pro tvorbu slovn&amp;#237;k&#x16F; OFN dle metodiky popisu dat DIA." cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="SlovnÃ­ky" notes="Diagram urÄenÃ½ pro tvorbu slovnÃ­kÅ¯ OFN dle metodiky popisu dat DIA." cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="Diagram_Logical">
-						<Property name="alias" value="Slovníky"/>
+						<Property name="alias" value="SlovnÃ­ky"/>
 						<Property name="diagramID" value="ofnVoc"/>
-						<Property name="toolbox" value="Slovníky"/>
+						<Property name="toolbox" value="SlovnÃ­ky"/>
 					</Apply>
 				</AppliesTo>
 			</Stereotype>
@@ -113,20 +113,20 @@
 		<Metamodel/>
 	</Content>
 </UMLProfile></DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
-	<Documentation id="986C99FA-2" name="Slovníky" version="1.0" notes="Slovníky"/>
+	<Documentation id="986C99FA-2" name="SlovnÃ­ky" version="1.0.1" notes="SlovnÃ­ky"/>
 	<Content>
 		<Stereotypes>
-			<Stereotype name="SlovníkyElements" alias="Slovníky" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+			<Stereotype name="SlovnÃ­kyElements" alias="SlovnÃ­ky" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
 				<AppliesTo>
 					<Apply type="ToolboxPage"/>
 				</AppliesTo>
 				<TaggedValues>
-					<Tag name="Slovníky::typObjektu(UML::Class)" type="" description="" unit="" values="" default="Typ objektu"/>
-					<Tag name="Slovníky::typSubjektu(UML::Class)" type="" description="" unit="" values="" default="Typ subjektu"/>
-					<Tag name="Slovníky::typVlastnosti(UML::Class)" type="" description="" unit="" values="" default="Typ vlastnosti"/>
-					<Tag name="Slovníky::typVztahu(UML::Association)" type="" description="" unit="" values="" default="Typ vztahu"/>
-					<Tag name="UML::Composition" type="" description="" unit="" values="" default="je vlastností"/>
-					<Tag name="UML::Generalization" type="" description="" unit="" values="" default="má nad&#x159;azený pojem"/>
+					<Tag name="SlovnÃ­ky::typObjektu(UML::Class)" type="" description="" unit="" values="" default="Typ objektu"/>
+					<Tag name="SlovnÃ­ky::typSubjektu(UML::Class)" type="" description="" unit="" values="" default="Typ subjektu"/>
+					<Tag name="SlovnÃ­ky::typVlastnosti(UML::Class)" type="" description="" unit="" values="" default="Typ vlastnosti"/>
+					<Tag name="SlovnÃ­ky::typVztahu(UML::Association)" type="" description="" unit="" values="" default="Typ vztahu"/>
+					<Tag name="UML::Composition" type="" description="" unit="" values="" default="je vlastnostÃ­"/>
+					<Tag name="UML::Generalization" type="" description="" unit="" values="" default="mÃ¡ nadÅ™azenÃ½ pojem"/>
 				</TaggedValues>
 			</Stereotype>
 		</Stereotypes>
@@ -134,4 +134,4 @@
 		<ViewDefinitions/>
 		<Metamodel/>
 	</Content>
-</UMLProfile></UIToolboxes><ModelTemplates><Model name="Template Name" description="" location="slovníkyPattern.xml" default="yes" icon="34" filter="" isFramework="false"/></ModelTemplates></MDG.Technology>
+</UMLProfile></UIToolboxes><ModelTemplates><Model name="Template Name" description="" location="slovnÃ­kyPattern.xml" default="yes" icon="34" filter="" isFramework="false"/></ModelTemplates></MDG.Technology>

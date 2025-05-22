@@ -12,7 +12,7 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
 - **Registrace:** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená a aktuálně je bohužel již naplněna. Konferenci ale můžete sledovat i online na YouTube!
-- **Online přenos:** Bude upřesněno [YouTube](https://www.youtube.com/@agentura_dia/streams)
+- **Online přenos:** [YouTube](https://www.youtube.com/watch?v=QsRbYAd6MuM)
 - Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
 
 
@@ -87,11 +87,11 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <img width="100%" src="../../přílohy/konference/2025/Nečaský.webp" title="Martin Nečaský"/>
+      <img width="100%" src="../../přílohy/konference/2025/Necasky.webp" title="Martin Nečaský"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Martin Nečaský</strong> působí v oblasti otevřených dat od roku 2011, kdy založil iniciativu OpenData.cz. Od té doby realizoval řadu projektů, ve kterých pomáhal úřadům s otevíráním jejich dat (např. ČTÚ, ČSSZ, MFČR, NKÚ). V současnosti působí jako docent na Matematicko-fyzikální fakultě Univerzity Karlovy v oboru informatika a také jako odborný vedoucí týmu Národního koordinátora otevřených dat na Ministerstvu vnitra ČR, kde pomáhá českým úřadům s publikací otevřených dat a podílí se na tvorbě pravidel, standardů, doporučení a legislativy v oblasti otevřených dat. V oblasti otevřených dat též publikuje v uznávaných mezinárodních vědeckých časopisech jako je např. Semantic Web Journal nebo Journal of Web Semantics.
+        <strong>Martin Nečaský</strong> působí v oblasti dat veřejné správy od roku 2011, kdy založil iniciativu OpenData.cz. Od té doby realizoval řadu projektů, ve kterých pomáhal úřadům s otevíráním jejich dat (např. ČTÚ, ČSSZ, MFČR, NKÚ, MV ČR). V současnosti působí jako docent a vedoucí Katedry softwarového inženýrství na Matematicko-fyzikální fakultě Univerzity Karlovy v oboru softwarového a datového inženýrství. V letech 2015 - 2023 vedl odborný tým Národního koordinátora otevřených dat na Ministerstvu vnitra ČR. Od roku 2024 působí jako expert a poradce pro správu dat na Digitální informační agentuře. Publikuje v uznávaných mezinárodních vědeckých časopisech, jako je např. Semantic Web Journal nebo Journal of Web Semantics.
       </p>
     </gov-grid-item>
 </gov-grid>

@@ -208,6 +208,17 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Münich.webp" title="Jiří Münich"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>Jiří Münich </strong> (1993): Vystudoval interdisciplinární společenské vědy a statistiku pro psychologický výzkum na University of Amsterdam. Několik let působil jako datový analytik a evaluátor v neziskovém a státním sektoru v oblastech vzdělávací a sociální politiky. Momentálně pracuje v PAQ Research, kde se věnuje otázkám nerovností ve vzdělávání a dostupnosti veřejných služeb v regionech.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
       <img width="100%" src="../../přílohy/konference/2025/zaklova.webp" title="Kristýna Zaklová"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">

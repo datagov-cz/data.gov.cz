@@ -12,7 +12,7 @@ Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
 - **Registrace:** Vyplňte prosím [formulář](https://forms.office.com/e/nDnu1P51B3?origin=lprLink). Kapacita sálu je omezená a aktuálně je bohužel již naplněna. Konferenci ale můžete sledovat i online na YouTube!
-- **Online přenos:** Bude upřesněno [YouTube](https://www.youtube.com/@agentura_dia/streams)
+- **Online přenos:** [YouTube](https://www.youtube.com/watch?v=QsRbYAd6MuM)
 - Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
 
 

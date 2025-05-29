@@ -175,6 +175,17 @@ Chance to further compare and share experiences between the Czech Republic and D
 
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
+      <img width="100%" src="../../přílohy/konference/2025/Hemala.webp" title="David Hemala"/>
+    </gov-grid-item>
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
+      <p>
+        <strong>David Hemala</strong> vystudoval obor Informační systémy a technologie na Vysoké škole ekonomické v Praze, kde v současné chvíli participuje při výuce databázových systémů. Aktuálně se podílí na problematice řízeného přístupu a správy dat v Digitální a informační agentuře. Podílel se na projektu otevřených dat v ČR, té doby pod taktovkou Ministerstva vnitra, a spolupracoval při tvorbě řešení projektu SLDB 2021.
+      </p>
+    </gov-grid-item>
+</gov-grid>
+
+<gov-grid gutter-x="1rem" gutter-y="1rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
       <img width="100%" src="../../přílohy/konference/2025/Tichopád.webp" title="Aleš Tichopád"/>
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
@@ -212,7 +223,7 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Jiří Münich </strong> (1993): Vystudoval interdisciplinární společenské vědy a statistiku pro psychologický výzkum na University of Amsterdam. Několik let působil jako datový analytik a evaluátor v neziskovém a státním sektoru v oblastech vzdělávací a sociální politiky. Momentálně pracuje v PAQ Research, kde se věnuje otázkám nerovností ve vzdělávání a dostupnosti veřejných služeb v regionech.
+        <strong>Jiří Münich </strong> (1993) vystudoval interdisciplinární společenské vědy a statistiku pro psychologický výzkum na University of Amsterdam. Několik let působil jako datový analytik a evaluátor v neziskovém a státním sektoru v oblastech vzdělávací a sociální politiky. Momentálně pracuje v PAQ Research, kde se věnuje otázkám nerovností ve vzdělávání a dostupnosti veřejných služeb v regionech.
       </p>
     </gov-grid-item>
 </gov-grid>

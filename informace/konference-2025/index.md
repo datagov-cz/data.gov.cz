@@ -9,12 +9,11 @@ lang: cs
 
 Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o využívání a správě dat státní správy a samosprávy!
 
+## [Sledujte online přenos](https://www.youtube.com/watch?v=QsRbYAd6MuM)
+
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
 - **Registrace:** Registrace jsou již uzavřené. Kapacita sálu je naplněna. Konferenci můžete sledovat online na YouTube!
-- **Online přenos:** [YouTube](https://www.youtube.com/watch?v=QsRbYAd6MuM)
-- Loňský ročník si můžete připomenout na našem [YouTube](https://www.youtube.com/live/zqkCNgZejmo). 
-
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 

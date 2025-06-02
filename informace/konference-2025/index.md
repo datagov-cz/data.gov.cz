@@ -10,6 +10,7 @@ lang: cs
 Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o využívání a správě dat státní správy a samosprávy!
 
 ## [Sledujte online přenos](https://www.youtube.com/watch?v=QsRbYAd6MuM)
+## [Ptejte se přes sli.do - #data2025](https://app.sli.do/event/wZxckbRvmkrsRcy6c5p3WX)
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online

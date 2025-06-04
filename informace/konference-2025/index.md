@@ -9,15 +9,14 @@ lang: cs
 
 Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o využívání a správě dat státní správy a samosprávy!
 
-## [Sledujte online přenos](https://www.youtube.com/watch?v=QsRbYAd6MuM)
-## [Ptejte se přes sli.do - #data2025](https://app.sli.do/event/wZxckbRvmkrsRcy6c5p3WX)
+## [Záznam z online přenosu](https://www.youtube.com/watch?v=QsRbYAd6MuM)
 
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
 - **Registrace:** Registrace jsou již uzavřené. Kapacita sálu je naplněna. Konferenci můžete sledovat online na YouTube!
 
-Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje. 
-Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí. 
+Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje.
+Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí.
 Klíčová je podpora kvality dat, propracovaného data managementu a v neposlední řadě také do vzdělávání úředníků i dalších zainteresovaných stran. Letošní konference se zaměří na efektivní správu dat, jejich sdílení, zajištění vysoké datové kvality a konkrétních příkladů užití dat a to nejen otevřených.
 
 ## Program
@@ -26,41 +25,41 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 
 * 09:00 - 10:05 **ÚVODNÍ BLOK - TRENDY V DATECH VEŘEJNÉHO SEKTORU**
   * **Zahájení konference a úvodní slovo** Martin Mesršmíd, Digitální a informační agentura
-  * **Keynote speech: The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí - Keynote speech will be focused on the approach taken by the Danish Data Portal (www.datavejviser.dk), and how this builds upon and interacts with a range of other investments in the quality and availability of public sector data.
-  * **Keynote speech: Role AI ve správě dat** Martin Nečaský, Matematicko-fyzikální fakulta UK
+  * **Keynote speech: [The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years] (in English)** Martin Skovbjerg Jensen, Dánská agentura pro digitální vládnutí - Keynote speech will be focused on the approach taken by the Danish Data Portal (www.datavejviser.dk), and how this builds upon and interacts with a range of other investments in the quality and availability of public sector data.
+  * **Keynote speech: [Role AI ve správě dat]** Martin Nečaský, Matematicko-fyzikální fakulta UK
 
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
-  * **Naplňování minimálního standardu a jak si stojíme** Libor Drlík, Digitální a informační agentura
-  * **Geoportál ČR - jednotný přístup k prostorovým  datům** Jitka Faugnerová, CENIA
+  * **[Naplňování minimálního standardu a jak si stojíme]** Libor Drlík, Digitální a informační agentura
+  * **[Geoportál ČR - jednotný přístup k prostorovým  datům]** Jitka Faugnerová, CENIA
   * **Archivní data jako národní kapitál: umíme využít jejich potenciál?** Zbyšek Stodůlka, Národní archiv
-  * **Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis** Martin Cepr, Digitální a informační agentura
-  * **Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat** Michal Verner, Úřad průmyslového vlastnictví
-  * **European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva** Klára Jiráková, Kraj Vysočina/Ministerstvo zdravotnictví - NCEZ
+  * **[Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis]** Martin Cepr, Digitální a informační agentura
+  * **[Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat]** Michal Verner, Úřad průmyslového vlastnictví
+  * **[European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva]** Klára Jiráková, Kraj Vysočina/Ministerstvo zdravotnictví - NCEZ
 
 * 11:45 - 12:30 **OBĚD**
 
-* 12:30 - 14:00 **BLOK II - VEŘEJNÁ DATA A VĚDA**               
-  * **Řízený přístup k datům** David Hemala, Digitální a informační agentura
-  * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT
-  * **EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice** Jiří Marek, European Open Science Cloud - Masarykova univerzita
-  * **Využití veřejných dat pro výzkumné účely z perspektivy uživatele** Radim Hladík, Akademie věd ČR
-  * **Víme, kam vaše děti chodí do školy. Možnosti a limity dat s vysokým rozlišením.** Jiří Münich, PAQ Research
+* 12:30 - 14:00 **BLOK II - VEŘEJNÁ DATA A VĚDA**              
+  * **Kde je rovnováha mezi benefity a riziky využití zdravotnických dat** Aleš Tichopád, Fakultě biomedicínského inženýrství ČVUT v zastoupení Martina Komendy, ÚZIS
+  * **[Řízený přístup k datům]** David Hemala, Digitální a informační agentura
+  * **[EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice]** Jiří Marek, European Open Science Cloud - Masarykova univerzita
+  * **[Využití veřejných dat pro výzkumné účely z perspektivy uživatele]** Radim Hladík, Akademie věd ČR
+  * **[Víme, kam vaše děti chodí do školy. Možnosti a limity dat s vysokým rozlišením.]** Jiří Münich, PAQ Research
 
 * 14:00 - 14:30 **COFFEE BREAK**
 
 * 14:30 - 16:00 **BLOK III - OTEVŘENÁ DATA A JEJICH VYUŽITÍ**
-  * **Zastupko.cz: transparentnost v rozhodování samospráv** Kristýna Zaklová, Zastupko
-  * **Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?** Jan Cibulka, Český rozhlas
-  * **Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?** Jáchym Brzezina, Envidata
-  * **Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému** Radek Hábl, Institut prevence a řešení předlužení
-  * **Když chcete grafem něco říct** Kristína Pšorn Zákopčanová
+  * **[Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?]** Jáchym Brzezina, Envidata
+  * **[Zastupko.cz: transparentnost v rozhodování samospráv]** Kristýna Zaklová, Zastupko
+  * **[Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?]** Jan Cibulka, Český rozhlas
+  * **[Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému]** Radek Hábl, Institut prevence a řešení předlužení
+  * **[Když chcete grafem něco říct]** Kristína Pšorn Zákopčanová
 
 WORKSHOPY (workshopy nebudou přenášeny online!):
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
 * 12:30 - 13:15 **DISCUSSION with Martin Skovbjerg Jensen of the Danish Agency for Digital Government (in English)**
 Chance to further compare and share experiences between the Czech Republic and Denmark. Themes of interest include lessons learned on how to map and describe public sector data that could be shared, which types of information about datasets are most useful to potential data users, and how one prioritises what data should be made more openly available.                  
 
-**KAPACITA WORKSHOPŮ JE JIŽ NAPLNĚNA!** 
+**KAPACITA WORKSHOPŮ JE JIŽ NAPLNĚNA!**
 
 ## Na konferenci vystoupí
 <gov-grid gutter-x="1rem" gutter-y="1rem">
@@ -80,7 +79,7 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Martin Skovbjerg Jensen</strong> has been working at the Agency for Digital Government since 2017. Martin has been the project lead on Datavejviser.dk for the last few years. He and his colleagues work to make finding, assessing and re-using data from the public sector easier. Martin also works on data strategy and standardisation issues from a public sector perspective. 
+        <strong>Martin Skovbjerg Jensen</strong> has been working at the Agency for Digital Government since 2017. Martin has been the project lead on Datavejviser.dk for the last few years. He and his colleagues work to make finding, assessing and re-using data from the public sector easier. Martin also works on data strategy and standardisation issues from a public sector perspective.
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -146,7 +145,7 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Martin Cepr</strong> pracuje od roku 2024 na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese https://archi.gov.cz. Spolupracuje i na přípravě systému ISDŘ a jeho testování. 
+        <strong>Martin Cepr</strong> pracuje od roku 2024 na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese https://archi.gov.cz. Spolupracuje i na přípravě systému ISDŘ a jeho testování.
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -201,7 +200,7 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="8/12" size-xl="9/12">
       <p>
-        <strong>Jiří Marek</strong> působí jako vedoucí Sekretariátu EOSC CZ, kde zajišťuje implementaci Evropského otevřeného vědeckého cloudu v České republice, a současně zastává pozici Open Science Managera na Masarykově univerzitě. Je jedním z iniciátorů Brněnské Open Source deklarace, která usiluje o vytvoření Národního Open Source Program Office pro veřejný sektor a akademii. Vzdělání má v oboru chemie se specializací na vodíkové technologie a v ICT právu se zaměřením na Open Access, Open Agenda a autorské právo. 
+        <strong>Jiří Marek</strong> působí jako vedoucí Sekretariátu EOSC CZ, kde zajišťuje implementaci Evropského otevřeného vědeckého cloudu v České republice, a současně zastává pozici Open Science Managera na Masarykově univerzitě. Je jedním z iniciátorů Brněnské Open Source deklarace, která usiluje o vytvoření Národního Open Source Program Office pro veřejný sektor a akademii. Vzdělání má v oboru chemie se specializací na vodíkové technologie a v ICT právu se zaměřením na Open Access, Open Agenda a autorské právo.
       </p>
     </gov-grid-item>
 </gov-grid>
@@ -283,3 +282,19 @@ Chance to further compare and share experiences between the Czech Republic and D
     </gov-grid-item>
 </gov-grid>
 
+[The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years]: ../../přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf "The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years"
+[Role AI ve správě dat]: ../../přílohy/konference/2025/prezentace/Úvod_03_Nečaský.pdf "Role AI ve správě dat"
+[Naplňování minimálního standardu a jak si stojíme]: ../../přílohy/konference/2025/prezentace/01_01_Drlík.pdf "Naplňování minimálního standardu a jak si stojíme"
+[Geoportál ČR - jednotný přístup k prostorovým  datům]: ../../přílohy/konference/2025/prezentace/01_02_Faugnerová.pdf "Geoportál ČR - jednotný přístup k prostorovým  datům"
+[Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis]: ../../přílohy/konference/2025/prezentace/01_04_Cepr.pdf "Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis"
+[Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat]: ../../přílohy/konference/2025/prezentace/01_05_Verner.pdf "Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat"
+[European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva]: ../../přílohy/konference/2025/prezentace/01_06_Jiráková.pdf "European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva"
+[Řízený přístup k datům]: ../../přílohy/konference/2025/prezentace/02_01_Hemala.pdf "Řízený přístup k datům"
+[EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice]: ../../přílohy/konference/2025/prezentace/02_03_Marek.pdf "EOSC a rozvoj národní infrastruktury pro výzkumná data v České republice"
+[Využití veřejných dat pro výzkumné účely z perspektivy uživatele]: ../../přílohy/konference/2025/prezentace/02_04_Hladík.pdf "Využití veřejných dat pro výzkumné účely z perspektivy uživatele"
+[Víme, kam vaše děti chodí do školy. Možnosti a limity dat s vysokým rozlišením.]: ../../přílohy/konference/2025/prezentace/02_05_Münich.pdf "Víme, kam vaše děti chodí do školy. Možnosti a limity dat s vysokým rozlišením."
+[Zastupko.cz: transparentnost v rozhodování samospráv]: ../../přílohy/konference/2025/prezentace/03_02_Zaklová.pdf "Zastupko.cz: transparentnost v rozhodování samospráv"
+[Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?]: ../../přílohy/konference/2025/prezentace/03_03_Cibulka.pdf "Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?"
+[Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?]: ../../přílohy/konference/2025/prezentace/03_01_Brzezina.pdf "Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?"
+[Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému]: ../../přílohy/konference/2025/prezentace/03_04_Hábl.pdf "Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému"
+[Když chcete grafem něco říct]: ../../přílohy/konference/2025/prezentace/03_05_Pšorn_Zákopčanová.pdf "Když chcete grafem něco říct"

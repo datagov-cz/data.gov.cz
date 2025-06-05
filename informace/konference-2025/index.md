@@ -31,7 +31,7 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
 * 10:05 - 11:45 **BLOK I - SPRÁVA DAT**
   * **[Naplňování minimálního standardu a jak si stojíme]** Libor Drlík, Digitální a informační agentura
   * **[Geoportál ČR - jednotný přístup k prostorovým  datům]** Jitka Faugnerová, CENIA
-  * **Archivní data jako národní kapitál: umíme využít jejich potenciál?** Zbyšek Stodůlka, Národní archiv
+  * **[Archivní data jako národní kapitál: umíme využít jejich potenciál?]** Zbyšek Stodůlka, Národní archiv
   * **[Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis]** Martin Cepr, Digitální a informační agentura
   * **[Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat]** Michal Verner, Úřad průmyslového vlastnictví
   * **[European Health Data Space – nový evropský prostor pro sdílení zdravotnických dat jako výzva]** Klára Jiráková, Kraj Vysočina/Ministerstvo zdravotnictví - NCEZ
@@ -298,3 +298,4 @@ Chance to further compare and share experiences between the Czech Republic and D
 [Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?]: ../../přílohy/konference/2025/prezentace/03_01_Brzezina.pdf "Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?"
 [Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému]: ../../přílohy/konference/2025/prezentace/03_04_Hábl.pdf "Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému"
 [Když chcete grafem něco říct]: ../../přílohy/konference/2025/prezentace/03_05_Pšorn_Zákopčanová.pdf "Když chcete grafem něco říct"
+[Archivní data jako národní kapitál: umíme využít jejich potenciál?]: ../../přílohy/konference/2025/prezentace/01_03_Stodůlka.pdf

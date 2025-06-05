@@ -21,7 +21,7 @@ AI je dnes velké téma, její možnosti a limity pro analýzu i správu dat vys
 
 Ve správě dat veřejné správy už jsme ušli kus cesty i díky našim aktivitám pod vedením kolegy [Libora Drlíka].
 Stále ale máme velmi mnoho práce před sebou.
-Inspiraci, jak ke kvalitní správě dat přistoupit přinesl Michal Verner z ÚPV, archivaci dat jako součást správy dat představil Zbyšek Stodůlka z Národního archivu.
+Inspiraci, jak ke kvalitní správě dat přistoupit přinesl Michal Verner z ÚPV, archivaci dat jako součást správy dat představil [Zbyšek Stodůlka] z Národního archivu.
 Kolega [Martin Cepr] ukázal, jak souvisí s tímto tématem datové standardy, nebo jak pomáhá popis dat v záznamu informačního systému, který nahrazuje elektronický podpis.
 Dočkali jsem se také představení Geoportálu ČR od [Jitky Faugnerové] včetně toho, co užitečného v něm bude i pro širokou veřejnost, nejen pro odborníky.
 [Michal Verner] zas na příkladu integrovaného systému řízení na Úřadu průmyslového vlastnictví ilustroval, jak je principy správy dat možné integrovat do běžného chodu úřadu. 
@@ -45,6 +45,7 @@ Těšíme se zase za rok!
 [Martin Skovbjerg Jensen]: ../../přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf "The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years"
 [Martin Nečaský]: ../../přílohy/konference/2025/prezentace/Úvod_03_Nečaský.pdf "Role AI ve správě dat"
 [Libora Drlíka]: ../../přílohy/konference/2025/prezentace/01_01_Drlík.pdf "Naplňování minimálního standardu a jak si stojíme"
+[Zbyšek Stodůlka]: ../../přílohy/konference/2025/prezentace/01_03_Stodůlka.pdf "Archivní data jako národní kapitál: umíme využít jejich potenciál?"
 [Martin Cepr]: ../../přílohy/konference/2025/prezentace/01_04_Cepr.pdf "Datové standardy - tvorba Záznamu informačního systému nahrazujícího úředně ověřený podpis"
 [Jitky Faugnerové]: ../../přílohy/konference/2025/prezentace/01_02_Faugnerová.pdf "Geoportál ČR - jednotný přístup k prostorovým  datům"
 [Michal Verner]: ../../přílohy/konference/2025/prezentace/01_05_Verner.pdf "Integrovaný systém řízení ÚPV – cesta nejen ke kvalitní správě dat"
@@ -60,6 +61,7 @@ Těšíme se zase za rok!
 [Kristína Pšorn Zákopčanová]: ../../přílohy/konference/2025/prezentace/03_05_Pšorn_Zákopčanová.pdf "Když chcete grafem něco říct"
 [záznamu na YT DIA]: https://www.youtube.com/live/QsRbYAd6MuM?si=tEns7a9C4eANB7y5 "YT záznam z konference"
 [webu]: /informace/konference-2025/ "Web konference"
+
 
 
 

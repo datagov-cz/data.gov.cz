@@ -27,7 +27,7 @@ Dočkali jsem se také představení Geoportálu ČR od [Jitky Faugnerové] vče
 [Michal Verner] zas na příkladu integrovaného systému řízení na Úřadu průmyslového vlastnictví ilustroval, jak je principy správy dat možné integrovat do běžného chodu úřadu. 
 A své místo měl na konferenci také nový evropský prostor pro sdílení zdravotnických dat, co se s ním pojí vysvětlila [Klára Jiráková] z Kraje Vysočina a Ministerstva zdravotnictví.
 
-{% include image.html url="../přílohy/články/co-přinesla-konference-jak-na-data-ve-veřejné-správě-2025/Foto_2.webp" %}
+{% include image.html url="../přílohy/články/co-přinesla-konference-jak-na-data-ve-veřejné-správě-2025/Foto_2.webp" description="Kristína Pšorn Zákopčanová a Radek Hábl" %}
 
 V druhém bloku jsme se podívali na zkušenosti a novinky se zpřístupňováním dat k vědeckým a výzkumným účelům.
 Kolega [David Hemala] vysvětlil, že řízený přístup k datům může pomoci sdílet dosud neveřejná data nejen pro vědu a výzkum, ale i třeba i pro datovou žurnalistiku.
@@ -39,7 +39,7 @@ Poslední blok se zaměřil na otevřená data a jejich využití, a to od dat o
 Otevřená data jsou důležitá i pro média například v článcích o povodních nebo v investigativě v kauze Motol, jak ukázal [Jan Cibulka] z Českého rozhlasu.
 A svou roli mohou sehrát i při řešení velkého sociálního problému, jak ukázal na Mapě exekucí [Radek Hábl].
 Rady, jak na to, abyste dokázali přetavit vaše výsledky práce s daty do jasného sdělení, přinesla [Kristína Pšorn Zákopčanová] a vizualizaci dat se věnoval opět oblíbený workshop od týmu z NKÚ Martin Smetana, Kristýna Půlpán, Václav Flaška.
-Děkujeme moc všem vystupujícím a sledujícím v sále i online. A kdo nestihl být s námi, nemusí zoufat, konferenci si můžete pustit i ze záznamu na YT DIA, prezentace jsou dostupné na webu.
+Děkujeme moc všem vystupujícím a sledujícím v sále i online. A kdo nestihl být s námi, nemusí zoufat, konferenci si můžete pustit i ze [záznamu na YT DIA], prezentace jsou dostupné na [webu].
 Těšíme se zase za rok!
 
 [Martin Skovbjerg Jensen]: ../../přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf "The Danish public sector approach to data availability – lessons learned from the National Data Portal and key tasks for the coming years"
@@ -58,8 +58,8 @@ Těšíme se zase za rok!
 [Jan Cibulka]: ../../přílohy/konference/2025/prezentace/03_03_Cibulka.pdf "Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?"
 [Radek Hábl]: ../../přílohy/konference/2025/prezentace/03_04_Hábl.pdf "Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému"
 [Kristína Pšorn Zákopčanová]: ../../přílohy/konference/2025/prezentace/03_05_Pšorn_Zákopčanová.pdf "Když chcete grafem něco říct"
-
-
+[záznamu na YT DIA]: https://www.youtube.com/live/QsRbYAd6MuM?si=tEns7a9C4eANB7y5 "YT záznam z konference"
+[webu]: /informace/konference-2025/ "Web konference"
 
 
 

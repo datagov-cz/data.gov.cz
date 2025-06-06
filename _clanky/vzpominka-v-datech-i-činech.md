@@ -6,7 +6,7 @@ ref: vzpomínka-v-datech-i-činech
 lang: cs
 image: ../přílohy/články/vzpominka-v-datech-i-činech/válečné-hroby.png
 author: lenka_kováčová
-date: 2025-06-09 07:00:00 +01:00
+date: 2025-06-06 07:00:00 +01:00
 ---
 
 Interaktivní dashboard ukazuje místa posledního odpočinku víc než 14 000 obětí válek.

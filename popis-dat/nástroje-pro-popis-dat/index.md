@@ -7,6 +7,8 @@ lang: cs
 
 Zde najdete představení nástrojů, pomocí kterých lze popisy dat vytvářet - včetně návodů a šablon. Vedle námi poskytnutých a podporovaných nástrojů níže lze využít i jiné. Jediný požadavek, který musí nástroje splnit je, že umožňují vytvořit soubor se slovníkem, který je kompatibilní s [otevřenou formální normou pro slovníky]. 
 
+<gov-message color="primary" type="bold"><gov-icon type="components" name="lightbulb-fill" slot="icon"></gov-icon>Dne 7. 7. 2025 byly vydány nové verze návodů a šablon pro popis dat. Dosavadní šablony jsou stále podporované, ale u nových slovníků či úprav silně doporučujeme použít nové verze. Pro více informací navštivte <a href="./historie-verzí">historii verzí podkladů pro popis dat</a>.</gov-message>
+
 ### Tabulka pro popis dat   
 Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat začínají a v úřadě nemají zkušenosti s nástroji na tvorbu popisu dat v grafické podobě (neboli s diagramy/pohledy). Tabulka je nejjednodušší řešení pro základní popis dat. Nevyžaduje vynaložení speciálních kapacit kromě znalce oblastí, které jste zvolili pro tvorbu slovníků. Berte však na vědomí, že s růstem počtu pojmů, vlastností a vztahů ale roste komplikovanost a klesá srozumitelnost tabulky. Šablona je připravena ve formátu XLSX (pro Microsoft Excel).
 
@@ -38,7 +40,7 @@ Tabulkové řešení jsme připravili především pro ty, kteří s popisem dat
 *	prohlížecí nástroj ShowIT,
 *	nástroj pro tvorbu datových specifikací Dataspecer.
 
-Ukázku těchto nástrojů naleznete ve školení [Modelování popisu dat ve veřejné správě]. Pro přístup do Výrobní linky si zažádejte na e-mailové adrese <a href= "mailto:data@dia.gov.cz">data@dia.gov.cz</a> - nezapomeňte uvést, pro jakou oblast slovník tvoříte a jak ho plánujete využít (např. evidence údajů agendy do RPP, výkladový slovník apod.).
+Ukázku těchto nástrojů naleznete ve školení [Modelování popisu dat ve veřejné správě]. O přístup do Výrobní linky žádejte na e-mailové adrese <a href= "mailto:data@dia.gov.cz">data@dia.gov.cz</a> - nezapomeňte uvést, pro jakou oblast slovník tvoříte a jak ho plánujete využít (např. evidence údajů agendy do RPP nebo výkladový slovník).
 
 [otevřenou formální normou pro slovníky]: https://ofn.gov.cz/slovníky  "Otevřená formální norma pro slovníky"
 [Archi]: https://archimatetool.com "Archi"

@@ -1,381 +1,390 @@
-<?xml  version='1.0' encoding='utf-8' ?>
-<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:Slovníky="http://www.sparxsystems.com/profiles/Slovníky/1.0.1">
+<?xml  version='1.0' encoding='UTF-8' ?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:Slovníky="http://www.sparxsystems.com/profiles/Slovníky/1.1.0">
 	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1628"/>
 	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
-		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" name="Příkladový slovník z metodiky popisu dat" visibility="public">
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB" name="Adresa" visibility="public"/>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" name="sídlí na adrese" visibility="public">
-				<memberEnd xmi:idref="EAID_dstD997A3_8C2C_45bd_98C8_E5130BFEDDC2"/>
-				<memberEnd xmi:idref="EAID_srcD997A3_8C2C_45bd_98C8_E5130BFEDDC2"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcD997A3_8C2C_45bd_98C8_E5130BFEDDC2" visibility="public" association="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" name="Příkladový slovník z metodiky popisu dat" visibility="public">
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_86274FA3_0689_448b_97BD_94289838568E" name="Adresa" visibility="public"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" name="sídlí na adrese" visibility="public">
+				<memberEnd xmi:idref="EAID_dst16F870_68FC_4c88_BE7F_3FD6884F5E14"/>
+				<memberEnd xmi:idref="EAID_src16F870_68FC_4c88_BE7F_3FD6884F5E14"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src16F870_68FC_4c88_BE7F_3FD6884F5E14" visibility="public" association="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70" name="Jméno držitele řidičského průkazu" visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst1589F3_3B33_4309_B48A_E671462AAFFA" visibility="public" association="EAID_851589F3_3B33_4309_B48A_E671462AAFFA" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71" name="Jméno držitele řidičského průkazu" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst893CE1_E742_4e59_8328_B60ACAE56BFC" visibility="public" association="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</ownedAttribute>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_851589F3_3B33_4309_B48A_E671462AAFFA" visibility="public">
-				<memberEnd xmi:idref="EAID_dst1589F3_3B33_4309_B48A_E671462AAFFA"/>
-				<memberEnd xmi:idref="EAID_src1589F3_3B33_4309_B48A_E671462AAFFA"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src1589F3_3B33_4309_B48A_E671462AAFFA" visibility="public" association="EAID_851589F3_3B33_4309_B48A_E671462AAFFA" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC" visibility="public">
+				<memberEnd xmi:idref="EAID_dst893CE1_E742_4e59_8328_B60ACAE56BFC"/>
+				<memberEnd xmi:idref="EAID_src893CE1_E742_4e59_8328_B60ACAE56BFC"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src893CE1_E742_4e59_8328_B60ACAE56BFC" visibility="public" association="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0" name="Název obecního úřadu obce s rozšířenou působností" visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst89419A_71FD_4548_B73A_8A35A70FB227" visibility="public" association="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB" name="Název obecního úřadu obce s rozšířenou působností" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstFB29D8_75CF_4c34_9893_9D825D7895DD" visibility="public" association="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
 				</ownedAttribute>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227" visibility="public">
-				<memberEnd xmi:idref="EAID_dst89419A_71FD_4548_B73A_8A35A70FB227"/>
-				<memberEnd xmi:idref="EAID_src89419A_71FD_4548_B73A_8A35A70FB227"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src89419A_71FD_4548_B73A_8A35A70FB227" visibility="public" association="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD" visibility="public">
+				<memberEnd xmi:idref="EAID_dstFB29D8_75CF_4c34_9893_9D825D7895DD"/>
+				<memberEnd xmi:idref="EAID_srcFB29D8_75CF_4c34_9893_9D825D7895DD"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcFB29D8_75CF_4c34_9893_9D825D7895DD" visibility="public" association="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" name="Obecní úřad obce s rozšířenou působností " visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst611B76_0EEC_4739_8F22_D1015AE84490" visibility="public" association="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" name="Obecní úřad obce s rozšířenou působností " visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstA7267E_2278_4b45_97BA_31F55B36877F" visibility="public" association="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</ownedAttribute>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstD997A3_8C2C_45bd_98C8_E5130BFEDDC2" visibility="public" association="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst16F870_68FC_4c88_BE7F_3FD6884F5E14" visibility="public" association="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
 				</ownedAttribute>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" name="vydává řidičský průkaz" visibility="public">
-				<memberEnd xmi:idref="EAID_dst611B76_0EEC_4739_8F22_D1015AE84490"/>
-				<memberEnd xmi:idref="EAID_src611B76_0EEC_4739_8F22_D1015AE84490"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src611B76_0EEC_4739_8F22_D1015AE84490" visibility="public" association="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" name="vydává řidičský průkaz" visibility="public">
+				<memberEnd xmi:idref="EAID_dstA7267E_2278_4b45_97BA_31F55B36877F"/>
+				<memberEnd xmi:idref="EAID_srcA7267E_2278_4b45_97BA_31F55B36877F"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcA7267E_2278_4b45_97BA_31F55B36877F" visibility="public" association="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_68680A36_29B7_4b68_95DA_80BBE224A050" name="Příjmení držitele řidičského průkazu" visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstBC5B9D_1711_444e_98BA_2DD2CFA9C726" visibility="public" association="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_90AD2177_426C_4e6d_BC95_F9545C074462" name="Příjmení držitele řidičského průkazu" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst7BC192_187B_42b5_9C1E_998BAA80450C" visibility="public" association="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</ownedAttribute>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726" visibility="public">
-				<memberEnd xmi:idref="EAID_dstBC5B9D_1711_444e_98BA_2DD2CFA9C726"/>
-				<memberEnd xmi:idref="EAID_srcBC5B9D_1711_444e_98BA_2DD2CFA9C726"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcBC5B9D_1711_444e_98BA_2DD2CFA9C726" visibility="public" association="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
-					<type xmi:idref="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C" visibility="public">
+				<memberEnd xmi:idref="EAID_dst7BC192_187B_42b5_9C1E_998BAA80450C"/>
+				<memberEnd xmi:idref="EAID_src7BC192_187B_42b5_9C1E_998BAA80450C"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src7BC192_187B_42b5_9C1E_998BAA80450C" visibility="public" association="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" name="Řidič" visibility="public">
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstA83B77_540C_4a90_9763_AE7BBC9D11A4" visibility="public" association="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_F15B9931_0929_471a_998C_944B91698F1E" name="Řidič" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst22A1D8_9432_4a19_874C_9973EE49074F" visibility="public" association="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
 				</ownedAttribute>
-				<generalization xmi:type="uml:Generalization" xmi:id="EAID_801FF996_0810_4b0f_AE40_A82B6B9E2A43" general="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD" isSubstitutable="true"/>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_E9CCB669_D1A3_4e0c_86F5_70E6F419A20B" general="EAID_70A9FD97_EE0A_4630_B818_6AD962543321" isSubstitutable="true"/>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" name="řídí vozidlo" visibility="public">
-				<memberEnd xmi:idref="EAID_dstA83B77_540C_4a90_9763_AE7BBC9D11A4"/>
-				<memberEnd xmi:idref="EAID_srcA83B77_540C_4a90_9763_AE7BBC9D11A4"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcA83B77_540C_4a90_9763_AE7BBC9D11A4" visibility="public" association="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" name="řídí vozidlo" visibility="public">
+				<memberEnd xmi:idref="EAID_dst22A1D8_9432_4a19_874C_9973EE49074F"/>
+				<memberEnd xmi:idref="EAID_src22A1D8_9432_4a19_874C_9973EE49074F"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src22A1D8_9432_4a19_874C_9973EE49074F" visibility="public" association="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_F364677F_A771_4c99_899C_600EEB76BA39" name="Řidič evidovaný v registru řidičů" visibility="public">
-				<generalization xmi:type="uml:Generalization" xmi:id="EAID_A0506B5C_06CD_4f39_96CC_3C5FFE17BA48" general="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" isSubstitutable="true"/>
-				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst4A0F3E_CD60_4400_88E5_19009135C682" visibility="public" association="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" name="Řidič evidovaný v registru řidičů" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst999CAA_A468_450f_AEF5_58409EADD9FE" visibility="public" association="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_FA4670D2_A8FF_4aa6_9FFF_C03B1D7CB861" general="EAID_F15B9931_0929_471a_998C_944B91698F1E" isSubstitutable="true"/>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Association" xmi:id="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" name="drží řidičský průkaz" visibility="public">
-				<memberEnd xmi:idref="EAID_dst4A0F3E_CD60_4400_88E5_19009135C682"/>
-				<memberEnd xmi:idref="EAID_src4A0F3E_CD60_4400_88E5_19009135C682"/>
-				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src4A0F3E_CD60_4400_88E5_19009135C682" visibility="public" association="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
-					<type xmi:idref="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" name="drží řidičský průkaz" visibility="public">
+				<memberEnd xmi:idref="EAID_dst999CAA_A468_450f_AEF5_58409EADD9FE"/>
+				<memberEnd xmi:idref="EAID_src999CAA_A468_450f_AEF5_58409EADD9FE"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src999CAA_A468_450f_AEF5_58409EADD9FE" visibility="public" association="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
 				</ownedEnd>
 			</packagedElement>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2" name="Řidičský průkaz" visibility="public"/>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD" name="Účastník provozu na pozemních komunikacích" visibility="public"/>
-			<packagedElement xmi:type="uml:Class" xmi:id="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253" name="Vozidlo" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D" name="Řidičský průkaz" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_70A9FD97_EE0A_4630_B818_6AD962543321" name="Účastník provozu na pozemních komunikacích" visibility="public"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734" name="Vozidlo" visibility="public"/>
 		</packagedElement>
-		<Slovníky:typObjektu base_Class="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2009/111/2025-01-01/dokument/norma/cast_1/hlava_4/par_29/odst_1/pism_h" popis="Určení místa některým ze způsobů definovaných otevřenou formální normou pro adresu" definice="Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále" identifikátor="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresa"/>
-		<Slovníky:typVztahu base_Association="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2"/>
-		<Slovníky:typVlastnosti base_Class="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_a" popis="Řidičský průkaz obsahuje mj. jméno a příjmení držitele." identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/jméno-držitele-řidičského-průkazu"/>
-		<Slovníky:typVlastnosti base_Class="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_i" popis="Řidičský průkaz obsahuje název úřadu, který řidičský průkaz vydal (což je vždy obecní úřad obce s rozšířenou působností)." identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/název-obecního-úřadu-obce-s-rozšířenou-působností"/>
-		<Slovníky:typSubjektu base_Class="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_109/odst_3" popis="Úřad vydávající řidičský průkaz je vždy obecním úřadem obce s rozšířenou působností." identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/obecní-úřad-obce-s-rozšířenou-působností"/>
-		<Slovníky:typVztahu base_Association="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490"/>
-		<Slovníky:typVlastnosti base_Class="EAID_68680A36_29B7_4b68_95DA_80BBE224A050" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_a" popis="Řidičský průkaz obsahuje mj. jméno a příjmení držitele." identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/příjmení-držitele-řidičského-průkazu"/>
-		<Slovníky:typSubjektu base_Class="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-04-01/dokument/norma/cast_1/hlava_1/par_2/pism_d" popis="Řidič je tedy i cyklista, nejen řidič motorových vozidel – neváže se na něj nutně řidičské oprávnění." definice="účastník provozu na pozemních komunikacích, který řídí motorové nebo nemotorové vozidlo anebo tramvaj; řidičem je i jezdec na zvířeti" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič"/>
-		<Slovníky:typVztahu base_Association="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4"/>
-		<Slovníky:typSubjektu base_Class="EAID_F364677F_A771_4c99_899C_600EEB76BA39" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_4/par_119/odst_2/pism_a" definice="Registr řidičů obsahuje a) osobní údaje o řidiči motorového vozidla uvedené v řidičském průkazu a v mezinárodním řidičském průkazu, včetně digitalizované fotografie a digitalizovaného podpisu řidiče," identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič-evidovaný-v-registru-řidičů"/>
-		<Slovníky:typVztahu base_Association="EAID_B94A0F3E_CD60_4400_88E5_19009135C682"/>
-		<Slovníky:typObjektu base_Class="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_103/odst_1" definice="Řidičský průkaz je veřejná listina, která osvědčuje řidičské oprávnění držitele a jeho rozsah a kterou držitel prokazuje své jméno, příjmení a podobu, jakož i další údaje v ní zapsané podle tohoto zákona. " identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidičský-průkaz"/>
-		<Slovníky:typSubjektu base_Class="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_a" definice="každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/účastník-provozu-na-pozemních-komunikacích"/>
-		<Slovníky:typObjektu base_Class="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253" zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_f" definice="motorové vozidlo, nemotorové vozidlo nebo tramvaj" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/vozidlo"/>
-		<Slovníky:slovnikyPackage base_Package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E"/>
+		<Slovníky:typObjektu base_Class="EAID_86274FA3_0689_448b_97BD_94289838568E" identifikátor="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresa"/>
+		<Slovníky:typVztahu base_Association="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14"/>
+		<Slovníky:typVlastnosti base_Class="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+		<Slovníky:typVlastnosti base_Class="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB" _3._rpp_-_je_pojem_veřejný_="Ano" _1._základ_-_popis="Řidičský průkaz obsahuje název úřadu, který řidičský průkaz vydal (což je vždy obecní úřad obce s rozšířenou působností)." _2._doplnění_-_datový_typ="Řetězec" _3._rpp_-_je_pojem_sdílen_v_PPDF_="Ano" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/název-obecního-úřadu-obce-s-rozšířenou-působností" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_i"/>
+		<Slovníky:typSubjektu base_Class="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" _1._základ_-_popis="Úřad vydávající řidičský průkaz je vždy obecním úřadem obce s rozšířenou působností." _2._doplnění_-_ekvivalentní_pojem="https://slovník.gov.cz/legislativní/sbírka/128/2000/pojem/obecní-úřad-obce-s-rozšířenou-působností" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/obecní-úřad-obce-s-rozšířenou-působností" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_109/odst_3"/>
+		<Slovníky:typVztahu base_Association="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F"/>
+		<Slovníky:typVlastnosti base_Class="EAID_90AD2177_426C_4e6d_BC95_F9545C074462" _3._rpp_-_je_pojem_veřejný_="Ne" _2._doplnění_-_datový_typ="Řetězec" _3._rpp_-_je_pojem_sdílen_v_PPDF_="Ano" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/příjmení-držitele-řidičského-průkazu" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_a"/>
+		<Slovníky:typSubjektu base_Class="EAID_F15B9931_0929_471a_998C_944B91698F1E" _1._základ_-_definice="účastník provozu na pozemních komunikacích, který řídí motorové nebo nemotorové vozidlo anebo tramvaj; řidičem je i jezdec na zvířeti" _1._základ_-_popis="Řidič je tedy i cyklista, nejen řidič motorových vozidel – neváže se na něj nutně řidičské oprávnění." identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-04-01/dokument/norma/cast_1/hlava_1/par_2/pism_d"/>
+		<Slovníky:typVztahu base_Association="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F"/>
+		<Slovníky:typSubjektu base_Class="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" _1._základ_-_definice="Registr řidičů obsahuje a) osobní údaje o řidiči motorového vozidla uvedené v řidičském průkazu a v mezinárodním řidičském průkazu, včetně digitalizované fotografie a digitalizovaného podpisu řidiče," identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič-evidovaný-v-registru-řidičů" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_4/par_119/odst_2/pism_a"/>
+		<Slovníky:typVztahu base_Association="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE"/>
+		<Slovníky:typObjektu base_Class="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D" _1._základ_-_definice="Řidičský průkaz je veřejná listina, která osvědčuje řidičské oprávnění držitele a jeho rozsah a kterou držitel prokazuje své jméno, příjmení a podobu, jakož i další údaje v ní zapsané podle tohoto zákona. " identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidičský-průkaz" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_103/odst_1"/>
+		<Slovníky:typSubjektu base_Class="EAID_70A9FD97_EE0A_4630_B818_6AD962543321" _1._základ_-_definice="každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích" identifikátor="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/účastník-provozu-na-pozemních-komunikacích" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_a"/>
+		<Slovníky:typObjektu base_Class="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734" _1._základ_-_definice="motorové vozidlo, nemotorové vozidlo nebo tramvaj" _1._základ_-_zdroj="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_f"/>
+		<Slovníky:slovnikyPackage base_Package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" popis="Ukázkový slovník zákona o silničním provozu z metodiky. Jedná se o příklad popisu; není garantován soulad tohoto slovníku s aktuálními zákony a jinými zdroji z této oblasti."/>
 	</uml:Model>
 	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
 		<elements>
-			<element xmi:idref="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" xmi:type="uml:Package" name="Příkladový slovník z metodiky popisu dat" scope="public">
-				<model package2="EAID_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" package="EAPK_4802644C_13DC_4cf0_9868_617D9B97ED9F" tpos="0" ea_localid="4" ea_eleType="package"/>
+			<element xmi:idref="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" xmi:type="uml:Package" name="Příkladový slovník z metodiky popisu dat" scope="public">
+				<model package2="EAID_4A089080_638E_4ff1_842A_FC0C7020E3B8" package="EAPK_7D96433F_0E97_4eac_947F_618B478AC69C" tpos="0" ea_localid="28" ea_eleType="package"/>
 				<properties isSpecification="false" sType="Package" nType="0" scope="public" stereotype="slovnikyPackage"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 11:07:14" modified="2025-01-06 11:24:27" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-06-27 14:23:30" modified="2025-07-01 14:18:18" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_4AB373B7_918D_d091_8CB2_922DA5E03E1E" name="adresa lokálního katalogu dat, ve kterém bude slovník registrován" modelElement="EAID_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E"/>
-					<tag xmi:id="EAID_082980EB_E9C1_d1e9_85E2_38973BD092F1" name="popis" modelElement="EAID_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E"/>
+					<tag xmi:id="EAID_4AB373B7_918D_d091_9D31_1C6594969296" name="adresa lokálního katalogu dat, ve kterém bude slovník registrován" value="https://data.dia.gov.cz/" modelElement="EAID_4A089080_638E_4ff1_842A_FC0C7020E3B8"/>
+					<tag xmi:id="EAID_082980EB_E9C1_d1e9_AB9F_0C87F5F86E7A" name="popis" value="Ukázkový slovník zákona o silničním provozu z metodiky. Jedná se o příklad popisu; není garantován soulad tohoto slovníku s aktuálními zákony a jinými zdroji z této oblasti." modelElement="EAID_4A089080_638E_4ff1_842A_FC0C7020E3B8"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={CCBCADEA-002A-4518-979F-8D088659E621}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=slovnikyPackage;FQName=Slovníky::slovnikyPackage;@ENDSTEREO;$DES;$CLT={A78DBEE7-A3B7-4062-BF6E-3CBE0BE4C89E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={5FB90788-7F3C-4018-A0BA-DEB8B8AEFD36}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=slovnikyPackage;FQName=Slovníky::slovnikyPackage;@ENDSTEREO;$DES;$CLT={4A089080-638E-4ff1-842A-FC0C7020E3B8}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Model"/>
 				<packageproperties version="1.0" tpos="0"/>
 				<paths/>
-				<times created="2025-01-06 11:07:14" modified="2025-05-16 09:34:38" lastloaddate="2025-05-16 09:34:38" lastsavedate="2025-05-16 09:34:38"/>
+				<times created="2025-06-27 14:23:30" modified="2025-07-01 14:18:18" lastloaddate="2025-06-27 14:28:40" lastsavedate="2025-06-27 14:28:40"/>
 				<flags iscontrolled="0" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0" packageFlags="isModel=1;VICON=3;"/>
 			</element>
-			<element xmi:idref="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB" xmi:type="uml:Class" name="Adresa" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="6" ea_eleType="element"/>
+			<element xmi:idref="EAID_86274FA3_0689_448b_97BD_94289838568E" xmi:type="uml:Class" name="Adresa" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="229" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typObjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 17:12:03" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:20" modified="2025-07-01 14:21:56" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_1A5C_6f1a_9085_6874FB581B33" name="agenda" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_031EE1FE_8DFA_db8d_B360_BB380092C038" name="agendový informační systém" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_09C865F9_D5F5_06d5_8B87_4C9113E4AEC0" name="alternativní název" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_9E097A97_7F93_707f_A22B_6D3B01B2BC56" name="definice" value="Adresou se rozumí kombinace názvu okresu, názvu obce nebo vojenského újezdu, názvu části obce nebo v případě hlavního města Prahy názvu katastrálního území a názvu městského obvodu, čísla popisného nebo evidenčního, názvu ulice a čísla orientačního a dále" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_2F243BEF_ABEB_62ab_9338_49CFBBE50AC9" name="ekvivalentní pojem" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_5F3C3DAD_C029_79c0_8258_5873097CD5FD" name="identifikátor" value="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresa" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_082980EB_4767_ba47_B084_2F36A0B9B15B" name="popis" value="Určení místa některým ze způsobů definovaných otevřenou formální normou pro adresu" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_D33ED9FE_3A7A_313a_B243_F616155BE5C9" name="související zdroj" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<tag xmi:id="EAID_08D87709_3D85_693d_B91D_B8B950FBF5C5" name="zdroj" value="https://esbirka.opendata.cz/zdroj/p%C5%99edpis/111/2009/sekce/29/1/h" modelElement="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
+					<tag xmi:id="EAID_531E8C9A_EB96_b8eb_A9C1_971474590157" name="1. základ - definice" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_D9C919CE_7A4A_bb7a_9B73_B3D8CB3D9180" name="1. základ - popis" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_DA780FEC_7068_6a70_89E4_4CFE26767906" name="1. základ - zdroj" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_7FE252F9_0BF5_870b_87C9_8CFF54891F51" name="2. doplnění - alternativní název" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_A53E28EF_E1EB_e2e1_93A9_978E566D60E6" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_C74F26FE_B07A_82b0_89E4_3332BDD7578D" name="2. doplnění - související zdroj" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_E7DBAC53_EACF_c1ea_ABAD_5C54AF283188" name="3. rpp - agenda (kód)" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_D1783871_CCED_52cc_93F5_7A9EFF8E04E7" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<tag xmi:id="EAID_5F3C3DAD_C029_79c0_89ED_9DCBA62E73A5" name="identifikátor" value="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/adresa" modelElement="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={C28799D8-456C-405b-AB60-B5D78D788063}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typObjektu;FQName=Slovníky::typObjektu;@ENDSTEREO;$DES;$CLT={0A6F1B08-3DEF-4871-8629-448EB01654AB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={A5F89184-93C2-4139-9F91-D3C7ED62076C}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typObjektu;FQName=Slovníky::typObjektu;@ENDSTEREO;$DES;$CLT={86274FA3-0689-448b-97BD-94289838568E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Association xmi:id="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" start="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" end="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
+					<Association xmi:id="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" start="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" end="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70" xmi:type="uml:Class" name="Jméno držitele řidičského průkazu" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="7" ea_eleType="element"/>
+			<element xmi:idref="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71" xmi:type="uml:Class" name="Jméno držitele řidičského průkazu" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="235" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typVlastnosti" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:29" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:35:38" modified="2025-07-01 14:35:59" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_E1F8_efe1_BD05_0571EF3DCD9A" name="alternativní název" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_4AD2CB38_B837_d9b8_A27A_996C846FCB05" name="datový typ" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_9E097A97_1BD6_231b_9EFB_F7FC9489F268" name="definice" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_2F243BEF_B7EE_4bb7_AF1A_C1C314D22A3D" name="ekvivalentní pojem" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_5F3C3DAD_7E4C_777e_BBC2_00FEDC95F4EE" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/jméno-držitele-řidičského-průkazu" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_95BB226C_CD4B_45cd_AE21_DB77913300B7" name="je pojem sdílen v PPDF?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_FA074457_BC76_1fbc_9287_82C83F894514" name="je pojem veřejný?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_082980EB_928A_9992_92C4_F4758AFFF052" name="popis" value="Řidičský průkaz obsahuje mj. jméno a příjmení držitele." modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_D33ED9FE_521D_5752_A34B_388B0E8F9742" name="související zdroj" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_FB6F928C_6FCB_866f_B3AD_08DF092D46EC" name="ustanovení dokládající neveřejnost pojmu" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
-					<tag xmi:id="EAID_08D87709_88A8_4888_B400_4B1CD8C84060" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_a" modelElement="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70"/>
+					<tag xmi:id="EAID_531E8C9A_0459_1504_8F3B_4A2A9B3F5008" name="1. základ - definice" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_D9C919CE_91ED_e191_8392_8E9DE5DBAC01" name="1. základ - popis" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_DA780FEC_880B_9088_9AAB_857271397DA5" name="1. základ - zdroj" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_7FE252F9_6138_2b61_B1CD_0DC34B5322EE" name="2. doplnění - alternativní název" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_D04FB838_F777_29f7_9F05_D3CA25127777" name="2. doplnění - datový typ" value="#NOTES#Values: Ano či ne,Datum,Čas,Datum a čas,Celé číslo,Desetinné číslo,URI&amp;_c_^ IRI&amp;_c_^ URL,Řetězec,Text&#xA;" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_A53E28EF_372E_8737_8F53_1E3D6438CD22" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_C74F26FE_E95D_7fe9_8B2C_4830F320723C" name="2. doplnění - související zdroj" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_C99A5ACC_408B_8e40_9144_816949AD6908" name="3. rpp - je pojem sdílen v PPDF?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_4E7BB4B7_BFB6_e2bf_B449_90F4DD246228" name="3. rpp - je pojem veřejný?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_68F296EC_CB0B_abcb_AF5E_1ED70293785F" name="3. rpp - ustanovení dokládající neveřejnost pojmu" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_CC74F10B_638A_5763_8C29_F953A7ECE5E3" name="4. 360/2023 - typ obsahu údaje" value="#NOTES#Values: Identifikační,Evidenční,Statistické&#xA;" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_7D019E39_3838_c738_8872_3FDE7429D9F2" name="4. 360/2023 - způsob sdílení údaje" value="#NOTES#Values: Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené&#xA;" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_B4E5A40A_3E09_ab3e_AED4_683D3CD332EC" name="4. 360/2023 - způsob získání údaje" value="#NOTES#Values: Základních registrů,Jiných agend,Vlastní,Provozní&#xA;" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
+					<tag xmi:id="EAID_5F3C3DAD_7E4C_777e_BA23_441186F2AB93" name="identifikátor" modelElement="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={C0A896B3-7C85-4364-959B-E011D0E79576}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVlastnosti;FQName=Slovníky::typVlastnosti;@ENDSTEREO;$DES;$CLT={F12FFD6F-A6A5-412b-A49E-82FE9840CB70}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={FE85F90E-5141-41f9-A33F-EE0088C50358}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVlastnosti;FQName=Slovníky::typVlastnosti;@ENDSTEREO;$DES;$CLT={8D4F153D-ED17-40fe-8DA3-8A872365CD71}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Aggregation xmi:id="EAID_851589F3_3B33_4309_B48A_E671462AAFFA" start="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+					<Aggregation xmi:id="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC" start="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0" xmi:type="uml:Class" name="Název obecního úřadu obce s rozšířenou působností" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="8" ea_eleType="element"/>
+			<element xmi:idref="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB" xmi:type="uml:Class" name="Název obecního úřadu obce s rozšířenou působností" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="237" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typVlastnosti" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:24" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:36:16" modified="2025-07-01 14:36:24" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_E1F8_efe1_A8ED_97565C646540" name="alternativní název" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_4AD2CB38_B837_d9b8_A5C2_63B7F60DB8FF" name="datový typ" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_9E097A97_1BD6_231b_9034_7E4628366615" name="definice" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_2F243BEF_B7EE_4bb7_8628_E9256176B1EB" name="ekvivalentní pojem" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_5F3C3DAD_7E4C_777e_ADCF_0C28046B4DDD" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/název-obecního-úřadu-obce-s-rozšířenou-působností" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_95BB226C_CD4B_45cd_8CA6_A2A93FEF3FF8" name="je pojem sdílen v PPDF?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_FA074457_BC76_1fbc_A24A_2CAC5C023391" name="je pojem veřejný?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_082980EB_928A_9992_B0B7_C0D5F4321A34" name="popis" value="Řidičský průkaz obsahuje název úřadu, který řidičský průkaz vydal (což je vždy obecní úřad obce s rozšířenou působností)." modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_D33ED9FE_521D_5752_A276_45F4FFFCD3DC" name="související zdroj" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_FB6F928C_6FCB_866f_B93A_71826AFE52FB" name="ustanovení dokládající neveřejnost pojmu" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
-					<tag xmi:id="EAID_08D87709_88A8_4888_9FA4_2880DBC2E6C3" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_i" modelElement="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0"/>
+					<tag xmi:id="EAID_531E8C9A_0459_1504_9AED_98D61D09DE0C" name="1. základ - definice" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_D9C919CE_91ED_e191_B4DB_4CD685E5F5B4" name="1. základ - popis" value="Řidičský průkaz obsahuje název úřadu, který řidičský průkaz vydal (což je vždy obecní úřad obce s rozšířenou působností)." modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_DA780FEC_880B_9088_8FDC_899DAFE54B52" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_i" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_7FE252F9_6138_2b61_8B66_6C2A6677B665" name="2. doplnění - alternativní název" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_D04FB838_F777_29f7_9BF7_C8C97B61A382" name="2. doplnění - datový typ" value="Řetězec#NOTES#Values: Ano či ne,Datum,Čas,Datum a čas,Celé číslo,Desetinné číslo,URI&amp;_c_^ IRI&amp;_c_^ URL,Řetězec,Text&#xA;" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_A53E28EF_372E_8737_AE34_69F8755E2336" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_C74F26FE_E95D_7fe9_85EA_F7A9B8C14EE3" name="2. doplnění - související zdroj" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_C99A5ACC_408B_8e40_8B12_47892F007355" name="3. rpp - je pojem sdílen v PPDF?" value="Ano#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_4E7BB4B7_BFB6_e2bf_A32D_92610723E0F7" name="3. rpp - je pojem veřejný?" value="Ano#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_68F296EC_CB0B_abcb_AAC0_92BA62F4DBCB" name="3. rpp - ustanovení dokládající neveřejnost pojmu" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_CC74F10B_638A_5763_BF75_98CEC86D5F52" name="4. 360/2023 - typ obsahu údaje" value="#NOTES#Values: Identifikační,Evidenční,Statistické&#xA;" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_7D019E39_3838_c738_A799_94B8CC789A6F" name="4. 360/2023 - způsob sdílení údaje" value="#NOTES#Values: Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené&#xA;" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_B4E5A40A_3E09_ab3e_906B_095551CD64E6" name="4. 360/2023 - způsob získání údaje" value="#NOTES#Values: Základních registrů,Jiných agend,Vlastní,Provozní&#xA;" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
+					<tag xmi:id="EAID_5F3C3DAD_7E4C_777e_BE74_6513EA804382" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/název-obecního-úřadu-obce-s-rozšířenou-působností" modelElement="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={BA1175BE-B097-4e37-ACE6-56C0C3BD25DB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVlastnosti;FQName=Slovníky::typVlastnosti;@ENDSTEREO;$DES;$CLT={E312948F-A220-490e-81F2-85B7D60D6FA0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={8CD1F5AC-5D88-4318-8745-2E13BB02FB7A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVlastnosti;FQName=Slovníky::typVlastnosti;@ENDSTEREO;$DES;$CLT={D809986A-0429-47a7-B651-C3DAB1FB97AB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Aggregation xmi:id="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227" start="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0" end="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
+					<Aggregation xmi:id="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD" start="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB" end="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" xmi:type="uml:Class" name="Obecní úřad obce s rozšířenou působností " scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="9" ea_eleType="element"/>
+			<element xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" xmi:type="uml:Class" name="Obecní úřad obce s rozšířenou působností " scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="227" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typSubjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:22" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:08" modified="2025-07-01 14:21:32" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_A775_fba7_937E_E7B376FDC619" name="agenda" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_031EE1FE_1193_a511_9C30_1AC64EB32676" name="agendový informační systém" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_09C865F9_D08E_16d0_AEAC_B9B13388B35C" name="alternativní název" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_9E097A97_B6EC_54b6_B3C7_93E4E162ED9C" name="definice" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_2F243BEF_A684_72a6_9C31_A15772E68F91" name="ekvivalentní pojem" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_5F3C3DAD_7722_3377_8FBE_6D4E1597FC39" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/obecní-úřad-obce-s-rozšířenou-působností" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_082980EB_1560_ed15_A616_44F4C60A48FF" name="popis" value="Úřad vydávající řidičský průkaz je vždy obecním úřadem obce s rozšířenou působností." modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_D33ED9FE_C5F3_6fc5_88A5_B6D2A5E46E58" name="související zdroj" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
-					<tag xmi:id="EAID_08D87709_0B7E_9c0b_BC46_E16EE62A0DD7" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_109/odst_3" modelElement="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
+					<tag xmi:id="EAID_531E8C9A_F06F_b1f0_9576_A4CC6555283F" name="1. základ - definice" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_D9C919CE_05C3_fa05_B646_8CA2C1F5AD10" name="1. základ - popis" value="Úřad vydávající řidičský průkaz je vždy obecním úřadem obce s rozšířenou působností." modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_DA780FEC_FBE1_a8fb_87F7_16DD1B5D1079" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_109/odst_3" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_7FE252F9_1E4E_b51e_87CA_0ACEE94DD3F4" name="2. doplnění - alternativní název" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_A53E28EF_F444_10f4_828F_95CE4CD8F871" name="2. doplnění - ekvivalentní pojem" value="https://slovník.gov.cz/legislativní/sbírka/128/2000/pojem/obecní-úřad-obce-s-rozšířenou-působností" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_C74F26FE_5BB3_9b5b_BC75_B979058ADE4D" name="2. doplnění - související zdroj" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_E7DBAC53_8AC8_db8a_9194_5A7E4538CD7D" name="3. rpp - agenda (kód)" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_D1783871_9366_2193_BF84_6046DD2AB501" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
+					<tag xmi:id="EAID_5F3C3DAD_7722_3377_9CB6_49A1D368A90F" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/obecní-úřad-obce-s-rozšířenou-působností" modelElement="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={0A88B032-1268-462c-872B-410E3EAE5FB9}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={D3BEA7D4-63C3-4b8d-AD32-5357D5734FE1}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={F4660690-993C-4cd6-AF73-01B429499F87}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={3FD908D9-916B-4554-8A6F-1E76C02DE21C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Association xmi:id="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" start="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<Association xmi:id="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" start="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" end="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB"/>
-					<Aggregation xmi:id="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227" start="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0" end="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1"/>
+					<Association xmi:id="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" start="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<Association xmi:id="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" start="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" end="EAID_86274FA3_0689_448b_97BD_94289838568E"/>
+					<Aggregation xmi:id="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD" start="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB" end="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_68680A36_29B7_4b68_95DA_80BBE224A050" xmi:type="uml:Class" name="Příjmení držitele řidičského průkazu" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="10" ea_eleType="element"/>
+			<element xmi:idref="EAID_90AD2177_426C_4e6d_BC95_F9545C074462" xmi:type="uml:Class" name="Příjmení držitele řidičského průkazu" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="236" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typVlastnosti" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:26" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:36:14" modified="2025-07-01 14:36:20" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_E1F8_efe1_88D8_9B7DCA8F59BC" name="alternativní název" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_4AD2CB38_B837_d9b8_B9B6_27B69FA6DFE1" name="datový typ" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_9E097A97_1BD6_231b_B8A1_6E5A2BAB1A10" name="definice" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_2F243BEF_B7EE_4bb7_875B_FB9954883958" name="ekvivalentní pojem" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_5F3C3DAD_7E4C_777e_880D_DB06494D8B5A" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/příjmení-držitele-řidičského-průkazu" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_95BB226C_CD4B_45cd_8799_AB2D4F48FD43" name="je pojem sdílen v PPDF?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_FA074457_BC76_1fbc_BC12_76B4CA1BD0FD" name="je pojem veřejný?" value="#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_082980EB_928A_9992_9B1D_4BA26CDF2016" name="popis" value="Řidičský průkaz obsahuje mj. jméno a příjmení držitele." modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_D33ED9FE_521D_5752_A986_798EA41555E4" name="související zdroj" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_FB6F928C_6FCB_866f_8664_D78F3B9E2C64" name="ustanovení dokládající neveřejnost pojmu" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
-					<tag xmi:id="EAID_08D87709_88A8_4888_B053_88D7770674C9" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_a" modelElement="EAID_68680A36_29B7_4b68_95DA_80BBE224A050"/>
+					<tag xmi:id="EAID_531E8C9A_0459_1504_9735_557EFCA5C726" name="1. základ - definice" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_D9C919CE_91ED_e191_92D3_E0AD5220743B" name="1. základ - popis" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_DA780FEC_880B_9088_B0F3_8A63FFE9682F" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_105/odst_1/pism_a" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_7FE252F9_6138_2b61_8DD8_4EAB16A55065" name="2. doplnění - alternativní název" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_D04FB838_F777_29f7_A751_47CD860CCC38" name="2. doplnění - datový typ" value="Řetězec#NOTES#Values: Ano či ne,Datum,Čas,Datum a čas,Celé číslo,Desetinné číslo,URI&amp;_c_^ IRI&amp;_c_^ URL,Řetězec,Text&#xA;" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_A53E28EF_372E_8737_9FC3_98D1885A7F69" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_C74F26FE_E95D_7fe9_8DB5_3531155942C6" name="2. doplnění - související zdroj" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_C99A5ACC_408B_8e40_8D54_66F86D359831" name="3. rpp - je pojem sdílen v PPDF?" value="Ano#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_4E7BB4B7_BFB6_e2bf_88AE_E49ADC51FC73" name="3. rpp - je pojem veřejný?" value="Ne#NOTES#Values: Ano,Ne&#xA;" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_68F296EC_CB0B_abcb_8A79_3F4477A06377" name="3. rpp - ustanovení dokládající neveřejnost pojmu" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_CC74F10B_638A_5763_BAAD_A285310EC0E1" name="4. 360/2023 - typ obsahu údaje" value="#NOTES#Values: Identifikační,Evidenční,Statistické&#xA;" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_7D019E39_3838_c738_B52A_0708B6E36F08" name="4. 360/2023 - způsob sdílení údaje" value="#NOTES#Values: Veřejně přístupné,Poskytované na žádost,Zpřístupňované pro výkon agendy,Nesdílené&#xA;" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_B4E5A40A_3E09_ab3e_A341_A048327048A2" name="4. 360/2023 - způsob získání údaje" value="#NOTES#Values: Základních registrů,Jiných agend,Vlastní,Provozní&#xA;" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
+					<tag xmi:id="EAID_5F3C3DAD_7E4C_777e_AA90_63C59F1B00F2" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/příjmení-držitele-řidičského-průkazu" modelElement="EAID_90AD2177_426C_4e6d_BC95_F9545C074462"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={88F93C37-A895-4ae4-89D3-FF624B4135EC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVlastnosti;FQName=Slovníky::typVlastnosti;@ENDSTEREO;$DES;$CLT={68680A36-29B7-4b68-95DA-80BBE224A050}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={4C52921F-590C-4d10-8AD7-5A8A93761103}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVlastnosti;FQName=Slovníky::typVlastnosti;@ENDSTEREO;$DES;$CLT={90AD2177-426C-4e6d-BC95-F9545C074462}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Aggregation xmi:id="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726" start="EAID_68680A36_29B7_4b68_95DA_80BBE224A050" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+					<Aggregation xmi:id="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C" start="EAID_90AD2177_426C_4e6d_BC95_F9545C074462" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" xmi:type="uml:Class" name="Řidič" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="11" ea_eleType="element"/>
+			<element xmi:idref="EAID_F15B9931_0929_471a_998C_944B91698F1E" xmi:type="uml:Class" name="Řidič" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="228" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typSubjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:12" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:15" modified="2025-07-01 14:21:00" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_A775_fba7_B86B_8545CD610303" name="agenda" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_031EE1FE_1193_a511_B1E0_F17982A2D308" name="agendový informační systém" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_09C865F9_D08E_16d0_842A_451587EF9AD4" name="alternativní název" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_9E097A97_B6EC_54b6_A6BA_978317686418" name="definice" value="účastník provozu na pozemních komunikacích, který řídí motorové nebo nemotorové vozidlo anebo tramvaj; řidičem je i jezdec na zvířeti" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_2F243BEF_A684_72a6_B203_12F1CB374ED1" name="ekvivalentní pojem" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_5F3C3DAD_7722_3377_999E_A6852BBDD863" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_082980EB_1560_ed15_A53C_810EA575A634" name="popis" value="Řidič je tedy i cyklista, nejen řidič motorových vozidel – neváže se na něj nutně řidičské oprávnění." modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_D33ED9FE_C5F3_6fc5_9F68_A458825BBC23" name="související zdroj" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<tag xmi:id="EAID_08D87709_0B7E_9c0b_8421_8B41BE3476A4" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-04-01/dokument/norma/cast_1/hlava_1/par_2/pism_d" modelElement="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
+					<tag xmi:id="EAID_531E8C9A_F06F_b1f0_8592_337D6FF901D2" name="1. základ - definice" value="účastník provozu na pozemních komunikacích, který řídí motorové nebo nemotorové vozidlo anebo tramvaj; řidičem je i jezdec na zvířeti" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_D9C919CE_05C3_fa05_B124_E2C6CC001073" name="1. základ - popis" value="Řidič je tedy i cyklista, nejen řidič motorových vozidel – neváže se na něj nutně řidičské oprávnění." modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_DA780FEC_FBE1_a8fb_AAFF_3FF4699B84F5" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-04-01/dokument/norma/cast_1/hlava_1/par_2/pism_d" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_7FE252F9_1E4E_b51e_9C1C_9F9C136D3BB6" name="2. doplnění - alternativní název" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_A53E28EF_F444_10f4_8FF3_D457E2DA5E2D" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_C74F26FE_5BB3_9b5b_B6EA_1839AB6C7030" name="2. doplnění - související zdroj" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_E7DBAC53_8AC8_db8a_85F1_7BE5AAA16AE9" name="3. rpp - agenda (kód)" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_D1783871_9366_2193_9F22_4F10939D6020" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
+					<tag xmi:id="EAID_5F3C3DAD_7722_3377_86A1_BA3844F376A2" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič" modelElement="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={E45B4B48-27C9-4183-AD93-CD03E8D58272}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={473C29EE-B46B-4732-8003-1DDBC38A6DDF}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={B94C618F-7101-4db6-A122-B0E80813995F}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={F15B9931-0929-471a-998C-944B91698F1E}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Association xmi:id="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" start="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" end="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<Generalization xmi:id="EAID_801FF996_0810_4b0f_AE40_A82B6B9E2A43" start="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" end="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<Generalization xmi:id="EAID_A0506B5C_06CD_4f39_96CC_3C5FFE17BA48" start="EAID_F364677F_A771_4c99_899C_600EEB76BA39" end="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
+					<Association xmi:id="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" start="EAID_F15B9931_0929_471a_998C_944B91698F1E" end="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<Generalization xmi:id="EAID_E9CCB669_D1A3_4e0c_86F5_70E6F419A20B" start="EAID_F15B9931_0929_471a_998C_944B91698F1E" end="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<Generalization xmi:id="EAID_FA4670D2_A8FF_4aa6_9FFF_C03B1D7CB861" start="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" end="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_F364677F_A771_4c99_899C_600EEB76BA39" xmi:type="uml:Class" name="Řidič evidovaný v registru řidičů" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="12" ea_eleType="element"/>
+			<element xmi:idref="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" xmi:type="uml:Class" name="Řidič evidovaný v registru řidičů" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="231" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typSubjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:15" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:34" modified="2025-07-01 14:21:40" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_A775_fba7_B109_2BB8CCBC60BB" name="agenda" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_031EE1FE_1193_a511_8D93_C1321E148D48" name="agendový informační systém" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_09C865F9_D08E_16d0_A656_1CFBA065E0E0" name="alternativní název" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_9E097A97_B6EC_54b6_B9E7_DDA3028D5BEE" name="definice" value="Registr řidičů obsahuje a) osobní údaje o řidiči motorového vozidla uvedené v řidičském průkazu a v mezinárodním řidičském průkazu, včetně digitalizované fotografie a digitalizovaného podpisu řidiče," modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_2F243BEF_A684_72a6_85CF_E26D08F595AA" name="ekvivalentní pojem" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_5F3C3DAD_7722_3377_ACCD_6AFA632D09E0" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič-evidovaný-v-registru-řidičů" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_082980EB_1560_ed15_855E_12475E618203" name="popis" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_D33ED9FE_C5F3_6fc5_BAC2_E0D5F7CAE101" name="související zdroj" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
-					<tag xmi:id="EAID_08D87709_0B7E_9c0b_9840_6DC081D0C601" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_4/par_119/odst_2/pism_a" modelElement="EAID_F364677F_A771_4c99_899C_600EEB76BA39"/>
+					<tag xmi:id="EAID_531E8C9A_F06F_b1f0_8492_D5900DB3ED8B" name="1. základ - definice" value="Registr řidičů obsahuje a) osobní údaje o řidiči motorového vozidla uvedené v řidičském průkazu a v mezinárodním řidičském průkazu, včetně digitalizované fotografie a digitalizovaného podpisu řidiče," modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_D9C919CE_05C3_fa05_BE71_46B98E9DD686" name="1. základ - popis" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_DA780FEC_FBE1_a8fb_9F96_DFC0766EAD7F" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_4/par_119/odst_2/pism_a" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_7FE252F9_1E4E_b51e_A769_342495703DEB" name="2. doplnění - alternativní název" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_A53E28EF_F444_10f4_8C1A_9915C6DEFAAC" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_C74F26FE_5BB3_9b5b_8DBE_4ACC5D813A54" name="2. doplnění - související zdroj" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_E7DBAC53_8AC8_db8a_92DA_58CC7D2528A5" name="3. rpp - agenda (kód)" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_D1783871_9366_2193_B8C5_BDEFCB311DCF" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
+					<tag xmi:id="EAID_5F3C3DAD_7722_3377_9484_E9532D6100B0" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidič-evidovaný-v-registru-řidičů" modelElement="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={851E9992-5010-4b94-BB55-6042E4A83B06}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={F364677F-A771-4c99-899C-600EEB76BA39}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={6B3F7D7E-BE82-45b2-A25C-77E5B56BEEAB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={096472EC-F444-4a74-B2FA-6F99E1FD6FA0}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Generalization xmi:id="EAID_A0506B5C_06CD_4f39_96CC_3C5FFE17BA48" start="EAID_F364677F_A771_4c99_899C_600EEB76BA39" end="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF"/>
-					<Association xmi:id="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" start="EAID_F364677F_A771_4c99_899C_600EEB76BA39" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+					<Association xmi:id="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" start="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<Generalization xmi:id="EAID_FA4670D2_A8FF_4aa6_9FFF_C03B1D7CB861" start="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" end="EAID_F15B9931_0929_471a_998C_944B91698F1E"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2" xmi:type="uml:Class" name="Řidičský průkaz" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="13" ea_eleType="element"/>
+			<element xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D" xmi:type="uml:Class" name="Řidičský průkaz" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="230" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typObjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:19" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:25" modified="2025-07-01 14:21:37" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_1A5C_6f1a_95BA_B8DC186BCC73" name="agenda" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_031EE1FE_8DFA_db8d_A418_A411C4D34198" name="agendový informační systém" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_09C865F9_D5F5_06d5_9845_D78312A71722" name="alternativní název" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_9E097A97_7F93_707f_8409_627D1A46A795" name="definice" value="Řidičský průkaz je veřejná listina, která osvědčuje řidičské oprávnění držitele a jeho rozsah a kterou držitel prokazuje své jméno, příjmení a podobu, jakož i další údaje v ní zapsané podle tohoto zákona. " modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_2F243BEF_ABEB_62ab_9835_830221BEB2DB" name="ekvivalentní pojem" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_5F3C3DAD_C029_79c0_A704_B280A4DA7B1B" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidičský-průkaz" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_082980EB_4767_ba47_8CFD_9652D2D82C84" name="popis" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_D33ED9FE_3A7A_313a_BAF0_376BAA33E08A" name="související zdroj" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<tag xmi:id="EAID_08D87709_3D85_693d_8471_7AB637E4D590" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_103/odst_1" modelElement="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+					<tag xmi:id="EAID_531E8C9A_EB96_b8eb_91AE_39D5417C21AA" name="1. základ - definice" value="Řidičský průkaz je veřejná listina, která osvědčuje řidičské oprávnění držitele a jeho rozsah a kterou držitel prokazuje své jméno, příjmení a podobu, jakož i další údaje v ní zapsané podle tohoto zákona. " modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_D9C919CE_7A4A_bb7a_BD32_DFA5E6A6EC86" name="1. základ - popis" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_DA780FEC_7068_6a70_993C_68909BD3152F" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_3/dil_2/par_103/odst_1" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_7FE252F9_0BF5_870b_9C5B_6FC643007579" name="2. doplnění - alternativní název" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_A53E28EF_E1EB_e2e1_A17B_A3D784ADBCA6" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_C74F26FE_B07A_82b0_AB0C_7AA81AFC08E2" name="2. doplnění - související zdroj" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_E7DBAC53_EACF_c1ea_8881_7C3CE6F743A6" name="3. rpp - agenda (kód)" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_D1783871_CCED_52cc_9012_F7D51E312103" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<tag xmi:id="EAID_5F3C3DAD_C029_79c0_AD14_A3DB6A21956D" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řidičský-průkaz" modelElement="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={F235F229-F62B-40ee-A581-73DA84687F60}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typObjektu;FQName=Slovníky::typObjektu;@ENDSTEREO;$DES;$CLT={896C8647-6B41-46ac-BBED-C9DDFAEA48F2}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={F5AE5A1C-AA90-45da-A877-3B8C9704FC88}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typObjektu;FQName=Slovníky::typObjektu;@ENDSTEREO;$DES;$CLT={5FCC5337-DE67-4b41-89DE-DEE3EE64509D}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Association xmi:id="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" start="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<Aggregation xmi:id="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726" start="EAID_68680A36_29B7_4b68_95DA_80BBE224A050" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<Aggregation xmi:id="EAID_851589F3_3B33_4309_B48A_E671462AAFFA" start="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
-					<Association xmi:id="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" start="EAID_F364677F_A771_4c99_899C_600EEB76BA39" end="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2"/>
+					<Association xmi:id="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" start="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<Association xmi:id="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" start="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<Aggregation xmi:id="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC" start="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
+					<Aggregation xmi:id="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C" start="EAID_90AD2177_426C_4e6d_BC95_F9545C074462" end="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD" xmi:type="uml:Class" name="Účastník provozu na pozemních komunikacích" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="14" ea_eleType="element"/>
+			<element xmi:idref="EAID_70A9FD97_EE0A_4630_B818_6AD962543321" xmi:type="uml:Class" name="Účastník provozu na pozemních komunikacích" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="232" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typSubjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 13:26:11" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
-				<code gentype="Java"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:37" modified="2025-07-01 14:21:13" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_A775_fba7_9188_AB497D077C9F" name="agenda" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_031EE1FE_1193_a511_A147_195699C38BB0" name="agendový informační systém" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_09C865F9_D08E_16d0_B343_0FD0A736FD57" name="alternativní název" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_9E097A97_B6EC_54b6_B6FB_BDCFB7055CBE" name="definice" value="každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_2F243BEF_A684_72a6_A3B7_3138290318C8" name="ekvivalentní pojem" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_5F3C3DAD_7722_3377_9B70_A1E7F0138477" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/účastník-provozu-na-pozemních-komunikacích" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_082980EB_1560_ed15_A72A_FBDDC7E89132" name="popis" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_D33ED9FE_C5F3_6fc5_ADA9_21B7EB041EFE" name="související zdroj" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
-					<tag xmi:id="EAID_08D87709_0B7E_9c0b_91AF_574061CB27DD" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_a" modelElement="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
+					<tag xmi:id="EAID_531E8C9A_F06F_b1f0_8DD0_14E51270958B" name="1. základ - definice" value="každý, kdo se přímým způsobem účastní provozu na pozemních komunikacích" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_D9C919CE_05C3_fa05_8D5B_D19FEEF541FC" name="1. základ - popis" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_DA780FEC_FBE1_a8fb_9B1F_87AE7AF6FCF1" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_a" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_7FE252F9_1E4E_b51e_BE88_D368171B9E2D" name="2. doplnění - alternativní název" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_A53E28EF_F444_10f4_964B_114C032A9C5B" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_C74F26FE_5BB3_9b5b_9D81_98F0FC0B5B96" name="2. doplnění - související zdroj" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_E7DBAC53_8AC8_db8a_B1C7_AE7B2C02F1F5" name="3. rpp - agenda (kód)" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_D1783871_9366_2193_9F9A_860A46BC4BF0" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
+					<tag xmi:id="EAID_5F3C3DAD_7722_3377_84A4_373CB5B9A9C3" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/účastník-provozu-na-pozemních-komunikacích" modelElement="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={E2CD5AAF-95AB-405a-B3A9-707B30D0F010}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={B9FCB6EC-145D-479f-AC35-B1E461E156FD}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={53623136-B594-425b-B7BF-84F5E4FB0681}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typSubjektu;FQName=Slovníky::typSubjektu;@ENDSTEREO;$DES;$CLT={70A9FD97-EE0A-4630-B818-6AD962543321}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Generalization xmi:id="EAID_801FF996_0810_4b0f_AE40_A82B6B9E2A43" start="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" end="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD"/>
+					<Generalization xmi:id="EAID_E9CCB669_D1A3_4e0c_86F5_70E6F419A20B" start="EAID_F15B9931_0929_471a_998C_944B91698F1E" end="EAID_70A9FD97_EE0A_4630_B818_6AD962543321"/>
 				</links>
 			</element>
-			<element xmi:idref="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253" xmi:type="uml:Class" name="Vozidlo" scope="public">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" tpos="0" ea_localid="15" ea_eleType="element"/>
+			<element xmi:idref="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734" xmi:type="uml:Class" name="Vozidlo" scope="public">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" tpos="0" ea_localid="233" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="typObjektu" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-01-06 11:24:32" modified="2025-05-16 09:34:38" complexity="1" status="Proposed"/>
+				<project author="AliceBinderová" version="1.0" phase="1.0" created="2025-07-01 14:20:46" modified="2025-07-01 14:20:55" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_E9C58460_1A5C_6f1a_AAAE_6779E2E8D3AD" name="agenda" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_031EE1FE_8DFA_db8d_853D_5644ABBB718C" name="agendový informační systém" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_09C865F9_D5F5_06d5_960D_9987325CF969" name="alternativní název" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_9E097A97_7F93_707f_BEB2_4C0CE0933B42" name="definice" value="motorové vozidlo, nemotorové vozidlo nebo tramvaj" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_2F243BEF_ABEB_62ab_8920_EAA3E31FCE66" name="ekvivalentní pojem" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_5F3C3DAD_C029_79c0_B81B_170E9785696F" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/vozidlo" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_082980EB_4767_ba47_94AD_0698653DFDBD" name="popis" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_D33ED9FE_3A7A_313a_8133_9BE91C91E1E9" name="související zdroj" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
-					<tag xmi:id="EAID_08D87709_3D85_693d_B25A_5EEDDD21D0F5" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_f" modelElement="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
+					<tag xmi:id="EAID_531E8C9A_EB96_b8eb_80BA_F01E4E740DEF" name="1. základ - definice" value="motorové vozidlo, nemotorové vozidlo nebo tramvaj" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_D9C919CE_7A4A_bb7a_B021_6E94080C0B84" name="1. základ - popis" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_DA780FEC_7068_6a70_A41C_B2EA62B2E5C9" name="1. základ - zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_1/par_2/pism_f" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_7FE252F9_0BF5_870b_8EE4_DAE6AAB40A13" name="2. doplnění - alternativní název" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_A53E28EF_E1EB_e2e1_8C07_B078F5D68F57" name="2. doplnění - ekvivalentní pojem" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_C74F26FE_B07A_82b0_8207_17CABF165D78" name="2. doplnění - související zdroj" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_E7DBAC53_EACF_c1ea_8977_E180C7CB5CAC" name="3. rpp - agenda (kód)" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_D1783871_CCED_52cc_9850_2E190F60DD2A" name="3. rpp - agendový informační systém (kód)" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
+					<tag xmi:id="EAID_5F3C3DAD_C029_79c0_864F_1D8FD9AB86B5" name="identifikátor" modelElement="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={E0B68566-86E2-4f22-8A8A-505B2A5E9614}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typObjektu;FQName=Slovníky::typObjektu;@ENDSTEREO;$DES;$CLT={E3ABB048-CA71-4ee6-B3E0-387D40C82253}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={8A0BC860-F12E-418d-9761-261DBE2FC586}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typObjektu;FQName=Slovníky::typObjektu;@ENDSTEREO;$DES;$CLT={378D54D4-F5EC-4f96-813B-44DEC3EE8734}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Příkladový slovník z metodiky popisu dat"/>
 				<links>
-					<Association xmi:id="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" start="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" end="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253"/>
+					<Association xmi:id="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" start="EAID_F15B9931_0929_471a_998C_944B91698F1E" end="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734"/>
 				</links>
 			</element>
 		</elements>
 		<connectors>
-			<connector xmi:idref="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" name="sídlí na adrese">
-				<source xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1">
-					<model ea_localid="9" type="Class" name="Obecní úřad obce s rozšířenou působností "/>
+			<connector xmi:idref="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" name="sídlí na adrese">
+				<source xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C">
+					<model ea_localid="227" type="Class" name="Obecní úřad obce s rozšířenou působností "/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -385,8 +394,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB">
-					<model ea_localid="6" type="Class" name="Adresa"/>
+				<target xmi:idref="EAID_86274FA3_0689_448b_97BD_94289838568E">
+					<model ea_localid="229" type="Class" name="Adresa"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -396,7 +405,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="9"/>
+				<model ea_localid="52"/>
 				<properties ea_type="Association" stereotype="typVztahu" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
@@ -405,23 +414,23 @@
 				<labels mb="«typVztahu»" mt="sídlí na adrese"/>
 				<extendedProperties conditional="«typVztahu»" virtualInheritance="0"/>
 				<style/>
-				<xrefs value="$XREFPROP=$XID={773F98F0-1D1D-4e1c-99B5-AA7B9ACB3A59}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={CBD997A3-8C2C-45bd-98C8-E5130BFEDDC2}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={5FA988A9-548E-4c90-8B33-D08BF3D9EC1E}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={E216F870-68FC-4c88-BE7F-3FD6884F5E14}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_4D03_3a4d_912F_3B6EDEC6F604" name="alternativní název"/>
-					<tag xmi:id="EAID_9E097A97_2D21_3b2d_A78B_9296DB68161D" name="definice"/>
-					<tag xmi:id="EAID_2F243BEF_22F9_9622_BA16_8D0020D8BD6D" name="ekvivalentní pojem"/>
-					<tag xmi:id="EAID_5F3C3DAD_1677_3516_9BA8_F5A5496415A6" name="identifikátor"/>
-					<tag xmi:id="EAID_95BB226C_D736_73d7_A8B8_2FAB947E19A2" name="je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_FA074457_7221_f372_B854_1EBDB5A2CF2A" name="je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_082980EB_2FB5_232f_9609_A478D0E24396" name="popis"/>
-					<tag xmi:id="EAID_D33ED9FE_07C8_2b07_8234_B7AB7E1CDF8F" name="související zdroj"/>
-					<tag xmi:id="EAID_FB6F928C_ED16_f8ed_82F3_B0BA6D459E16" name="ustanovení dokládající neveřejnost pojmu"/>
-					<tag xmi:id="EAID_08D87709_25D3_d225_AE76_A317C44D2FC2" name="zdroj"/>
+					<tag xmi:id="EAID_531E8C9A_5E24_a65e_A7FA_27911E9FAD8E" name="1. základ - definice"/>
+					<tag xmi:id="EAID_D9C919CE_4798_b547_B691_F9E077366EE5" name="1. základ - popis"/>
+					<tag xmi:id="EAID_DA780FEC_3DB6_643d_BC0A_37063238E335" name="1. základ - zdroj"/>
+					<tag xmi:id="EAID_7FE252F9_C383_e6c3_8C95_0D0971CCC08E" name="2. doplnění - alternativní název"/>
+					<tag xmi:id="EAID_A53E28EF_9979_4299_A922_586038A6BB22" name="2. doplnění - ekvivalentní pojem"/>
+					<tag xmi:id="EAID_C74F26FE_AE48_e2ae_A733_D72EED60DB46" name="2. doplnění - související zdroj"/>
+					<tag xmi:id="EAID_C99A5ACC_A2D6_49a2_8964_1EC20A9A7964" name="3. rpp - je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_4E7BB4B7_05C1_c105_A671_5D0BFDC25772" name="3. rpp - je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_68F296EC_6CB6_536c_B576_1ECD825C0268" name="3. rpp - ustanovení dokládající neveřejnost pojmu"/>
+					<tag xmi:id="EAID_5F3C3DAD_1677_3516_B37A_7962C0C383EE" name="identifikátor"/>
 				</tags>
 			</connector>
-			<connector xmi:idref="EAID_851589F3_3B33_4309_B48A_E671462AAFFA">
-				<source xmi:idref="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70">
-					<model ea_localid="7" type="Class" name="Jméno držitele řidičského průkazu"/>
+			<connector xmi:idref="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC">
+				<source xmi:idref="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71">
+					<model ea_localid="235" type="Class" name="Jméno držitele řidičského průkazu"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -431,8 +440,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2">
-					<model ea_localid="13" type="Class" name="Řidičský průkaz"/>
+				<target xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D">
+					<model ea_localid="230" type="Class" name="Řidičský průkaz"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="composite" containment="Unspecified"/>
 					<constraints/>
@@ -442,7 +451,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="8"/>
+				<model ea_localid="58"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<documentation/>
@@ -453,9 +462,9 @@
 				<xrefs/>
 				<tags/>
 			</connector>
-			<connector xmi:idref="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227">
-				<source xmi:idref="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0">
-					<model ea_localid="8" type="Class" name="Název obecního úřadu obce s rozšířenou působností"/>
+			<connector xmi:idref="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD">
+				<source xmi:idref="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB">
+					<model ea_localid="237" type="Class" name="Název obecního úřadu obce s rozšířenou působností"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -465,8 +474,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1">
-					<model ea_localid="9" type="Class" name="Obecní úřad obce s rozšířenou působností "/>
+				<target xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C">
+					<model ea_localid="227" type="Class" name="Obecní úřad obce s rozšířenou působností "/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="composite" containment="Unspecified"/>
 					<constraints/>
@@ -476,7 +485,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="7"/>
+				<model ea_localid="56"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<documentation/>
@@ -487,9 +496,9 @@
 				<xrefs/>
 				<tags/>
 			</connector>
-			<connector xmi:idref="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" name="vydává řidičský průkaz">
-				<source xmi:idref="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1">
-					<model ea_localid="9" type="Class" name="Obecní úřad obce s rozšířenou působností "/>
+			<connector xmi:idref="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" name="vydává řidičský průkaz">
+				<source xmi:idref="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C">
+					<model ea_localid="227" type="Class" name="Obecní úřad obce s rozšířenou působností "/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -499,8 +508,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2">
-					<model ea_localid="13" type="Class" name="Řidičský průkaz"/>
+				<target xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D">
+					<model ea_localid="230" type="Class" name="Řidičský průkaz"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -510,7 +519,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="6"/>
+				<model ea_localid="53"/>
 				<properties ea_type="Association" stereotype="typVztahu" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
@@ -519,23 +528,23 @@
 				<labels mb="«typVztahu»" mt="vydává řidičský průkaz"/>
 				<extendedProperties conditional="«typVztahu»" virtualInheritance="0"/>
 				<style/>
-				<xrefs value="$XREFPROP=$XID={C987AC48-40AE-4637-B150-E9005028BA0A}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={0C611B76-0EEC-4739-8F22-D1015AE84490}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={FB59D0B5-A67E-42db-B7EF-E457E7A7A9B2}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={3AA7267E-2278-4b45-97BA-31F55B36877F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_4D03_3a4d_888B_0264A2BDC749" name="alternativní název"/>
-					<tag xmi:id="EAID_9E097A97_2D21_3b2d_95E9_6753B70170B4" name="definice" value="Řidičský průkaz vydá příslušný obecní úřad obce s rozšířenou působností na žádost držitele řidičského oprávnění."/>
-					<tag xmi:id="EAID_2F243BEF_22F9_9622_88B4_A74F1C4A91F9" name="ekvivalentní pojem"/>
-					<tag xmi:id="EAID_5F3C3DAD_1677_3516_BAFF_B3D1854B362C" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/vydává-řidičský-průkaz"/>
-					<tag xmi:id="EAID_95BB226C_D736_73d7_93CA_9E8439366C8F" name="je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_FA074457_7221_f372_B84A_46078CE19E42" name="je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_082980EB_2FB5_232f_AA54_464430D92500" name="popis" value="Z definice vyplývá, že řidiči, kteří jsou evidováni v registru řidičů, mohou být držiteli řidičského průkazu."/>
-					<tag xmi:id="EAID_D33ED9FE_07C8_2b07_9F3B_F3DBB7A71099" name="související zdroj"/>
-					<tag xmi:id="EAID_FB6F928C_ED16_f8ed_8B1F_107D3FD629CA" name="ustanovení dokládající neveřejnost pojmu"/>
-					<tag xmi:id="EAID_08D87709_25D3_d225_AE21_7B1C9BDF1638" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-10-01/dokument/norma/cast_1/hlava_3/dil_2/par_109/odst_3"/>
+					<tag xmi:id="EAID_531E8C9A_5E24_a65e_AE76_B54B9C41CEB3" name="1. základ - definice"/>
+					<tag xmi:id="EAID_D9C919CE_4798_b547_997C_CE8F7F03FE2D" name="1. základ - popis"/>
+					<tag xmi:id="EAID_DA780FEC_3DB6_643d_8146_2D0A0560FB7C" name="1. základ - zdroj"/>
+					<tag xmi:id="EAID_7FE252F9_C383_e6c3_BADD_1EF2D9459232" name="2. doplnění - alternativní název"/>
+					<tag xmi:id="EAID_A53E28EF_9979_4299_A40D_43224DAF8807" name="2. doplnění - ekvivalentní pojem"/>
+					<tag xmi:id="EAID_C74F26FE_AE48_e2ae_9526_C81D82E44B06" name="2. doplnění - související zdroj"/>
+					<tag xmi:id="EAID_C99A5ACC_A2D6_49a2_A876_6E938A3B40C0" name="3. rpp - je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_4E7BB4B7_05C1_c105_9864_90F46FD4A289" name="3. rpp - je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_68F296EC_6CB6_536c_B921_0BBFC101370E" name="3. rpp - ustanovení dokládající neveřejnost pojmu"/>
+					<tag xmi:id="EAID_5F3C3DAD_1677_3516_AE35_D78DF7B98374" name="identifikátor"/>
 				</tags>
 			</connector>
-			<connector xmi:idref="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726">
-				<source xmi:idref="EAID_68680A36_29B7_4b68_95DA_80BBE224A050">
-					<model ea_localid="10" type="Class" name="Příjmení držitele řidičského průkazu"/>
+			<connector xmi:idref="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C">
+				<source xmi:idref="EAID_90AD2177_426C_4e6d_BC95_F9545C074462">
+					<model ea_localid="236" type="Class" name="Příjmení držitele řidičského průkazu"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -545,8 +554,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2">
-					<model ea_localid="13" type="Class" name="Řidičský průkaz"/>
+				<target xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D">
+					<model ea_localid="230" type="Class" name="Řidičský průkaz"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="composite" containment="Unspecified"/>
 					<constraints/>
@@ -556,7 +565,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="5"/>
+				<model ea_localid="57"/>
 				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<documentation/>
@@ -567,9 +576,9 @@
 				<xrefs/>
 				<tags/>
 			</connector>
-			<connector xmi:idref="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" name="řídí vozidlo">
-				<source xmi:idref="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF">
-					<model ea_localid="11" type="Class" name="Řidič"/>
+			<connector xmi:idref="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" name="řídí vozidlo">
+				<source xmi:idref="EAID_F15B9931_0929_471a_998C_944B91698F1E">
+					<model ea_localid="228" type="Class" name="Řidič"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -579,8 +588,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253">
-					<model ea_localid="15" type="Class" name="Vozidlo"/>
+				<target xmi:idref="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734">
+					<model ea_localid="233" type="Class" name="Vozidlo"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -590,7 +599,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="3"/>
+				<model ea_localid="55"/>
 				<properties ea_type="Association" stereotype="typVztahu" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
@@ -599,23 +608,23 @@
 				<labels mb="«typVztahu»" mt="řídí vozidlo"/>
 				<extendedProperties conditional="«typVztahu»" virtualInheritance="0"/>
 				<style/>
-				<xrefs value="$XREFPROP=$XID={6CF67923-6DC6-489a-85CD-B687AAC1470F}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={28A83B77-540C-4a90-9763-AE7BBC9D11A4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={6726CB30-A8EF-49d8-9EA0-2C0268B005FD}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={8A22A1D8-9432-4a19-874C-9973EE49074F}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_4D03_3a4d_AE89_0B08517558A8" name="alternativní název"/>
-					<tag xmi:id="EAID_9E097A97_2D21_3b2d_B01F_1E1AD2647324" name="definice" value="řidič je účastník provozu na pozemních komunikacích, který řídí motorové nebo nemotorové vozidlo anebo tramvaj; řidičem je i jezdec na zvířeti"/>
-					<tag xmi:id="EAID_2F243BEF_22F9_9622_AF1F_8643E64935F8" name="ekvivalentní pojem"/>
-					<tag xmi:id="EAID_5F3C3DAD_1677_3516_8D45_A9BE47312697" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/řídí-vozidlo"/>
-					<tag xmi:id="EAID_95BB226C_D736_73d7_9D93_891C86175240" name="je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_FA074457_7221_f372_BA57_81FB67FE8A14" name="je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_082980EB_2FB5_232f_988B_F4E162E78772" name="popis"/>
-					<tag xmi:id="EAID_D33ED9FE_07C8_2b07_8BBB_01FB597F381C" name="související zdroj"/>
-					<tag xmi:id="EAID_FB6F928C_ED16_f8ed_84F7_02D8B6EFDE46" name="ustanovení dokládající neveřejnost pojmu"/>
-					<tag xmi:id="EAID_08D87709_25D3_d225_B485_D05B51CE4368" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-04-01/dokument/norma/cast_1/hlava_1/par_2/pism_d"/>
+					<tag xmi:id="EAID_531E8C9A_5E24_a65e_A492_1E65D0B2A8CF" name="1. základ - definice"/>
+					<tag xmi:id="EAID_D9C919CE_4798_b547_9D86_ADFE62FB7296" name="1. základ - popis"/>
+					<tag xmi:id="EAID_DA780FEC_3DB6_643d_9C3B_5C66A6BA2628" name="1. základ - zdroj"/>
+					<tag xmi:id="EAID_7FE252F9_C383_e6c3_909E_E561057C6FBF" name="2. doplnění - alternativní název"/>
+					<tag xmi:id="EAID_A53E28EF_9979_4299_AFCF_B1ACC8AFC7C4" name="2. doplnění - ekvivalentní pojem"/>
+					<tag xmi:id="EAID_C74F26FE_AE48_e2ae_BFF0_47F45DB25A08" name="2. doplnění - související zdroj"/>
+					<tag xmi:id="EAID_C99A5ACC_A2D6_49a2_A0AA_5F1C492A83AF" name="3. rpp - je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_4E7BB4B7_05C1_c105_9810_0F8175AC3106" name="3. rpp - je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_68F296EC_6CB6_536c_8B29_432084B367FC" name="3. rpp - ustanovení dokládající neveřejnost pojmu"/>
+					<tag xmi:id="EAID_5F3C3DAD_1677_3516_A4C1_0201D16900A6" name="identifikátor"/>
 				</tags>
 			</connector>
-			<connector xmi:idref="EAID_801FF996_0810_4b0f_AE40_A82B6B9E2A43">
-				<source xmi:idref="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF">
-					<model ea_localid="11" type="Class" name="Řidič"/>
+			<connector xmi:idref="EAID_E9CCB669_D1A3_4e0c_86F5_70E6F419A20B">
+				<source xmi:idref="EAID_F15B9931_0929_471a_998C_944B91698F1E">
+					<model ea_localid="228" type="Class" name="Řidič"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -625,8 +634,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD">
-					<model ea_localid="14" type="Class" name="Účastník provozu na pozemních komunikacích"/>
+				<target xmi:idref="EAID_70A9FD97_EE0A_4630_B818_6AD962543321">
+					<model ea_localid="232" type="Class" name="Účastník provozu na pozemních komunikacích"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -636,7 +645,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="4"/>
+				<model ea_localid="50"/>
 				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
 				<parameterSubstitutions/>
 				<documentation/>
@@ -647,9 +656,9 @@
 				<xrefs/>
 				<tags/>
 			</connector>
-			<connector xmi:idref="EAID_A0506B5C_06CD_4f39_96CC_3C5FFE17BA48">
-				<source xmi:idref="EAID_F364677F_A771_4c99_899C_600EEB76BA39">
-					<model ea_localid="12" type="Class" name="Řidič evidovaný v registru řidičů"/>
+			<connector xmi:idref="EAID_FA4670D2_A8FF_4aa6_9FFF_C03B1D7CB861">
+				<source xmi:idref="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0">
+					<model ea_localid="231" type="Class" name="Řidič evidovaný v registru řidičů"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -659,8 +668,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF">
-					<model ea_localid="11" type="Class" name="Řidič"/>
+				<target xmi:idref="EAID_F15B9931_0929_471a_998C_944B91698F1E">
+					<model ea_localid="228" type="Class" name="Řidič"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -670,7 +679,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="2"/>
+				<model ea_localid="51"/>
 				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
 				<parameterSubstitutions/>
 				<documentation/>
@@ -681,9 +690,9 @@
 				<xrefs/>
 				<tags/>
 			</connector>
-			<connector xmi:idref="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" name="drží řidičský průkaz">
-				<source xmi:idref="EAID_F364677F_A771_4c99_899C_600EEB76BA39">
-					<model ea_localid="12" type="Class" name="Řidič evidovaný v registru řidičů"/>
+			<connector xmi:idref="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" name="drží řidičský průkaz">
+				<source xmi:idref="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0">
+					<model ea_localid="231" type="Class" name="Řidič evidovaný v registru řidičů"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -693,8 +702,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2">
-					<model ea_localid="13" type="Class" name="Řidičský průkaz"/>
+				<target xmi:idref="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D">
+					<model ea_localid="230" type="Class" name="Řidičský průkaz"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -704,7 +713,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="1"/>
+				<model ea_localid="54"/>
 				<properties ea_type="Association" stereotype="typVztahu" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
@@ -713,18 +722,18 @@
 				<labels mb="«typVztahu»" mt="drží řidičský průkaz"/>
 				<extendedProperties conditional="«typVztahu»" virtualInheritance="0"/>
 				<style/>
-				<xrefs value="$XREFPROP=$XID={97AFDB23-683C-4fd1-9E4B-49E75C24694F}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={B94A0F3E-CD60-4400-88E5-19009135C682}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={EDAF5493-BD25-469d-902B-085E4A7EAAF2}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=typVztahu;FQName=Slovníky::typVztahu;@ENDSTEREO;$DES;$CLT={17999CAA-A468-450f-AEF5-58409EADD9FE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_09C865F9_4D03_3a4d_B027_703EFE209DBE" name="alternativní název"/>
-					<tag xmi:id="EAID_9E097A97_2D21_3b2d_AECB_FF72A9D3A867" name="definice" value="Registr řidičů obsahuje a) osobní údaje o řidiči motorového vozidla uvedené v řidičském průkazu a v mezinárodním řidičském průkazu, včetně digitalizované fotografie a digitalizovaného podpisu řidiče,"/>
-					<tag xmi:id="EAID_2F243BEF_22F9_9622_B9D5_F4AADD66CAB8" name="ekvivalentní pojem"/>
-					<tag xmi:id="EAID_5F3C3DAD_1677_3516_B6E1_EF7934FF9546" name="identifikátor" value="https://data.dia.gov.cz/příkladový-slovník-z-metodiky-popisu-dat/pojem/drží-řidičský-průkaz"/>
-					<tag xmi:id="EAID_95BB226C_D736_73d7_BF01_5E6300A82300" name="je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_FA074457_7221_f372_9A49_54640949F832" name="je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
-					<tag xmi:id="EAID_082980EB_2FB5_232f_A439_4F6EA6A7C98D" name="popis" value="Z definice vyplývá, že řidiči, kteří jsou evidováni v registru řidičů, mohou být držiteli řidičského průkazu."/>
-					<tag xmi:id="EAID_D33ED9FE_07C8_2b07_BBD6_ED97B187735F" name="související zdroj"/>
-					<tag xmi:id="EAID_FB6F928C_ED16_f8ed_9F9A_864E43B53BFC" name="ustanovení dokládající neveřejnost pojmu"/>
-					<tag xmi:id="EAID_08D87709_25D3_d225_A5F9_310EF23497E5" name="zdroj" value="https://www.e-sbirka.cz/eli/cz/sb/2000/361/2024-07-01/dokument/norma/cast_1/hlava_4/par_119/odst_2/pism_a"/>
+					<tag xmi:id="EAID_531E8C9A_5E24_a65e_8F93_118243AB801B" name="1. základ - definice"/>
+					<tag xmi:id="EAID_D9C919CE_4798_b547_83F5_32EC28196788" name="1. základ - popis"/>
+					<tag xmi:id="EAID_DA780FEC_3DB6_643d_95F7_A9769C8CFA97" name="1. základ - zdroj"/>
+					<tag xmi:id="EAID_7FE252F9_C383_e6c3_9161_9A9726B95A63" name="2. doplnění - alternativní název"/>
+					<tag xmi:id="EAID_A53E28EF_9979_4299_B453_C054583026DB" name="2. doplnění - ekvivalentní pojem"/>
+					<tag xmi:id="EAID_C74F26FE_AE48_e2ae_9C59_9D10EA69CA02" name="2. doplnění - související zdroj"/>
+					<tag xmi:id="EAID_C99A5ACC_A2D6_49a2_A467_53F2BFBC5470" name="3. rpp - je pojem sdílen v PPDF?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_4E7BB4B7_05C1_c105_8974_9BB6954874CC" name="3. rpp - je pojem veřejný?" notes="Values: Ano,Ne&#xA;"/>
+					<tag xmi:id="EAID_68F296EC_6CB6_536c_82FE_313DF4870B81" name="3. rpp - ustanovení dokládající neveřejnost pojmu"/>
+					<tag xmi:id="EAID_5F3C3DAD_1677_3516_AF80_B7B970F1F60A" name="identifikátor"/>
 				</tags>
 			</connector>
 		</connectors>
@@ -734,7 +743,7 @@
 		<profiles>
 			<uml:Profile xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="4A999269-9" nsPrefix="Slovníky" name="Slovníky" metamodelReference="mmref01">
 				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="4A999269-9">
-					<body>Slovníky Version:1.0.1</body>
+					<body>Slovníky Version:1.1.0</body>
 				</ownedComment>
 				<packageImport xmi:id="mmref01">
 					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
@@ -757,34 +766,34 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-base_Association" name="base_Association" association="Association_typVztahu">
 						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-ekvivalentní pojem" name="ekvivalentní pojem">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-3. rpp - je pojem veřejný?" name="3. rpp - je pojem veřejný?">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-zdroj" name="zdroj">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-3. rpp - ustanovení dokládající neveřejnost pojmu" name="3. rpp - ustanovení dokládající neveřejnost pojmu">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-popis" name="popis">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-1. základ - definice" name="1. základ - definice">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-definice" name="definice">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-1. základ - popis" name="1. základ - popis">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-je pojem sdílen v PPDF?" name="je pojem sdílen v PPDF?">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-3. rpp - je pojem sdílen v PPDF?" name="3. rpp - je pojem sdílen v PPDF?">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-ustanovení dokládající neveřejnost pojmu" name="ustanovení dokládající neveřejnost pojmu">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-2. doplnění - alternativní název" name="2. doplnění - alternativní název">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-související zdroj" name="související zdroj">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
-					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-alternativní název" name="alternativní název">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
-					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-je pojem veřejný?" name="je pojem veřejný?">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-2. doplnění - ekvivalentní pojem" name="2. doplnění - ekvivalentní pojem">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-identifikátor" name="identifikátor">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-2. doplnění - související zdroj" name="2. doplnění - související zdroj">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVztahu-1. základ - zdroj" name="1. základ - zdroj">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -795,37 +804,46 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-base_Class" name="base_Class" association="Class_typVlastnosti">
 						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-ekvivalentní pojem" name="ekvivalentní pojem">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-3. rpp - je pojem veřejný?" name="3. rpp - je pojem veřejný?">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-zdroj" name="zdroj">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-3. rpp - ustanovení dokládající neveřejnost pojmu" name="3. rpp - ustanovení dokládající neveřejnost pojmu">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-popis" name="popis">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-1. základ - definice" name="1. základ - definice">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-definice" name="definice">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-1. základ - popis" name="1. základ - popis">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-je pojem sdílen v PPDF?" name="je pojem sdílen v PPDF?">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-4. 360/2023 - způsob sdílení údaje" name="4. 360/2023 - způsob sdílení údaje">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-ustanovení dokládající neveřejnost pojmu" name="ustanovení dokládající neveřejnost pojmu">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-4. 360/2023 - typ obsahu údaje" name="4. 360/2023 - typ obsahu údaje">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-související zdroj" name="související zdroj">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-2. doplnění - datový typ" name="2. doplnění - datový typ">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-alternativní název" name="alternativní název">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-4. 360/2023 - způsob získání údaje" name="4. 360/2023 - způsob získání údaje">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-je pojem veřejný?" name="je pojem veřejný?">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-3. rpp - je pojem sdílen v PPDF?" name="3. rpp - je pojem sdílen v PPDF?">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-2. doplnění - alternativní název" name="2. doplnění - alternativní název">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-2. doplnění - ekvivalentní pojem" name="2. doplnění - ekvivalentní pojem">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-identifikátor" name="identifikátor">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-datový typ" name="datový typ">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-2. doplnění - související zdroj" name="2. doplnění - související zdroj">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typVlastnosti-1. základ - zdroj" name="1. základ - zdroj">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -836,31 +854,31 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-base_Class" name="base_Class" association="Class_typObjektu">
 						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-ekvivalentní pojem" name="ekvivalentní pojem">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-1. základ - definice" name="1. základ - definice">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-zdroj" name="zdroj">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-3. rpp - agenda (kód)" name="3. rpp - agenda (kód)">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-popis" name="popis">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-3. rpp - agendový informační systém (kód)" name="3. rpp - agendový informační systém (kód)">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-agenda" name="agenda">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-1. základ - popis" name="1. základ - popis">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-definice" name="definice">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-2. doplnění - alternativní název" name="2. doplnění - alternativní název">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-související zdroj" name="související zdroj">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
-					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-alternativní název" name="alternativní název">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-2. doplnění - ekvivalentní pojem" name="2. doplnění - ekvivalentní pojem">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-identifikátor" name="identifikátor">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-agendový informační systém" name="agendový informační systém">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-2. doplnění - související zdroj" name="2. doplnění - související zdroj">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typObjektu-1. základ - zdroj" name="1. základ - zdroj">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -871,31 +889,31 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-base_Class" name="base_Class" association="Class_typSubjektu">
 						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-ekvivalentní pojem" name="ekvivalentní pojem">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-1. základ - definice" name="1. základ - definice">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-zdroj" name="zdroj">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-3. rpp - agenda (kód)" name="3. rpp - agenda (kód)">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-popis" name="popis">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-3. rpp - agendový informační systém (kód)" name="3. rpp - agendový informační systém (kód)">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-agenda" name="agenda">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-1. základ - popis" name="1. základ - popis">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-definice" name="definice">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-2. doplnění - alternativní název" name="2. doplnění - alternativní název">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-související zdroj" name="související zdroj">
-						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
-					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-alternativní název" name="alternativní název">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-2. doplnění - ekvivalentní pojem" name="2. doplnění - ekvivalentní pojem">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-identifikátor" name="identifikátor">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-agendový informační systém" name="agendový informační systém">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-2. doplnění - související zdroj" name="2. doplnění - související zdroj">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="typSubjektu-1. základ - zdroj" name="1. základ - zdroj">
 						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -905,37 +923,37 @@
 			</uml:Profile>
 		</profiles>
 		<diagrams>
-			<diagram xmi:id="EAID_E0739299_07C4_4fc7_9437_53653B6EDBFD">
-				<model package="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E" localID="4" owner="EAPK_A78DBEE7_A3B7_4062_BF6E_3CBE0BE4C89E"/>
+			<diagram xmi:id="EAID_565863BA_2D22_4cb9_9451_1DDBC49B0234">
+				<model package="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8" localID="33" owner="EAPK_4A089080_638E_4ff1_842A_FC0C7020E3B8"/>
 				<properties name="Příkladový slovník z metodiky popisu dat" type="Logical"/>
-				<project author="AliceBinderová" version="1.0" created="2025-01-06 11:24:12" modified="2025-01-06 17:13:01"/>
+				<project author="AliceBinderová" version="1.0" created="2025-07-01 14:18:29" modified="2025-07-01 15:46:34"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=791;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
-				<style2 value="SaveTag=9B2D7CB9;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=Slovníky::Slovníky;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=Slovníky::Slovníky;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=788097E1;"/>
 				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
 				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
 				<extendedProperties/>
-				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-16,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Calibri,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
 				<xrefs/>
 				<elements>
-					<element geometry="Left=923;Top=274;Right=1013;Bottom=344;" subject="EAID_0A6F1B08_3DEF_4871_8629_448EB01654AB" seqno="1" style="DUID=1ADA8D44;HideIcon=0;"/>
-					<element geometry="Left=684;Top=518;Right=774;Bottom=588;" subject="EAID_F12FFD6F_A6A5_412b_A49E_82FE9840CB70" seqno="2" style="DUID=518930E5;HideIcon=0;"/>
-					<element geometry="Left=923;Top=408;Right=1013;Bottom=478;" subject="EAID_68680A36_29B7_4b68_95DA_80BBE224A050" seqno="3" style="DUID=4AD3C623;HideIcon=0;"/>
-					<element geometry="Left=684;Top=150;Right=774;Bottom=241;" subject="EAID_E312948F_A220_490e_81F2_85B7D60D6FA0" seqno="4" style="DUID=E287E6C2;HideIcon=0;"/>
-					<element geometry="Left=684;Top=275;Right=774;Bottom=345;" subject="EAID_D3BEA7D4_63C3_4b8d_AD32_5357D5734FE1" seqno="5" style="DUID=B9E75D66;HideIcon=0;"/>
-					<element geometry="Left=684;Top=409;Right=774;Bottom=479;" subject="EAID_896C8647_6B41_46ac_BBED_C9DDFAEA48F2" seqno="6" style="DUID=B94BD164;HideIcon=0;"/>
-					<element geometry="Left=480;Top=409;Right=570;Bottom=479;" subject="EAID_F364677F_A771_4c99_899C_600EEB76BA39" seqno="7" style="DUID=AFC68B39;HideIcon=0;"/>
-					<element geometry="Left=480;Top=274;Right=570;Bottom=344;" subject="EAID_473C29EE_B46B_4732_8003_1DDBC38A6DDF" seqno="8" style="DUID=CA5E0EC0;HideIcon=0;"/>
-					<element geometry="Left=480;Top=150;Right=570;Bottom=220;" subject="EAID_B9FCB6EC_145D_479f_AC35_B1E461E156FD" seqno="9" style="DUID=1F39C18E;HideIcon=0;"/>
-					<element geometry="Left=287;Top=274;Right=377;Bottom=344;" subject="EAID_E3ABB048_CA71_4ee6_B3E0_387D40C82253" seqno="10" style="DUID=4AD993F7;HideIcon=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_851589F3_3B33_4309_B48A_E671462AAFFA" style="Mode=3;EOID=B94BD164;SOID=518930E5;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_52BC5B9D_1711_444e_98BA_2DD2CFA9C726" style="Mode=3;EOID=B94BD164;SOID=4AD3C623;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_5E89419A_71FD_4548_B73A_8A35A70FB227" style="Mode=3;EOID=B9E75D66;SOID=E287E6C2;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=CX=92:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0C611B76_0EEC_4739_8F22_D1015AE84490" style="Mode=3;EOID=B94BD164;SOID=B9E75D66;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_CBD997A3_8C2C_45bd_98C8_E5130BFEDDC2" style="Mode=3;EOID=1ADA8D44;SOID=B9E75D66;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=CX=76:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B94A0F3E_CD60_4400_88E5_19009135C682" style="Mode=3;EOID=B94BD164;SOID=AFC68B39;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_A0506B5C_06CD_4f39_96CC_3C5FFE17BA48" style="Mode=3;EOID=CA5E0EC0;SOID=AFC68B39;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=CX=43:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_28A83B77_540C_4a90_9763_AE7BBC9D11A4" style="Mode=3;EOID=4AD993F7;SOID=CA5E0EC0;Color=-1;LWidth=0;Hidden=0;"/>
-					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_801FF996_0810_4b0f_AE40_A82B6B9E2A43" style="Mode=3;EOID=1F39C18E;SOID=CA5E0EC0;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="Left=466;Top=116;Right=556;Bottom=207;" subject="EAID_D809986A_0429_47a7_B651_C3DAB1FB97AB" seqno="1" style="DUID=C4632722;HideIcon=0;"/>
+					<element geometry="Left=667;Top=400;Right=757;Bottom=470;" subject="EAID_90AD2177_426C_4e6d_BC95_F9545C074462" seqno="2" style="DUID=C966B417;HideIcon=0;"/>
+					<element geometry="Left=466;Top=525;Right=556;Bottom=595;" subject="EAID_8D4F153D_ED17_40fe_8DA3_8A872365CD71" seqno="3" style="DUID=5E3EA899;HideIcon=0;"/>
+					<element geometry="Left=108;Top=245;Right=198;Bottom=315;" subject="EAID_378D54D4_F5EC_4f96_813B_44DEC3EE8734" seqno="4" style="DUID=84A6786D;HideIcon=0;"/>
+					<element geometry="Left=283;Top=116;Right=373;Bottom=186;" subject="EAID_70A9FD97_EE0A_4630_B818_6AD962543321" seqno="5" style="DUID=E2803B59;HideIcon=0;"/>
+					<element geometry="Left=283;Top=400;Right=373;Bottom=470;" subject="EAID_096472EC_F444_4a74_B2FA_6F99E1FD6FA0" seqno="6" style="DUID=87C16A52;HideIcon=0;"/>
+					<element geometry="Left=466;Top=400;Right=556;Bottom=470;" subject="EAID_5FCC5337_DE67_4b41_89DE_DEE3EE64509D" seqno="7" style="DUID=C553E3D2;HideIcon=0;"/>
+					<element geometry="Left=667;Top=246;Right=757;Bottom=316;" subject="EAID_86274FA3_0689_448b_97BD_94289838568E" seqno="8" style="DUID=51B70470;HideIcon=0;"/>
+					<element geometry="Left=283;Top=245;Right=373;Bottom=315;" subject="EAID_F15B9931_0929_471a_998C_944B91698F1E" seqno="9" style="DUID=B36F5910;HideIcon=0;"/>
+					<element geometry="Left=466;Top=245;Right=556;Bottom=315;" subject="EAID_3FD908D9_916B_4554_8A6F_1E76C02DE21C" seqno="10" style="DUID=845324AB;HideIcon=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=CX=57:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E216F870_68FC_4c88_BE7F_3FD6884F5E14" style="Mode=3;EOID=51B70470;SOID=845324AB;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=CX=92:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_3AA7267E_2278_4b45_97BA_31F55B36877F" style="Mode=3;EOID=C553E3D2;SOID=845324AB;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E9CCB669_D1A3_4e0c_86F5_70E6F419A20B" style="Mode=3;EOID=E2803B59;SOID=B36F5910;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=CX=43:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_8A22A1D8_9432_4a19_874C_9973EE49074F" style="Mode=3;EOID=84A6786D;SOID=B36F5910;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_FA4670D2_A8FF_4aa6_9FFF_C03B1D7CB861" style="Mode=3;EOID=B36F5910;SOID=87C16A52;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=CX=76:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMB=CX=52:CY=14:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_17999CAA_A468_450f_AEF5_58409EADD9FE" style="Mode=3;EOID=C553E3D2;SOID=87C16A52;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_6D893CE1_E742_4e59_8328_B60ACAE56BFC" style="Mode=3;EOID=C553E3D2;SOID=5E3EA899;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_EE7BC192_187B_42b5_9C1E_998BAA80450C" style="Mode=3;EOID=C553E3D2;SOID=C966B417;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AAFB29D8_75CF_4c34_9893_9D825D7895DD" style="Mode=3;EOID=845324AB;SOID=C4632722;Color=-1;LWidth=0;Hidden=0;"/>
 				</elements>
 			</diagram>
 		</diagrams>

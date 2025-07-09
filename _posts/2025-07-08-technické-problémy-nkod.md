@@ -1,11 +1,13 @@
 ---
 layout: post
-title: Důležité - Technické problémy s NKOD
+title: PROVOZ PLNĚ OBNOVEN - Technické problémy s NKOD
 detail: false
 ref: TechnickéProblémyNKOD
 lang: cs
 author: lenka_kováčová
 ---
+
+Update k 9.7.2025: Harvestace byla plně obnovena, metadatové záznamy v NKOD jsou opět dostupné.
 
 Aktuálně evidujeme technické problémy s harvestací metadatových záznamů do Národního katalogu otevřených dat.
 Na nápravě pracujeme.

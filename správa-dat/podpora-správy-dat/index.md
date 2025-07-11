@@ -129,6 +129,11 @@ Záznam webináře, který se zaměřuje na kroky správy dat, které předcház
 
 Záznam webináře, který se věnuje tomu, jak by měly úřady postupovat při zajištění kvality svých dat. Zaměřuje se na význam kvality dat ve veřejné správě, jejím kritériím a vysvětluje také základy řízení kvality dat.
 
+[Kvalita dat]
+
+[Evidence datových nekvalit]
+
+[Přehled věcných oblastí dat včetně jejich kvality]
 
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
@@ -160,3 +165,6 @@ Záznam webináře, který se věnuje tomu, jak by měly úřady postupovat při
 [Katalogy a dohledatelnost dat]: https://youtu.be/zk0GobYpFZo "Katalogy a dohledatelnost dat"
 [Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby]: https://www.youtube.com/watch?v=dSdORsqWB48 "Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby"
 [Zajištění kvality dat]: https://www.youtube.com/watch?v=ifNS-LFSCdY "Zajištění kvality dat"
+[Kvalita dat]: ../../přílohy/správa-dat/Zajisteni_kvality_dat_1.0.pdf "Kvalita dat"
+[Evidence datových nekvalit]: ../../přílohy/správa-dat/Evidence_datových_nekvalit.xlsx "Evidence datových nekvalit"
+[Přehled věcných oblastí dat včetně jejich kvality]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.3.xlsx "Přehled věcných oblastí dat včetně jejich kvality"

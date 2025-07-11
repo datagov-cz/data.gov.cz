@@ -119,6 +119,17 @@ Záznam webináře zaměřeného na kategorizaci dat (podle § 23 vyhlášky č.
 
 Záznam webináře, který se zaměřuje na dohledatelnost dat a tvorbu datových katalogů. Shrnuje základní informace o tom, jaké kroky je potřeba podniknout k dohledatelnosti dat, jak si mohou úřady vytvořit lokální katalogy dat a jak katalogizovat datový slovník. Přináší také informace o výhodách katalogizace dat, a to nejen pro jednotlivé úřady, ale i pro celou veřejnou správu.
 
+## Evidence údajů v Registru práv a povinností a jejich sdílení 
+**Webinář: [Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby]**
+
+Záznam webináře, který se zaměřuje na kroky správy dat, které předchází evidenci údajů v Registru práv a povinností (RPP), vysvětluje také publikaci kontextů a sdílení dat mezi úřady prostřednictvím informačního systému sdílené služby (ISSS).
+
+## Kvalita dat
+**Webinář: [Zajištění kvality dat]**
+
+Záznam webináře, který se věnuje tomu, jak by měly úřady postupovat při zajištění kvality svých dat. Zaměřuje se na význam kvality dat ve veřejné správě, jejím kritériím a vysvětluje také základy řízení kvality dat.
+
+
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
@@ -147,3 +158,5 @@ Záznam webináře, který se zaměřuje na dohledatelnost dat a tvorbu datovýc
  [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.1.xlsx "Tabulka přehledu věcných oblastí dat včetně jejich kategorizace"
 [Kategorizace v popisu dat a datových rozhraní]: https://youtu.be/AuzppRbRqMg "Kategorizace v popisu dat a datových rozhraní"
 [Katalogy a dohledatelnost dat]: https://youtu.be/zk0GobYpFZo "Katalogy a dohledatelnost dat"
+[Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby]: https://www.youtube.com/watch?v=dSdORsqWB48 "Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby"
+[Zajištění kvality dat]: https://www.youtube.com/watch?v=ifNS-LFSCdY "Zajištění kvality dat"

@@ -11,7 +11,7 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
     <gov-tile href="základy-otevřených-dat/">
         <h3 slot="title">Základy otevřených dat</h3>
         <p>
-            Nějaký text
+            Co jsou otevřená data? Jaké jsou příklady jejich využití? Jak postupovat při jejich otevírání? Začněte se základními informacemi k otevřeným datům.
         </p>
     </gov-tile>
     <gov-tile href="rozhodnutí-o-otevírání-dat/">
@@ -41,7 +41,7 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
     <gov-tile href="stanovení-podmínek-užití/">
         <h3 slot="title">Stanovení podmínek užití</h3>
         <p>
-            Nějaký text
+            S publikací otevřených dat je spojeno možné porušení autorských a databázových práv, která se k danému obsahu mohou vázat. Možnou překážkou je i situace, kdy jsou součástí distribuce datové sady osobní údaje. Vytvořili jsme proto návod na vytvoření licenčních oprávnění pro bezproblémové užití otevřených dat.
         </p>
     </gov-tile>
     <gov-tile href="katalogizace-dat/">

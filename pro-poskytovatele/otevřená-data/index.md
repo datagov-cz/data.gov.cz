@@ -17,25 +17,25 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
     <gov-tile href="rozhodnutí-o-otevírání-dat/">
         <h3 slot="title">Rozhodnutí o otevírání dat</h3>
         <p>
-            Nějaký text
+            Proces otevírání dat začíná vedení rozhodnutím, které zavazuje daný orgán veřejné správy k publikaci otevřených dat. Podívejte se na největší přínosy otevírání dat.
         </p>
     </gov-tile>
     <gov-tile href="stanovení-rolí/">
         <h3 slot="title">Stanovení rolí</h3>
         <p>
-            Nějaký text
+            V kontextu otevírání dat je důležité stanovit a definovat role, které se na tomto procesu podílejí. Tyto role by měly být jasně vymezeny a měly by mít jasně definované odpovědnosti. Mezi klíčové role patří: Koordinátor otevírání dat, Kurátor dat, Správce katalogu a IT specialista.
         </p>
     </gov-tile>
     <gov-tile href="tvorba-publikačního-plánu/">
         <h3 slot="title">Tvorba publikačního plánu</h3>
         <p>
-            Nějaký text
+            Publikační plán specifikuje, jaké datové sady organizace plánuje publikovat jako otevřená data, a to včetně harmonogramu publikace. Určuje také způsob publikace, podmínky užití a další důležité aspekty spojené s otevřenými daty.
         </p>
     </gov-tile>
     <gov-tile href="příprava-dat-k-otevření/">
         <h3 slot="title">Příprava dat k otevření</h3>
         <p>
-            Nějaký text
+            Postup publikace datové sady v otevřené podobě v sobě zahrnuje její analýzu a návrh technické podoby její publikace, přípravu datové sady do navržené podoby, její publikaci a katalogizaci.
         </p>
     </gov-tile>
     <gov-tile href="stanovení-podmínek-užití/">
@@ -47,7 +47,7 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
     <gov-tile href="katalogizace-dat/">
         <h3 slot="title">Katalogizace dat</h3>
         <p>
-            Nějaký text
+            Katalogizace otevřených dat je procesem vytváření a správy záznamů o otevřených datech, které jsou dostupné veřejnosti. Cílem je usnadnit vyhledávání, objevování a používání otevřených dat. 
         </p>
     </gov-tile>
 </gov-tiles>

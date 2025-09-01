@@ -45,7 +45,7 @@ Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (od
 * [Vizualizace hlasování Zastupitelstva města Brna](https://data.brno.cz/apps/hlasov%C3%A1n%C3%AD-brn%C4%9Bnsk%C3%A9ho-zastupitelstva/explore)
 * [Katalog služeb veřejné správy](https://app.powerbi.com/view?r=eyJrIjoiZmIzYWY0ZjEtYTA0ZS00ZDZmLTkyY2UtMzFiODFjOTg5Yzk4IiwidCI6IjFkYjQxZDZmLTFmMzctNDZkYi1iZDNlLWM0ODNhYmI4MTA1ZCIsImMiOjh9)
 
-## Otevřených data zlepšují
+## Otevřená data zlepšují
 * služby pro občany - příležitost pro vznik nových užitečných aplikací;
 * efektivitu veřejné správy - využití pro analýzy a statistiky;
 * ekonomický potenciál;

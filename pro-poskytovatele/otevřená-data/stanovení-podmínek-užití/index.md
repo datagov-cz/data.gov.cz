@@ -134,3 +134,40 @@ Při vytváření správného katalogizačního záznamu včetně udělení lice
 
 ## Datová sada a její distribuce
 Podmínky užití se dle evropského standardu DCAT-AP připojují k distribuci datové sady. Jedna datová sada může obsahovat více distribucí, kde každá z nich může mít rozdílné podmínky užití.
+
+# Shrnutí
+Následující tabulka představuje obecný přehled sumarizující různé varianty možných ochranných režimů a jejich obecné doporučené řešení.
+
+Pro konkrétní vytvoření katalogizačního záznamu doporučujeme využít [průvodce katalogizací datové sady](https://data.gov.cz/formulář/registrace-datové-sady).
+
+### Autorské dílo jako součást distribuce datové sady (zcela výjimečné)
+* Licenční podmínky: 
+  * Pokud mohu, udělím licenci dle podlicenčního oprávnění
+* URL v katalogizačním záznamu, pokud distribuce obsahuje data chráněná v této kategorii:
+  * Pokud distribuce obsahuje více děl, licenční záznam musí být přítomný u každého díla. „Dílo <Jméno díla> autora <jméno autora>, které je součástí distribuce <název distribuce datové sady> datové sady <název datové sady> je zveřejněno za podmínek licence <uvést licenci - dle oprávnění>.“ URL v takovém případě bude [Distribuce datové obsahuje více děl](https://data.gov.cz/podmínky-užití/obsahuje-více-autorských-děl/). Pokud je distribuce samostatným dílem, je možné licenci upravit přímo v katalogizačním záznamu. Katalogizační záznam v takovém případě bude Licence CC BY 4.0 [(https://creativecommons.org/licenses/by/4.0/)](https://creativecommons.org/licenses/by/4.0/).
+* URL v katalogizačním záznamu, pokud distribuce neobsahuje data chráněná v této kategorii:
+  * [Distribuce datové sady neobsahuje autorská díla](https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/)
+
+### Originální databáze
+* Licenční podmínky: 
+  * Pokud není úředním dílem (většinou je), CC BY 4.0  URL
+* URL v katalogizačním záznamu, pokud distribuce obsahuje data chráněná v této kategorii:
+  * „Licence CC BY 4.0 [(https://creativecommons.org/licenses/by/4.0/)](https://creativecommons.org/licenses/by/4.0/)“
+* URL v katalogizačním záznamu, pokud distribuce neobsahuje data chráněná v této kategorii:
+  * [Distribuce datové sady není autorskoprávně chráněnou databází](https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/)
+
+### Ochrana zvláštními právy pořizovatele databáze
+* Licenční podmínky: 
+   * Pokud se neaplikuje výjimka úředního díla, CC0
+* URL v katalogizačním záznamu, pokud distribuce obsahuje data chráněná v této kategorii:
+  * „Licence CC0 [(https://creativecommons.org/publicdomain/zero/1.0/)](https://creativecommons.org/publicdomain/zero/1.0/)“
+* URL v katalogizačním záznamu, pokud distribuce neobsahuje data chráněná v této kategorii:
+  * [Distribuce datové sady není chráněna zvláštním právem pořizovatele databáze](https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/) 
+
+### Osobní údaje
+* Licenční podmínky:
+  * Pokud distribuce obsahuje osobní údaje, musím to uvést
+* URL v katalogizačním záznamu, pokud distribuce obsahuje data chráněná v této kategorii:
+  * Distribuce obsahuje osobní údaje
+* URL v katalogizačním záznamu, pokud distribuce neobsahuje data chráněná v této kategorii:
+  * [Distribuce datové sady neobsahuje autorská díla](https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/)

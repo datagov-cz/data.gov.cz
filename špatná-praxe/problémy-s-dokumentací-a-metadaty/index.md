@@ -5,9 +5,6 @@ ref: ŠpatnáPraxe-DokumentaceMetadata
 lang: cs
 ---
 
-V prostředí otevřených dat se často opakují problémové situace. Na této stránce naleznete seznam nejčastějších z nich, včetně navrhovaných řešení.
-V této sekci jsou nejčastější případy špatné praxe týkající se dokumentace a metadat v NKOD.
-
 ## Dokumentace či podmínky užití ve formátu PDF či Word
 Podmínky užití či dokumentace datové sady by měly být vždy ve formě webové stránky, nikoliv ve formě stažitelného souboru (PDF, DOC, DOCX, ODT apod.) Je to proto, aby uživatelé nebyli nucení pro čtení dokumentů na webu používat kromě webového prohlížeče ještě další aplikace. Formáty pro stránkované dokumenty se hodí pouze pro prostředí mimo web, kde na dokumentu spolupracuje více lidí, apod. Co se týče případného tisku, i správně formátovaná webová stránka tisk umožňuje.
 

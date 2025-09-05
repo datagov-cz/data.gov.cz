@@ -5,9 +5,6 @@ ref: ŠpatnáPraxe-PrávníPřekážky
 lang: cs
 ---
 
-V prostředí otevřených dat se často opakují problémové situace. Na této stránce naleznete seznam nejčastějších z nich, včetně navrhovaných řešení.
-V této sekci jsou nejčastější případy špatné praxe týkající se právních překážek přístupu k otevřeným datům.
-
 ## Přístup k datům podmíněný smlouvou nebo registrací
 Pokud je přístup k datům podmíněný uzavřením smlouvy či registrací, nejedná se o otevřená data.
 

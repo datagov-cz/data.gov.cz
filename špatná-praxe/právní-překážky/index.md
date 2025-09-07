@@ -23,12 +23,18 @@ Takto zpřístupněná data totiž typicky postrádají minimálně 3 základní
 Licence je nástroj autorského práva (aplikovatelný i na zvláštní práva poskytovatele databáze), který umožňuje užití díla dalšími osobami, než je autor, nebo jiná doposud oprávněná osoba. Prostá data, tedy většina obsahu, který je poskytovaný jako otevřená data, však nepožívají žádné formy ochrany právy duševního vlastnictví a není tak přítomný žádný obsah, který by bylo možné licencovat. To platí i v případech, kdy se na dílo vztahuje výjimka úředního díla.
 
 **Symptomy**
+
 Použití licence, aniž by byl přítomný licencovatelný obsah, mate koncové uživatele, a navíc nemá žádnou právní relevanci.
 
 **Řešení**
+
 Analýza obsahu právním oddělením a licencování opravdu jen takového obsahu, který je možné licencovat.
 
 Pokud není žádná část poskytovaného obsahu chráněna právy duševního vlastnictví, je vhodné tuto informaci uvést. Obecně je v datových sadách možné nalézt tři druhy ochrany duševního vlastnictví - autorská díla jako součast datové sady, databáze chráněná jako autorské dílo a databáze chráněná zvláštním právem pořizovatele databáze. Je vhodné výslovně uvést, že poskytovaná datová sada není zatížena žádným z těchto práv. Doporučeným způsobem je využití [registračního formuláře](https://data.gov.cz/formulář/registrace-datové-sady), v jehož [druhém kroku](https://data.gov.cz/formulář/registrace-datové-sady?krok=2) nastavíte u všech tří kategorií, že nejsou nikterak chráněny.
+
+Ukázka správného nastavení:
+
+{% include image.html url="../../přílohy/špatná-praxe/bez_ochrany.webp" description="Bez ochrany" %}
 
 ## Generické licence
 Při licencování obsahu musí být naprosto jednoznačné, jaký obsah je licencován a za jakých podmínek. Pokud toto pravidlo není dodrženo, není jasné, jakého obsahu (děl, dat) se daná licenční ujednání týkají, což vede ke snížení právní jistoty a praktické využitelnosti otevřených dat.
@@ -47,6 +53,10 @@ Přesné uvedení v metadatech distribuce datové sady, k jakému obsahu se vzta
 
 V [průvodci registrací datové sady](https://data.gov.cz/formulář/registrace-datové-sady) je toto rozdělení zaneseno. Pokud zjistíte, že vámi poskytovaná datová sada obsahuje některý z uvedených režimů ochrany, je možné přesně stanovit jak a za jakých podmínek je daná část licencována.
 
+Příklad: Následující obrázek ukazuje situaci, kdy je poskytována datová sada, která neobsahuje autorská díla, ale samotná databáze je autorskoprávně chráněna a požívá též ochrany právy pořizovatele databáze. V tomto případě se poskytovatel dat rozhodl, že autorskoprávní ochranu bude licencovat pod licencí CC BY 4.0 a zvláštních práv pořizovatele se vzdá.
+
+{% include image.html url="../../přílohy/špatná-praxe/různé_režimy.webp" description="Různé režimy" %}
+
 ## Užívání vlastních licenčních podmínek
 Obecně platí, že každý poskytovatel dat si může stanovit vlastní podmínky, pod kterými bude data poskytovat. To může mít dvě základní podoby:
 1. Licencování obsahu chráněného právy duševního vlastnictví. V takovém případě platí vše, co je obecně řečeno o licencování obsahu. Poskytovatel dat se může odchýlit od obvykle užívaných a doporučovaných licencí. Pokud však vlastní licenční ustanovení typově odpovídají známějším a obecně užívaným licencím (CC BY 4.0), silně doporučujeme použít právě více používané licence CC. Dobrým důvodem je například jejich strojová čitelnost.
@@ -61,12 +71,14 @@ Nejasný význam podmínek užití, absence strojové čitelnosti, vnášení ex
 
 Problém použití vlastních licencí je dobře viditelný, pokud se na takovou datovou sadu podíváme do NKOD. Jak ukazuje následující obrázek, aby se přijemce dat mohl seznámit s tím, o jakou licenci se jedná, musí si nejprve rozkliknout odkazy. To zásadně znesnadňuje automatické využívání dat.
 
-obrázek
+{% include image.html url="../../přílohy/špatná-praxe/vlastní_licence.webp" description="Vlastní licence" %}
 
 **Řešení**
 Pro stanovení podmínek užití otevřených dat postupujte dle našeho návodu  [Stanovení podmínek užití otevřených dat](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti).
 
 Doporučeným řešením je postupovat podle [průvodce registrací datové sady](https://data.gov.cz/formulář/registrace-datové-sady), a využít předpřipravených záznamů standardních licencí, které nabízí.
+
+{% include image.html url="../../přílohy/špatná-praxe/různé_režimy.webp" description="Různé režimy" %}
 
 ## Vzdání se odpovědnosti
 V podmínkách užití se může objevit formulace vzdání se odpovědnosti za škodu způsobenou užíváním dat. Poskytovatel dat se ovšem nemůže vzdát absolutně vší odpovědnosti za svá data. Příkladem je situace, kdy poskytovatel data poskytuje na základě zákonné povinnosti. V takovém případě se jedná o úřední úkon a je presumována jeho správnost. Pokud by vznikla škoda z důvodu chyby v datové sadě, nesl by za ni poskytovatel dat odpovědnost ve smyslu [zákona č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem](https://www.e-sbirka.cz/sb/1998/82/1998-05-15).

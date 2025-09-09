@@ -18,9 +18,11 @@ V dnešní době již neexistuje žádný argument pro poskytování obsahu na w
 ### Nejčastější mýty podporující nezabezpečený protokol HTTP
 
 **Jedná se o otevřená data (případně veřejný web bez přihlašování). Proč tedy obsah šifrovat?**
+
 HTTPS neslouží jen pro šifrování, tedy zajištění toho, že při přenosu dat ze serveru na klienta si jejich obsah nepřečte třetí strana. Slouží i pro ověření, že server je ten, za který se vydává. To už má smysl i v případě otevřených dat a jiného webového obsahu. Klient (uživatel) si může být jist, že data či jiný obsah není podvržen. Další argumenty naleznete na stránce [Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https).
 
 **Zajištění certifikátu a jeho pravidelná obnova jsou drahé**
+
 To je nesmysl. Existuje například certifikační autorita [Let's Encrypt](https://letsencrypt.org/), která certifikáty a jejich automatickou obnovu poskytuje v základní verzi zdarma. Její službu používá i tento web.
 
 ## Přístup přes nedostatečně zabezpečený či chybně nakonfigurovaný protokol HTTPS
@@ -32,11 +34,11 @@ I přesto, že máte protokol HTTPS na vašem webovém serveru implementován a 
 ### Jak zajistit správnou implementaci HTTPS
 Správnou konfiguraci SSL na straně webového serveru můžete provést s pomocí nástroje [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/), který poskytuje vzorové konfigurace pro řadu webových serverů. Úroveň konfigurace volte na úrovni Modern. Pro kontrolu kvality implementace protokolu HTTPS na vašem serveru můžete použít například [Qualys SSL Labs](https://www.ssllabs.com/ssltest/) - stačí zadat vaši doménu. Snažte se dosáhnout hodnocení alespoň A, lépe však A+. Vyžadujte to případně po svých dodavatelích. Rozdíl mezi špatným a dobrým skóre je jasný:
 
-Špatně
+**Špatně**
 
 {% include image.html url="../../přílohy/špatná-praxe/https-fail.webp" description="HTTPS-Fail " %}
 
-Dobře
+**Dobře**
 
 {% include image.html url="../../přílohy/špatná-praxe/https-pass.webp" description="HTTPS-Pass " %}
 
@@ -44,9 +46,11 @@ Dobře
 I při správné implementaci HTTPS je třeba rozhodnout o souběžné podpoře protokolu HTTP. Uživatel totiž typicky zadává do prohlížeče adresu bez protokolu, například data.gov.cz. Pak musí prohlížeč vědět, jak ke stránce přistoupit. Ve výchozím nastavení se prohlížeč pokusí nejprve připojit přes protokol HTTP (port 80). Toto lze řešit pouze dvěma způsoby Buďto protokol HTTP nebude podporován vůbec a doména bude zanesena to seznamu HSTS Preload, prohlížeč pak přímo použije HTTPS. Druhou možností je, že webserver bude nakonfigurován tak, že protokol HTTP bude sloužit pouze k přesměrování na protokol HTTPS.
 
 **Bez podpory HTTP, s registrací to seznamu HSTS**
+
 V této variantě webserver vůbec protokol HTTP na portu 80 nepodporuje. Pak je ale třeba doménu zanést do seznamu [HSTS Preload](https://hstspreload.org/), aby prohlížeč klienta při zadání adresy bez HTTPS věděl, že se má připojovat rovnou přes HTTPS, nikoliv HTTP, což by vedlo k chybě.
 
 **Přesměrování HTTP na HTTPS**
+
 V této variantě se libovolný požadavek na adresu přes protokol HTTP (port 80) pouze přesměruje na ekvivalentní HTTPS adresu (port 443) pomocí HTTP stavového kódu 301 Moved Permanently.
 
 ## Data nejsou přístupná přes protokol IPv6
@@ -95,8 +99,8 @@ Tento způsob publikace lze nadále optimalizovat tím, že se bude publikovat n
 2. Změnový soubor od začátku měsíce jednou týdně
 3. Změnový soubor od začátku týdne jednou denně
 4. Změnový soubor od začáku dne jednou za hodinu
-5. atd.
-   
+5. atd.   
+
 Tím se dosáhne toho, že si každý uživatel bude moci zvolit, jak aktuální kopii si chce udržovat, minimalizuje se zátež serveru i sítě. Navíc je toto řešení velice snadno a levně realizovatelné, typicky se jedná pouze o pravidelné spouštění dotazu nad databází.
 
 ## Chybně implementovaná komprese

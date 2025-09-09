@@ -191,7 +191,9 @@ Hodnoty různých měření mají zpravidla své jednotky, například kilogramy
 "PLZEŇ 1","Silnice III. třídy",16,"7095.54 m","89117.28 m2"
 ```
 
+
 Správně by tedy tento kus dat vypadal buďto takto:
+
 
 ```
 "Městský obvod",Kategorie,"Počet úseků","Celková délka v m","Celková plocha v m2"
@@ -199,6 +201,7 @@ Správně by tedy tento kus dat vypadal buďto takto:
 "PLZEŇ 1","Silnice II. třídy",17,3410.55,25752.86
 "PLZEŇ 1","Silnice III. třídy",16,7095.54,89117.28
 ```
+
 
 Nebo, ještě lépe, s využitím [standardní reprezentace jednotek](https://ofn.gov.cz/základní-datové-typy/2020-07-01/#množství-jednotka) (m = MTR, m2 = MTK), takto:
 
@@ -208,6 +211,7 @@ městský_obvod,kategorie,počet_úseků,celková_délka_hodnota,celková_délka
 "PLZEŇ 1","Silnice II. třídy",17,3410.55,MTR,25752.86,MTK
 "PLZEŇ 1","Silnice III. třídy",16,7095.54,MTR,89117.28,MTK
 ```
+
 
 Jednotky měření tedy mohou být například součástí názvu sloupce, nebo popisku sloupce ve [schématu](https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3).
 
@@ -234,6 +238,7 @@ r3 : R3. Jak dlouho bydlíte v Brně? ;;;;;;;;;;;;
  ;%;počet;;;;;;;;;;
 ```
 
+
 **Řešení**
 
 Data do CSV je třeba převádět tak, aby vznikla tabulka bez děr, snadno zpracovatelná, tak, aby každý řádek obsahoval kompletní informaci o reprezentované entitě či záznamu. Pokud je zdrojem tabulka formátovaná pro tisk či pro čtení lidmi, je třeba nejprve bez újmy na obsahu:
@@ -248,6 +253,7 @@ Ve formátu CSV se prázdná hodnota reprezentuje opravdu jako prázdná. Zástu
 ```
 Bez zřizovatele,z.ú. - Zapsaný ústav,62695487,null,495 401 565,null,"Sadová 2107,28802 Nymburk",null,null,
 ```
+
 
 **Řešení**
 
@@ -296,11 +302,12 @@ VSTRANA,NAZEVCELK,SLOZENI,TYPVS
 462,"Sdružení SNK ED, SD-SN, SOS, SZ, US-DEU, NK","005,080,102,103,129,143",D
 ```
 
+
 Sloupec **SLOZENI** totiž obsahuje čárkou oddělený seznam ID stran, které tvoří koalici. Pokud bych se tedy chtěl zeptat například na to, které strany tvoří koalici s ID „„459““, jsem odkázán na zpracovávání řetězců v databázovém jazyce místo toho, abych se zeptal zcela přirozeně pomocí tabulky vazeb mezi stranami, která by určovala příslušnost do koalice.
 
 Jsou 2 možnosti řešení.
 
-***Dělení na 2 datové sady**
+**Dělení na 2 datové sady**
 
 Toto byly 2 datové sady, „Číselník stran pro volby 2016“ a „Příslušnost stran do koalic pro volby 2016“. CSV druhé datové sady by vypadalo třeba takto:
 
@@ -312,6 +319,7 @@ KOALICE,STRANA
 299,133
 300,002
 ```
+
 
 Pro normalizaci databází se používají různě přísné [normální formy](https://en.wikipedia.org/wiki/Database_normalization). [První normální forma](https://en.wikipedia.org/wiki/First_normal_form) zakazuje strukturované hodnoty, tedy například seznamy. Je to proto, že se pak s takovou hodnotou nedá rozumně pracovat, a data se musí před použitím předzpracovávat, rozpadat na více tabulek.
 

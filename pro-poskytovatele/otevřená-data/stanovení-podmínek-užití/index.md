@@ -42,11 +42,11 @@ Obecně platí, že licence je potřebná jen tam, kde je poskytován obsah chr�
 Pro vytvoření správného katalogizačního záznamu včetně udělení licencí vám pomůže [tento interaktivní formulář](https://data.gov.cz/formulář/registrace-datové-sady), který ve svém druhém kroku obsahuje předchystané doporučené volby licencování nebo upozornění na fakt, že daný obsah poskytovaný sada neobsahuje.
 
 Příklad formuláře:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/pravo_form-prehled.webp" description="Příklad formuláře" %}
+{% include image.html url="přílohy/pravo_form-prehled.webp" description="Příklad formuláře" %}
 
 ## Rozhodovací diagram pro stanovení podmínek užití a licencování chráněného obsahu
 
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/diagram-podmínek-užití.svg" description="Rozhodovací diagram" %}
+{% include image.html url="přílohy/diagram-podmínek-užití.svg" description="Rozhodovací diagram" %}
 
 ## Autorská práva
 
@@ -59,11 +59,11 @@ Krok 2 – Pokud data autorská díla obsahují, musíte zjistit, zda lze tato d
 Krok 3a - Pokud distribuce obsahuje větší množštví děl, odkaz na konkrétní licenci musí být umístěn u každého díla. Korektní užití licence CC BY zní: “<Název díla> je autorským dílem <Název organizace nebo jméno autora> a je zveřejněna pod licencí CC BY 4.0 [(https://creativecommons.org/licenses/by/4.0/)](https://creativecommons.org/licenses/by/4.0/). Dílo je možné použít za splnění licenčních podmínek.” Do katalogizačního záznamu distribuce pak v položce „Autorské dílo“ uveďte možnost „Obsahuje více autorských děl“.
 
 Příklad:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/více_děl.webp" description="Obsahuje více autorských děl" %}
+{% include image.html url="přílohy/více_děl.webp" description="Obsahuje více autorských děl" %}
 
 Krok 3b - Pokud je distribuce sama jedním autorským dílem (např. dílo kartografické), je možné licenci uvést přímo v katalogizančním záznamu distribuce. Licenční podmínky použijte tak, že při katalogizaci distribuce uvedete do části katalogizačního záznamu „Autorské dílo“ uvedete „Autorské dílo licencované CC BY 4.0”. Zkontrolujte si, že ostatní nezbytné informace pro právoplatné udělení licence (identifikace díla a její autor) jsou uvedené v dalších částech katalogizačního záznamu (název datové sady a její distribuce a název publikující instituce případně jméno autora).
 Příklad:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/jedno_dílo.webp" description="Jedno autorské dílo" %}
+{% include image.html url="přílohy/jedno_dílo.webp" description="Jedno autorské dílo" %}
 
 Krok 3 – Pokud dílo licencovat nelze, musíte ho z poskytovaného obsahu odstranit.
 
@@ -80,7 +80,7 @@ Krok 3 – Pokud je databáze úředním dílem, nebrání vám autorskoprávní
 Krok 4a – Pokud originální databáze není úředním dílem, a zároveň jste oprávněni licenci udělit, použijte licenční podmínky CC BY 4.0. Licenční podmínky použijte tak, že při katalogizaci distribuce uvedete do části katalogizačního záznamu „Databáze jako autorské dílo“ uvedete „Databáze licencována CC BY 4.0”. Zkontrolujte si, že ostatní nezbytné informace pro právoplatné udělení licence (identifikace databáze-díla a její autor) jsou uvedené v dalších částech katalogizačního záznamu (název datové sady a její distribuce a název publikující instituce případně jméno autora).
 
 Příklad:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/db_dílo.webp" description="Databáze" %}
+{% include image.html url="přílohy/db_dílo.webp" description="Databáze" %}
 
 Krok 4b – Pokud originální databáze není úředním dílem, jste oprávněni licenci udělit, a zároveň si nepřejete použít veřejnou licenci Creative commons, uveďte při katalogizaci distribuce do části katalogizačního záznamu „Autorskoprávní ochrana databáze jako díla“ odkaz na Vaši zvolenou licenci. Tato varianta je silně nedoporučovaná.
 
@@ -96,7 +96,7 @@ Krok 3 - Pokud zvláštní práva pořizovatele databáze nevznikla, nebo pokud 
 Krok 4a - Pokud v daném případě není možné aplikovat výjimku úředního díla na zvláštní práva pořizovatele databáze, použijte licenci CC0, čímž se těchto práv vzdáte. Licenci CC0 udělíte (tedy práv se vzdáte) tak, že při katalogizaci distribuce uvedete do části katalogizačního záznamu „Zvláštní právo pořizovatele databáze“ uvedete „Licence CC0“.
 
 Příklad:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/db_cc0.webp" description="Licence CC0" %}
+{% include image.html url="přílohy/db_cc0.webp" description="Licence CC0" %}
 
 Krok 4b - Pokud v daném případě není možné aplikovat výjimku úředního díla na zvláštní práva pořizovatele databáze, a zároveň si nepřejete se práv vzdát, ale například je licencovat pod jinou veřejnou licencí, uvedete při katalogizaci distribuce do části katalogizačního záznamu „Zvláštní databázová práva pořizovatele databáze“ odkaz na Vámi zvolenou licenci. Jako příklad může sloužit „Licence CC BY 4.0 [(https://creativecommons.org/licenses/by/4.0/)]((https://creativecommons.org/licenses/by/4.0/))”, v takovém případě si zkontrolujte, že ostatní nezbytné informace pro právoplatné udělení licence (identifikace databáze a její pořizovatel) jsou uvedené v dalších částech katalogizačního záznamu (název datové sady a její distribuce a název publikující instituce). Odkázat můžete i na veřejnou licenci dle vlastní volby. Tato varianta je opět silně nedoporučovaná.
 
@@ -110,12 +110,12 @@ Do katalogizačního záznamu proto vložte hypertextový odkaz na stránku, kte
 Pokud pro katalogizaci využíváte [náš formulář pro registraci datové sady](https://data.gov.cz/formulář/registrace-datové-sady), vyplňte v případě, že datová sada obsahuje osobní údaje, tuto skutečnost do položky Osobní údaje.
 
 Příklad:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/ou_ano.webp" description="Osobní údaje - ano" %}
+{% include image.html url="přílohy/ou_ano.webp" description="Osobní údaje - ano" %}
 
 Pokud osobní údaje datová sada neobsahuje, rovněž tuto skutečnost prosím v položce Osobní údaje zaznačte.
 
 Příklad:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/ou_ne.webp" description="Osobní údaje - ne" %}
+{% include image.html url="přílohy/ou_ne.webp" description="Osobní údaje - ne" %}
 
 ## Závěr
 Je třeba nezapomenout, že může nastat situace, kdy dojde ke kombinaci výše uvedených ochran - např. data budou chráněna jak jako originální databáze, tak zvláštními databázovými právy. Je proto nezbytné výslovně ošetřit všechna práva a vyplnit všechny 4 relevantní položky v katalogizačním záznamu.
@@ -123,10 +123,10 @@ Je třeba nezapomenout, že může nastat situace, kdy dojde ke kombinaci výše
 Pokud bude ve všech 4 případech uvedeno, že daná distribuce tento typ informací neobsahuje, působí katalogizační záznam jako ujištění pro příjemce dat, že s nimi může bezpečně nakládat bez jakýchkoli rizik právního omezení.
 
 Příklad ve formuláři:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/ou_ne.webp" description="Osobní údaje - ne" %}
+{% include image.html url="přílohy/ou_ne.webp" description="Osobní údaje - ne" %}
 
 Příklad, jak to pak vypadá v NKOD:
-{% include image.html url="../pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/přílohy/nkod-nic.webp" description="NKOD" %}
+{% include image.html url="přílohy/nkod-nic.webp" description="NKOD" %}
 
 Pro správné zanesení těchto informací do katalogizačního záznamu užívejte URL odkazující na relevantní texty na webu data.gov.cz.
 

@@ -76,4 +76,4 @@ Na přesné dopady nové právní úpravy je však nezbytné počkat, až se jej
   
 [oficiální stránka OFN]: https://data.gov.cz/ofn/ "Otevřené formální normy"
 [starší článek]: https://data.gov.cz/články/otevřené-formální-normy-01-úvod "Otevřená data a otevřené formální normy"
-[klasické škále otevřenosti]: https://opendata.gov.cz/informace:stupně-otevřenosti-datových-sad "Stupně otevřenosti datových sad"                                                                                           
+[klasické škále otevřenosti]: /pro-poskytovatele/otevřená-data/stupně-otevřenosti-datových-sad/ "Stupně otevřenosti datových sad"                                                                                           

@@ -7,7 +7,7 @@ lang: cs
 
 Míru otevřenosti dat je možné vyjádřit pomocí 5 stupňů otevřenosti, které jsou znázorněny na následujícím obrázku (stupeň je vyjádřen počtem hvězdiček). 
 
-{% include image.html url="../přílohy/stupně-otevřenosti/5star-steps.webp" description="Převzato z [https://5stardata.info/cs](https://5stardata.info/cs)" %}
+{% include image.html url="../../../přílohy/stupně-otevřenosti/5star-steps.webp" description="Převzato z https://5stardata.info/cs" %}
 
 * stupeň 1 - datová je dostupná v síti WWW s vhodnými podmínkami užití otevřených dat (viz [Jak stanovit podmínky užití datových sad?](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti)), 
 

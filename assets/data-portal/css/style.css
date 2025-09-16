@@ -66,6 +66,10 @@ header.gov-header>gov-container {
   margin-bottom: 1rem;
 }
 
+pre {
+  margin-bottom: 1rem;
+}
+
 .text-content .gov-card__footer {
   display: flex;
   flex-wrap: wrap;

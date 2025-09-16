@@ -45,7 +45,7 @@ Při návrhu datových schémat dodržujte následující pravidla:
 * Distribuce se stejnou strukturou mají společné schéma.
 
 ### Definice vlastního schématu pro data v CSV 
-Při práci s formátem CSV se nejprve seznamte s [nejčastějšími chybami při použití formátu CSV](https://opendata.gov.cz/špatná-praxe:start#nejčastější_chyby_při_použití_formátu_csv). 
+Při práci s formátem CSV se nejprve seznamte s [nejčastějšími chybami při použití formátu CSV](špatná-praxe/csv/). 
 Pro řadu datových sad formát CSV není vhodný a je lepší je publikovat v některém ze strukturovanějších formátů, viz [Otevřené formální normy](https://data.gov.cz/ofn/). 
 
 Prvním krokem k tvorbě schématu pro CSV data je určení toho, jak se budou jmenovat jednotlivé sloupce CSV souboru, jaké budou mít datové typy a jaký budou mít význam.

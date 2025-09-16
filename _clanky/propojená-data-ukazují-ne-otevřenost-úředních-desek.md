@@ -114,7 +114,7 @@ I nadále tým národního koordinátora otevřených dat bude poskytovat metodi
 [dotaz na kraje neplnící povinnost]: https://api.triplydb.com/s/Hc2mMfplA "Dotaz na kraje neplnící povinnost"
 [dotaz určující státní orgány, které nepublikují v NKOD datovou sadu k úřední desce ve vazbě na OFN pod svým jménem]: https://api.triplydb.com/s/iYhKrEskv "Dotaz určující státní orgány, které nepublikují v NKOD datovou sadu k úřední desce ve vazbě na OFN pod svým jménem"
 [testovací aplikace]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html "Testovací aplikace"
-[návodu]: https://opendata.gov.cz/špatná-praxe:chybějící-cors "Chybějící CORS"
+[návodu]: /špatná-praxe/technické-překážky/#chybějící-podpora-cross-origin-resource-sharing-cors "Chybějící CORS"
 [OFN pro úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN Úřední desky"
 [předpřipravený záznam]: /formulář/registrace-datové-sady?file=https%3A%2F%2Fofn.gov.cz%2Fúřední-desky%2F2021-07-20%2Fmetadata%2Fúřední-desky.jsonld "Předpřipravený záznam"
 [otevrenadata@dia.gov.cz]: mailto:otevrenadata@dia.gov.cz "mailto:otevrenadata@dia.gov.cz"

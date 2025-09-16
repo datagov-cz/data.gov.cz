@@ -7,7 +7,7 @@ lang: cs
 
 ## Co jsou otevřená data?
 * volně přístupná na webu jako datové soubory ke stažení ve strojově čitelném a otevřeném formátu - CSV, XML, JSON, RDF a další formáty s otevřenou specifikací;
-* opatřená podmínkami užití neomezujícími jejich užití, viz [návod na stanovení podmínek užití](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti);
+* opatřená podmínkami užití neomezujícími jejich užití, viz [návod na stanovení podmínek užití](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/);
 * evidovaná v [Národním katalogu otevřených dat (NKOD)](https://data.gov.cz/);
 * úplný obsah databáze nebo agregovaná statistika;
 * opatřená dokumentací;

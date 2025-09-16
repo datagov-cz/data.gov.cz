@@ -14,7 +14,7 @@ It is imperative that for each high-value dataset on the list, a technical speci
 
 The requirements in this document come into play when the high-value datasets are identified. To ensure cross-border interoperability of the published data coming from individual member states representing a single high-value dataset, it is completely insufficient to just identify it. It needs to be ensured that for each such dataset, a proper technical specification is created and a required set of data quality attributes defined so that the member states can start publishing the data in a compliant, interoperable way.
 
-This paragraph is followed by a position paper by the team of the National Open Data Coordinator of the Czech Republic, Department of the Chief Architect of the eGovernment, Ministry of the Interior of the Czech Republic. We welcome any [comments or suggestions](https://github.com/datagov-cz/data.gov.cz/issues) to this paper. If you have any questions feel free to [contact us](https://opendata.gov.cz/kontakt:start).
+This paragraph is followed by a position paper by the team of the National Open Data Coordinator of the Czech Republic, Department of the Chief Architect of the eGovernment, Ministry of the Interior of the Czech Republic. We welcome any [comments or suggestions](https://github.com/datagov-cz/data.gov.cz/issues) to this paper. If you have any questions feel free to contact us.
 
 ---
 

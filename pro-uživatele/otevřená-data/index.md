@@ -7,7 +7,7 @@ lang: cs
 
 ## Co jsou otevřená data?
 * volně přístupná na webu jako datové soubory ke stažení ve strojově čitelném a otevřeném formátu - CSV, XML, JSON, RDF a další formáty s otevřenou specifikací;
-* opatřená podmínkami užití neomezujícími jejich užití, viz [návod na stanovení podmínek užití](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti);
+* opatřená podmínkami užití neomezujícími jejich užití, viz [návod na stanovení podmínek užití](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/);
 * evidovaná v [Národním katalogu otevřených dat (NKOD)](https://data.gov.cz/);
 * úplný obsah databáze nebo agregovaná statistika;
 * opatřená dokumentací;
@@ -28,8 +28,8 @@ Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (od
 * datový soubor v pseudo-CSV formátu (např. jiný oddělovač než “,”).
 
 ## Proč mám vyžadovat otevřená data?
-* Data budou mít [otevřené podmínky užití](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti). Budete mít tedy jistotu, že s daty můžete nakládat opravdu libovolně, zejména je sdílet, modifikovat či prodávat.
-* Data budou snadno použitelná díky [otevřenému formátu](https://opendata.gov.cz/informace:základy-otevřených-dat-pro-programátory#co_jsou_otevřené_formáty_a_jak_se_s_nimi_pracuje). 
+* Data budou mít [otevřené podmínky užití](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/). Budete mít tedy jistotu, že s daty můžete nakládat opravdu libovolně, zejména je sdílet, modifikovat či prodávat.
+* Data budou snadno použitelná díky [otevřenému formátu](/pro-uživatele/otevřená-data/#co-jsou-otevřené-formáty-a-jak-se-s-nimi-pracuje). 
 
 ## Otevřená data mohou být například
 * jízdní řády;

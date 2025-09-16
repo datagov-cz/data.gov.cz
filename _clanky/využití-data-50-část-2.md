@@ -146,4 +146,4 @@ V poslední části článku se podíváme na to, co je vlastně výsledkem cel�
 [react-leaflet]: https://react-leaflet.js.org/ "React komponenty pro mapy v Leafletu"
 [openstreetmap]: http://openstreetmap.org "Otevřená databáze prostorových dat"
 [wms-cp]: https://geoportal.cuzk.cz/Default.aspx?lng=CZ&mode=TextMeta&side=INSPIRE_dSady&metadataID=CZ-00025712-CUZK_WMS-MD_CP&metadataXSL=metadata.sluzba&menu=416&head_tab=sekce-04-gp "Webová služba poskytující obrazová data Parcel harmonizovaná a poskytovaná dle směrnice INSPIRE"
-[chybný_oddělovač_údajů_link]: https://opendata.gov.cz/standardy:csv:chybn%C3%BD-odd%C4%9Blova%C4%8D
+[chybný_oddělovač_údajů_link]: /špatná-praxe/csv/#jiný-oddělovač-než-čárka

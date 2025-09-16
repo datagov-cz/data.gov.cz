@@ -9,7 +9,7 @@ Míru otevřenosti dat je možné vyjádřit pomocí 5 stupňů otevřenosti, kt
 
 {% include image.html url="../../../přílohy/stupně-otevřenosti/5star-steps.webp" description="Převzato z https://5stardata.info/cs" %}
 
-* stupeň 1 - datová je dostupná v síti WWW s vhodnými podmínkami užití otevřených dat (viz [Jak stanovit podmínky užití datových sad?](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti)), 
+* stupeň 1 - datová je dostupná v síti WWW s vhodnými podmínkami užití otevřených dat (viz [Jak stanovit podmínky užití datových sad?](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/)), 
 
 * stupeň 2 - datová sada je poskytována ve strojově čitelném formátu, který umožňuje automatizované strojové zpracování, 
 

@@ -7,4 +7,4 @@ lang: cs
 author: michal_kubáň
 ---
 
-Jaké jsou nejčastější chyby při publikaci otevřených dat? Jak se těmto chybám vyvarovat? Sepsali jsme pro vás [nejčastější chyby ze strany poskytovatelů dat](https://opendata.gov.cz/%C5%A1patn%C3%A1-praxe:start) a tipy, jak se těmto chybám vyhnout.
+Jaké jsou nejčastější chyby při publikaci otevřených dat? Jak se těmto chybám vyvarovat? Sepsali jsme pro vás [nejčastější chyby ze strany poskytovatelů dat](/špatná-praxe/) a tipy, jak se těmto chybám vyhnout.

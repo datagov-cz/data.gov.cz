@@ -7,5 +7,5 @@ lang: cs
 author: jakub_klímek
 ---
 
-Otevřeli jsme registraci na [on-line úvodní školení otevřených dat](https://opendata.gov.cz/edu:on-line).
+Otevřeli jsme registraci na [on-line úvodní školení otevřených dat](/vzdělávání/školení/).
 Každý první a třetí čtvrtek  v měsíci se můžete dozvědět základní informace z oblasti otevřených dat a rozšířit řady desítek jejich poskytovatelů.

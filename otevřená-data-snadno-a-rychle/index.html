@@ -70,7 +70,7 @@ lang: cs
 						<p>
 							Formátem pro otevřená tabulková data je <a href="https://opendata.gov.cz/standardy:csv" title="csv">formát CSV</a>.
 							Tabulku z Excelu tedy musíme do tohoto formátu převést.
-							Přitom je třeba dát pozor na <a href="https://opendata.gov.cz/špatná-praxe:start#nejčastější_chyby_při_použití_formátu_csv" title="Špatná praxe v CSV">typické chyby</a>, které se při tvorbě CSV souborů vyskytují.
+							Přitom je třeba dát pozor na <a href="/špatná-praxe/csv/" title="Špatná praxe v CSV">typické chyby</a>, které se při tvorbě CSV souborů vyskytují.
 						</p>
 						<gov-message variant="warning">
 							Microsoft Excel neumí správné CSV otevřít přímo.
@@ -80,7 +80,7 @@ lang: cs
 							<gov-button variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/standardy:csv">
 								O CSV
 							</gov-button>
-							<gov-button variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/špatná-praxe:start#nejčastější_chyby_při_použití_formátu_csv">
+							<gov-button variant="secondary" type="outlined" size="l" href="/špatná-praxe/csv/">
 								Špatná praxe
 							</gov-button>
 						</div>
@@ -133,10 +133,10 @@ lang: cs
 						<p>
 							Aby se k CSV souboru někdo dostal, je třeba ho umístit na web.
 							To znamená někam, kde bude mít své stabilní URL.
-							Pak ověříme, že jsme se nedopustili nějaké z rozšířených <a href="https://opendata.gov.cz/špatná-praxe:start#přístup_k_otevřeným_datůmtechnické_překážky" title="Chyby s HTTP">chyb ve zpřístupnění souboru na webu</a>.
+							Pak ověříme, že jsme se nedopustili nějaké z rozšířených <a href="/špatná-praxe/technické-překážky/" title="Chyby s HTTP">chyb ve zpřístupnění souboru na webu</a>.
 						</p>
 						<div slot="footer">
-							<gov-button variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/špatná-praxe:start#přístup_k_otevřeným_datůmtechnické_překážky">
+							<gov-button variant="secondary" type="outlined" size="l" href="/špatná-praxe/technické-překážky/">
 								Špatná praxe
 							</gov-button>
 						</div>
@@ -146,10 +146,10 @@ lang: cs
 				<gov-grid-item size-sm="12/12" size-md="4/12">
 					<gov-card full-height label="Časté chyby" class="gov-bg--error-100">
 						<ul>
-							<li><a href="https://opendata.gov.cz/špatná-praxe:http" title="HTTP">HTTP místo HTTPS</a></li>
-							<li><a href="https://opendata.gov.cz/špatná-praxe:https" title="Chybné HTTPS">Chybně nastavené HTTPS</a></li>
-							<li><a href="https://opendata.gov.cz/špatná-praxe:komprese" title="Komprese">Chybějící komprese</a></li>
-							<li><a href="https://opendata.gov.cz/špatná-praxe:http-content-type" title="HTTP hlavičky">Špatné HTTP hlavičky</a></li>
+							<li><a href="/špatná-praxe/technické-překážky/#přístup-přes-nezabezpečený-protokol-http-či-ftp" title="HTTP">HTTP místo HTTPS</a></li>
+							<li><a href="/špatná-praxe/technické-překážky/#přístup-přes-nedostatečně-zabezpečený-či-chybně-nakonfigurovaný-protokol-https" title="Chybné HTTPS">Chybně nastavené HTTPS</a></li>
+							<li><a href="/špatná-praxe/technické-překážky/#chybně-implementovaná-komprese" title="Komprese">Chybějící komprese</a></li>
+							<li><a href="/špatná-praxe/technické-překážky/#chybná-hlavička-http-content-type" title="HTTP hlavičky">Špatné HTTP hlavičky</a></li>
 						</ul>
 					</gov-card>
 				</gov-grid-item>
@@ -223,13 +223,13 @@ lang: cs
 				<gov-grid-item size-sm="12/12" size-md="4/12">
 					<gov-card full-height label="Postup" class="gov-bg--primary-100">
 						<p>
-							<a href="https://opendata.gov.cz/cinnost:priprava-katalogizacniho-zaznamu">Připravíme si metadatový záznam</a> o datové sadě.
+							<a href="/pro-poskytovatele/otevřená-data/katalogizace-dat/">Připravíme si metadatový záznam</a> o datové sadě.
 							Měl by být co nejúplnější.
 							Zejména by měl odkazovat na webovou stránku s dokumentací datové sady.
 							Ta by měla být v HTML (jsme na Webu), nikoliv PDF či Word.
 						</p>
 						<div slot="footer">
-							<gov-button variant="secondary" type="outlined" size="l" href="https://opendata.gov.cz/cinnost:priprava-katalogizacniho-zaznamu">
+							<gov-button variant="secondary" type="outlined" size="l" href="/pro-poskytovatele/otevřená-data/katalogizace-dat/">
 								Specifikace
 							</gov-button>
 						</div>

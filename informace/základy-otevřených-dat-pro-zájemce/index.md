@@ -9,7 +9,7 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
 
 ## Otevřená data jsou
   * volně přístupná na webu jako datové soubory ke stažení ve strojově čitelném a otevřeném formátu - CSV, XML, JSON, RDF a další formáty s otevřenou specifikací;
-  * opatřená podmínkami užití neomezujícími jejich užití, viz [návod na stanovení podmínek užití](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti);
+  * opatřená podmínkami užití neomezujícími jejich užití, viz [návod na stanovení podmínek užití](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/);
   * evidovaná v [Národním katalogu otevřených dat (NKOD)](https://data.gov.cz);
   * úplný obsah databáze nebo agregovaná statistika;
   * opatřená dokumentací;
@@ -61,4 +61,4 @@ Na této stránce najdete rychlý úvod do otevřených dat pro zájemce o otev�
 
 ## Možný postup otevírání dat
   - [Rychle publikovat první datovou sadu](/otevřená-data-snadno-a-rychle/)
-  - [Jak na otevírání dat systematicky](https://opendata.gov.cz/standardy:start)
+  - [Jak na otevírání dat systematicky](/pro-poskytovatele/otevřená-data/)

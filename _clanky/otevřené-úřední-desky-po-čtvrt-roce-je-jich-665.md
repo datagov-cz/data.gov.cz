@@ -107,6 +107,6 @@ Tyto zkušenosti by tak mohly otevřít cestu k rozsáhlé publikaci otevřenýc
 [nahrávka workshopu]: https://www.youtube.com/watch?v=ZGsuMmEvPcA&feature=youtu.be "Nahrávka workshopu na Youtube"
 [testovací aplikace]: https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html "Testovací aplikace"
 [videoukázky]: https://www.youtube.com/watch?v=A0BGDchMGGA "Videoukázka na Youtube"
-[špatná praxe]: https://opendata.gov.cz/špatná-praxe:start "Špatná praxe"
+[špatná praxe]: /špatná-praxe/ "Špatná praxe"
 [Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat]: nová-éra-úředních-desek#jednoduché-zobrazení-úředních-desek-pomocí-otevřené-formální-normy-a-národního-katalogu-otevřených-dat "Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu otevřených dat"
 [Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat]: nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat"

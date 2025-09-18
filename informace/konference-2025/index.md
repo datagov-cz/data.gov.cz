@@ -7,13 +7,9 @@ lang: cs
 
 {% include image.html url="../../přílohy/konference/2025/Konference_Data_2025.webp" description="" %}
 
-Zúčastněte se 9. ročníku konference **Jak na data ve veřejné správě** o využívání a správě dat státní správy a samosprávy!
-
-## [Záznam z online přenosu](https://www.youtube.com/watch?v=QsRbYAd6MuM)
-
 - **Kdy?** 3. června 2025, 9:00 - 16:00
 - **Kde?** Akademie veřejného investování MMR, Pařížská 4, 110 00 Praha a online
-- **Registrace:** Registrace jsou již uzavřené. Kapacita sálu je naplněna. Konferenci můžete sledovat online na YouTube!
+- [**Záznam z online přenosu**](https://www.youtube.com/watch?v=QsRbYAd6MuM)
 
 Veřejná správa disponuje velkým potenciálem v podobě datových zdrojů, které spravuje.
 Pro jejich efektivní využití je však nutné do této oblasti systematicky investovat - nejen finance, ale i čas a úsilí.
@@ -54,14 +50,13 @@ Klíčová je podpora kvality dat, propracovaného data managementu a v neposled
   * **[Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému]** Radek Hábl, Institut prevence a řešení předlužení
   * **[Když chcete grafem něco říct]** Kristína Pšorn Zákopčanová
 
-WORKSHOPY (workshopy nebudou přenášeny online!):
+WORKSHOPY (workshopy nebyly přenášeny online!):
 * 10:05 - 10:45 **WORKSHOP - Vizualizace dat** Martin Smetana, Václav Flaška, Kristýna Pulpán, Nejvyšší kontrolní úřad - pro velký úspěch jde o opakování workshopu z roku 2024
 * 12:30 - 13:15 **DISCUSSION with Martin Skovbjerg Jensen of the Danish Agency for Digital Government (in English)**
-Chance to further compare and share experiences between the Czech Republic and Denmark. Themes of interest include lessons learned on how to map and describe public sector data that could be shared, which types of information about datasets are most useful to potential data users, and how one prioritises what data should be made more openly available.                  
+Chance to further compare and share experiences between the Czech Republic and Denmark. Themes of interest include lessons learned on how to map and describe public sector data that could be shared, which types of information about datasets are most useful to potential data users, and how one prioritises what data should be made more openly available.                 
 
-**KAPACITA WORKSHOPŮ JE JIŽ NAPLNĚNA!**
+## Na konferenci vystoupili
 
-## Na konferenci vystoupí
 <gov-grid gutter-x="1rem" gutter-y="1rem">
     <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
       <img width="100%" src="../../přílohy/konference/2025/Mesršmíd.webp" title="Martin Mesršmíd"/>

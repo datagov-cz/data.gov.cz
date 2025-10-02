@@ -1,9 +1,13 @@
 <header class="gov-header">
     <gov-container>
       <gov-branding>
+        {% if page.homepage %}
+          <h1 class="heading">Portál o datech</h1>
+        {% else %}
         <div class="heading">
           <a href="/">Portál o datech</a>
         </div>
+        {% endif %}
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
 	    {% for p in pages %}
 		  {% if p.lang != page.lang %}

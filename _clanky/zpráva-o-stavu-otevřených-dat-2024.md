@@ -18,7 +18,7 @@ Ministerstvo zdravotnictví a Ústav zdravotnických informací a statistik pře
 Pražský Operátor ICT rozvíjí vlastní opensource řešení lokálních katalogů a pomáhá jej zavádět dalším institucím. 
 Ústecký a Liberecký kraj se zaměřily na osvětu a zvyšování povědomí o přínosech otevřených dat.
 
-{% include image.html url="../přílohy/články/zpráva-o-stavu-otevřených-dat-2024/Zpráva o stavu - obr k článku).webp" description="Počet poskytovatelů" %}
+{% include image.html url="../přílohy/články/zpráva-o-stavu-otevřených-dat-2024/Zpráva%20o%20stavu.webp" description="Počet poskytovatelů" %}
 
 Nové datové sady a rostoucí kvalita
 Pozitivní trend představuje zavádění publikačních plánů, vymezování odpovědných rolí a intenzivnější komunikace s uživateli, což přispívá ke kvalitě poskytovaných dat. 

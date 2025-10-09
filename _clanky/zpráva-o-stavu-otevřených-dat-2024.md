@@ -3,7 +3,7 @@ layout: post
 detail: true
 title: "Česko mezi evropskými lídry v otevřených datech. Zbývá ale splnit klíčové povinnosti"
 ref: zpráva-o-stavu-otevřených-dat-204
-image: ../přílohy/články/zpráva-o-stavu-otevřených-dat-2024/Zpráva o stavu - obr k článku).webp
+image: ../přílohy/články/zpráva-o-stavu-otevřených-dat-2024/Zpráva%20o%20stavu.webp
 author: jiři_kaňa
 date: 2025-10-07 07:00:00 +02:00
 lang: cs

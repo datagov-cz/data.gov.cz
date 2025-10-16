@@ -2,13 +2,13 @@
 layout: post
 detail: true
 title: "Česko mezi evropskými lídry v otevřených datech. Zbývá ale splnit klíčové povinnosti"
-ref: zpráva-o-stavu-otevřených-dat-204
+ref: zpráva-o-stavu-otevřených-dat-2024
 image: ../přílohy/články/zpráva-o-stavu-otevřených-dat-2024/Zpráva%20o%20stavu.webp
 author: jiří_kaňa
 date: 2025-10-07 07:00:00 +02:00
 lang: cs
 ---
-Zpráva o stavu dat v České republice za rok 2024 [Zpráva o stavu otevřených dat 2024] ukazuje výrazný pokrok v kvalitě i dopadech, upozorňuje však i na nedostatky – zejména na neúplné zveřejnění veřejných registrů a dat s vysokou hodnotou.
+[Zpráva o stavu otevřených dat 2024] ukazuje výrazný pokrok v kvalitě i dopadech, upozorňuje však i na nedostatky – zejména na neúplné zveřejnění veřejných registrů a dat s vysokou hodnotou.
 <!--more-->
 
 ## Příklady dobré praxe

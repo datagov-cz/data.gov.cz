@@ -135,6 +135,19 @@ Záznam webináře, který se věnuje tomu, jak by měly úřady postupovat při
 
 [Přehled věcných oblastí dat včetně jejich kvality]
 
+## Bezpečnost a řízení rizik
+**Webinář: [Bezpečnost a řízení rizik]**
+
+Záznam webináře, který se věnoval zapojení správy dat do procesu řízení rizik. Ukazuje, jaký mohou mít nedostatky ve správě dat dopad na bezpečnost a také jak pracovat s katalogem rizik správy dat.
+
+## Interní pravidla a principy správy dat
+**Webinář: [Principy a interní pravidla správy dat]**
+
+Záznam webináře, který se zaměřil na to, proč má smysl do interních pravidel úřadu začlenit správu dat a jak při tom postupovat. Představuje dvě úrovně politiky správy dat a vysvětluje základní principy ve správě dat.
+
+[Šablona politiky správy dat]
+
+
 [Představení Minimálního standardu správy dat veřejné správy]: https://youtu.be/K-sC8c1ugA8?si=HRbH-2xSiugUpjVq "Představení Minimálního standardu správy dat veřejné správy"
 [Minimální standard správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard správy dat"
 [Představení Strategie pro správu dat ve veřejné správě ČR]: https://youtu.be/4o0abpHg1ew?si=daxZyOgfpXj5XtO4 "Představení Strategie pro správu dat ve veřejné správě ČR" 
@@ -167,4 +180,8 @@ Záznam webináře, který se věnuje tomu, jak by měly úřady postupovat při
 [Zajištění kvality dat]: https://www.youtube.com/watch?v=ifNS-LFSCdY "Zajištění kvality dat"
 [Kvalita dat]: ../../přílohy/správa-dat/Zajisteni_kvality_dat_1.0.pdf "Kvalita dat"
 [Evidence datových nekvalit]: ../../přílohy/správa-dat/Evidence_datových_nekvalit.xlsx "Evidence datových nekvalit"
-[Přehled věcných oblastí dat včetně jejich kvality]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.3.xlsx "Přehled věcných oblastí dat včetně jejich kvality"
+[Přehled věcných oblastí dat včetně jejich kvality]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.4.xlsx "Přehled věcných oblastí dat včetně jejich kvality"
+[Bezpečnost a řízení rizik]: https://www.youtube.com/watch?v=ooGTmffHgjk "Bezpečnost a řízení rizik"
+[Principy a interní pravidla správy dat]: https://www.youtube.com/watch?v=COWxE1ODbWs "Principy a interní pravidla správy dat"
+[Šablona politiky správy dat]: ../../přílohy/správa-dat/ŠABLONA_Politika_správy_dat_OVS_1.0.docx "Šablona politiky správy dat"
+

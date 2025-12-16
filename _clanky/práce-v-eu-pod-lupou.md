@@ -29,7 +29,7 @@ V České republice činí průměrná skutečná pracovní doba přibližně 15
 
 Směrnice EU zaručuje každému pracovníkovi minimálně čtyři týdny dovolené, tedy 20 dní ročně. Většina států tento standard dodržuje, některé jej navyšují až na 28 dní. Pokud započítáme i státní svátky, nejvíce volna mají zaměstnanci na Maltě, v Dánsku a Německu – přibližně 40 až 42 dní ročně. Česká republika s 38 dny volna ročně se drží nad evropským průměrem.
 
-{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.wbp" description="Dny volna v zemích EU" %}
+{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.webp" description="Dny volna v zemích EU" %}
 
 *Zdroj: [data.europa.eu]*
 

@@ -18,18 +18,16 @@ Smysl těchto akcí spočívá v rychlé validaci nápadů, jež přinášejí m
 
 Mezi vítězné projekty patří [KompaZ] z [Hackathonu Královéhradeckého kraje], který připravil tým Mackokládi ze Střední průmyslové školy a střední odborné školy Dvůr Králové nad Labem. Aplikace nabízí průvodce více než dvěma sty životními a krizovými situacemi, AI asistenta a interaktivní mapu napojenou na dopravní spoje, což uživatelům zjednodušuje orientaci i následné kroky. Přínos spočívá v okamžité, srozumitelné pomoci a v propojení na konkrétní kontakty.
 
-{% include image.html url="../přílohy/články/otevřená-data-v-akci/data-khk.webp" description="Hackathon Královéhradeckého kraje" %}
-*Zdroj: [www.datakhk.cz]*
+{% include image.html url="../přílohy/články/otevřená-data-v-akci/data-khk.webp" description="Zdroj: [www.datakhk.cz]" %}
 
 Vítěznou aplikaci hackathonu Olomouckého kraje ve spolupráci s Přírodovědeckou fakultou Univerzity Palackého [„Když data promluví“] s názvem [Asphalt Sence] vytvořil jednočlenný tým Paráche. Řešení využívá živá senzorická data o počasí a dopravě k predikci poškození silnic, sleduje trend „stresu“ vozovky, detekuje kritické momenty a odhaduje, kdy je nutný zásah ještě před vznikem viditelného výtluku. Díky tomu lze plánovat údržbu dopředu, předcházet havarijním opravám, efektivněji alokovat rozpočty a prodlužovat životnost infrastruktury.
 
-{% include image.html url="../přílohy/články/otevřená-data-v-akci/data-olomouc.webp" description="Když data promluví" %}
-*Zdroj: [hackathon.upol.cz]*
+{% include image.html url="../přílohy/články/otevřená-data-v-akci/data-olomouc.webp" description="Zdroj: [hackathon.upol.cz]" %}
 
 [Mosty k sobě] zvítězily na [Hackathonu otevřených dat Plzeňského kraje]. Tým Chodové z Gymnázia J. Š. Baara se zaměřil na vysvětlení přínosů inkluze a na mapování dostupnosti základních škol, včetně dojezdových vzdáleností z obcí bez vlastní ZŠ. Aplikace poskytuje podklady pro vzdělávací politiku a dopravní plánování a pomáhá lépe komunikovat s veřejností o dopadech rozhodnutí na rodiny a děti.
 
-{% include image.html url="../přílohy/články/otevřená-data-v-akci/data-plzen.webp" description="Hackathon otevřených dat Plzeňského kraje" %}
-*Zdroj: [www.plzensky-kraj.cz]*
+{% include image.html url="../přílohy/články/otevřená-data-v-akci/data-plzen.webp" description="Zdroj: [www.plzensky-kraj.cz]" %}
+
 
 ## Hackuj stát s daty
 Vítězové krajských kol postupují do celostátního finále hackathonu veřejné správy [#hackujstát], kde mohou projekty dopracovat nebo začít nový. Podmínkou je využití alespoň jedné datové sady z Národního katalogu otevřených dat či dat partnerských institucí a zveřejnění výsledků včetně zdrojového kódu, licence a dokumentace. Sedmý ročník akce #hackujstát se uskuteční 6. a 7. března 2026 v sídle Nejvyššího kontrolního úřadu v Praze.

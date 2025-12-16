@@ -16,7 +16,7 @@ Více než polovinu pracovních míst v EU zajišťují čtyři odvětví: prům
 
 Také Česká republika patří mezi průmyslově orientované ekonomiky. Zpracovatelský průmysl tvoří přibližně 31 % všech pracovních míst, obchod 18 %, zdravotní a sociální péče 8 % a ubytovací a stravovací služby zhruba 4 %. Tyto údaje potvrzují silnou roli výroby a exportu v české ekonomice.
 
-{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.png" description="Which sectors do European work in." %}
+{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.png" description="Ve kterých odvětvích Evropané pracují?" %}
 
 *Zdroj: [data.europa.eu]*
 
@@ -31,7 +31,7 @@ V České republice činí průměrná skutečná pracovní doba přibližně 15
 
 Směrnice EU zaručuje každému pracovníkovi minimálně čtyři týdny dovolené, tedy 20 dní ročně. Většina států tento standard dodržuje, některé jej navyšují až na 28 dní. Pokud započítáme i státní svátky, nejvíce volna mají zaměstnanci na Maltě, v Dánsku a Německu – přibližně 40 až 42 dní ročně. Česká republika s 38 dny volna ročně se drží nad evropským průměrem.
 
-{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.png" description="Time off in EU." %}
+{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.png" description="Dovolená v EU" %}
 
 *Zdroj: [data.europa.eu]*
 

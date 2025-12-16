@@ -3,7 +3,7 @@ layout: post
 detail: true
 title: "Práce v EU pod lupou"
 ref: práce-v-eu-pod-lupou
-image: ../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.png
+image: ../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.webp
 author: jiří_kaňa
 date: 2025-12-16 07:00:00 +02:00
 lang: cs
@@ -16,11 +16,9 @@ Více než polovinu pracovních míst v EU zajišťují čtyři odvětví: prům
 
 Také Česká republika patří mezi průmyslově orientované ekonomiky. Zpracovatelský průmysl tvoří přibližně 31 % všech pracovních míst, obchod 18 %, zdravotní a sociální péče 8 % a ubytovací a stravovací služby zhruba 4 %. Tyto údaje potvrzují silnou roli výroby a exportu v české ekonomice.
 
-{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.png" description="Which sectors do European work in." %}
+{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.webp" description="Ve kterých odvětvích Evopané pracují" %}
 
 *Zdroj: [data.europa.eu]*
-
-
 ## Kolik hodin a za kolik
 
 Evropané obvykle pracují 150 až 170 hodin měsíčně. V hlavních odvětvích se průměrná hodinová mzda pohybuje mezi 18 a 25 eury. Služby s nízkými příjmy, jako pohostinství nebo administrativní podpora, nabízejí méně než 20 eur za hodinu a často zahrnují směnný či sezónní provoz. Naopak finance, informační technologie a vědecké služby přesahují 30 eur za hodinu, ale zaměstnávají jen malý podíl pracovníků. Rozdíly mezi státy jsou mnohem výraznější než mezi sektory – průměrná mzda za podobnou práci se může lišit až desetinásobně.
@@ -31,7 +29,7 @@ V České republice činí průměrná skutečná pracovní doba přibližně 15
 
 Směrnice EU zaručuje každému pracovníkovi minimálně čtyři týdny dovolené, tedy 20 dní ročně. Většina států tento standard dodržuje, některé jej navyšují až na 28 dní. Pokud započítáme i státní svátky, nejvíce volna mají zaměstnanci na Maltě, v Dánsku a Německu – přibližně 40 až 42 dní ročně. Česká republika s 38 dny volna ročně se drží nad evropským průměrem.
 
-{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.png" description="Time off in EU." %}
+{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.wbp" description="Dny volna v zemích EU" %}
 
 *Zdroj: [data.europa.eu]*
 
@@ -44,4 +42,4 @@ Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time of
 
 [Work Across the EU: Jobs, pay and time off]: https://data.europa.eu/en/publications/datastories/work-across-eu-jobs-pay-and-time "Work across EU: Jobs, pay and time off"
 
-[Eurostatu]: https://ec.europa.eu/eurostat/databrowser/explore/all/popul?sort=category&lang=en&subtheme=labour.earn.earn_ses2022&display=list "Data z Eurostatu"
+[Eurostatu]: https://ec.europa.eu/eurostat/databrowser/explore/all/popul?sort=category&lang=en&subtheme=labour.earn.earn_ses2022&display=list "Eurostat"

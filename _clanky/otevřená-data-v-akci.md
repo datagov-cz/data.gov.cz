@@ -5,7 +5,7 @@ title: "Otevřená data v akci: studenti mění nápady v užitečné služby"
 ref: otevřená-data-v-akci
 image: ../přílohy/články/otevřená-data-v-akci/data-khk.webp
 author: jiří_kaňa
-date: 2025-12-17 07:00:00 +02:00
+date: 2025-12-16 07:00:00 +02:00
 lang: cs
 ---
 Otevřená data se stala klíčovou surovinou pro vznik praktických aplikací, které mají přímý dopad na každodenní život občanů i na fungování institucí. _„Studentské hackathony ukazují, jak lze otevřená data využít rychle a s důrazem na řešení reálných problémů,“_ říká Marie Čermáková z Digitální a informační agentury, která se hackathonů pravidelně účastní jako porotkyně.

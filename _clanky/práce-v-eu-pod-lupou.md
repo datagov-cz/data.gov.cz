@@ -18,6 +18,26 @@ Také Česká republika patří mezi průmyslově orientované ekonomiky. Zpraco
 
 {% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.png" description="Which sectors do European work in." %}
 
+*Zdroj: [data.europa.eu]*
+
+
+## Kolik hodin a za kolik
+
+Evropané obvykle pracují 150 až 170 hodin měsíčně. V hlavních odvětvích se průměrná hodinová mzda pohybuje mezi 18 a 25 eury. Služby s nízkými příjmy, jako pohostinství nebo administrativní podpora, nabízejí méně než 20 eur za hodinu a často zahrnují směnný či sezónní provoz. Naopak finance, informační technologie a vědecké služby přesahují 30 eur za hodinu, ale zaměstnávají jen malý podíl pracovníků. Rozdíly mezi státy jsou mnohem výraznější než mezi sektory – průměrná mzda za podobnou práci se může lišit až desetinásobně.
+
+V České republice činí průměrná skutečná pracovní doba přibližně 151 hodin měsíčně (včetně částečných úvazků), u plných úvazků pak kolem 164 hodin. To odpovídá evropskému průměru, avšak české mzdy zůstávají pod průměrem EU. Ve sledovaných odvětvích se pohybují jen mezi 10 až 18 eury.
+
+## Kde se nejvíc odpočívá
+
+Směrnice EU zaručuje každému pracovníkovi minimálně čtyři týdny dovolené, tedy 20 dní ročně. Většina států tento standard dodržuje, některé jej navyšují až na 28 dní. Pokud započítáme i státní svátky, nejvíce volna mají zaměstnanci na Maltě, v Dánsku a Německu – přibližně 40 až 42 dní ročně. Česká republika s 38 dny volna ročně se drží nad evropským průměrem.
+
+{% include image.html url="../přílohy/články/práce-v-eu-pod-lupou/dovolena-eu.png" description="Time off in EU." %}
+
+*Zdroj: [data.europa.eu]*
+
+## Žádný jednotný model, ale společné hodnoty
+
+Neexistuje jednotný „evropský“ model pracovního života. Rozdíly v zaměstnanosti, mzdách i volnu jsou výrazné a odrážejí specifické podmínky jednotlivých zemí. Společným cílem však zůstává důstojná práce, spravedlivá odměna a právo na odpočinek. Otevřená data pomáhají tyto rozdíly pochopit a hledat vyváženější modely pro budoucnost.
 
 
 Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time off] a z databáze [Eurostatu].

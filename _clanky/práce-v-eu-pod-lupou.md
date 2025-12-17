@@ -43,4 +43,4 @@ Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time of
 
 [Eurostatu]: https://ec.europa.eu/eurostat/databrowser/explore/all/popul?sort=category&lang=en&subtheme=labour.earn.earn_ses2022&display=list "Eurostat"
 
-[data.europa.eu]: https://data.europa.cz
+[data.europa.eu]: https://data.europa.eu

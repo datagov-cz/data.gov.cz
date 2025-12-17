@@ -5,7 +5,7 @@ title: "Práce v EU pod lupou"
 ref: práce-v-eu-pod-lupou
 image: ../přílohy/články/práce-v-eu-pod-lupou/eu-sectors.webp
 author: jiří_kaňa
-date: 2025-12-16 07:00:00 +02:00
+date: 2025-12-17 07:00:00 +02:00
 lang: cs
 ---
 Pracovní život v Evropské unii je rozmanitý a odráží rozdíly v historii, ekonomice i politice jednotlivých států. Přestože by se mohlo zdát, že podmínky jsou v rámci jednotného trhu podobné, data ukazují výrazné odlišnosti. Otevřená data pomáhají pochopit, kde lidé pracují nejvíce, kolik vydělávají a kolik času mají na odpočinek.
@@ -42,3 +42,5 @@ Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time of
 [Work Across the EU: Jobs, pay and time off]: https://data.europa.eu/en/publications/datastories/work-across-eu-jobs-pay-and-time "Work across EU: Jobs, pay and time off"
 
 [Eurostatu]: https://ec.europa.eu/eurostat/databrowser/explore/all/popul?sort=category&lang=en&subtheme=labour.earn.earn_ses2022&display=list "Eurostat"
+
+[data.europa.eu]: https://data.europa.cz

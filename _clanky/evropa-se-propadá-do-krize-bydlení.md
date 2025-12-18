@@ -5,7 +5,7 @@ title: "Evropa se propadá do krize bydlení"
 ref: evropa-se-propadá-do-krize-bydlení
 image: ../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-crisis.webp
 author: jiří_kaňa
-date: 2025-12-29 07:00:00 +02:00
+date: 2025-12-29 07:01:00 +02:00
 lang: cs
 ---
 Bydlení je základním předpokladem kvality života, bezpečí a zdraví. Navzdory tomu se v Evropě stává pro stále více lidí luxusem. Rostoucí ceny nemovitostí a měnící se ekonomická situace vyvíjejí silný a neudržitelný tlak na domácnosti napříč celou Evropskou unií. Všechna zjištění vycházejí z otevřených dat Eurostatu, díky jejichž transparentnosti můžeme aktuální problémy bydlení vůbec zviditelnit a řešit.

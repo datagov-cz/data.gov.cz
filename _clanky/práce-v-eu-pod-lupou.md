@@ -35,11 +35,18 @@ Směrnice EU zaručuje každému pracovníkovi minimálně čtyři týdny dovole
 ## Žádný jednotný model, ale společné hodnoty
 
 Neexistuje jednotný „evropský“ model pracovního života. Rozdíly v zaměstnanosti, mzdách i volnu jsou výrazné a odrážejí specifické podmínky jednotlivých zemí. Společným cílem však zůstává důstojná práce, spravedlivá odměna a právo na odpočinek. Otevřená data pomáhají tyto rozdíly pochopit a hledat vyváženější modely pro budoucnost.
-
-
+<br>
+<br>
+<br>
 Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time off] a z databáze [Eurostatu].
-
-V Národním katalogu otevřených dat najdete také příslušné datové sady otevřených dat za Českou republiku: [Sčítání 2021 - Zaměstnaní podle odvětví ekonomické činnosti a pohlaví] a [Zaměstnanci a průměrné hrubé měsíční mzdy podle odvětví]
+<br>
+<br>
+<br>
+Pro Českou republiku jsou k dispozici podrobnější informace v Národním katalogu otevřených dat v příslušných datových sadách:
+* [Sčítání 2021 - Zaměstnaní podle odvětví ekonomické činnosti a pohlaví] 
+* [Zaměstnanci a průměrné hrubé měsíční mzdy podle odvětví]
+<br>
+<br>
 
 [Sčítání 2021 - Zaměstnaní podle odvětví ekonomické činnosti a pohlaví]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2Fbb7a420298436739b2407817b1b5bdd7
 

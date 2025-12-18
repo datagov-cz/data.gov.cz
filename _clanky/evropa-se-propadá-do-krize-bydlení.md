@@ -16,21 +16,21 @@ Mezi lety 2015 a 2024 vzrostly průměrné ceny nemovitostí v EU o 58 %. Jde o 
 
 Klíčovým ukazatelem, který tuto disproporci odhaluje, je míra nadměrné zátěže náklady na bydlení. Ta ukazuje podíl lidí, kteří vydávají přes 40 % svého disponibilního příjmu jen na bydlení. Zatímco průměr EU je 8 %, v Řecku čelí této kritické zátěži až 29 % obyvatel. V České republice se tento podíl drží na 9,2 %. K tomu je nutné přičíst, že ve městech je situace s dostupností dramaticky horší než na venkově.
 
-{% include image.html url="../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-1.webp" description="Zdroj: data.europa.eu" %}
+{% include image.html url="../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-01.webp" description="Zdroj: data.europa.eu" %}
 
 ## Vlastnictví ustupuje nájmu
 Rostoucí náklady mění tradiční modely bydlení. Přestože je vlastnictví v Evropě dominantní, vysoké ceny nutí stále více lidí, zejména mladých, považovat nájem za dlouhodobou realitu, nikoli jen přechodnou fázi.
 
 Poměr vlastníků a nájemníků se přitom liší regionálně. Zatímco západní země jako Německo a Rakousko mají rozvinutý nájemní trh, země východní Evropy, jako Rumunsko nebo Slovensko, si díky masové privatizaci z počátku 90. let udržují přes 90 % vlastníků. U nás, v České republice, žije ve vlastním bydlení 75 % obyvatel, což znamená, že čtvrtina populace je závislá na nájemním trhu.
 
-{% include image.html url="../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-2.webp" description="Zdroj: data.europa.eu" %}
+{% include image.html url="../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-02.webp" description="Zdroj: data.europa.eu" %}
 
 ## Drahé účty důsledkem energetické náročnosti
 Finanční dostupnost nekončí u nájmu či hypotéky, ale zásadně ji ovlivňují i provozní náklady. Mnoho Evropanů stále žije v domech se špatnou izolací a vysokými energetickými nároky.
 
 Ironií je, že lidé, kteří by z úspor energie profitovali nejvíce, se do renovací pouštějí nejméně. Důsledkem je energetická chudoba, která v rámci EU postihuje asi 9,2 % obyvatel. V Česku sice pouze 5 % obyvatel uvedlo, že si nemůže adekvátně vytopit domov (zatímco v Bulharsku to bylo 20 %), ale celková zátěž vysokými cenami energií na domácnosti přetrvává.
 
-{% include image.html url="../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-3.webp" description="Zdroj: data.europa.eu" %}
+{% include image.html url="../přílohy/články/evropa-se-propadá-do-krize-bydlení/housing-03.webp" description="Zdroj: data.europa.eu" %}
 
 
 ## Kde hledat řešení

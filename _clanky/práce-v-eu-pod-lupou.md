@@ -3,7 +3,7 @@ layout: post
 detail: true
 title: "Práce v EU pod lupou"
 ref: práce-v-eu-pod-lupou
-image: ../přílohy/články/práce-v-eu-pod-lupou/eu-sectors.webp
+image: ../přílohy/články/práce-v-eu-pod-lupou/mapa-eu.webp
 author: jiří_kaňa
 date: 2025-12-17 07:00:00 +02:00
 lang: cs

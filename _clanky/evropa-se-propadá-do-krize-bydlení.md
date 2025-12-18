@@ -48,9 +48,8 @@ Pro Českou republiku jsou k dispozici podrobnější informace v Národním kat
 <br>
 <br>
 
-[Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F9de24c164e3013af660bc42b0839e1b4
-"Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)"
+[Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F9de24c164e3013af660bc42b0839e1b4 "Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)"
 [Domácnosti podle postavení osoby v čele a užívání bytu]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00025593%2Fe58876fba3ad911e8169fb147aab18e5 "Domácnosti podle postavení osoby v čele a užívání bytu"
-[Míra materiální deprivace podle typu domácností]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdat "Míra materiální deprivace podle typu domácností"
+[Míra materiální deprivace podle typu domácností]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F59cf8888507356456783717840d86d14 "Míra materiální deprivace podle typu domácností"
 [Exploring housing trends with open data]: https://data.europa.eu/en/publications/datastories/exploring-housing-trends-open-data "Exploring housing trends with open data"
 [Eurostatu]: https://ec.europa.eu/eurostat/databrowser/view/prc_hpi_a/default/table?lang=en "Eurostat"

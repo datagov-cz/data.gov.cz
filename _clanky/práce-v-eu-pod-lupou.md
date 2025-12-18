@@ -41,6 +41,7 @@ Neexistuje jednotný „evropský“ model pracovního života. Rozdíly v zamě
 Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time off] a z databáze [Eurostatu].
 <br>
 <br>
+<br>
 Pro Českou republiku jsou k dispozici podrobnější informace v Národním katalogu otevřených dat v příslušných datových sadách:
 * [Sčítání 2021 - Zaměstnaní podle odvětví ekonomické činnosti a pohlaví] 
 * [Zaměstnanci a průměrné hrubé měsíční mzdy podle odvětví]

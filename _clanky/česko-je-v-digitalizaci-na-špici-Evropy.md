@@ -12,6 +12,7 @@ Výsledky mezinárodního hodnocení EU Open Data Maturity Report (ODMR) za loň
 <!--more-->
 <BR>
 <center><span style="background-color:#d8eeff;border-radius:10px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://data.europa.eu/sites/default/files/2025-12/2025_odm_report_5.pdf" target="_blank">PŘEČÍST CELOU STUDII</a></span></center>
+<BR>
 
 {% include image.html url="../přílohy/články/česko-je-v-digitalizaci-na-špici-Evropy/2016-2025-odmr-cz.webp" description="Zdroj: Digitální a informační agentura" %}
 <BR>
@@ -42,7 +43,6 @@ I když dominuje dopad, Česko vykazuje stabilitu ve všech 4 pilířích.
 -	<b>API pro integraci</b>: Rozhraní API jsou neviditelným motorem služeb 21. století, díky nimž spolu systémy „mluví“ bez lidské pomoci. Ačkoliv u nás vznikla síť univerzálních konektorů, které už dnes pohání aplikace jako eDoklady nebo Portál občana, v celoplošném nasazení má stát stále značné dluhy. Právě nedostatečná připravenost úřadů na napojení API pro sdílení otevřených dat je u nás hlavním důvodem, proč zatím stoprocentně neplníme kvalitativní požadavky na <a href="https://data.gov.cz/články/vše-co-jste-chtěli-vědět-o-hvd" target="_blank">HVDs</a>. Cílem je stav, kdy integrace a publikace dat přes API nebude výjimkou, ale standardem napříč celou státní správou, a digitální služby státu budou fungovat stejně hladce jako moderní internetové bankovnictví. 
 -	<b>Governance</b>: Digitální a informační agentura se v průběhu let stala koordinátorem a věcným gestorem, který dává úřadům systém pravidel, standardů a doporučení, jak mají data sdílet a publikovat. Cílem agentury je tak zajistit funkční, stabilní a propojený ekosystém pro publikaci a sdílení nejen otevřených dat. 
 <BR>
-<BR>
 
 <b>Kvalita (88,9 %)</b>: Přestože jde o nejnáročnější oblast kvůli přísným evropským standardům pro katalogizaci dat (DCAT-AP), Česko se i zde drží nad průměrem EU (83,4 %). 
 <BR>
@@ -62,7 +62,8 @@ I když dominuje dopad, Česko vykazuje stabilitu ve všech 4 pilířích.
   <div style="padding:2px 8px;"><b>POLITIKA</b> (Policy): Hodnotí existenci národních strategií, robustnost legislativního rámce a míru koordinace aktivit mezi jednotlivými úřady</div>
   <div style="padding:2px 8px;"><b>PORTÁL</b> (Portal): Zaměřuje se na uživatelskou přívětivost, pokročilé funkce vyhledávání a schopnost národní platformy efektivně propojovat poskytovatele s uživateli dat.</div>
   <div style="padding:2px 8px;"><b>KVALITA</b> (Quality): Měří soulad metadat s mezinárodními standardy a využívání automatizovaných nástrojů pro zajištění strojové čitelnosti a aktuálnosti datových sad</div>
-   <div style="padding:2px 8px;"><b>DOPAD</b> (Impact): Zkoumá reálný přínos otevřených dat pro společnost, ekonomiku a životní prostředí skrze monitoring konkrétních projektů a úspěšných aplikací.</div>
+   <div style="padding:2px 8px;"><b>DOPAD</b> (Impact): Zkoumá reálný přínos otevřených dat pro společnost, ekonomiku a životní prostředí skrze monitoring konkrétních projektů a úspěšných aplikací.
+   </div>
 </div>
 
 
@@ -127,7 +128,7 @@ Dosažení vysoké pozice evropského benchmarku je úspěchem spolupráce např
 
 ## Jak se měří vyspělost v oblasti otevřených dat?
 Zpráva o vyspělosti otevřených dat je komplexní hodnocení sestavované portálem 
-<a href="https://data.europa.eu" target="_blank">data.europa.eu</a>, který provozuje Evropská komise. Sleduje úroveň otevřených dat ve všech 27 členských státech EU, zemích ESVO (Island, Norsko, Švýcarsko) a kandidátských zemích (Albánie, Bosna a Hercegovina, Černá Hora, Severní Makedonie, Srbsko a Ukrajina). Metodika se zaměřuje na čtyři klíčové pilíře: <B>Politiku, Portál, Dopad a Kvalitu</B>. Cílem není jen sestavení žebříčku, ale motivace zemí k efektivnímu využívání datového potenciálu pro rozvoj ekonomiky i celé společnosti.
+<a href="https://data.europa.eu" target="_blank"><b>data.europa.eu</a></b>, který provozuje Evropská komise. Sleduje úroveň otevřených dat ve všech 27 členských státech EU, zemích ESVO (Island, Norsko, Švýcarsko) a kandidátských zemích (Albánie, Bosna a Hercegovina, Černá Hora, Severní Makedonie, Srbsko a Ukrajina). Metodika se zaměřuje na čtyři klíčové pilíře: <B>Politiku, Portál, Dopad a Kvalitu</B>. Cílem není jen sestavení žebříčku, ale motivace zemí k efektivnímu využívání datového potenciálu pro rozvoj ekonomiky i celé společnosti.
 
 
 <br>

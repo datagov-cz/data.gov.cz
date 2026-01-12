@@ -128,7 +128,7 @@ Dosažení vysoké pozice evropského benchmarku je úspěchem spolupráce např
 
 ## Jak se měří vyspělost v oblasti otevřených dat?
 Zpráva o vyspělosti otevřených dat je komplexní hodnocení sestavované portálem 
-<a href="https://data.europa.eu" target="_blank"><b>data.europa.eu</a></b>, který provozuje Evropská komise. Sleduje úroveň otevřených dat ve všech 27 členských státech EU, zemích ESVO (Island, Norsko, Švýcarsko) a kandidátských zemích (Albánie, Bosna a Hercegovina, Černá Hora, Severní Makedonie, Srbsko a Ukrajina). Metodika se zaměřuje na čtyři klíčové pilíře: <B>Politiku, Portál, Dopad a Kvalitu</B>. Cílem není jen sestavení žebříčku, ale motivace zemí k efektivnímu využívání datového potenciálu pro rozvoj ekonomiky i celé společnosti.
+<a href="https://data.europa.eu" target="_blank"><b>data.europa.eu</b></a>, který provozuje Evropská komise. Sleduje úroveň otevřených dat ve všech 27 členských státech EU, zemích ESVO (Island, Norsko, Švýcarsko) a kandidátských zemích (Albánie, Bosna a Hercegovina, Černá Hora, Severní Makedonie, Srbsko a Ukrajina). Metodika se zaměřuje na čtyři klíčové pilíře: <B>Politiku, Portál, Dopad a Kvalitu</B>. Cílem není jen sestavení žebříčku, ale motivace zemí k efektivnímu využívání datového potenciálu pro rozvoj ekonomiky i celé společnosti.
 
 
 <br>

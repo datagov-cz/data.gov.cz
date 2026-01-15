@@ -97,7 +97,7 @@ Právě stoprocentní hodnocení v kategorii <b>Dopad</b> se nejlépe zrcadlí v
 
 <div style="background:#d8eeff; padding:14px; margin-bottom:10px; border-radius:8px; display:flex; align-items:center; gap:12px;">
   <div style="font-size:16px; line-height:1.4;">
-    <strong><a href="https://https://www.mpsv.cz/vyhledavani-volnych-pracovnich-mist-pro-cizince" target="_blank">Práce pro cizince</a></strong><br>Aplikace MPSV efektivně páruje volná pracovní místa s vhodnými uchazeči ze zahraničí, čímž zrychluje jejich integraci na českém trhu práce.
+    <strong><a href="https://www.mpsv.cz/vyhledavani-volnych-pracovnich-mist-pro-cizince" target="_blank">Práce pro cizince</a></strong><br>Aplikace MPSV efektivně páruje volná pracovní místa s vhodnými uchazeči ze zahraničí, čímž zrychluje jejich integraci na českém trhu práce.
   </div>
 </div>
 

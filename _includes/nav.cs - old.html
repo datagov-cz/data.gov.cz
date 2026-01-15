@@ -8,7 +8,15 @@
           <a href="/">Portál o datech</a>
         </div>
         {% endif %}
-               </gov-branding>
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+	    {% for p in pages %}
+		  {% if p.lang != page.lang %}
+        <div class="language">
+          <a href="{{ p.url }}">English</a>
+        </div>      
+		  {% endif %}
+	    {% endfor %}
+        </gov-branding>
         <gov-nav wcag-label="Hlavní navigace">
         {% if page.ref == 'DataManagement' %}
             <gov-nav-item class="active">

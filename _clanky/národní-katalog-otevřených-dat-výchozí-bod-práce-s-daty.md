@@ -130,7 +130,7 @@ Z toho zase zpětně těží NKOD, protože může využít funkcionality původ
 *Tento [článek byl publikován][Egovernment-článek] také v čísle 2/2021 [magazínu Egovernment][Egovernment].*
 
 [POD]: / "Portál otevřených dat"
-[106]: https://www.zakonyprolidi.cz/cs/1999-106#p3-11 "§ 3 odst. 11 zákona č. 106/1999 Sb. o svobodném přístupu k informacím"
+[106]: https://www.e-sbirka.cz/sb/1999/106?zalozka=text "§ 3 odst. 11 zákona č. 106/1999 Sb. o svobodném přístupu k informacím"
 [kvalita]: /datová-kvalita/ "Datová kvalita"
 [DCAT-AP-CZ]: https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/ "Otevřená formální norma "Rozhraní katalogů otevřených dat: DCAT-AP-CZ""
 [LKOD-MIN]: https://github.com/datagov-cz/lkod-min "Minimalistická implementace lokálního katalogu otevřených dat"

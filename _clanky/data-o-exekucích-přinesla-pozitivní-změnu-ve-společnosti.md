@@ -97,7 +97,7 @@ Analýzy na základě těchto dat by měly sloužit i jako podklady pro další 
 [link_csu_struktura]: https://vdb.czso.cz/vdbvo2/faces/index.jsf?page=vystup-objekt&z=T&f=TABULKA&katalog=33156&pvo=DEMD003&str=v1525&c=v3~2__RP2021MP12DP31#w= "Struktura obyvatelstva ČR"
 [link_csu_obce]: https://www.czso.cz/csu/czso/statisticka-data-pro-uzemne-analyticke-podklady "Statistická data pro územní a analytické podklady"
 [link_nkod]: https://data.gov.cz/datov%C3%A9-sady?poskytovatel=https%3A%2F%2Frpp-opendata.egon.gov.cz%2Fodrpp%2Fzdroj%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci%2F70940517 "Národní katalog otevřených dat: Exekutorská komora"
-[link_novela]: https://www.zakonyprolidi.cz/cs/2021-286 "Novela exekučního řádu"
+[link_novela]: https://www.e-sbirka.cz/sb/2021/286/2024-01-01 "Novela exekučního řádu"
 [link_exekomora_pdf]: https://statistiky.ekcr.info/o-projektu "'Otevřená data o exekucích'"
 [link_mapa_exekuci]: http://mapaexekuci.cz/ "Mapa exekucí"
 [link_aktualne]: https://zpravy.aktualne.cz/domaci/chude-cesko/r~e8ce002ca06411e890620cc47ab5f122/ "Chudé Česko"

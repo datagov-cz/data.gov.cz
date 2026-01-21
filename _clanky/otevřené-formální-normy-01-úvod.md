@@ -151,8 +151,8 @@ Ministerstvo vnitra publikovalo OFN pro 4 datové sady - [Turistické cíle][tur
 Do tvorby OFN se může zapojit libovolný poskytovatel či zpracovatel dat pomocí [GitHubu][ofn-gh].
 Více informací naleznete na [webu OFN][ofn].
 
-[ofn-def]: https://www.zakonyprolidi.cz/cs/1999-106#p3a-3 "Definice Otevřené formální normy"
-[ofn-splňování]: 	https://www.zakonyprolidi.cz/cs/1999-106#p4b-1 "Otevřená data mají splňovat OFN"
+[ofn-def]: https://www.e-sbirka.cz/sb/1999/106?zalozka=text "Definice Otevřené formální normy"
+[ofn-splňování]: 	https://www.e-sbirka.cz/sb/1999/106?zalozka=text "Otevřená data mají splňovat OFN"
 [ofn]: https://ofn.gov.cz "Otevřené formální normy"
 [ofn-gh]: https://github.com/datagov-cz/otevrene-formalni-normy "Otevřené formální normy na GitHubu"
 [mapy-cz]: https://mapy.cz "Mapy.cz"

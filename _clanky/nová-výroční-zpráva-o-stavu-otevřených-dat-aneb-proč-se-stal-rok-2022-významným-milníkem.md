@@ -73,7 +73,7 @@ Výrazným milníkem pro další osud otevřených dat je i zřízení [Digitál
 [Královéhradecký kraj]: https://www.datakhk.cz/ "Data KHK" 
 [Statutární město Brno]: https://data.brno.cz/ "Data Brno"
 [novelou zákona č. 106/1999 Sb.]: /články/implementace-směrnice-o-otevřených-datech "Implementace směrnice o otevřených datech"
-[zákon o správě dat veřejného sektoru]: https://www.zakonyprolidi.cz/monitor/7472527.htm "Zákony pro lidi: Věcný záměr zákona o správě dat"
+[zákon o správě dat veřejného sektoru]: https://www.odok.gov.cz/portal/veklep/material/KORND4KLAAG6/ "Návrh zákona o správě dat"
 [projektu]: /kodi/ "Výstupy projektu KODI"
 [Portálu otevřených dat]: /vzdělávání/ "Vzdělávání"
 [Digitální a informační agentury]: https://www.dia.gov.cz/ "Digitální a informační agentura"

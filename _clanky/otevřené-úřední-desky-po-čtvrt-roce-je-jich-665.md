@@ -101,7 +101,7 @@ Tyto zkušenosti by tak mohly otevřít cestu k rozsáhlé publikaci otevřenýc
 [edesky]: https://edesky.cz/ "edesky.cz"
 [Mapa samosprávy]: https://www.facebook.com/mapasamospravy/ "Facebook Mapa samosprávy"
 [Nová éra úředních desek]: nová-éra-úředních-desek "Nová éra úředních desek"
-[zákona č. 261/2021 Sb.]: https://www.zakonyprolidi.cz/cs/2021-261 "zákon č. 261/2021 Sb."
+[zákona č. 261/2021 Sb.]: https://www.e-sbirka.cz/sb/2021/261?zalozka=text "zákon č. 261/2021 Sb."
 [OFN]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN"
 [školení]: /vzdělávání "Vzdělávání"
 [nahrávka workshopu]: https://www.youtube.com/watch?v=ZGsuMmEvPcA&feature=youtu.be "Nahrávka workshopu na Youtube"

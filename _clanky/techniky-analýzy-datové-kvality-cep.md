@@ -215,7 +215,7 @@ Na tyto úvahy může navázat analýza vzniku chyb – v případě tohoto data
 [link_phd_pejcoch]: https://vskp.vse.cz/44713_komplexni-rizeni-kvality-dat-a-informaci "Komplexní řízení kvality dat a informací – dizertační práce"
 [link_cep]: https://www.isvavai.cz/cep/ "Centralní evidence projektů IS VaVaI"
 [link_isvavai]: https://www.isvavai.cz "IS VaVaI"
-[link_narizeni]: https://www.zakonyprolidi.cz/cs/2009-397 "Nařízení vlády č. 397/2009 Sb., o informačním systému výzkumu, experimentálního vývoje a inovací"
+[link_narizeni]: https://www.e-sbirka.cz/sb/2009/397?zalozka=text "Nařízení vlády č. 397/2009 Sb., o informačním systému výzkumu, experimentálního vývoje a inovací"
 [link_od_cep]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00006599%2F841711772 "Datová sada CEP"
 [link_od_cep_schema]: https://www.isvavai.cz/dokumenty/open-data/CEP-projekty.csv-metadata.json "Datové schéma CEP"
 [link_starfos]: https://www.starfos.cz "STARFOS"

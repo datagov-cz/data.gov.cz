@@ -8,7 +8,7 @@ lang: cs
 Na této stránce najdete výstupy projektu KODI - [Rozvoj datových politik v oblasti zlepšování kvality a interoperability dat veřejné správy](https://www.esfcr.cz/projekty-opz/-/asset_publisher/ODuZumtPTtTa/content/rozvoj-datovych-politik-v-oblasti-zlepsovani-kvality-a-interoperability-dat-verejne-spravy) - OPZ CZ.03.4.74/0.0/0.0/15_025/0013983.
 
 ## Cíl 1 - Zvýšení počtu orgánů veřejné moci poskytujících otevřená data
-C1V1 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
+C1V1 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou hodnotou)
 : Zrušen
 
 C1V2 - Analýza legislativy upravující informační systémy veřejné správy a další způsoby poskytování informací
@@ -20,7 +20,7 @@ C1V3 - Spolupráce na implementaci novely PSI směrnice (2003/98/ES)
 C1V4 - Návrh novelizace legislativy upravující informační systémy veřejné správy
 : [Dokument](výstupy/C1V4.pdf)
 
-C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou socio-ekonomickou hodnotou)
+C1V5 - Analytické dokumenty sloužící jako podpora při tvorbě prováděcího předpisu ke směrnici EU č. 2019/1024 (Seznam datových sad s vysokou hodnotou)
 : Zrušen
 
 C1V6 - Analytické dokumenty identifikující právní zakotvení ČR, příslušné subjekty a stav uveřejnění

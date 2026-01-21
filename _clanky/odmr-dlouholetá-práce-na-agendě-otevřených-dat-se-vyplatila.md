@@ -69,7 +69,7 @@ Pro kategorii, v které se umístila i Česká republika, Komise doporučuje:
 3.	Sledovat pokrok, který dosahují a pomáhat jim odstraňovat překážky bránící zveřejňování údajů jako otevřená data.
 4.	Zajistit, aby se vytvořené školení a metodické materiály skutečně využívaly. Poskytovatelé by se měli zaměřit na vzdělávání svých interních pracovníků.
 5.	Podporovat udržitelné řešení v oblasti opětovného využívání otevřených dat. Posunout se od formátů zaměřených na kreativitu (např. hackathony) k formátům, které nabízejí příležitosti pro dlouhodobější zapojení. Zajistit financování pro vítězné projekty.
-6.	Propagovat a sledovat, jak si vedou služby založené na otevřených datech.  Pro začátek zaměřit zdroje na relevantní oblasti a prioritizovat využívání datových sad s vysokou socio-ekonomickou hodnotou. Dále pak rozvíjet rámec pro sdílení zkušeností mezi poskytovateli a uživateli. 
+6.	Propagovat a sledovat, jak si vedou služby založené na otevřených datech.  Pro začátek zaměřit zdroje na relevantní oblasti a prioritizovat využívání datových sad s vysokou hodnotou. Dále pak rozvíjet rámec pro sdílení zkušeností mezi poskytovateli a uživateli. 
 7.	Zahrnout do portálu funkce, které umožňují online interakci mezi poskytovateli dat a jejich uživateli a propojení příkladů opětovného využití dat s konkrétní datovou sadou. 
 8.	Monitorovat přístupy k portálu a jeho používání a rozšířit si povědomí o jeho typických uživatelích.
 9.	Akcentovat dodržování Směrnice o otevřených datech. Mimo jiné podporovat publikování tzv. real-time dat s přihlédnutím k finanční náročnosti tohoto procesu. Připravovat se na implementaci požadavků z DGA. 

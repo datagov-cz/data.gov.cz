@@ -1,18 +1,18 @@
 ---
 layout: post
 detail: true
-title: "Vše, co jste chtěli vědět o HVD a (ne)báli se zeptat"
+title: "Vše, co jste chtěli vědět o HVDs a (ne)báli se zeptat"
 ref: vše-co-jste-chtěli-vědět-o-hvd
 image: ../přílohy/články/vše-co-jste-chtěli-vědět-o-hvd/HVD1.webp
 author: lenka_kováčová
 date: 2024-07-19 07:00:00 +02:00
 lang: cs
 ---
-Na začátku června 2024 vešla v platnost povinnost publikovat tzv. data s vysokou hodnotou (HVD - high value data) – data, jejichž opětovné použití přináší významné výhody pro společnost, životní prostředí a ekonomiku. 
-Formou otázek a odpovědí vám, proto poskytujeme přehled souvislostí, které vám umožní HVD lépe pochopit a využít jejich potenciál.
+Na začátku června 2024 vešla v platnost povinnost publikovat tzv. data s vysokou hodnotou (high value datasets, HVDs) – data, jejichž opětovné použití přináší významné výhody pro společnost, životní prostředí a ekonomiku. 
+Formou otázek a odpovědí vám, proto poskytujeme přehled souvislostí, které vám umožní HVDs lépe pochopit a využít jejich potenciál.
 <!--more-->
 
-### Co jsou data s vysokou hodnotou, tzv. HVD?
+### Co jsou data s vysokou hodnotou, tzv. HVDs?
 
 Datové sady s vysokou hodnotu jsou informace veřejného sektoru, které v případě, že jsou zpřístupněné v otevřeném formátu a je možné je bez omezení využít, mají vysoký potenciál:
 
@@ -26,7 +26,7 @@ Legislativně je zaštiťuje [prováděcí nařízení Evropské komise 2023/138
 
 ### Kterých dat se povinnost týká?
 
-Seznam datových sad, které naplňují podstatu HVD je definován [prováděcím nařízením Evropské komise 2023/138] k tzv. [Směrnici o otevřených datech].
+Seznam datových sad, které naplňují podstatu HVDs je definován [prováděcím nařízením Evropské komise 2023/138] k tzv. [Směrnici o otevřených datech].
 Jde o data v 6 tematických kategoriích:
 
 -	geoprostorové údaje;
@@ -43,9 +43,9 @@ Pro větší přehled DIA ve spolupráci s poskytovateli otevřených dat zpraco
 Tuto analýzu si můžete [stáhnout na webu data.gov.cz].
 Jedná se o dokument, který je v rámci procesu zveřejňování HVS ještě průběžně aktualizován. 
 
-### V čem se HVD liší od *klasických* otevřených dat?
+### V čem se HVDs liší od *klasických* otevřených dat?
 
-Na HVD jsou kladeny speciální kvalitativní požadavky:
+Na HVDs jsou kladeny speciální kvalitativní požadavky:
 
 1.	**Metadata** musí respektovat upravený standard DCAT-AP, který je v českém prostředí zastoupen novou verzí [otevřené formální normy pro rozhraní katalogů otevřených dat].
     Společný metadatový profil pak zajišťuje interoperabilitu při vyhledávání těchto datových sad napříč členskými státy EU.
@@ -53,25 +53,25 @@ Na HVD jsou kladeny speciální kvalitativní požadavky:
 3.	**Licence** mají být na úrovni CC0, CC BY 4.0 nebo ekvivalentní.
 4.	Data musí být dostupná, až na výjimky, prostřednictvím **souboru ke stažení i API**, které musí být správně zdokumentováno a s uvedenou kontaktní osobou.
 
-### Jak najdete HVD v Národním katalogu otevřených dat?
+### Jak najdete HVDs v Národním katalogu otevřených dat?
 
-Data od poskytovatelů, kteří pro svá HVD upravili metadatový standard, jsou označené jako HVD na titulní stránce katalogu i v metadatovém záznamu příslušné datové sady.
-V případě, že chcete vyhledávat jen ve skupině HVD, doporučujeme funkci rozšířeného vyhledávání.
+Data od poskytovatelů, kteří pro svá HVDs upravili metadatový standard, jsou označené jako HVDs na titulní stránce katalogu i v metadatovém záznamu příslušné datové sady.
+V případě, že chcete vyhledávat jen ve skupině HVDs, doporučujeme funkci rozšířeného vyhledávání.
 V metadatech je taktéž datová sada spárována prostřednictvím ELI s příslušným právním předpisem.
-HVD ze všech členských zemí Evropské unie se sdružují v [Evropském datovém portálu].
+HVDs ze všech členských zemí Evropské unie se sdružují v [Evropském datovém portálu].
 
 ### Plánuje se rozšíření seznamu kategorií?
 
 Ano.  Počítá se s tím, že tematický okruh dat se bude v budoucnu rozšiřovat v souvislosti s vyvíjejícím se technologickým i společenským prostředím, aby poskytovaná data byla relevantní a podporovala inovace v různých sektorech.
 V roce 2023 proto Evropská komise vydala [studii], která definovala nové možné kategorie k otevření.
-Ta navrhuje, aby se v další vlně HVD otevřely data v kategoriích: ohrožení klimatu; energie; finance; vláda a veřejná správa; zdraví; justice a právo; jazyk.
+Ta navrhuje, aby se v další vlně HVDs otevřely data v kategoriích: ohrožení klimatu; energie; finance; vláda a veřejná správa; zdraví; justice a právo; jazyk.
 
-### Proč vlastně legislativní úprava pro HVD vznikla?
+### Proč vlastně legislativní úprava pro HVDs vznikla?
 
 Výzkum a zkušenosti ukazují, že aby data veřejného sektoru sloužila lépe občanům, měla by být dostupná ve formátu otevřených dat.
 Technické, právní a finanční překážky na stranách poskytovatelů i uživatelů však často vedou k tomu, že tato data nejsou v Evropě dostatečně využívána ani publikována.
 S ohledem na možnosti a kapacity veřejné správy napříč Evropou byly stanoveny prioritní oblasti, které mají zásadní potenciál pro malé a střední podniky a start-upy, které kvůli nedostatečným kapacitám a zdrojům čelí problémům s přístupem k těmto datům a jejich kvalitou.
-Povinnosti spojené s HVD tak pomůžou vyrovnat podmínky pro tento typ businessu ve srovnání s velkými technologickými společnostmi, pro které náklady na získání dat nepředstavují významnější překážku.
+Povinnosti spojené s HVDs tak pomůžou vyrovnat podmínky pro tento typ businessu ve srovnání s velkými technologickými společnostmi, pro které náklady na získání dat nepředstavují významnější překážku.
 
 
 [prováděcí nařízení Evropské komise 2023/138]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32023R0138 "prováděcí nařízení Evropské komise 2023/138"

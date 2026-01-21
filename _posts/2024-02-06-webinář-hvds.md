@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Webinář Publikace datových sad s vysokou socio-ekonomickou hodnotou
+title: Webinář Publikace datových sad s vysokou hodnotou
 detail: true
 ref: WebinarHVDs2024
 lang: cs
 author: lenka_kováčová
 ---
 
-Dne 20.2.2024 od 13:30 do 15:00 se online uskuteční webinář zaměřený na novinky týkající se publikace datových sad s vysokou socio-ekonomickou hodnotou.
+Dne 20.2.2024 od 13:30 do 15:00 se online uskuteční webinář zaměřený na novinky týkající se publikace datových sad s vysokou hodnotou.
 Webinář je primárně doporučen pro poskytovatelé otevřených dat, uvítáme ale i jejich uživatelé.  
 <!--more-->
 

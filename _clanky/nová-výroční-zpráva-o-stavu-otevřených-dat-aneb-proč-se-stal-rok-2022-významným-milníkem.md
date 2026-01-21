@@ -47,7 +47,7 @@ Tým národní koordinátorky pro otevřená data se domnívá, že k nárůstu 
 Kromě povinnosti zveřejnit úřední desky formou otevřených dat, dochází postupně i k plnění povinnosti publikovat veřejné registry, rejstříky, seznamy a evidence vedené ze zákona.
 Tato povinnost v plném rozsahu začne platit až od roku 2024, nicméně již v roce 2022 začaly resorty za podpory našeho týmu analyzovat, na co všechno tato povinnost dopadne a jaká data jsou již zveřejněna. 
 V září 2022 Česká republika transponovala [novelou zákona č. 106/1999 Sb.], o svobodném přístupu k informacím, do českého právního řádu evropskou směrnici o otevřených datech a opakovaném použití informací veřejného sektoru. 
-Tato zákonná úprava přinesla například povinnost publikovat dynamická data ve formě otevřených dat, povinnost zveřejňovat datové soubory s vysokou socio-ekonomickou hodnotou jako otevřená data či zdůraznění povinnosti publikovat data dle otevřených formálních norem.
+Tato zákonná úprava přinesla například povinnost publikovat dynamická data ve formě otevřených dat, povinnost zveřejňovat datové soubory s vysokou hodnotou jako otevřená data či zdůraznění povinnosti publikovat data dle otevřených formálních norem.
 Na evropské úrovni bylo v květnu 2022 přijato nařízení o evropské správě dat (tzv. Data Governance Act), které umožní opětovné užití informací veřejného sektoru s nějakou formou právní ochrany, jako je například ochrana osobních údajů, práv duševního vlastnictví nebo obchodního tajemství.
 V této souvislosti je v České republice připravován [zákon o správě dat veřejného sektoru] který by měl vedle otevřených dat zavést nový způsob sdílení dat např. pro vědecké účely, tzv. řízený přístup k datům.
 
@@ -73,7 +73,7 @@ Výrazným milníkem pro další osud otevřených dat je i zřízení [Digitál
 [Královéhradecký kraj]: https://www.datakhk.cz/ "Data KHK" 
 [Statutární město Brno]: https://data.brno.cz/ "Data Brno"
 [novelou zákona č. 106/1999 Sb.]: /články/implementace-směrnice-o-otevřených-datech "Implementace směrnice o otevřených datech"
-[zákon o správě dat veřejného sektoru]: https://www.zakonyprolidi.cz/monitor/7472527.htm "Zákony pro lidi: Věcný záměr zákona o správě dat"
+[zákon o správě dat veřejného sektoru]: https://www.odok.gov.cz/portal/veklep/material/KORND4KLAAG6/ "Návrh zákona o správě dat"
 [projektu]: /kodi/ "Výstupy projektu KODI"
 [Portálu otevřených dat]: /vzdělávání/ "Vzdělávání"
 [Digitální a informační agentury]: https://www.dia.gov.cz/ "Digitální a informační agentura"

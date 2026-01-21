@@ -45,7 +45,7 @@ Tematické kategorie, ze kterých se bude vytvářet seznam datových souborů s
 * Mobilita 
 
 
-Konkrétní seznam datových souborů bude vybrán se zaměřením na datové sady s významným socio-ekonomickým přínosem a současně s pozitivním dopadem na oblast životního prostředí, samotného  uživatele využívající aplikace postavené na těchto datových souborech v každodenním životě. Současně na těchto datech postavené služby a produkty budou novým zdrojem příjmů,  inovativních služeb a nových produktů. Výběr datových souborů s vysokou socio-ekonomickou hodnotou bude určen samostatným právním aktem. 
+Konkrétní seznam datových souborů bude vybrán se zaměřením na datové sady s významným socio-ekonomickým přínosem a současně s pozitivním dopadem na oblast životního prostředí, samotného  uživatele využívající aplikace postavené na těchto datových souborech v každodenním životě. Současně na těchto datech postavené služby a produkty budou novým zdrojem příjmů,  inovativních služeb a nových produktů. Výběr datových souborů s vysokou hodnotou bude určen samostatným právním aktem. 
 
 ## Postup a další kroky 
 

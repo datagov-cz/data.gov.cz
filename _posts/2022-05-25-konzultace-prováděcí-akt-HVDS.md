@@ -7,7 +7,7 @@ lang: cs
 author: lenka_kováčová
 ---
 
-Evropská komise [spustila] veřejné konzultace k prováděcímu aktu o datových sadách s vysokou socio-ekonomickou hodnotou.
+Evropská komise [spustila] veřejné konzultace k prováděcímu aktu o datových sadách s vysokou hodnotou.
 Tzv. High Value Datasets budou publikovány jako otevřená data napříč všemi členskými státy EU v šesti kategoriích - geoprostorové údaje, pozorování Země a životní prostředí, meteorologie, statistika, společnosti a vlastnictví společností, mobilita.
 Zapojit se můžete do 21. června 2022 přímo na [stránkách] Komise.
 

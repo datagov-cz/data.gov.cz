@@ -21,7 +21,7 @@ Požáry v Českosaském Švýcarsku opět důrazně připomněly potřebu sledo
 ### Budoucnost
 Meteorologická data jsou bezpochyby data s dalším velkým potenciálem - ať již přímo ekonomickým nebo dalším. Což mimochodem znamená promyslet politiku přístupnosti těchto dat. Např. pro ČHMÚ je to otázka, zda zůstanou vůbec relevantním zdrojem. Již dnes i české aplikace berou data “od Norů”, tj. z Norského meteorologického institutu, např. [aplikace Klara][link_klara] od stejných autorů, jako jsou “oficiální” aplikace ČHMÚ [Meteor][link_meteor] a [Aladin][link_aladin]. Norský zdroj se používá právě proto, že [poskytuje data zdarma pro celou Zemi][link_norove]. Asi největší meteorologická aplikace s českými kořeny - [Windy.com][link_windy] - kombinuje velké množství zdrojů, ale [ČHMÚ mezi nimi není][link_windy_sources].
 
-Meteorologická data byla zařazena mezi [veřejně přístupná data s vysokou socio-ekonomickou hodnotou v připravované regulaci Evropské komise][link_komise], rýsuje se zde tedy možnost, že právě touto cestou se česká meteorologická data více otevřou.
+Meteorologická data byla zařazena mezi [veřejně přístupná data s vysokou hodnotou v připravované regulaci Evropské komise][link_komise], rýsuje se zde tedy možnost, že právě touto cestou se česká meteorologická data více otevřou.
 
 Dalším směrem jsou levné amatérské stanice, které dokáží pokrýt i místa, která profesionální (veřejné) instituce pokrýt nedokáží - zde největší je [Sensor.community][link_sensor], která se rozrůstá i v ČR a už dnes poskytuje data z více míst než ČHMÚ, samozřejmě kvalita dat je zde nižší. Ale pro mnoho účelů stačí “dostatečně dobrá data”, není nutné mít velmi kvalitní.
 

@@ -65,5 +65,5 @@ Jde například o informace spadající pod působnost zákona č. 123/1998 Sb. 
 Doufáme, že tato klasifikace dat veřejného sektoru může pomoci v rozhodnutí, zda povinné subjekty spravují nějaké informace, ke kterým se nově vztahuje povinnost poskytovat je jako otevřená data.
 Závěrem připomínáme, že odbor Hlavního architekta eGovernmentu MVČR nabízí podporu a pořádá školení, které se i těmto otázkám věnují.
 
-[novela]: https://www.zakonyprolidi.cz/cs/2021-261 "Změnová novela č. 261/2021 Sb."
+[novela]: https://www.e-sbirka.cz/sb/2021/261/2026-01-01?f=261%2F2021&zalozka=text "Změnová novela č. 261/2021 Sb."
 [povinnost]: nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat"

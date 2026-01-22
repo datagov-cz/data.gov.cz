@@ -20,13 +20,25 @@
 			</gov-nav-item>
 			<gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
 				Vzdělávání
-			</gov-nav-item>  
-			<gov-nav-item href="{{ "/články" | relative_url}}">
-				Články
-			</gov-nav-item>
+			</gov-nav-item> 
+		
+			<gov-nav-dropdown>
+				<span slot="label">Aktuality</span>
+				<ul slot="dropdown">
+				<li>
+					<a href="/články">Články</a>
+				</li>
+				<li>
+					<a href="/konference">Konference</a>
+				</li>
+				</ul>
+			</gov-nav-dropdown>
+
 			<gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
 				Datová kvalita
 			</gov-nav-item>
+
+
 			<gov-nav-dropdown>
 				<span slot="label">Národní katalog otevřených dat</span>
 				<ul slot="dropdown">
@@ -47,6 +59,8 @@
 				</li>
 				</ul>
 			</gov-nav-dropdown>
+
+
 			<gov-nav-dropdown>
 				<span slot="label">Další</span>
 				<ul slot="dropdown">

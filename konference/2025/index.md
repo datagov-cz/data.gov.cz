@@ -20,25 +20,49 @@ lang: cs
 
 **Program konference**
 
-<div class="gov-table" size="s">
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>HLAVNÍ PROGRAM</th>
-             </tr>
-        </thead>
+<div class="table" >
+    <table class="ck-table-resized" style="border-style:none;">
         <tbody>
             <tr>
-                <td class="gov-table--nowrap">
-                <B>9:00</B>
+                <td>
+                    &nbsp;
                 </td>
-                <td class="gov-table--nowrap">
-                        Novomoravská 34  </td>         
+                <td>
+                    <B>HLAVNÍ PROGRAM</B>
+                </td>
             </tr>
-      </tbody>
-  </table>
-</div>
+            <tr>
+                <td>
+                        <B>9:00</B>
+                </td>
+                <td>
+                    <B>ÚVOD: Trendy v datech veřejného sektoru</B>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+                <td>
+                    <p>
+                      Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie.
+                    </p>
+                    <ul>
+                        <li>
+                            <small><strong>Martin Mesršmíd</strong><i> – ředitel Digitální a informační agentury</i>
+                        </li>
+                        <li><strong>Martin Skovbjerg Jensen</strong> <i>– Dánská agentura pro digitální vládnutí</i>
+                        </li>
+                        <li>
+                            <strong>Martin Nečaský</strong><i>– Matematicko-fyzikální fakulta UK</small></i>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+
 
 
 

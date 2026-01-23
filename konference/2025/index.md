@@ -49,20 +49,29 @@ lang: cs
                   <br> – <b>Martin Nečaský</b><i> – Matematicko-fyzikální fakulta UK</i></small>
                  </td>
             </tr>
+            <tr>
+                  <td align="right">
+           	<b>10:00</B>
+                </td>
+                <td align="left">
+                  <b>SPRÁVA DAT: Od standardů k evropskému prostoru</b> 
+                 </td>
+            </tr>
+             <tr>
+                <td></td>
+                <td align="left">
+                  První odborný blok se věnuje praktické stránce správy dat. Probereme naplňování minimálních standardů, propojování prostorových dat i unikátní potenciál archivních záznamů. Dotkneme se také legislativních novinek, jako je nahrazování úředního podpisu, a nahlédneme do budoucna skrze European Health Data Space – ambiciózní projekt pro sdílení zdravotnických dat v rámci celé EU.
+                  <br><small> – Naplňování standardů – <b>Libor Drlík</b> – <i>DIA</i> 
+                  <br>– Geoportál ČR – <b>Jitka Faugnerová</b> – <i>CENIA</i>
+                  <br> – Archivní data jako národní kapitál – <b>Zbyšek Stodůlka</b> – <i>Národní archiv</i>
+                  <br>– Informační systém nahrazující úředně ověřený podpis – <b>Martin Cepr</b> – <i>DIA</i> 
+                  <br>– Průmyslové vlastnictví – <b>Michal Verner</b> – <i>ÚPV</i>
+                  <br>– European Health Data Space – <b>Klára Jiráková</b> – <i>Kraj Vysočina/MZ ČR</i></small>
+                 </td>
+            </tr>
         </tbody>
     </table>
 </div>
-
-
-
-| <div style="width:200px"></div> | HLAVNÍ PROGRAM |
-| --	| :-- |
-|   **9:00** 	  | **ÚVOD: Trendy v datech veřejného sektoru** |
-|       | Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <BR><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*<br> – **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*<br>– **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*</small> |
-
-
-
-
 
 
 

@@ -27,8 +27,8 @@ lang: cs
     <table>
         <thead>
             <tr>
-                <th class="gov-table--align-right gov-table--nowrap"></th>
-                <th class="gov-table--align-left gov-table--nowrap">HLAVNÍ PROGRAM</th>
+                <th></th>
+                <th>HLAVNÍ PROGRAM</th>
             </tr>
         </thead>
         <tbody>

@@ -14,8 +14,8 @@ lang: cs
 <br>
 
 
-## Program konference
-||HLAVNÍ PROGRAM|
+### Program konference
+|  |HLAVNÍ PROGRAM|
 |--|--|
 |**9:00**|**ÚVOD: Trendy v datech veřejného sektoru**  
 |  |Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <BR><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*<br> – **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*<br> – **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*
@@ -39,13 +39,42 @@ lang: cs
 <br>
 
 
-## Medailonky hostů
-<gov-accordion-item size="m"><h2 slot="label">Martin Mesršmíd</h2><p>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</p></gov-accordion-item>
+### Medailonky hostů
+<gov-accordion-item size="m"><h4 slot="label">Martin Mesršmíd</h4><p>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</p></gov-accordion-item>
+
+<gov-accordion-item size="m"><h4 slot="label">Martin Skovbjerg Jensen</h4><p>Martin Skovbjerg Jensen has been working at the Agency for Digital Government since 2017. Martin has been the project lead on Datavejviser.dk for the last few years. He and his colleagues work to make finding, assessing and re-using data from the public sector easier. Martin also works on data strategy and standardisation issues from a public sector perspective.</p></gov-accordion-item>
+
+
+<gov-accordion-item size="m"><h4 slot="label">Martin Nečaský</h4><p>Martin Nečaský působí v oblasti dat veřejné správy od roku 2011, kdy založil iniciativu OpenData.cz. Od té doby realizoval řadu projektů, ve kterých pomáhal úřadům s otevíráním jejich dat (např. ČTÚ, ČSSZ, MFČR, NKÚ, MV ČR). V současnosti působí jako docent a vedoucí Katedry softwarového inženýrství na Matematicko-fyzikální fakultě Univerzity Karlovy v oboru softwarového a datového inženýrství. V letech 2015 - 2023 vedl odborný tým Národního koordinátora otevřených dat na Ministerstvu vnitra ČR. Od roku 2024 působí jako expert a poradce pro správu dat na Digitální informační agentuře. Publikuje v uznávaných mezinárodních vědeckých časopisech, jako je např. Semantic Web Journal nebo Journal of Web Semantics.
+</p></gov-accordion-item>
+
+
+<gov-accordion-item size="m"><h4 slot="label">Martin Smetana</h4><p>Má bohaté zkušenosti v oblasti analýzy dat a jejich využití v praxi. Jeho profesní dráha začala na pozici datového analytika, následně vedl oddělení plánování a vyhodnocování kontrol na Nejvyšším kontrolním úřadě (NKÚ). V současné době působí na NKÚ jako ředitel odboru systémové podpory kontrolní činnosti. Tento odbor se zaměřuje na analytickou, metodickou a technickou podporu pro plánování, provádění a vyhodnocování kontrolní činnosti. Martin se také aktivně věnuje sdílení svých znalostí a zkušeností, a proto rád přednáší na různá témata jako je analýza dat, datové vizualizace a data storytellingu.
+</p></gov-accordion-item>
+
+
+<gov-accordion-item size="m"><h4 slot="label">Libor Drlík</h4><p>Je lídrem projektového týmu Digitální a informační agentury zaměřeného na rozvoj kvalitní správy dat a spoluautorem Strategie pro správu dat ve veřejné správě (2024–2030). Zároveň se zabývá enterprise architekturou úřadů a je součástí kompetenčního centra NAKIT pro podporu tvorby informačních koncepcí úřadů. Předchozí profesní zkušenosti v oblastech business analýzy a architektury, procesního řízení a business intelligence získal převážně v bankovním sektoru.
+</p></gov-accordion-item>
+
+
+<gov-accordion-item size="m"><h4 slot="label">Jitka Faugnerová</h4><p>Je vedoucí oddělení geoinformatiky v České informační agentuře životního prostředí (CENIA). Je národní kontaktní osobou pro směrnici INSPIRE v ČR. Má bohaté zkušenosti s koordinací projektů zaměřených na prostorové informace a jejich technickou implementací. Se svým týmem podporuje poskytovatele prostorových dat ve zpřístupňování, organizuje webináře a konference, v rámci kterých sdílí odborná veřejnost své znalosti a zkušenosti. Aktuálně se podílí na budování Geoportálu ČR.
+</p></gov-accordion-item>
+
+
+<gov-accordion-item size="m"><h4 slot="label">Zbyšek Stodůlka</h4><p>Je metodik v Oddělení digitálního archivu a digitálních služeb Národního archivu s více než patnáctiletou zkušeností v oblasti digitální archivace a správy dokumentů. Je členem pracovní podskupiny „Archiving by Design“ Evropské archivní skupiny při Evropské komisi, Vědecké archivní rady, pracovní skupiny pro správu dat RVIS a dalších odborných grémií. Externě přednáší na Univerzitě Karlově a Masarykově univerzitě.
+</p></gov-accordion-item>
 
 
 
 
-## Prezentace ke stažení
+
+
+
+
+
+<br>
+
+### Prezentace ke stažení
 <p><b><a href="/přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf" target="_blank">The Danish public sector approach to data availability</a></b><br>
 Martin Skovbjerg Jensen, <em>Dánská agentura pro digitální vládnutí</em></p>
 <p><b><a href="/přílohy/konference/2025/prezentace/Úvod_03_Nečaský.pdf" target="_blank">Role AI ve správě dat</a></b><br>

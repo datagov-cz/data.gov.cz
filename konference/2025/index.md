@@ -54,8 +54,8 @@ lang: cs
 <br>
 <br>
 
-### Medailonky hostů
-<gov-accordion-item size="m"><h5 slot="label">Martin Mesršmíd</h5>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</p></gov-accordion-item>
+### **Medailonky hostů**
+<gov-accordion-item size="m"><h5 slot="label">Martin Mesršmíd</h5>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</gov-accordion-item>
 
 <gov-accordion-item size="m"><h4 slot="label">Martin Skovbjerg Jensen</h4>Martin Skovbjerg Jensen has been working at the Agency for Digital Government since 2017. Martin has been the project lead on Datavejviser.dk for the last few years. He and his colleagues work to make finding, assessing and re-using data from the public sector easier. Martin also works on data strategy and standardisation issues from a public sector perspective.</gov-accordion-item>
 
@@ -87,7 +87,7 @@ lang: cs
 
 <br>
 
-### Prezentace ke stažení
+### **Prezentace ke stažení**
 <p><b><a href="/přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf" target="_blank">The Danish public sector approach to data availability</a></b><br>
 Martin Skovbjerg Jensen, <em>Dánská agentura pro digitální vládnutí</em></p>
 <p><b><a href="/přílohy/konference/2025/prezentace/Úvod_03_Nečaský.pdf" target="_blank">Role AI ve správě dat</a></b><br>

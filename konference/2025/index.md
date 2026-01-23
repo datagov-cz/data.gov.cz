@@ -43,9 +43,10 @@ lang: cs
              <tr>
                 <td></td>
                 <td align="left">
-                  Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <br><br><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*
-                  <br>– **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*
-                  <br>– **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*</small>
+                  Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. 
+                  <br><small> – <b>Martin Mesršmíd</b><i> – ředitel Digitální a informační agentury</i>
+                  <br> – <b>Martin Skovbjerg Jensen</b><i> – Dánská agentura pro digitální vládnutí</i>
+                  <br> – <b>Martin Nečaský</b><i> – Matematicko-fyzikální fakulta UK</i></small>
                  </td>
             </tr>
         </tbody>

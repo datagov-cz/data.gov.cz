@@ -23,6 +23,35 @@ lang: cs
 
 **Program konference**
 
+<div class="gov-table" size="s">
+    <table>
+        <thead>
+            <tr>
+                <th class="gov-table--align-right gov-table--nowrap"></th>
+                <th class="gov-table--align-left gov-table--nowrap">HLAVNÍ PROGRAM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="gov-table--nowrapgov-table--align-right gov-table--nowrap">
+           		<B>9:00</B>
+                </td>
+                <td class="gov-table--align-left gov-table--nowrap">
+                  <b> ÚVOD:</b> 
+                 </td>
+            </tr>
+             <tr>
+                <td></td>
+                <td class="gov-table--align-left gov-table--nowrap">
+                  Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <BR><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*<br> – **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*<br>– **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*</small>
+                 </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
 | <div style="width:200px"></div> | HLAVNÍ PROGRAM |
 | --	| :-- |
 |   **9:00** 	  | **ÚVOD: Trendy v datech veřejného sektoru** |

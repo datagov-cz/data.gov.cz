@@ -1,0 +1,99 @@
+---
+layout: contained
+ref: Conference2025
+lang: cs
+---
+
+## IX. ročník konference
+<iframe width="800" height="600" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**3. června 2025
+  <br>
+  Akademie veřejného investování, Pařížská 4, Praha 1**
+
+<br>
+
+
+## Program konference
+||HLAVNÍ PROGRAM|
+|--|--|
+|**9:00**|**ÚVOD: Trendy v datech veřejného sektoru**  
+|  |Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <BR><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*<br> – **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*<br> – **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*
+|**10:05**|**SPRÁVA DAT: Od standardů k evropskému prostoru**
+||První odborný blok se věnuje praktické stránce správy dat. Probereme naplňování minimálních standardů, propojování prostorových dat i unikátní potenciál archivních záznamů. Dotkneme se také legislativních novinek, jako je nahrazování úředního podpisu, a nahlédneme do budoucna skrze European Health Data Space – ambiciózní projekt pro sdílení zdravotnických dat v rámci celé EU.<br><small> – Naplňování standardů – **Libor Drlík** – *DIA* <br>– Geoportál ČR – **Jitka Faugnerová** – *CENIA*<br> – Archivní data jako národní kapitál – **Zbyšek Stodůlka** – *Národní archiv*<br>– Informační systém nahrazující úředně ověřený podpis – **Martin Cepr** – *DIA* <br>– Průmyslové vlastnictví – **Michal Verner** – *ÚPV*<br>– European Health Data Space – **Klára Jiráková** – *Kraj Vysočina/MZ ČR*
+|**11:45**|Oběd
+|**12:30**|**VEŘEJNÁ DATA A VĚDA: Rovnováha mezi výzkumem a riziky**
+||Data jsou krví moderní vědy. Tento panel se zaměří na to, kde leží hranice mezi přínosy otevřených dat pro výzkum a riziky spojenými s jejich zneužitím, zejména v citlivé oblasti zdravotnictví. Představíme národní infrastrukturu pro výzkumná data (EOSC) a podíváme se na to, jak data s vysokým rozlišením pomáhají mapovat sociální realitu v českém školství.<br><small> – Zdravotnická data – **Aleš Tichopád** – *ČVUT*, **Martin Komenda** – *ÚZIS*<br> – Řízený přístup – **David Hemala** – *DIA*<br> – Infrastruktura EOSC – **Jiří Marek** – *MUNI*<br> – Využití veřejných dat pro výzkumné účely – **Radim Hladík** – *AV ČR*<br>– Data v sociálním výzkumu – **Jiří Münich** – *PAQ Research*
+|**14:00**|Coffee break
+|**14:30**|**OTEVŘENÁ DATA: Využití v praxi**
+| |V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.<br><small>–	Data životního prostředí – **Jáchym Brzezina** – *Envidata*<br>– Transparentní samosprávy – **Kristýna Zaklová** – *Zastupko.cz*<br>– Datová žurnalistika – **Jan Cibulka** – *Český rozhlas*<br>– Mapa exekucí – **Radek Hábl** – *Institut prevence a řešení předlužení* <br>– Jak mluvit grafem – **Kristína Pšorn Zákopčanová**
+|**16:00**|**ZÁVĚR**
+<br>
+
+| |PARALELNÍ PROGRAM|
+|--|--|
+|**10:05**|**WORKSHOP: Vizualizace dat**
+| |Praktické opakování úspěšného kurzu zaměřeného na to, jak data prezentovat srozumitelně a efektivně. <br><small>– **Martin Smetana, Václav Flaška, Kristýna Pulpán** – *Nejvyšší kontrolní úřad*
+| **12:30**|**DISKUSE: Dánská inspirace**
+| |Moderovaná diskuse s **Martinem Skovbjergem Jensenem** o dánské cestě k otevřeným datům, prioritizaci datových sad a zkušenostech s jejich popisem.
+<br>
+
+
+## Medailonky hostů
+<gov-accordion-item size="m"><h2 slot="label">Martin Mesršmíd</h2><p>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</p></gov-accordion-item>
+
+
+
+
+## Prezentace ke stažení
+<p><b><a href="/přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf" target="_blank">The Danish public sector approach to data availability</a></b><br>
+Martin Skovbjerg Jensen, <em>Dánská agentura pro digitální vládnutí</em></p>
+<p><b><a href="/přílohy/konference/2025/prezentace/Úvod_03_Nečaský.pdf" target="_blank">Role AI ve správě dat</a></b><br>
+Martin Nečaský, <em>Matematicko-fyzikální fakulta UK</em></p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/01_01_Drlík.pdf" target="_blank">Naplňování minimálního standardu a jak si stojíme</a></b><br>
+Libor Drlík, <em>Digitální a informační agentura</em></p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/01_02_Faugnerová.pdf" target="_blank">Geoportál ČR - jednotný přístup k prostorovým datům</a></b><br>
+Jitka Faugnerová, <em>CENIA</em></p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/01_03_Stodůlka.pdf" target="_blank">Archivní data jako národní kapitál</a></b><br>
+Zbyšek Stodůlka, Národní archiv</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/01_04_Cepr.pdf" target="_blank">Informační  systém nahrazující úředně ověřený podpis</a></b><br>
+Martin Cepr, Digitální a informační agentura</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/01_05_Verner.pdf" target="_blank">Integrovaný systém řízení ÚPV</a></b><br>
+Michal Verner, Úřad průmyslového vlastnictví</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/01_06_Jiráková.pdf" target="_blank">European Health Data Space</a></b><br>
+Klára Jiráková, Ministerstvo zdravotnictví</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/02_01_Hemala.pdf" target="_blank">Řízený přístup k datům</a></b><br>
+David Hemala, Digitální a informační agentura</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/02_03_Marek.pdf" target="_blank">EOSC a rozvoj národní infrastruktury pro výzkumná data</a></b><br>
+Jiří Marek, European Open Science Cloud, MUNI</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/02_04_Hladík.pdf" target="_blank">Využití veřejných dat pro výzkumné účely</a></b><br>
+Radim Hladík, Akademie věd ČR</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/02_05_Münich.pdf" target="_blank">Možnosti a limity dat s vysokým rozlišením</a></b><br>
+Jiří Münich, PAQ Research</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/03_01_Brzezina.pdf" target="_blank">Jaká data o životním prostředí máme dnes volně k dispozici, co s nimi můžeme dělat a k čemu nám jsou?</a></b><br>
+Jáchym Brzezina, Envidata</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/03_02_Zaklová.pdf" target="_blank">Transparentnost v rozhodování samospráv</a></b><br>
+Kristýna Zaklová, Zastupko</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/03_03_Cibulka.pdf" target="_blank">Otevřené zprávy: jak vypadá cesta datové sady do článku v povodních nebo do investigativní reportáže?</a></b><br>
+Jan Cibulka, Český rozhlas</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/03_04_Hábl.pdf" target="_blank">Mapa exekucí - Jak data pomohla při řešení velkého sociálního problému</a></b><br>
+Radek Hábl, Institut prevence a řešení předlužení</p>
+
+<p><b><a href="/přílohy/konference/2025/prezentace/03_05_Pšorn_Zákopčanová.pdf" target="_blank">Když chcete grafem něco říct</a></b><br>
+Kristína Pšorn Zákopčanová</p>
+
+

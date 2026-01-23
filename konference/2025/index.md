@@ -109,7 +109,9 @@ lang: cs
 
 
 
-|**14:30**|**OTEVŘENÁ DATA: Využití v praxi**
+
+
+**14:30**|**OTEVŘENÁ DATA: Využití v praxi**
 | |V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.<br><small>–	Data životního prostředí – **Jáchym Brzezina** – *Envidata*<br>– Transparentní samosprávy – **Kristýna Zaklová** – *Zastupko.cz*<br>– Datová žurnalistika – **Jan Cibulka** – *Český rozhlas*<br>– Mapa exekucí – **Radek Hábl** – *Institut prevence a řešení předlužení* <br>– Jak mluvit grafem – **Kristína Pšorn Zákopčanová**
 |**16:00**|**ZÁVĚR**
 <br>

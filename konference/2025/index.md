@@ -1,6 +1,7 @@
 ---
-title: IX. ročník konference
 layout: post
+detail: true
+title: IX. ročník konference
 ref: Conference2025
 lang: cs
 ---
@@ -10,60 +11,23 @@ lang: cs
 
 
 
+  <br>
+    <br>
 
 **3. června 2025
   <br>
   Akademie veřejného investování, Pařížská 4, Praha 1**
-
 <br>
+  <br>
 
 
 **Program konference**
 
-<div class="table">
-    <table class="ck-table-resized" style="border-style:none;" width=50%>
-        <tbody>
-            <tr>
-                <td>
-                    &nbsp;
-                </td>
-                <td>
-                    <B>HLAVNÍ PROGRAM</B>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                        <B>9:00</B>
-                </td>
-                <td>
-                    <B>ÚVOD: Trendy v datech veřejného sektoru</B>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    &nbsp;
-                </td>
-                <td>
-                    <p>
-                      Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie.
-                    </p>
-                    <ul>
-                        <li>
-                            <small><strong>Martin Mesršmíd</strong><i> – ředitel Digitální a informační agentury</i>
-                        </li>
-                        <li><strong>Martin Skovbjerg Jensen</strong> <i>– Dánská agentura pro digitální vládnutí</i>
-                        </li>
-                        <li>
-                            <strong>Martin Nečaský</strong><i>– Matematicko-fyzikální fakulta UK</small></i>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</figure>
-
-
+| date | code | value |
+| --- | --- | ---: |
+| 2020-02-29 | CZ010 | 2 |
+| 2020-02-29 | CZ020 | 0 |
+| ... | ... | ... |
 
 
 | xxx |HLAVNÍ PROGRAM|

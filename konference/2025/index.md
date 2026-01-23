@@ -32,8 +32,10 @@ lang: cs
 
 | xxx | HLAVNÍ PROGRAM |
 | --: | :-- |
-| **9:00** | **ÚVOD: Trendy v datech veřejného sektoru**  | 
-|  | Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <BR><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*<br> – **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*<br> – **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*</small> |  
+| **9:00**    |    **ÚVOD: Trendy v datech veřejného sektoru** | 
+|  |    Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. <BR><small> – **Martin Mesršmíd** *– ředitel Digitální a informační agentury*<br> – **Martin Skovbjerg Jensen** *– Dánská agentura pro digitální vládnutí*<br> – **Martin Nečaský** *– Matematicko-fyzikální fakulta UK*</small> |  
+| --: | :-- |
+
 
 |**10:05**|**SPRÁVA DAT: Od standardů k evropskému prostoru**
 ||První odborný blok se věnuje praktické stránce správy dat. Probereme naplňování minimálních standardů, propojování prostorových dat i unikátní potenciál archivních záznamů. Dotkneme se také legislativních novinek, jako je nahrazování úředního podpisu, a nahlédneme do budoucna skrze European Health Data Space – ambiciózní projekt pro sdílení zdravotnických dat v rámci celé EU.<br><small> – Naplňování standardů – **Libor Drlík** – *DIA* <br>– Geoportál ČR – **Jitka Faugnerová** – *CENIA*<br> – Archivní data jako národní kapitál – **Zbyšek Stodůlka** – *Národní archiv*<br>– Informační systém nahrazující úředně ověřený podpis – **Martin Cepr** – *DIA* <br>– Průmyslové vlastnictví – **Michal Verner** – *ÚPV*<br>– European Health Data Space – **Klára Jiráková** – *Kraj Vysočina/MZ ČR*

@@ -1,11 +1,15 @@
 ---
+title: IX. ročník konference
 layout: contained
 ref: Conference2025
 lang: cs
 ---
 
-# IX. ročník konference
-<iframe width="800" height="600" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1303" height="733" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
 
 **3. června 2025
   <br>
@@ -14,7 +18,30 @@ lang: cs
 <br>
 
 
-### Program konference
+**Program konference**
+
+<div class="gov-table" size="s">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>HLAVNÍ PROGRAM</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="gov-table--nowrap">
+                <B>9:00</B>
+                </td>
+                <td class="gov-table--nowrap">
+                        Novomoravská 34  </td>         
+            </tr>
+      </tbody>
+  </table>
+</div>
+
+
+
 |  |HLAVNÍ PROGRAM|
 |--|--|
 |**9:00**|**ÚVOD: Trendy v datech veřejného sektoru**  

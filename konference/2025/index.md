@@ -4,7 +4,7 @@ ref: Conference2025
 lang: cs
 ---
 
-## IX. ročník konference
+# IX. ročník konference
 <iframe width="800" height="600" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **3. června 2025
@@ -37,7 +37,7 @@ lang: cs
 | **12:30**|**DISKUSE: Dánská inspirace**
 | |Moderovaná diskuse s **Martinem Skovbjergem Jensenem** o dánské cestě k otevřeným datům, prioritizaci datových sad a zkušenostech s jejich popisem.
 <br>
-
+<br>
 
 ### Medailonky hostů
 <gov-accordion-item size="m"><h4 slot="label">Martin Mesršmíd</h4><p>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</p></gov-accordion-item>

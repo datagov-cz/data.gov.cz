@@ -40,7 +40,7 @@ lang: cs
                   <b>ÚVOD: Trendy v datech veřejného sektoru</b> 
                  </td>
             </tr>
-             <tr border="none">
+             <tr>
                 <td></td>
                 <td align="left">
                   Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. 
@@ -69,18 +69,44 @@ lang: cs
                   <br>– European Health Data Space – <b>Klára Jiráková</b> – <i>Kraj Vysočina/MZ ČR</i></small>
                  </td>
             </tr>
+              <tr>
+                  <td align="right">
+           	<b>11:45</B>
+                </td>
+                <td align="left">
+                  Oběd
+                 </td>
+            </tr>
+              <tr>
+                  <td align="right">
+           	<b>12:30</B>
+                </td>
+                <td align="left">
+                  <b>VEŘEJNÁ DATA A VĚDA: Rovnováha mezi výzkumem a riziky</b>
+                 </td>
+            </tr>
+              <tr>
+                  <td></td>
+                <td align="left">
+                 Data jsou krví moderní vědy. Tento panel se zaměří na to, kde leží hranice mezi přínosy otevřených dat pro výzkum a riziky spojenými s jejich zneužitím, zejména v citlivé oblasti zdravotnictví. Představíme národní infrastrukturu pro výzkumná data (EOSC) a podíváme se na to, jak data s vysokým rozlišením pomáhají mapovat sociální realitu v českém školství
+                 <br><small> – Zdravotnická data – <b>Aleš Tichopád</b> – <i>ČVUT</i>, <b>Martin Komenda</b> – <i>ÚZIS</i>
+                 <br> – Řízený přístup – <b>David Hemala</b> – <i>DIA</i>
+                 <br> – Infrastruktura EOSC – <b>Jiří Marek</b> – <i>MUNI</i>
+                 <br> – Využití veřejných dat pro výzkumné účely – <b>Radim Hladík</b> – <i>AV ČR</i>
+                 <br>– Data v sociálním výzkumu – <b>Jiří Münich</b> – <i>PAQ Research</i>
+                 </td>
+            </tr>
+            <tr>
+                  <td align="right"><b>14:00</b></td>
+                <td align="left">Coffee break
+                 </td>
+            </tr>
         </tbody>
     </table>
 </div>
 
 
 
-|**10:05**|**SPRÁVA DAT: Od standardů k evropskému prostoru**
-||První odborný blok se věnuje praktické stránce správy dat. Probereme naplňování minimálních standardů, propojování prostorových dat i unikátní potenciál archivních záznamů. Dotkneme se také legislativních novinek, jako je nahrazování úředního podpisu, a nahlédneme do budoucna skrze European Health Data Space – ambiciózní projekt pro sdílení zdravotnických dat v rámci celé EU.<br><small> – Naplňování standardů – **Libor Drlík** – *DIA* <br>– Geoportál ČR – **Jitka Faugnerová** – *CENIA*<br> – Archivní data jako národní kapitál – **Zbyšek Stodůlka** – *Národní archiv*<br>– Informační systém nahrazující úředně ověřený podpis – **Martin Cepr** – *DIA* <br>– Průmyslové vlastnictví – **Michal Verner** – *ÚPV*<br>– European Health Data Space – **Klára Jiráková** – *Kraj Vysočina/MZ ČR*
-|**11:45**|Oběd
-|**12:30**|**VEŘEJNÁ DATA A VĚDA: Rovnováha mezi výzkumem a riziky**
-||Data jsou krví moderní vědy. Tento panel se zaměří na to, kde leží hranice mezi přínosy otevřených dat pro výzkum a riziky spojenými s jejich zneužitím, zejména v citlivé oblasti zdravotnictví. Představíme národní infrastrukturu pro výzkumná data (EOSC) a podíváme se na to, jak data s vysokým rozlišením pomáhají mapovat sociální realitu v českém školství.<br><small> – Zdravotnická data – **Aleš Tichopád** – *ČVUT*, **Martin Komenda** – *ÚZIS*<br> – Řízený přístup – **David Hemala** – *DIA*<br> – Infrastruktura EOSC – **Jiří Marek** – *MUNI*<br> – Využití veřejných dat pro výzkumné účely – **Radim Hladík** – *AV ČR*<br>– Data v sociálním výzkumu – **Jiří Münich** – *PAQ Research*
-|**14:00**|Coffee break
 |**14:30**|**OTEVŘENÁ DATA: Využití v praxi**
 | |V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.<br><small>–	Data životního prostředí – **Jáchym Brzezina** – *Envidata*<br>– Transparentní samosprávy – **Kristýna Zaklová** – *Zastupko.cz*<br>– Datová žurnalistika – **Jan Cibulka** – *Český rozhlas*<br>– Mapa exekucí – **Radek Hábl** – *Institut prevence a řešení předlužení* <br>– Jak mluvit grafem – **Kristína Pšorn Zákopčanová**
 |**16:00**|**ZÁVĚR**

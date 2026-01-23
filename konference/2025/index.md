@@ -1,6 +1,6 @@
 ---
 title: IX. ročník konference
-layout: contained
+layout: post
 ref: Conference2025
 lang: cs
 ---
@@ -20,8 +20,8 @@ lang: cs
 
 **Program konference**
 
-<div class="table" >
-    <table class="ck-table-resized" style="border-style:none;">
+<div class="table">
+    <table class="ck-table-resized" style="border-style:none;" width=50%>
         <tbody>
             <tr>
                 <td>

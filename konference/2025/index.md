@@ -40,7 +40,7 @@ lang: cs
                   <b>ÚVOD: Trendy v datech veřejného sektoru</b> 
                  </td>
             </tr>
-             <tr class="noBorder">
+             <tr border="none">
                 <td></td>
                 <td align="left">
                   Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. 

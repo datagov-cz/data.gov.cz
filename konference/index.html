@@ -1,0 +1,38 @@
+---
+layout: default
+title: Konference Jak na správu dat ve veřejné správě
+ref: Conference
+lang: cs
+---
+  <gov-container>
+    <h1>Jak na správu dat ve veřejné správě</h1>
+    <gov-tiles columns="3" no-border>
+        {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
+        {% for clanek in clanky limit:3 %}
+        <gov-tile href="..{{ clanek.url }}">
+          <!--<div class="section">-->
+            <h2 slot="title">{{ clanek.title }}</h2>
+            <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
+            <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
+            {% if clanek.image %}
+            <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+            {% endif %}
+            {{ clanek.excerpt }}
+          <!--</div>-->
+        </gov-tile>
+        {% endfor %}
+     </gov-tiles>
+     <h2>Starší články</h2>
+     <gov-tiles columns="3" no-border>
+        {% for clanek in clanky offset:3 %}
+        <gov-tile href="..{{ clanek.url }}">
+          <h3 slot="title">{{ clanek.title }}</h3>
+          <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
+          {% if clanek.image %}
+          <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+          {% endif %}
+          {{ clanek.excerpt}}
+        </gov-tile>
+        {% endfor %}       
+    </gov-tiles>
+  </gov-container>

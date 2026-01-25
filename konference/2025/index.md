@@ -1,4 +1,4 @@
----
+
 layout: post
 detail: true
 title: IX. ročník konference
@@ -7,19 +7,18 @@ lang: cs
 ---
 
 <iframe width="1303" height="733" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-  <br>
-    <br>
-
-**3. června 2025**
-  <br>
-
-**Akademie veřejného investování, Pařížská 4, Praha 1** 
 <br>
+<br>
+
+3. června 2025
   <br>
 
+Akademie veřejného investování, Pařížská 4, Praha 1
+<br>
+<br>
 
-**Program konference**
+
+Program konference
 
 <div class="gov-table" size="s">
    <table border="0" cellpadding="10">
@@ -137,6 +136,8 @@ Moderovaná diskuse s Martinem Skovbjergem Jensenem o dánské cestě k otevřen
 
 <h3>Medailonky hostů</h3>
 
+
+
 <gov-accordion-item size="m"><h5 slot="label">Martin Mesršmíd</h5>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</gov-accordion-item>
 
 <gov-accordion-item size="m"><h4 slot="label">Martin Skovbjerg Jensen</h4>Martin Skovbjerg Jensen has been working at the Agency for Digital Government since 2017. Martin has been the project lead on Datavejviser.dk for the last few years. He and his colleagues work to make finding, assessing and re-using data from the public sector easier. Martin also works on data strategy and standardisation issues from a public sector perspective.</gov-accordion-item>
@@ -159,7 +160,7 @@ Moderovaná diskuse s Martinem Skovbjergem Jensenem o dánské cestě k otevřen
 <gov-accordion-item size="m"><h4 slot="label">Zbyšek Stodůlka</h4><p>Je metodik v Oddělení digitálního archivu a digitálních služeb Národního archivu s více než patnáctiletou zkušeností v oblasti digitální archivace a správy dokumentů. Je členem pracovní podskupiny „Archiving by Design“ Evropské archivní skupiny při Evropské komisi, Vědecké archivní rady, pracovní skupiny pro správu dat RVIS a dalších odborných grémií. Externě přednáší na Univerzitě Karlově a Masarykově univerzitě.
 </p></gov-accordion-item>
 
-<gov-accordion-item size="s"><p slot="label"><b>Martin Cepr</b></p><p>Od roku 2004 pracuje na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese <a href="https://archi.gov.cz">archi.gov.cz</a>. Spolupracuje i na přípravě systému ISDŘ a jeho testování.</p></gov-accordion-item>
+<gov-accordion-item size="s"><p slot="label"><b>Martin Cepr</b></p><p>Od roku 2004 pracuje na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese <a href="https://archi.gov.cz" target="_blank">archi.gov.cz</a>. Spolupracuje i na přípravě systému ISDŘ a jeho testování.</p></gov-accordion-item>
 
 
 

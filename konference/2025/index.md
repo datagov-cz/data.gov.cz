@@ -159,7 +159,7 @@ Moderovaná diskuse s Martinem Skovbjergem Jensenem o dánské cestě k otevřen
 <gov-accordion-item size="m"><h4 slot="label">Zbyšek Stodůlka</h4><p>Je metodik v Oddělení digitálního archivu a digitálních služeb Národního archivu s více než patnáctiletou zkušeností v oblasti digitální archivace a správy dokumentů. Je členem pracovní podskupiny „Archiving by Design“ Evropské archivní skupiny při Evropské komisi, Vědecké archivní rady, pracovní skupiny pro správu dat RVIS a dalších odborných grémií. Externě přednáší na Univerzitě Karlově a Masarykově univerzitě.
 </p></gov-accordion-item>
 
-<gov-accordion-item size="s" identifier="Od roku 2004 pracuje na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v  soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese &lt;a href=&quot;https://archi.gov.cz&quot;&gt;archi.gov.cz&lt;/a&gt;. Spolupracuje i na přípravě systému ISDŘ a jeho testování."><p slot="label">Martin Cepr</p><p>Nulla non lectus sed nisl molestie malesuada. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Nunc tincidunt ante vitae massa. Nam sed tellus id magna elementum tincidunt.</p></gov-accordion-item>
+<gov-accordion-item size="s"><p slot="label"><b>Martin Cepr</b></p><p>Od roku 2004 pracuje na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese <a href="https://archi.gov.cz">archi.gov.cz</a>. Spolupracuje i na přípravě systému ISDŘ a jeho testování.</p></gov-accordion-item>
 
 
 

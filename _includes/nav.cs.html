@@ -36,15 +36,16 @@
                 Vzdělávání
             </gov-nav-item>
         {% endif %}
-        {% if page.ref == 'Articles' %}
-            <gov-nav-item class="active">
-                Články
-            </gov-nav-item>
-        {% else %}
-            <gov-nav-item href="{{ "/články" | relative_url}}">
-                Články
-            </gov-nav-item>
-        {% endif %}
+            <gov-nav-dropdown>
+				<span slot="label">Aktuality</span>
+				<ul slot="dropdown">
+				    <li>
+				    <a href="/články">Články</a>
+                    </li>
+                    <li><a href="/konference">Konference</a>
+                    </li>
+				</ul>
+			</gov-nav-dropdown>
         {% if page.ref == 'DataQuality' %}
             <gov-nav-item class="active">
                 Datová kvalita

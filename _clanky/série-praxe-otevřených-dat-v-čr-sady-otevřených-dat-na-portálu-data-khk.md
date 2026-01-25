@@ -24,7 +24,7 @@ Aby se skutečně jednalo o otevřená data, musejí být jednotlivé datové sa
 ## Historický vývoj
 Královéhradecký kraj své sady otevřených dat začal publikovat v roce 2018. 
 Požadavek na jejich poskytování široké veřejnosti vzešel z Komise Rady Královéhradeckého kraje pro otevřenost (dále jen „Komise“).
-Podkladem a jakousi inspirací se stal Vzorový publikační plán pro kraje uveřejněný na webových stránkách [https://opendata.gov.cz]. 
+Podkladem a jakousi inspirací se stal Vzorový publikační plán pro kraje uveřejněný na <a href="https://data.gov.cz" target="_blank">Portálu o datech</a>. 
 Díky tomu jsme získali představu, jaká data bychom měli veřejně publikovat a jaké atributy by měla obsahovat. 
 Komise získala od Odboru analýz a podpory řízení (dále jen „APR“) doporučení, jaká data z odborů krajského úřadu mohou být veřejně publikována. 
 Následně APR oslovil všechny odbory Královéhradeckého kraje, u kterých bylo zřejmé, že mají k dispozici taková data, která je vhodné poskytnout veřejnosti. 
@@ -79,5 +79,3 @@ Je zřejmé, že když je patřičný pověřený odbor schopen od ostatních od
 
 ### Autoři
 Ing. Janka Kačerová, Mgr. Tomáš Slezák, analytici, Královéhradecký kraj.
-
-[https://opendata.gov.cz]: https://opendata.gov.cz "https://opendata.gov.cz" 

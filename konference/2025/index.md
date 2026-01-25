@@ -6,21 +6,12 @@ ref: Conference2025
 lang: cs
 ---
 
+<p>3. června 2025<br>
+Akademie veřejného investování, Pařížská 4, Praha 1</p>
+
 <iframe width="1303" height="733" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<br>
 
-3. června 2025
-<br>
-
-Akademie veřejného investování, Pařížská 4, Praha 1
-<br>
-<br>
-
-
-Program konference
-
-
+<h2>Program konference</h2>
    <table border="0" cellpadding="10">
         <thead>
             <tr>

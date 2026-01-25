@@ -110,22 +110,32 @@ lang: cs
 
 
 
-**14:30** **OTEVŘENÁ DATA: Využití v praxi**
- V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.<br><small>–	Data životního prostředí – **Jáchym Brzezina** – *Envidata*<br>– Transparentní samosprávy – **Kristýna Zaklová** – *Zastupko.cz*<br>– Datová žurnalistika – **Jan Cibulka** – *Český rozhlas*<br>– Mapa exekucí – **Radek Hábl** – *Institut prevence a řešení předlužení* <br>– Jak mluvit grafem – **Kristína Pšorn Zákopčanová**
-**16:00****ZÁVĚR**
-<br>
-
- PARALELNÍ PROGRAM
-----
-**10:05****WORKSHOP: Vizualizace dat**
- Praktické opakování úspěšného kurzu zaměřeného na to, jak data prezentovat srozumitelně a efektivně. <br><small>– **Martin Smetana, Václav Flaška, Kristýna Pulpán** – *Nejvyšší kontrolní úřad*
- **12:30****DISKUSE: Dánská inspirace**
- Moderovaná diskuse s **Martinem Skovbjergem Jensenem** o dánské cestě k otevřeným datům, prioritizaci datových sad a zkušenostech s jejich popisem.
-<br>
-<br>
+14:30 OTEVŘENÁ DATA: Využití v praxi
+V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.
+ <br><small>–	Data životního prostředí – Jáchym Brzezina – Envidata
+ <br>– Transparentní samosprávy – Kristýna Zaklová – Zastupko.cz
+ <br>– Datová žurnalistika – Jan Cibulka – Český rozhlas
+ <br>– Mapa exekucí – Radek Hábl – Institut prevence a řešení předlužení
+ <br>– Jak mluvit grafem – Kristína Pšorn Zákopčanová</small>
 
 
-### **Medailonky hostů**
+16:00 ZÁVĚR
+<br>
+
+PARALELNÍ PROGRAM
+
+
+10:05WORKSHOP: Vizualizace dat
+Praktické opakování úspěšného kurzu zaměřeného na to, jak data prezentovat srozumitelně a efektivně. 
+<br><small>– Martin Smetana, Václav Flaška, Kristýna Pulpán – Nejvyšší kontrolní úřad
+
+12:30 DISKUSE: Dánská inspirace
+Moderovaná diskuse s Martinem Skovbjergem Jensenem o dánské cestě k otevřeným datům, prioritizaci datových sad a zkušenostech s jejich popisem.
+<br>
+<br>
+
+
+<h3>Medailonky hostů</h3>
 
 <gov-accordion-item size="m"><h5 slot="label">Martin Mesršmíd</h5>Vystudoval informační management na pražské Vysoké škole ekonomické. Mezi roky 2005 a 2010 působil v Seznam.cz, kde měl jako manažer na starosti portál Sprace.cz, zaměřený na pracovní příležitosti. Od září 2010 do května 2013 pracoval v Economii, kde řídil oddělení zodpovědné za elektronickou distribuci obsahu. Od června 2013 pracoval zejména pro Avast, zhruba rok se věnoval vedení týmu zaměřeného na zkoumání dat, poté vystřídal několik pozic v divizi Jumpshot. Od 1.2. 2023 je ředitelem Digitální a informační agentury.</gov-accordion-item>
 
@@ -149,6 +159,7 @@ lang: cs
 <gov-accordion-item size="m"><h4 slot="label">Zbyšek Stodůlka</h4><p>Je metodik v Oddělení digitálního archivu a digitálních služeb Národního archivu s více než patnáctiletou zkušeností v oblasti digitální archivace a správy dokumentů. Je členem pracovní podskupiny „Archiving by Design“ Evropské archivní skupiny při Evropské komisi, Vědecké archivní rady, pracovní skupiny pro správu dat RVIS a dalších odborných grémií. Externě přednáší na Univerzitě Karlově a Masarykově univerzitě.
 </p></gov-accordion-item>
 
+<gov-accordion-item size="s"><p slot="label">Martin Cepr</p><p slot="annotation">Od roku 2004 pracuje na odboru Hlavního architekta eGovernmentu, po předchozí kariéře v  soukromém sektoru. Podílí se na přípravě podkladů pro Národní architekturu eGovernmentu dostupnou na adrese <a href="https://archi.gov.cz">archi.gov.cz</a>. Spolupracuje i na přípravě systému ISDŘ a jeho testování.</p><p><strong>Lorem ipsum</strong> dolor sit amet, consectetuer adipiscing elit. Pellentesque sapien. Integer malesuada. <strong>Etiam bibendum elit eget erat.</strong> Pellentesque pretium lectus id turpis. Nullam dapibus fermentum ipsum. Ut tempus purus at lorem. Duis viverra diam non justo. Fusce consectetuer risus a nunc. Integer <strong>imperdiet lectus</strong> quis justo. Fusce suscipit libero eget elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Pellentesque ipsum. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor.</p></gov-accordion-item>
 
 
 

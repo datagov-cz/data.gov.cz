@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+  {% include head.html %}
+  <body class="text-content blog-post">
+    {% include header.html %}
+    <article>
+        <gov-container>
+          <h1>{{ page.title }}{{depth}}</h1>
+        </gov-container>
+    </article>
+    {% include footer.{{page.lang}}.html %}
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js"></script>
+    <script>
+      anchors.add('h2').add('h3'){% for anchor in page.customanchors %}.add('{{ anchor }}'){% endfor %};
+    </script>
+  </body>
+</html>

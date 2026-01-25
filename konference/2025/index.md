@@ -11,7 +11,7 @@ lang: cs
 <br>
 
 3. června 2025
-  <br>
+<br>
 
 Akademie veřejného investování, Pařížská 4, Praha 1
 <br>
@@ -24,7 +24,7 @@ Program konference
    <table border="0" cellpadding="10">
         <thead>
             <tr>
-                <th></th>
+                <th> </th>
                 <th align="left">HLAVNÍ PROGRAM</th>
             </tr>
         </thead>

@@ -1,4 +1,4 @@
-
+---
 layout: post
 detail: true
 title: IX. ročník konference
@@ -171,7 +171,7 @@ Moderovaná diskuse s Martinem Skovbjergem Jensenem o dánské cestě k otevřen
 
 <br>
 
-### **Prezentace ke stažení**
+Prezentace ke stažení
 <p><b><a href="/přílohy/konference/2025/prezentace/Úvod_02_Jensen.pdf" target="_blank">The Danish public sector approach to data availability</a></b><br>
 Martin Skovbjerg Jensen, <em>Dánská agentura pro digitální vládnutí</em></p>
 <p><b><a href="/přílohy/konference/2025/prezentace/Úvod_03_Nečaský.pdf" target="_blank">Role AI ve správě dat</a></b><br>

@@ -20,7 +20,7 @@ Akademie veřejného investování, Pařížská 4, Praha 1
 
 Program konference
 
-<div class="gov-table" size="s">
+
    <table border="0" cellpadding="10">
         <thead>
             <tr>
@@ -37,7 +37,7 @@ Program konference
                   <b>ÚVOD: Trendy v datech veřejného sektoru</b> 
                  </td>
             </tr>
-             <tr style="display: none;">
+             <tr style="border: none;">
                 <td></td>
                 <td align="left">
                   Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. 
@@ -46,7 +46,7 @@ Program konference
                   <br> – <b>Martin Nečaský</b><i> – Matematicko-fyzikální fakulta UK</i></small>
                  </td>
             </tr>
-            <tr style="display: none;">
+            <tr style="border: none;">
                   <td align="right">
            	<b>10:00</B>
                 </td>
@@ -54,7 +54,7 @@ Program konference
                   <b>SPRÁVA DAT: Od standardů k evropskému prostoru</b> 
                  </td>
             </tr>
-             <tr style="display: none;">
+             <tr style="border: none;">
                 <td></td>
                 <td align="left">
                   První odborný blok se věnuje praktické stránce správy dat. Probereme naplňování minimálních standardů, propojování prostorových dat i unikátní potenciál archivních záznamů. Dotkneme se také legislativních novinek, jako je nahrazování úředního podpisu, a nahlédneme do budoucna skrze European Health Data Space – ambiciózní projekt pro sdílení zdravotnických dat v rámci celé EU.
@@ -66,7 +66,7 @@ Program konference
                   <br>– European Health Data Space – <b>Klára Jiráková</b> – <i>Kraj Vysočina/MZ ČR</i></small>
                  </td>
             </tr>
-              <tr style="display: none;">
+              <tr style="border: none;">
                   <td align="right">
            	<b>11:45</B>
                 </td>
@@ -74,7 +74,7 @@ Program konference
                   Oběd
                  </td>
             </tr>
-              <tr style="display: none;">
+              <tr style="border: none;">
                   <td align="right">
            	<b>12:30</B>
                 </td>
@@ -82,7 +82,7 @@ Program konference
                   <b>VEŘEJNÁ DATA A VĚDA: Rovnováha mezi výzkumem a riziky</b>
                  </td>
             </tr>
-              <tr style="display: none;">
+              <tr style="border: none;">
                   <td></td>
                 <td align="left">
                  Data jsou krví moderní vědy. Tento panel se zaměří na to, kde leží hranice mezi přínosy otevřených dat pro výzkum a riziky spojenými s jejich zneužitím, zejména v citlivé oblasti zdravotnictví. Představíme národní infrastrukturu pro výzkumná data (EOSC) a podíváme se na to, jak data s vysokým rozlišením pomáhají mapovat sociální realitu v českém školství
@@ -93,7 +93,7 @@ Program konference
                  <br>– Data v sociálním výzkumu – <b>Jiří Münich</b> – <i>PAQ Research</i>
                  </td>
             </tr>
-            <tr style="display: none;">
+            <tr style="border: none;">
                   <td align="right">
                   <b>14:00</b>
                   </td>
@@ -101,7 +101,7 @@ Program konference
             </tr>
         </tbody>
     </table>
-</div>
+
 
 
 

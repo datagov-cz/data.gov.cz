@@ -8,15 +8,13 @@ lang: cs
 
 <iframe width="1303" height="733" src="https://www.youtube.com/embed/QsRbYAd6MuM" title="Konference – Jak na data ve veřejné správě 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-
-
   <br>
     <br>
 
-**3. června 2025
+**3. června 2025**
   <br>
-  Akademie veřejného investování, Pařížská 4, Praha 1**
+
+**Akademie veřejného investování, Pařížská 4, Praha 1** 
 <br>
   <br>
 
@@ -40,7 +38,7 @@ lang: cs
                   <b>ÚVOD: Trendy v datech veřejného sektoru</b> 
                  </td>
             </tr>
-             <tr>
+             <tr style="display: none;">
                 <td></td>
                 <td align="left">
                   Zahájení konference nás zavede do aktuálního dění v oblasti datové politiky. Zaměříme se na to, jak k dostupnosti dat přistupují v Dánsku, které patří ke světové špičce, a jakou roli hraje umělá inteligence při správě datových sad. Cílem je ukázat, že data nejsou jen položky v databázi, ale národní aktivum, které vyžaduje strategický přístup a moderní technologie. 
@@ -49,7 +47,7 @@ lang: cs
                   <br> – <b>Martin Nečaský</b><i> – Matematicko-fyzikální fakulta UK</i></small>
                  </td>
             </tr>
-            <tr>
+            <tr style="display: none;">
                   <td align="right">
            	<b>10:00</B>
                 </td>
@@ -57,7 +55,7 @@ lang: cs
                   <b>SPRÁVA DAT: Od standardů k evropskému prostoru</b> 
                  </td>
             </tr>
-             <tr>
+             <tr style="display: none;">
                 <td></td>
                 <td align="left">
                   První odborný blok se věnuje praktické stránce správy dat. Probereme naplňování minimálních standardů, propojování prostorových dat i unikátní potenciál archivních záznamů. Dotkneme se také legislativních novinek, jako je nahrazování úředního podpisu, a nahlédneme do budoucna skrze European Health Data Space – ambiciózní projekt pro sdílení zdravotnických dat v rámci celé EU.
@@ -69,7 +67,7 @@ lang: cs
                   <br>– European Health Data Space – <b>Klára Jiráková</b> – <i>Kraj Vysočina/MZ ČR</i></small>
                  </td>
             </tr>
-              <tr>
+              <tr style="display: none;">
                   <td align="right">
            	<b>11:45</B>
                 </td>
@@ -77,7 +75,7 @@ lang: cs
                   Oběd
                  </td>
             </tr>
-              <tr>
+              <tr style="display: none;">
                   <td align="right">
            	<b>12:30</B>
                 </td>
@@ -85,7 +83,7 @@ lang: cs
                   <b>VEŘEJNÁ DATA A VĚDA: Rovnováha mezi výzkumem a riziky</b>
                  </td>
             </tr>
-              <tr>
+              <tr style="display: none;">
                   <td></td>
                 <td align="left">
                  Data jsou krví moderní vědy. Tento panel se zaměří na to, kde leží hranice mezi přínosy otevřených dat pro výzkum a riziky spojenými s jejich zneužitím, zejména v citlivé oblasti zdravotnictví. Představíme národní infrastrukturu pro výzkumná data (EOSC) a podíváme se na to, jak data s vysokým rozlišením pomáhají mapovat sociální realitu v českém školství
@@ -96,10 +94,11 @@ lang: cs
                  <br>– Data v sociálním výzkumu – <b>Jiří Münich</b> – <i>PAQ Research</i>
                  </td>
             </tr>
-            <tr>
-                  <td align="right"><b>14:00</b></td>
-                <td align="left">Coffee break
-                 </td>
+            <tr style="display: none;">
+                  <td align="right">
+                  <b>14:00</b>
+                  </td>
+                <td align="left">Coffee break</td>
             </tr>
         </tbody>
     </table>
@@ -111,17 +110,17 @@ lang: cs
 
 
 
-**14:30**|**OTEVŘENÁ DATA: Využití v praxi**
-| |V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.<br><small>–	Data životního prostředí – **Jáchym Brzezina** – *Envidata*<br>– Transparentní samosprávy – **Kristýna Zaklová** – *Zastupko.cz*<br>– Datová žurnalistika – **Jan Cibulka** – *Český rozhlas*<br>– Mapa exekucí – **Radek Hábl** – *Institut prevence a řešení předlužení* <br>– Jak mluvit grafem – **Kristína Pšorn Zákopčanová**
-|**16:00**|**ZÁVĚR**
+**14:30** **OTEVŘENÁ DATA: Využití v praxi**
+ V závěrečném bloku ukážeme konkrétní příklady, jak otevřená data mění životy občanů a práci novinářů. Uvidíte, jak se data o životním prostředí proměňují v užitečné aplikace, jak Mapa exekucí pomohla řešit celospolečenský problém a jak se díky otevřeným datům daří zvyšovat transparentnost samospráv i kvalitu investigativní žurnalistiky.<br><small>–	Data životního prostředí – **Jáchym Brzezina** – *Envidata*<br>– Transparentní samosprávy – **Kristýna Zaklová** – *Zastupko.cz*<br>– Datová žurnalistika – **Jan Cibulka** – *Český rozhlas*<br>– Mapa exekucí – **Radek Hábl** – *Institut prevence a řešení předlužení* <br>– Jak mluvit grafem – **Kristína Pšorn Zákopčanová**
+**16:00****ZÁVĚR**
 <br>
 
-| |PARALELNÍ PROGRAM|
-|--|--|
-|**10:05**|**WORKSHOP: Vizualizace dat**
-| |Praktické opakování úspěšného kurzu zaměřeného na to, jak data prezentovat srozumitelně a efektivně. <br><small>– **Martin Smetana, Václav Flaška, Kristýna Pulpán** – *Nejvyšší kontrolní úřad*
-| **12:30**|**DISKUSE: Dánská inspirace**
-| |Moderovaná diskuse s **Martinem Skovbjergem Jensenem** o dánské cestě k otevřeným datům, prioritizaci datových sad a zkušenostech s jejich popisem.
+ PARALELNÍ PROGRAM
+----
+**10:05****WORKSHOP: Vizualizace dat**
+ Praktické opakování úspěšného kurzu zaměřeného na to, jak data prezentovat srozumitelně a efektivně. <br><small>– **Martin Smetana, Václav Flaška, Kristýna Pulpán** – *Nejvyšší kontrolní úřad*
+ **12:30****DISKUSE: Dánská inspirace**
+ Moderovaná diskuse s **Martinem Skovbjergem Jensenem** o dánské cestě k otevřeným datům, prioritizaci datových sad a zkušenostech s jejich popisem.
 <br>
 <br>
 

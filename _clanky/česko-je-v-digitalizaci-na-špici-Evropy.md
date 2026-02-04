@@ -8,8 +8,10 @@ author: jiří_kaňa
 date: 2026-01-12 07:01:00 +02:00
 lang: cs
 ---
-Výsledky mezinárodního hodnocení EU Open Data Maturity Report (ODMR) za loňský rok potvrzují špičkovou vyspělost otevřených dat v České republice, která je dlouhodobě aktivním spolutvůrcem trendů v této oblasti. Díky dlouhodobé strategii a důrazu na inovace se Česko pevně usadilo mezi lídry, kteří definují podobu moderní, transparentní a datově řízené státní správy 21. století.
+Výsledky mezinárodního hodnocení EU Open Data Maturity Report (ODMR) za loňský rok potvrzují špičkovou vyspělost otevřených dat v České republice, která je dlouhodobě aktivním spolutvůrcem trendů v této oblasti. 
 <!--more-->
+<BR>
+Díky dlouhodobé strategii a důrazu na inovace se Česko pevně usadilo mezi lídry, kteří definují podobu moderní, transparentní a datově řízené státní správy 21. století.
 <BR>
 <center><span style="background-color:#d8eeff;border-radius:10px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://data.europa.eu/sites/default/files/2025-12/2025_odm_report_5.pdf" target="_blank">PŘEČÍST CELOU STUDII</a></span></center>
 <BR>

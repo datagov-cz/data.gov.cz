@@ -8,10 +8,11 @@ author: jana_novák_gabrielová
 date: 2026-02-04 07:01:00 +02:00
 lang: cs
 ---
-Správa dat ve veřejné správě už dávno nestojí na okraji zájmu. Digitální a informační agentuře (DIA) se podařilo do konce roku 2025 dosáhnout klíčového bodu, kdy dvaatřicet vybraných úřadů úspěšně splnilo základní podmínky pro systematickou péči o své datové fondy. Tento posun je naprosto nezbytný nejen pro efektivní sdílení informací mezi institucemi, ale především pro rozvoj digitálních služeb, které občanům skutečně usnadňují život. V letošním roce se spolupráce s úřady dále rozšiřuje, aby se data stala spolehlivým podkladem pro informované rozhodování státu, vědecké analýzy i transparentní informování veřejnosti.
+Správa dat ve veřejné správě už dávno nestojí na okraji zájmu. Digitální a informační agentuře (DIA) se podařilo do konce roku 2025 dosáhnout klíčového bodu, kdy dvaatřicet vybraných úřadů úspěšně splnilo základní podmínky pro systematickou péči o své datové fondy. 
 <!--more-->
 <br>
-
+Tento posun je naprosto nezbytný nejen pro efektivní sdílení informací mezi institucemi, ale především pro rozvoj digitálních služeb, které občanům skutečně usnadňují život. V letošním roce se spolupráce s úřady dále rozšiřuje, aby se data stala spolehlivým podkladem pro informované rozhodování státu, vědecké analýzy i transparentní informování veřejnosti.
+<br>
 <h2>Od hloubkových analýz k datovému know-how</h2>
 Cesta k současným výsledkům začala v roce 2023, kdy DIA zmapovala reálnou situaci v terénu prostřednictvím hloubkových rozhovorů s jednotlivými úřady. Následující rok 2024 byl věnován zahájení plnění minimálního standardu kvalitní správy dat. Právě konec roku 2025 představoval důležitý milník, kdy všechny zapojené instituce tento standard naplnily a prokázaly schopnost spravovat svá data podle jednotných pravidel. 
 <br>

@@ -18,7 +18,9 @@ Správa dat ve veřejné správě už dávno nestojí na okraji zájmu. Digitál
 <p>Během uplynulých dvou let poskytovala DIA zapojeným úřadům intenzivní podporu v rámci <a href="https://data.gov.cz/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat" target="_blank">projektu financovaného z Národního plánu obnovy</a>. Klíčem k úspěchu je právě zmíněný minimální standard, který definuje principy, díky nimž mohou úřady ručit za kvalitu svých údajů a efektivně je sdílet s ostatními. K dosažení tohoto stavu přispělo více než šest set odborných konzultací, patnáct webinářů a ucelená sada metodických materiálů.</p>
 <br>
 
-{% include image.html url="../přílohy/články/České-úřady-kultivují-data-skrze-kvalitní-správu/sprava-info.webp"  description="Zdroj: Digitální a informační agentura" width="25%" %}
+<img src="../přílohy/články/České-úřady-kultivují-data-skrze-kvalitní-správu/sprava-info.webp" alt="drawing" width="100"/>
+
+
 <br>
 
 <p>Jen v roce 2025 proběhlo přes čtyři sta konzultací, což dokládá vysokou dynamiku rozběhnuté spolupráce a schopnost úřadů prakticky využívat nabyté zkušenosti. Veškeré vytvořené materiály i záznamy školení jsou trvale k dispozici na Portálu o datech v sekci <a href="https://data.gov.cz/správa-dat/podpora-správy-dat/" target="_blank">Správa dat</a>, kde slouží jako praktický návod pro jakoukoli další instituci, která chce svou práci s daty profesionalizovat.</p>

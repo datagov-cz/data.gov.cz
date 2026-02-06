@@ -13,4 +13,4 @@ V panelové debatě otevřeme téma datové kvality a nástrojů k jejímu zlep�
 Kromě týmu národní koordinátorky otevřených dat vystoupí zástupci veřejné správy i veřejnosti. 
 Další informace a registrace na [webu konference].
 
-[webu konference]: https://opendata.gov.cz/edu:konference:2022 "konference Otevřená data 2022"
+[webu konference]: https://data.gov.cz/konference/2022/index.html "konference Otevřená data 2022"

@@ -11,6 +11,6 @@ V pátek 5. listopadu 2021 proběhla v Národní technické knihovně v Praze v�
 Odkazy na video nahrávku celé konference a prezentace všech přednášejících najdete na [webu konference].
 
 
-[webu konference]: https://opendata.gov.cz/edu:konference:2021 "Web konference"
+[webu konference]: https://data.gov.cz/konference/2021/index.html "Web konference"
 
 

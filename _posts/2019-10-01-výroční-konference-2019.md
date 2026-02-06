@@ -8,7 +8,7 @@ author: michal_kubáň
 ---
 
 V pátek 27. září proběhla v Národní technické knihovně v Praze již čtvrtá
-výroční [konference Otevřená data ve veřejné správě](https://opendata.gov.cz/edu:konference:2019).
+výroční [konference Otevřená data ve veřejné správě](https://data.gov.cz/konference/2019/index.html).
 
 <!--more-->
 

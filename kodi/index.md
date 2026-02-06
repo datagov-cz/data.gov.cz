@@ -148,4 +148,4 @@ C5V7 - Pilotní provoz výrobní linky pro účely vzdělávání
 : [Dokument](výstupy/C5V7.pdf)
 
 
-[webových stránkách konference]: https://opendata.gov.cz/edu:konference:start "Výroční konference k otevřeným datům"
+[webových stránkách konference]: https://data.gov.cz/konference "Výroční konference k otevřeným datům"

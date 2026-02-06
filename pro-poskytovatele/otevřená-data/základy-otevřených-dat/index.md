@@ -55,5 +55,5 @@ Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (od
 *  [Poskytovatelé v NKOD](https://data.gov.cz/poskytovatelé)
 *  Je zájem o data spravovaná mojí organizací? Podívejte se na [seznam podnětů na otevření dat](https://data.gov.cz/návrhy-na-datové-sady-k-otevření), zda už někdo o vaše data neprojevil zájem.
 *  [Rychle publikovat první datovou sadu](https://data.gov.cz/otevřená-data-snadno-a-rychle/)
-*  [Jak na otevírání dat systematicky](https://opendata.gov.cz/standardy:start)
+*  [Jak na otevírání dat systematicky](https://data.gov.cz/pro-poskytovatele/otevřená-data/)
 

@@ -18,7 +18,7 @@ Koordinátor otevírání dat zodpovídá za:
 * zajištění publikace datových sad a katalogizačních záznamů (metadat);
 * komunikaci připomínek uživatelů otevřených dat a reportování o publikaci otevřených dat vedení poskytovatele dat a příp. tiskovému oddělení poskytovatele dat.
   
-Vedení poskytovatele dat může Koordinátora otevírání dat pověřit přípravou interní legislativy, která bude upravovat proces otevírání dat, vymezí jednotlivé role a stanoví jejich povinnosti. Doporučujeme vytvořit legislativu v podobě směrnice. [Vzor směrnice je k dispozici ke stažení a volnému použití](https://opendata.gov.cz/vzor:vzorova-interni-smernice-publikace-a-katalogizace-otevrenych-dat).
+Vedení poskytovatele dat může Koordinátora otevírání dat pověřit přípravou interní legislativy, která bude upravovat proces otevírání dat, vymezí jednotlivé role a stanoví jejich povinnosti. Doporučujeme vytvořit legislativu v podobě směrnice. [Vzor směrnice je k dispozici ke stažení a volnému použití](https://data.gov.cz/dokumenty/vzorová-směrnice-pro-subjekty-s-podřízenými-organizacemi/).
 
 Návrh Koordinátor otevírání dat předá Vedení poskytovatele dat ke schválení.
 

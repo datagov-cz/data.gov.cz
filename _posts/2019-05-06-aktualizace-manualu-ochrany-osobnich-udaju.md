@@ -7,4 +7,4 @@ lang: cs
 author: michal_kubáň
 ---
 
-S ohledem na nově schválený zákon o zpracování osobních údajů jsme zaktualizovali [manuál, jak správně nakládat s osobními údaji v otevřených datech](https://opendata.gov.cz/dokumenty:ochrana-osobních-údajů-a-gdpr).
+S ohledem na nově schválený zákon o zpracování osobních údajů jsme zaktualizovali [manuál, jak správně nakládat s osobními údaji v otevřených datech](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/).

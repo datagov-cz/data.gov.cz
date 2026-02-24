@@ -52,6 +52,5 @@ Zatímco absolutní špičku žebříčku nadále okupují globální lídři ja
 <p>Index OURdata (Open, Useful and Re-usable data Index) představuje komplexní analytický nástroj, kterým Organizace pro hospodářskou spolupráci a rozvoj (OECD) již od roku 2015 ve dvouletých intervalech pravidelně monitoruje a vyhodnocuje úroveň národních politik v oblasti otevřených dat.</p>  
 <p>Tento ukazatel vznikl jako reakce na potřebu měřit, jak efektivně členské státy naplňují principy otevřeného vládnutí a nakládají s veřejnými daty jako se strategickým aktivem. OECD tento index sleduje v pravidelných cyklech především proto, aby motivovala vlády k překonávání technických i legislativních bariér, které brání volnému toku informací. Hlavním smyslem indexu je podpora transparentnosti a veřejné kontroly, ale stále více také stimulace ekonomického růstu.</p> 
 <p>Otevřená data totiž slouží jako základní surovina pro inovace, vědecký výzkum a v posledních letech především pro rozvoj systémů umělé inteligence. OURdata index tak státům nenabízí pouze srovnání v žebříčku, ale slouží zejména jako metodické vodítko pro budování moderní, efektivní a digitálně vyspělé státní správy, která je otevřená svým občanům i komerčnímu sektoru.</p>
-
 <br>
 

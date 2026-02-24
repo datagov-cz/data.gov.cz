@@ -10,9 +10,11 @@ lang: cs
 ---
 V aktuálním hodnocení OURdata Index pro rok 2025, který pravidelně zveřejňuje OECD dosáhla Česká republika šesté příčky v konkurenci celkem 36 členských zemí OECD a 6 přidružených států. Výsledky mezinárodního žebříčku hodnotícího politiku otevřených dat potvrzují zásadní proměnu české digitální agendy. 
 <!--more-->
+<br>
 <p>
 <center><span style="background-color:#d8eeff;border-radius:10px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://www.oecd.org/en/publications/digital-government-index-and-open-useful-and-re-usable-data-index_6347ec74-en.html" target="_blank">PŘEČÍST KOMPLETNÍ VÝSLEDKY</a></span></center>
 </p>
+<br>
 <p>
 Aktuální žebříček mapuje období let 2023 až 2024, které bylo charakteristické přechodem od krizového řízení k budování dlouhodobé odolnosti a cílené přípravě infrastruktury pro rozvoj umělé inteligence. Právě v tomto náročném kontextu se Česko ukázalo jako jeden z nejúspěšnějších aktérů, když dokázalo efektivně propojit principy transparentnosti s vysokou technologickou vyspělostí.
 <br>

@@ -213,7 +213,7 @@ městský_obvod,kategorie,počet_úseků,celková_délka_hodnota,celková_délka
 ```
 
 
-Jednotky měření tedy mohou být například součástí názvu sloupce, nebo popisku sloupce ve [schématu](https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3).
+Jednotky měření tedy mohou být například součástí názvu sloupce, nebo popisku sloupce ve [schématu](https://data.gov.cz/pro-poskytovatele/otevřená-data/technické-standardy-stupeň-otevřenosti-3/).
 
 ### Otevřená formální norma pro částky a množství
 Pro reprezentaci částek a množství existuje [Otevřená formální norma Základní datové typy](https://ofn.gov.cz/základní-datové-typy/2020-07-01/). Pro nejrůznější jednotky existuje jejich standardní zápis dle UN/CEFACT Common Codes a pro měny existuje [Evropský číselník měn](https://op.europa.eu/cs/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency). Je třeba je používat.
@@ -284,7 +284,7 @@ CSV soubor obsahuje tabulková data, a volitelně na prvním řádku hlavičku s
 
 **Řešení**
 
-Každý publikovaný CSV soubor by [měl být opatřen svým schématem](https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3#definice_vlastn%C3%ADho_sch%C3%A9matu_pro_data_v_csv) dle [standardu W3C Metadata Vocabulary for Tabular Data](https://www.w3.org/TR/tabular-metadata/) ve formě souboru či sady souborů ve formátu JSON-LD popisujícím publikovaný CSV soubor.
+Každý publikovaný CSV soubor by [měl být opatřen svým schématem](https://data.gov.cz/pro-poskytovatele/otevřená-data/technické-standardy-stupeň-otevřenosti-3/v) dle [standardu W3C Metadata Vocabulary for Tabular Data](https://www.w3.org/TR/tabular-metadata/) ve formě souboru či sady souborů ve formátu JSON-LD popisujícím publikovaný CSV soubor.
 
 ## Chybný datový typ sloupce
 Problém nastává, když datový typ ve schématu neodpovídá typu v samotném datovém souboru. To může být způsobeno i chybným návrhem sloupce, který připouští více datových typů a tedy ani nemůže být schématem dobře popsán. Příkladem může být sloupec s popisem **Datum (YYYYMMDD nebo YYYYMM nebo YYYY)**. Zde je jednak použit chybný typ pro datum, ale ani jeho oprava na **Datum (YYYY-MM-DD nebo YYYY-MM nebo YYYY)** by nepomohla, protože by sloupec stále připouštěl více datových typů. Je tedy nutno tento sloupec rozdělit na 3, povinný **Rok** a nepovinné **Měsíc** a **Den**.
@@ -345,7 +345,7 @@ I u CSV souboru se správným kódováním **UTF-8** vystaveném na webu se mů�
 Je třeba nakonfigurovat webový server tak, aby soubory CSV poskytoval se správnou hlavičkou, tj. **Content-Type: text/csv;charset=utf-8;header=present** v případě CSV s hlavičkou a **Content-Type: text/csv;charset=utf-8;header=absent** v případě CSV bez hlavičky, které ale nedoporučujeme používat. Například pro webový server **nginx** je třeba použít v konfiguraci **types { „text/csv;charset=utf-8;header=present“ csv; }** - uvozovka zde má být běžná dvojitá uvozovka, nikoliv horní a dolní.
 
 ## Data nevalidní vůči schématu
-O tom, že mají být data [opatřena schématem](https://opendata.gov.cz/standardy:technicke-standardy-pro-vytvareni-datovych-schemat-na-stupni-3), není třeba diskutovat. V celé řadě případů ale, i když schéma existuje a je i odkazováno v metadatech datové sady v NKOD, data nejsou vůči schématu validní. To způsoje problémy jak konzumentům dat, jelikož se na schéma nemohou spolehnout, tak samotným poskytovatelům, jelikož to ukazuje problém s datovou kvalitou a s kvalitou procesu publikace dat. Národní katalog otevřených dat zatím validitu dat vůči schématu nekontroluje, je to povinnost poskytovatelů.
+O tom, že mají být data [opatřena schématem](https://data.gov.cz/pro-poskytovatele/otevřená-data/technické-standardy-stupeň-otevřenosti-3/), není třeba diskutovat. V celé řadě případů ale, i když schéma existuje a je i odkazováno v metadatech datové sady v NKOD, data nejsou vůči schématu validní. To způsoje problémy jak konzumentům dat, jelikož se na schéma nemohou spolehnout, tak samotným poskytovatelům, jelikož to ukazuje problém s datovou kvalitou a s kvalitou procesu publikace dat. Národní katalog otevřených dat zatím validitu dat vůči schématu nekontroluje, je to povinnost poskytovatelů.
 
 Nevalidní data lze odhalit jednoduše, a proces validace při publikaci dat by měl být ideálně automatizován. Validátorů, které jsou přístupné online, nebo jsou ve formě programu ke spuštění na serveru či jiném počítači, je pro otevřené formáty celá řada.
   * Pro RDF popsané pomocí SHACL lze použít např. [https://shacl-playground.zazuko.com/](https://shacl-playground.zazuko.com).

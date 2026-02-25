@@ -158,7 +158,7 @@ Pro popis XML schématu se používá jazyk XML Schema.
 
 Prvním krokem k tvorbě schematu pro XML data je určení toho, jak se budou jmenovat a jak budou zanořeny jednotlivé elementy v XML souboru, jaké budou mít datové typy a jaký budou mít význam.
 Pro dosažení maximální míry interoperability postupujte v následujících krocích: 
-1. Podívejte se na [již existující standardy](https://opendata.gov.cz/vzor:start) pro datové sady.
+1. Podívejte se na [již existující standardy](https://data.gov.cz/pro-poskytovatele/otevřená-data/technické-standardy-stupeň-otevřenosti-3/) pro datové sady.
     * Pokud se některá datová sada shoduje s daty, které chcete publikovat, použijte její předpřipravené schéma. Existující schéma nemusíte daty pokrývat celé, všechny položky jsou volitelné.
     * Pokud se žádná existující datová sada neshoduje s daty, které chcete publikovat, vytvořte nové schéma. 
 2. Pokud některá datová sada pokrývá data, která chcete publikovat pouze částečně, použijte v novém schématu pro pokryté položky XML elementy s datovými typy z existujícího XML schématu.

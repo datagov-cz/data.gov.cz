@@ -15,7 +15,7 @@ Distribuce datové sady, která reprezentuje tabulku, musí splňovat následuj�
 * V distribuci neexistuje žádný jiný záznam než je řádek tabulky nebo její hlavička.
 * Všechny záznamy v distribuci, tj. jednotlivé řádky tabulky, mají stejnou strukturu, která odpovídá hlavičce.
 * Celý obsah datové sady je vyjádřen v distribucích v alespoň jednom z následujících formátů:
-  * Comma Separated Values ([CSV](https://opendata.gov.cz/standardy:csv)),
+  * Comma Separated Values ([CSV](https://data.gov.cz/špatná-praxe/csv/)),
   * eXtensible Markup Language ([XML](http://www.w3.org/TR/xml/)), kde jednotlivé řádky tabulky jsou zapsány jako samostatné XML elementy strukturované pomocí zanořených XML elementů a XML atributů reflektujících hlavičku reprezentované tabulky, nebo
   * JavaScript Object Notation ([JSON](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)), kde jednotlivé řádky tabulky jsou reprezentovány jako samostatné JSON objekty strukturovaných do dle hlavičky reprezentované tabulky.
  

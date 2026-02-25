@@ -68,7 +68,7 @@ Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (od
 * Otevřené formáty jsou takové formáty dat, jejichž specifikace je volně dostupná na webu. To znamená, že si na jejím základě může kdokoliv vytvořit aplikaci tento formát zpracovávající, a nemusí za použití specifikace platit. Řada otevřených formátů má podobu textových souborů, takže se, krom jiného, dají číst například v Notepad++. Příklady otevřených formátů jsou: 
 
 ### CSV - tabulková data 
-* formát pro [tabulková data](https://opendata.gov.cz/standardy:technicke-standardy-pro-datove-sady-na-stupni-3#standardy_pro_tabulkove_datove_sady);
+* formát pro [tabulková data](https://data.gov.cz/pro-poskytovatele/otevřená-data/technické-standardy-stupeň-otevřenosti-3/);
 * [přečtěte si specifikaci CSV](https://datatracker.ietf.org/doc/html/rfc4180);
 * [validujte CSV](https://csvlint.io/);
 * [sada webových standardů pro publikaci a popis CSV](https://www.w3.org/TR/?tags[0]=data#w3c_all);
@@ -76,7 +76,7 @@ Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (od
 * CSV můžete nahrát do relační [SQL databáze](https://codebeautify.org/csv-to-sql-converter).
 
 ### XML - hierarchická data 
-* formát pro [hierarchická data](https://opendata.gov.cz/standardy:technicke-standardy-pro-datove-sady-na-stupni-3#standardy_pro_datove_sady_s_hierarchickou_strukturou);
+* formát pro [hierarchická data](https://data.gov.cz/pro-poskytovatele/otevřená-data/technické-standardy-stupeň-otevřenosti-3/);
 * [přečtěte si specifikaci XML](https://www.w3.org/TR/xml/);
 * [XML tutorial](https://www.w3schools.com/xml/);
 * [validujte XML](https://www.xmlvalidation.com/);

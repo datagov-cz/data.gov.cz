@@ -19,14 +19,13 @@ Rádi bychom vás pozvali k aktivní účasti na této konferenci formou přísp
 Poskytovatelé otevřených dat, tj. orgány veřejné správy a další publikující subjekty, mohou představit svá otevřená data a řešení jejich publikace.
 Uživatelé otevřených dat, tj. datoví experti, firmy, svazy a další, mohou představit užitečné aplikace, portály či vizualizace, které nad otevřenými daty tvoří.
 
-Zájemce o aktivní vystoupení prosíme o vyplnění [strukturované přihlášky příspěvku] do 29. 8. 2021.
+Zájemce o aktivní vystoupení prosíme o vyplnění strukturované přihlášky příspěvku do 29. 8. 2021.
 Hlavního programu konference se tradičně účastní více než 100 zástupců státní správy, místních samospráv i odborné veřejnosti.
 Naším cílem je předat zájemcům otevřených dat cenné informace.
-Proto umožníme vystoupit více účastníkům a těm, kteří se do programu nevejdou, umožníme předat své zkušenosti jiným způsobem, např. formou článku na [Portálu otevřených dat].
+Proto umožníme vystoupit více účastníkům a těm, kteří se do programu nevejdou, umožníme předat své zkušenosti jiným způsobem, např. formou článku na [Portálu o datech].
 
 V případě jakýchkoliv dotazů nás prosím kontaktujte na [otevrenadata@dia.gov.cz].
 
 [6. ročník konference Otevřená data 2021]: https://data.gov.cz/konference/2021/index.html "Konference Otevřená data 2021"
-[strukturované přihlášky příspěvku]: https://docs.google.com/forms/d/e/1FAIpQLSelFrZN5LYgTtbGSEIe9jgz23ABAABOfXWp68tdCgPSqzXwUA/viewform "Přihláška příspěvku na konferenci Otevřená data 2021"
-[Portálu otevřených dat]: https://data.gov.cz/články/ "Portál otevřených dat"
+[Portálu o datech]: https://data.gov.cz/články/ "Portál o datech"
 [otevrenadata@dia.gov.cz]: mailto:otevrenadata@dia.gov.cz "E-mail otevřených dat"

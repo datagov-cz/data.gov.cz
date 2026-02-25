@@ -19,4 +19,4 @@ V případě prezenční účasti je třeba na místě předložit příslušné
 Těšíme se na setkání s Vámi.
 
 [Program konference]: https://data.gov.cz/konference/2021/index.html "Konference Otevřená data 2021" 
-[Registrovat]: https://docs.google.com/forms/d/e/1FAIpQLSdYqKQdOoBKzDhmVS_FLtw74llMiJkBYuQ-_KwnKDPNFutwhw/viewform "Registrace na konferenci"
+[Registrovat]: https://data.gov.cz/konference "Registrace na konferenci"

@@ -56,4 +56,10 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
             Metodika pro rozvoj systémů je soubor doporučení pro návrh a úpravu informačních systémů tak, aby splňovaly standardy pro sdílení dat. Cílem je zajistit, aby byly systémy technicky i právně připraveny na efektivní poskytování dat veřejnosti i ostatním úřadům.
         </p>
     </gov-tile>
+        <gov-tile href="https://data.gov.cz/články/vše-co-jste-chtěli-vědět-o-hvd">
+        <h3 slot="title">Vše o HVDs</h3>
+        <p>
+            Implementace standardů pro vybrané agendy je procesem dodržování jednotných pravidel pro publikaci dat s nejvyšším společenským významem. Cílem je sjednotit technické podmínky jejich poskytování napříč celou Evropskou unií a maximalizovat jejich opětovné využití.
+        </p>
+    </gov-tile>
 </gov-tiles>

@@ -12,7 +12,7 @@ Protože se řada typů datových sad často opakuje napříč různými orgány
 Pokud někdo vytvoří softwarovou aplikaci, která rozumí danému datovému schématu, bude z toho profitovat každá organizace, která dané datové schéma použije pro svoji datovou sadu, neboť s ní bude aplikace fungovat. 
 
 ## Datová schémata doporučených datových sad 
-Pro vybrané datové sady uvedené ve vzorových publikačních plánech jsou datová schémata postupně připravována formou otevřených formálních norem a jsou publikována v části Otevřené formální normy. 
+Pro vybrané datové sady uvedené ve vzorových publikačních plánech jsou datová schémata postupně připravována formou [otevřených formálních norem](https://ofn.gov.cz/). 
 
 Připravená datová schémata obsahují: 
   * výchozí konceptuální schéma řešené datové oblasti,
@@ -25,7 +25,7 @@ Výčet a definice atributů i vazeb datové sady jsou uváděny v maximalistick
   * je dodržena standardizované struktura schématu datové sady, včetně názvů a použitých datových typů (s výjimkou nevyužitých atributů a vazeb),
   * výsledné datové schéma je pravdivě zachyceno i v doprovodné dokumentaci. 
 
-V případě zjištění, že některý důležitý atribut v připraveném datovém schématu schází, je nutné kontaktovat autory příslušné otevřené formální normy za účelem její doplnění. 
+V případě zjištění, že některý důležitý atribut v připraveném datovém schématu schází, je nutné kontaktovat autory příslušné [otevřené formální normy](https://ofn.gov.cz/) za účelem její doplnění. 
 
 ## Vytvoření nového datového schématu 
 Postup přípravy datového schématu se liší v závislosti na zvoleném stupni otevřenosti. 

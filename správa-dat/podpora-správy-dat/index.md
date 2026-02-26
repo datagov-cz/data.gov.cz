@@ -53,6 +53,8 @@ Cílem webináře je vysvětlit, proč je nezbytné mít přehled o věcných ob
  
 [Metodika pro výběr prioritní oblasti]
 
+[Přehled věcných oblastí dat]
+
 ## Popis dat
 
 **Webinář: [Význam a kontext popisu dat ve veřejné správě]** 
@@ -173,7 +175,7 @@ Záznam webináře, který se zaměřil na to, proč má smysl do interních pra
 [Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí]: https://www.youtube.com/watch?v=zPbh6OuLWnM "Propojení správy dat s dlouhodobým řízením informačních systémů veřejné správy a informační koncepcí"
 [Leták minimální standard správy dat]: ../../přílohy/správa-dat/Minimalni_standard_letak.pdf
  "Leták minimální standard správy dat"
- [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.1.xlsx "Tabulka přehledu věcných oblastí dat včetně jejich kategorizace"
+ [Tabulka přehledu věcných oblastí dat včetně jejich kategorizace]: ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.4.xlsx "Tabulka přehledu věcných oblastí dat včetně jejich kategorizace"
 [Kategorizace v popisu dat a datových rozhraní]: https://youtu.be/AuzppRbRqMg "Kategorizace v popisu dat a datových rozhraní"
 [Katalogy a dohledatelnost dat]: https://youtu.be/zk0GobYpFZo "Katalogy a dohledatelnost dat"
 [Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby]: https://www.youtube.com/watch?v=dSdORsqWB48 "Evidence údajů v Registru práv a povinností a jejich sdílení přes Informační systém sdílené služby"
@@ -184,4 +186,4 @@ Záznam webináře, který se zaměřil na to, proč má smysl do interních pra
 [Bezpečnost a řízení rizik]: https://www.youtube.com/watch?v=ooGTmffHgjk "Bezpečnost a řízení rizik"
 [Principy a interní pravidla správy dat]: https://www.youtube.com/watch?v=COWxE1ODbWs "Principy a interní pravidla správy dat"
 [Šablona politiky správy dat]: ../../přílohy/správa-dat/ŠABLONA_Politika_správy_dat_OVS_1.0.docx "Šablona politiky správy dat"
-
+[Přehled věcných oblastí dat]:  ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.4.xlsx "Přehled věcných oblastí dat"

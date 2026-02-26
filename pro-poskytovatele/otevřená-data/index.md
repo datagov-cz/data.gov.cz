@@ -32,10 +32,28 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
             Publikační plán specifikuje, jaké datové sady organizace plánuje publikovat jako otevřená data, a to včetně harmonogramu publikace. Určuje také způsob publikace, podmínky užití a další důležité aspekty spojené s otevřenými daty.
         </p>
     </gov-tile>
+    <gov-tile href="stupně-otevřenosti-datových-sad/">
+        <h3 slot="title">Stupně otevřenosti datových sad</h3>
+        <p>
+            Klasifikace úrovně strojové čitelnosti je procesem posuzování formátů a metod publikace podle jejich technické náročnosti a přívětivosti pro uživatele.
+        </p>
+    </gov-tile>
+    <gov-tile href="technické-standardy-stupeň-otevřenosti-3/">
+        <h3 slot="title">Technické standardy pro stupeň otevřenosti 3</h3>
+        <p>
+            Zajištění nezávislé strojové čitelnosti je procesem transformace dat do široce podporovaných struktur, jako jsou CSV, XML nebo JSON.
+        </p>
+    </gov-tile>
     <gov-tile href="příprava-dat-k-otevření/">
         <h3 slot="title">Příprava dat k otevření</h3>
         <p>
             Postup publikace datové sady v otevřené podobě v sobě zahrnuje její analýzu a návrh technické podoby její publikace, přípravu datové sady do navržené podoby, její publikaci a katalogizaci.
+        </p>
+    </gov-tile>
+    <gov-tile href="vytvoření-datového-schématu-datové-sady/">
+        <h3 slot="title">Vytvoření datového schématu datové sady</h3>
+        <p>
+            Technická specifikace datového obsahu je procesem sjednocování formátu a významu jednotlivých údajů podle uznávaných standardů (např. OFN). Cílem je zaručit interoperabilitu datových sad a umožnit jejich bezchybné automatizované zpracování v různých informačních systémech.
         </p>
     </gov-tile>
     <gov-tile href="stanovení-podmínek-užití/">

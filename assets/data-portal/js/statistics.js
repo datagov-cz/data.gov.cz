@@ -1,6 +1,6 @@
 (function initialize() {
 
-    const URL = "/api/v2/statistics";
+    const URL = "/api/v2/catalog/v1/statistics";
 
     function fetchAndDisplayStatistics() {
 

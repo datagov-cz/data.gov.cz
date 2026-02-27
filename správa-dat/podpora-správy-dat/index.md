@@ -116,6 +116,8 @@ Záznam webináře zaměřeného na představení významu správy dat pro dlouh
 
 Záznam webináře zaměřeného na kategorizaci dat (podle § 23 vyhlášky č. 360/2023 Sb.), a to v souvislosti s popisem dat a datových rozhraní. Přibližuje, jak by měly úřady ke kategorizaci v tomto případě přistupovat a jaké má pro ně přínosy, ať už jde o znalost a dohledatelnost dat nebo řízení informačních systémů veřejné správy.
 
+[Kategorizace dat]
+
 ## Katalogizace dat
 **Webinář: [Katalogy a dohledatelnost dat]**
 
@@ -187,3 +189,4 @@ Záznam webináře, který se zaměřil na to, proč má smysl do interních pra
 [Principy a interní pravidla správy dat]: https://www.youtube.com/watch?v=COWxE1ODbWs "Principy a interní pravidla správy dat"
 [Šablona politiky správy dat]: ../../přílohy/správa-dat/ŠABLONA_Politika_správy_dat_OVS_1.0.docx "Šablona politiky správy dat"
 [Přehled věcných oblastí dat]:  ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.4.xlsx "Přehled věcných oblastí dat"
+[Kategorizace dat]: ../../přílohy/správa-dat/Kategorizace_dat.pdf "Kategorizace dat"

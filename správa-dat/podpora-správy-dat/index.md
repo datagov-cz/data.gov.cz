@@ -128,6 +128,8 @@ Záznam webináře, který se zaměřuje na dohledatelnost dat a tvorbu datovýc
 
 Záznam webináře, který se zaměřuje na kroky správy dat, které předchází evidenci údajů v Registru práv a povinností (RPP), vysvětluje také publikaci kontextů a sdílení dat mezi úřady prostřednictvím informačního systému sdílené služby (ISSS).
 
+[Minimální charakteristiky pojmů pro RPP]
+
 ## Kvalita dat
 **Webinář: [Zajištění kvality dat]**
 
@@ -190,3 +192,4 @@ Záznam webináře, který se zaměřil na to, proč má smysl do interních pra
 [Šablona politiky správy dat]: ../../přílohy/správa-dat/ŠABLONA_Politika_správy_dat_OVS_1.0.docx "Šablona politiky správy dat"
 [Přehled věcných oblastí dat]:  ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.4.xlsx "Přehled věcných oblastí dat"
 [Kategorizace dat]: ../../přílohy/správa-dat/Kategorizace_dat.pdf "Kategorizace dat"
+[Minimální charakteristiky pojmů pro RPP]: ../../přílohy/správa-dat/Minimalni_charakteristiky_pojmu_pro_RPP.pdf "Minimální charakteristiky pojmů pro RPP"

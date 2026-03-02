@@ -1,0 +1,298 @@
+{
+  "groups": [{
+    "title": "Kvalita metadatových záznamů v NKOD",
+    "type": "quality-group",
+    "metrics": [{
+      "title": "Q1: Počet distribucí bez specifikovaných podmínek užití dle poskytovatele",
+      "content": "[Stanovte podmínky užití distribucí datových sad](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q1.csv",
+        "title": "Počet distribucí bez specifikovaných podmínek užití dle poskytovatele"
+      }]
+    }, {
+      "title": "Q2: Počet datových sad, jejichž distribuce nemají specifikovány podmínky užití dle poskytovatele",
+      "content": "[Stanovte podmínky užití distribucí datových sad](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q2.csv",
+        "title": "Počet datových sad, jejichž distribuce nemají specifikovány podmínky užití dle poskytovatele"
+      }]
+    }, {
+      "title": "Q3: Počet záznamů datových sad nesplňujících povinné atributy dle poskytovatele",
+      "content": "Připomínáme [povinné položky API lokálních katalogů pro harvestaci do NKOD](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/).",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q3.csv",
+        "title": "Počet záznamů datových sad nesplňujících povinné atributy dle poskytovatele"
+      }, {
+        "url": "/soubor/kvalita/statistika/q3l.csv",
+        "title": "Seznam datových sad nesplňujících povinné atributy dle poskytovatele"
+      }]
+    }, {
+      "title": "Q4c: Formáty dat distribucí celkem",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q4c.csv",
+        "title": "Formáty dat distribucí celkem"
+      }]
+    }, {
+      "title": "Q4: Formáty dat distribucí dle poskytovatele",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q4.csv",
+        "title": "Formáty dat distribucí dle poskytovatele"
+      }]
+    }, {
+      "title": "Q5c: Podmínky užití distribucí celkem",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q5c.csv",
+        "title": "Podmínky užití distribucí celkem"
+      }]
+    }, {
+      "title": "Q5b: Počty poskytovatelů dle podmínek užití distribucí",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q5b.csv",
+        "title": "Počty poskytovatelů dle podmínek užití distribucí"
+      }]
+    }, {
+      "title": "Q5: Podmínky užití distribucí dle poskytovatele",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q5.csv",
+        "title": "Podmínky užití distribucí dle poskytovatele"
+      }]
+    }, {
+      "title": "Q6c: Počty datových sad s danou periodicitou aktualizace celkem",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q6c.csv",
+        "title": "Počty datových sad s danou periodicitou aktualizace"
+      }]
+    }, {
+      "title": "Q6: Počty datových sad s danou periodicitou aktualizace dle poskytovatele",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q6.csv",
+        "title": "Počty datových sad s danou periodicitou aktualizace dle poskytovatele"
+      }]
+    }, {
+      "title": "Q7a: Počty datových sad s daným klíčovým slovem",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q7a.csv",
+        "title": "Počty datových sad s daným klíčovým slovem"
+      }]
+    }, {
+      "title": "Q7b: Počty poskytovatelů datových sad s daným klíčovým slovem",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q7b.csv",
+        "title": "Počty poskytovatelů datových sad s daným klíčovým slovem"
+      }]
+    }, {
+      "title": "Q8: Distribuce datových sad s nevalidním MIME Typem",
+      "content": "Připomínáme, co je to [MIME typ](https://opendata.gov.cz/cinnost:vyber-mime-typu) a že jeho [použití je pro harvestaci do NKOD povinné](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/).",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/q8.csv",
+        "title": "Počty distribucí datových sad s nevalidním MIME Typem"
+      }, {
+        "url": "/soubor/kvalita/statistika/q8l.csv",
+        "title": "Seznam distribucí datových sad s nevalidním MIME Typem"
+      }]
+    }]
+  }, {
+    "title": "Statistika dostupnosti distribucí, schémat, podmínek užití a dokumentace",
+    "type": "quality-group",
+    "metrics": [{
+      "title": "A1.1: Nedostupnost distribucí datových sad ve formě souboru ke stažení",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a1-1-nedostupnost.csv",
+        "title": "Nedostupnost distribucí datových sad"
+      }]
+    }, {
+      "title": "A1.2: Nedostupné distribuce datových sad ve formě souboru ke stažení",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a1-2-nedostupnost-seznam.csv",
+        "title": "Nedostupné distribuce datových sad"
+      }]
+    }, {
+      "title": "A1.3: Nedostupnost techniky CORS u distribucí ve formě souboru ke stažení",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a1-3-nedostupnost-cors.csv",
+        "title": "Nedostupnost techniky CORS u distribucí ve formě souboru ke stažení"
+      }]
+    }, {
+      "title": "A1.4: Distribuce ve formě souboru ke stažení s nedostupnou technikou CORS",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a1-4-nedostupnost-cors-seznam.csv",
+        "title": "Distribuce ve formě souboru ke stažení s nedostupnou technikou CORS"
+      }]
+    }, {
+      "title": "A2.1: Nedostupnost schémat distribucí datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a2-1-nedostupnost-schemat.csv",
+        "title": "Dostupnost schémat distribucí datových sad"
+      }]
+    }, {
+      "title": "2.2: Nedostupná schémata distribucí datových sad",
+      "content": "",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a2-2-nedostupnost-schemat-seznam.csv",
+        "title": "Nedostupné distribuce datových sad"
+      }]
+    }, {
+      "title": "A2.3: Nedostupnost techniky CORS u schémat distribucí ve formě souboru ke stažení",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a2-3-nedostupnost-cors-schemat.csv",
+        "title": "Nedostupnost techniky CORS u schémat distribucí ve formě souboru ke stažení"
+      }]
+    }, {
+      "title": "A2.4: Distribuce ve formě souboru ke stažení s nedostupnou technikou CORS u schématu",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a2-4-nedostupnost-schemat-cors-seznam.csv",
+        "title": "Distribuce ve formě souboru ke stažení s nedostupnou technikou CORS u schématu"
+      }]
+    }, {
+      "title": "A3.1: Nedostupnost podmínek užití distribucí datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a3-1-nedostupnost-podminek-uziti.csv",
+        "title": "Dostupnost podmínek užití distribucí datových sad"
+      }]
+    }, {
+      "title": "A3.2: Nedostupné podmínky užití distribucí datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a3-2-nedostupnost-podminek-uziti-seznam.csv",
+        "title": "Nedostupné podmínky užití distribucí datových sad"
+      }]
+    }, {
+      "title": "A4.1: Nedostupnost uživatelské dokumentace datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a4-1-nedostupnost-dokumentace.csv",
+        "title": "Dostupnost uživatelské dokumentace datových sad"
+      }]
+    }, {
+      "title": "A4.2: Nedostupné uživatelské dokumentace datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a4-2-nedostupnost-dokumentace-seznam.csv",
+        "title": "Nedostupné uživatelské dokumentace datových sad"
+      }]
+    }, {
+      "title": "A5.1: Neshoda mezi formátem distribuce v NKOD a formátem indikovaným serverem",
+      "content": "",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a5-1-neshoda-media-type.csv",
+        "title": "Neshoda mezi formátem distribuce v NKOD a formátem indikovaným serverem"
+      }, {
+        "url": "/soubor/kvalita/statistika/a5-2-neshoda-media-type-list.csv",
+        "title": "Seznam distribucí, u kterých je neshoda mezi formátem v NKOD a formátem indikovaným serverem"
+      }]
+    }, {
+      "title": "A6.1: Nedostupnost přístupových bodů distribucí ve formě datové služby",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a6-1-nedostupnost-endpoint-url.csv",
+        "title": "Nedostupnost přístupových bodů distribucí ve formě datové služby"
+      }]
+    }, {
+      "title": "A6.2: Nedostupné přístupové body distribucí ve formě datové služby",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a6-2-nedostupnost-endpoint-url-seznam.csv",
+        "title": "Nedostupné přístupové body distribucí ve formě datové služby"
+      }]
+    }, {
+      "title": "A6.3: Nedostupnost techniky CORS u přístupových bodů distribucí ve formě datové služby",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a6-3-nedostupnost-endpoint-url-cors.csv",
+        "title": "Nedostupnost techniky CORS u přístupových bodů distribucí ve formě datové služby"
+      }]
+    }, {
+      "title": "A6.4: Přístupové body distribucí ve formě datové služby s nedostupnou technikou CORS",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a6-4-nedostupnost-endpoint-url-cors-seznam.csv",
+        "title": "Přístupové body distribucí ve formě datové služby s nedostupnou technikou CORS"
+      }]
+    }, {
+      "title": "A7.1: Nedostupnost popisů přístupových bodů distribucí ve formě datové služby",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a7-1-nedostupnost-endpoint-description.csv",
+        "title": "Nedostupnost popisů přístupových bodů distribucí ve formě datové služby"
+      }]
+    }, {
+      "title": "A7.2: Nedostupné popisy přístupových bodů distribucí ve formě datové služby",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a7-2-nedostupnost-endpoint-description-seznam.csv",
+        "title": "Nedostupné popisy přístupových bodů distribucí ve formě datové služby"
+      }]
+    }, {
+      "title": "A7.3: Nedostupnost techniky CORS u popisů přístupových bodů",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a7-3-nedostupnost-endpoint-description-cors.csv",
+        "title": "Nedostupnost techniky CORS u popisů přístupových bodů"
+      }]
+    }, {
+      "title": "A7.4: Popisy přístupových bodů distribucí ve formě datové služby s nedostupnou technikou CORS",
+      "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a7-4-nedostupnost-endpoint-description-cors-seznam.csv",
+        "title": "Popisy přístupových bodů distribucí ve formě datové služby s nedostupnou technikou CORS"
+      }]
+    }, {
+      "title": "A8.1: Nedostupnost specifikací datových služeb",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a8-1-nedostupnost-specifikaci-sluzeb.csv",
+        "title": "Nedostupnost specifikací datových služeb"
+      }]
+    }, {
+      "title": "A8.2: Nedostupné specifikace datových služeb",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny. ",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a8-2-nedostupnost-specifikaci-sluzby-seznam.csv",
+        "title": "Nedostupné specifikace datových služeb"
+      }]
+    }, {
+      "title": "A9.1: Nedostupnost specifikací datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a9-1-nedostupnost-specifikace.csv",
+        "title": "Nedostupnost specifikací datových sad"
+      }]
+    }, {
+      "title": "A9.2: Nedostupné specifikace datových sad",
+      "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
+      "files": [{
+        "url": "/soubor/kvalita/statistika/a9-2-nedostupnost-specifikaci-seznam.csv",
+        "title": "Nedostupné specifikace datových sad"
+      }]
+    }]
+  }, {
+    "title": "Druhy registrace datových sad v NKOD",
+    "type": "files",
+    "files": [{
+      "url": "/soubor/kvalita/statistika/nkod-pocty-sad.csv",
+      "title": "Počty datových sad registrovaných z formuláře a přes LKOD"
+    }, {
+      "url": "/soubor/kvalita/statistika/nkod-typy.csv",
+      "title": "Typy katalogizace a uložení dat"
+    }, {
+      "url": "/soubor/kvalita/statistika/nkod-zebricek.csv",
+      "title": "Počty datových sad a distribucí"
+    }]
+  }, {
+    "title": "Denní změny v NKOD",
+    "type": "file",
+    "urlTemplate": "/soubor/kvalita/statistika/zmeny_{{yesterday}}.csv"
+  }, {
+    "title": "Měsíční změny v NKOD",
+    "type": "file",
+    "urlTemplate": "/soubor/kvalita/statistika/mesicni_zmeny_{{last-month}}.csv"
+  }]
+}

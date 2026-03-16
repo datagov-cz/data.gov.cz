@@ -27,10 +27,10 @@ Aktuální žebříček mapuje období let 2023 až 2024, které bylo charakteri
 Zatímco absolutní špičku žebříčku nadále okupují globální lídři jako Francie a Jižní Korea, Česká republika je v mezinárodním srovnání právem označována za „skokana roku“. Takto výrazný nárůst svědčí o systematické práci na zkvalitňování datového ekosystému a odstraňování bariér v přístupu k veřejným informacím napříč celou státní správou.</p>
 
 <gov-infobar color="success" type="subtle"><h2>Tři pilíře moderní digitální správy</h2>
-<p>Metodika hodnocení indexu OURdata zůstává i pro rok 2025 rozdělena do tří hlavních pilířů, které komplexně mapují celý životní cyklus vládních dat.</p><br>
-<p><b>Dostupnost dat</b></p><p>Zkoumá existenci právních rámců, strategické plánování a schopnost vlády identifikovat společenskou poptávku po konkrétních informacích.</p><br>
-<p><b>Přístupnost dat</b></p><p>Zaměřuje se na technickou kvalitu publikovaných souborů a jejich dostupnost skrze moderní rozhraní API.</p> <br>
-<p><b>Podpora vlády pro opětovné využití dat</b></p><p>Hodnotí proaktivní kroky státu při propagaci datových sad v komerční i akademické sféře.</p><br></gov-infobar>
+<p>Metodika hodnocení indexu OURdata zůstává i pro rok 2025 rozdělena do tří hlavních pilířů, které komplexně mapují celý životní cyklus vládních dat.</p>
+<p><b>Dostupnost dat</b><br>Zkoumá existenci právních rámců, strategické plánování a schopnost vlády identifikovat společenskou poptávku po konkrétních informacích.</p>
+<p><b>Přístupnost dat</b><br>Zaměřuje se na technickou kvalitu publikovaných souborů a jejich dostupnost skrze moderní rozhraní API.</p>
+<p><b>Podpora vlády pro opětovné využití dat</b><br>Hodnotí proaktivní kroky státu při propagaci datových sad v komerční i akademické sféře.</p></gov-infobar>
 <BR>
 
 <h2>Recept na úspěch</h2>

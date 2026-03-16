@@ -30,7 +30,7 @@ Zatímco absolutní špičku žebříčku nadále okupují globální lídři ja
 <p>Metodika hodnocení indexu OURdata zůstává i pro rok 2025 rozdělena do tří hlavních pilířů, které komplexně mapují celý životní cyklus vládních dat.</p>
 <p><b>Dostupnost dat</b><br>Zkoumá existenci právních rámců, strategické plánování a schopnost vlády identifikovat společenskou poptávku po konkrétních informacích.</p>
 <p><b>Přístupnost dat</b><br>Zaměřuje se na technickou kvalitu publikovaných souborů a jejich dostupnost skrze moderní rozhraní API.</p>
-<p><b>Podpora vlády pro opětovné využití dat</b><br>Hodnotí proaktivní kroky státu při propagaci datových sad v komerční i akademické sféře.</p></gov-infobar>
+<p><b>Podpora vlády pro opětovné využití dat</b><br>Hodnotí proaktivní kroky státu při propagaci datových sad v komerční i akademické sféře.</p><br></gov-infobar>
 <BR>
 
 <h2>Recept na úspěch</h2>

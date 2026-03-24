@@ -26,11 +26,12 @@ Legislativní návrh z konce listopadu 2025 totiž v těchto dnech a týdnech po
 
 <h2>Most mezi kvalitními daty k vývoji AI</h2>
 <p>Souběžně s touto legislativní očistou přichází Strategie datové unie, která reaguje na chronický nedostatek kvalitních dat pro trénování modelů umělé inteligence. Strategie stojí na budování evropských datových prostorů, což je infrastruktura zajišťující bezpečné a interoperabilní sdílení dat napříč celou Unií. Aby nezůstalo jen u teoretických rámců, vznikají takzvané datové laboratoře (Data Labs). Tato specializovaná pracoviště poskytnou firmám a výzkumníkům chráněné prostředí, kde mohou přistupovat k různorodým datovým sadám a bezpečně testovat AI modely. Datová laboratoř tak slouží jako praktický most, který pomáhá uživatelům překonávat technické a právní bariéry pro využívání dat při trénování AI algoritmů a při cestě od surových dat k hotovému produktu.</p>
+<br>
+
+<b>Tři pilíře datové strategie</b>
+{% include image.html url="../přílohy/články/Evropa-sjednocuje-pravidla-pro-novou-éru-datové-ekonomiky/digital-package-pilire.webp"  description="Zdroj: Digitální a informační agentura" %}
 
 
-<h3>TŘI PILÍŘE DATOVÉ STRATEGIE</h3>
-{% include image.html url="../přílohy/články/Evropa-sjednocuje-pravidla-pro-novou-éru-datové-ekonomiky/digital-package-pilire.webp"  description="Tři pilíře datové strategie EU" %}
-Zdroj: Digitální a informační agentura
 <br>
 <h2>Byrokracie sbalená do kapsy</h2>
 <p>Jedním z nejhmatatelnějších přínosů balíčku je zavedení „Evropské podnikové peněženky“. Tento digitální nástroj je navržen tak, aby firmám všech velikostí umožnil bezpečnou a plně právně závaznou komunikaci napříč EU. Podniky budou moci prostřednictvím „peněženky“ digitálně prokazovat svou identitu, podepisovat dokumenty, sdílet certifikáty nebo licence. Zatímco pro veřejnou správu bude akceptace této peněženky povinná, pro firmy zůstává její využívání dobrovolné. Jde o zásadní krok k odbourání papírové administrativy a zjednodušení přeshraničních operací, což ocení zejména exportéři a technologické firmy působící na více trzích současně.</p>
@@ -40,8 +41,8 @@ Zdroj: Digitální a informační agentura
 <p>Proces zavádění Digitálního simplifikačního balíčku je rozplánován do několika fází, aby se zajistila jeho plynulá implementace. Zatímco první části zákona o AI jsou již v platnosti, klíčové milníky nás čekají v letech 2026 a 2027. V roce 2026 lze očekávat významné investice do infrastruktury a rozšiřování dostupnosti HVDs. Plná účinnost celého balíčku je plánována na rok 2027, kdy proběhne i rozsáhlá analýza dopadů digitální legislativy. Do roku 2029 by měly podniky díky těmto změnám dosáhnout významných úspor a efektivnějšího fungování na digitálním trhu. Pro datové specialisty a poskytovatele dat je nyní zásadní sledovat pilotní projekty v rámci datových laboratoří a včas se adaptovat na nové standardy interoperability, které se stanou normou pro celou evropskou datovou ekonomiku.</p>
 <br>
 
-{% include image.html url="../přílohy/články/Evropa-sjednocuje-pravidla-pro-novou-éru-datové-ekonomiky/digital-package-time.webp"  description="Harmonogram " %}
-Zdroj: Digitální a informační agentura
+{% include image.html url="../přílohy/články/Evropa-sjednocuje-pravidla-pro-novou-éru-datové-ekonomiky/digital-package-time.webp"  description="Zdroj: Digitální a informační agentura" %}
+
 
 
 

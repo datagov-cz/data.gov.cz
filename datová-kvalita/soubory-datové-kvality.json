@@ -4,14 +4,14 @@
     "type": "quality-group",
     "metrics": [{
       "title": "Q1: Distribuce s chybějícími podmínkami užití a seznam s odkazy dle poskytovatele",
-      "content": "[Stanovte podmínky užití distribucí datových sad](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
+      "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
       "files": [{
         "url": "/soubor/kvalita/statistika/q1.csv",
         "title": "Počet distribucí bez specifikovaných podmínek užití dle poskytovatele"
       }]
     }, {
       "title": "Q2: Datové sady s chybějícími podmínkami užití v distribucích a seznam s odkazy dle poskytovatele",
-      "content": "[Stanovte podmínky užití distribucí datových sad](https://opendata.gov.cz/cinnost:stanoveni-podminek-uziti) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
+      "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
       "files": [{
         "url": "/soubor/kvalita/statistika/q2.csv",
         "title": "Počet datových sad, jejichž distribuce nemají specifikovány podmínky užití dle poskytovatele"
@@ -82,7 +82,7 @@
       }]
     }, {
       "title": "Q8: Distribuce s nevalidním MIME typem a seznam s odkazy dle poskytovatele",
-      "content": "Připomínáme, co je to [MIME typ](https://opendata.gov.cz/cinnost:vyber-mime-typu) a že jeho [použití je pro harvestaci do NKOD povinné](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/).",
+      "content": "Připomínáme, co je to [MIME typ](https://data.gov.cz/špatná-praxe/technické-překážky/#chybná-hlavička-http-content-type) a že jeho [použití je pro harvestaci do NKOD povinné](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/).",
       "files": [{
         "url": "/soubor/kvalita/statistika/q8.csv",
         "title": "Počty distribucí datových sad s nevalidním MIME Typem"

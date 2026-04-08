@@ -95,7 +95,7 @@
     "title": "Statistika dostupnosti distribucí, schémat, podmínek užití a dokumentace",
     "type": "quality-group",
     "metrics": [{
-      "title": "A1.1: Nedostupnost distribucí datových sad ve formě souboru ke stažení (jenom počty)",
+      "title": "A1.1: Počty nedostupných distribucí (ve formě souboru ke stažení)",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
         "url": "/soubor/kvalita/statistika/a1-1-nedostupnost.csv",

@@ -11,7 +11,7 @@ homepage: true
     <gov-statsbar-item><span id="keywordCountLabel">&nbsp;</span><span slot="text">klíčových slov</span></gov-statsbar-item>
 </gov-statsbar>
 
-<gov-container>
+<!-- gov-container>
     <h2>Novinky ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign posts=site.posts | where:"lang", page.lang %}
@@ -29,13 +29,15 @@ homepage: true
     <div class="flex-justify-end">
         <gov-button variant="primary" inverse="true" type="solid" size="m" href="novinky" wcag-label="Přejít do archivu novinek">Archiv novinek</gov-button>
     </div>
-</gov-container>
+</gov-container -->
+
+
 
 <gov-container>
-    <h2>Články ze světa dat veřejné správy</h2>
+    <h2>Aktuality a články ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
-        {% for clanek in clanky limit:3 %}
+        {% for clanek in clanky limit:6 %}
         <gov-tile href="..{{ clanek.url }}">
             <h3 slot="title">{{ clanek.title }}</h3>
             <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
@@ -50,6 +52,8 @@ homepage: true
         <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na starší články">Starší články</gov-button>
      </div> 
 </gov-container>
+
+
 
 <gov-container>
     <h2>Důležité informace pro členy ekosystému otevřených dat</h2>

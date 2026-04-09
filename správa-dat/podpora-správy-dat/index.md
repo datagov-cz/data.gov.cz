@@ -146,6 +146,19 @@ Záznam webináře, který se věnuje tomu, jak by měly úřady postupovat při
 
 Záznam webináře, který se věnoval zapojení správy dat do procesu řízení rizik. Ukazuje, jaký mohou mít nedostatky ve správě dat dopad na bezpečnost a také jak pracovat s katalogem rizik správy dat.
 
+[Metodika řízení rizik správy dat]
+
+[Návod pro prioritizaci rizik správy dat]
+
+[Návod pro práci s Excel katalogem hrozeb a rizik]
+
+[Katalog hrozeb a rizik správy dat]
+
+[Příklady využití Katalogu hrozeb a rizik správy dat]
+
+[Krátký návod pro Excel katalog hrozeb a rizik]
+
+
 ## Interní pravidla a principy správy dat
 **Webinář: [Principy a interní pravidla správy dat]**
 
@@ -193,3 +206,9 @@ Záznam webináře, který se zaměřil na to, proč má smysl do interních pra
 [Přehled věcných oblastí dat]:  ../../přílohy/správa-dat/Prehled_vecnych_oblasti_dat_1.4.xlsx "Přehled věcných oblastí dat"
 [Kategorizace dat]: ../../přílohy/správa-dat/Kategorizace_dat.pdf "Kategorizace dat"
 [Minimální charakteristiky pojmů pro RPP]: ../../přílohy/správa-dat/Minimalni_charakteristiky_pojmu_pro_RPP.pdf "Minimální charakteristiky pojmů pro RPP"
+[Metodika řízení rizik správy dat]: ../../přílohy/správa-dat/Metodika_rizeni_rizik.pdf "Metodika řízení rizik správy dat"
+[Návod pro prioritizaci rizik správy dat]: ../../přílohy/správa-dat/Navod_pro_prioritizaci_rizik.pdf "Návod pro prioritizaci rizik správy dat"
+[Návod pro práci s Excel Katalogem hrozeb a rizik]: ../../přílohy/správa-dat/Navod_pro_Excel_katalog.pdf "Návod pro práci s Excel Katalogem hrozeb a rizik"
+[Katalog hrozeb a rizik správy dat]: ../../přílohy/správa-dat/Katalog_hrozeb_a_rizik_spravy_dat_1_2026.xlsx "Katalog hrozeb a rizik správy dat"
+[Příklady využití Katalogu hrozeb a rizik správy dat]: ../../přílohy/správa-dat/Priklady_vyuziti_katalogu_hrozeb.pdf "Příklady využití Katalogu hrozeb a rizik správy dat"
+[Krátký návod pro Excel katalog hrozeb a rizik]:  ../../přílohy/správa-dat/Kratky_navod_pro_Excel_katalog.pdf "Krátký návod pro Excel katalog hrozeb a rizik"

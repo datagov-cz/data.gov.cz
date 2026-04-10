@@ -1,8 +1,10 @@
 {
   "groups": [{
+    "identifier": "kvalita-metadatových-záznamů-v-nkod",
     "title": "Kvalita metadatových záznamů v NKOD",
     "type": "quality-group",
     "metrics": [{
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q1",
       "title": "Q1: Distribuce s chybějícími podmínkami užití a seznam s odkazy dle poskytovatele",
       "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
       "files": [{
@@ -10,6 +12,7 @@
         "title": "Počet distribucí bez specifikovaných podmínek užití dle poskytovatele"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q2",
       "title": "Q2: Datové sady s chybějícími podmínkami užití v distribucích a seznam s odkazy dle poskytovatele",
       "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
       "files": [{
@@ -17,6 +20,7 @@
         "title": "Počet datových sad, jejichž distribuce nemají specifikovány podmínky užití dle poskytovatele"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q3",
       "title": "Q3: Datové sady s neúplnými povinnými metadaty a seznam s odkazy dle poskytovatele",
       "content": "Připomínáme [povinné položky API lokálních katalogů pro harvestaci do NKOD](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/).",
       "files": [{
@@ -27,60 +31,70 @@
         "title": "Seznam datových sad nesplňujících povinné atributy dle poskytovatele"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q4c",
       "title": "Q4c: Celkový přehled datových formátů v distribucích ",
       "files": [{
         "url": "/soubor/kvalita/statistika/q4c.csv",
         "title": "Formáty dat distribucí celkem"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q4",
       "title": "Q4: Využívané datové formáty distribucí dle poskytovatele",
       "files": [{
         "url": "/soubor/kvalita/statistika/q4.csv",
         "title": "Formáty dat distribucí dle poskytovatele"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q5c",
       "title": "Q5c: Celkový přehled typů podmínek užití",
       "files": [{
         "url": "/soubor/kvalita/statistika/q5c.csv",
         "title": "Podmínky užití distribucí celkem"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q5b",
       "title": "Q5b: Využívání typů podmínek užití dle poskytovatele",
       "files": [{
         "url": "/soubor/kvalita/statistika/q5b.csv",
         "title": "Počty poskytovatelů dle podmínek užití distribucí"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q5",
       "title": "Q5: Typy podmínek užití v distribucích dle poskytovatele",
       "files": [{
         "url": "/soubor/kvalita/statistika/q5.csv",
         "title": "Podmínky užití distribucí dle poskytovatele"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q6c",
       "title": "Q6c: Celkový přehled periodicity aktualizace datových sad",
       "files": [{
         "url": "/soubor/kvalita/statistika/q6c.csv",
         "title": "Počty datových sad s danou periodicitou aktualizace"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q6",
       "title": "Q6: Periodicita aktualizace datových sad dle poskytovatele",
       "files": [{
         "url": "/soubor/kvalita/statistika/q6.csv",
         "title": "Počty datových sad s danou periodicitou aktualizace dle poskytovatele"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q7a",
       "title": "Q7a: Četnost klíčových slov v datových sadách",
       "files": [{
         "url": "/soubor/kvalita/statistika/q7a.csv",
         "title": "Počty datových sad s daným klíčovým slovem"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q7b",
       "title": "Q7b: Četnost klíčových slov dle poskytovatelů",
       "files": [{
         "url": "/soubor/kvalita/statistika/q7b.csv",
         "title": "Počty poskytovatelů datových sad s daným klíčovým slovem"
       }]
     }, {
+      "identifier": "kvalita-metadatových-záznamů-v-nkod-q8",
       "title": "Q8: Distribuce s nevalidním MIME typem a seznam s odkazy dle poskytovatele",
       "content": "Připomínáme, co je to [MIME typ](https://data.gov.cz/špatná-praxe/technické-překážky/#chybná-hlavička-http-content-type) a že jeho [použití je pro harvestaci do NKOD povinné](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/).",
       "files": [{
@@ -92,9 +106,11 @@
       }]
     }]
   }, {
+    "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace",
     "title": "Statistika dostupnosti distribucí, schémat, podmínek užití a dokumentace",
     "type": "quality-group",
     "metrics": [{
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a11",
       "title": "A1.1: Počty nedostupných distribucí (ve formě souboru ke stažení)",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -102,6 +118,7 @@
         "title": "Počty nedostupných distribucí (ve formě souboru ke stažení)"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a12",
       "title": "A1.2: Seznam nedostupných distribucí s odkazy (ve formě souboru ke stažení)",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -109,6 +126,7 @@
         "title": "Nedostupné distribuce datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a13",
       "title": "A1.3: Počty distribucí s nefunkční technikou CORS dle poskytovatele (u souborů ke stažení)",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -116,6 +134,7 @@
         "title": "Nedostupnost techniky CORS u distribucí ve formě souboru ke stažení"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a14",
       "title": "A1.4: Seznam distribucí s nefunkční technikou CORS s odkazy",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -123,6 +142,7 @@
         "title": "Distribuce ve formě souboru ke stažení s nedostupnou technikou CORS"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a21",
       "title": "A2.1: Počty nedostupných schémat u distribucí dle poskytovatele",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -130,6 +150,7 @@
         "title": "Dostupnost schémat distribucí datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a22",
       "title": "A2.2: Seznam nedostupných schémat s odkazy na datové sady",
       "content": "",
       "files": [{
@@ -137,6 +158,7 @@
         "title": "Nedostupné distribuce datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a23",
       "title": "A2.3: Počty schémat s nefunkční technikou CORS (u souborů ke stažení)",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -144,6 +166,7 @@
         "title": "Nedostupnost techniky CORS u schémat distribucí ve formě souboru ke stažení"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a24",
       "title": "A2.4: Seznam schémat s nefunkční technikou CORS s odkazy",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -151,6 +174,7 @@
         "title": "Distribuce ve formě souboru ke stažení s nedostupnou technikou CORS u schématu"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a31",
       "title": "A3.1: Počty nedostupných podmínek užití u distribucí dle poskytovatele",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -158,6 +182,7 @@
         "title": "Dostupnost podmínek užití distribucí datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a32",
       "title": "A3.2: Seznam nedostupných podmínek užití s odkazy",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -165,6 +190,7 @@
         "title": "Nedostupné podmínky užití distribucí datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a41",
       "title": "A4.1: Počty chybějící dokumentace u datových sad dle poskytovatele",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -172,6 +198,7 @@
         "title": "Dostupnost uživatelské dokumentace datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a42",
       "title": "A4.2: Seznam chybějící dokumentace s odkazy",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -179,6 +206,7 @@
         "title": "Nedostupné uživatelské dokumentace datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a51",
       "title": "A5.1: Neshoda formátu v metadatech a formátem indikovaným serverem: počty dle poskytovatele s odkazy",
       "content": "Neshoda formátu v metadatech a formátem indikovaným serverem: počty dle poskytovatele s odkazy",
       "files": [{
@@ -189,6 +217,7 @@
         "title": "Seznam distribucí, u kterých je neshoda mezi formátem v NKOD a formátem indikovaným serverem"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a61",
       "title": "A6.1: Počty nedostupných přístupových bodů datových služeb dle poskytovatele",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -196,6 +225,7 @@
         "title": "Nedostupnost přístupových bodů distribucí ve formě datové služby"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a62",
       "title": "A6.2: Seznam nedostupných přístupových bodů s odkazy",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -203,6 +233,7 @@
         "title": "Nedostupné přístupové body distribucí ve formě datové služby"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a63",
       "title": "A6.3: Počty přístupových bodů s nefunkční technikou CORS dle poskytovatele",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -210,6 +241,7 @@
         "title": "Nedostupnost techniky CORS u přístupových bodů distribucí ve formě datové služby"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a64",
       "title": "A6.4: Seznam přístupových bodů s nefunkční technikou CORS s odkazy",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -217,6 +249,7 @@
         "title": "Přístupové body distribucí ve formě datové služby s nedostupnou technikou CORS"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a71",
       "title": "A7.1: Počty nedostupných popisů přístupových bodů datových služeb",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -224,6 +257,7 @@
         "title": "Nedostupnost popisů přístupových bodů distribucí ve formě datové služby"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a72",
       "title": "A7.2: Seznam nedostupných popisů přístupových bodů datových služeb s odkazy",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -231,6 +265,7 @@
         "title": "Nedostupné popisy přístupových bodů distribucí ve formě datové služby"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a73",
       "title": "A7.3: Počty popisů přístupových bodů datových služeb s nefunkční technikou CORS dle poskytovatelů",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -238,6 +273,7 @@
         "title": "Nedostupnost techniky CORS u popisů přístupových bodů"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a74",
       "title": "A7.4: Seznam popisů přístupových bodů datových služeb s nefunkční technikou CORS s odkazy",
       "content": "Měřeno požadavkem HTTP OPTIONS a časovým limitem 3 vteřiny.",
       "files": [{
@@ -245,6 +281,7 @@
         "title": "Popisy přístupových bodů distribucí ve formě datové služby s nedostupnou technikou CORS"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a81",
       "title": "A8.1: Počty nedostupných specifikací datových služeb dle poskytovatele",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -252,6 +289,7 @@
         "title": "Nedostupnost specifikací datových služeb"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a82",
       "title": "A8.2: Seznam nedostupných specifikací datových služeb s odkazy",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny. ",
       "files": [{
@@ -259,6 +297,7 @@
         "title": "Nedostupné specifikace datových služeb"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a91",
       "title": "A9.1: Počty nedostupných specifikací datových sad dle poskytovatelů",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -266,6 +305,7 @@
         "title": "Nedostupnost specifikací datových sad"
       }]
     }, {
+      "identifier": "statistika-dostupnosti-distribucí-schémat-podmínek-užití-a-dokumentace-a92",
       "title": "A9.2: Seznam nedostupných specifikací datových sad s odkazy",
       "content": "Měřeno požadavkem HTTP HEAD a časovým limitem 3 vteřiny.",
       "files": [{
@@ -274,6 +314,7 @@
       }]
     }]
   }, {
+    "identifier": "technické-způsoby-registrace-datových-sad-v-nkod-dle-poskytovatele",
     "title": "Technické způsoby registrace datových sad v NKOD dle poskytovatele",
     "type": "files",
     "files": [{
@@ -287,10 +328,12 @@
       "title": "Počty datových sad a distribucí"
     }]
   }, {
+    "identifier": "denní-změny-v-nkod",
     "title": "Denní změny v NKOD",
     "type": "file",
     "urlTemplate": "/soubor/kvalita/statistika/zmeny_{{yesterday}}.csv"
   }, {
+    "identifier": "měsíční-změny-v-nkod",
     "title": "Měsíční změny v NKOD",
     "type": "file",
     "urlTemplate": "/soubor/kvalita/statistika/mesicni_zmeny_{{last-month}}.csv"

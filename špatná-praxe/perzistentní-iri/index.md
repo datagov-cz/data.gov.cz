@@ -9,7 +9,7 @@ lang: cs
 <br><br>
 
 <div style="color: #ffffff; background:#c62828; padding:10px;">
-<h2>DOPORUČENÍ</h2><br>
+<b>DOPORUČENÍ</b><br>
 <b>Neměňte IRI!</b><br>To, že váš web běží na gov.cz, neznamená, že vaše data musí změnit identitu. Ponechte původní identifikátory zachovány. <br><br>
 <b>Migrujete na novou doménu?</b><br>Tu starou v žádném případě nerušte! Musí zůstat ve vašem vlastnictví a musí být technicky funkční v DNS záznamech. Pokud starou doménu necháte expirovat, všechna data, která na ni odkazovala, se v tu vteřinu stanou nepoužitelnými. Má to fatální důsledky pro kontinuitu státní správy.<br><br>
 <b>Když už musíte, dělejte to správně!</b><br>Pokud je změna IRI vynucena (např. zánikem původní infrastruktury), nestačí prostý HTTP redirect (301/302) na aplikační úrovni! Zajistěte trvalé přesměrování na úrovni DNS záznamů (CNAME nebo ALIAS). Původní doména musí zůstat v DNS záznamech funkční a odkazovat na novou infrastrukturu tak, aby strojové dotazy na stará IRI zůstaly validní.
@@ -22,11 +22,13 @@ Při stěhování webu na novou doménu mají správci tendenci měnit i identif
 
 Představte si to jako rodné číslo. Pokud se přestěhujete z Prahy do Brna, změní se vaše adresa, ale vaše rodné číslo zůstává stejné. Pokud by vám stát při každém stěhování změnil i rodné číslo, přestanou vás vidět banky, lékaři i úřady. Přesně to se stane vašim datům. Je potřeba mít na paměti, že vy nejste jediným uživatelem vašich dat.  To může mít zásadní vliv na chod mnoha systému ve veřejné správě. Uživatelům pak mohou přestat fungovat služby na nich postavené.
 <br>
+
 ## Stroj není člověk
 Když člověk klikne na starý odkaz a web ho přesměruje, obvykle to ani nepostřehne. Ale stroj? Pokud analytický software narazí na dvě různá IRI, vidí dvě různé věci. I když je tam "redirect", propojení mezi daty je přetržené.
 
 Výsledek? Data se sice sesypou na jednu hromadu, ale už k sobě nepasují. Musíme je pak složitě a draze "lepit", což vnáší do systému chyby a duplicity.
 <br>
+
 ## Zlatý standard perzistence
 V moderní digitální správě existuje koncept tzv. **perzistentních identifikátorů**. Je to zlatý standard, který zajišťuje, že data najdete na stejném místě (pod stejným rodným číslem) dnes i za deset let. 
 

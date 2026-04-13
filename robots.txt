@@ -4,3 +4,21 @@ Disallow: /sparql*
 Disallow: /fct/
 Disallow: /describe/
 Disallow: /zdroj/
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Bytedance
+Disallow: /
+
+User-agent: ByteDanceSpider
+Disallow: /
+
+User-agent: Baiduspider-render
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Sogou web spider
+Disallow: /

@@ -5,7 +5,7 @@ ref: ŠpatnáPraxe-ZměnaIRI
 lang: cs
 ---
 
-**Jednotná státní doména gov.cz sice přináší řád do komunikace s občany, ale v hlubších vrstvách digitální infrastruktury může napáchat nevratné škody. Neuvážená změna perzistentních identifikátorů (IRI) při migraci systémů hrozí okamžitým rozpadem ekosystému propojených dat. Jako poskytovatelé totiž nejste jedinými uživateli svých dat – na stabilitě vašich identifikátorů přímo závisí analytici, firmy i další úřady. Bez zajištění absolutní zpětné kompatibility pro ně vaše data v momentě změny fakticky přestanou existovat, což může paralyzovat fungování klíčových služeb veřejné správy i soukromého sektoru.**
+**Implementace jednotné státní domény gov.cz je sice vítaným krokem k důvěryhodné komunikaci státu s občany, ale v hlubších vrstvách digitální infrastruktury může napáchat nevratné škody. Neuvážená změna perzistentních identifikátorů (IRI) při migraci systémů hrozí okamžitým rozpadem ekosystému propojených dat. Jako poskytovatelé totiž nejste jedinými uživateli svých dat – na stabilitě vašich identifikátorů přímo závisí analytici, firmy i další úřady. Bez zajištění absolutní zpětné kompatibility pro ně vaše data v momentě změny fakticky přestanou existovat, což může paralyzovat fungování klíčových služeb veřejné správy i soukromého sektoru.**
 <br><br>
 
 <div style="color: #ffffff; background:#c62828; padding:10px;">

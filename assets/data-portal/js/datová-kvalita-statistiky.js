@@ -26,14 +26,22 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     }
   })();
 
-  const dataQualityCatalogUrl = "../soubory-datové-kvality.json";
+  const REPORT_QUERY_ARGUMENT = "sestava";
+
+  const DATA_QUALITY_CATALOG_URL = "../soubory-datové-kvality.json";
 
   window.addEventListener("DOMContentLoaded", async () => {
 
+    // We need to wait for gov-design-system to initialize the element.
+    const groupSelect = await waitForElement("#group-selector select");
+    const metricSelect = await waitForElement("#metric-selector select");
+
     const userInterface = {
       group: document.getElementById("group-selector"),
-      fileWrap: document.getElementById("file-wrap"),
-      file: document.getElementById("file-selector"),
+      groupSelect,
+      metricWrap: document.getElementById("metric-wrap"),
+      metric: document.getElementById("metric-selector"),
+      metricSelect,
       contentWrap: document.getElementById("content-wrap"),
     };
 
@@ -42,11 +50,13 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
       metric: "",
     };
 
-    // Initialize user interface.
-
     const definitions = await fetchDefinitions();
-    renderGroupSelector(userInterface.group, definitions, state.group);
-    renderNoGroup(userInterface);
+
+    // We pass the select element inside the gov-form-select.
+    renderGroupSelector(userInterface.groupSelect, definitions);
+
+    renderFromUrlQuery(userInterface, definitions, state,
+      window.location.search);
 
     // Event handlers
 
@@ -55,62 +65,123 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
       state.metric = "";
       // Update user interface.
       const group = definitions.groups[state.group];
-      if (group?.type === "quality-group") {
-        renderQualityGroup(userInterface, group);
-      } else if (group?.type === "files") {
-        renderFiles(userInterface, group);
-      } else if (group?.type === "file") {
-        renderFile(userInterface, group);
-      } else {
-        renderNoGroup(userInterface);
-      }
+      renderGroup(userInterface, group);
+      // Update URL query.
+      updateUrlQuery(group.identifier);
     });
 
-    userInterface.file.addEventListener("gov-change", (event) => {
+    userInterface.metric.addEventListener("gov-change", (event) => {
       state.metric = event.target.value;
+      // Update user interface.
       const metric = definitions.groups[state.group].metrics[state.metric];
       renderMetric(userInterface, metric);
+      // Update URL query.
+      updateUrlQuery(metric.identifier);
+    });
+
+    window.addEventListener("popstate", (event) => {
+      renderFromUrlQuery(userInterface, definitions, state,
+        window.location.search);
     });
 
   });
 
+  async function waitForElement(selector, timeoutMs = 5000) {
+    const interval = 100;
+    let elapsed = 0;
+    while (elapsed < timeoutMs) {
+      const element = document.querySelector(selector);
+      if (element !== null) return element;
+      await new Promise((resolve) => setTimeout(resolve, interval));
+      elapsed += interval;
+    }
+    throw new Error(`Element "${selector}" not found after ${timeoutMs}ms — design system may have failed to load.`);
+  }
+
   async function fetchDefinitions() {
-    const response = await fetch(dataQualityCatalogUrl);
+    const response = await fetch(DATA_QUALITY_CATALOG_URL);
     return await response.json();
   }
 
-  function renderGroupSelector(element, definitions, value) {
+  /**
+   * @param {string} value
+   */
+  function renderGroupSelector(element, definitions) {
+    {
+      const option = document.createElement("option");
+      option.setAttribute("value", "");
+      option.innerText = "Vyberte skupinu pro zobrazení";
+      element.appendChild(option);
+    }
     definitions.groups.forEach((item, index) => {
       const option = document.createElement("option");
       option.setAttribute("value", index);
       option.innerText = item.title;
       element.appendChild(option);
     });
-    element.value = value;
+    element.value = "";
+  }
+
+  /**
+   * @param {string} urlQuery
+   */
+  function renderFromUrlQuery(userInterface, definitions, state, urlQuery) {
+    const params = new URLSearchParams(urlQuery);
+    const identifier = params.get(REPORT_QUERY_ARGUMENT);
+    for (const [groupKey, group] of Object.entries(definitions.groups)) {
+      if (group.identifier === identifier) {
+        renderGroup(userInterface, group);
+        state.group = userInterface.groupSelect.value = groupKey;
+        return;
+      }
+      for (const [metricKey, metric] of Object.entries(group.metrics ?? [])) {
+        if (metric.identifier === identifier) {
+          renderGroup(userInterface, group);
+          renderMetric(userInterface, metric);
+          state.group = userInterface.groupSelect.value = groupKey;
+          state.metric = userInterface.metricSelect.value = metricKey;
+          return;
+        }
+      }
+    }
+    // Default.
+    renderNoGroup(userInterface);
+    state.group = userInterface.groupSelect.value = "";
+    state.metric = userInterface.metricSelect.value = "";
+  }
+
+  function renderGroup(userInterface, group) {
+    if (group?.type === "quality-group") {
+      renderQualityGroup(userInterface, group);
+    } else if (group?.type === "files") {
+      renderFiles(userInterface, group);
+    } else if (group?.type === "file") {
+      renderFile(userInterface, group);
+    } else {
+      renderNoGroup(userInterface);
+    }
   }
 
   function renderQualityGroup(userInterface, group) {
-    renderMetricSelector(userInterface.file, group);
+    renderMetricSelector(userInterface.metricSelect, group);
 
     // Clear and set new content.
     userInterface.contentWrap.innerText = "";
 
     // Update visibility
-    userInterface.fileWrap.classList.remove("hide");
+    userInterface.metricWrap.classList.remove("hide");
     userInterface.contentWrap.classList.remove("hide");
   }
 
   function renderMetricSelector(element, group) {
-    // The element is created using JS, so we need to get it here.
-    const selectElement = element.querySelector("select");
     // Clear content
-    selectElement.innerText = "";
+    element.innerText = "";
     // Prompt option
     {
       const option = document.createElement("option");
       option.setAttribute("value", "");
-      option.innerText = "Vyberte soubor pro zobrazení";
-      selectElement.appendChild(option);
+      option.innerText = "Vyberte ukazatel pro zobrazení";
+      element.appendChild(option);
     }
     // Other options
     const metrics = group.metrics;
@@ -118,9 +189,9 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
       const option = document.createElement("option");
       option.setAttribute("value", index);
       option.innerText = item.title;
-      selectElement.appendChild(option);
+      element.appendChild(option);
     });
-    selectElement.value = "";
+    element.value = "";
   }
 
   function renderFiles(userInterface, group) {
@@ -150,7 +221,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     userInterface.contentWrap.append(root);
 
     // Update visibility
-    userInterface.fileWrap.classList.add("hide");
+    userInterface.metricWrap.classList.add("hide");
     userInterface.contentWrap.classList.remove("hide");
   }
 
@@ -179,13 +250,13 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     userInterface.contentWrap.append(root);
 
     // Update visibility
-    userInterface.fileWrap.classList.add("hide");
+    userInterface.metricWrap.classList.add("hide");
     userInterface.contentWrap.classList.remove("hide");
   }
 
   function renderNoGroup(userInterface) {
     // Update visibility
-    userInterface.fileWrap.classList.add("hide");
+    userInterface.metricWrap.classList.add("hide");
     userInterface.contentWrap.classList.add("hide");
   }
 
@@ -222,6 +293,18 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     userInterface.contentWrap.append(root);
   }
 
+  // URL HANDLING
+
+  /**
+   * @param {string | undefined} report
+   */
+  function updateUrlQuery(report) {
+    let url = window.location.pathname;
+    if (report !== undefined) {
+      url += `?${REPORT_QUERY_ARGUMENT}=${encodeURIComponent(report)}`
+    }
+    window.history.pushState({}, "", url);
+  }
 
   // TABLE RENDER SECTION
 
@@ -229,7 +312,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     const payload = await (await fetch(url)).text();
     const csv = window.jQuery.csv.toArrays(payload);
     const header = createTableHeader(csv[0])
-    const body = crateTableBody(csv.slice(1));
+    const body = createTableBody(csv.slice(1));
     element.appendChild(header);
     element.appendChild(body);
   }
@@ -246,7 +329,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     return thead;
   }
 
-  function crateTableBody(rows) {
+  function createTableBody(rows) {
     const tbody = document.createElement("tbody");
     for (const row of rows) {
       const tr = document.createElement("tr");

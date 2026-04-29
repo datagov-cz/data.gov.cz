@@ -13,7 +13,7 @@ V digitálním věku je rozdíl mezi pravdou a lží často otázkou jediného k
 <br>
 <br>
 <p>Tyto cílené manipulace představují zásadní hrozbu pro stabilitu společnosti. Schopnost prohlédnout je a nenechat se jimi ovlivnit se tak v informačním chaosu 21. století stává jednou z našich nejdůležitějších dovedností.</p>
-
+<br>
 <h2>Mezi rizikem a (ne)jistotou</h2>
 <p>Aktuální data potvrzují, že dezinformace jsou pro obyvatele Evropy každodenní realitou. Přibližně 36 % respondentů uvádí, že se s nimi setkává často nebo velmi často. Přestože je povědomí o tomto problému vysoké, statistiky odhalují znepokojivý paradox: téměř třetina občanů si nevěří, že dokáže falešnou zprávu spolehlivě identifikovat.</p>
  
@@ -39,8 +39,8 @@ V digitálním věku je rozdíl mezi pravdou a lží často otázkou jediného k
 <hr>
 <br>
 
-<h2>Věděli jste?<h2>
-<p>Evropská unie aktivně bojuje proti šíření lží prostřednictvím cílených politik, jako je Evropský štít demokracie. Tato iniciativa se zaměřuje především na efektivnější spolupráci se sociálními platformami, aby bylo možné dezinformační kampaně zastavit dříve, než napáchají škody.</p>
+<h2>Věděli jste?</h2>
+<p>Evropská unie aktivně bojuje proti šíření lží prostřednictvím <a href="https://commission.europa.eu/topics/countering-information-manipulation/strengthened-eu-code-practice-disinformation_en#chronology-of-eu-actions-against-disinformation" target="_blank">cílených politik</a>, jako je <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2660" target="_blank">Evropský štít demokracie</a>. Tato iniciativa se zaměřuje především na efektivnější spolupráci se sociálními platformami, aby bylo možné dezinformační kampaně zastavit dříve, než napáchají škody.</p>
 <br>
 <br>
 <br>

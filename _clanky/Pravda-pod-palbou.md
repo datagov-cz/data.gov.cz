@@ -39,29 +39,23 @@ V digitálním věku je rozdíl mezi pravdou a lží často otázkou jediného k
 <hr>
 <br>
 
-<h2>Věděli jste?</h2>
+<b>Věděli jste?</b>
 <p>Evropská unie aktivně bojuje proti šíření lží prostřednictvím <a href="https://commission.europa.eu/topics/countering-information-manipulation/strengthened-eu-code-practice-disinformation_en#chronology-of-eu-actions-against-disinformation" target="_blank">cílených politik</a>, jako je <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2660" target="_blank">Evropský štít demokracie</a>. Tato iniciativa se zaměřuje především na efektivnější spolupráci se sociálními platformami, aby bylo možné dezinformační kampaně zastavit dříve, než napáchají škody.</p>
-<br>
-<br>
-<br>
 <p>Data a informace převzaty z článku <a href="https://data.europa.eu/en/publications/datastories/spotting-disinformation-how-confident-are-europeans-digital-age-0" target="_blank">Spotting disinformation: How confident are Europeans in a digital age?</a> a z databáze <a href="https://data.europa.eu/data/datasets/s3592_fl014ep_eng?locale=en" target="_blank">Eurostatu</a>.</p>
 
 <br>
-<br>
-
 <hr>
 <br>
-<br>
-<h2>Další čtení a doporučení</h2>
-<p><a href="https://www.europarl.europa.eu/topics/cs/article/20250603STO28720/dezinformace-10-kroku-jak-chranit-sebe-a-ostatni" target="_blank">europarl.europa.eu: Dezinformace: 10 kroků, jak chránit sebe a ostatní</a></p>
+<b>Další čtení a doporučení</b>
+<p>europarl.europa.eu: <a href="https://www.europarl.europa.eu/topics/cs/article/20250603STO28720/dezinformace-10-kroku-jak-chranit-sebe-a-ostatni" target="_blank">Dezinformace: 10 kroků, jak chránit sebe a ostatní</a></p>
 
-<p><a href="https://www.consilium.europa.eu/cs/policies/disinformation-and-democratic-resilience/" target="_blank">consilium.europa.eu: Dezinformace a demokratická odolnost</a></p>
+<p>consilium.europa.eu: <a href="https://www.consilium.europa.eu/cs/policies/disinformation-and-democratic-resilience/" target="_blank">Dezinformace a demokratická odolnost</a></p>
 
-<p><a href="https://mv.gov.cz/chh/soubor/resist-cz-pdf.aspx" target="_blank">mv.gov.cz: Příručka RESIST, jejíž vydání zajistilo Centrum proti terorismu a hybridním hrozbám Minsterstva vnitra.</a></p>
+<p>mv.gov.cz: <a href="https://mv.gov.cz/chh/soubor/resist-cz-pdf.aspx" target="_blank">Příručka RESIST, jejíž vydání zajistilo Centrum proti terorismu a hybridním hrozbám Minsterstva vnitra.</a></p>
 
 
-<p><a href="https://mv.gov.cz/chh/clanek/definice-dezinformaci-a-propagandy.aspx" target="_blank">mv.gov.cz: Jak český stát pohlíží na dezinformace a propagandu, definuje Ministerstvo vnitra ČR.</a></p>
+<p>mv.gov.cz: <a href="https://mv.gov.cz/chh/clanek/definice-dezinformaci-a-propagandy.aspx" target="_blank">Jak český stát pohlíží na dezinformace a propagandu, definuje Ministerstvo vnitra ČR.</a></p>
 
-<p><a href="https://www.irozhlas.cz/zpravy-domov/overovna-jakym-nepravdam-veri-cesi-velky-pruzkum-ukazal-cerny-kasel-i-alzirskou_2603290500_kvr" target="_blank">iRozhlas.cz: OVĚŘOVNA: Jakým nepravdám věří Češi? Velký průzkum ukázal černý kašel i alžírskou boxerku</a></p>
+<p>iRozhlas.cz: <a href="https://www.irozhlas.cz/zpravy-domov/overovna-jakym-nepravdam-veri-cesi-velky-pruzkum-ukazal-cerny-kasel-i-alzirskou_2603290500_kvr" target="_blank">OVĚŘOVNA: Jakým nepravdám věří Češi? Velký průzkum ukázal černý kašel i alžírskou boxerku</a></p>
 <br>
 <br>

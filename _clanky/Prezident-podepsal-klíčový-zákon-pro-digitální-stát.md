@@ -3,7 +3,7 @@ layout: post
 detail: true
 title: "Prezident podepsal klíčový zákon pro digitální stát"
 ref: Prezident-podepsal-klíčový-zákon-pro-digitální-stát
-image: ../přílohy/články/Prezident-podepsal-klíčový-zákon-pro-digitální-stát-thumb.webp
+image: ../přílohy/články/Prezident-podepsal-klíčový-zákon-pro-digitální-stát/prezident-thumb.webp
 author: jiří_kaňa
 date: 2026-04-29 15:45:00 +02:00
 lang: cs

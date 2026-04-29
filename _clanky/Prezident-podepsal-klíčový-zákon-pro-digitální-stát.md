@@ -16,7 +16,5 @@ Prezident republiky Petr Pavel podepsal 28. dubna 2026 zákon o správě dat, kt
 
 <p>Většina ustanovení zákona nabude účinnosti 1. července 2026. Celkové náklady na spuštění reformy se odhadují na 433 milionů korun a slibují systematičtější nakládání s údaji a posílení digitální suverenity Česka.</p>
 <p>Detailní přehled povinností, které nová legislativa přináší, pro vás shrneme v samostatném článku.</p>
-
-
-
-
+<br>
+<br>

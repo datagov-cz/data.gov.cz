@@ -39,14 +39,14 @@ V digitálním věku je rozdíl mezi pravdou a lží často otázkou jediného k
 <hr>
 <br>
 
-<b>Věděli jste?</b>
+<h3>Věděli jste?</h3>
 <p>Evropská unie aktivně bojuje proti šíření lží prostřednictvím <a href="https://commission.europa.eu/topics/countering-information-manipulation/strengthened-eu-code-practice-disinformation_en#chronology-of-eu-actions-against-disinformation" target="_blank">cílených politik</a>, jako je <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2660" target="_blank">Evropský štít demokracie</a>. Tato iniciativa se zaměřuje především na efektivnější spolupráci se sociálními platformami, aby bylo možné dezinformační kampaně zastavit dříve, než napáchají škody.</p>
 <p>Data a informace převzaty z článku <a href="https://data.europa.eu/en/publications/datastories/spotting-disinformation-how-confident-are-europeans-digital-age-0" target="_blank">Spotting disinformation: How confident are Europeans in a digital age?</a> a z databáze <a href="https://data.europa.eu/data/datasets/s3592_fl014ep_eng?locale=en" target="_blank">Eurostatu</a>.</p>
 
 <br>
 <hr>
 <br>
-<b>Další čtení a doporučení</b>
+<h3>Další čtení a doporučení</h3>
 <p>europarl.europa.eu: <a href="https://www.europarl.europa.eu/topics/cs/article/20250603STO28720/dezinformace-10-kroku-jak-chranit-sebe-a-ostatni" target="_blank">Dezinformace: 10 kroků, jak chránit sebe a ostatní</a></p>
 
 <p>consilium.europa.eu: <a href="https://www.consilium.europa.eu/cs/policies/disinformation-and-democratic-resilience/" target="_blank">Dezinformace a demokratická odolnost</a></p>

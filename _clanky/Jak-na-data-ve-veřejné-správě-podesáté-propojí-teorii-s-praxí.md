@@ -32,7 +32,7 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 <br>
 
 <center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold; font-color:#ffffff"><a href="https://data.gov.cz/konference/2026/index.html" target="_blank">HARMONOGRAM AKCE</a></span></center>
-
+<br>
 
 <p>Kapacita sálu pro 160 osob zaručuje prostor pro networking a osobní sdílení zkušeností. Pro širší veřejnost bude zajištěn záznam, který bude následně dostupný na stránce s harmonogramem, viz výše. 
 </p>

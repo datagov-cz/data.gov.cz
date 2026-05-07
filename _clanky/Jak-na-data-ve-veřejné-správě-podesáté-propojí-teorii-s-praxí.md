@@ -15,7 +15,8 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 <p>Jubilejní 10. ročník odborné konference Jak na data ve veřejné správě nabídne unikátní platformu pro setkání expertů ze státní správy, akademické sféry i byznysu. Akce se zaměří na transformaci úřadů prostřednictvím efektivního nakládání s informacemi a sdílení konkrétního know-how.</p>
 <br>
 
-<gov-button color="primary" type="solid" size="m" accessible-label="Registrační formulář" href="https://forms.cloud.microsoft/e/03de96XYSU" target="_blank">REGISTRUJTE SE</gov-button>
+<center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://forms.cloud.microsoft/e/03de96XYSU" target="_blank">REGISTRUJTE SE</a></span></center>
+
 <br>
 
 <p>Systematická správa dat představuje nejdůležitější investici do digitální budoucnosti Česka a tato konference vytyčuje cestu k jejímu úspěšnému naplnění.</p>
@@ -29,7 +30,9 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 <p>Odpolední blok následně nabídne širokou škálu příkladů z praxe, od informačního systému pro modelování dat až po fungování lokálních katalogů v novém legislativním rámci. Technologický pokrok reprezentuje startup PangeAI s nástrojem pro prostorová data nebo využití umělé inteligence pro rutinní agendy Policie ČR. Širší celospolečenský a analytický rozměr práce s daty pak doloží ukázky z datové žurnalistiky iRozhlas, výstupy agentury PAQ Research či využívání dat Ministerstva zdravotnictví pro hodnocení kvality poskytované péče.</p>
 
 <br>
-<gov-button color="primary" type="solid" size="m" accessible-label="Harmonogram akce v roce 2026" href="https://data.gov.cz/konference/2026/index.html">HARMONOGRAM AKCE</gov-button>
+
+<center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://data.gov.cz/konference/2026/index.html" target="_blank">HARMONOGRAM AKCE</a></span></center>
+
 
 <p>Kapacita sálu pro 160 osob zaručuje prostor pro networking a osobní sdílení zkušeností. Pro širší veřejnost bude zajištěn záznam, který bude následně dostupný na stránce s harmonogramem, viz výše. 
 </p>

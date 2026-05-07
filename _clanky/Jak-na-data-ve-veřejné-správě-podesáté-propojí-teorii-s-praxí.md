@@ -15,7 +15,7 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 <p>Jubilejní 10. ročník odborné konference Jak na data ve veřejné správě nabídne unikátní platformu pro setkání expertů ze státní správy, akademické sféry i byznysu. Akce se zaměří na transformaci úřadů prostřednictvím efektivního nakládání s informacemi a sdílení konkrétního know-how.</p>
 <br>
 
-<center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://forms.cloud.microsoft/e/03de96XYSU" target="_blank">REGISTRUJTE SE</a></span></center>
+<center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold; font-color:#ffffff"><a href="https://forms.cloud.microsoft/e/03de96XYSU" target="_blank">REGISTRUJTE SE</a></span></center>
 
 <br>
 
@@ -31,7 +31,7 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 
 <br>
 
-<center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold"><a href="https://data.gov.cz/konference/2026/index.html" target="_blank">HARMONOGRAM AKCE</a></span></center>
+<center><span style="background-color:#2e6aa8;border-radius:0px;padding-right:1em;padding-left:1em;padding-top:1em;padding-bottom:1em; font-size: 16; font-weight: bold; font-color:#ffffff"><a href="https://data.gov.cz/konference/2026/index.html" target="_blank">HARMONOGRAM AKCE</a></span></center>
 
 
 <p>Kapacita sálu pro 160 osob zaručuje prostor pro networking a osobní sdílení zkušeností. Pro širší veřejnost bude zajištěn záznam, který bude následně dostupný na stránce s harmonogramem, viz výše. 

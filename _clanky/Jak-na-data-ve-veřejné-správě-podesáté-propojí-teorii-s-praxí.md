@@ -5,7 +5,7 @@ title: "Jak na data ve veřejné správě podesáté propojí teorii s praxí"
 ref: Jak-na-data-ve-veřejné-správě-podesáté-propojí-teorii-s-praxí
 image: ../přílohy/články/Jak-na-data-ve-veřejné-správě-podesáté-propojí-teorii-s-praxí/Konf_web.webp
 author: jiří_kaňa
-date: 2026-05-07 08:40:00 +02:00
+date: 2026-05-11 08:40:00 +02:00
 lang: cs
 ---
 Praha se 18. června v prostorách Akademie veřejného investování promění v živoucí křižovatku informací, kde se potkává teorie datového managementu s reálnou praxí moderních úřadů.

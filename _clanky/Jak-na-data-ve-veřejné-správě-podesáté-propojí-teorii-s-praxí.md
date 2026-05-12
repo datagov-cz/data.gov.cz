@@ -22,7 +22,7 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 </center>
 <br>
 
-<p>Systematická správa dat představuje nejdůležitější investici do digitální budoucnosti Česka a tato konference vytyčuje cestu k jejímu úspěšnému naplnění.</p>
+<p>Systematická správa dat představuje nejdůležitější investici do datové budoucnosti Česka a tato konference vytyčuje cestu k jejímu úspěšnému naplnění.</p>
  
 <p>Stěžejním bodem bude panelová diskuze, ve které Lucie Zapletalová z Úřadu vlády rozebere využití dat pro legislativní reformy, Martin Nečaský nasdílí zkušenosti s implementací správy dat na Univerzitě Karlově a vládní zmocněnec pro AI Lukáš Kačena zhodnotí aktuální rozvoj technologií. Panel doplní Libor Drlík z DIA s pohledem na strategii správy dat a její důsledné naplňování. Hlavní poselství debaty je jasné: bez robustní datové základny a státem garantované kvality dat nelze plnohodnotně využívat digitální služby ani potenciál umělé inteligence. Data jsou v tomto kontextu vnímána jako nezbytné „palivo“, bez něhož by AI ve veřejném sektoru zůstala jen nenaplněným příslibem.</p>
 

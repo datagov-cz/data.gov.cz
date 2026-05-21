@@ -16,9 +16,10 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 <br>
 
 <center>
-  <span style="background-color:#2e6aa8; border-radius:0px; padding:1em; font-size:16px; font-weight:bold;">
+  <!-- span style="background-color:#2e6aa8; border-radius:0px; padding:1em; font-size:16px; font-weight:bold;">
     <a href="https://forms.cloud.microsoft/e/03de96XYSU" target="_blank" style="color:#ffffff; text-decoration:none;">REGISTRUJTE SE</a>
-  </span>
+  </span -->
+  <p><b>V TUTO CHVÍLI JE KAPACITA PLNĚ OBSAZENA</B></p>
 </center>
 <br>
 

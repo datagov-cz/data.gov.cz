@@ -5,13 +5,11 @@ title: "Zákon o správě dat a řízeném přístupu k datům"
 ref: Zákon-o-správě-dat-a-řízeném-přístupu-k-datům-2
 image: ../přílohy/články/Zákon-o-správě-dat-a-řízeném-přístupu-k-datům-2/Zákon-o-správě-dat.webp
 author: lenka_kubáňová
-date: 2026-02-04 07:01:00 +02:00
+date: 2026-05-28T15:00:00 +01:00
 lang: cs
 ---
 Dne 12. května 2026 vyšel ve Sbírce zákonů dlouho očekávaný Zákon o správě dat a řízeném přístupu k datům pod č. 60/2026 Sb. Tento legislativní rámec zásadně mění strategické řízení dat ve veřejném sektoru.
-
-# Zákon o správě dat a řízeném přístupu k datům
-
+<!--more-->
 
 ## 1 Kontext a cíle ZoSD
 

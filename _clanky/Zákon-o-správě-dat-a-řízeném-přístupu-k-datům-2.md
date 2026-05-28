@@ -11,7 +11,7 @@ lang: cs
 Dne 12. května 2026 vyšel ve Sbírce zákonů dlouho očekávaný Zákon o správě dat a řízeném přístupu k datům pod č. 60/2026 Sb. Tento legislativní rámec zásadně mění strategické řízení dat ve veřejném sektoru.
 <!--more-->
 
-## 1 Kontext a cíle ZoSD
+## Kontext a cíle ZoSD
 
 Dne 12. května 2026 vyšel ve Sbírce zákonů dlouho očekávaný Zákon o správě dat a řízeném přístupu k datům (ZoSD) pod č. 60/2026 Sb. Tento legislativní rámec zásadně mění strategické řízení dat ve veřejném sektoru. Transformuje data z pouhého technologického doplňku informačních systémů na samostatný artefakt s vlastním životním cyklem a hodnotou využitelnou nezávisle na zdrojovém systému.
 
@@ -21,7 +21,7 @@ Zákon sleduje dva hlavní cíle:
 
 * Harmonizace s evropským Data Governance Act (DGA): ZoSD harmonizuje český právní řád s kapitolou II Nařízení Evropského parlamentu a Rady (EU) 2022/868 (DGA). Zavádí obecný právní rámec pro řízený přístup k datům, který v České republice doposud chyběl. Tento režim umožňuje bezpečné sekundární využití tzv. neveřejných dat z informačních systémů veřejné správy (ISVS), která podléhají zákonné ochraně – ať už jde o osobní údaje, obchodní tajemství, autorská práva třetích osob či statistickou důvěrnost. Cílem je zpřístupnit tato anonymizovaná data ve veřejném zájmu pro analýzy, výzkum či vzdělávání. Tím se řízený přístup striktně odlišuje od režimu otevřených dat (open data) i od poskytování informací podle zákona č. 106/1999 Sb. Zákon tak dále podporuje efektivní mechanismus pro opakované užití dat, což je jeden z pilířů současné digitální strategie EU.
 
-## 2 Věcná a osobní působnost: Na koho a na jaké systémy zákon dopadá
+## Věcná a osobní působnost: Na koho a na jaké systémy zákon dopadá
 
 Rozsah působnosti zákona je definován architekturou ISVS. Podle § 2 odst. 1 ZoSD se zákon vztahuje na data a provozní údaje vedené v ISVS, tedy na tzv. správce dat, kteří jsou v § 4 ZoSD vymezeni jako správci informačních systémů veřejné správy podle zákona č. 365/2000 Sb.
 
@@ -31,7 +31,7 @@ Zákon současně stanovuje striktní výluky z věcné působnosti, kdy se tato
 * ISVS spravované pro potřeby zajišťování obrany a bezpečnosti státu, veřejného pořádku, vnitřní bezpečnosti, krizového řízení nebo ochrany obyvatelstva.
 * ISVS spravované územními samosprávnými celky nebo bezpečnostními sbory.
 
-## 3 Zásady datového managementu: Důvěryhodnost, suverenita a vnitřní pravidla
+## Zásady datového managementu: Důvěryhodnost, suverenita a vnitřní pravidla
 
 **Účinnost ustanovení:** 27. května 2026
 
@@ -43,7 +43,7 @@ Základní povinnosti představující pilíře dobré správy dat (Data Governa
 
 * Zavedení vnitřní regulace: Správci dat mají povinnost přijmout interní pravidla pro správu dat a provozních údajů. Metodické pokyny a závazné vzory pro nastavení těchto vnitřních procesů vydá Digitální a informační agentura (DIA) jako ústřední orgán státní správy pro oblast ISVS.
 
-## 4 Datový inventář v praxi: Lokální katalogy dat a metadata
+## Datový inventář v praxi: Lokální katalogy dat a metadata
 
 **Účinnost ustanovení:** 1. ledna 2029
 
@@ -56,7 +56,7 @@ Tato povinnost v praxi obnáší:
 
 Metodickou podporu pro technické provedení těchto povinností zajistí DIA. Odložená účinnost na rok 2029 poskytuje správcům dostatečný čas pro implementaci těchto metadatových požadavků, typicky v rámci přirozeného cyklu obnovy a rozvoje jejich ISVS.
 
-## 5 Centrální datová infrastruktura: Národní katalog dat a Geoportál ČR
+## Centrální datová infrastruktura: Národní katalog dat a Geoportál ČR
 
 Úspěšné naplnění cílů ZoSD se opírá o rozvoj centrálních infrastrukturních komponent, které spravuje a rozvíjí DIA:
 
@@ -64,7 +64,7 @@ Metodickou podporu pro technické provedení těchto povinností zajistí DIA. O
 
 * Geoportál České republiky: Centrální technologická platforma určená k zajištění integrace a přístupu k národní infrastruktuře pro prostorové informace.
 
-## 6 Nový režim řízeného přístupu: Jak bezpečně sdílet chráněná data
+## Nový režim řízeného přístupu: Jak bezpečně sdílet chráněná data
 
 Implementace kapitoly II DGA prostřednictvím ZoSD přináší do českého právního řádu zcela nový mechanismus sekundárního využití chráněných dat.
 
@@ -74,7 +74,7 @@ Hlavní principy řízeného přístupu jsou:
 
 * Účelová vázanost ve veřejném zájmu: Přístup k těmto datům lze poskytnout např. za účelem socio-ekonomického výzkumu, vyhodnocování dopadů státních politik, analýz a pro potřeby tvorby rozhodnutí podložených daty (evidence-based policy). Konkrétní příklady validních výzkumných záměrů definuje dopadová studie (RIA) k zákonu.
 
-## 7 Procesní pravidla žádostí: Od projektu využití dat po schvalovací workflow
+## Procesní pravidla žádostí: Od projektu využití dat po schvalovací workflow
 
 **Účinnost ustanovení:** 1. ledna 2028
 

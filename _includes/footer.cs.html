@@ -1,19 +1,24 @@
-<footer class="gov-footer" style="color: white; padding: 40px 0; font-family: sans-serif;">
+<!-- Hlavní prvek patičky s odsazením 80px od obsahu nad ním -->
+<footer class="gov-footer" style="background-color: #1a1a1a; color: white; margin-top: 80px; padding: 40px 0; font-family: sans-serif;">
+    
+    <!-- gov-container drží obsah uprostřed a nepustí ho do krajů -->
     <gov-container style="max-width: 1200px; margin: 0 auto; display: block; padding: 0 20px;">
         
-        <gov-grid role="list">
+        <gov-grid role="list" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
 
-            <gov-grid-item size-sm="12/12" size-md="3/12" size="12/12" role="listitem">
-                <div style="margin-bottom: 20px;">
-                    <a href="https://www.dia.gov.cz" target="_blank" title="Digitální a informační agentura">
-                        <img alt="Digitální a informační agentura" id="DIA" src="{{ '/images/DIA.webp' | relative_url }}" width="100">
-                    </a>
+            <!-- 1. SLOUPEC: Logo + odkaz pod ním (zmenšeno na fixních 100px) -->
+            <gov-grid-item size-sm="12/12" size-md="1/12" size="12/12" role="listitem" style="flex: 0 0 100px; margin-bottom: 20px;">
+                <div style="display: flex; flex-direction: column; gap: 8px; font-size: 75%; white-space: nowrap;">
+                    <img alt="Digitální a informační agentura" id="DIA" src="{{ '/images/DIA.webp' | relative_url }}" width="100">
+                    <a href="https://dia.gov.cz" target="_blank" style="color: white !important; text-decoration: underline;">dia.gov.cz</a>
                 </div>
             </gov-grid-item>
 
-
-            <gov-grid-item size-sm="12/12" size-md="3/12" size="12/12" role="listitem" style="margin-bottom: 20px;">
-                <h3 class="h6" style="color: white; margin-top: 0; margin-bottom: 15px;">Registrace do NKOD</h3>
+            <!-- 2. SLOUPEC: Registrace do NKOD (rovnoměrně roztažený, text bez zalomení) -->
+            <gov-grid-item size-sm="12/12" size-md="3/12" size="12/12" role="listitem" style="flex: 1; margin-bottom: 20px; white-space: nowrap; padding-left: 25px;">
+                <!-- Nadpis podle třídy h6 + tučně -->
+                <h3 class="h6" style="color: white; margin-top: 0; margin-bottom: 15px; font-weight: bold;">Registrace do NKOD</h3>
+                <!-- Obsah pod nadpisem zmenšený na 75 % -->
                 <div style="font-size: 75%; line-height: 1.6;">
                     <p style="margin: 5px 0;"><a href="/formulář/registrace-datové-sady" style="color: white !important; text-decoration: underline;">Registrovat novou datovou sadu</a></p>
                     <p style="margin: 5px 0;"><a href="/formulář/registrace-lokálního-katalogu" style="color: white !important; text-decoration: underline;">Registrovat nový lokální katalog</a></p>
@@ -23,16 +28,22 @@
                 </div>
             </gov-grid-item>
 
-            <gov-grid-item size-sm="12/12" size-md="3/12" size="12/12" role="listitem" style="margin-bottom: 20px;">
-                <h3 class="h6" style="color: white; margin-top: 0; margin-bottom: 15px;">Informace</h3>
+            <!-- 3. SLOUPEC: Informace (rovnoměrně roztažený, text bez zalomení) -->
+            <gov-grid-item size-sm="12/12" size-md="3/12" size="12/12" role="listitem" style="flex: 1; margin-bottom: 20px; white-space: nowrap; padding-left: 25px;">
+                <!-- Nadpis podle třídy h6 + tučně -->
+                <h3 class="h6" style="color: white; margin-top: 0; margin-bottom: 15px; font-weight: bold;">Informace</h3>
+                <!-- Obsah pod nadpisem zmenšený na 75 % -->
                 <div style="font-size: 75%; line-height: 1.6;">
                     <p style="margin: 5px 0;"><a href="/zásady-zpracování-osobních-údajů" style="color: white !important; text-decoration: underline;">Zásady zpracování osobních údajů</a></p>
                     <p style="margin: 5px 0;"><a href="/prohlášení-o-přístupnosti" style="color: white !important; text-decoration: underline;">Prohlášení o přístupnosti</a></p>
                 </div>
             </gov-grid-item>
 
-            <gov-grid-item size-sm="12/12" size-md="3/12" size="12/12" role="listitem" style="color: white; margin-bottom: 20px;">
-                <h3 class="h6" style="color: white; margin-top: 0; margin-bottom: 15px;">Národní koordinátor otevřených dat</h3>
+            <!-- 4. SLOUPEC: Kontakty a sociální sítě (rovnoměrně roztažený, text bez zalomení) -->
+            <gov-grid-item size-sm="12/12" size-md="4/12" size="12/12" role="listitem" style="flex: 1; color: white; margin-bottom: 20px; white-space: nowrap; padding-left: 25px;">
+                <!-- Nadpis podle třídy h6 + tučně -->
+                <h3 class="h6" style="color: white; margin-top: 0; margin-bottom: 15px; font-weight: bold;">Národní koordinátor otevřených dat</h3>
+                <!-- Obsah pod nadpisem zmenšený na 75 % -->
                 <div style="font-size: 75%; line-height: 1.6;">
                     <p style="margin: 0 0 10px 0;">
                         Michal Kubáň<br>
@@ -44,6 +55,7 @@
                         </a>
                     </p>
 
+                    <!-- Sociální sítě roztažené na plnou šířku sloupce (ikonky 20x20 px) -->
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; width: 100%;">
                         <a href="https://github.com/datagov-cz/data.gov.cz" target="_blank" title="GitHub" style="text-decoration: none; display: inline-flex; color: white !important;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-github" viewBox="0 0 16 16">

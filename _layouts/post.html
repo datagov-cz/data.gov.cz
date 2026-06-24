@@ -8,7 +8,7 @@
           <h1>{{ page.title }}{{depth}}</h1>
           <time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%-d. %-m. %Y"}}</time>,
           {% if site.data.authors[page.author].web %}
-          <a href="{{site.data.authors[page.author].web}}">{{site.data.authors[page.author].name}}</a>
+          <a href="{{site.data.authors[page.author].web}}">{{site.data.authors[page.author].name}}</a><br>
           {% else %}
           {{site.data.authors[page.author].name}}
           {% endif %}

@@ -11,7 +11,9 @@ lang: cs
 Dne 12. května 2026 vyšel ve Sbírce zákonů dlouho očekávaný Zákon o správě dat a řízeném přístupu k datům pod č. 60/2026 Sb. Tento legislativní rámec zásadně mění strategické řízení dat ve veřejném sektoru.
 <!--more-->
 
-<br>
+
+<h3>Kontext a cíle ZoSD</h3>
+<b></b>
 
 ### Kontext a cíle ZoSD
 Zákon transformuje data z pouhého technologického doplňku informačních systémů na samostatný **artefakt s vlastním životním cyklem** a hodnotou využitelnou nezávisle na zdrojovém systému.

@@ -29,5 +29,4 @@ Správa dat ve veřejné správě už dávno nestojí na okraji zájmu. Digitál
 <p>Aktivity DIA však splněním prvního milníku nekončí. V letošním roce se DIA společně s úřady zaměří na další zlepšování správy dat a na rozšíření ověřené praxe do nových oblastí. Tyto kroky jsou zásadní pro informované řízení státu i vědecké účely a doplňuje je připravovaný zákon o správě dat a řízeném přístupu k datům. Tato legislativa, která aktuálně čeká na projednání v Poslanecké sněmovně otevře nové cesty pro využívání státních dat v analýzách, médiích či akademickém výzkumu a zároveň úřadům uloží povinnost popsat veškeré své datové fondy do začátku roku 2029.</p>
 
 <p>Díky současnému nasazení a metodické podpoře DIA však mají zapojené instituce značný náskok a mohou stavět na již vybudovaných základech. Systematická správa dat se tak definitivně stává standardním nástrojem pro moderní, transparentní a efektivně fungující stát.</p>
-<br>
 

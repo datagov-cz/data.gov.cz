@@ -12,6 +12,4 @@ Prezident republiky Petr Pavel podepsal 28. dubna 2026 <a href="https://www.psp.
 <!--more-->
 <br>
 <br>
-<p>Detailní přehled povinností, které nová legislativa přináší, pro vás shrneme v samostatném článku.</p>
-<br>
-<br>
+<p>Detailní přehled povinností, které nová legislativa přináší, pro vás shrnujeme <a href="/_clanky/Zákon-o-správě-dat-a-řízeném-přístupu-k-datům-2.html"> v samostatném článku.</p>

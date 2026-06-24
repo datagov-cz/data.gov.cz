@@ -13,18 +13,16 @@ Dne 12. května 2026 vyšel ve Sbírce zákonů dlouho očekávaný Zákon o spr
 
 <br>
 
-## Kontext a cíle ZoSD
-
-Zákon transformuje data z pouhého technologického doplňku informačních systémů na samostatný artefakt s vlastním životním cyklem a hodnotou využitelnou nezávisle na zdrojovém systému.
+### Kontext a cíle ZoSD
+Zákon transformuje data z pouhého technologického doplňku informačních systémů na samostatný **artefakt s vlastním životním cyklem** a hodnotou využitelnou nezávisle na zdrojovém systému.
 
 Zákon sleduje dva hlavní cíle:
 
-* Oddělení datové vrstvy od aplikační infrastruktury: V návaznosti na zákon č. 365/2000 Sb., o informačních systémech veřejné správy, se ZoSD zaměřuje na to, aby data veřejného sektoru byla udržována přehledně, dohledatelně, byla snadno dostupná v kontextu svého užití a vykazovala vysokou míru interoperability. Cílem je, aby orgány veřejné správy i veřejnost měly exaktní přehled o datovém fondu státu a účelech jeho využití.
+* **Oddělení datové vrstvy od aplikační infrastruktury:** V návaznosti na zákon č. 365/2000 Sb., o informačních systémech veřejné správy, se ZoSD zaměřuje na to, aby data veřejného sektoru byla udržována přehledně, dohledatelně, byla snadno dostupná v kontextu svého užití a vykazovala vysokou **míru interoperability**. Cílem je, aby orgány veřejné správy i veřejnost měly exaktní přehled o datovém fondu státu a účelech jeho využití.
 
-* Harmonizace s evropským Data Governance Act (DGA): ZoSD harmonizuje český právní řád s kapitolou II Nařízení Evropského parlamentu a Rady (EU) 2022/868 (DGA). Zavádí obecný právní rámec pro řízený přístup k datům, který v České republice doposud chyběl. Tento režim umožňuje bezpečné sekundární využití tzv. neveřejných dat z informačních systémů veřejné správy (ISVS), která podléhají zákonné ochraně – ať už jde o osobní údaje, obchodní tajemství, autorská práva třetích osob či statistickou důvěrnost. Cílem je zpřístupnit tato anonymizovaná data ve veřejném zájmu pro analýzy, výzkum či vzdělávání. Tím se řízený přístup striktně odlišuje od režimu otevřených dat (open data) i od poskytování informací podle zákona č. 106/1999 Sb. Zákon tak dále podporuje efektivní mechanismus pro opakované užití dat, což je jeden z pilířů současné digitální strategie EU.
+* **Harmonizace s evropským Data Governance Act (DGA)**: ZoSD harmonizuje český právní řád s kapitolou II Nařízení Evropského parlamentu a Rady (EU) 2022/868 (DGA). Zavádí obecný právní rámec pro **řízený přístup k datům**, který v České republice doposud chyběl. Tento režim umožňuje bezpečné sekundární využití tzv. neveřejných dat z informačních systémů veřejné správy (ISVS), která podléhají zákonné ochraně – ať už jde o osobní údaje, obchodní tajemství, autorská práva třetích osob či statistickou důvěrnost. Cílem je zpřístupnit tato anonymizovaná data ve veřejném zájmu pro analýzy, výzkum či vzdělávání. Tím se řízený přístup striktně odlišuje od režimu otevřených dat (open data) i od poskytování informací podle zákona č. 106/1999 Sb. Zákon tak dále podporuje efektivní mechanismus pro opakované užití dat, což je jeden z pilířů současné digitální strategie EU.
 
-## Věcná a osobní působnost: Na koho a na jaké systémy zákon dopadá
-
+### Věcná a osobní působnost: Na koho a na jaké systémy zákon dopadá
 Rozsah působnosti zákona je definován architekturou ISVS. Podle § 2 odst. 1 ZoSD se zákon vztahuje na data a provozní údaje vedené v ISVS, tedy na tzv. správce dat, kteří jsou v § 4 ZoSD vymezeni jako správci informačních systémů veřejné správy podle zákona č. 365/2000 Sb.
 
 Zákon současně stanovuje striktní výluky z věcné působnosti, kdy se tato pravidla správy dat neaplikují (§ 2 odst. 2 až 4). Například jde o:

@@ -39,7 +39,7 @@ Cílem zákona o správě dat je zavést povinnost orgánů veřejné správy za
 Druhým úkolem navrhovaného zákona je umožnit tzv. řízený přístup k datům.
 Ten zajistí bezpečné předávání dat mezi jednotlivými subjekty veřejné správy, a zároveň mezi veřejný sektorem a soukromými subjekty, za účelem jejich opětovného využití, a to jak pro vědu a výzkum, tak pro vývoj aplikací a služeb.
 
-- **Podpora správy dat** - pro zajištění správných postupů na vybraných úřadech vzniknou v rámci projektu nové metodické a podpůrné materiály, tj. standardy, metodické postupy a pomůcky, které úřadům usnadní praktické zavádění kvalitní správy dat.
+- **[Podpora správy dat]** - pro zajištění správných postupů na vybraných úřadech vzniknou v rámci projektu nové metodické a podpůrné materiály, tj. standardy, metodické postupy a pomůcky, které úřadům usnadní praktické zavádění kvalitní správy dat.
 DIA ve spolupráci s orgány veřejné správy bude spravovat a rozšiřovat znalostní bázi pro správu dat tak, aby co nejlépe sloužila potřebám úřadů. 
 
 ## Podpora pro úřady 

@@ -56,4 +56,5 @@ Organizace chce také vzájemně propojit a vybudovat komunitu, v níž si insti
 
 [Rozhovory o správě dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná zpráva z provedených rozhovorů.pdf "Souhrnná zpráva z provedených rozhovorů"
 [Strategie pro správu dat ve veřejné správě (2024–2030)]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie pro správu dat ve VS.pdf "Strategie pro správu dat ve veřejné správě (2024–2030)"
-[Paragrafové znění zákona o správě dat a o řízeném přístupu k datům]: https://odok.cz/portal/veklep/material/KORND4KLAAG6/ "Zákon o správě dat a řízeném přístupu k datům"
+[Paragrafové znění zákona o správě dat a o řízeném přístupu k datům]: https://e-sbirka.gov.cz/sb/2026/60?zalozka=text "Zákon o správě dat a řízeném přístupu k datům"
+[Podpora správy dat]:https://data.gov.cz/správa-dat/podpora-správy-dat/ "Podpora správy dat"

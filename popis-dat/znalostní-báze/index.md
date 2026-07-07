@@ -31,3 +31,4 @@ Zde najdete odpovědi na časté dotazy a řešení specifických situací, se k
 [Jak vyjádřit určité "role" (např. fyzická/právnická osoba)?]: situace/role "Jak vyjádřit určité "role" (např. fyzická/právnická osoba)?"
 [Jak vyjádřit "typy" pojmu? Kdy je pojem vlastnost a kdy objekt práva?]: situace/druhy "Jak vyjádřit "typy" pojmu? Kdy je pojem vlastnost a kdy objekt práva?"
 [Jak popisovat číselníky?]: popis-konkrétních-prvků/číselníky "Jak popisovat číselníky?"
+[Jak popisovat prostorová data?]: popis-konkrétních-prvků/prostorová-data "Jak popisovat prostorová data?"

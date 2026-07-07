@@ -23,6 +23,7 @@ Zde najdete odpovědi na časté dotazy a řešení specifických situací, se k
 ### Popisování určitých prvků
 
 * [Jak popisovat číselníky?]
+* [Jak popisovat prostorová data?]
 
 [Co jsou alternativní názvy a jak je vyplňovat?]: doplňující-informace/alternativní-název "Co jsou alternativní názvy a jak je vyplňovat?"
 [Co je to charakteristika "související zdroj" a jaký je rozdíl mezi ní a "zdrojem"?]: doplňující-informace/související-zdroj "Co je to charakteristika "související zdroj" a jaký je rozdíl mezi ní a "zdrojem"?"

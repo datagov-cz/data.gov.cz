@@ -73,6 +73,6 @@ Aby se mohla veřejná správa ve větším měřítku rozhodovat na základě d
 
 
 
-[Strategie pro správu dat ve veřejné správě (2024–2030)]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Strategie%20pro%20správu%20dat%20ve%20VS.pdf "Strategie pro správu dat"
-[minimálním standardu kvalitní správy dat]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Shrnutí%20Minimálného%20standardu.pdf "Minimální standard kvalitní správy dat"
-[rozhovorů s 34 organizacemi veřejné správy]: ../../přílohy/články/projekt-DIA-pomůže-úřadům-zlepšit-správu-dat/Souhrnná%20zpráva%20z%20provedených%20rozhovorů.pdf "Souhrnná zpráva z provedených rozhovorů"
+[Strategie pro správu dat ve veřejné správě (2024–2030)]: ../../přílohy/správa-dat/STRATEGIE_pro_spravu_dat_ve_VS.pdf "Strategie pro správu dat"
+[minimálním standardu kvalitní správy dat]: ../../přílohy/správa-dat/Shrnuti_Minimalniho_standardu_SD.pdf "Minimální standard kvalitní správy dat"
+[rozhovorů s 34 organizacemi veřejné správy]: ../../přílohy/správa-dat/Souhrnna_zprava_z_provedenych_rozhovoru.pdf "Souhrnná zpráva z provedených rozhovorů"

@@ -48,7 +48,7 @@ homepage: true
 
 
 <gov-container>
-    <h2>Aktuality a články ze světa dat veřejné správy</h2>
+    <h2 class="h4">Aktuality a články ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:6 %}
@@ -143,7 +143,7 @@ class="" style="padding: 0 20px; display: block; line-height: 1; white-space: no
 </div>
 
       <gov-container>
-    <h2>Důležité informace pro členy ekosystému otevřených dat</h2>
+    <h2 class="h4">Důležité informace pro členy ekosystému otevřených dat</h2>
     <gov-tiles columns="3" no-border>
 		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
 			<h3 slot="title">Zájemci o otevírání dat</h3>

@@ -12,7 +12,7 @@ homepage: true
     <gov-statsbar-item><span id="publisherCountLabel">&nbsp;</span><span slot="text">poskytovatelů</span></gov-statsbar-item>
     <gov-statsbar-item><span id="keywordCountLabel">&nbsp;</span><span slot="text">klíčových slov</span></gov-statsbar-item>
 </gov-statsbar>
-<br>
+
 <!-- div style="max-width: 800px; margin: 0 auto; width: 75%;">
 <a href="https://data.gov.cz/konference/2026/index.html">
   {% include image.html url="https://data.gov.cz/přílohy/homepage/HP_banner.webp" %}
@@ -41,14 +41,14 @@ homepage: true
 </gov-container -->
 
 <gov-container>
-    <h2>Měníte doménu? Pozor na rozpad vazeb v propojených datech</h2>
+    <h2 class="h4">Měníte doménu? Pozor na rozpad vazeb v propojených datech</h2>
     <p>Jednotná státní doména gov.cz sice přináší řád do komunikace s občany, ale v hlubších vrstvách digitální infrastruktury může napáchat nevratné škody. Neuvážená změna perzistentních identifikátorů (IRI) při migraci systémů hrozí okamžitým rozpadem ekosystému propojených dat.</p>
     <a href="/špatná-praxe/perzistentní-iri/">Více o doporučeních pro zachování perzistentních IRI</a>
 </gov-container>
 
 
 <gov-container>
-    <h2>Aktuality a články ze světa dat veřejné správy</h2>
+    <h2 class="h4">Aktuality a články ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:6 %}
@@ -143,7 +143,7 @@ class="" style="padding: 0 20px; display: block; line-height: 1; white-space: no
 </div>
 
       <gov-container>
-    <h2>Důležité informace pro členy ekosystému otevřených dat</h2>
+    <h2 class="h4">Důležité informace pro členy ekosystému otevřených dat</h2>
     <gov-tiles columns="3" no-border>
 		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
 			<h3 slot="title">Zájemci o otevírání dat</h3>

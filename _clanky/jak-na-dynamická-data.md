@@ -46,8 +46,8 @@ Poskytovatelé, kteří k publikaci dynamických dat přistoupí, je můžou tí
 {% include image.html url="../přílohy/články/jak-na-dynamická-data/Dynamicka_data_rozhodovaci_strom.webp" description="Rozhodovací strom" %}
 
 
-[§ 3a odst. 6 zákona  č. 106/1999 Sb.]: https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_3a/odst_6 "§ 3a odst. 6 zákona  č. 106/1999 Sb."
-[§ 5a odst. 3 zákona  č. 106/1999 Sb.]: https://www.e-sbirka.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_5a/odst_3 "§ 5a odst. 3 zákona  č. 106/1999 Sb."
+[§ 3a odst. 6 zákona  č. 106/1999 Sb.]: https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_3a/odst_6 "§ 3a odst. 6 zákona  č. 106/1999 Sb."
+[§ 5a odst. 3 zákona  č. 106/1999 Sb.]: https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2024-01-01/dokument/norma/cast_1/par_5a/odst_3 "§ 5a odst. 3 zákona  č. 106/1999 Sb."
 [Open Data Směrnice, důvody (4), (8)]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024 "Open Data Směrnice, důvody (4), (8)"
 [Open Data Směrnice, důvody (31)]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024 "Open Data Směrnice, důvody (31)"
 [Open Data Směrnice, důvody (31), (32)]: https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32019L1024 "Open Data Směrnice, důvody (31), (32)"

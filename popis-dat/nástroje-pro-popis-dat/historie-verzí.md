@@ -13,4 +13,4 @@ lang: cs
 * První vydání metodiky, návodů a šablon.
 
 [charakteristiky pro kategorizaci údajů]: https://ofn.gov.cz/slovníky/#360-2023
-[§ 23 vyhlášky 360/2023 Sb. dlouhodobém řízení informačních systémů veřejné správy]: https://www.e-sbirka.cz/sb/2023/360/2024-07-01?zalozka=text#par_23
+[§ 23 vyhlášky 360/2023 Sb. dlouhodobém řízení informačních systémů veřejné správy]: https://e-sbirka.gov.cz/sb/2023/360/2024-07-01?zalozka=text#par_23

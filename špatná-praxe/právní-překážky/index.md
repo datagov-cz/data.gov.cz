@@ -84,7 +84,7 @@ Doporučeným řešením je postupovat podle [průvodce registrací datové sady
 {% include image.html url="../../přílohy/špatná-praxe/různé_režimy.webp" description="Různé režimy" %}
 
 ## Vzdání se odpovědnosti
-V podmínkách užití se může objevit formulace vzdání se odpovědnosti za škodu způsobenou užíváním dat. Poskytovatel dat se ovšem nemůže vzdát absolutně vší odpovědnosti za svá data. Příkladem je situace, kdy poskytovatel data poskytuje na základě zákonné povinnosti. V takovém případě se jedná o úřední úkon a je presumována jeho správnost. Pokud by vznikla škoda z důvodu chyby v datové sadě, nesl by za ni poskytovatel dat odpovědnost ve smyslu [zákona č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem](https://www.e-sbirka.cz/sb/1998/82/1998-05-15).
+V podmínkách užití se může objevit formulace vzdání se odpovědnosti za škodu způsobenou užíváním dat. Poskytovatel dat se ovšem nemůže vzdát absolutně vší odpovědnosti za svá data. Příkladem je situace, kdy poskytovatel data poskytuje na základě zákonné povinnosti. V takovém případě se jedná o úřední úkon a je presumována jeho správnost. Pokud by vznikla škoda z důvodu chyby v datové sadě, nesl by za ni poskytovatel dat odpovědnost ve smyslu [zákona č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem](https://e-sbirka.gov.cz/sb/1998/82/1998-05-15).
 
 **Symptomy**
 

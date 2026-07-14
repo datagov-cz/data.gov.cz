@@ -14,7 +14,7 @@ lang: cs
 * připravena s cílem co nejsnazšího strojového zpracování;
 * opatřená kontaktem na kurátora pro zpětnou vazbu (chyby, žádost o rozšíření, apod.);
 * publikována dle [otevřených formálních norem](https://data.gov.cz/ofn/) ve smyslu § 4b odst. 1 zákona č. 106/1999 Sb. o svobodném přístupu k informacím;
-* legislativně upravena [zákonem č. 106/1999 Sb. o svobodném přístupu k informacím](https://www.e-sbirka.cz/sb/1999/106/2024-07-01)).
+* legislativně upravena [zákonem č. 106/1999 Sb. o svobodném přístupu k informacím](https://e-sbirka.gov.cz/sb/1999/106/2024-07-01)).
 
 Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (odborná) veřejnost mohla snadno využívat a strojově zpracovávat.
 

@@ -86,14 +86,21 @@ homepage: true
                 {% endif %}
             </h3>
             
-            <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
-                <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
-                {{ clanek.date | date: "%-d. %-m. %Y" }}
-            </gov-chip>
             {% if clanek.image %}
-            <p><img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
+            <p style="margin: 0 0 5px 0;">
+                <img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/>
+            </p>
             {% endif %}
+            
+            <div style="margin-bottom: 8px;">
+                <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
+                    <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
+                    {{ clanek.date | date: "%-d. %-m. %Y" }}
+                </gov-chip>
+            </div>
+            
             {{ clanek.excerpt }}
+
         </gov-tile>
         {% endfor %}
      </gov-tiles>

@@ -1,27 +1,28 @@
 ---
 layout: default
-title: Články
+title: Aktuality a články ze světa dat veřejné správy
 ref: Articles
 lang: cs
 ---
-  <gov-container>
-    <h1>Články</h1>
+  <!-- gov-container>
+    <h1>Aktuality a články ze světa dat veřejné správy</h1>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
         <gov-tile href="..{{ clanek.url }}">
-          <!--<div class="section">-->
+          
             <h2 slot="title">{{ clanek.title }}</h2>
-            <!--<h4><i class="material-icons">{{ clanek.icon }}</i></h4>-->
+           
             <gov-chip variant="secondary" size="xs" tag="span" inverse="true"><gov-icon type="complex" name="time" slot="left-icon"></gov-icon>{{ clanek.date | date: "%-d. %-m. %Y" }}</gov-chip>
             {% if clanek.image %}
             <p><img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
             {{ clanek.excerpt }}
-          <!--</div>-->
+   
         </gov-tile>
         {% endfor %}
      </gov-tiles>
+
      <h2>Starší články</h2>
      <gov-tiles columns="3" no-border>
         {% for clanek in clanky offset:3 %}
@@ -35,4 +36,43 @@ lang: cs
         </gov-tile>
         {% endfor %}       
     </gov-tiles>
-  </gov-container>
+  </gov-container -->
+
+
+
+
+<gov-container>
+    <h1>Aktuality a články ze světa dat veřejné správy</h1>
+    <gov-tiles columns="3" no-border>
+        <gov-tile href="..{{ clanek.url }}">
+            
+            <h2 slot="title">
+                {% assign title_len = clanek.title | size %}
+                {% if title_len <= 31 %}
+                    {{ clanek.title }}<br>&nbsp;
+                {% elsif title_len > 62 %}
+                    {{ clanek.title | truncate: 62 }}
+                {% else %}
+                    {{ clanek.title }}
+                {% endif %}
+            </h2>
+            
+            {% if clanek.image %}
+            <p style="margin: 0 0 5px 0;">
+                <img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/>
+            </p>
+            {% endif %}
+            
+            <div style="margin-bottom: 8px;">
+                <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
+                    <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
+                    {{ clanek.date | date: "%-d. %-m. %Y" }}
+                </gov-chip>
+            </div>
+            
+            {{ clanek.excerpt }}
+
+        </gov-tile>
+        {% endfor %}
+     </gov-tiles>
+</gov-container>

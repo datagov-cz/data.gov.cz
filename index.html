@@ -47,7 +47,7 @@ homepage: true
 </gov-container>
 
 
-<gov-container>
+<!-- gov-container>
     <h2 class="h4">Aktuality a články ze světa dat veřejné správy</h2>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
@@ -65,7 +65,51 @@ homepage: true
      <div class="flex-justify-end">
         <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na starší články">Starší články</gov-button>
      </div> 
+</gov-container-->
+
+
+<gov-container>
+    <h2 class="h4">Aktuality a články ze světa dat veřejné správy</h2>
+    <gov-tiles columns="3" no-border>
+        {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
+        {% for clanek in clanky limit:6 %}
+        <gov-tile href="..{{ clanek.url }}">
+            
+            <h3 slot="title">
+                {% assign title_len = clanek.title | size %}
+                {% if title_len <= 31 %}
+                    {{ clanek.title }}<br>&nbsp;
+                {% elsif title_len > 62 %}
+                    {{ clanek.title | truncate: 62 }}
+                {% else %}
+                    {{ clanek.title }}
+                {% endif %}
+            </h3>
+            
+            {% if clanek.image %}
+            <p style="margin: 0 0 5px 0;">
+                <img width="100%" src="články/{{ clanek.image }}" alt="{{ clanek.title }}"/>
+            </p>
+            {% endif %}
+            
+            <div style="margin-bottom: 8px;">
+                <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
+                    <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
+                    {{ clanek.date | date: "%-d. %-m. %Y" }}
+                </gov-chip>
+            </div>
+            
+            {{ clanek.excerpt }}
+
+        </gov-tile>
+        {% endfor %}
+     </gov-tiles>
+     
+     <div class="flex-justify-end">
+        <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na starší články">Starší články</gov-button>
+     </div> 
 </gov-container>
+
 
 <div style="display: flex; justify-content: center; padding: 20px;">
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>

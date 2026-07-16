@@ -4,8 +4,8 @@ title: Články
 ref: Articles
 lang: cs
 ---
-<gov-container>
-    <h1>Aktuality a články ze světa dat veřejné správy</h1>
+<!-- gov-container>
+    <h1>Články</h1>
     <gov-tiles columns="3" no-border>
         <gov-tile href="..{{ clanek.url }}">
             
@@ -38,11 +38,11 @@ lang: cs
         </gov-tile>
         {% endfor %}
      </gov-tiles>
-</gov-container>
+</gov-container -->
 
  
-  <!-- gov-container>
-    <h1>Aktuality a články ze světa dat veřejné správy</h1>
+  <gov-container>
+    <h1>Články</h1>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:3 %}
@@ -73,7 +73,7 @@ lang: cs
         </gov-tile>
         {% endfor %}       
     </gov-tiles>
-  </gov-container -->
+  </gov-container>
 
 
 

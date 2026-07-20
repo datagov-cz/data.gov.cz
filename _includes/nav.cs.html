@@ -15,81 +15,36 @@
                 Správa dat
             </gov-nav-item> 
         {% else %}
-            <gov-nav-item href="{{ "/správa-dat" | relative_url}}">
-                Správa dat
-            </gov-nav-item>
+            <gov-nav-item href="{{ '/správa-dat' | relative_url }}"> Správa dat</gov-nav-item>
         {% endif %}
-
-
-            <gov-nav-dropdown>
-                <span slot="label">Otevřená data</span>
-                <ul slot="dropdown">
-                <li>
-                    <a href="/otevřená-data/">Co jsou otevřená data</a>
-                </li>
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/">Pro poskytovatele dat</a>
-                </li>
-
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/katalogizace-dat/">Katalogizace dat</a>
-                </li>
-
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/příprava-dat-k-otevření/">Příprava dat k otevření</a>
-                </li>
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/rozhodnutí-o-otevírání-dat/">Rozhodnutí o otevírání dat</a>
-                </li>                
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/">Stanovení podmínek užití</a>
-                </li>
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/stanovení-rolí/">Stanovení rolí</a>
-                </li>
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/stupně-otevřenosti-datových-sad/">Stupně otevřenosti datových sad</a>
-                </li>
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/tvorba-publikačního-plánu/">Tvorba publikačního plánu</a>
-                </li>
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/vytvoření-datového-schématu-datové-sady/">Vytvoření datového schématu datové sady</a>
-                </li>                
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/vzorová-směrnice/">Vzorová směrnice</a>
-                </li> 
-                <li>
-                    <a href="/otevřená-data/pro-poskytovatele/white-paper/">Pro tvůrce informačních systémů</a>
-                </li>                                 
-                <li>
-                    <a href="/otevřená-data/pro-uživatele/">Pro uživatele</a>
-                </li>
-
-                </ul>
-            </gov-nav-dropdown>        
-
-
-
-
-
-
-
-
-
+      <gov-nav-dropdown {% if page.url contains '/otevrena-data/' %} class="active" {% endif %}>
+        <span slot="label">Otevřená data</span>
+        <ul slot="dropdown">
+          <!-- Všechny pododkazy jsou nyní chráněny relativním filtrem -->
+          <li><a href="{{ '/otevrena-data/' | relative_url }}">Co jsou otevřená data</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/' | relative_url }}">Pro poskytovatele dat</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/katalogizace-dat/' | relative_url }}">Katalogizace dat</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/priprava-dat-k-otevreni/' | relative_url }}">Příprava dat k otevření</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/rozhodnuti-o-otevirani-dat/' | relative_url }}">Rozhodnutí o otevírání dat</a></li>        
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/stanoveni-podminek-uziti/' | relative_url }}">Stanovení podmínek užití</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/stanoveni-roli/' | relative_url }}">Stanovení rolí</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/stupne-otevrenosti-datovych-sad/' | relative_url }}">Stupně otevřenosti datových sad</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/tvorba-publikacniho-planu/' | relative_url }}">Tvorba publikačního plánu</a></li>
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/vytvoreni-datoveho-schematu-datove-sady/' | relative_url }}">Vytvoření datového schématu datové sady</a></li>        
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/vzorova-smernice/' | relative_url }}">Vzorová směrnice</a></li> 
+          <li><a href="{{ '/otevrena-data/pro-poskytovatele/white-paper/' | relative_url }}">Pro tvůrce informačních systémů</a></li>                                    
+          <li><a href="{{ '/otevrena-data/pro-uzivatele/' | relative_url }}">Pro uživatele</a></li>
+        </ul>
+      </gov-nav-dropdown>    
         {% if page.ref == 'DataQuality' %}
             <gov-nav-item class="active">
                 Datová kvalita
             </gov-nav-item>
         {% else %}
-            <gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
+            <gov-nav-item href="{{ '/datová-kvalita' | relative_url }}">
                 Datová kvalita
             </gov-nav-item>
         {% endif %}
-
-
-
-
             <gov-nav-dropdown>
                 <span slot="label">Národní katalog otevřených dat</span>
                 <ul slot="dropdown">
@@ -110,28 +65,15 @@
                 </li>
                 </ul>
             </gov-nav-dropdown>
-
-
-
-
-            <gov-nav-dropdown>
-				<span slot="label">Svět dat</span>
-				<ul slot="dropdown">
-                    <li>
-				    <a href="/vzdělávání">Vzdělávání</a>
-                    </li>
-				    <li>
-				    <a href="/články">Články</a>
-                    </li>
-                    <li><a href="/konference">Konference</a>
-                    </li>
-                    <li><a href="/výroční-zprávy">Stav otevřených dat</a>
-                    </li>
-				</ul>
-			</gov-nav-dropdown>
-
-
-        
+        <gov-nav-dropdown {% if page.url contains '/svet-dat/' %} class="active" {% endif %}>
+        <span slot="label">Svět dat</span>
+        <ul slot="dropdown">
+          <li><a href="{{ '/vzdelavani/' | relative_url }}">Vzdělávání</a></li>
+          <li><a href="{{ '/clanky/' | relative_url }}">Články</a></li>
+          <li><a href="{{ '/konference/' | relative_url }}">Konference</a></li>
+          <li><a href="{{ '/vyrocni-zpravy/' | relative_url }}">Stav otevřených dat</a></li>
+        </ul>
+      </gov-nav-dropdown>     
         </gov-nav>
     </gov-container>
 </header>

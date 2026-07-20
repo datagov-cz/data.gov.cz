@@ -1,6 +1,6 @@
 <header class="gov-header">
     <gov-container>
-      <gov-branding>
+      <gov-branding> 
         {% if page.homepage %}
           <h1 class="heading">Portál o datech</h1>
         {% else %}
@@ -8,6 +8,14 @@
           <a href="/">Portál o datech</a>
         </div>
         {% endif %}
+<!-- {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} 
+	    {% for p in pages %}
+		  {% if p.lang != page.lang %}
+        <div class="language">
+          <a href="{{ p.url }}">English</a>
+        </div>      
+		  {% endif %}
+	    {% endfor %} -->
         </gov-branding>
         <gov-nav wcag-label="Hlavní navigace">
         {% if page.ref == 'DataManagement' %}
@@ -19,8 +27,6 @@
                 Správa dat
             </gov-nav-item>
         {% endif %}
-
-
             <gov-nav-dropdown>
                 <span slot="label">Otevřená data</span>
                 <ul slot="dropdown">
@@ -30,11 +36,9 @@
                 <li>
                     <a href="/otevřená-data/pro-poskytovatele/">Pro poskytovatele dat</a>
                 </li>
-
                 <li>
                     <a href="/otevřená-data/pro-poskytovatele/katalogizace-dat/">Katalogizace dat</a>
                 </li>
-
                 <li>
                     <a href="/otevřená-data/pro-poskytovatele/příprava-dat-k-otevření/">Příprava dat k otevření</a>
                 </li>
@@ -65,18 +69,8 @@
                 <li>
                     <a href="/otevřená-data/pro-uživatele/">Pro uživatele</a>
                 </li>
-
                 </ul>
             </gov-nav-dropdown>        
-
-
-
-
-
-
-
-
-
         {% if page.ref == 'DataQuality' %}
             <gov-nav-item class="active">
                 Datová kvalita
@@ -86,10 +80,6 @@
                 Datová kvalita
             </gov-nav-item>
         {% endif %}
-
-
-
-
             <gov-nav-dropdown>
                 <span slot="label">Národní katalog dat</span>
                 <ul slot="dropdown">
@@ -110,10 +100,6 @@
                 </li>
                 </ul>
             </gov-nav-dropdown>
-
-
-
-
             <gov-nav-dropdown>
 				<span slot="label">Svět dat</span>
 				<ul slot="dropdown">
@@ -128,10 +114,7 @@
                     <li><a href="/výroční-zprávy">Stav otevřených dat</a>
                     </li>
 				</ul>
-			</gov-nav-dropdown>
-
-
-        
+			</gov-nav-dropdown>     
         </gov-nav>
     </gov-container>
 </header>

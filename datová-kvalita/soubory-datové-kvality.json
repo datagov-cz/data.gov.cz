@@ -6,7 +6,7 @@
     "metrics": [{
       "identifier": "kvalita-metadatových-záznamů-v-nkod-q1",
       "title": "Q1: Distribuce s chybějícími podmínkami užití a seznam s odkazy dle poskytovatele",
-      "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
+      "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
       "files": [{
         "url": "/soubor/kvalita/statistika/q1.csv",
         "title": "Počet distribucí bez specifikovaných podmínek užití dle poskytovatele"
@@ -14,7 +14,7 @@
     }, {
       "identifier": "kvalita-metadatových-záznamů-v-nkod-q2",
       "title": "Q2: Datové sady s chybějícími podmínkami užití v distribucích a seznam s odkazy dle poskytovatele",
-      "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
+      "content": "[Stanovte podmínky užití distribucí datových sad](https://data.gov.cz/pro-poskytovatele/stanovení-podmínek-užití/) a zajistěte, že jsou [správně odkazovány v API](https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/) vašeho lokálního katalogu.",
       "files": [{
         "url": "/soubor/kvalita/statistika/q2.csv",
         "title": "Počet datových sad, jejichž distribuce nemají specifikovány podmínky užití dle poskytovatele"

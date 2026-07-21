@@ -14,7 +14,8 @@ lang: cs
             </h2>
             {% if clanek.image %}
             <p style="margin-top: 0; margin-bottom: 5px;">
-              <img src="{{ clanek.image }}" alt="{{ clanek.title }}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;" />            </p>
+                <img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/>
+            </p>
             {% endif %}
             <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
                 <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>

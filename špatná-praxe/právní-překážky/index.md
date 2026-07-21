@@ -51,7 +51,7 @@ Umístění generického odkazu na „rodinu“ licencí, bez jasného určení 
 
 **Řešení**
 
-Přesné uvedení v metadatech distribuce datové sady, k jakému obsahu se vztahuje daná konkrétní licence. Využijte náš návod na [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/stanovení-podmínek-užití/).
+Přesné uvedení v metadatech distribuce datové sady, k jakému obsahu se vztahuje daná konkrétní licence. Využijte náš návod na [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
 V [průvodci registrací datové sady](https://data.gov.cz/formulář/registrace-datové-sady) je toto rozdělení zaneseno. Pokud zjistíte, že vámi poskytovaná datová sada obsahuje některý z uvedených režimů ochrany, je možné přesně stanovit jak a za jakých podmínek je daná část licencována.
 
@@ -77,7 +77,7 @@ Problém použití vlastních licencí je dobře viditelný, pokud se na takovou
 
 **Řešení**
 
-Pro stanovení podmínek užití otevřených dat postupujte dle našeho návodu  [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/stanovení-podmínek-užití/).
+Pro stanovení podmínek užití otevřených dat postupujte dle našeho návodu  [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
 Doporučeným řešením je postupovat podle [průvodce registrací datové sady](https://data.gov.cz/formulář/registrace-datové-sady), a využít předpřipravených záznamů standardních licencí, které nabízí.
 

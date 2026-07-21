@@ -4,12 +4,14 @@ title: Aktuality a články
 ref: Articles
 lang: cs
 ---
-   <gov-container>
+<gov-container>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky %}
         <gov-tile href="..{{ clanek.url }}">
-            <h2 slot="title">{{ clanek.title }}</h2>
+            <h2 slot="title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                {{ clanek.title | truncate: 62 }}
+            </h2>
             {% if clanek.image %}
             <p style="margin-top: 0; margin-bottom: 5px;">
                 <img width="100%" src="{{ clanek.image }}" alt="{{ clanek.title }}"/>
@@ -23,4 +25,4 @@ lang: cs
         </gov-tile>
         {% endfor %}
     </gov-tiles>
-</gov-container>
+</gov-container> 

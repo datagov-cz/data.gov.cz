@@ -40,7 +40,16 @@
                     <a href="/otevřená-data/pro-uživatele/">Pro uživatele</a>
                 </li>
                 </ul>
-            </gov-nav-dropdown>        
+            </gov-nav-dropdown>
+        {% if page.ref == 'ControlledAccess' %}
+            <gov-nav-item class="active">
+                Řízený přístup
+            </gov-nav-item>
+        {% else %}
+            <gov-nav-item href="{{ "/řízený-přístup" | relative_url}}">
+                Řízený přístup
+            </gov-nav-item>
+        {% endif %}                 
         {% if page.ref == 'DataQuality' %}
             <gov-nav-item class="active">
                 Datová kvalita
@@ -57,8 +66,8 @@
                     <a href="/datové-sady">Datové sady</a>
                 </li>
                 <li>
-                    <a href="/aplikace">Aplikace</a>
-                </li>
+                    <a href="/formulář/registrace-datové-sady">Registrace datové sady</a>
+                </li>                    
                 <li>
                     <a href="/poskytovatelé">Poskytovatelé</a>
                 </li>
@@ -66,7 +75,22 @@
                     <a href="/lokální-katalogy">Lokální katalogy</a>
                 </li>
                 <li>
-                    <a href="/návrhy-na-datové-sady-k-otevření">Návrhy na datové sady k otevření</a>
+                    <a href="/formulář/registrace-lokálního-katalogu">Registrace lokálního katalogu</a>
+                </li>                
+                <li>
+                    <a href="{{site.lkod_validator}}">Validátor lokálního katalogu</a>
+                </li>                               
+                <li>
+                    <a href="/aplikace">Data v praxi</a>
+                </li>
+                <li>
+                    <a href="{{site.app_registration_form}}">Registrovat aplikaci</a>
+                </li>                                
+                <li>
+                    <a href="/návrhy-na-datové-sady-k-otevření">Poptávaná data</a>
+                </li>
+                  <li>
+                    <a href="{{site.suggestion_form}}">Žádost o otevření dat</a>
                 </li>
                 </ul>
             </gov-nav-dropdown>

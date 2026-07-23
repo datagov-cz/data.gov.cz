@@ -39,12 +39,14 @@ homepage: true
                 <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
                 {{ clanek.date | date: "%-d. %-m. %Y" }}
             </gov-chip>
-            {{ clanek.excerpt }}
+            <p style="margin-top: 10px; margin-bottom: 0;">
+                {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
+            </p>
         </gov-tile>
         {% endfor %}
      </gov-tiles>
      <div class="flex-justify-end">
-        <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na starší články">Další články</gov-button>
+        <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na všechny články">Další články</gov-button>
      </div> 
 </gov-container>
 

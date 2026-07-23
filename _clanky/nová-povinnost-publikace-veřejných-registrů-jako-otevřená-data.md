@@ -4,7 +4,7 @@ title: Nová povinnost publikace veřejných registrů jako otevřená data
 detail: true
 ref: NováPovinnostPublikaceVeřejnýchRegistrů2022
 lang: cs
-image: ../přílohy/články/nova-povinnost.webp
+image: ../přílohy/články/NováPovinnostPublikaceVeřejnýchRegistrů2022/nova-povinnost.webp
 author: jakub_míšek
 date: 2022-01-03 07:00:00 +01:00
 ---

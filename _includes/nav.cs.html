@@ -50,15 +50,6 @@
                 Řízený přístup
             </gov-nav-item>
         {% endif %}                 
-        {% if page.ref == 'DataQuality' %}
-            <gov-nav-item class="active">
-                Datová kvalita
-            </gov-nav-item>
-        {% else %}
-            <gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
-                Datová kvalita
-            </gov-nav-item>
-        {% endif %}
             <gov-nav-dropdown>
                 <span slot="label">Národní katalog dat</span>
                 <ul slot="dropdown">
@@ -84,7 +75,7 @@
                     <a href="/aplikace">Data v praxi</a>
                 </li>
                 <li>
-                    <a href="{{site.app_registration_form}}">Registrovat aplikaci</a>
+                    <a href="{{site.app_registration_form}}">Přidat využití dat</a>
                 </li>                                
                 <li>
                     <a href="/návrhy-na-datové-sady-k-otevření">Poptávaná data</a>
@@ -94,6 +85,15 @@
                 </li>
                 </ul>
             </gov-nav-dropdown>
+        {% if page.ref == 'DataQuality' %}
+            <gov-nav-item class="active">
+                Datová kvalita
+            </gov-nav-item>
+          {% else %}
+            <gov-nav-item href="{{ "/datová-kvalita" | relative_url}}">
+                Datová kvalita
+            </gov-nav-item>
+        {% endif %}
             <gov-nav-dropdown>
 				<span slot="label">Svět dat</span>
 				<ul slot="dropdown">

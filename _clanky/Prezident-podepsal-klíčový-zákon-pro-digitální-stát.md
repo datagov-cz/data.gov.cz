@@ -8,8 +8,9 @@ author: jiří_kaňa
 date: 2026-04-29 15:45:00 +02:00
 lang: cs
 ---
-Prezident republiky Petr Pavel podepsal 28. dubna 2026 <a href="https://www.psp.cz/sqw/historie.sqw?o=10&T=54" target="_blank">Zákon o správě dat a řízeném přístupu k datům</a>, který do českého právního řádu implementuje evropské nařízení Data Governance Act. Tato norma představuje zásadní milník v digitalizaci státní správy a nastavuje jasná pravidla pro efektivní využívání informačního bohatství veřejného sektoru.
+Prezident republiky Petr Pavel podepsal 28. dubna 2026 <a href="https://www.psp.cz/sqw/historie.sqw?o=10&T=54" target="_blank">Zákon o správě dat a řízeném přístupu k datům</a>, který do českého právního řádu implementuje evropské nařízení Data Governance Act. 
 <!--more-->
 <br>
 <br>
+<p>Tato norma představuje zásadní milník v digitalizaci státní správy a nastavuje jasná pravidla pro efektivní využívání informačního bohatství veřejného sektoru</p>
 <p>Detailní přehled povinností, které nová legislativa přináší, pro vás shrnujeme <a href="/články/Zákon-o-správě-dat-a-řízeném-přístupu-k-datům-2.html"> v samostatném článku.</a></p>

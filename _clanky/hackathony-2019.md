@@ -4,6 +4,7 @@ detail: true
 lang: cs
 icon: list
 ref: hackathony-2019
+image: ../přílohy/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg
 author: jiří_marek
 date: 2020-04-09 08:00:00 +02:00
 title: Hackathony 2019

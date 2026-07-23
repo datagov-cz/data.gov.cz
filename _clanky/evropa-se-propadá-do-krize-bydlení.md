@@ -8,8 +8,10 @@ author: jiří_kaňa
 date: 2025-12-29 07:01:00 +02:00
 lang: cs
 ---
-Bydlení je základním předpokladem kvality života, bezpečí a zdraví. Navzdory tomu se v Evropě stává pro stále více lidí luxusem. Rostoucí ceny nemovitostí a měnící se ekonomická situace vyvíjejí silný a neudržitelný tlak na domácnosti napříč celou Evropskou unií. Všechna zjištění vycházejí z otevřených dat Eurostatu, díky jejichž transparentnosti můžeme aktuální problémy bydlení vůbec zviditelnit a řešit.
+Bydlení je základním předpokladem kvality života, bezpečí a zdraví. Navzdory tomu se v Evropě stává pro stále více lidí luxusem. 
 <!--more-->
+
+Rostoucí ceny nemovitostí a měnící se ekonomická situace vyvíjejí silný a neudržitelný tlak na domácnosti napříč celou Evropskou unií. Všechna zjištění vycházejí z otevřených dat Eurostatu, díky jejichž transparentnosti můžeme aktuální problémy bydlení vůbec zviditelnit a řešit.
 
 ## Ceny rostou rychleji než příjmy
 Mezi lety 2015 a 2024 vzrostly průměrné ceny nemovitostí v EU o 58 %. Jde o šokující číslo, které je v některých zemích ještě horší: v osmi státech, včetně České republiky, se ceny více než zdvojnásobily. Samotný růst cen však zastírá hlavní problém, kterým je stagnace nebo pomalý růst příjmů.

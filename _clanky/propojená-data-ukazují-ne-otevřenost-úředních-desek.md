@@ -9,13 +9,13 @@ date: 2022-06-08 06:00:00 +01:00
 author: radka_domanská
 ---
 V [minulém článku] jsme popisovali, proč je důležité otevírat data z úředních desek a jaký je aktuální stav publikace úředních desek.
+<!--more-->
+
 Zmiňovali jsme, že ke dni 27.5.2022 mělo zveřejněnou úřední desku s vazbou na otevřenou formální normu (OFN) celkem 373 subjektů, z toho 154 obcí s rozšířenou působností, 10 krajů, 184 státních orgánů a 25 dalších organizací, na které se povinnost publikace otevřených dat nevztahovala. 
 Jak jsme k číslům o stavu publikace došli a kdo publikoval otevřená data k úředním deskám správně?
 Co jsou nejčastější chyby v publikaci? 
 V článku se dozvíte nejen to, zejména vám ukážeme využití propojených dat pomocí SPARQL dotazů pro zjištění aktuálních dat o úřadech z Registru práv a povinností i dotazů do Národního katalogu otevřených dat, které lze využít i pro jiné analýzy.
 Co je to SPARQL a jak psát dotazy jsme psali v [dřívějším článku].
-
-<!--more-->
 
 Přehled subjektů, které povinnost splnily a které ještě ne je uveden v [následující vizualizaci].
 

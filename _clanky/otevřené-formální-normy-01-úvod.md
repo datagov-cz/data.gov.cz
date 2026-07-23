@@ -4,17 +4,19 @@ detail: true
 title: "Otevřená data a otevřené formální normy"
 ref: otevrene-formalni-normy-01-uvod
 lang: cs
+image: ../přílohy/články/otevřené-formální-normy-01-úvod/přehled.svg
 author: jakub_klímek
 date: 2020-10-02 06:00:00 +02:00
 ---
 
 Pro mnoho veřejných institucí se poskytování otevřených dat stalo běžným způsobem sdílení informací s veřejností.
 S rostoucím počtem poskytovatelů otevřených dat a s různorodostí dat, která jsou takto poskytována, se ukazuje, že nutným předpokladem použitelnosti dat je sjednocování jejich podoby.
+<!--more-->
+
 Na to pamatuje i legislativa, která v zákoně 106/1999 Sb. o svobodném přístupu k informacím zavádí pojem [otevřené formální normy (OFN)][ofn-def] jako písemně vydanou specifikaci požadavků na zajištění schopnosti různých programových vybavení vzájemně si poskytovat služby a efektivně spolupracovat.
 
 V tomto článku pojem otevřené formální normy rozvedeme.
 Ukážeme, proč jsou OFN v praxi důležité na příkladu cestování po ČR a popíšeme, jak k OFN přistupuje Ministerstvo vnitra jako koordinátor oblasti otevřených dat veřejné správy v ČR.
-<!--more-->
 
 ## Motivace
 

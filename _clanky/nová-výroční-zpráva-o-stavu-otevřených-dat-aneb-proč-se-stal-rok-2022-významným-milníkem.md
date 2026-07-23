@@ -68,7 +68,7 @@ Z tohoto důvodu je nezbytné i po ukončení projektu zajistit kapacity pro pln
 Výrazným milníkem pro další osud otevřených dat je i zřízení [Digitální a informační agentury], která má plnit úlohu koordinace evidence a sdílení dat.
 
 [mezinárodním hodnocení Evropské komise]: /články/odmr-dlouholetá-práce-na-agendě-otevřených-dat-se-vyplatila "ODMR 2022: Dlouholetá práce na agendě otevřených dat se vyplatila"
-[výroční zprávě o stavu otevřených dat za loňský rok]: /studie/přílohy/Výroční%20zpráva%20o%20stavu%20otevřených%20dat%20v%20České%20republice%20za%20rok%202022.pdf "Výroční zpráva o stavu otevřených dat za rok 2022"
+[výroční zprávě o stavu otevřených dat za loňský rok]: /studie/přílohy/Zpráva-o-stavu-otevřených-dat-2022.pdf "Výroční zpráva o stavu otevřených dat za rok 2022"
 [nový lokální katalog otevřených dat pro Hlavní město Praha]: https://opendata.praha.eu/ "LKOD HMP"
 [Královéhradecký kraj]: https://www.datakhk.cz/ "Data KHK" 
 [Statutární město Brno]: https://data.brno.cz/ "Data Brno"

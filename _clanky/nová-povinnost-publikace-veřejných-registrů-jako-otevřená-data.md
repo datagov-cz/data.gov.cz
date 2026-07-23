@@ -4,13 +4,14 @@ title: Nová povinnost publikace veřejných registrů jako otevřená data
 detail: true
 ref: NováPovinnostPublikaceVeřejnýchRegistrů2022
 lang: cs
+image: ../přílohy/články/nova-povinnost.webp
 author: jakub_míšek
 date: 2022-01-03 07:00:00 +01:00
 ---
 
 Velká [novela] nepřinesla v oblasti opětovného užití informací veřejného sektoru a otevřených dat jen povinnost poskytovat jako otevřená data informace o úředních deskách (o [této povinnosti jsme již psali][povinnost]).
-Ještě významnější dopad pro následné efektivní využití zveřejněných informací veřejného sektoru má nový § 5a odstavec 2, kterým byla zavedena povinnost poskytovat veřejně dostupné informace obsažené v registrech jako otevřená data.
 <!--more-->
+Ještě významnější dopad pro následné efektivní využití zveřejněných informací veřejného sektoru má nový § 5a odstavec 2, kterým byla zavedena povinnost poskytovat veřejně dostupné informace obsažené v registrech jako otevřená data.
 Pojem „registr“ je legislativní zkratkou založenou v § 5a odst. 1, která označuje registry, evidence, seznamy nebo rejstříky obsahující informace, které jsou na základě zákona každému přístupné, přičemž se jedná jen o takové registry, které jsou vedené nebo spravované na základě zákona.
 Nejedná se tedy o dobrovolně vedené registry, které si povinné subjekty vedou samy o svém rozhodnutí.
 Jinými slovy, § 5a odst. 2 zakládá povinnost poskytovat informace, které jsou na základě zákona veřejné, a které jsou vedené v zákonem založených nebo předvídaných registrech vedle původního způsobu zveřejnění rovněž jako otevřená data.

@@ -9,10 +9,11 @@ author: lenka_kováčová
 date: 2022-06-30 07:00:00 +02:00
 ---
 Odbor analýz a podpory řízení Krajského úřadu Královéhradeckého kraje spravuje datový portál Data KHK, jehož nedílnou součástí je i katalog otevřených dat, ve kterém jsou veřejně publikovány sady otevřených dat, které mají územní působnost v rámci celého Královéhradeckého kraje.
-Náš článek pojednává o procesu vzniku publikování otevřených dat na krajských webových stránkách až po současnost, kdy publikujeme 54 sad otevřených dat, a to na uživatelsky vhodném datovém portálu Data KHK, ve kterém je tato data možné stahovat v několika formátech a pokud je to možné, tak je jejich součástí i mapový výstup.
-Publikování sad otevřených dat prošlo dynamickým vývojem a my bychom se chtěli podělit o naše zkušenosti.
 
 <!--more-->
+
+Náš článek pojednává o procesu vzniku publikování otevřených dat na krajských webových stránkách až po současnost, kdy publikujeme 54 sad otevřených dat, a to na uživatelsky vhodném datovém portálu Data KHK, ve kterém je tato data možné stahovat v několika formátech a pokud je to možné, tak je jejich součástí i mapový výstup.
+Publikování sad otevřených dat prošlo dynamickým vývojem a my bychom se chtěli podělit o naše zkušenosti.
 
 ## Základní informace
 Sady otevřených dat jsou obsaženy v katalogu otevřených dat, který je součástí Datového portálu Královéhradeckého kraje Data KHK.

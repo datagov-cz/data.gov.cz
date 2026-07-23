@@ -4,6 +4,7 @@ detail: true
 title: Národní katalog otevřených dat - výchozí bod práce s daty
 ref: národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty-e-gov-2021
 lang: cs
+image: ../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/textové-vyhledávání-v-nkod.webp
 author: jakub_klímek
 date: 2021-12-14 07:00:00 +01:00
 ---

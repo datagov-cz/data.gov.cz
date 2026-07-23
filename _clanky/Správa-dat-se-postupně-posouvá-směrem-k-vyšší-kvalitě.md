@@ -9,10 +9,11 @@ author: jana_novák_gabrielová
 date: 2025-02-12 12:00:00 +02:00 
 --- 
 Správa dat se stává i ve veřejné správě čím dále větším tématem. Důkazem je i to, že se stala důležitou oblastí pro Radu vlády pro informační společnost.
-Posun je vidět také v rámci spolupráce DIA s vybranými úřady, které postupně naplňují jednotlivé kroky směřující ke kvalitní správě dat.
-Tedy k tomu, aby měly o svých datech dobrý přehled, znaly je a mohly garantovat jejich kvalitu.
 
  <!--more-->
+
+Posun je vidět také v rámci spolupráce DIA s vybranými úřady, které postupně naplňují jednotlivé kroky směřující ke kvalitní správě dat.
+Tedy k tomu, aby měly o svých datech dobrý přehled, znaly je a mohly garantovat jejich kvalitu.
 
 Začátkem letošního roku proběhlo druhé zasedání pracovní skupiny RVIS pro správu dat, která vznikla loni na podzim pod vedením DIA.
 Jedním z témat bylo začlenění datové oblasti do dlouhodobého řízení informačních systémů veřejné správy a také do informační koncepce jednotlivých úřadů.

@@ -4,6 +4,7 @@ title: Nové povinnosti pro obce, kraje a orgány státní správy v oblasti ote
 detail: true
 ref: Nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat
 lang: cs
+image: ../přílohy/články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy/town.webp
 author: jakub_míšek
 date: 2021-08-03 07:00:00 +01:00
 ---

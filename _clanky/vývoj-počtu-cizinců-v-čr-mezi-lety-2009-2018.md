@@ -4,6 +4,7 @@ detail: true
 lang: cs
 icon: list
 ref: vývoj-počtu-cizinců-v-čr-mezi-lety-2009-a-2018
+image: ../přílohy/články/vývoj-počtu-cizinců-v-čr-mezi-lety-2009-2018/obrázky/4ciz_anamorf.png
 author: martin_dvořák
 date: 2020-05-11 08:00:00 +02:00
 title: Vývoj počtu cizinců v ČR mezi lety 2009 a 2018

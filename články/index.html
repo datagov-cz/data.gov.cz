@@ -21,7 +21,7 @@ lang: cs
                 <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
                 {{ clanek.date | date: "%-d. %-m. %Y" }}
             </gov-chip>
-            {{ clanek.excerpt }}
+            {{ clanek.excerpt | truncate: 262  }}
         </gov-tile>
         {% endfor %}
     </gov-tiles>

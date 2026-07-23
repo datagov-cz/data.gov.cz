@@ -62,4 +62,4 @@ I přes zajištění technického a legislativního rámce pro publikaci otevře
 
 Kompletní informace se dozvíte ve [výroční zprávě][VZ OD 2020]. 
 
-[VZ OD 2020]: /přílohy/výroční-zprávy/Výroční zpráva o stavu otevřených dat v České republice 2020.pdf "Výroční zpráva OD 2020"
+[VZ OD 2020]: /studie/přílohy/Zpráva-o-stavu-otevřených-dat-2020.pdf "Výroční zpráva OD 2020"

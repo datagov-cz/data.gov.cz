@@ -50,5 +50,5 @@ Největší úkoly ale stále čekají – systematické zveřejňování regist
 Pokud se podaří tyto cíle naplnit, mohou se otevřená data stát nejen symbolem transparentnosti, ale i zdrojem inovací a praktických služeb pro občany i firmy.
 
 
-[Zpráva o stavu otevřených dat 2024]: /přílohy/výroční-zprávy/Zpráva%20o%20stavu%20otevřených%20dat%202024.pdf "Zpráva o stavu otevřených dat 2024"
+[Zpráva o stavu otevřených dat 2024]: /studie/přílohy/Zpráva%20o%20stavu%20otevřených%20dat%202024.pdf "Zpráva o stavu otevřených dat 2024"
 [Open Data Maturity Report 2024]: https://data.europa.eu/en/publications/open-data-maturity/2024 "Open Data Maturity Report 2024"

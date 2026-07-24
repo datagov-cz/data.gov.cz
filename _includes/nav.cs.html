@@ -39,31 +39,26 @@
 
 
         <gov-nav wcag-label="Hlavní navigace">
-        {% if page.ref == 'DataManagement' %}
-            <gov-nav-item class="active">
-                Správa dat
-            </gov-nav-item> 
-        {% else %}
-            <gov-nav-item href="{{ "/správa-dat" | relative_url}}">
-                Správa dat
-            </gov-nav-item>
-        {% endif %}
+
+        <gov-nav-item href="{{ '/správa-dat' | relative_url }}" {% if page.ref == 'DataManagement' %}class="active"{% endif %}>
+            Správa dat
+        </gov-nav-item>
 
 
-        <gov-nav-dropdown {% if page.url contains '/otevřená-data' or page.ref == 'OpenData' %}class="active"{% endif %}>
-        <span slot="label">Otevřená data</span>
-        <ul slot="dropdown">
-          <li>
-            <a href="/otevřená-data/" {% if page.url == '/otevřená-data/' %}class="active" aria-current="page"{% endif %}>Co jsou otevřená data</a>
-          </li>
-          <li>
-            <a href="/otevřená-data/pro-poskytovatele/" {% if page.url contains '/otevřená-data/pro-poskytovatele/' %}class="active" aria-current="page"{% endif %}>Pro poskytovatele dat</a>
-          </li>                         
-          <li>
-            <a href="/otevřená-data/pro-uživatele/" {% if page.url contains '/otevřená-data/pro-uživatele/' %}class="active" aria-current="page"{% endif %}>Pro uživatele</a>
-          </li>
-        </ul>
-      </gov-nav-dropdown>
+            <gov-nav-dropdown>
+                <span slot="label">Otevřená data</span>
+                <ul slot="dropdown">
+                <li>
+                    <a href="/otevřená-data/">Co jsou otevřená data</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/">Pro poskytovatele dat</a>
+                </li>                         
+                <li>
+                    <a href="/otevřená-data/pro-uživatele/">Pro uživatele</a>
+                </li>
+                </ul>
+            </gov-nav-dropdown>
 
         {% if page.ref == 'ControlledAccess' %}
             <gov-nav-item class="active">
@@ -74,7 +69,7 @@
                 Řízený přístup
             </gov-nav-item>
         {% endif %}  
-
+                       
             <gov-nav-dropdown>
                 <span slot="label">Národní katalog dat</span>
                 <ul slot="dropdown">

@@ -1,0 +1,70 @@
+---
+layout: contained
+title: Rozcestník Otevřené formální normy
+ref: otevřené-formální-normy
+lang: cs
+---
+
+
+
+<!-- Filtry podle Témata / Kategorie -->
+<form class="gov-filters">
+  <gov-flex direction="column" gap="m">
+    
+    <!-- Skupina 1: AGENDOVÉ OFN -->
+    <fieldset>
+      <legend class="gov-filters__heading">AGENDOVÉ OFN</legend>
+      <ul class="gov-list--plain">
+        <li>
+          <gov-form-checkbox size="m" value="úřední deska" id="filter-uredni-deska">
+            <gov-form-label size="m" slot="label" for="filter-uredni-deska">Úřední deska</gov-form-label>
+          </gov-form-checkbox>
+        </li>
+      </ul>
+    </fieldset>
+
+    <!-- Skupina 2: METADATA A KATALOGIZACE -->
+    <fieldset>
+      <legend class="gov-filters__heading">METADATA A KATALOGIZACE</legend>
+      <ul class="gov-list--plain">
+        <li>
+          <gov-form-checkbox size="m" value="DCAT-AP" id="filter-dcat-ap">
+            <gov-form-label size="m" slot="label" for="filter-dcat-ap">DCAT-AP</gov-form-label>
+          </gov-form-checkbox>
+        </li>
+      </ul>
+    </fieldset>
+
+  </gov-flex>
+</form>
+
+<!-- Výpis filtrovaných položek -->
+<gov-grid gap="l" class="gov-card-grid">
+
+  <!-- Položka 1: Úřední deska -->
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" data-topic="úřední deska" data-category="AGENDOVÉ OFN">
+    <gov-card label="Úřední deska" full-height>
+      <p>
+        OFN pro úřední desky.
+      </p>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz/úřední-desky/2021-07-20/">
+        přejít na OFN
+      </gov-button>
+    </gov-card>
+  </gov-grid-item>
+
+  <!-- Položka 2: DCAT-AP -->
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" data-topic="DCAT-AP" data-category="METADATA A KATALOGIZACE">
+    <gov-card label="DCAT-AP" full-height>
+      <p>
+        OFN pro rozhraní katalogů dat.
+      </p>
+      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/draft/cs/">
+        přejít na OFN
+      </gov-button>
+    </gov-card>
+  </gov-grid-item>
+
+</gov-grid>
+
+

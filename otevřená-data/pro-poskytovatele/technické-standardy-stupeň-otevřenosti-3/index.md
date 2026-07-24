@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Technické standardy 3. stupně otevřenosti datových sad
-ref: ProPoskytovatele-StupněOtevřenosti-TechnickéStandardy3
+ref: OpenData
 lang: cs
 ---
 

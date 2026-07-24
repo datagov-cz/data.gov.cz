@@ -16,13 +16,13 @@ homepage: true
 
 
 <gov-container>
-    <h2 class="h4">Měníte doménu? Pozor na rozpad vazeb v propojených datech</h2>
+    <h2 class="h4"><strong>Měníte doménu? Pozor na rozpad vazeb v propojených datech</strong></h2>
     <a href="/špatná-praxe/perzistentní-iri/">Více o perzistentních IRI</a>
 </gov-container>
  
 
 <gov-container>
-    <h2 class="h4">Aktuality a články ze světa dat veřejné správy</h2>
+    <h2 class="h4"><strong>Aktuality a články ze světa dat veřejné správy</strong></h2>
     <gov-tiles columns="3" no-border>
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:6 %}
@@ -60,7 +60,7 @@ homepage: true
   <div class="formkit-background" style="opacity: 0.2;"></div>
   <div data-style="minimal">
     <div class="formkit-header" data-element="header" style="color: inherit; font-size: 20px;  margin-bottom: 15px;">
-      <h2 class="h4">Odebírejte newsletter</h2>
+      <h2 class="h5"><strong>Odebírejte newsletter</strong></h2>
     </div>
     <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
     <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">

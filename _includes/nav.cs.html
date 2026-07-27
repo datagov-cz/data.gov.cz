@@ -1,3 +1,10 @@
+<style>
+  .gov-header {
+    position: relative !important;
+    z-index: 1000 !important;
+  }
+</style>
+
 <header class="gov-header">
     <gov-container>
 <gov-branding> 
@@ -27,6 +34,14 @@
 
     </a>
   </div>
+          <!--{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} 
+	    {% for p in pages %}
+		  {% if p.lang != page.lang %}
+        <div class="language">
+          <a href="{{ p.url }}">EN</a>
+        </div>      
+		  {% endif %}
+	    {% endfor %} -->
 </gov-branding>
 
 

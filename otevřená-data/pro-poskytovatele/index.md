@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-level-1
 title: Otevřená data
-ref: ProPoskytovatele-OtevřenáData
+ref: OpenData
 lang: cs
 ---
 

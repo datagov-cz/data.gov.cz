@@ -5,41 +5,8 @@ ref: rozcestnik
 lang: cs
 ---
 
-<p>Rozcestník otevřených formálních norm</p>
-
-<!-- Filtry podle Témata / Kategorie -->
-<form class="gov-filters">
-  <gov-flex direction="column" gap="m">
-    
-    <!-- Skupina 1: AGENDOVÉ OFN -->
-    <fieldset>
-      <legend class="gov-filters__heading">AGENDOVÉ OFN</legend>
-      <ul class="gov-list--plain">
-        <li>
-          <gov-form-checkbox size="m" value="úřední deska" id="filter-uredni-deska">
-            <gov-form-label size="m" slot="label" for="filter-uredni-deska">Úřední deska</gov-form-label>
-          </gov-form-checkbox>
-        </li>
-      </ul>
-    </fieldset>
-
-    <!-- Skupina 2: METADATA A KATALOGIZACE -->
-    <fieldset>
-      <legend class="gov-filters__heading">METADATA A KATALOGIZACE</legend>
-      <ul class="gov-list--plain">
-        <li>
-          <gov-form-checkbox size="m" value="DCAT-AP" id="filter-dcat-ap">
-            <gov-form-label size="m" slot="label" for="filter-dcat-ap">DCAT-AP</gov-form-label>
-          </gov-form-checkbox>
-        </li>
-      </ul>
-    </fieldset>
-
-  </gov-flex>
-</form>
-
 <!-- Výpis filtrovaných položek -->
-<gov-grid gap="l" class="gov-card-grid">
+<gov-grid gap="4" class="gov-card-grid">
 
   <!-- Položka 1: Úřední deska -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" data-topic="úřední deska" data-category="AGENDOVÉ OFN">
@@ -67,4 +34,35 @@ lang: cs
 
 </gov-grid>
 
+
+
+
+<div class="card h-100 border-0 shadow-sm p-3 bg-light">
+  <div class="card-body p-0">
+    <!-- Název specifikace s odkazem -->
+    <h5 class="card-title fw-bold mb-3">
+      <a href="#" class="text-decoration-none text-dark stretched-link">
+        Úřední desky <i class="bi bi-box-arrow-up-right fs-6 ms-1 text-primary"></i>
+      </a>
+    </h5>
+    
+    <!-- 1. ŘÁDEK: Popis -->
+    <div class="mb-2 text-dark">
+      <i class="bi bi-info-circle text-primary me-2"></i>
+      Metadata úřední desky a dokumentů zveřejněných na úřední desce.
+    </div>
+
+    <!-- 2. ŘÁDEK: Cílová skupina -->
+    <div class="mb-2 text-secondary small">
+      <i class="bi bi-people text-secondary me-2"></i>
+      Státní orgány, krajské úřady a ORP
+    </div>
+
+    <!-- 3. ŘÁDEK: Právní vazba -->
+    <div class="text-secondary small">
+      <i class="bi bi-bank text-secondary me-2"></i>
+      § 5a odst. 4 zákona č. 106/1999 Sb.
+    </div>
+  </div>
+</div>
 

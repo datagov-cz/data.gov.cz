@@ -805,7 +805,7 @@ lang: cs
 
 <gov-container>
   <!-- Kartička sekce -->
-  <gov-card id="sdilene-specifikace" style="border: none; box-shadow: none; background-color: #f4f6fc;">
+  <gov-card id="specifikace" style="border: none; box-shadow: none; background-color: #f4f6fc;">
     <p style="font-weight: bold; font-size: 1.25em; margin-bottom: 0.5rem;">Sdílené specifikace</p>
     <p style="font-weight: bold; font-style: italic; margin: 0;"><i>Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro agendové OFN.</i></p>
   </gov-card>
@@ -1225,6 +1225,207 @@ lang: cs
         <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
       </svg>
       <span>Využíváno jako sdílený modul v ostatních OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+
+<br>
+
+<gov-container>
+  <!-- Kartička sekce -->
+  <gov-card id="egovernment" style="border: none; box-shadow: none; background-color: #f4f6fc;">
+    <p style="font-weight: bold; font-size: 1.25em; margin-bottom: 0.5rem;">eGovernment a dokumenty</p>
+    <p style="font-weight: bold; font-style: italic; margin: 0;"><i>Určeno pro správce spisových služeb a vývojáře formulářů. Sjednocuje strukturu digitálních výstupů a úkonů.</i></p>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Společné části elektronických dokumentů ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Dokumenty z formulářů pro elektronické podání dle ZoPDS ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Standardizuje strukturu dat vznikajících z elektronických formulářových podání.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/osvědčení-digitálního-úkonu/2024-10-17/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Osvědčení digitálního úkonu ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Správci informačních systémů veřejné správy poskytující digitální služby.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Zákon č. 12/2020 Sb. (ZoPDS).</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/metadata-dokumentů-veřejnoprávních-původců/2024-12-10/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Záznam IS nahrazující úředně ověřený podpis ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Správci autorizovaných ISVS a vývojáři eGovernment modulů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Související předpisy pro elektronickou identifikaci a digitální úkony.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/draft/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Schéma pro strojově čitelnou vrstvu statických komponent ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>§ 69a zákona č. 499/2004 Sb.</span>
     </div>
   </gov-card>
 </gov-container>

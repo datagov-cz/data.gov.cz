@@ -800,3 +800,431 @@ lang: cs
     </div>
   </gov-card>
 </gov-container>
+
+<br>
+
+<gov-container>
+  <!-- Kartička sekce -->
+  <gov-card id="sdilene-specifikace" style="border: none; box-shadow: none; background-color: #f4f6fc;">
+    <p style="font-weight: bold; font-size: 1.25em; margin-bottom: 0.5rem;">Sdílené specifikace</p>
+    <p style="font-weight: bold; font-style: italic; margin: 0;"><i>Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro agendové OFN.</i></p>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/základní-datové-typy/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Základní datové typy ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů a autorizovaní architekti specifikací.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno jako sdílený modul v ostatních agendových OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/věc/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Věc (společný předek) ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových struktur vytvářející nové OFN.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/adresy/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Adresy ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Odkazuje na RÚIAN a návazné standardy prostorových dat.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/bezbariérovost/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Bezbariérovost ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno jako sdílená vlastnost v nadřazených OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/časová-specifikace/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Časová specifikace ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno jako sdílený modul v ostatních OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/digitální-objekty/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Digitální objekty ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů spravující přílohy a elektronické dokumenty.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno napříč agendovými OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/kontakty/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Kontakty ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů pro libovolné subjekty nebo služby.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno jako sdílený modul v ostatních OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/lidé-a-osoby/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Lidé a osoby ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Modul pro zápis informací o fyzických osobnách, rolích a jejich identifikátorech v datových strukturách.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno v souladu s legislativou na ochranu osobních údajů.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/práce/2021-09-23/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Práce ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů v oblasti zaměstanosti a lidských zdrojů.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno v agendové OFN Pracovní místa.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/umístění/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Umístění ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři modelů pro infrastrukturu, události a objekty v terénu.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Souvisí s předpisy pro prostorové informace.</span>
+    </div>
+  </gov-card>
+</gov-container>
+
+<gov-container>
+  <gov-card 
+    direction="horizontal" 
+    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
+    onclick="window.open('https://ofn.gov.cz/vstupné/2020-07-01/', '_blank');"
+    onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';">
+
+    <div style="font-size: 1.25em; font-weight: bold; color: #00469B; text-align: left; margin-bottom: 0.75em;">
+      Vstupné ↗
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg>
+      <span>Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+      </svg>
+      <span>Vývojáři datových modelů pro události, turistické cíle a sportoviště.</span>
+    </div>
+
+    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" style="flex-shrink: 0; margin-top: 3px;" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+      </svg>
+      <span>Využíváno jako sdílený modul v ostatních OFN.</span>
+    </div>
+  </gov-card>
+</gov-container>

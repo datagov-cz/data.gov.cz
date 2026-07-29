@@ -114,11 +114,11 @@ lang: cs
     href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/draft/cs/" 
     style="background-color: #D9DAE4;">
 
-    <!-- Flexboxový obal vložený přímo UVNITŘ karty -->
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; width: 100%;">
+    <!-- Flexbox s povoleným zalamováním (flex-wrap: wrap) -->
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; width: 100%;">
       
-      <!-- Levý blok s textem -->
-      <div>
+      <!-- Blok s textem: zabere dostupné místo, ale udržuje si základní šířku min. 280px -->
+      <div style="flex: 1 1 280px;">
         <p style="font-size: 14px; font-weight: bold;">DCAT-AP-CZ: Rozhraní katalogů dat</p>    
         
         <p>
@@ -146,8 +146,8 @@ lang: cs
         </p>
       </div>
 
-      <!-- Pravý blok s tlačítkem -->
-      <div style="flex-shrink: 0;">
+      <!-- Blok s tlačítkem: na mobilu odskočí dolů, nezmenšuje se -->
+      <div style="flex: 0 0 auto;">
         <gov-button 
           variant="primary" 
           type="solid" 
@@ -158,7 +158,7 @@ lang: cs
         </gov-button>
       </div>
 
-    </div>
-
+    </div
+>
   </gov-card>
 </gov-container>

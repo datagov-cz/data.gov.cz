@@ -5,28 +5,29 @@ ref: rozcestnik
 lang: cs
 ---
 
-<!-- Výpis filtrovaných položek -->
-<gov-grid gap="4" class="gov-card-grid">
-
-  <!-- Položka 1: Úřední deska -->
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" data-topic="úřední deska" data-category="AGENDOVÉ OFN">
-    <gov-card label="Úřední deska" full-height>
-      <p>
-        OFN pro úřední desky.
-      </p>
-      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz/úřední-desky/2021-07-20/">
+<!-- Výpis kategorií -->
+<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
+      <gov-card label="Metadata a katalogizace" full-height>
+      <p>Pro IT architekty a vývojáře.</p><br>
+      <p><i>Řeším katalogizaci (DCAT-AP-CZ), HVD nebo vyhlášku 360/2023.“</p>
+      <gov-button variant="primary" type="solid" size="m" href="#metadata">
         přejít na OFN
       </gov-button>
     </gov-card>
   </gov-grid-item>
 
+
+
+
+  
   <!-- Položka 2: DCAT-AP -->
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" data-topic="DCAT-AP" data-category="METADATA A KATALOGIZACE">
-    <gov-card label="DCAT-AP" full-height>
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
+    <gov-card label="AGENDOVÉ OFN" full-height>
       <p>
         OFN pro rozhraní katalogů dat.
       </p>
-      <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/draft/cs/">
+      <gov-button variant="primary" type="solid" size="m" href="#agendove">
         přejít na OFN
       </gov-button>
     </gov-card>
@@ -34,6 +35,36 @@ lang: cs
 
 </gov-grid>
 
+
+
+
+
+
+
+
+<h2 id="metadata" class="h4"><strong>Metadata a katalogizace</strong></h2>
+
+<gov-container>
+  <gov-card headline="DCAT-AP-CZ: Rozhraní katalogů dat" direction="horizontal">
+    <h3 slot="headline">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
+    <p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle text-primary me-2" viewBox="0 0 16 16">
+         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+         <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+        </svg>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</p>
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle text-primary me-2" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+        </svg>      
+      Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle text-primary me-2" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+        </svg>
+      <p>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</p>
+  </gov-card>
+</gov-container>
 
 
 
@@ -49,10 +80,7 @@ lang: cs
       
       <!-- 1. ŘÁDEK: Popis -->
       <div class="mb-2 text-dark">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle text-primary me-2" viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-        </svg>
+
         Metadata úřední desky a dokumentů zveřejněných na úřední desce.
       </div>
 
@@ -92,8 +120,13 @@ lang: cs
 </div>
 
 
+
+
+
+
  <br>
 
+<h2 id="agendove" class="h4"><strong>Agendové OFN</strong></h2>
 <div class="card h-100 border-0 shadow-sm p-3 bg-light">
   <div class="card-body p-0 d-flex align-items-center justify-content-between">
     
@@ -144,6 +177,5 @@ lang: cs
         Dokumentace
       </gov-button>
     </div>
-
   </div>
 </div>

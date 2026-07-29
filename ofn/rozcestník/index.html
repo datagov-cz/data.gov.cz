@@ -8,43 +8,7 @@ lang: cs
 <!-- Výpis kategorií -->
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-  <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer;">      
-    <span slot="label">METADATA A<br>KATALOGIZACE</span>
-      <p><strong>Pro IT architekty a vývojáře</strong></p>
-      <p><i>Řeším katalogizaci (DCAT-AP-CZ), HVD nebo vyhlášku 360/2023.</i></p>
-    </gov-card>
-  </gov-grid-item>
-
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer;">
-      <span slot="label">AGENDOVÉ OFN<br>&nbsp;</span>
-      <p><strong>Pro úředníky a věcné garanty</strong></p>
-      <p><i>Chci publikovat konkrétní data (Úřední desky, Odpady, Turistika…).</i></p>
-    </gov-card>
-  </gov-grid-item>
-
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#sdilene';" style="cursor: pointer;">
-      <span slot="label">SDÍLENÉ SPECIFIKACE<br>&nbsp;</span>
-      <p><strong>Pro vývojáře datových modelů</strong></p>
-      <p><i>Stavím datový model a potřebuji standard pro adresu nebo kontakt.</i></p>
-    </gov-card>
-  </gov-grid-item>
-
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;">
-      <span slot="label">EGOVERNMENT<br>A DOKUMENTY</span>
-      <p><strong>Pro správce spisových služeb a formulářů</strong></p>
-      <p><i>Řeším elektronická podání (dle ZoPDS), formuláře či ověřené podpisy.</i></p>
-    </gov-card>
-  </gov-grid-item>
-</gov-grid>
-
-
-
-<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card href="#metadata" full-height>
+    <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer;">
       <div style="font-weight: 700; text-transform: uppercase; min-height: 2.8em; margin-bottom: 1rem;">
         METADATA<br>A KATALOGIZACE
       </div>
@@ -54,7 +18,7 @@ lang: cs
   </gov-grid-item>
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card href="#aofn" full-height>
+    <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer;">
       <div style="font-weight: 700; text-transform: uppercase; min-height: 2.8em; margin-bottom: 1rem;">
         AGENDOVÉ<br>OFN
       </div>
@@ -64,7 +28,7 @@ lang: cs
   </gov-grid-item>
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card href="#specifikace" full-height>
+    <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;">
       <div style="font-weight: 700; text-transform: uppercase; min-height: 2.8em; margin-bottom: 1rem;">
         SDÍLENÉ<br>SPECIFIKACE
       </div>
@@ -74,7 +38,7 @@ lang: cs
   </gov-grid-item>
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card href="#egovernment" full-height>
+    <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;">
       <div style="font-weight: 700; text-transform: uppercase; min-height: 2.8em; margin-bottom: 1rem;">
         EGOVERNMENT<br>A DOKUMENTY
       </div>

@@ -88,8 +88,10 @@ lang: cs
 <br>
 
 
-<gov-accordion-item size="m">
-  <h2 slot="label">Co jsou otevřené formální normy?</h2>
+<gov-accordion-item size="m"
+  onmouseover="this.style.backgroundColor='#f4f6fc'" 
+  onmouseout="this.style.backgroundColor=''">
+  <span slot="label"><b>Co jsou otevřené formální normy?</span>
   <p>
   <p>
     <strong>Otevřené formální normy (OFN)</strong> definují společná pravidla pro popis, strukturu a formát dat ve veřejném sektoru. Díky nim mohou různé informační systémy a různí poskytovatelé publikovat obdobná data stejným způsobem a garantovat jejich vzájemnou <strong>interoperabilitu</strong> (schopnost systémů spolu bezproblémově komunikovat a předávat si data).
@@ -137,13 +139,34 @@ lang: cs
 
 
 
-<gov-grid-item size-sm="12/12" size-md="12/12" size-lg="6/12">
-  <gov-card full-height onclick="window.location.href='#zapojeni';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
-    <p>Nenašli jste odpovídající OFN?</p>
-  </gov-card>
-</gov-grid-item>
-</gov-grid>
+<gov-accordion-item size="m"
+  onmouseover="this.style.backgroundColor='#f4f6fc'" 
+  onmouseout="this.style.backgroundColor=''">
+  <span slot="label"><b>Nenašli jste hledanou OFN nebo máte návrh na zlepšení?</span>
+  <p>
+    Otevřené formální normy vznikají otevřeným způsobem. Vývoj probíhá transparentně na platformě GitHub a zapojit se může každý — od IT architektů přes věcné garanty až po vývojáře.
+  </p>
 
+  <h3 class="h6">Jak se můžete zapojit:</h3>
+  <ul>
+    <li><strong>Připomínkujte</strong> rozpracované návrhy nově vznikajících norem.</li>
+    <li><strong>Navrhujte</strong> změny a úpravy ve stávajících specifikacích.</li>
+    <li><strong>Upozorněte nás</strong> na chybějící vlastnosti, chybné prvky nebo nepřesné příklady.</li>
+    <li><strong>Dejte podnět</strong> pro tvorbu zcela nové OFN.</li>
+    <li><strong>Staňte se členem</strong> odborné pracovní skupiny.</li>
+  </ul>
+
+  <div class="ofn-callout-action">
+    <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+      Připojit se na GitHubu &#x2197;
+    </a>
+  </div>
+</gov-accordion-item>
+
+
+
+
+    
 
 
 
@@ -1576,39 +1599,3 @@ lang: cs
     </div>
   </gov-card>
 </gov-container>
-
-<br>
-<br>
-<hr>
-<br>
-
-<section id="OFN" class="ofn-definition">
-<h2 class="h4" style="font-weight: bold;">Co jsou otevřené formální normy?</h2>
-
-</section>
-<br>
-<br>
-<hr>
-<br>
-
-<section id="zapojeni" class="ofn-definition">
-  <h2 class="h4" style="font-weight: bold;">Nenašli jste hledanou OFN nebo máte návrh na zlepšení?</h2>
-  <p>
-    Otevřené formální normy vznikají otevřeným způsobem. Vývoj probíhá transparentně na platformě GitHub a zapojit se může každý — od IT architektů přes věcné garanty až po vývojáře.
-  </p>
-
-  <h3 class="h6">Jak se můžete zapojit:</h3>
-  <ul>
-    <li><strong>Připomínkujte</strong> rozpracované návrhy nově vznikajících norem.</li>
-    <li><strong>Navrhujte</strong> změny a úpravy ve stávajících specifikacích.</li>
-    <li><strong>Upozorněte nás</strong> na chybějící vlastnosti, chybné prvky nebo nepřesné příklady.</li>
-    <li><strong>Dejte podnět</strong> pro tvorbu zcela nové OFN.</li>
-    <li><strong>Staňte se členem</strong> odborné pracovní skupiny.</li>
-  </ul>
-
-  <div class="ofn-callout-action">
-    <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-      Připojit se na GitHubu &#x2197;
-    </a>
-  </div>
-</section>

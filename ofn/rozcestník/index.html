@@ -20,7 +20,6 @@ lang: cs
         Metadata<br>a katalogizace
       </div>
     </div>
-
     <p>Řeším katalogizaci (DCAT-AP-CZ), HVD nebo vyhlášku 360/2023.</p>
     <p><i>Pro IT architekty a vývojáře</i></p><br>
   </gov-card>
@@ -85,10 +84,23 @@ lang: cs
 
 
 <gov-container>
-  <!-- První karta bez ohraničení -->
-  <gov-card id="metadata" style="border: none; box-shadow: none; background-color: #f4f6fc;">
-    <p style="font-weight: bold; font-size: 1.5em; margin-bottom: 0.5rem;">Metadata a katalogizace</p>
-    <p style="font-weight: bold; font-style: italic; margin: 0;"><i>Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</i></p>
+  <!-- První karta bez ohraničení s průhledným pozadím -->
+  <gov-card id="metadata" style="border: none; box-shadow: none; background-color: transparent;">
+    
+    <!-- Flex kontejner pro ikonu a nadpis -->
+    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00469B" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
+        <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
+        <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
+      </svg>
+      <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">Metadata a katalogizace</span>
+    </div>
+
+    <!-- Popis (druhý řádek) -->
+    <p style="margin: 0;">Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
+
+    <!-- Silná čára pod druhým řádkem -->
+    <hr style="border: none; border-top: 3px solid #00469B; margin-top: 1rem; margin-bottom: 0; opacity: 1;">
   </gov-card>
 </gov-container>
 

@@ -78,6 +78,25 @@ lang: cs
   </gov-grid-item>
 </gov-grid>
 
+<br>
+
+<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+<gov-grid-item size-sm="12/12" size-md="12/12" size-lg="6/12">
+  <gov-card full-height onclick="window.location.href='#ofn';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
+    <p>Obecně o OFN</p>
+  </gov-card>
+</gov-grid-item>
+
+<gov-grid-item size-sm="12/12" size-md="12/12" size-lg="6/12">
+  <gov-card full-height onclick="window.location.href='#zapojeni';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
+    <p>Nenašli jste odpovídající OFN?</p>
+  </gov-card>
+</gov-grid-item>
+</gov-grid>
+
+
+
+
 
 <br>
 <gov-container>
@@ -129,7 +148,7 @@ lang: cs
         <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
         <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
       </svg>
-      <span style="font-weight: bold; font-size: 1.5em; font-color: #00469B;">Metadata a katalogizace</span>
+      <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">Metadata a katalogizace</span>
     </div>
 
     <!-- Popis (druhý řádek) -->
@@ -1510,3 +1529,76 @@ lang: cs
 
 
 
+<section id="OFN" class="ofn-definition">
+  <h2>Co jsou Otevřené formální normy (OFN)?</h2>
+  <p>
+    <strong>Otevřené formální normy (OFN)</strong> definují společná pravidla pro popis, strukturu a formát dat ve veřejném sektoru. Díky nim mohou různé informační systémy a různí poskytovatelé publikovat obdobná data stejným způsobem a garantovat jejich vzájemnou <strong>interoperabilitu</strong> (schopnost systémů spolu bezproblémově komunikovat a předávat si data).
+  </p>
+  
+  <p>OFN sjednocují:</p>
+  <ul>
+    <li><strong>význam dat</strong> (sémantiku a definice pojmů),</li>
+    <li><strong>datovou strukturu</strong> (jak jsou data poskládána),</li>
+    <li><strong>technické provedení</strong> (podobu datových rozhraní a API).</li>
+  </ul>
+
+  <hr>
+
+  <h3>K čemu se OFN využívají?</h3>
+  <p>Standardy OFN jsou klíčovým stavebním kamenem digitální infrastruktury a slouží především pro:</p>
+  <ul>
+    <li><strong>Katalogizaci dat a rozhraní</strong> — sjednocují způsob popisu datových sad v lokálních i národním katalogu.</li>
+    <li><strong>Publikaci otevřených dat</strong> — zajišťují, že data jsou strojově čitelná a snadno opakovaně použitelná.</li>
+    <li><strong>Jednotný popis dat ve veřejné správě</strong> — garantují, že různé úřady popisují stejné agendy ve stejném formátu.</li>
+    <li><strong>Sdílené datové moduly</strong> — poskytují hotové stavební prvky pro opakující se údaje (jako jsou adresy, kontakty nebo časové specifikace).</li>
+    <li><strong>Interoperabilitu ISVS</strong> — umožňují plynulou výměnu dat napříč informačními systémy veřejné správy.</li>
+  </ul>
+
+  <hr>
+
+  <h3>Právní účinek a závaznost norem</h3>
+
+  <div class="callout callout-warning">
+    <h4>Rozdíl mezi povinností data publikovat a pravidly OFN</h4>
+    <p>
+      OFN <strong>neurčují</strong>, která data smějí nebo musejí být zveřejněna — tato povinnost vždy vyplývá z konkrétních právních předpisů. OFN stanovují výhradně to, <strong>jakým způsobem</strong> mají být příslušná data nebo jejich metadata popsána, strukturována a zpřístupněna, pokud se na daný případ povinnost vztahuje.
+    </p>
+  </div>
+
+  <h4>Pro koho jsou OFN právně závazné?</h4>
+  <p>Zveřejněné specifikace OFN představují povinný standard pro následující okruhy subjektů:</p>
+  <ol>
+    <li>
+      <strong>Poskytovatelé otevřených dat</strong><br>
+      Pro povinné subjekty dle § 4c odst. 1 zákona č. 106/1999 Sb., o svobodném přístupu k informacím, jsou příslušné OFN <strong>závazné ve smyslu § 3a odst. 3</strong> téhož zákona.
+    </li>
+    <li>
+      <strong>Správci dat a správci ISVS</strong><br>
+      Normy jsou závazné pro správce dat dle § 4 zákona č. 60/2026 Sb., o správě dat a řízeném přístupu k datům, kteří spravují data a provozní údaje s ohledem na věcnou působnost dle § 2 zákona č. 60/2026 Sb. a zároveň vystupují jako správci informačního systému veřejné správy (ISVS) dle § 2 odst. 1 písm. c) zákona č. 365/2000 Sb., o informačních systémech veřejné správy.
+    </li>
+  </ol>
+</section>
+
+
+
+<section id="zapojeni" class="ofn-definition">
+  <h3>Nenašli jste hledanou OFN nebo máte návrh na zlepšení?</h3>
+  <p>
+    Otevřené formální normy vznikají otevřeným způsobem. Vývoj probíhá transparentně na platformě GitHub a zapojit se může každý — od IT architektů přes věcné garanty až po vývojáře.
+  </p>
+
+  <h4>Jak se můžete zapojit:</h4>
+  <ul>
+    <li><strong>Připomínkujte</strong> rozpracované návrhy nově vznikajících norem.</li>
+    <li><strong>Navrhujte</strong> změny a úpravy ve stávajících specifikacích.</li>
+    <li><strong>Upozorněte nás</strong> na chybějící vlastnosti, chybné prvky nebo nepřesné příklady.</li>
+    <li><strong>Dejte podnět</strong> pro tvorbu zcela nové OFN.</li>
+    <li><strong>Staňte se členem</strong> odborné pracovní skupiny.</li>
+  </ul>
+
+  <div class="ofn-callout-action">
+    <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+      Připojit se na GitHubu &#x2197;
+    </a>
+  </div>
+</section>

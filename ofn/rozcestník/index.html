@@ -34,10 +34,10 @@ lang: cs
 
     <!-- Obalující flex kontejner pro ikonu a nadpis -->
     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="#00469B" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
         <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
       </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2;">
+      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
          Agendové<br>OFN
       </div>
     </div>
@@ -49,10 +49,10 @@ lang: cs
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
     <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
       <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="#00469B" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
   <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
 </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2;">
+      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
         Sdílené<br>specifikace
       </div>
     </div>
@@ -64,11 +64,11 @@ lang: cs
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
     <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
       <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="#00469B" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
         <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
         <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
       </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2;">
+      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
         eGovernment<br>a dokumenty
       </div>
     </div>
@@ -145,7 +145,7 @@ lang: cs
   <!-- Druhá karta se spolehlivým odsazením přes margin-bottom na jednotlivých div -->
   <gov-card 
     direction="horizontal" 
-    style="background: #FFFFFF; cursor: pointer; transition: background-color 0.2s ease;"
+    style="background: #FFFFFF; cursor: pointer; transition: background-color 0.2s ease; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
     onclick="window.open('https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/draft/cs/', '_blank');"
     onmouseenter="this.style.backgroundColor='#f4f6fc';"
     onmouseleave="this.style.backgroundColor='#ffffff';">

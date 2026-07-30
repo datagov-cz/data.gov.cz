@@ -1,9 +1,13 @@
 ---
 layout: contained
-title: Rozcestník Otevřené formální normy
+title: Otevřené formální normy
 ref: rozcestnik
 lang: cs
 ---
+
+
+<h2 class="h4">Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě</h2>
+
 
 <!-- Výpis kategorií -->
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
@@ -24,6 +28,53 @@ lang: cs
     <p><i>Pro IT architekty a vývojáře</i></p><br>
   </gov-card>
 </gov-grid-item>
+
+
+
+
+
+<gov-container>
+  <gov-card style="border: none; box-shadow: none; background-color: #f4f6fc;">
+    
+    <p style="margin-top: 0; margin-bottom: 0.75rem;">
+      Níže najdete karty ke všem dostupným OFN, kde se dozvíte:
+    </p>
+
+    <!-- Řádek s ikonami a textem v jedné linii -->
+    <div style="display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; margin-bottom: 0.75rem;">
+      
+      <div style="display: flex; align-items: center; gap: 0.35rem; white-space: nowrap;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+        </svg>
+        <span>věcný účel normy</span>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 0.35rem; white-space: nowrap;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
+          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+        </svg>
+        <span>pro koho je určená</span>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 0.35rem; white-space: nowrap;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+        </svg>
+        <span>související legislativní rámec.</span>
+      </div>
+
+    </div>
+
+    <p style="margin: 0; font-style: italic;">
+      Kompletní technická specifikace se zobrazí po kliknutí na kartu.
+    </p>
+    <p>Více o právním ukotvení a obecných pravidlech v kompletní definici OFN ↓</p>
+  </gov-card>
+</gov-container>
+
+
+
 
 
 
@@ -82,7 +133,6 @@ lang: cs
 
 
 
-
 <gov-container>
   <!-- První karta bez ohraničení s průhledným pozadím -->
   <gov-card id="metadata" style="border: none; box-shadow: none; background-color: transparent;">
@@ -96,13 +146,14 @@ lang: cs
       <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">Metadata a katalogizace</span>
     </div>
 
-    <!-- Silná čára pod nadpisem -->
-    <hr style="border: none; border-top: 3px solid #00469B; margin-top: 0.5rem; margin-bottom: 0.75rem; opacity: 1;">
-
-    <!-- Popis (druhý řádek pod čárou) -->
+    <!-- Popis (druhý řádek) -->
     <p style="margin: 0;">Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
+
+    <!-- Silná čára pod druhým řádkem -->
+    <hr style="border: none; border-top: 3px solid #D9DAE4; margin-top: 1rem; margin-bottom: 0; opacity: 1;">
   </gov-card>
 </gov-container>
+
 
 <gov-container>
   <!-- Druhá karta se spolehlivým odsazením přes margin-bottom na jednotlivých div -->
@@ -1470,3 +1521,6 @@ lang: cs
     </div>
   </gov-card>
 </gov-container>
+
+
+

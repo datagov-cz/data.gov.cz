@@ -7,27 +7,30 @@ lang: cs
 
 <!-- Výpis kategorií -->
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer;">
-      <div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16">
-             <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
-             <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
-          </svg>
-        </div>
-      <div style="font-weight: bold; text-transform: uppercase; font-size: 1.25em; margin-bottom: 1rem;">
-        Metadata<br>a katalogizeace
+<gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
+  <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer;">
+    
+    <!-- Obalující flex kontejner pro ikonu a nadpis -->
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
+        <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
+        <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
+      </svg>
+      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2;">
+        Metadata<br>a katalogizace
       </div>
-      </div>
-      <p>Řeším katalogizaci (DCAT-AP-CZ), HVD nebo vyhlášku 360/2023.</p>
-      <p><i>Pro IT architekty a vývojáře</i></p><br>
-    </gov-card>
-  </gov-grid-item>
+    </div>
+
+    <p>Řeším katalogizaci (DCAT-AP-CZ), HVD nebo vyhlášku 360/2023.</p>
+    <p><i>Pro IT architekty a vývojáře</i></p><br>
+  </gov-card>
+</gov-grid-item>
+
+
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
     <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer;">
-      <div style="font-weight: bold; text-transform: uppercase; font-size: 1.25em; margin-bottom: 1rem;">
+      <div style="font-weight: bold; font-size: 1.25em; margin-bottom: 1rem;">
         Agendové OFN<br>&nbsp;
       </div>
             <p>Chci publikovat konkrétní data (úřední desky, odpady, turistika…).</p>
@@ -37,7 +40,7 @@ lang: cs
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
     <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;">
-      <div style="font-weight: bold; text-transform: uppercase; font-size: 1.25em; margin-bottom: 1rem;">
+      <div style="font-weight: bold; font-size: 1.25em; margin-bottom: 1rem;">
         Sdílené specifikace<br> &nbsp;
       </div>
       <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt.</p>
@@ -47,10 +50,10 @@ lang: cs
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
     <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;">
-      <div style="font-weight: bold; text-transform: uppercase; font-size: 1.25em; margin-bottom: 1rem;">
+      <div style="font-weight: bold; font-size: 1.25em; margin-bottom: 1rem;">
         eGovernment<br>a dokumenty
       </div>
-      <p>Řeším elektronická podání (dle ZoPDS), formuláře či ověřené podpisy</p>
+      <p>Řeším elektronická podání (dle ZoPDS), formuláře či ověřené podpisy.</p>
       <p><i>Pro správce spisových služeb a formulářů</i></p>
     </gov-card>
   </gov-grid-item>

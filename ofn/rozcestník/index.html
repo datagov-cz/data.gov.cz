@@ -11,7 +11,9 @@ lang: cs
 <!-- Výpis kategorií -->
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-  <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
+  <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
+  onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';" >
     
     <!-- Obalující flex kontejner pro ikonu a nadpis -->
     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -29,7 +31,9 @@ lang: cs
 </gov-grid-item>
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
+    <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
+      onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';" >
 
     <!-- Obalující flex kontejner pro ikonu a nadpis -->
     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
@@ -46,7 +50,9 @@ lang: cs
   </gov-grid-item>
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
+    <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
+      onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';" >
       <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
   <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
@@ -61,7 +67,9 @@ lang: cs
   </gov-grid-item>
 
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
+    <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
+      onmouseenter="this.style.backgroundColor='#f4f6fc';"
+    onmouseleave="this.style.backgroundColor='#ffffff';" >
       <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
         <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
@@ -1527,9 +1535,12 @@ lang: cs
 </gov-container>
 
 <br>
+<br>
+<hr>
+<br>
 
 <section id="OFN" class="ofn-definition">
-<h2 class="h4" style="font-weight: bold;">Co jsou Otevřené formální normy (OFN)?</h2>
+<h2 class="h4" style="font-weight: bold;">Co jsou otevřené formální normy?</h2>
   <p>
     <strong>Otevřené formální normy (OFN)</strong> definují společná pravidla pro popis, strukturu a formát dat ve veřejném sektoru. Díky nim mohou různé informační systémy a různí poskytovatelé publikovat obdobná data stejným způsobem a garantovat jejich vzájemnou <strong>interoperabilitu</strong> (schopnost systémů spolu bezproblémově komunikovat a předávat si data).
   </p>
@@ -1554,14 +1565,13 @@ lang: cs
 <br>
 
   <h3 class="h6">Právní účinek a závaznost norem</h3>
-    <h4 class="h7">Rozdíl mezi povinností data publikovat a pravidly OFN</h4>
     <p>
       OFN <strong>neurčují</strong>, která data smějí nebo musejí být zveřejněna — tato povinnost vždy vyplývá z konkrétních právních předpisů. OFN stanovují výhradně to, <strong>jakým způsobem</strong> mají být příslušná data nebo jejich metadata popsána, strukturována a zpřístupněna, pokud se na daný případ povinnost vztahuje.
     </p>
 
     <br>
 
-    <h4 class="h7">Pro koho jsou OFN právně závazné?</h4>
+  <h3 class="h6">Pro koho jsou OFN právně závazné?</h4>
   <p>Zveřejněné specifikace OFN představují povinný standard pro následující okruhy subjektů:</p>
   <ol>
     <li>
@@ -1574,7 +1584,7 @@ lang: cs
     </li>
   </ol>
 </section>
-
+<br>
 <br>
 <hr>
 <br>
@@ -1585,7 +1595,7 @@ lang: cs
     Otevřené formální normy vznikají otevřeným způsobem. Vývoj probíhá transparentně na platformě GitHub a zapojit se může každý — od IT architektů přes věcné garanty až po vývojáře.
   </p>
 
-<p style="font-weight: bold;">Jak se můžete zapojit:</h3>
+  <h3 class="h6">Jak se můžete zapojit:</h3>
   <ul>
     <li><strong>Připomínkujte</strong> rozpracované návrhy nově vznikajících norem.</li>
     <li><strong>Navrhujte</strong> změny a úpravy ve stávajících specifikacích.</li>

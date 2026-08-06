@@ -9,11 +9,12 @@ author: lenka_kováčová
 date: 2022-04-19 07:00:00 +02:00
 ---
 Datové sady otevřených dat Královéhradeckého kraje se v rámci realizace [datového portálu Data KHK][Data KHK] dočkaly svého lokálního katalogu. 
+<!--more-->
+
 Jsou zde umístěny k využití pro širokou veřejnost a bonusem navíc je jejich inovativní zobrazení v několika formátech, z nichž nejzajímavější pro občany jsou mapové výstupy.
 V této formě otevřená data kraje dostaly status přívětivého formátu, který jednoduchou formou přibližuje celé téma otevřených dat všem občanům a posouvá veřejnost k lepšímu pochopení celé problematiky otevřených dat, která již zcela neodmyslitelně patří do naší budoucnosti.
 Toto řešení je inspirací nejen pro další vyšší územně samosprávné celky jako jsou kraje, ale pro celou oblast veřejné správy.
 
-<!--more-->
 
 ## LKOD
 

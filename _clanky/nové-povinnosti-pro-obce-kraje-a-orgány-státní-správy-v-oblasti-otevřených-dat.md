@@ -4,6 +4,7 @@ title: Nové povinnosti pro obce, kraje a orgány státní správy v oblasti ote
 detail: true
 ref: Nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat
 lang: cs
+image: ../přílohy/články/nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy/town.webp
 author: jakub_míšek
 date: 2021-08-03 07:00:00 +01:00
 ---
@@ -44,9 +45,9 @@ Mnoho úřadů se díky zákonu č. 261/2021 Sb., kterým se mění některé z�
     
 [OFN úřední desky]: https://ofn.gov.cz/úřední-desky/2021-07-20/ "OFN pro úřední desky"
 [ofn.gov.cz]: https://ofn.gov.cz/ "OFN"
-[podmínky užití]: /pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/ "Podmínky užití"
+[podmínky užití]: /pro-poskytovatele/stanovení-podmínek-užití/ "Podmínky užití"
 [NKOD]: https://data.gov.cz/datové-sady "NKOD"
-[rozhodnutí o způsobu katalogizace]: /pro-poskytovatele/otevřená-data/rozhodnutí-o-otevírání-dat/ "Rozhodnutí o způsobu katalogizace"
+[rozhodnutí o způsobu katalogizace]: /pro-poskytovatele/rozhodnutí-o-otevírání-dat/ "Rozhodnutí o způsobu katalogizace"
 [otevírání dat v kostce]: /informace/základy-otevřených-dat-pro-zájemce/ "Otevírání dat v kostce"
 [POD]: https://data.gov.cz/ "Portál otevřených dat"
 [POD vzdělávání]: https://data.gov.cz/vzdělávání/ "Portál otevřených dat - Vzdělávání"

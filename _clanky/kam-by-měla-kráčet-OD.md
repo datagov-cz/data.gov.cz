@@ -71,7 +71,7 @@ V případě dalších podnětů ke zlepšení se na nás můžete vždy obráti
 [Evropská komise]: https://data.europa.eu/en/publications/open-data-maturity/2023 "Open Data Maturity Index 2023"
 [OECD]: https://www.oecd.org/publications/2023-oecd-open-useful-and-re-usable-data-ourdata-index-a37f51c3-en.htm "OURData Index 2023"
 [studii o vyspělosti otevřených dat]: https://data.europa.eu/en/publications/open-data-maturity/2023 "Open Data Maturity Index 2023"
-[Zprávy o stavu otevřených dat v ČR]: /výroční-zprávy/ "Výroční zprávy o stavu OD"
+[Zprávy o stavu otevřených dat v ČR]: https://data.gov.cz/studie/ "Výroční zprávy o stavu OD"
 [data.gov.cz]: https://data.gov.cz/ "Portál o datech"
 [Aplikace]: /aplikace "Aplikace"
 [Návrhy na data k otevření]: /návrhy-na-datové-sady-k-otevření "Návrhy na data k otevření"

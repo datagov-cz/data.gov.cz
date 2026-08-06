@@ -5,6 +5,7 @@ lang: cs
 icon: list
 ref: ČlánekDoporučováníNKOD
 author: martin_víta
+image: ../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/textové-vyhledávání-v-nkod.webp
 date: 2020-03-26 12:00:00
 title: Kterou další ještě mohu využít? ...aneb o doporučování podobných datových sad z NKOD
 ---

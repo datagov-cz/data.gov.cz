@@ -4,6 +4,7 @@ title: Výběr katalogizačního systému pro město Brno
 detail: true
 ref: výběr-katalogizačního-systému-pro-město-Brno
 lang: cs
+image: ../přílohy/články/výběr-katalogizačního-systému-pro-město-Brno/obrázky/silnice.webp
 author: robert_spál
 date: 2020-12-13T07:00:00 +01:00
 ---

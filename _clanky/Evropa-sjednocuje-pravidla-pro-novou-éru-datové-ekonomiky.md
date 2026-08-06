@@ -38,7 +38,7 @@ Legislativní návrh z konce listopadu 2025 totiž v těchto dnech a týdnech po
 <p>Pro oblast otevřených dat znamená Digitální balíček posun od pouhé transparentnosti k aktivnímu rozvoji inovací. Otevřená data jsou v nové strategii vnímána jako klíčové palivo pro výzkum a vývoj nejen v oblasti AI. To s sebou nese zvýšený tlak na jejich standardizaci a strojovou čitelnost. Otevřená data již nebudou izolovanými ostrovy informací, ale stanou se součástí propojených datových prostorů. Harmonizace pravidel pro jejich publikaci zajistí, že HVDs budou dostupné v jednotných formátech, což je nezbytný předpoklad pro jejich integraci do systémů umělé inteligence a automatizovaných digitálních služeb.</p>
 <h2>Klíčové milníky datové transformace</h2>
 <p>Proces zavádění Digitálního simplifikačního balíčku je rozplánován do několika fází, aby se zajistila jeho plynulá implementace. Zatímco první části zákona o AI jsou již v platnosti, klíčové milníky nás čekají v letech 2026 a 2027. V roce 2026 lze očekávat významné investice do infrastruktury a rozšiřování dostupnosti HVDs. Plná účinnost celého balíčku je plánována na rok 2027, kdy proběhne i rozsáhlá analýza dopadů digitální legislativy. Do roku 2029 by měly podniky díky těmto změnám dosáhnout významných úspor a efektivnějšího fungování na digitálním trhu. Pro datové specialisty a poskytovatele dat je nyní zásadní sledovat pilotní projekty v rámci datových laboratoří a včas se adaptovat na nové standardy interoperability, které se stanou normou pro celou evropskou datovou ekonomiku.</p>
-<br>
+
 
 {% include image.html url="../přílohy/články/Evropa-sjednocuje-pravidla-pro-novou-éru-datové-ekonomiky/digital-package-time.webp"  description="Zdroj: Digitální a informační agentura" %}
 

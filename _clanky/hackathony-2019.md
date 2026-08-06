@@ -4,6 +4,7 @@ detail: true
 lang: cs
 icon: list
 ref: hackathony-2019
+image: ../přílohy/články/hackathony-2019/obrázky/hackathony-2019-úvodní-foto.jpg
 author: jiří_marek
 date: 2020-04-09 08:00:00 +02:00
 title: Hackathony 2019
@@ -46,7 +47,7 @@ pořadatel:
  S.A.B. Aerospace, s.r.o.
 
 web:
- [http://www.czechspaceyear.com/coha/][copernicushackathon] 
+ [https://czechiaspacehub.com-html.com/][copernicushackathon] 
 
 Akce, která se konala na podzim v Brně, byla poměrně netradičně zaměřena na zpracování tzv. “vesmírných dat” neboli tzv. “downstream” dat z evropských [družic Copernicus][druzicecopernicus]. Možná to nemusí být na první pohled patrné, ale zpracování vesmírných dat bude pro veřejnou správu čím dál zajímavější a důležitější, zejména pro oblasti jakými jsou např. boj s klimatickou změnou nebo různé druhy dalších celoplošných analýz. Hackathon se zaměřil na využití dat pro některé typy analýz životního prostředí s ohledem na turismusm. 
 
@@ -113,7 +114,7 @@ Chybí Vám v našem výčtu Váš hackathon? Neváhejte nám napsat na [otevren
 [NKOD]: https://data.gov.cz/ "Národní katalog otevřených dat"
 [smarttraffic]: https://devpost.com/software/smart-traffic-5b9lk6 "Aplikace Smart Traffic"
 [parkroll]: https://devpost.com/software/park-and-roll "Aplikace Park & Roll"
-[copernicushackathon]: http://www.czechspaceyear.com/coha/ "Copernicus Hackathon"
+[copernicushackathon]: https://czechiaspacehub.com-html.com "Copernicus Hackathon"
 [druzicecopernicus]: http://copernicus.gov.cz/pristup-k-datum "Družice Copernicus"
 [smhprague2019]: https://www.ceehacks.com/smhprague2019/ "Smart Mobility Hackathon 2019"
 [shhprague2019]: https://www.ceehacks.com/shhprague2019/ "Smart Health Hackathon 2019"

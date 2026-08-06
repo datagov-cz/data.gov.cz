@@ -51,7 +51,7 @@ Umístění generického odkazu na „rodinu“ licencí, bez jasného určení 
 
 **Řešení**
 
-Přesné uvedení v metadatech distribuce datové sady, k jakému obsahu se vztahuje daná konkrétní licence. Využijte náš návod na [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/).
+Přesné uvedení v metadatech distribuce datové sady, k jakému obsahu se vztahuje daná konkrétní licence. Využijte náš návod na [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
 V [průvodci registrací datové sady](https://data.gov.cz/formulář/registrace-datové-sady) je toto rozdělení zaneseno. Pokud zjistíte, že vámi poskytovaná datová sada obsahuje některý z uvedených režimů ochrany, je možné přesně stanovit jak a za jakých podmínek je daná část licencována.
 
@@ -77,14 +77,14 @@ Problém použití vlastních licencí je dobře viditelný, pokud se na takovou
 
 **Řešení**
 
-Pro stanovení podmínek užití otevřených dat postupujte dle našeho návodu  [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/).
+Pro stanovení podmínek užití otevřených dat postupujte dle našeho návodu  [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
 Doporučeným řešením je postupovat podle [průvodce registrací datové sady](https://data.gov.cz/formulář/registrace-datové-sady), a využít předpřipravených záznamů standardních licencí, které nabízí.
 
 {% include image.html url="../../přílohy/špatná-praxe/různé_režimy.webp" description="Různé režimy" %}
 
 ## Vzdání se odpovědnosti
-V podmínkách užití se může objevit formulace vzdání se odpovědnosti za škodu způsobenou užíváním dat. Poskytovatel dat se ovšem nemůže vzdát absolutně vší odpovědnosti za svá data. Příkladem je situace, kdy poskytovatel data poskytuje na základě zákonné povinnosti. V takovém případě se jedná o úřední úkon a je presumována jeho správnost. Pokud by vznikla škoda z důvodu chyby v datové sadě, nesl by za ni poskytovatel dat odpovědnost ve smyslu [zákona č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem](https://www.e-sbirka.cz/sb/1998/82/1998-05-15).
+V podmínkách užití se může objevit formulace vzdání se odpovědnosti za škodu způsobenou užíváním dat. Poskytovatel dat se ovšem nemůže vzdát absolutně vší odpovědnosti za svá data. Příkladem je situace, kdy poskytovatel data poskytuje na základě zákonné povinnosti. V takovém případě se jedná o úřední úkon a je presumována jeho správnost. Pokud by vznikla škoda z důvodu chyby v datové sadě, nesl by za ni poskytovatel dat odpovědnost ve smyslu [zákona č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem](https://e-sbirka.gov.cz/sb/1998/82/1998-05-15).
 
 **Symptomy**
 
@@ -115,6 +115,6 @@ Různé chyby při aplikaci licencí Creative Commons.
 
 **Řešení**
 
-Vyvarovat se chyb a použít náš návod [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/otevřená-data/stanovení-podmínek-užití/).
+Vyvarovat se chyb a použít náš návod [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/stanovení-podmínek-užití/).
 
 

@@ -8,14 +8,6 @@
           <a href="/">Portál o datech</a>
         </div>
         {% endif %}
-        <!-- {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} 
-	    {% for p in pages %}
-		  {% if p.lang != page.lang %}
-        <div class="language">
-          <a href="{{ p.url }}">English</a>
-        </div>      
-		  {% endif %}
-	    {% endfor %} -->
         </gov-branding>
         <gov-nav wcag-label="Hlavní navigace">
         {% if page.ref == 'DataManagement' %}
@@ -27,24 +19,52 @@
                 Správa dat
             </gov-nav-item>
         {% endif %}
-        {% if page.ref == 'Education' %}
-            <gov-nav-item class="active">
-            Vzdělávání
-            </gov-nav-item>
-        {% else %}
-            <gov-nav-item href="{{ "/vzdělávání" | relative_url}}">
-                Vzdělávání
-            </gov-nav-item>
-        {% endif %}
-        {% if page.ref == 'Articles' %}
-            <gov-nav-item class="active">
-                Články
-            </gov-nav-item>
-        {% else %}
-            <gov-nav-item href="{{ "/články" | relative_url}}">
-                Články
-            </gov-nav-item>
-        {% endif %}
+            <gov-nav-dropdown>
+                <span slot="label">Otevřená data</span>
+                <ul slot="dropdown">
+                <li>
+                    <a href="/otevřená-data/">Co jsou otevřená data</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/">Pro poskytovatele dat</a>
+                </li>
+
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/katalogizace-dat/">Katalogizace dat</a>
+                </li>
+
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/příprava-dat-k-otevření/">Příprava dat k otevření</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/rozhodnutí-o-otevírání-dat/">Rozhodnutí o otevírání dat</a>
+                </li>                
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/">Stanovení podmínek užití</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/stanovení-rolí/">Stanovení rolí</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/stupně-otevřenosti-datových-sad/">Stupně otevřenosti datových sad</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/tvorba-publikačního-plánu/">Tvorba publikačního plánu</a>
+                </li>
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/vytvoření-datového-schématu-datové-sady/">Vytvoření datového schématu datové sady</a>
+                </li>                
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/vzorová-směrnice/">Vzorová směrnice</a>
+                </li> 
+                <li>
+                    <a href="/otevřená-data/pro-poskytovatele/white-paper/">Pro tvůrce informačních systémů</a>
+                </li>                                 
+                <li>
+                    <a href="/otevřená-data/pro-uživatele/">Pro uživatele</a>
+                </li>
+                </ul>
+            </gov-nav-dropdown>        
         {% if page.ref == 'DataQuality' %}
             <gov-nav-item class="active">
                 Datová kvalita
@@ -75,19 +95,20 @@
                 </ul>
             </gov-nav-dropdown>
             <gov-nav-dropdown>
-                <span slot="label">Další</span>
-                <ul slot="dropdown">
-                <li>
-                    <a href="/informace/základy-otevřených-dat-pro-zájemce/">Pro zájemce o otevírání dat</a>
-                </li>
-                <li>
-                    <a href="/pro-uživatele/">Pro uživatele a programátory</a>
-                </li>
-                <li>
-                    <a href="/pro-poskytovatele/">Pro poskytovatele dat</a>
-                </li>
-                </ul>
-            </gov-nav-dropdown>
+				<span slot="label">Svět dat</span>
+				<ul slot="dropdown">
+                    <li>
+				    <a href="/vzdělávání">Vzdělávání</a>
+                    </li>
+				    <li>
+				    <a href="/články">Články</a>
+                    </li>
+                    <li><a href="/konference">Konference</a>
+                    </li>
+                    <li><a href="/výroční-zprávy">Stav otevřených dat</a>
+                    </li>
+				</ul>
+			</gov-nav-dropdown>
         </gov-nav>
     </gov-container>
 </header>

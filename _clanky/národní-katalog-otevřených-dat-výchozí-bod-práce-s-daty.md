@@ -4,6 +4,7 @@ detail: true
 title: Národní katalog otevřených dat - výchozí bod práce s daty
 ref: národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty-e-gov-2021
 lang: cs
+image: ../přílohy/články/národní-katalog-otevřených-dat-výchozí-bod-práce-s-daty/textové-vyhledávání-v-nkod.webp
 author: jakub_klímek
 date: 2021-12-14 07:00:00 +01:00
 ---
@@ -130,7 +131,7 @@ Z toho zase zpětně těží NKOD, protože může využít funkcionality původ
 *Tento [článek byl publikován][Egovernment-článek] také v čísle 2/2021 [magazínu Egovernment][Egovernment].*
 
 [POD]: / "Portál otevřených dat"
-[106]: https://www.e-sbirka.cz/sb/1999/106?zalozka=text "§ 3 odst. 11 zákona č. 106/1999 Sb. o svobodném přístupu k informacím"
+[106]: https://e-sbirka.gov.cz/sb/1999/106?zalozka=text "§ 3 odst. 11 zákona č. 106/1999 Sb. o svobodném přístupu k informacím"
 [kvalita]: /datová-kvalita/ "Datová kvalita"
 [DCAT-AP-CZ]: https://ofn.gov.cz/rozhraní-katalogů-otevřených-dat/ "Otevřená formální norma "Rozhraní katalogů otevřených dat: DCAT-AP-CZ""
 [LKOD-MIN]: https://github.com/datagov-cz/lkod-min "Minimalistická implementace lokálního katalogu otevřených dat"

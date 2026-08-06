@@ -4,6 +4,7 @@ title: Geolokační data mobilních operátorů - principy, příklady, otázky
 detail: true
 ref: geolokační-data-mobilních-operátorů-principy-příklady-otázky
 lang: cs
+image: ../přílohy/články/geolokační-data-mobilních-operátorů-principy-příklady-otázky/obrázky/1.GSM.png
 author: martin_dvořák
 date: 2020-11-02T07:00:00 +01:00
 ---

@@ -45,8 +45,7 @@ Data a informace převzaty z článku [Work Across the EU: Jobs, pay and time of
 Pro Českou republiku jsou k dispozici podrobnější informace v Národním katalogu otevřených dat v příslušných datových sadách:
 * [Sčítání 2021 - Zaměstnaní podle odvětví ekonomické činnosti a pohlaví] 
 * [Zaměstnanci a průměrné hrubé měsíční mzdy podle odvětví]
-<br>
-<br>
+
 
 [Sčítání 2021 - Zaměstnaní podle odvětví ekonomické činnosti a pohlaví]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2Fbb7a420298436739b2407817b1b5bdd7
 

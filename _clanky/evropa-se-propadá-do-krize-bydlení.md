@@ -8,8 +8,10 @@ author: jiří_kaňa
 date: 2025-12-29 07:01:00 +02:00
 lang: cs
 ---
-Bydlení je základním předpokladem kvality života, bezpečí a zdraví. Navzdory tomu se v Evropě stává pro stále více lidí luxusem. Rostoucí ceny nemovitostí a měnící se ekonomická situace vyvíjejí silný a neudržitelný tlak na domácnosti napříč celou Evropskou unií. Všechna zjištění vycházejí z otevřených dat Eurostatu, díky jejichž transparentnosti můžeme aktuální problémy bydlení vůbec zviditelnit a řešit.
+Bydlení je základním předpokladem kvality života, bezpečí a zdraví. Navzdory tomu se v Evropě stává pro stále více lidí luxusem. 
 <!--more-->
+
+Rostoucí ceny nemovitostí a měnící se ekonomická situace vyvíjejí silný a neudržitelný tlak na domácnosti napříč celou Evropskou unií. Všechna zjištění vycházejí z otevřených dat Eurostatu, díky jejichž transparentnosti můžeme aktuální problémy bydlení vůbec zviditelnit a řešit.
 
 ## Ceny rostou rychleji než příjmy
 Mezi lety 2015 a 2024 vzrostly průměrné ceny nemovitostí v EU o 58 %. Jde o šokující číslo, které je v některých zemích ještě horší: v osmi státech, včetně České republiky, se ceny více než zdvojnásobily. Samotný růst cen však zastírá hlavní problém, kterým je stagnace nebo pomalý růst příjmů.
@@ -45,8 +47,7 @@ Pro Českou republiku jsou k dispozici podrobnější informace v Národním kat
 * [Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)]
 * [Domácnosti podle postavení osoby v čele a užívání bytu]
 * [Míra materiální deprivace podle typu domácností]
-<br>
-<br>
+
 
 [Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)]: https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00025593%2F9de24c164e3013af660bc42b0839e1b4 "Indexy cen nemovitostí v (%) – data ČÚZK (od 2015)"
 [Domácnosti podle postavení osoby v čele a užívání bytu]: https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F00025593%2Fe58876fba3ad911e8169fb147aab18e5 "Domácnosti podle postavení osoby v čele a užívání bytu"

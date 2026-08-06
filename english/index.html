@@ -11,7 +11,7 @@ homepage: true
    <gov-statsbar-item><span id="keywordCountLabel">&nbsp;</span><span slot="text">keywords</span></gov-statsbar-item>
 </gov-statsbar>
 
-<gov-container>
+<!-- gov-container>
     <h2>News from the open data world</h2>
     <gov-tiles columns="3" no-border>
         {% assign posts=site.posts | where:"lang", page.lang %}
@@ -31,26 +31,19 @@ homepage: true
         </gov-tile>
         {% endfor %}
     </gov-tiles>
-</gov-container>
+</gov-container -->
 
 <gov-container>
     <h2>Important information for members of the open data ecosystem</h2>
-    <gov-tiles columns="3" no-border>
-		<gov-tile href="informace/základy-otevřených-dat-pro-zájemce/">
-			<h3 slot="title">Interested in opening data</h3>
-			<p>How do I benefit from open data and why should I want it? How do they benefit my town or office of government?</p>
-			<gov-button variant="secondary" type="outlined" size="l">
-				More info (in Czech) &raquo;
-			</gov-button>
-		</gov-tile>
-		<gov-tile href="/pro-poskytovatele/">
+    <gov-tiles columns="2" no-border>
+		<gov-tile href="/otevřená-data/pro-poskytovatele/">
 			<h3 slot="title">Data publishers</h3>
 			<p>How to proceed with publishing open data? What are the examples of good and bad practice? And what are the legal aspects of opening data?</p>
 			<gov-button variant="secondary" type="outlined" size="l">
 				More info (in Czech) &raquo;
 			</gov-button>
 		</gov-tile>
-		<gov-tile href="/pro-uživatele/">
+		<gov-tile href="/otevřená-data/pro-uživatele/">
 			<h3 slot="title">Data users</h3>
 			<p>Where do I find open data? What are the XML, CSV or RDF formats? Where can I ask for more open data or report a bug?</p>
 			<gov-button variant="secondary" type="outlined" size="l">

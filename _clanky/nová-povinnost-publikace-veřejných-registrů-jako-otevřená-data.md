@@ -4,13 +4,14 @@ title: Nová povinnost publikace veřejných registrů jako otevřená data
 detail: true
 ref: NováPovinnostPublikaceVeřejnýchRegistrů2022
 lang: cs
+image: ../přílohy/články/NováPovinnostPublikaceVeřejnýchRegistrů2022/nova-povinnost.webp
 author: jakub_míšek
 date: 2022-01-03 07:00:00 +01:00
 ---
 
 Velká [novela] nepřinesla v oblasti opětovného užití informací veřejného sektoru a otevřených dat jen povinnost poskytovat jako otevřená data informace o úředních deskách (o [této povinnosti jsme již psali][povinnost]).
-Ještě významnější dopad pro následné efektivní využití zveřejněných informací veřejného sektoru má nový § 5a odstavec 2, kterým byla zavedena povinnost poskytovat veřejně dostupné informace obsažené v registrech jako otevřená data.
 <!--more-->
+Ještě významnější dopad pro následné efektivní využití zveřejněných informací veřejného sektoru má nový § 5a odstavec 2, kterým byla zavedena povinnost poskytovat veřejně dostupné informace obsažené v registrech jako otevřená data.
 Pojem „registr“ je legislativní zkratkou založenou v § 5a odst. 1, která označuje registry, evidence, seznamy nebo rejstříky obsahující informace, které jsou na základě zákona každému přístupné, přičemž se jedná jen o takové registry, které jsou vedené nebo spravované na základě zákona.
 Nejedná se tedy o dobrovolně vedené registry, které si povinné subjekty vedou samy o svém rozhodnutí.
 Jinými slovy, § 5a odst. 2 zakládá povinnost poskytovat informace, které jsou na základě zákona veřejné, a které jsou vedené v zákonem založených nebo předvídaných registrech vedle původního způsobu zveřejnění rovněž jako otevřená data.
@@ -65,5 +66,5 @@ Jde například o informace spadající pod působnost zákona č. 123/1998 Sb. 
 Doufáme, že tato klasifikace dat veřejného sektoru může pomoci v rozhodnutí, zda povinné subjekty spravují nějaké informace, ke kterým se nově vztahuje povinnost poskytovat je jako otevřená data.
 Závěrem připomínáme, že odbor Hlavního architekta eGovernmentu MVČR nabízí podporu a pořádá školení, které se i těmto otázkám věnují.
 
-[novela]: https://www.e-sbirka.cz/sb/2021/261/2026-01-01?f=261%2F2021&zalozka=text "Změnová novela č. 261/2021 Sb."
+[novela]: https://e-sbirka.gov.cz/sb/2021/261/2026-01-01?f=261%2F2021&zalozka=text "Změnová novela č. 261/2021 Sb."
 [povinnost]: nové-povinnosti-pro-obce-kraje-a-orgány-státní-správy-v-oblasti-otevřených-dat "Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat"

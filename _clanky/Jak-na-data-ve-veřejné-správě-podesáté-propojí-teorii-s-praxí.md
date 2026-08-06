@@ -47,5 +47,3 @@ Praha se 18. června v prostorách Akademie veřejného investování promění 
 
 <p>Kapacita sálu pro 160 osob zaručuje prostor pro networking a osobní sdílení zkušeností. Pro širší veřejnost bude zajištěn online přenos a následně i záznam, který bude následně dostupný na stránce s harmonogramem, viz výše.
 </p>
-<br>
-<br>

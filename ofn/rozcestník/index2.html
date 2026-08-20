@@ -51,24 +51,27 @@ gov-tile {
   display: block;
   border: 1px solid #d0d5dd !important;
   border-radius: 6px !important;
+  margin-bottom: 5px !important;
   transition: background-color 0.2s ease, border-color 0.2s ease;
   overflow: hidden;
-  /* Podpora pro CSS proměnné design systému */
-  --gov-tile-bg: transparent;
-  --gov-tile-border: 1px solid #d0d5dd;
+  color: #000000 !important;
 }
 
-/* Obarvení pozadí při přejetí myší */
+gov-tile:last-child {
+  margin-bottom: 0 !important;
+}
+
 gov-tile:hover {
   background-color: #f0f4f8 !important;
   border-color: #00469B !important;
   cursor: pointer;
 }
 
-/* Barva nadpisu */
+/* Černá barva pro nadpis i text */
 gov-tile [slot="title"],
-gov-tile h3 {
-  color: #00469B !important;
+gov-tile h3,
+gov-tile p {
+  color: #000000 !important;
 }
 </style>
 

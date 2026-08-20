@@ -49,27 +49,32 @@ gov-accordion-item {
 
 gov-tile {
   display: block;
-  border: 1px solid #d0d5dd !important;
-  border-radius: 6px !important;
-  margin-bottom: 5px !important;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  overflow: hidden;
+  margin: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #d0d5dd !important;
+  border-radius: 0 !important;
+  transition: background-color 0.2s ease;
   color: #000000 !important;
 }
 
+/* Odstranění spodní čáry u poslední dlaždice */
 gov-tile:last-child {
-  margin-bottom: 0 !important;
+  border-bottom: none !important;
 }
 
+/* Hover efekt */
 gov-tile:hover {
   background-color: #f0f4f8 !important;
-  border-color: #00469B !important;
   cursor: pointer;
 }
 
-/* Černá barva pro nadpis i text */
+/* Barva nadpisu */
 gov-tile [slot="title"],
-gov-tile h3,
+gov-tile h3 {
+  color: #00469B !important;
+}
+
+/* Barva textu */
 gov-tile p {
   color: #000000 !important;
 }

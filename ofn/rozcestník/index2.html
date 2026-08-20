@@ -21,6 +21,10 @@ lang: cs
   .no-outer-space > gov-grid-item:last-child {
     padding-right: 0 !important;
   }
+  gov-button {
+  --gov-color-primary-base: #00469B !important;
+  --gov-button-bg: #00469B !important;
+}
 </style>
 
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě - TEST</p>
@@ -32,11 +36,12 @@ lang: cs
 <gov-grid class="no-outer-space" gutter-x="1.5rem" gutter-y="1.5rem">
   <!-- Dlaždice 1 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
-      <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
+        <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
+     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="basic" style="color: #680526; fill: #680526; width: 36px; height: 36px;"></gov-icon>
+      <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" color="#680526" style="width: 36px; height: 36px;"></gov-icon>
       <h3 style="font-weight: bold; font-size: 1.25em;">Metadata a katalogizace</h3>
       <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button variant="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace" style="background-color: #00469B;" >Více</gov-button>
+      <gov-button variant="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace" >Více</gov-button>
           </gov-card>
   </gov-grid-item>
 

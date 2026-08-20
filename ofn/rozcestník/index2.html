@@ -9,6 +9,18 @@ lang: cs
   body {
     background-color: #f1f1f6;
   }
+    .no-outer-space {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .no-outer-space > gov-grid-item:first-child {
+    padding-left: 0 !important;
+  }
+  .no-outer-space > gov-grid-item:last-child {
+    padding-right: 0 !important;
+  }
 </style>
 
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě - TEST</p>
@@ -16,126 +28,57 @@ lang: cs
 
 <!-- Výpis kategorií -->
 
-<gov-grid >
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
-      <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" color="error" style="width: 48px; height: 48px;"></gov-icon>
-      <h3>Metadata a katalogizace</h3>
-      <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button href="#metadata" color="primary" type="solid" size="m" style="--gov-color-primary-base: #00469B; background-color: #00469B;">Button</gov-button>
-    </gov-card>
-  </gov-grid-item>
 
+<gov-grid class="no-outer-space" gutter-x="1.5rem" gutter-y="1.5rem">
+  <!-- Dlaždice 1 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
+    <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
       <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
       <h3>Metadata a katalogizace</h3>
       <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button href="#metadata" color="primary" type="solid" size="m" style="--gov-color-primary-base: #00469B; background-color: #00469B;">Button</gov-button>
+      <gov-button href="#metadata" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
     </gov-card>
   </gov-grid-item>
 
+  <!-- Dlaždice 2 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
-      <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
-      <h3>Metadata a katalogizace</h3>
-      <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button href="#metadata" color="primary" type="solid" size="m" style="--gov-color-primary-base: #00469B; background-color: #00469B;">Button</gov-button>
+    <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
+      <gov-icon class="gov-icon hydrated" name="all" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
+      <h3>Tematické datové oblasti</h3>
+      <p>Chci publikovat konkrétní data (úřední desky, odpady, turistika…).</p>
+      <gov-button href="#" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
     </gov-card>
   </gov-grid-item>
 
+  <!-- Dlaždice 3 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
-      <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
-      <h3>Metadata a katalogizace</h3>
-      <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button href="#metadata" color="primary" type="solid" size="m" style="--gov-color-primary-base: #00469B; background-color: #00469B;">Button</gov-button>
-    </gov-card>
-  </gov-grid-item>
-</gov-grid>
-
-
-
-
-
-
-
-
-
-
-<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-<gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-  <gov-card>
-    <gov-icon class="gov-icon hydrated" name="24-7" type="complex" size="L" color="#680526"></gov-icon>
-
-    <!-- Obalující flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-        <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
-        <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
-      </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-        Metadata<br>a katalogizace
-      </div>
-    </div>
-    <p>Řeším katalogizaci a integraci katalogu dat, HVD a klíčové povinnosti.</p>
-    <p><i>Pro IT architekty a vývojáře</i></p><br>
-  </gov-card>
-</gov-grid-item>
-
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-      onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-
-    <!-- Obalující flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
-      </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-         Tematické<br>datové oblasti
-      </div>
-    </div>
-            <p>Chci publikovat konkrétní data (úřední desky, odpady, turistika…).</p>
-      <p><i>Pro úředníky, věcné garanty a vývojáře</i></p>
-    </gov-card>
-  </gov-grid-item>
-
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-      onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
-</svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-        Základní<br>specifikace
-      </div>
-    </div>
+    <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
+      <gov-icon class="gov-icon hydrated" name="Digital" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
+      <h3>Základní specifikace</h3>
       <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt.</p>
-      <p><i>Pro vývojáře a analytiky</i></p>
+      <gov-button href="#specifikace" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
     </gov-card>
   </gov-grid-item>
 
+  <!-- Dlaždice 4 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-      onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-  <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1m-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"/>
-</svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-        Další<br>specifikace
-      </div>
-    </div>
+    <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
+      <gov-icon class="gov-icon hydrated" name="doc-filled" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
+      <h3>Další specifikace</h3>
       <p>Řeším elektronická podání (dle ZoPDS), formuláře či ověřené podpisy apod.</p>
-      <p><i>Pro správce spisových služeb, formulářů aj.</i></p>
+      <gov-button href="#egovernment" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
     </gov-card>
   </gov-grid-item>
 </gov-grid>
+
+
+
+
+
+
+
+
+
 
 <br>
 

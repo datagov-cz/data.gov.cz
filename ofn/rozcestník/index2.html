@@ -46,6 +46,30 @@ gov-accordion-item {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+gov-tile {
+  display: block;
+  border: 1px solid #d0d5dd !important;
+  border-radius: 6px !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  overflow: hidden;
+  /* Podpora pro CSS proměnné design systému */
+  --gov-tile-bg: transparent;
+  --gov-tile-border: 1px solid #d0d5dd;
+}
+
+/* Obarvení pozadí při přejetí myší */
+gov-tile:hover {
+  background-color: #f0f4f8 !important;
+  border-color: #00469B !important;
+  cursor: pointer;
+}
+
+/* Barva nadpisu */
+gov-tile [slot="title"],
+gov-tile h3 {
+  color: #00469B !important;
+}
 </style>
 
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě - TEST</p>

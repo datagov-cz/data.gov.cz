@@ -99,11 +99,7 @@ gov-accordion-item {
     </p>
   </gov-accordion-item>
 
-    <gov-accordion-item 
-  size="m" 
-  style="transition: background-color 0.2s ease; border-radius: 4px; display: block;" 
-  onmouseenter="this.style.backgroundColor='#f1f1f6'" 
-  onmouseleave="this.style.backgroundColor='transparent'" >
+    <gov-accordion-item size="m">
   <span slot="label" style="font-weight: bold; font-size: 1.25em;">Právní závaznost</span>
       <p>Otevřené formální normy neurčují samotnou povinnost data zveřejňovat — ta vždy vyplývá z konkrétních právních předpisů. Stanovují výhradně to, jakým způsobem mají být příslušná data nebo jejich metadata popsána, strukturována a zpřístupněna, pokud se na daný případ povinnost zveřejnění vztahuje.</p>
       <p><b>Povinné subjekty</b><br>
@@ -111,11 +107,7 @@ gov-accordion-item {
       </p>
   </gov-accordion-item>
 
-    <gov-accordion-item 
-  size="m" 
-  style="transition: background-color 0.2s ease; border-radius: 4px; display: block;" 
-  onmouseenter="this.style.backgroundColor='#f1f1f6'" 
-  onmouseleave="this.style.backgroundColor='transparent'" >
+    <gov-accordion-item size="m">
   <span slot="label" style="font-weight: bold; font-size: 1.25em;">Nenašli jste odpovídající OFN?</span>
       <p>Otevřené formální normy vznikají plně transparentním způsobem na platformě GitHub. Vývoj je přístupný široké komunitě a může se do něj zapojit každý — od IT architektů a věcných garantů až po vývojáře z veřejné i soukromé sféry.</p>
       <p>Zapojit se můžete připomínkováním rozpracovaných návrhů, navrhováním změn ve stávajících specifikacích nebo upozorněním na chybějící či nepřesné prvky. Můžete také dát podnět pro tvorbu zcela nové normy, stát se členem odborné pracovní skupiny a přímo se připojit k vývoji 
@@ -129,7 +121,7 @@ gov-accordion-item {
 
 
 
-<gov-container>
+<gov-container class="no-outer-space">
   <gov-card style="border: none; box-shadow: none; background-color: transparent;">
     
     <!-- Společný flex řádek pro úvodní text i ikony s popisy -->
@@ -167,25 +159,39 @@ gov-accordion-item {
 </gov-container>
 
 
-<gov-container>
-  <!-- První karta bez ohraničení s průhledným pozadím -->
-  <gov-card id="metadata" >
-          <span style="font-weight: bold; font-size: 1.5em; color: #FFFFFF;">Metadata a katalogizace</span>
+<gov-container class="no-outer-space">
+  <gov-card id="metadata" style="border-radius: 6px;">
+  <h2 style="font-weight: bold; font-size: 1.75em;">Metadata a katalogizace</h2>
+    <p>Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
 
-    <!-- Flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-        <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
-        <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
-      </svg>
-      <span style="font-weight: bold; font-size: 1.5em; color: #FFFFFF;">Metadata a katalogizace</span>
-    </div>
 
-    <!-- Popis (druhý řádek) -->
-    <p style="margin: 0; color: #FFFFFF;">Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
+ <gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhran%C3%AD-katalog%C5%AF-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3><p>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
+Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
+§ 7 a § 36 písm. a) zákona č. 60/2026 Sb. </p></gov-tile>
 
+<gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhran%C3%AD-katalog%C5%AF-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3><p>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
+Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
+§ 7 a § 36 písm. a) zákona č. 60/2026 Sb. </p></gov-tile>
+
+<gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhran%C3%AD-katalog%C5%AF-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3><p>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
+Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
+§ 7 a § 36 písm. a) zákona č. 60/2026 Sb. </p></gov-tile>
+
+<gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhran%C3%AD-katalog%C5%AF-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3><p>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
+Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
+§ 7 a § 36 písm. a) zákona č. 60/2026 Sb. </p></gov-tile>
+
+<gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhran%C3%AD-katalog%C5%AF-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3><p>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
+Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
+§ 7 a § 36 písm. a) zákona č. 60/2026 Sb. </p></gov-tile>
+
+
+
+    
   </gov-card>
 </gov-container>
+
+
 
 
 <gov-container>

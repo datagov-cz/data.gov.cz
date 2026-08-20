@@ -21,10 +21,7 @@ lang: cs
   .no-outer-space > gov-grid-item:last-child {
     padding-right: 0 !important;
   }
-  gov-button {
-  --gov-color-primary-base: #00469B !important;
-  --gov-button-bg: #00469B !important;
-}
+
 </style>
 
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě - TEST</p>
@@ -33,25 +30,25 @@ lang: cs
 <!-- Výpis kategorií -->
 
 
-<gov-grid class="no-outer-space" gutter-x="1.5rem" gutter-y="1.5rem">
+<gov-grid class="no-outer-space" gutter-x="1rem" gutter-y="1rem">
   <!-- Dlaždice 1 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
         <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
-     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" style="color: #680526; fill: #680526; width: 36px; height: 36px;"></gov-icon>
+     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
       <h3 style="font-weight: bold; font-size: 1.25em;">Metadata a katalogizace</h3>
       <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace">Více</gov-button>
+      <gov-button variant="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace" style="width: 100%; display: block;">Více</gov-button>
           </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 2 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
     <gov-card style="text-align: center; border-radius: 6px; display: flex; flex-direction: column; align-items: center;">
-      <gov-icon class="gov-icon hydrated" name="all" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
-      <h3>Tematické datové oblasti</h3>
+           <gov-icon class="gov-icon hydrated" name="all" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
+      <h3 style="font-weight: bold; font-size: 1.25em;">Tematické datové oblasti</h3>
       <p>Chci publikovat konkrétní data (úřední desky, odpady, turistika…).</p>
-      <gov-button href="#" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
-    </gov-card>
+            <gov-button variant="primary" type="solid" size="m" href="#agendove" wcag-label="Tematické datové oblasti" style="width: 100%; display: block;">Více</gov-button>
+   </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 3 -->
@@ -60,7 +57,7 @@ lang: cs
       <gov-icon class="gov-icon hydrated" name="digital" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
       <h3>Základní specifikace</h3>
       <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt.</p>
-      <gov-button href="#specifikace" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
+            <gov-button variant="primary" type="solid" size="m" href="#specifikace" wcag-label="Základní specifikace" style="width: 100%; display: block;">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 
@@ -70,7 +67,7 @@ lang: cs
       <gov-icon class="gov-icon hydrated" name="doc-filled" type="complex" color="#680526" style="width: 48px; height: 48px;"></gov-icon>
       <h3>Další specifikace</h3>
       <p>Řeším elektronická podání (dle ZoPDS), formuláře či ověřené podpisy apod.</p>
-      <gov-button href="#egovernment" color="primary" type="solid" size="m" style="background-color: #00469B; color: #ffffff; --gov-color-primary-base: #00469B; --gov-color-primary-text: #ffffff;">Button</gov-button>
+            <gov-button variant="primary" type="solid" size="m" href="#egovernment" wcag-label="Další specifikace" style="width: 100%; display: block;">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 </gov-grid>

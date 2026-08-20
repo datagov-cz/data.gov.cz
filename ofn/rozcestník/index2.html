@@ -13,15 +13,105 @@ lang: cs
 
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě - TEST</p>
 
-<gov-icon class="gov-icon hydrated" name="24-7" type="complex" size="L" color="#680526"></gov-icon>
 
 <!-- Výpis kategorií -->
+<gov-grid gap="l" class="gov-card-grid">
+    <gov-grid-item col-span="12" col-span-lg="4">
+
+        <gov-card direction="vertical">
+            <gov-icon type="templates" name="24-7" slot="icon" size="5xl"></gov-icon>
+            <gov-flex gap="s" direction="column">
+                <header>
+                    <h3 class=" gov-card__headline">Metadata a katalogizace</h3>
+                </header>
+                <p>
+                <p>Všechny kontakty naleznete jednoduše na jednom místě.</p>
+                </p>
+                <gov-button color="primary" size="s" type="link" href="#">
+                    Spojte se s námi
+
+                    <gov-icon type="templates" name="chevron-right" slot="icon-end"></gov-icon>
+                </gov-button>
+            </gov-flex>
+
+        </gov-card>
+
+    </gov-grid-item>
+    <gov-grid-item col-span="12" col-span-lg="4">
+
+        <gov-card direction="vertical">
+            <gov-icon type="templates" name="chat-text" slot="icon" size="5xl"></gov-icon>
+            <gov-flex gap="s" direction="column">
+                <header>
+                    <h3 class=" gov-card__headline">Poraďte se s ostatními</h3>
+                </header>
+                <p>
+                <p>Diskutujte a sdílejte rady s ostatními uživateli našeho diskuzního fora</p>
+                </p>
+                <gov-button color="primary" size="s" type="link" href="#">
+                    Navštívit fórum
+
+                    <gov-icon type="templates" name="chevron-right" slot="icon-end"></gov-icon>
+                </gov-button>
+            </gov-flex>
+
+        </gov-card>
+
+    </gov-grid-item>
+    <gov-grid-item col-span="12" col-span-lg="4">
+
+        <gov-card direction="vertical">
+            <gov-icon type="templates" name="twitter-x" slot="icon" size="5xl"></gov-icon>
+            <gov-flex gap="s" direction="column">
+                <header>
+                    <h3 class=" gov-card__headline">Sledujte naše socilní sítě</h3>
+                </header>
+                <p>
+                <p>Pro více aktuálních informací v reálném čase sledujte naše sociální sítě</p>
+                </p>
+                <gov-button color="primary" size="s" type="link" href="#">
+                    Prohlédnout novinky
+
+                    <gov-icon type="templates" name="chevron-right" slot="icon-end"></gov-icon>
+                </gov-button>
+            </gov-flex>
+
+        </gov-card>
+
+    </gov-grid-item>
+</gov-grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
 <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-  <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-  onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-    
+  <gov-card>
+    <gov-icon class="gov-icon hydrated" name="24-7" type="complex" size="L" color="#680526"></gov-icon>
+
     <!-- Obalující flex kontejner pro ikonu a nadpis -->
     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
       <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">

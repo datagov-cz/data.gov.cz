@@ -5,1562 +5,548 @@ ref: rozcestnik
 lang: cs
 ---
 
+<style>
+  body {
+    background-color: #f1f1f6;
+  }
+    .no-outer-space {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .no-outer-space > gov-grid-item:first-child {
+    padding-left: 0 !important;
+  }
+  .no-outer-space > gov-grid-item:last-child {
+    padding-right: 0 !important;
+  }
+gov-accordion-item {
+  display: block;
+  border: none !important;
+    border-bottom: 1px solid #d0d5dd !important;
 
-<h2 class="h4" style="font-weight: bold;">Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě - TEST</h2>
+  outline: none !important;
+  box-shadow: none !important;
+  overflow: hidden; 
+  transition: background-color 0.2s ease;
+  --gov-accordion-item-border: none;
+  --gov-border-color: transparent;
+}
+
+  gov-accordion-item:hover {
+    background-color: #f0f4f8;
+    cursor: pointer;
+  }
+
+  gov-accordion-item:hover [slot="label"] {
+    color: #00469B;
+  }
+
+  gov-accordion-item p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+gov-accordion-item:last-child {
+  border-bottom: none !important;
+}
+
+gov-tile {
+  display: block;
+  margin: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #d0d5dd !important;
+  border-radius: 0 !important;
+  transition: background-color 0.2s ease;
+  color: #000000 !important;
+}
+
+/* Odstranění spodní čáry u poslední dlaždice */
+gov-tile:last-child {
+  border-bottom: none !important;
+}
+
+/* Hover efekt */
+gov-tile:hover {
+  background-color: #f0f4f8 !important;
+  cursor: pointer;
+}
+
+/* Barva nadpisu */
+gov-tile [slot="title"],
+gov-tile h3 {
+  color: #00469B !important;
+}
+
+</style>
+
+<p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě</p>
+
 
 <!-- Výpis kategorií -->
-<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-<gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-  <gov-card full-height onclick="window.location.href='#metadata';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-  onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-    
-    <!-- Obalující flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-        <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
-        <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
-      </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-        Metadata<br>a katalogizace
-      </div>
-    </div>
-    <p>Řeším katalogizaci (DCAT-AP-CZ), HVD nebo vyhlášku 360/2023.</p>
-    <p><i>Pro IT architekty a vývojáře</i></p><br>
-  </gov-card>
-</gov-grid-item>
 
+
+<gov-grid class="no-outer-space" gutter-x="0.75rem" gutter-y="0.75rem">
+  <!-- Dlaždice 1 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#agendove';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-      onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
+        <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
+     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
+      <h3 style="font-weight: bold; font-size: 1.25em;">Metadata a katalogizace</h3>
+      <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
+      <gov-button expanded variant="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace" style="width: 100%; align-self: stretch;">Více</gov-button>
+          </gov-card>
+  </gov-grid-item>
 
-    <!-- Obalující flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
-      </svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-         Agendové<br>OFN
-      </div>
-    </div>
-            <p>Chci publikovat konkrétní data (úřední desky, odpady, turistika…).</p>
-      <p><i>Pro úředníky a věcné garanty</i></p>
+  <!-- Dlaždice 2 -->
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
+    <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
+           <gov-icon class="gov-icon hydrated" name="all" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
+      <h3 style="font-weight: bold; font-size: 1.25em;">Tematické datové oblasti</h3>
+      <p>Publikace konkrétních dat (úřední desky, odpady, turistika…).</p>
+            <gov-button expanded variant="primary" type="solid" size="m" href="#agendove" wcag-label="Tematické datové oblasti" style="width: 100%; align-self: stretch;">Více</gov-button>
+   </gov-card>
+  </gov-grid-item>
+
+  <!-- Dlaždice 3 -->
+  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
+    <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
+      <gov-icon class="gov-icon hydrated" name="digital" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
+      <h3 style="font-weight: bold; font-size: 1.25em;">Základní specifikace</h3>
+      <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt aj.</p>
+            <gov-button expanded variant="primary" type="solid" size="m" href="#specifikace" wcag-label="Základní specifikace" style="width: 100%; align-self: stretch;">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 
+  <!-- Dlaždice 4 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#specifikace';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-      onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
-</svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-        Sdílené<br>specifikace
-      </div>
-    </div>
-      <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt.</p>
-      <p><i>Pro vývojáře datových modelů</i></p>
-    </gov-card>
-  </gov-grid-item>
-
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card full-height onclick="window.location.href='#egovernment';" style="cursor: pointer;box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-      onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';" >
-      <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="width: 2.4em; height: 2.4em; flex-shrink: 0;">
-  <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1m-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"/>
-</svg>
-      <div style="font-weight: bold; font-size: 1.25em; line-height: 1.2; color: #00469B;">
-        eGovernment<br>a dokumenty
-      </div>
-    </div>
-      <p>Řeším elektronická podání (dle ZoPDS), formuláře či ověřené podpisy.</p>
-      <p><i>Pro správce spisových služeb a formulářů</i></p>
+    <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
+      <gov-icon class="gov-icon hydrated" name="doc-filled" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
+      <h3 style="font-weight: bold; font-size: 1.25em;">Další specifikace</h3>
+      <p>Elektronická podání (dle ZoPDS), formuláře či ověřené podpisy apod.</p>
+            <gov-button expanded variant="primary" type="solid" size="m" href="#egovernment" wcag-label="Další specifikace" style="width: 100%; align-self: stretch;">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 </gov-grid>
 
-<br>
 
 
-<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-<gov-grid-item size-sm="12/12" size-md="12/12" size-lg="6/12">
-  <gov-card full-height onclick="window.location.href='#obecne';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
-<p style="text-align: center;">Co jsou otevřené formální normy?</p>
+
+
+<gov-container class="no-outer-space">
+  <gov-card style="border-radius: 8px;">
+    <gov-accordion-item size="m">
+  <span slot="label" style="font-weight: bold; font-size: 1.25em; padding-left: 15px;">Co jsou otevřené formální normy?</span>
+      <p>Otevřené formální normy (OFN) definují společná pravidla pro popis, strukturu a technické provedení dat ve veřejném sektoru. Sjednocují význam dat a definice pojmů, jejich vnitřní uspořádání i podobu datových rozhraní a API. Umožňují různým informačním systémům a poskytovatelům publikovat obdobná data stejným způsobem a garantují jejich plnou interoperabilitu — tedy schopnost systémů spolu bezproblémově komunikovat a předávat si data.
+      </p>
+      <p>OFN sjednocují způsob popisu datových sad v lokálních i národním katalogu a zajišťují, že jsou publikovaná data strojově čitelná a snadno opakovaně použitelná. Zároveň garantují, že různé úřady popisují stejné agendy ve stejném formátu, poskytují hotové stavební prvky pro opakující se údaje (jako jsou adresy, kontakty nebo časové specifikace) a umožňují plynulou výměnu dat napříč informačními systémy veřejné správy.
+    </p>
+  </gov-accordion-item>
+
+    <gov-accordion-item size="m">
+  <span slot="label" style="font-weight: bold; font-size: 1.25em; padding-left: 15px;">Právní závaznost</span>
+      <p><b>Právní rámec</b><br>
+        Otevřené formální normy neurčují samotnou povinnost data zveřejňovat — ta vždy vyplývá z konkrétních právních předpisů. Stanovují výhradně to, jakým způsobem mají být příslušná data nebo jejich metadata popsána, strukturována a zpřístupněna, pokud se na daný případ povinnost zveřejnění vztahuje.</p>
+      <p><b>Povinné subjekty</b><br>
+      <strong>Poskytovatelé otevřených dat</strong> — pro povinné subjekty <a href="https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2025-08-19/dokument/norma/cast_1/par_4c" target="_blank">dle § 4c odst. 1</a> zákona č. 106/1999 Sb., o svobodném přístupu k informacím, jsou příslušné OFN <strong>závazné ve smyslu <a href="https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2025-08-19/dokument/norma/cast_1/par_3" target="_blank">§ 3a odst. 3</a></strong> téhož zákona.<br>
+      <strong>Správci dat a správci ISVS</strong> — normy jsou závazné pro správce dat <a href="https://e-sbirka.gov.cz/eli/cz/sb/2026/60/2026-05-27/dokument/norma/cast_1/hlava_1/par_4" target="_blank">dle § 4</a> zákona č. 60/2026 Sb., o správě dat a řízeném přístupu k datům, kteří spravují data a provozní údaje s ohledem na věcnou působnost <a href="https://e-sbirka.gov.cz/eli/cz/sb/2026/60/2026-05-27/dokument/norma/cast_1/hlava_1/par_2" target="_blank">dle § 2</a> zákona č. 60/2026 Sb. a zároveň vystupují jako správci informačního systému veřejné správy (ISVS) <a href="https://e-sbirka.gov.cz/eli/cz/sb/2000/365/2026-01-01/dokument/norma/cast_1/hlava_1/par_2/odst_1/pism_c" target="_blank">§ 2 odst. 1 písm. c)</a> zákona č. 365/2000 Sb., o informačních systémech veřejné správy.
+      </p>
+  </gov-accordion-item>
+
+    <gov-accordion-item size="m">
+  <span slot="label" style="font-weight: bold; font-size: 1.25em; padding-left: 15px;">Nenašli jste odpovídající OFN?</span>
+      <p>Otevřené formální normy vznikají plně transparentním způsobem na platformě GitHub. Vývoj je přístupný široké komunitě a může se do něj zapojit každý — od IT architektů a věcných garantů až po vývojáře z veřejné i soukromé sféry.</p>
+      <p>Zapojit se můžete připomínkováním rozpracovaných návrhů, navrhováním změn ve stávajících specifikacích nebo upozorněním na chybějící či nepřesné prvky. Můžete také dát podnět pro tvorbu zcela nové normy, stát se členem odborné pracovní skupiny a přímo se připojit k vývoji 
+        <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">na GitHubu &#x2197;</a></p>
+  </gov-accordion-item>
   </gov-card>
-</gov-grid-item>
-
-<gov-grid-item size-sm="12/12" size-md="12/12" size-lg="6/12">
-  <gov-card full-height onclick="window.location.href='#zapojeni';" style="cursor: pointer; box-shadow: #f4f6fc 0 0.25rem 0.5rem;">
-<p style="text-align: center;">Nenašli jste odpovídající OFN?</p>
-  </gov-card>
-</gov-grid-item>
-</gov-grid>
+  </gov-container>
 
 
 
 
 
-<br>
-<gov-container>
+
+<gov-container class="no-outer-space">
   <gov-card style="border: none; box-shadow: none; background-color: transparent;">
     
     <!-- Společný flex řádek pro úvodní text i ikony s popisy -->
     <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
-      <span style="font-weight: bold;">U jednotlivých karet najdete</span>
-
-      <div style="display: flex; align-items: center; gap: 0.35rem; white-space: nowrap;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-        <span style="font-weight: bold;">věcný účel normy,</span>
-      </div>
-
-      <div style="display: flex; align-items: center; gap: 0.35rem; white-space: nowrap;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-        <span style="font-weight: bold;">pro koho je určená,</span>
-      </div>
-
-      <div style="display: flex; align-items: center; gap: 0.35rem; white-space: nowrap;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-        <span style="font-weight: bold;">související legislativní rámec.</span>
+      <span style="font-weight: bold;">U jednotlivých karet najdete věcný účel normy, pro koho je určená a související legislativní rámec.</span>
       </div>
     </div>
-
     <!-- Závěrečný řádek -->
     <p style="margin: 0; ">
-      Kompletní technická specifikace se zobrazí po kliknutí na kartu ↗
+      Kompletní technická specifikace se zobrazí po kliknutí na její název.
     </p>
 
   </gov-card>
 </gov-container>
 
-<br>
 
-<gov-container>
-  <!-- První karta bez ohraničení s průhledným pozadím -->
-  <gov-card id="metadata" style="border: none; box-shadow: none; background-color: transparent;">
-    
-    <!-- Flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-        <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5z"/>
-        <path d="M4.268 1A2 2 0 0 1 6 0h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L13 13.768V2a1 1 0 0 0-1-1z"/>
-      </svg>
-      <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">Metadata a katalogizace</span>
-    </div>
-
-    <!-- Popis (druhý řádek) -->
-    <p style="margin: 0;">Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
-
-    <!-- Silná čára pod druhým řádkem -->
-    <hr style="border: none; border-top: 3px solid #D9DAE4; margin-top: 1rem; margin-bottom: 0; opacity: 1;">
-  </gov-card>
-</gov-container>
-
-
-<gov-container>
-  <!-- Druhá karta se spolehlivým odsazením přes margin-bottom na jednotlivých div -->
-  <gov-card 
-    direction="horizontal" 
-    style="background: #FFFFFF; cursor: pointer; transition: background-color 0.2s ease; box-shadow: #f4f6fc 0 0.25rem 0.5rem;"
-    onclick="window.location.href='https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/draft/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      DCAT-AP-CZ: Rozhraní katalogů dat ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-
-<gov-container>
-<gov-card 
-    direction="horizontal" 
-    style="background-color: #FFFFFF; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/dcat-ap-cz-datová-rozhraní/draft/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#FFFFFF';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      DCAT-AP-CZ: Datová rozhraní ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 6 odst. 2 zákona č. 60/2026 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/dcat-ap-cz-otevřená-data/draft/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      DCAT-AP-CZ: Datové sady otevřených dat ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 4b a § 4c zákona č. 106/1999 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/dcat-ap-cz-hvd/draft/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD) ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 5b zákona č. 106/1999 Sb. a nařízení Komise (EU) 2023/138</span>
-    </div>
-  </gov-card>
-
-  </gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/2024-05-28/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      DCAT-AP-CZ: Rozhraní katalogů otevřených dat ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 4c zákona č. 106/1999 Sb.; souvisí také s § 24 odst. 2 vyhlášky č. 360/2023 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/dcat-ap-cz-360-2023/2025-08-12/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb. ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 24 odst. 1 a 2 vyhlášky č. 360/2023 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/prostorová-data/2019-08-22/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Prostorová data ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stanoví doporučené formáty, geometrie, souřadnicové systémy, metadata a služby pro publikaci prostorových dat.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Povinné subjekty a další poskytovatelé prostorových dat, správci prostorových IS a koordinátoři témat prostorových dat.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Zákon č. 123/1998 Sb., předpisy INSPIRE a § 10 zákona č. 60/2026 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-
-<br>
-
-
-
-<gov-container>
-  <!-- První karta bez ohraničení s průhledným pozadím -->
-  <gov-card id="agendove" style="border: none; box-shadow: none; background-color: transparent;">
-    
-    <!-- Flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
-      </svg>
-      <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">Agendové OFN</span>
-    </div>
-
-    <!-- Popis (druhý řádek) -->
-    <p style="margin: 0;">Určeno pro úředníky, věcné garanty a dodavatele SW. Stanovují společný význam a strukturu pro konkrétní doménové datové sady.</p>
-
-    <!-- Silná čára pod druhým řádkem -->
-    <hr style="border: none; border-top: 3px solid #D9DAE4; margin-top: 1rem; margin-bottom: 0; opacity: 1;">
-  </gov-card>
-</gov-container>
-
-
-
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/slovníky/2026-02-26/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Slovníky ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Popisuje pojmy, jejich význam, vlastnosti a vzájemné vztahy v rámci veřejné správy.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vybraní správci dat a věcní garanti agend.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Od 1. ledna 2029 stanoví zákon č. 60/2026 Sb. vybraným správcům dat povinnosti týkající se datových slovníků.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/úřední-desky/2021-07-20/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Úřední desky ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Datový standard pro metadata úřední desky a dokumentů na ní zveřejněných.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností (ORP).</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 5a odst. 4 zákona č. 106/1999 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/registr-práv-a-povinností/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Registr práv a povinností (RPP) ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Specifikace pro vybrané objekty, agendy, působnosti a informační systémy vedené v RPP.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Orgány veřejné moci zapisující a spravující údaje v Registru práv a povinností.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Rozsah zveřejňovaných údajů vyplývá zejména ze zákona č. 111/2009 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/aktuality/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Aktuality ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Jednotný formát pro publikaci aktualit, zpráv a oficiálních oznámení organizací.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Orgány veřejné moci a instituce dobrovolně publikující své zprávy jako otevřená data.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Obecná pravidla zákona č. 106/1999 Sb. (dobrovolná publikace).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/číselníky/2022-02-08/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Číselníky ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Standard pro datovou strukturu číselníků, jejich položek, platnosti, verzování a vazeb.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci a poskytovatelé datových sad obsahujících kódované seznamy a číselníky.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Dle zvláštních právních předpisů ukládajících povinnost zveřejnit konkrétní číselník.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/pracovní-místa/2021-09-23/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Pracovní místa ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Struktura pro nabídky volných pracovních míst, informace o zaměstnavateli a podmínkách zaměstnání.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Služební orgány, úřady a veřejné instituce publikující nabídky práce.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Sektorové, služební a pracovněprávní předpisy (bez obecné přímé povinnosti).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/nádoby-na-tříděný-odpad/2022-04-19/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Nádoby na tříděný odpad ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Standardizuje údaje o umístění, druzích odpadu, kapacitě a správě nádob na tříděný odpad.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Obce, města a poskytovatelé dat v oblasti odpadového hospodářství.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Souvisí s informačními povinnostmi obcí v odpadovém hospodářství.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/rejstříky-svazků-obcí/2026-04-01/cs/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Rejstříky svazků obcí ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Datová struktura pro evidenci svazků obcí, jejich členů, orgánů a oficiálních dokumentů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Krajské úřady, obce a správci veřejných rejstříků svazků obcí.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Zákon o obcích a předpisy upravující veřejné registry.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/sběrné-dvory/2022-04-19/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Sběrné dvory ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Specifikace pro popis lokality, provozní doby, přijímaného odpadu a kontaktů sběrných dvorů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Obce a provozovatelé zařízení pro nakládání s odpady.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Souvisí s informačními povinnostmi v odpadovém hospodářství.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/sportoviště/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Sportoviště ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Struktura informací o veřejných sportovištích, jejich vybavení, provozu a umístění.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Obce, kraje a správci veřejných sportovních zařízení.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Bez přímé zákonné povinnosti (doporučený standard pro opakovatelnou využitelnost).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/turistické-cíle/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Turistické cíle ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Jednotný popis turistických atraktivit, jejich vlastností, přístupnosti a kontaktů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Obce, destinační managementy a krajské organizace cestovního ruchu.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Bez přímé zákonné povinnosti (doporučený standard).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/události/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Události ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Datový formát pro kulturní, sportovní a společenské akce, jejich termíny, místa a vstupné.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Pořadatelé akcí z řad veřejné správy, obce a příspěvkové organizace.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Bez přímé zákonné povinnosti (doporučený standard).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<br>
-
-
-
-
-<gov-container>
-  <!-- První karta bez ohraničení s průhledným pozadím -->
-  <gov-card id="specifikace" style="border: none; box-shadow: none; background-color: transparent;">
-    
-    <!-- Flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-  <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"/>
-</svg>
-      <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">Sdílené specifikace</span>
-    </div>
-
-    <!-- Popis (druhý řádek) -->
-    <p style="margin: 0;">Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro agendové OFN.</p>
-
-    <!-- Silná čára pod druhým řádkem -->
-    <hr style="border: none; border-top: 3px solid #D9DAE4; margin-top: 1rem; margin-bottom: 0; opacity: 1;">
-  </gov-card>
-</gov-container>
-
-
-
-
-
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/základní-datové-typy/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Základní datové typy ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů a autorizovaní architekti specifikací.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno jako sdílený modul v ostatních agendových OFN.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/věc/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Věc (společný předek) ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových struktur vytvářející nové OFN.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/adresy/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Adresy ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Odkazuje na RÚIAN a návazné standardy prostorových dat.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/bezbariérovost/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Bezbariérovost ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno jako sdílená vlastnost v nadřazených OFN.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/časová-specifikace/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Časová specifikace ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno jako sdílený modul v ostatních OFN.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/digitální-objekty/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Digitální objekty ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů spravující přílohy a elektronické dokumenty.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno napříč agendovými OFN.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/kontakty/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Kontakty ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů pro libovolné subjekty nebo služby.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno jako sdílený modul v ostatních OFN.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/lidé-a-osoby/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Lidé a osoby ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Modul pro zápis informací o fyzických osobnách, rolích a jejich identifikátorech v datových strukturách.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno v souladu s legislativou na ochranu osobních údajů.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/práce/2021-09-23/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Práce ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů v oblasti zaměstanosti a lidských zdrojů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno v agendové OFN Pracovní místa.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/umístění/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Umístění ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři modelů pro infrastrukturu, události a objekty v terénu.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Souvisí s předpisy pro prostorové informace.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/vstupné/2020-07-01/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Vstupné ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Vývojáři datových modelů pro události, turistické cíle a sportoviště.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Využíváno jako sdílený modul v ostatních OFN.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-
-<br>
-
-
-
-
-<gov-container>
-  <!-- První karta bez ohraničení s průhledným pozadím -->
-  <gov-card id="egovernment" style="border: none; box-shadow: none; background-color: transparent;">
-    
-    <!-- Flex kontejner pro ikonu a nadpis -->
-    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmarks-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-   <path d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1m-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1"/>
-</svg>
-      <span style="font-weight: bold; font-size: 1.5em; color: #00469B;">eGovernment a dokumenty</span>
-    </div>
-
-    <!-- Popis (druhý řádek) -->
-    <p style="margin: 0;">Určeno pro správce spisových služeb a vývojáře formulářů. Sjednocuje strukturu digitálních výstupů a úkonů.</p>
-
-    <!-- Silná čára pod druhým řádkem -->
-    <hr style="border: none; border-top: 3px solid #D9DAE4; margin-top: 1rem; margin-bottom: 0; opacity: 1;">
-  </gov-card>
-</gov-container>
-
-
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/společné-části-elektronických-dokumentů/2024-10-04/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Společné části elektronických dokumentů ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/2024-10-04/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Dokumenty z formulářů pro elektronické podání dle ZoPDS ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Standardizuje strukturu dat vznikajících z elektronických formulářových podání.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/osvědčení-digitálního-úkonu/2024-10-17/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Osvědčení digitálního úkonu ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci informačních systémů veřejné správy poskytující digitální služby.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Zákon č. 12/2020 Sb. (ZoPDS).</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/metadata-dokumentů-veřejnoprávních-původců/2024-12-10/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Záznam IS nahrazující úředně ověřený podpis ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci autorizovaných ISVS a vývojáři eGovernment modulů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>Související předpisy pro elektronickou identifikaci a digitální úkony.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<gov-container>
-  <gov-card 
-    direction="horizontal" 
-    style="background-color: #ffffff; cursor: pointer; transition: background-color 0.2s ease;"
-    onclick="window.location.href='https://ofn.gov.cz/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/draft/';"
-    onmouseenter="this.style.backgroundColor='#f4f6fc';"
-    onmouseleave="this.style.backgroundColor='#ffffff';">
-
-    <div style="font-size: 1.25em; font-weight: bold; text-align: left; margin-bottom: 0.75em;">
-      Schéma pro strojově čitelnou vrstvu statických komponent ↗
-    </div>
-    
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-info-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-        </svg>
-      <span>Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left; margin-bottom: 0.75em;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-person-vcard-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96q.04-.245.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
-        </svg>
-      <span>Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.</span>
-    </div>
-
-    <div style="display: flex; align-items: flex-start; gap: 8px; text-align: left;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00469B" class="bi bi-question-circle-fill" viewBox="0 0 16 16" style="flex-shrink: 0;">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
-        </svg>
-      <span>§ 69a zákona č. 499/2004 Sb.</span>
-    </div>
-  </gov-card>
-</gov-container>
-
-<br>
-<br>
-<br>
-<br>
-<hr>
-<br>
-
-<section id="obecne" class="ofn-definition">
-<h2 class="h4" style="font-weight: bold;">Co jsou otevřené formální normy?</h2>
+<gov-container class="no-outer-space">
+  <gov-card id="metadata" style="border-radius: 8px;">
+    <div style="padding-left: 15px; padding-right: 5px;">
+      
+  <h2 style="font-weight: bold; font-size: 1.75em;">Metadata a katalogizace</h2>
+    <p>Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
+</div>
+
+ <gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
   <p>
-    <strong>Otevřené formální normy (OFN)</strong> definují společná pravidla pro popis, strukturu a formát dat ve veřejném sektoru. Díky nim mohou různé informační systémy a různí poskytovatelé publikovat obdobná data stejným způsobem a garantovat jejich vzájemnou <strong>interoperabilitu</strong> (schopnost systémů spolu bezproblémově komunikovat a předávat si data).
-  </p>
-  
-  <p>OFN sjednocují:</p>
-  <ul>
-    <li><strong>význam dat</strong> (sémantiku a definice pojmů),</li>
-    <li><strong>datovou strukturu</strong> (jak jsou data poskládána),</li>
-    <li><strong>technické provedení</strong> (podobu datových rozhraní a API).</li>
-  </ul>
-
-<br>
-  <h3 class="h6">K čemu se OFN využívají?</h3>
-  <p>Standardy OFN jsou klíčovým stavebním kamenem digitální infrastruktury a slouží především pro:</p>
-  <ul>
-    <li><strong>Katalogizaci dat a rozhraní</strong> — sjednocují způsob popisu datových sad v lokálních i národním katalogu.</li>
-    <li><strong>Publikaci otevřených dat</strong> — zajišťují, že data jsou strojově čitelná a snadno opakovaně použitelná.</li>
-    <li><strong>Jednotný popis dat ve veřejné správě</strong> — garantují, že různé úřady popisují stejné agendy ve stejném formátu.</li>
-    <li><strong>Sdílené datové moduly</strong> — poskytují hotové stavební prvky pro opakující se údaje (jako jsou adresy, kontakty nebo časové specifikace).</li>
-    <li><strong>Interoperabilitu ISVS</strong> — umožňují plynulou výměnu dat napříč informačními systémy veřejné správy.</li>
-  </ul>
-<br>
-
-  <h3 class="h6">Právní účinek a závaznost norem</h3>
-    <p>
-      OFN <strong>neurčují</strong>, která data smějí nebo musejí být zveřejněna — tato povinnost vždy vyplývá z konkrétních právních předpisů. OFN stanovují výhradně to, <strong>jakým způsobem</strong> mají být příslušná data nebo jejich metadata popsána, strukturována a zpřístupněna, pokud se na daný případ povinnost vztahuje.
-    </p>
-
-    <br>
-
-  <h3 class="h6">Pro koho jsou OFN právně závazné?</h4>
-  <p>Zveřejněné specifikace OFN představují povinný standard pro následující okruhy subjektů:</p>
-  <ol>
-    <li>
-      <strong>Poskytovatelé otevřených dat</strong><br>
-      Pro povinné subjekty <a href="https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2025-08-19/dokument/norma/cast_1/par_4c" target="_blank">dle § 4c odst. 1</a> zákona č. 106/1999 Sb., o svobodném přístupu k informacím, jsou příslušné OFN <strong>závazné ve smyslu <a href="https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2025-08-19/dokument/norma/cast_1/par_3" target="_blank">§ 3a odst. 3</a></strong> téhož zákona.
-    </li>
-    <li>
-      <strong>Správci dat a správci ISVS</strong><br>
-      Normy jsou závazné pro správce dat <a href="https://e-sbirka.gov.cz/eli/cz/sb/2026/60/2026-05-27/dokument/norma/cast_1/hlava_1/par_4" target="_blank">dle § 4</a> zákona č. 60/2026 Sb., o správě dat a řízeném přístupu k datům, kteří spravují data a provozní údaje s ohledem na věcnou působnost <a href="https://e-sbirka.gov.cz/eli/cz/sb/2026/60/2026-05-27/dokument/norma/cast_1/hlava_1/par_2" target="_blank">dle § 2</a> zákona č. 60/2026 Sb. a zároveň vystupují jako správci informačního systému veřejné správy (ISVS) <a href="https://e-sbirka.gov.cz/eli/cz/sb/2000/365/2026-01-01/dokument/norma/cast_1/hlava_1/par_2/odst_1/pism_c" target="_blank">§ 2 odst. 1 písm. c)</a> zákona č. 365/2000 Sb., o informačních systémech veřejné správy.
-    </li>
-  </ol>
-</section>
-<br>
-<br>
-<br>
-<br>
-<hr>
-<br>
-
-<section id="zapojeni" class="ofn-definition">
-  <h2 class="h4" style="font-weight: bold;">Nenašli jste hledanou OFN nebo máte návrh na zlepšení?</h2>
+  – Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
+  – Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
+  – § 7 a § 36 písm. a) zákona č. 60/2026 Sb.
+</p>
+</gov-tile>
+    
+<gov-tile size="m" title="DCAT-AP-CZ: Datová rozhraní" href="https://ofn.gov.cz/dcat-ap-cz-datová-rozhraní/" orientation="vertical">
+  <h3 slot="title">DCAT-AP-CZ: Datová rozhraní</h3>
   <p>
-    Otevřené formální normy vznikají otevřeným způsobem. Vývoj probíhá transparentně na platformě GitHub a zapojit se může každý — od IT architektů přes věcné garanty až po vývojáře.
+    – Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.<br>
+    – Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.<br>
+    – § 6 odst. 2 zákona č. 60/2026 Sb.
   </p>
+</gov-tile>
 
-  <h3 class="h6">Jak se můžete zapojit:</h3>
-  <ul>
-    <li><strong>Připomínkujte</strong> rozpracované návrhy nově vznikajících norem.</li>
-    <li><strong>Navrhujte</strong> změny a úpravy ve stávajících specifikacích.</li>
-    <li><strong>Upozorněte nás</strong> na chybějící vlastnosti, chybné prvky nebo nepřesné příklady.</li>
-    <li><strong>Dejte podnět</strong> pro tvorbu zcela nové OFN.</li>
-    <li><strong>Staňte se členem</strong> odborné pracovní skupiny.</li>
-  </ul>
+<gov-tile size="m" title="DCAT-AP-CZ: Datové sady otevřených dat" href="https://ofn.gov.cz/dcat-ap-cz-otevřená-data/" orientation="vertical">
+  <h3 slot="title">DCAT-AP-CZ: Datové sady otevřených dat</h3>
+  <p>
+    – Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.<br>
+    – Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.<br>
+    – § 4b a § 4c zákona č. 106/1999 Sb.
+  </p>
+</gov-tile>
 
-  <div class="ofn-callout-action">
-    <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-      Připojit se na GitHubu &#x2197;
-    </a>
-  </div>
-</section>
+<gov-tile size="m" title="DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)" href="https://ofn.gov.cz/dcat-ap-cz-hvd/" orientation="vertical">
+  <h3 slot="title">DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</h3>
+  <p>
+    – Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.<br>
+    – Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.<br>
+    – § 5b zákona č. 106/1999 Sb. a nařízení Komise (EU) 2023/138
+  </p>
+</gov-tile>
 
+<gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů otevřených dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/" orientation="vertical">
+  <h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů otevřených dat</h3>
+  <p>
+    – Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.<br>
+    – Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.<br>
+    – § 4c zákona č. 106/1999 Sb.; souvisí také s § 24 odst. 2 vyhlášky č. 360/2023 Sb.
+  </p>
+</gov-tile>
+
+<gov-tile size="m" title="DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb." href="https://ofn.gov.cz/dcat-ap-cz-360-2023/" orientation="vertical">
+  <h3 slot="title">DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb.</h3>
+  <p>
+    – Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.<br>
+    – Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.<br>
+    – § 24 odst. 1 a 2 vyhlášky č. 360/2023 Sb.
+  </p>
+</gov-tile>
+
+<gov-tile size="m" title="Prostorová data" href="https://ofn.gov.cz/prostorová-data/" orientation="vertical" >
+  <h3 slot="title">Prostorová data</h3>
+  <p>
+    – Stanoví doporučené formáty, geometrie, souřadnicové systémy, metadata a služby pro publikaci prostorových dat.<br>
+    – Povinné subjekty a další poskytovatelé prostorových dat, správci prostorových IS a koordinátoři témat prostorových dat.<br>
+    – Zákon č. 123/1998 Sb., předpisy INSPIRE a § 10 zákona č. 60/2026 Sb.
+  </p>
+ </gov-tile>
+
+  </gov-card>
+</gov-container>
+
+
+
+
+
+
+
+<gov-container class="no-outer-space">
+  <gov-card id="agendove" style="border-radius: 8px;">
+    <div style="padding-left: 15px; padding-right: 5px;">
+      <h2 style="font-weight: bold; font-size: 1.75em;">Tematické datové oblasti</h2>
+      <p>Určeno pro úředníky, věcné garanty, vývojáře a dodavatele SW. Stanovují společný význam a strukturu pro konkrétní doménové datové sady.</p>
+    </div>
+
+    <gov-tile size="m" title="Slovníky" href="https://ofn.gov.cz/slovníky/" orientation="vertical">
+      <h3 slot="title">Slovníky</h3>
+      <p>
+        – Popisuje pojmy, jejich význam, vlastnosti a vzájemné vztahy v rámci veřejné správy.<br>
+        – Vybraní správci dat a věcní garanti agend.<br>
+        – Od 1. ledna 2029 stanoví zákon č. 60/2026 Sb. vybraným správcům dat povinnosti týkající se datových slovníků.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Úřední desky" href="https://ofn.gov.cz/úřední-desky/" orientation="vertical">
+      <h3 slot="title">Úřední desky</h3>
+      <p>
+        – Datový standard pro metadata úřední desky a dokumentů na ní zveřejněných.<br>
+        – Státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností (ORP).<br>
+        – § 5a odst. 4 zákona č. 106/1999 Sb.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Registr práv a povinností (RPP)" href="https://ofn.gov.cz/registr-práv-a-povinností/" orientation="vertical">
+      <h3 slot="title">Registr práv a povinností (RPP)</h3>
+      <p>
+        – Specifikace pro vybrané objekty, agendy, působnosti a informační systémy vedené v RPP.<br>
+        – Orgány veřejné moci zapisující a spravující údaje v RPP.<br>
+        – Rozsah zveřejňovaných údajů vyplývá zejména ze zákona č. 111/2009 Sb.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Aktuality" href="https://ofn.gov.cz/aktuality/" orientation="vertical">
+      <h3 slot="title">Aktuality</h3>
+      <p>
+        – Jednotný formát pro publikaci aktualit, zpráv a oficiálních oznámení organizací.<br>
+        – Orgány veřejné moci a instituce dobrovolně publikující své zprávy jako otevřená data.<br>
+        – Obecná pravidla zákona č. 106/1999 Sb. (dobrovolná publikace).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Číselníky" href="https://ofn.gov.cz/číselníky/" orientation="vertical">
+      <h3 slot="title">Číselníky</h3>
+      <p>
+        – Standard pro datovou strukturu číselníků, jejich položek, platnosti, verzování a vazeb.<br>
+        – Správci a poskytovatelé datových sad obsahujících kódované seznamy a číselníky.<br>
+        – Dle zvláštních právních předpisů ukládajících povinnost zveřejnit konkrétní číselník.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Pracovní místa" href="https://ofn.gov.cz/pracovní-místa/" orientation="vertical">
+      <h3 slot="title">Pracovní místa</h3>
+      <p>
+        – Struktura pro nabídky volných pracovních míst, informace o zaměstnavateli a podmínkách zaměstnání.<br>
+        – Služební orgány, úřady a veřejné instituce publikující nabídky práce.<br>
+        – Sektorové, služební a pracovněprávní předpisy (bez obecné přímé povinnosti).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Nádoby na tříděný odpad" href="https://ofn.gov.cz/nádoby-na-tříděný-odpad/" orientation="vertical">
+      <h3 slot="title">Nádoby na tříděný odpad</h3>
+      <p>
+        – Standardizuje údaje o umístění, druzích odpadu, kapacitě a správě nádob na tříděný odpad.<br>
+        – Obce, města a poskytovatelé dat v oblasti odpadového hospodářství.<br>
+        – Souvisí s informačními povinnostmi obcí v odpadovém hospodářství.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Rejstříky svazků obcí" href="https://ofn.gov.cz/rejstříky-svazků-obcí/" orientation="vertical">
+      <h3 slot="title">Rejstříky svazků obcí</h3>
+      <p>
+        – Datová struktura pro evidenci svazků obcí, jejich členů, orgánů a oficiálních dokumentů.<br>
+        – Krajské úřady, obce a správci veřejných rejstříků svazků obcí.<br>
+        – Zákon o obcích a předpisy upravující veřejné registry.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Sběrné dvory" href="https://ofn.gov.cz/sběrné-dvory/" orientation="vertical">
+      <h3 slot="title">Sběrné dvory</h3>
+      <p>
+        – Specifikace pro popis lokality, provozní doby, přijímaného odpadu a kontaktů sběrných dvorů.<br>
+        – Obce a provozovatelé zařízení pro nakládání s odpady.<br>
+        – Souvisí s informačními povinnostmi v odpadovém hospodářství.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Sportoviště" href="https://ofn.gov.cz/sportoviště/" orientation="vertical">
+      <h3 slot="title">Sportoviště</h3>
+      <p>
+        – Struktura informací o veřejných sportovištích, jejich vybavení, provozu a umístění.<br>
+        – Obce, kraje a správci veřejných sportovních zařízení.<br>
+        – Bez přímé zákonné povinnosti (doporučený standard pro opakovatelnou využitelnost).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Turistické cíle" href="https://ofn.gov.cz/turistické-cíle/" orientation="vertical">
+      <h3 slot="title">Turistické cíle</h3>
+      <p>
+        – Jednotný popis turistických atraktivit, jejich vlastností, přístupnosti a kontaktů.<br>
+        – Obce, destinační managementy a krajské organizace cestovního ruchu.<br>
+        – Bez přímé zákonné povinnosti (doporučený standard).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Události" href="https://ofn.gov.cz/události/" orientation="vertical">
+      <h3 slot="title">Události</h3>
+      <p>
+        – Datový formát pro kulturní, sportovní a společenské akce, jejich termíny, místa a vstupné.<br>
+        – Pořadatelé akcí z řad veřejné správy, obce a příspěvkové organizace.<br>
+        – Bez přímé zákonné povinnosti (doporučený standard).
+      </p>
+    </gov-tile>
+  </gov-card>
+</gov-container>
+
+
+
+
+
+
+<gov-container class="no-outer-space">
+  <gov-card id="specifikace" style="border-radius: 8px;">
+    <div style="padding-left: 15px; padding-right: 5px;">
+      <h2 style="font-weight: bold; font-size: 1.75em;">Základní specifikace</h2>
+      <p>Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro tematické OFN.</p>
+    </div>
+
+    <gov-tile size="m" title="Základní datové typy" href="https://ofn.gov.cz/základní-datové-typy/" orientation="vertical">
+      <h3 slot="title">Základní datové typy</h3>
+      <p>
+        – Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).<br>
+        – Vývojáři datových modelů a autorizovaní architekti specifikací.<br>
+        – Využíváno jako sdílený modul v ostatních agendových OFN.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Věc" href="https://ofn.gov.cz/věc/" orientation="vertical">
+      <h3 slot="title">Věc</h3>
+      <p>
+        – Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).<br>
+        – Vývojáři datových struktur vytvářející nové OFN.<br>
+        – Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Adresy" href="https://ofn.gov.cz/adresy/" orientation="vertical">
+      <h3 slot="title">Adresy</h3>
+      <p>
+        – Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.<br>
+        – Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.<br>
+        – Odkazuje na RÚIAN a návazné standardy prostorových dat.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Bezbariérovost" href="https://ofn.gov.cz/bezbariérovost/" orientation="vertical">
+      <h3 slot="title">Bezbariérovost</h3>
+      <p>
+        – Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.<br>
+        – Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).<br>
+        – Využíváno jako sdílená vlastnost v nadřazených OFN.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Časová specifikace" href="https://ofn.gov.cz/časová-specifikace/" orientation="vertical">
+      <h3 slot="title">Časová specifikace</h3>
+      <p>
+        – Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.<br>
+        – Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.<br>
+        – Využíváno jako sdílený modul v ostatních OFN.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Digitální objekty" href="https://ofn.gov.cz/digitální-objekty/" orientation="vertical">
+      <h3 slot="title">Digitální objekty</h3>
+      <p>
+        – Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.<br>
+        – Vývojáři datových modelů spravující přílohy a elektronické dokumenty.<br>
+        – Využíváno napříč agendovými OFN.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Kontakty" href="https://ofn.gov.cz/kontakty/" orientation="vertical">
+      <h3 slot="title">Kontakty</h3>
+      <p>
+        – Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).<br>
+        – Vývojáři datových modelů pro libovolné subjekty nebo služby.<br>
+        – Využíváno jako sdílený modul v ostatních OFN.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Lidé a osoby" href="https://ofn.gov.cz/lidé-a-osoby/" orientation="vertical">
+      <h3 slot="title">Lidé a osoby</h3>
+      <p>
+        – Modul pro zápis informací o fyzických osobách, rolích a jejich identifikátorech v datových strukturách.<br>
+        – IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.<br>
+        – Využíváno v souladu s legislativou na ochranu osobních údajů.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Práce" href="https://ofn.gov.cz/práce/" orientation="vertical">
+      <h3 slot="title">Práce</h3>
+      <p>
+        – Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.<br>
+        – Vývojáři datových modelů v oblasti zaměstnanosti a lidských zdrojů.<br>
+        – Využíváno v agendové OFN Pracovní místa.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Umístění" href="https://ofn.gov.cz/umístění/" orientation="vertical">
+      <h3 slot="title">Umístění</h3>
+      <p>
+        – Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).<br>
+        – Vývojáři modelů pro infrastrukturu, události a objekty v terénu.<br>
+        – Souvisí s předpisy pro prostorové informace.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Vstupné" href="https://ofn.gov.cz/vstupné/" orientation="vertical">
+      <h3 slot="title">Vstupné</h3>
+      <p>
+        – Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.<br>
+        – Vývojáři datových modelů pro události, turistické cíle a sportoviště.<br>
+        – Využíváno jako sdílený modul v ostatních OFN.
+      </p>
+    </gov-tile>
+  </gov-card>
+</gov-container>
+
+
+
+<gov-container class="no-outer-space">
+  <gov-card id="egovernment" style="border-radius: 8px;">
+    <div style="padding-left: 15px; padding-right: 5px;">
+      <h2 style="font-weight: bold; font-size: 1.75em;">Další specifikace</h2>
+      <p>Určeno pro správce spisových služeb, vývojáře formulářů apod. Sjednocuje strukturu digitálních výstupů a úkonů.</p>
+    </div>
+
+    <gov-tile size="m" title="Společné části elektronických dokumentů" href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/" orientation="vertical">
+      <h3 slot="title">Společné části elektronických dokumentů</h3>
+      <p>
+        – Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.<br>
+        – Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.<br>
+        – Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Dokumenty z formulářů pro elektronické podání dle ZoPDS" href="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/" orientation="vertical">
+      <h3 slot="title">Dokumenty z formulářů pro elektronické podání dle ZoPDS</h3>
+      <p>
+        – Standardizuje strukturu dat vznikajících z elektronických formulářových podání.<br>
+        – Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.<br>
+        – Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Osvědčení digitálního úkonu" href="https://ofn.gov.cz/osvědčení-digitálního-úkonu/" orientation="vertical">
+      <h3 slot="title">Osvědčení digitálního úkonu</h3>
+      <p>
+        – Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.<br>
+        – Správci informačních systémů veřejné správy poskytující digitální služby.<br>
+        – Zákon č. 12/2020 Sb. (ZoPDS).
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Záznam IS nahrazující úředně ověřený podpis" href="https://ofn.gov.cz/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/" orientation="vertical">
+      <h3 slot="title">Záznam IS nahrazující úředně ověřený podpis</h3>
+      <p>
+        – Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.<br>
+        – Správci autorizovaných ISVS a vývojáři eGovernment modulů.<br>
+        – Související předpisy pro elektronickou identifikaci a digitální úkony.
+      </p>
+    </gov-tile>
+
+    <gov-tile size="m" title="Schéma pro strojově čitelnou vrstvu statických komponent" href="https://ofn.gov.cz/metadata-dokumentů-veřejnoprávních-původců/" orientation="vertical">
+      <h3 slot="title">Schéma pro strojově čitelnou vrstvu statických komponent</h3>
+      <p>
+        – Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.<br>
+        – Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.<br>
+        – § 69a zákona č. 499/2004 Sb.
+      </p>
+    </gov-tile>
+  </gov-card>
+</gov-container>
+
+<br>

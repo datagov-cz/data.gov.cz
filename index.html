@@ -37,7 +37,7 @@ homepage: true
                 <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
                 {{ clanek.date | date: "%-d. %-m. %Y" }}
             </gov-chip>
-            <p style="margin-top: 10px; margin-bottom: 0;">
+            <p style="margin-top: 10px; margin-bottom: 0; font-weight: normal;">
                 {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
             </p>
         </gov-tile>

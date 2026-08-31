@@ -8,7 +8,7 @@ author: jiří_kaňa
 date: 2025-10-07 07:00:00 +02:00
 lang: cs
 ---
-[Zpráva o stavu otevřených dat 2024] ukazuje výrazný pokrok v kvalitě i dopadech, upozorňuje však i na nedostatky – zejména na neúplné zveřejnění veřejných registrů a dat s vysokou hodnotou.
+**[Zpráva o stavu otevřených dat 2024] ukazuje výrazný pokrok v kvalitě i dopadech, upozorňuje však i na nedostatky – zejména na neúplné zveřejnění veřejných registrů a dat s vysokou hodnotou.**
 <!--more-->
 
 ## Příklady dobré praxe

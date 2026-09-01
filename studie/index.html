@@ -6,14 +6,72 @@ lang: cs
 ---
 
 
-<p>Zpráva o stavu otevřených dat v České republice je komplexní hodnotící dokument, který shrnuje aktuální poznatky o rozvoji datového ekosystému, otevírání veřejných datových sad a naplňování národních i evropských strategických cílů. Dokument poskytuje detailní přehled o počtu a struktuře publikovaných dat v Národním katalogu otevřených dat, legislativních novinkách, rozvoji infrastruktury a metodických postupech.
-</p>
-<p>Zpráva se podrobně zabývá pokrokem v zpřístupňování datových zdrojů na úrovni ústředních orgánů státní správy, krajů i samospráv, popisuje příklady dobré praxe a pojmenovává hlavní technologické či organizační překážky. Zároveň objektivně hodnotí kvalitu a technickou úroveň publikovaných dat, míru zapojení jednotlivých institucí a celkový přínos otevřených dat pro transparentnost veřejné správy, rozvoj digitální ekonomiky a tvorbu inovativních služeb v mezinárodním kontextu.
+<style>
+  body {
+    background-color: #f1f1f6;
+  }
+    .no-outer-space {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+gov-tile {
+  display: block;
+  margin: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #d0d5dd !important;
+  border-radius: 0 !important;
+  transition: background-color 0.2s ease;
+  color: #000000 !important;
+}
+
+/* Odstranění spodní čáry u poslední dlaždice */
+gov-tile:last-child {
+  border-bottom: none !important;
+}
+
+/* Hover efekt */
+gov-tile:hover {
+  background-color: #f0f4f8 !important;
+  cursor: pointer;
+}
+
+/* Barva nadpisu */
+gov-tile [slot="title"],
+gov-tile h3 {
+  color: #00469B !important;
+}
+
+</style>
+
+
+<p>Zpráva o stavu otevřených dat v České republice je komplexní hodnotící dokument, který shrnuje aktuální poznatky o rozvoji datového ekosystému, otevírání veřejných datových sad a naplňování strategických cílů. Poskytuje přehled o datech v Národním katalogu otevřených dat, legislativě a pokroku napříč státní správou i samosprávami. Zároveň hodnotí kvalitu publikovaných dat, zapojení jednotlivých institucí a celkový přínos pro transparentnost veřejné správy i rozvoj digitální ekonomiky.
 </p>
 
-<gov-card style="border-radius: 8px;">
 
-    <h2 class="h5">Zprávy o stavu otevřených dat v České republice</h2>
+<gov-container class="no-outer-space">
+   <gov-card style="border-radius: 8px;">
+    <div style="padding-left: 15px; padding-right: 5px;">
+      <h2 style="font-weight: bold; font-size: 1.75em;">Zprávy o stavu otevřených dat v České republice</h2>
+
+      <gov-link size="m" href="/studie/přílohy/Zpráva-o-stavu-otevřených-dat-2025.pdf">Zpráva za rok 2025
+        <gov-icon type="components" name="download" slot="icon-end">
+          </gov-icon>
+      </gov-link>
+
+    </div>
+   </gov-card>
+</gov-container>
+
+  
+
+
+
+
+
+
 
    <div><ul class="gov-file gov-list--plain">
 	<li>

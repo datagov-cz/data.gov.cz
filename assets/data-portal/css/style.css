@@ -12,3 +12,11 @@
   background-color: var(--button-outlined-primary-hover);
   color: var(--text-primary-color);
 }
+
+.dashboard-preview {
+  display: block;
+  width: 100%;
+  height: 440px;
+  border: 0;
+  pointer-events: none;
+}

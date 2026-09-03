@@ -17,150 +17,181 @@ lang: cs
     Zde nabízíme přehled nástrojů, kterými poskytovatele ve zlepšování kvality jejich dat podporujeme.
 </p>
 
+<gov-spacer size="m"></gov-spacer>
 <h2>Nástroje pro zlepšení kvality otevřených dat</h2>
 
-<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12">
+<gov-grid gap="l" role="list">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" role="listitem">
       <gov-card label="Statistiky NKOD a dashboardy" full-height>
+                <gov-flex gap="s" direction="column">
+                    <header><h3 class="gov-card__headline">Statistiky NKOD a dashboardy</h3></header>
         <p>
             Denně měříme dostupnost zdrojů registrovaných v Národním katalogu otevřených dat spolu se statistikami kvality jejich metadatových záznamů.
             Mají právě vaše datové sady vyplněné všechny povinné položky?
             Jsou vámi registrované soubory a služby dostupné?
         </p>
-        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="statistiky/">
+        <gov-button color="primary" type="solid" size="m" href="statistiky/">
             Statistiky NKOD
         </gov-button>
-        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="../poskytovatelé">
+        <gov-button color="primary" type="outlined" size="m" href="../poskytovatelé">
             Dashboardy poskytovatelů
         </gov-button>
+        </gov-flex>
       </gov-card>
     </gov-grid-item>
 
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" role="listitem">
         <gov-card label="Příklady špatné praxe" full-height>
+                    <gov-flex gap="s" direction="column">
+                        <header><h3 class="gov-card__headline">Příklady špatné praxe</h3></header>
           <p>
             Sbíráme příklady špatné praxe v otevírání dat a postupy jejich nápravy.
             Všem tak pomáháme se učit z chyb ostatních.
             Také ve formátu CSV oddělujete hodnoty středníkem?
             Dělíte distribuce datové sady dle časového pokrytí nebo dle tématu?
           </p>
-          <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="../špatná-praxe">
+          <gov-button color="primary" type="solid" size="m" href="../špatná-praxe">
             Špatná praxe
           </gov-button>
+                    </gov-flex>
         </gov-card>
       </gov-grid-item>
 
       
-      <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" role="listitem">
         <gov-card label="Otevřené formální normy" full-height>
+                    <gov-flex gap="s" direction="column">
+                        <header><h3 class="gov-card__headline">Otevřené formální normy</h3></header>
           <p>
             Tvoříme otevřené formální normy - standardy, jejichž dodržování přispívá ke zvyšování interoperability otevřených dat.
             Otevřené formální normy se týkají jak obecných oblastí, jako propojená data či geodata, tak i konkrétních datových sad jako turistické cíle či aktuality.
           </p>
-          <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://ofn.gov.cz">
+          <gov-button color="primary" type="solid" size="m" href="https://ofn.gov.cz">
             Otevřené formální normy
           </gov-button>
+                    </gov-flex>
         </gov-card>
       </gov-grid-item>
   </gov-grid>
 
+<gov-spacer size="m"></gov-spacer>
 <h2>Náhled na dashboard NKOD</h2>
 <p>&hellip;aneb jak si aktuálně vedou data v NKOD z pohledu správné registrace a dostupnosti</p>
 
-<div>
-    <iframe src="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/8c163b20-9650-11ec-9bf1-358ae95b2dd7?embed=true&_g=(filters%3A!())&hide-filter-bar=true"
-    height="440" width="100%" style="pointer-events: none;"></iframe>
-</div>
-
-<div>
-    <gov-button variant="secondary" type="outlined" size="m" href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">
+<gov-card>
+        <gov-flex gap="s" direction="column">
+            <header><h3 class="gov-card__headline">Náhled dashboardu NKOD</h3></header>
+    <iframe class="dashboard-preview"
+        src="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/8c163b20-9650-11ec-9bf1-358ae95b2dd7?embed=true&_g=(filters%3A!())&hide-filter-bar=true"
+        title="Náhled dashboardu NKOD" loading="lazy"></iframe>
+    <gov-button color="primary" type="solid" size="m" href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">
         Aktuální dashboard NKOD
     </gov-button>
-</div>
+    </gov-flex>
+</gov-card>
 
+<gov-spacer size="m"></gov-spacer>
 <h2>Ukazatele kvality v NKOD</h2>
 <p>...aneb &quot;co mám dělat, aby to bylo zelený&quot;</p>
 
-<gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
+<gov-grid gap="l" role="list">
     
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-        <gov-card full-height label="Nedostupné URL">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" col-span-xl="3" role="listitem">
+        <gov-card full-height>
             <img slot="img" src="/images/kvalita/nedostupný.webp" width="100%" alt="Nedostupné URL">
+            <gov-flex gap="s" direction="column">
+                <header><h3 class="gov-card__headline">Nedostupné URL</h3></header>
             <p>
                 Toto indikuje problém s registrovaným URL, v tomto případě URL souboru ke stažení.
                 Příčin může být několik, chybová zpráva je viditelná po kliknutí na ikonku.
                 Typicky URL vede na neexistující zdroj, nebo je špatně nakonfigurován protokol HTTPS.
             </p>
-            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="../špatná-praxe/technické-překážky/#přístup-přes-nedostatečně-zabezpečený-či-chybně-nakonfigurovaný-protokol-https">
+            <gov-button color="primary" type="solid" size="m" href="../špatná-praxe/technické-překážky/#přístup-přes-nedostatečně-zabezpečený-či-chybně-nakonfigurovaný-protokol-https">
                 Konfigurace HTTPS
             </gov-button>
+            </gov-flex>
         </gov-card>
     </gov-grid-item>
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-        <gov-card full-height label="Nepodporovaná HTTP HEAD">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" col-span-xl="3" role="listitem">
+        <gov-card full-height>
             <img slot="img" src="/images/kvalita/head.webp" width="100%" alt="Nepodporovaná HTTP HEAD">
+            <gov-flex gap="s" direction="column">
+                <header><h3 class="gov-card__headline">Nepodporovaná HTTP HEAD</h3></header>
             <p>
                 Toto může indikovat problém s nepodporovanou metodou HTTP <code>HEAD</code>, kterou NKOD používá pro zjišťování dostupnosti registrovaných zdrojů.
                 Je třeba webový server nakonfigurovat tak, aby ji podporoval.
                 Jedná se o standardní prostředek zjišťování základních informací o zdrojích na Webu, který nevyžaduje jejich stahování.
             </p>
+            </gov-flex>
         </gov-card>
     </gov-grid-item>
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-        <gov-card full-height label="Nedostupné CORS">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" col-span-xl="3" role="listitem">
+        <gov-card full-height>
             <img slot="img" src="/images/kvalita/cors.webp" width="100%" alt="Nedostupné CORS">
+            <gov-flex gap="s" direction="column">
+                <header><h3 class="gov-card__headline">Nedostupné CORS</h3></header>
             <p>
                 Tato ikona indikuje problém s technikou CORS.
                 Bez její podpory nebudou moci aplikace běžící v prohlížeči se souborem pracovat.
                 Typicky je třeba korektně implementovat HTTP metodu <code>OPTIONS</code>.
             </p>
-            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="../špatná-praxe/technické-překážky/#chybějící-podpora-cross-origin-resource-sharing-cors">
+            <gov-button color="primary" type="solid" size="m" href="../špatná-praxe/technické-překážky/#chybějící-podpora-cross-origin-resource-sharing-cors">
                 Technika CORS
             </gov-button>
+            </gov-flex>
         </gov-card>
     </gov-grid-item>
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-        <gov-card full-height label="Chybný Media typ">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" col-span-xl="3" role="listitem">
+        <gov-card full-height>
             <img slot="img" src="/images/kvalita/media-typ.webp" width="100%" alt="Chybný Media typ">
+            <gov-flex gap="s" direction="column">
+                <header><h3 class="gov-card__headline">Chybný Media typ</h3></header>
             <p>
                 Tato chyba indikuje, že Media typ registrovaný v NKOD pro soubor ke stažení neodpovídá tomu, které v hlavičce <code>Content-Type</code> indikuje webový server.
                 Toto znesnadňuje aplikační použití takových souborů.
             </p>
-            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="../špatná-praxe/technické-překážky/#chybná-hlavička-http-content-type">
+            <gov-button color="primary" type="solid" size="m" href="../špatná-praxe/technické-překážky/#chybná-hlavička-http-content-type">
                 Chybný Media typ
             </gov-button>
+            </gov-flex>
         </gov-card>
     </gov-grid-item>
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-        <gov-card full-height label="Chybějící podmínky užití">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" col-span-xl="3" role="listitem">
+        <gov-card full-height>
             <img slot="img" src="/images/kvalita/podmínky-užití.webp" width="100%" alt="Chybějící podmínky užití">
+            <gov-flex gap="s" direction="column">
+                <header><h3 class="gov-card__headline">Chybějící podmínky užití</h3></header>
             <p>
                 Bez podmínek užití nejsou registrovaná data otevřená.
                 Nedáváte tak uživatelům právní jistotu v tom, co mohou a co nemohou s daty dělat.
                 Poskytujeme návod, jak podmínky užití stanovit.
             </p>
-            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="../pro-poskytovatele/stanovení-podmínek-užití/">
+            <gov-button color="primary" type="solid" size="m" href="../pro-poskytovatele/stanovení-podmínek-užití/">
                 Stanovení podmínek užití
             </gov-button>
+            </gov-flex>
         </gov-card>
     </gov-grid-item>
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-        <gov-card full-height label="Vlastní podmínky užití">
+    <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" col-span-xl="3" role="listitem">
+        <gov-card full-height>
             <img slot="img" src="/images/kvalita/vlastní-licence.webp" width="100%" alt="Vlastní podmínky užití">
+            <gov-flex gap="s" direction="column">
+                <header><h3 class="gov-card__headline">Vlastní podmínky užití</h3></header>
             <p>
                 Národní katalog otevřených dat poskytuje předpřipravené podmínky užití pro různé případy, které mohou v otevřených datech nastat.
                 Používat vlastní podmínky užití by tedy nemělo být třeba.
                 Pokud použity jsou, typicky to znamená, že buď data ve skutečnosti nejsou otevřená, nebo byl špatně vyplněn katalogizační záznam.
             </p>
-            <gov-button slot="footer" variant="secondary" type="outlined" size="l" href="../špatná-praxe/právní-překážky/#užívání-vlastních-licenčních-podmínek">
+            <gov-button color="primary" type="solid" size="m" href="../špatná-praxe/právní-překážky/#užívání-vlastních-licenčních-podmínek">
                 Vlastní podmínky užití
             </gov-button>
+            </gov-flex>
         </gov-card>
     </gov-grid-item>
 

@@ -8,11 +8,8 @@ author: jiří_kaňa
 date: 2025-12-16 07:00:00 +02:00
 lang: cs
 ---
-Otevřená data se stala klíčovou surovinou pro vznik praktických aplikací, které mají přímý dopad na každodenní život občanů i na fungování institucí. _„Studentské hackathony ukazují, jak lze otevřená data využít rychle a s důrazem na řešení reálných problémů,“_ říká Marie Čermáková z Digitální a informační agentury, která se hackathonů pravidelně účastní jako porotkyně.
+**Otevřená data se stala klíčovou surovinou pro vznik praktických aplikací, které mají přímý dopad na každodenní život občanů i na fungování institucí. _„Studentské hackathony ukazují, jak lze otevřená data využít rychle a s důrazem na řešení reálných problémů,“_ říká Marie Čermáková z Digitální a informační agentury, která se hackathonů pravidelně účastní jako porotkyně. Smysl těchto akcí spočívá v rychlé validaci nápadů, jež přinášejí měřitelný užitek pro stát, kraje, obce i samotné občany. Důležitá je možnost dalšího rozvoje. Studentská kola středních a vysokých škol přitom potvrzují, že mladá generace má pro modernizaci a budoucnost našeho státu obrovský potenciál.**
 <!--more-->
-
-
-Smysl těchto akcí spočívá v rychlé validaci nápadů, jež přinášejí měřitelný užitek pro stát, kraje, obce i samotné občany. Důležitá je možnost dalšího rozvoje. Studentská kola středních a vysokých škol přitom potvrzují, že mladá generace má pro modernizaci a budoucnost našeho státu obrovský potenciál.
 
 ## Predikce, inkluze, orientace – co řeší vítězné aplikace?
 

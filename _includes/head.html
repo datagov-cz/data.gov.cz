@@ -38,16 +38,19 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>
   {% if page.image %}<meta name="og:image" content="{{ page.image | remove: '..' | prepend: site.url}}"/>{% endif %}
 
-  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/critical.css">
-  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/fonts/roboto.css">
-  <link rel="stylesheet" href="{{site.design_system_assets}}/build/core.css">
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/tokens.css" />
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/styles.css" />
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/layout.css" />
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/components.css" />
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/animations.css" />
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/content.css" />
+  <link rel="stylesheet" href="{{site.design_system_assets}}/assets/styles/templates.css" />
+  <script type="module" src="{{site.design_system_assets}}/assets/components/core/core.esm.js"></script>
+
   <link rel="stylesheet" href="/assets/data-portal/css/style.css">
 
-  <script type="module" src="{{site.design_system_assets}}/build/core.esm.js"></script>
-  <script nomodule src="{{site.design_system_assets}}/build/core.js"></script>
- 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
 {% for post in posts %}

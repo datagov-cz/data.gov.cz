@@ -5,7 +5,7 @@ ref: Articles
 lang: cs
 ---
 <gov-container>
-    <h1 class="h4">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
     <gov-grid gap="l" class="gov-card-grid">
         {% assign clanky = site.clanky | where: "lang", page.lang | reverse %}
         {% for clanek in clanky %}

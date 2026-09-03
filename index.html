@@ -5,28 +5,28 @@ lang: cs
 homepage: true
 ---
 
-<gov-container>
-  <gov-grid gap="l" role="list" aria-label="Statistiky katalogu">
-    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
-      <h3><span id="datasetCountLabel">...</span><br>datových sad</h3>
-    </gov-grid-item>
-    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
-      <h3><span id="applicationCountLabel">...</span><br>aplikací</h3>
-    </gov-grid-item>
-    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
-      <h3><span id="publisherCountLabel">...</span><br>poskytovatelů</h3>
-    </gov-grid-item>
-    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
-      <h3><span id="keywordCountLabel">...</span><br>klíčových slov</h3>
-    </gov-grid-item>
-  </gov-grid>
-</gov-container>
-
-<gov-infobar color="secondary" type="bold">
+<gov-infobar color="primary" type="bold">
   <p>
     Měníte doménu? Pozor na rozpad vazeb v propojených datech. <a href="/špatná-praxe/perzistentní-iri/">Používejte perzistentní IRI.</a>
   </p>
 </gov-infobar> 
+
+<gov-container style="--container-padding-bottom: 0;">
+  <gov-grid gap="l" role="list" aria-label="Statistiky katalogu">
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="datasetCountLabel" class="h1">...</span><br>datových sad</h3>
+    </gov-grid-item>
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="applicationCountLabel" class="h1">...</span><br>aplikací</h3>
+    </gov-grid-item>
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="publisherCountLabel" class="h1">...</span><br>poskytovatelů</h3>
+    </gov-grid-item>
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="keywordCountLabel" class="h1">...</span><br>klíčových slov</h3>
+    </gov-grid-item>
+  </gov-grid>
+</gov-container>
 
 <gov-container>
     <h2>Aktuality a články ze světa dat veřejné správy</h2>
@@ -64,10 +64,6 @@ homepage: true
     <div class="flex-justify-end">
       <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na všechny články">Další články</gov-button>
     </div> 
-</gov-container>
-
-<gov-container>
-  <hr/>
 </gov-container>
 
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>

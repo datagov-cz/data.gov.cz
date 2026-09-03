@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Rozhodnutí o otevírání dat
-ref: OpenData
+ref: OpenDataRozhodnutí
 lang: cs
 ---
 

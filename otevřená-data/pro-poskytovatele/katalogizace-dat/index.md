@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Katalogizace dat
-ref: OpenData
+ref: OpenDataKatalogizace
 lang: cs
 ---
 

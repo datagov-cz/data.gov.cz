@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Stanovení rolí
-ref: OpenData
+ref: OpenDataRole
 lang: cs
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Tvorba publikačního plánu
-ref: OpenData
+ref: OpenDataPublikačníPlán
 lang: cs
 ---
 

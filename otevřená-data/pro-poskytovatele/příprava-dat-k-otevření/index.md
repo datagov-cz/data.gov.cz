@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Příprava dat k otevření
-ref: OpenData
+ref: OpenDataPříprava
 lang: cs
 ---
 

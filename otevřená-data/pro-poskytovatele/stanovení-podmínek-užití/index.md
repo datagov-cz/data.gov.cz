@@ -1,7 +1,7 @@
 ---
 layout: poskytovatelé-otevřená-data-level-2
 title: Stanovení podmínek užití
-ref: OpenData
+ref: OpenDataPodmínkyUžití
 lang: cs
 ---
 

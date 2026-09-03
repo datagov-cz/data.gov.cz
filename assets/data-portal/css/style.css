@@ -3,6 +3,10 @@
   width: 300px;
 }
 
+.gov-footer__address gov-button svg {
+  color: var(--color-neutral-0);
+}
+
 .gov-navigation > ul > li > a[aria-current="page"] {
   background-color: var(--button-outlined-primary-hover);
   color: var(--text-primary-color);

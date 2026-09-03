@@ -46,9 +46,15 @@
 	<div class="gov-header__navigation js-gov-header__navigation">
 		<nav class="gov-navigation" aria-label="Hlavní navigace" id="main-navigation">
 			<ul>
+				{% if page.ref == 'DataManagement' %}
+				<li>
+					<a href="/správa-dat/" aria-current="page">Správa dat</a>
+				</li>
+				{% else %}
 				<li>
 					<a href="/správa-dat/">Správa dat</a>
 				</li>
+				{% endif %}
 				<li>
 					<gov-button type="base" color="primary" size="l" aria-expanded="false" aria-controls="subnav-otevrena-data" aria-label="Otevřít menu Otevřená data">
 						Otevřená data
@@ -66,9 +72,15 @@
 						</li>
 					</ul>
 				</li>
+				{% if page.ref == 'ControlledAccess' %}
+				<li>
+					<a href="/%C5%99%C3%ADzen%C3%BD-p%C5%99%C3%ADstup" aria-current="page">Řízený přístup</a>
+				</li>
+				{% else %}
 				<li>
 					<a href="/%C5%99%C3%ADzen%C3%BD-p%C5%99%C3%ADstup">Řízený přístup</a>
 				</li>
+				{% endif %}
 				<li>
 					<gov-button type="base" color="primary" size="l" aria-expanded="false" aria-controls="subnav-data-katalog" aria-label="Otevřít menu Národní katalog dat">
 						Národní katalog dat
@@ -107,9 +119,15 @@
 						</li>
 					</ul>
 				</li>
+				{% if page.ref == 'DataQuality' %}
+				<li>
+					<a href="/datov%C3%A1-kvalita" aria-current="page">Datová kvalita</a>
+				</li>
+				{% else %}
 				<li>
 					<a href="/datov%C3%A1-kvalita">Datová kvalita</a>
 				</li>
+				{% endif %}
 				<li>
 					<gov-button type="base" color="primary" size="l" aria-expanded="false"
 						aria-controls="subnav-svet-dat" aria-label="Otevřít menu Svět dat">

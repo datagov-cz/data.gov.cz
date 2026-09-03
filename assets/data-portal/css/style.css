@@ -2,3 +2,13 @@
 .gov-footer__main > li:last-child {
   width: 300px;
 }
+
+.gov-navigation > ul > li > a[aria-current="page"] {
+  background-color: var(--button-outlined-primary-hover);
+  color: var(--text-primary-color);
+}
+
+.gov-navigation > ul > li > gov-button.active .element {
+  background-color: var(--button-outlined-primary-hover);
+  color: var(--text-primary-color);
+}

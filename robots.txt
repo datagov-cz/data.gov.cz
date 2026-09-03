@@ -5,6 +5,12 @@ Disallow: /fct/
 Disallow: /describe/
 Disallow: /zdroj/
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
 User-agent: Bytespider
 Disallow: /
 
@@ -21,4 +27,7 @@ User-agent: Baiduspider
 Disallow: /
 
 User-agent: Sogou web spider
+Disallow: /
+
+User-agent: PetalBot
 Disallow: /

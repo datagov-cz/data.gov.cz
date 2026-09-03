@@ -7,6 +7,10 @@
   color: var(--color-neutral-0);
 }
 
+.gov-footer h5 {
+  margin-top: 0;
+}
+
 .gov-navigation > ul > li > a[aria-current="page"] {
   background-color: var(--button-outlined-primary-hover);
   color: var(--text-primary-color);

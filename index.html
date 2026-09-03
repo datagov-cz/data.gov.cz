@@ -5,12 +5,22 @@ lang: cs
 homepage: true
 ---
 
-<gov-statsbar variant="primary">
-    <gov-statsbar-item><span id="datasetCountLabel">&nbsp;</span><span slot="text">datových sad</span></gov-statsbar-item>
-    <gov-statsbar-item><span id="applicationCountLabel">&nbsp;</span><span slot="text">aplikací</span></gov-statsbar-item>
-    <gov-statsbar-item><span id="publisherCountLabel">&nbsp;</span><span slot="text">poskytovatelů</span></gov-statsbar-item>
-    <gov-statsbar-item><span id="keywordCountLabel">&nbsp;</span><span slot="text">klíčových slov</span></gov-statsbar-item>
-</gov-statsbar>
+<gov-container>
+  <gov-grid gap="l" role="list" aria-label="Statistiky katalogu">
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="datasetCountLabel">...</span><br>datových sad</h3>
+    </gov-grid-item>
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="applicationCountLabel">...</span><br>aplikací</h3>
+    </gov-grid-item>
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="publisherCountLabel">...</span><br>poskytovatelů</h3>
+    </gov-grid-item>
+    <gov-grid-item col-span="6" col-span-md="3" role="listitem">
+      <h3><span id="keywordCountLabel">...</span><br>klíčových slov</h3>
+    </gov-grid-item>
+  </gov-grid>
+</gov-container>
 
 <gov-infobar color="secondary" type="bold">
   <p>
@@ -19,38 +29,46 @@ homepage: true
 </gov-infobar> 
 
 <gov-container>
-    <h2 class="h4"><strong>Aktuality a články ze světa dat veřejné správy</strong></h2>
-    <gov-tiles columns="3" no-border>
-        {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
-        {% for clanek in clanky limit:6 %}
-        <gov-tile href="..{{ clanek.url }}">
-            <h3 slot="title">
-                {{ clanek.title | truncate: 62 }}
-            </h3>
-            {% if clanek.image %}
-            <p>
-            <img src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
-            {% endif %}
-            <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
-                <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
-                {{ clanek.date | date: "%-d. %-m. %Y" }}
-            </gov-chip>
-            <p>
-                {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
-            </p>
-        </gov-tile>
-        {% endfor %}
-     </gov-tiles>
-     <div class="flex-justify-end">
-        <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na všechny články">Další články</gov-button>
-     </div> 
+    <h2>Aktuality a články ze světa dat veřejné správy</h2>
+    <gov-grid gap="l" class="gov-card-grid">
+      {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
+      {% for clanek in clanky limit:6 %}
+      <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="4" role="listitem">
+          <article>
+            <gov-card href="..{{ clanek.url }}" direction="vertical" aria-labelledby="{{ clanek.title }}">
+              {% if clanek.image %}
+              <picture slot="img">
+                <img src="{{ clanek.image }}" alt="{{ clanek.title }}" width="800" height="533">
+              </picture>
+              {% endif %}
+              <gov-flex gap="s" direction="column">
+                  <header>
+                    <gov-flex gap="s" direction="column">
+                      <h3 class="gov-card__headline">{{ clanek.title | truncate: 62 }}</h3>
+                      <gov-flex gap="s" align-items="center" responsive="false">
+                          <gov-icon type="complex" name="time" color="default" size="m"></gov-icon>
+                          <time datetime="{{ clanek.date | date: "%Y-%m-%d" }}" class="gov-card__note">{{ clanek.date | date: "%-d. %-m. %Y" }}</time>
+                      </gov-flex>
+                    </gov-flex>
+                  </header>
+                  <p>
+                    {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
+                  </p>
+              </gov-flex>
+            </gov-card>
+          </article>
+      </gov-grid-item>
+      {% endfor %}
+    </gov-grid>
+    
+    <div class="flex-justify-end">
+      <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na všechny články">Další články</gov-button>
+    </div> 
 </gov-container>
 
 <gov-container>
   <hr/>
 </gov-container>
-
-
 
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 <form action="https://app.kit.com/forms/9383849/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="9383849" data-uid="337df45c4c" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Výborně! Přihlášení proběhlo úspěšně.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;Váš e-mail již máme zaregistrovaný.&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800" style="background-color: transparent; border-radius: 0px; margin: 25px auto; border: none; font-family: inherit;">

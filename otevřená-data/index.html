@@ -5,19 +5,37 @@ ref: OpenData
 lang: cs
 ---
 
-<gov-tiles columns="2" no-border>
-    <gov-tile href="pro-poskytovatele/">
-        <h3 slot="title">Pro poskytovatele</h3>
-    </gov-tile>
-    
-    <gov-tile href="pro-uživatele/">
-        <h3 slot="title">Pro uživatele</h3>
-    </gov-tile>
-</gov-tiles>
+<gov-grid gap="l" class="gov-card-grid">
+    <gov-grid-item col-span="12" col-span-sm="6" role="listitem">
+        <gov-tile title="Pro poskytovatele" href="pro-poskytovatele/" size="l">
+            <div class="gov-tile__content">
+                <div class="gov-tile__text">
+                    <div class="gov-tile__title">
+                        <h3 slot="title">Pro poskytovatele</h3>
+                    </div>
+                </div>
+            </div>
+        </gov-tile>
+    </gov-grid-item>
+
+    <gov-grid-item col-span="12" col-span-sm="6" role="listitem">
+        <gov-tile title="Pro uživatele" href="pro-uživatele/" size="l">
+            <div class="gov-tile__content">
+                <div class="gov-tile__text">
+                    <div class="gov-tile__title">
+                        <h3 slot="title">Pro uživatele</h3>
+                    </div>
+                </div>
+            </div>
+        </gov-tile>
+    </gov-grid-item>
+
+</gov-grid>
+
 
 <hr>
 
-<h2 class="h4">Co jsou otevřená data?</h2>
+<h2>Co jsou otevřená data?</h2>
 <ul>
 <li>volně přístupná na webu jako datové soubory ke stažení ve strojově čitelném a otevřeném formátu - CSV, XML, JSON, RDF a další formáty s otevřenou specifikací;</li>
 <li>opatřená podmínkami užití neomezujícími jejich užití, viz <a href="pro-poskytovatele/stanoven%C3%AD-podm%C3%ADnek-u%C5%BEit%C3%AD/">návod na stanovení podmínek užití</a>;</li>
@@ -33,7 +51,7 @@ lang: cs
 <p>Publikovat otevřená data znamená zveřejnit data na internetu tak, aby je (odborná) veřejnost mohla snadno využívat a strojově zpracovávat.</p>
 
 
-<h2 class="h4">Co nejsou otevřená data?</h2>
+<h2>Co nejsou otevřená data?</h2>
 <ul>
 <li>odkaz na vyhledávací formulář určený pro koncové uživatele;</li>
 <li>odkaz na novou stránku s dalšími informacemi;</li>
@@ -44,13 +62,13 @@ lang: cs
 <li>datový soubor v pseudo-CSV formátu (např. jiný oddělovač než “,”).</li>
 </ul>
 
-<h2 class="h4">Proč mám vyžadovat otevřená data?</h2>
+<h2>Proč mám vyžadovat otevřená data?</h2>
 <ul>
 <li>Data budou mít <a href="pro-poskytovatele/stanoven%C3%AD-podm%C3%ADnek-u%C5%BEit%C3%AD/">otevřené podmínky užití</a>. Budete mít tedy jistotu, že s daty můžete nakládat opravdu libovolně, zejména je sdílet, modifikovat či prodávat.</li>
 <li>Data budou snadno použitelná díky <a href="pro-u%C5%BEivatele/otev%C5%99en%C3%A1-data/#co-jsou-otev%C5%99en%C3%A9-form%C3%A1ty-a-jak-se-s-nimi-pracuje">otevřenému formátu</a>.</li>
 </ul>
 
-<h2 class="h4">Otevřená data mohou být například</h2>
+<h2>Otevřená data mohou být například</h2>
 <ul>
 <li>jízdní řády;</li>
 <li>ordinační doba lékařů;</li>
@@ -63,7 +81,7 @@ lang: cs
 <li>sbírky zákonů atd.</li>
 </ul>
 
-<h2 class="h4"><a href="https://data.gov.cz/aplikace">Příklady využití otevřených dat</a></h2>
+<h2><a href="https://data.gov.cz/aplikace">Příklady využití otevřených dat</a></h2>
 <ul>
 <li><a href="https://mapybezbarier.cz/cs">Mapy bez bariér</a></li>
 <li><a href="https://www.hlidacsmluv.cz/">Hlídač smluv</a></li>
@@ -72,7 +90,7 @@ lang: cs
 <li><a href="https://app.powerbi.com/view?r=eyJrIjoiZmIzYWY0ZjEtYTA0ZS00ZDZmLTkyY2UtMzFiODFjOTg5Yzk4IiwidCI6IjFkYjQxZDZmLTFmMzctNDZkYi1iZDNlLWM0ODNhYmI4MTA1ZCIsImMiOjh9">Katalog služeb veřejné správy</a></li>
 </ul>
 
-<h2 class="h4">Otevřená data zlepšují</h2>
+<h2>Otevřená data zlepšují</h2>
 <ul>
 <li>služby pro občany - příležitost pro vznik nových užitečných aplikací;</li>
 <li>efektivitu veřejné správy - využití pro analýzy a statistiky;</li>

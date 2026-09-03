@@ -27,21 +27,26 @@ lang: cs
   Kurz je zakončen závěrečným testem.
 </p>
 
-<gov-tiles columns="4" no-border>
+<gov-grid gap="l" class="gov-card-grid">
   
-  <gov-tile href="úvod-do-kurzu/">
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="1. Úvod do kurzu „Co jsou otevřená data“" href="úvod-do-kurzu/" size="l">
     <h3 slot="title">1. Úvod do kurzu „Co jsou otevřená data“</h3>
     <p>
       Modul poskytuje uživatelům základní charakteristiky e-learningového kurzu a zároveň tvoří vstupní bránu do celého obsahu.
     </p>
   </gov-tile>
-  <gov-tile href="co-jsou-to-otevřená-data/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="2. Co jsou to otevřená data" href="co-jsou-to-otevřená-data/" size="l">
     <h3 slot="title">2. Co jsou to otevřená data</h3>
     <p>
       Modul seznamuje uživatele se základními principy otevřených dat, přičemž tyto principy demonstruje na konkrétních příkladech. Na jejich základě vymezuje pojem otevřených dat a propojuje jej s konceptem FAIR.
     </p>
   </gov-tile>
-  <gov-tile href="otevřenost/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="3. Otevřenost" href="otevřenost/" size="l">
     <h3 slot="title">3. Otevřenost</h3>
     <p>
       Modul se podrobněji zabývá jak právní, tak technickou otevřeností.
@@ -49,40 +54,51 @@ lang: cs
       V části věnované technické otevřenosti se uživatelé seznamují s pojmy jako otevřený formát či strojová čitelnost.
     </p>
   </gov-tile>
-  <gov-tile href="znovupoužitelnost-a-interoperabilita/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="4. Znovupoužitelnost a interoperabilita" href="znovupoužitelnost-a-interoperabilita/" size="l">
     <h3 slot="title">4. Znovupoužitelnost a interoperabilita</h3>
     <p>
       Modul je zaměřen na otázku standardizace v oblasti publikování otevřených dat s cílem zajistit jejich efektivní využívání k různým účelům.
       V modulu je zaveden pojem otevřené formální normy.
     </p>
   </gov-tile>
-  <gov-tile href="katalogizace-otevřených-dat/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="5. Katalogizace otevřených dat" href="katalogizace-otevřených-dat/" size="l">
     <h3 slot="title">5. Katalogizace otevřených dat</h3>
     <p>
       Modul seznamuje uživatele s principy katalogizace otevřených dat, představuje Národní katalog otevřených dat a zmiňuje také pojem metadat v kontextu katalogizačních záznamů či oblast lokálních katalogů.
     </p>
   </gov-tile>
-  <gov-tile href="legislativa-v-oblasti-od/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="6. Legislativa v oblasti OD, zejména se zřetelem na aktuální stav v ČR" href="legislativa-v-oblasti-od/" size="l">
     <h3 slot="title">6. Legislativa v oblasti OD, zejména se zřetelem na aktuální stav v ČR</h3>
     <p>
       Modul prezentuje právní zakotvení jednotlivých pojmů z oblasti otevřených dat v české legislativě a věnuje se otázce povinnosti publikovat otevřená data.
       Okrajově se rovněž dotýká tématu otevřených dat ve strategických dokumentech.
     </p>
   </gov-tile>
-  <gov-tile href="na-otevřená-data-prakticky/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="7. Na otevřená data prakticky" href="na-otevřená-data-prakticky/" size="l">
     <h3 slot="title">7. Na otevřená data prakticky</h3>
     <p>
       Modul v krátkosti ukazuje, jak korektně vypublikovat jednotlivou datovou sadu v podobě otevřených dat v souladu s platnou legislativou.
       Předkládá jednoduchý tříkrokový návod, který je aplikovatelný v řadě menších institucí.
     </p>
   </gov-tile>
-  <gov-tile href="kontext-otevřených-dat-v-čr/">
+  </gov-grid-item>
+  <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+  <gov-tile title="8. Kontext otevřených dat ČR" href="kontext-otevřených-dat-v-čr/" size="l">
     <h3 slot="title">8. Kontext otevřených dat ČR</h3>
     <p>
       Modul zasazuje otevřená data ČR do kontextu: zmiňuje roli Digitální a informační agentury v oblasti otevírání dat, představuje hackatony zaměřené na OD či evropský Oficiální portál otevřených dat.
     </p>
   </gov-tile>
-</gov-tiles>
+  </gov-grid-item>
+</gov-grid>
 
 <gov-card promotion="true" label="Závěrečný test">
   <p>Ověřte si nově nabyté znalosti v závěrečném testu.

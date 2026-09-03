@@ -45,22 +45,26 @@ homepage: true
 
 <gov-container>
     <h2>Important information for members of the open data ecosystem</h2>
-    <gov-tiles columns="2" no-border>
+    <gov-grid gap="l" class="gov-card-grid">
+      <gov-grid-item col-span="12" col-span-sm="6" role="listitem">
 		<gov-tile href="/otevřená-data/pro-poskytovatele/">
 			<h3 slot="title">Data publishers</h3>
 			<p>How to proceed with publishing open data? What are the examples of good and bad practice? And what are the legal aspects of opening data?</p>
 			<gov-button variant="secondary" type="outlined" size="l">
 				More info (in Czech) &raquo;
 			</gov-button>
-		</gov-tile>
-		<gov-tile href="/otevřená-data/pro-uživatele/">
+    </gov-tile>
+      </gov-grid-item>
+      <gov-grid-item col-span="12" col-span-sm="6" role="listitem">
+    <gov-tile href="/otevřená-data/pro-uživatele/">
 			<h3 slot="title">Data users</h3>
 			<p>Where do I find open data? What are the XML, CSV or RDF formats? Where can I ask for more open data or report a bug?</p>
 			<gov-button variant="secondary" type="outlined" size="l">
 				More info (in Czech) &raquo;
 			</gov-button>
-		</gov-tile>
-	</gov-tiles>
+    </gov-tile>
+      </gov-grid-item>
+  </gov-grid>
 </gov-container>
 
 <script src="/assets/data-portal/js/statistics.js"></script>

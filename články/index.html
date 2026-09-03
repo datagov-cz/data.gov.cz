@@ -6,10 +6,11 @@ lang: cs
 ---
 <gov-container>
     <h1 class="h4">{{ page.title }}</h1>
-    <gov-tiles columns="3" no-border>
+    <gov-grid gap="l" class="gov-card-grid">
         {% assign clanky = site.clanky | where: "lang", page.lang | reverse %}
         {% for clanek in clanky %}
-        <gov-tile href="..{{ clanek.url }}">
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="4" role="listitem">
+          <gov-tile href="..{{ clanek.url }}">
             <h2 slot="title">
                 {{ clanek.title | truncate: 62 }}
             </h2>
@@ -28,7 +29,8 @@ lang: cs
             <p>
                 {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
             </p>
-        </gov-tile>
+          </gov-tile>
+        </gov-grid-item>
         {% endfor %}
-    </gov-tiles>
+    </gov-grid>
 </gov-container>

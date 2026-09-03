@@ -25,6 +25,29 @@
   pointer-events: none;
 }
 
+gov-tiles[columns] {
+  display: grid;
+  gap: var(--spacing-l, 1.5rem);
+}
+
+gov-tiles[columns="2"] {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+gov-tiles[columns="3"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+gov-tiles[columns="4"] {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 767px) {
+  gov-tiles[columns] {
+    grid-template-columns: 1fr;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 1rem;
     margin-bottom: .75rem;

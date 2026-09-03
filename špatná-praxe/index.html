@@ -9,65 +9,85 @@ lang: cs
     V prostředí otevřených dat se často opakují problémové situace. Na této stránce naleznete seznam nejčastějších z nich, včetně navrhovaných řešení.
 </p>
 
-<gov-tiles columns="4" no-border>
-    <gov-tile href="právní-překážky/">
+<gov-grid gap="l" class="gov-card-grid">
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="právní-překážky/">
         <h3 slot="title">Právní překážky</h3>
         <p>
             V této sekci jsou nejčastější případy špatné praxe týkající se právních překážek přístupu k otevřeným datům.
         </p>
-    </gov-tile>
-    <gov-tile href="problémy-s-dokumentací-a-metadaty/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="problémy-s-dokumentací-a-metadaty/">
         <h3 slot="title">Problémy s dokumentací a metadaty</h3>
         <p>
             V této sekci jsou nejčastější případy špatné praxe týkající se dokumentace a metadat v NKOD.
         </p>
-    </gov-tile>
-    <gov-tile href="technické-překážky/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="technické-překážky/">
         <h3 slot="title">Technické překážky</h3>
         <p>
             V této sekci jsou nejčastější případy špatné praxe týkající se technických překážek přístupu k otevřeným datům.
         </p>
-    </gov-tile>
-    <gov-tile href="csv/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="csv/">
         <h3 slot="title">Nejčastější chyby při použití formátu CSV</h3>
         <p>
             V této sekci jsou nečastější případy špatné praxe týkající se technického provedení otevřených dat při využití formátu CSV.
         </p>
-    </gov-tile>
-    <gov-tile href="xml/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="xml/">
         <h3 slot="title">Nejčastější chyby při použití formátu XML</h3>
         <p>
             V této sekci jsou nečastější případy špatné praxe týkající se technického provedení otevřených dat při využití formátu XML.
         </p>
-    </gov-tile>
-    <gov-tile href="json/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="json/">
         <h3 slot="title">Nejčastější chyby při použití formátu JSON</h3>
         <p>
             V této sekci jsou nečastější případy špatné praxe týkající se technického provedení otevřených dat při využití formátu JSON.
         </p>
-    </gov-tile>
-    <gov-tile href="obsahové-chyby/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="obsahové-chyby/">
         <h3 slot="title">Nejčastější obsahové chyby</h3>
         <p>
             V této sekci jsou nečastější případy špatné praxe týkající se obsahu samotných dat.
         </p>
-    </gov-tile>
-    <gov-tile href="číselníky/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="číselníky/">
         <h3 slot="title">Nejčastější chyby při publikaci číselníků</h3>
         <p>
             V této sekci jsou nečastější případy špatné praxe týkající se publikace číselníků.
         </p>
-    </gov-tile>
-    <gov-tile href="prostorová-data/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="prostorová-data/">
         <h3 slot="title">Nejčastější chyby při publikaci prostorových dat</h3>
         <p>
         V této sekci jsou nečastější případy špatné praxe týkající se publikace prostorových dat.
         </p>
-    </gov-tile>
-        <gov-tile href="perzistentní-iri/">
+            </gov-tile>
+        </gov-grid-item>
+        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+            <gov-tile href="perzistentní-iri/">
         <h3 slot="title">Neuvážená změna IRI (nejen) při přechodu na gov.cz</h3>
         <p>
             V této sekci najdete nejzávažnější dopady změn IRI na propojená data. 
         </p>
-    </gov-tile>
-</gov-tiles>
+      </gov-tile>
+    </gov-grid-item>
+</gov-grid>

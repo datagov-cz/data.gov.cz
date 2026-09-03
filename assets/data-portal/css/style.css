@@ -1,0 +1,4 @@
+.gov-footer__main > li,
+.gov-footer__main > li:last-child {
+  width: 300px;
+}

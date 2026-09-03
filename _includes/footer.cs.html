@@ -51,25 +51,18 @@
           </nav>
         </li>
       </ul>
-      <gov-button class="gov-footer__up js-gov-footer__up" color="primary" type="base" size="m" wcag-label="Na začátek stránky">
-        <gov-icon slot="icon-start" type="components" name="chevron-up"></gov-icon>
-      </gov-button>
         </gov-flex>
       </gov-grid-item>
     </gov-grid>
 
-    <gov-grid gap="l" class="gov-footer__logos-group">
-      <gov-grid-item col-span="12">
-        <section>
-          <h5><strong>Portál o datech vám přináší</strong></h5>
-          <ul class="gov-footer__logos gov-list--plain">
-            <li><a href="https://www.dia.gov.cz/" aria-label="Otevřít stránky DIA" target="_blank" rel="noreferrer nofollow"><img alt="Digitální a informační agentura" src="/images/dia_w.webp" width="69" height="40"></a></li>
-            <li><a href="https://next-generation-eu.europa.eu/index_cs" aria-label="Otevřít stránky Next Generation EU" target="_blank" rel="noreferrer nofollow"><img alt="NextGenerationEU" src="/images/ngeu_w.webp" width="119" height="40"></a></li>
-            <li><a href="https://www.planobnovycr.cz/" aria-label="Otevřít stránky Národní plán obnovy" target="_blank" rel="noreferrer nofollow"><img alt="Národní plán obnovy" src="/images/npo_w.webp" width="118" height="40"></a></li>
-          </ul>
-        </section>
-      </gov-grid-item>
-    </gov-grid>
+    <section>
+      <h5><strong>Portál o datech vám přináší</strong></h5>
+      <ul class="gov-footer__main gov-footer__logos gov-list--plain">
+        <li><a href="https://next-generation-eu.europa.eu/index_cs" aria-label="Otevřít stránky Next Generation EU" target="_blank" rel="noreferrer nofollow"><img alt="NextGenerationEU" src="/images/ngeu_w.webp" width="237" height="64"></a></li>
+        <li><a href="https://www.planobnovycr.cz/" aria-label="Otevřít stránky Národního plánu obnovy" target="_blank" rel="noreferrer nofollow"><img alt="Národní plán obnovy" src="/images/npo_w.webp" width="233" height="64"></a></li>
+        <li><a href="https://www.dia.gov.cz/" aria-label="Otevřít stránky DIA" target="_blank" rel="noreferrer nofollow"><img alt="Digitální a informační agentura" src="/images/dia_w.webp" width="138" height="80"></a></li>
+      </ul>
+    </section>
 
     <gov-flex direction="column" gap="m-nudge">
       <p>
@@ -77,7 +70,6 @@
         <gov-link href="https://www.esfcr.cz/projekty-opz/-/asset_publisher/ODuZumtPTtTa/content/implementace-strategii-v-oblasti-otevrenych-dat-ii">OPZ č. CZ.03.4.74/0.0/0.0/15_025/0004172</gov-link> a
         <gov-link href="https://www.esfcr.cz/projekty-opz/-/asset_publisher/ODuZumtPTtTa/content/rozvoj-datovych-politik-v-oblasti-zlepsovani-kvality-a-interoperability-dat-verejne-spravy">OPZ č. CZ.03.4.74/0.0/0.0/15_025/0013983</gov-link>
         a je dále rozvíjen v rámci projektu Rozvoj Národního katalogu otevřených dat a infrastruktury Veřejného datového fondu
-                  </gov-flex>
       </p>
       <hr>
       <p>
@@ -88,22 +80,3 @@
     </gov-flex>
   </gov-flex>
 </footer>
-
-<script>
-  (() => {
-    const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
-
-    document.addEventListener('click', event => {
-      if (event.target.closest('.js-gov-footer__up')) {
-        scrollToTop();
-      }
-    }, true);
-
-    document.addEventListener('keydown', event => {
-      if (event.target.closest('.js-gov-footer__up') && (event.key === 'Enter' || event.key === ' ')) {
-        event.preventDefault();
-        scrollToTop();
-      }
-    }, true);
-  })();
-</script>

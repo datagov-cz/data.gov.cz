@@ -5,82 +5,6 @@ ref: rozcestnik
 lang: cs
 ---
 
-<style>
-  body {
-    background-color: #f1f1f6;
-  }
-    .no-outer-space {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  .no-outer-space > gov-grid-item:first-child {
-    padding-left: 0 !important;
-  }
-  .no-outer-space > gov-grid-item:last-child {
-    padding-right: 0 !important;
-  }
-gov-accordion-item {
-  display: block;
-  border: none !important;
-    border-bottom: 1px solid #d0d5dd !important;
-
-  outline: none !important;
-  box-shadow: none !important;
-  overflow: hidden; 
-  transition: background-color 0.2s ease;
-  --gov-accordion-item-border: none;
-  --gov-border-color: transparent;
-}
-
-  gov-accordion-item:hover {
-    background-color: #f0f4f8;
-    cursor: pointer;
-  }
-
-  gov-accordion-item:hover [slot="label"] {
-    color: #00469B;
-  }
-
-  gov-accordion-item p {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-gov-accordion-item:last-child {
-  border-bottom: none !important;
-}
-
-gov-tile {
-  display: block;
-  margin: 0 !important;
-  border: none !important;
-  border-bottom: 1px solid #d0d5dd !important;
-  border-radius: 0 !important;
-  transition: background-color 0.2s ease;
-  color: #000000 !important;
-}
-
-/* Odstranění spodní čáry u poslední dlaždice */
-gov-tile:last-child {
-  border-bottom: none !important;
-}
-
-/* Hover efekt */
-gov-tile:hover {
-  background-color: #f0f4f8 !important;
-  cursor: pointer;
-}
-
-/* Barva nadpisu */
-gov-tile [slot="title"],
-gov-tile h3 {
-  color: #00469B !important;
-}
-
-</style>
-
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě</p>
 
 
@@ -90,41 +14,41 @@ gov-tile h3 {
 <gov-grid class="no-outer-space" gutter-x="0.75rem" gutter-y="0.75rem">
   <!-- Dlaždice 1 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-        <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
-     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
-      <h3 style="font-weight: bold; font-size: 1.25em;">Metadata a katalogizace</h3>
+        <gov-card>
+     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex"></gov-icon>
+      <h3>Metadata a katalogizace</h3>
       <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button expanded variant="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace" style="width: 100%; align-self: stretch; border-radius: 8px;">Více</gov-button>
+      <gov-button expanded variant="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace">Více</gov-button>
           </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 2 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
-           <gov-icon class="gov-icon hydrated" name="all" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
-      <h3 style="font-weight: bold; font-size: 1.25em;">Tematické datové oblasti</h3>
+    <gov-card>
+           <gov-icon class="gov-icon hydrated" name="all" type="complex"></gov-icon>
+      <h3>Tematické datové oblasti</h3>
       <p>Publikace konkrétních dat (úřední desky, odpady, turistika…).</p>
-            <gov-button expanded variant="primary" type="solid" size="m" href="#agendove" wcag-label="Tematické datové oblasti" style="width: 100%; align-self: stretch; border-radius: 8px;">Více</gov-button>
+            <gov-button expanded variant="primary" type="solid" size="m" href="#agendove" wcag-label="Tematické datové oblasti">Více</gov-button>
    </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 3 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
-      <gov-icon class="gov-icon hydrated" name="digital" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
-      <h3 style="font-weight: bold; font-size: 1.25em;">Základní specifikace</h3>
+    <gov-card>
+      <gov-icon class="gov-icon hydrated" name="digital" type="complex"></gov-icon>
+      <h3>Základní specifikace</h3>
       <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt aj.</p>
-            <gov-button expanded variant="primary" type="solid" size="m" href="#specifikace" wcag-label="Základní specifikace" style="width: 100%; align-self: stretch; border-radius: 8px;">Více</gov-button>
+            <gov-button expanded variant="primary" type="solid" size="m" href="#specifikace" wcag-label="Základní specifikace">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 4 -->
   <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card style="text-align: center; border-radius: 8px; display: flex; flex-direction: column; align-items: center;">
-      <gov-icon class="gov-icon hydrated" name="doc-filled" type="complex" style="color: #680526; fill: #680526; width: 48px; height: 48px;"></gov-icon>
-      <h3 style="font-weight: bold; font-size: 1.25em;">Další specifikace</h3>
+    <gov-card>
+      <gov-icon class="gov-icon hydrated" name="doc-filled" type="complex"></gov-icon>
+      <h3>Další specifikace</h3>
       <p>Elektronická podání (dle ZoPDS), formuláře či ověřené podpisy apod.</p>
-            <gov-button expanded variant="primary" type="solid" size="m" href="#egovernment" wcag-label="Další specifikace" style="width: 100%; align-self: stretch; border-radius: 8px;">Více</gov-button>
+            <gov-button expanded variant="primary" type="solid" size="m" href="#egovernment" wcag-label="Další specifikace">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 </gov-grid>
@@ -134,9 +58,9 @@ gov-tile h3 {
 
 
 <gov-container class="no-outer-space">
-  <gov-card style="border-radius: 8px;">
+  <gov-card>
     <gov-accordion-item size="m">
-  <span slot="label" style="font-weight: bold; font-size: 1.25em; padding-left: 15px;">Co jsou otevřené formální normy?</span>
+  <span slot="label">Co jsou otevřené formální normy?</span>
       <p>Otevřené formální normy (OFN) definují společná pravidla pro popis, strukturu a technické provedení dat ve veřejném sektoru. Sjednocují význam dat a definice pojmů, jejich vnitřní uspořádání i podobu datových rozhraní a API. Umožňují různým informačním systémům a poskytovatelům publikovat obdobná data stejným způsobem a garantují jejich plnou interoperabilitu — tedy schopnost systémů spolu bezproblémově komunikovat a předávat si data.
       </p>
       <p>OFN sjednocují způsob popisu datových sad v lokálních i národním katalogu a zajišťují, že jsou publikovaná data strojově čitelná a snadno opakovaně použitelná. Zároveň garantují, že různé úřady popisují stejné agendy ve stejném formátu, poskytují hotové stavební prvky pro opakující se údaje (jako jsou adresy, kontakty nebo časové specifikace) a umožňují plynulou výměnu dat napříč informačními systémy veřejné správy.
@@ -144,7 +68,7 @@ gov-tile h3 {
   </gov-accordion-item>
 
     <gov-accordion-item size="m">
-  <span slot="label" style="font-weight: bold; font-size: 1.25em; padding-left: 15px;">Právní závaznost</span>
+  <span slot="label">Právní závaznost</span>
       <p><b>Právní rámec</b><br>
         Otevřené formální normy neurčují samotnou povinnost data zveřejňovat — ta vždy vyplývá z konkrétních právních předpisů. Stanovují výhradně to, jakým způsobem mají být příslušná data nebo jejich metadata popsána, strukturována a zpřístupněna, pokud se na daný případ povinnost zveřejnění vztahuje.</p>
       <p><b>Povinné subjekty</b><br>
@@ -154,7 +78,7 @@ gov-tile h3 {
   </gov-accordion-item>
 
     <gov-accordion-item size="m">
-  <span slot="label" style="font-weight: bold; font-size: 1.25em; padding-left: 15px;">Nenašli jste odpovídající OFN?</span>
+  <span slot="label">Nenašli jste odpovídající OFN?</span>
       <p>Otevřené formální normy vznikají plně transparentním způsobem na platformě GitHub. Vývoj je přístupný široké komunitě a může se do něj zapojit každý — od IT architektů a věcných garantů až po vývojáře z veřejné i soukromé sféry.</p>
       <p>Zapojit se můžete připomínkováním rozpracovaných návrhů, navrhováním změn ve stávajících specifikacích nebo upozorněním na chybějící či nepřesné prvky. Můžete také dát podnět pro tvorbu zcela nové normy, stát se členem odborné pracovní skupiny a přímo se připojit k vývoji 
         <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">na GitHubu &#x2197;</a></p>
@@ -168,15 +92,15 @@ gov-tile h3 {
 
 
 <gov-container class="no-outer-space">
-  <gov-card style="border: none; box-shadow: none; background-color: transparent;">
+  <gov-card>
     
     <!-- Společný flex řádek pro úvodní text i ikony s popisy -->
-    <div style="display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
-      <span style="font-weight: bold;">U jednotlivých karet najdete věcný účel normy, pro koho je určená a související legislativní rámec.</span>
+    <div>
+      <span>U jednotlivých karet najdete věcný účel normy, pro koho je určená a související legislativní rámec.</span>
       </div>
     </div>
     <!-- Závěrečný řádek -->
-    <p style="margin: 0; ">
+    <p>
       Kompletní technická specifikace se zobrazí po kliknutí na její název.
     </p>
 
@@ -185,10 +109,10 @@ gov-tile h3 {
 
 
 <gov-container class="no-outer-space">
-  <gov-card id="metadata" style="border-radius: 8px;">
-    <div style="padding-left: 15px; padding-right: 5px;">
+  <gov-card id="metadata">
+    <div>
       
-  <h2 style="font-weight: bold; font-size: 1.75em;">Metadata a katalogizace</h2>
+  <h2>Metadata a katalogizace</h2>
     <p>Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
 </div>
 
@@ -264,9 +188,9 @@ gov-tile h3 {
 
 
 <gov-container class="no-outer-space">
-  <gov-card id="agendove" style="border-radius: 8px;">
-    <div style="padding-left: 15px; padding-right: 5px;">
-      <h2 style="font-weight: bold; font-size: 1.75em;">Tematické datové oblasti</h2>
+  <gov-card id="agendove">
+    <div>
+      <h2>Tematické datové oblasti</h2>
       <p>Určeno pro úředníky, věcné garanty, vývojáře a dodavatele SW. Stanovují společný význam a strukturu pro konkrétní doménové datové sady.</p>
     </div>
 
@@ -386,9 +310,9 @@ gov-tile h3 {
 
 
 <gov-container class="no-outer-space">
-  <gov-card id="specifikace" style="border-radius: 8px;">
-    <div style="padding-left: 15px; padding-right: 5px;">
-      <h2 style="font-weight: bold; font-size: 1.75em;">Základní specifikace</h2>
+  <gov-card id="specifikace">
+    <div>
+      <h2>Základní specifikace</h2>
       <p>Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro tematické OFN.</p>
     </div>
 
@@ -496,9 +420,9 @@ gov-tile h3 {
 
 
 <gov-container class="no-outer-space">
-  <gov-card id="egovernment" style="border-radius: 8px;">
-    <div style="padding-left: 15px; padding-right: 5px;">
-      <h2 style="font-weight: bold; font-size: 1.75em;">Další specifikace</h2>
+  <gov-card id="egovernment">
+    <div>
+      <h2>Další specifikace</h2>
       <p>Určeno pro správce spisových služeb, vývojáře formulářů apod. Sjednocuje strukturu digitálních výstupů a úkonů.</p>
     </div>
 

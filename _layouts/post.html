@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{page.lang}}">
   {% include head.html %}
-  <style>
-    body {
-      background-color: #f1f1f6;
-    }
-  </style>
   <body class="text-content blog-post">
     {% include header.html %}
     <article>
@@ -18,7 +13,7 @@
           {{site.data.authors[page.author].name}}
           {% endif %}
           <br><br>
-          <gov-card style="border-radius: 8px; padding: 15px;">
+          <gov-card>
           {{ content }}
           </gov-card>
         </gov-container>

@@ -26,18 +26,18 @@ homepage: true
         {% assign clanky=site.clanky | where:"lang", page.lang | reverse %}
         {% for clanek in clanky limit:6 %}
         <gov-tile href="..{{ clanek.url }}">
-            <h3 slot="title" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; height: 2.6em;">
+            <h3 slot="title">
                 {{ clanek.title | truncate: 62 }}
             </h3>
             {% if clanek.image %}
-            <p style="margin-top: 0; margin-bottom: 5px;">
-            <img src="{{ clanek.image }}" alt="{{ clanek.title }}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block;" /></p>
+            <p>
+            <img src="{{ clanek.image }}" alt="{{ clanek.title }}"/></p>
             {% endif %}
             <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
                 <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
                 {{ clanek.date | date: "%-d. %-m. %Y" }}
             </gov-chip>
-            <p style="margin-top: 10px; margin-bottom: 0; font-weight: normal;">
+            <p>
                 {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
             </p>
         </gov-tile>
@@ -49,7 +49,7 @@ homepage: true
 </gov-container>
 
 <gov-container>
-  <hr style="border: 0; border-top: 1px solid #e3e3e3; margin: 20px 0;" />
+  <hr/>
 </gov-container>
 
 

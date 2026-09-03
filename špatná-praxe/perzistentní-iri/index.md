@@ -8,7 +8,7 @@ lang: cs
 **Implementace jednotné státní domény gov.cz je sice vítaným krokem k důvěryhodné komunikaci státu s občany, ale v hlubších vrstvách digitální infrastruktury může napáchat nevratné škody. Neuvážená změna perzistentních identifikátorů (IRI) při migraci systémů hrozí okamžitým rozpadem ekosystému propojených dat. Jako poskytovatelé totiž nejste jedinými uživateli svých dat – na stabilitě vašich identifikátorů přímo závisí analytici, firmy i další úřady. Bez zajištění absolutní zpětné kompatibility pro ně vaše data v momentě změny fakticky přestanou existovat, což může paralyzovat fungování klíčových služeb veřejné správy i soukromého sektoru.**
 <br><br>
 
-<div style="color: #ffffff; background:#c62828; padding:10px;">
+<div>
 <b>DOPORUČENÍ</b><br>
 <b>Neměňte IRI!</b><br>To, že váš web běží na gov.cz, neznamená, že vaše data musí změnit identitu. Ponechte původní identifikátory zachovány. <br><br>
 <b>Migrujete na novou doménu?</b><br>Tu starou v žádném případě nerušte! Musí zůstat ve vašem vlastnictví a musí být technicky funkční v DNS záznamech. Pokud starou doménu necháte expirovat, všechna data, která na ni odkazovala, se v tu vteřinu stanou nepoužitelnými. Má to fatální důsledky pro kontinuitu státní správy.<br><br>
@@ -34,7 +34,7 @@ V moderní digitální správě existuje koncept tzv. **perzistentních identifi
 
 U klíčových dat, jako jsou **právní předpisy** nebo datové sady s vysokou hodnotou, je tato trvalost dokonce vyžadována zákonem. Nejde jen o „dobrou praxi“, ale o garanci stability.
 
-<div style="background:#e7e7e7; padding:10px;">
+<div>
 <a href="https://eur-lex.europa.eu/content/help/eurlex-content/eli.html?locale=cs" target="_blank"><b>ELI</b> (European Legislation Identifier)</a> slouží k identifikaci právních předpisů (např. v ČR ve Sbírce zákonů a Sbírce mezinárodních smluv). Právní texty díky tomu na sebe navzájem odkazují. Pokud by se IRI měnila, rozpadly by se vazby mezi evropskou legislativou a její implementací v národních státech. Právo vyžaduje, aby „adresa“ zákona byla stejně trvalá jako zákon sám.<br><br>
 <a href="https://data.gov.cz/%C4%8Dl%C3%A1nky/v%C5%A1e-co-jste-cht%C4%9Bli-v%C4%9Bd%C4%9Bt-o-hvd" target="_blank"><b>HVDs</b> (High-Value Datasets)</a> neboli datové sady s vysokou hodnotou  jsou podle evropského nařízení 2023/138 považovány za palivo pro digitální ekonomiku. Soukromé firmy na těchto datech staví své aplikace a služby a pokud by stát libovolně měnil identifikátory, způsobil by obrovské škody a náklady na opravu systémů. Legislativa výslovně ukládá členským státům povinnost zajistit, aby tato data byla dostupná prostřednictvím trvalých identifikátorů.</div>
 <br>

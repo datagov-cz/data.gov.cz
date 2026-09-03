@@ -1,36 +1,36 @@
 ---
-layout: default
+layout: contained
 title: Aktuality a články
 ref: Articles
 lang: cs
 ---
-<gov-container>
-    <h1>{{ page.title }}</h1>
-    <gov-grid gap="l" class="gov-card-grid">
-        {% assign clanky = site.clanky | where: "lang", page.lang | reverse %}
-        {% for clanek in clanky %}
-        <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="4" role="listitem">
-          <gov-tile href="..{{ clanek.url }}">
-            <h2 slot="title">
-                {{ clanek.title | truncate: 62 }}
-            </h2>
-            
-            {% if clanek.image %}
-            <p>
-                <img src="{{ clanek.image }}" alt="{{ clanek.title }}" />
-            </p>
-            {% endif %}
-
-            <gov-chip variant="secondary" size="xs" tag="span" inverse="true">
-                <gov-icon type="complex" name="time" slot="left-icon"></gov-icon>
-                {{ clanek.date | date: "%-d. %-m. %Y" }}
-            </gov-chip>
-
-            <p>
-                {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
-            </p>
-          </gov-tile>
-        </gov-grid-item>
-        {% endfor %}
-    </gov-grid>
-</gov-container>
+<gov-grid gap="l" class="gov-card-grid">
+    {% assign clanky = site.clanky | where: "lang", page.lang | reverse %}
+    {% for clanek in clanky %}
+    <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="4" role="listitem">
+        <article>
+            <gov-card href="..{{ clanek.url }}" direction="vertical" aria-labelledby="{{ clanek.title }}" headline="{{ clanek.title | truncate: 62 }}">
+                {% if clanek.image %}
+                <picture slot="img">
+                    <img src="{{ clanek.image }}" alt="{{ clanek.title }}" width="800" height="533">
+                </picture>
+                {% endif %}
+                <gov-flex gap="s" direction="column">
+                    <header>
+                        <gov-flex gap="s" direction="column">
+                            <h3 class="gov-card__headline">{{ clanek.title | truncate: 62 }}</h3>
+                            <gov-flex gap="s" align-items="center" responsive="false">
+                                <gov-icon type="complex" name="time" color="default" size="m"></gov-icon>
+                                <time datetime="{{ clanek.date | date: "%Y-%m-%d" }}" class="gov-card__note">{{ clanek.date | date: "%-d. %-m. %Y" }}</time>
+                            </gov-flex>
+                        </gov-flex>
+                    </header>
+                    <p>
+                        {{ clanek.excerpt | strip_html | strip_newlines | truncate: 260 }}
+                    </p>
+                </gov-flex>
+            </gov-card>
+        </article>
+    </gov-grid-item>
+    {% endfor %}
+</gov-grid>

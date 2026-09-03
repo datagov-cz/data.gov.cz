@@ -36,7 +36,7 @@ homepage: true
       {% for clanek in clanky limit:6 %}
       <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="4" role="listitem">
           <article>
-            <gov-card href="..{{ clanek.url }}" direction="vertical" aria-labelledby="{{ clanek.title }}">
+            <gov-card href="..{{ clanek.url }}" direction="vertical" aria-labelledby="{{ clanek.title }}" headline="{{ clanek.title | truncate: 62 }}">
               {% if clanek.image %}
               <picture slot="img">
                 <img src="{{ clanek.image }}" alt="{{ clanek.title }}" width="800" height="533">
@@ -62,9 +62,10 @@ homepage: true
       {% endfor %}
     </gov-grid>
     
-    <div class="flex-justify-end">
-      <gov-button variant="primary" inverse="true" type="solid" size="m" href="články" wcag-label="Přejít na všechny články">Další články</gov-button>
-    </div> 
+    <gov-spacer size="m"></gov-spacer>
+    <gov-flex justify-content="flex-end">
+      <gov-button color="primary" type="outlined" size="m" href="články" wcag-label="Přejít na všechny články">Další články</gov-button>
+    </gov-flex>
 </gov-container>
 
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>

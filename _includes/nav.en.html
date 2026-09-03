@@ -29,12 +29,15 @@
           </gov-flex>
         </a>
         <gov-flex class="gov-header__mobile" align-items="center" gap="s" responsive="false">
+            <!-- SLOT:LOGIN-MOBILE -->
           <gov-button color="primary" type="base" size="m" aria-label="Open main navigation" class="js-gov-header__navigation-trigger">
             <gov-icon slot="icon-start" type="components" name="list" color="primary" size="m"></gov-icon>
           </gov-button>
         </gov-flex>
       </gov-flex>
       <gov-flex class="gov-header__action" justify-content="space-between" align-items="center" gap="m">
+        <!-- SLOT:LOGIN -->
+        <!-- SLOT:LANGUAGE -->
         <gov-theme-switch size="m" aria-label="Toggle color scheme"></gov-theme-switch>
       </gov-flex>
     </div>
@@ -70,6 +73,9 @@
             <li><a href="/pro-uživatele/">Users and programmers (in Czech)</a></li>
             <li><a href="/pro-poskytovatele/">Data publishers (in Czech)</a></li>
           </ul>
+        </li>        
+        <li class="gov-mobile-only">
+            <!-- SLOT:LANGUAGE=MOBILE -->
         </li>
         <li class="gov-mobile-only">
           <gov-theme-switch size="m" display-label="true"></gov-theme-switch>

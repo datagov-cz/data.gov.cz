@@ -38,30 +38,34 @@ lang: cs
     Kurz je zakončen závěrečným testem.
   </p>
 
-  <gov-grid gutter-x="1.5rem" gutter-y="1.5rem">
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <gov-card label="Modul 1" full-height>
+  <gov-spacer size="m"></gov-spacer>
+
+  <gov-grid gap="l" class="gov-card-grid">
+    <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+      <gov-card headline="Modul 1" full-height>
+        <h3 class="gov-card__headline">Modul 1</h3>
         <p>
           Modul se zaměřuje na definici veřejného datového fondu jako jedné ze základních metod sdílení agendových údajů a na základní předpoklad sdílení agendových údajů, kterým je správná evidence agendových údajů v registru práv a povinností s založená na konceptuálního modelování agendy.
         </p>
-        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=FGs8H7a73zk">
+        <gov-button slot="footer" color="primary" type="outlined" size="m" href="https://www.youtube.com/watch?v=FGs8H7a73zk">
           YouTube &raquo;
         </gov-button>
-        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Imr18zBgSrgR-uvv9CD_DWX3_qyMaR79_P_fCvXb_tY">
+        <gov-button slot="footer" color="primary" type="outlined" size="m" href="https://docs.google.com/presentation/d/1Imr18zBgSrgR-uvv9CD_DWX3_qyMaR79_P_fCvXb_tY">
           Google Slidy &raquo;
         </gov-button>
       </gov-card>
     </gov-grid-item>
 
-    <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="4/12" size-xl="3/12">
-      <gov-card label="Modul 2" full-height>
+    <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+      <gov-card headline="Modul 2" full-height>
+        <h3 class="gov-card__headline">Modul 2</h3>
         <p>
           Modul poskytuje detailní pohled na architekturu sdílení agendových údajů (propojený datový fond a veřejný datový fond) a poté se zaměřuje na jednotlivé komponenty veřejného datového fondu a na procesy publikace a čtení údajů z veřejného datového fondu.
         </p>
-        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://www.youtube.com/watch?v=fuqLYjlwO3c">
+        <gov-button slot="footer" color="primary" type="outlined" size="m" href="https://www.youtube.com/watch?v=fuqLYjlwO3c">
           YouTube &raquo;
         </gov-button>
-        <gov-button slot="footer" variant="secondary" type="outlined" size="m" href="https://docs.google.com/presentation/d/19uXT36m1OQm-IWsCCjRF52q1zggWOdWOG49wsn-xgJU">
+        <gov-button slot="footer" color="primary" type="outlined" size="m" href="https://docs.google.com/presentation/d/19uXT36m1OQm-IWsCCjRF52q1zggWOdWOG49wsn-xgJU">
           Google Slidy &raquo;
         </gov-button>
       </gov-card>
@@ -69,11 +73,13 @@ lang: cs
 
 </gov-grid>
 
-<gov-card promotion="true" label="Závěrečný test">
+<gov-spacer size="m"></gov-spacer>
+
+<gov-card promotion="true" headline="Závěrečný test" href="https://forms.office.com/e/GA5QYx5EGT">
+  <h3 class="gov-card__headline">Závěrečný test</h3>
   <p>
     Ověřte si nově nabyté znalosti v závěrečném testu.
     Můžete nás také požádat o certifikát o absolvování kurzu.
   </p>
-  <gov-icon type="complex" name="graduate" slot="icon"></gov-icon>
-  <gov-button variant="primary" slot="btn" type="solid" size="l" href="https://forms.office.com/e/GA5QYx5EGT" wcag-label="Složit závěrečný test">Test</gov-button>
+  <gov-icon type="complex" name="graduate" slot="icon" size="3xl"></gov-icon>
 </gov-card>

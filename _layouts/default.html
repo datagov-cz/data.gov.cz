@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="{{page.lang}}">
   {% include head.html %}
-  <body>
-    <div class="gov-story-theme-scope">
-      {% include header.html %}
-          {{ content }}
-      {% include footer.{{page.lang}}.html %}
-    </div>
+  <body class="gov-story-theme-scope">
+    {% include header.html %}
+        {{ content }}
+    {% include footer.{{page.lang}}.html %}
     <script src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js"></script>
     <script>
       anchors.add('h2'){% for anchor in page.customanchors %}.add('{{ anchor }}'){% endfor %};

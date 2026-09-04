@@ -7,59 +7,51 @@ lang: cs
 
 <p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě</p>
 
+<gov-spacer size="m"></gov-spacer>
 
 <!-- Výpis kategorií -->
-
-
-<gov-grid class="no-outer-space" gutter-x="0.75rem" gutter-y="0.75rem">
+<gov-grid gap="l" role="list">
   <!-- Dlaždice 1 -->
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-        <gov-card>
-     <gov-icon class="gov-icon hydrated" name="register-of-persons" type="complex"></gov-icon>
-      <h3>Metadata a katalogizace</h3>
+  <gov-grid-item col-span="12" col-span-md="6" col-span-lg="3" role="listitem">
+    <gov-card href="#metadata">
+     <gov-icon slot="icon" name="register-of-persons" type="complex"></gov-icon>
+      <h3 slot="headline">Metadata a katalogizace</h3>
       <p>Katalogizace a integrace katalogu dat, HVD a klíčové povinnosti</p>
-      <gov-button expanded color="primary" type="solid" size="m" href="#metadata" wcag-label="Metadata a katalogizace">Více</gov-button>
-          </gov-card>
+    </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 2 -->
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
-           <gov-icon class="gov-icon hydrated" name="all" type="complex"></gov-icon>
-      <h3>Tematické datové oblasti</h3>
+  <gov-grid-item col-span="12" col-span-md="6" col-span-lg="3" role="listitem">
+    <gov-card href="#agendove">
+      <gov-icon slot="icon" name="all" type="complex"></gov-icon>
+      <h3 slot="headline">Tematické datové oblasti</h3>
       <p>Publikace konkrétních dat (úřední desky, odpady, turistika…).</p>
-            <gov-button expanded color="primary" type="solid" size="m" href="#agendove" wcag-label="Tematické datové oblasti">Více</gov-button>
    </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 3 -->
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
-      <gov-icon class="gov-icon hydrated" name="digital" type="complex"></gov-icon>
-      <h3>Základní specifikace</h3>
+  <gov-grid-item col-span="12" col-span-md="6" col-span-lg="3" role="listitem">
+    <gov-card href="#specifikace" >
+      <gov-icon slot="icon" name="digital" type="complex"></gov-icon>
+      <h3 slot="headline">Základní specifikace</h3>
       <p>Stavím datový model a potřebuji standard pro adresu nebo kontakt aj.</p>
-            <gov-button expanded color="primary" type="solid" size="m" href="#specifikace" wcag-label="Základní specifikace">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 
   <!-- Dlaždice 4 -->
-  <gov-grid-item size-sm="12/12" size-md="6/12" size-lg="3/12">
-    <gov-card>
-      <gov-icon class="gov-icon hydrated" name="doc-filled" type="complex"></gov-icon>
-      <h3>Další specifikace</h3>
+  <gov-grid-item col-span="12" col-span-md="6" col-span-lg="3" role="listitem">
+    <gov-card href="#egovernment">
+      <gov-icon slot="icon" name="doc-filled" type="complex"></gov-icon>
+      <h3 slot="headline">Další specifikace</h3>
       <p>Elektronická podání (dle ZoPDS), formuláře či ověřené podpisy apod.</p>
-            <gov-button expanded color="primary" type="solid" size="m" href="#egovernment" wcag-label="Další specifikace">Více</gov-button>
     </gov-card>
   </gov-grid-item>
 </gov-grid>
 
+<gov-spacer size="m"></gov-spacer>
 
-
-
-
-<gov-container class="no-outer-space">
-  <gov-card>
-    <gov-accordion-item size="m">
+<gov-card>
+<gov-accordion-item size="m">
   <span slot="label">Co jsou otevřené formální normy?</span>
       <p>Otevřené formální normy (OFN) definují společná pravidla pro popis, strukturu a technické provedení dat ve veřejném sektoru. Sjednocují význam dat a definice pojmů, jejich vnitřní uspořádání i podobu datových rozhraní a API. Umožňují různým informačním systémům a poskytovatelům publikovat obdobná data stejným způsobem a garantují jejich plnou interoperabilitu — tedy schopnost systémů spolu bezproblémově komunikovat a předávat si data.
       </p>
@@ -77,400 +69,363 @@ lang: cs
       </p>
   </gov-accordion-item>
 
-    <gov-accordion-item size="m">
+  <gov-accordion-item size="m">
   <span slot="label">Nenašli jste odpovídající OFN?</span>
       <p>Otevřené formální normy vznikají plně transparentním způsobem na platformě GitHub. Vývoj je přístupný široké komunitě a může se do něj zapojit každý — od IT architektů a věcných garantů až po vývojáře z veřejné i soukromé sféry.</p>
       <p>Zapojit se můžete připomínkováním rozpracovaných návrhů, navrhováním změn ve stávajících specifikacích nebo upozorněním na chybějící či nepřesné prvky. Můžete také dát podnět pro tvorbu zcela nové normy, stát se členem odborné pracovní skupiny a přímo se připojit k vývoji 
         <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer" class="btn btn-primary">na GitHubu &#x2197;</a></p>
   </gov-accordion-item>
-  </gov-card>
-  </gov-container>
+</gov-card>
 
+  <gov-spacer size="m"></gov-spacer>
 
+  <p>
+    U jednotlivých karet najdete věcný účel normy, pro koho je určená a související legislativní rámec.
+  </p>
+  <p>
+    Kompletní technická specifikace se zobrazí po kliknutí na její název.
+  </p>
 
+  <gov-spacer size="m"></gov-spacer>
 
-
-
-<gov-container class="no-outer-space">
-  <gov-card>
-    
-    <!-- Společný flex řádek pro úvodní text i ikony s popisy -->
-    <div>
-      <span>U jednotlivých karet najdete věcný účel normy, pro koho je určená a související legislativní rámec.</span>
-      </div>
-    </div>
-    <!-- Závěrečný řádek -->
-    <p>
-      Kompletní technická specifikace se zobrazí po kliknutí na její název.
-    </p>
-
-  </gov-card>
-</gov-container>
-
-
-<gov-container class="no-outer-space">
-  <gov-card id="metadata">
-    <div>
-      
-  <h2>Metadata a katalogizace</h2>
+<gov-card id="metadata">
+    <h2 slot="headline">Metadata a katalogizace</h2>
     <p>Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
-</div>
 
  <gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
-  <p>
-  – Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.<br>
-  – Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.<br>
-  – § 7 a § 36 písm. a) zákona č. 60/2026 Sb.
-</p>
+  <ul>
+        <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
+        <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
+        <li>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</li>
+      </ul>
 </gov-tile>
     
 <gov-tile size="m" title="DCAT-AP-CZ: Datová rozhraní" href="https://ofn.gov.cz/dcat-ap-cz-datová-rozhraní/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Datová rozhraní</h3>
-  <p>
-    – Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.<br>
-    – Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.<br>
-    – § 6 odst. 2 zákona č. 60/2026 Sb.
-  </p>
+  <ul>
+        <li>Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.</li>
+        <li>Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.</li>
+        <li>§ 6 odst. 2 zákona č. 60/2026 Sb.</li>
+      </ul>
 </gov-tile>
 
 <gov-tile size="m" title="DCAT-AP-CZ: Datové sady otevřených dat" href="https://ofn.gov.cz/dcat-ap-cz-otevřená-data/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Datové sady otevřených dat</h3>
-  <p>
-    – Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.<br>
-    – Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.<br>
-    – § 4b a § 4c zákona č. 106/1999 Sb.
-  </p>
+  <ul>
+        <li>Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.</li>
+        <li>Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.</li>
+        <li>§ 4b a § 4c zákona č. 106/1999 Sb.</li>
+      </ul>
 </gov-tile>
 
 <gov-tile size="m" title="DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)" href="https://ofn.gov.cz/dcat-ap-cz-hvd/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</h3>
-  <p>
-    – Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.<br>
-    – Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.<br>
-    – § 5b zákona č. 106/1999 Sb. a nařízení Komise (EU) 2023/138
-  </p>
+  <ul>
+        <li>Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.</li>
+        <li>Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.</li>
+        <li>§ 5b zákona č. 106/1999 Sb. a nařízení Komise (EU) 2023/138</li>
+      </ul>
 </gov-tile>
 
 <gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů otevřených dat" href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů otevřených dat</h3>
-  <p>
-    – Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.<br>
-    – Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.<br>
-    – § 4c zákona č. 106/1999 Sb.; souvisí také s § 24 odst. 2 vyhlášky č. 360/2023 Sb.
-  </p>
+  <ul>
+        <li>Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.</li>
+        <li>Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.</li>
+        <li>§ 4c zákona č. 106/1999 Sb.; souvisí také s § 24 odst. 2 vyhlášky č. 360/2023 Sb.</li>
+      </ul>
 </gov-tile>
 
 <gov-tile size="m" title="DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb." href="https://ofn.gov.cz/dcat-ap-cz-360-2023/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb.</h3>
-  <p>
-    – Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.<br>
-    – Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.<br>
-    – § 24 odst. 1 a 2 vyhlášky č. 360/2023 Sb.
-  </p>
+  <ul>
+        <li>Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.</li>
+        <li>Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.</li>
+        <li>§ 24 odst. 1 a 2 vyhlášky č. 360/2023 Sb.</li>
+      </ul>
 </gov-tile>
 
 <gov-tile size="m" title="Prostorová data" href="https://ofn.gov.cz/prostorová-data/" orientation="vertical" >
   <h3 slot="title">Prostorová data</h3>
-  <p>
-    – Stanoví doporučené formáty, geometrie, souřadnicové systémy, metadata a služby pro publikaci prostorových dat.<br>
-    – Povinné subjekty a další poskytovatelé prostorových dat, správci prostorových IS a koordinátoři témat prostorových dat.<br>
-    – Zákon č. 123/1998 Sb., předpisy INSPIRE a § 10 zákona č. 60/2026 Sb.
-  </p>
+  <ul>
+        <li>Stanoví doporučené formáty, geometrie, souřadnicové systémy, metadata a služby pro publikaci prostorových dat.</li>
+        <li>Povinné subjekty a další poskytovatelé prostorových dat, správci prostorových IS a koordinátoři témat prostorových dat.</li>
+        <li>Zákon č. 123/1998 Sb., předpisy INSPIRE a § 10 zákona č. 60/2026 Sb.</li>
+      </ul>
  </gov-tile>
+</gov-card>
 
-  </gov-card>
-</gov-container>
+<gov-spacer size="m"></gov-spacer>
 
+<gov-card id="agendove">
+  <h2 slot="headline">Tematické datové oblasti</h2>
+  <p>Určeno pro úředníky, věcné garanty, vývojáře a dodavatele SW. Stanovují společný význam a strukturu pro konkrétní doménové datové sady.</p>
 
+  <gov-tile size="m" title="Slovníky" href="https://ofn.gov.cz/slovníky/" orientation="vertical">
+    <h3 slot="title">Slovníky</h3>
+    <ul>
+      <li>Popisuje pojmy, jejich význam, vlastnosti a vzájemné vztahy v rámci veřejné správy.</li>
+      <li>Vybraní správci dat a věcní garanti agend.</li>
+      <li>Od 1. ledna 2029 stanoví zákon č. 60/2026 Sb. vybraným správcům dat povinnosti týkající se datových slovníků.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Úřední desky" href="https://ofn.gov.cz/úřední-desky/" orientation="vertical">
+    <h3 slot="title">Úřední desky</h3>
+    <ul>
+      <li>Datový standard pro metadata úřední desky a dokumentů na ní zveřejněných.</li>
+      <li>Státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností (ORP).</li>
+      <li>§ 5a odst. 4 zákona č. 106/1999 Sb.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Registr práv a povinností (RPP)" href="https://ofn.gov.cz/registr-práv-a-povinností/" orientation="vertical">
+    <h3 slot="title">Registr práv a povinností (RPP)</h3>
+    <ul>
+      <li>Specifikace pro vybrané objekty, agendy, působnosti a informační systémy vedené v RPP.</li>
+      <li>Orgány veřejné moci zapisující a spravující údaje v RPP.</li>
+      <li>Rozsah zveřejňovaných údajů vyplývá zejména ze zákona č. 111/2009 Sb.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Aktuality" href="https://ofn.gov.cz/aktuality/" orientation="vertical">
+    <h3 slot="title">Aktuality</h3>
+    <ul>
+      <li>Jednotný formát pro publikaci aktualit, zpráv a oficiálních oznámení organizací.</li>
+      <li>Orgány veřejné moci a instituce dobrovolně publikující své zprávy jako otevřená data.</li>
+      <li>Obecná pravidla zákona č. 106/1999 Sb. (dobrovolná publikace).</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Číselníky" href="https://ofn.gov.cz/číselníky/" orientation="vertical">
+    <h3 slot="title">Číselníky</h3>
+    <ul>
+      <li>Standard pro datovou strukturu číselníků, jejich položek, platnosti, verzování a vazeb.</li>
+      <li>Správci a poskytovatelé datových sad obsahujících kódované seznamy a číselníky.</li>
+      <li>Dle zvláštních právních předpisů ukládajících povinnost zveřejnit konkrétní číselník.</li>
+    </ul>
+  </gov-tile>
 
-<gov-container class="no-outer-space">
-  <gov-card id="agendove">
-    <div>
-      <h2>Tematické datové oblasti</h2>
-      <p>Určeno pro úředníky, věcné garanty, vývojáře a dodavatele SW. Stanovují společný význam a strukturu pro konkrétní doménové datové sady.</p>
-    </div>
+  <gov-tile size="m" title="Pracovní místa" href="https://ofn.gov.cz/pracovní-místa/" orientation="vertical">
+    <h3 slot="title">Pracovní místa</h3>
+    <ul>
+      <li>Struktura pro nabídky volných pracovních míst, informace o zaměstnavateli a podmínkách zaměstnání.</li>
+      <li>Služební orgány, úřady a veřejné instituce publikující nabídky práce.</li>
+      <li>Sektorové, služební a pracovněprávní předpisy (bez obecné přímé povinnosti).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Slovníky" href="https://ofn.gov.cz/slovníky/" orientation="vertical">
-      <h3 slot="title">Slovníky</h3>
-      <p>
-        – Popisuje pojmy, jejich význam, vlastnosti a vzájemné vztahy v rámci veřejné správy.<br>
-        – Vybraní správci dat a věcní garanti agend.<br>
-        – Od 1. ledna 2029 stanoví zákon č. 60/2026 Sb. vybraným správcům dat povinnosti týkající se datových slovníků.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Nádoby na tříděný odpad" href="https://ofn.gov.cz/nádoby-na-tříděný-odpad/" orientation="vertical">
+    <h3 slot="title">Nádoby na tříděný odpad</h3>
+    <ul>
+      <li>Standardizuje údaje o umístění, druzích odpadu, kapacitě a správě nádob na tříděný odpad.</li>
+      <li>Obce, města a poskytovatelé dat v oblasti odpadového hospodářství.</li>
+      <li>Souvisí s informačními povinnostmi obcí v odpadovém hospodářství.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Úřední desky" href="https://ofn.gov.cz/úřední-desky/" orientation="vertical">
-      <h3 slot="title">Úřední desky</h3>
-      <p>
-        – Datový standard pro metadata úřední desky a dokumentů na ní zveřejněných.<br>
-        – Státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností (ORP).<br>
-        – § 5a odst. 4 zákona č. 106/1999 Sb.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Rejstříky svazků obcí" href="https://ofn.gov.cz/rejstříky-svazků-obcí/" orientation="vertical">
+    <h3 slot="title">Rejstříky svazků obcí</h3>
+    <ul>
+      <li>Datová struktura pro evidenci svazků obcí, jejich členů, orgánů a oficiálních dokumentů.</li>
+      <li>Krajské úřady, obce a správci veřejných rejstříků svazků obcí.</li>
+      <li>Zákon o obcích a předpisy upravující veřejné registry.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Registr práv a povinností (RPP)" href="https://ofn.gov.cz/registr-práv-a-povinností/" orientation="vertical">
-      <h3 slot="title">Registr práv a povinností (RPP)</h3>
-      <p>
-        – Specifikace pro vybrané objekty, agendy, působnosti a informační systémy vedené v RPP.<br>
-        – Orgány veřejné moci zapisující a spravující údaje v RPP.<br>
-        – Rozsah zveřejňovaných údajů vyplývá zejména ze zákona č. 111/2009 Sb.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Sběrné dvory" href="https://ofn.gov.cz/sběrné-dvory/" orientation="vertical">
+    <h3 slot="title">Sběrné dvory</h3>
+    <ul>
+      <li>Specifikace pro popis lokality, provozní doby, přijímaného odpadu a kontaktů sběrných dvorů.</li>
+      <li>Obce a provozovatelé zařízení pro nakládání s odpady.</li>
+      <li>Souvisí s informačními povinnostmi v odpadovém hospodářství.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Aktuality" href="https://ofn.gov.cz/aktuality/" orientation="vertical">
-      <h3 slot="title">Aktuality</h3>
-      <p>
-        – Jednotný formát pro publikaci aktualit, zpráv a oficiálních oznámení organizací.<br>
-        – Orgány veřejné moci a instituce dobrovolně publikující své zprávy jako otevřená data.<br>
-        – Obecná pravidla zákona č. 106/1999 Sb. (dobrovolná publikace).
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Sportoviště" href="https://ofn.gov.cz/sportoviště/" orientation="vertical">
+    <h3 slot="title">Sportoviště</h3>
+    <ul>
+      <li>Struktura informací o veřejných sportovištích, jejich vybavení, provozu a umístění.</li>
+      <li>Obce, kraje a správci veřejných sportovních zařízení.</li>
+      <li>Bez přímé zákonné povinnosti (doporučený standard pro opakovatelnou využitelnost).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Číselníky" href="https://ofn.gov.cz/číselníky/" orientation="vertical">
-      <h3 slot="title">Číselníky</h3>
-      <p>
-        – Standard pro datovou strukturu číselníků, jejich položek, platnosti, verzování a vazeb.<br>
-        – Správci a poskytovatelé datových sad obsahujících kódované seznamy a číselníky.<br>
-        – Dle zvláštních právních předpisů ukládajících povinnost zveřejnit konkrétní číselník.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Turistické cíle" href="https://ofn.gov.cz/turistické-cíle/" orientation="vertical">
+    <h3 slot="title">Turistické cíle</h3>
+    <ul>
+      <li>Jednotný popis turistických atraktivit, jejich vlastností, přístupnosti a kontaktů.</li>
+      <li>Obce, destinační managementy a krajské organizace cestovního ruchu.</li>
+      <li>Bez přímé zákonné povinnosti (doporučený standard).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Pracovní místa" href="https://ofn.gov.cz/pracovní-místa/" orientation="vertical">
-      <h3 slot="title">Pracovní místa</h3>
-      <p>
-        – Struktura pro nabídky volných pracovních míst, informace o zaměstnavateli a podmínkách zaměstnání.<br>
-        – Služební orgány, úřady a veřejné instituce publikující nabídky práce.<br>
-        – Sektorové, služební a pracovněprávní předpisy (bez obecné přímé povinnosti).
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Události" href="https://ofn.gov.cz/události/" orientation="vertical">
+    <h3 slot="title">Události</h3>
+    <ul>
+      <li>Datový formát pro kulturní, sportovní a společenské akce, jejich termíny, místa a vstupné.</li>
+      <li>Pořadatelé akcí z řad veřejné správy, obce a příspěvkové organizace.</li>
+      <li>Bez přímé zákonné povinnosti (doporučený standard).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Nádoby na tříděný odpad" href="https://ofn.gov.cz/nádoby-na-tříděný-odpad/" orientation="vertical">
-      <h3 slot="title">Nádoby na tříděný odpad</h3>
-      <p>
-        – Standardizuje údaje o umístění, druzích odpadu, kapacitě a správě nádob na tříděný odpad.<br>
-        – Obce, města a poskytovatelé dat v oblasti odpadového hospodářství.<br>
-        – Souvisí s informačními povinnostmi obcí v odpadovém hospodářství.
-      </p>
-    </gov-tile>
+</gov-card>
 
-    <gov-tile size="m" title="Rejstříky svazků obcí" href="https://ofn.gov.cz/rejstříky-svazků-obcí/" orientation="vertical">
-      <h3 slot="title">Rejstříky svazků obcí</h3>
-      <p>
-        – Datová struktura pro evidenci svazků obcí, jejich členů, orgánů a oficiálních dokumentů.<br>
-        – Krajské úřady, obce a správci veřejných rejstříků svazků obcí.<br>
-        – Zákon o obcích a předpisy upravující veřejné registry.
-      </p>
-    </gov-tile>
+<gov-spacer size="m"></gov-spacer>
 
-    <gov-tile size="m" title="Sběrné dvory" href="https://ofn.gov.cz/sběrné-dvory/" orientation="vertical">
-      <h3 slot="title">Sběrné dvory</h3>
-      <p>
-        – Specifikace pro popis lokality, provozní doby, přijímaného odpadu a kontaktů sběrných dvorů.<br>
-        – Obce a provozovatelé zařízení pro nakládání s odpady.<br>
-        – Souvisí s informačními povinnostmi v odpadovém hospodářství.
-      </p>
-    </gov-tile>
+<gov-card id="specifikace">
+  <h2 slot="headline">Základní specifikace</h2>
+  <p>Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro tematické OFN.</p>
 
-    <gov-tile size="m" title="Sportoviště" href="https://ofn.gov.cz/sportoviště/" orientation="vertical">
-      <h3 slot="title">Sportoviště</h3>
-      <p>
-        – Struktura informací o veřejných sportovištích, jejich vybavení, provozu a umístění.<br>
-        – Obce, kraje a správci veřejných sportovních zařízení.<br>
-        – Bez přímé zákonné povinnosti (doporučený standard pro opakovatelnou využitelnost).
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Základní datové typy" href="https://ofn.gov.cz/základní-datové-typy/" orientation="vertical">
+    <h3 slot="title">Základní datové typy</h3>
+    <ul>
+      <li>Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).</li>
+      <li>Vývojáři datových modelů a autorizovaní architekti specifikací.</li>
+      <li>Využíváno jako sdílený modul v ostatních agendových OFN.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Turistické cíle" href="https://ofn.gov.cz/turistické-cíle/" orientation="vertical">
-      <h3 slot="title">Turistické cíle</h3>
-      <p>
-        – Jednotný popis turistických atraktivit, jejich vlastností, přístupnosti a kontaktů.<br>
-        – Obce, destinační managementy a krajské organizace cestovního ruchu.<br>
-        – Bez přímé zákonné povinnosti (doporučený standard).
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Věc" href="https://ofn.gov.cz/věc/" orientation="vertical">
+    <h3 slot="title">Věc</h3>
+    <ul>
+      <li>Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).</li>
+      <li>Vývojáři datových struktur vytvářející nové OFN.</li>
+      <li>Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Události" href="https://ofn.gov.cz/události/" orientation="vertical">
-      <h3 slot="title">Události</h3>
-      <p>
-        – Datový formát pro kulturní, sportovní a společenské akce, jejich termíny, místa a vstupné.<br>
-        – Pořadatelé akcí z řad veřejné správy, obce a příspěvkové organizace.<br>
-        – Bez přímé zákonné povinnosti (doporučený standard).
-      </p>
-    </gov-tile>
-  </gov-card>
-</gov-container>
+  <gov-tile size="m" title="Adresy" href="https://ofn.gov.cz/adresy/" orientation="vertical">
+    <h3 slot="title">Adresy</h3>
+    <ul>
+      <li>Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.</li>
+      <li>Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.</li>
+      <li>Odkazuje na RÚIAN a návazné standardy prostorových dat.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Bezbariérovost" href="https://ofn.gov.cz/bezbariérovost/" orientation="vertical">
+    <h3 slot="title">Bezbariérovost</h3>
+    <ul>
+      <li>Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.</li>
+      <li>Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).</li>
+      <li>Využíváno jako sdílená vlastnost v nadřazených OFN.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Časová specifikace" href="https://ofn.gov.cz/časová-specifikace/" orientation="vertical">
+    <h3 slot="title">Časová specifikace</h3>
+    <ul>
+      <li>Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.</li>
+      <li>Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.</li>
+      <li>Využíváno jako sdílený modul v ostatních OFN.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Digitální objekty" href="https://ofn.gov.cz/digitální-objekty/" orientation="vertical">
+    <h3 slot="title">Digitální objekty</h3>
+    <ul>
+      <li>Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.</li>
+      <li>Vývojáři datových modelů spravující přílohy a elektronické dokumenty.</li>
+      <li>Využíváno napříč agendovými OFN.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Kontakty" href="https://ofn.gov.cz/kontakty/" orientation="vertical">
+    <h3 slot="title">Kontakty</h3>
+    <ul>
+      <li>Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).</li>
+      <li>Vývojáři datových modelů pro libovolné subjekty nebo služby.</li>
+      <li>Využíváno jako sdílený modul v ostatních OFN.</li>
+    </ul>
+  </gov-tile>
 
+  <gov-tile size="m" title="Lidé a osoby" href="https://ofn.gov.cz/lidé-a-osoby/" orientation="vertical">
+    <h3 slot="title">Lidé a osoby</h3>
+    <ul>
+      <li>Modul pro zápis informací o fyzických osobách, rolích a jejich identifikátorech v datových strukturách.</li>
+      <li>IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.</li>
+      <li>Využíváno v souladu s legislativou na ochranu osobních údajů.</li>
+    </ul>
+  </gov-tile>
 
-<gov-container class="no-outer-space">
-  <gov-card id="specifikace">
-    <div>
-      <h2>Základní specifikace</h2>
-      <p>Určeno pro vývojáře datových modelů. Nepředstavují samostatné datové sady, ale stavební moduly pro tematické OFN.</p>
-    </div>
+  <gov-tile size="m" title="Práce" href="https://ofn.gov.cz/práce/" orientation="vertical">
+    <h3 slot="title">Práce</h3>
+    <ul>
+      <li>Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.</li>
+      <li>Vývojáři datových modelů v oblasti zaměstnanosti a lidských zdrojů.</li>
+      <li>Využíváno v agendové OFN Pracovní místa.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Základní datové typy" href="https://ofn.gov.cz/základní-datové-typy/" orientation="vertical">
-      <h3 slot="title">Základní datové typy</h3>
-      <p>
-        – Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).<br>
-        – Vývojáři datových modelů a autorizovaní architekti specifikací.<br>
-        – Využíváno jako sdílený modul v ostatních agendových OFN.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Umístění" href="https://ofn.gov.cz/umístění/" orientation="vertical">
+    <h3 slot="title">Umístění</h3>
+    <ul>
+      <li>Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).</li>
+      <li>Vývojáři modelů pro infrastrukturu, události a objekty v terénu.</li>
+      <li>Souvisí s předpisy pro prostorové informace.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Věc" href="https://ofn.gov.cz/věc/" orientation="vertical">
-      <h3 slot="title">Věc</h3>
-      <p>
-        – Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).<br>
-        – Vývojáři datových struktur vytvářející nové OFN.<br>
-        – Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Vstupné" href="https://ofn.gov.cz/vstupné/" orientation="vertical">
+    <h3 slot="title">Vstupné</h3>
+    <ul>
+      <li>Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.</li>
+      <li>Vývojáři datových modelů pro události, turistické cíle a sportoviště.</li>
+      <li>Využíváno jako sdílený modul v ostatních OFN.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Adresy" href="https://ofn.gov.cz/adresy/" orientation="vertical">
-      <h3 slot="title">Adresy</h3>
-      <p>
-        – Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.<br>
-        – Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.<br>
-        – Odkazuje na RÚIAN a návazné standardy prostorových dat.
-      </p>
-    </gov-tile>
+</gov-card>
 
-    <gov-tile size="m" title="Bezbariérovost" href="https://ofn.gov.cz/bezbariérovost/" orientation="vertical">
-      <h3 slot="title">Bezbariérovost</h3>
-      <p>
-        – Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.<br>
-        – Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).<br>
-        – Využíváno jako sdílená vlastnost v nadřazených OFN.
-      </p>
-    </gov-tile>
+<gov-spacer size="m"></gov-spacer>
 
-    <gov-tile size="m" title="Časová specifikace" href="https://ofn.gov.cz/časová-specifikace/" orientation="vertical">
-      <h3 slot="title">Časová specifikace</h3>
-      <p>
-        – Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.<br>
-        – Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.<br>
-        – Využíváno jako sdílený modul v ostatních OFN.
-      </p>
-    </gov-tile>
+<gov-card id="egovernment">
+  <h2 slot="headline">Další specifikace</h2>
+  <p>Určeno pro správce spisových služeb, vývojáře formulářů apod. Sjednocuje strukturu digitálních výstupů a úkonů.</p>
 
-    <gov-tile size="m" title="Digitální objekty" href="https://ofn.gov.cz/digitální-objekty/" orientation="vertical">
-      <h3 slot="title">Digitální objekty</h3>
-      <p>
-        – Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.<br>
-        – Vývojáři datových modelů spravující přílohy a elektronické dokumenty.<br>
-        – Využíváno napříč agendovými OFN.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Společné části elektronických dokumentů" href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/" orientation="vertical">
+    <h3 slot="title">Společné části elektronických dokumentů</h3>
+    <ul>
+      <li>Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.</li>
+      <li>Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.</li>
+      <li>Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Kontakty" href="https://ofn.gov.cz/kontakty/" orientation="vertical">
-      <h3 slot="title">Kontakty</h3>
-      <p>
-        – Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).<br>
-        – Vývojáři datových modelů pro libovolné subjekty nebo služby.<br>
-        – Využíváno jako sdílený modul v ostatních OFN.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Dokumenty z formulářů pro elektronické podání dle ZoPDS" href="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/" orientation="vertical">
+    <h3 slot="title">Dokumenty z formulářů pro elektronické podání dle ZoPDS</h3>
+    <ul>
+      <li>Standardizuje strukturu dat vznikajících z elektronických formulářových podání.</li>
+      <li>Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.</li>
+      <li>Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Lidé a osoby" href="https://ofn.gov.cz/lidé-a-osoby/" orientation="vertical">
-      <h3 slot="title">Lidé a osoby</h3>
-      <p>
-        – Modul pro zápis informací o fyzických osobách, rolích a jejich identifikátorech v datových strukturách.<br>
-        – IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.<br>
-        – Využíváno v souladu s legislativou na ochranu osobních údajů.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Osvědčení digitálního úkonu" href="https://ofn.gov.cz/osvědčení-digitálního-úkonu/" orientation="vertical">
+    <h3 slot="title">Osvědčení digitálního úkonu</h3>
+    <ul>
+      <li>Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.</li>
+      <li>Správci informačních systémů veřejné správy poskytující digitální služby.</li>
+      <li>Zákon č. 12/2020 Sb. (ZoPDS).</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Práce" href="https://ofn.gov.cz/práce/" orientation="vertical">
-      <h3 slot="title">Práce</h3>
-      <p>
-        – Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.<br>
-        – Vývojáři datových modelů v oblasti zaměstnanosti a lidských zdrojů.<br>
-        – Využíváno v agendové OFN Pracovní místa.
-      </p>
-    </gov-tile>
+  <gov-tile size="m" title="Záznam IS nahrazující úředně ověřený podpis" href="https://ofn.gov.cz/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/" orientation="vertical">
+    <h3 slot="title">Záznam IS nahrazující úředně ověřený podpis</h3>
+    <ul>
+      <li>Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.</li>
+      <li>Správci autorizovaných ISVS a vývojáři eGovernment modulů.</li>
+      <li>Související předpisy pro elektronickou identifikaci a digitální úkony.</li>
+    </ul>
+  </gov-tile>
 
-    <gov-tile size="m" title="Umístění" href="https://ofn.gov.cz/umístění/" orientation="vertical">
-      <h3 slot="title">Umístění</h3>
-      <p>
-        – Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).<br>
-        – Vývojáři modelů pro infrastrukturu, události a objekty v terénu.<br>
-        – Souvisí s předpisy pro prostorové informace.
-      </p>
-    </gov-tile>
-
-    <gov-tile size="m" title="Vstupné" href="https://ofn.gov.cz/vstupné/" orientation="vertical">
-      <h3 slot="title">Vstupné</h3>
-      <p>
-        – Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.<br>
-        – Vývojáři datových modelů pro události, turistické cíle a sportoviště.<br>
-        – Využíváno jako sdílený modul v ostatních OFN.
-      </p>
-    </gov-tile>
-  </gov-card>
-</gov-container>
-
-
-
-<gov-container class="no-outer-space">
-  <gov-card id="egovernment">
-    <div>
-      <h2>Další specifikace</h2>
-      <p>Určeno pro správce spisových služeb, vývojáře formulářů apod. Sjednocuje strukturu digitálních výstupů a úkonů.</p>
-    </div>
-
-    <gov-tile size="m" title="Společné části elektronických dokumentů" href="https://ofn.gov.cz/společné-části-elektronických-dokumentů/" orientation="vertical">
-      <h3 slot="title">Společné části elektronických dokumentů</h3>
-      <p>
-        – Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.<br>
-        – Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.<br>
-        – Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).
-      </p>
-    </gov-tile>
-
-    <gov-tile size="m" title="Dokumenty z formulářů pro elektronické podání dle ZoPDS" href="https://ofn.gov.cz/dokumenty-z-formulářů-ZoPDS/" orientation="vertical">
-      <h3 slot="title">Dokumenty z formulářů pro elektronické podání dle ZoPDS</h3>
-      <p>
-        – Standardizuje strukturu dat vznikajících z elektronických formulářových podání.<br>
-        – Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.<br>
-        – Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).
-      </p>
-    </gov-tile>
-
-    <gov-tile size="m" title="Osvědčení digitálního úkonu" href="https://ofn.gov.cz/osvědčení-digitálního-úkonu/" orientation="vertical">
-      <h3 slot="title">Osvědčení digitálního úkonu</h3>
-      <p>
-        – Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.<br>
-        – Správci informačních systémů veřejné správy poskytující digitální služby.<br>
-        – Zákon č. 12/2020 Sb. (ZoPDS).
-      </p>
-    </gov-tile>
-
-    <gov-tile size="m" title="Záznam IS nahrazující úředně ověřený podpis" href="https://ofn.gov.cz/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/" orientation="vertical">
-      <h3 slot="title">Záznam IS nahrazující úředně ověřený podpis</h3>
-      <p>
-        – Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.<br>
-        – Správci autorizovaných ISVS a vývojáři eGovernment modulů.<br>
-        – Související předpisy pro elektronickou identifikaci a digitální úkony.
-      </p>
-    </gov-tile>
-
-    <gov-tile size="m" title="Schéma pro strojově čitelnou vrstvu statických komponent" href="https://ofn.gov.cz/metadata-dokumentů-veřejnoprávních-původců/" orientation="vertical">
-      <h3 slot="title">Schéma pro strojově čitelnou vrstvu statických komponent</h3>
-      <p>
-        – Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.<br>
-        – Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.<br>
-        – § 69a zákona č. 499/2004 Sb.
-      </p>
-    </gov-tile>
-  </gov-card>
-</gov-container>
-
-<br>
+  <gov-tile size="m" title="Schéma pro strojově čitelnou vrstvu statických komponent" href="https://ofn.gov.cz/metadata-dokumentů-veřejnoprávních-původců/" orientation="vertical">
+    <h3 slot="title">Schéma pro strojově čitelnou vrstvu statických komponent</h3>
+    <ul>
+      <li>Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.</li>
+      <li>Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.</li>
+      <li>§ 69a zákona č. 499/2004 Sb.</li>
+    </ul>
+  </gov-tile>
+</gov-card>

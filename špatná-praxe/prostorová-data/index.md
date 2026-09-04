@@ -12,13 +12,13 @@ Správnou praxí je poskytovat prostorovou složku formou geometrického objektu
 
 Pro ukázku uvádíme reprezentaci bodu jako geometrického objektu za použití obou výše zmíněných formátů i zde:
 
-**Reprezentace ve WKT**
+### Reprezentace ve WKT
 
 ```
 POINT(50.056 14.434)
 ```
 
-**Reprezentace v GML**
+### Reprezentace v GML
 
 ```
 <gml:Point srsName="urn:ogc:def:crs:EPSG::4326" srsDimension="2">
@@ -29,11 +29,11 @@ POINT(50.056 14.434)
 ## Nevhodná volba přesnosti souřadnic
 Častou chybou je nevhodná volba přesnosti souřadnic pro daný účel. Samozřejmostí je, že souřadnice by měly být dostatečně přesné, aby vyhovovaly účelu, pro který byla data pořizována, ale chybou je i přílišná podrobnost souřadnic. I u ostatních prostorových objektů především záleží na účelu, ke kterému je jeho pořízení určeno. Pro plánovaní tras autem mezi městy stačí reprezentace komunikací liniemi s přesností na několik metrů, ale pro plánování cyklopruhů na městských komunikací je potřeba reprezentace polygonem a vyšší přesnost, aby bylomožno lépe odhadnout šířku silnice.
 
-**Příklad příliš nízké přesnosti:**
+### Příklad příliš nízké přesnosti:
 
 Především v geodézii a v katastru nemovitostí je vyžadována vysoká přesnost. V případě bodů základního a podrobného polohového bodového pole je nutná zvýšená přesnost – body totiž slouží jako základ pro vyměřování v terénu a při výpočtu triangulací se každá chyba může až několikanásobně zvětšit.
 
-**Příklad přílišné přesnosti souřadnic:**
+### Příklad přílišné přesnosti souřadnic:
 
 V knize Novohradské Hory a Novohradské podhůří vydané nakladatelstvím Baset v roce 2006 jsou v kapitole Místopis uváděny souřadnice obcí v souřadnicovém systému S-JTSK uváděny na 5 desetinných míst, tedy na setiny milimetru. Vzhledem k tomu, že se jedná o definiční bod někde uvnitř obce, bylo by určení s přesností na metry zdaleka dostatečné.
 

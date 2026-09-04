@@ -8,7 +8,7 @@ lang: cs
 ## Žádné nebo nejednoznačné identifikátory
 Častým problémem v datových sadách jsou odkazy na nedostatečně identifikované entity. Příkladem může být datová sada příjemců dotací, kde příjemce dotace je identifikován pouze názvem, nikoliv pomocí IČO, nebo identifikace adresy několika textovými poli místo IRI adresního místa.
 
-**Řešení**
+### Řešení
 
 Řešením je si nejprve rozmyslet, na které entity (firmy, školy, adresy, …) se v datové sadě odkazuji, nejlépe formou konceptuálního modelu dat ([ER model](https://cs.wikipedia.org/wiki/Entity-relationship_model) či [UML diagram tříd](https://cs.wikipedia.org/wiki/Diagram_t%C5%99%C3%ADd)), který je následně součástí dokumentace datové sady. Druhým krokem je zjistit, jak se tyto entity obvykle jednoznačně identifikují, a tyto identifikátory v datové sadě použít.
 
@@ -35,6 +35,6 @@ Příkladem může být platnost záznamu, která se obvykle uvádí jako dvojic
     
 Všechny tyto hodnoty jsou samozřejmě špatně, a znesnadňují práci s takovýmito daty.
 
-**Řešení**
+### Řešení
 
 Řešením je opravit návrh systému, který neumožňuje říci, že datum ještě není známo a nenutit uživatele si vymýšlet „nekonečné“ hodnoty.

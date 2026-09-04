@@ -22,11 +22,11 @@ Takto zpřístupněná data totiž typicky postrádají minimálně 3 základní
 ## Užívání licencí tam, kde není třeba
 Licence je nástroj autorského práva (aplikovatelný i na zvláštní práva poskytovatele databáze), který umožňuje užití díla dalšími osobami, než je autor, nebo jiná doposud oprávněná osoba. Prostá data, tedy většina obsahu, který je poskytovaný jako otevřená data, však nepožívají žádné formy ochrany právy duševního vlastnictví a není tak přítomný žádný obsah, který by bylo možné licencovat. To platí i v případech, kdy se na dílo vztahuje výjimka úředního díla.
 
-**Symptomy**
+### Symptomy
 
 Použití licence, aniž by byl přítomný licencovatelný obsah, mate koncové uživatele, a navíc nemá žádnou právní relevanci.
 
-**Řešení**
+### Řešení
 
 Analýza obsahu právním oddělením a licencování opravdu jen takového obsahu, který je možné licencovat.
 
@@ -43,13 +43,13 @@ První úroveň problému představuje, když není jasné, jaký obsah je licen
 
 Druhá úroveň problému spočívá v tom, když není jasné, jaká licence je použita. Příkladem takové praxe je využívání odkazů jako je [https://opendefinition.org/licenses/cc-by/](https://opendefinition.org/licenses/cc-by/). Ačkoli poskytovatel, který tento odkaz použije, jedná v dobré víře, že licencuje pod CC BY, není vůbec jasné, jaké je konkrétní znění licence. Byť jde o licence z jedné „rodiny“, konkrétní podmínky se verzi od verze mohou lišit.
 
-**Symptomy**
+### Symptomy
 
 Generické umístění odkazu na licenci do metadat distribuce datové sady bez specifikace, k jakému obsahu se daný odkaz vztahuje.
 
 Umístění generického odkazu na „rodinu“ licencí, bez jasného určení o kterou se jedná. Příklad: [https://opendefinition.org/licenses/cc-by/](https://opendefinition.org/licenses/cc-by/). 
 
-**Řešení**
+### Řešení
 
 Přesné uvedení v metadatech distribuce datové sady, k jakému obsahu se vztahuje daná konkrétní licence. Využijte náš návod na [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
@@ -67,7 +67,7 @@ Obecně platí, že každý poskytovatel dat si může stanovit vlastní podmín
 
 Příkladem nevhodné formulace je např. „pravidla upravující opakované použití dokumentů poskytovatele neplatí pro dokumenty, na něž se vztahují práva duševního vlastnictví třetích stran“ – takové dokumenty by se v první řade neměly vůbec jako otevřená data v datové sadě objevit.
 
-**Symptomy**
+### Symptomy
 
 Nejasný význam podmínek užití, absence strojové čitelnosti, vnášení externích prvků do systému otevřených dat, přílišná až nezákonná limitace příjemce dat (např. smluvní ustanovení, které by omezovalo komerční užití dat).
 
@@ -75,7 +75,7 @@ Problém použití vlastních licencí je dobře viditelný, pokud se na takovou
 
 {% include image.html url="../../přílohy/špatná-praxe/vlastní_licence.webp" description="Vlastní licence" %}
 
-**Řešení**
+### Řešení
 
 Pro stanovení podmínek užití otevřených dat postupujte dle našeho návodu  [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
@@ -86,11 +86,11 @@ Doporučeným řešením je postupovat podle [průvodce registrací datové sady
 ## Vzdání se odpovědnosti
 V podmínkách užití se může objevit formulace vzdání se odpovědnosti za škodu způsobenou užíváním dat. Poskytovatel dat se ovšem nemůže vzdát absolutně vší odpovědnosti za svá data. Příkladem je situace, kdy poskytovatel data poskytuje na základě zákonné povinnosti. V takovém případě se jedná o úřední úkon a je presumována jeho správnost. Pokud by vznikla škoda z důvodu chyby v datové sadě, nesl by za ni poskytovatel dat odpovědnost ve smyslu [zákona č. 82/1998 Sb., o odpovědnosti za škodu způsobenou při výkonu veřejné moci rozhodnutím nebo nesprávným úředním postupem](https://e-sbirka.gov.cz/sb/1998/82/1998-05-15).
 
-**Symptomy**
+### Symptomy
 
 Jednotná stránka obsahující text vzdání se odpovědnosti, na kterou odkazují metadata všech distribucí poskytovatele. Takový stav může způsobit zmatení koncového uživatele a uvést jej v omyl.
 
-**Řešení**
+### Řešení
 
 Před uvedením textu, kterým se poskytovatel dat vzdává odpovědnosti je třeba zpracovat právní analýzu a vyhodnotit, zda je možné se odpovědnosti plně vzdát. Pokud tomu tak v některých případech není, podmínky užití tento fakt musí reflektovat.
 
@@ -109,11 +109,11 @@ Chyby se stávají rovněž ve formulaci licenční doložky. Korektní vyjádř
   * Pro databázi chráněnou zvláštními právy pořizovatele databáze: Databáze a pořizovatel databáze jsou již jednoznačně identifikováni distribucí a odkaz na konkrétní licenci je uveden v položce “Licence”, např. [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/).
 Je rovněž nutné odkazovat na konkrétní vyjádření vybrané licence. Ideální je odkazovat na pro lidi srozumitelná zkrácená znění licencí (tzv. „deed“). Odkaz na náhodné stránky (např. [http://www.opendefinition.org/licenses/cc-by-sa](http://www.opendefinition.org/licenses/cc-by-s)), které neobsahují konkrétní licenci není korektní.
 
-**Symptomy**
+### Symptomy
 
 Různé chyby při aplikaci licencí Creative Commons.
 
-**Řešení**
+### Řešení
 
 Vyvarovat se chyb a použít náš návod [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/stanovení-podmínek-užití/).
 

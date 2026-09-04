@@ -8,33 +8,33 @@ lang: cs
 ## Jiné kódování než UTF-8
 Jediné přípustné kódování CSV souboru je **UTF-8**, což řeší problémy s interoperabilitou na webu, zejména pak s diakritikou a písmeny z různých abeced. Může se ale stát, že váš soubor používá jiné kódování, v českém prostředí zejména **Windows-1250** či **ISO-8859-2**, a proto není validní.
 
-**Symptomy**
+### Symptomy
 
 Nejčastějším symptomem je chybné zobrazení diakritiky.
 
 {% include image.html url="../../přílohy/špatná-praxe/csv-kodovani.webp" description="CSV kódování" %}
 
-**Ověření problému**
+### Ověření problému
 
 Chybné kódování lze zjistit buďto použitím [validátoru](http://csvlint.io/), nebo také otevřením souboru [textovém editoru](https://notepad-plus-plus.org/). Na obrázku je kódování **ANSI**, což odpovídá **ISO-8859-2**.
 
 {% include image.html url="../../přílohy/špatná-praxe/csv-ansi.webp" description="CSV ANSI" %}
 
-**Řešení**
+### Řešení
 
 Je třeba zajistit, že soubor je v kódování **UTF-8**. To lze několika způsoby.
 
-**Správné nastavení výstupu u zdroje**
+### Správné nastavení výstupu u zdroje
 
 Nejjednodušší je zásah u zdroje problému, tedy pokud CSV soubor exportujeme z databáze, nebo generujeme v kódu aplikace, mělo by jít nastavit **UTF-8** jako výstupní kódování tam.
 
-**Konverze souboru v textovém editoru**
+### Konverze souboru v textovém editoru
 
 Pokud nemáme přístup ke zdroji, je třeba samotný CSV soubor překódovat, což lze například opět v [textovém editoru](https://notepad-plus-plus.org/), jak je vidět na obrázku.
 
 {% include image.html url="../../přílohy/špatná-praxe/csv-konverze.webp" description="CSV konverze" %}
 
-**Konverze z pomocí Google Sheets**
+### Konverze z pomocí Google Sheets
 
 Můžeme rovněž využít Google Sheets, který si s chybným kódováním poradí a nechá nás stáhnout validní CSV. Budeme potřebovat Google účet, který ale [lze zřídit zdarma](https://accounts.google.com/SignUp).
 
@@ -46,25 +46,25 @@ Můžeme rovněž využít Google Sheets, který si s chybným kódováním pora
 ## Jiný oddělovač než čárka
 Jediný přípustný oddělovač údajů v CSV souboru je (jak už plyne z názvu formátu, tj. Comma Separated Values) čárka, tj. znak , s UTF-8 kódem U+002C. Může se ale stát, že váš soubor používá jiný oddělovač, v českém prostředí zejména středník ;, a proto není validní. Nejčastěji je to způsobeno tvorbou CSV souboru pomocí exportu tabulky z aplikace Microsoft Excel, která má ale podporu CSV implementovánu chybně.
 
-**Symptomy**
+### Symptomy
 
 Po otevření CSV souboru tabulkovým editorem jsou všechny údaje na řádku zobrazeny v jedné buňce.
 
 {% include image.html url="../../přílohy/špatná-praxe/csv-stredniky.webp" description="CSV středníky" %}
 
-**Ověření problému**
+### Ověření problému
 
 Chybný oddělovač lze zjistit buďto použitím validátoru, nebo jednoduše otevřením souboru textovém editoru a vizuální kontrolou oddělovače.
 
-**Řešení**
+### Řešení
 
 Je třeba zajistit, že soubor používá správný oddělovač, tzn. čárku ,. To lze několika způsoby.
 
-**Správné nastavení výstupu u zdroje**
+### Správné nastavení výstupu u zdroje
 
 Nejjednodušší je zásah u zdroje problému, tedy pokud CSV soubor exportujeme z databáze, nebo generujeme v kódu aplikace, mělo by jít oddělovač nastavit na čárku.
 
-**Konverze pomocí Google Sheets pro menší soubory**
+### Konverze pomocí Google Sheets pro menší soubory
 
 Jedna z cest k validnímu CSV vede přes použití importní funkce Google Sheets, která ale funguje jen pro menší soubory. Budeme potřebovat Google účet, který ale [lze zřídit zdarma](https://accounts.google.com/SignUp).
 
@@ -89,7 +89,7 @@ Jedna z cest k validnímu CSV vede přes použití importní funkce Google Sheet
 
 {% include image.html url="../../přílohy/špatná-praxe/csv-gs-import-5.webp" description="CSV Import" %}
 
-**Konverze z Microsoft Excel**
+### Konverze z Microsoft Excel
 
 Microsoft Excel má export CSV souboru chybně implementován. Jako oddělovač volí to, co má operační systém Windows nastaveno v Regionálním nastavení jako oddělovač seznamu, což je v českém prostředí středník **;**. Výsledkem je tedy nevalidní soubor. Mohlo by se zdát, že řešením je tedy přenastavit toto nastavení. Řešení je to ale jen částečné, protože vzniklý soubor stejně není v kódování UTF-8 a byla by nutná další konverze. Můžeme ale rovněž využít Google Sheets jako v předešlém kroku, a to i pro velké XLS(X) soubory.
 
@@ -101,12 +101,12 @@ Microsoft Excel má export CSV souboru chybně implementován. Jako oddělovač 
 ## Chybné escapování čárek a uvozovek
 Pokud údaj v CSV souboru obsahuje čárku, je třeba celý údaj uzavřít do uvozovek. Pokud údaj obsahuje uvozovku, je jí třeba zdvojit. Tím se řeší výskyt pro CSV speciálních znaků uvnitř hodnot (tzv. „escapování“). Může se ale stát, že máte soubor, ve kterém je escapování uděláno chybně.
 
-**Symptomy**
+### Symptomy
 
   * Část souboru se zobrazuje správně, a od určitého místa je zbytek souboru vložen do jedné buňky.
   * [Validátor](http://csvlint.io/) hlásí, že některý řádek souboru má jiný počet sloupců než jiný.
 
-**Řešení**
+### Řešení
 
 Je třeba zajistit dodržování pravidel pro escapování při exportu dat do CSV. Obraťte se na dodavatele software, který data chybně exportuje. Druhou možností je v textovém editoru tyto chyby ručně detekovat a opravovat.
 
@@ -115,11 +115,11 @@ Formát CSV je určen pro strojové zpracování, nikoliv pro čtení lidmi či 
 
 Může se ale stát, že máte CSV soubor, který používá mezery v číslech, které vznikly formátováním pro zobrazení či pro tisk, tedy například **100 000**.
 
-**Symptomy**
+### Symptomy
 
 Tabulkový editor nedokáže s čísly s mezerami pracovat jako s čísly a vidí je jako text.
 
-**Řešení**
+### Řešení
 
 Je třeba zajistit odstranění mezer z čísel. Pro celá čísla se používá [syntaxe pro datový typ xsd:integer](https://www.w3.org/TR/xmlschema-2/#integer), tedy čísla bez mezer, např. **100000**, záporná začínají mínusem , např. **-100000**.
 
@@ -160,11 +160,11 @@ Formát CSV je určen pro strojové zpracování, nikoliv pro čtení lidmi či 
 
 Může se ale stát, že máte CSV soubor, který používá jako oddělovač desetinných míst čárku 3,14, zatímco standardní oddělovač desetinných míst je tečka **3.14**.
 
-**Symptomy**
+### Symptomy
 
 Tabulkový editor nedokáže s čísly s desetinnými místy oddělenými čárkou pracovat jako s čísly a vidí je jako text.
 
-**Řešení**
+### Řešení
 
 Je třeba zajistit použití tečky jakožto oddělovače desetinných čísel. Pro desetinná čísla s pevnou desetinnou čárkou se používá [syntaxe pro datový typ xsd:decimal](https://www.w3.org/TR/xmlschema-2/#decimal), tedy např. **3.14**, záporná začínají mínusem , např. **-3.14**. Pro desetinná čísla s plovoucí desetinnou čárkou se používá [syntaxe pro datový typ xsd:double](https://www.w3.org/TR/xmlschema-2/#double), tedy např. **12.78e-2**.
 
@@ -173,11 +173,11 @@ Formát CSV je určen pro strojové zpracování dat, nikoliv pro čtení dat li
 
 Může se ale stát, že máte CSV soubor, který používá pro datumy a časy jinou syntaxi, v českém prostředí zejména **1. září 2017** nebo **9.4.2017** apod., což zbytečně znesnadňuje použití.
 
-**Symptomy**
+### Symptomy
 
 Tabulkový editor nedokáže s datumy pracovat jako s datumy a vidí je jako text nebo číslo.
 
-**Řešení**
+### Řešení
 
 Je třeba zajistit použití správné syntaxe pro datumy a časy, tedy zjednodušeně YYYY-MM-DD pro data, HH:MM:SS pro čas, YYYY-MM-DDTHH:MM:SS pro datum a čas. Správná syntaxe pro [datumy](https://ofn.gov.cz/základní-datové-typy/2020-07-01/#datum), [časy](https://ofn.gov.cz/základní-datové-typy/2020-07-01/#čas) a [data a časy](https://ofn.gov.cz/základní-datové-typy/2020-07-01/#datum-a-čas) je specifikována příslušnou [Otevřenou formální normou pro základní datové typy](https://ofn.gov.cz/základní-datové-typy/2020-07-01/). Tedy např. **2017-09-04** pro datum bez časové zóny, **2019-01-01+01:00** pro datum s časovou zónou, **09:30:00** pro čas bez časové zóny, **09:30:10.5+01:00** pro čas s časovou zónou a pokud je specifikováno datum i čas, pak **2019-01-01T09:30:00+02:00** či **2019-01-01T09:30:10.5+01:00**.
 
@@ -239,7 +239,7 @@ r3 : R3. Jak dlouho bydlíte v Brně? ;;;;;;;;;;;;
 ```
 
 
-**Řešení**
+### Řešení
 
 Data do CSV je třeba převádět tak, aby vznikla tabulka bez děr, snadno zpracovatelná, tak, aby každý řádek obsahoval kompletní informaci o reprezentované entitě či záznamu. Pokud je zdrojem tabulka formátovaná pro tisk či pro čtení lidmi, je třeba nejprve bez újmy na obsahu:
   * Odstranit formátování.
@@ -255,7 +255,7 @@ Bez zřizovatele,z.ú. - Zapsaný ústav,62695487,null,495 401 565,null,"Sadová
 ```
 
 
-**Řešení**
+### Řešení
 
 Prázdné hodnoty nechte jako prázdné, tedy:
 
@@ -266,7 +266,7 @@ Bez zřizovatele,z.ú. - Zapsaný ústav,62695487,,495 401 565,,"Sadová 2107,28
 ## Implicitní číselníky
 Soubor obsahuje v některých sloupcích hodnoty z nějakého číselníku. Příkladem mohou být sloupce „Druh zřizovatele“ či „Druh sociální služby“, tedy sloupce, kde možné hodnoty jsou dány nějakým výčtem. Jedná se tedy o implicitní číselník - nikde není publikován samostatně a existuje jen jako množina hodnot použitých uvnitř jiné datové sady. Zde je třeba zvážit, zda tento číselník nepublikovat jako samostatnou datovou sadu. Pro uživatele totiž bývá zajímavé vědět, odkud se tyto hodnoty berou, jak často jsou aktualizovány, ale hlavně jaké všechny hodnoty se v této položce mohou vyskytovat. Mohou totiž existovat hodnoty, které v daném místě mohou být použity, ale v aktuálních datech se nevyskytují. Uživatel se tedy o nich nedozví, a až se v datech objeví, nebude je umět správně zpracovat. Pokud je navíc tento implicitní číselník použit ve více datových sadách, jde o další argument pro to ho publikovat jako samostatnou datovou sadu.
 
-**Řešení**
+### Řešení
 
 Publikovat číselník jako samostatnou datovou sadu s řádnou dokumentací a metadaty. V dokumentaci původní sady by měl být na tuto novou číselníkovou datovou sadu odkaz.
 
@@ -282,7 +282,7 @@ se pracuje velice těžko. Je třeba zvolit jeden styl pojmenovávání sloupců
 ## Chybějící schéma
 CSV soubor obsahuje tabulková data, a volitelně na prvním řádku hlavičku s krátkými jmény sloupců. To ale není dostatečný popis obsažených dat. Uživatel či aplikace se nedozví například datové typy údajů ve sloupcích, delší popisy sloupců, názvy sloupců ve více jazycích či další informace.
 
-**Řešení**
+### Řešení
 
 Každý publikovaný CSV soubor by [měl být opatřen svým schématem](https://data.gov.cz/otevřená-data/pro-poskytovatele/technické-standardy-stupeň-otevřenosti-3/v) dle [standardu W3C Metadata Vocabulary for Tabular Data](https://www.w3.org/TR/tabular-metadata/) ve formě souboru či sady souborů ve formátu JSON-LD popisujícím publikovaný CSV soubor.
 
@@ -307,7 +307,7 @@ Sloupec **SLOZENI** totiž obsahuje čárkou oddělený seznam ID stran, které 
 
 Jsou 2 možnosti řešení.
 
-**Dělení na 2 datové sady**
+### Dělení na 2 datové sady
 
 Toto byly 2 datové sady, „Číselník stran pro volby 2016“ a „Příslušnost stran do koalic pro volby 2016“. CSV druhé datové sady by vypadalo třeba takto:
 
@@ -323,7 +323,7 @@ KOALICE,STRANA
 
 Pro normalizaci databází se používají různě přísné [normální formy](https://en.wikipedia.org/wiki/Database_normalization). [První normální forma](https://en.wikipedia.org/wiki/First_normal_form) zakazuje strukturované hodnoty, tedy například seznamy. Je to proto, že se pak s takovou hodnotou nedá rozumně pracovat, a data se musí před použitím předzpracovávat, rozpadat na více tabulek.
 
-**Duplikace řádku**
+### Duplikace řádku
 
 Druhou možností je seznam rozpadnout do jednotlivých řádků, kde hodnoty ve zbylých sloupcích zůstanou stejné. Tomuto postupu se také říká denormalizovaná tabulka.
 
@@ -340,7 +340,7 @@ VSTRANA,NAZEVCELK,SLOZENI,TYPVS
 ## Chybná hlavička HTTP Content-Type u CSV souboru
 I u CSV souboru se správným kódováním **UTF-8** vystaveném na webu se může stát, že se diakritika v takovém souboru v prohlížeči nebude zobrazovat správně. Pravděpodobně je na vině špatná HTTP hlavička **Content-Type** v odpovědi se souborem, která by správně měla kódování obsahovat: **Content-Type: text/csv; charset=utf-8**. Vyskytují se ale případy, kdy v hodnotě kódování chybí, tj. **Content-Type: text/csv**, a tedy prohlížeč neví, že má zobrazovat kódování UTF-8, a nebo je dokonce indikován špatný typ, například **Content-Type: text/plain** nebo **Content-Type: application/octet-stream**. Obecnější informace o tomto tématu naleznete v sekci na téma Chybná hlavička HTTP Content-Type.
 
-**Řešení**
+### Řešení
 
 Je třeba nakonfigurovat webový server tak, aby soubory CSV poskytoval se správnou hlavičkou, tj. **Content-Type: text/csv;charset=utf-8;header=present** v případě CSV s hlavičkou a **Content-Type: text/csv;charset=utf-8;header=absent** v případě CSV bez hlavičky, které ale nedoporučujeme používat. Například pro webový server **nginx** je třeba použít v konfiguraci **types { „text/csv;charset=utf-8;header=present“ csv; }** - uvozovka zde má být běžná dvojitá uvozovka, nikoliv horní a dolní.
 

@@ -17,11 +17,11 @@ V dnešní době již neexistuje žádný argument pro poskytování obsahu na w
     
 ### Nejčastější mýty podporující nezabezpečený protokol HTTP
 
-**Jedná se o otevřená data (případně veřejný web bez přihlašování). Proč tedy obsah šifrovat?**
+#### Jedná se o otevřená data (případně veřejný web bez přihlašování). Proč tedy obsah šifrovat?
 
 HTTPS neslouží jen pro šifrování, tedy zajištění toho, že při přenosu dat ze serveru na klienta si jejich obsah nepřečte třetí strana. Slouží i pro ověření, že server je ten, za který se vydává. To už má smysl i v případě otevřených dat a jiného webového obsahu. Klient (uživatel) si může být jist, že data či jiný obsah není podvržen. Další argumenty naleznete na stránce [Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https).
 
-**Zajištění certifikátu a jeho pravidelná obnova jsou drahé**
+#### Zajištění certifikátu a jeho pravidelná obnova jsou drahé
 
 To je nesmysl. Existuje například certifikační autorita [Let's Encrypt](https://letsencrypt.org/), která certifikáty a jejich automatickou obnovu poskytuje v základní verzi zdarma. Její službu používá i tento web.
 
@@ -34,22 +34,22 @@ I přesto, že máte protokol HTTPS na vašem webovém serveru implementován a 
 ### Jak zajistit správnou implementaci HTTPS
 Správnou konfiguraci SSL na straně webového serveru můžete provést s pomocí nástroje [Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/), který poskytuje vzorové konfigurace pro řadu webových serverů. Úroveň konfigurace volte na úrovni Modern. Pro kontrolu kvality implementace protokolu HTTPS na vašem serveru můžete použít například [Qualys SSL Labs](https://www.ssllabs.com/ssltest/) - stačí zadat vaši doménu. Snažte se dosáhnout hodnocení alespoň A, lépe však A+. Vyžadujte to případně po svých dodavatelích. Rozdíl mezi špatným a dobrým skóre je jasný:
 
-**Špatně**
+#### Špatně
 
 {% include image.html url="../../přílohy/špatná-praxe/https-fail.webp" description="HTTPS-Fail " %}
 
-**Dobře**
+#### Dobře
 
 {% include image.html url="../../přílohy/špatná-praxe/https-pass.webp" description="HTTPS-Pass " %}
 
 ### Souběžná podpora HTTP a HTTPS
 I při správné implementaci HTTPS je třeba rozhodnout o souběžné podpoře protokolu HTTP. Uživatel totiž typicky zadává do prohlížeče adresu bez protokolu, například data.gov.cz. Pak musí prohlížeč vědět, jak ke stránce přistoupit. Ve výchozím nastavení se prohlížeč pokusí nejprve připojit přes protokol HTTP (port 80). Toto lze řešit pouze dvěma způsoby Buďto protokol HTTP nebude podporován vůbec a doména bude zanesena to seznamu HSTS Preload, prohlížeč pak přímo použije HTTPS. Druhou možností je, že webserver bude nakonfigurován tak, že protokol HTTP bude sloužit pouze k přesměrování na protokol HTTPS.
 
-**Bez podpory HTTP, s registrací to seznamu HSTS**
+#### Bez podpory HTTP, s registrací to seznamu HSTS
 
 V této variantě webserver vůbec protokol HTTP na portu 80 nepodporuje. Pak je ale třeba doménu zanést do seznamu [HSTS Preload](https://hstspreload.org/), aby prohlížeč klienta při zadání adresy bez HTTPS věděl, že se má připojovat rovnou přes HTTPS, nikoliv HTTP, což by vedlo k chybě.
 
-**Přesměrování HTTP na HTTPS**
+#### Přesměrování HTTP na HTTPS
 
 V této variantě se libovolný požadavek na adresu přes protokol HTTP (port 80) pouze přesměruje na ekvivalentní HTTPS adresu (port 443) pomocí HTTP stavového kódu 301 Moved Permanently.
 
@@ -169,11 +169,11 @@ Otevřená data se obvykle reprezentují v textových formátech. Znaky v těcht
 ## Chybějící podpora Cross-Origin Resource Sharing (CORS)
 Cross-Origin Resource Sharing (CORS) je technika využívající hlaviček protokolu HTTP, která umožňuje aplikacím běžícím ve webovém prohlížeči přistoupit ke zdroji (datům), který leží na jiné doméně než na které běží ona aplikace. Takový přístup je ve výchozím stavu z bezpečnostních důvodů zablokován. V kontextu otevřených dat je ale žádoucí, aby takovým aplikacím byl přístup k datům umožněn. Detailně se způsobu fungování CORS věnuje [web enable-cors.org](https://enable-cors.org/) (anglicky), kde lze nalézt i příklady konfigurace pro jednotlivé webservery, či [článek o CORS na webu Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (anglicky).
 
-**Symptomy**
+### Symptomy
 
 Při přístupu aplikace běžící v problížeči k otevřeným datům přístupným přes webserver nepodporující CORS je tento přístup zablokován. V konzoli prohlížeče je hláška podobná této: **XMLHttpRequest cannot load [http://localhost:3000/example](http://localhost:3000/example). No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin '[http://localhost:8080](http://localhost:8080/)' is therefore not allowed access.**.
 
-**Řešení**
+### Řešení
 
 Pro přístup ke čtení otevřených dat se dá CORS vyřešit velmi zjednodušeně tak, že webový server bude při přístupu ke zdroji (souboru) pomocí HTTP metod **GET**, **HEAD** a **OPTIONS** vracet hlavičku **Access-Control-Allow-Origin** s hodnotou *, případně ještě hlavičku **Access-Control-Allow-Methods** s hodnotou **GET**, **HEAD**, **OPTIONS**. Pro složitější konfiguraci se řiďte [webem enable-cors.org](https://enable-cors.org/) (anglicky).
 

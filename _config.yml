@@ -34,4 +34,4 @@ suggestion_form: https://forms.office.com/e/UuwD7UBnRG
 lkod_validator: https://datagov-cz.github.io/lkod-validator/
 
 # Path to design-system distribution directory, must not end with '/'.
-design_system_assets: /assets/design-system
+design_system_assets: /assets/design-system/4.7

@@ -20,7 +20,14 @@ Naší ambicí je proto propojit tyto povinnosti (dosud řešené bez vzájemný
 
 Silnou legislativní oporou pro implementaci strategie a rozvoj kvalitní správy dat ve veřejném sektoru je [zákon o správě dat a o řízeném přístupu k datům], který vešel v platnost v květnu 2026. Tento zákon stanoví úřadům obecnou povinnost řádně spravovat svá data v souladu s metodickými pokyny Digitální a informační agentury. Řadu takových pokynů máte možnost najít na těchto stránkách.
 
-Obsah zákona se v části věnované správě dat dále zaměřuje na povinnosti související s popisováním a katalogizací dat. Tyto povinnosti směřují k popisu a katalogizaci dat, jakožto klíčovým předpokladům pro dohledatelnost, správné pochopení a tím i další využitelnost dat. Výsledkem bude postupné rozšiřování systematického přehledu o struktuře a významu spravovaných dat v jednotné podobě (tzv. lokálního katalogu dat). Ta umožní efektivně zjistit, jaká data spravuje daný úřad a (v sourhnu všech takto postupujících úřadů) veřejná správa jako celek (v tzv. národním katalogu dat).  
+Obsah zákona se v části věnované správě dat dále zaměřuje na povinnosti související s popisováním a katalogizací dat. Tyto povinnosti směřují k popisu a katalogizaci dat, jakožto klíčovým předpokladům pro dohledatelnost, správné pochopení a tím i další využitelnost dat. Výsledkem bude postupné rozšiřování systematického přehledu o struktuře a významu spravovaných dat v jednotné podobě (tzv. lokálního katalogu dat). Ta umožní efektivně zjistit, jaká data spravuje daný úřad a (v sourhnu všech takto postupujících úřadů) veřejná správa jako celek (v tzv. národním katalogu dat). 
+
+
+<gov-accordion-item size="m">
+<h2 slot="label">Gov.cz design system</h2>
+<p>Nulla non lectus sed nisl molestie malesuada. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Nunc tincidunt ante vitae massa. Nam sed tellus id magna elementum tincidunt.</p>
+</gov-accordion-item>
+
 
 Zbývající část zákona řeší zajištění tzv. řízeného přístupu k datům veřejné správy (v souladu s nařízením o evropské správě dat – Data Governance Act) oprávněnému žadateli při splnění zákonem daných podmínek (prokázané legitimní důvody využití dat apod.).
 Podrobněji se tomuto tématu věnujeme na Portálu o datech v tomto [článku].  

@@ -16,26 +16,30 @@ Přesto bylo toto téma již dlouhodobě alespoň dílčím způsobem řešeno d
 - povinnosti týkající se kategorizace dat vyplývající z *vyhlášky 360/2023 Sb. o dlouhodobém řízení informačních systémů veřejné správy*,
 - povinnosti týkající se řízení rizik vyplývající ze *zákona č. 181/2014 Sb., o kybernetické bezpečnosti a na něj navazujících předpisů*. 
 
+## Zákon o správě dat a řízeném přístupu k datům
+
 Silnou legislativní oporou pro implementaci strategie a rozvoj kvalitní správy dat ve veřejném sektoru je [zákon o správě dat a o řízeném přístupu k datům], který vešel v platnost v květnu 2026. Tento zákon stanoví úřadům obecnou povinnost řádně spravovat svá data v souladu s metodickými pokyny Digitální a informační agentury. Řadu takových pokynů máte možnost najít na těchto stránkách.
+
+**Zákon se vztahuje na data a provozní údaje vedené v informačních systémech veřejné správy, pokud se na ně nevztahuje některá z výjimek uvedených v § 2 zákona.** Každý správce informačního systému veřejné správy by měl sám posoudit, zda se zákon vztahuje na jím spravované systémy a data a zda se na některý systém, jeho část nebo konkrétní data neuplatní některá z výjimek podle § 2 zákona. Správce systému je pro toto posouzení v nejlepší pozici, protože zná účel systému, jeho funkce i charakter dat, která jsou v něm vedena.
+
+**Na provozní údaje se vztahují pouze základní povinnosti podle § 5 zákona.** Povinnosti týkající se jejich popisu metadaty, tedy tvorby datových slovníků, ani povinnosti související s řízeným přístupem se na provozní údaje nevztahují.
 
 Obsah zákona se v části věnované správě dat dále zaměřuje na povinnosti související s popisováním a katalogizací dat. Tyto povinnosti směřují k popisu a katalogizaci dat, jakožto klíčovým předpokladům pro dohledatelnost, správné pochopení a tím i další využitelnost dat. Výsledkem bude postupné rozšiřování systematického přehledu o struktuře a významu spravovaných dat v jednotné podobě (tzv. lokálního katalogu dat). Ta umožní efektivně zjistit, jaká data spravuje daný úřad a (v sourhnu všech takto postupujících úřadů) veřejná správa jako celek (v tzv. národním katalogu dat).  
 
-Zbývající část zákona řeší zajištění tzv. řízeného přístupu k datům veřejné správy (v souladu s nařízením o evropské správě dat – Data Governance Act) oprávněnému žadateli při splnění zákonem daných podmínek (prokázané legitimní důvody využití dat apod.).
+**Přestože povinnosti podle § 6 až 8 nabývají účinnosti až 1. ledna 2029, není vhodné přípravu odkládat.** Zavedení kvalitní správy dat je dlouhodobá a systematická činnost, která vyžaduje spolupráci odborníků z věcných, datových i technických oblastí. S ohledem na omezené kapacity je proto vhodné jednotlivé kroky zavádět postupně.
+
+Digitální a informační agentura průběžně aktualizuje metodické materiály tak, aby reagovaly na praktické zkušenosti z aplikace zákona a pomáhaly správcům dat s postupnou přípravou na plnění těchto povinností.
+
+Zbývající část zákona řeší zajištění tzv. [řízeného přístupu k datům veřejné správy] (v souladu s nařízením o evropské správě dat – Data Governance Act) oprávněnému žadateli při splnění zákonem daných podmínek (prokázané legitimní důvody využití dat apod.).
+
+Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 
 
 
 
 <h1>Podrobnosti k povinnostem vyplývajícím ze Zákona o správě dat a řízeném přístupu k datům</h1>
 
-<gov-accordion-item size="m">
-  <h2 slot="label">Vztahuje se na data a provozní údaje vedené v informačních systémech veřejné správy.</h2>
 
-  <p>Zákon se vztahuje na data a provozní údaje vedené v informačních systémech veřejné správy, pokud se na ně nevztahuje některá z výjimek uvedených v § 2 zákona.</p>
-
-  <p>Každý správce informačního systému veřejné správy by měl sám posoudit, zda se zákon vztahuje na jím spravované systémy a data a zda se na některý systém, jeho část nebo konkrétní data neuplatní některá z výjimek podle § 2 zákona. Správce systému je pro toto posouzení v nejlepší pozici, protože zná účel systému, jeho funkce i charakter dat, která jsou v něm vedena.</p>
-
-  <p>Na provozní údaje se vztahují pouze základní povinnosti podle § 5 zákona. Povinnosti týkající se jejich popisu metadaty, tedy tvorby datových slovníků, ani povinnosti související s řízeným přístupem se na provozní údaje nevztahují.</p>
-</gov-accordion-item>
 
 <gov-accordion-item size="m">
   <h2 slot="label">Základní povinnosti při správě dat podle §5. §5/1 Správce dat při vytváření, úpravě, pozměňování, uchovávání, zpřístupňování a využívání dat a provozních údajů chrání jejich důvěryhodnost, užitečnost a význam</h2>
@@ -76,16 +80,7 @@ Zbývající část zákona řeší zajištění tzv. řízeného přístupu k�
 <gov-accordion-item size="m">
   <h2 slot="label">§5/3 Správce dat si stanoví vnitřní pravidla pro správu dat, provozních údajů a datových rozhraní, uplatňuje je v praxi a zajišťuje jejich dodržování. Správce dat vymezí ve vnitřních pravidlech pro správu dat, provozních údajů a datových rozhraní principy a opatření pro řádnou správu dat, provozních údajů a datových rozhraní.</h2>
 
-  <p>Stanovuje povinnost přijmout vnitřní pravidla pro správu dat. Metodické pokyny a vzory pro regulaci nakládání s daty a provozními údaji uvnitř úřadu připravila Digitální a informační agentura v podobě návrhu <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#intern%C3%AD-pravidla-a-principy-spr%C3%A1vy-dat" title="interních pravidel a principů správy dat">interních pravidel a principů správy dat</a>.</p>
-</gov-accordion-item>
-
-<gov-accordion-item size="m">
-  <h2 slot="label">Ustanovení § 6 až 8 a § 32</h2>
-
-  <p>Přestože povinnosti podle § 6 až 8 nabývají účinnosti až 1. ledna 2029, není vhodné přípravu odkládat. Zavedení kvalitní správy dat je dlouhodobá a systematická činnost, která vyžaduje spolupráci odborníků z věcných, datových i technických oblastí. S ohledem na omezené kapacity je proto vhodné jednotlivé kroky zavádět postupně.</p>
-
-  <p>Digitální a informační agentura průběžně aktualizuje metodické materiály tak, aby reagovaly na praktické zkušenosti z aplikace zákona a pomáhaly správcům dat s postupnou přípravou na plnění těchto povinností.</p>
-</gov-accordion-item>
+  <p>Stanovuje povinnost přijmout vnitřní pravidla pro správu dat. Metodické pokyny a vzory pro regulaci nakládání s daty a provozními údaji uvnitř úřadu připravila Digitální a informační agentura v podobě návrhu <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#intern%C3%AD-pravidla-a-principy-spr%C3%A1vy-dat" title="interních pravidel a principů správy dat">interních pravidel a principů správy dat</a>.</p></gov-accordion-item>
 
 <gov-accordion-item size="m">
   <h2 slot="label">§6/1 Správce dat popíše do datového slovníku data vedená v informačním systému veřejné správy metadaty podle otevřené formální normy zveřejněné Digitální a informační agenturou způsobem umožňujícím dálkový přístup.</h2>
@@ -153,3 +148,5 @@ Zbývající část zákona řeší zajištění tzv. řízeného přístupu k�
 [Strategie pro správu dat]: https://data.gov.cz/přílohy/správa-dat/STRATEGIE_pro_spravu_dat_ve_VS.pdf "Strategie pro správu dat"
 [Informační koncepci ČR]: https://archi.gov.cz/ikcr "Informační koncepci ČR"
 [zákon o správě dat a o řízeném přístupu k datům]: https://e-sbirka.gov.cz/sb/2026/60?zalozka=text "zákon o správě dat a o řízeném přístupu k datům"
+[článku]: https://data.gov.cz/%C4%8Dl%C3%A1nky/Z%C3%A1kon-o-spr%C3%A1v%C4%9B-dat-a-%C5%99%C3%ADzen%C3%A9m-p%C5%99%C3%ADstupu-k-dat%C5%AFm-2 "článku"
+[řízeného přístupu k datům veřejné správy]: https://pod-test.dia.gov.cz/%c5%99%c3%adzen%c3%bd-p%c5%99%c3%adstup/ "řízeného přístupu k datům veřejné správy"

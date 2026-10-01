@@ -44,7 +44,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 <gov-accordion-item size="m">
   <h2 slot="label">Základní povinnosti při správě dat podle §5. §5/1 Správce dat při vytváření, úpravě, pozměňování, uchovávání, zpřístupňování a využívání dat a provozních údajů chrání jejich důvěryhodnost, užitečnost a význam</h2>
 
-  <p>Povinnosti zde uvedené mají úřady plnit již od 27. 5. 2026, kdy nabyl tento paragraf účinnosti.</p>
+  <p><strong>Povinnosti zde uvedené mají úřady plnit již od 27. 5. 2026, kdy nabyl tento paragraf účinnosti.</strong></p>
 
   <p>Zákon stanoví obecnou povinnost pro řádnou správu dat. Vychází z toho, že data představují v současnosti hodnotu sama o sobě a nakládání s nimi proto musí být vnímáno jako hospodaření s významným aktivem veřejné správy. Proto je nutné zajistit jejich řádnou a odpovědnou správu.</p>
 
@@ -52,7 +52,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 
   <p>Řádná správa dat zahrnuje široké spektrum činností a pravidel fungování organizace, které je možné rozdělit do <a href="https://data.gov.cz/spr%C3%A1va-dat/co-je-spr%C3%A1va-dat/" title="pěti oblastí">pěti oblastí</a>.</p>
 
-  <p>Pro praktické naplnění této povinnosti doporučuje Digitální a informační agentura správcům dat provést následující klíčové kroky:</p>
+  <p><strong>Pro praktické naplnění této povinnosti doporučuje Digitální a informační agentura správcům dat provést následující klíčové kroky:</strong></p>
 
   <ul>
     <li><a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#role-a-odpov%C4%9Bdnosti-ve-spr%C3%A1v%C4%9B-dat" title="stanovení rolí a odpovědností ve správě dat">stanovení rolí a odpovědností ve správě dat</a>,</li>
@@ -60,7 +60,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
     <li><a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#dopady-zm%C4%9Bn-informa%C4%8Dn%C3%ADch-syst%C3%A9m%C5%AF-na-data" title="systematické posuzování dopadů změn informačních systémů na data">systematické posuzování dopadů změn informačních systémů na data</a>.</li>
   </ul>
 
-  <p>Po zavedení těchto základních předpokladů dobré správy dat v celé organizaci je nutné postupně oblast po oblasti zapojit <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#role-odpov%C4%9Bdn%C3%A9-za-data-ve-v%C4%9Bcn%C3%A9-oblasti" title="role odpovědné za data">role odpovědné za data</a> a pracovat na <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#popis-dat" title="popisu dat a datových rozhraní">popisu dat a datových rozhraní</a> (podrobnosti najdete ve vysvětlení k §6).</p>
+  <p><strong>Po zavedení těchto základních předpokladů dobré správy dat v celé organizaci je nutné postupně oblast po oblasti zapojit <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#role-odpov%C4%9Bdn%C3%A9-za-data-ve-v%C4%9Bcn%C3%A9-oblasti" title="role odpovědné za data">role odpovědné za data</a> a pracovat na <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#popis-dat" title="popisu dat a datových rozhraní">popisu dat a datových rozhraní</a></strong> (podrobnosti najdete ve vysvětlení k §6).</p>
 </gov-accordion-item>
 
 <gov-accordion-item size="m">
@@ -74,7 +74,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
     <li>znalosti – úřad je schopen vlastními silami svých zaměstnanců rozumět všem datům a interpretovat jejich význam.</li>
   </ul>
 
-  <p>Cestou k zajištění datové suverenity v praxi je mj. uplatňovat již v raných fázích přípravy změn informačních systémů, typicky veřejných zakázek, <a href="https://data.gov.cz/p%C5%99%C3%ADlohy/spr%C3%A1va-dat/Dopady_zmen_IS_na_data_1.0.pdf" title="doporučení D40">doporučení D40</a> a související.</p>
+  <p><strong>Cestou k zajištění datové suverenity v praxi je mj. uplatňovat již v raných fázích přípravy změn informačních systémů, typicky veřejných zakázek, <a href="https://data.gov.cz/p%C5%99%C3%ADlohy/spr%C3%A1va-dat/Dopady_zmen_IS_na_data_1.0.pdf" title="doporučení D40">doporučení D40</a> a související.</strong></p>
 </gov-accordion-item>
 
 <gov-accordion-item size="m">
@@ -89,7 +89,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 
   <p>Tato povinnost je naplňována tvorbou tzv. konceptuálního popisu dat. Jeho význam i praktický způsob provedení vysvětlují <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#popis-dat" title="školení">školení</a> a <a href="https://data.gov.cz/popis-dat/" title="materiály">materiály</a> dostupné na Portálu o datech.</p>
 
-  <p>Digitální a informační agentura doporučuje postupovat při popisu dat v souladu s <a href="https://data.gov.cz/p%C5%99%C3%ADlohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf" title="Metodikou popisu dat">Metodikou popisu dat</a>. Výsledkem musí být v každé věcné oblasti dat tzv. datový slovník, který je vytvořen v jednotné, lidsky i strojově čitelné podobě. Tu definuje <a href="https://data.gov.cz/ofn/" title="otevřená formální norma pro slovníky">otevřená formální norma pro slovníky</a>.</p>
+  <p><strong>Digitální a informační agentura doporučuje postupovat při popisu dat v souladu s <a href="https://data.gov.cz/p%C5%99%C3%ADlohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf" title="Metodikou popisu dat">Metodikou popisu dat</a>. Výsledkem musí být v každé věcné oblasti dat tzv. datový slovník, který je vytvořen v jednotné, lidsky i strojově čitelné podobě. Tu definuje <a href="https://data.gov.cz/ofn/" title="otevřená formální norma pro slovníky">otevřená formální norma pro slovníky</a>.</strong></p>
 </gov-accordion-item>
 
 <gov-accordion-item size="m">
@@ -97,7 +97,9 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 
   <p>Na popisování dat podle předchozího odstavce v zákoně i v praxi logicky navazuje povinnost popsat datová rozhraní, tzn. konkrétní technické způsoby zpřístupnění spravovaných dat. Cílem obou těchto druhů popisu je zajistit dohledatelnost dat ve veřejné správě. Směřují tedy k tomu zachytit a zpřístupnit informaci nejen o tom, jaká data jsou v informačních systémech veřejné správy spravována (v datových slovnících), ale také o tom, jakými konkrétními cestami jsou již zpřístupňována (v popisu datových rozhraní). Dohledatelnost dat je nutným předpokladem pro efektivní zajištění řízeného přístupu k datům podle hlavy III zákona.</p>
 
-  <p>Zákon stanovuje povinnost popsat všechna trvale existující rozhraní bez ohledu na to, zda jsou či nejsou přístupná veřejně, tedy jak neveřejná API, tak i veřejné sady otevřených dat. Správce dat by měl po dokončení datového slovníku nejdříve identifikovat všechna rozhraní, kterými jsou data z dané oblasti zpřístupňována. Každé takové rozhraní pak popíše sadou metadat, kterou stanoví <a href="https://ofn.gov.cz/dcat-ap-cz-datov%C3%A1-rozhran%C3%AD/" title="otevřená formální norma pro datová rozhraní">otevřená formální norma pro datová rozhraní</a>. Pro tvorbu popisu dat i datových rozhraní Digitální a informační agentura doporučuje zvolit některý z podporovaných modelovacích <a href="https://data.gov.cz/popis-dat/n%C3%A1stroje-pro-popis-dat/" title="nástrojů pro tvorbu popisu dat">nástrojů pro tvorbu popisu dat</a> (Archi nebo Enterprise Architect) a využít jí vytvořenou šablonu.</p>
+  <p>Zákon stanovuje povinnost popsat všechna trvale existující rozhraní bez ohledu na to, zda jsou či nejsou přístupná veřejně, tedy jak neveřejná API, tak i veřejné sady otevřených dat. <strong>Správce dat by měl po dokončení datového slovníku nejdříve identifikovat všechna rozhraní, kterými jsou data z dané oblasti zpřístupňována. Každé takové rozhraní pak popíše sadou metadat, kterou stanoví <a href="https://ofn.gov.cz/dcat-ap-cz-datov%C3%A1-rozhran%C3%AD/" title="otevřená formální norma pro datová rozhraní">otevřená formální norma pro datová rozhraní</a>.</strong></p> 
+  
+  <p><strong>Pro tvorbu popisu dat i datových rozhraní Digitální a informační agentura doporučuje zvolit některý z podporovaných modelovacích <a href="https://data.gov.cz/popis-dat/n%C3%A1stroje-pro-popis-dat/" title="nástrojů pro tvorbu popisu dat">nástrojů pro tvorbu popisu dat</a> (Archi nebo Enterprise Architect) a využít jí vytvořenou šablonu.</strong></p>
 
   <p>Oba druhy popisu je vhodné vytvořit a udržovat ve stejném nástroji a úložišti. Nedílnou součástí popisu datového rozhraní je totiž zachycení vazeb na pojmy z datového slovníku. Tyto pojmy odpovídají datům obsaženým v rozhraní. Použitím podporovaných nástrojů a šablon si správce dat zajistí, že může následně využít služby Digitální a informační agentury pro validaci hotových popisů a jejich překlad do podoby katalogizačního záznamu. Díky tomu bude tento záznam v souladu s otevřenou formální normou.</p>
 </gov-accordion-item>
@@ -105,7 +107,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 <gov-accordion-item size="m">
   <h2 slot="label">§7/1 Správce dat vytváří a spravuje lokální katalog dat. Správce dat do lokálního katalogu dat zapíše metadata podle § 6; to neplatí, vylučuje-li zápis omezení vyplývající z jiného právního předpisu, mezinárodní smlouvy, která je součástí právního řádu, nebo oprávněného zájmu České republiky nebo jiné osoby.</h2>
 
-  <p>Dohledatelnost dat napříč veřejnou správou bude zajištěna <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#katalogizace-dat">katalogizací dat</a>. Díky ní bude možné prohledávat popisy dat a datových rozhraní vytvořené všemi správci dat. Ze strany správce dat je potřeba vytvořit nebo, ve většině případů, využít existující <a href="https://data.gov.cz/lok%C3%A1ln%C3%AD-katalogy">lokální katalog dat</a>. Do něj nahraje datové slovníky a katalogizační záznamy datových rozhraní v podobě, která odpovídá příslušným otevřeným formálním normám. Tento princip katalogizace veřejná správa dobře zná. Již řadu let jej využívá v oblasti <a href="https://data.gov.cz/vzd%C4%9Bl%C3%A1v%C3%A1n%C3%AD/e-learning/katalogizace-otev%C5%99en%C3%BDch-dat/">otevřených dat</a>.</p>
+  <p>Dohledatelnost dat napříč veřejnou správou bude zajištěna <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#katalogizace-dat">katalogizací dat</a>. Díky ní bude možné prohledávat popisy dat a datových rozhraní vytvořené všemi správci dat. <strong>Ze strany správce dat je potřeba vytvořit nebo, ve většině případů, využít existující <a href="https://data.gov.cz/lok%C3%A1ln%C3%AD-katalogy">lokální katalog dat</a>. Do něj nahraje datové slovníky a katalogizační záznamy datových rozhraní v podobě, která odpovídá příslušným otevřeným formálním normám.</strong> Tento princip katalogizace veřejná správa dobře zná. Již řadu let jej využívá v oblasti <a href="https://data.gov.cz/vzd%C4%9Bl%C3%A1v%C3%A1n%C3%AD/e-learning/katalogizace-otev%C5%99en%C3%BDch-dat/">otevřených dat</a>.</p>
 </gov-accordion-item>
 
 <gov-accordion-item size="m">
@@ -135,13 +137,13 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 
   <p>Stanovuje ústředním správním úřadům povinnost přebírat příslušné datové slovníky agend a v případě potřeby je doplnit o popis dat vedených v jimi spravovaných informačních systémech veřejné správy. To platí tehdy, pokud jsou struktura nebo význam dat podrobnější či odlišné od popisu v datovém slovníku agendy. Pokud se neliší, úřad datový slovník agendy přebírá beze změn.</p>
 
-  <p>Takto vzniká datový slovník správce dat, který je tvořen převzatými datovými slovníky agend a jejich případným rozšířením. Ústřední správní úřad má zároveň povinnost vést datový slovník správce dat ve svém lokálním katalogu dat.</p>
+  <p>Takto vzniká <strong>datový slovník správce dat</strong>, který je tvořen převzatými datovými slovníky agend a jejich případným rozšířením. Ústřední správní úřad má zároveň povinnost vést datový slovník správce dat ve svém lokálním katalogu dat.</p>
 </gov-accordion-item>
 
 <gov-accordion-item size="m">
   <h2 slot="label">§8/3 Správce dat, který není ústředním správním úřadem, přebírá do svého lokálního katalogu dat datové slovníky agend podle odstavce 1 v rozsahu potřebném pro popis dat vedených v jím spravovaném informačním systému veřejné správy.</h2>
 
-  <p>Správce dat, který není ústředním správním úřadem, nemá povinnost popisovat svá data v datových slovnících. Pro popis dat vedených ve svých informačních systémech veřejné správy pouze přebírá a využívá datové slovníky agend vytvořené ohlašovateli agend.</p>
+  <p>Správce dat, který není ústředním správním úřadem, nemá povinnost popisovat svá data v datových slovnících. Pro popis dat vedených ve svých informačních systémech veřejné správy pouze přebírá a využívá <strong>datové slovníky agend</strong> vytvořené ohlašovateli agend.</p>
 </gov-accordion-item>
 
 

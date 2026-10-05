@@ -85,11 +85,37 @@
 						<li><a href="{{ site.suggestion_form }}">Žádost o otevření dat</a></li>
 					</ul>
 				</li>
-				{% if page.ref == 'DataQuality' %}
-					<li><a href="{{ "/datová-kvalita" | relative_url }}" aria-current="page">Datová kvalita</a></li>
-				{% else %}
-					<li><a href="{{ "/datová-kvalita" | relative_url }}">Datová kvalita</a></li>
-				{% endif %}
+
+
+				<li>
+					<gov-button type="base" color="primary" size="l" aria-expanded="false" aria-controls="subnav-data-quality" aria-label="Otevřít menu Datová kvalita">
+						Datová kvalita
+						<gov-icon slot="icon-end" type="components" name="chevron-down" size="l"></gov-icon>
+					</gov-button>
+					<ul class="gov-subnavigation" id="subnav-data-quality" hidden="hidden" aria-hidden="true">
+						<li>
+							<a href="/datová-kvalita">Datová kvalita</a>
+						</li>
+						<li>
+							<a href="/datová-kvalita/statistiky">Statistiky kvality</a>
+						</li>
+						<li>
+							<a href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">Dashboardy otevřených dat v NKD</a>
+						</li>							
+						<li>
+							<a href="/poskytovatelé">Dashboardy poskytovatelů</a>
+						</li>	
+						<li>
+							<a href="/špatná-praxe">Příklady špatné praxe</a>
+						</li>												
+						<li>
+							<a href="/datová-kvalita/ofn">Otevřené formální normy</a>
+						</li>
+					</ul>
+				</li>
+
+
+
 				<li>
 					<gov-button type="base" color="primary" size="l" aria-expanded="false" aria-controls="subnav-svet-dat" aria-label="Otevřít menu Svět dat"{% if page.layout == 'post' or page.ref == 'Articles' %} class="active"{% endif %}>
 						Svět dat

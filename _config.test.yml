@@ -1,2 +1,12 @@
+#
 # Konfigurace specifická pro testovací prostředí.
-ofn_origin: https://ofn-test.dia.gov.cz/
+#
+
+title: Testovací Portál o datech České republiky
+
+# Odkazy na registrační formuláře.
+app_registration_form: https://forms.cloud.microsoft/e/mK4wLvrww4
+suggestion_form: https://forms.cloud.microsoft/e/UuwD7UBnRG
+
+# Nesmí končit znakem "/".
+ofn_origin: https://ofn-test.dia.gov.cz

@@ -1,0 +1,15 @@
+#
+# Konfigurace specifická pro testovací prostředí.
+#
+
+title: Testovací Portál o datech České republiky
+
+navigation_title_cs: Testovací Portál o datech
+navigation_title_en: Test Czech Data Portal
+
+# Odkazy na registrační formuláře.
+app_registration_form: https://forms.cloud.microsoft/e/JX4WGmJ6dS
+suggestion_form: https://forms.cloud.microsoft/e/zafBRy6R9G
+
+# Nesmí končit znakem "/".
+ofn_origin: https://ofn-test.dia.gov.cz

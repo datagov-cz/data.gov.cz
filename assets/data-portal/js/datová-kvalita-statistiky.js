@@ -32,16 +32,13 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
 
   window.addEventListener("DOMContentLoaded", async () => {
 
-    // We need to wait for gov-design-system to initialize the element.
-    const groupSelect = await waitForElement("#group-selector select");
-    const metricSelect = await waitForElement("#metric-selector select");
+    // We need to wait for gov-design-system to define the element.
+    await customElements.whenDefined("gov-form-select");
 
     const userInterface = {
       group: document.getElementById("group-selector"),
-      groupSelect,
       metricWrap: document.getElementById("metric-wrap"),
       metric: document.getElementById("metric-selector"),
-      metricSelect,
       contentWrap: document.getElementById("content-wrap"),
     };
 
@@ -52,8 +49,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
 
     const definitions = await fetchDefinitions();
 
-    // We pass the select element inside the gov-form-select.
-    renderGroupSelector(userInterface.groupSelect, definitions);
+    renderGroupSelector(userInterface.group, definitions);
 
     renderFromUrlQuery(userInterface, definitions, state,
       window.location.search);
@@ -61,7 +57,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     // Event handlers
 
     userInterface.group.addEventListener("gov-change", (event) => {
-      state.group = event.target.value;
+      state.group = event.detail.value;
       state.metric = "";
       // Update user interface.
       const group = definitions.groups[state.group];
@@ -71,7 +67,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     });
 
     userInterface.metric.addEventListener("gov-change", (event) => {
-      state.metric = event.target.value;
+      state.metric = event.detail.value;
       // Update user interface.
       const metric = definitions.groups[state.group].metrics[state.metric];
       renderMetric(userInterface, metric);
@@ -86,18 +82,6 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
 
   });
 
-  async function waitForElement(selector, timeoutMs = 5000) {
-    const interval = 100;
-    let elapsed = 0;
-    while (elapsed < timeoutMs) {
-      const element = document.querySelector(selector);
-      if (element !== null) return element;
-      await new Promise((resolve) => setTimeout(resolve, interval));
-      elapsed += interval;
-    }
-    throw new Error(`Element "${selector}" not found after ${timeoutMs}ms — design system may have failed to load.`);
-  }
-
   async function fetchDefinitions() {
     const response = await fetch(DATA_QUALITY_CATALOG_URL);
     return await response.json();
@@ -107,18 +91,13 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
    * @param {string} value
    */
   function renderGroupSelector(element, definitions) {
-    {
-      const option = document.createElement("option");
-      option.setAttribute("value", "");
-      option.innerText = "Vyberte skupinu pro zobrazení";
-      element.appendChild(option);
-    }
-    definitions.groups.forEach((item, index) => {
-      const option = document.createElement("option");
-      option.setAttribute("value", index);
-      option.innerText = item.title;
-      element.appendChild(option);
-    });
+    element.options = [
+      { value: "", label: "Vyberte skupinu pro zobrazení" },
+      ...definitions.groups.map((item, index) => ({
+        value: String(index),
+        label: item.title,
+      })),
+    ];
     element.value = "";
   }
 
@@ -131,23 +110,23 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     for (const [groupKey, group] of Object.entries(definitions.groups)) {
       if (group.identifier === identifier) {
         renderGroup(userInterface, group);
-        state.group = userInterface.groupSelect.value = groupKey;
+        state.group = userInterface.group.value = groupKey;
         return;
       }
       for (const [metricKey, metric] of Object.entries(group.metrics ?? [])) {
         if (metric.identifier === identifier) {
           renderGroup(userInterface, group);
           renderMetric(userInterface, metric);
-          state.group = userInterface.groupSelect.value = groupKey;
-          state.metric = userInterface.metricSelect.value = metricKey;
+          state.group = userInterface.group.value = groupKey;
+          state.metric = userInterface.metric.value = metricKey;
           return;
         }
       }
     }
     // Default.
     renderNoGroup(userInterface);
-    state.group = userInterface.groupSelect.value = "";
-    state.metric = userInterface.metricSelect.value = "";
+    state.group = userInterface.group.value = "";
+    state.metric = userInterface.metric.value = "";
   }
 
   function renderGroup(userInterface, group) {
@@ -163,34 +142,24 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
   }
 
   function renderQualityGroup(userInterface, group) {
-    renderMetricSelector(userInterface.metricSelect, group);
+    renderMetricSelector(userInterface.metric, group);
 
     // Clear and set new content.
     userInterface.contentWrap.innerText = "";
 
     // Update visibility
-    userInterface.metricWrap.classList.remove("hide");
-    userInterface.contentWrap.classList.remove("hide");
+    userInterface.metricWrap.hidden = false;
+    userInterface.contentWrap.hidden = false;
   }
 
   function renderMetricSelector(element, group) {
-    // Clear content
-    element.innerText = "";
-    // Prompt option
-    {
-      const option = document.createElement("option");
-      option.setAttribute("value", "");
-      option.innerText = "Vyberte ukazatel pro zobrazení";
-      element.appendChild(option);
-    }
-    // Other options
-    const metrics = group.metrics;
-    metrics.forEach((item, index) => {
-      const option = document.createElement("option");
-      option.setAttribute("value", index);
-      option.innerText = item.title;
-      element.appendChild(option);
-    });
+    element.options = [
+      { value: "", label: "Vyberte ukazatel pro zobrazení" },
+      ...group.metrics.map((item, index) => ({
+        value: String(index),
+        label: item.title,
+      })),
+    ];
     element.value = "";
   }
 
@@ -209,9 +178,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
       download.textContent = file.title;
       element.append(download);
 
-      const table = document.createElement("table");
-      renderCsvTable(table, file.url);
-      element.append(table);
+      element.append(createCsvTable(file.url));
 
       root.append(element);
     }
@@ -221,8 +188,8 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     userInterface.contentWrap.append(root);
 
     // Update visibility
-    userInterface.metricWrap.classList.add("hide");
-    userInterface.contentWrap.classList.remove("hide");
+    userInterface.metricWrap.hidden = true;
+    userInterface.contentWrap.hidden = false;
   }
 
   function renderFile(userInterface, group) {
@@ -241,23 +208,21 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
     download.textContent = group.title;
     root.append(download);
 
-    const table = document.createElement("table");
-    renderCsvTable(table, url);
-    root.append(table);
+    root.append(createCsvTable(url));
 
     // Clear and set new content.
     userInterface.contentWrap.innerText = "";
     userInterface.contentWrap.append(root);
 
     // Update visibility
-    userInterface.metricWrap.classList.add("hide");
-    userInterface.contentWrap.classList.remove("hide");
+    userInterface.metricWrap.hidden = true;
+    userInterface.contentWrap.hidden = false;
   }
 
   function renderNoGroup(userInterface) {
     // Update visibility
-    userInterface.metricWrap.classList.add("hide");
-    userInterface.contentWrap.classList.add("hide");
+    userInterface.metricWrap.hidden = true;
+    userInterface.contentWrap.hidden = true;
   }
 
   function renderMetric(userInterface, metric) {
@@ -281,9 +246,7 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
       download.textContent = file.title;
       element.append(download);
 
-      const table = document.createElement("table");
-      renderCsvTable(table, file.url);
-      element.append(table);
+      element.append(createCsvTable(file.url));
 
       root.append(element);
     }
@@ -307,6 +270,15 @@ import { micromark } from '/assets/data-portal/js/micromark.js';
   }
 
   // TABLE RENDER SECTION
+
+  function createCsvTable(url) {
+    const wrap = document.createElement("div");
+    wrap.className = "data-quality-table";
+    const table = document.createElement("table");
+    renderCsvTable(table, url);
+    wrap.append(table);
+    return wrap;
+  }
 
   async function renderCsvTable(element, url) {
     const payload = await (await fetch(url)).text();

@@ -34,3 +34,32 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .75rem;
     word-wrap: break-word;
 }
+
+/* datová-kvalita/statistiky */
+
+#metric-wrap[hidden], #content-wrap[hidden] {
+  display: none;
+}
+
+.data-quality-table {
+  overflow-x: auto;
+  margin-bottom: var(--spacing-xl);
+}
+
+.data-quality-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-quality-table th, .data-quality-table td {
+  padding: var(--spacing-xs) var(--spacing-s);
+  border-bottom: 1px solid var(--border-subtle);
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-quality-table th {
+  border-bottom-color: var(--border-neutral);
+}
+
+/*  */

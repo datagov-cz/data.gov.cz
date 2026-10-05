@@ -69,6 +69,11 @@ lang: cs
       </p>
   </gov-accordion-item>
 
+      <!-- gov-accordion-item size="m">
+  <span slot="label">Jak se OFN používají v praxi?</span>
+      <p>Projděte si <a href="https://data.gov.cz/ofn/použití-poskytovateli/" >návod</a>, jak správně otevřené formální normy použít a na co v datech nezapomínat.</p>
+  </gov-accordion-item -->
+
   <gov-accordion-item size="m">
   <span slot="label">Nenašli jste odpovídající OFN?</span>
       <p>Otevřené formální normy vznikají plně transparentním způsobem na platformě GitHub. Vývoj je přístupný široké komunitě a může se do něj zapojit každý — od IT architektů a věcných garantů až po vývojáře z veřejné i soukromé sféry.</p>
@@ -91,8 +96,10 @@ lang: cs
 <gov-card id="metadata">
     <h2 slot="headline">Metadata a katalogizace</h2>
     <p>Určeno pro IT architekty a vývojáře řešící napojení katalogů (LKD na NKD) nebo plnění legislativy.</p>
+    <gov-infobar color="error" type="bold"><gov-icon type="components" name="x" slot="icon"></gov-icon>Od 1. 10. 2027 končí podpora původních OFN. Přejděte na NOVÉ verze specifikací.</gov-infobar>
 
  <gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů dat" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-dat/" orientation="vertical"><h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
+        <gov-chip color="success" type="solid" size="s" tag="a">Nové</gov-chip>
   <ul>
         <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
         <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
@@ -100,8 +107,11 @@ lang: cs
       </ul>
 </gov-tile>
 
+
+
 <gov-tile size="m" title="DCAT-AP-CZ: Datová rozhraní" href="{{site.ofn_origin}}/dcat-ap-cz-datová-rozhraní/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Datová rozhraní</h3>
+        <gov-chip color="success" type="solid" size="s" tag="a">Nové</gov-chip>
   <ul>
         <li>Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.</li>
         <li>Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.</li>
@@ -111,6 +121,7 @@ lang: cs
 
 <gov-tile size="m" title="DCAT-AP-CZ: Datové sady otevřených dat" href="{{site.ofn_origin}}/dcat-ap-cz-otevřená-data/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Datové sady otevřených dat</h3>
+        <gov-chip color="success" type="solid" size="s" tag="a">Nové</gov-chip>
   <ul>
         <li>Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.</li>
         <li>Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.</li>
@@ -120,6 +131,7 @@ lang: cs
 
 <gov-tile size="m" title="DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)" href="{{site.ofn_origin}}/dcat-ap-cz-hvd/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</h3>
+        <gov-chip color="success" type="solid" size="s" tag="a">Nové</gov-chip>
   <ul>
         <li>Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.</li>
         <li>Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.</li>
@@ -129,6 +141,7 @@ lang: cs
 
 <gov-tile size="m" title="DCAT-AP-CZ: Rozhraní katalogů otevřených dat" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Rozhraní katalogů otevřených dat</h3>
+        <gov-chip color="secondary" type="solid" size="s" tag="a">Nahrazeno</gov-chip> <a href="https://ofn.gov.cz/dcat-ap-cz-rozhraní-katalogů-dat/" >DCAT-AP: Rozhraní katalogů dat</a>
   <ul>
         <li>Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.</li>
         <li>Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.</li>
@@ -138,6 +151,8 @@ lang: cs
 
 <gov-tile size="m" title="DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb." href="{{site.ofn_origin}}/dcat-ap-cz-360-2023/" orientation="vertical">
   <h3 slot="title">DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb.</h3>
+          <gov-chip color="secondary" type="solid" size="s" tag="a">Nahrazeno</gov-chip> <a href="https://ofn.gov.cz/dcat-ap-cz-datová-rozhraní/" >DCAT-AP: Datová rozhraní</a>
+
   <ul>
         <li>Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.</li>
         <li>Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.</li>

@@ -89,7 +89,7 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 
   <p>Tato povinnost je naplňována tvorbou tzv. konceptuálního popisu dat. Jeho význam i praktický způsob provedení vysvětlují <a href="https://data.gov.cz/spr%C3%A1va-dat/podpora-spr%C3%A1vy-dat/#popis-dat" title="školení">školení</a> a <a href="https://data.gov.cz/popis-dat/" title="materiály">materiály</a> dostupné na Portálu o datech.</p>
 
-  <p><strong>Digitální a informační agentura doporučuje postupovat při popisu dat v souladu s <a href="https://data.gov.cz/p%C5%99%C3%ADlohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf" title="Metodikou popisu dat">Metodikou popisu dat</a>. Výsledkem musí být v každé věcné oblasti dat tzv. datový slovník, který je vytvořen v jednotné, lidsky i strojově čitelné podobě. Tu definuje <a href="https://data.gov.cz/ofn/" title="otevřená formální norma pro slovníky">otevřená formální norma pro slovníky</a>.</strong></p>
+  <p><strong>Digitální a informační agentura doporučuje postupovat při popisu dat v souladu s <a href="https://data.gov.cz/p%C5%99%C3%ADlohy/popis-dat/dokumenty/Metodika-popisu-dat.pdf" title="Metodikou popisu dat">Metodikou popisu dat</a>. Výsledkem musí být v každé věcné oblasti dat tzv. datový slovník, který je vytvořen v jednotné, lidsky i strojově čitelné podobě. Tu definuje <a href="https://ofn.gov.cz/slovn%c3%adky/2026-02-26/cs/" title="otevřená formální norma pro slovníky">otevřená formální norma pro slovníky</a>.</strong></p>
 </gov-accordion-item>
 
 <gov-accordion-item size="m">

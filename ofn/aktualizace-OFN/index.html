@@ -6,70 +6,68 @@ lang: cs
 ---
 
 <style>
-    p {
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
+  p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
-    /* Třída pro skrytí neaktivních karet */
-    .gov-card-item.is-hidden {
-      display: none !important;
-    }
+/* Třída pro skrytí neaktivních karet (využívá se při filtrování přes JS) */
+.gov-card-item.is-hidden {
+  display: none !important;
+}
 
-    /* Volitelné: Čistě moderní CSS řešení pomocí selektoru :has() 
-      (Funguje automaticky bez nutnosti přepínat třídu .is-hidden, pokud webová komponenta propaguje stav :checked / atribut [checked]) */
+/* --- Čistě CSS řešení pomocí selektoru :has() --- */
 
-    /* 1. Pokud je zaškrtnut alespoň jeden filtr, výchozí stav je skrytí všech karet */
-    #main:has(.js-filter-checkbox[checked]),
-    #main:has(.js-filter-checkbox:checked),
-    #main:has(.js-filter-checkbox input:checked) {
-      .gov-card-item {
-        display: none;
-      }
-    }
+/* 1. Pokud je zaškrtnut alespoň jeden filtr, výchozí stav je skrytí všech karet */
+#main:has(.js-filter-checkbox[checked]),
+#main:has(.js-filter-checkbox:checked),
+#main:has(.js-filter-checkbox input:checked) {
+  .gov-card-item {
+    display: none;
+  }
+}
 
-    /* 2. Zobrazení položek odpovídajících zaškrtnutému filtru A */
-    #main:has(#filter-a[checked]),
-    #main:has(#filter-a:checked),
-    #main:has(#filter-a input:checked) {
-      .gov-card-item[data-category="hodnota-a"] {
-        display: block;
-      }
-    }
+/* 2. Zobrazení položek pro filtr A (použit selektor ~= pro více hodnot v data-category) */
+#main:has(#filter-a[checked]),
+#main:has(#filter-a:checked),
+#main:has(#filter-a input:checked) {
+  .gov-card-item[data-category~="hodnota-a"] {
+    display: block;
+  }
+}
 
-    /* 3. Zobrazení položek odpovídajících zaškrtnutému filtru B */
-    #main:has(#filter-b[checked]),
-    #main:has(#filter-b:checked),
-    #main:has(#filter-b input:checked) {
-      .gov-card-item[data-category="hodnota-b"] {
-        display: block;
-      }
-    }    
+/* 3. Zobrazení položek pro filtr B */
+#main:has(#filter-b[checked]),
+#main:has(#filter-b:checked),
+#main:has(#filter-b input:checked) {
+  .gov-card-item[data-category~="hodnota-b"] {
+    display: block;
+  }
+}    
 
-        /* 3. Zobrazení položek odpovídajících zaškrtnutému filtru B */
-    #main:has(#filter-b[checked]),
-    #main:has(#filter-b:checked),
-    #main:has(#filter-b input:checked) {
-      .gov-card-item[data-category="hodnota-c"] {
-        display: block;
-      }
-    } 
+/* 4. OPRAVENO: Zobrazení položek pro filtr C (změněno id na #filter-c) */
+#main:has(#filter-c[checked]),
+#main:has(#filter-c:checked),
+#main:has(#filter-c input:checked) {
+  .gov-card-item[data-category~="hodnota-c"] {
+    display: block;
+  }
+} 
 
-            /* 3. Zobrazení položek odpovídajících zaškrtnutému filtru B */
-    #main:has(#filter-b[checked]),
-    #main:has(#filter-b:checked),
-    #main:has(#filter-b input:checked) {
-      .gov-card-item[data-category="hodnota-d"] {
-        display: block;
-      }
-    } 
+/* 5. OPRAVENO: Zobrazení položek pro filtr D (změněno id na #filter-d) */
+#main:has(#filter-d[checked]),
+#main:has(#filter-d:checked),
+#main:has(#filter-d input:checked) {
+  .gov-card-item[data-category~="hodnota-d"] {
+    display: block;
+  }
+} 
 
 /* Odsazení mezi skupinami filtrů */
 .gov-filter-group + .gov-filter-group {
   margin-top: 1.5rem;
 }
 </style>
-
 
 
 <gov-container id="main">
@@ -84,12 +82,14 @@ lang: cs
             <legend class="gov-filters__heading">Filtr 1</legend>
             <ul class="gov-list--plain">
               <li>
-                <gov-form-checkbox size="m" value="hodnota-a" name="filter1" class="js-filter-checkbox">
+                <!-- OPRAVENO: Přidáno id="filter-a" -->
+                <gov-form-checkbox id="filter-a" size="m" value="hodnota-a" name="filter1" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota A</gov-form-label>
                 </gov-form-checkbox>
               </li>
               <li>
-                <gov-form-checkbox size="m" value="hodnota-b" name="filter1" class="js-filter-checkbox">
+                <!-- OPRAVENO: Přidáno id="filter-b" -->
+                <gov-form-checkbox id="filter-b" size="m" value="hodnota-b" name="filter1" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota B</gov-form-label>
                 </gov-form-checkbox>
               </li>
@@ -101,12 +101,14 @@ lang: cs
             <legend class="gov-filters__heading">Filtr 2</legend>
             <ul class="gov-list--plain">
               <li>
-                <gov-form-checkbox size="m" value="hodnota-c" name="filter2" class="js-filter-checkbox">
+                <!-- OPRAVENO: Přidáno id="filter-c" -->
+                <gov-form-checkbox id="filter-c" size="m" value="hodnota-c" name="filter2" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota C</gov-form-label>
                 </gov-form-checkbox>
               </li>
               <li>
-                <gov-form-checkbox size="m" value="hodnota-d" name="filter2" class="js-filter-checkbox">
+                <!-- OPRAVENO: Přidáno id="filter-d" -->
+                <gov-form-checkbox id="filter-d" size="m" value="hodnota-d" name="filter2" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota D</gov-form-label>
                 </gov-form-checkbox>
               </li>

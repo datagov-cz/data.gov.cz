@@ -45,33 +45,56 @@ lang: cs
         display: block;
       }
     }    
+
+/* Odsazení mezi skupinami filtrů */
+.gov-filter-group + .gov-filter-group {
+  margin-top: 1.5rem;
+}
 </style>
 
 
 
 <gov-container id="main">
   <gov-layout type="aside" variant="left">
-    <!-- Postranní panel s filtrem -->
+    <!-- Postranní panel s filtry -->
     <gov-layout-column>
       <aside aria-label="Filtr aktualit">
         <form class="gov-filters">
-          <fieldset>
-            <legend class="gov-filters__heading">Filtr</legend>
+          
+          <!-- Skupina 1: Filtr 1 -->
+          <fieldset class="gov-filter-group">
+            <legend class="gov-filters__heading">Filtr 1</legend>
             <ul class="gov-list--plain">
               <li>
-                <!-- Přidáno id a identifikace pro filtr A -->
-                <gov-form-checkbox size="m" value="hodnota-a" id="filter-a" class="js-filter-checkbox">
+                <gov-form-checkbox size="m" value="hodnota-a" name="filter1" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota A</gov-form-label>
                 </gov-form-checkbox>
               </li>
               <li>
-                <!-- Přidáno id a identifikace pro filtr B -->
-                <gov-form-checkbox size="m" value="hodnota-b" id="filter-b" class="js-filter-checkbox">
+                <gov-form-checkbox size="m" value="hodnota-b" name="filter1" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota B</gov-form-label>
                 </gov-form-checkbox>
               </li>
             </ul>
           </fieldset>
+
+          <!-- Skupina 2: Filtr 2 -->
+          <fieldset class="gov-filter-group">
+            <legend class="gov-filters__heading">Filtr 2</legend>
+            <ul class="gov-list--plain">
+              <li>
+                <gov-form-checkbox size="m" value="hodnota-c" name="filter2" class="js-filter-checkbox">
+                  <gov-form-label size="m" slot="label">filtr Hodnota C</gov-form-label>
+                </gov-form-checkbox>
+              </li>
+              <li>
+                <gov-form-checkbox size="m" value="hodnota-d" name="filter2" class="js-filter-checkbox">
+                  <gov-form-label size="m" slot="label">filtr Hodnota D</gov-form-label>
+                </gov-form-checkbox>
+              </li>
+            </ul>
+          </fieldset>
+
         </form>
       </aside>
     </gov-layout-column>
@@ -82,7 +105,7 @@ lang: cs
         <section aria-label="Výpis článků">
           <gov-grid gap="l" class="gov-card-grid">
             
-            <!-- Karta pro Hodnotu A (přidán atribut data-category a třída) -->
+            <!-- Karta A (Filtr A) -->
             <gov-grid-item col-span="12" data-category="hodnota-a" class="gov-card-item">
               <article>
                 <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-a">
@@ -95,13 +118,39 @@ lang: cs
               </article>
             </gov-grid-item>
 
-            <!-- Karta pro Hodnotu B (přidán atribut data-category a třída) -->
+            <!-- Karta B (Filtr B) -->
             <gov-grid-item col-span="12" data-category="hodnota-b" class="gov-card-item">
               <article>
                 <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-b">
                   <gov-flex gap="s" direction="column">
                     <header>
                       <h2 id="akt-hodnota-b" class="gov-card__headline">Hodnota B</h2>
+                    </header>
+                  </gov-flex>
+                </gov-card>
+              </article>
+            </gov-grid-item>
+
+            <!-- Karta C (Filtr C) -->
+            <gov-grid-item col-span="12" data-category="hodnota-c" class="gov-card-item">
+              <article>
+                <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-c">
+                  <gov-flex gap="s" direction="column">
+                    <header>
+                      <h2 id="akt-hodnota-c" class="gov-card__headline">Hodnota C</h2>
+                    </header>
+                  </gov-flex>
+                </gov-card>
+              </article>
+            </gov-grid-item>
+
+            <!-- Karta D (Filtr A i D) -->
+            <gov-grid-item col-span="12" data-category="hodnota-a hodnota-d" class="gov-card-item">
+              <article>
+                <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-d">
+                  <gov-flex gap="s" direction="column">
+                    <header>
+                      <h2 id="akt-hodnota-d" class="gov-card__headline">Hodnota D</h2>
                     </header>
                   </gov-flex>
                 </gov-card>

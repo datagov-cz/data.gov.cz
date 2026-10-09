@@ -10,7 +10,43 @@ lang: cs
       margin-top: 1em;
       margin-bottom: 1em;
     }
-  </style>
+
+    /* Třída pro skrytí neaktivních karet */
+    .gov-card-item.is-hidden {
+      display: none !important;
+    }
+
+    /* Volitelné: Čistě moderní CSS řešení pomocí selektoru :has() 
+      (Funguje automaticky bez nutnosti přepínat třídu .is-hidden, pokud webová komponenta propaguje stav :checked / atribut [checked]) */
+
+    /* 1. Pokud je zaškrtnut alespoň jeden filtr, výchozí stav je skrytí všech karet */
+    #main:has(.js-filter-checkbox[checked]),
+    #main:has(.js-filter-checkbox:checked),
+    #main:has(.js-filter-checkbox input:checked) {
+      .gov-card-item {
+        display: none;
+      }
+    }
+
+    /* 2. Zobrazení položek odpovídajících zaškrtnutému filtru A */
+    #main:has(#filter-a[checked]),
+    #main:has(#filter-a:checked),
+    #main:has(#filter-a input:checked) {
+      .gov-card-item[data-category="hodnota-a"] {
+        display: block;
+      }
+    }
+
+    /* 3. Zobrazení položek odpovídajících zaškrtnutému filtru B */
+    #main:has(#filter-b[checked]),
+    #main:has(#filter-b:checked),
+    #main:has(#filter-b input:checked) {
+      .gov-card-item[data-category="hodnota-b"] {
+        display: block;
+      }
+    }    
+</style>
+
 
 
 <gov-container id="main">
@@ -23,12 +59,14 @@ lang: cs
             <legend class="gov-filters__heading">Filtr</legend>
             <ul class="gov-list--plain">
               <li>
-                <gov-form-checkbox size="m" value="Hodnota A">
+                <!-- Přidáno id a identifikace pro filtr A -->
+                <gov-form-checkbox size="m" value="hodnota-a" id="filter-a" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota A</gov-form-label>
                 </gov-form-checkbox>
               </li>
               <li>
-                <gov-form-checkbox size="m" value="Hodnota B">
+                <!-- Přidáno id a identifikace pro filtr B -->
+                <gov-form-checkbox size="m" value="hodnota-b" id="filter-b" class="js-filter-checkbox">
                   <gov-form-label size="m" slot="label">filtr Hodnota B</gov-form-label>
                 </gov-form-checkbox>
               </li>
@@ -44,8 +82,8 @@ lang: cs
         <section aria-label="Výpis článků">
           <gov-grid gap="l" class="gov-card-grid">
             
-            <!-- Karta pro Hodnotu A -->
-            <gov-grid-item col-span="12">
+            <!-- Karta pro Hodnotu A (přidán atribut data-category a třída) -->
+            <gov-grid-item col-span="12" data-category="hodnota-a" class="gov-card-item">
               <article>
                 <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-a">
                   <gov-flex gap="s" direction="column">
@@ -57,8 +95,8 @@ lang: cs
               </article>
             </gov-grid-item>
 
-            <!-- Karta pro Hodnotu B -->
-            <gov-grid-item col-span="12">
+            <!-- Karta pro Hodnotu B (přidán atribut data-category a třída) -->
+            <gov-grid-item col-span="12" data-category="hodnota-b" class="gov-card-item">
               <article>
                 <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-b">
                   <gov-flex gap="s" direction="column">

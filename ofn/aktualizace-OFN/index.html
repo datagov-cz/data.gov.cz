@@ -5,7 +5,7 @@ ref: zkouška rozcestníku
 lang: cs
 ---
 
-  <style>
+<style>
     p {
       margin-top: 1em;
       margin-bottom: 1em;
@@ -45,6 +45,24 @@ lang: cs
         display: block;
       }
     }    
+
+        /* 3. Zobrazení položek odpovídajících zaškrtnutému filtru B */
+    #main:has(#filter-b[checked]),
+    #main:has(#filter-b:checked),
+    #main:has(#filter-b input:checked) {
+      .gov-card-item[data-category="hodnota-c"] {
+        display: block;
+      }
+    } 
+
+            /* 3. Zobrazení položek odpovídajících zaškrtnutému filtru B */
+    #main:has(#filter-b[checked]),
+    #main:has(#filter-b:checked),
+    #main:has(#filter-b input:checked) {
+      .gov-card-item[data-category="hodnota-d"] {
+        display: block;
+      }
+    } 
 
 /* Odsazení mezi skupinami filtrů */
 .gov-filter-group + .gov-filter-group {

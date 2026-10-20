@@ -1,7 +1,7 @@
 ---
 layout: contained
-title: Otevřené formální normy
-ref: zkouška rozcestníku
+title: Aktualizace OFN v souvislosti se zákonem o správě dat
+ref: Aktualizace-OFN-v-souvislosti-se-zákonem-o-správě-dat
 lang: cs
 ---
 
@@ -10,233 +10,74 @@ lang: cs
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
-/* Třída pro skrytí neaktivních karet (využívá se při filtrování přes JS) */
-.gov-card-item.is-hidden {
-  display: none !important;
-}
-
-/* --- Čistě CSS řešení pomocí selektoru :has() --- */
-
-/* 1. Pokud je zaškrtnut alespoň jeden filtr, výchozí stav je skrytí všech karet */
-#main:has(.js-filter-checkbox[checked]),
-#main:has(.js-filter-checkbox:checked),
-#main:has(.js-filter-checkbox input:checked) {
-  .gov-card-item {
-    display: none;
-  }
-}
-
-/* 2. Zobrazení položek pro filtr A (použit selektor ~= pro více hodnot v data-category) */
-#main:has(#filter-a[checked]),
-#main:has(#filter-a:checked),
-#main:has(#filter-a input:checked) {
-  .gov-card-item[data-category~="hodnota-a"] {
-    display: block;
-  }
-}
-
-/* 3. Zobrazení položek pro filtr B */
-#main:has(#filter-b[checked]),
-#main:has(#filter-b:checked),
-#main:has(#filter-b input:checked) {
-  .gov-card-item[data-category~="hodnota-b"] {
-    display: block;
-  }
-}    
-
-/* 4. OPRAVENO: Zobrazení položek pro filtr C (změněno id na #filter-c) */
-#main:has(#filter-c[checked]),
-#main:has(#filter-c:checked),
-#main:has(#filter-c input:checked) {
-  .gov-card-item[data-category~="hodnota-c"] {
-    display: block;
-  }
-} 
-
-/* 5. OPRAVENO: Zobrazení položek pro filtr D (změněno id na #filter-d) */
-#main:has(#filter-d[checked]),
-#main:has(#filter-d:checked),
-#main:has(#filter-d input:checked) {
-  .gov-card-item[data-category~="hodnota-d"] {
-    display: block;
-  }
-} 
-
-/* Odsazení mezi skupinami filtrů */
-.gov-filter-group + .gov-filter-group {
-  margin-top: 1.5rem;
-}
 </style>
 
-<p>Jednotná pravidla pro strukturu, popis a sdílení dat ve veřejné správě</p>
+<p>V návaznosti na nový zákon č. 60/2026 Sb., o správě dat, a vyhlášku č. 360/2023 Sb., o dlouhodobém řízení ISVS vznikají orgánům veřejné moci nové povinnosti týkající se katalogizace všech datových rozhraní (tedy nejen otevřených dat).</p> 
+
+<p>Tato změna znamená faktický přechod od Národního katalogu otevřených dat k Národnímu katalogu dat. Aby byla zachována přehlednost technických specifikací, došlo k 23. září 2026 k rozpadu původní komplexní OFN do několika samostatných a cílených norem.</p>
+
+<gov-spacer size="m"></gov-spacer>
+
+<iframe width="1409" height="793" src="https://www.youtube.com/embed/xFdgnbIHLTA" title="Změny v OFN: Jak postupovat dle nového zákona o správě dat?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <gov-spacer size="m"></gov-spacer>
 
 
-<gov-infobar color="error" type="bold">
-  <gov-icon type="components" name="info-circle" slot="icon"></gov-icon>
-  <p>
-    Od 1. 10. 2027 končí podpora OFN Rozhraní katalogů otevřených dat a Specifikace pro vyhlášku č. 360/2023 Sb.<br>Přejděte na NOVÉ verze specifikací. <!-- Více informací v průvodci <a href="https://data.gov.cz/ofn/aktualizace-OFN/" target="_blank">aktualizací OFN v souvislosti se zákonem o správě dat</a> -->.
-  </p>
-</gov-infobar> 
+<gov-card>
+<h2>Co se mění?</h2>
+<p>Původní jedna rozsáhlá norma byla rozdělena na dílčí normy, aby každý správce četl jen tu část, která se ho týká. Všechny nové normy jsou již dostupné na <a href="https://ofn.gov.cz">ofn.gov.cz</a>.</p>
 
-<gov-spacer size="m"></gov-spacer>
+<h3>Rozdělení norem a hlavní novinky</h3>
 
-<gov-icon name="box-arrow-up-right" title="Přejít na odkaz" class="gov-icon hydrated" type="components"></gov-icon>
+<p><strong>DCAT-AP-CZ: Rozhraní katalogů dat</strong><br>
+Popisuje API katalogu nezávisle na tom, jaká data (otevřená/neotevřená) obsahuje. Technickou novinkou je využití samostatných JSON-LD kontextů.</p>
 
-<div>
-  <section aria-labelledby="s7">
-    <gov-flex direction="column" gap="l">
-      <gov-flex direction="column" gap="m">
-        <gov-flex gap="s" justify-content="space-between" align-items="center" class="gov-section-heading" responsive="false">
-          <h2 id="s7">Základní informace</h2>
-        </gov-flex>
-      </gov-flex>
+<p><strong>DCAT-AP-CZ: Datová rozhraní</strong><br>
+Norma určená pro splnění povinností dle zákona o správě dat (popis a klasifikace datových rozhraní, které nejsou nutně open daty).</p>
 
-      <gov-accordion size="m">
-        <gov-accordion-item>
-          <h3 slot="label">Co jsou OFN?</h3>
-            <p>Otevřené formální normy (OFN) definují společná pravidla pro popis, strukturu a technické provedení dat ve veřejném sektoru. Sjednocují význam dat a definice pojmů, jejich vnitřní uspořádání i podobu datových rozhraní a API. Umožňují různým informačním systémům a poskytovatelům publikovat obdobná data stejným způsobem a garantují jejich plnou interoperabilitu — tedy schopnost systémů spolu bezproblémově komunikovat a předávat si data. OFN sjednocují způsob popisu datových sad v lokálních i národním katalogu a zajišťují, že jsou publikovaná data strojově čitelná a snadno opakovaně použitelná. Zároveň garantují, že různé úřady popisují stejné agendy ve stejném formátu, poskytují hotové stavební prvky pro opakující se údaje (jako jsou adresy, kontakty nebo časové specifikace) a umožňují plynulou výměnu dat napříč informačními systémy veřejné správy.
-            </p>
-        </gov-accordion-item>
+<p><strong>DCAT-AP-CZ: Datové sady otevřených dat</strong><br>
+Věcné pokračování dosavadní praxe pro open data.<br>
+• Novinka: Nutnost explicitně indikovat, že jde o otevřená data (odkazem na zákon č. 106/1999 Sb.).<br>
+• Novinka: Zavedení volitelné položky „vstupní stránka“ (link z NKD přímo na vizitku datové sady ve vašem lokálním katalogu).<br>
+• Změna pojmosloví: Termín „datová série“ se mění na přesnější „série datových sad“.</p>
 
-        <gov-accordion-item>
-          <h3 slot="label">Právní závaznost</h3>
-          <p>OFN neukládají povinnost data zveřejňovat – ta vždy vyplývá z konkrétních zákonů. Určují však závazný formát a strukturu v případě, že se na vaše data povinnost zveřejnění vztahuje.
-          </p>
-            <p>Standardy jsou povinné pro:</p>
-            <ul>
-            <li>Poskytovatele otevřených dat (<a href="https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2025-08-19/dokument/norma/cast_1/par_4c" target="_blank">§ 4c odst. 1</a> a <a href="https://e-sbirka.gov.cz/eli/cz/sb/1999/106/2025-08-19/dokument/norma/cast_1/par_3" target="_blank">§ 3a odst. 3</a> zákona č. 106/1999 Sb.).</li>
-            <li>Správce dat a ISVS (<a href="https://e-sbirka.gov.cz/eli/cz/sb/2026/60/2026-05-27/dokument/norma/cast_1/hlava_1/par_4" target="_blank">zákon č. 60/2026 Sb., o správě dat</a>, a <a href="https://e-sbirka.gov.cz/eli/cz/sb/2000/365/2026-01-01/dokument/norma/cast_1/hlava_1/par_2/odst_1/pism_c" target="_blank">§ 2 odst. 1 písm. c)</a> zákona č. 365/2000 Sb., o ISVS).</li>
-            </ul>
+<p><strong>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</strong><br>
+Vydělena specifická nadstavba pro HVDs.<br>
+• Novinka: Kromě indikace HVD přibyla povinnost explicitního odkazu na konkrétní paragraf zákona č. 106/1999 Sb., který o této povinnosti hovoří (sjednocení odkazů na českou legislativu).</p>
 
-        </gov-accordion-item>
+<h2>Jak mají poskytovatelé postupovat?</h2>
+<p>Vaše další kroky se odvíjejí od způsobu, jakým svá data do NKD poskytujete:</p>
 
-        <gov-accordion-item>
-          <h3 slot="label">Nenašli jste odpovídající OFN?</h3>
-          <p>Všechny normy vznikají transparentně na platformě <a href="https://github.com/datagov-cz/otevrene-formalni-normy" target="_blank" rel="noopener noreferrer">GitHub <gov-icon name="box-arrow-up-right" title="Přejít na odkaz" class="gov-icon hydrated" type="components"></gov-icon></a>, kde se do vývoje může zapojit veřejnost i soukromý sektor. Pokud vám konkrétní specifikace chybí, můžete podat podnět na tvorbu nové normy, připomínkovat rozpracované návrhy, nahlásit chybu nebo se přihlásit do odborné pracovní skupiny.
-          </p>
-        </gov-accordion-item>
-      </gov-accordion>
-    </gov-flex>
-  </section>
-</div>
+<p><strong>Provozovatelé lokálních katalogů (otevřených) dat (LKOD)</strong><br>
+Je potřeba naplánovat technickou aktualizaci vašeho lokálního katalogu na nové verze OFN.<br>
+Při aktualizaci je klíčové zajistit explicitní označení datových sad otevřených dat (odkazem na legislativu), aby se v budoucnu v rámci jednoho katalogu nemíchala s neotevřenými datovými rozhraními.<br>
+Tip: Poskytovatelé mají volnost v tom, zda budou provozovat jeden společný Lokální katalog dat (pro otevřená i neotevřená data), nebo si pro otevřená data a datová rozhraní zřídí oddělené lokální katalogy.</p>
+
+<p><strong>Poskytovatelé registrující data manuálně (přes registrační formulář a datovou schránku)</strong><br>
+Z vaší strany není v tuto chvíli nutná žádná akce ani zpětná přeregistrace.<br>
+Historicky zaregistrované záznamy budou interně zaktualizovány na straně NKOD.<br>
+Aktualizovaný webový registrační formulář, který bude reflektovat nové normy, bude spuštěn do konce listopadu 2026.</p>
+
+<h2>Harmonogram změn a přechodné období</h2>
+<p>Přechod na nové standardy bude probíhat plynule, aby poskytovatelé měli dostatek času na úpravu svých lokálních katalogů.</p>
 
 
+<gov-stepper size="m">
+  <gov-stepper-item color="primary" prefix="1">
+    <span slot="prefix">1</span>
+    <p slot="headline">23. září 2026</p><p slot="annotation">Vydání nových OFN.</p>
+  </gov-stepper-item>
+
+  <gov-stepper-item color="primary" prefix="1">
+    <span slot="prefix">2</span>
+    <p slot="headline">30. listopadu 2026</p><p slot="annotation">Plná implementace nových norem do NKD, včetně nasazení nového validátoru a aktualizace registračního formuláře.</p>
+  </gov-stepper-item>  
+
+  <gov-stepper-item color="primary" prefix="1">
+    <span slot="prefix">3</span>
+    <p slot="headline">1. 10. 2027</p><p slot="annotation">Konec přechodného období. Po tomto datu přestane být poskytována podpora pro starší verze OFN. Pokud nedojde k aktualizaci vašeho lokálního katalogu, může dojít k technickým problémům při harvestaci dat.</p>
+  </gov-stepper-item> 
+</gov-stepper>
 
 
-
-<gov-container id="main">
-  <gov-layout type="aside" variant="left">
-    <!-- Postranní panel s filtry -->
-    <gov-layout-column>
-      <aside aria-label="Filtr aktualit">
-        <form class="gov-filters">
-          
-          <!-- Skupina 1: Filtr 1 -->
-          <fieldset class="gov-filter-group">
-            <legend class="gov-filters__heading">Filtr 1</legend>
-            <ul class="gov-list--plain">
-              <li>
-                <!-- OPRAVENO: Přidáno id="filter-a" -->
-                <gov-form-checkbox id="filter-a" size="m" value="hodnota-a" name="filter1" class="js-filter-checkbox">
-                  <gov-form-label size="m" slot="label">filtr Hodnota A</gov-form-label>
-                </gov-form-checkbox>
-              </li>
-              <li>
-                <!-- OPRAVENO: Přidáno id="filter-b" -->
-                <gov-form-checkbox id="filter-b" size="m" value="hodnota-b" name="filter1" class="js-filter-checkbox">
-                  <gov-form-label size="m" slot="label">filtr Hodnota B</gov-form-label>
-                </gov-form-checkbox>
-              </li>
-            </ul>
-          </fieldset>
-
-          <!-- Skupina 2: Filtr 2 -->
-          <fieldset class="gov-filter-group">
-            <legend class="gov-filters__heading">Filtr 2</legend>
-            <ul class="gov-list--plain">
-              <li>
-                <!-- OPRAVENO: Přidáno id="filter-c" -->
-                <gov-form-checkbox id="filter-c" size="m" value="hodnota-c" name="filter2" class="js-filter-checkbox">
-                  <gov-form-label size="m" slot="label">filtr Hodnota C</gov-form-label>
-                </gov-form-checkbox>
-              </li>
-              <li>
-                <!-- OPRAVENO: Přidáno id="filter-d" -->
-                <gov-form-checkbox id="filter-d" size="m" value="hodnota-d" name="filter2" class="js-filter-checkbox">
-                  <gov-form-label size="m" slot="label">filtr Hodnota D</gov-form-label>
-                </gov-form-checkbox>
-              </li>
-            </ul>
-          </fieldset>
-
-        </form>
-      </aside>
-    </gov-layout-column>
-
-    <!-- Hlavní obsah s kartami -->
-    <gov-layout-column>
-      <main>
-        <section aria-label="Výpis článků">
-          <gov-grid gap="l" class="gov-card-grid">
-            
-            <!-- Karta A (Filtr A) -->
-            <gov-grid-item col-span="12" data-category="hodnota-a" class="gov-card-item">
-              <article>
-                <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-a">
-                  <gov-flex gap="s" direction="column">
-                    <header>
-                      <h2 id="akt-hodnota-a" class="gov-card__headline">Hodnota A</h2>
-                    </header>
-                  </gov-flex>
-                </gov-card>
-              </article>
-            </gov-grid-item>
-
-            <!-- Karta B (Filtr B) -->
-            <gov-grid-item col-span="12" data-category="hodnota-b" class="gov-card-item">
-              <article>
-                <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-b">
-                  <gov-flex gap="s" direction="column">
-                    <header>
-                      <h2 id="akt-hodnota-b" class="gov-card__headline">Hodnota B</h2>
-                    </header>
-                  </gov-flex>
-                </gov-card>
-              </article>
-            </gov-grid-item>
-
-            <!-- Karta C (Filtr C) -->
-            <gov-grid-item col-span="12" data-category="hodnota-c" class="gov-card-item">
-              <article>
-                <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-c">
-                  <gov-flex gap="s" direction="column">
-                    <header>
-                      <h2 id="akt-hodnota-c" class="gov-card__headline">Hodnota C</h2>
-                    </header>
-                  </gov-flex>
-                </gov-card>
-              </article>
-            </gov-grid-item>
-
-            <!-- Karta D (Filtr A i D) -->
-            <gov-grid-item col-span="12" data-category="hodnota-a hodnota-d" class="gov-card-item">
-              <article>
-                <gov-card direction="horizontal" href="#" aria-labelledby="akt-hodnota-d">
-                  <gov-flex gap="s" direction="column">
-                    <header>
-                      <h2 id="akt-hodnota-d" class="gov-card__headline">Hodnota D</h2>
-                    </header>
-                  </gov-flex>
-                </gov-card>
-              </article>
-            </gov-grid-item>
-
-          </gov-grid>
-        </section>
-      </main>
-    </gov-layout-column>
-  </gov-layout>
-</gov-container>
+</gov-card>

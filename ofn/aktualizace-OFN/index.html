@@ -18,66 +18,114 @@ lang: cs
 
 <gov-spacer size="m"></gov-spacer>
 
-<iframe width="1409" height="793" src="https://www.youtube.com/embed/xFdgnbIHLTA" title="Změny v OFN: Jak postupovat dle nového zákona o správě dat?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<gov-container>
+  <gov-flex direction="column" gap="l" responsive>
+    <iframe 
+      src="https://www.youtube.com/embed/xFdgnbIHLTA" 
+      title="Změny v OFN: Jak postupovat dle nového zákona o správě dat?" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen
+      style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    ></iframe>
+  </gov-flex>
+</gov-container>
+
+
+  
+<!-- iframe width="1409" height="793" src="https://www.youtube.com/embed/xFdgnbIHLTA" title="Změny v OFN: Jak postupovat dle nového zákona o správě dat?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe -->
 
 <gov-spacer size="m"></gov-spacer>
 
 
-<gov-card>
-<h2>Co se mění?</h2>
-<p>Původní jedna rozsáhlá norma byla rozdělena na dílčí normy, aby každý správce četl jen tu část, která se ho týká. Všechny nové normy jsou již dostupné na <a href="https://ofn.gov.cz">ofn.gov.cz</a>.</p>
-
-<h3>Rozdělení norem a hlavní novinky</h3>
-
-<p><strong>DCAT-AP-CZ: Rozhraní katalogů dat</strong><br>
-Popisuje API katalogu nezávisle na tom, jaká data (otevřená/neotevřená) obsahuje. Technickou novinkou je využití samostatných JSON-LD kontextů.</p>
-
-<p><strong>DCAT-AP-CZ: Datová rozhraní</strong><br>
-Norma určená pro splnění povinností dle zákona o správě dat (popis a klasifikace datových rozhraní, které nejsou nutně open daty).</p>
-
-<p><strong>DCAT-AP-CZ: Datové sady otevřených dat</strong><br>
-Věcné pokračování dosavadní praxe pro open data.<br>
-• Novinka: Nutnost explicitně indikovat, že jde o otevřená data (odkazem na zákon č. 106/1999 Sb.).<br>
-• Novinka: Zavedení volitelné položky „vstupní stránka“ (link z NKD přímo na vizitku datové sady ve vašem lokálním katalogu).<br>
-• Změna pojmosloví: Termín „datová série“ se mění na přesnější „série datových sad“.</p>
-
-<p><strong>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</strong><br>
-Vydělena specifická nadstavba pro HVDs.<br>
-• Novinka: Kromě indikace HVD přibyla povinnost explicitního odkazu na konkrétní paragraf zákona č. 106/1999 Sb., který o této povinnosti hovoří (sjednocení odkazů na českou legislativu).</p>
-
-<h2>Jak mají poskytovatelé postupovat?</h2>
-<p>Vaše další kroky se odvíjejí od způsobu, jakým svá data do NKD poskytujete:</p>
-
-<p><strong>Provozovatelé lokálních katalogů (otevřených) dat (LKOD)</strong><br>
-Je potřeba naplánovat technickou aktualizaci vašeho lokálního katalogu na nové verze OFN.<br>
-Při aktualizaci je klíčové zajistit explicitní označení datových sad otevřených dat (odkazem na legislativu), aby se v budoucnu v rámci jednoho katalogu nemíchala s neotevřenými datovými rozhraními.<br>
-Tip: Poskytovatelé mají volnost v tom, zda budou provozovat jeden společný Lokální katalog dat (pro otevřená i neotevřená data), nebo si pro otevřená data a datová rozhraní zřídí oddělené lokální katalogy.</p>
-
-<p><strong>Poskytovatelé registrující data manuálně (přes registrační formulář a datovou schránku)</strong><br>
-Z vaší strany není v tuto chvíli nutná žádná akce ani zpětná přeregistrace.<br>
-Historicky zaregistrované záznamy budou interně zaktualizovány na straně NKOD.<br>
-Aktualizovaný webový registrační formulář, který bude reflektovat nové normy, bude spuštěn do konce listopadu 2026.</p>
-
-<h2>Harmonogram změn a přechodné období</h2>
-<p>Přechod na nové standardy bude probíhat plynule, aby poskytovatelé měli dostatek času na úpravu svých lokálních katalogů.</p>
 
 
-<gov-stepper size="m">
-  <gov-stepper-item color="primary" prefix="1">
-    <span slot="prefix">1</span>
-    <p slot="headline">23. září 2026</p><p slot="annotation">Vydání nových OFN.</p>
-  </gov-stepper-item>
+<gov-container id="main">
+  <article>
+    <header class="gov-page-heading gov-mb--5xl">
+      <h2>Postup a harmonogram změn</h2>
+    </header>
 
-  <gov-stepper-item color="primary" prefix="1">
-    <span slot="prefix">2</span>
-    <p slot="headline">30. listopadu 2026</p><p slot="annotation">Plná implementace nových norem do NKD, včetně nasazení nového validátoru a aktualizace registračního formuláře.</p>
-  </gov-stepper-item>  
+    <main class="gov-text-content">
+      <section class="gov-block" aria-labelledby="nadpis0">
+        <h3 id="nadpis0">Co se mění?</h3>
+        <p>Původní jedna rozsáhlá norma byla rozdělena na dílčí normy, aby každý správce četl jen tu část, která se ho týká. Všechny nové normy jsou již dostupné na <a href="https://ofn.gov.cz">ofn.gov.cz</a>.</p>
+        
+        <h4>Nové OFN a hlavní novinky</h4>
+        <ul>
+          <li>
+            <strong>DCAT-AP-CZ: Rozhraní katalogů dat</strong><br>
+            Popisuje API katalogu nezávisle na tom, jaká data (otevřená/neotevřená) obsahuje. Technickou novinkou je využití samostatných JSON-LD kontextů.
+          </li>
+          <li>
+            <strong>DCAT-AP-CZ: Datová rozhraní</strong><br>
+            Norma určená pro splnění povinností dle zákona o správě dat (popis a klasifikace datových rozhraní, které nejsou nutně open daty).
+          </li>
+          <li>
+            <strong>DCAT-AP-CZ: Datové sady otevřených dat</strong><br>
+            Věcné pokračování dosavadní praxe pro open data.
+            <ul>
+              <li><strong>Novinka:</strong> Nutnost explicitně indikovat, že jde o otevřená data (odkazem na zákon č. 106/1999 Sb.).</li>
+              <li><strong>Novinka:</strong> Zavedení volitelné položky „vstupní stránka“ (link z NKD přímo na vizitku datové sady ve vašem lokálním katalogu).</li>
+              <li><strong>Změna pojmosloví:</strong> Termín „datová série“ se mění na přesnější „série datových sad“.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</strong><br>
+            Vydělena specifická nadstavba pro HVDs.
+            <ul>
+              <li><strong>Novinka:</strong> Kromě indikace HVD přibyla povinnost explicitního odkazu na konkrétní paragraf zákona č. 106/1999 Sb., který o této povinnosti hovoří (sjednocení odkazů na českou legislativu).</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-  <gov-stepper-item color="primary" prefix="1">
-    <span slot="prefix">3</span>
-    <p slot="headline">1. 10. 2027</p><p slot="annotation">Konec přechodného období. Po tomto datu přestane být poskytována podpora pro starší verze OFN. Pokud nedojde k aktualizaci vašeho lokálního katalogu, může dojít k technickým problémům při harvestaci dat.</p>
-  </gov-stepper-item> 
-</gov-stepper>
+      <section class="gov-block" aria-labelledby="nadpis1">
+        <h3 id="nadpis1">Jak mají poskytovatelé postupovat?</h3>
+        <p>Vaše další kroky se odvíjejí od způsobu, jakým svá data do NKD poskytujete:</p>
+        <ul>
+          <li>
+            <strong>Provozovatelé lokálních katalogů (otevřených) dat (LKOD)</strong>
+            <p>Je potřeba naplánovat technickou aktualizaci vašeho lokálního katalogu na nové verze OFN.</p>
+            <p>Při aktualizaci je klíčové zajistit explicitní označení datových sad otevřených dat (odkazem na legislativu), aby se v budoucnu v rámci jednoho katalogu nemíchala s neotevřenými datovými rozhraními.</p>
+            <p><em>Tip:</em> Poskytovatelé mají volnost v tom, zda budou provozovat jeden společný Lokální katalog dat (pro otevřená i neotevřená data), nebo si pro otevřená data a datová rozhraní zřídí oddělené lokální katalogy.</p>
+          </li>
+          <li>
+            <strong>Poskytovatelé registrující data manuálně (přes registrační formulář a datovou schránku)</strong>
+            <p>Z vaší strany není v tuto chvíli nutná žádná akce ani zpětná přeregistrace.</p>
+            <p>Historicky zaregistrované záznamy budou interně zaktualizovány na straně NKOD.</p>
+            <p>Aktualizovaný webový registrační formulář, který bude reflektovat nové normy, bude spuštěn do konce listopadu 2026.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="gov-block" aria-labelledby="nadpis2">
+        <h3 id="nadpis2">Harmonogram změn a přechodné období</h3>
+        <p>Přechod na nové standardy bude probíhat plynule, aby poskytovatelé měli dostatek času na úpravu svých lokálních katalogů.</p>
+
+        <gov-stepper size="m">
+          <gov-stepper-item color="primary" prefix="1">
+            <span slot="prefix">1</span>
+            <p slot="headline">23. září 2026</p>
+            <p slot="annotation">Vydání nových OFN.</p>
+          </gov-stepper-item>
+
+          <gov-stepper-item color="primary" prefix="2">
+            <span slot="prefix">2</span>
+            <p slot="headline">30. listopadu 2026</p>
+            <p slot="annotation">Plná implementace nových norem do NKD, včetně nasazení nového validátoru a aktualizace registračního formuláře.</p>
+          </gov-stepper-item>
+
+          <gov-stepper-item color="primary" prefix="3">
+            <span slot="prefix">3</span>
+            <p slot="headline">1. 10. 2027</p>
+            <p slot="annotation">Konec přechodného období. Po tomto datu přestane být poskytována podpora pro starší verze OFN. Pokud nedojde k aktualizaci vašeho lokálního katalogu, může dojít k technickým problémům při harvestaci dat.</p>
+          </gov-stepper-item>
+        </gov-stepper>
+      </section>
+    </main>
+  </article>
+</gov-container>
 
 
-</gov-card>

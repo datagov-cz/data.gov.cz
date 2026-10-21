@@ -185,7 +185,7 @@ NKD při diagnostice ze serveru nestahuje kompletní datové sady – nepotřebu
 
 Chyba vzniká ve chvíli, kdy webový server (nebo aplikace na pozadí) při přijetí dotazu HEAD začne zbytečně generovat nebo načítat celý velký soubor. Odpověď s hlavičkami se tím výrazně zpozdí a NKD spojení **po 3 sekundách nekompromisně ukončí (timeout)**.
 
-## Řešení
+### Řešení
 Nakonfigurujte webový server (např. Nginx, Apache, IIS) nebo navazující aplikaci tak, aby diagnostické požadavky HTTP HEAD odbavovaly okamžitě a nativně:
   * Server musí na požadavek HEAD vrátit pouze odpovídající HTTP hlavičky (např. 200 OK, Content-Type, Content-Length) **bez generování těla odpovědi (payloadu)**.
   * U dynamicky generovaných datových sad zajistěte, aby skript při metodě HEAD neprováděl náročné databázové dotazy ani neskládal výsledný soubor, ale pouze ověřil existenci zdroje a vrátil hlavičky.

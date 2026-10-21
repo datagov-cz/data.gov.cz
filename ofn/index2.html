@@ -128,6 +128,11 @@ lang: cs
   .gov-filter-group + .gov-filter-group {
     margin-top: 1.5rem;
   }
+
+  gov-infobar a,
+  gov-infobar a:visited {
+    color: #ffffff !important;
+  }
 </style>
 
 
@@ -142,7 +147,7 @@ lang: cs
   <p>
     Od 1. 10. 2027 končí podpora OFN Rozhraní katalogů otevřených dat a Specifikace pro vyhlášku č. 360/2023 Sb.
     <br>
-    Přejděte na NOVÉ verze specifikací <a href="/ofn/aktualizace-OFN/" style="color: #ffffff;"><b>podle pokynů pro aktualizaci OFN v souvislosti se zákonem o správě dat <gov-icon name="box-arrow-up-right" title="Přejít na odkaz" class="gov-icon hydrated" type="components"></gov-icon></b></a>.
+    Přejděte na NOVÉ verze specifikací <a href="/ofn/aktualizace-OFN/" style="color: #ffffff;"><b>podle pokynů pro aktualizaci OFN v souvislosti se zákonem o správě dat</b> <gov-icon name="box-arrow-up-right" title="Přejít na odkaz" class="gov-icon hydrated" type="components"></gov-icon></a>.
   </p>
 </gov-infobar>
 
@@ -297,22 +302,20 @@ lang: cs
       <main>
         <section aria-label="Seznam OFN">
           <gov-grid gap="l" class="gov-card-grid">
-
+   
             <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">
                 <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-dat">
-                      <gov-flex align-items="center" gap="s">
-                        <gov-chip color="success" type="solid" size="s" tag="a">NOVÉ</gov-chip>
+                    <gov-chip color="success" type="solid" size="s" tag="a">NOVÉ</gov-chip>
                         <h3 id="akt-dcat-ap-cz-rozhraní-katalogů-dat" class="gov-card__headline">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
-                        </gov-flex>
                     <ul>
                       <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
                       <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
                       <li>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</li>
                     </ul>
-                  </gov-flex>
                 </gov-card>
-     
-            </gov-grid-item>            
+            </gov-grid-item>
+
+
 
             <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">
               <article>

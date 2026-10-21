@@ -299,22 +299,22 @@ lang: cs
         <section aria-label="Seznam OFN">
           <gov-grid gap="l" class="gov-card-grid">
    
-            <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">
-                <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-dat">
-                    
-                    <!-- Obal pro zarovnání chipu a nadpisu na jeden řádek -->
-                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-                        <gov-chip color="success" type="solid" size="s" tag="a">NOVÉ</gov-chip>
-                        <h3 slot="headline">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
-                    </div>
+<gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">
+    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-dat">
+        
+        <!-- Slot dáme na obalový div + vynulujeme margin u h3 -->
+        <div slot="headline" style="display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+            <gov-chip color="success" type="solid" size="s" tag="a">NOVÉ</gov-chip>
+            <h3 style="margin: 0;">DCAT-AP-CZ: Rozhraní katalogů dat</h3>
+        </div>
 
-                    <ul>
-                        <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
-                        <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
-                        <li>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</li>
-                    </ul>
-                </gov-card>
-            </gov-grid-item>
+        <ul>
+            <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
+            <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
+            <li>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</li>
+        </ul>
+    </gov-card>
+</gov-grid-item>
 
 
 <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">

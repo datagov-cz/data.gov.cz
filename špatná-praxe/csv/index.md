@@ -35,6 +35,7 @@ Pokud nemáme přístup ke zdroji, je třeba samotný CSV soubor překódovat, c
 {% include image.html url="../../přílohy/špatná-praxe/csv-konverze.webp" description="CSV konverze" %}
 
 ### Konverze z pomocí Google Sheets
+⚠️ **Upozornění**: Ujistěte se, že je použití nástrojů jako Google Sheets v souladu s pravidly kybernetické bezpečnosti vaší organizace. V případě pochybností se předem informujte u odpovědných osob ve vaší instituci.
 
 Můžeme rovněž využít Google Sheets, který si s chybným kódováním poradí a nechá nás stáhnout validní CSV. Budeme potřebovat Google účet, který ale [lze zřídit zdarma](https://accounts.google.com/SignUp).
 
@@ -65,6 +66,7 @@ Je třeba zajistit, že soubor používá správný oddělovač, tzn. čárku ,.
 Nejjednodušší je zásah u zdroje problému, tedy pokud CSV soubor exportujeme z databáze, nebo generujeme v kódu aplikace, mělo by jít oddělovač nastavit na čárku.
 
 ### Konverze pomocí Google Sheets pro menší soubory
+⚠️ **Upozornění**: Ujistěte se, že je použití nástrojů jako Google Sheets v souladu s pravidly kybernetické bezpečnosti vaší organizace. V případě pochybností se předem informujte u odpovědných osob ve vaší instituci.
 
 Jedna z cest k validnímu CSV vede přes použití importní funkce Google Sheets, která ale funguje jen pro menší soubory. Budeme potřebovat Google účet, který ale [lze zřídit zdarma](https://accounts.google.com/SignUp).
 

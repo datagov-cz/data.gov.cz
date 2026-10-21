@@ -170,14 +170,25 @@ Otevřená data se obvykle reprezentují v textových formátech. Znaky v těcht
 Cross-Origin Resource Sharing (CORS) je technika využívající hlaviček protokolu HTTP, která umožňuje aplikacím běžícím ve webovém prohlížeči přistoupit ke zdroji (datům), který leží na jiné doméně než na které běží ona aplikace. Takový přístup je ve výchozím stavu z bezpečnostních důvodů zablokován. V kontextu otevřených dat je ale žádoucí, aby takovým aplikacím byl přístup k datům umožněn. Detailně se způsobu fungování CORS věnuje [web enable-cors.org](https://enable-cors.org/) (anglicky), kde lze nalézt i příklady konfigurace pro jednotlivé webservery, či [článek o CORS na webu Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (anglicky).
 
 ### Symptomy
-
 Při přístupu aplikace běžící v problížeči k otevřeným datům přístupným přes webserver nepodporující CORS je tento přístup zablokován. V konzoli prohlížeče je hláška podobná této: **XMLHttpRequest cannot load [http://localhost:3000/example](http://localhost:3000/example). No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin '[http://localhost:8080](http://localhost:8080/)' is therefore not allowed access.**.
 
 ### Řešení
-
 Pro přístup ke čtení otevřených dat se dá CORS vyřešit velmi zjednodušeně tak, že webový server bude při přístupu ke zdroji (souboru) pomocí HTTP metod **GET**, **HEAD** a **OPTIONS** vracet hlavičku **Access-Control-Allow-Origin** s hodnotou *, případně ještě hlavičku **Access-Control-Allow-Methods** s hodnotou **GET**, **HEAD**, **OPTIONS**. Pro složitější konfiguraci se řiďte [webem enable-cors.org](https://enable-cors.org/) (anglicky).
 
-Národní katalog otevřených dat kontroluje dostupnost techniky CORS metodou **OPTIONS**.
+NKD kontroluje dostupnost techniky CORS metodou **OPTIONS**.
+
+## Nerepektování metody HTTP HEAD a vypršení časového limitu
+Ve statistikách dostupnosti NKD může být váš soubor vyhodnocen jako „nedostupný“, přestože při běžném kliknutí v prohlížeči soubor stáhnout lze. Tato chyba je nejčastěji způsobena nevhodnou konfigurací zpracování HTTP hlaviček na straně vašeho webového serveru.
+
+### Příčina
+NKD při diagnostice ze serveru nestahuje kompletní datové sady – nepotřebuje přenášet megabajty či gigabajty dat. K ověření existence souboru a správnosti nastavení serveru využívá velmi „lehké“ diagnostické dotazy typu **HTTP HEAD** a **HTTP OPTIONS**. Standardní odpověď na takový dotaz trvá pouze jednotky milisekund.
+
+Chyba vzniká ve chvíli, kdy webový server (nebo aplikace na pozadí) při přijetí dotazu HEAD začne zbytečně generovat nebo načítat celý velký soubor. Odpověď s hlavičkami se tím výrazně zpozdí a NKD spojení **po 3 sekundách nekompromisně ukončí (timeout)**.
+
+## Řešení
+Nakonfigurujte webový server (např. Nginx, Apache, IIS) nebo navazující aplikaci tak, aby diagnostické požadavky HTTP HEAD odbavovaly okamžitě a nativně:
+  * Server musí na požadavek HEAD vrátit pouze odpovídající HTTP hlavičky (např. 200 OK, Content-Type, Content-Length) **bez generování těla odpovědi (payloadu)**.
+  * U dynamicky generovaných datových sad zajistěte, aby skript při metodě HEAD neprováděl náročné databázové dotazy ani neskládal výsledný soubor, ale pouze ověřil existenci zdroje a vrátil hlavičky.
 
 ## Strojově nečitelný formát
 Strojová čitelnost souboru není dána jeho formátem (CSV, XML, JSON, …), ale způsobem využití daného formátu. Tedy i zdánlivě strojově čitelný soubor CSV může být ve skutečnosti strojově nečitelný, pokud například vznikl uložením tabulky formátované pro tisk, a tak obsahuje zbytečné prázdné řádky či odsazení.
@@ -216,7 +227,7 @@ Rok;Měsíc;Den;Hodnota;Příznak
 1961;01;3;2,2;
 ```
 ## Data nevalidní vůči schématu
-O tom, že mají být data [opatřena schématem](https://data.gov.cz/otevřená-data/pro-poskytovatele/technické-standardy-stupeň-otevřenosti-3/), není třeba diskutovat. V celé řadě případů ale, i když schéma existuje a je i odkazováno v metadatech datové sady v NKOD, data nejsou vůči schématu validní. To způsoje problémy jak konzumentům dat, jelikož se na schéma nemohou spolehnout, tak samotným poskytovatelům, jelikož to ukazuje problém s datovou kvalitou a s kvalitou procesu publikace dat. Národní katalog otevřených dat zatím validitu dat vůči schématu nekontroluje, je to povinnost poskytovatelů.
+O tom, že mají být data [opatřena schématem](https://data.gov.cz/otevřená-data/pro-poskytovatele/technické-standardy-stupeň-otevřenosti-3/), není třeba diskutovat. V celé řadě případů ale, i když schéma existuje a je i odkazováno v metadatech datové sady v NKOD, data nejsou vůči schématu validní. To způsoje problémy jak konzumentům dat, jelikož se na schéma nemohou spolehnout, tak samotným poskytovatelům, jelikož to ukazuje problém s datovou kvalitou a s kvalitou procesu publikace dat. Národní katalog dat zatím validitu dat vůči schématu nekontroluje, je to povinnost poskytovatelů.
 
 Nevalidní data lze odhalit jednoduše, a proces validace při publikaci dat by měl být ideálně automatizován. Validátorů, které jsou přístupné online, nebo jsou ve formě programu ke spuštění na serveru či jiném počítači, je pro otevřené formáty celá řada.
   * Pro RDF popsané pomocí SHACL lze použít např. [https://shacl-playground.zazuko.com/](https://shacl-playground.zazuko.com/).

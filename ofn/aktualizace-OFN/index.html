@@ -34,6 +34,7 @@ lang: cs
 
 <gov-spacer size="m"></gov-spacer>
 
+
 <div>
   <h2>Postup a harmonogram změn</h2>
 
@@ -41,33 +42,20 @@ lang: cs
     <gov-grid gap="l" class="gov-card-grid">
       <gov-grid-item col-span="12">
           <gov-card direction="horizontal" aria-labelledby="card1">
-            <h3 id="card1" class="gov-card__headline">Co se mění</h3>
+            <h3 id="card1" class="gov-card__headline" style="margin-top: 0;">Co se mění</h3>
               <p>Původní jedna rozsáhlá norma byla rozdělena na čtyři dílčí normy, aby každý správce četl jen tu část, která se ho týká. Všechny nové normy jsou již dostupné na <a href="https://ofn.gov.cz">ofn.gov.cz</a>.</p>
 
-                <h4>DCAT-AP-CZ: Rozhraní katalogů dat</h4>
-                <p>Popisuje API katalogu nezávisle na tom, jaká data (otevřená/neotevřená) obsahuje. Technickou novinkou je využití samostatných JSON-LD kontextů.</p>
-  
+                <gov-message color="primary" type="subtle"><gov-icon type="components" name="check-lg" slot="icon"></gov-icon><b>DCAT-AP-CZ: Rozhraní katalogů dat</b>: Popisuje API katalogu nezávisle na tom, jaká data (otevřená/neotevřená) obsahuje. Technickou novinkou je využití samostatných JSON-LD kontextů.</gov-message>
+                <gov-message color="primary" type="subtle"><gov-icon type="components" name="check-lg" slot="icon"></gov-icon><b>DCAT-AP-CZ: Datová rozhraní</b>: Norma určená pro splnění povinností dle zákona o správě dat (popis a klasifikace datových rozhraní, které nejsou nutně open daty).</gov-message>
+                <gov-message color="primary" type="subtle"><gov-icon type="components" name="check-lg" slot="icon"></gov-icon><b>DCAT-AP-CZ: Datové sady otevřených dat</b>:Věcné pokračování dosavadní praxe pro open data. <em>Nově:</em> Nutnost explicitně indikovat, že jde o otevřená data (odkazem na zákon č. 106/1999 Sb.). Zavedení volitelné položky „vstupní stránka“ (link z NKD přímo na vizitku datové sady ve vašem lokálním katalogu). Termín „datová série“ se mění na přesnější „série datových sad“.</gov-message>
+                <gov-message color="primary" type="subtle" style="margin-bottom: 0;"><gov-icon type="components" name="check-lg" slot="icon"></gov-icon><b>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVDs)</b>:Vydělena specifická nadstavba pro HVDs. <em>Nově:</em> Kromě indikace HVD přibyla povinnost explicitního odkazu na konkrétní paragraf zákona č. 106/1999 Sb., který o této povinnosti hovoří (sjednocení odkazů na českou legislativu).</gov-message>
 
-
-                <h4>DCAT-AP-CZ: Datová rozhraní</h4>
-                <p>Norma určená pro splnění povinností dle zákona o správě dat (popis a klasifikace datových rozhraní, které nejsou nutně open daty).</p>
-
-
-                <h4>DCAT-AP-CZ: Datové sady otevřených dat</h4>
-                <p>Věcné pokračování dosavadní praxe pro open data. <em>Nově:</em> Nutnost explicitně indikovat, že jde o otevřená data (odkazem na zákon č. 106/1999 Sb.). Zavedení volitelné položky „vstupní stránka“ (link z NKD přímo na vizitku datové sady ve vašem lokálním katalogu). Termín „datová série“ se mění na přesnější „série datových sad“.</p>
-
-                <h4>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVDs)</h4>
-                <p>Vydělena specifická nadstavba pro HVDs. <em>Nově:</em> Kromě indikace HVD přibyla povinnost explicitního odkazu na konkrétní paragraf zákona č. 106/1999 Sb., který o této povinnosti hovoří (sjednocení odkazů na českou legislativu).</p>
-
-                
           </gov-card>
       </gov-grid-item>
 
-
-      
       <gov-grid-item col-span="12">
           <gov-card direction="horizontal" aria-labelledby="card2">
-            <h3 id="card2" class="gov-card__headline">Jak mají poskytovatelé postupovat?</h3>
+            <h3 id="card2" class="gov-card__headline" style="margin-top: 0;">Jak mají poskytovatelé postupovat?</h3>
               <p>Vaše další kroky se odvíjejí od způsobu, jakým svá data do NKD poskytujete.</p>
               <h4>Provozovatelé lokálních katalogů (otevřených) dat (LKOD)</h4>
               <ul>
@@ -76,7 +64,7 @@ lang: cs
                 <li>Poskytovatelé mají volnost v tom, zda budou provozovat jeden společný Lokální katalog dat (pro otevřená i neotevřená data), nebo si pro otevřená data a datová rozhraní zřídí oddělené lokální katalogy.</li>
               </ul>
               <h4>Poskytovatelé registrující data manuálně (přes registrační formulář a datovou schránku)</h4>
-              <ul>
+              <ul style="margin-bottom: 0;">
                 <li>Z vaší strany není v tuto chvíli nutná žádná akce ani zpětná přeregistrace.</li>
                 <li>Historicky zaregistrované záznamy budou interně zaktualizovány na straně NKOD.</li>
                 <li>Aktualizovaný webový registrační formulář, který bude reflektovat nové normy, bude spuštěn do konce listopadu 2026.</li>
@@ -84,21 +72,13 @@ lang: cs
           </gov-card>
       </gov-grid-item>
 
-
-
-
       <gov-grid-item col-span="12">
- 
-          <gov-card direction="horizontal" aria-labelledby="card3">
-   
-
-
-                  <h3 id="card3" class="gov-card__headline">Harmonogram změn a přechodné období</h3>
-
+           <gov-card direction="horizontal" aria-labelledby="card3">
+                   <h3 id="card3" class="gov-card__headline" style="margin-top: 0;">Harmonogram změn a přechodné období</h3>
 
               <p>Přechod na nové standardy bude probíhat plynule, aby poskytovatelé měli dostatek času na úpravu svých lokálních katalogů.</p>
 
-              <gov-stepper size="m">
+              <gov-stepper size="m" style="margin-bottom: 0;">
                 <gov-stepper-item color="primary" prefix="1">
                   <span slot="prefix">1</span>
                   <p slot="headline">23. září 2026</p>
@@ -117,7 +97,6 @@ lang: cs
                   <p slot="annotation">Konec přechodného období. Po tomto datu přestane být poskytována podpora pro starší verze OFN. Pokud nedojde k aktualizaci vašeho lokálního katalogu, může dojít k technickým problémům při harvestaci dat.</p>
                 </gov-stepper-item>
               </gov-stepper>
-
 
           </gov-card>
 

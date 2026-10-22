@@ -113,9 +113,30 @@ lang: cs
     }
   }
 
+    #main:has(#filter-platne[checked]),
+  #main:has(#filter-platne:checked),
+  #main:has(#filter-platne input:checked) {
+    .gov-card-item:not([data-category~="platne"]) {
+      display: none;
+    }
+  }
+
+    #main:has(#filter-neplatne[checked]),
+  #main:has(#filter-neplatne:checked),
+  #main:has(#filter-neplatne input:checked) {
+    .gov-card-item:not([data-category~="neplatne"]) {
+      display: none;
+    }
+  }
+
   /* Odsazení mezi skupinami filtrů */
   .gov-filter-group + .gov-filter-group {
     margin-top: 1.5rem;
+  }
+
+
+  gov-card {
+    color: #000000;
   }
 
 </style>
@@ -220,6 +241,30 @@ lang: cs
             </ul>
           </fieldset>
 
+          <!-- Skupina 1: aktuálnost -->
+          <fieldset class="gov-filter-group">
+            <legend class="gov-filters__heading">Aktuálnost</legend>
+            <ul class="gov-list--plain">
+              <li>
+                <gov-form-checkbox id="filter-platne" size="m" value="platne" name="aktualnost" class="js-filter-checkbox">
+                  <gov-form-label size="m" slot="label">
+                    Platné 
+                  </gov-form-label>
+                </gov-form-checkbox>
+              </li>
+              <li>
+                <gov-form-checkbox id="filter-neplatne" size="m" value="neplatne" name="aktualnost" class="js-filter-checkbox">
+                  <gov-form-label size="m" slot="label">
+                    Neplatné 
+
+                  </gov-form-label>
+                </gov-form-checkbox>
+              </li>
+              
+            </ul>
+          </fieldset>
+
+
           <!-- Skupina 2: Cílová skupina -->
           <fieldset class="gov-filter-group">
             <legend class="gov-filters__heading">Cílová skupina</legend>
@@ -278,497 +323,498 @@ lang: cs
       </aside>
     </gov-layout-column>
 
+
+    
     <!-- Hlavní obsah s kartami -->
-    <gov-layout-column>
-      <main>
-        <section aria-label="Seznam OFN">
-          <gov-grid gap="l" class="gov-card-grid">
+<style>
+  gov-card {
+    color: #000000;
+  }
+</style>
 
-            
+<gov-layout-column>
+  <main>
+    <section aria-label="Seznam OFN">
+      <gov-grid gap="l" class="gov-card-grid">
 
-          <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">
-                <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-dat">
-                    <header>
-                      <gov-flex align-items="center" gap="s">
-                        <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
-                        <p>DCAT-AP-CZ: Rozhraní katalogů dat</p>
-                      </gov-flex>
-                    </header>
-                    <ul>
-                      <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
-                      <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
-                      <li>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</li>
-                    </ul>
-                </gov-card>
-            </gov-grid-item>
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-dat">
+            <header>
+              <gov-flex align-items="center" gap="s">
+                <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
+                <p><strong>DCAT-AP-CZ: Rozhraní katalogů dat</strong></p>
+              </gov-flex>
+            </header>
+            <ul>
+              <li>Stanovuje způsob zpřístupnění obsahu lokálního katalogu dat a předávání jeho obsahu do Národního katalogu dat.</li>
+              <li>Správci dat v působnosti zákona č. 60/2026 Sb., zejména správci dotčených ISVS.</li>
+              <li>§ 7 a § 36 písm. a) zákona č. 60/2026 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-datová-rozhraní/" aria-labelledby="akt-dcat-ap-cz-datová-rozhraní">
+            <header>
+              <gov-flex align-items="center" gap="s">
+                <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
+                <p><strong>DCAT-AP-CZ: Datová rozhraní</strong></p>
+              </gov-flex>
+            </header>
+            <ul>
+              <li>Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.</li>
+              <li>Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.</li>
+              <li>§ 6 odst. 2 zákona č. 60/2026 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti poskytovatele zakon-106-1999 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-otevřená-data/" aria-labelledby="akt-dcat-ap-cz-otevřená-data">
+            <header>
+              <gov-flex align-items="center" gap="s">
+                <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
+                <p><strong>DCAT-AP-CZ: Datové sady otevřených dat</strong></p>
+              </gov-flex>
+            </header>
+            <ul>
+              <li>Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.</li>
+              <li>Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.</li>
+              <li>§ 4b a § 4c zákona č. 106/1999 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti poskytovatele zakon-106-1999 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-hvd/" aria-labelledby="akt-dcat-ap-cz-hvd">
+            <header>
+              <gov-flex align-items="center" gap="s">
+                <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
+                <p><strong>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</strong></p>
+              </gov-flex>
+            </header>
+            <ul>
+              <li>Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.</li>
+              <li>Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.</li>
+              <li>§ 5b zákona č. 106/1999 Sb. a nařízení Komise (EU) 2023/138</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti poskytovatele zakon-106-1999 neplatne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-otevřených-dat">
+            <header>
+              <gov-flex align-items="center" gap="s">
+                <gov-chip color="secondary" type="solid" size="xs" tag="a">NAHRAZENO</gov-chip>
+                <p><strong>DCAT-AP-CZ: Rozhraní katalogů otevřených dat</strong></p>
+              </gov-flex>
+            </header>
+            <ul>
+              <li>Podpora končí 1. října 2027. Přejděte na DCAT-AP: Rozhraní katalogů dat.</li>
+              <li>Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.</li>
+              <li>Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.</li>
+              <li>§ 4c zákona č. 106/1999 Sb.; souvisí také s § 24 odst. 2 vyhlášky č. 360/2023 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-            <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele zakon-60-2026" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-datová-rozhraní/" aria-labelledby="akt-dcat-ap-cz-datová-rozhraní">
-        <header>
-          <gov-flex align-items="center" gap="s">
-            <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
-            <p>DCAT-AP-CZ: Datová rozhraní</p>
-          </gov-flex>
-        </header>
-        <ul>
-          <li>Stanovuje metadata pro popis datových rozhraní, jejich účelu, dostupnosti, technických vlastností a zpřístupňovaných dat.</li>
-          <li>Správci dat vytvářející nebo spravující datová rozhraní v dotčených ISVS.</li>
-          <li>§ 6 odst. 2 zákona č. 60/2026 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs zakon-12-2020 neplatne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-360-2023/" aria-labelledby="akt-dcat-ap-cz-360-2023">
+            <header>
+              <gov-flex align-items="center" gap="s">
+                <gov-chip color="secondary" type="solid" size="xs" tag="a">NAHRAZENO</gov-chip>
+                <p><strong>DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb.</strong></p>
+              </gov-flex>
+            </header>
+            <ul>
+              <li>Podpora končí 1.října 2027. Přejděte na DCAT-AP: Datová rozhraní.</li>
+              <li>Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.</li>
+              <li>Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.</li>
+              <li>§ 24 odst. 1 a 2 vyhlášky č. 360/2023 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti poskytovatele zakon-106-1999" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-otevřená-data/" aria-labelledby="akt-dcat-ap-cz-otevřená-data">
-        <header>
-          <gov-flex align-items="center" gap="s">
-            <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
-            <p>DCAT-AP-CZ: Datové sady otevřených dat</p>
-          </gov-flex>
-        </header>
-        <ul>
-          <li>Stanoví způsob popisu datových sad, distribucí, datových služeb, podmínek užití a souvisejících metadat.</li>
-          <li>Povinné subjekty a další poskytovatelé evidující data v Národním katalogu otevřených dat.</li>
-          <li>§ 4b a § 4c zákona č. 106/1999 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/prostorová-data/" aria-labelledby="akt-prostorová-data">
+            <header>
+              <p><strong>Prostorová data</strong></p>
+            </header>
+            <ul>
+              <li>Stanoví doporučené formáty, geometrie, souřadnicové systémy, metadata a služby pro publikaci prostorových dat.</li>
+              <li>Povinné subjekty a další poskytovatelé prostorových dat, správci prostorových IS a koordinátoři témat prostorových dat.</li>
+              <li>Zákon č. 123/1998 Sb. a předpisy INSPIRE.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti poskytovatele zakon-106-1999" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-hvd/" aria-labelledby="akt-dcat-ap-cz-hvd">
-        <header>
-          <gov-flex align-items="center" gap="s">
-            <gov-chip color="success" type="solid" size="xs" tag="a">NOVÉ</gov-chip>
-            <p>DCAT-AP-CZ: Datové sady s vysokou hodnotou (HVD)</p>
-          </gov-flex>
-        </header>
-        <ul>
-          <li>Rozšiřuje katalogizační metadata o informace vyžadované pro datové soubory s vysokou hodnotou.</li>
-          <li>Subjekty veřejného sektoru a další subjekty, které drží datové soubory uvedené v nařízení o HVD.</li>
-          <li>§ 5b zákona č. 106/1999 Sb. a nařízení Komise (EU) 2023/138</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele zakon-60-2026 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/slovníky/" aria-labelledby="akt-slovníky">
+            <header>
+              <p><strong>Slovníky</strong></p>
+            </header>
+            <ul>
+              <li>Popisuje pojmy, jejich význam, vlastnosti a vzájemné vztahy v rámci veřejné správy.</li>
+              <li>Vybraní správci dat a věcní garanti agend.</li>
+              <li>Od 1. ledna 2029 stanoví zákon č. 60/2026 Sb. vybraným správcům dat povinnosti týkající se datových slovníků.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti poskytovatele zakon-106-1999" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-rozhraní-katalogů-otevřených-dat/" aria-labelledby="akt-dcat-ap-cz-rozhraní-katalogů-otevřených-dat">
-        <header>
-      <gov-flex align-items="center" gap="s">
-        <gov-chip color="secondary" type="solid" size="xs" tag="a">NAHRAZENO</gov-chip>
-          <p>DCAT-AP-CZ: Rozhraní katalogů otevřených dat</p>
-      </gov-flex>
-        </header>
-        <ul>
-          <li>Podpora končí 1. října 2027. Přejděte na DCAT-AP: Rozhraní katalogů dat.</li>
-          <li>Stanoví technickou podobu rozhraní lokálního katalogu otevřených dat a způsob předávání katalogizačních záznamů.</li>
-          <li>Poskytovatelé provozující lokální katalog otevřených dat a správci příslušných informačních systémů.</li>
-          <li>§ 4c zákona č. 106/1999 Sb.; souvisí také s § 24 odst. 2 vyhlášky č. 360/2023 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti zakon-106-1999 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/úřední-desky/" aria-labelledby="akt-úřední-desky">
+            <header>
+              <p><strong>Úřední desky</strong></p>
+            </header>
+            <ul>
+              <li>Datový standard pro metadata úřední desky a dokumentů na ní zveřejněných.</li>
+              <li>Státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností (ORP).</li>
+              <li>§ 5a odst. 4 zákona č. 106/1999 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs zakon-12-2020" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dcat-ap-cz-360-2023/" aria-labelledby="akt-dcat-ap-cz-360-2023">
-        <header>
-          <gov-flex align-items="center" gap="s">
-            <gov-chip color="secondary" type="solid" size="xs" tag="a">NAHRAZENO</gov-chip>
-          <p>DCAT-AP-CZ: Specifikace pro vyhlášku č. 360/2023 Sb.</p>
-          </gov-flex>
-        </header>
-        <ul>
-          <li>Podpora končí 1.října 2027. Přejděte na DCAT-AP: Datová rozhraní.</li>
-          <li>Upřesňuje popis datových souborů a datových rozhraní zpřístupňovaných z informačních systémů veřejné správy.</li>
-          <li>Orgány veřejné správy a správci informačních systémů, na které se vyhláška vztahuje.</li>
-          <li>§ 24 odst. 1 a 2 vyhlášky č. 360/2023 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti spravci-isvs doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/registr-práv-a-povinností/" aria-labelledby="akt-registr-práv-a-povinností">
+            <header>
+              <p><strong>Registr práv a povinností (RPP)</strong></p>
+            </header>
+            <ul>
+              <li>Specifikace pro vybrané objekty, agendy, působnosti a informační systémy vedené v RPP.</li>
+              <li>Orgány veřejné moci zapisující a spravující údaje v RPP.</li>
+              <li>Rozsah zveřejňovaných údajů vyplývá zejména ze zákona č. 111/2009 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="metadata-katalogizace IT-architekti spravci-isvs poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/prostorová-data/" aria-labelledby="akt-prostorová-data">
-        <header>
-          <p>Prostorová data</p>
-        </header>
-        <ul>
-          <li>Stanoví doporučené formáty, geometrie, souřadnicové systémy, metadata a služby pro publikaci prostorových dat.</li>
-          <li>Povinné subjekty a další poskytovatelé prostorových dat, správci prostorových IS a koordinátoři témat prostorových dat.</li>
-          <li>Zákon č. 123/1998 Sb. a předpisy INSPIRE.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele zakon-106-1999 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/aktuality/" aria-labelledby="akt-aktuality">
+            <header>
+              <p><strong>Aktuality</strong></p>
+            </header>
+            <ul>
+              <li>Jednotný formát pro publikaci aktualit, zpráv a oficiálních oznámení organizací.</li>
+              <li>Orgány veřejné moci a instituce dobrovolně publikující své zprávy jako otevřená data.</li>
+              <li>Obecná pravidla zákona č. 106/1999 Sb. (dobrovolná publikace).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele zakon-60-2026" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/slovníky/" aria-labelledby="akt-slovníky">
-        <header>
-          <p>Slovníky</p>
-        </header>
-        <ul>
-          <li>Popisuje pojmy, jejich význam, vlastnosti a vzájemné vztahy v rámci veřejné správy.</li>
-          <li>Vybraní správci dat a věcní garanti agend.</li>
-          <li>Od 1. ledna 2029 stanoví zákon č. 60/2026 Sb. vybraným správcům dat povinnosti týkající se datových slovníků.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/číselníky/" aria-labelledby="akt-číselníky">
+            <header>
+              <p><strong>Číselníky</strong></p>
+            </header>
+            <ul>
+              <li>Standard pro datovou strukturu číselníků, jejich položek, platnosti, verzování a vazeb.</li>
+              <li>Správci a poskytovatelé datových sad obsahujících kódované seznamy a číselníky.</li>
+              <li>Dle zvláštních právních předpisů ukládajících povinnost zveřejnit konkrétní číselník.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti zakon-106-1999" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/úřední-desky/" aria-labelledby="akt-úřední-desky">
-        <header>
-          <p>Úřední desky</p>
-        </header>
-        <ul>
-          <li>Datový standard pro metadata úřední desky a dokumentů na ní zveřejněných.</li>
-          <li>Státní orgány, krajské úřady a obecní úřady obcí s rozšířenou působností (ORP).</li>
-          <li>§ 5a odst. 4 zákona č. 106/1999 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/pracovní-místa/" aria-labelledby="akt-pracovní-místa">
+            <header>
+              <p><strong>Pracovní místa</strong></p>
+            </header>
+            <ul>
+              <li>Struktura pro nabídky volných pracovních míst, informace o zaměstnavateli a podmínkách zaměstnání.</li>
+              <li>Služební orgány, úřady a veřejné instituce publikující nabídky práce.</li>
+              <li>Sektorové, služební a pracovněprávní předpisy (bez obecné přímé povinnosti).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti spravci-isvs doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/registr-práv-a-povinností/" aria-labelledby="akt-registr-práv-a-povinností">
-        <header>
-          <p>Registr práv a povinností (RPP)</p>
-        </header>
-        <ul>
-          <li>Specifikace pro vybrané objekty, agendy, působnosti a informační systémy vedené v RPP.</li>
-          <li>Orgány veřejné moci zapisující a spravující údaje v RPP.</li>
-          <li>Rozsah zveřejňovaných údajů vyplývá zejména ze zákona č. 111/2009 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/nádoby-na-tříděný-odpad/" aria-labelledby="akt-nádoby-na-tříděný-odpad">
+            <header>
+              <p><strong>Nádoby na tříděný odpad</strong></p>
+            </header>
+            <ul>
+              <li>Standardizuje údaje o umístění, druzích odpadu, kapacitě a správě nádob na tříděný odpad.</li>
+              <li>Obce, města a poskytovatelé dat v oblasti odpadového hospodářství.</li>
+              <li>Souvisí s informačními povinnostmi obcí v odpadovém hospodářství.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele zakon-106-1999" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/aktuality/" aria-labelledby="akt-aktuality">
-        <header>
-          <p>Aktuality</p>
-        </header>
-        <ul>
-          <li>Jednotný formát pro publikaci aktualit, zpráv a oficiálních oznámení organizací.</li>
-          <li>Orgány veřejné moci a instituce dobrovolně publikující své zprávy jako otevřená data.</li>
-          <li>Obecná pravidla zákona č. 106/1999 Sb. (dobrovolná publikace).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti spravci-isvs doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/rejstříky-svazků-obcí/" aria-labelledby="akt-rejstříky-svazků-obcí">
+            <header>
+              <p><strong>Rejstříky svazků obcí</strong></p>
+            </header>
+            <ul>
+              <li>Datová struktura pro evidenci svazků obcí, jejich členů, orgánů a oficiálních dokumentů.</li>
+              <li>Krajské úřady, obce a správci veřejných rejstříků svazků obcí.</li>
+              <li>Zákon o obcích a předpisy upravující veřejné registry.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/číselníky/" aria-labelledby="akt-číselníky">
-        <header>
-          <p>Číselníky</p>
-        </header>
-        <ul>
-          <li>Standard pro datovou strukturu číselníků, jejich položek, platnosti, verzování a vazeb.</li>
-          <li>Správci a poskytovatelé datových sad obsahujících kódované seznamy a číselníky.</li>
-          <li>Dle zvláštních právních předpisů ukládajících povinnost zveřejnit konkrétní číselník.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/sběrné-dvory/" aria-labelledby="akt-sběrné-dvory">
+            <header>
+              <p><strong>Sběrné dvory</strong></p>
+            </header>
+            <ul>
+              <li>Specifikace pro popis lokality, provozní doby, přijímaného odpadu a kontaktů sběrných dvorů.</li>
+              <li>Obce a provozovatelé zařízení pro nakládání s odpady.</li>
+              <li>Souvisí s informačními povinnostmi v odpadovém hospodářství.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/pracovní-místa/" aria-labelledby="akt-pracovní-místa">
-        <header>
-          <p>Pracovní místa</p>
-        </header>
-        <ul>
-          <li>Struktura pro nabídky volných pracovních míst, informace o zaměstnavateli a podmínkách zaměstnání.</li>
-          <li>Služební orgány, úřady a veřejné instituce publikující nabídky práce.</li>
-          <li>Sektorové, služební a pracovněprávní předpisy (bez obecné přímé povinnosti).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/sportoviště/" aria-labelledby="akt-sportoviště">
+            <header>
+              <p><strong>Sportoviště</strong></p>
+            </header>
+            <ul>
+              <li>Struktura informací o veřejných sportovištích, jejich vybavení, provozu a umístění.</li>
+              <li>Obce, kraje a správci veřejných sportovních zařízení.</li>
+              <li>Bez přímé zákonné povinnosti (doporučený standard pro opakovatelnou využitelnost).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/nádoby-na-tříděný-odpad/" aria-labelledby="akt-nádoby-na-tříděný-odpad">
-        <header>
-          <p>Nádoby na tříděný odpad</p>
-        </header>
-        <ul>
-          <li>Standardizuje údaje o umístění, druzích odpadu, kapacitě a správě nádob na tříděný odpad.</li>
-          <li>Obce, města a poskytovatelé dat v oblasti odpadového hospodářství.</li>
-          <li>Souvisí s informačními povinnostmi obcí v odpadovém hospodářství.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/turistické-cíle/" aria-labelledby="akt-turistické-cíle">
+            <header>
+              <p><strong>Turistické cíle</strong></p>
+            </header>
+            <ul>
+              <li>Jednotný popis turistických atraktivit, jejich vlastností, přístupnosti a kontaktů.</li>
+              <li>Obce, destinační managementy a krajské organizace cestovního ruchu.</li>
+              <li>Bez přímé zákonné povinnosti (doporučený standard).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti spravci-isvs doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/rejstříky-svazků-obcí/" aria-labelledby="akt-rejstříky-svazků-obcí">
-        <header>
-          <p>Rejstříky svazků obcí</p>
-        </header>
-        <ul>
-          <li>Datová struktura pro evidenci svazků obcí, jejich členů, orgánů a oficiálních dokumentů.</li>
-          <li>Krajské úřady, obce a správci veřejných rejstříků svazků obcí.</li>
-          <li>Zákon o obcích a předpisy upravující veřejné registry.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/události/" aria-labelledby="akt-události">
+            <header>
+              <p><strong>Události</strong></p>
+            </header>
+            <ul>
+              <li>Datový formát pro kulturní, sportovní a společenské akce, jejich termíny, místa a vstupné.</li>
+              <li>Pořadatelé akcí z řad veřejné správy, obce a příspěvkové organizace.</li>
+              <li>Bez přímé zákonné povinnosti (doporučený standard).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/sběrné-dvory/" aria-labelledby="akt-sběrné-dvory">
-        <header>
-          <p>Sběrné dvory</p>
-        </header>
-        <ul>
-          <li>Specifikace pro popis lokality, provozní doby, přijímaného odpadu a kontaktů sběrných dvorů.</li>
-          <li>Obce a provozovatelé zařízení pro nakládání s odpady.</li>
-          <li>Souvisí s informačními povinnostmi v odpadovém hospodářství.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/základní-datové-typy/" aria-labelledby="akt-základní-datové-typy">
+            <header>
+              <p><strong>Základní datové typy</strong></p>
+            </header>
+            <ul>
+              <li>Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).</li>
+              <li>Vývojáři datových modelů a autorizovaní architekti specifikací.</li>
+              <li>Využíváno jako sdílený modul v ostatních agendových OFN.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/sportoviště/" aria-labelledby="akt-sportoviště">
-        <header>
-          <p>Sportoviště</p>
-        </header>
-        <ul>
-          <li>Struktura informací o veřejných sportovištích, jejich vybavení, provozu a umístění.</li>
-          <li>Obce, kraje a správci veřejných sportovních zařízení.</li>
-          <li>Bez přímé zákonné povinnosti (doporučený standard pro opakovatelnou využitelnost).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/věc/" aria-labelledby="akt-věc">
+            <header>
+              <p><strong>Věc</strong></p>
+            </header>
+            <ul>
+              <li>Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).</li>
+              <li>Vývojáři datových struktur vytvářející nové OFN.</li>
+              <li>Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/turistické-cíle/" aria-labelledby="akt-turistické-cíle">
-        <header>
-          <p>Turistické cíle</p>
-        </header>
-        <ul>
-          <li>Jednotný popis turistických atraktivit, jejich vlastností, přístupnosti a kontaktů.</li>
-          <li>Obce, destinační managementy a krajské organizace cestovního ruchu.</li>
-          <li>Bez přímé zákonné povinnosti (doporučený standard).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/adresy/" aria-labelledby="akt-adresy">
+            <header>
+              <p><strong>Adresy</strong></p>
+            </header>
+            <ul>
+              <li>Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.</li>
+              <li>Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.</li>
+              <li>Odkazuje na RÚIAN a návazné standardy prostorových dat.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="tematicke-oblasti garanti poskytovatele doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/události/" aria-labelledby="akt-události">
-        <header>
-          <p>Události</p>
-        </header>
-        <ul>
-          <li>Datový formát pro kulturní, sportovní a společenské akce, jejich termíny, místa a vstupné.</li>
-          <li>Pořadatelé akcí z řad veřejné správy, obce a příspěvkové organizace.</li>
-          <li>Bez přímé zákonné povinnosti (doporučený standard).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/bezbariérovost/" aria-labelledby="akt-bezbariérovost">
+            <header>
+              <p><strong>Bezbariérovost</strong></p>
+            </header>
+            <ul>
+              <li>Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.</li>
+              <li>Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).</li>
+              <li>Využíváno jako sdílená vlastnost v nadřazených OFN.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/základní-datové-typy/" aria-labelledby="akt-základní-datové-typy">
-        <header>
-          <p>Základní datové typy</p>
-        </header>
-        <ul>
-          <li>Klíčové definice pro jednoduché datové prvky (booleovská hodnota, číslo, datum, řetězec, cena apod.).</li>
-          <li>Vývojáři datových modelů a autorizovaní architekti specifikací.</li>
-          <li>Využíváno jako sdílený modul v ostatních agendových OFN.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/časová-specifikace/" aria-labelledby="akt-časová-specifikace">
+            <header>
+              <p><strong>Časová specifikace</strong></p>
+            </header>
+            <ul>
+              <li>Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.</li>
+              <li>Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.</li>
+              <li>Využíváno jako sdílený modul v ostatních OFN.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/věc/" aria-labelledby="akt-věc">
-        <header>
-          <p>Věc</p>
-        </header>
-        <ul>
-          <li>Základní třída definující společné vlastnosti objektů (identifikátor ID, název, popis, čas zneplatnění).</li>
-          <li>Vývojáři datových struktur vytvářející nové OFN.</li>
-          <li>Základní stavitelné pravidlo pro konzistenci modelů veřejné správy.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/digitální-objekty/" aria-labelledby="akt-digitální-objekty">
+            <header>
+              <p><strong>Digitální objekty</strong></p>
+            </header>
+            <ul>
+              <li>Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.</li>
+              <li>Vývojáři datových modelů spravující přílohy a elektronické dokumenty.</li>
+              <li>Využíváno napříč agendovými OFN.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/adresy/" aria-labelledby="akt-adresy">
-        <header>
-          <p>Adresy</p>
-        </header>
-        <ul>
-          <li>Jednotný modul pro zápis a strukturování poštovních a geografických adresních míst.</li>
-          <li>Vývojáři datových modelů jakékoliv agendy pracující s lokalizací osob či objektů.</li>
-          <li>Odkazuje na RÚIAN a návazné standardy prostorových dat.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/kontakty/" aria-labelledby="akt-kontakty">
+            <header>
+              <p><strong>Kontakty</strong></p>
+            </header>
+            <ul>
+              <li>Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).</li>
+              <li>Vývojáři datových modelů pro libovolné subjekty nebo služby.</li>
+              <li>Využíváno jako sdílený modul v ostatních OFN.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/bezbariérovost/" aria-labelledby="akt-bezbariérovost">
-        <header>
-          <p>Bezbariérovost</p>
-        </header>
-        <ul>
-          <li>Modul pro standardizovaný popis prvků přístupnosti objektů, služeb a tras pro osoby se sníženou pohyblivostí.</li>
-          <li>Vývojáři datových modelů agend (budovy, doprava, sportoviště, turistické cíle).</li>
-          <li>Využíváno jako sdílená vlastnost v nadřazených OFN.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/lidé-a-osoby/" aria-labelledby="akt-lidé-a-osoby">
+            <header>
+              <p><strong>Lidé a osoby</strong></p>
+            </header>
+            <ul>
+              <li>Modul pro zápis informací o fyzických osobách, rolích a jejich identifikátorech v datových strukturách.</li>
+              <li>IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.</li>
+              <li>Využíváno v souladu s legislativou na ochranu osobních údajů.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/časová-specifikace/" aria-labelledby="akt-časová-specifikace">
-        <header>
-          <p>Časová specifikace</p>
-        </header>
-        <ul>
-          <li>Stavební blok pro komplexní zápis časových úseků, provozních dob a opakujících se událostí.</li>
-          <li>Vývojáři modelů pracující s otvíracími dobami, jízdními řády nebo platností záznamů.</li>
-          <li>Využíváno jako sdílený modul v ostatních OFN.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/práce/" aria-labelledby="akt-práce">
+            <header>
+              <p><strong>Práce</strong></p>
+            </header>
+            <ul>
+              <li>Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.</li>
+              <li>Vývojáři datových modelů v oblasti zaměstnanosti a lidských zdrojů.</li>
+              <li>Využíváno v agendové OFN Pracovní místa.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/digitální-objekty/" aria-labelledby="akt-digitální-objekty">
-        <header>
-          <p>Digitální objekty</p>
-        </header>
-        <ul>
-          <li>Standard pro popis souborů, příloh, odkazů a multimediálních datových prvků.</li>
-          <li>Vývojáři datových modelů spravující přílohy a elektronické dokumenty.</li>
-          <li>Využíváno napříč agendovými OFN.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/umístění/" aria-labelledby="akt-umístění">
+            <header>
+              <p><strong>Umístění</strong></p>
+            </header>
+            <ul>
+              <li>Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).</li>
+              <li>Vývojáři modelů pro infrastrukturu, události a objekty v terénu.</li>
+              <li>Souvisí s předpisy pro prostorové informace.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/kontakty/" aria-labelledby="akt-kontakty">
-        <header>
-          <p>Kontakty</p>
-        </header>
-        <ul>
-          <li>Sdílená struktura pro popis kontaktních údajů (telefon, e-mail, datová schránka, web).</li>
-          <li>Vývojáři datových modelů pro libovolné subjekty nebo služby.</li>
-          <li>Využíváno jako sdílený modul v ostatních OFN.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/vstupné/" aria-labelledby="akt-vstupné">
+            <header>
+              <p><strong>Vstupné</strong></p>
+            </header>
+            <ul>
+              <li>Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.</li>
+              <li>Vývojáři datových modelů pro události, turistické cíle a sportoviště.</li>
+              <li>Využíváno jako sdílený modul v ostatních OFN.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/lidé-a-osoby/" aria-labelledby="akt-lidé-a-osoby">
-        <header>
-          <p>Lidé a osoby</p>
-        </header>
-        <ul>
-          <li>Modul pro zápis informací o fyzických osobách, rolích a jejich identifikátorech v datových strukturách.</li>
-          <li>IT architekti navrhující datové modely pracující s osobními údaji či funkcemi osob.</li>
-          <li>Využíváno v souladu s legislativou na ochranu osobních údajů.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="dalsi spravci-isvs doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/společné-části-elektronických-dokumentů/" aria-labelledby="akt-společné-části-elektronických-dokumentů">
+            <header>
+              <p><strong>Společné části elektronických dokumentů</strong></p>
+            </header>
+            <ul>
+              <li>Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.</li>
+              <li>Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.</li>
+              <li>Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/práce/" aria-labelledby="akt-práce">
-        <header>
-          <p>Práce</p>
-        </header>
-        <ul>
-          <li>Stavební blok definující charakteristiky pracovního poměru, náplně práce a kvalifikace.</li>
-          <li>Vývojáři datových modelů v oblasti zaměstnanosti a lidských zdrojů.</li>
-          <li>Využíváno v agendové OFN Pracovní místa.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="dalsi IT-architekti zakon-12-2020 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/dokumenty-z-formulářů-ZoPDS/" aria-labelledby="akt-dokumenty-z-formulářů-ZoPDS">
+            <header>
+              <p><strong>Dokumenty z formulářů pro elektronické podání dle ZoPDS</strong></p>
+            </header>
+            <ul>
+              <li>Standardizuje strukturu dat vznikajících z elektronických formulářových podání.</li>
+              <li>Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.</li>
+              <li>Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/umístění/" aria-labelledby="akt-umístění">
-        <header>
-          <p>Umístění</p>
-        </header>
-        <ul>
-          <li>Standard pro vyjádření polohy (geografické souřadnice, popis umístění v budově či prostoru).</li>
-          <li>Vývojáři modelů pro infrastrukturu, události a objekty v terénu.</li>
-          <li>Souvisí s předpisy pro prostorové informace.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="dalsi spravci-isvs zakon-12-2020 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/osvědčení-digitálního-úkonu/" aria-labelledby="akt-osvědčení-digitálního-úkonu">
+            <header>
+              <p><strong>Osvědčení digitálního úkonu</strong></p>
+            </header>
+            <ul>
+              <li>Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.</li>
+              <li>Správci informačních systémů veřejné správy poskytující digitální služby.</li>
+              <li>Zákon č. 12/2020 Sb. (ZoPDS).</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="zakladni-bloky IT-architekti doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/vstupné/" aria-labelledby="akt-vstupné">
-        <header>
-          <p>Vstupné</p>
-        </header>
-        <ul>
-          <li>Stavební modul pro popis cenových kategorií, slev, měn a podmínek vstupu.</li>
-          <li>Vývojáři datových modelů pro události, turistické cíle a sportoviště.</li>
-          <li>Využíváno jako sdílený modul v ostatních OFN.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="dalsi IT-architekti spravci-isvs zakon-12-2020 platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/" aria-labelledby="akt-záznam-informačního-systému-nahrazující-úředně-ověřený-podpis">
+            <header>
+              <p><strong>Záznam IS nahrazující úředně ověřený podpis</strong></p>
+            </header>
+            <ul>
+              <li>Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.</li>
+              <li>Správci autorizovaných ISVS a vývojáři eGovernment modulů.</li>
+              <li>Související předpisy pro elektronickou identifikaci a digitální úkony.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="dalsi spravci-isvs doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/společné-části-elektronických-dokumentů/" aria-labelledby="akt-společné-části-elektronických-dokumentů">
-        <header>
-          <p>Společné části elektronických dokumentů</p>
-        </header>
-        <ul>
-          <li>Sjednocuje strukturu a metadata společných prvků elektronických dokumentů ve veřejné správě.</li>
-          <li>Správci elektronických spisových služeb a vývojáře systémů pro správu dokumentů.</li>
-          <li>Zákon o archivnictví a spisové službě (č. 499/2004 Sb.).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
+        <gov-grid-item col-span="12" data-category="dalsi IT-architekti spravci-isvs doporuceny-standard platne" class="gov-card-item">
+          <gov-card direction="horizontal" href="{{site.ofn_origin}}/metadata-dokumentů-veřejnoprávních-původců/" aria-labelledby="akt-metadata-dokumentů-veřejnoprávních-původců">
+            <header>
+              <p><strong>Schéma pro strojově čitelnou vrstvu statických komponent</strong></p>
+            </header>
+            <ul>
+              <li>Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.</li>
+              <li>Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.</li>
+              <li>§ 69a zákona č. 499/2004 Sb.</li>
+            </ul>
+          </gov-card>
+        </gov-grid-item>
 
-<gov-grid-item col-span="12" data-category="dalsi IT-architekti zakon-12-2020" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/dokumenty-z-formulářů-ZoPDS/" aria-labelledby="akt-dokumenty-z-formulářů-ZoPDS">
-        <header>
-          <p>Dokumenty z formulářů pro elektronické podání dle ZoPDS</p>
-        </header>
-        <ul>
-          <li>Standardizuje strukturu dat vznikajících z elektronických formulářových podání.</li>
-          <li>Orgány veřejné moci a dodavatelé formulářových řešení pro portály občanů/úřadů.</li>
-          <li>Zákon č. 12/2020 Sb. (Zákon o právu na digitální službu – ZoPDS).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
-
-<gov-grid-item col-span="12" data-category="dalsi spravci-isvs zakon-12-2020" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/osvědčení-digitálního-úkonu/" aria-labelledby="akt-osvědčení-digitálního-úkonu">
-        <header>
-          <p>Osvědčení digitálního úkonu</p>
-        </header>
-        <ul>
-          <li>Datová specifikace pro strukturované potvrzení o provedení elektronického úkonu vůči orgánu veřejné moci.</li>
-          <li>Správci informačních systémů veřejné správy poskytující digitální služby.</li>
-          <li>Zákon č. 12/2020 Sb. (ZoPDS).</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
-
-<gov-grid-item col-span="12" data-category="dalsi IT-architekti spravci-isvs zakon-12-2020" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/záznam-informačního-systému-nahrazující-úředně-ověřený-podpis/" aria-labelledby="akt-záznam-informačního-systému-nahrazující-úředně-ověřený-podpis">
-        <header>
-          <p>Záznam IS nahrazující úředně ověřený podpis</p>
-        </header>
-        <ul>
-          <li>Specifikace záznamu informačního systému, který legislativně nahrazuje úředně ověřený podpis.</li>
-          <li>Správci autorizovaných ISVS a vývojáři eGovernment modulů.</li>
-          <li>Související předpisy pro elektronickou identifikaci a digitální úkony.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
-
-<gov-grid-item col-span="12" data-category="dalsi IT-architekti spravci-isvs doporuceny-standard" class="gov-card-item">
-    <gov-card direction="horizontal" href="{{site.ofn_origin}}/metadata-dokumentů-veřejnoprávních-původců/" aria-labelledby="akt-metadata-dokumentů-veřejnoprávních-původců">
-        <header>
-          <p>Schéma pro strojově čitelnou vrstvu statických komponent</p>
-        </header>
-        <ul>
-          <li>Technické schéma pro strukturu strojově čitelné vrstvy statických textových a kombinovaných textovo-obrazových komponent.</li>
-          <li>Správci elektronických spisových služeb a systémy pro tvorbu oficiálních dokumentů.</li>
-          <li>§ 69a zákona č. 499/2004 Sb.</li>
-        </ul>
-    </gov-card>
-</gov-grid-item>
-            
-
-          </gov-grid>
-        </section>
-      </main>
-    </gov-layout-column>
+      </gov-grid>
+    </section>
+  </main>
+</gov-layout-column>
   </gov-layout>
 </gov-container>

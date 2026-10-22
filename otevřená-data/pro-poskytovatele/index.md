@@ -104,5 +104,12 @@ Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybr
         </p>
     </gov-tile>
     </gov-grid-item>
-
+    <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">
+    <gov-tile title="Vše o HVDs" href="https://data.gov.cz/články/vše-co-jste-chtěli-vědět-o-hvd" size="l">
+        <h3 slot="title">Jak na dynamická data?</h3>
+        <p>
+            Dynamická data podléhají průběžné aktualizaci nebo aktualizaci v reálném čase, zejména z důvodu jejich významné proměnlivosti nebo rychlého zastarávání. Rozhodovací strom poskytovatelům  pomůže rychle a snadno zjistit, zda se povinnost publikace týká právě jejich dat. 
+        </p>
+    </gov-tile>
+    </gov-grid-item>
 </gov-grid>

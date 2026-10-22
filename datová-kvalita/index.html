@@ -21,16 +21,16 @@ lang: cs
 
 <gov-grid gap="l" role="list">
     <gov-grid-item col-span="12" col-span-md="6" col-span-lg="4" role="listitem">
-      <gov-card label="Statistiky NKOD a dashboardy" full-height>
+      <gov-card label="Statistiky NKD a dashboardy" full-height>
                 <gov-flex gap="s" direction="column">
-                    <header><h3 class="gov-card__headline">Statistiky NKOD a dashboardy</h3></header>
+                    <header><h3 class="gov-card__headline">Statistiky NKD a dashboardy</h3></header>
         <p>
             Denně měříme dostupnost zdrojů registrovaných v Národním katalogu otevřených dat spolu se statistikami kvality jejich metadatových záznamů.
             Mají právě vaše datové sady vyplněné všechny povinné položky?
             Jsou vámi registrované soubory a služby dostupné?
         </p>
         <gov-button color="primary" type="solid" size="m" href="statistiky/">
-            Statistiky NKOD
+            Statistiky NKD
         </gov-button>
         <gov-button color="primary" type="outlined" size="m" href="../poskytovatelé">
             Dashboardy poskytovatelů
@@ -74,22 +74,22 @@ lang: cs
       </gov-grid-item>
   </gov-grid>
 
-<h2>Náhled na dashboard NKOD</h2>
-<p>&hellip;aneb jak si aktuálně vedou data v NKOD z pohledu správné registrace a dostupnosti</p>
+<h2>Náhled na dashboard NKD</h2>
+<p>&hellip;aneb jak si aktuálně vedou data v NKD z pohledu správné registrace a dostupnosti</p>
 
 <gov-card>
         <gov-flex gap="s" direction="column">
-            <header><h3 class="gov-card__headline">Náhled dashboardu NKOD</h3></header>
+            <header><h3 class="gov-card__headline">Náhled dashboardu NKD</h3></header>
     <iframe class="dashboard-preview"
         src="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/8c163b20-9650-11ec-9bf1-358ae95b2dd7?embed=true&_g=(filters%3A!())&hide-filter-bar=true"
-        title="Náhled dashboardu NKOD" loading="lazy"></iframe>
+        title="Náhled dashboardu NKD" loading="lazy"></iframe>
     <gov-button color="primary" type="solid" size="m" href="https://oha01.dia.gov.cz/kibana/app/dashboards#/view/43389e30-3335-11ec-aeb4-71177d02ba9a?_g=(filters:!())">
-        Aktuální dashboard NKOD
+        Aktuální dashboard NKD
     </gov-button>
     </gov-flex>
 </gov-card>
 
-<h2>Ukazatele kvality v NKOD</h2>
+<h2>Ukazatele kvality v NKD</h2>
 <p>...aneb &quot;co mám dělat, aby to bylo zelený&quot;</p>
 
 <gov-grid gap="l" role="list">
@@ -117,7 +117,7 @@ lang: cs
             <gov-flex gap="s" direction="column">
                 <header><h3 class="gov-card__headline">Nepodporovaná HTTP HEAD</h3></header>
             <p>
-                Toto může indikovat problém s nepodporovanou metodou HTTP <code>HEAD</code>, kterou NKOD používá pro zjišťování dostupnosti registrovaných zdrojů.
+                Toto může indikovat problém s nepodporovanou metodou HTTP <code>HEAD</code>, kterou NKD používá pro zjišťování dostupnosti registrovaných zdrojů.
                 Je třeba webový server nakonfigurovat tak, aby ji podporoval.
                 Jedná se o standardní prostředek zjišťování základních informací o zdrojích na Webu, který nevyžaduje jejich stahování.
             </p>
@@ -148,7 +148,7 @@ lang: cs
             <gov-flex gap="s" direction="column">
                 <header><h3 class="gov-card__headline">Chybný Media typ</h3></header>
             <p>
-                Tato chyba indikuje, že Media typ registrovaný v NKOD pro soubor ke stažení neodpovídá tomu, které v hlavičce <code>Content-Type</code> indikuje webový server.
+                Tato chyba indikuje, že Media typ registrovaný v NKD pro soubor ke stažení neodpovídá tomu, které v hlavičce <code>Content-Type</code> indikuje webový server.
                 Toto znesnadňuje aplikační použití takových souborů.
             </p>
             <gov-button color="primary" type="solid" size="m" href="../špatná-praxe/technické-překážky/#chybná-hlavička-http-content-type">

@@ -73,17 +73,16 @@ homepage: true
   <div class="formkit-background" style="opacity: 0.2;"></div>
   <div data-style="minimal">
     <div class="formkit-header" data-element="header" style="color: inherit; font-size: 20px;  margin-bottom: 15px;">
-      <h2 ><strong>Odebírejte newsletter</strong></h2>
+      <h2>Odebírejte newsletter</h2>
     </div>
     <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
     <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
       <div class="formkit-field">
-        <input class="formkit-input" name="email_address" aria-label="Vložte svůj e-mail" placeholder="[vas@email.cz]" required="" type="email" style="color: inherit; border-color: rgb(219, 219, 219); border-radius: 4px; font-weight: 400;">
+        <input class="formkit-input" name="email_address" aria-label="Vložte svůj e-mail" placeholder="[vas@email.cz]" required="" type="email" style="color: inherit; border-color: rgb(219, 219, 219); border-radius: 8px; font-weight: 400;">
       </div>
-      <button data-element="submit" class="formkit-submit formkit-submit" style="color: rgb(255, 255, 255); background-color: rgb(22, 119, 190); border-radius: 4px; font-weight: 700;">
+      <gov-button  data-element="submit" class="formkit-submit formkit-submit" color="primary" type="outlined" size="m">
         <div class="formkit-spinner"><div></div><div></div><div></div></div>
-        <span class=""><strong>Chci být v obraze</strong></span>
-      </button>
+      </gov-button>
     </div>
   </div>
   <style>
@@ -160,3 +159,5 @@ homepage: true
 </form>
 
 <script src="/assets/data-portal/js/statistics.js" ></script>
+
+<gov-spacer size="m"></gov-spacer>

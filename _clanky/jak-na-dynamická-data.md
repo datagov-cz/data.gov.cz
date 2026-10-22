@@ -10,7 +10,7 @@ date: 2024-11-16 12:00:00 +02:00
 --- 
 Směrnice o otevřených datech přinesla požadavek na publikaci dynamických dat - dat, které podléhají průběžné aktualizaci nebo aktualizaci v reálném čase, zejména z důvodu jejich významné proměnlivosti nebo rychlého zastarávání.
  Netušíte, jestli se právě vás povinnost týká? 
- Tápete v tom, co je rychlé zastarávánívíte?
+ Tápete v tom, co je rychlé zastarávání víte?
  Nevíte, co si představit pod bezodkladnou publikací, nebo nepřiměřenou zátěží? 
  Připravili jsme pro vás rozhodovací strom, který vám  pomůže rychle a snadno zjistit, zda se tato povinnost týká i vašich dat. 
 

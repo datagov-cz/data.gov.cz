@@ -12,49 +12,38 @@ lang: cs
     display: none !important;
   }
 
-  /* --- CSS filtrování pomocí selektoru :has() --- */
-
-  /* 1. Při zaškrtnutí jakéhokoliv filtru se výchozí zobrazení všech karet skryje */
-  #main:has(.js-filter-checkbox[checked]),
-  #main:has(.js-filter-checkbox:checked),
-  #main:has(.js-filter-checkbox input:checked) {
-    .gov-card-item {
-      display: none;
-    }
-  }
-
-  /* 2. Zobrazení položek dle jednotlivých filtrů */
+  /* --- CSS filtrování na principu PRŮNIKU (AND) --- */
 
   /* Skupina 1: Typ specifikace */
   #main:has(#filter-metadata[checked]),
   #main:has(#filter-metadata:checked),
   #main:has(#filter-metadata input:checked) {
-    .gov-card-item[data-category~="metadata-katalogizace"] {
-      display: block;
+    .gov-card-item:not([data-category~="metadata-katalogizace"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-tematicke-oblasti[checked]),
   #main:has(#filter-tematicke-oblasti:checked),
   #main:has(#filter-tematicke-oblasti input:checked) {
-    .gov-card-item[data-category~="tematicke-oblasti"] {
-      display: block;
+    .gov-card-item:not([data-category~="tematicke-oblasti"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-zakladni-bloky[checked]),
   #main:has(#filter-zakladni-bloky:checked),
   #main:has(#filter-zakladni-bloky input:checked) {
-    .gov-card-item[data-category~="zakladni-bloky"] {
-      display: block;
+    .gov-card-item:not([data-category~="zakladni-bloky"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-dalsi[checked]),
   #main:has(#filter-dalsi:checked),
   #main:has(#filter-dalsi input:checked) {
-    .gov-card-item[data-category~="dalsi"] {
-      display: block;
+    .gov-card-item:not([data-category~="dalsi"]) {
+      display: none;
     }
   }
 
@@ -62,32 +51,32 @@ lang: cs
   #main:has(#filter-it-architekti[checked]),
   #main:has(#filter-it-architekti:checked),
   #main:has(#filter-it-architekti input:checked) {
-    .gov-card-item[data-category~="IT-architekti"] {
-      display: block;
+    .gov-card-item:not([data-category~="IT-architekti"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-garanti[checked]),
   #main:has(#filter-garanti:checked),
   #main:has(#filter-garanti input:checked) {
-    .gov-card-item[data-category~="garanti"] {
-      display: block;
+    .gov-card-item:not([data-category~="garanti"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-spravci-isvs[checked]),
   #main:has(#filter-spravci-isvs:checked),
   #main:has(#filter-spravci-isvs input:checked) {
-    .gov-card-item[data-category~="spravci-isvs"] {
-      display: block;
+    .gov-card-item:not([data-category~="spravci-isvs"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-poskytovatele[checked]),
   #main:has(#filter-poskytovatele:checked),
   #main:has(#filter-poskytovatele input:checked) {
-    .gov-card-item[data-category~="poskytovatele"] {
-      display: block;
+    .gov-card-item:not([data-category~="poskytovatele"]) {
+      display: none;
     }
   }
 
@@ -95,32 +84,32 @@ lang: cs
   #main:has(#filter-zakon-60-2026[checked]),
   #main:has(#filter-zakon-60-2026:checked),
   #main:has(#filter-zakon-60-2026 input:checked) {
-    .gov-card-item[data-category~="zakon-60-2026"] {
-      display: block;
+    .gov-card-item:not([data-category~="zakon-60-2026"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-zakon-106-1999[checked]),
   #main:has(#filter-zakon-106-1999:checked),
   #main:has(#filter-zakon-106-1999 input:checked) {
-    .gov-card-item[data-category~="zakon-106-1999"] {
-      display: block;
+    .gov-card-item:not([data-category~="zakon-106-1999"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-zakon-12-2020[checked]),
   #main:has(#filter-zakon-12-2020:checked),
   #main:has(#filter-zakon-12-2020 input:checked) {
-    .gov-card-item[data-category~="zakon-12-2020"] {
-      display: block;
+    .gov-card-item:not([data-category~="zakon-12-2020"]) {
+      display: none;
     }
   }
 
   #main:has(#filter-doporuceny-standard[checked]),
   #main:has(#filter-doporuceny-standard:checked),
   #main:has(#filter-doporuceny-standard input:checked) {
-    .gov-card-item[data-category~="doporuceny-standard"] {
-      display: block;
+    .gov-card-item:not([data-category~="doporuceny-standard"]) {
+      display: none;
     }
   }
 
@@ -128,6 +117,7 @@ lang: cs
   .gov-filter-group + .gov-filter-group {
     margin-top: 1.5rem;
   }
+
 </style>
 
 

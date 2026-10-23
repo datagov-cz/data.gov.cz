@@ -1,0 +1,57 @@
+---
+layout: contained
+title: Návod a pokyny ke správě registrací v NKD
+ref: návod-a-pokyny-ke-správě-registrací-v-NKD
+lang: cs
+---
+
+<style>
+  p + p {
+  margin-top: 1.25em;
+  }
+</style>
+
+<p>Správa registrací datových sad a lokálních katalogů dat je nově dostupná přímo v rozhraní Národního katalogu dat prostřednictvím JIP/CAAIS. Tento postup doplňuje dosavadní způsob registrace přes datovou schránku, který zůstává plně zachován.</p>
+
+<gov-infobar color="warning" type="bold"><gov-icon type="complex" name="info" slot="icon"></gov-icon><em>Upozornění:</em> Provedené změny (vložení, úprava i smazání), ať už realizované přes webové rozhraní nebo prostřednictvím datové schránky, se v NKD projeví po nejbližší automatické harvestaci.</gov-infobar>
+
+<gov-spacer size="m"></gov-spacer>
+
+<gov-card>
+<h3 style="margin-top: 0;">Přístup a přihlášení do rozhraní</h3>
+<ul>
+  <li>V horní liště portálu klikněte pod položkou Národní katalog dat na záložku <a href="/správa-registrací">Správa registrací (JIP/CAAIS)</a>.</li>
+  <li>Přihlášení proveďte prostřednictvím systému JIP/CAAIS.</li>
+  <li>K přihlášení je potřeba mít přidělenou roli A1261 / CR76783 Evidence informací jako otevřená data. Pokud tuto roli nemáte, požádejte svého lokálního administrátora o její přidělení v systému CAAIS. Administrátor může využít <a href="https://docs.caais.gov.cz/prirucka/lokalni-administrator/sprava_roli.html" target="_blank">příručku pro lokálního administrátora CAAIS</a>.</li>
+</ul>
+<gov-button href="/správa-registrací" variant="primary" size="m">Přihlášení do správy registrací</gov-button>
+</gov-card>
+
+<gov-spacer size="m"></gov-spacer>
+
+<gov-card>
+  <h3 style="margin-top: 0;">Vložení a správa záznamů v rozhraní</h3>
+  <ul>
+    <li>V rozhraní můžete nové záznamy přímo vytvářet, nahrávat z připravených souborů nebo provádět jejich výmaz.</li>
+    <li>Po vyplnění online registračního formuláře se záznam ihned zaeviduje do systému.</li>
+    <li>Pokud máte záznam již připravený a stažený ve svém zařízení, nahrajte jej pomocí pole pro nahrání souboru. Tím se záznam ihned zaeviduje.</li>
+    <li>Pro smazání nejprve vygenerujte mazací soubor kliknutím na ikonu popelnice (u DS ji najdete u názvu po rozkliknutí detailu, u LKD vedle názvu ve výčtu katalogů). Vygenerovaný soubor následně nahrajte do stejného pole pro nahrání záznamu.</li>
+  </ul>
+  <img src="/přílohy/návod-a-pokyny-ke-správě-registrací/sprava-registraci.webp" alt="Správa registrací v NKD" style="width: 100%; max-width: 400px;">
+    <img src="/přílohy/návod-a-pokyny-ke-správě-registrací/smazani-DS.webp" alt="Smazání datové sady" style="width: 100%; max-width: 400px;">
+    <img src="/přílohy/návod-a-pokyny-ke-správě-registrací/smazani-LKD.webp" alt="Smazání lokálního katalogu" style="width: 100%; max-width: 400px;">
+</gov-card>
+
+<gov-spacer size="m"></gov-spacer>
+
+<gov-card>
+  <h3 style="margin-top: 0;">Registrace a výmaz prostřednictvím datové schránky</h3>
+  <ul>
+    <li>Registrace i mazání prostřednictvím datové schránky probíhá stejně jako dosud s využitím dvou vyhrazených formulářů.</li>
+    <li>Zprávu odešlete do datové schránky NKD s ID m3hp53v.</li>
+    <li>Jako předmět uveďte NKOD.</li>
+    <li>Textové pole zprávy ponechte prázdné.</li>
+    <li>Datová zpráva musí být odeslána z adresy datové schránky, pod kterou je vaše OVM vedeno v Registru práv a povinností.</li>
+    <li>Vygenerovaný záznam přiložte ve formátu .txt. Dbejte na to, aby při odesílání nedocházelo k žádné automatické transformaci souboru.</li>
+  </ul>
+</gov-card>

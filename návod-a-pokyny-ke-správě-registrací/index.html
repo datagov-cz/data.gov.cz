@@ -13,6 +13,8 @@ lang: cs
 
 <p>Správa registrací datových sad a lokálních katalogů dat je nově dostupná přímo v rozhraní Národního katalogu dat prostřednictvím JIP/CAAIS. Tento postup doplňuje dosavadní způsob registrace přes datovou schránku, který zůstává plně zachován.</p>
 
+<gov-spacer size="m"></gov-spacer>
+
 <gov-infobar color="warning" type="bold"><gov-icon type="complex" name="info" slot="icon"></gov-icon><em>Upozornění:</em> Provedené změny (vložení, úprava i smazání), ať už realizované přes webové rozhraní nebo prostřednictvím datové schránky, se v NKD projeví po nejbližší automatické harvestaci.</gov-infobar>
 
 <gov-spacer size="m"></gov-spacer>
@@ -24,7 +26,7 @@ lang: cs
   <li>Přihlášení proveďte prostřednictvím systému JIP/CAAIS.</li>
   <li>K přihlášení je potřeba mít přidělenou roli A1261 / CR76783 Evidence informací jako otevřená data. Pokud tuto roli nemáte, požádejte svého lokálního administrátora o její přidělení v systému CAAIS. Administrátor může využít <a href="https://docs.caais.gov.cz/prirucka/lokalni-administrator/sprava_roli.html" target="_blank">příručku pro lokálního administrátora CAAIS</a>.</li>
 </ul>
-<gov-button href="/správa-registrací" variant="primary" size="m">Přihlášení do správy registrací</gov-button>
+<gov-button href="/správa-registrací" color="primary" size="m" type="outlined">Přihlášení do správy registrací</gov-button>
 </gov-card>
 
 <gov-spacer size="m"></gov-spacer>
@@ -37,10 +39,20 @@ lang: cs
     <li>Pokud máte záznam již připravený a stažený ve svém zařízení, nahrajte jej pomocí pole pro nahrání souboru. Tím se záznam ihned zaeviduje.</li>
     <li>Pro smazání nejprve vygenerujte mazací soubor kliknutím na ikonu popelnice (u DS ji najdete u názvu po rozkliknutí detailu, u LKD vedle názvu ve výčtu katalogů). Vygenerovaný soubor následně nahrajte do stejného pole pro nahrání záznamu.</li>
   </ul>
-  <img src="/přílohy/návod-a-pokyny-ke-správě-registrací/sprava-registraci.webp" alt="Správa registrací v NKD" style="width: 100%; max-width: 400px;">
-    <img src="/přílohy/návod-a-pokyny-ke-správě-registrací/smazani-DS.webp" alt="Smazání datové sady" style="width: 100%; max-width: 400px;">
-    <img src="/přílohy/návod-a-pokyny-ke-správě-registrací/smazani-LKD.webp" alt="Smazání lokálního katalogu" style="width: 100%; max-width: 400px;">
 </gov-card>
+  <gov-spacer size="s"></gov-spacer>
+
+  {% include image.html url="../přílohy/návod-a-pokyny-ke-správě-registrací/sprava-registraci.webp" description="Správa registrací v NKD" %}
+
+
+  <gov-spacer size="s"></gov-spacer>
+
+    {% include image.html url="../přílohy/návod-a-pokyny-ke-správě-registrací/smazani-DS.webp" description="Smazání datové sady" %}
+
+      <gov-spacer size="s"></gov-spacer>
+      
+    {% include image.html url="../přílohy/návod-a-pokyny-ke-správě-registrací/smazani-LKD.webp" description="Smazání lokálního katalogu" %}
+
 
 <gov-spacer size="m"></gov-spacer>
 

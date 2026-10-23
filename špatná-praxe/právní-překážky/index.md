@@ -115,6 +115,6 @@ Různé chyby při aplikaci licencí Creative Commons.
 
 ### Řešení
 
-Vyvarovat se chyb a použít náš návod [Stanovení podmínek užití otevřených dat](/pro-poskytovatele/stanovení-podmínek-užití/).
+Vyvarovat se chyb a použít náš návod [Stanovení podmínek užití otevřených dat](/otevřená-data/pro-poskytovatele/stanovení-podmínek-užití/).
 
 

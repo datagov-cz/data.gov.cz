@@ -5,7 +5,7 @@ ref: OpenDataPoskytovatelé
 lang: cs
 ---
 
-Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybraných datových sad. Na počátku by měly být zanalyzovány data, které poskytovatel zpracuje a rozhodnuto, které je možno otevřít a kdy. Výsledkem této fáze by měl být publikační plán. Další fáze potom znamená samotné zveřejňování datových sad. Ta zahrnuje návrh technické podoby datových sad (formáty a datová schémata), jejich publikaci v síti WWW a katalogizaci. Je možné se rozhodnout katalogizovat v Národním katalogu otevřených dat (NKOD) přímo nebo prostřednictvím vlastním lokálním katalogu. Ve druhém případě je nutno lokální katalog otevřených dat zprovoznit, což zahrnuje i volbu vhodného softwarového nástroje. Nedílnou součástí zprovoznění lokálního katalogu je vždy jeho registrace v NKOD.
+Otevírání dat je proces, který nezahrnuje pouze zveřejnění několika vybraných datových sad. Na počátku by měly být zanalyzovány data, které poskytovatel zpracuje a rozhodnuto, které je možno otevřít a kdy. Výsledkem této fáze by měl být publikační plán. Další fáze potom znamená samotné zveřejňování datových sad. Ta zahrnuje návrh technické podoby datových sad (formáty a datová schémata), jejich publikaci v síti WWW a katalogizaci. Je možné se rozhodnout katalogizovat v Národním katalogu dat přímo nebo prostřednictvím vlastním lokálním katalogu. Ve druhém případě je nutno lokální katalog otevřených dat zprovoznit, což zahrnuje i volbu vhodného softwarového nástroje. Nedílnou součástí zprovoznění lokálního katalogu je vždy jeho registrace v NKD.
 
 <gov-grid gap="l" class="gov-card-grid">
     <gov-grid-item col-span="12" col-span-sm="6" col-span-lg="3" role="listitem">

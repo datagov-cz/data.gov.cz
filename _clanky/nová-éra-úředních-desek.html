@@ -21,7 +21,7 @@ date: 2022-02-11 07:00:00 +01:00
 
   <h2>Použitá data</h2>
   <ul>
-    <li><a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00261912%2F988310552" title="Úřední deska města Kadaň registrovaná v NKOD">Úřední deska města Kadaň</a></li>
+    <li><a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00261912%2F988310552" title="Úřední deska města Kadaň registrovaná v NKD">Úřední deska města Kadaň</a></li>
   </ul>
 
   <hr>
@@ -59,15 +59,15 @@ date: 2022-02-11 07:00:00 +01:00
 
   <h2>Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu dat</h2>
   <p>Další ukázkovou aplikací je přehled úředních desek publikovaných jako otevřená data spolu s posledními oznámeními, která se na dané úřední desce objevila. Aplikace je ale jednoduchá, testovací a primárně zaměřená na poskytovatele a řešení jejich problémů. Stahuje data ze všech úředních desek, kterých je čím dál tím více, přímo do prohlížeče, tedy spotřebovává hodně dat – v době psaní článku již více jak 100 MB. <a href="https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html" title="Aplikace Přehled publikovaných úředních desek">Pokud však jste na počítači, nebo máte neomezená data, můžete si aplikaci vyzkoušet</a>.</p>
-  <p>Cílem tohoto příkladu je ukázat napojení na <a href="https://data.gov.cz/datové-sady" title="Národní katalog dat (NKD)">Národní katalog dat (NKOD)</a> a práci s ním. Zároveň slouží i jako rychlá kontrola pro poskytovatele otevřených dat, že jejich úřední deska je publikována v pořádku (jsou zde vidět i některé počáteční problémy nově publikovaných dat – některé úřední desky např. nemají povolený <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" title="Mozilla: CORS">CORS</a> a nejdou tedy zatím načítat přímo z takovéto aplikace).</p>
+  <p>Cílem tohoto příkladu je ukázat napojení na <a href="https://data.gov.cz/datové-sady" title="Národní katalog dat (NKD)">Národní katalog dat (NKD)</a> a práci s ním. Zároveň slouží i jako rychlá kontrola pro poskytovatele otevřených dat, že jejich úřední deska je publikována v pořádku (jsou zde vidět i některé počáteční problémy nově publikovaných dat – některé úřední desky např. nemají povolený <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" title="Mozilla: CORS">CORS</a> a nejdou tedy zatím načítat přímo z takovéto aplikace).</p>
   <p>Jedná se opět také o ukázku toho, že základní aplikaci lze nyní vytvořit velmi rychle – tato byla vytvořena jen v řádu hodin.</p>
 
   <h3>Postup zpracování</h3>
   <p>Aplikace je vytvořena jako <a href="https://en.wikipedia.org/wiki/Single-page_application" title="Single Page Application (SPA)">Single Page Application (SPA)</a> v jediném souboru, pouze s pomocí jazyku JavaScript a knihovny Bootstrap použité pro grafický design. <a href="https://github.com/datagov-cz/aplikace-uredni-desky/blob/main/úřední-desky.html" title="Zdrojový kód aplikace pro zobrazování úředních desek">Zdrojový kód aplikace</a> je dostupný na GitHubu.</p>
-  <p>Z hlediska struktury by se aplikace dala rozdělit na tři hlavní části: načtení informací z NKOD, stažení úředních desek a zobrazení uživatelského rozhraní.</p>
-  <p>První část implementuje metoda <code>fetchDatasets</code>, ta využívá <a href="https://data.gov.cz/graphql?query=query%20%7B%20datasets%20%7B%20data%20%7B%20title%20%7B%20cs%20%7D%20%7D%20%7D%20%7D" title="Rozhraní GraphQL NKOD">rozhraní GraphQL NKOD</a> pro získání potřebných dat ve formátu JSON. Alternativně by zde šlo použít SPARQL.</p>
+  <p>Z hlediska struktury by se aplikace dala rozdělit na tři hlavní části: načtení informací z NKD, stažení úředních desek a zobrazení uživatelského rozhraní.</p>
+  <p>První část implementuje metoda <code>fetchDatasets</code>, ta využívá <a href="https://data.gov.cz/graphql?query=query%20%7B%20datasets%20%7B%20data%20%7B%20title%20%7B%20cs%20%7D%20%7D%20%7D%20%7D" title="Rozhraní GraphQL NKD">rozhraní GraphQL NKD</a> pro získání potřebných dat ve formátu JSON. Alternativně by zde šlo použít SPARQL.</p>
   <p>Stažení jednotlivých úředních desek je pak jen otázkou dalšího volání <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" title="Mozilla: Fetch API">Fetch API</a>. Získání potřebné informace z daného obsahu je, i díky použitým vlastnostem JavaScriptu, vcelku přímočaré – implementaci je možné najít na začátku funkce <code>createEntryElement</code>. Zde se projevuje efekt standardizace úředních desek – není nutné zjišťovat jaká data kde jsou. Dle OFN se očekává, že v datové sadě bude to, co tam má být a bude to u všech úředních desek stejné.</p>
-  <p>Zbytek kódu se věnuje hlavně práci s <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" title="Mozilla: DOM">DOM</a>, jinými slovy práci s uživatelským prostředím. Zde by šlo alternativně použít některý z existujících frameworků, ale pro jednoduchost ukázky byl použitý čistý JavaScript. Zejména díky standardizaci a NKOD API tvoří tedy práce s daty vlastně pouze malou část zdrojového kódu.</p>
+  <p>Zbytek kódu se věnuje hlavně práci s <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" title="Mozilla: DOM">DOM</a>, jinými slovy práci s uživatelským prostředím. Zde by šlo alternativně použít některý z existujících frameworků, ale pro jednoduchost ukázky byl použitý čistý JavaScript. Zejména díky standardizaci a NKD API tvoří tedy práce s daty vlastně pouze malou část zdrojového kódu.</p>
 
   <hr>
 
@@ -77,7 +77,7 @@ date: 2022-02-11 07:00:00 +01:00
   <p>Můžeme si porovnat zobrazení stejného nového oznámení (v našem příkladě jde o vyhlášku města Kadaň) v obou aplikacích:</p>
   <ul>
     <li><strong>Informace o novém oznámení na úřední desce</strong> doručená jako e-mailová zpráva a push notifikace v aplikaci GitHub Mobile.</li>
-    <li><strong>Informace o stejném oznámení na úřední desce</strong> zobrazené na mobilu ve webové aplikaci ukazující úřední desky registrované v NKODu.</li>
+    <li><strong>Informace o stejném oznámení na úřední desce</strong> zobrazené na mobilu ve webové aplikaci ukazující úřední desky registrované v NKDu.</li>
   </ul>
 
   <hr>

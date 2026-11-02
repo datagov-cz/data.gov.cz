@@ -1,0 +1,108 @@
+---
+layout: post
+detail: true
+title: Nová éra úředních desek
+ref: nová-éra-úředních-desek
+lang: cs
+image: ../přílohy/články/nová-éra-úředních-desek/images/main.webp
+author: michal_škop
+date: 2022-02-11 07:00:00 +01:00
+---
+<p>Obce s rozšířenou působností, krajské úřady a státní orgány musí od 1. února 2022 publikovat svoje úřední desky jako otevřená data. Díky tomu se informace z úředních desek stávají daleko dostupnější. Vznikly zde podmínky pro kreativní revoluci v použití těchto informací srovnatelnou s dobou, kdy se přecházelo z čistě fyzických úředních desek na internetové.</p>
+<!--more-->
+
+<p>V současnosti v ČR existuje několik různých aplikací pro obecní úřady, které v sobě mají již zabudovanou možnost přístupu také na úřední desku.</p>
+
+  <p>Podobně velmi obsáhlý projekt <a href="https://edesky.cz" title="EDesky.cz">edesky.cz</a> umožňuje registrovaným uživatelům zasílání novinek z úředních desek na email.</p>
+
+  <p>My si zde ukážeme dvě jednoduché aplikace, které ukazují dva odlišné přístupy ke stejným informacím z úředních desek. V první aplikaci bude cílem co nejjednodušeji dostávat notifikace o novinkách z úřední desky na mobil nebo e-mail. Druhá aplikace ukáže práci s úředními deskami v Národním katalogu dat.</p>
+
+  <hr>
+
+  <h2>Použitá data</h2>
+  <ul>
+    <li><a href="https://data.gov.cz/datov%C3%A1-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatov%C3%A9-sady%2F00261912%2F988310552" title="Úřední deska města Kadaň registrovaná v NKOD">Úřední deska města Kadaň</a></li>
+  </ul>
+
+  <hr>
+
+  <h2>Novinky z úřední desky rovnou do mobilu a e-mailu</h2>
+  <p>S úředními deskami, které jsou dostupné jako otevřená data, lze zasílání informací o nových oznámeních na úředních deskách dosáhnout pomocí několika řádek kódu.</p>
+  <p>Cílem tohoto příkladu není připravit aplikaci pro širokou veřejnost, ale ukázat, že připravit základ takové aplikace může být díky otevřenosti dat velice jednoduché.</p>
+
+  <h3>Postup zpracování</h3>
+  <p>K tomu, aby se novinky z úřední desky dostaly na náš mobil nebo do e-mailové schránky, nám postačí jediný systém: <a href="https://github.com" title="GitHub"><strong>GitHub</strong></a>. Samozřejmě, je to jen jeden z mnoha různých způsobů, jak tento problém řešit, snaha zde byla o co největší jednoduchost bez nutnosti využívat externí chatovací aplikace.</p>
+  <p><a href="https://github.com" title="GitHub">GitHub</a> je známá webová služba, kde registrovaní uživatelé mohou používat verzovací systém Git. GitHub umí pravidelně spouštět různé akce (GitHub Actions), což nám pomůže v pravidelném načítání vybrané úřední desky nebo desek. Zároveň rozpozná, že se deska změnila.</p>
+
+  <h3>Načítání úřední desky (GitHub)</h3>
+  <p>V rámci projektu na GitHubu vytvoříme několik souborů, nejzajímavější jsou dva: <a href="https://github.com/michalskop/uredni-desky-github/blob/main/download.py" title="Skript v jazyce Python, který načítá zadané úřední desky">Jednoduchý skript</a> načte úřední desku nebo úřední desky. V našem případě půjde o testovací úřední desku (dle příkladů z <a href="https://ofn.gov.cz/úřední-desky" title="Otevřená formální norma Úřední desky">otevřené formální normy Úřední desky</a>) a <a href="https://www.mesto-kadan.cz/1ad1f16beff952576ae7ddd76a91e163" title="Úřední deska města Kadaň">úřední desku města Kadaň</a>. Úkolem skriptu je jenom stáhnout aktuální úřední desku a uložit ji.</p>
+  <p>Jak jsme již uvedli, GitHub umožňuje pravidelně spouštět akce. Toho využijeme pro náš výše uvedený skript a necháme ho pravidelně každou hodinu stáhnout úřední desku. A zároveň v případě, že právě stažená verze úřední desky se liší od minulé, GitHub (resp. Git) provede automaticky další akci – tuto novou verzi úřední desky uloží a vyvolá odeslání notifikace. To vše je popsáno <a href="https://github.com/michalskop/uredni-desky-github/blob/main/.github/workflows/update.yml" title="Soubor update.yml">tímto souborem</a>.</p>
+
+  <h3>Notifikace z GitHubu (E-mail a mobilní aplikace)</h3>
+  <p>Pro příjem notifikací nemusíte nastavovat žádné externí boty ani složité propojení třetích stran. Vše zajistí přímo ekosystém GitHubu dvěma způsoby:</p>
+  <ul>
+    <li><strong>E-mailová upozornění (GitHub Actions):</strong> Součástí automatizovaného workflow v GitHub Actions je krok pro odeslání e-mailové zprávy. V momentě, kdy skript zjistí novou verzi úřední desky a uloží ji, odešle se e-mail s podrobnostmi přímo do vaší schránky.</li>
+    <li><strong>Push notifikace na mobil (GitHub Mobile):</strong> Pro příjem zpráv na mobil stačí mít nainstalovanou oficiální aplikaci GitHub Mobile a povolit u sledovaného repozitáře notifikace o změnách a bězích automatických akcí.</li>
+  </ul>
+
+  <p><strong>Kroky nastavení:</strong></p>
+  <ol>
+    <li>Vytvoříme si účet na GitHubu a nahráním projektu připravíme repozitář.</li>
+    <li>V souboru workflow pro GitHub Actions nastavíme automatické spouštění skriptu v pravidelném intervalu.</li>
+    <li>Doplníme krok pro e-mailovou notifikaci s uvedením cílové e-mailové adresy.</li>
+    <li>Nainstalujeme si aplikaci GitHub Mobile do mobilního telefonu a přihlásíme se.</li>
+    <li>V nastavení notifikací repozitáře zapneme sledování událostí (<code>Watch</code> &gt; <code>All Activity</code>).</li>
+    <li>Po několika hodinách nám v případě nové vyhlášky přejde upozornění e-mailem a zároveň jako push notifikace přímo na mobil!</li>
+  </ol>
+
+  <hr>
+
+  <h2>Jednoduché zobrazení úředních desek pomocí Otevřené formální normy a Národního katalogu dat</h2>
+  <p>Další ukázkovou aplikací je přehled úředních desek publikovaných jako otevřená data spolu s posledními oznámeními, která se na dané úřední desce objevila. Aplikace je ale jednoduchá, testovací a primárně zaměřená na poskytovatele a řešení jejich problémů. Stahuje data ze všech úředních desek, kterých je čím dál tím více, přímo do prohlížeče, tedy spotřebovává hodně dat – v době psaní článku již více jak 100 MB. <a href="https://ofn.gov.cz/úřední-desky/2021-07-20/aplikace/úřední-desky.html" title="Aplikace Přehled publikovaných úředních desek">Pokud však jste na počítači, nebo máte neomezená data, můžete si aplikaci vyzkoušet</a>.</p>
+  <p>Cílem tohoto příkladu je ukázat napojení na <a href="https://data.gov.cz/datové-sady" title="Národní katalog dat (NKD)">Národní katalog dat (NKOD)</a> a práci s ním. Zároveň slouží i jako rychlá kontrola pro poskytovatele otevřených dat, že jejich úřední deska je publikována v pořádku (jsou zde vidět i některé počáteční problémy nově publikovaných dat – některé úřední desky např. nemají povolený <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" title="Mozilla: CORS">CORS</a> a nejdou tedy zatím načítat přímo z takovéto aplikace).</p>
+  <p>Jedná se opět také o ukázku toho, že základní aplikaci lze nyní vytvořit velmi rychle – tato byla vytvořena jen v řádu hodin.</p>
+
+  <h3>Postup zpracování</h3>
+  <p>Aplikace je vytvořena jako <a href="https://en.wikipedia.org/wiki/Single-page_application" title="Single Page Application (SPA)">Single Page Application (SPA)</a> v jediném souboru, pouze s pomocí jazyku JavaScript a knihovny Bootstrap použité pro grafický design. <a href="https://github.com/datagov-cz/aplikace-uredni-desky/blob/main/úřední-desky.html" title="Zdrojový kód aplikace pro zobrazování úředních desek">Zdrojový kód aplikace</a> je dostupný na GitHubu.</p>
+  <p>Z hlediska struktury by se aplikace dala rozdělit na tři hlavní části: načtení informací z NKOD, stažení úředních desek a zobrazení uživatelského rozhraní.</p>
+  <p>První část implementuje metoda <code>fetchDatasets</code>, ta využívá <a href="https://data.gov.cz/graphql?query=query%20%7B%20datasets%20%7B%20data%20%7B%20title%20%7B%20cs%20%7D%20%7D%20%7D%20%7D" title="Rozhraní GraphQL NKOD">rozhraní GraphQL NKOD</a> pro získání potřebných dat ve formátu JSON. Alternativně by zde šlo použít SPARQL.</p>
+  <p>Stažení jednotlivých úředních desek je pak jen otázkou dalšího volání <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" title="Mozilla: Fetch API">Fetch API</a>. Získání potřebné informace z daného obsahu je, i díky použitým vlastnostem JavaScriptu, vcelku přímočaré – implementaci je možné najít na začátku funkce <code>createEntryElement</code>. Zde se projevuje efekt standardizace úředních desek – není nutné zjišťovat jaká data kde jsou. Dle OFN se očekává, že v datové sadě bude to, co tam má být a bude to u všech úředních desek stejné.</p>
+  <p>Zbytek kódu se věnuje hlavně práci s <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" title="Mozilla: DOM">DOM</a>, jinými slovy práci s uživatelským prostředím. Zde by šlo alternativně použít některý z existujících frameworků, ale pro jednoduchost ukázky byl použitý čistý JavaScript. Zejména díky standardizaci a NKOD API tvoří tedy práce s daty vlastně pouze malou část zdrojového kódu.</p>
+
+  <hr>
+
+  <h2>Výsledek</h2>
+  <p>Ukázali jsme si dvě jednoduché aplikace, které mají ukázat, jak snadno se dá pracovat s úředními deskami, když jsou informace z nich nyní dostupné také jako otevřená data.</p>
+  <p>První aplikace umožňuje posílat notifikace o novinkách na úřední desce co nejjednodušeji přímo na e-mail či mobilní telefon využitím vestavěných funkcí GitHubu. Druhá aplikace potom ukazuje seznam úředních desek a zároveň jak pracovat s Národním katalogem dat.</p>
+  <p>Můžeme si porovnat zobrazení stejného nového oznámení (v našem příkladě jde o vyhlášku města Kadaň) v obou aplikacích:</p>
+  <ul>
+    <li><strong>Informace o novém oznámení na úřední desce</strong> doručená jako e-mailová zpráva a push notifikace v aplikaci GitHub Mobile.</li>
+    <li><strong>Informace o stejném oznámení na úřední desce</strong> zobrazené na mobilu ve webové aplikaci ukazující úřední desky registrované v NKODu.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Další použití</h2>
+  <p>Ukázkové aplikace naznačují potenciál využití informací z úředních desek, které jsou publikovány jako otevřená data. Jejich cílem není přímo sloužit široké veřejnosti, ale představit, jak snadno lze s daty z úředních desek pracovat.</p>
+  <p>Ukazují, že stejná informace může být zpracována velmi různými způsoby – např. lze využít již existující vývojářské nástroje s podporou notifikací (jako GitHub v prvním případě) nebo naopak jednoduše zobrazovat stejnou informaci na webu (jako v druhém případě).</p>
+
+  <hr>
+
+  <h2>Použité nástroje a zdroje</h2>
+  <ul>
+    <li><a href="https://python.org" title="Programovací jazyk Python"><strong>Python</strong></a> – open source programovací jazyk</li>
+    <li><a href="https://github.com" title="GitHub"><strong>GitHub (GitHub Actions, GitHub Mobile)</strong></a> – služba zdarma po registraci (freemium)</li>
+    <li><a href="https://getbootstrap.com" title="Bootstrap"><strong>Bootstrap</strong></a> – open source front-end framework</li>
+    <li>Kuří, vývěska ŠJů (cs:ŠJů), <a href="https://creativecommons.org/licenses/by-sa/3.0" title="CC BY-SA 3.0">CC BY-SA 3.0</a>, via Wikimedia Commons</li>
+    <li><a href="https://freesvg.org/mobile-phone-silhouette" title="OpenClipart: Mobile Phone Silhouette">OpenClipart: Mobile Phone Silhouette</a></li>
+  </ul>
+
+  <hr>
+
+  <h2>Související informace</h2>
+  <ul>
+    <li><a href="https://data.gov.cz/%C4%8Dl%C3%A1nky/nov%C3%A9-povinnosti-pro-obce-kraje-a-org%C3%A1ny-st%C3%A1tn%C3%AD-spr%C3%A1vy-v-oblasti-otev%C5%99en%C3%BDch-dat" title="Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat">Nové povinnosti pro obce, kraje a orgány státní správy v oblasti otevřených dat</a></li>
+    <li><a href="/špatná-praxe/technické-překážky/#chybějící-podpora-cross-origin-resource-sharing-cors" title="Chybějící podpora Cross-Origin Resource Sharing (CORS)">Chybějící podpora Cross-Origin Resource Sharing (CORS)</a></li>
+    <li><a href="https://www.youtube.com/watch?v=A0BGDchMGGA&t=2s" title="Videonávod jak zkontrolovat katalogizační záznam úřední desky">Videonávod jak zkontrolovat katalogizační záznam úřední desky</a></li>
+    <li><a href="https://www.youtube.com/watch?v=ZGsuMmEvPcA&list=PL1Cp5doNb3zQc_ncuqg85b7ChdsJpBK4e&index=22&t=1s&ab_channel=MinisterstvoVnitraCR" title="Záznam z workshopu k zveřejňování úředních desek jako otevřená data">Záznam z workshopu k zveřejňování úředních desek jako otevřená data</a></li>
+  </ul>

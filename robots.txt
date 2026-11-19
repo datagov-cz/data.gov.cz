@@ -31,3 +31,12 @@ Disallow: /
 
 User-agent: PetalBot
 Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Crawl-delay: 5
+
+User-agent: Claude-User
+Allow: /

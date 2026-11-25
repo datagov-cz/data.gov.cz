@@ -42,15 +42,24 @@
 	<div class="gov-header__navigation js-gov-header__navigation">
 		<nav class="gov-navigation" aria-label="Hlavní navigace" id="main-navigation">
 			<ul>
-				{% if page.ref == 'DataManagement' %}
 				<li>
-					<a href="/správa-dat/" aria-current="page">Správa dat</a>
+					<gov-button type="base" color="primary" size="l" aria-expanded="false" aria-controls="subnav-sprava-dat" aria-label="Otevřít menu Správa dat">
+						Správa dat
+						<gov-icon slot="icon-end" type="components" name="chevron-down" size="l"></gov-icon>
+					</gov-button>
+					<ul class="gov-subnavigation" id="subnav-sprava-dat" hidden="hidden" aria-hidden="true">
+						<li><a href="/správa-dat/">Správa dat „od A do Z“</a></li>
+						<li><a href="/správa-dat/co-je-správa-dat/">Co je správa dat</a></li>
+						<li><a href="/popis-dat/">Popis dat</a></li>
+						<li><a href="/správa-dat/strategie-správy-dat/">Strategie správy dat</a></li>
+						<li><a href="/správa-dat/podpora-správy-dat/">Podpora správy dat</a></li>
+						<li><a href="/správa-dat/specifika-státní-správy/">Specifika státní správy</a></li>
+						<li><a href="/správa-dat/legislativa-související-se-správou-dat/">Legislativa související se správou dat</a></li>
+						<li><a href="/správa-dat/zákon-o-správě-dat/">Otázky a odpovědi k zákonu o správě dat</a></li>
+						<li><a href="/správa-dat/o-projektu/">O projektu</a></li>
+					</ul>
 				</li>
-				{% else %}
-				<li>
-					<a href="/správa-dat/">Správa dat</a>
-				</li>
-				{% endif %}
+
 
 				<li>
 					<gov-button type="base" color="primary" size="l" aria-expanded="false" aria-controls="subnav-otevrena-data" aria-label="Otevřít menu Otevřená data">

@@ -151,4 +151,4 @@ Informace o zákonu najdete také v [článku] zveřejném na Portálu o datech.
 [Informační koncepci ČR]: https://archi.gov.cz/ikcr "Informační koncepci ČR"
 [zákon o správě dat a o řízeném přístupu k datům]: https://e-sbirka.gov.cz/sb/2026/60?zalozka=text "zákon o správě dat a o řízeném přístupu k datům"
 [článku]: https://data.gov.cz/%C4%8Dl%C3%A1nky/Z%C3%A1kon-o-spr%C3%A1v%C4%9B-dat-a-%C5%99%C3%ADzen%C3%A9m-p%C5%99%C3%ADstupu-k-dat%C5%AFm-2 "článku"
-[řízeného přístupu k datům veřejné správy]: https://pod-test.dia.gov.cz/%c5%99%c3%adzen%c3%bd-p%c5%99%c3%adstup/ "řízeného přístupu k datům veřejné správy"
+[řízeného přístupu k datům veřejné správy]: https://data.gov.cz/řízený-přístup/ "řízeného přístupu k datům veřejné správy"
